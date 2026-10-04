@@ -1,8 +1,23 @@
 {
   "template_status": "DRAFT — NOT EXECUTED",
-  "strategy_version": "v2.0 / search-draft-0.3",
-  "protocol_version": "2.0",
-  "protocol_date": "2026-10-02",
+  "strategy_version": "v3.0 / search-draft-0.4",
+  "protocol_version": "3.0",
+  "protocol_date": "2026-10-04",
+  "protocol_version_label": "3.0 (draft for team freeze) - 4 October 2026",
+  "design_contract": "01_protocol/v3_design_contract.txt",
+  "v3_search_rules": {
+    "search_by_construct": "Two-route strategy E AND (I OR O) unchanged from v2; the open window is an organising construct and is not searched as a phrase (contract §3, ruling 8.3a).",
+    "open_window_terms_role": "OR supplement inside the I block or citation-chasing source only; never an AND term, filter or eligibility criterion. If an OR supplement line is used, log it as a separate search-history line within the EI entry and record its marginal yield during seed testing.",
+    "open_window_phrase_evidence": "18 PubMed title/abstract records 2018-2026 combine \"open window\"/\"open-window\" with exercise and immune terms (02_preliminary/collision_recheck_2026-10-04.md §6 query a; reconnaissance, not a protocol search).",
+    "organising_window": "0-72 h after cessation of an identifiable bout, applied at screening/charting; not a search limit or inclusion cap. Samples > 72 h are extracted and tagged outside-window recovery; no new exclusion code.",
+    "population_filter": null,
+    "population_rule_applied_at_screening": "Adults >= 18 y; mixed-age cohorts only with a separable adult stratum; < 18 y excluded under FT03; older adults included and flagged as a subgroup.",
+    "exposure_threshold": null,
+    "exposure_rule": "No intensity, duration or mode threshold; these are recorded at extraction and used as evidence-map strata.",
+    "support_B": "Retained (cross-bout open-window monitoring layer); applied at screening.",
+    "T_block_role": "Diagnostic sensitivity/precision comparison only (search_strategy_draft.txt §8); never part of the main EI/EO query.",
+    "pilot_timing": "50-record screening pilot runs after the v3.0 archive release (GitHub Release + Zenodo version DOI) on a preserved draft search pool; formal five-database search starts only after the archived release exists."
+  },
   "searches": [
     {
       "id": "PUBMED_EI",
@@ -40,7 +55,24 @@
         "POS-S2": null,
         "POS-S3": null,
         "NEG-E1": null,
-        "NEG-E2": null
+        "NEG-E2": null,
+        "POS-C1": null,
+        "POS-C2": null,
+        "POS-C3": null,
+        "POS-C4": null,
+        "POS-C5": null,
+        "BND-Y1": null,
+        "BND-Y2": null,
+        "BND-W1": null,
+        "BND-I1": null,
+        "BND-L1": null,
+        "BND-B1": null,
+        "BND-OW1": null,
+        "CIT-R1": null,
+        "CIT-R2": null,
+        "CIT-R3": null,
+        "CIT-R4": null,
+        "CIT-R5": null
       },
       "planned_query_checksum_sha256": null
     },
@@ -80,7 +112,24 @@
         "POS-S2": null,
         "POS-S3": null,
         "NEG-E1": null,
-        "NEG-E2": null
+        "NEG-E2": null,
+        "POS-C1": null,
+        "POS-C2": null,
+        "POS-C3": null,
+        "POS-C4": null,
+        "POS-C5": null,
+        "BND-Y1": null,
+        "BND-Y2": null,
+        "BND-W1": null,
+        "BND-I1": null,
+        "BND-L1": null,
+        "BND-B1": null,
+        "BND-OW1": null,
+        "CIT-R1": null,
+        "CIT-R2": null,
+        "CIT-R3": null,
+        "CIT-R4": null,
+        "CIT-R5": null
       },
       "planned_query_checksum_sha256": null
     },
@@ -118,7 +167,24 @@
         "POS-S2": null,
         "POS-S3": null,
         "NEG-E1": null,
-        "NEG-E2": null
+        "NEG-E2": null,
+        "POS-C1": null,
+        "POS-C2": null,
+        "POS-C3": null,
+        "POS-C4": null,
+        "POS-C5": null,
+        "BND-Y1": null,
+        "BND-Y2": null,
+        "BND-W1": null,
+        "BND-I1": null,
+        "BND-L1": null,
+        "BND-B1": null,
+        "BND-OW1": null,
+        "CIT-R1": null,
+        "CIT-R2": null,
+        "CIT-R3": null,
+        "CIT-R4": null,
+        "CIT-R5": null
       },
       "planned_query_checksum_sha256": null
     },
@@ -156,7 +222,24 @@
         "POS-S2": null,
         "POS-S3": null,
         "NEG-E1": null,
-        "NEG-E2": null
+        "NEG-E2": null,
+        "POS-C1": null,
+        "POS-C2": null,
+        "POS-C3": null,
+        "POS-C4": null,
+        "POS-C5": null,
+        "BND-Y1": null,
+        "BND-Y2": null,
+        "BND-W1": null,
+        "BND-I1": null,
+        "BND-L1": null,
+        "BND-B1": null,
+        "BND-OW1": null,
+        "CIT-R1": null,
+        "CIT-R2": null,
+        "CIT-R3": null,
+        "CIT-R4": null,
+        "CIT-R5": null
       },
       "planned_query_checksum_sha256": null
     },
@@ -193,7 +276,24 @@
         "POS-S2": null,
         "POS-S3": null,
         "NEG-E1": null,
-        "NEG-E2": null
+        "NEG-E2": null,
+        "POS-C1": null,
+        "POS-C2": null,
+        "POS-C3": null,
+        "POS-C4": null,
+        "POS-C5": null,
+        "BND-Y1": null,
+        "BND-Y2": null,
+        "BND-W1": null,
+        "BND-I1": null,
+        "BND-L1": null,
+        "BND-B1": null,
+        "BND-OW1": null,
+        "CIT-R1": null,
+        "CIT-R2": null,
+        "CIT-R3": null,
+        "CIT-R4": null,
+        "CIT-R5": null
       },
       "planned_query_checksum_sha256": null
     },
@@ -230,7 +330,24 @@
         "POS-S2": null,
         "POS-S3": null,
         "NEG-E1": null,
-        "NEG-E2": null
+        "NEG-E2": null,
+        "POS-C1": null,
+        "POS-C2": null,
+        "POS-C3": null,
+        "POS-C4": null,
+        "POS-C5": null,
+        "BND-Y1": null,
+        "BND-Y2": null,
+        "BND-W1": null,
+        "BND-I1": null,
+        "BND-L1": null,
+        "BND-B1": null,
+        "BND-OW1": null,
+        "CIT-R1": null,
+        "CIT-R2": null,
+        "CIT-R3": null,
+        "CIT-R4": null,
+        "CIT-R5": null
       },
       "planned_query_checksum_sha256": null
     },
@@ -270,7 +387,24 @@
         "POS-S2": null,
         "POS-S3": null,
         "NEG-E1": null,
-        "NEG-E2": null
+        "NEG-E2": null,
+        "POS-C1": null,
+        "POS-C2": null,
+        "POS-C3": null,
+        "POS-C4": null,
+        "POS-C5": null,
+        "BND-Y1": null,
+        "BND-Y2": null,
+        "BND-W1": null,
+        "BND-I1": null,
+        "BND-L1": null,
+        "BND-B1": null,
+        "BND-OW1": null,
+        "CIT-R1": null,
+        "CIT-R2": null,
+        "CIT-R3": null,
+        "CIT-R4": null,
+        "CIT-R5": null
       },
       "platform_selection_status": "CANDIDATE_INTERFACE; NOT SELECTED / NOT EXECUTED",
       "planned_query_checksum_sha256": null
@@ -311,7 +445,24 @@
         "POS-S2": null,
         "POS-S3": null,
         "NEG-E1": null,
-        "NEG-E2": null
+        "NEG-E2": null,
+        "POS-C1": null,
+        "POS-C2": null,
+        "POS-C3": null,
+        "POS-C4": null,
+        "POS-C5": null,
+        "BND-Y1": null,
+        "BND-Y2": null,
+        "BND-W1": null,
+        "BND-I1": null,
+        "BND-L1": null,
+        "BND-B1": null,
+        "BND-OW1": null,
+        "CIT-R1": null,
+        "CIT-R2": null,
+        "CIT-R3": null,
+        "CIT-R4": null,
+        "CIT-R5": null
       },
       "platform_selection_status": "CANDIDATE_INTERFACE; NOT SELECTED / NOT EXECUTED",
       "planned_query_checksum_sha256": null
@@ -353,7 +504,24 @@
         "POS-S2": null,
         "POS-S3": null,
         "NEG-E1": null,
-        "NEG-E2": null
+        "NEG-E2": null,
+        "POS-C1": null,
+        "POS-C2": null,
+        "POS-C3": null,
+        "POS-C4": null,
+        "POS-C5": null,
+        "BND-Y1": null,
+        "BND-Y2": null,
+        "BND-W1": null,
+        "BND-I1": null,
+        "BND-L1": null,
+        "BND-B1": null,
+        "BND-OW1": null,
+        "CIT-R1": null,
+        "CIT-R2": null,
+        "CIT-R3": null,
+        "CIT-R4": null,
+        "CIT-R5": null
       },
       "platform_selection_status": "ALTERNATIVE_INTERFACE_DRAFT; NOT SELECTED / NOT EXECUTED",
       "planned_query_checksum_sha256": null
@@ -395,7 +563,24 @@
         "POS-S2": null,
         "POS-S3": null,
         "NEG-E1": null,
-        "NEG-E2": null
+        "NEG-E2": null,
+        "POS-C1": null,
+        "POS-C2": null,
+        "POS-C3": null,
+        "POS-C4": null,
+        "POS-C5": null,
+        "BND-Y1": null,
+        "BND-Y2": null,
+        "BND-W1": null,
+        "BND-I1": null,
+        "BND-L1": null,
+        "BND-B1": null,
+        "BND-OW1": null,
+        "CIT-R1": null,
+        "CIT-R2": null,
+        "CIT-R3": null,
+        "CIT-R4": null,
+        "CIT-R5": null
       },
       "platform_selection_status": "ALTERNATIVE_INTERFACE_DRAFT; NOT SELECTED / NOT EXECUTED",
       "planned_query_checksum_sha256": null
@@ -438,7 +623,24 @@
         "POS-S2": null,
         "POS-S3": null,
         "NEG-E1": null,
-        "NEG-E2": null
+        "NEG-E2": null,
+        "POS-C1": null,
+        "POS-C2": null,
+        "POS-C3": null,
+        "POS-C4": null,
+        "POS-C5": null,
+        "BND-Y1": null,
+        "BND-Y2": null,
+        "BND-W1": null,
+        "BND-I1": null,
+        "BND-L1": null,
+        "BND-B1": null,
+        "BND-OW1": null,
+        "CIT-R1": null,
+        "CIT-R2": null,
+        "CIT-R3": null,
+        "CIT-R4": null,
+        "CIT-R5": null
       },
       "planned_query_checksum_sha256": null
     },
@@ -480,7 +682,24 @@
         "POS-S2": null,
         "POS-S3": null,
         "NEG-E1": null,
-        "NEG-E2": null
+        "NEG-E2": null,
+        "POS-C1": null,
+        "POS-C2": null,
+        "POS-C3": null,
+        "POS-C4": null,
+        "POS-C5": null,
+        "BND-Y1": null,
+        "BND-Y2": null,
+        "BND-W1": null,
+        "BND-I1": null,
+        "BND-L1": null,
+        "BND-B1": null,
+        "BND-OW1": null,
+        "CIT-R1": null,
+        "CIT-R2": null,
+        "CIT-R3": null,
+        "CIT-R4": null,
+        "CIT-R5": null
       },
       "planned_query_checksum_sha256": null
     },
@@ -585,12 +804,109 @@
       "planned_query_checksum_sha256": null
     },
     {
-      "id": "OSF_NOVELTY_CONTEXT",
-      "database": "OSF Search / OSF Registries",
-      "platform": "OSF web search",
+      "id": "REGISTRY_OVERLAP_CONTEXT",
+      "database": "OSF + PROSPERO + INPLASY + Research Registry + Zenodo",
+      "platform": "Registry web interfaces/APIs (one per_registry_checks entry each)",
       "route": "Registry overlap context only",
       "strategy_reference": "search_strategy_draft.txt §9.8",
-      "exact_queries": null,
+      "registries_covered": [
+        "OSF (Search and Registries)",
+        "PROSPERO",
+        "INPLASY",
+        "Research Registry",
+        "Zenodo"
+      ],
+      "run_points": [
+        "before v3.0 archive release",
+        "final search update",
+        "before submission"
+      ],
+      "per_registry_checks": [
+        {
+          "registry": "OSF",
+          "entry_point": "https://osf.io/search/ ; https://osf.io/registries/",
+          "exact_queries": null,
+          "date_time_timezone": null,
+          "searcher": null,
+          "interface_or_api": null,
+          "result_cap_or_coverage_note": null,
+          "records_inspected": null,
+          "potential_overlaps": null,
+          "execution_status": "NOT_EXECUTED"
+        },
+        {
+          "registry": "PROSPERO",
+          "entry_point": "https://www.crd.york.ac.uk/prospero/",
+          "exact_queries": null,
+          "date_time_timezone": null,
+          "searcher": null,
+          "interface_or_api": null,
+          "result_cap_or_coverage_note": null,
+          "records_inspected": null,
+          "potential_overlaps": null,
+          "execution_status": "NOT_EXECUTED"
+        },
+        {
+          "registry": "INPLASY",
+          "entry_point": "https://inplasy.com/",
+          "exact_queries": null,
+          "date_time_timezone": null,
+          "searcher": null,
+          "interface_or_api": null,
+          "result_cap_or_coverage_note": null,
+          "records_inspected": null,
+          "potential_overlaps": null,
+          "execution_status": "NOT_EXECUTED"
+        },
+        {
+          "registry": "Research Registry",
+          "entry_point": "https://www.researchregistry.com/",
+          "exact_queries": null,
+          "date_time_timezone": null,
+          "searcher": null,
+          "interface_or_api": null,
+          "result_cap_or_coverage_note": null,
+          "records_inspected": null,
+          "potential_overlaps": null,
+          "execution_status": "NOT_EXECUTED"
+        },
+        {
+          "registry": "Zenodo",
+          "entry_point": "https://zenodo.org/",
+          "exact_queries": null,
+          "date_time_timezone": null,
+          "searcher": null,
+          "interface_or_api": null,
+          "result_cap_or_coverage_note": null,
+          "records_inspected": null,
+          "potential_overlaps": null,
+          "execution_status": "NOT_EXECUTED"
+        }
+      ],
+      "prior_reconnaissance_reference": {
+        "path": "02_preliminary/collision_recheck_2026-10-04.md",
+        "date": "2026-10-04",
+        "status": "Prior reconnaissance (collision re-check), not the protocol overlap check; it does not populate any field of this entry.",
+        "known_overlaps_to_recheck": [
+          "PROSPERO CRD42020186264",
+          "PROSPERO CRD42022324139",
+          "PROSPERO CRD420261446630",
+          "OSF osf.io/4hsdr",
+          "OSF osf.io/fhy4q",
+          "OSF osf.io/txds9",
+          "OSF osf.io/m7xcz"
+        ],
+        "earlier_reconnaissance": "02_preliminary/restart_2026-10-02 (Codex, 2026-10-02)"
+      },
+      "pre_submission_forward_citation_check": {
+        "targets": [
+          "Campbell & Turner 2018 (PMID 29713319)",
+          "Peake et al. 2017 (PMID 27909225)"
+        ],
+        "date_time_timezone": null,
+        "records_identified": null,
+        "execution_status": "NOT_EXECUTED"
+      },
       "date_time_timezone": null,
       "searcher": null,
       "result_cap_or_coverage_note": null,
@@ -615,7 +931,7 @@
   "known_seed_checks": [
     {
       "seed_id": "POS-A1",
-      "record": "Molecular Choreography of Acute Exercise (PMID 32470399)",
+      "record": "Contrepois et al., Molecular Choreography of Acute Exercise, Cell 2020 (PMID 32470399; DOI 10.1016/j.cell.2020.04.043)",
       "expected_route": [
         "EI",
         "EO"
@@ -624,7 +940,7 @@
       "known_record_in_prior_reconnaissance": true,
       "database_specific_detection_status": null,
       "test_date": null,
-      "notes": "Known seed to verify; not a record of a completed database search.",
+      "notes": "Known seed to verify; not a record of a completed database search. First author corrected from \"Yu\" to Contrepois after PubMed esummary check on 2026-10-04.",
       "legacy_seed_id": "SEED-01",
       "database_route_checks": [],
       "check_entry_template": {
@@ -639,7 +955,8 @@
         "saved_evidence": null,
         "miss_investigation_or_action": null,
         "human_fulltext_scope_decision": null
-      }
+      },
+      "seed_class": "positive_omics"
     },
     {
       "seed_id": "POS-A2",
@@ -652,7 +969,7 @@
       "known_record_in_prior_reconnaissance": true,
       "database_specific_detection_status": null,
       "test_date": null,
-      "notes": "Known seed to verify; not a record of a completed database search.",
+      "notes": "Known seed to verify; not a record of a completed database search. Near-finish sampling only: chart as immediate response, not recovery.",
       "legacy_seed_id": "SEED-02",
       "database_route_checks": [],
       "check_entry_template": {
@@ -667,7 +984,8 @@
         "saved_evidence": null,
         "miss_investigation_or_action": null,
         "human_fulltext_scope_decision": null
-      }
+      },
+      "seed_class": "positive_omics"
     },
     {
       "seed_id": "POS-A3",
@@ -694,7 +1012,8 @@
         "saved_evidence": null,
         "miss_investigation_or_action": null,
         "human_fulltext_scope_decision": null
-      }
+      },
+      "seed_class": "positive_targeted_protein"
     },
     {
       "seed_id": "POS-S1",
@@ -703,7 +1022,7 @@
         "EI",
         "EO"
       ],
-      "expected_scope": "Boundary/background under v2 if last-bout timing cannot establish A or repeated-bout B",
+      "expected_scope": "Boundary/background under v3 if last-bout timing cannot establish A or repeated-bout B",
       "known_record_in_prior_reconnaissance": true,
       "database_specific_detection_status": null,
       "test_date": null,
@@ -722,7 +1041,8 @@
         "saved_evidence": null,
         "miss_investigation_or_action": null,
         "human_fulltext_scope_decision": null
-      }
+      },
+      "seed_class": "positive_sensitivity_boundary"
     },
     {
       "seed_id": "POS-S2",
@@ -750,7 +1070,8 @@
         "saved_evidence": null,
         "miss_investigation_or_action": null,
         "human_fulltext_scope_decision": null
-      }
+      },
+      "seed_class": "positive_frontier_preprint"
     },
     {
       "seed_id": "POS-S3",
@@ -778,16 +1099,17 @@
         "saved_evidence": null,
         "miss_investigation_or_action": null,
         "human_fulltext_scope_decision": null
-      }
+      },
+      "seed_class": "positive_frontier_preprint"
     },
     {
       "seed_id": "NEG-E1",
-      "record": "CIMA regular-physical-activity immune multi-omics study (PMID 42758809; same lineage as bioRxiv DOI 10.64898/2026.01.13.699221)",
+      "record": "Song et al. (CIMA), Multiomics profiling identifies molecular and cellular signatures of regular exercise in human peripheral blood, Sci Adv 2026 (PMID 42758809; DOI 10.1126/sciadv.aeh0260; same lineage as bioRxiv DOI 10.64898/2026.01.13.699221)",
       "expected_route": [
         "EI",
         "EO"
       ],
-      "expected_scope": "Negative eligibility/boundary: habitual activity cross-section, not acute A or repeated-bout B",
+      "expected_scope": "Negative eligibility/boundary (resting cross-sectional): habitual-activity cross-section with one resting draw, not acute A or repeated-bout B; background only",
       "known_record_in_prior_reconnaissance": true,
       "database_specific_detection_status": null,
       "test_date": null,
@@ -806,7 +1128,8 @@
         "saved_evidence": null,
         "miss_investigation_or_action": null,
         "human_fulltext_scope_decision": null
-      }
+      },
+      "seed_class": "boundary_resting_cross_sectional"
     },
     {
       "seed_id": "NEG-E2",
@@ -820,6 +1143,569 @@
       "test_date": null,
       "notes": "Retrieval is not evidence of human eligibility; test that no human filter is being silently imposed and that animal exclusion occurs at screening.",
       "legacy_seed_id": "SEED-07",
+      "database_route_checks": [],
+      "check_entry_template": {
+        "database": null,
+        "platform": null,
+        "database_contains_record": null,
+        "EI_retrieved": null,
+        "EO_retrieved": null,
+        "exact_test_queries": null,
+        "manual_presence_lookup_method": null,
+        "date_time_timezone": null,
+        "saved_evidence": null,
+        "miss_investigation_or_action": null,
+        "human_fulltext_scope_decision": null
+      },
+      "seed_class": "negative_animal"
+    },
+    {
+      "seed_id": "POS-C1",
+      "seed_class": "positive_conventional",
+      "record": "Cantó et al., Salivary immunity and lower respiratory tract infections in non-elite marathon runners, PLoS One 2018;13(11):e0206059 (PMID 30462646; DOI 10.1371/journal.pone.0206059)",
+      "expected_route": [
+        "EI"
+      ],
+      "expected_scope": "Core A candidate: sIgA day before and two days after a marathon (24-72 h bin, within organising window); LRTI follow-up on a separate clock",
+      "known_record_in_prior_reconnaissance": true,
+      "identifier_verification": {
+        "pmid": "30462646",
+        "doi": "10.1371/journal.pone.0206059",
+        "method": "PubMed E-utilities esummary, 2026-10-04 (identifier/title/journal match only; not a retrieval test)"
+      },
+      "database_specific_detection_status": null,
+      "test_date": null,
+      "notes": "Pilot R59. Tests sIgA/mucosal and marathon wording without omics terms. Added in v3 (2026-10-04); detection unknown until tested; not a record of a completed database search.",
+      "legacy_seed_id": null,
+      "database_route_checks": [],
+      "check_entry_template": {
+        "database": null,
+        "platform": null,
+        "database_contains_record": null,
+        "EI_retrieved": null,
+        "EO_retrieved": null,
+        "exact_test_queries": null,
+        "manual_presence_lookup_method": null,
+        "date_time_timezone": null,
+        "saved_evidence": null,
+        "miss_investigation_or_action": null,
+        "human_fulltext_scope_decision": null
+      }
+    },
+    {
+      "seed_id": "POS-C2",
+      "seed_class": "positive_conventional",
+      "record": "Harrison et al., Anxiety and Mood Disturbance Are Prospectively Associated With Respiratory Infection Risk and the Mucosal Immune Response to Exercise, Eur J Sport Sci 2025;25(10):e70058 (PMID 41024702; DOI 10.1002/ejsc.70058)",
+      "expected_route": [
+        "EI"
+      ],
+      "expected_scope": "Core A candidate for the laboratory sub-study (60 min running, pre/post SIgA, non-exercise control); null result retained",
+      "known_record_in_prior_reconnaissance": true,
+      "identifier_verification": {
+        "pmid": "41024702",
+        "doi": "10.1002/ejsc.70058",
+        "method": "PubMed E-utilities esummary, 2026-10-04 (identifier/title/journal match only; not a retrieval test)"
+      },
+      "database_specific_detection_status": null,
+      "test_date": null,
+      "notes": "Pilot R56. Tests retention of null sIgA findings and multi-study reports. Added in v3 (2026-10-04); detection unknown until tested; not a record of a completed database search.",
+      "legacy_seed_id": null,
+      "database_route_checks": [],
+      "check_entry_template": {
+        "database": null,
+        "platform": null,
+        "database_contains_record": null,
+        "EI_retrieved": null,
+        "EO_retrieved": null,
+        "exact_test_queries": null,
+        "manual_presence_lookup_method": null,
+        "date_time_timezone": null,
+        "saved_evidence": null,
+        "miss_investigation_or_action": null,
+        "human_fulltext_scope_decision": null
+      }
+    },
+    {
+      "seed_id": "POS-C3",
+      "seed_class": "positive_conventional",
+      "record": "Nieman et al., Indomethacin does not alter natural killer cell response to 2.5 h of running, J Appl Physiol 1995;79(3):748-55 (PMID 8567513; DOI 10.1152/jappl.1995.79.3.748)",
+      "expected_route": [
+        "EI"
+      ],
+      "expected_scope": "Core A candidate: NK cytotoxic activity pre, immediately post and during 6 h recovery; sedentary control; indomethacin only in vitro",
+      "known_record_in_prior_reconnaissance": false,
+      "identifier_verification": {
+        "pmid": "8567513",
+        "doi": "10.1152/jappl.1995.79.3.748",
+        "method": "PubMed E-utilities esummary, 2026-10-04 (identifier/title/journal match only; not a retrieval test)"
+      },
+      "database_specific_detection_status": null,
+      "test_date": null,
+      "notes": "Tests NK cytotoxicity wording and redistribution (per-cell vs per-volume). Added in v3 (2026-10-04); detection unknown until tested; not a record of a completed database search.",
+      "legacy_seed_id": null,
+      "database_route_checks": [],
+      "check_entry_template": {
+        "database": null,
+        "platform": null,
+        "database_contains_record": null,
+        "EI_retrieved": null,
+        "EO_retrieved": null,
+        "exact_test_queries": null,
+        "manual_presence_lookup_method": null,
+        "date_time_timezone": null,
+        "saved_evidence": null,
+        "miss_investigation_or_action": null,
+        "human_fulltext_scope_decision": null
+      }
+    },
+    {
+      "seed_id": "POS-C4",
+      "seed_class": "positive_conventional",
+      "record": "Shek et al., Strenuous exercise and immunological changes: a multiple-time-point analysis of leukocyte subsets, CD4/CD8 ratio, immunoglobulin production and NK cell response, Int J Sports Med 1995;16(7):466-74 (PMID 8550256; DOI 10.1055/s-2007-973039)",
+      "expected_route": [
+        "EI"
+      ],
+      "expected_scope": "Core A candidate: lymphocyte redistribution and NK count/cytotoxicity; samples <= 72 h within window, day-7 sample tagged outside-window recovery (not excluded)",
+      "known_record_in_prior_reconnaissance": false,
+      "identifier_verification": {
+        "pmid": "8550256",
+        "doi": "10.1055/s-2007-973039",
+        "method": "PubMed E-utilities esummary, 2026-10-04 (identifier/title/journal match only; not a retrieval test)"
+      },
+      "database_specific_detection_status": null,
+      "test_date": null,
+      "notes": "Tests leukocyte-subset wording and mixed within/outside-window tagging. Added in v3 (2026-10-04); detection unknown until tested; not a record of a completed database search.",
+      "legacy_seed_id": null,
+      "database_route_checks": [],
+      "check_entry_template": {
+        "database": null,
+        "platform": null,
+        "database_contains_record": null,
+        "EI_retrieved": null,
+        "EO_retrieved": null,
+        "exact_test_queries": null,
+        "manual_presence_lookup_method": null,
+        "date_time_timezone": null,
+        "saved_evidence": null,
+        "miss_investigation_or_action": null,
+        "human_fulltext_scope_decision": null
+      }
+    },
+    {
+      "seed_id": "POS-C5",
+      "seed_class": "positive_conventional",
+      "record": "Order et al., Lymphocyte subsets during the first hours and days after a 2.5 h running test, J Clin Lab Immunol 1990;32(2):97-102 (PMID 1967046; no DOI in PubMed)",
+      "expected_route": [
+        "EI"
+      ],
+      "expected_scope": "Core A candidate: post, 1 h, 3 h, day 1, day 2 within window; day 5 tagged outside-window recovery; non-exercising controls",
+      "known_record_in_prior_reconnaissance": false,
+      "identifier_verification": {
+        "pmid": "1967046",
+        "doi": null,
+        "method": "PubMed E-utilities esummary, 2026-10-04 (identifier/title/journal match only; not a retrieval test)"
+      },
+      "database_specific_detection_status": null,
+      "test_date": null,
+      "notes": "No DOI in PubMed; tests retrieval of an older thinly indexed record. Added in v3 (2026-10-04); detection unknown until tested; not a record of a completed database search.",
+      "legacy_seed_id": null,
+      "database_route_checks": [],
+      "check_entry_template": {
+        "database": null,
+        "platform": null,
+        "database_contains_record": null,
+        "EI_retrieved": null,
+        "EO_retrieved": null,
+        "exact_test_queries": null,
+        "manual_presence_lookup_method": null,
+        "date_time_timezone": null,
+        "saved_evidence": null,
+        "miss_investigation_or_action": null,
+        "human_fulltext_scope_decision": null
+      }
+    },
+    {
+      "seed_id": "BND-Y1",
+      "seed_class": "boundary_youth",
+      "record": "Plaza-Florido et al., Endurance training attenuates acute exercise-induced monocyte transcriptomic responses in adolescents: sex-specific molecular adaptations, J Appl Physiol 2026;141(3):873-887 (PMID 42545855; DOI 10.1152/japplphysiol.00282.2026)",
+      "expected_route": [
+        "EI",
+        "EO"
+      ],
+      "expected_scope": "Negative eligibility: participants 13-17 y; exclude at full text under FT03 (population)",
+      "known_record_in_prior_reconnaissance": true,
+      "identifier_verification": {
+        "pmid": "42545855",
+        "doi": "10.1152/japplphysiol.00282.2026",
+        "method": "PubMed E-utilities esummary, 2026-10-04 (identifier/title/journal match only; not a retrieval test)"
+      },
+      "database_specific_detection_status": null,
+      "test_date": null,
+      "notes": "Pilot R62, now a population boundary case. Also immediate-only. Confirms age is applied at screening, not as a search filter. Added in v3 (2026-10-04); detection unknown until tested; not a record of a completed database search.",
+      "legacy_seed_id": null,
+      "database_route_checks": [],
+      "check_entry_template": {
+        "database": null,
+        "platform": null,
+        "database_contains_record": null,
+        "EI_retrieved": null,
+        "EO_retrieved": null,
+        "exact_test_queries": null,
+        "manual_presence_lookup_method": null,
+        "date_time_timezone": null,
+        "saved_evidence": null,
+        "miss_investigation_or_action": null,
+        "human_fulltext_scope_decision": null
+      }
+    },
+    {
+      "seed_id": "BND-Y2",
+      "seed_class": "boundary_mixed_age",
+      "record": "Almeida-Neto et al., Leukocyte response to repeated sprint exercise: Differences between adolescent and adult athletes, Sports Med Health Sci 2026;8(5):564-575 (PMID 42539963; DOI 10.1016/j.smhs.2025.05.003)",
+      "expected_route": [
+        "EI"
+      ],
+      "expected_scope": "Eligible for the adult (>= 18 y) stratum only if adult results are separable; otherwise FT03",
+      "known_record_in_prior_reconnaissance": false,
+      "identifier_verification": {
+        "pmid": "42539963",
+        "doi": "10.1016/j.smhs.2025.05.003",
+        "method": "PubMed E-utilities esummary, 2026-10-04 (identifier/title/journal match only; not a retrieval test)"
+      },
+      "database_specific_detection_status": null,
+      "test_date": null,
+      "notes": "Tests ruling 8.3c. Added in v3 (2026-10-04); detection unknown until tested; not a record of a completed database search.",
+      "legacy_seed_id": null,
+      "database_route_checks": [],
+      "check_entry_template": {
+        "database": null,
+        "platform": null,
+        "database_contains_record": null,
+        "EI_retrieved": null,
+        "EO_retrieved": null,
+        "exact_test_queries": null,
+        "manual_presence_lookup_method": null,
+        "date_time_timezone": null,
+        "saved_evidence": null,
+        "miss_investigation_or_action": null,
+        "human_fulltext_scope_decision": null
+      }
+    },
+    {
+      "seed_id": "BND-W1",
+      "seed_class": "boundary_outside_window_only",
+      "record": "Xiang et al., Effects of strenuous exercise on Th1/Th2 gene expression from human peripheral blood mononuclear cells of marathon participants, Mol Immunol 2014;60(2):129-34 (PMID 24853398; DOI 10.1016/j.molimm.2014.03.004)",
+      "expected_route": [
+        "EI"
+      ],
+      "expected_scope": "Eligible, outside-window tag: only post-cessation sample one week after the marathon; Core A if other criteria are met; no exclusion code",
+      "known_record_in_prior_reconnaissance": false,
+      "identifier_verification": {
+        "pmid": "24853398",
+        "doi": "10.1016/j.molimm.2014.03.004",
+        "method": "PubMed E-utilities esummary, 2026-10-04 (identifier/title/journal match only; not a retrieval test)"
+      },
+      "database_specific_detection_status": null,
+      "test_date": null,
+      "notes": "Tests that 0-72 h is an organising window, not an inclusion cap. Added in v3 (2026-10-04); detection unknown until tested; not a record of a completed database search.",
+      "legacy_seed_id": null,
+      "database_route_checks": [],
+      "check_entry_template": {
+        "database": null,
+        "platform": null,
+        "database_contains_record": null,
+        "EI_retrieved": null,
+        "EO_retrieved": null,
+        "exact_test_queries": null,
+        "manual_presence_lookup_method": null,
+        "date_time_timezone": null,
+        "saved_evidence": null,
+        "miss_investigation_or_action": null,
+        "human_fulltext_scope_decision": null
+      }
+    },
+    {
+      "seed_id": "BND-I1",
+      "seed_class": "boundary_immediate_only",
+      "record": "Li et al., Salivary Immuno Factors, Cortisol and Testosterone Responses in Athletes of a Competitive 5,000 m Race, Chin J Physiol 2015;58(4):263-9 (PMID 26211650; DOI 10.4077/CJP.2015.BAE367)",
+      "expected_route": [
+        "EI"
+      ],
+      "expected_scope": "Core A candidate: saliva 10 min before and 10 min after; immediate response (0 to <30 min), not recovery; cortisol is a covariate",
+      "known_record_in_prior_reconnaissance": false,
+      "identifier_verification": {
+        "pmid": "26211650",
+        "doi": "10.4077/CJP.2015.BAE367",
+        "method": "PubMed E-utilities esummary, 2026-10-04 (identifier/title/journal match only; not a retrieval test)"
+      },
+      "database_specific_detection_status": null,
+      "test_date": null,
+      "notes": "Tests absence of a 30-min minimum. Added in v3 (2026-10-04); detection unknown until tested; not a record of a completed database search.",
+      "legacy_seed_id": null,
+      "database_route_checks": [],
+      "check_entry_template": {
+        "database": null,
+        "platform": null,
+        "database_contains_record": null,
+        "EI_retrieved": null,
+        "EO_retrieved": null,
+        "exact_test_queries": null,
+        "manual_presence_lookup_method": null,
+        "date_time_timezone": null,
+        "saved_evidence": null,
+        "miss_investigation_or_action": null,
+        "human_fulltext_scope_decision": null
+      }
+    },
+    {
+      "seed_id": "BND-L1",
+      "seed_class": "boundary_low_intensity_short_bout",
+      "record": "Campbell et al., Acute exercise mobilises CD8+ T lymphocytes exhibiting an effector-memory phenotype, Brain Behav Immun 2009;23(6):767-75 (PMID 19254756; DOI 10.1016/j.bbi.2009.02.011)",
+      "expected_route": [
+        "EI"
+      ],
+      "expected_scope": "Core A candidate for both the 35% and 85% Wmax 20-min arms; intensity recorded, never a threshold",
+      "known_record_in_prior_reconnaissance": false,
+      "identifier_verification": {
+        "pmid": "19254756",
+        "doi": "10.1016/j.bbi.2009.02.011",
+        "method": "PubMed E-utilities esummary, 2026-10-04 (identifier/title/journal match only; not a retrieval test)"
+      },
+      "database_specific_detection_status": null,
+      "test_date": null,
+      "notes": "Tests contract 2.1 (no exposure threshold). Added in v3 (2026-10-04); detection unknown until tested; not a record of a completed database search.",
+      "legacy_seed_id": null,
+      "database_route_checks": [],
+      "check_entry_template": {
+        "database": null,
+        "platform": null,
+        "database_contains_record": null,
+        "EI_retrieved": null,
+        "EO_retrieved": null,
+        "exact_test_queries": null,
+        "manual_presence_lookup_method": null,
+        "date_time_timezone": null,
+        "saved_evidence": null,
+        "miss_investigation_or_action": null,
+        "human_fulltext_scope_decision": null
+      }
+    },
+    {
+      "seed_id": "BND-B1",
+      "seed_class": "boundary_repeated_windows",
+      "record": "Mackinnon et al., Decreased salivary immunoglobulin A secretion rate after intense interval exercise in elite kayakers, Eur J Appl Physiol Occup Physiol 1993;67(2):180-4 (PMID 8223526; DOI 10.1007/BF00376664)",
+      "expected_route": [
+        "EI"
+      ],
+      "expected_scope": "Support B candidate (same SIgA marker, same eight athletes, three identified sessions with pre/post samples) and Core A per bout; deduplicate by cohort ID",
+      "known_record_in_prior_reconnaissance": false,
+      "identifier_verification": {
+        "pmid": "8223526",
+        "doi": "10.1007/BF00376664",
+        "method": "PubMed E-utilities esummary, 2026-10-04 (identifier/title/journal match only; not a retrieval test)"
+      },
+      "database_specific_detection_status": null,
+      "test_date": null,
+      "notes": "Tests the retained Support B layer. Added in v3 (2026-10-04); detection unknown until tested; not a record of a completed database search.",
+      "legacy_seed_id": null,
+      "database_route_checks": [],
+      "check_entry_template": {
+        "database": null,
+        "platform": null,
+        "database_contains_record": null,
+        "EI_retrieved": null,
+        "EO_retrieved": null,
+        "exact_test_queries": null,
+        "manual_presence_lookup_method": null,
+        "date_time_timezone": null,
+        "saved_evidence": null,
+        "miss_investigation_or_action": null,
+        "human_fulltext_scope_decision": null
+      }
+    },
+    {
+      "seed_id": "BND-OW1",
+      "seed_class": "boundary_open_window_framed_original",
+      "record": "Hill et al., Prolonged treadmill running in normobaric hypoxia causes gastrointestinal barrier permeability and elevates circulating levels of pro- and anti-inflammatory cytokines, Appl Physiol Nutr Metab 2020;45(4):376-386 (PMID 31505122; DOI 10.1139/apnm-2019-0378)",
+      "expected_route": [
+        "EI"
+      ],
+      "expected_scope": "Decided on design only; Core A candidate if criteria met; \"open window\" framing charted as author-interpretation tag, not an eligibility or weighting factor",
+      "known_record_in_prior_reconnaissance": false,
+      "identifier_verification": {
+        "pmid": "31505122",
+        "doi": "10.1139/apnm-2019-0378",
+        "method": "PubMed E-utilities esummary, 2026-10-04 (identifier/title/journal match only; not a retrieval test)"
+      },
+      "database_specific_detection_status": null,
+      "test_date": null,
+      "notes": "Tests that phrase use and author stance do not affect eligibility. Added in v3 (2026-10-04); detection unknown until tested; not a record of a completed database search.",
+      "legacy_seed_id": null,
+      "database_route_checks": [],
+      "check_entry_template": {
+        "database": null,
+        "platform": null,
+        "database_contains_record": null,
+        "EI_retrieved": null,
+        "EO_retrieved": null,
+        "exact_test_queries": null,
+        "manual_presence_lookup_method": null,
+        "date_time_timezone": null,
+        "saved_evidence": null,
+        "miss_investigation_or_action": null,
+        "human_fulltext_scope_decision": null
+      }
+    },
+    {
+      "seed_id": "CIT-R1",
+      "seed_class": "citation_chasing_source_review",
+      "record": "Peake JM, Neubauer O, Walsh NP, Simpson RJ. Recovery of the immune system after exercise. J Appl Physiol 2017;122(5):1077-1087 (PMID 27909225; DOI 10.1152/japplphysiol.00622.2016)",
+      "expected_route": [
+        "EI"
+      ],
+      "expected_scope": "Citation-chasing source only (review; FT01 / EXCLUDE_TA with reason FT01); pre-submission forward-citation target",
+      "known_record_in_prior_reconnaissance": true,
+      "identifier_verification": {
+        "pmid": "27909225",
+        "doi": "10.1152/japplphysiol.00622.2016",
+        "method": "PubMed E-utilities esummary, 2026-10-04 (identifier/title/journal match only; not a retrieval test)"
+      },
+      "database_specific_detection_status": null,
+      "test_date": null,
+      "notes": "Rationale anchor. Added in v3 (2026-10-04); detection unknown until tested; not a record of a completed database search.",
+      "legacy_seed_id": null,
+      "database_route_checks": [],
+      "check_entry_template": {
+        "database": null,
+        "platform": null,
+        "database_contains_record": null,
+        "EI_retrieved": null,
+        "EO_retrieved": null,
+        "exact_test_queries": null,
+        "manual_presence_lookup_method": null,
+        "date_time_timezone": null,
+        "saved_evidence": null,
+        "miss_investigation_or_action": null,
+        "human_fulltext_scope_decision": null
+      }
+    },
+    {
+      "seed_id": "CIT-R2",
+      "seed_class": "citation_chasing_source_review",
+      "record": "Campbell JP, Turner JE. Debunking the Myth of Exercise-Induced Immune Suppression. Front Immunol 2018;9:648 (PMID 29713319; DOI 10.3389/fimmu.2018.00648)",
+      "expected_route": [
+        "EI"
+      ],
+      "expected_scope": "Citation-chasing source only (review); pre-submission forward-citation target",
+      "known_record_in_prior_reconnaissance": true,
+      "identifier_verification": {
+        "pmid": "29713319",
+        "doi": "10.3389/fimmu.2018.00648",
+        "method": "PubMed E-utilities esummary, 2026-10-04 (identifier/title/journal match only; not a retrieval test)"
+      },
+      "database_specific_detection_status": null,
+      "test_date": null,
+      "notes": "Added in v3 (2026-10-04); detection unknown until tested; not a record of a completed database search.",
+      "legacy_seed_id": null,
+      "database_route_checks": [],
+      "check_entry_template": {
+        "database": null,
+        "platform": null,
+        "database_contains_record": null,
+        "EI_retrieved": null,
+        "EO_retrieved": null,
+        "exact_test_queries": null,
+        "manual_presence_lookup_method": null,
+        "date_time_timezone": null,
+        "saved_evidence": null,
+        "miss_investigation_or_action": null,
+        "human_fulltext_scope_decision": null
+      }
+    },
+    {
+      "seed_id": "CIT-R3",
+      "seed_class": "citation_chasing_source_review",
+      "record": "Simpson RJ, et al. Can exercise affect immune function to increase susceptibility to infection? Exerc Immunol Rev 2020;26:8-22 (PMID 32139352; no DOI in PubMed)",
+      "expected_route": [
+        "EI"
+      ],
+      "expected_scope": "Citation-chasing source only (review)",
+      "known_record_in_prior_reconnaissance": true,
+      "identifier_verification": {
+        "pmid": "32139352",
+        "doi": null,
+        "method": "PubMed E-utilities esummary, 2026-10-04 (identifier/title/journal match only; not a retrieval test)"
+      },
+      "database_specific_detection_status": null,
+      "test_date": null,
+      "notes": "No DOI in PubMed. Added in v3 (2026-10-04); detection unknown until tested; not a record of a completed database search.",
+      "legacy_seed_id": null,
+      "database_route_checks": [],
+      "check_entry_template": {
+        "database": null,
+        "platform": null,
+        "database_contains_record": null,
+        "EI_retrieved": null,
+        "EO_retrieved": null,
+        "exact_test_queries": null,
+        "manual_presence_lookup_method": null,
+        "date_time_timezone": null,
+        "saved_evidence": null,
+        "miss_investigation_or_action": null,
+        "human_fulltext_scope_decision": null
+      }
+    },
+    {
+      "seed_id": "CIT-R4",
+      "seed_class": "citation_chasing_source_review",
+      "record": "Shi X, et al. Exercise workload: a key determinant of immune health - a narrative review. Front Immunol 2025;16:1617261 (PMID 40777031; DOI 10.3389/fimmu.2025.1617261)",
+      "expected_route": [
+        "EI"
+      ],
+      "expected_scope": "Citation-chasing source only (review)",
+      "known_record_in_prior_reconnaissance": true,
+      "identifier_verification": {
+        "pmid": "40777031",
+        "doi": "10.3389/fimmu.2025.1617261",
+        "method": "PubMed E-utilities esummary, 2026-10-04 (identifier/title/journal match only; not a retrieval test)"
+      },
+      "database_specific_detection_status": null,
+      "test_date": null,
+      "notes": "Added in v3 (2026-10-04); detection unknown until tested; not a record of a completed database search.",
+      "legacy_seed_id": null,
+      "database_route_checks": [],
+      "check_entry_template": {
+        "database": null,
+        "platform": null,
+        "database_contains_record": null,
+        "EI_retrieved": null,
+        "EO_retrieved": null,
+        "exact_test_queries": null,
+        "manual_presence_lookup_method": null,
+        "date_time_timezone": null,
+        "saved_evidence": null,
+        "miss_investigation_or_action": null,
+        "human_fulltext_scope_decision": null
+      }
+    },
+    {
+      "seed_id": "CIT-R5",
+      "seed_class": "citation_chasing_source_review",
+      "record": "Xie E, He Y, Cao T. Exercise and tissue-resident memory T cells: from circulating numbers to spatial immune remodeling. Front Immunol 2026;17:1822561 (PMID 42183211; DOI 10.3389/fimmu.2026.1822561)",
+      "expected_route": [
+        "EI"
+      ],
+      "expected_scope": "Citation-chasing source only (review)",
+      "known_record_in_prior_reconnaissance": true,
+      "identifier_verification": {
+        "pmid": "42183211",
+        "doi": "10.3389/fimmu.2026.1822561",
+        "method": "PubMed E-utilities esummary, 2026-10-04 (identifier/title/journal match only; not a retrieval test)"
+      },
+      "database_specific_detection_status": null,
+      "test_date": null,
+      "notes": "Added in v3 (2026-10-04); detection unknown until tested; not a record of a completed database search.",
+      "legacy_seed_id": null,
       "database_route_checks": [],
       "check_entry_template": {
         "database": null,
@@ -848,11 +1734,11 @@
     "status": "NOT_STARTED"
   },
   "notes": [
-    "All hit, export, and test-detection fields are null because no formal five-database search, seed test, citation chasing, or platform pilot was run in the search-design task.",
-    "The v2 contract states databases/full text are available and a second human reviewer is confirmed; it does not mean an execution or PRESS reviewer is already assigned.",
-    "No language or date restrictions are planned. Review, animal, disease, protocol, and preprint eligibility are handled by the prespecified screening/parallel-register rules, not by an unvalidated filter.",
-    "Preprint, citation-chain and OSF records are separate from core five-database counts; all query/result fields remain null because none was executed.",
-    "Protocol date remains 2026-10-02; this search-strategy/log draft was updated 2026-10-03. Parsed queries, run-query/export checksums, route-level seed detection, final dates and hit counts remain null until genuine execution."
+    "All hit, export, and test-detection fields are null because no formal five-database search, seed test, citation chasing, registry-overlap check or platform pilot has been run.",
+    "The v3 design contract (01_protocol/v3_design_contract.txt; v2 carry-overs unchanged) states databases/full text are available and a second human reviewer is confirmed; it does not mean an execution or PRESS reviewer is already assigned.",
+    "No language, date, age, human or exercise-intensity restrictions are planned. Review, animal, youth, disease, protocol and preprint eligibility, and position relative to the 0-72 h organising window, are handled at screening or in the parallel register, not by a filter.",
+    "Preprint, citation-chain and registry-overlap records are kept separate from core five-database counts. All query/result fields remain null because none was executed. The 2026-10-04 collision re-check is prior reconnaissance and populates none of these fields.",
+    "Protocol v3.0 (draft for team freeze) dated 2026-10-04; strategy v0.4-draft. Parsed queries, run-query/export checksums, route-level seed detection (including the v3 seeds POS-C*, BND-*, CIT-*), final dates and hit counts remain null until genuine execution."
   ],
   "supplemental_stopping_rules": {
     "preprints": {
@@ -869,13 +1755,21 @@
       "if_additions_in_final_round": "mark saturation NOT REACHED and document queue; do not claim closure",
       "submission_update": "within 30 days before submission; repeat if delayed beyond 30 days"
     },
-    "osf_context_check": {
+    "registry_overlap_check": {
+      "registries": [
+        "OSF",
+        "PROSPERO",
+        "INPLASY",
+        "Research Registry",
+        "Zenodo"
+      ],
       "eligibility_effect": false,
       "first_or_novel_claim_allowed": false,
+      "prior_reconnaissance_counts_as_check": false,
       "stop": "inspect visible matches or log cap/coverage limitation"
     }
   },
-  "draft_updated": "2026-10-03",
+  "draft_updated": "2026-10-04",
   "selected_embase_platform": null,
   "embase_platform_rule": "Select Embase.com OR Ovid as one of five databases; alternative interface is a translation option, not a sixth source.",
   "execution_gate": {

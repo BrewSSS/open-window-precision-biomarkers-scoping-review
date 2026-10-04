@@ -1,7 +1,9 @@
 {
   "taxonomy_status": "predefined_fixed_hierarchy_no_formal_exclusion_results",
-  "protocol_version": "2.0",
-  "protocol_date": "2026-10-02",
+  "protocol_version": "3.0",
+  "protocol_date": "2026-10-04",
+  "protocol_version_label": "3.0 (draft for team freeze) - 4 October 2026",
+  "design_contract": "01_protocol/v3_design_contract.txt",
   "purpose": "Assign exactly one primary scientific full-text exclusion reason to a retrieved report that is demonstrably ineligible for the peer-reviewed core A/B map. Preserve other failed dimensions in reviewer notes.",
   "primary_reason_rule": {
     "apply_in_order": true,
@@ -39,9 +41,11 @@
     },
     {
       "code": "FT03_POPULATION_NOT_ELIGIBLE",
-      "label": "Population outside target or eligible healthy stratum not separable",
-      "definition": "Participants have active infection or known clinical/metabolic disease, are a disease-treatment/clinical cohort outside the generally healthy target, or a mixed cohort's eligible generally healthy stratum and results cannot be separated. Metabolic-health ambiguity alone is not sufficient; adjudicate explicitly using reported diagnoses and stratum separability.",
+      "label": "Population outside target (under 18 y, clinical/infected) or eligible adult healthy stratum not separable",
+      "definition": "Participants are children or adolescents (< 18 y); or a mixed-age cohort's adult (>= 18 y) stratum and its results cannot be separated; or participants have active infection or known clinical/metabolic disease, or are a disease-treatment/clinical cohort outside the generally healthy target; or a mixed cohort's eligible generally healthy stratum and results cannot be separated. Older adults are eligible and are flagged as a subgroup, not excluded. Metabolic-health ambiguity alone is not sufficient; adjudicate explicitly using reported diagnoses and stratum separability. Unreported age range remains awaiting classification, not FT03.",
       "examples": [
+        "Adolescent-only cohort (for example 13-17 y)",
+        "Mixed adolescent/adult cohort reporting pooled results only",
         "Exercise intervention in a disease-treatment cohort",
         "Active infection cohort",
         "Mixed healthy and clinical sample with no separable eligible results"
@@ -50,7 +54,7 @@
     {
       "code": "FT04_NO_QUALIFYING_EXERCISE_EXPOSURE",
       "label": "No identifiable acute bout or qualifying repeated-bout monitoring",
-      "definition": "Neither an identifiable acute bout/competition for Core A nor Support B's same immune-related marker measured after at least two identified bouts in the same participants with known or reliably recoverable sample-to-bout relations is present. Establish the exposure failure from the source; unknown timing remains awaiting classification. Evaluate post-cessation sampling and baseline/comparator separately under FT05 and FT06.",
+      "definition": "Neither an identifiable acute bout/competition for Core A nor Support B's same immune-related marker measured after at least two identified bouts in the same participants with known or reliably recoverable sample-to-bout relations is present. Any identifiable bout qualifies regardless of intensity, duration or mode: these are recorded at extraction and are never eligibility thresholds, so a low-intensity or short bout is not FT04. Support B is retained as the cross-bout open-window monitoring layer. Establish the exposure failure from the source; unknown timing remains awaiting classification. Evaluate post-cessation sampling and baseline/comparator separately under FT05 and FT06.",
       "examples": [
         "Habitual exercise versus sedentary cross-sectional comparison only",
         "General seasonal or weekly sampling with unknown relation to exercise bouts",
@@ -131,11 +135,16 @@
     "No pathogen-confirmed infection endpoint",
     "No clinical prediction or external validation",
     "Immediate post-cessation sample collected before 30 minutes",
-    "Sampling later than 72 hours when the acute exercise relation remains identifiable",
+    "Sampling later than 72 hours, including studies whose only post-cessation samples are later than 72 hours, when the relation to the identifiable bout remains identifiable (samples are tagged outside-window recovery)",
     "Null, nonsignificant, or unexpected-direction result",
     "Non-English language before translation/checking",
     "Inaccessible full text before institutional access attempts are documented",
-    "Small sample size alone, including otherwise eligible generally healthy case observations/series"
+    "Small sample size alone, including otherwise eligible generally healthy case observations/series",
+    "Low exercise intensity, short duration or any particular exercise mode (recorded; no exposure threshold)",
+    "No use of the term 'open window' or any author stance on it (endorsing, rejecting or omitting the hypothesis)",
+    "Older-adult cohort (included and flagged as a subgroup)"
   ],
-  "formal_exclusion_results": null
+  "formal_exclusion_results": null,
+  "window_and_exposure_note": "v3 contract 2.1-2.2: there is no exposure-intensity threshold, and 0-72 h after cessation is an organising window, not an inclusion cap. Samples later than 72 h are extracted and tagged outside-window recovery. No new exclusion code or administrative status is created, the FT01-FT08 hierarchy and the administrative statuses are unchanged, and FT05 applies only to during-only sampling.",
+  "title_abstract_reason_rule": "At title/abstract, EXCLUDE_TA records one primary_reason drawn from the same FT01-FT08 codes, naming the first clearly failed dimension in hierarchy order. There are no separate TA reason codes. Criteria that can only be judged in full text are not TA exclusion grounds."
 }
