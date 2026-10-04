@@ -37,6 +37,21 @@
       "implementation_status": "implemented in v3.0 draft pending team freeze",
       "implementation_date": "2026-10-04",
       "implementation_record": "01_protocol/verification/v3_change_map_2026-10-04.md (sections B1, B3); CHANGELOG.md 3.0"
+    },
+    {
+      "amendment_id": "PRE-003",
+      "date": "2026-10-04",
+      "old_rule": "Design contract §3 and ruling 8.3a: search by construct with the v2 two-route strategy E AND (I OR O); the post-exercise/recovery T-block is diagnostic only; the 0-72 h window and all eligibility rules are applied at screening",
+      "new_rule": "The post-exercise/acute-bout T-block is a required concept: E AND (I OR O) AND T. T does not encode the 0-72 h organising window, which with all eligibility rules is still applied at screening; open-window-type terms remain OR supplements or citation-chasing routes only. PRESS accepted with conditions: no infection-outcome terms in the strategy (eligibility via the immune-link rule; infection outcomes charted when present); train* retained until the pilot sample test; protocol E no longer claims the strategy covers infection terms",
+      "reason": "PubMed validation showed the construct-at-screening strategy is not screenable by two reviewers (255,019 records, about 8,500 person-hours of title/abstract screening before the other four databases), whereas requiring T reduced volume to about 15,900 records with 10/10 positive PubMed seeds retrieved. Trade-off disclosed as recall versus feasibility. Mitigations: positive seed set expanded to >=30 (including >=5 numeric-only timing reports) and re-tested in the pilot; backward/forward citation chasing of included studies and the five citation-chasing reviews (Peake 2017, Campbell & Turner 2018, Simpson 2020, Shi 2025, Xie 2026); T-free sensitivity run on a random sample during the pilot",
+      "work_stage": "before_archive_release_pilots_and_formal_search",
+      "information_already_known": "PubMed parser-validation counts of 2026-10-04 (03_search/platform_validation_2026-10-04.md, Addendum 2): v0.6 union E AND (I OR O) 255,019 records (8,500.6 person-hours, two reviewers at 1 min/record; five-database raw x1.5-2.5 assumption 12,751-21,252); union AND T 15,883 records with 9/10 positive seeds; with post hoc proximity fix (\"after marathon\"[tiab:~1]) 15,930 records with 10/10 positive seeds (19/24 seeds overall; lost seeds were 2 negative-eligibility seeds and 3 citation-chasing reviews). Evidence base = 10 positive PubMed seeds; numeric-only timing untested; PubMed only; not a recall estimate. No formal search, screening or extraction performed",
+      "decision_by": "A",
+      "reassessment_needed": "Pilot recall test on an expanded positive seed set of >=30 reports (including >=5 numeric-only timing reports) across platforms, plus a T-free sensitivity run on a random sample during the pilot; if either shows unacceptable loss, T is revised by a further amendment before formal searching. No records exist yet to re-screen",
+      "affected_records": "none (no formal search, screening or extraction performed); affects 03_search strategy (v0.7 by D), design contract §3/§8.3a (superseded by §9), protocol EN/CN section E and L",
+      "release_update": "included in v3.0 release",
+      "changes_document": "v3_design_contract.txt §9",
+      "implementation_date": "2026-10-04"
     }
   ],
   "future_amendment_fields": [

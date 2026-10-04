@@ -501,31 +501,61 @@ confirmation; execution of one platform is not claimed as two databases.
 The SPORTDiscus draft uses EBSCOhost. Exact collections, platforms,
 interfaces and coverage will be recorded.
 
-Two complementary routes are planned: \textbf{E AND I}, where E
-represents exercise and I immune concepts; and \textbf{E AND O}, where O
-represents omics. Their union is deduplicated. Controlled vocabulary and
-free-text fields are adapted to each platform. The immune route covers
-immune cells, mediators, function and relevant mucosal/infection terms.
-The omics route covers transcriptomics, RNA/non-coding RNA, proteomics,
-metabolomics, lipidomics, epigenetics and multi-omics. The exercise
-block includes relevant training, competition and sport terminology. The
-search is by construct, not by label: ``precision,'' ``biomarker,''
-``open window'' and ``recovery'' are not mandatory search concepts, and
-the organizing window and all eligibility rules are applied at screening
-rather than in the query. The phrase ``open window'' is unsuitable as a
-filter---a PubMed title/abstract query combining it with exercise and
-immune terms returned 18 records for 2018--2026 at the 4 October 2026
-re-check, and original studies rarely use it---so open-window-type terms
-may be added only as OR supplements or used for citation chasing, never
-as AND terms. Post-exercise and recovery terms remain a diagnostic block
-rather than a required concept.
+The planned search is \textbf{E AND (I OR O) AND T}, where E represents
+exercise, I immune concepts, O omics and T post-exercise or acute-bout
+wording; the immune and omics routes are run within this structure and
+deduplicated. Controlled vocabulary and free-text fields are adapted to
+each platform. The immune route covers immune cells, mediators, function
+and mucosal immune terms; infection outcomes are not search concepts,
+because an infection outcome alone does not meet the immune-link rule
+(C), and infection outcomes are charted whenever an eligible study
+reports them. The omics route covers transcriptomics, RNA/non-coding
+RNA, proteomics, metabolomics, lipidomics, epigenetics and multi-omics.
+The exercise block includes relevant training, competition and sport
+terminology; the broad \texttt{train*} truncation is retained until its
+marginal yield has been tested on a pilot sample. The search is by
+construct, not by label: ``precision,'' ``biomarker,'' ``open window''
+and ``recovery'' are not mandatory search concepts, and the organizing
+window and all eligibility rules are applied at screening rather than in
+the query. The phrase ``open window'' is unsuitable as a filter---a
+PubMed title/abstract query combining it with exercise and immune terms
+returned 18 records for 2018--2026 at the 4 October 2026 re-check, and
+original studies rarely use it---so open-window-type terms may be added
+only as OR supplements or used for citation chasing, never as AND terms.
+
+Amendment PRE-003 (4 October 2026) makes T a required concept instead of
+a diagnostic block; T expresses that measurements follow an identifiable
+bout and does not encode the 0--72 hour window, which is still applied
+at screening. In PubMed parser validation on 4 October 2026, the
+construct-at-screening query E AND (I OR O) returned 255,019 records,
+about 8,500 person-hours of two-reviewer title/abstract screening before
+records from the other four databases (assumed to add 1.5--2.5 times the
+PubMed volume before deduplication), whereas requiring T returned about
+15,900 records in the decision test and 20,090 records with the
+finalised v0.7 T block, retrieving all 10 positive PubMed seeds in both
+runs. That evidence is limited: only 10 positive seeds were tested, the
+proximity form that recovered one missed seed was designed after the
+miss, and T is expected to miss reports that give timing only
+numerically (for example ``at 1 h and 24 h''), so the trade-off is
+disclosed as recall given up for feasibility. Mitigations are a positive
+seed set expanded to at least 30 reports, including at least five that
+give timing only numerically, re-tested in the pilot; a T-free
+sensitivity run during the pilot, in which a random sample of records
+retrieved only without T is screened; and backward and forward citation
+chasing of all included reports and of the five open-window reviews
+named as citation-chasing sources (Peake et al.~{[}15{]}, Campbell and
+Turner {[}1{]}, Simpson et al.~{[}16{]}, Xie et al.~{[}17{]} and Shi et
+al.~{[}18{]}).
 
 Full working strategies and a search-log template are in
-\texttt{03\_search}. They are \textbf{drafts, not platform-validated
-searches}. A search specialist or experienced independent search
-reviewer will use PRESS {[}11{]}; resulting revisions and resolution of
-comments will be retained. Known eligible and boundary examples will
-test strategy behavior; the v3 seed list includes open-window-centred
+\texttt{03\_search}. The PubMed strings were parser-validated on 4
+October 2026, and the independent PRESS review {[}11{]} was accepted
+with conditions on the same date (T required, no infection-outcome
+terms, \texttt{train*} retained pending the pilot test); the
+translations for the four licensed platforms remain \textbf{drafts, not
+platform-validated searches}. PRESS revisions and the resolution of
+comments are retained. Known eligible and boundary examples will test
+strategy behavior; the v3 seed list includes open-window-centred
 original studies of conventional indices (for example salivary IgA,
 natural-killer-cell and lymphocyte redistribution responses after
 prolonged exercise) and boundary cases (immediate-only sampling,
@@ -954,12 +984,18 @@ freeze and before the pilots; specifies Excel workbooks generated from
 the JSON templates with scripted merging and agreement; adopts CC BY 4.0
 for documents and MIT for scripts; and adds the Frontiers in Immunology
 submission requirements (PRISMA-ScR checklist and flow diagram, AI-use
-disclosure in Methods and Acknowledgments). The v3.0 date becomes the
-actual team freeze date at release.
+disclosure in Methods and Acknowledgments). Amendment PRE-003 (4 October
+2026, decision by A; included in the v3.0 release) makes the
+post-exercise/acute-bout block T a required search concept (E AND (I OR
+O) AND T) on PubMed validation evidence, with an expanded seed set, a
+T-free pilot sensitivity run and citation chasing as mitigations, and
+records the PRESS conditions (no infection-outcome terms;
+\texttt{train*} retained pending the pilot test). The v3.0 date becomes
+the actual team freeze date at release.
 
 The scope and operational design are ready for team freeze. Still
-pending are named administrative declarations, platform-specific
-verification/PRESS review, the Zenodo release, human pilots, archived
+pending are named administrative declarations, verification of the four
+licensed database platforms, the Zenodo release, human pilots, archived
 appraisal forms and local software configuration. Subsequent formal
 searches, screening, extraction and synthesis are distinct execution
 stages and have not been performed.

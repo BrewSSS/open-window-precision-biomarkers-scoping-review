@@ -1,4 +1,4 @@
-# Platform validation record, 2026-10-04 (strategy v0.6-draft)
+# Platform validation record, 2026-10-04 (strategy v0.6-draft; Addendum 3: v0.7-draft)
 
 Role: D (search lead). The work was executed by an AI agent on D's behalf; no eligibility decision was made. Strategy: [search_strategy_draft.txt](search_strategy_draft.txt) v0.6-draft (the PubMed blocks are byte-identical to v0.4). Design rules: [v3 design contract](../01_protocol/v3_design_contract.txt) §3.
 
@@ -393,3 +393,148 @@ Fixing the PRESS must-fix items gave the search a broader vocabulary and a much 
 
 Adding Post-Exercise Recovery [Mesh] to T (T2) adds 16 records to C and to D and changes no seed result. All counts are PubMed parser-validation counts from 2026-10-04 and are not PRISMA identification counts.
 
+## Addendum 3: v0.7 required T-block — confirmation (2026-10-04, strategy v0.7-draft)
+
+Role: D (search lead). An AI agent did the work on D's behalf and made no eligibility decision. After reading Addendum 2, A decided (2026-10-04) that the post-exercise/acute-bout block T becomes a **required** concept: the main query is E AND (I OR O) AND T on all platforms. The decision is recorded as contract amendment **PRE-003** by the protocol owner (outside `03_search/`). A also accepted PRESS with changes. Strategy [v0.7-draft](search_strategy_draft.txt) puts T into all six platform drafts and both preprint strings (§1, §8 and §11). Full strings, SHA-256 hashes, per-seed and per-term results are in [search_log_template.json](search_log_template.json) at `parser_validation_runs.pubmed_2026_10_04_v07_addendum3`.
+
+> **These are still validation runs, not formal searches.** They produce no PRISMA counts, no exports and no search date. Only PubMed was run. The WoS, Scopus, Embase.com/Ovid and SPORTDiscus T lines need D's login checks (strategy §8).
+
+### A3.1 Method
+
+- Interface and etiquette as in §1 and A2.1: E-utilities `esearch.fcgi` (`db=pubmed`, `retmode=json`, HTTP POST) and `esummary.fcgi` for noise-sample titles. User-Agent `scoping-review-search-validation/1.0`, `tool=scoping-review-search-validation`, no API key, no e-mail address. Requests were at least 0.4 s apart (no more than 3 per second). Run window 13:52:28Z-14:06:49Z UTC.
+- Strings: every block was read from strategy v0.7 §3 with line breaks collapsed to single spaces. E, I and O and their MeSH lines are byte-identical to v0.6 (SHA-256 prefixes E `0774b0cce31b`, I `fb04855ad883`, O `b978389e2b05`, E_MESH `9a18ec26ee72`).
+- Term parser check (13:52-13:54Z): each candidate T term was sent alone and the warnings were read. These were reported as **quoted phrase not found** and would be silently dropped: `"after racing"`, `"after strenuous exercise"`, `"after prolonged exercise"`, `"after intense exercise"`, `"after a marathon"`, `"after the marathon"`, `"after the race"`, `"following a bout"` and `"following the bout"` (0 hits each). v0.7 writes them as proximity searches (`[tiab:~0]`/`[tiab:~1]`). **Base-list defect found:** `"during recovery"[tiab]` returns 5 records (stop word), against 15,374 for `"during recovery"[tiab:~0]`. v0.7 uses the proximity form, which adds 167 records to the union and no seed. `"baseline and post"[tiab]` returns 2 records, so v0.7 uses `[tiab:~1]`.
+- Seeds: `(<query>) AND (<24 PMIDs>[uid] OR ...)`, retmax 100, over the 24 seeds that have a PubMed record (POS-S2 has none).
+- Marginal yield: within the T-free v0.6 union V1 (255,019), each T group (base list = the Addendum-2 T with the `"during recovery"` repair; MeSH; phrase additions; numeric-timing additions) was run cumulatively, and as "group AND NOT all other T terms" for unique yield.
+- Noise check: for doubtful terms, 20 PMIDs were drawn (`random.seed(20261004)`) from the records the term alone adds within V1 (up to the 5,000 most recent). One AI reader looked at the titles for D. This is a rough precision indicator, **not screening**.
+- Workload: as in A2.1 (1 min per record per reviewer, two reviewers; five-database raw volume assumed to be 1.5-2.5 times PubMed).
+
+### A3.2 Blocks and routes (PubMed, v0.7)
+
+| Block / route | Run (UTC) | Validation hits | String SHA-256 (first 12) | Errors / warnings |
+|---|---|---|---|---|
+| E free text | 14:02:42Z | 2,390,411 | `0774b0cce31b` | none |
+| E MeSH | 14:02:44Z | 495,581 | `9a18ec26ee72` | none |
+| E_ALL = E OR E_MESH | 14:02:45Z | 2,507,085 | `5a3c06658314` | none |
+| I free text | 14:02:46Z | 5,819,634 | `fb04855ad883` | none |
+| I MeSH | 14:02:48Z | 2,649,932 | `44271ec61fe9` | none |
+| I_ALL | 14:02:49Z | 6,433,864 | `aeff35d42aa6` | none |
+| O free text | 14:02:51Z | 1,524,293 | `b978389e2b05` | none |
+| O MeSH | 14:02:52Z | 811,189 | `5aa95f9d3b58` | none |
+| O_ALL | 14:02:53Z | 1,769,585 | `dbbc15de5010` | none |
+| **T free text (new)** | 14:02:55Z | 723,132 | `f1472454a6a8` | none |
+| **T MeSH: Post-Exercise Recovery (new)** | 14:02:56Z | 303 | `8473898b016a` | none |
+| **T_ALL = T OR T_MESH** | 14:02:57Z | 723,186 | `57dd883f618d` | none |
+| **R1: E_ALL AND I_ALL AND T_ALL** | 14:02:58Z | 17,445 | `9cb9f8d16116` | none |
+| **R2: E_ALL AND O_ALL AND T_ALL** | 14:03:01Z | 4,004 | `f0d533500132` | none |
+| **Union: E_ALL AND (I_ALL OR O_ALL) AND T_ALL** | 14:03:03Z | 20,090 | `261e368940b5` | none |
+| Union, free text only (no MeSH lines), for reference | 14:03:06Z | 18,853 | `08957429914e` | none |
+| T-free diagnostic union V1 = E_ALL AND (I_ALL OR O_ALL) (pilot sensitivity check only) | 14:03:08Z | 255,019 | `c39acab2324d` | none |
+| V1 NOT T_ALL (the pool the pilot samples) | 14:03:10Z | 234,929 | `7186206611cf` | none |
+
+Union: 20,090 records; PY ≥ 2000 17,505; PY ≥ 2010 14,070; humans[MeSH] 12,163 (information only; no such filter is applied). Screening workload: 669.7 person-hours for PubMed and 1,004-1,674 across five databases raw (assumption). For comparison: v0.6 union without T 255,019 (8,500.6 h); Addendum-2 V3 15,883 (529.4 h).
+
+### A3.3 Seed detection (24 seeds with a PubMed record)
+
+**Union: 19/24 (positive 10/10, boundary 7/7).** Missed: NEG-E1, NEG-E2, CIT-R3, CIT-R4 and CIT-R5.
+
+| Seed | T block alone matches | T groups matching | EI + T (R1) | EO + T (R2) | Union |
+|---|---|---|---|---|---|
+| POS-A1 | yes | base | yes | yes | yes |
+| POS-A2 | yes | base | yes | yes | yes |
+| POS-A3 | yes | base | yes | no | yes |
+| POS-S1 | yes | base | yes | yes | yes |
+| POS-S3 | yes | base | yes | yes | yes |
+| POS-C1 | yes | phrase | yes | no | yes |
+| POS-C2 | yes | base, phrase | yes | no | yes |
+| POS-C3 | yes | base, phrase | yes | no | yes |
+| POS-C4 | yes | base, phrase | yes | no | yes |
+| POS-C5 | yes | base, phrase, numeric | yes | no | yes |
+| BND-Y1 | yes | base | yes | yes | yes |
+| BND-Y2 | yes | base, numeric | yes | no | yes |
+| BND-W1 | yes | base, phrase | yes | yes | yes |
+| BND-I1 | yes | base, phrase | yes | no | yes |
+| BND-L1 | yes | base, numeric | yes | no | yes |
+| BND-B1 | yes | base | yes | no | yes |
+| BND-OW1 | yes | base, phrase | yes | no | yes |
+| NEG-E1 | **no** | — | **no** | no | **no** |
+| NEG-E2 | **no** | — | **no** | no | **no** |
+| CIT-R1 | yes | base, phrase | yes | no | yes |
+| CIT-R2 | yes | base, numeric | yes | no | yes |
+| CIT-R3 | **no** | — | **no** | no | **no** |
+| CIT-R4 | **no** | — | **no** | no | **no** |
+| CIT-R5 | **no** | — | **no** | no | **no** |
+
+R2 (EO + T) retrieves 6 seeds: POS-A1, POS-A2, POS-S1, POS-S3, BND-Y1 and BND-W1. Without T, EO also retrieved NEG-E1 and NEG-E2; T removes both.
+
+**Miss diagnosis.** These are the same five records that Addendum 2 §A2.4 lost under V3, and the diagnosis is unchanged. None of them has any title/abstract T wording or the Post-Exercise Recovery heading. NEG-E1 is a resting cross-sectional study (expected exclusion) and NEG-E2 an animal training study (expected FT02 exclusion), so losing them removes screening-rule tests, not eligible records. CIT-R3, CIT-R4 and CIT-R5 are reviews that enter through citation chasing whatever the query. Adding the excluded terms (A3.5) rescues none of them. **POS-C1** is retrieved only through the phrase additions. Three of them match it independently: `"after marathon"[tiab:~1]`, `"after race"[tiab:~1]` and `"after strenuous exercise"[tiab:~0]`. These repairs were designed after its Addendum-2 miss, so **10/10 is not an independent recall test**. No seed reports its timing only numerically, so that blind spot is still untested.
+
+### A3.4 Marginal yield of each T group (inside V1 = 255,019)
+
+| Step | PubMed hits | Added by this step | Seeds (of 24) | POS (of 10) | Seeds gained |
+|---|---|---|---|---|---|
+| V1 AND (base list + Post-Exercise Recovery [Mesh]) | 16,066 | — | 18 | 9 | — (POS-C1 missed) |
+| + phrase additions | 18,287 | +2,221 | 19 | 10 | POS-C1 |
+| + numeric-timing additions (= v0.7 union) | 20,090 | +1,803 | 19 | 10 | none |
+
+| Group | Records in V1 matching the group | Records no other T term retrieves (unique) | Seeds only this group retrieves |
+|---|---|---|---|
+| Base list (23 terms, incl. the `"during recovery"[tiab:~0]` repair) | 16,050 | 12,757 | POS-A1, POS-A2, POS-A3, POS-S1, POS-S3, BND-Y1, BND-B1 |
+| Post-Exercise Recovery [Mesh] | 91 | 9 | none |
+| Phrase additions (16 terms) | 4,192 | 2,130 | POS-C1 |
+| Numeric-timing additions (3 terms) | 3,572 | 1,803 | none |
+
+Per term (records in V1 / records no other v0.7 T term retrieves). Phrase additions:
+
+| Term | In V1 | Unique |
+|---|---|---|
+| `"after marathon"[tiab:~1]` | 177 | 23 |
+| `"after race"[tiab:~1]` | 362 | 109 |
+| `"after racing"[tiab:~0]` | 38 | 11 |
+| `"after strenuous exercise"[tiab:~0]` | 93 | 14 |
+| `"after prolonged exercise"[tiab:~0]` | 51 | 9 |
+| `"after intense exercise"[tiab:~0]` | 83 | 15 |
+| `"following bout"[tiab:~1]` | 54 | 0 |
+| `"post-bout"[tiab]` | 2 | 0 |
+| `"exercise recovery"[tiab]` | 272 | 32 |
+| `"recovery from exercise"[tiab]` | 95 | 11 |
+| `"time course"[tiab]` | 946 | 0 |
+| `"time-course"[tiab]` | 946 | 0 |
+| `"pre- and post-exercise"[tiab]` | 170 | 0 |
+| `"pre-exercise"[tiab]` | 631 | 41 |
+| `"pre and post"[tiab]` | 1457 | 987 |
+| `"baseline and post"[tiab:~1]` | 245 | 162 |
+| `"time course"` + `"time-course"` together (PubMed indexes them identically) | 946 | 677 |
+
+Numeric-timing additions:
+
+| Term | In V1 | Unique |
+|---|---|---|
+| `"min post"[tiab]` | 285 | 65 |
+| `"h after"[tiab]` | 3048 | 1613 |
+| `"hours post"[tiab]` | 260 | 122 |
+
+The base-list per-term numbers are in the log. The largest unique contributors are `"exercise-induced"` (3,441), `"exercise test*"` (1,125), `"immediately after"` (832), `"after exercise"` (830) and `"hours after"` (764).
+
+### A3.5 Terms tested and not included
+
+| Term | Records it would add to the v0.7 union | Seeds added | Unique-record title sample (20) | Reason |
+|---|---|---|---|---|
+| `kinetics[tiab]` | 2,197 | none | about 1/20 exercise-related (O2 kinetics), 0/20 post-exercise immune | No seed; mostly enzyme, drug and binding kinetics |
+| `"days after"[tiab]` | 1,908 | none | about 1/20 | Generic duration |
+| `"24 h"[tiab]` | 2,358 | none | about 1/20 | Generic duration (24-h urine, culture times) |
+| `"48 h"[tiab]` | 898 | none | 0/20 | Generic duration |
+| `"72 h"[tiab]` | 537 | none | about 1/20 | Generic duration |
+| All five together | 7,411 | none | | |
+
+Kept, but with low sampled precision, and flagged for the pilot: `"time course"`/`"time-course"` (0/20), `"pre and post"` (about 2/20, mostly pre/post training-programme trials), `"baseline and post"` (about 1/20), `"h after"` (about 2/20), `"hours post"` (0/20) and `"min post"` (about 4/20). `"pre-exercise"` sampled about 8/20 acute-bout records. The numeric subset (`"min post"`, `"h after"`, `"hours post"`) was kept because it completes the "<unit> after/post" construction that the base list already uses (`"hours after"`, `"h post"`), not because it recovers a seed.
+
+### A3.6 Plain-language summary for A
+
+With T required, the PubMed search finds 20,090 records instead of 255,019. That is about 670 person-hours of title/abstract screening for two reviewers in PubMed, or roughly 1,000-1,700 hours across the five databases before deduplication. It still finds all 10 positive and all 7 boundary test seeds. It misses five seeds that we either expect to exclude or will reach by citation chasing. The base T list does most of the work (16,066 records). The phrase additions add 2,221 records and are what recover the Cantó 2018 marathon study. The three numeric-timing additions add 1,803 records and recover no seed. Bare durations ("24 h", "48 h", "72 h", "days after") and "kinetics" would add another 7,411 mostly irrelevant records with no seed, so they were left out. Two cautions remain. First, the marathon fix was designed after we saw the miss, so 10/10 is optimistic. Second, no test seed reports its timing only in numbers, which is exactly the kind of study T can miss. The pilot therefore has to add at least 30 positive seeds, at least 5 of them numeric-only, and screen a random sample of the records that T removes. A parser problem was also found and fixed in the base list: PubMed was silently ignoring most of `"during recovery"`.
+
+### A3.7 Not verified
+
+- WoS, Scopus, Embase.com/Ovid and SPORTDiscus T lines: proximity semantics (`NEAR/2`, `W/2`, `NEXT/2`, `adj2`, `W2`), stop words inside phrases, hyphens, and any thesaurus T heading. These are pending D's login (strategy §8, login checks a-d).
+- Preprint F1/F2 with T: not run.
+- Recall for studies that report timing only numerically: untested.

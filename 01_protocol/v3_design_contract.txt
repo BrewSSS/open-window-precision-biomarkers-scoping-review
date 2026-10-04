@@ -99,3 +99,33 @@ Evidence basis: 02_preliminary/collision_recheck_2026-10-04.md (no direct collis
           transparency") so existing validator checks remain meaningful until the validator is revised.
        k. New references are appended (15-20) rather than renumbering 1-14; all new citations must be verified
           against PubMed/Crossref before use and are flagged for human verification in ai_use_log.json.
+
+9. AMENDMENT PRE-003 (2026-10-04) — T-BLOCK REQUIRED; PRESS CONDITIONS (decision: A)
+   9.1 Supersedes §3 ("construct x routes with ... the 0-72 h window applied at screening", insofar as it implies no
+       timing concept in the query) and ruling 8.3a ("The post-exercise/recovery T-block stays diagnostic only").
+       New rule: the post-exercise/acute-bout T-block is a REQUIRED concept: E AND (I OR O) AND T. T expresses that
+       measurements follow an identifiable bout; it does not encode the 0-72 h organising window, which together with
+       all other eligibility rules is still applied at screening. "open window"-type terms remain OR supplements or
+       citation-chasing routes only, never AND terms (rest of 8.3a unchanged).
+   9.2 Evidence (PubMed parser validation 2026-10-04; 03_search/platform_validation_2026-10-04.md, Addendum 2):
+       v0.6 construct-at-screening union E AND (I OR O) = 255,019 records (two-reviewer title/abstract screening
+       ~8,500 person-hours at 1 min/record/reviewer, before the other four databases; assumed five-database raw
+       multiplier x1.5-2.5 before dedup). Requiring T with the proximity fix ("after marathon"[tiab:~1]) = 15,930
+       records (~15,900), 10/10 positive PubMed seeds retrieved. Limits: evidence base = 10 positive PubMed seeds;
+       the proximity fix was designed post hoc after the POS-C1 miss; known blind spot = reports that give timing
+       only numerically (e.g. "at 1 h and 24 h"), untested; PubMed only.
+   9.3 Trade-off disclosed in protocol E as recall given up for feasibility. Mitigations (all required):
+       a. Positive seed set expanded to >= 30 reports, including >= 5 numeric-only timing reports; re-tested on all
+          platforms in the pilot before formal searching.
+       b. Backward and forward citation chasing of all included reports and of the five citation-chasing reviews
+          (Peake 2017, Campbell & Turner 2018, Simpson 2020, Shi 2025, Xie 2026).
+       c. T-free sensitivity run during the pilot: a random sample of records retrieved by E AND (I OR O) but not by
+          T is screened; if it or the seed re-test shows unacceptable loss, T is revised as a further amendment
+          before formal searching.
+   9.4 PRESS accepted with conditions (A, 2026-10-04):
+       a. NO infection-outcome terms in the strategy (no URTI/"upper respiratory"/"respiratory infection*" etc.).
+          Eligibility runs through the immune-link rule; infection outcomes are charted when present.
+       b. train* retained until the pilot sample test of its marginal yield (PRESS 4.8).
+       c. Protocol E must no longer state that the strategy covers infection terms.
+   9.5 Recorded as PRE-003 in amendments.json; included in the v3.0 release (pre-archive, pre-pilot,
+       pre-formal-search). 03_search is revised to v0.7 by D under this amendment.

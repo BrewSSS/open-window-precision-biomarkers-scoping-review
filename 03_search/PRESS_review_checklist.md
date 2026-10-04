@@ -1,4 +1,4 @@
-# PRESS peer-review checklist — DRAFT prepared for A (not signed off)
+# PRESS peer-review checklist — signed off by A: accept with changes (2026-10-04, strategy v0.7-draft)
 
 | Field | Value |
 |---|---|
@@ -7,7 +7,7 @@
 | Seed list reviewed | `known_seed_test_list.md` (v3, 2026-10-04) |
 | PRESS reviewer | **A** (independent PRESS reviewer). An AI agent prepared this draft. A decides on every item; agent text is not reviewer approval. |
 | Date of draft | 2026-10-04 |
-| Status | **DRAFT prepared for A — not signed off** |
+| Status | **Signed off by A on 2026-10-04: accept with changes. The sign-off applies to `search_strategy_draft.txt` v0.7-draft** (see the sign-off block). The findings below were drafted on v0.4 |
 | Guideline | PRESS 2015 Guideline Statement (McGowan et al., J Clin Epidemiol 2016), six elements |
 
 **How this draft was made.** This was a desk review of the files listed above. **No database, preprint or registry search was run, and no hit counts exist.** The agent made these checks (2026-10-04):
@@ -436,27 +436,32 @@ Added by the search lead. An AI agent executed the changes on D's behalf. A's fi
 
 Volume and recall evidence for A's PRESS element 1/4 decision (P10): v0.6 union 255,019 PubMed records with 24/24 seeds. Options B–D (generic-term removal and T as a required concept) are set out with their numbers in Addendum 2, §A2.6.
 
+**v0.7 note (D, 2026-10-04).** After A read Addendum 2, the team decided (A, 2026-10-04) to make the post-exercise/acute-bout T block a required concept: main query E AND (I OR O) AND T on all platforms. This is recorded as contract amendment **PRE-003**. The decision came from the volume evidence in Addendum 2 (v0.6 union 255,019 PubMed records; V3 about 15.9k). It is a protocol amendment, not a PRESS finding. Strategy v0.7-draft puts it into effect (strategy §1, §8 and §11; PubMed confirmation in `platform_validation_2026-10-04.md`, Addendum 3: union 20,090; 19/24 seeds, 10/10 positive). The v0.6 response above that says "the T block stays diagnostic" is superseded.
+
 ---
 
 ## Sign-off block for A (PRESS reviewer)
 
+Recorded by D (search lead) on A's instruction, 2026-10-04. A recorded an overall decision and three conditions. A did not record a separate decision for each element, so the element rows show only where a condition applies; the overall decision covers the other rows.
+
 | Element | A's decision (accept / accept with changes / revise and re-review) | Items accepted / rejected / modified | A's comment |
 |---|---|---|---|
-| 1. Translation | | | |
-| 2. Boolean & proximity | | | |
-| 3. Subject headings | | | |
-| 4. Text words | | | |
-| 5. Spelling, syntax, line numbers | | | |
-| 6. Limits & filters | | | |
-| Seeds / additional | | | |
+| 1. Translation | Overall decision applies (not recorded per element) | 1.1(a) rejected: no infection-outcome terms in any block | The protocol §E wording is being changed separately by the protocol owner (A's team decision, 2026-10-04) |
+| 2. Boolean & proximity | Overall decision applies (not recorded per element) | T ANDed as a required concept (PRE-003; protocol amendment, not a PRESS item) | See the v0.7 note above |
+| 3. Subject headings | Overall decision applies (not recorded per element) | — | — |
+| 4. Text words | Accept with changes | 4.8 modified: `train*` retained pending the pilot sample test; no infection-outcome terms (1.1a) | Condition of sign-off |
+| 5. Spelling, syntax, line numbers | Overall decision applies (not recorded per element) | — | — |
+| 6. Limits & filters | Overall decision applies (not recorded per element) | No filters added; T is a concept block, not a limit (PRE-003) | — |
+| Seeds / additional | Overall decision applies (not recorded per element) | — | The pilot expands positive seeds to ≥ 30, at least 5 of them numeric-only timing (strategy §1 and §9.4; seed list TODO) |
 
 Overall decision (tick one):
 - [ ] Accept
-- [ ] Accept with changes (list item IDs):
+- [x] Accept with changes. Conditions: (1) no infection-outcome terms (1.1a); (2) `train*` retained pending the pilot sample test (4.8); (3) T block made required per team decision PRE-003.
 - [ ] Revise and re-review
 
-- Reviewer: A — signature/initials: ____________ Date: ____________
-- Strategy version on which sign-off applies: ____________ (sign-off is void for any later version unless re-reviewed)
+- Reviewer: A — signature/initials: A (recorded by D on A's instruction) Date: 2026-10-04
+- Strategy version on which sign-off applies: **v0.7-draft** (`search_strategy_draft.txt`, 2026-10-04) (sign-off is void for any later version unless re-reviewed)
+- Note: the T-block requirement arose from the volume evidence (Addendum 2) and is recorded as a protocol amendment (PRE-003). It is not a PRESS finding. Licensed-platform login checks (WoS, Scopus, Embase, SPORTDiscus) remain open and are not covered by this sign-off.
 - Author (search lead) responses and the revised strategy are to be filed as a dated version pair (e.g. v0.5 + response table keyed to the item IDs above).
 
 ---
@@ -467,7 +472,7 @@ Overall decision (tick one):
 - [ ] EI and EO route strings tested in the actual database interfaces with no filters; parser-translated query saved.
 - [ ] Positive (omics and conventional-marker), boundary/negative eligibility and citation-chasing-source seeds in `known_seed_test_list.md` checked separately in each database; detection recorded separately from expected eligibility (for example, BND-W1 is eligible with an outside-window tag, BND-Y1 is excluded under FT03).
 - [ ] Any seed retrieval failure investigated and resolved or explicitly reported before formal execution.
-- [ ] Optional post-exercise diagnostic (T block, v0.4 expanded list) is not used as a main-strategy restriction without a documented protocol change and sensitivity evidence; the 0-72 h organising window is applied at screening, not in the query.
+- [ ] Optional post-exercise diagnostic (T block, v0.4 expanded list) is not used as a main-strategy restriction without a documented protocol change and sensitivity evidence; the 0-72 h organising window is applied at screening, not in the query. *(v0.7: T is now required under the documented amendment PRE-003, with PubMed evidence in Addenda 2 and 3. The pilot sensitivity checks (≥ 30 positive seeds; a random T-free sample) remain open, so the box stays unticked.)*
 - [ ] Preprint F1/F2 result pages are all inspected and publication versions reconciled; any cap is logged as incomplete.
 - [ ] Backward/forward citation chase is logged by round and direction; stop only after a full no-new-inclusions round or mark saturation not reached at the five-round cap.
 - [ ] Registry overlap check covers five registries (OSF, PROSPERO, INPLASY, Research Registry, Zenodo). It is recorded as background only, and the 2026-10-04 collision re-check is cited as prior reconnaissance, not as the check itself. It is not used to claim novelty/priority.
