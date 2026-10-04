@@ -1,6 +1,5 @@
 # CITATION.cff for the protocol repository.
-# !!! Authors are placeholders: TO BE FILLED BY TEAM — do not release with placeholders.
-# Fill in names (and ORCIDs/affiliations) and keep them identical to .zenodo.json before tagging a release.
+# Authors are team codes A-D; enter real names/ORCIDs/affiliations (identical to .zenodo.json) immediately before tagging a release.
 # After Zenodo archives the release, add the version DOI under "identifiers" / "doi" (see scripts/README.md).
 # Licences: documents CC BY 4.0 (LICENSE); scripts MIT (scripts/LICENSE). The "license" field below covers the documents.
 cff-version: 1.2.0
@@ -10,7 +9,10 @@ title: "Precision biomarkers of the exercise-induced immune “open window”: a
 version: "3.0"
 license: CC-BY-4.0
 authors:
-  - name: "TO BE FILLED BY TEAM — do not release with placeholders"
+  - name: "A"
+  - name: "B"
+  - name: "C"
+  - name: "D"
 keywords:
   - "exercise immunology"
   - "open window"

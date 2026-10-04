@@ -48,7 +48,7 @@ JBI范围综述；PRISMA-ScR报告；PRISMA-S检索报告；按设计适配的�
 ## 发布清单（团队冻结后、发布前逐项核对）
 
 - [ ] 中英文方案、手册、检索式、字典与模板版本一致；`scripts/validate_design.py`通过或失败项已书面说明。
-- [ ] creators：全部作者姓名、机构、ORCID（Zenodo元数据必填）。
+- [ ] creators：发布前将代号A–D替换为真实姓名、机构、ORCID（Zenodo必填）。
 - [ ] 许可证文件：根目录`LICENSE`（CC BY 4.0）、`scripts/LICENSE`（MIT）；与方案J节、README一致。
 - [ ] `.zenodo.json`或`CITATION.cff`：标题、creators、许可证、关键词、描述、版本号`3.0`、related identifiers。
 - [ ] 理解concept DOI与version DOI：首次发布同时产生两者，再发布只新增version DOI；引用方案时用version DOI。

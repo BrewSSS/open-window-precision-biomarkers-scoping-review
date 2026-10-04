@@ -14,14 +14,14 @@
     "second_human_reviewer_available": true
   },
   "roles": {
-    "principal_investigator": null,
-    "reviewer_A": null,
-    "reviewer_B": null,
-    "search_lead": null,
-    "independent_PRESS_reviewer": null,
-    "adjudicator": null,
-    "data_manager": null,
-    "analysis_writing_lead": null
+    "principal_investigator": "A",
+    "reviewer_A": "B",
+    "reviewer_B": "C",
+    "search_lead": "D",
+    "independent_PRESS_reviewer": "A",
+    "adjudicator": "D",
+    "data_manager": "D",
+    "analysis_writing_lead": "A"
   },
   "platforms": {
     "PubMed": "PubMed",
@@ -82,6 +82,7 @@
     "2026-10-04 collision re-check: see 02_preliminary/collision_recheck_2026-10-04.md; no direct collision for the open-window-as-organising-construct framing.",
     "2026-10-04 v3 design contract approved (01_protocol/v3_design_contract.txt): open window as organising construct; no exposure threshold; 0-72 h organising window (outside-window samples extracted and tagged, no new exclusion code); adults >=18 only, older adults subgroup; Support B kept; archive via GitHub+Zenodo before pilots; Excel workbooks from JSON templates; Frontiers in Immunology target with PRISMA-ScR checklist/flow diagram and AI-use disclosure.",
     "2026-10-04 protocol_EN_full.md revised to 3.0 (draft for team freeze); registration_draft.md renamed archive_release_record.md; version 3.0 date becomes the actual team freeze date at release.",
-    "registration.id/url/submitted_at are kept null for the validator; release_tag, release_commit, concept_doi, version_doi and repository_url are filled only after the Zenodo-archived release exists."
+    "registration.id/url/submitted_at are kept null for the validator; release_tag, release_commit, concept_doi, version_doi and repository_url are filled only after the Zenodo-archived release exists.",
+    "2026-10-04 (A): team members are identified by codes A-D in all project files; real names/affiliations are entered only into Zenodo/CITATION metadata immediately before release. Citation verification of newly added references is deferred to the manuscript stage; AI tool version numbers are not recorded at protocol stage."
   ]
 }

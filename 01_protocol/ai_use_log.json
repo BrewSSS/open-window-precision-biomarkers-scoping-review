@@ -85,7 +85,7 @@
         "project_settings.json",
         "../.gitignore"
       ],
-      "human_verification_status": "Team (A, B, C, D) present during session; collision verdicts and registry findings reported to team; protocol text not yet changed; human verification of cited sources pending",
+      "human_verification_status": "Deferred: team (A) decided 2026-10-04 that verification of newly added references happens once at the manuscript stage, not now",
       "human_verifier": null,
       "not_performed": [
         "formal database search",
@@ -94,14 +94,14 @@
         "registration submission",
         "public push or release"
       ],
-      "tool_version": "not independently exported — to be filled by A from the Claude Code `--version` output",
+      "tool_version": "not recorded (team decision 2026-10-04: not needed at protocol stage)",
       "provider_source": "Anthropic; Claude Code CLI with models served by the Anthropic API",
       "model": "coordinator claude-fable-5-1; delegated claude-fable-5-1 and claude-opus-5-5"
     },
     {
       "date": "2026-10-04",
       "tool": "Claude Code (Anthropic) desktop CLI",
-      "tool_version": "not independently exported — to be filled by A from the Claude Code `--version` output",
+      "tool_version": "not recorded (team decision 2026-10-04: not needed at protocol stage)",
       "coordinator_model": "claude-fable-5-1",
       "delegated_models": [
         "claude-fable-5-1 (first protocol-editor agent; edited the files listed below and was interrupted by an API usage limit before reporting)",
@@ -204,7 +204,7 @@
           "status": "verified by AI 2026-10-04 (article number 4950 from PII; esummary pages field empty); human verification pending. Note: the review is itself registered on OSF (osf.io/wspr6) and is an adjacent review for the team's positioning check"
         }
       ],
-      "human_verification_status": "pending — named team review required at v3.0 freeze before the archived release",
+      "human_verification_status": "Deferred: team (A) decided 2026-10-04 that verification of newly added references happens once at the manuscript stage, not now",
       "human_verifier": null,
       "formal_review_decisions_made": false,
       "not_performed": [
