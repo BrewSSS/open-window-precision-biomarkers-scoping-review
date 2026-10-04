@@ -13,6 +13,28 @@
       "approval_basis": "User requested planning and update of entire research design after agreeing to direction",
       "human_team_freeze_date": null,
       "re_screening_required": "No formal screening yet; apply v2 to future calibration and formal screening"
+    },
+    {
+      "amendment_id": "PRE-002",
+      "date": "2026-10-04",
+      "stage": "before_formal_search_and_registration",
+      "from": "v2.0 (candidate biomarkers for precision monitoring of post-exercise immunity)",
+      "to": "v3.0 (precision biomarkers of the exercise-induced immune open window; open window as organising construct)",
+      "reason": "Team decision after 2026-10-04 collision re-check: broad post-exercise framing has high and rising collision risk (single-marker SR/MA wave, Front Immunol umbrella reviews); narrowed framing has no direct collision provided the open window is an organising construct, not an adjudicated hypothesis",
+      "changes_document": "v3_design_contract.txt",
+      "eligibility_decisions": {
+        "exposure_threshold": "none; intensity/duration/mode charted",
+        "organising_window": "0-72 h; outside-window samples extracted and tagged, no new exclusion code",
+        "population": "adults >=18, healthy and athletes; older adults subgroup; <18 excluded",
+        "support_B": "retained as cross-bout monitoring layer"
+      },
+      "registration_change": "OSF Registries -> GitHub repository + Zenodo-archived Release (DOI), archived after v3 freeze and before pilots",
+      "known_information": "Public collision re-check 2026-10-04 (02_preliminary/collision_recheck_2026-10-04.md); no formal search, screening or extraction performed",
+      "approval_basis": "Decisions taken by A (framing, window, population, Support B, archive timing) and B, C (exposure threshold, Excel tooling) in session with Claude Code on 2026-10-04",
+      "decision_by": "A; B+C for exposure and tooling",
+      "reassessment_needed": "No formal screening yet; apply v3 to calibration and formal screening",
+      "registry_update": "not applicable yet (no archive exists); v3.0 will be the first archived release",
+      "implementation_status": "protocol text revision pending"
     }
   ],
   "future_amendment_fields": [

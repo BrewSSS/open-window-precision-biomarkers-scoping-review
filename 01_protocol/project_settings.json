@@ -54,10 +54,11 @@
   "stages": {
     "platform_validation": "pending",
     "PRESS_review": "pending",
+    "protocol_v3_revision": "pending",
+    "team_freeze": "pending",
+    "archive_release_zenodo": "pending",
     "random_50_screening_pilot": "pending",
     "purposeful_10_charting_pilot": "pending",
-    "team_freeze": "pending",
-    "registration": "pending",
     "formal_search": "pending",
     "dual_screening": "pending",
     "dual_extraction": "pending",
@@ -72,6 +73,7 @@
     "Database access confirmed by user does not imply database searches were run.",
     "Only named human reviewers satisfy dual-review requirements.",
     "No author contact, external registration or submission performed.",
-    "2026-10-04 collision re-check: see 02_preliminary/collision_recheck_2026-10-04.md; no direct collision for open-window-as-organising-construct framing; framing decision pending team (A)."
+    "2026-10-04 collision re-check: see 02_preliminary/collision_recheck_2026-10-04.md; no direct collision for open-window-as-organising-construct framing; framing decision pending team (A).",
+    "2026-10-04 v3 design contract approved (01_protocol/v3_design_contract.txt): open window as organising construct; no exposure threshold; 0-72 h organising window; adults only; Support B kept; archive via GitHub+Zenodo before pilots."
   ]
 }
