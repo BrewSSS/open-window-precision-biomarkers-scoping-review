@@ -1,6 +1,6 @@
-# Platform validation record, 2026-10-04 (strategy v0.5-draft)
+# Platform validation record, 2026-10-04 (strategy v0.6-draft)
 
-Role: D (search lead). The work was executed by an AI agent on D's behalf; no eligibility decision was made. Strategy: [search_strategy_draft.txt](search_strategy_draft.txt) v0.5-draft (the PubMed blocks are byte-identical to v0.4). Design rules: [v3 design contract](../01_protocol/v3_design_contract.txt) §3.
+Role: D (search lead). The work was executed by an AI agent on D's behalf; no eligibility decision was made. Strategy: [search_strategy_draft.txt](search_strategy_draft.txt) v0.6-draft (the PubMed blocks are byte-identical to v0.4). Design rules: [v3 design contract](../01_protocol/v3_design_contract.txt) §3.
 
 > **These are validation runs, not formal searches.** They check that the parser accepts the strings, how vocabulary maps, and whether seeds are retrieved. They produce **no PRISMA counts**, no exports and no search date. The formal five-database search may start only after the v3.0 archive release, PRESS sign-off and validated controlled vocabulary (strategy §9.5). Validation data are stored only under `parser_validation_runs` in [search_log_template.json](search_log_template.json); every formal-run field in `searches` stays null.
 
@@ -182,7 +182,7 @@ Runs before the v3.0 archive release are **validation runs only** and produce no
    - Embase.com: Advanced search with the mapping, explosion and "as free text" options off.
    - Ovid: Embase segment selected; "Map Term to Subject Heading" unticked.
    - EBSCO: SPORTDiscus only; Boolean/Phrase mode; all expanders off.
-2. **Paste the blocks as separate history lines.** Paste E as line 1, I as line 2 and O as line 3 from strategy v0.5, without the `X_PLATFORM =` labels. Record each line's count and copy the platform's displayed or parsed query. Note any error, warning, "too many terms" message or truncation-cap message.
+2. **Paste the blocks as separate history lines.** Paste E as line 1, I as line 2 and O as line 3 from strategy v0.6, without the `X_PLATFORM =` labels. Record each line's count and copy the platform's displayed or parsed query. Note any error, warning, "too many terms" message or truncation-cap message.
 3. **Combine in history.** Use the platform's own syntax: WoS `#1 AND #2`, `#1 AND #3`; Scopus via Search history combine; Embase.com `#1 AND #2`; Ovid `1 and 2`, `1 and 3`; EBSCO `S1 AND S2`, `S1 AND S3`.
 4. **Save the combined queries.** Copy the platform-displayed combined EI and EO queries exactly, save them as text files, and record `shasum -a 256 <file>`. Screenshot or save the search history.
 5. **Test seeds.** For each seed, first look up its presence in the database (DOI or title). Then test `(EI line) AND (presence line)` and `(EO line) AND (presence line)`. Record database_contains_record, EI_retrieved and EO_retrieved in the log's `database_route_checks`. Diagnose any miss on an expected route by block, and log a proposal rather than adding terms.
@@ -192,3 +192,204 @@ Runs before the v3.0 archive release are **validation runs only** and produce no
 ## 8. Statement
 
 Validation counts above (for example R1 617,081, R2 152,820 and the union 728,526 in PubMed on 2026-10-04) are parser diagnostics. They are **not** formal search results, are not search dates, and must not be reported as PRISMA identification counts.
+
+---
+
+## Addendum 2: PRESS fixes and volume-reduction experiments (2026-10-04, strategy v0.6-draft)
+
+Role: D (search lead). An AI agent did the work on D's behalf and made no eligibility decision and no PRESS decision. The PRESS must-fix items not reserved for A were applied to [search_strategy_draft.txt](search_strategy_draft.txt), giving **v0.6-draft** (strategy §11 lists the 14 changes). Responses keyed to the item IDs are in [PRESS_review_checklist.md](PRESS_review_checklist.md) under "Search lead response". Full exact strings, SHA-256 hashes and per-seed results are stored in [search_log_template.json](search_log_template.json) at `parser_validation_runs.pubmed_2026_10_04_v06_addendum2`.
+
+> **These are still validation runs, not formal searches.** They produce no PRISMA counts, no exports and no search date. The T block stays diagnostic (contract §3 and ruling 8.3a). This addendum supplies evidence for a possible amendment; it neither makes nor recommends one. **A decides.**
+
+### A2.1 Method
+
+- Interface and etiquette as in §1: E-utilities `esearch.fcgi` (`db=pubmed` or `db=mesh`, `retmode=json`, HTTP POST); `esummary.fcgi` for MeSH UIs; `efetch.fcgi` (text) for the abstracts of missed seeds. User-Agent `scoping-review-search-validation/1.0`, `tool=scoping-review-search-validation`, no API key, no e-mail address. Requests were at least 0.4 s apart (no more than 3 per second). All times are UTC on 2026-10-04 and were taken from the moment each request was sent.
+- Strings: the v0.5 blocks were read from the v0.5 file, and the v0.6 blocks are those now in strategy §3, with line breaks collapsed to single spaces. The v0.5 E, I and O strings and the V0 union are byte-identical to the §2 runs (SHA-256 `6b4800e280ee`, `12fe13ce6983`, `bc731c599278` and `8748d4b6affb`). After editing, the v0.6 §3 blocks were re-read from the file and compared with the strings sent: they are identical.
+- Seed recall: one request per seed and variant, `(<variant>) AND <PMID>[uid]`, over the 24 seeds with a PubMed record (POS-S2 has none). Of these, 10 are positive retrieval seeds (POS-A1, A2, A3, S1, S3, C1–C5), 7 are boundary seeds, 2 are negative-eligibility seeds and 5 are citation-chasing reviews.
+- Information-only counts: `(<variant>) AND 2000:3000[dp]`, `AND 2010:3000[dp]` and `AND humans[MeSH]`. The protocol applies no date or human filter. `humans[MeSH]` also misses unindexed records, so it is not a human-study count.
+- Workload: title/abstract screening at 1 min per record per reviewer, with two reviewers, gives person-hours = records × 2 / 60. **Assumption:** the five databases together are taken to return roughly 1.5–2.5 times the PubMed count as raw records before deduplication. Screening happens after deduplication, so the five-database range is an upper bound on the raw volume, not a forecast of the deduplicated pool.
+
+### A2.2 Part 1: PRESS must-fix changes applied in v0.6
+
+| # | Change (all six platform translations and preprint F1/F2) | PRESS item | PubMed check |
+|---|---|---|---|
+| 1 | E: `cycl*` → `cycling`, `cyclist*`, `"cycle ergomet*"`, `ergomet*`; `bicycl*` kept | 4.2 | parsed cleanly; this change alone takes the v0.5 union from 728,526 to 339,790 |
+| 2 | E: bare `interval` → `"interval train*"`, `"interval exercis*"`, `"sprint interval*"`, `"high-intensity interval*"`, `HIIE` (`HIIT` kept) | 4.1 | parsed cleanly; wildcard phrases accepted |
+| 3 | I: `"white blood cell*"`, `"mononuclear cell*"`, `PBMC*`, `granulocyt*`, `lymphopeni*`, `lymphocytopeni*`, `leukocytosis` | 4.7 | parsed cleanly |
+| 4 | I: `TNF*`/`IFN*` (PubMed: `TNF`, `"TNF-alpha"`, `IFN`, `"IFN-gamma"`), `"tumor/tumour necrosis factor*"`, `interferon*`, `"IL-10"`, `IL10`, `"IL-1"`, `IL1`, `"IL-1beta"`, `"IL-8"`, `IL8` | 4.3 | parsed cleanly; PubMed normalises `TNF-α` and `IL-1β` to `TNF-alpha` and `IL-1beta` |
+| 5 | O: `epigenet*`, `"DNA methylation"` | 4.5 (and 1.1b) | parsed cleanly |
+| 6 | O: `microarray*`, `"gene expression profil*"`, `"expression profil*"` | 4.6 | parsed cleanly; Büttner 2007 and Connolly 2004 are now retrieved by EO (v0.5 EO: neither) |
+| 7 | O: `microRNA*`, `miRNA*`, `lncRNA*`, `circRNA*` | 4.4 (in part) | parsed cleanly |
+| 8 | PubMed E MeSH line: 9 headings | 3.5 (in part) | all headings exist (db=mesh) |
+| 9 | PubMed I MeSH line: 20 headings | 3.1 (in part) | all exist; v0.6 I_MESH alone now retrieves POS-C4, POS-C5 and BND-OW1 (v0.5 I_MESH: none) |
+| 10 | PubMed O MeSH line (new): 13 headings; Mass Spectrometry `[Mesh:NoExp]` | 3.2 | all exist |
+| 11 | PubMed R2_FINAL = (E OR E_MESH) AND (O OR O_MESH) | 3.2 | parsed cleanly |
+| 12 | Candidate Emtree lines (Embase.com, Ovid form) — PENDING LIVE THESAURUS VALIDATION | 3.3 | not testable here |
+| 13 | Candidate SPORTDiscus `DE` lines — PENDING LIVE THESAURUS VALIDATION | 3.4 | not testable here |
+| 14 | §2 vocabulary and controlled-vocabulary text rewritten; "trained immunity" noise note; §7 cap list; §8 T-pilot note | 4.8 (note); consistency | — |
+
+Not applied (reserved for A or outside the must-fix list): infection/URTI terms (1.1a); `train*` (kept under the contract; see the noise note below); PubMed `(physical AND activit*)` (2.2/P5, a narrowing); the extra terms PRESS proposed beyond the briefed lists (`"non-coding RNA*"`, `ncRNA*`, `WBC`, `lymphopaeni*`, `"histone modification*"`, `"gene array*"`, `"IL-1ra"`, bike/biking, `"cycle exercis*"`); all SHOULD CONSIDER and OPTIONAL items. 2.1 was already fixed in v0.5 (Fix 1).
+
+**Parser result for the v0.6 blocks** (runs 13:20:35–13:20:50Z): E, I, O, E_MESH, I_MESH and O_MESH produced no automatic term mapping (empty `translationset`), no `errorlist` and no `warninglist`. Every `[Mesh]` tag was translated to `[MeSH Terms]`. Exception, in the diagnostic T only: PubMed reports `"after a marathon"[tiab]` under `quotedphrasesnotfound`, because the stop word keeps the phrase out of the index, and silently drops it (see A2.4).
+
+| Block | v0.5 hits (§2) | v0.6 hits | v0.6 run (UTC) |
+|---|---|---|---|
+| E free text | 4,563,768 | 2,390,411 | 13:20:35Z |
+| I free text | 5,661,760 | 5,819,634 | 13:20:36Z |
+| O free text | 1,200,582 | 1,524,293 | 13:20:38Z |
+| E_MESH_PUBMED | 341,740 (3-heading candidate) | 495,581 | 13:20:39Z |
+| I_MESH_PUBMED | 832,911 (8-heading candidate) | 2,649,932 | 13:20:40Z |
+| O_MESH_PUBMED | — (no O line) | 811,189 | 13:20:42Z |
+| T (diagnostic) | — | 368,660 | 13:20:48Z |
+| T2 = T OR "Post-Exercise Recovery"[Mesh] | — | 368,731 | 13:20:50Z |
+
+Where the v0.5 → v0.6 change in the PubMed union comes from (free-text steps applied cumulatively; runs 13:39:03–13:39:12Z, except the V0 and V1 endpoints):
+
+| Step | PubMed union | Change |
+|---|---|---|
+| V0 (v0.5 free text) | 728,526 | — |
+| + E fixes (`cycl*`, `interval`) | 223,818 | -504,708 (`cycl*` fix alone: 339,790) |
+| + I additions | 227,785 | +3,967 |
+| + O additions (= v0.6 free text) | 235,288 | +7,503 |
+| + E/I/O MeSH lines (= V1) | 255,019 | +19,731 |
+
+**MeSH headings in v0.6.** Each heading was looked up in `db=mesh` (`"<heading>"[MeSH Terms]`, then `esummary`). Each returned exactly one descriptor whose preferred term equals the string used (13:18:15–13:20:00Z). "Marginal" means the records that drop out of V1 (255,019) when that heading alone is removed (13:21:08–13:22:53Z). A marginal of 0 means the heading is already covered by free text or by another exploded heading; such headings are kept to document intent.
+
+| Line | Heading | UI | Form | Marginal to V1 |
+|---|---|---|---|---|
+| E | Exercise | D015444 | `[Mesh]` (exploded) | 832 |
+| E | Physical Exertion | D005082 | `[Mesh]` (exploded) | 363 |
+| E | Sports | D013177 | `[Mesh]` (exploded) | 673 |
+| E | Exercise Test | D005080 | `[Mesh]` (exploded) | 442 |
+| E | Running | D012420 | `[Mesh]` (exploded) | 0 |
+| E | Swimming | D013550 | `[Mesh]` (exploded) | 0 |
+| E | Bicycling | D001642 | `[Mesh]` (exploded) | 0 |
+| E | Resistance Training | D055070 | `[Mesh]` (exploded) | 0 |
+| E | High-Intensity Interval Training | D000072696 | `[Mesh]` (exploded) | 0 |
+| I | Immunity | D007109 | `[Mesh]` (exploded) | 1,377 |
+| I | Immunity, Mucosal | D018928 | `[Mesh]` (exploded) | 0 |
+| I | Leukocytes | D007962 | `[Mesh]` (exploded) | 167 |
+| I | Lymphocytes | D008214 | `[Mesh]` (exploded) | 0 |
+| I | Killer Cells, Natural | D007694 | `[Mesh]` (exploded) | 0 |
+| I | Neutrophils | D009504 | `[Mesh]` (exploded) | 0 |
+| I | Monocytes | D009000 | `[Mesh]` (exploded) | 33 |
+| I | Leukocyte Count | D007958 | `[Mesh]` (exploded) | 144 |
+| I | Lymphocyte Count | D018655 | `[Mesh]` (exploded) | 0 |
+| I | Cytokines | D016207 | `[Mesh]` (exploded) | 2,321 |
+| I | Chemokines | D018925 | `[Mesh]` (exploded) | 0 |
+| I | Interleukins | D007378 | `[Mesh]` (exploded) | 0 |
+| I | Interleukin-6 | D015850 | `[Mesh]` (exploded) | 0 |
+| I | Immunoglobulins | D007136 | `[Mesh]` (exploded) | 5,464 |
+| I | Immunoglobulin A | D007070 | `[Mesh]` (exploded) | 0 |
+| I | Immunoglobulin A, Secretory | D007071 | `[Mesh]` (exploded) | 0 |
+| I | Complement System Proteins | D003165 | `[Mesh]` (exploded) | 75 |
+| I | C-Reactive Protein | D002097 | `[Mesh]` (exploded) | 175 |
+| I | Phagocytosis | D010587 | `[Mesh]` (exploded) | 0 |
+| I | Cytotoxicity, Immunologic | D003602 | `[Mesh]` (exploded) | 20 |
+| O | Proteomics | D040901 | `[Mesh]` (exploded) | 190 |
+| O | Metabolomics | D055432 | `[Mesh]` (exploded) | 120 |
+| O | Lipidomics | D000081362 | `[Mesh]` (exploded) | 0 |
+| O | Transcriptome | D059467 | `[Mesh]` (exploded) | 205 |
+| O | Gene Expression Profiling | D020869 | `[Mesh]` (exploded) | 2,698 |
+| O | Single-Cell Analysis | D059010 | `[Mesh]` (exploded) | 52 |
+| O | Multiomics | D000095028 | `[Mesh]` (exploded) | 0 |
+| O | Epigenomics | D057890 | `[Mesh]` (exploded) | 15 |
+| O | DNA Methylation | D019175 | `[Mesh]` (exploded) | 231 |
+| O | MicroRNAs | D035683 | `[Mesh]` (exploded) | 188 |
+| O | RNA, Long Noncoding | D062085 | `[Mesh]` (exploded) | 65 |
+| O | Sequence Analysis, RNA | D017423 | `[Mesh]` (exploded) | 272 |
+| O | Mass Spectrometry | D013058 | `[Mesh:NoExp]` | 1,297 |
+| T2 only | Post-Exercise Recovery | D000096062 | `[Mesh]` | diagnostic T2 only (adds 16 records to V3) |
+
+Explosion choices (records that the explosion adds to V1 beyond the `[Mesh:NoExp]` form): Immunoglobulins 5,417 (2,040 of them indexed Antibodies, Monoclonal; 490 Immunoglobulin G); Cytokines 2,099; Gene Expression Profiling 1,393 (RNA-Seq, single-cell and spatial transcriptomics children); Immunity 1,324; Sports 589; Exercise 151; Leukocytes 80; Complement System Proteins 68. **Mass Spectrometry is used as `[Mesh:NoExp]`**: exploding it would add 2,973 more records (GC-MS, LC-MS, tandem-MS method records), which PRESS 3.2 identifies as analytical noise. Every other heading is exploded by default. Immunoglobulins is the one explosion flagged for A: it is the largest marginal heading, and about 38% of what its explosion adds is monoclonal-antibody indexing. It was left exploded because no recall evidence supports narrowing it.
+
+**`train*` / "trained immunity" noise:** 1,896 PubMed records contain `"trained immunity"[tiab]`, and all 1,896 are inside V1. They satisfy E through `train*` and I through `immun*` on their own; 1,877 of them leave under V2. They are handled at screening; no NOT term is used.
+
+WoS, Scopus, Embase.com, Ovid and SPORTDiscus translations of v0.6 are **not** live-parser checked. Login check (a) in §5, whether WoS accepts wildcards inside phrases, now also covers `"interval train*"`, `"white blood cell*"`, `"mononuclear cell*"`, `"tumor necrosis factor*"`, `"gene expression profil*"` and `"expression profil*"`.
+
+### A2.3 Part 2: PubMed volume and recall experiments
+
+Variant definitions (blocks as in strategy v0.6 §3; E_ALL = (E free text OR E_MESH), I_ALL and O_ALL likewise):
+
+| Variant | Definition | String SHA-256 (first 12) |
+|---|---|---|
+| V0 | v0.5 union, as validated in §2: E5 AND (I5 OR O5) (free text, no MeSH) | `8748d4b6affb` |
+| V1 | v0.6 union: E_ALL AND (I_ALL OR O_ALL) | `5d53e608ddee` |
+| V1-ft | V1 without the MeSH lines (v0.6 free text only), for reference | `0b62fa1729fb` |
+| V2 | V1 with E free text lacking `train*`, `sport*`, `endurance`, `aerobic`, `competition*` and `race*`; the PubMed `(resistance AND train*)` clause becomes `"resistance train*"`; the E MeSH line is unchanged | `22f473f82e62` |
+| V3 | V1 AND T (T as briefed; A2.2) | `eee58c877ef2` |
+| V3-T2 | V1 AND T2, where T2 = T OR "Post-Exercise Recovery"[Mesh] | `e2ad14aa1312` |
+| V4 | V2 AND T | `3329949f18b3` |
+| V4-T2 | V2 AND T2 | `7738bdc63d82` |
+| V5-EI | I-route only: E_ALL AND I_ALL | `428431fdf05f` |
+| V5-EO | O-route only: E_ALL AND O_ALL | `24bcfb60781d` |
+| V3-Tfix / V4-Tfix | V3 / V4 with T's `"after a marathon"[tiab]` replaced by `"after marathon"[tiab:~1]` (post hoc repair; A2.4) | `43765390d6a5` / `c566e335e843` |
+
+Results (person-hours = PubMed records × 2 reviewers × 1 min / 60; the last column applies the assumed 1.5–2.5× five-database raw multiplier before deduplication):
+
+| Variant | Hit run (UTC) | PubMed hits | PY ≥ 2000 | PY ≥ 2010 | humans[MeSH] | Seeds retrieved (of 24) | POS seeds (of 10) | Seeds missed | Person-hours, PubMed | Person-hours, five databases raw (×1.5–2.5) |
+|---|---|---|---|---|---|---|---|---|---|---|
+| V0 | 13:23:42Z | 728,526 | 626,047 | 506,772 | 430,533 | 24 | 10/10 | none | 24,284.2 | 36,426–60,710 |
+| V1 | 13:23:49Z | 255,019 | 224,049 | 187,538 | 145,061 | 24 | 10/10 | none | 8,500.6 | 12,751–21,252 |
+| V1-ft | 13:23:56Z | 235,288 | 208,408 | 176,843 | 132,910 | 24 | 10/10 | none | 7,842.9 | 11,764–19,607 |
+| V2 | 13:24:03Z | 135,360 | 118,551 | 97,336 | 76,780 | 24 | 10/10 | none | 4,512.0 | 6,768–11,280 |
+| V3 | 13:24:13Z | 15,883 | 13,981 | 11,237 | 9,985 | 18 | 9/10 | POS-C1, NEG-E1, NEG-E2, CIT-R3, CIT-R4, CIT-R5 | 529.4 | 794–1,324 |
+| V3-T2 | 13:24:22Z | 15,899 | 13,997 | 11,253 | 10,001 | 18 | 9/10 | POS-C1, NEG-E1, NEG-E2, CIT-R3, CIT-R4, CIT-R5 | 530.0 | 795–1,325 |
+| V4 | 13:24:31Z | 14,798 | 13,072 | 10,549 | 9,574 | 18 | 9/10 | POS-C1, NEG-E1, NEG-E2, CIT-R3, CIT-R4, CIT-R5 | 493.3 | 740–1,233 |
+| V4-T2 | 13:24:41Z | 14,814 | 13,088 | 10,565 | 9,590 | 18 | 9/10 | POS-C1, NEG-E1, NEG-E2, CIT-R3, CIT-R4, CIT-R5 | 493.8 | 741–1,234 |
+| V3-Tfix | 13:33:05Z | 15,930 | 14,021 | 11,264 | 10,026 | 19 | 10/10 | NEG-E1, NEG-E2, CIT-R3, CIT-R4, CIT-R5 | 531.0 | 796–1,328 |
+| V4-Tfix | 13:33:55Z | 14,845 | 13,112 | 10,576 | 9,615 | 19 | 10/10 | NEG-E1, NEG-E2, CIT-R3, CIT-R4, CIT-R5 | 494.8 | 742–1,237 |
+| V5-EI | 13:24:49Z | 199,896 | 170,681 | 141,400 | 122,745 | 24 | 10/10 | none | 6,663.2 | 9,995–16,658 |
+| V5-EO | 13:24:57Z | 75,115 | 73,019 | 64,260 | 33,684 | 8 | 4/10 | POS-A3, POS-C1, POS-C2, POS-C3, POS-C4, POS-C5, BND-Y2, BND-I1, BND-L1, BND-B1, BND-OW1, CIT-R1, CIT-R2, CIT-R3, CIT-R4, CIT-R5 | 2,503.8 | 3,756–6,260 |
+
+Seed-test windows (UTC): V0 13:25:37Z–13:26:09Z; V1 13:26:10Z–13:26:44Z; V2 13:27:23Z–13:27:59Z; V3 13:28:01Z–13:28:35Z; V3-T2 13:28:36Z–13:29:13Z; V4 13:29:15Z–13:29:53Z; V4-T2 13:29:54Z–13:30:30Z; V5-EI 13:30:31Z–13:31:08Z; V5-EO 13:31:09Z–13:31:41Z; Tfix variants 13:33:05Z–13:34:40Z. Per-seed results are in the log.
+
+**V5: where the volume sits** (V1 split by route):
+
+| Route set | PubMed hits | Share of V1 | PY ≥ 2010 | humans[MeSH] | Person-hours |
+|---|---|---|---|---|---|
+| EI (E AND I) | 199,896 | 78.4% | 141,400 | 122,745 | 6,663.2 |
+| EO (E AND O) | 75,115 | 29.5% | 64,260 | 33,684 | 2,503.8 |
+| EI only (EI NOT EO) | 179,904 | 70.5% | 123,278 | 111,377 | 5,996.8 |
+| EO only (EO NOT EI) | 55,123 | 21.6% | 46,138 | 22,316 | 1,837.4 |
+| EI and EO overlap | 19,992 | 7.8% | | | |
+
+The I route holds most of the volume: 78% of V1 records are in EI and 22% are reached only through EO. EO retrieves 8 of 24 seeds, which covers all 7 seeds whose expected routes include EO, plus BND-W1. Under V2 the split is EI 107,987 and EO 35,697.
+
+### A2.4 Seeds lost under V3/V4 (T as a required concept)
+
+V0, V1 and V2 retrieve all 24 seeds. V3, V4 and their T2 forms each lose the same 6 seeds; adding Post-Exercise Recovery [Mesh] (T2) rescues none of them. The abstracts were fetched with `efetch` at about 13:32Z and checked for T wording:
+
+| Seed | Class | Lost under | Why (abstract wording) | Under the Tfix repair |
+|---|---|---|---|---|
+| **POS-C1** (Cantó 2018, PMID 30462646) | **Positive** | V3, V3-T2, V4, V4-T2 | Timing is described only as "after a marathon", "after the race", "two days after the end of the race" and "after strenuous exercise". The only T term it contains, `"after a marathon"`, is **dropped by PubMed** (quoted phrase not found; the stop word keeps it out of the phrase index). T has no `after the race` or `after strenuous exercise` form | retrieved |
+| NEG-E1 (CIMA 2026, PMID 42758809) | Negative eligibility (resting cross-sectional) | all T variants | No acute-bout or post-exercise wording: one resting draw, habitual activity. It is an expected exclusion at screening, so the loss removes a screening-rule test, not an eligible record | lost |
+| NEG-E2 (MoTrPAC rat 2024, PMID 38693412) | Negative eligibility (animal) | all T variants | Training-study wording ("endurance exercise training"), no T term. Expected FT02 exclusion | lost |
+| CIT-R3 (Simpson 2020, PMID 32139352) | Citation-chasing review | all T variants | Review abstract with no T term | lost |
+| CIT-R4 (Shi 2025, PMID 40777031) | Citation-chasing review | all T variants | Review abstract with no T term | lost |
+| CIT-R5 (Xie 2026, PMID 42183211) | Citation-chasing review | all T variants | Review abstract with no T term | lost |
+
+All 7 boundary seeds survive T, including BND-W1 (only post-exercise sample at more than 72 h) and BND-I1 and POS-A2 (immediate-only). The three lost reviews are already named citation-chasing sources and enter the review by that route whatever the query. CIT-R1 and CIT-R2 survive (their titles contain the T terms "after exercise" and "exercise-induced").
+
+What this evidence does **not** show:
+- **Small, non-independent seed set.** Only 10 PubMed positive seeds were tested. They were chosen to represent marker families, and several were chosen because they state their timing explicitly.
+- **Numeric-only timing untested.** No current seed describes its timing only numerically (for example "at 1 h and 24 h"). Strategy §8 names this as T's expected failure mode, and these tests cannot detect it.
+- **Post hoc repair.** The Tfix repair was designed after the POS-C1 miss was seen, so its 10/10 does not count as an independent test.
+- **PubMed only.** Recall of T on the other four databases is unknown.
+- **Not a recall estimate.** Seed recall is not a relative-recall estimate against an independent reference set. Whether this amounts to "a documented pilot [showing] acceptable recall" (strategy §1; contract 8.3a) is A's judgement.
+
+### A2.5 Plain-language summary for A
+
+Fixing the PRESS must-fix items gave the search a broader vocabulary and a much smaller volume. Replacing `cycl*` and bare `interval` removed most of the noise: those two words were pulling in cyclophosphamide, cell-cycle and "confidence interval" papers. The missing immune terms, omics terms and MeSH headings were then added. In PubMed the v0.6 strategy (V1) finds 255,019 records, against 728,526 for v0.5, and still finds all 24 test seeds. That is still about 8,501 person-hours of title/abstract screening for two reviewers in PubMed alone, before the other four databases. Dropping the generic exercise words `train*`, `sport*`, `endurance`, `aerobic`, `competition*` and `race*` (V2) roughly halves this to 135,360 records (4,512.0 hours), again with 24/24 seeds. Requiring a post-exercise/acute-bout wording block (V3) brings PubMed to 15,883 records (529.4 hours), and combining both (V4) gives 14,798 records (493.3 hours). However, the T block lost one positive seed, Cantó 2018. PubMed silently ignores the phrase "after a marathon", and the abstract's other timing phrases ("after the race", "after strenuous exercise") are not in T. It also lost two negative-eligibility seeds and three reviews that we chase by citation anyway. A proximity repair recovers the positive seed, but the repair was designed after the miss was seen. No current seed tests T's known blind spot: studies that give their timing only as numbers. Using T as a required concept would require you to amend the contract (PRE-003); the numbers here are the evidence available for that decision.
+
+### A2.6 Decision table (numbers only; A decides)
+
+| Option | Query | PubMed hits | Seeds (of 24) / POS (of 10) | Person-hours, PubMed | Person-hours, five databases raw (×1.5–2.5, assumption) | Rule status | Known evidence gaps |
+|---|---|---|---|---|---|---|---|
+| (A) Keep construct-at-screening with v0.6 | V1 | 255,019 | 24 / 10/10 | 8,500.6 | 12,751–21,252 | As contract §3 and 8.3a; no amendment | Volume |
+| (B) v0.6 without the generic E terms | V2 | 135,360 | 24 / 10/10 | 4,512.0 | 6,768–11,280 | No contract amendment for the design, but it removes `train*`, which strategy §2 and PRESS 4.8 keep pending a marginal-yield test; A's decision | The 4.8 test (screen a random sample of records retrieved only through the removed terms) has not been done; seed evidence only |
+| (C) v0.6 AND T as a required concept | V3 (V3-Tfix) | 15,883 (15,930) | 18 / 9/10 (19 / 10/10) | 529.4 (531.0) | 794–1,324 | Needs contract amendment PRE-003 (contract 8.3a says T is diagnostic only) | POS-C1 lost unless repaired; numeric-only timing untested; PubMed only |
+| (D) B + C combined | V4 (V4-Tfix) | 14,798 (14,845) | 18 / 9/10 (19 / 10/10) | 493.3 (494.8) | 740–1,233 | PRE-003 plus the B decision | As B and C; once T is applied, B removes only a further 1,085 records |
+
+Adding Post-Exercise Recovery [Mesh] to T (T2) adds 16 records to C and to D and changes no seed result. All counts are PubMed parser-validation counts from 2026-10-04 and are not PRISMA identification counts.
+

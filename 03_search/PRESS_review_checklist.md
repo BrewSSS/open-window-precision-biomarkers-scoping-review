@@ -414,6 +414,30 @@ Also must fix, platform-specific: 2.1 (Embase.com untagged phrases), 4.3 (cytoki
 
 ---
 
+## Search lead response to MUST FIX items (D, 2026-10-04, strategy v0.6-draft)
+
+Added by the search lead. An AI agent executed the changes on D's behalf. A's findings above and the sign-off block below are unchanged. The responses refer to `search_strategy_draft.txt` **v0.6-draft** (changes are listed in its §11). Evidence is in `platform_validation_2026-10-04.md`, Addendum 2, and in the log under `parser_validation_runs.pubmed_2026_10_04_v06_addendum2`. All counts come from PubMed parser-validation runs, not formal searches. The other four platforms have not been live-parser checked for v0.6. `train*` is kept (contract); its "trained immunity" noise is noted in strategy §2 (4.8). The T block stays diagnostic. A decides every item; these notes are not sign-off.
+
+| Item | Search lead response | Status |
+|---|---|---|
+| 1.1 | (a) **Reserved for A; not applied.** No infection/URTI term was added to any I block. (b) Epigenetics: applied through 4.5. Rewording protocol §E is outside the search lead's file scope and goes to A / the protocol owner. | (a) open for A; (b) applied |
+| 2.1 | Already resolved in v0.5 (Fix 1): `"exercise test"`, `"exercise tests"`, `"exercise challenge"` and `"exercise challenges"` each carry `:ti,ab,kw`. The four explicit phrases are equivalent to the recommended wildcard form. All v0.6 additions to Embase.com carry a field code. | resolved (v0.5) |
+| 3.1 | Applied in part. The I MeSH line now has 20 headings: the 8 v0.5 candidates plus Immunity, Mucosal; Leukocytes; Lymphocytes; Killer Cells, Natural; Neutrophils; Monocytes; Leukocyte Count; Lymphocyte Count; Cytokines; Chemokines; Immunoglobulins; Complement System Proteins. All were confirmed in db=mesh on 2026-10-04 and all are exploded. The v0.6 I_MESH line alone now retrieves POS-C4, POS-C5 and BND-OW1; the v0.5 candidate retrieved none of them. **Not added (open for A):** Lymphocyte Subsets, Lymphopenia, Leukocytosis, Lactoferrin, Muramidase, Antimicrobial Peptides, Respiratory Burst. Flagged: the Immunoglobulins explosion adds 5,417 records, 2,040 of them Antibodies, Monoclonal. | applied in part |
+| 3.2 | Applied. New O_MESH_PUBMED line with 13 headings: Proteomics, Metabolomics, Lipidomics, Transcriptome, Gene Expression Profiling, Single-Cell Analysis, Multiomics, Epigenomics, DNA Methylation, MicroRNAs, RNA, Long Noncoding, Sequence Analysis, RNA, and Mass Spectrometry as `[Mesh:NoExp]`, following the advice to avoid explosion (explosion would add 2,973 records). R2_FINAL = (E OR E_MESH) AND (O OR O_MESH). Büttner 2007 and Connolly 2004 are now retrieved by EO; v0.5 EO retrieved neither. **Not added (open for A):** Proteome, Metabolome, RNA, Circular, Oligonucleotide Array Sequence Analysis, High-Throughput Nucleotide Sequencing. | applied |
+| 3.3 | Candidate Emtree lines (Embase.com syntax plus the Ovid `exp …/` form) were added to strategy §6, labelled **PENDING LIVE THESAURUS VALIDATION**. Their labels are lookup prompts, not verified preferred terms. D confirms each one at login. The gate stays open. | pending login |
+| 3.4 | Candidate SPORTDiscus `DE` lines were added to strategy §7, labelled **PENDING LIVE THESAURUS VALIDATION** (including the LEUCOCYTES vs LEUKOCYTES check). D confirms them at login. The gate stays open. | pending login |
+| 4.1 | Applied on all six platforms and in F1/F2: bare `interval` was replaced by `"interval train*"`, `"interval exercis*"`, `"sprint interval*"`, `"high-intensity interval*"` and `HIIE`; `HIIT` and `sprint*` were kept. The 2.3 proximity forms were not used. 24/24 PubMed seeds are retrieved. | applied |
+| 4.2 | Applied on all six platforms and in F1/F2: `cycl*` was replaced by `cycling`, `cyclist*`, `"cycle ergomet*"` and `ergomet*`; `bicycl*` was kept. This change alone takes the PubMed v0.5 union from 728,526 to 339,790. 24/24 PubMed seeds are retrieved. **Not added (open for A):** `"cycle exercis*"`, `"cycle test*"`, bike/bikes/biking. | applied |
+| 4.3 | Applied: `TNF*`, `IFN*`, `"tumor necrosis factor*"`, `"tumour necrosis factor*"`, `interferon*`, `"IL-10"`, `IL10`, `"IL-1"`, `IL1`, `"IL-1beta"`, `"IL-8"`, `IL8`. Because of PubMed's 4-character truncation rule, PubMed uses `TNF`, `"TNF-alpha"`, `IFN` and `"IFN-gamma"` instead of the wildcards. Search Details confirms that PubMed normalises TNF-α and IL-1β to the same index terms. **Not added:** `"IL-1ra"` and the optional extras. | applied |
+| 4.4 | Applied in part: `microRNA*`, `miRNA*`, `lncRNA*` and `circRNA*` (Ovid `$`) on all six platforms and in F2. **Not added (open for A):** `"non-coding RNA*"`, `"noncoding RNA*"`, `ncRNA*`, `"small RNA*"`. | applied in part |
+| 4.5 | Applied: `epigenet*` and `"DNA methylation"` on all six platforms and in F2. **Not added:** `"histone modification*"` and the optional chromatin terms. | applied in part |
+| 4.6 | Applied: `microarray*`, `"gene expression profil*"` and `"expression profil*"` on all six platforms and in F2. **Not added:** `"gene array*"`. Büttner 2007 and Connolly 2004 were not added to the seed list; they were tested only as diagnostics (Addendum 2). | applied |
+| 4.7 | Applied: `"white blood cell*"`, `"mononuclear cell*"`, `PBMC*`, `granulocyt*`, `lymphopeni*`, `lymphocytopeni*` and `leukocytosis` on all six platforms and in F1. The last two are redundant with `lymphocyt*`/`leukocyt*` but were listed as briefed. **Not added (open for A):** `WBC`, `lymphopaeni*`. | applied |
+
+Volume and recall evidence for A's PRESS element 1/4 decision (P10): v0.6 union 255,019 PubMed records with 24/24 seeds. Options B–D (generic-term removal and T as a required concept) are set out with their numbers in Addendum 2, §A2.6.
+
+---
+
 ## Sign-off block for A (PRESS reviewer)
 
 | Element | A's decision (accept / accept with changes / revise and re-review) | Items accepted / rejected / modified | A's comment |

@@ -1,6 +1,6 @@
 # Known-seed sensitivity and scope test list (v3) — NOT EXECUTED
 
-Protocol v3.0 (draft for team freeze), 2026-10-04 · strategy `search_strategy_draft.txt` v0.4-draft · decisions: `01_protocol/v3_design_contract.txt`.
+Protocol v3.0 (draft for team freeze), 2026-10-04 · strategy `search_strategy_draft.txt` v0.6-draft · decisions: `01_protocol/v3_design_contract.txt`.
 
 Use these records to test each final database-specific EI and EO route before the formal searches. Earlier public reconnaissance identified the original seeds. The v3 additions (POS-C*, BND-*, CIT-*) were identified on 2026-10-04 during seed curation, and each PMID/DOI was checked against PubMed E-utilities `esummary` that day. **No five-database query has been run.** Platform-specific discoverability is therefore `UNKNOWN`, not "found" or "missed".
 

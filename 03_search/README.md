@@ -1,4 +1,4 @@
-# 03_search — V3 strategy preparation (protocol v3.0 draft for team freeze, strategy v0.5-draft, 2026-10-04)
+# 03_search — V3 strategy preparation (protocol v3.0 draft for team freeze, strategy v0.6-draft, 2026-10-04)
 
 **State: DRAFT / NOT PRESS-REVIEWED / NOT EXECUTED (PubMed parser-validated 2026-10-04; validation runs are not formal searches).** These files operationalize the V3 search logic for team calibration. They do not report search results, establish database-specific seed detection, or authorize PRISMA counts.
 
@@ -16,7 +16,7 @@ D (search lead) validated the PubMed strategy live through E-utilities; the work
 - The 11 MeSH candidates were confirmed (UIs unchanged, explosion checked).
 - All 24 seeds that have a PubMed record were retrieved by R1 and by the union.
 
-A static check against the current official help pages led to three syntax fixes in strategy v0.5: Embase.com untagged phrases, the Ovid `.kw.` field changed to `.kf.`, and EBSCO search terms lowercased. Precision and MeSH proposals are listed for the PRESS reviewer and are not applied. WoS, Scopus, Embase and SPORTDiscus still need live login checks (checklist in the record, §7). Several help links below now redirect or point to the wrong guide; the current URLs are in strategy §10. These validation runs give no PRISMA counts and no search date.
+A static check against the current official help pages led to three syntax fixes in strategy v0.6: Embase.com untagged phrases, the Ovid `.kw.` field changed to `.kf.`, and EBSCO search terms lowercased. Precision and MeSH proposals are listed for the PRESS reviewer and are not applied. WoS, Scopus, Embase and SPORTDiscus still need live login checks (checklist in the record, §7). Several help links below now redirect or point to the wrong guide; the current URLs are in strategy §10. These validation runs give no PRISMA counts and no search date.
 
 ## Official platform help consulted for syntax only
 

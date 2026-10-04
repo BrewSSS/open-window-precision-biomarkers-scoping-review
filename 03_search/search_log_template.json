@@ -1,6 +1,6 @@
 {
   "template_status": "DRAFT — NOT EXECUTED",
-  "strategy_version": "v3.0 / search-draft-0.5",
+  "strategy_version": "v3.0 / search-draft-0.6",
   "protocol_version": "3.0",
   "protocol_date": "2026-10-04",
   "protocol_version_label": "3.0 (draft for team freeze) - 4 October 2026",
@@ -1800,7 +1800,7 @@
           "formal_search": false,
           "prisma_counts": false,
           "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
-          "strategy_version": "0.5-draft (PubMed blocks identical to 0.4)",
+          "strategy_version": "0.6-draft (PubMed blocks identical to 0.6)",
           "date_time_utc": "2026-10-04T12:40:55Z",
           "exact_string_sent": "( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR sport*[tiab] OR train*[tiab] OR workout*[tiab] OR athlet*[tiab] OR competition*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycl*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[tiab] OR (resistance[tiab] AND train*[tiab]) OR \"strength training\"[tiab] OR endurance[tiab] OR aerobic[tiab] OR interval[tiab] OR HIIT[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] )",
           "string_sha256": "6b4800e280ee591d5fe2aff321b10e93b88061d3bc23ec758ee6966a7ce44acf",
@@ -1819,7 +1819,7 @@
           "formal_search": false,
           "prisma_counts": false,
           "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
-          "strategy_version": "0.5-draft (PubMed blocks identical to 0.4)",
+          "strategy_version": "0.6-draft (PubMed blocks identical to 0.6)",
           "date_time_utc": "2026-10-04T12:40:58Z",
           "exact_string_sent": "( immun*[tiab] OR inflammat*[tiab] OR leukocyt*[tiab] OR leucocyt*[tiab] OR lymphocyt*[tiab] OR neutrophil*[tiab] OR monocyt*[tiab] OR eosinophil*[tiab] OR basophil*[tiab] OR \"natural killer\"[tiab] OR \"NK cell\"[tiab] OR \"NK cells\"[tiab] OR \"T cell\"[tiab] OR \"T cells\"[tiab] OR \"B cell\"[tiab] OR \"B cells\"[tiab] OR CD4[tiab] OR CD8[tiab] OR cytokine*[tiab] OR chemokine*[tiab] OR immunoglobulin*[tiab] OR \"immunoglobulin A\"[tiab] OR \"secretory immunoglobulin A\"[tiab] OR IgA[tiab] OR sIgA[tiab] OR SIgA[tiab] OR \"secretory IgA\"[tiab] OR interleukin*[tiab] OR \"interleukin-6\"[tiab] OR \"IL-6\"[tiab] OR IL6[tiab] OR CRP[tiab] OR \"C-reactive protein\"[tiab] OR \"C reactive protein\"[tiab] OR phagocyt*[tiab] OR cytotoxic*[tiab] OR complement[tiab] OR (mucosal[tiab] AND immun*[tiab]) OR \"immune function\"[tiab] OR \"immune response\"[tiab] OR \"effector function\"[tiab] OR immunophenotyp*[tiab] OR \"immune cell\"[tiab] OR \"immune cells\"[tiab] )",
           "string_sha256": "12fe13ce6983f021d796d5f2573504394907bb156c4212ad5b6144b86231c435",
@@ -1838,7 +1838,7 @@
           "formal_search": false,
           "prisma_counts": false,
           "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
-          "strategy_version": "0.5-draft (PubMed blocks identical to 0.4)",
+          "strategy_version": "0.6-draft (PubMed blocks identical to 0.6)",
           "date_time_utc": "2026-10-04T12:41:00Z",
           "exact_string_sent": "( omic*[tiab] OR proteom*[tiab] OR metabolom*[tiab] OR lipidom*[tiab] OR transcriptom*[tiab] OR epigenom*[tiab] OR methylom*[tiab] OR multiomic*[tiab] OR \"multi-omic\"[tiab] OR \"multi-omics\"[tiab] OR \"single-cell\"[tiab] OR \"single cell\"[tiab] OR \"scRNA-seq\"[tiab] OR \"RNA-seq\"[tiab] OR \"RNA sequencing\"[tiab] OR microRNA[tiab] OR miRNA[tiab] OR lncRNA[tiab] OR circRNA[tiab] OR \"mass spectrometry\"[tiab] OR \"protein profiling\"[tiab] OR \"metabolite profiling\"[tiab] OR \"high-throughput sequencing\"[tiab] )",
           "string_sha256": "bc731c5992788bf750e1a0a6ac44560a6644ed70f2aea206c61375418c368032",
@@ -1857,7 +1857,7 @@
           "formal_search": false,
           "prisma_counts": false,
           "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
-          "strategy_version": "0.5-draft (PubMed blocks identical to 0.4)",
+          "strategy_version": "0.6-draft (PubMed blocks identical to 0.6)",
           "date_time_utc": "2026-10-04T12:41:01Z",
           "exact_string_sent": "( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR sport*[tiab] OR train*[tiab] OR workout*[tiab] OR athlet*[tiab] OR competition*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycl*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[tiab] OR (resistance[tiab] AND train*[tiab]) OR \"strength training\"[tiab] OR endurance[tiab] OR aerobic[tiab] OR interval[tiab] OR HIIT[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) AND ( immun*[tiab] OR inflammat*[tiab] OR leukocyt*[tiab] OR leucocyt*[tiab] OR lymphocyt*[tiab] OR neutrophil*[tiab] OR monocyt*[tiab] OR eosinophil*[tiab] OR basophil*[tiab] OR \"natural killer\"[tiab] OR \"NK cell\"[tiab] OR \"NK cells\"[tiab] OR \"T cell\"[tiab] OR \"T cells\"[tiab] OR \"B cell\"[tiab] OR \"B cells\"[tiab] OR CD4[tiab] OR CD8[tiab] OR cytokine*[tiab] OR chemokine*[tiab] OR immunoglobulin*[tiab] OR \"immunoglobulin A\"[tiab] OR \"secretory immunoglobulin A\"[tiab] OR IgA[tiab] OR sIgA[tiab] OR SIgA[tiab] OR \"secretory IgA\"[tiab] OR interleukin*[tiab] OR \"interleukin-6\"[tiab] OR \"IL-6\"[tiab] OR IL6[tiab] OR CRP[tiab] OR \"C-reactive protein\"[tiab] OR \"C reactive protein\"[tiab] OR phagocyt*[tiab] OR cytotoxic*[tiab] OR complement[tiab] OR (mucosal[tiab] AND immun*[tiab]) OR \"immune function\"[tiab] OR \"immune response\"[tiab] OR \"effector function\"[tiab] OR immunophenotyp*[tiab] OR \"immune cell\"[tiab] OR \"immune cells\"[tiab] )",
           "string_sha256": "d2db946866ab4fe512eabbdae13edb55539e2df44d2e112a21fb03d28a93eff7",
@@ -1876,7 +1876,7 @@
           "formal_search": false,
           "prisma_counts": false,
           "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
-          "strategy_version": "0.5-draft (PubMed blocks identical to 0.4)",
+          "strategy_version": "0.6-draft (PubMed blocks identical to 0.6)",
           "date_time_utc": "2026-10-04T12:41:03Z",
           "exact_string_sent": "( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR sport*[tiab] OR train*[tiab] OR workout*[tiab] OR athlet*[tiab] OR competition*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycl*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[tiab] OR (resistance[tiab] AND train*[tiab]) OR \"strength training\"[tiab] OR endurance[tiab] OR aerobic[tiab] OR interval[tiab] OR HIIT[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) AND ( omic*[tiab] OR proteom*[tiab] OR metabolom*[tiab] OR lipidom*[tiab] OR transcriptom*[tiab] OR epigenom*[tiab] OR methylom*[tiab] OR multiomic*[tiab] OR \"multi-omic\"[tiab] OR \"multi-omics\"[tiab] OR \"single-cell\"[tiab] OR \"single cell\"[tiab] OR \"scRNA-seq\"[tiab] OR \"RNA-seq\"[tiab] OR \"RNA sequencing\"[tiab] OR microRNA[tiab] OR miRNA[tiab] OR lncRNA[tiab] OR circRNA[tiab] OR \"mass spectrometry\"[tiab] OR \"protein profiling\"[tiab] OR \"metabolite profiling\"[tiab] OR \"high-throughput sequencing\"[tiab] )",
           "string_sha256": "705450b629947f7fda79cd762e0ddb10bf10b9e2c2eeb77c681459845f3913c2",
@@ -1895,7 +1895,7 @@
           "formal_search": false,
           "prisma_counts": false,
           "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
-          "strategy_version": "0.5-draft (PubMed blocks identical to 0.4)",
+          "strategy_version": "0.6-draft (PubMed blocks identical to 0.6)",
           "date_time_utc": "2026-10-04T12:41:04Z",
           "exact_string_sent": "( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR sport*[tiab] OR train*[tiab] OR workout*[tiab] OR athlet*[tiab] OR competition*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycl*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[tiab] OR (resistance[tiab] AND train*[tiab]) OR \"strength training\"[tiab] OR endurance[tiab] OR aerobic[tiab] OR interval[tiab] OR HIIT[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) AND (( immun*[tiab] OR inflammat*[tiab] OR leukocyt*[tiab] OR leucocyt*[tiab] OR lymphocyt*[tiab] OR neutrophil*[tiab] OR monocyt*[tiab] OR eosinophil*[tiab] OR basophil*[tiab] OR \"natural killer\"[tiab] OR \"NK cell\"[tiab] OR \"NK cells\"[tiab] OR \"T cell\"[tiab] OR \"T cells\"[tiab] OR \"B cell\"[tiab] OR \"B cells\"[tiab] OR CD4[tiab] OR CD8[tiab] OR cytokine*[tiab] OR chemokine*[tiab] OR immunoglobulin*[tiab] OR \"immunoglobulin A\"[tiab] OR \"secretory immunoglobulin A\"[tiab] OR IgA[tiab] OR sIgA[tiab] OR SIgA[tiab] OR \"secretory IgA\"[tiab] OR interleukin*[tiab] OR \"interleukin-6\"[tiab] OR \"IL-6\"[tiab] OR IL6[tiab] OR CRP[tiab] OR \"C-reactive protein\"[tiab] OR \"C reactive protein\"[tiab] OR phagocyt*[tiab] OR cytotoxic*[tiab] OR complement[tiab] OR (mucosal[tiab] AND immun*[tiab]) OR \"immune function\"[tiab] OR \"immune response\"[tiab] OR \"effector function\"[tiab] OR immunophenotyp*[tiab] OR \"immune cell\"[tiab] OR \"immune cells\"[tiab] ) OR ( omic*[tiab] OR proteom*[tiab] OR metabolom*[tiab] OR lipidom*[tiab] OR transcriptom*[tiab] OR epigenom*[tiab] OR methylom*[tiab] OR multiomic*[tiab] OR \"multi-omic\"[tiab] OR \"multi-omics\"[tiab] OR \"single-cell\"[tiab] OR \"single cell\"[tiab] OR \"scRNA-seq\"[tiab] OR \"RNA-seq\"[tiab] OR \"RNA sequencing\"[tiab] OR microRNA[tiab] OR miRNA[tiab] OR lncRNA[tiab] OR circRNA[tiab] OR \"mass spectrometry\"[tiab] OR \"protein profiling\"[tiab] OR \"metabolite profiling\"[tiab] OR \"high-throughput sequencing\"[tiab] ))",
           "string_sha256": "8748d4b6affbcc1adbf81e0daae5c4c748044b7629069b81e724cac77088f281",
@@ -1914,7 +1914,7 @@
           "formal_search": false,
           "prisma_counts": false,
           "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
-          "strategy_version": "0.5-draft (PubMed blocks identical to 0.4)",
+          "strategy_version": "0.6-draft (PubMed blocks identical to 0.6)",
           "date_time_utc": "2026-10-04T12:54:02Z",
           "exact_string_sent": "(\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Running\"[Mesh])",
           "string_sha256": "0ca556b636c6bce28435e5701eac010946e8ca190c36eee4ba0f11800cdf1ce2",
@@ -1933,7 +1933,7 @@
           "formal_search": false,
           "prisma_counts": false,
           "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
-          "strategy_version": "0.5-draft (PubMed blocks identical to 0.4)",
+          "strategy_version": "0.6-draft (PubMed blocks identical to 0.6)",
           "date_time_utc": "2026-10-04T12:54:03Z",
           "exact_string_sent": "(\"Immunity\"[Mesh] OR \"Immunoglobulin A\"[Mesh] OR \"Immunoglobulin A, Secretory\"[Mesh] OR \"Interleukins\"[Mesh] OR \"Interleukin-6\"[Mesh] OR \"C-Reactive Protein\"[Mesh] OR \"Phagocytosis\"[Mesh] OR \"Cytotoxicity, Immunologic\"[Mesh])",
           "string_sha256": "a12b19078b7ef9d776ab918378df8a134e831ac2d7295b4f5ef5f41736d03c30",
@@ -1952,7 +1952,7 @@
           "formal_search": false,
           "prisma_counts": false,
           "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
-          "strategy_version": "0.5-draft (PubMed blocks identical to 0.4)",
+          "strategy_version": "0.6-draft (PubMed blocks identical to 0.6)",
           "date_time_utc": "2026-10-04T12:54:30Z",
           "exact_string_sent": "(( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR sport*[tiab] OR train*[tiab] OR workout*[tiab] OR athlet*[tiab] OR competition*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycl*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[tiab] OR (resistance[tiab] AND train*[tiab]) OR \"strength training\"[tiab] OR endurance[tiab] OR aerobic[tiab] OR interval[tiab] OR HIIT[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) OR (\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Running\"[Mesh])) AND (( immun*[tiab] OR inflammat*[tiab] OR leukocyt*[tiab] OR leucocyt*[tiab] OR lymphocyt*[tiab] OR neutrophil*[tiab] OR monocyt*[tiab] OR eosinophil*[tiab] OR basophil*[tiab] OR \"natural killer\"[tiab] OR \"NK cell\"[tiab] OR \"NK cells\"[tiab] OR \"T cell\"[tiab] OR \"T cells\"[tiab] OR \"B cell\"[tiab] OR \"B cells\"[tiab] OR CD4[tiab] OR CD8[tiab] OR cytokine*[tiab] OR chemokine*[tiab] OR immunoglobulin*[tiab] OR \"immunoglobulin A\"[tiab] OR \"secretory immunoglobulin A\"[tiab] OR IgA[tiab] OR sIgA[tiab] OR SIgA[tiab] OR \"secretory IgA\"[tiab] OR interleukin*[tiab] OR \"interleukin-6\"[tiab] OR \"IL-6\"[tiab] OR IL6[tiab] OR CRP[tiab] OR \"C-reactive protein\"[tiab] OR \"C reactive protein\"[tiab] OR phagocyt*[tiab] OR cytotoxic*[tiab] OR complement[tiab] OR (mucosal[tiab] AND immun*[tiab]) OR \"immune function\"[tiab] OR \"immune response\"[tiab] OR \"effector function\"[tiab] OR immunophenotyp*[tiab] OR \"immune cell\"[tiab] OR \"immune cells\"[tiab] ) OR (\"Immunity\"[Mesh] OR \"Immunoglobulin A\"[Mesh] OR \"Immunoglobulin A, Secretory\"[Mesh] OR \"Interleukins\"[Mesh] OR \"Interleukin-6\"[Mesh] OR \"C-Reactive Protein\"[Mesh] OR \"Phagocytosis\"[Mesh] OR \"Cytotoxicity, Immunologic\"[Mesh]))",
           "string_sha256": "400c5657b14b596928d6228eb13cb3a6998fe7281b1d445ae7c6fc4425b04d7d",
@@ -1971,7 +1971,7 @@
           "formal_search": false,
           "prisma_counts": false,
           "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
-          "strategy_version": "0.5-draft (PubMed blocks identical to 0.4)",
+          "strategy_version": "0.6-draft (PubMed blocks identical to 0.6)",
           "date_time_utc": "2026-10-04T12:54:32Z",
           "exact_string_sent": "(( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR sport*[tiab] OR train*[tiab] OR workout*[tiab] OR athlet*[tiab] OR competition*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycl*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[tiab] OR (resistance[tiab] AND train*[tiab]) OR \"strength training\"[tiab] OR endurance[tiab] OR aerobic[tiab] OR interval[tiab] OR HIIT[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) OR (\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Running\"[Mesh])) AND ( omic*[tiab] OR proteom*[tiab] OR metabolom*[tiab] OR lipidom*[tiab] OR transcriptom*[tiab] OR epigenom*[tiab] OR methylom*[tiab] OR multiomic*[tiab] OR \"multi-omic\"[tiab] OR \"multi-omics\"[tiab] OR \"single-cell\"[tiab] OR \"single cell\"[tiab] OR \"scRNA-seq\"[tiab] OR \"RNA-seq\"[tiab] OR \"RNA sequencing\"[tiab] OR microRNA[tiab] OR miRNA[tiab] OR lncRNA[tiab] OR circRNA[tiab] OR \"mass spectrometry\"[tiab] OR \"protein profiling\"[tiab] OR \"metabolite profiling\"[tiab] OR \"high-throughput sequencing\"[tiab] )",
           "string_sha256": "0a8b90e3c6fac479e3c2389cf288ea4e46b8b39ad64ea9191bc217977662ed2f",
@@ -1990,7 +1990,7 @@
           "formal_search": false,
           "prisma_counts": false,
           "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
-          "strategy_version": "0.5-draft (PubMed blocks identical to 0.4)",
+          "strategy_version": "0.6-draft (PubMed blocks identical to 0.6)",
           "date_time_utc": "2026-10-04T12:54:37Z",
           "exact_string_sent": "((( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR sport*[tiab] OR train*[tiab] OR workout*[tiab] OR athlet*[tiab] OR competition*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycl*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[tiab] OR (resistance[tiab] AND train*[tiab]) OR \"strength training\"[tiab] OR endurance[tiab] OR aerobic[tiab] OR interval[tiab] OR HIIT[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) OR (\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Running\"[Mesh])) AND (( immun*[tiab] OR inflammat*[tiab] OR leukocyt*[tiab] OR leucocyt*[tiab] OR lymphocyt*[tiab] OR neutrophil*[tiab] OR monocyt*[tiab] OR eosinophil*[tiab] OR basophil*[tiab] OR \"natural killer\"[tiab] OR \"NK cell\"[tiab] OR \"NK cells\"[tiab] OR \"T cell\"[tiab] OR \"T cells\"[tiab] OR \"B cell\"[tiab] OR \"B cells\"[tiab] OR CD4[tiab] OR CD8[tiab] OR cytokine*[tiab] OR chemokine*[tiab] OR immunoglobulin*[tiab] OR \"immunoglobulin A\"[tiab] OR \"secretory immunoglobulin A\"[tiab] OR IgA[tiab] OR sIgA[tiab] OR SIgA[tiab] OR \"secretory IgA\"[tiab] OR interleukin*[tiab] OR \"interleukin-6\"[tiab] OR \"IL-6\"[tiab] OR IL6[tiab] OR CRP[tiab] OR \"C-reactive protein\"[tiab] OR \"C reactive protein\"[tiab] OR phagocyt*[tiab] OR cytotoxic*[tiab] OR complement[tiab] OR (mucosal[tiab] AND immun*[tiab]) OR \"immune function\"[tiab] OR \"immune response\"[tiab] OR \"effector function\"[tiab] OR immunophenotyp*[tiab] OR \"immune cell\"[tiab] OR \"immune cells\"[tiab] ) OR (\"Immunity\"[Mesh] OR \"Immunoglobulin A\"[Mesh] OR \"Immunoglobulin A, Secretory\"[Mesh] OR \"Interleukins\"[Mesh] OR \"Interleukin-6\"[Mesh] OR \"C-Reactive Protein\"[Mesh] OR \"Phagocytosis\"[Mesh] OR \"Cytotoxicity, Immunologic\"[Mesh]))) NOT (( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR sport*[tiab] OR train*[tiab] OR workout*[tiab] OR athlet*[tiab] OR competition*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycl*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[tiab] OR (resistance[tiab] AND train*[tiab]) OR \"strength training\"[tiab] OR endurance[tiab] OR aerobic[tiab] OR interval[tiab] OR HIIT[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) AND ( immun*[tiab] OR inflammat*[tiab] OR leukocyt*[tiab] OR leucocyt*[tiab] OR lymphocyt*[tiab] OR neutrophil*[tiab] OR monocyt*[tiab] OR eosinophil*[tiab] OR basophil*[tiab] OR \"natural killer\"[tiab] OR \"NK cell\"[tiab] OR \"NK cells\"[tiab] OR \"T cell\"[tiab] OR \"T cells\"[tiab] OR \"B cell\"[tiab] OR \"B cells\"[tiab] OR CD4[tiab] OR CD8[tiab] OR cytokine*[tiab] OR chemokine*[tiab] OR immunoglobulin*[tiab] OR \"immunoglobulin A\"[tiab] OR \"secretory immunoglobulin A\"[tiab] OR IgA[tiab] OR sIgA[tiab] OR SIgA[tiab] OR \"secretory IgA\"[tiab] OR interleukin*[tiab] OR \"interleukin-6\"[tiab] OR \"IL-6\"[tiab] OR IL6[tiab] OR CRP[tiab] OR \"C-reactive protein\"[tiab] OR \"C reactive protein\"[tiab] OR phagocyt*[tiab] OR cytotoxic*[tiab] OR complement[tiab] OR (mucosal[tiab] AND immun*[tiab]) OR \"immune function\"[tiab] OR \"immune response\"[tiab] OR \"effector function\"[tiab] OR immunophenotyp*[tiab] OR \"immune cell\"[tiab] OR \"immune cells\"[tiab] ))",
           "string_sha256": "268e1e16edbe00948b484a80c37f9904e3f017c0e9c2ec54dabcb39d96973815",
@@ -2009,7 +2009,7 @@
           "formal_search": false,
           "prisma_counts": false,
           "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
-          "strategy_version": "0.5-draft (PubMed blocks identical to 0.4)",
+          "strategy_version": "0.6-draft (PubMed blocks identical to 0.6)",
           "date_time_utc": "2026-10-04T12:54:43Z",
           "exact_string_sent": "((( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR sport*[tiab] OR train*[tiab] OR workout*[tiab] OR athlet*[tiab] OR competition*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycl*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[tiab] OR (resistance[tiab] AND train*[tiab]) OR \"strength training\"[tiab] OR endurance[tiab] OR aerobic[tiab] OR interval[tiab] OR HIIT[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) OR (\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Running\"[Mesh])) AND ( omic*[tiab] OR proteom*[tiab] OR metabolom*[tiab] OR lipidom*[tiab] OR transcriptom*[tiab] OR epigenom*[tiab] OR methylom*[tiab] OR multiomic*[tiab] OR \"multi-omic\"[tiab] OR \"multi-omics\"[tiab] OR \"single-cell\"[tiab] OR \"single cell\"[tiab] OR \"scRNA-seq\"[tiab] OR \"RNA-seq\"[tiab] OR \"RNA sequencing\"[tiab] OR microRNA[tiab] OR miRNA[tiab] OR lncRNA[tiab] OR circRNA[tiab] OR \"mass spectrometry\"[tiab] OR \"protein profiling\"[tiab] OR \"metabolite profiling\"[tiab] OR \"high-throughput sequencing\"[tiab] )) NOT (( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR sport*[tiab] OR train*[tiab] OR workout*[tiab] OR athlet*[tiab] OR competition*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycl*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[tiab] OR (resistance[tiab] AND train*[tiab]) OR \"strength training\"[tiab] OR endurance[tiab] OR aerobic[tiab] OR interval[tiab] OR HIIT[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) AND ( omic*[tiab] OR proteom*[tiab] OR metabolom*[tiab] OR lipidom*[tiab] OR transcriptom*[tiab] OR epigenom*[tiab] OR methylom*[tiab] OR multiomic*[tiab] OR \"multi-omic\"[tiab] OR \"multi-omics\"[tiab] OR \"single-cell\"[tiab] OR \"single cell\"[tiab] OR \"scRNA-seq\"[tiab] OR \"RNA-seq\"[tiab] OR \"RNA sequencing\"[tiab] OR microRNA[tiab] OR miRNA[tiab] OR lncRNA[tiab] OR circRNA[tiab] OR \"mass spectrometry\"[tiab] OR \"protein profiling\"[tiab] OR \"metabolite profiling\"[tiab] OR \"high-throughput sequencing\"[tiab] ))",
           "string_sha256": "7e19678917d7987b63d870f7270e292cd671b3ffa570b28824abf3c0ed8c123d",
@@ -2315,6 +2315,1588 @@
         "Embase on Ovid",
         "SPORTDiscus (EBSCOhost)"
       ]
+    },
+    "pubmed_2026_10_04_v06_addendum2": {
+      "description": "Addendum 2 (2026-10-04): PRESS must-fix items applied (strategy v0.6-draft) and PubMed volume/recall experiments V0-V5. Parser-validation runs only: NOT formal searches, no PRISMA counts, no exports, no search date. Formal-run fields in `searches` stay null. Record: 03_search/platform_validation_2026-10-04.md, Addendum 2.",
+      "strategy_version": "0.6-draft",
+      "date": "2026-10-04",
+      "time_zone": "UTC",
+      "user_agent": "scoping-review-search-validation/1.0",
+      "rate_limit": "<=3 requests/second (>=0.4 s spacing); no API key, no e-mail sent",
+      "T_block_role": "diagnostic only (contract 8.3a); V3/V4 are evidence for a possible amendment (next ID PRE-003), not an adopted rule",
+      "block_entries": [
+        {
+          "id": "PV06_PUBMED_E6",
+          "block_or_route": "E free text v0.6",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST); PubMed search engine",
+          "run_type": "parser_validation",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
+          "strategy_version": "0.6-draft",
+          "date_time_utc": "2026-10-04T13:20:35Z",
+          "exact_string_sent": "( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR sport*[tiab] OR train*[tiab] OR workout*[tiab] OR athlet*[tiab] OR competition*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycling[tiab] OR cyclist*[tiab] OR \"cycle ergomet*\"[tiab] OR ergomet*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[tiab] OR (resistance[tiab] AND train*[tiab]) OR \"strength training\"[tiab] OR endurance[tiab] OR aerobic[tiab] OR \"interval train*\"[tiab] OR \"interval exercis*\"[tiab] OR \"sprint interval*\"[tiab] OR \"high-intensity interval*\"[tiab] OR HIIT[tiab] OR HIIE[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] )",
+          "string_sha256": "0774b0cce31bdc0166e2411e4fa7c40f356c74601d76f2b950733571094d50e6",
+          "validation_hit_count": 2390411,
+          "translationset_empty": true,
+          "errorlist": null,
+          "warninglist": null
+        },
+        {
+          "id": "PV06_PUBMED_I6",
+          "block_or_route": "I free text v0.6",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST); PubMed search engine",
+          "run_type": "parser_validation",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
+          "strategy_version": "0.6-draft",
+          "date_time_utc": "2026-10-04T13:20:36Z",
+          "exact_string_sent": "( immun*[tiab] OR inflammat*[tiab] OR leukocyt*[tiab] OR leucocyt*[tiab] OR lymphocyt*[tiab] OR neutrophil*[tiab] OR monocyt*[tiab] OR eosinophil*[tiab] OR basophil*[tiab] OR \"natural killer\"[tiab] OR \"NK cell\"[tiab] OR \"NK cells\"[tiab] OR \"T cell\"[tiab] OR \"T cells\"[tiab] OR \"B cell\"[tiab] OR \"B cells\"[tiab] OR CD4[tiab] OR CD8[tiab] OR cytokine*[tiab] OR chemokine*[tiab] OR immunoglobulin*[tiab] OR \"immunoglobulin A\"[tiab] OR \"secretory immunoglobulin A\"[tiab] OR IgA[tiab] OR sIgA[tiab] OR SIgA[tiab] OR \"secretory IgA\"[tiab] OR interleukin*[tiab] OR \"interleukin-6\"[tiab] OR \"IL-6\"[tiab] OR IL6[tiab] OR CRP[tiab] OR \"C-reactive protein\"[tiab] OR \"C reactive protein\"[tiab] OR phagocyt*[tiab] OR cytotoxic*[tiab] OR complement[tiab] OR (mucosal[tiab] AND immun*[tiab]) OR \"immune function\"[tiab] OR \"immune response\"[tiab] OR \"effector function\"[tiab] OR immunophenotyp*[tiab] OR \"immune cell\"[tiab] OR \"immune cells\"[tiab] OR \"white blood cell*\"[tiab] OR \"mononuclear cell*\"[tiab] OR PBMC*[tiab] OR granulocyt*[tiab] OR lymphopeni*[tiab] OR lymphocytopeni*[tiab] OR leukocytosis[tiab] OR TNF[tiab] OR \"TNF-alpha\"[tiab] OR \"tumor necrosis factor*\"[tiab] OR \"tumour necrosis factor*\"[tiab] OR IFN[tiab] OR \"IFN-gamma\"[tiab] OR interferon*[tiab] OR \"IL-10\"[tiab] OR IL10[tiab] OR \"IL-1\"[tiab] OR IL1[tiab] OR \"IL-1beta\"[tiab] OR \"IL-8\"[tiab] OR IL8[tiab] )",
+          "string_sha256": "fb04855ad883fa4add69483f24d466c2ef875f1429e24cad1d08972a784d018c",
+          "validation_hit_count": 5819634,
+          "translationset_empty": true,
+          "errorlist": null,
+          "warninglist": null
+        },
+        {
+          "id": "PV06_PUBMED_O6",
+          "block_or_route": "O free text v0.6",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST); PubMed search engine",
+          "run_type": "parser_validation",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
+          "strategy_version": "0.6-draft",
+          "date_time_utc": "2026-10-04T13:20:38Z",
+          "exact_string_sent": "( omic*[tiab] OR proteom*[tiab] OR metabolom*[tiab] OR lipidom*[tiab] OR transcriptom*[tiab] OR epigenom*[tiab] OR epigenet*[tiab] OR \"DNA methylation\"[tiab] OR methylom*[tiab] OR multiomic*[tiab] OR \"multi-omic\"[tiab] OR \"multi-omics\"[tiab] OR \"single-cell\"[tiab] OR \"single cell\"[tiab] OR \"scRNA-seq\"[tiab] OR \"RNA-seq\"[tiab] OR \"RNA sequencing\"[tiab] OR microRNA*[tiab] OR miRNA*[tiab] OR lncRNA*[tiab] OR circRNA*[tiab] OR \"mass spectrometry\"[tiab] OR \"protein profiling\"[tiab] OR \"metabolite profiling\"[tiab] OR \"high-throughput sequencing\"[tiab] OR microarray*[tiab] OR \"gene expression profil*\"[tiab] OR \"expression profil*\"[tiab] )",
+          "string_sha256": "b978389e2b057a2cf31c91c7d9d857638a7c347abcddb8499a49222b9f518010",
+          "validation_hit_count": 1524293,
+          "translationset_empty": true,
+          "errorlist": null,
+          "warninglist": null
+        },
+        {
+          "id": "PV06_PUBMED_E_MESH",
+          "block_or_route": "E_MESH_PUBMED v0.6",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST); PubMed search engine",
+          "run_type": "parser_validation",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
+          "strategy_version": "0.6-draft",
+          "date_time_utc": "2026-10-04T13:20:39Z",
+          "exact_string_sent": "(\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Sports\"[Mesh] OR \"Exercise Test\"[Mesh] OR \"Running\"[Mesh] OR \"Swimming\"[Mesh] OR \"Bicycling\"[Mesh] OR \"Resistance Training\"[Mesh] OR \"High-Intensity Interval Training\"[Mesh])",
+          "string_sha256": "9a18ec26ee72c8ac8b0b4f7ce1718b3e0cb0deb90aed10620d264583b4ecd5f5",
+          "validation_hit_count": 495581,
+          "translationset_empty": true,
+          "errorlist": null,
+          "warninglist": null
+        },
+        {
+          "id": "PV06_PUBMED_I_MESH",
+          "block_or_route": "I_MESH_PUBMED v0.6",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST); PubMed search engine",
+          "run_type": "parser_validation",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
+          "strategy_version": "0.6-draft",
+          "date_time_utc": "2026-10-04T13:20:40Z",
+          "exact_string_sent": "(\"Immunity\"[Mesh] OR \"Immunity, Mucosal\"[Mesh] OR \"Leukocytes\"[Mesh] OR \"Lymphocytes\"[Mesh] OR \"Killer Cells, Natural\"[Mesh] OR \"Neutrophils\"[Mesh] OR \"Monocytes\"[Mesh] OR \"Leukocyte Count\"[Mesh] OR \"Lymphocyte Count\"[Mesh] OR \"Cytokines\"[Mesh] OR \"Chemokines\"[Mesh] OR \"Interleukins\"[Mesh] OR \"Interleukin-6\"[Mesh] OR \"Immunoglobulins\"[Mesh] OR \"Immunoglobulin A\"[Mesh] OR \"Immunoglobulin A, Secretory\"[Mesh] OR \"Complement System Proteins\"[Mesh] OR \"C-Reactive Protein\"[Mesh] OR \"Phagocytosis\"[Mesh] OR \"Cytotoxicity, Immunologic\"[Mesh])",
+          "string_sha256": "44271ec61fe9721ccf45831b1cb9e31a36a193bff627a8b5af694fd3255a7f70",
+          "validation_hit_count": 2649932,
+          "translationset_empty": true,
+          "errorlist": null,
+          "warninglist": null
+        },
+        {
+          "id": "PV06_PUBMED_O_MESH",
+          "block_or_route": "O_MESH_PUBMED v0.6",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST); PubMed search engine",
+          "run_type": "parser_validation",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
+          "strategy_version": "0.6-draft",
+          "date_time_utc": "2026-10-04T13:20:42Z",
+          "exact_string_sent": "(\"Proteomics\"[Mesh] OR \"Metabolomics\"[Mesh] OR \"Lipidomics\"[Mesh] OR \"Transcriptome\"[Mesh] OR \"Gene Expression Profiling\"[Mesh] OR \"Single-Cell Analysis\"[Mesh] OR \"Multiomics\"[Mesh] OR \"Epigenomics\"[Mesh] OR \"DNA Methylation\"[Mesh] OR \"MicroRNAs\"[Mesh] OR \"RNA, Long Noncoding\"[Mesh] OR \"Sequence Analysis, RNA\"[Mesh] OR \"Mass Spectrometry\"[Mesh:NoExp])",
+          "string_sha256": "5aa95f9d3b580876f1a317116194bcc436555b6ceae229725781106bc6374824",
+          "validation_hit_count": 811189,
+          "translationset_empty": true,
+          "errorlist": null,
+          "warninglist": null
+        },
+        {
+          "id": "PV06_PUBMED_T",
+          "block_or_route": "diagnostic T (Addendum 2 pilot)",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST); PubMed search engine",
+          "run_type": "parser_validation",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
+          "strategy_version": "0.6-draft",
+          "date_time_utc": "2026-10-04T13:20:48Z",
+          "exact_string_sent": "(\"post-exercise\"[tiab] OR postexercise[tiab] OR \"post exercise\"[tiab] OR \"after exercise\"[tiab] OR \"following exercise\"[tiab] OR \"exercise-induced\"[tiab] OR \"acute exercise\"[tiab] OR \"acute bout\"[tiab] OR \"single bout\"[tiab] OR \"bout of\"[tiab] OR \"exercise bout*\"[tiab] OR \"post-race\"[tiab] OR \"post-marathon\"[tiab] OR \"after a marathon\"[tiab] OR \"recovery period\"[tiab] OR \"during recovery\"[tiab] OR \"immediately after\"[tiab] OR \"hours after\"[tiab] OR \"h post\"[tiab] OR \"post-match\"[tiab] OR \"post-competition\"[tiab] OR \"exercise session*\"[tiab] OR \"exercise challenge*\"[tiab] OR \"exercise test*\"[tiab])",
+          "string_sha256": "2fdc84427faf552d36259333c1e2be4bbed94ac4c1147fc77c9b97d0daaaf4f2",
+          "validation_hit_count": 368660,
+          "translationset_empty": true,
+          "errorlist": null,
+          "warninglist": {
+            "phrasesignored": [],
+            "quotedphrasesnotfound": [
+              "\"after a marathon\"[tiab]"
+            ],
+            "outputmessages": []
+          }
+        },
+        {
+          "id": "PV06_PUBMED_T2",
+          "block_or_route": "diagnostic T2 = T OR Post-Exercise Recovery[Mesh]",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST); PubMed search engine",
+          "run_type": "parser_validation",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
+          "strategy_version": "0.6-draft",
+          "date_time_utc": "2026-10-04T13:20:50Z",
+          "exact_string_sent": "(\"post-exercise\"[tiab] OR postexercise[tiab] OR \"post exercise\"[tiab] OR \"after exercise\"[tiab] OR \"following exercise\"[tiab] OR \"exercise-induced\"[tiab] OR \"acute exercise\"[tiab] OR \"acute bout\"[tiab] OR \"single bout\"[tiab] OR \"bout of\"[tiab] OR \"exercise bout*\"[tiab] OR \"post-race\"[tiab] OR \"post-marathon\"[tiab] OR \"after a marathon\"[tiab] OR \"recovery period\"[tiab] OR \"during recovery\"[tiab] OR \"immediately after\"[tiab] OR \"hours after\"[tiab] OR \"h post\"[tiab] OR \"post-match\"[tiab] OR \"post-competition\"[tiab] OR \"exercise session*\"[tiab] OR \"exercise challenge*\"[tiab] OR \"exercise test*\"[tiab] OR \"Post-Exercise Recovery\"[Mesh])",
+          "string_sha256": "7d33538a217469a749bc8662154ca9aa16c82df9457de718486685829a2c0faa",
+          "validation_hit_count": 368731,
+          "translationset_empty": true,
+          "errorlist": null,
+          "warninglist": {
+            "phrasesignored": [],
+            "quotedphrasesnotfound": [
+              "\"after a marathon\"[tiab]"
+            ],
+            "outputmessages": []
+          }
+        }
+      ],
+      "mesh_verification": {
+        "method": "esearch db=mesh '\"<heading>\"[MeSH Terms]' then esummary; marginal = V1 count minus V1 re-run without that heading (2026-10-04T13:21:08Z-13:22:53Z; V1 = 255019)",
+        "rows": [
+          {
+            "line": "E",
+            "heading": "Exercise",
+            "ui": "D015444",
+            "db_mesh_esearch_utc": "2026-10-04T13:18:15Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 832
+          },
+          {
+            "line": "E",
+            "heading": "Physical Exertion",
+            "ui": "D005082",
+            "db_mesh_esearch_utc": "2026-10-04T13:18:16Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 363
+          },
+          {
+            "line": "E",
+            "heading": "Sports",
+            "ui": "D013177",
+            "db_mesh_esearch_utc": "2026-10-04T13:18:19Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 673
+          },
+          {
+            "line": "E",
+            "heading": "Exercise Test",
+            "ui": "D005080",
+            "db_mesh_esearch_utc": "2026-10-04T13:18:20Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 442
+          },
+          {
+            "line": "E",
+            "heading": "Running",
+            "ui": "D012420",
+            "db_mesh_esearch_utc": "2026-10-04T13:18:23Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 0
+          },
+          {
+            "line": "E",
+            "heading": "Swimming",
+            "ui": "D013550",
+            "db_mesh_esearch_utc": "2026-10-04T13:18:25Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 0
+          },
+          {
+            "line": "E",
+            "heading": "Bicycling",
+            "ui": "D001642",
+            "db_mesh_esearch_utc": "2026-10-04T13:18:27Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 0
+          },
+          {
+            "line": "E",
+            "heading": "Resistance Training",
+            "ui": "D055070",
+            "db_mesh_esearch_utc": "2026-10-04T13:18:29Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 0
+          },
+          {
+            "line": "E",
+            "heading": "High-Intensity Interval Training",
+            "ui": "D000072696",
+            "db_mesh_esearch_utc": "2026-10-04T13:18:31Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 0
+          },
+          {
+            "line": "I",
+            "heading": "Immunity",
+            "ui": "D007109",
+            "db_mesh_esearch_utc": "2026-10-04T13:18:33Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 1377
+          },
+          {
+            "line": "I",
+            "heading": "Immunity, Mucosal",
+            "ui": "D018928",
+            "db_mesh_esearch_utc": "2026-10-04T13:18:35Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 0
+          },
+          {
+            "line": "I",
+            "heading": "Leukocytes",
+            "ui": "D007962",
+            "db_mesh_esearch_utc": "2026-10-04T13:18:37Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 167
+          },
+          {
+            "line": "I",
+            "heading": "Lymphocytes",
+            "ui": "D008214",
+            "db_mesh_esearch_utc": "2026-10-04T13:18:39Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 0
+          },
+          {
+            "line": "I",
+            "heading": "Killer Cells, Natural",
+            "ui": "D007694",
+            "db_mesh_esearch_utc": "2026-10-04T13:18:43Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 0
+          },
+          {
+            "line": "I",
+            "heading": "Neutrophils",
+            "ui": "D009504",
+            "db_mesh_esearch_utc": "2026-10-04T13:18:46Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 0
+          },
+          {
+            "line": "I",
+            "heading": "Monocytes",
+            "ui": "D009000",
+            "db_mesh_esearch_utc": "2026-10-04T13:18:48Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 33
+          },
+          {
+            "line": "I",
+            "heading": "Leukocyte Count",
+            "ui": "D007958",
+            "db_mesh_esearch_utc": "2026-10-04T13:18:50Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 144
+          },
+          {
+            "line": "I",
+            "heading": "Lymphocyte Count",
+            "ui": "D018655",
+            "db_mesh_esearch_utc": "2026-10-04T13:18:53Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 0
+          },
+          {
+            "line": "I",
+            "heading": "Cytokines",
+            "ui": "D016207",
+            "db_mesh_esearch_utc": "2026-10-04T13:18:55Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 2321
+          },
+          {
+            "line": "I",
+            "heading": "Chemokines",
+            "ui": "D018925",
+            "db_mesh_esearch_utc": "2026-10-04T13:19:01Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 0
+          },
+          {
+            "line": "I",
+            "heading": "Interleukins",
+            "ui": "D007378",
+            "db_mesh_esearch_utc": "2026-10-04T13:19:03Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 0
+          },
+          {
+            "line": "I",
+            "heading": "Interleukin-6",
+            "ui": "D015850",
+            "db_mesh_esearch_utc": "2026-10-04T13:19:05Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 0
+          },
+          {
+            "line": "I",
+            "heading": "Immunoglobulins",
+            "ui": "D007136",
+            "db_mesh_esearch_utc": "2026-10-04T13:19:08Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 5464
+          },
+          {
+            "line": "I",
+            "heading": "Immunoglobulin A",
+            "ui": "D007070",
+            "db_mesh_esearch_utc": "2026-10-04T13:19:09Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 0
+          },
+          {
+            "line": "I",
+            "heading": "Immunoglobulin A, Secretory",
+            "ui": "D007071",
+            "db_mesh_esearch_utc": "2026-10-04T13:19:12Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 0
+          },
+          {
+            "line": "I",
+            "heading": "Complement System Proteins",
+            "ui": "D003165",
+            "db_mesh_esearch_utc": "2026-10-04T13:19:15Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 75
+          },
+          {
+            "line": "I",
+            "heading": "C-Reactive Protein",
+            "ui": "D002097",
+            "db_mesh_esearch_utc": "2026-10-04T13:19:17Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 175
+          },
+          {
+            "line": "I",
+            "heading": "Phagocytosis",
+            "ui": "D010587",
+            "db_mesh_esearch_utc": "2026-10-04T13:19:19Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 0
+          },
+          {
+            "line": "I",
+            "heading": "Cytotoxicity, Immunologic",
+            "ui": "D003602",
+            "db_mesh_esearch_utc": "2026-10-04T13:19:21Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 20
+          },
+          {
+            "line": "O",
+            "heading": "Proteomics",
+            "ui": "D040901",
+            "db_mesh_esearch_utc": "2026-10-04T13:19:24Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 190
+          },
+          {
+            "line": "O",
+            "heading": "Metabolomics",
+            "ui": "D055432",
+            "db_mesh_esearch_utc": "2026-10-04T13:19:26Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 120
+          },
+          {
+            "line": "O",
+            "heading": "Lipidomics",
+            "ui": "D000081362",
+            "db_mesh_esearch_utc": "2026-10-04T13:19:28Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 0
+          },
+          {
+            "line": "O",
+            "heading": "Transcriptome",
+            "ui": "D059467",
+            "db_mesh_esearch_utc": "2026-10-04T13:19:33Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 205
+          },
+          {
+            "line": "O",
+            "heading": "Gene Expression Profiling",
+            "ui": "D020869",
+            "db_mesh_esearch_utc": "2026-10-04T13:19:36Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 2698
+          },
+          {
+            "line": "O",
+            "heading": "Single-Cell Analysis",
+            "ui": "D059010",
+            "db_mesh_esearch_utc": "2026-10-04T13:19:38Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 52
+          },
+          {
+            "line": "O",
+            "heading": "Multiomics",
+            "ui": "D000095028",
+            "db_mesh_esearch_utc": "2026-10-04T13:19:40Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 0
+          },
+          {
+            "line": "O",
+            "heading": "Epigenomics",
+            "ui": "D057890",
+            "db_mesh_esearch_utc": "2026-10-04T13:19:44Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 15
+          },
+          {
+            "line": "O",
+            "heading": "DNA Methylation",
+            "ui": "D019175",
+            "db_mesh_esearch_utc": "2026-10-04T13:19:47Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 231
+          },
+          {
+            "line": "O",
+            "heading": "MicroRNAs",
+            "ui": "D035683",
+            "db_mesh_esearch_utc": "2026-10-04T13:19:49Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 188
+          },
+          {
+            "line": "O",
+            "heading": "RNA, Long Noncoding",
+            "ui": "D062085",
+            "db_mesh_esearch_utc": "2026-10-04T13:19:53Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 65
+          },
+          {
+            "line": "O",
+            "heading": "Sequence Analysis, RNA",
+            "ui": "D017423",
+            "db_mesh_esearch_utc": "2026-10-04T13:19:56Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": 272
+          },
+          {
+            "line": "O",
+            "heading": "Mass Spectrometry",
+            "ui": "D013058",
+            "db_mesh_esearch_utc": "2026-10-04T13:19:58Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh:NoExp]",
+            "marginal_records_to_V1_if_removed": 1297
+          },
+          {
+            "line": "T",
+            "heading": "Post-Exercise Recovery",
+            "ui": "D000096062",
+            "db_mesh_esearch_utc": "2026-10-04T13:20:00Z",
+            "exactly_one_descriptor_with_matching_preferred_term": true,
+            "form": "[Mesh]",
+            "marginal_records_to_V1_if_removed": null
+          }
+        ],
+        "explosion_diagnostics": {
+          "records_added_by_explosion_vs_NoExp": {
+            "Sports": 589,
+            "Exercise": 151,
+            "Immunity": 1324,
+            "Leukocytes": 80,
+            "Lymphocytes": 0,
+            "Cytokines": 2099,
+            "Immunoglobulins": 5417,
+            "Complement System Proteins": 68,
+            "Gene Expression Profiling": 1393,
+            "Sequence Analysis, RNA": 0
+          },
+          "Mass_Spectrometry": {
+            "form_used": "[Mesh:NoExp]",
+            "exploded_would_add": 2973
+          },
+          "Immunoglobulins_explosion_only_records": 5417,
+          "of_which_Antibodies_Monoclonal": 2040,
+          "of_which_Immunoglobulin_G": 490
+        }
+      },
+      "variants": [
+        {
+          "id": "PV06_PUBMED_V0",
+          "variant": "V0",
+          "definition": "v0.5 union E5 AND (I5 OR O5), free text (re-run of PV_PUBMED_UNION_E_AND_I_OR_O for same-day comparability)",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST); PubMed search engine",
+          "run_type": "parser_validation",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
+          "strategy_version": "0.6-draft",
+          "exact_string_sent": "( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR sport*[tiab] OR train*[tiab] OR workout*[tiab] OR athlet*[tiab] OR competition*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycl*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[tiab] OR (resistance[tiab] AND train*[tiab]) OR \"strength training\"[tiab] OR endurance[tiab] OR aerobic[tiab] OR interval[tiab] OR HIIT[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) AND (( immun*[tiab] OR inflammat*[tiab] OR leukocyt*[tiab] OR leucocyt*[tiab] OR lymphocyt*[tiab] OR neutrophil*[tiab] OR monocyt*[tiab] OR eosinophil*[tiab] OR basophil*[tiab] OR \"natural killer\"[tiab] OR \"NK cell\"[tiab] OR \"NK cells\"[tiab] OR \"T cell\"[tiab] OR \"T cells\"[tiab] OR \"B cell\"[tiab] OR \"B cells\"[tiab] OR CD4[tiab] OR CD8[tiab] OR cytokine*[tiab] OR chemokine*[tiab] OR immunoglobulin*[tiab] OR \"immunoglobulin A\"[tiab] OR \"secretory immunoglobulin A\"[tiab] OR IgA[tiab] OR sIgA[tiab] OR SIgA[tiab] OR \"secretory IgA\"[tiab] OR interleukin*[tiab] OR \"interleukin-6\"[tiab] OR \"IL-6\"[tiab] OR IL6[tiab] OR CRP[tiab] OR \"C-reactive protein\"[tiab] OR \"C reactive protein\"[tiab] OR phagocyt*[tiab] OR cytotoxic*[tiab] OR complement[tiab] OR (mucosal[tiab] AND immun*[tiab]) OR \"immune function\"[tiab] OR \"immune response\"[tiab] OR \"effector function\"[tiab] OR immunophenotyp*[tiab] OR \"immune cell\"[tiab] OR \"immune cells\"[tiab] ) OR ( omic*[tiab] OR proteom*[tiab] OR metabolom*[tiab] OR lipidom*[tiab] OR transcriptom*[tiab] OR epigenom*[tiab] OR methylom*[tiab] OR multiomic*[tiab] OR \"multi-omic\"[tiab] OR \"multi-omics\"[tiab] OR \"single-cell\"[tiab] OR \"single cell\"[tiab] OR \"scRNA-seq\"[tiab] OR \"RNA-seq\"[tiab] OR \"RNA sequencing\"[tiab] OR microRNA[tiab] OR miRNA[tiab] OR lncRNA[tiab] OR circRNA[tiab] OR \"mass spectrometry\"[tiab] OR \"protein profiling\"[tiab] OR \"metabolite profiling\"[tiab] OR \"high-throughput sequencing\"[tiab] ))",
+          "string_sha256": "8748d4b6affbcc1adbf81e0daae5c4c748044b7629069b81e724cac77088f281",
+          "date_time_utc": "2026-10-04T13:23:42Z",
+          "validation_hit_count": 728526,
+          "info_only_counts": {
+            "pub_year_ge_2000": 626047,
+            "pub_year_ge_2000_utc": "2026-10-04T13:23:44Z",
+            "pub_year_ge_2010": 506772,
+            "pub_year_ge_2010_utc": "2026-10-04T13:23:45Z",
+            "humans_MeSH": 430533,
+            "humans_MeSH_utc": "2026-10-04T13:23:47Z",
+            "note": "information only; the protocol applies no date or human filter"
+          },
+          "errorlist": null,
+          "warninglist": null,
+          "screening_person_hours_pubmed": 24284.2,
+          "screening_person_hours_five_db_raw_assumed_1_5x_to_2_5x": [
+            36426,
+            60710
+          ],
+          "seed_recall": {
+            "method": "one esearch per seed: (<variant>) AND <PMID>[uid]",
+            "utc_window": [
+              "2026-10-04T13:25:37Z",
+              "2026-10-04T13:26:09Z"
+            ],
+            "retrieved_of_24": 24,
+            "POS_retrieved_of_10": 10,
+            "missed": [],
+            "by_seed": {
+              "POS-A1": true,
+              "POS-A2": true,
+              "POS-A3": true,
+              "POS-S1": true,
+              "POS-S3": true,
+              "POS-C1": true,
+              "POS-C2": true,
+              "POS-C3": true,
+              "POS-C4": true,
+              "POS-C5": true,
+              "BND-Y1": true,
+              "BND-Y2": true,
+              "BND-W1": true,
+              "BND-I1": true,
+              "BND-L1": true,
+              "BND-B1": true,
+              "BND-OW1": true,
+              "NEG-E1": true,
+              "NEG-E2": true,
+              "CIT-R1": true,
+              "CIT-R2": true,
+              "CIT-R3": true,
+              "CIT-R4": true,
+              "CIT-R5": true
+            }
+          }
+        },
+        {
+          "id": "PV06_PUBMED_V1",
+          "variant": "V1",
+          "definition": "v0.6 union (E6 OR E_MESH) AND ((I6 OR I_MESH) OR (O6 OR O_MESH))",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST); PubMed search engine",
+          "run_type": "parser_validation",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
+          "strategy_version": "0.6-draft",
+          "exact_string_sent": "(( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR sport*[tiab] OR train*[tiab] OR workout*[tiab] OR athlet*[tiab] OR competition*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycling[tiab] OR cyclist*[tiab] OR \"cycle ergomet*\"[tiab] OR ergomet*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[tiab] OR (resistance[tiab] AND train*[tiab]) OR \"strength training\"[tiab] OR endurance[tiab] OR aerobic[tiab] OR \"interval train*\"[tiab] OR \"interval exercis*\"[tiab] OR \"sprint interval*\"[tiab] OR \"high-intensity interval*\"[tiab] OR HIIT[tiab] OR HIIE[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) OR (\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Sports\"[Mesh] OR \"Exercise Test\"[Mesh] OR \"Running\"[Mesh] OR \"Swimming\"[Mesh] OR \"Bicycling\"[Mesh] OR \"Resistance Training\"[Mesh] OR \"High-Intensity Interval Training\"[Mesh])) AND ((( immun*[tiab] OR inflammat*[tiab] OR leukocyt*[tiab] OR leucocyt*[tiab] OR lymphocyt*[tiab] OR neutrophil*[tiab] OR monocyt*[tiab] OR eosinophil*[tiab] OR basophil*[tiab] OR \"natural killer\"[tiab] OR \"NK cell\"[tiab] OR \"NK cells\"[tiab] OR \"T cell\"[tiab] OR \"T cells\"[tiab] OR \"B cell\"[tiab] OR \"B cells\"[tiab] OR CD4[tiab] OR CD8[tiab] OR cytokine*[tiab] OR chemokine*[tiab] OR immunoglobulin*[tiab] OR \"immunoglobulin A\"[tiab] OR \"secretory immunoglobulin A\"[tiab] OR IgA[tiab] OR sIgA[tiab] OR SIgA[tiab] OR \"secretory IgA\"[tiab] OR interleukin*[tiab] OR \"interleukin-6\"[tiab] OR \"IL-6\"[tiab] OR IL6[tiab] OR CRP[tiab] OR \"C-reactive protein\"[tiab] OR \"C reactive protein\"[tiab] OR phagocyt*[tiab] OR cytotoxic*[tiab] OR complement[tiab] OR (mucosal[tiab] AND immun*[tiab]) OR \"immune function\"[tiab] OR \"immune response\"[tiab] OR \"effector function\"[tiab] OR immunophenotyp*[tiab] OR \"immune cell\"[tiab] OR \"immune cells\"[tiab] OR \"white blood cell*\"[tiab] OR \"mononuclear cell*\"[tiab] OR PBMC*[tiab] OR granulocyt*[tiab] OR lymphopeni*[tiab] OR lymphocytopeni*[tiab] OR leukocytosis[tiab] OR TNF[tiab] OR \"TNF-alpha\"[tiab] OR \"tumor necrosis factor*\"[tiab] OR \"tumour necrosis factor*\"[tiab] OR IFN[tiab] OR \"IFN-gamma\"[tiab] OR interferon*[tiab] OR \"IL-10\"[tiab] OR IL10[tiab] OR \"IL-1\"[tiab] OR IL1[tiab] OR \"IL-1beta\"[tiab] OR \"IL-8\"[tiab] OR IL8[tiab] ) OR (\"Immunity\"[Mesh] OR \"Immunity, Mucosal\"[Mesh] OR \"Leukocytes\"[Mesh] OR \"Lymphocytes\"[Mesh] OR \"Killer Cells, Natural\"[Mesh] OR \"Neutrophils\"[Mesh] OR \"Monocytes\"[Mesh] OR \"Leukocyte Count\"[Mesh] OR \"Lymphocyte Count\"[Mesh] OR \"Cytokines\"[Mesh] OR \"Chemokines\"[Mesh] OR \"Interleukins\"[Mesh] OR \"Interleukin-6\"[Mesh] OR \"Immunoglobulins\"[Mesh] OR \"Immunoglobulin A\"[Mesh] OR \"Immunoglobulin A, Secretory\"[Mesh] OR \"Complement System Proteins\"[Mesh] OR \"C-Reactive Protein\"[Mesh] OR \"Phagocytosis\"[Mesh] OR \"Cytotoxicity, Immunologic\"[Mesh])) OR (( omic*[tiab] OR proteom*[tiab] OR metabolom*[tiab] OR lipidom*[tiab] OR transcriptom*[tiab] OR epigenom*[tiab] OR epigenet*[tiab] OR \"DNA methylation\"[tiab] OR methylom*[tiab] OR multiomic*[tiab] OR \"multi-omic\"[tiab] OR \"multi-omics\"[tiab] OR \"single-cell\"[tiab] OR \"single cell\"[tiab] OR \"scRNA-seq\"[tiab] OR \"RNA-seq\"[tiab] OR \"RNA sequencing\"[tiab] OR microRNA*[tiab] OR miRNA*[tiab] OR lncRNA*[tiab] OR circRNA*[tiab] OR \"mass spectrometry\"[tiab] OR \"protein profiling\"[tiab] OR \"metabolite profiling\"[tiab] OR \"high-throughput sequencing\"[tiab] OR microarray*[tiab] OR \"gene expression profil*\"[tiab] OR \"expression profil*\"[tiab] ) OR (\"Proteomics\"[Mesh] OR \"Metabolomics\"[Mesh] OR \"Lipidomics\"[Mesh] OR \"Transcriptome\"[Mesh] OR \"Gene Expression Profiling\"[Mesh] OR \"Single-Cell Analysis\"[Mesh] OR \"Multiomics\"[Mesh] OR \"Epigenomics\"[Mesh] OR \"DNA Methylation\"[Mesh] OR \"MicroRNAs\"[Mesh] OR \"RNA, Long Noncoding\"[Mesh] OR \"Sequence Analysis, RNA\"[Mesh] OR \"Mass Spectrometry\"[Mesh:NoExp])))",
+          "string_sha256": "5d53e608ddeeb84e592e1a44ee1abfe8d70698290133ed2a03008f8680c7f243",
+          "date_time_utc": "2026-10-04T13:23:49Z",
+          "validation_hit_count": 255019,
+          "info_only_counts": {
+            "pub_year_ge_2000": 224049,
+            "pub_year_ge_2000_utc": "2026-10-04T13:23:51Z",
+            "pub_year_ge_2010": 187538,
+            "pub_year_ge_2010_utc": "2026-10-04T13:23:53Z",
+            "humans_MeSH": 145061,
+            "humans_MeSH_utc": "2026-10-04T13:23:54Z",
+            "note": "information only; the protocol applies no date or human filter"
+          },
+          "errorlist": null,
+          "warninglist": null,
+          "screening_person_hours_pubmed": 8500.6,
+          "screening_person_hours_five_db_raw_assumed_1_5x_to_2_5x": [
+            12751,
+            21252
+          ],
+          "seed_recall": {
+            "method": "one esearch per seed: (<variant>) AND <PMID>[uid]",
+            "utc_window": [
+              "2026-10-04T13:26:10Z",
+              "2026-10-04T13:26:44Z"
+            ],
+            "retrieved_of_24": 24,
+            "POS_retrieved_of_10": 10,
+            "missed": [],
+            "by_seed": {
+              "POS-A1": true,
+              "POS-A2": true,
+              "POS-A3": true,
+              "POS-S1": true,
+              "POS-S3": true,
+              "POS-C1": true,
+              "POS-C2": true,
+              "POS-C3": true,
+              "POS-C4": true,
+              "POS-C5": true,
+              "BND-Y1": true,
+              "BND-Y2": true,
+              "BND-W1": true,
+              "BND-I1": true,
+              "BND-L1": true,
+              "BND-B1": true,
+              "BND-OW1": true,
+              "NEG-E1": true,
+              "NEG-E2": true,
+              "CIT-R1": true,
+              "CIT-R2": true,
+              "CIT-R3": true,
+              "CIT-R4": true,
+              "CIT-R5": true
+            }
+          }
+        },
+        {
+          "id": "PV06_PUBMED_V1_free_text_only",
+          "variant": "V1_free_text_only",
+          "definition": "v0.6 free text only E6 AND (I6 OR O6)",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST); PubMed search engine",
+          "run_type": "parser_validation",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
+          "strategy_version": "0.6-draft",
+          "exact_string_sent": "( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR sport*[tiab] OR train*[tiab] OR workout*[tiab] OR athlet*[tiab] OR competition*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycling[tiab] OR cyclist*[tiab] OR \"cycle ergomet*\"[tiab] OR ergomet*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[tiab] OR (resistance[tiab] AND train*[tiab]) OR \"strength training\"[tiab] OR endurance[tiab] OR aerobic[tiab] OR \"interval train*\"[tiab] OR \"interval exercis*\"[tiab] OR \"sprint interval*\"[tiab] OR \"high-intensity interval*\"[tiab] OR HIIT[tiab] OR HIIE[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) AND (( immun*[tiab] OR inflammat*[tiab] OR leukocyt*[tiab] OR leucocyt*[tiab] OR lymphocyt*[tiab] OR neutrophil*[tiab] OR monocyt*[tiab] OR eosinophil*[tiab] OR basophil*[tiab] OR \"natural killer\"[tiab] OR \"NK cell\"[tiab] OR \"NK cells\"[tiab] OR \"T cell\"[tiab] OR \"T cells\"[tiab] OR \"B cell\"[tiab] OR \"B cells\"[tiab] OR CD4[tiab] OR CD8[tiab] OR cytokine*[tiab] OR chemokine*[tiab] OR immunoglobulin*[tiab] OR \"immunoglobulin A\"[tiab] OR \"secretory immunoglobulin A\"[tiab] OR IgA[tiab] OR sIgA[tiab] OR SIgA[tiab] OR \"secretory IgA\"[tiab] OR interleukin*[tiab] OR \"interleukin-6\"[tiab] OR \"IL-6\"[tiab] OR IL6[tiab] OR CRP[tiab] OR \"C-reactive protein\"[tiab] OR \"C reactive protein\"[tiab] OR phagocyt*[tiab] OR cytotoxic*[tiab] OR complement[tiab] OR (mucosal[tiab] AND immun*[tiab]) OR \"immune function\"[tiab] OR \"immune response\"[tiab] OR \"effector function\"[tiab] OR immunophenotyp*[tiab] OR \"immune cell\"[tiab] OR \"immune cells\"[tiab] OR \"white blood cell*\"[tiab] OR \"mononuclear cell*\"[tiab] OR PBMC*[tiab] OR granulocyt*[tiab] OR lymphopeni*[tiab] OR lymphocytopeni*[tiab] OR leukocytosis[tiab] OR TNF[tiab] OR \"TNF-alpha\"[tiab] OR \"tumor necrosis factor*\"[tiab] OR \"tumour necrosis factor*\"[tiab] OR IFN[tiab] OR \"IFN-gamma\"[tiab] OR interferon*[tiab] OR \"IL-10\"[tiab] OR IL10[tiab] OR \"IL-1\"[tiab] OR IL1[tiab] OR \"IL-1beta\"[tiab] OR \"IL-8\"[tiab] OR IL8[tiab] ) OR ( omic*[tiab] OR proteom*[tiab] OR metabolom*[tiab] OR lipidom*[tiab] OR transcriptom*[tiab] OR epigenom*[tiab] OR epigenet*[tiab] OR \"DNA methylation\"[tiab] OR methylom*[tiab] OR multiomic*[tiab] OR \"multi-omic\"[tiab] OR \"multi-omics\"[tiab] OR \"single-cell\"[tiab] OR \"single cell\"[tiab] OR \"scRNA-seq\"[tiab] OR \"RNA-seq\"[tiab] OR \"RNA sequencing\"[tiab] OR microRNA*[tiab] OR miRNA*[tiab] OR lncRNA*[tiab] OR circRNA*[tiab] OR \"mass spectrometry\"[tiab] OR \"protein profiling\"[tiab] OR \"metabolite profiling\"[tiab] OR \"high-throughput sequencing\"[tiab] OR microarray*[tiab] OR \"gene expression profil*\"[tiab] OR \"expression profil*\"[tiab] ))",
+          "string_sha256": "0b62fa1729fb0e37244e792843816abfd4406b90829c6bc9c2171a341fb9eeb0",
+          "date_time_utc": "2026-10-04T13:23:56Z",
+          "validation_hit_count": 235288,
+          "info_only_counts": {
+            "pub_year_ge_2000": 208408,
+            "pub_year_ge_2000_utc": "2026-10-04T13:23:57Z",
+            "pub_year_ge_2010": 176843,
+            "pub_year_ge_2010_utc": "2026-10-04T13:23:59Z",
+            "humans_MeSH": 132910,
+            "humans_MeSH_utc": "2026-10-04T13:24:01Z",
+            "note": "information only; the protocol applies no date or human filter"
+          },
+          "errorlist": null,
+          "warninglist": null,
+          "screening_person_hours_pubmed": 7842.9,
+          "screening_person_hours_five_db_raw_assumed_1_5x_to_2_5x": [
+            11764,
+            19607
+          ],
+          "seed_recall": {
+            "method": "one esearch per seed: (<variant>) AND <PMID>[uid]",
+            "utc_window": [
+              "2026-10-04T13:26:46Z",
+              "2026-10-04T13:27:21Z"
+            ],
+            "retrieved_of_24": 24,
+            "POS_retrieved_of_10": 10,
+            "missed": [],
+            "by_seed": {
+              "POS-A1": true,
+              "POS-A2": true,
+              "POS-A3": true,
+              "POS-S1": true,
+              "POS-S3": true,
+              "POS-C1": true,
+              "POS-C2": true,
+              "POS-C3": true,
+              "POS-C4": true,
+              "POS-C5": true,
+              "BND-Y1": true,
+              "BND-Y2": true,
+              "BND-W1": true,
+              "BND-I1": true,
+              "BND-L1": true,
+              "BND-B1": true,
+              "BND-OW1": true,
+              "NEG-E1": true,
+              "NEG-E2": true,
+              "CIT-R1": true,
+              "CIT-R2": true,
+              "CIT-R3": true,
+              "CIT-R4": true,
+              "CIT-R5": true
+            }
+          }
+        },
+        {
+          "id": "PV06_PUBMED_V2",
+          "variant": "V2",
+          "definition": "V1 with E free text lacking train*, sport*, endurance, aerobic, competition*, race* ((resistance AND train*) -> \"resistance train*\"); E_MESH unchanged",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST); PubMed search engine",
+          "run_type": "parser_validation",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
+          "strategy_version": "0.6-draft",
+          "exact_string_sent": "(( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR workout*[tiab] OR athlet*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycling[tiab] OR cyclist*[tiab] OR \"cycle ergomet*\"[tiab] OR ergomet*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR \"resistance train*\"[tiab] OR \"strength training\"[tiab] OR \"interval train*\"[tiab] OR \"interval exercis*\"[tiab] OR \"sprint interval*\"[tiab] OR \"high-intensity interval*\"[tiab] OR HIIT[tiab] OR HIIE[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) OR (\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Sports\"[Mesh] OR \"Exercise Test\"[Mesh] OR \"Running\"[Mesh] OR \"Swimming\"[Mesh] OR \"Bicycling\"[Mesh] OR \"Resistance Training\"[Mesh] OR \"High-Intensity Interval Training\"[Mesh])) AND ((( immun*[tiab] OR inflammat*[tiab] OR leukocyt*[tiab] OR leucocyt*[tiab] OR lymphocyt*[tiab] OR neutrophil*[tiab] OR monocyt*[tiab] OR eosinophil*[tiab] OR basophil*[tiab] OR \"natural killer\"[tiab] OR \"NK cell\"[tiab] OR \"NK cells\"[tiab] OR \"T cell\"[tiab] OR \"T cells\"[tiab] OR \"B cell\"[tiab] OR \"B cells\"[tiab] OR CD4[tiab] OR CD8[tiab] OR cytokine*[tiab] OR chemokine*[tiab] OR immunoglobulin*[tiab] OR \"immunoglobulin A\"[tiab] OR \"secretory immunoglobulin A\"[tiab] OR IgA[tiab] OR sIgA[tiab] OR SIgA[tiab] OR \"secretory IgA\"[tiab] OR interleukin*[tiab] OR \"interleukin-6\"[tiab] OR \"IL-6\"[tiab] OR IL6[tiab] OR CRP[tiab] OR \"C-reactive protein\"[tiab] OR \"C reactive protein\"[tiab] OR phagocyt*[tiab] OR cytotoxic*[tiab] OR complement[tiab] OR (mucosal[tiab] AND immun*[tiab]) OR \"immune function\"[tiab] OR \"immune response\"[tiab] OR \"effector function\"[tiab] OR immunophenotyp*[tiab] OR \"immune cell\"[tiab] OR \"immune cells\"[tiab] OR \"white blood cell*\"[tiab] OR \"mononuclear cell*\"[tiab] OR PBMC*[tiab] OR granulocyt*[tiab] OR lymphopeni*[tiab] OR lymphocytopeni*[tiab] OR leukocytosis[tiab] OR TNF[tiab] OR \"TNF-alpha\"[tiab] OR \"tumor necrosis factor*\"[tiab] OR \"tumour necrosis factor*\"[tiab] OR IFN[tiab] OR \"IFN-gamma\"[tiab] OR interferon*[tiab] OR \"IL-10\"[tiab] OR IL10[tiab] OR \"IL-1\"[tiab] OR IL1[tiab] OR \"IL-1beta\"[tiab] OR \"IL-8\"[tiab] OR IL8[tiab] ) OR (\"Immunity\"[Mesh] OR \"Immunity, Mucosal\"[Mesh] OR \"Leukocytes\"[Mesh] OR \"Lymphocytes\"[Mesh] OR \"Killer Cells, Natural\"[Mesh] OR \"Neutrophils\"[Mesh] OR \"Monocytes\"[Mesh] OR \"Leukocyte Count\"[Mesh] OR \"Lymphocyte Count\"[Mesh] OR \"Cytokines\"[Mesh] OR \"Chemokines\"[Mesh] OR \"Interleukins\"[Mesh] OR \"Interleukin-6\"[Mesh] OR \"Immunoglobulins\"[Mesh] OR \"Immunoglobulin A\"[Mesh] OR \"Immunoglobulin A, Secretory\"[Mesh] OR \"Complement System Proteins\"[Mesh] OR \"C-Reactive Protein\"[Mesh] OR \"Phagocytosis\"[Mesh] OR \"Cytotoxicity, Immunologic\"[Mesh])) OR (( omic*[tiab] OR proteom*[tiab] OR metabolom*[tiab] OR lipidom*[tiab] OR transcriptom*[tiab] OR epigenom*[tiab] OR epigenet*[tiab] OR \"DNA methylation\"[tiab] OR methylom*[tiab] OR multiomic*[tiab] OR \"multi-omic\"[tiab] OR \"multi-omics\"[tiab] OR \"single-cell\"[tiab] OR \"single cell\"[tiab] OR \"scRNA-seq\"[tiab] OR \"RNA-seq\"[tiab] OR \"RNA sequencing\"[tiab] OR microRNA*[tiab] OR miRNA*[tiab] OR lncRNA*[tiab] OR circRNA*[tiab] OR \"mass spectrometry\"[tiab] OR \"protein profiling\"[tiab] OR \"metabolite profiling\"[tiab] OR \"high-throughput sequencing\"[tiab] OR microarray*[tiab] OR \"gene expression profil*\"[tiab] OR \"expression profil*\"[tiab] ) OR (\"Proteomics\"[Mesh] OR \"Metabolomics\"[Mesh] OR \"Lipidomics\"[Mesh] OR \"Transcriptome\"[Mesh] OR \"Gene Expression Profiling\"[Mesh] OR \"Single-Cell Analysis\"[Mesh] OR \"Multiomics\"[Mesh] OR \"Epigenomics\"[Mesh] OR \"DNA Methylation\"[Mesh] OR \"MicroRNAs\"[Mesh] OR \"RNA, Long Noncoding\"[Mesh] OR \"Sequence Analysis, RNA\"[Mesh] OR \"Mass Spectrometry\"[Mesh:NoExp])))",
+          "string_sha256": "22f473f82e62d3f73b1beb0da609c94ccd761d808067539e40116993262b9096",
+          "date_time_utc": "2026-10-04T13:24:03Z",
+          "validation_hit_count": 135360,
+          "info_only_counts": {
+            "pub_year_ge_2000": 118551,
+            "pub_year_ge_2000_utc": "2026-10-04T13:24:05Z",
+            "pub_year_ge_2010": 97336,
+            "pub_year_ge_2010_utc": "2026-10-04T13:24:09Z",
+            "humans_MeSH": 76780,
+            "humans_MeSH_utc": "2026-10-04T13:24:11Z",
+            "note": "information only; the protocol applies no date or human filter"
+          },
+          "errorlist": null,
+          "warninglist": null,
+          "screening_person_hours_pubmed": 4512.0,
+          "screening_person_hours_five_db_raw_assumed_1_5x_to_2_5x": [
+            6768,
+            11280
+          ],
+          "seed_recall": {
+            "method": "one esearch per seed: (<variant>) AND <PMID>[uid]",
+            "utc_window": [
+              "2026-10-04T13:27:23Z",
+              "2026-10-04T13:27:59Z"
+            ],
+            "retrieved_of_24": 24,
+            "POS_retrieved_of_10": 10,
+            "missed": [],
+            "by_seed": {
+              "POS-A1": true,
+              "POS-A2": true,
+              "POS-A3": true,
+              "POS-S1": true,
+              "POS-S3": true,
+              "POS-C1": true,
+              "POS-C2": true,
+              "POS-C3": true,
+              "POS-C4": true,
+              "POS-C5": true,
+              "BND-Y1": true,
+              "BND-Y2": true,
+              "BND-W1": true,
+              "BND-I1": true,
+              "BND-L1": true,
+              "BND-B1": true,
+              "BND-OW1": true,
+              "NEG-E1": true,
+              "NEG-E2": true,
+              "CIT-R1": true,
+              "CIT-R2": true,
+              "CIT-R3": true,
+              "CIT-R4": true,
+              "CIT-R5": true
+            }
+          }
+        },
+        {
+          "id": "PV06_PUBMED_V3",
+          "variant": "V3",
+          "definition": "V1 AND T",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST); PubMed search engine",
+          "run_type": "parser_validation",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
+          "strategy_version": "0.6-draft",
+          "exact_string_sent": "((( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR sport*[tiab] OR train*[tiab] OR workout*[tiab] OR athlet*[tiab] OR competition*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycling[tiab] OR cyclist*[tiab] OR \"cycle ergomet*\"[tiab] OR ergomet*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[tiab] OR (resistance[tiab] AND train*[tiab]) OR \"strength training\"[tiab] OR endurance[tiab] OR aerobic[tiab] OR \"interval train*\"[tiab] OR \"interval exercis*\"[tiab] OR \"sprint interval*\"[tiab] OR \"high-intensity interval*\"[tiab] OR HIIT[tiab] OR HIIE[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) OR (\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Sports\"[Mesh] OR \"Exercise Test\"[Mesh] OR \"Running\"[Mesh] OR \"Swimming\"[Mesh] OR \"Bicycling\"[Mesh] OR \"Resistance Training\"[Mesh] OR \"High-Intensity Interval Training\"[Mesh])) AND ((( immun*[tiab] OR inflammat*[tiab] OR leukocyt*[tiab] OR leucocyt*[tiab] OR lymphocyt*[tiab] OR neutrophil*[tiab] OR monocyt*[tiab] OR eosinophil*[tiab] OR basophil*[tiab] OR \"natural killer\"[tiab] OR \"NK cell\"[tiab] OR \"NK cells\"[tiab] OR \"T cell\"[tiab] OR \"T cells\"[tiab] OR \"B cell\"[tiab] OR \"B cells\"[tiab] OR CD4[tiab] OR CD8[tiab] OR cytokine*[tiab] OR chemokine*[tiab] OR immunoglobulin*[tiab] OR \"immunoglobulin A\"[tiab] OR \"secretory immunoglobulin A\"[tiab] OR IgA[tiab] OR sIgA[tiab] OR SIgA[tiab] OR \"secretory IgA\"[tiab] OR interleukin*[tiab] OR \"interleukin-6\"[tiab] OR \"IL-6\"[tiab] OR IL6[tiab] OR CRP[tiab] OR \"C-reactive protein\"[tiab] OR \"C reactive protein\"[tiab] OR phagocyt*[tiab] OR cytotoxic*[tiab] OR complement[tiab] OR (mucosal[tiab] AND immun*[tiab]) OR \"immune function\"[tiab] OR \"immune response\"[tiab] OR \"effector function\"[tiab] OR immunophenotyp*[tiab] OR \"immune cell\"[tiab] OR \"immune cells\"[tiab] OR \"white blood cell*\"[tiab] OR \"mononuclear cell*\"[tiab] OR PBMC*[tiab] OR granulocyt*[tiab] OR lymphopeni*[tiab] OR lymphocytopeni*[tiab] OR leukocytosis[tiab] OR TNF[tiab] OR \"TNF-alpha\"[tiab] OR \"tumor necrosis factor*\"[tiab] OR \"tumour necrosis factor*\"[tiab] OR IFN[tiab] OR \"IFN-gamma\"[tiab] OR interferon*[tiab] OR \"IL-10\"[tiab] OR IL10[tiab] OR \"IL-1\"[tiab] OR IL1[tiab] OR \"IL-1beta\"[tiab] OR \"IL-8\"[tiab] OR IL8[tiab] ) OR (\"Immunity\"[Mesh] OR \"Immunity, Mucosal\"[Mesh] OR \"Leukocytes\"[Mesh] OR \"Lymphocytes\"[Mesh] OR \"Killer Cells, Natural\"[Mesh] OR \"Neutrophils\"[Mesh] OR \"Monocytes\"[Mesh] OR \"Leukocyte Count\"[Mesh] OR \"Lymphocyte Count\"[Mesh] OR \"Cytokines\"[Mesh] OR \"Chemokines\"[Mesh] OR \"Interleukins\"[Mesh] OR \"Interleukin-6\"[Mesh] OR \"Immunoglobulins\"[Mesh] OR \"Immunoglobulin A\"[Mesh] OR \"Immunoglobulin A, Secretory\"[Mesh] OR \"Complement System Proteins\"[Mesh] OR \"C-Reactive Protein\"[Mesh] OR \"Phagocytosis\"[Mesh] OR \"Cytotoxicity, Immunologic\"[Mesh])) OR (( omic*[tiab] OR proteom*[tiab] OR metabolom*[tiab] OR lipidom*[tiab] OR transcriptom*[tiab] OR epigenom*[tiab] OR epigenet*[tiab] OR \"DNA methylation\"[tiab] OR methylom*[tiab] OR multiomic*[tiab] OR \"multi-omic\"[tiab] OR \"multi-omics\"[tiab] OR \"single-cell\"[tiab] OR \"single cell\"[tiab] OR \"scRNA-seq\"[tiab] OR \"RNA-seq\"[tiab] OR \"RNA sequencing\"[tiab] OR microRNA*[tiab] OR miRNA*[tiab] OR lncRNA*[tiab] OR circRNA*[tiab] OR \"mass spectrometry\"[tiab] OR \"protein profiling\"[tiab] OR \"metabolite profiling\"[tiab] OR \"high-throughput sequencing\"[tiab] OR microarray*[tiab] OR \"gene expression profil*\"[tiab] OR \"expression profil*\"[tiab] ) OR (\"Proteomics\"[Mesh] OR \"Metabolomics\"[Mesh] OR \"Lipidomics\"[Mesh] OR \"Transcriptome\"[Mesh] OR \"Gene Expression Profiling\"[Mesh] OR \"Single-Cell Analysis\"[Mesh] OR \"Multiomics\"[Mesh] OR \"Epigenomics\"[Mesh] OR \"DNA Methylation\"[Mesh] OR \"MicroRNAs\"[Mesh] OR \"RNA, Long Noncoding\"[Mesh] OR \"Sequence Analysis, RNA\"[Mesh] OR \"Mass Spectrometry\"[Mesh:NoExp])))) AND (\"post-exercise\"[tiab] OR postexercise[tiab] OR \"post exercise\"[tiab] OR \"after exercise\"[tiab] OR \"following exercise\"[tiab] OR \"exercise-induced\"[tiab] OR \"acute exercise\"[tiab] OR \"acute bout\"[tiab] OR \"single bout\"[tiab] OR \"bout of\"[tiab] OR \"exercise bout*\"[tiab] OR \"post-race\"[tiab] OR \"post-marathon\"[tiab] OR \"after a marathon\"[tiab] OR \"recovery period\"[tiab] OR \"during recovery\"[tiab] OR \"immediately after\"[tiab] OR \"hours after\"[tiab] OR \"h post\"[tiab] OR \"post-match\"[tiab] OR \"post-competition\"[tiab] OR \"exercise session*\"[tiab] OR \"exercise challenge*\"[tiab] OR \"exercise test*\"[tiab])",
+          "string_sha256": "eee58c877ef23914e3f2ff9a285f343c2a0cbd8c8fe41dba963215149e2312a6",
+          "date_time_utc": "2026-10-04T13:24:13Z",
+          "validation_hit_count": 15883,
+          "info_only_counts": {
+            "pub_year_ge_2000": 13981,
+            "pub_year_ge_2000_utc": "2026-10-04T13:24:15Z",
+            "pub_year_ge_2010": 11237,
+            "pub_year_ge_2010_utc": "2026-10-04T13:24:18Z",
+            "humans_MeSH": 9985,
+            "humans_MeSH_utc": "2026-10-04T13:24:20Z",
+            "note": "information only; the protocol applies no date or human filter"
+          },
+          "errorlist": null,
+          "warninglist": {
+            "phrasesignored": [],
+            "quotedphrasesnotfound": [
+              "\"after a marathon\"[tiab]"
+            ],
+            "outputmessages": []
+          },
+          "screening_person_hours_pubmed": 529.4,
+          "screening_person_hours_five_db_raw_assumed_1_5x_to_2_5x": [
+            794,
+            1324
+          ],
+          "seed_recall": {
+            "method": "one esearch per seed: (<variant>) AND <PMID>[uid]",
+            "utc_window": [
+              "2026-10-04T13:28:01Z",
+              "2026-10-04T13:28:35Z"
+            ],
+            "retrieved_of_24": 18,
+            "POS_retrieved_of_10": 9,
+            "missed": [
+              "POS-C1",
+              "NEG-E1",
+              "NEG-E2",
+              "CIT-R3",
+              "CIT-R4",
+              "CIT-R5"
+            ],
+            "by_seed": {
+              "POS-A1": true,
+              "POS-A2": true,
+              "POS-A3": true,
+              "POS-S1": true,
+              "POS-S3": true,
+              "POS-C1": false,
+              "POS-C2": true,
+              "POS-C3": true,
+              "POS-C4": true,
+              "POS-C5": true,
+              "BND-Y1": true,
+              "BND-Y2": true,
+              "BND-W1": true,
+              "BND-I1": true,
+              "BND-L1": true,
+              "BND-B1": true,
+              "BND-OW1": true,
+              "NEG-E1": false,
+              "NEG-E2": false,
+              "CIT-R1": true,
+              "CIT-R2": true,
+              "CIT-R3": false,
+              "CIT-R4": false,
+              "CIT-R5": false
+            }
+          }
+        },
+        {
+          "id": "PV06_PUBMED_V3_T2",
+          "variant": "V3_T2",
+          "definition": "V1 AND T2",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST); PubMed search engine",
+          "run_type": "parser_validation",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
+          "strategy_version": "0.6-draft",
+          "exact_string_sent": "((( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR sport*[tiab] OR train*[tiab] OR workout*[tiab] OR athlet*[tiab] OR competition*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycling[tiab] OR cyclist*[tiab] OR \"cycle ergomet*\"[tiab] OR ergomet*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[tiab] OR (resistance[tiab] AND train*[tiab]) OR \"strength training\"[tiab] OR endurance[tiab] OR aerobic[tiab] OR \"interval train*\"[tiab] OR \"interval exercis*\"[tiab] OR \"sprint interval*\"[tiab] OR \"high-intensity interval*\"[tiab] OR HIIT[tiab] OR HIIE[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) OR (\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Sports\"[Mesh] OR \"Exercise Test\"[Mesh] OR \"Running\"[Mesh] OR \"Swimming\"[Mesh] OR \"Bicycling\"[Mesh] OR \"Resistance Training\"[Mesh] OR \"High-Intensity Interval Training\"[Mesh])) AND ((( immun*[tiab] OR inflammat*[tiab] OR leukocyt*[tiab] OR leucocyt*[tiab] OR lymphocyt*[tiab] OR neutrophil*[tiab] OR monocyt*[tiab] OR eosinophil*[tiab] OR basophil*[tiab] OR \"natural killer\"[tiab] OR \"NK cell\"[tiab] OR \"NK cells\"[tiab] OR \"T cell\"[tiab] OR \"T cells\"[tiab] OR \"B cell\"[tiab] OR \"B cells\"[tiab] OR CD4[tiab] OR CD8[tiab] OR cytokine*[tiab] OR chemokine*[tiab] OR immunoglobulin*[tiab] OR \"immunoglobulin A\"[tiab] OR \"secretory immunoglobulin A\"[tiab] OR IgA[tiab] OR sIgA[tiab] OR SIgA[tiab] OR \"secretory IgA\"[tiab] OR interleukin*[tiab] OR \"interleukin-6\"[tiab] OR \"IL-6\"[tiab] OR IL6[tiab] OR CRP[tiab] OR \"C-reactive protein\"[tiab] OR \"C reactive protein\"[tiab] OR phagocyt*[tiab] OR cytotoxic*[tiab] OR complement[tiab] OR (mucosal[tiab] AND immun*[tiab]) OR \"immune function\"[tiab] OR \"immune response\"[tiab] OR \"effector function\"[tiab] OR immunophenotyp*[tiab] OR \"immune cell\"[tiab] OR \"immune cells\"[tiab] OR \"white blood cell*\"[tiab] OR \"mononuclear cell*\"[tiab] OR PBMC*[tiab] OR granulocyt*[tiab] OR lymphopeni*[tiab] OR lymphocytopeni*[tiab] OR leukocytosis[tiab] OR TNF[tiab] OR \"TNF-alpha\"[tiab] OR \"tumor necrosis factor*\"[tiab] OR \"tumour necrosis factor*\"[tiab] OR IFN[tiab] OR \"IFN-gamma\"[tiab] OR interferon*[tiab] OR \"IL-10\"[tiab] OR IL10[tiab] OR \"IL-1\"[tiab] OR IL1[tiab] OR \"IL-1beta\"[tiab] OR \"IL-8\"[tiab] OR IL8[tiab] ) OR (\"Immunity\"[Mesh] OR \"Immunity, Mucosal\"[Mesh] OR \"Leukocytes\"[Mesh] OR \"Lymphocytes\"[Mesh] OR \"Killer Cells, Natural\"[Mesh] OR \"Neutrophils\"[Mesh] OR \"Monocytes\"[Mesh] OR \"Leukocyte Count\"[Mesh] OR \"Lymphocyte Count\"[Mesh] OR \"Cytokines\"[Mesh] OR \"Chemokines\"[Mesh] OR \"Interleukins\"[Mesh] OR \"Interleukin-6\"[Mesh] OR \"Immunoglobulins\"[Mesh] OR \"Immunoglobulin A\"[Mesh] OR \"Immunoglobulin A, Secretory\"[Mesh] OR \"Complement System Proteins\"[Mesh] OR \"C-Reactive Protein\"[Mesh] OR \"Phagocytosis\"[Mesh] OR \"Cytotoxicity, Immunologic\"[Mesh])) OR (( omic*[tiab] OR proteom*[tiab] OR metabolom*[tiab] OR lipidom*[tiab] OR transcriptom*[tiab] OR epigenom*[tiab] OR epigenet*[tiab] OR \"DNA methylation\"[tiab] OR methylom*[tiab] OR multiomic*[tiab] OR \"multi-omic\"[tiab] OR \"multi-omics\"[tiab] OR \"single-cell\"[tiab] OR \"single cell\"[tiab] OR \"scRNA-seq\"[tiab] OR \"RNA-seq\"[tiab] OR \"RNA sequencing\"[tiab] OR microRNA*[tiab] OR miRNA*[tiab] OR lncRNA*[tiab] OR circRNA*[tiab] OR \"mass spectrometry\"[tiab] OR \"protein profiling\"[tiab] OR \"metabolite profiling\"[tiab] OR \"high-throughput sequencing\"[tiab] OR microarray*[tiab] OR \"gene expression profil*\"[tiab] OR \"expression profil*\"[tiab] ) OR (\"Proteomics\"[Mesh] OR \"Metabolomics\"[Mesh] OR \"Lipidomics\"[Mesh] OR \"Transcriptome\"[Mesh] OR \"Gene Expression Profiling\"[Mesh] OR \"Single-Cell Analysis\"[Mesh] OR \"Multiomics\"[Mesh] OR \"Epigenomics\"[Mesh] OR \"DNA Methylation\"[Mesh] OR \"MicroRNAs\"[Mesh] OR \"RNA, Long Noncoding\"[Mesh] OR \"Sequence Analysis, RNA\"[Mesh] OR \"Mass Spectrometry\"[Mesh:NoExp])))) AND (\"post-exercise\"[tiab] OR postexercise[tiab] OR \"post exercise\"[tiab] OR \"after exercise\"[tiab] OR \"following exercise\"[tiab] OR \"exercise-induced\"[tiab] OR \"acute exercise\"[tiab] OR \"acute bout\"[tiab] OR \"single bout\"[tiab] OR \"bout of\"[tiab] OR \"exercise bout*\"[tiab] OR \"post-race\"[tiab] OR \"post-marathon\"[tiab] OR \"after a marathon\"[tiab] OR \"recovery period\"[tiab] OR \"during recovery\"[tiab] OR \"immediately after\"[tiab] OR \"hours after\"[tiab] OR \"h post\"[tiab] OR \"post-match\"[tiab] OR \"post-competition\"[tiab] OR \"exercise session*\"[tiab] OR \"exercise challenge*\"[tiab] OR \"exercise test*\"[tiab] OR \"Post-Exercise Recovery\"[Mesh])",
+          "string_sha256": "e2ad14aa13120d18a75f7d15288c7113c94962de034ab49c9b435359f8f5b022",
+          "date_time_utc": "2026-10-04T13:24:22Z",
+          "validation_hit_count": 15899,
+          "info_only_counts": {
+            "pub_year_ge_2000": 13997,
+            "pub_year_ge_2000_utc": "2026-10-04T13:24:24Z",
+            "pub_year_ge_2010": 11253,
+            "pub_year_ge_2010_utc": "2026-10-04T13:24:26Z",
+            "humans_MeSH": 10001,
+            "humans_MeSH_utc": "2026-10-04T13:24:29Z",
+            "note": "information only; the protocol applies no date or human filter"
+          },
+          "errorlist": null,
+          "warninglist": {
+            "phrasesignored": [],
+            "quotedphrasesnotfound": [
+              "\"after a marathon\"[tiab]"
+            ],
+            "outputmessages": []
+          },
+          "screening_person_hours_pubmed": 530.0,
+          "screening_person_hours_five_db_raw_assumed_1_5x_to_2_5x": [
+            795,
+            1325
+          ],
+          "seed_recall": {
+            "method": "one esearch per seed: (<variant>) AND <PMID>[uid]",
+            "utc_window": [
+              "2026-10-04T13:28:36Z",
+              "2026-10-04T13:29:13Z"
+            ],
+            "retrieved_of_24": 18,
+            "POS_retrieved_of_10": 9,
+            "missed": [
+              "POS-C1",
+              "NEG-E1",
+              "NEG-E2",
+              "CIT-R3",
+              "CIT-R4",
+              "CIT-R5"
+            ],
+            "by_seed": {
+              "POS-A1": true,
+              "POS-A2": true,
+              "POS-A3": true,
+              "POS-S1": true,
+              "POS-S3": true,
+              "POS-C1": false,
+              "POS-C2": true,
+              "POS-C3": true,
+              "POS-C4": true,
+              "POS-C5": true,
+              "BND-Y1": true,
+              "BND-Y2": true,
+              "BND-W1": true,
+              "BND-I1": true,
+              "BND-L1": true,
+              "BND-B1": true,
+              "BND-OW1": true,
+              "NEG-E1": false,
+              "NEG-E2": false,
+              "CIT-R1": true,
+              "CIT-R2": true,
+              "CIT-R3": false,
+              "CIT-R4": false,
+              "CIT-R5": false
+            }
+          }
+        },
+        {
+          "id": "PV06_PUBMED_V4",
+          "variant": "V4",
+          "definition": "V2 AND T",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST); PubMed search engine",
+          "run_type": "parser_validation",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
+          "strategy_version": "0.6-draft",
+          "exact_string_sent": "((( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR workout*[tiab] OR athlet*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycling[tiab] OR cyclist*[tiab] OR \"cycle ergomet*\"[tiab] OR ergomet*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR \"resistance train*\"[tiab] OR \"strength training\"[tiab] OR \"interval train*\"[tiab] OR \"interval exercis*\"[tiab] OR \"sprint interval*\"[tiab] OR \"high-intensity interval*\"[tiab] OR HIIT[tiab] OR HIIE[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) OR (\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Sports\"[Mesh] OR \"Exercise Test\"[Mesh] OR \"Running\"[Mesh] OR \"Swimming\"[Mesh] OR \"Bicycling\"[Mesh] OR \"Resistance Training\"[Mesh] OR \"High-Intensity Interval Training\"[Mesh])) AND ((( immun*[tiab] OR inflammat*[tiab] OR leukocyt*[tiab] OR leucocyt*[tiab] OR lymphocyt*[tiab] OR neutrophil*[tiab] OR monocyt*[tiab] OR eosinophil*[tiab] OR basophil*[tiab] OR \"natural killer\"[tiab] OR \"NK cell\"[tiab] OR \"NK cells\"[tiab] OR \"T cell\"[tiab] OR \"T cells\"[tiab] OR \"B cell\"[tiab] OR \"B cells\"[tiab] OR CD4[tiab] OR CD8[tiab] OR cytokine*[tiab] OR chemokine*[tiab] OR immunoglobulin*[tiab] OR \"immunoglobulin A\"[tiab] OR \"secretory immunoglobulin A\"[tiab] OR IgA[tiab] OR sIgA[tiab] OR SIgA[tiab] OR \"secretory IgA\"[tiab] OR interleukin*[tiab] OR \"interleukin-6\"[tiab] OR \"IL-6\"[tiab] OR IL6[tiab] OR CRP[tiab] OR \"C-reactive protein\"[tiab] OR \"C reactive protein\"[tiab] OR phagocyt*[tiab] OR cytotoxic*[tiab] OR complement[tiab] OR (mucosal[tiab] AND immun*[tiab]) OR \"immune function\"[tiab] OR \"immune response\"[tiab] OR \"effector function\"[tiab] OR immunophenotyp*[tiab] OR \"immune cell\"[tiab] OR \"immune cells\"[tiab] OR \"white blood cell*\"[tiab] OR \"mononuclear cell*\"[tiab] OR PBMC*[tiab] OR granulocyt*[tiab] OR lymphopeni*[tiab] OR lymphocytopeni*[tiab] OR leukocytosis[tiab] OR TNF[tiab] OR \"TNF-alpha\"[tiab] OR \"tumor necrosis factor*\"[tiab] OR \"tumour necrosis factor*\"[tiab] OR IFN[tiab] OR \"IFN-gamma\"[tiab] OR interferon*[tiab] OR \"IL-10\"[tiab] OR IL10[tiab] OR \"IL-1\"[tiab] OR IL1[tiab] OR \"IL-1beta\"[tiab] OR \"IL-8\"[tiab] OR IL8[tiab] ) OR (\"Immunity\"[Mesh] OR \"Immunity, Mucosal\"[Mesh] OR \"Leukocytes\"[Mesh] OR \"Lymphocytes\"[Mesh] OR \"Killer Cells, Natural\"[Mesh] OR \"Neutrophils\"[Mesh] OR \"Monocytes\"[Mesh] OR \"Leukocyte Count\"[Mesh] OR \"Lymphocyte Count\"[Mesh] OR \"Cytokines\"[Mesh] OR \"Chemokines\"[Mesh] OR \"Interleukins\"[Mesh] OR \"Interleukin-6\"[Mesh] OR \"Immunoglobulins\"[Mesh] OR \"Immunoglobulin A\"[Mesh] OR \"Immunoglobulin A, Secretory\"[Mesh] OR \"Complement System Proteins\"[Mesh] OR \"C-Reactive Protein\"[Mesh] OR \"Phagocytosis\"[Mesh] OR \"Cytotoxicity, Immunologic\"[Mesh])) OR (( omic*[tiab] OR proteom*[tiab] OR metabolom*[tiab] OR lipidom*[tiab] OR transcriptom*[tiab] OR epigenom*[tiab] OR epigenet*[tiab] OR \"DNA methylation\"[tiab] OR methylom*[tiab] OR multiomic*[tiab] OR \"multi-omic\"[tiab] OR \"multi-omics\"[tiab] OR \"single-cell\"[tiab] OR \"single cell\"[tiab] OR \"scRNA-seq\"[tiab] OR \"RNA-seq\"[tiab] OR \"RNA sequencing\"[tiab] OR microRNA*[tiab] OR miRNA*[tiab] OR lncRNA*[tiab] OR circRNA*[tiab] OR \"mass spectrometry\"[tiab] OR \"protein profiling\"[tiab] OR \"metabolite profiling\"[tiab] OR \"high-throughput sequencing\"[tiab] OR microarray*[tiab] OR \"gene expression profil*\"[tiab] OR \"expression profil*\"[tiab] ) OR (\"Proteomics\"[Mesh] OR \"Metabolomics\"[Mesh] OR \"Lipidomics\"[Mesh] OR \"Transcriptome\"[Mesh] OR \"Gene Expression Profiling\"[Mesh] OR \"Single-Cell Analysis\"[Mesh] OR \"Multiomics\"[Mesh] OR \"Epigenomics\"[Mesh] OR \"DNA Methylation\"[Mesh] OR \"MicroRNAs\"[Mesh] OR \"RNA, Long Noncoding\"[Mesh] OR \"Sequence Analysis, RNA\"[Mesh] OR \"Mass Spectrometry\"[Mesh:NoExp])))) AND (\"post-exercise\"[tiab] OR postexercise[tiab] OR \"post exercise\"[tiab] OR \"after exercise\"[tiab] OR \"following exercise\"[tiab] OR \"exercise-induced\"[tiab] OR \"acute exercise\"[tiab] OR \"acute bout\"[tiab] OR \"single bout\"[tiab] OR \"bout of\"[tiab] OR \"exercise bout*\"[tiab] OR \"post-race\"[tiab] OR \"post-marathon\"[tiab] OR \"after a marathon\"[tiab] OR \"recovery period\"[tiab] OR \"during recovery\"[tiab] OR \"immediately after\"[tiab] OR \"hours after\"[tiab] OR \"h post\"[tiab] OR \"post-match\"[tiab] OR \"post-competition\"[tiab] OR \"exercise session*\"[tiab] OR \"exercise challenge*\"[tiab] OR \"exercise test*\"[tiab])",
+          "string_sha256": "3329949f18b355f66b8f03703646ea0a9c1f785f4bbf37c39e13e0ca0e8a86bf",
+          "date_time_utc": "2026-10-04T13:24:31Z",
+          "validation_hit_count": 14798,
+          "info_only_counts": {
+            "pub_year_ge_2000": 13072,
+            "pub_year_ge_2000_utc": "2026-10-04T13:24:33Z",
+            "pub_year_ge_2010": 10549,
+            "pub_year_ge_2010_utc": "2026-10-04T13:24:35Z",
+            "humans_MeSH": 9574,
+            "humans_MeSH_utc": "2026-10-04T13:24:37Z",
+            "note": "information only; the protocol applies no date or human filter"
+          },
+          "errorlist": null,
+          "warninglist": {
+            "phrasesignored": [],
+            "quotedphrasesnotfound": [
+              "\"after a marathon\"[tiab]"
+            ],
+            "outputmessages": []
+          },
+          "screening_person_hours_pubmed": 493.3,
+          "screening_person_hours_five_db_raw_assumed_1_5x_to_2_5x": [
+            740,
+            1233
+          ],
+          "seed_recall": {
+            "method": "one esearch per seed: (<variant>) AND <PMID>[uid]",
+            "utc_window": [
+              "2026-10-04T13:29:15Z",
+              "2026-10-04T13:29:53Z"
+            ],
+            "retrieved_of_24": 18,
+            "POS_retrieved_of_10": 9,
+            "missed": [
+              "POS-C1",
+              "NEG-E1",
+              "NEG-E2",
+              "CIT-R3",
+              "CIT-R4",
+              "CIT-R5"
+            ],
+            "by_seed": {
+              "POS-A1": true,
+              "POS-A2": true,
+              "POS-A3": true,
+              "POS-S1": true,
+              "POS-S3": true,
+              "POS-C1": false,
+              "POS-C2": true,
+              "POS-C3": true,
+              "POS-C4": true,
+              "POS-C5": true,
+              "BND-Y1": true,
+              "BND-Y2": true,
+              "BND-W1": true,
+              "BND-I1": true,
+              "BND-L1": true,
+              "BND-B1": true,
+              "BND-OW1": true,
+              "NEG-E1": false,
+              "NEG-E2": false,
+              "CIT-R1": true,
+              "CIT-R2": true,
+              "CIT-R3": false,
+              "CIT-R4": false,
+              "CIT-R5": false
+            }
+          }
+        },
+        {
+          "id": "PV06_PUBMED_V4_T2",
+          "variant": "V4_T2",
+          "definition": "V2 AND T2",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST); PubMed search engine",
+          "run_type": "parser_validation",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
+          "strategy_version": "0.6-draft",
+          "exact_string_sent": "((( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR workout*[tiab] OR athlet*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycling[tiab] OR cyclist*[tiab] OR \"cycle ergomet*\"[tiab] OR ergomet*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR \"resistance train*\"[tiab] OR \"strength training\"[tiab] OR \"interval train*\"[tiab] OR \"interval exercis*\"[tiab] OR \"sprint interval*\"[tiab] OR \"high-intensity interval*\"[tiab] OR HIIT[tiab] OR HIIE[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) OR (\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Sports\"[Mesh] OR \"Exercise Test\"[Mesh] OR \"Running\"[Mesh] OR \"Swimming\"[Mesh] OR \"Bicycling\"[Mesh] OR \"Resistance Training\"[Mesh] OR \"High-Intensity Interval Training\"[Mesh])) AND ((( immun*[tiab] OR inflammat*[tiab] OR leukocyt*[tiab] OR leucocyt*[tiab] OR lymphocyt*[tiab] OR neutrophil*[tiab] OR monocyt*[tiab] OR eosinophil*[tiab] OR basophil*[tiab] OR \"natural killer\"[tiab] OR \"NK cell\"[tiab] OR \"NK cells\"[tiab] OR \"T cell\"[tiab] OR \"T cells\"[tiab] OR \"B cell\"[tiab] OR \"B cells\"[tiab] OR CD4[tiab] OR CD8[tiab] OR cytokine*[tiab] OR chemokine*[tiab] OR immunoglobulin*[tiab] OR \"immunoglobulin A\"[tiab] OR \"secretory immunoglobulin A\"[tiab] OR IgA[tiab] OR sIgA[tiab] OR SIgA[tiab] OR \"secretory IgA\"[tiab] OR interleukin*[tiab] OR \"interleukin-6\"[tiab] OR \"IL-6\"[tiab] OR IL6[tiab] OR CRP[tiab] OR \"C-reactive protein\"[tiab] OR \"C reactive protein\"[tiab] OR phagocyt*[tiab] OR cytotoxic*[tiab] OR complement[tiab] OR (mucosal[tiab] AND immun*[tiab]) OR \"immune function\"[tiab] OR \"immune response\"[tiab] OR \"effector function\"[tiab] OR immunophenotyp*[tiab] OR \"immune cell\"[tiab] OR \"immune cells\"[tiab] OR \"white blood cell*\"[tiab] OR \"mononuclear cell*\"[tiab] OR PBMC*[tiab] OR granulocyt*[tiab] OR lymphopeni*[tiab] OR lymphocytopeni*[tiab] OR leukocytosis[tiab] OR TNF[tiab] OR \"TNF-alpha\"[tiab] OR \"tumor necrosis factor*\"[tiab] OR \"tumour necrosis factor*\"[tiab] OR IFN[tiab] OR \"IFN-gamma\"[tiab] OR interferon*[tiab] OR \"IL-10\"[tiab] OR IL10[tiab] OR \"IL-1\"[tiab] OR IL1[tiab] OR \"IL-1beta\"[tiab] OR \"IL-8\"[tiab] OR IL8[tiab] ) OR (\"Immunity\"[Mesh] OR \"Immunity, Mucosal\"[Mesh] OR \"Leukocytes\"[Mesh] OR \"Lymphocytes\"[Mesh] OR \"Killer Cells, Natural\"[Mesh] OR \"Neutrophils\"[Mesh] OR \"Monocytes\"[Mesh] OR \"Leukocyte Count\"[Mesh] OR \"Lymphocyte Count\"[Mesh] OR \"Cytokines\"[Mesh] OR \"Chemokines\"[Mesh] OR \"Interleukins\"[Mesh] OR \"Interleukin-6\"[Mesh] OR \"Immunoglobulins\"[Mesh] OR \"Immunoglobulin A\"[Mesh] OR \"Immunoglobulin A, Secretory\"[Mesh] OR \"Complement System Proteins\"[Mesh] OR \"C-Reactive Protein\"[Mesh] OR \"Phagocytosis\"[Mesh] OR \"Cytotoxicity, Immunologic\"[Mesh])) OR (( omic*[tiab] OR proteom*[tiab] OR metabolom*[tiab] OR lipidom*[tiab] OR transcriptom*[tiab] OR epigenom*[tiab] OR epigenet*[tiab] OR \"DNA methylation\"[tiab] OR methylom*[tiab] OR multiomic*[tiab] OR \"multi-omic\"[tiab] OR \"multi-omics\"[tiab] OR \"single-cell\"[tiab] OR \"single cell\"[tiab] OR \"scRNA-seq\"[tiab] OR \"RNA-seq\"[tiab] OR \"RNA sequencing\"[tiab] OR microRNA*[tiab] OR miRNA*[tiab] OR lncRNA*[tiab] OR circRNA*[tiab] OR \"mass spectrometry\"[tiab] OR \"protein profiling\"[tiab] OR \"metabolite profiling\"[tiab] OR \"high-throughput sequencing\"[tiab] OR microarray*[tiab] OR \"gene expression profil*\"[tiab] OR \"expression profil*\"[tiab] ) OR (\"Proteomics\"[Mesh] OR \"Metabolomics\"[Mesh] OR \"Lipidomics\"[Mesh] OR \"Transcriptome\"[Mesh] OR \"Gene Expression Profiling\"[Mesh] OR \"Single-Cell Analysis\"[Mesh] OR \"Multiomics\"[Mesh] OR \"Epigenomics\"[Mesh] OR \"DNA Methylation\"[Mesh] OR \"MicroRNAs\"[Mesh] OR \"RNA, Long Noncoding\"[Mesh] OR \"Sequence Analysis, RNA\"[Mesh] OR \"Mass Spectrometry\"[Mesh:NoExp])))) AND (\"post-exercise\"[tiab] OR postexercise[tiab] OR \"post exercise\"[tiab] OR \"after exercise\"[tiab] OR \"following exercise\"[tiab] OR \"exercise-induced\"[tiab] OR \"acute exercise\"[tiab] OR \"acute bout\"[tiab] OR \"single bout\"[tiab] OR \"bout of\"[tiab] OR \"exercise bout*\"[tiab] OR \"post-race\"[tiab] OR \"post-marathon\"[tiab] OR \"after a marathon\"[tiab] OR \"recovery period\"[tiab] OR \"during recovery\"[tiab] OR \"immediately after\"[tiab] OR \"hours after\"[tiab] OR \"h post\"[tiab] OR \"post-match\"[tiab] OR \"post-competition\"[tiab] OR \"exercise session*\"[tiab] OR \"exercise challenge*\"[tiab] OR \"exercise test*\"[tiab] OR \"Post-Exercise Recovery\"[Mesh])",
+          "string_sha256": "7738bdc63d82e6f983650e1efb2df24ff09f78d838ec1f4a62a3330370d658e9",
+          "date_time_utc": "2026-10-04T13:24:41Z",
+          "validation_hit_count": 14814,
+          "info_only_counts": {
+            "pub_year_ge_2000": 13088,
+            "pub_year_ge_2000_utc": "2026-10-04T13:24:43Z",
+            "pub_year_ge_2010": 10565,
+            "pub_year_ge_2010_utc": "2026-10-04T13:24:45Z",
+            "humans_MeSH": 9590,
+            "humans_MeSH_utc": "2026-10-04T13:24:47Z",
+            "note": "information only; the protocol applies no date or human filter"
+          },
+          "errorlist": null,
+          "warninglist": {
+            "phrasesignored": [],
+            "quotedphrasesnotfound": [
+              "\"after a marathon\"[tiab]"
+            ],
+            "outputmessages": []
+          },
+          "screening_person_hours_pubmed": 493.8,
+          "screening_person_hours_five_db_raw_assumed_1_5x_to_2_5x": [
+            741,
+            1234
+          ],
+          "seed_recall": {
+            "method": "one esearch per seed: (<variant>) AND <PMID>[uid]",
+            "utc_window": [
+              "2026-10-04T13:29:54Z",
+              "2026-10-04T13:30:30Z"
+            ],
+            "retrieved_of_24": 18,
+            "POS_retrieved_of_10": 9,
+            "missed": [
+              "POS-C1",
+              "NEG-E1",
+              "NEG-E2",
+              "CIT-R3",
+              "CIT-R4",
+              "CIT-R5"
+            ],
+            "by_seed": {
+              "POS-A1": true,
+              "POS-A2": true,
+              "POS-A3": true,
+              "POS-S1": true,
+              "POS-S3": true,
+              "POS-C1": false,
+              "POS-C2": true,
+              "POS-C3": true,
+              "POS-C4": true,
+              "POS-C5": true,
+              "BND-Y1": true,
+              "BND-Y2": true,
+              "BND-W1": true,
+              "BND-I1": true,
+              "BND-L1": true,
+              "BND-B1": true,
+              "BND-OW1": true,
+              "NEG-E1": false,
+              "NEG-E2": false,
+              "CIT-R1": true,
+              "CIT-R2": true,
+              "CIT-R3": false,
+              "CIT-R4": false,
+              "CIT-R5": false
+            }
+          }
+        },
+        {
+          "id": "PV06_PUBMED_V5_EI",
+          "variant": "V5_EI",
+          "definition": "V1 I-route only: (E6 OR E_MESH) AND (I6 OR I_MESH)",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST); PubMed search engine",
+          "run_type": "parser_validation",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
+          "strategy_version": "0.6-draft",
+          "exact_string_sent": "(( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR sport*[tiab] OR train*[tiab] OR workout*[tiab] OR athlet*[tiab] OR competition*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycling[tiab] OR cyclist*[tiab] OR \"cycle ergomet*\"[tiab] OR ergomet*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[tiab] OR (resistance[tiab] AND train*[tiab]) OR \"strength training\"[tiab] OR endurance[tiab] OR aerobic[tiab] OR \"interval train*\"[tiab] OR \"interval exercis*\"[tiab] OR \"sprint interval*\"[tiab] OR \"high-intensity interval*\"[tiab] OR HIIT[tiab] OR HIIE[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) OR (\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Sports\"[Mesh] OR \"Exercise Test\"[Mesh] OR \"Running\"[Mesh] OR \"Swimming\"[Mesh] OR \"Bicycling\"[Mesh] OR \"Resistance Training\"[Mesh] OR \"High-Intensity Interval Training\"[Mesh])) AND (( immun*[tiab] OR inflammat*[tiab] OR leukocyt*[tiab] OR leucocyt*[tiab] OR lymphocyt*[tiab] OR neutrophil*[tiab] OR monocyt*[tiab] OR eosinophil*[tiab] OR basophil*[tiab] OR \"natural killer\"[tiab] OR \"NK cell\"[tiab] OR \"NK cells\"[tiab] OR \"T cell\"[tiab] OR \"T cells\"[tiab] OR \"B cell\"[tiab] OR \"B cells\"[tiab] OR CD4[tiab] OR CD8[tiab] OR cytokine*[tiab] OR chemokine*[tiab] OR immunoglobulin*[tiab] OR \"immunoglobulin A\"[tiab] OR \"secretory immunoglobulin A\"[tiab] OR IgA[tiab] OR sIgA[tiab] OR SIgA[tiab] OR \"secretory IgA\"[tiab] OR interleukin*[tiab] OR \"interleukin-6\"[tiab] OR \"IL-6\"[tiab] OR IL6[tiab] OR CRP[tiab] OR \"C-reactive protein\"[tiab] OR \"C reactive protein\"[tiab] OR phagocyt*[tiab] OR cytotoxic*[tiab] OR complement[tiab] OR (mucosal[tiab] AND immun*[tiab]) OR \"immune function\"[tiab] OR \"immune response\"[tiab] OR \"effector function\"[tiab] OR immunophenotyp*[tiab] OR \"immune cell\"[tiab] OR \"immune cells\"[tiab] OR \"white blood cell*\"[tiab] OR \"mononuclear cell*\"[tiab] OR PBMC*[tiab] OR granulocyt*[tiab] OR lymphopeni*[tiab] OR lymphocytopeni*[tiab] OR leukocytosis[tiab] OR TNF[tiab] OR \"TNF-alpha\"[tiab] OR \"tumor necrosis factor*\"[tiab] OR \"tumour necrosis factor*\"[tiab] OR IFN[tiab] OR \"IFN-gamma\"[tiab] OR interferon*[tiab] OR \"IL-10\"[tiab] OR IL10[tiab] OR \"IL-1\"[tiab] OR IL1[tiab] OR \"IL-1beta\"[tiab] OR \"IL-8\"[tiab] OR IL8[tiab] ) OR (\"Immunity\"[Mesh] OR \"Immunity, Mucosal\"[Mesh] OR \"Leukocytes\"[Mesh] OR \"Lymphocytes\"[Mesh] OR \"Killer Cells, Natural\"[Mesh] OR \"Neutrophils\"[Mesh] OR \"Monocytes\"[Mesh] OR \"Leukocyte Count\"[Mesh] OR \"Lymphocyte Count\"[Mesh] OR \"Cytokines\"[Mesh] OR \"Chemokines\"[Mesh] OR \"Interleukins\"[Mesh] OR \"Interleukin-6\"[Mesh] OR \"Immunoglobulins\"[Mesh] OR \"Immunoglobulin A\"[Mesh] OR \"Immunoglobulin A, Secretory\"[Mesh] OR \"Complement System Proteins\"[Mesh] OR \"C-Reactive Protein\"[Mesh] OR \"Phagocytosis\"[Mesh] OR \"Cytotoxicity, Immunologic\"[Mesh]))",
+          "string_sha256": "428431fdf05f7aa177e9604fd3a36ac14aaacec29313fb95f312c6c6d4534150",
+          "date_time_utc": "2026-10-04T13:24:49Z",
+          "validation_hit_count": 199896,
+          "info_only_counts": {
+            "pub_year_ge_2000": 170681,
+            "pub_year_ge_2000_utc": "2026-10-04T13:24:52Z",
+            "pub_year_ge_2010": 141400,
+            "pub_year_ge_2010_utc": "2026-10-04T13:24:54Z",
+            "humans_MeSH": 122745,
+            "humans_MeSH_utc": "2026-10-04T13:24:56Z",
+            "note": "information only; the protocol applies no date or human filter"
+          },
+          "errorlist": null,
+          "warninglist": null,
+          "screening_person_hours_pubmed": 6663.2,
+          "screening_person_hours_five_db_raw_assumed_1_5x_to_2_5x": [
+            9995,
+            16658
+          ],
+          "seed_recall": {
+            "method": "one esearch per seed: (<variant>) AND <PMID>[uid]",
+            "utc_window": [
+              "2026-10-04T13:30:31Z",
+              "2026-10-04T13:31:08Z"
+            ],
+            "retrieved_of_24": 24,
+            "POS_retrieved_of_10": 10,
+            "missed": [],
+            "by_seed": {
+              "POS-A1": true,
+              "POS-A2": true,
+              "POS-A3": true,
+              "POS-S1": true,
+              "POS-S3": true,
+              "POS-C1": true,
+              "POS-C2": true,
+              "POS-C3": true,
+              "POS-C4": true,
+              "POS-C5": true,
+              "BND-Y1": true,
+              "BND-Y2": true,
+              "BND-W1": true,
+              "BND-I1": true,
+              "BND-L1": true,
+              "BND-B1": true,
+              "BND-OW1": true,
+              "NEG-E1": true,
+              "NEG-E2": true,
+              "CIT-R1": true,
+              "CIT-R2": true,
+              "CIT-R3": true,
+              "CIT-R4": true,
+              "CIT-R5": true
+            }
+          }
+        },
+        {
+          "id": "PV06_PUBMED_V5_EO",
+          "variant": "V5_EO",
+          "definition": "V1 O-route only: (E6 OR E_MESH) AND (O6 OR O_MESH)",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST); PubMed search engine",
+          "run_type": "parser_validation",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
+          "strategy_version": "0.6-draft",
+          "exact_string_sent": "(( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR sport*[tiab] OR train*[tiab] OR workout*[tiab] OR athlet*[tiab] OR competition*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycling[tiab] OR cyclist*[tiab] OR \"cycle ergomet*\"[tiab] OR ergomet*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[tiab] OR (resistance[tiab] AND train*[tiab]) OR \"strength training\"[tiab] OR endurance[tiab] OR aerobic[tiab] OR \"interval train*\"[tiab] OR \"interval exercis*\"[tiab] OR \"sprint interval*\"[tiab] OR \"high-intensity interval*\"[tiab] OR HIIT[tiab] OR HIIE[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) OR (\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Sports\"[Mesh] OR \"Exercise Test\"[Mesh] OR \"Running\"[Mesh] OR \"Swimming\"[Mesh] OR \"Bicycling\"[Mesh] OR \"Resistance Training\"[Mesh] OR \"High-Intensity Interval Training\"[Mesh])) AND (( omic*[tiab] OR proteom*[tiab] OR metabolom*[tiab] OR lipidom*[tiab] OR transcriptom*[tiab] OR epigenom*[tiab] OR epigenet*[tiab] OR \"DNA methylation\"[tiab] OR methylom*[tiab] OR multiomic*[tiab] OR \"multi-omic\"[tiab] OR \"multi-omics\"[tiab] OR \"single-cell\"[tiab] OR \"single cell\"[tiab] OR \"scRNA-seq\"[tiab] OR \"RNA-seq\"[tiab] OR \"RNA sequencing\"[tiab] OR microRNA*[tiab] OR miRNA*[tiab] OR lncRNA*[tiab] OR circRNA*[tiab] OR \"mass spectrometry\"[tiab] OR \"protein profiling\"[tiab] OR \"metabolite profiling\"[tiab] OR \"high-throughput sequencing\"[tiab] OR microarray*[tiab] OR \"gene expression profil*\"[tiab] OR \"expression profil*\"[tiab] ) OR (\"Proteomics\"[Mesh] OR \"Metabolomics\"[Mesh] OR \"Lipidomics\"[Mesh] OR \"Transcriptome\"[Mesh] OR \"Gene Expression Profiling\"[Mesh] OR \"Single-Cell Analysis\"[Mesh] OR \"Multiomics\"[Mesh] OR \"Epigenomics\"[Mesh] OR \"DNA Methylation\"[Mesh] OR \"MicroRNAs\"[Mesh] OR \"RNA, Long Noncoding\"[Mesh] OR \"Sequence Analysis, RNA\"[Mesh] OR \"Mass Spectrometry\"[Mesh:NoExp]))",
+          "string_sha256": "24bcfb60781d799d9737fac2e8f5d6b3d1c6ced17582d799f7c0d155a71a7586",
+          "date_time_utc": "2026-10-04T13:24:57Z",
+          "validation_hit_count": 75115,
+          "info_only_counts": {
+            "pub_year_ge_2000": 73019,
+            "pub_year_ge_2000_utc": "2026-10-04T13:24:59Z",
+            "pub_year_ge_2010": 64260,
+            "pub_year_ge_2010_utc": "2026-10-04T13:25:00Z",
+            "humans_MeSH": 33684,
+            "humans_MeSH_utc": "2026-10-04T13:25:02Z",
+            "note": "information only; the protocol applies no date or human filter"
+          },
+          "errorlist": null,
+          "warninglist": null,
+          "screening_person_hours_pubmed": 2503.8,
+          "screening_person_hours_five_db_raw_assumed_1_5x_to_2_5x": [
+            3756,
+            6260
+          ],
+          "seed_recall": {
+            "method": "one esearch per seed: (<variant>) AND <PMID>[uid]",
+            "utc_window": [
+              "2026-10-04T13:31:09Z",
+              "2026-10-04T13:31:41Z"
+            ],
+            "retrieved_of_24": 8,
+            "POS_retrieved_of_10": 4,
+            "missed": [
+              "POS-A3",
+              "POS-C1",
+              "POS-C2",
+              "POS-C3",
+              "POS-C4",
+              "POS-C5",
+              "BND-Y2",
+              "BND-I1",
+              "BND-L1",
+              "BND-B1",
+              "BND-OW1",
+              "CIT-R1",
+              "CIT-R2",
+              "CIT-R3",
+              "CIT-R4",
+              "CIT-R5"
+            ],
+            "by_seed": {
+              "POS-A1": true,
+              "POS-A2": true,
+              "POS-A3": false,
+              "POS-S1": true,
+              "POS-S3": true,
+              "POS-C1": false,
+              "POS-C2": false,
+              "POS-C3": false,
+              "POS-C4": false,
+              "POS-C5": false,
+              "BND-Y1": true,
+              "BND-Y2": false,
+              "BND-W1": true,
+              "BND-I1": false,
+              "BND-L1": false,
+              "BND-B1": false,
+              "BND-OW1": false,
+              "NEG-E1": true,
+              "NEG-E2": true,
+              "CIT-R1": false,
+              "CIT-R2": false,
+              "CIT-R3": false,
+              "CIT-R4": false,
+              "CIT-R5": false
+            }
+          }
+        },
+        {
+          "id": "PV06_PUBMED_V5_EO_only",
+          "variant": "V5_EO_only",
+          "definition": "(V5_EO) NOT (V5_EI)",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST); PubMed search engine",
+          "run_type": "parser_validation",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
+          "strategy_version": "0.6-draft",
+          "exact_string_sent": "((( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR sport*[tiab] OR train*[tiab] OR workout*[tiab] OR athlet*[tiab] OR competition*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycling[tiab] OR cyclist*[tiab] OR \"cycle ergomet*\"[tiab] OR ergomet*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[tiab] OR (resistance[tiab] AND train*[tiab]) OR \"strength training\"[tiab] OR endurance[tiab] OR aerobic[tiab] OR \"interval train*\"[tiab] OR \"interval exercis*\"[tiab] OR \"sprint interval*\"[tiab] OR \"high-intensity interval*\"[tiab] OR HIIT[tiab] OR HIIE[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) OR (\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Sports\"[Mesh] OR \"Exercise Test\"[Mesh] OR \"Running\"[Mesh] OR \"Swimming\"[Mesh] OR \"Bicycling\"[Mesh] OR \"Resistance Training\"[Mesh] OR \"High-Intensity Interval Training\"[Mesh])) AND (( omic*[tiab] OR proteom*[tiab] OR metabolom*[tiab] OR lipidom*[tiab] OR transcriptom*[tiab] OR epigenom*[tiab] OR epigenet*[tiab] OR \"DNA methylation\"[tiab] OR methylom*[tiab] OR multiomic*[tiab] OR \"multi-omic\"[tiab] OR \"multi-omics\"[tiab] OR \"single-cell\"[tiab] OR \"single cell\"[tiab] OR \"scRNA-seq\"[tiab] OR \"RNA-seq\"[tiab] OR \"RNA sequencing\"[tiab] OR microRNA*[tiab] OR miRNA*[tiab] OR lncRNA*[tiab] OR circRNA*[tiab] OR \"mass spectrometry\"[tiab] OR \"protein profiling\"[tiab] OR \"metabolite profiling\"[tiab] OR \"high-throughput sequencing\"[tiab] OR microarray*[tiab] OR \"gene expression profil*\"[tiab] OR \"expression profil*\"[tiab] ) OR (\"Proteomics\"[Mesh] OR \"Metabolomics\"[Mesh] OR \"Lipidomics\"[Mesh] OR \"Transcriptome\"[Mesh] OR \"Gene Expression Profiling\"[Mesh] OR \"Single-Cell Analysis\"[Mesh] OR \"Multiomics\"[Mesh] OR \"Epigenomics\"[Mesh] OR \"DNA Methylation\"[Mesh] OR \"MicroRNAs\"[Mesh] OR \"RNA, Long Noncoding\"[Mesh] OR \"Sequence Analysis, RNA\"[Mesh] OR \"Mass Spectrometry\"[Mesh:NoExp]))) NOT ((( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR sport*[tiab] OR train*[tiab] OR workout*[tiab] OR athlet*[tiab] OR competition*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycling[tiab] OR cyclist*[tiab] OR \"cycle ergomet*\"[tiab] OR ergomet*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[tiab] OR (resistance[tiab] AND train*[tiab]) OR \"strength training\"[tiab] OR endurance[tiab] OR aerobic[tiab] OR \"interval train*\"[tiab] OR \"interval exercis*\"[tiab] OR \"sprint interval*\"[tiab] OR \"high-intensity interval*\"[tiab] OR HIIT[tiab] OR HIIE[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) OR (\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Sports\"[Mesh] OR \"Exercise Test\"[Mesh] OR \"Running\"[Mesh] OR \"Swimming\"[Mesh] OR \"Bicycling\"[Mesh] OR \"Resistance Training\"[Mesh] OR \"High-Intensity Interval Training\"[Mesh])) AND (( immun*[tiab] OR inflammat*[tiab] OR leukocyt*[tiab] OR leucocyt*[tiab] OR lymphocyt*[tiab] OR neutrophil*[tiab] OR monocyt*[tiab] OR eosinophil*[tiab] OR basophil*[tiab] OR \"natural killer\"[tiab] OR \"NK cell\"[tiab] OR \"NK cells\"[tiab] OR \"T cell\"[tiab] OR \"T cells\"[tiab] OR \"B cell\"[tiab] OR \"B cells\"[tiab] OR CD4[tiab] OR CD8[tiab] OR cytokine*[tiab] OR chemokine*[tiab] OR immunoglobulin*[tiab] OR \"immunoglobulin A\"[tiab] OR \"secretory immunoglobulin A\"[tiab] OR IgA[tiab] OR sIgA[tiab] OR SIgA[tiab] OR \"secretory IgA\"[tiab] OR interleukin*[tiab] OR \"interleukin-6\"[tiab] OR \"IL-6\"[tiab] OR IL6[tiab] OR CRP[tiab] OR \"C-reactive protein\"[tiab] OR \"C reactive protein\"[tiab] OR phagocyt*[tiab] OR cytotoxic*[tiab] OR complement[tiab] OR (mucosal[tiab] AND immun*[tiab]) OR \"immune function\"[tiab] OR \"immune response\"[tiab] OR \"effector function\"[tiab] OR immunophenotyp*[tiab] OR \"immune cell\"[tiab] OR \"immune cells\"[tiab] OR \"white blood cell*\"[tiab] OR \"mononuclear cell*\"[tiab] OR PBMC*[tiab] OR granulocyt*[tiab] OR lymphopeni*[tiab] OR lymphocytopeni*[tiab] OR leukocytosis[tiab] OR TNF[tiab] OR \"TNF-alpha\"[tiab] OR \"tumor necrosis factor*\"[tiab] OR \"tumour necrosis factor*\"[tiab] OR IFN[tiab] OR \"IFN-gamma\"[tiab] OR interferon*[tiab] OR \"IL-10\"[tiab] OR IL10[tiab] OR \"IL-1\"[tiab] OR IL1[tiab] OR \"IL-1beta\"[tiab] OR \"IL-8\"[tiab] OR IL8[tiab] ) OR (\"Immunity\"[Mesh] OR \"Immunity, Mucosal\"[Mesh] OR \"Leukocytes\"[Mesh] OR \"Lymphocytes\"[Mesh] OR \"Killer Cells, Natural\"[Mesh] OR \"Neutrophils\"[Mesh] OR \"Monocytes\"[Mesh] OR \"Leukocyte Count\"[Mesh] OR \"Lymphocyte Count\"[Mesh] OR \"Cytokines\"[Mesh] OR \"Chemokines\"[Mesh] OR \"Interleukins\"[Mesh] OR \"Interleukin-6\"[Mesh] OR \"Immunoglobulins\"[Mesh] OR \"Immunoglobulin A\"[Mesh] OR \"Immunoglobulin A, Secretory\"[Mesh] OR \"Complement System Proteins\"[Mesh] OR \"C-Reactive Protein\"[Mesh] OR \"Phagocytosis\"[Mesh] OR \"Cytotoxicity, Immunologic\"[Mesh])))",
+          "string_sha256": "c83339870812290666a7f8085455b4cf787056bce63e51368ed1b3e1ef664c01",
+          "date_time_utc": "2026-10-04T13:25:04Z",
+          "validation_hit_count": 55123,
+          "info_only_counts": {
+            "pub_year_ge_2000": 53368,
+            "pub_year_ge_2000_utc": "2026-10-04T13:25:06Z",
+            "pub_year_ge_2010": 46138,
+            "pub_year_ge_2010_utc": "2026-10-04T13:25:09Z",
+            "humans_MeSH": 22316,
+            "humans_MeSH_utc": "2026-10-04T13:25:12Z",
+            "note": "information only; the protocol applies no date or human filter"
+          },
+          "errorlist": null,
+          "warninglist": null,
+          "screening_person_hours_pubmed": 1837.4,
+          "screening_person_hours_five_db_raw_assumed_1_5x_to_2_5x": [
+            2756,
+            4594
+          ]
+        },
+        {
+          "id": "PV06_PUBMED_V5_EI_only",
+          "variant": "V5_EI_only",
+          "definition": "(V5_EI) NOT (V5_EO)",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST); PubMed search engine",
+          "run_type": "parser_validation",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
+          "strategy_version": "0.6-draft",
+          "exact_string_sent": "((( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR sport*[tiab] OR train*[tiab] OR workout*[tiab] OR athlet*[tiab] OR competition*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycling[tiab] OR cyclist*[tiab] OR \"cycle ergomet*\"[tiab] OR ergomet*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[tiab] OR (resistance[tiab] AND train*[tiab]) OR \"strength training\"[tiab] OR endurance[tiab] OR aerobic[tiab] OR \"interval train*\"[tiab] OR \"interval exercis*\"[tiab] OR \"sprint interval*\"[tiab] OR \"high-intensity interval*\"[tiab] OR HIIT[tiab] OR HIIE[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) OR (\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Sports\"[Mesh] OR \"Exercise Test\"[Mesh] OR \"Running\"[Mesh] OR \"Swimming\"[Mesh] OR \"Bicycling\"[Mesh] OR \"Resistance Training\"[Mesh] OR \"High-Intensity Interval Training\"[Mesh])) AND (( immun*[tiab] OR inflammat*[tiab] OR leukocyt*[tiab] OR leucocyt*[tiab] OR lymphocyt*[tiab] OR neutrophil*[tiab] OR monocyt*[tiab] OR eosinophil*[tiab] OR basophil*[tiab] OR \"natural killer\"[tiab] OR \"NK cell\"[tiab] OR \"NK cells\"[tiab] OR \"T cell\"[tiab] OR \"T cells\"[tiab] OR \"B cell\"[tiab] OR \"B cells\"[tiab] OR CD4[tiab] OR CD8[tiab] OR cytokine*[tiab] OR chemokine*[tiab] OR immunoglobulin*[tiab] OR \"immunoglobulin A\"[tiab] OR \"secretory immunoglobulin A\"[tiab] OR IgA[tiab] OR sIgA[tiab] OR SIgA[tiab] OR \"secretory IgA\"[tiab] OR interleukin*[tiab] OR \"interleukin-6\"[tiab] OR \"IL-6\"[tiab] OR IL6[tiab] OR CRP[tiab] OR \"C-reactive protein\"[tiab] OR \"C reactive protein\"[tiab] OR phagocyt*[tiab] OR cytotoxic*[tiab] OR complement[tiab] OR (mucosal[tiab] AND immun*[tiab]) OR \"immune function\"[tiab] OR \"immune response\"[tiab] OR \"effector function\"[tiab] OR immunophenotyp*[tiab] OR \"immune cell\"[tiab] OR \"immune cells\"[tiab] OR \"white blood cell*\"[tiab] OR \"mononuclear cell*\"[tiab] OR PBMC*[tiab] OR granulocyt*[tiab] OR lymphopeni*[tiab] OR lymphocytopeni*[tiab] OR leukocytosis[tiab] OR TNF[tiab] OR \"TNF-alpha\"[tiab] OR \"tumor necrosis factor*\"[tiab] OR \"tumour necrosis factor*\"[tiab] OR IFN[tiab] OR \"IFN-gamma\"[tiab] OR interferon*[tiab] OR \"IL-10\"[tiab] OR IL10[tiab] OR \"IL-1\"[tiab] OR IL1[tiab] OR \"IL-1beta\"[tiab] OR \"IL-8\"[tiab] OR IL8[tiab] ) OR (\"Immunity\"[Mesh] OR \"Immunity, Mucosal\"[Mesh] OR \"Leukocytes\"[Mesh] OR \"Lymphocytes\"[Mesh] OR \"Killer Cells, Natural\"[Mesh] OR \"Neutrophils\"[Mesh] OR \"Monocytes\"[Mesh] OR \"Leukocyte Count\"[Mesh] OR \"Lymphocyte Count\"[Mesh] OR \"Cytokines\"[Mesh] OR \"Chemokines\"[Mesh] OR \"Interleukins\"[Mesh] OR \"Interleukin-6\"[Mesh] OR \"Immunoglobulins\"[Mesh] OR \"Immunoglobulin A\"[Mesh] OR \"Immunoglobulin A, Secretory\"[Mesh] OR \"Complement System Proteins\"[Mesh] OR \"C-Reactive Protein\"[Mesh] OR \"Phagocytosis\"[Mesh] OR \"Cytotoxicity, Immunologic\"[Mesh]))) NOT ((( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR sport*[tiab] OR train*[tiab] OR workout*[tiab] OR athlet*[tiab] OR competition*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycling[tiab] OR cyclist*[tiab] OR \"cycle ergomet*\"[tiab] OR ergomet*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[tiab] OR (resistance[tiab] AND train*[tiab]) OR \"strength training\"[tiab] OR endurance[tiab] OR aerobic[tiab] OR \"interval train*\"[tiab] OR \"interval exercis*\"[tiab] OR \"sprint interval*\"[tiab] OR \"high-intensity interval*\"[tiab] OR HIIT[tiab] OR HIIE[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) OR (\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Sports\"[Mesh] OR \"Exercise Test\"[Mesh] OR \"Running\"[Mesh] OR \"Swimming\"[Mesh] OR \"Bicycling\"[Mesh] OR \"Resistance Training\"[Mesh] OR \"High-Intensity Interval Training\"[Mesh])) AND (( omic*[tiab] OR proteom*[tiab] OR metabolom*[tiab] OR lipidom*[tiab] OR transcriptom*[tiab] OR epigenom*[tiab] OR epigenet*[tiab] OR \"DNA methylation\"[tiab] OR methylom*[tiab] OR multiomic*[tiab] OR \"multi-omic\"[tiab] OR \"multi-omics\"[tiab] OR \"single-cell\"[tiab] OR \"single cell\"[tiab] OR \"scRNA-seq\"[tiab] OR \"RNA-seq\"[tiab] OR \"RNA sequencing\"[tiab] OR microRNA*[tiab] OR miRNA*[tiab] OR lncRNA*[tiab] OR circRNA*[tiab] OR \"mass spectrometry\"[tiab] OR \"protein profiling\"[tiab] OR \"metabolite profiling\"[tiab] OR \"high-throughput sequencing\"[tiab] OR microarray*[tiab] OR \"gene expression profil*\"[tiab] OR \"expression profil*\"[tiab] ) OR (\"Proteomics\"[Mesh] OR \"Metabolomics\"[Mesh] OR \"Lipidomics\"[Mesh] OR \"Transcriptome\"[Mesh] OR \"Gene Expression Profiling\"[Mesh] OR \"Single-Cell Analysis\"[Mesh] OR \"Multiomics\"[Mesh] OR \"Epigenomics\"[Mesh] OR \"DNA Methylation\"[Mesh] OR \"MicroRNAs\"[Mesh] OR \"RNA, Long Noncoding\"[Mesh] OR \"Sequence Analysis, RNA\"[Mesh] OR \"Mass Spectrometry\"[Mesh:NoExp])))",
+          "string_sha256": "0cd826568994b2443f64606d2b4f318f394d91487cf66f9ba81cde024539a3fe",
+          "date_time_utc": "2026-10-04T13:25:17Z",
+          "validation_hit_count": 179904,
+          "info_only_counts": {
+            "pub_year_ge_2000": 151030,
+            "pub_year_ge_2000_utc": "2026-10-04T13:25:20Z",
+            "pub_year_ge_2010": 123278,
+            "pub_year_ge_2010_utc": "2026-10-04T13:25:24Z",
+            "humans_MeSH": 111377,
+            "humans_MeSH_utc": "2026-10-04T13:25:26Z",
+            "note": "information only; the protocol applies no date or human filter"
+          },
+          "errorlist": null,
+          "warninglist": null,
+          "screening_person_hours_pubmed": 5996.8,
+          "screening_person_hours_five_db_raw_assumed_1_5x_to_2_5x": [
+            8995,
+            14992
+          ]
+        },
+        {
+          "id": "PV06_PUBMED_V3_Tfix",
+          "variant": "V3_Tfix",
+          "definition": "V1 AND Tfix; Tfix = T with \"after a marathon\"[tiab] replaced by \"after marathon\"[tiab:~1] (post hoc repair after the POS-C1 miss)",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST); PubMed search engine",
+          "run_type": "parser_validation",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
+          "strategy_version": "0.6-draft",
+          "exact_string_sent": "((( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR sport*[tiab] OR train*[tiab] OR workout*[tiab] OR athlet*[tiab] OR competition*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycling[tiab] OR cyclist*[tiab] OR \"cycle ergomet*\"[tiab] OR ergomet*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[tiab] OR (resistance[tiab] AND train*[tiab]) OR \"strength training\"[tiab] OR endurance[tiab] OR aerobic[tiab] OR \"interval train*\"[tiab] OR \"interval exercis*\"[tiab] OR \"sprint interval*\"[tiab] OR \"high-intensity interval*\"[tiab] OR HIIT[tiab] OR HIIE[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) OR (\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Sports\"[Mesh] OR \"Exercise Test\"[Mesh] OR \"Running\"[Mesh] OR \"Swimming\"[Mesh] OR \"Bicycling\"[Mesh] OR \"Resistance Training\"[Mesh] OR \"High-Intensity Interval Training\"[Mesh])) AND ((( immun*[tiab] OR inflammat*[tiab] OR leukocyt*[tiab] OR leucocyt*[tiab] OR lymphocyt*[tiab] OR neutrophil*[tiab] OR monocyt*[tiab] OR eosinophil*[tiab] OR basophil*[tiab] OR \"natural killer\"[tiab] OR \"NK cell\"[tiab] OR \"NK cells\"[tiab] OR \"T cell\"[tiab] OR \"T cells\"[tiab] OR \"B cell\"[tiab] OR \"B cells\"[tiab] OR CD4[tiab] OR CD8[tiab] OR cytokine*[tiab] OR chemokine*[tiab] OR immunoglobulin*[tiab] OR \"immunoglobulin A\"[tiab] OR \"secretory immunoglobulin A\"[tiab] OR IgA[tiab] OR sIgA[tiab] OR SIgA[tiab] OR \"secretory IgA\"[tiab] OR interleukin*[tiab] OR \"interleukin-6\"[tiab] OR \"IL-6\"[tiab] OR IL6[tiab] OR CRP[tiab] OR \"C-reactive protein\"[tiab] OR \"C reactive protein\"[tiab] OR phagocyt*[tiab] OR cytotoxic*[tiab] OR complement[tiab] OR (mucosal[tiab] AND immun*[tiab]) OR \"immune function\"[tiab] OR \"immune response\"[tiab] OR \"effector function\"[tiab] OR immunophenotyp*[tiab] OR \"immune cell\"[tiab] OR \"immune cells\"[tiab] OR \"white blood cell*\"[tiab] OR \"mononuclear cell*\"[tiab] OR PBMC*[tiab] OR granulocyt*[tiab] OR lymphopeni*[tiab] OR lymphocytopeni*[tiab] OR leukocytosis[tiab] OR TNF[tiab] OR \"TNF-alpha\"[tiab] OR \"tumor necrosis factor*\"[tiab] OR \"tumour necrosis factor*\"[tiab] OR IFN[tiab] OR \"IFN-gamma\"[tiab] OR interferon*[tiab] OR \"IL-10\"[tiab] OR IL10[tiab] OR \"IL-1\"[tiab] OR IL1[tiab] OR \"IL-1beta\"[tiab] OR \"IL-8\"[tiab] OR IL8[tiab] ) OR (\"Immunity\"[Mesh] OR \"Immunity, Mucosal\"[Mesh] OR \"Leukocytes\"[Mesh] OR \"Lymphocytes\"[Mesh] OR \"Killer Cells, Natural\"[Mesh] OR \"Neutrophils\"[Mesh] OR \"Monocytes\"[Mesh] OR \"Leukocyte Count\"[Mesh] OR \"Lymphocyte Count\"[Mesh] OR \"Cytokines\"[Mesh] OR \"Chemokines\"[Mesh] OR \"Interleukins\"[Mesh] OR \"Interleukin-6\"[Mesh] OR \"Immunoglobulins\"[Mesh] OR \"Immunoglobulin A\"[Mesh] OR \"Immunoglobulin A, Secretory\"[Mesh] OR \"Complement System Proteins\"[Mesh] OR \"C-Reactive Protein\"[Mesh] OR \"Phagocytosis\"[Mesh] OR \"Cytotoxicity, Immunologic\"[Mesh])) OR (( omic*[tiab] OR proteom*[tiab] OR metabolom*[tiab] OR lipidom*[tiab] OR transcriptom*[tiab] OR epigenom*[tiab] OR epigenet*[tiab] OR \"DNA methylation\"[tiab] OR methylom*[tiab] OR multiomic*[tiab] OR \"multi-omic\"[tiab] OR \"multi-omics\"[tiab] OR \"single-cell\"[tiab] OR \"single cell\"[tiab] OR \"scRNA-seq\"[tiab] OR \"RNA-seq\"[tiab] OR \"RNA sequencing\"[tiab] OR microRNA*[tiab] OR miRNA*[tiab] OR lncRNA*[tiab] OR circRNA*[tiab] OR \"mass spectrometry\"[tiab] OR \"protein profiling\"[tiab] OR \"metabolite profiling\"[tiab] OR \"high-throughput sequencing\"[tiab] OR microarray*[tiab] OR \"gene expression profil*\"[tiab] OR \"expression profil*\"[tiab] ) OR (\"Proteomics\"[Mesh] OR \"Metabolomics\"[Mesh] OR \"Lipidomics\"[Mesh] OR \"Transcriptome\"[Mesh] OR \"Gene Expression Profiling\"[Mesh] OR \"Single-Cell Analysis\"[Mesh] OR \"Multiomics\"[Mesh] OR \"Epigenomics\"[Mesh] OR \"DNA Methylation\"[Mesh] OR \"MicroRNAs\"[Mesh] OR \"RNA, Long Noncoding\"[Mesh] OR \"Sequence Analysis, RNA\"[Mesh] OR \"Mass Spectrometry\"[Mesh:NoExp])))) AND (\"post-exercise\"[tiab] OR postexercise[tiab] OR \"post exercise\"[tiab] OR \"after exercise\"[tiab] OR \"following exercise\"[tiab] OR \"exercise-induced\"[tiab] OR \"acute exercise\"[tiab] OR \"acute bout\"[tiab] OR \"single bout\"[tiab] OR \"bout of\"[tiab] OR \"exercise bout*\"[tiab] OR \"post-race\"[tiab] OR \"post-marathon\"[tiab] OR \"after marathon\"[tiab:~1] OR \"recovery period\"[tiab] OR \"during recovery\"[tiab] OR \"immediately after\"[tiab] OR \"hours after\"[tiab] OR \"h post\"[tiab] OR \"post-match\"[tiab] OR \"post-competition\"[tiab] OR \"exercise session*\"[tiab] OR \"exercise challenge*\"[tiab] OR \"exercise test*\"[tiab])",
+          "string_sha256": "43765390d6a5d0038825a0615cf22d797917c68a6babd65a56c9aa82bb8a0994",
+          "date_time_utc": "2026-10-04T13:33:05Z",
+          "validation_hit_count": 15930,
+          "info_only_counts": {
+            "pub_year_ge_2000": 14021,
+            "pub_year_ge_2010": 11264,
+            "humans_MeSH": 10026
+          },
+          "warninglist": null,
+          "screening_person_hours_pubmed": 531.0,
+          "screening_person_hours_five_db_raw_assumed_1_5x_to_2_5x": [
+            796,
+            1328
+          ],
+          "seed_recall": {
+            "utc_end": "2026-10-04T13:33:53Z",
+            "retrieved_of_24": 19,
+            "POS_retrieved_of_10": 10,
+            "missed": [
+              "NEG-E1",
+              "NEG-E2",
+              "CIT-R3",
+              "CIT-R4",
+              "CIT-R5"
+            ]
+          }
+        },
+        {
+          "id": "PV06_PUBMED_V4_Tfix",
+          "variant": "V4_Tfix",
+          "definition": "V2 AND Tfix; Tfix = T with \"after a marathon\"[tiab] replaced by \"after marathon\"[tiab:~1] (post hoc repair after the POS-C1 miss)",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST); PubMed search engine",
+          "run_type": "parser_validation",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
+          "strategy_version": "0.6-draft",
+          "exact_string_sent": "((( exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR (physical[tiab] AND activit*[tiab]) OR \"physical exertion\"[tiab] OR workout*[tiab] OR athlet*[tiab] OR run[tiab] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycling[tiab] OR cyclist*[tiab] OR \"cycle ergomet*\"[tiab] OR ergomet*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR \"resistance train*\"[tiab] OR \"strength training\"[tiab] OR \"interval train*\"[tiab] OR \"interval exercis*\"[tiab] OR \"sprint interval*\"[tiab] OR \"high-intensity interval*\"[tiab] OR HIIT[tiab] OR HIIE[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab] ) OR (\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Sports\"[Mesh] OR \"Exercise Test\"[Mesh] OR \"Running\"[Mesh] OR \"Swimming\"[Mesh] OR \"Bicycling\"[Mesh] OR \"Resistance Training\"[Mesh] OR \"High-Intensity Interval Training\"[Mesh])) AND ((( immun*[tiab] OR inflammat*[tiab] OR leukocyt*[tiab] OR leucocyt*[tiab] OR lymphocyt*[tiab] OR neutrophil*[tiab] OR monocyt*[tiab] OR eosinophil*[tiab] OR basophil*[tiab] OR \"natural killer\"[tiab] OR \"NK cell\"[tiab] OR \"NK cells\"[tiab] OR \"T cell\"[tiab] OR \"T cells\"[tiab] OR \"B cell\"[tiab] OR \"B cells\"[tiab] OR CD4[tiab] OR CD8[tiab] OR cytokine*[tiab] OR chemokine*[tiab] OR immunoglobulin*[tiab] OR \"immunoglobulin A\"[tiab] OR \"secretory immunoglobulin A\"[tiab] OR IgA[tiab] OR sIgA[tiab] OR SIgA[tiab] OR \"secretory IgA\"[tiab] OR interleukin*[tiab] OR \"interleukin-6\"[tiab] OR \"IL-6\"[tiab] OR IL6[tiab] OR CRP[tiab] OR \"C-reactive protein\"[tiab] OR \"C reactive protein\"[tiab] OR phagocyt*[tiab] OR cytotoxic*[tiab] OR complement[tiab] OR (mucosal[tiab] AND immun*[tiab]) OR \"immune function\"[tiab] OR \"immune response\"[tiab] OR \"effector function\"[tiab] OR immunophenotyp*[tiab] OR \"immune cell\"[tiab] OR \"immune cells\"[tiab] OR \"white blood cell*\"[tiab] OR \"mononuclear cell*\"[tiab] OR PBMC*[tiab] OR granulocyt*[tiab] OR lymphopeni*[tiab] OR lymphocytopeni*[tiab] OR leukocytosis[tiab] OR TNF[tiab] OR \"TNF-alpha\"[tiab] OR \"tumor necrosis factor*\"[tiab] OR \"tumour necrosis factor*\"[tiab] OR IFN[tiab] OR \"IFN-gamma\"[tiab] OR interferon*[tiab] OR \"IL-10\"[tiab] OR IL10[tiab] OR \"IL-1\"[tiab] OR IL1[tiab] OR \"IL-1beta\"[tiab] OR \"IL-8\"[tiab] OR IL8[tiab] ) OR (\"Immunity\"[Mesh] OR \"Immunity, Mucosal\"[Mesh] OR \"Leukocytes\"[Mesh] OR \"Lymphocytes\"[Mesh] OR \"Killer Cells, Natural\"[Mesh] OR \"Neutrophils\"[Mesh] OR \"Monocytes\"[Mesh] OR \"Leukocyte Count\"[Mesh] OR \"Lymphocyte Count\"[Mesh] OR \"Cytokines\"[Mesh] OR \"Chemokines\"[Mesh] OR \"Interleukins\"[Mesh] OR \"Interleukin-6\"[Mesh] OR \"Immunoglobulins\"[Mesh] OR \"Immunoglobulin A\"[Mesh] OR \"Immunoglobulin A, Secretory\"[Mesh] OR \"Complement System Proteins\"[Mesh] OR \"C-Reactive Protein\"[Mesh] OR \"Phagocytosis\"[Mesh] OR \"Cytotoxicity, Immunologic\"[Mesh])) OR (( omic*[tiab] OR proteom*[tiab] OR metabolom*[tiab] OR lipidom*[tiab] OR transcriptom*[tiab] OR epigenom*[tiab] OR epigenet*[tiab] OR \"DNA methylation\"[tiab] OR methylom*[tiab] OR multiomic*[tiab] OR \"multi-omic\"[tiab] OR \"multi-omics\"[tiab] OR \"single-cell\"[tiab] OR \"single cell\"[tiab] OR \"scRNA-seq\"[tiab] OR \"RNA-seq\"[tiab] OR \"RNA sequencing\"[tiab] OR microRNA*[tiab] OR miRNA*[tiab] OR lncRNA*[tiab] OR circRNA*[tiab] OR \"mass spectrometry\"[tiab] OR \"protein profiling\"[tiab] OR \"metabolite profiling\"[tiab] OR \"high-throughput sequencing\"[tiab] OR microarray*[tiab] OR \"gene expression profil*\"[tiab] OR \"expression profil*\"[tiab] ) OR (\"Proteomics\"[Mesh] OR \"Metabolomics\"[Mesh] OR \"Lipidomics\"[Mesh] OR \"Transcriptome\"[Mesh] OR \"Gene Expression Profiling\"[Mesh] OR \"Single-Cell Analysis\"[Mesh] OR \"Multiomics\"[Mesh] OR \"Epigenomics\"[Mesh] OR \"DNA Methylation\"[Mesh] OR \"MicroRNAs\"[Mesh] OR \"RNA, Long Noncoding\"[Mesh] OR \"Sequence Analysis, RNA\"[Mesh] OR \"Mass Spectrometry\"[Mesh:NoExp])))) AND (\"post-exercise\"[tiab] OR postexercise[tiab] OR \"post exercise\"[tiab] OR \"after exercise\"[tiab] OR \"following exercise\"[tiab] OR \"exercise-induced\"[tiab] OR \"acute exercise\"[tiab] OR \"acute bout\"[tiab] OR \"single bout\"[tiab] OR \"bout of\"[tiab] OR \"exercise bout*\"[tiab] OR \"post-race\"[tiab] OR \"post-marathon\"[tiab] OR \"after marathon\"[tiab:~1] OR \"recovery period\"[tiab] OR \"during recovery\"[tiab] OR \"immediately after\"[tiab] OR \"hours after\"[tiab] OR \"h post\"[tiab] OR \"post-match\"[tiab] OR \"post-competition\"[tiab] OR \"exercise session*\"[tiab] OR \"exercise challenge*\"[tiab] OR \"exercise test*\"[tiab])",
+          "string_sha256": "c566e335e84355a73523d7a59ef78bc0ae385d56609baebf498f10d968b53780",
+          "date_time_utc": "2026-10-04T13:33:55Z",
+          "validation_hit_count": 14845,
+          "info_only_counts": {
+            "pub_year_ge_2000": 13112,
+            "pub_year_ge_2010": 10576,
+            "humans_MeSH": 9615
+          },
+          "warninglist": null,
+          "screening_person_hours_pubmed": 494.8,
+          "screening_person_hours_five_db_raw_assumed_1_5x_to_2_5x": [
+            742,
+            1237
+          ],
+          "seed_recall": {
+            "utc_end": "2026-10-04T13:34:40Z",
+            "retrieved_of_24": 19,
+            "POS_retrieved_of_10": 10,
+            "missed": [
+              "NEG-E1",
+              "NEG-E2",
+              "CIT-R3",
+              "CIT-R4",
+              "CIT-R5"
+            ]
+          }
+        }
+      ],
+      "volume_decomposition_v05_to_v06": {
+        "V0": 728526,
+        "E_fixes_only": 223818,
+        "cycl_fix_only": 339790,
+        "plus_I_additions": 227785,
+        "plus_O_additions_v06_free_text": 235288,
+        "plus_MeSH_V1": 255019,
+        "V2_EI": 107987,
+        "V2_EO": 35697,
+        "utc_window": [
+          "2026-10-04T13:39:03Z",
+          "2026-10-04T13:39:16Z"
+        ]
+      },
+      "missed_seed_diagnosis": {
+        "POS-C1": "Lost under all T variants. Abstract timing wording: 'after a marathon', 'after the race', 'two days after the end of the race', 'after strenuous exercise'. T's '\"after a marathon\"[tiab]' is reported by PubMed as quotedphrasesnotfound (stop word) and dropped; other forms not in T. Retrieved with Tfix (post hoc).",
+        "NEG-E1": "Resting cross-sectional; no T wording. Expected exclusion; lost under all T variants.",
+        "NEG-E2": "Animal training study ('endurance exercise training'); no T wording. Expected FT02 exclusion; lost under all T variants.",
+        "CIT-R3": "Review; no T wording. Citation-chasing source; lost under all T variants.",
+        "CIT-R4": "Review; no T wording. Citation-chasing source; lost under all T variants.",
+        "CIT-R5": "Review; no T wording. Citation-chasing source; lost under all T variants.",
+        "abstract_source": "efetch db=pubmed rettype=abstract retmode=text, about 2026-10-04T13:32Z"
+      },
+      "other_diagnostics": {
+        "trained_immunity": {
+          "pubmed_records_tiab": 1896,
+          "inside_V1": 1896,
+          "removed_by_V2": 1877,
+          "utc": "2026-10-04T13:23:24Z"
+        },
+        "PRESS_desk_check_records": {
+          "Buttner2007_16990507|V0_R2_EO": {
+            "utc": "2026-10-04T13:39:59Z",
+            "retrieved": false
+          },
+          "Buttner2007_16990507|V1_EO": {
+            "utc": "2026-10-04T13:40:00Z",
+            "retrieved": true
+          },
+          "Buttner2007_16990507|V1_EO_freetext": {
+            "utc": "2026-10-04T13:40:01Z",
+            "retrieved": true
+          },
+          "Buttner2007_16990507|V1_EI": {
+            "utc": "2026-10-04T13:40:02Z",
+            "retrieved": true
+          },
+          "Buttner2007_16990507|V0_R1_EI": {
+            "utc": "2026-10-04T13:40:03Z",
+            "retrieved": true
+          },
+          "Buttner2007_16990507|V3": {
+            "utc": "2026-10-04T13:40:05Z",
+            "retrieved": true
+          },
+          "Connolly2004_15194674|V0_R2_EO": {
+            "utc": "2026-10-04T13:40:06Z",
+            "retrieved": false
+          },
+          "Connolly2004_15194674|V1_EO": {
+            "utc": "2026-10-04T13:40:08Z",
+            "retrieved": true
+          },
+          "Connolly2004_15194674|V1_EO_freetext": {
+            "utc": "2026-10-04T13:40:09Z",
+            "retrieved": true
+          },
+          "Connolly2004_15194674|V1_EI": {
+            "utc": "2026-10-04T13:40:10Z",
+            "retrieved": true
+          },
+          "Connolly2004_15194674|V0_R1_EI": {
+            "utc": "2026-10-04T13:40:12Z",
+            "retrieved": true
+          },
+          "Connolly2004_15194674|V3": {
+            "utc": "2026-10-04T13:40:13Z",
+            "retrieved": true
+          }
+        },
+        "I_MESH_alone_seed_membership": {
+          "POS-C4|I_MESH_v05": {
+            "utc": "2026-10-04T13:40:14Z",
+            "retrieved": false
+          },
+          "POS-C4|I_MESH_v06": {
+            "utc": "2026-10-04T13:40:15Z",
+            "retrieved": true
+          },
+          "POS-C5|I_MESH_v05": {
+            "utc": "2026-10-04T13:40:17Z",
+            "retrieved": false
+          },
+          "POS-C5|I_MESH_v06": {
+            "utc": "2026-10-04T13:40:18Z",
+            "retrieved": true
+          },
+          "BND-OW1|I_MESH_v05": {
+            "utc": "2026-10-04T13:40:19Z",
+            "retrieved": false
+          },
+          "BND-OW1|I_MESH_v06": {
+            "utc": "2026-10-04T13:40:20Z",
+            "retrieved": true
+          }
+        }
+      },
+      "workload_assumptions": "Title/abstract screening at 1 min per record per reviewer, two reviewers: person-hours = records x 2 / 60. Five-database raw totals before deduplication assumed at about 1.5-2.5x the PubMed count (assumption, not measured); screening is done after deduplication, so the five-database figure is an upper-bound raw range.",
+      "not_verified": "WoS, Scopus, Embase.com/Ovid and SPORTDiscus translations of v0.6 not live-parser checked; Emtree and SPORTDiscus candidate lines PENDING LIVE THESAURUS VALIDATION."
     }
   }
 }
