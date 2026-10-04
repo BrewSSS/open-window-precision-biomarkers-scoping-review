@@ -1,0 +1,533 @@
+{
+  "lane": "methods",
+  "owner": "root",
+  "cutoff_date": "2026-10-02",
+  "searched_at_date": "2026-10-02",
+  "queries": [
+    {
+      "source": "web / official guideline websites",
+      "query": "site.jbi-global.atlassian.net 10.2.9 Extracting the evidence",
+      "date": "2026-10-02",
+      "notes": "Exploratory official-source verification; not a formal database search"
+    },
+    {
+      "source": "web / official guideline websites",
+      "query": "site.jbi-global.atlassian.net Piloting the selection 75%",
+      "date": "2026-10-02",
+      "notes": "Exploratory official-source verification; not a formal database search"
+    },
+    {
+      "source": "web / official guideline websites",
+      "query": "site.jbi.global 2026 scoping reviews updated chapter August 31",
+      "date": "2026-10-02",
+      "notes": "Exploratory official-source verification; not a formal database search"
+    },
+    {
+      "source": "web / official guideline websites",
+      "query": "site.prisma-statement.org scoping PRISMA-S",
+      "date": "2026-10-02",
+      "notes": "Exploratory official-source verification; not a formal database search"
+    },
+    {
+      "source": "web / official guideline websites",
+      "query": "site.cos.io Generalized Systematic Review Registration",
+      "date": "2026-10-02",
+      "notes": "Exploratory official-source verification; not a formal database search"
+    },
+    {
+      "source": "web / official guideline websites",
+      "query": "site.crd.york.ac.uk PROSPERO Scoping reviews",
+      "date": "2026-10-02",
+      "notes": "Exploratory official-source verification; not a formal database search"
+    },
+    {
+      "source": "web / official guideline websites",
+      "query": "PRESS 2015 Guideline Statement McGowan 2016",
+      "date": "2026-10-02",
+      "notes": "Exploratory official-source verification; not a formal database search"
+    },
+    {
+      "source": "web / official guideline websites",
+      "query": "Position Statement on Artificial Intelligence 2025 Cochrane JBI",
+      "date": "2026-10-02",
+      "notes": "Exploratory official-source verification; not a formal database search"
+    },
+    {
+      "source": "web / official guideline websites",
+      "query": "RAISE Responsible AI version 3 evidence synthesis",
+      "date": "2026-10-02",
+      "notes": "Exploratory official-source verification; not a formal database search"
+    }
+  ],
+  "sources": [
+    {
+      "id": "M01",
+      "title": "JBI: Searching for the evidence (10.2.6)",
+      "authors": "Official guideline authors / issuing organization; see linked source",
+      "year": 2026,
+      "publication_date": "2026-08-31",
+      "doi": null,
+      "pmid": null,
+      "url": "https://jbi-global-wiki.refined.site/space/MANUAL/355862749/10.2.6%2BSearching%2Bfor%2Bthe%2Bevidence",
+      "source_type": "guideline",
+      "access_level": "full_text",
+      "population": null,
+      "design": null,
+      "sample_size": null,
+      "exercise_context": null,
+      "sampling_times": null,
+      "biomarkers": null,
+      "key_finding": "explicit comprehensive transparent search; explain grey-literature policy",
+      "clinical_endpoint": null,
+      "validation": null,
+      "limitations": "方法学支持来源；不作为运动免疫原始证据纳入计数。",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Guidance text",
+      "verification_urls": [
+        "https://jbi-global-wiki.refined.site/space/MANUAL/355862749/10.2.6%2BSearching%2Bfor%2Bthe%2Bevidence"
+      ],
+      "integrity_notes": "核验于2026-10-02；JBI在线章节版本日期以官网为准。",
+      "protocol_implication": "五库检索策略、平台、日期、更新及灰文献决定均写入协议"
+    },
+    {
+      "id": "M02",
+      "title": "JBI: Critical appraisal or risk-of-bias assessment (10.2.8)",
+      "authors": "Official guideline authors / issuing organization; see linked source",
+      "year": 2026,
+      "publication_date": "2026-08-31",
+      "doi": null,
+      "pmid": null,
+      "url": "https://jbi-global.atlassian.net/wiki/spaces/MANUAL/pages/355862791",
+      "source_type": "guideline",
+      "access_level": "full_text",
+      "population": null,
+      "design": null,
+      "sample_size": null,
+      "exercise_context": null,
+      "sampling_times": null,
+      "biomarkers": null,
+      "key_finding": "No routine formal appraisal advocated; exceptions depend on objectives",
+      "clinical_endpoint": null,
+      "validation": null,
+      "limitations": "方法学支持来源；不作为运动免疫原始证据纳入计数。",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Guidance text",
+      "verification_urls": [
+        "https://jbi-global.atlassian.net/wiki/spaces/MANUAL/pages/355862791"
+      ],
+      "integrity_notes": "核验于2026-10-02；JBI在线章节版本日期以官网为准。",
+      "protocol_implication": "保留描述性方法学特征，不因scoping review而强制套用RoB/GRADE，不推出临床推荐"
+    },
+    {
+      "id": "M03",
+      "title": "JBI: Piloting the selection of studies (10.2.7.1)",
+      "authors": "Official guideline authors / issuing organization; see linked source",
+      "year": 2026,
+      "publication_date": "2026-08-31",
+      "doi": null,
+      "pmid": null,
+      "url": "https://jbi-global.atlassian.net/wiki/spaces/MANUAL/pages/2049540102",
+      "source_type": "guideline",
+      "access_level": "full_text",
+      "population": null,
+      "design": null,
+      "sample_size": null,
+      "exercise_context": null,
+      "sampling_times": null,
+      "biomarkers": null,
+      "key_finding": "Example pilot framework: random 25 records and >=75% agreement before screening",
+      "clinical_endpoint": null,
+      "validation": null,
+      "limitations": "方法学支持来源；不作为运动免疫原始证据纳入计数。",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Guidance text",
+      "verification_urls": [
+        "https://jbi-global.atlassian.net/wiki/spaces/MANUAL/pages/2049540102"
+      ],
+      "integrity_notes": "核验于2026-10-02；JBI在线章节版本日期以官网为准。",
+      "protocol_implication": "可保留原计划随机50篇，明定一致率/分歧解决；50与更严格标准是项目选择，不冒充JBI强制"
+    },
+    {
+      "id": "M04",
+      "title": "JBI: Extracting the evidence (10.2.9)",
+      "authors": "Official guideline authors / issuing organization; see linked source",
+      "year": 2026,
+      "publication_date": "2026-08-31",
+      "doi": null,
+      "pmid": null,
+      "url": "https://jbi-global.atlassian.net/wiki/spaces/MANUAL/pages/355862811",
+      "source_type": "guideline",
+      "access_level": "full_text",
+      "population": null,
+      "design": null,
+      "sample_size": null,
+      "exercise_context": null,
+      "sampling_times": null,
+      "biomarkers": null,
+      "key_finding": "Draft form plus field guidance; pilot diverse evidence sources; two independent extractors best practice",
+      "clinical_endpoint": null,
+      "validation": null,
+      "limitations": "方法学支持来源；不作为运动免疫原始证据纳入计数。",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Guidance text",
+      "verification_urls": [
+        "https://jbi-global.atlassian.net/wiki/spaces/MANUAL/pages/355862811"
+      ],
+      "integrity_notes": "核验于2026-10-02；JBI在线章节版本日期以官网为准。",
+      "protocol_implication": "已有第二位筛选者，可采用双人独立提取与仲裁；10篇试提取覆盖所有主要设计与组学类型"
+    },
+    {
+      "id": "M05",
+      "title": "PRISMA Extension for Scoping Reviews (PRISMA-ScR): Checklist and Explanation",
+      "authors": "Official guideline authors / issuing organization; see linked source",
+      "year": 2018,
+      "publication_date": "2018",
+      "doi": "10.7326/M18-0850",
+      "pmid": "30178033",
+      "url": "https://www.prisma-statement.org/scoping",
+      "source_type": "guideline",
+      "access_level": "full_text",
+      "population": null,
+      "design": null,
+      "sample_size": null,
+      "exercise_context": null,
+      "sampling_times": null,
+      "biomarkers": null,
+      "key_finding": "Official PRISMA-ScR reporting checklist",
+      "clinical_endpoint": null,
+      "validation": null,
+      "limitations": "方法学支持来源；不作为运动免疫原始证据纳入计数。",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Guidance text",
+      "verification_urls": [
+        "https://www.prisma-statement.org/scoping"
+      ],
+      "integrity_notes": "核验于2026-10-02；JBI在线章节版本日期以官网为准。",
+      "protocol_implication": "方案与正式报告逐项对照；空流程图不是研究结果"
+    },
+    {
+      "id": "M06",
+      "title": "PRISMA-S: an extension to the PRISMA Statement for Reporting Literature Searches in Systematic Reviews",
+      "authors": "Official guideline authors / issuing organization; see linked source",
+      "year": 2021,
+      "publication_date": "2021",
+      "doi": "10.1186/s13643-020-01542-z",
+      "pmid": null,
+      "url": "https://www.prisma-statement.org/prisma-search",
+      "source_type": "guideline",
+      "access_level": "full_text",
+      "population": null,
+      "design": null,
+      "sample_size": null,
+      "exercise_context": null,
+      "sampling_times": null,
+      "biomarkers": null,
+      "key_finding": "Reporting guidance for reproducible search methods",
+      "clinical_endpoint": null,
+      "validation": null,
+      "limitations": "方法学支持来源；不作为运动免疫原始证据纳入计数。",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Guidance text",
+      "verification_urls": [
+        "https://www.prisma-statement.org/prisma-search"
+      ],
+      "integrity_notes": "核验于2026-10-02；JBI在线章节版本日期以官网为准。",
+      "protocol_implication": "保存完整字符串、数据库与平台、字段、限制、每库结果数、引文追踪、去重与更新日志"
+    },
+    {
+      "id": "M07",
+      "title": "PRESS Peer Review of Electronic Search Strategies: 2015 Guideline Statement",
+      "authors": "Official guideline authors / issuing organization; see linked source",
+      "year": 2016,
+      "publication_date": "2016-03-19",
+      "doi": "10.1016/j.jclinepi.2016.01.021",
+      "pmid": "27005575",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27005575/",
+      "source_type": "guideline",
+      "access_level": "abstract",
+      "population": null,
+      "design": null,
+      "sample_size": null,
+      "exercise_context": null,
+      "sampling_times": null,
+      "biomarkers": null,
+      "key_finding": "Peer review guidance for electronic search strategies",
+      "clinical_endpoint": null,
+      "validation": null,
+      "limitations": "方法学支持来源；不作为运动免疫原始证据纳入计数。",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Guidance text / Abstract",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/27005575/"
+      ],
+      "integrity_notes": "核验于2026-10-02；JBI在线章节版本日期以官网为准。",
+      "protocol_implication": "请信息检索人员/研究馆员独立检查受控词、拼写、逻辑、字段与限制；LLM生成式需人工核验"
+    },
+    {
+      "id": "M08",
+      "title": "Generalized Systematic Review Template Joins OSF Registries",
+      "authors": "Official guideline authors / issuing organization; see linked source",
+      "year": 2023,
+      "publication_date": "2023-04-20",
+      "doi": null,
+      "pmid": null,
+      "url": "https://www.cos.io/blog/generalized-systematic-review-template-joins-osf-registries",
+      "source_type": "official_guidance_webpage",
+      "access_level": "full_text",
+      "population": null,
+      "design": null,
+      "sample_size": null,
+      "exercise_context": null,
+      "sampling_times": null,
+      "biomarkers": null,
+      "key_finding": "OSF provides a generalized review registration template",
+      "clinical_endpoint": null,
+      "validation": null,
+      "limitations": "方法学支持来源；不作为运动免疫原始证据纳入计数。",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Guidance text",
+      "verification_urls": [
+        "https://www.cos.io/blog/generalized-systematic-review-template-joins-osf-registries"
+      ],
+      "integrity_notes": "核验于2026-10-02；JBI在线章节版本日期以官网为准。",
+      "protocol_implication": "准备注册包，记录本轮已经进行的探索检索，不倒填为从未检索；正式筛选前冻结版本"
+    },
+    {
+      "id": "M09",
+      "title": "PROSPERO: Guidance for registering human studies",
+      "authors": "Official guideline authors / issuing organization; see linked source",
+      "year": null,
+      "publication_date": null,
+      "doi": null,
+      "pmid": null,
+      "url": "https://www.crd.york.ac.uk/PROSPERO/documents/Guidance%20for%20registering%20human%20studies.pdf",
+      "source_type": "guideline",
+      "access_level": "full_text",
+      "population": null,
+      "design": null,
+      "sample_size": null,
+      "exercise_context": null,
+      "sampling_times": null,
+      "biomarkers": null,
+      "key_finding": "Official eligibility guidance lists scoping reviews as not accepted",
+      "clinical_endpoint": null,
+      "validation": null,
+      "limitations": "方法学支持来源；不作为运动免疫原始证据纳入计数。",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Guidance text",
+      "verification_urls": [
+        "https://www.crd.york.ac.uk/PROSPERO/documents/Guidance%20for%20registering%20human%20studies.pdf"
+      ],
+      "integrity_notes": "核验于2026-10-02；JBI在线章节版本日期以官网为准。",
+      "protocol_implication": "本项目采用OSF路线；注册与投稿不是同一个动作"
+    },
+    {
+      "id": "M10",
+      "title": "Position statement on artificial intelligence (AI) use in evidence synthesis across Cochrane, the Campbell Collaboration, JBI, and the Collaboration for Environmental Evidence 2025",
+      "authors": "Official guideline authors / issuing organization; see linked source",
+      "year": 2025,
+      "publication_date": "2025-11-06",
+      "doi": "10.11124/JBIES-25-00480",
+      "pmid": "41220062",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41220062/",
+      "source_type": "guideline",
+      "access_level": "full_text",
+      "population": null,
+      "design": null,
+      "sample_size": null,
+      "exercise_context": null,
+      "sampling_times": null,
+      "biomarkers": null,
+      "key_finding": "Human responsibility and transparent reporting of judgement-affecting AI use",
+      "clinical_endpoint": null,
+      "validation": null,
+      "limitations": "方法学支持来源；不作为运动免疫原始证据纳入计数。",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Guidance text",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41220062/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12603384/"
+      ],
+      "integrity_notes": "正文核查采用联合声明同步发表的Campbell版本；规范引文选择JBI版本，不重复计数。",
+      "protocol_implication": "AI可辅助发现、排序和预填；两位真实研究者承担纳排与核验；保留模型、日期、任务、提示词、核验和纠错日志"
+    },
+    {
+      "id": "M11",
+      "title": "Cochrane Italia: Responsible use of AI in Evidence Synthesis (RAISE 2026) 1, version 3",
+      "authors": "Official guideline authors / issuing organization; see linked source",
+      "year": 2026,
+      "publication_date": "2026-03-13",
+      "doi": null,
+      "pmid": null,
+      "url": "https://www.cochrane.it/it/resources/uso-responsabile-dellia-nella-sintesi-delle-evidenze-raise-1",
+      "source_type": "official_guidance_webpage",
+      "access_level": "full_text",
+      "population": null,
+      "design": null,
+      "sample_size": null,
+      "exercise_context": null,
+      "sampling_times": null,
+      "biomarkers": null,
+      "key_finding": "Official Cochrane translation identifies version 3 dated 13 March 2026; original under peer review",
+      "clinical_endpoint": null,
+      "validation": null,
+      "limitations": "方法学支持来源；不作为运动免疫原始证据纳入计数。",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Guidance text",
+      "verification_urls": [
+        "https://www.cochrane.it/it/resources/uso-responsabile-dellia-nella-sintesi-delle-evidenze-raise-1"
+      ],
+      "integrity_notes": "对version 3的核验来自官方Cochrane译本说明；未假装独立核验OSF所有文件版本。",
+      "protocol_implication": "可引用版本化建议，但不得称其为最终同行评审标准；以已发表联合声明作主要支持"
+    },
+    {
+      "id": "M12",
+      "title": "JBI: Forming the right team (10.2.1.1)",
+      "authors": "Official guideline authors / issuing organization; see linked source",
+      "year": 2026,
+      "publication_date": "2026-08-31",
+      "doi": null,
+      "pmid": null,
+      "url": "https://jbi-global-wiki.refined.site/space/MANUAL/2042298373/10.2.1.1%2BForming%2Bthe%2Bright%2Bteam",
+      "source_type": "guideline",
+      "access_level": "full_text",
+      "population": null,
+      "design": null,
+      "sample_size": null,
+      "exercise_context": null,
+      "sampling_times": null,
+      "biomarkers": null,
+      "key_finding": "Review team needs at least two people with relevant expertise",
+      "clinical_endpoint": null,
+      "validation": null,
+      "limitations": "方法学支持来源；不作为运动免疫原始证据纳入计数。",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Guidance text",
+      "verification_urls": [
+        "https://jbi-global-wiki.refined.site/space/MANUAL/2042298373/10.2.1.1%2BForming%2Bthe%2Bright%2Bteam"
+      ],
+      "integrity_notes": "核验于2026-10-02；JBI在线章节版本日期以官网为准。",
+      "protocol_implication": "用户已确认第二位筛选者；还需指定分歧仲裁者与检索复核角色，可兼任但职责需明确"
+    }
+  ],
+  "findings": [
+    {
+      "claim": "五库检索策略、平台、日期、更新及灰文献决定均写入协议",
+      "source_ids": [
+        "M01"
+      ],
+      "certainty": "verified guidance; application is project recommendation",
+      "protocol_implication": "五库检索策略、平台、日期、更新及灰文献决定均写入协议"
+    },
+    {
+      "claim": "保留描述性方法学特征，不因scoping review而强制套用RoB/GRADE，不推出临床推荐",
+      "source_ids": [
+        "M02"
+      ],
+      "certainty": "verified guidance; application is project recommendation",
+      "protocol_implication": "保留描述性方法学特征，不因scoping review而强制套用RoB/GRADE，不推出临床推荐"
+    },
+    {
+      "claim": "可保留原计划随机50篇，明定一致率/分歧解决；50与更严格标准是项目选择，不冒充JBI强制",
+      "source_ids": [
+        "M03"
+      ],
+      "certainty": "verified guidance; application is project recommendation",
+      "protocol_implication": "可保留原计划随机50篇，明定一致率/分歧解决；50与更严格标准是项目选择，不冒充JBI强制"
+    },
+    {
+      "claim": "已有第二位筛选者，可采用双人独立提取与仲裁；10篇试提取覆盖所有主要设计与组学类型",
+      "source_ids": [
+        "M04"
+      ],
+      "certainty": "verified guidance; application is project recommendation",
+      "protocol_implication": "已有第二位筛选者，可采用双人独立提取与仲裁；10篇试提取覆盖所有主要设计与组学类型"
+    },
+    {
+      "claim": "方案与正式报告逐项对照；空流程图不是研究结果",
+      "source_ids": [
+        "M05"
+      ],
+      "certainty": "verified guidance; application is project recommendation",
+      "protocol_implication": "方案与正式报告逐项对照；空流程图不是研究结果"
+    },
+    {
+      "claim": "保存完整字符串、数据库与平台、字段、限制、每库结果数、引文追踪、去重与更新日志",
+      "source_ids": [
+        "M06"
+      ],
+      "certainty": "verified guidance; application is project recommendation",
+      "protocol_implication": "保存完整字符串、数据库与平台、字段、限制、每库结果数、引文追踪、去重与更新日志"
+    },
+    {
+      "claim": "请信息检索人员/研究馆员独立检查受控词、拼写、逻辑、字段与限制；LLM生成式需人工核验",
+      "source_ids": [
+        "M07"
+      ],
+      "certainty": "verified guidance; application is project recommendation",
+      "protocol_implication": "请信息检索人员/研究馆员独立检查受控词、拼写、逻辑、字段与限制；LLM生成式需人工核验"
+    },
+    {
+      "claim": "准备注册包，记录本轮已经进行的探索检索，不倒填为从未检索；正式筛选前冻结版本",
+      "source_ids": [
+        "M08"
+      ],
+      "certainty": "verified guidance; application is project recommendation",
+      "protocol_implication": "准备注册包，记录本轮已经进行的探索检索，不倒填为从未检索；正式筛选前冻结版本"
+    },
+    {
+      "claim": "本项目采用OSF路线；注册与投稿不是同一个动作",
+      "source_ids": [
+        "M09"
+      ],
+      "certainty": "verified guidance; application is project recommendation",
+      "protocol_implication": "本项目采用OSF路线；注册与投稿不是同一个动作"
+    },
+    {
+      "claim": "AI可辅助发现、排序和预填；两位真实研究者承担纳排与核验；保留模型、日期、任务、提示词、核验和纠错日志",
+      "source_ids": [
+        "M10"
+      ],
+      "certainty": "verified guidance; application is project recommendation",
+      "protocol_implication": "AI可辅助发现、排序和预填；两位真实研究者承担纳排与核验；保留模型、日期、任务、提示词、核验和纠错日志"
+    },
+    {
+      "claim": "可引用版本化建议，但不得称其为最终同行评审标准；以已发表联合声明作主要支持",
+      "source_ids": [
+        "M11"
+      ],
+      "certainty": "verified guidance; application is project recommendation",
+      "protocol_implication": "可引用版本化建议，但不得称其为最终同行评审标准；以已发表联合声明作主要支持"
+    },
+    {
+      "claim": "用户已确认第二位筛选者；还需指定分歧仲裁者与检索复核角色，可兼任但职责需明确",
+      "source_ids": [
+        "M12"
+      ],
+      "certainty": "verified guidance; application is project recommendation",
+      "protocol_implication": "用户已确认第二位筛选者；还需指定分歧仲裁者与检索复核角色，可兼任但职责需明确"
+    }
+  ],
+  "gaps": [
+    "正式检索式尚待五库平台翻译和同行复核",
+    "待确定仲裁者、软件与执行排期"
+  ],
+  "proposed_updates": [
+    "五库检索策略、平台、日期、更新及灰文献决定均写入协议",
+    "保留描述性方法学特征，不因scoping review而强制套用RoB/GRADE，不推出临床推荐",
+    "可保留原计划随机50篇，明定一致率/分歧解决；50与更严格标准是项目选择，不冒充JBI强制",
+    "已有第二位筛选者，可采用双人独立提取与仲裁；10篇试提取覆盖所有主要设计与组学类型",
+    "方案与正式报告逐项对照；空流程图不是研究结果",
+    "保存完整字符串、数据库与平台、字段、限制、每库结果数、引文追踪、去重与更新日志",
+    "请信息检索人员/研究馆员独立检查受控词、拼写、逻辑、字段与限制；LLM生成式需人工核验",
+    "准备注册包，记录本轮已经进行的探索检索，不倒填为从未检索；正式筛选前冻结版本",
+    "本项目采用OSF路线；注册与投稿不是同一个动作",
+    "AI可辅助发现、排序和预填；两位真实研究者承担纳排与核验；保留模型、日期、任务、提示词、核验和纠错日志",
+    "可引用版本化建议，但不得称其为最终同行评审标准；以已发表联合声明作主要支持",
+    "用户已确认第二位筛选者；还需指定分歧仲裁者与检索复核角色，可兼任但职责需明确"
+  ],
+  "search_limitations": [
+    "部分JBI旧URL返回错误，采用可访问的现行章节。PMC偶有验证码，以出版商/官方来源补核。",
+    "本轮未登录用户五个订阅检索平台。"
+  ]
+}

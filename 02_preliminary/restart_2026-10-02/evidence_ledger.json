@@ -1,0 +1,2029 @@
+{
+  "metadata": {
+    "cutoff_date": "2026-10-02",
+    "research_type": "Targeted public-web reconnaissance, not a completed scoping review",
+    "lane_source_entries": 72,
+    "unique_reference_records": 65,
+    "scientific_reference_records": 53,
+    "methods_reference_records": 12,
+    "doi_records": 55,
+    "crossref_matched_dois": 53,
+    "pubmed_records_retrieved": 53,
+    "counting_caveat": "Reference records are NOT included studies or independent cohorts; shared cohorts require formal linking."
+  },
+  "records": [
+    {
+      "reference_id": "R01",
+      "lane_ids": [
+        "epi_01",
+        "metab10"
+      ],
+      "lanes": [
+        "epigenomics",
+        "metabolomics"
+      ],
+      "title": "Multiomics profiling identifies molecular and cellular signatures of regular exercise in human peripheral blood",
+      "doi": "10.1126/sciadv.aeh0260",
+      "pmid": "42758809",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42758809/",
+      "year": 2026,
+      "publication_date": "2026-09-18",
+      "source_type": "original_study",
+      "access_level": "abstract",
+      "provisional_scope": "context_only",
+      "scope_label": "背景／方法边界",
+      "coordinator_note": "CIMA正式版；86人的静息横断面关联。与2026年1月预印本合并追踪；不推断急性恢复或运动因果。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/epigenomics.json",
+          "id": "epi_01",
+          "anchor": "PubMed Abstract；BGI Research study-design news (2026-09-19)。"
+        },
+        {
+          "file": "lanes/metabolomics.json",
+          "id": "metab10",
+          "anchor": "PubMed abstract; publication date and DOI; sample details verified against the study authors' institutional report."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R02",
+      "lane_ids": [
+        "epi_02"
+      ],
+      "lanes": [
+        "epigenomics"
+      ],
+      "title": "Acute capillary blood DNA methylation responses to swimming exercise in high-performance male and female swimmers",
+      "doi": "10.1113/EP093387",
+      "pmid": "42285772",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42285772/",
+      "year": 2026,
+      "publication_date": "2026-06-12",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "acute_candidate",
+      "scope_label": "急性核心候选",
+      "coordinator_note": "全血甲基化，须区分细胞组成与细胞内在变化。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/epigenomics.json",
+          "id": "epi_02",
+          "anchor": "PubMed Abstract；Wiley全文/Methods与Highlights。"
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R03",
+      "lane_ids": [
+        "epi_03"
+      ],
+      "lanes": [
+        "epigenomics"
+      ],
+      "title": "Impact of Acute Aerobic Exercise on Genome-Wide DNA-Methylation in Natural Killer Cells—A Pilot Study",
+      "doi": "10.3390/genes10050380",
+      "pmid": "31109152",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6562781/",
+      "year": 2019,
+      "publication_date": "2019-05-19",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "acute_candidate",
+      "scope_label": "急性核心候选",
+      "coordinator_note": "分选NK细胞，n=5；即刻采样，无杀伤功能验证。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/epigenomics.json",
+          "id": "epi_03",
+          "anchor": "Abstract；Methods 2.1–2.7；Results 3.2；Discussion 4.1–4.3。"
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R04",
+      "lane_ids": [
+        "epi_04"
+      ],
+      "lanes": [
+        "epigenomics"
+      ],
+      "title": "Acute Exercise Increases the Expression of KIR2DS4 by Promoter Demethylation in NK Cells",
+      "doi": "10.1055/a-0741-7001",
+      "pmid": "30508863",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30508863/",
+      "year": 2019,
+      "publication_date": "2018-12-03",
+      "source_type": "original_study",
+      "access_level": "abstract",
+      "provisional_scope": "acute_candidate",
+      "scope_label": "急性核心候选",
+      "coordinator_note": "甲基化和表达共测；急性及训练结果分开提取。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/epigenomics.json",
+          "id": "epi_04",
+          "anchor": "PubMed Abstract。"
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R05",
+      "lane_ids": [
+        "epi_05"
+      ],
+      "lanes": [
+        "epigenomics"
+      ],
+      "title": "Impact of aerobic exercise and fatty acid supplementation on global and gene-specific DNA methylation",
+      "doi": "10.1080/15592294.2019.1582276",
+      "pmid": "30764736",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6557554/",
+      "year": 2019,
+      "publication_date": "2019-03-18",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "acute_candidate",
+      "scope_label": "急性核心候选",
+      "coordinator_note": "外周血甲基化与营养共干预，须核对免疫关联与细胞组成。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/epigenomics.json",
+          "id": "epi_05",
+          "anchor": "Abstract；Experimental trials；Blood sampling；Results: global and gene-specific methylation。"
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R06",
+      "lane_ids": [
+        "epi_06"
+      ],
+      "lanes": [
+        "epigenomics"
+      ],
+      "title": "Changes in the leukocyte methylome and its effect on cardiovascular-related genes after exercise",
+      "doi": "10.1152/japplphysiol.00878.2014",
+      "pmid": "25539938",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25539938/",
+      "year": 2015,
+      "publication_date": "2014-12-24",
+      "source_type": "original_study",
+      "access_level": "abstract",
+      "provisional_scope": "longitudinal_support",
+      "scope_label": "纵向支持候选",
+      "coordinator_note": "训练前后白细胞甲基化；与急性证据分开。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/epigenomics.json",
+          "id": "epi_06",
+          "anchor": "PubMed Abstract。"
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R07",
+      "lane_ids": [
+        "epi_07"
+      ],
+      "lanes": [
+        "epigenomics"
+      ],
+      "title": "Epigenetic changes in leukocytes after 8 weeks of resistance exercise training",
+      "doi": "10.1007/s00421-016-3382-2",
+      "pmid": "27155847",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27155847/",
+      "year": 2016,
+      "publication_date": "2016-05-07",
+      "source_type": "original_study",
+      "access_level": "abstract",
+      "provisional_scope": "longitudinal_support",
+      "scope_label": "纵向支持候选",
+      "coordinator_note": "训练前后白细胞表观遗传；与急性证据分开。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/epigenomics.json",
+          "id": "epi_07",
+          "anchor": "PubMed Abstract。"
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R08",
+      "lane_ids": [
+        "epi_08"
+      ],
+      "lanes": [
+        "epigenomics"
+      ],
+      "title": "Exercise intensity and training alter the innate immune cell type and chromosomal origins of circulating cell-free DNA in humans",
+      "doi": "10.1073/pnas.2406954122",
+      "pmid": "39805013",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39805013/",
+      "year": 2025,
+      "publication_date": "2025-01-13",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "acute_candidate",
+      "scope_label": "急性核心候选",
+      "coordinator_note": "有训练前后急性挑战；免疫来源cfDNA可作候选，不能当作存活免疫细胞内在表观遗传变化。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/epigenomics.json",
+          "id": "epi_08",
+          "anchor": "PubMed Abstract；PMC全文Methods Participants/Exercise Regimen；Results/Figures 1–6。"
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R09",
+      "lane_ids": [
+        "epi_09"
+      ],
+      "lanes": [
+        "epigenomics"
+      ],
+      "title": "Moderate exercise induces trained immunity in macrophages",
+      "doi": "10.1152/ajpcell.00130.2023",
+      "pmid": "37306389",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37306389/",
+      "year": 2023,
+      "publication_date": "2023-06-12",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "animal_context",
+      "scope_label": "动物机制背景",
+      "coordinator_note": "小鼠来源巨噬细胞；不计入人体证据。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/epigenomics.json",
+          "id": "epi_09",
+          "anchor": "PubMed Abstract；APS全文Exercise Training Protocol、BMDM LPS response、ATAC-seq Results。"
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R10",
+      "lane_ids": [
+        "epi_10"
+      ],
+      "lanes": [
+        "epigenomics"
+      ],
+      "title": "Effects of exercise on peripheral blood DNA methylation and related epigenetic markers: a systematic review of human trials",
+      "doi": "10.1186/s13148-026-02123-y",
+      "pmid": "42069681",
+      "url": "https://link.springer.com/article/10.1186/s13148-026-02123-y",
+      "year": 2026,
+      "publication_date": "2026-05-02",
+      "source_type": "systematic_review",
+      "access_level": "full_text",
+      "provisional_scope": "review_context",
+      "scope_label": "相邻综述／背景",
+      "coordinator_note": "用于定位、追溯原始研究与解释，不进入原始研究证据密度计数。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/epigenomics.json",
+          "id": "epi_10",
+          "anchor": "Abstract；Methods Search strategy；Results: acute exercise in healthy adults; long-term exercise; Discussion on functional links and cell heterogeneity。"
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R11",
+      "lane_ids": [
+        "metab01",
+        "tr03"
+      ],
+      "lanes": [
+        "metabolomics",
+        "transcriptomics"
+      ],
+      "title": "Molecular Choreography of Acute Exercise",
+      "doi": "10.1016/j.cell.2020.04.043",
+      "pmid": "32470399",
+      "url": "https://doi.org/10.1016/j.cell.2020.04.043",
+      "year": 2020,
+      "publication_date": "2020-05-28",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "eligibility_pending",
+      "scope_label": "健康人群资格待核",
+      "coordinator_note": "同tr03。36名志愿者包含胰岛素敏感/抵抗者；正式筛选须核对健康定义及可分离亚组。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/metabolomics.json",
+          "id": "metab01",
+          "anchor": "Abstract; Results, ‘Multi-omic changes in response to exercise’ and PBMC gene-expression sections; Methods, cohort and sampling design."
+        },
+        {
+          "file": "lanes/transcriptomics.json",
+          "id": "tr03",
+          "anchor": "Abstract; Results: multi-omic changes/time-series PBMC gene expression; Data Availability Statement."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R12",
+      "lane_ids": [
+        "metab02"
+      ],
+      "lanes": [
+        "metabolomics"
+      ],
+      "title": "Vitamin D status modulates innate immune responses and metabolomic profiles following acute prolonged cycling",
+      "doi": "10.1007/s00394-023-03181-1",
+      "pmid": "37458775",
+      "url": "https://doi.org/10.1007/s00394-023-03181-1",
+      "year": 2023,
+      "publication_date": "2023-07-17",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "acute_candidate",
+      "scope_label": "急性核心候选",
+      "coordinator_note": "直接共测中性粒细胞刺激反应；不能升级为活菌杀伤或代谢物的独立临床验证。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/metabolomics.json",
+          "id": "metab02",
+          "anchor": "Abstract; Methods, neutrophil degranulation / oxidative burst assays and metabolomics; Results, neutrophil responses and plasma metabolomics."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R13",
+      "lane_ids": [
+        "metab03"
+      ],
+      "lanes": [
+        "metabolomics"
+      ],
+      "title": "The exercise metabolome: acute aerobic and anaerobic signatures",
+      "doi": "10.1080/15502783.2022.2115858",
+      "pmid": "36250148",
+      "url": "https://doi.org/10.1080/15502783.2022.2115858",
+      "year": 2022,
+      "publication_date": "2022-10-11",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "context_only",
+      "scope_label": "背景／方法边界",
+      "coordinator_note": "一般运动代谢组；仅有免疫相关解释不足以进入核心。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/metabolomics.json",
+          "id": "metab03",
+          "anchor": "Abstract; Methods, exercise and blood sampling; Results, exercise-metabolome comparison."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R14",
+      "lane_ids": [
+        "metab04"
+      ],
+      "lanes": [
+        "metabolomics"
+      ],
+      "title": "Regular moderate physical activity potentially accelerates and strengthens both the pro-inflammatory and pro-resolving lipid mediator response after acute exercise stress",
+      "doi": "10.1016/j.plefa.2024.102642",
+      "pmid": null,
+      "url": "https://doi.org/10.1016/j.plefa.2024.102642",
+      "year": 2024,
+      "publication_date": "2024-03",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "acute_candidate",
+      "scope_label": "急性核心候选",
+      "coordinator_note": "脂质介质和白细胞表达共测；未测净免疫功能或感染。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/metabolomics.json",
+          "id": "metab04",
+          "anchor": "Abstract; Methods, exercise protocol and blood collection; Results, mediator and gene-expression trajectories."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R15",
+      "lane_ids": [
+        "metab05",
+        "tr08"
+      ],
+      "lanes": [
+        "metabolomics",
+        "transcriptomics"
+      ],
+      "title": "Acute exercise boosts NAD+ metabolism of human peripheral blood mononuclear cells",
+      "doi": "10.1016/j.bbi.2024.11.004",
+      "pmid": "39500416",
+      "url": "https://doi.org/10.1016/j.bbi.2024.11.004",
+      "year": 2025,
+      "publication_date": "2024-11-03",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "acute_candidate",
+      "scope_label": "急性核心候选",
+      "coordinator_note": "PBMC NAD+相关检测；DRKS00017686须与蛋白组报告核对队列重叠。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/metabolomics.json",
+          "id": "metab05",
+          "anchor": "Abstract; Results, PBMC NAD+ response in trials 1 and 2; Methods, acute exercise and blood/PBMC collection."
+        },
+        {
+          "file": "lanes/transcriptomics.json",
+          "id": "tr08",
+          "anchor": "PubMed Abstract; full-text Results and Methods: randomized crossover and longitudinal exercise trials."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R16",
+      "lane_ids": [
+        "metab06"
+      ],
+      "lanes": [
+        "metabolomics"
+      ],
+      "title": "Temporal dynamics of the multi-omic response to endurance exercise training",
+      "doi": "10.1038/s41586-023-06877-w",
+      "pmid": "38693412",
+      "url": "https://doi.org/10.1038/s41586-023-06877-w",
+      "year": 2024,
+      "publication_date": "2024-05-01",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "animal_context",
+      "scope_label": "动物机制背景",
+      "coordinator_note": "2024 Nature MoTrPAC为大鼠训练研究，不计入人体急性证据。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/metabolomics.json",
+          "id": "metab06",
+          "anchor": "Abstract; Results, animal study design and training-regulated features; Methods and data availability."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R17",
+      "lane_ids": [
+        "metab07"
+      ],
+      "lanes": [
+        "metabolomics"
+      ],
+      "title": "Metabolomics Signatures of a Respiratory Tract Infection During an Altitude Training Camp in Elite Rowers",
+      "doi": "10.3390/metabo15060408",
+      "pmid": "40559432",
+      "url": "https://doi.org/10.3390/metabo15060408",
+      "year": 2025,
+      "publication_date": "2025-06-17",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "longitudinal_support",
+      "scope_label": "纵向支持候选",
+      "coordinator_note": "训练营重复尿样与患病资料；同期患病差异不等于发病前预测。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/metabolomics.json",
+          "id": "metab07",
+          "anchor": "Abstract; Results, baseline characteristics and illness-vs-altitude/training datasets; Methods, daily urine collection and NMR."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R18",
+      "lane_ids": [
+        "metab08"
+      ],
+      "lanes": [
+        "metabolomics"
+      ],
+      "title": "Identification of biomarkers of illness incidence in national team cross-country skiers using metabolomics (BJSM abstract FO15)",
+      "doi": null,
+      "pmid": null,
+      "url": "https://bjsm.bmj.com/content/58/Suppl_2/A7.1",
+      "year": 2024,
+      "publication_date": "2024-02-29",
+      "source_type": "conference_abstract",
+      "access_level": "abstract",
+      "provisional_scope": "conference_excluded",
+      "scope_label": "会议摘要，主表排除",
+      "coordinator_note": "当前原协议排除会议摘要。保留线索与阴性模型结果，正式搜索追踪完整论文。",
+      "identity_verification": "会议摘要页面核验，无DOI",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/metabolomics.json",
+          "id": "metab08",
+          "anchor": "Conference abstract, design, results and conclusion."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R19",
+      "lane_ids": [
+        "metab09",
+        "proteomics_06",
+        "tr10"
+      ],
+      "lanes": [
+        "metabolomics",
+        "proteomics",
+        "transcriptomics"
+      ],
+      "title": "Blood Biochemical Responses to Acute Exercise: Findings from the Molecular Transducers of Physical Activity Consortium (MoTrPAC)",
+      "doi": "10.64898/2026.03.02.704798",
+      "pmid": "41835387",
+      "url": "https://doi.org/10.64898/2026.03.02.704798",
+      "year": 2026,
+      "publication_date": "2026-03-11",
+      "source_type": "preprint",
+      "access_level": "full_text",
+      "provisional_scope": "preprint_frontier",
+      "scope_label": "预印本前沿",
+      "coordinator_note": "同proteomics_06、tr10。以metabolomics分支核验后的v2样本量为准：175分析者；RNA173，Olink44人。378为重复检测样本数。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/metabolomics.json",
+          "id": "metab09",
+          "anchor": "Current PMC/bioRxiv Version 2; Abstract; Results, research design/clinical characteristics and analyte/time-course findings; STAR Methods, omics sample sizes, sampling and Olink QC."
+        },
+        {
+          "file": "lanes/proteomics.json",
+          "id": "proteomics_06",
+          "anchor": "PubMed abstract; full-text Methods/Results for cohort groups, up-to-seven timepoints, panel counts, and integrated analyte responses."
+        },
+        {
+          "file": "lanes/transcriptomics.json",
+          "id": "tr10",
+          "anchor": "bioRxiv v2 posted 2026-03-11; Abstract; Results: research design/clinical characteristics; Methods; NLM preprint status."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R20",
+      "lane_ids": [
+        "M01"
+      ],
+      "lanes": [
+        "methods"
+      ],
+      "title": "JBI: Searching for the evidence (10.2.6)",
+      "doi": null,
+      "pmid": null,
+      "url": "https://jbi-global-wiki.refined.site/space/MANUAL/355862749/10.2.6%2BSearching%2Bfor%2Bthe%2Bevidence",
+      "year": 2026,
+      "publication_date": "2026-08-31",
+      "source_type": "guideline",
+      "access_level": "full_text",
+      "provisional_scope": "methods",
+      "scope_label": "方法学来源",
+      "coordinator_note": "官方方法学或报告规范；不计入运动免疫原始研究。",
+      "identity_verification": "官方页面核验，无DOI",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/methods.json",
+          "id": "M01",
+          "anchor": "Guidance text"
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R21",
+      "lane_ids": [
+        "M02"
+      ],
+      "lanes": [
+        "methods"
+      ],
+      "title": "JBI: Critical appraisal or risk-of-bias assessment (10.2.8)",
+      "doi": null,
+      "pmid": null,
+      "url": "https://jbi-global.atlassian.net/wiki/spaces/MANUAL/pages/355862791",
+      "year": 2026,
+      "publication_date": "2026-08-31",
+      "source_type": "guideline",
+      "access_level": "full_text",
+      "provisional_scope": "methods",
+      "scope_label": "方法学来源",
+      "coordinator_note": "官方方法学或报告规范；不计入运动免疫原始研究。",
+      "identity_verification": "官方页面核验，无DOI",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/methods.json",
+          "id": "M02",
+          "anchor": "Guidance text"
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R22",
+      "lane_ids": [
+        "M03"
+      ],
+      "lanes": [
+        "methods"
+      ],
+      "title": "JBI: Piloting the selection of studies (10.2.7.1)",
+      "doi": null,
+      "pmid": null,
+      "url": "https://jbi-global.atlassian.net/wiki/spaces/MANUAL/pages/2049540102",
+      "year": 2026,
+      "publication_date": "2026-08-31",
+      "source_type": "guideline",
+      "access_level": "full_text",
+      "provisional_scope": "methods",
+      "scope_label": "方法学来源",
+      "coordinator_note": "官方方法学或报告规范；不计入运动免疫原始研究。",
+      "identity_verification": "官方页面核验，无DOI",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/methods.json",
+          "id": "M03",
+          "anchor": "Guidance text"
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R23",
+      "lane_ids": [
+        "M04"
+      ],
+      "lanes": [
+        "methods"
+      ],
+      "title": "JBI: Extracting the evidence (10.2.9)",
+      "doi": null,
+      "pmid": null,
+      "url": "https://jbi-global.atlassian.net/wiki/spaces/MANUAL/pages/355862811",
+      "year": 2026,
+      "publication_date": "2026-08-31",
+      "source_type": "guideline",
+      "access_level": "full_text",
+      "provisional_scope": "methods",
+      "scope_label": "方法学来源",
+      "coordinator_note": "官方方法学或报告规范；不计入运动免疫原始研究。",
+      "identity_verification": "官方页面核验，无DOI",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/methods.json",
+          "id": "M04",
+          "anchor": "Guidance text"
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R24",
+      "lane_ids": [
+        "M05"
+      ],
+      "lanes": [
+        "methods"
+      ],
+      "title": "PRISMA Extension for Scoping Reviews (PRISMA-ScR): Checklist and Explanation",
+      "doi": "10.7326/M18-0850",
+      "pmid": "30178033",
+      "url": "https://www.prisma-statement.org/scoping",
+      "year": 2018,
+      "publication_date": "2018",
+      "source_type": "guideline",
+      "access_level": "full_text",
+      "provisional_scope": "methods",
+      "scope_label": "方法学来源",
+      "coordinator_note": "官方方法学或报告规范；不计入运动免疫原始研究。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [
+        {
+          "type": "CommentIn",
+          "pmid": "30178036",
+          "note": null,
+          "source": "Ann Intern Med. 2018 Oct 2;169(7):502-503. doi: 10.7326/M18-2205."
+        }
+      ],
+      "source_notes": [
+        {
+          "file": "lanes/methods.json",
+          "id": "M05",
+          "anchor": "Guidance text"
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R25",
+      "lane_ids": [
+        "M06"
+      ],
+      "lanes": [
+        "methods"
+      ],
+      "title": "PRISMA-S: an extension to the PRISMA Statement for Reporting Literature Searches in Systematic Reviews",
+      "doi": "10.1186/s13643-020-01542-z",
+      "pmid": null,
+      "url": "https://www.prisma-statement.org/prisma-search",
+      "year": 2021,
+      "publication_date": "2021",
+      "source_type": "guideline",
+      "access_level": "full_text",
+      "provisional_scope": "methods",
+      "scope_label": "方法学来源",
+      "coordinator_note": "官方方法学或报告规范；不计入运动免疫原始研究。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/methods.json",
+          "id": "M06",
+          "anchor": "Guidance text"
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R26",
+      "lane_ids": [
+        "M07"
+      ],
+      "lanes": [
+        "methods"
+      ],
+      "title": "PRESS Peer Review of Electronic Search Strategies: 2015 Guideline Statement",
+      "doi": "10.1016/j.jclinepi.2016.01.021",
+      "pmid": "27005575",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27005575/",
+      "year": 2016,
+      "publication_date": "2016-03-19",
+      "source_type": "guideline",
+      "access_level": "abstract",
+      "provisional_scope": "methods",
+      "scope_label": "方法学来源",
+      "coordinator_note": "官方方法学或报告规范；不计入运动免疫原始研究。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/methods.json",
+          "id": "M07",
+          "anchor": "Guidance text / Abstract"
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R27",
+      "lane_ids": [
+        "M08"
+      ],
+      "lanes": [
+        "methods"
+      ],
+      "title": "Generalized Systematic Review Template Joins OSF Registries",
+      "doi": null,
+      "pmid": null,
+      "url": "https://www.cos.io/blog/generalized-systematic-review-template-joins-osf-registries",
+      "year": 2023,
+      "publication_date": "2023-04-20",
+      "source_type": "official_guidance_webpage",
+      "access_level": "full_text",
+      "provisional_scope": "methods",
+      "scope_label": "方法学来源",
+      "coordinator_note": "官方方法学或报告规范；不计入运动免疫原始研究。",
+      "identity_verification": "官方页面核验，无DOI",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/methods.json",
+          "id": "M08",
+          "anchor": "Guidance text"
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R28",
+      "lane_ids": [
+        "M09"
+      ],
+      "lanes": [
+        "methods"
+      ],
+      "title": "PROSPERO: Guidance for registering human studies",
+      "doi": null,
+      "pmid": null,
+      "url": "https://www.crd.york.ac.uk/PROSPERO/documents/Guidance%20for%20registering%20human%20studies.pdf",
+      "year": null,
+      "publication_date": null,
+      "source_type": "guideline",
+      "access_level": "full_text",
+      "provisional_scope": "methods",
+      "scope_label": "方法学来源",
+      "coordinator_note": "官方方法学或报告规范；不计入运动免疫原始研究。",
+      "identity_verification": "官方页面核验，无DOI",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/methods.json",
+          "id": "M09",
+          "anchor": "Guidance text"
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R29",
+      "lane_ids": [
+        "M10"
+      ],
+      "lanes": [
+        "methods"
+      ],
+      "title": "Position statement on artificial intelligence (AI) use in evidence synthesis across Cochrane, the Campbell Collaboration, JBI, and the Collaboration for Environmental Evidence 2025",
+      "doi": "10.11124/JBIES-25-00480",
+      "pmid": "41220062",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41220062/",
+      "year": 2025,
+      "publication_date": "2025-11-06",
+      "source_type": "guideline",
+      "access_level": "full_text",
+      "provisional_scope": "methods",
+      "scope_label": "方法学来源",
+      "coordinator_note": "官方方法学或报告规范；不计入运动免疫原始研究。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/methods.json",
+          "id": "M10",
+          "anchor": "Guidance text"
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R30",
+      "lane_ids": [
+        "M11"
+      ],
+      "lanes": [
+        "methods"
+      ],
+      "title": "Cochrane Italia: Responsible use of AI in Evidence Synthesis (RAISE 2026) 1, version 3",
+      "doi": null,
+      "pmid": null,
+      "url": "https://www.cochrane.it/it/resources/uso-responsabile-dellia-nella-sintesi-delle-evidenze-raise-1",
+      "year": 2026,
+      "publication_date": "2026-03-13",
+      "source_type": "official_guidance_webpage",
+      "access_level": "full_text",
+      "provisional_scope": "methods",
+      "scope_label": "方法学来源",
+      "coordinator_note": "官方方法学或报告规范；不计入运动免疫原始研究。",
+      "identity_verification": "官方页面核验，无DOI",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/methods.json",
+          "id": "M11",
+          "anchor": "Guidance text"
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R31",
+      "lane_ids": [
+        "M12"
+      ],
+      "lanes": [
+        "methods"
+      ],
+      "title": "JBI: Forming the right team (10.2.1.1)",
+      "doi": null,
+      "pmid": null,
+      "url": "https://jbi-global-wiki.refined.site/space/MANUAL/2042298373/10.2.1.1%2BForming%2Bthe%2Bright%2Bteam",
+      "year": 2026,
+      "publication_date": "2026-08-31",
+      "source_type": "guideline",
+      "access_level": "full_text",
+      "provisional_scope": "methods",
+      "scope_label": "方法学来源",
+      "coordinator_note": "官方方法学或报告规范；不计入运动免疫原始研究。",
+      "identity_verification": "官方页面核验，无DOI",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/methods.json",
+          "id": "M12",
+          "anchor": "Guidance text"
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R32",
+      "lane_ids": [
+        "novelty-01"
+      ],
+      "lanes": [
+        "novelty"
+      ],
+      "title": "Immunometabolomics Applied to Physical Exercise: Accomplishments and New Directions for Health Improvement",
+      "doi": "10.1146/annurev-anchem-091024-095826",
+      "pmid": "42141366",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42141366/",
+      "year": 2026,
+      "publication_date": "2026-05 (volume publication date)",
+      "source_type": "narrative_review",
+      "access_level": "abstract",
+      "provisional_scope": "review_context",
+      "scope_label": "相邻综述／背景",
+      "coordinator_note": "用于定位、追溯原始研究与解释，不进入原始研究证据密度计数。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/novelty.json",
+          "id": "novelty-01",
+          "anchor": "Publisher abstract and publication information; PubMed publication type and identifiers."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R33",
+      "lane_ids": [
+        "novelty-02",
+        "tr07"
+      ],
+      "lanes": [
+        "novelty",
+        "transcriptomics"
+      ],
+      "title": "Non-coding RNAs in exercise immunology: A systematic review",
+      "doi": "10.1016/j.jshs.2023.11.001",
+      "pmid": "37925072",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37925072/",
+      "year": 2024,
+      "publication_date": "2024-05 (Epub 2023-11-03)",
+      "source_type": "systematic_review",
+      "access_level": "full_text",
+      "provisional_scope": "review_context",
+      "scope_label": "相邻综述／背景",
+      "coordinator_note": "用于定位、追溯原始研究与解释，不进入原始研究证据密度计数。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/novelty.json",
+          "id": "novelty-02",
+          "anchor": "PubMed abstract; full-text Methods (search and eligibility) and Results/flow diagram."
+        },
+        {
+          "file": "lanes/transcriptomics.json",
+          "id": "tr07",
+          "anchor": "PubMed Abstract; Results/figure caption describing searches, eligible studies and risk of bias."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R34",
+      "lane_ids": [
+        "novelty-03"
+      ],
+      "lanes": [
+        "novelty"
+      ],
+      "title": "Towards Precision Sports Nutrition for Endurance Athletes: A Scoping Review of Application of Omics and Wearables Technologies",
+      "doi": "10.3390/nu16223943",
+      "pmid": "39599728",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39599728/",
+      "year": 2024,
+      "publication_date": "2024-11-19",
+      "source_type": "scoping_review",
+      "access_level": "full_text",
+      "provisional_scope": "review_context",
+      "scope_label": "相邻综述／背景",
+      "coordinator_note": "用于定位、追溯原始研究与解释，不进入原始研究证据密度计数。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/novelty.json",
+          "id": "novelty-03",
+          "anchor": "PubMed abstract; full-text Methods (search window, PCC and eligibility), Results and Discussion."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R35",
+      "lane_ids": [
+        "novelty-04"
+      ],
+      "lanes": [
+        "novelty"
+      ],
+      "title": "Impact of exercise on markers of B cell-related immunity: A systematic review",
+      "doi": "10.1016/j.jshs.2023.10.002",
+      "pmid": "37832643",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37832643/",
+      "year": 2024,
+      "publication_date": "2024-05 (Epub 2023-10-11)",
+      "source_type": "systematic_review",
+      "access_level": "full_text",
+      "provisional_scope": "review_context",
+      "scope_label": "相邻综述／背景",
+      "coordinator_note": "用于定位、追溯原始研究与解释，不进入原始研究证据密度计数。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/novelty.json",
+          "id": "novelty-04",
+          "anchor": "PubMed abstract; full-text Methods (eligibility/search), Results and Discussion/Conclusion."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R36",
+      "lane_ids": [
+        "novelty-05"
+      ],
+      "lanes": [
+        "novelty"
+      ],
+      "title": "The effects of acute and chronic exercise on immune markers of TH1/TH2 cells in older adults: a systematic review",
+      "doi": "10.3389/fphys.2025.1453747",
+      "pmid": "40008210",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11850391/",
+      "year": 2025,
+      "publication_date": "2025-02-11",
+      "source_type": "systematic_review",
+      "access_level": "full_text",
+      "provisional_scope": "review_context",
+      "scope_label": "相邻综述／背景",
+      "coordinator_note": "用于定位、追溯原始研究与解释，不进入原始研究证据密度计数。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/novelty.json",
+          "id": "novelty-05",
+          "anchor": "Full-text Abstract; Introduction (open-window rationale); Methods; Results 3.1 and Conclusion."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R37",
+      "lane_ids": [
+        "novelty-06",
+        "traditional-01"
+      ],
+      "lanes": [
+        "novelty",
+        "traditional"
+      ],
+      "title": "Rigorous methodological approaches to address knowledge gaps in exercise, nutrition, immunity, and infection risk research",
+      "doi": "10.14814/phy2.70479",
+      "pmid": "40709812",
+      "url": "https://physoc.onlinelibrary.wiley.com/doi/full/10.14814/phy2.70479",
+      "year": 2025,
+      "publication_date": "2025-07-25",
+      "source_type": "invited_review",
+      "access_level": "full_text",
+      "provisional_scope": "review_context",
+      "scope_label": "相邻综述／背景",
+      "coordinator_note": "用于定位、追溯原始研究与解释，不进入原始研究证据密度计数。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/novelty.json",
+          "id": "novelty-06",
+          "anchor": "Publisher Abstract, article type/date; full-text discussion of ex-vivo/in-vivo markers and URTI outcomes."
+        },
+        {
+          "file": "lanes/traditional.json",
+          "id": "traditional-01",
+          "anchor": "Abstract; sections 2.1 and 6; Table 1 recommendations."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R38",
+      "lane_ids": [
+        "novelty-07"
+      ],
+      "lanes": [
+        "novelty"
+      ],
+      "title": "Higher risk of upper respiratory tract infection post marathon running: when physical exercise becomes a threat to the immune system",
+      "doi": "10.22029/eir.2024.1759",
+      "pmid": "39094181",
+      "url": "https://journals.ub.uni-giessen.de/eir/article/view/1759",
+      "year": 2024,
+      "publication_date": "2024-12-31",
+      "source_type": "systematic_review_and_meta_analysis",
+      "access_level": "full_text",
+      "provisional_scope": "review_context",
+      "scope_label": "相邻综述／背景",
+      "coordinator_note": "用于定位、追溯原始研究与解释，不进入原始研究证据密度计数。",
+      "identity_verification": "出版商题名/DOI确认；Crossref 404",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/novelty.json",
+          "id": "novelty-07",
+          "anchor": "Journal abstract: methods, eligibility, synthesis, limitations and PROSPERO identifier."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R39",
+      "lane_ids": [
+        "novelty-08"
+      ],
+      "lanes": [
+        "novelty"
+      ],
+      "title": "The impact of exercise on inflammatory biomarkers: an umbrella review of systematic reviews and meta-analyses",
+      "doi": "10.3389/fimmu.2026.1892544",
+      "pmid": "42713168",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42713168/",
+      "year": 2026,
+      "publication_date": "2026-08-25",
+      "source_type": "umbrella_review",
+      "access_level": "full_text",
+      "provisional_scope": "review_context",
+      "scope_label": "相邻综述／背景",
+      "coordinator_note": "用于定位、追溯原始研究与解释，不进入原始研究证据密度计数。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/novelty.json",
+          "id": "novelty-08",
+          "anchor": "PubMed abstract and Frontiers full text: Methods, Results, discussion of population heterogeneity and acute/chronic distinctions."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R40",
+      "lane_ids": [
+        "novelty-09"
+      ],
+      "lanes": [
+        "novelty"
+      ],
+      "title": "Circulating Myokine Responses to Acute Endurance Exercise and Their Role in Immunoregulation: A Systematic Review and Meta-Analysis",
+      "doi": "10.1096/fj.202504780R",
+      "pmid": "41661185",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41661185/",
+      "year": 2026,
+      "publication_date": "2026-02-28 (Epub 2026-02-09)",
+      "source_type": "systematic_review_and_meta_analysis",
+      "access_level": "full_text",
+      "provisional_scope": "review_context",
+      "scope_label": "相邻综述／背景",
+      "coordinator_note": "用于定位、追溯原始研究与解释，不进入原始研究证据密度计数。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/novelty.json",
+          "id": "novelty-09",
+          "anchor": "PubMed abstract; publisher/PMC Methods 2.1–2.2, Results 3.1–3.4 and Conclusion."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R41",
+      "lane_ids": [
+        "novelty-10"
+      ],
+      "lanes": [
+        "novelty"
+      ],
+      "title": "Change in neutrophil-to-lymphocyte ratio after acute and chronic exercise: a systematic review and meta-analysis",
+      "doi": "10.1152/japplphysiol.00530.2025",
+      "pmid": "42390909",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42390909/",
+      "year": 2026,
+      "publication_date": "2026-08-01 (Epub 2026-07-02)",
+      "source_type": "systematic_review_and_meta_analysis",
+      "access_level": "full_text",
+      "provisional_scope": "review_context",
+      "scope_label": "相邻综述／背景",
+      "coordinator_note": "用于定位、追溯原始研究与解释，不进入原始研究证据密度计数。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/novelty.json",
+          "id": "novelty-10",
+          "anchor": "PubMed publication metadata and abstract; APS publisher full text/abstract, search and PICO methods."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R42",
+      "lane_ids": [
+        "proteomics_01"
+      ],
+      "lanes": [
+        "proteomics"
+      ],
+      "title": "Identification of Urinary Biomarkers for Exercise-Induced Immunosuppression by iTRAQ Proteomics",
+      "doi": "10.1155/2020/3030793",
+      "pmid": "32047808",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7003279/",
+      "year": 2020,
+      "publication_date": "2020-01-25",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "longitudinal_support",
+      "scope_label": "纵向支持候选",
+      "coordinator_note": "15人4周训练；iTRAQ每时点一个混合尿样，蛋白组生物学n=1/时点；同研究ELISA不是独立队列验证。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/proteomics.json",
+          "id": "proteomics_01",
+          "anchor": "Full-text Methods (Participants, training protocol, sample collection, proteomics, ELISA) and Results (immune indices, urinary protein candidates); Abstract for reported outcomes."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R43",
+      "lane_ids": [
+        "proteomics_02"
+      ],
+      "lanes": [
+        "proteomics"
+      ],
+      "title": "Changes in Urinary Biomarkers of Organ Damage, Inflammation, Oxidative Stress, and Bone Turnover Following a 3000-m Time Trial",
+      "doi": "10.3390/antiox10010079",
+      "pmid": "33435279",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7826822/",
+      "year": 2021,
+      "publication_date": "2021-01-09",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "acute_candidate",
+      "scope_label": "急性核心候选",
+      "coordinator_note": "测量尿免疫介质，但肾/肠损伤和尿浓缩是并存解释；需严格提取校正方式。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/proteomics.json",
+          "id": "proteomics_02",
+          "anchor": "Methods (Subjects, sample collection, urine assay/normalization) and Results (inflammation-related factors and organ-damage markers); PubMed abstract."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R44",
+      "lane_ids": [
+        "proteomics_03"
+      ],
+      "lanes": [
+        "proteomics"
+      ],
+      "title": "Salivary Markers Responses in the Post-Exercise and Recovery Period: A Systematic Review",
+      "doi": "10.3390/sports11070137",
+      "pmid": "37505624",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10386489/",
+      "year": 2023,
+      "publication_date": "2023-07-18",
+      "source_type": "systematic_review",
+      "access_level": "full_text",
+      "provisional_scope": "review_context",
+      "scope_label": "相邻综述／背景",
+      "coordinator_note": "用于定位、追溯原始研究与解释，不进入原始研究证据密度计数。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/proteomics.json",
+          "id": "proteomics_03",
+          "anchor": "Abstract and Results (study selection, participant characteristics, marker responses); Discussion/Conclusion on recovery uncertainty."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R45",
+      "lane_ids": [
+        "proteomics_04"
+      ],
+      "lanes": [
+        "proteomics"
+      ],
+      "title": "Body Fluid Proteomic Landscape of Acute Exercise",
+      "doi": "10.1101/2025.05.28.656705",
+      "pmid": null,
+      "url": "https://www.biorxiv.org/content/10.1101/2025.05.28.656705v1",
+      "year": 2025,
+      "publication_date": "2025-06-01",
+      "source_type": "preprint",
+      "access_level": "full_text",
+      "provisional_scope": "preprint_frontier",
+      "scope_label": "预印本前沿",
+      "coordinator_note": "跨体液发现；独立队列复现只涉及血浆，不能推广到尿/唾液或临床效能。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/proteomics.json",
+          "id": "proteomics_04",
+          "anchor": "Preprint Abstract and full-text Methods/Results (body-fluid collection, proteomics, response kinetics, second cohort and pathway analyses)."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R46",
+      "lane_ids": [
+        "proteomics_05"
+      ],
+      "lanes": [
+        "proteomics"
+      ],
+      "title": "Immunological Protein Signature During Acute Exercise",
+      "doi": "10.1111/apha.70125",
+      "pmid": "41163346",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12615995/",
+      "year": 2025,
+      "publication_date": "2025-10-29",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "acute_candidate",
+      "scope_label": "急性核心候选",
+      "coordinator_note": "靶向Olink蛋白动力学，n=12；核对与NAD+报告的共享试验登记。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/proteomics.json",
+          "id": "proteomics_05",
+          "anchor": "Abstract and Methods (Participants, exercise, blood-sampling schedule, Olink panel); Results (time-dependent proteins and exploratory model)."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R47",
+      "lane_ids": [
+        "proteomics_07"
+      ],
+      "lanes": [
+        "proteomics"
+      ],
+      "title": "The molecular signature of heat stress in sweat reveals non-invasive biomarker candidates for health monitoring",
+      "doi": "10.1038/s42003-025-08080-1",
+      "pmid": "40269247",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12019370/",
+      "year": 2025,
+      "publication_date": "2025-04-23",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "context_only",
+      "scope_label": "背景／方法边界",
+      "coordinator_note": "热应激研究；免疫通路注释不能自动满足核心免疫关联门槛。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/proteomics.json",
+          "id": "proteomics_07",
+          "anchor": "Full-text Results (participant flow, sweat proteome, heat-stressor contrasts, missingness) and Methods (conditions/patch collection)."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R48",
+      "lane_ids": [
+        "proteomics_08"
+      ],
+      "lanes": [
+        "proteomics"
+      ],
+      "title": "Proteomic Profiling of Human Sweat Reveals Molecular Adaptations to Heat Acclimatization Induced by Isothermic Conditioning",
+      "doi": "10.1249/MSS.0000000000004103",
+      "pmid": "42611616",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42611616/",
+      "year": 2026,
+      "publication_date": "2026-08-18",
+      "source_type": "original_study",
+      "access_level": "abstract",
+      "provisional_scope": "context_only",
+      "scope_label": "背景／方法边界",
+      "coordinator_note": "2026汗液热适应研究，目前摘要级；需全文核查采样与免疫终点。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/proteomics.json",
+          "id": "proteomics_08",
+          "anchor": "PubMed abstract only (Methods/Results/Conclusion)."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R49",
+      "lane_ids": [
+        "proteomics_09"
+      ],
+      "lanes": [
+        "proteomics"
+      ],
+      "title": "An Estimate of Plasma Volume Changes Following Moderate-High Intensity Running and Cycling Exercise and Adrenaline Infusion",
+      "doi": "10.3389/fphys.2022.948087",
+      "pmid": "35936903",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9355650/",
+      "year": 2022,
+      "publication_date": "2022-07-22",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "context_only",
+      "scope_label": "背景／方法边界",
+      "coordinator_note": "血浆容量变化的方法学支持。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/proteomics.json",
+          "id": "proteomics_09",
+          "anchor": "Abstract and Methods/Results on serial Hb/Hct-derived plasma-volume estimates and recovery."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R50",
+      "lane_ids": [
+        "proteomics_10"
+      ],
+      "lanes": [
+        "proteomics"
+      ],
+      "title": "Biomarkers of organ stress and injury following the Boston Marathon",
+      "doi": "10.1152/japplphysiol.00775.2025",
+      "pmid": "41101781",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12924623/",
+      "year": 2025,
+      "publication_date": "2025-10-16",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "context_only",
+      "scope_label": "背景／方法边界",
+      "coordinator_note": "马拉松后器官损伤/应激证据，用于解释体液标志物特异性。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/proteomics.json",
+          "id": "proteomics_10",
+          "anchor": "Full-text Methods (sample timing, plasma-volume correction, urine SG normalization) and Results/Discussion (hydration and renal/GI injury-marker responses)."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R51",
+      "lane_ids": [
+        "traditional-02"
+      ],
+      "lanes": [
+        "traditional"
+      ],
+      "title": "Debunking the Myth of Exercise-Induced Immune Suppression: Redefining the Impact of Exercise on Immunological Health Across the Lifespan",
+      "doi": "10.3389/fimmu.2018.00648",
+      "pmid": "29713319",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5911985/",
+      "year": 2018,
+      "publication_date": "2018-04-16",
+      "source_type": "narrative_review",
+      "access_level": "full_text",
+      "provisional_scope": "review_context",
+      "scope_label": "相邻综述／背景",
+      "coordinator_note": "用于定位、追溯原始研究与解释，不进入原始研究证据密度计数。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/traditional.json",
+          "id": "traditional-02",
+          "anchor": "Abstract; Part A, especially sections on infection, sIgA, and post-exercise lymphocyte redistribution."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R52",
+      "lane_ids": [
+        "traditional-03"
+      ],
+      "lanes": [
+        "traditional"
+      ],
+      "title": "The Effect of Acute Physical Exercise on NK-Cell Cytolytic Activity: A Systematic Review and Meta-Analysis",
+      "doi": "10.1007/s40279-020-01402-9",
+      "pmid": "33398798",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33398798/",
+      "year": 2021,
+      "publication_date": "2021-01-04",
+      "source_type": "systematic_review",
+      "access_level": "full_text",
+      "provisional_scope": "review_context",
+      "scope_label": "相邻综述／背景",
+      "coordinator_note": "用于定位、追溯原始研究与解释，不进入原始研究证据密度计数。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/traditional.json",
+          "id": "traditional-03",
+          "anchor": "Abstract; methods eligibility criteria; Results, meta-analysis and moderator analyses."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R53",
+      "lane_ids": [
+        "traditional-04"
+      ],
+      "lanes": [
+        "traditional"
+      ],
+      "title": "The open window of susceptibility to infection after acute exercise in healthy young male elite athletes",
+      "doi": null,
+      "pmid": "20839496",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20839496/",
+      "year": 2010,
+      "publication_date": "2010",
+      "source_type": "original_study",
+      "access_level": "abstract",
+      "provisional_scope": "acute_candidate",
+      "scope_label": "急性核心候选",
+      "coordinator_note": "直接功能指标有下降也有不变；无感染结局。",
+      "identity_verification": "PubMed记录确认；未填DOI",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/traditional.json",
+          "id": "traditional-04",
+          "anchor": "PubMed abstract; Bond University record, Abstract."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R54",
+      "lane_ids": [
+        "traditional-05"
+      ],
+      "lanes": [
+        "traditional"
+      ],
+      "title": "The acute effect of sprint interval training on the immune system: a systematic review and meta-regression analysis",
+      "doi": "10.3389/fmed.2025.1703829",
+      "pmid": "41705158",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41705158/",
+      "year": 2026,
+      "publication_date": "2026-02-02",
+      "source_type": "systematic_review",
+      "access_level": "full_text",
+      "provisional_scope": "review_context",
+      "scope_label": "相邻综述／背景",
+      "coordinator_note": "用于定位、追溯原始研究与解释，不进入原始研究证据密度计数。",
+      "identity_verification": "出版商+PubMed确认；Crossref 429",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/traditional.json",
+          "id": "traditional-05",
+          "anchor": "Abstract; Methods outcome timing; Results pooled biomarker estimates and training-status subgroups."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R55",
+      "lane_ids": [
+        "traditional-06"
+      ],
+      "lanes": [
+        "traditional"
+      ],
+      "title": "Immunosurveillance associated with upper respiratory symptoms in elite swimmers: The 8-month period leading into Commonwealth Games",
+      "doi": "10.1016/j.jsams.2023.11.011",
+      "pmid": "38071136",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38071136/",
+      "year": 2024,
+      "publication_date": "2024-03",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "longitudinal_support",
+      "scope_label": "纵向支持候选",
+      "coordinator_note": "运动季重复监测；浓度与分泌率结果不同，记录症状结局。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/traditional.json",
+          "id": "traditional-06",
+          "anchor": "Abstract; Methods; Results sIgA and illness comparisons; Discussion/Conclusion on individual monitoring."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R56",
+      "lane_ids": [
+        "traditional-07"
+      ],
+      "lanes": [
+        "traditional"
+      ],
+      "title": "Anxiety and Mood Disturbance Are Prospectively Associated With Respiratory Infection Risk and the Mucosal Immune Response to Exercise",
+      "doi": "10.1002/ejsc.70058",
+      "pmid": "41024702",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12480926/",
+      "year": 2025,
+      "publication_date": "2025-09-30",
+      "source_type": "original_study",
+      "access_level": "abstract",
+      "provisional_scope": "acute_candidate",
+      "scope_label": "急性核心候选",
+      "coordinator_note": "两项研究分别编码：马拉松406人、实验室45人；不同终点实际样本量仍需正式提取。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/traditional.json",
+          "id": "traditional-07",
+          "anchor": "Abstract; Study 1/Study 2 Methods and Results in PubMed Central record."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R57",
+      "lane_ids": [
+        "traditional-08"
+      ],
+      "lanes": [
+        "traditional"
+      ],
+      "title": "Change in salivary IgA following a competitive marathon race",
+      "doi": "10.1055/s-2002-19375",
+      "pmid": "11774070",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11774070/",
+      "year": 2002,
+      "publication_date": "2002-01",
+      "source_type": "original_study",
+      "access_level": "abstract",
+      "provisional_scope": "acute_candidate",
+      "scope_label": "急性核心候选",
+      "coordinator_note": "早期马拉松唾液/症状研究；指标归一化方法影响结果。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/traditional.json",
+          "id": "traditional-08",
+          "anchor": "PubMed abstract; Results on adjusted saliva measures and symptom logs."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R58",
+      "lane_ids": [
+        "traditional-09"
+      ],
+      "lanes": [
+        "traditional"
+      ],
+      "title": "Salivary IgA levels and infection risk in elite swimmers",
+      "doi": "10.1097/00005768-199901000-00012",
+      "pmid": "9927012",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9927012/",
+      "year": 1999,
+      "publication_date": "1999-01",
+      "source_type": "original_study",
+      "access_level": "abstract",
+      "provisional_scope": "longitudinal_support",
+      "scope_label": "纵向支持候选",
+      "coordinator_note": "1999年研究提示2000年起点不能声称覆盖全部传统证据。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/traditional.json",
+          "id": "traditional-09",
+          "anchor": "PubMed abstract; Methods and Results."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R59",
+      "lane_ids": [
+        "traditional-10"
+      ],
+      "lanes": [
+        "traditional"
+      ],
+      "title": "Salivary immunity and lower respiratory tract infections in non-elite marathon runners",
+      "doi": "10.1371/journal.pone.0206059",
+      "pmid": "30462646",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0206059",
+      "year": 2018,
+      "publication_date": "2018-11-21",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "acute_candidate",
+      "scope_label": "急性核心候选",
+      "coordinator_note": "临床症状综合征与病原学确认分开；标志物测量时间与发病先后需提取。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/traditional.json",
+          "id": "traditional-10",
+          "anchor": "Full text: Methods, Subjects/Case definition, Saliva collection; Results sections Salivary IgA and Lower respiratory tract infections; Discussion limitations."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R60",
+      "lane_ids": [
+        "tr01"
+      ],
+      "lanes": [
+        "transcriptomics"
+      ],
+      "title": "Single-cell sequencing of immune cells after marathon and symptom-limited cardiopulmonary exercise",
+      "doi": "10.1016/j.isci.2023.106532",
+      "pmid": "37123249",
+      "url": "https://doi.org/10.1016/j.isci.2023.106532",
+      "year": 2023,
+      "publication_date": "2023-03-31",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "acute_candidate",
+      "scope_label": "急性核心候选",
+      "coordinator_note": "6名受试者分为CPX3人与马拉松3人；通路推断不是功能试验。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/transcriptomics.json",
+          "id": "tr01",
+          "anchor": "Abstract; Results: Experimental design; Methods: Participants and exercise protocol; Data and code availability."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R61",
+      "lane_ids": [
+        "tr02"
+      ],
+      "lanes": [
+        "transcriptomics"
+      ],
+      "title": "Single-Cell RNA Sequencing Analysis Reveals Exercise-Induced Transcriptional Dynamics in Half-Marathon Runners",
+      "doi": "10.1111/sms.70018",
+      "pmid": "39817606",
+      "url": "https://doi.org/10.1111/sms.70018",
+      "year": 2025,
+      "publication_date": "2025-01-16",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "acute_candidate",
+      "scope_label": "急性核心候选",
+      "coordinator_note": "4人招募，3人文库合格；6个配对样本，4211个细胞不能当4211名受试者。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/transcriptomics.json",
+          "id": "tr02",
+          "anchor": "Full-text Methods 2.1 (enrollment/sampling; PDF p.1), Results (QC exclusion; PDF p.2), Methods 2.5 (paired pseudo-bulk; PDF p.2), and Data Availability Statement."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R62",
+      "lane_ids": [
+        "tr04"
+      ],
+      "lanes": [
+        "transcriptomics"
+      ],
+      "title": "Endurance training attenuates acute exercise-induced monocyte transcriptomic responses in adolescents: sex-specific molecular adaptations",
+      "doi": "10.1152/japplphysiol.00282.2026",
+      "pmid": "42545855",
+      "url": "https://doi.org/10.1152/japplphysiol.00282.2026",
+      "year": 2026,
+      "publication_date": "2026-09-01",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "acute_candidate",
+      "scope_label": "急性核心候选",
+      "coordinator_note": "青少年训练前后重复急性挑战，按急性效应及训练修饰效应分别编码；GEO/终稿数字差异有记录。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/transcriptomics.json",
+          "id": "tr04",
+          "anchor": "Abstract; Methods: Study Design, Blood Sampling and Analysis, Library Construction, Bioinformatic Analysis; Results; Data Availability; GEO GSE324210."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R63",
+      "lane_ids": [
+        "tr05"
+      ],
+      "lanes": [
+        "transcriptomics"
+      ],
+      "title": "Transcriptomic analyses of peripheral blood mononuclear cells reveal age-specific basal and acute exercise responsiveness differences in humans",
+      "doi": "10.1152/ajpendo.00169.2025",
+      "pmid": "40695537",
+      "url": "https://doi.org/10.1152/ajpendo.00169.2025",
+      "year": 2025,
+      "publication_date": "2025-07-22",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "acute_candidate",
+      "scope_label": "急性核心候选",
+      "coordinator_note": "年龄分组PBMC bulk RNA；细胞混合和年龄效应需分层。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/transcriptomics.json",
+          "id": "tr05",
+          "anchor": "Abstract; Methods: Participants/Experimental Design; Results: Exercise-induced changes; Discussion; Data availability."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R64",
+      "lane_ids": [
+        "tr06"
+      ],
+      "lanes": [
+        "transcriptomics"
+      ],
+      "title": "Maximal and sub-maximal exercise tests alter PBMC microRNA expression: insights into sport- and sex-specific variations",
+      "doi": "10.3389/fphys.2025.1583870",
+      "pmid": "40746988",
+      "url": "https://doi.org/10.3389/fphys.2025.1583870",
+      "year": 2025,
+      "publication_date": "2025-07-17",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "acute_candidate",
+      "scope_label": "急性核心候选",
+      "coordinator_note": "2025-11-07有机构信息更正，DOI 10.3389/fphys.2025.1674758；不作为结果更正。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [
+        {
+          "type": "ErratumIn",
+          "pmid": "41281914",
+          "note": null,
+          "source": "Front Physiol. 2025 Nov 07;16:1674758. doi: 10.3389/fphys.2025.1674758."
+        }
+      ],
+      "source_notes": [
+        {
+          "file": "lanes/transcriptomics.json",
+          "id": "tr06",
+          "anchor": "Abstract; Methods: Exercise tests/Blood collection/Statistics; Results; Data Availability; 2025 correction notice."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    },
+    {
+      "reference_id": "R65",
+      "lane_ids": [
+        "tr09"
+      ],
+      "lanes": [
+        "transcriptomics"
+      ],
+      "title": "Dynamic transcriptomic responses to divergent acute exercise stimuli in young adults",
+      "doi": "10.1152/physiolgenomics.00144.2022",
+      "pmid": "36939205",
+      "url": "https://doi.org/10.1152/physiolgenomics.00144.2022",
+      "year": 2023,
+      "publication_date": "2023-03-20",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "provisional_scope": "context_only",
+      "scope_label": "背景／方法边界",
+      "coordinator_note": "肌肉/细胞外囊泡转录组；不能只因讨论免疫机制就纳入核心。",
+      "identity_verification": "Crossref题名/DOI一致",
+      "pubmed_comments_corrections": [],
+      "source_notes": [
+        {
+          "file": "lanes/transcriptomics.json",
+          "id": "tr09",
+          "anchor": "Abstract; Methods: exercise/sampling/RNA isolation; Results: EV transcriptomics; Discussion; Data availability."
+        }
+      ],
+      "screening_status": "Not formally screened; coordinator classification for restart planning only"
+    }
+  ]
+}

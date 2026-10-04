@@ -1,0 +1,308 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "status": "empty template; no included studies or extraction records",
+    "created_date": "2026-10-02",
+    "dictionary": "data_dictionary.json",
+    "source_contract": "01_protocol/v2_design_contract.txt",
+    "note": "blank_record null means not yet entered; after source review use NR/NA/UNCLEAR.",
+    "legacy_source_field_count": 61,
+    "field_count_note": "The 61 legacy source fields are retained and mapped; the operational schema adds relational, donor-count, assay-universe, candidate-selection, supplement-traceability and digitization fields."
+  },
+  "missing_codes": {
+    "NR": "未报告",
+    "NA": "不适用",
+    "UNCLEAR": "全文仍不清楚"
+  },
+  "tables": {
+    "reports": {
+      "primary_key": "report_id",
+      "foreign_keys": [],
+      "row_unit": "one report/version/correction",
+      "records": [],
+      "blank_record": {
+        "report_id": null,
+        "reference_id": null,
+        "title": null,
+        "authors": null,
+        "year": null,
+        "doi": null,
+        "pmid": null,
+        "url": null,
+        "publication_status": null,
+        "version_date": null,
+        "version_label": null,
+        "source_locator": [],
+        "scope_stream": null,
+        "inclusion_reason": null,
+        "exclusion_reason": null,
+        "immune_link": [],
+        "screening_A": null,
+        "screening_B": null,
+        "consensus_screening_decision": null,
+        "primary_fulltext_exclusion_reason": null,
+        "reviewer_notes": null,
+        "author_stated_use": null
+      }
+    },
+    "cohorts": {
+      "primary_key": "cohort_id",
+      "foreign_keys": [
+        "study_id -> study_families.study_id"
+      ],
+      "row_unit": "one recruited participant cohort or separable stratum",
+      "records": [],
+      "blank_record": {
+        "cohort_id": null,
+        "study_id": null,
+        "cohort_label": null,
+        "baseline_health": null,
+        "n_recruited": null,
+        "age_sex": null,
+        "training_status": null,
+        "sport": null,
+        "cohort_notes": null
+      }
+    },
+    "report_cohort_links": {
+      "primary_key": "link_id",
+      "foreign_keys": [
+        "report_id -> reports.report_id",
+        "study_id -> study_families.study_id",
+        "cohort_id -> cohorts.cohort_id"
+      ],
+      "row_unit": "one report × study × cohort relationship",
+      "records": [],
+      "blank_record": {
+        "link_id": null,
+        "report_id": null,
+        "study_id": null,
+        "cohort_id": null,
+        "n_analyzed": null,
+        "report_specific_population": null,
+        "link_notes": null,
+        "scope_streams": []
+      }
+    },
+    "sample_sets": {
+      "primary_key": "sample_set_id",
+      "foreign_keys": [
+        "report_id -> reports.report_id",
+        "study_id -> study_families.study_id",
+        "cohort_id -> cohorts.cohort_id"
+      ],
+      "row_unit": "one group × assay/matrix × exact timepoint sample set",
+      "records": [],
+      "blank_record": {
+        "sample_set_id": null,
+        "report_id": null,
+        "study_id": null,
+        "cohort_id": null,
+        "group_condition": null,
+        "intervention_phase": null,
+        "exercise_mode": null,
+        "dose": null,
+        "control": null,
+        "training_load": null,
+        "cointerventions": null,
+        "exercise_end_definition": null,
+        "sample_role": null,
+        "timepoint_as_reported": null,
+        "time_from_exercise_end_value": null,
+        "time_unit": null,
+        "time_bin": null,
+        "matrix": null,
+        "assay_platform": null,
+        "n_participants": null,
+        "n_biological_samples": null,
+        "n_cells": null,
+        "n_technical_replicates": null,
+        "n_aliquots": null,
+        "repeated_sampling": null,
+        "pairing_structure": null,
+        "age_sex_stratum": null,
+        "preanalytics": null,
+        "normalization": null,
+        "circadian": null,
+        "missing_data": null,
+        "cell_context": null,
+        "source_locator": [],
+        "sample_notes": null,
+        "bout_id": null,
+        "bout_number": null,
+        "participant_linkage": null,
+        "n_donors": null,
+        "donor_count_basis": null
+      }
+    },
+    "measurements": {
+      "primary_key": "measurement_id",
+      "foreign_keys": [
+        "report_id -> reports.report_id",
+        "study_id -> study_families.study_id",
+        "cohort_id -> cohorts.cohort_id",
+        "sample_set_ids[] -> sample_sets.sample_set_id"
+      ],
+      "row_unit": "One assay-level tested-universe summary OR one named candidate/feature × comparison; include all named immune candidates from original aims/methods regardless of significance.",
+      "records": [],
+      "blank_record": {
+        "measurement_id": null,
+        "report_id": null,
+        "study_id": null,
+        "cohort_id": null,
+        "sample_set_ids": [],
+        "analyte_id": {
+          "original_label": null,
+          "standard_name": null,
+          "database_id": null
+        },
+        "biological_level": null,
+        "platform": null,
+        "omics_integration": null,
+        "cell_context": null,
+        "assay_validity": null,
+        "feature_identification": null,
+        "comparison": null,
+        "effect_measure": null,
+        "effect_value": null,
+        "effect_unit": null,
+        "effect_uncertainty": null,
+        "multiplicity": null,
+        "confounding": null,
+        "donor_level_inference": null,
+        "missing_data": null,
+        "null_findings": null,
+        "result_direction": null,
+        "reported_feature_count": null,
+        "measurement_notes": null,
+        "source_locator": [],
+        "record_type": null,
+        "assay_universe_id": null,
+        "marker_series_id": null,
+        "tested_universe_n": null,
+        "tested_universe_unit": null,
+        "tested_universe": null,
+        "feature_total_count": null,
+        "feature_total_unit": null,
+        "feature_universe_locator": [],
+        "candidate_selection_rule": null,
+        "candidate_selection_basis": null,
+        "candidate_prespecification_status": null,
+        "candidate_in_original_aims_methods": null,
+        "candidate_source_locator": [],
+        "supplement_availability": null,
+        "supplement_sources": [],
+        "result_status": null,
+        "effect_value_source": null,
+        "digitization_predeclared_method": null,
+        "digitization_software_version": null,
+        "figure_panel_locator": null,
+        "digitizer_A_value": null,
+        "digitizer_B_value": null,
+        "digitizer_A": null,
+        "digitizer_B": null,
+        "digitization_reconciled_value": null,
+        "digitization_notes": null
+      }
+    },
+    "precision_validation": {
+      "primary_key": "precision_record_id",
+      "foreign_keys": [
+        "report_id -> reports.report_id",
+        "study_id -> study_families.study_id",
+        "cohort_id -> cohorts.cohort_id",
+        "measurement_id -> measurements.measurement_id (optional)"
+      ],
+      "row_unit": "one report/cohort/measurement × one domain",
+      "records": [],
+      "blank_record": {
+        "precision_record_id": null,
+        "report_id": null,
+        "study_id": null,
+        "cohort_id": null,
+        "measurement_id": null,
+        "precision_domain": null,
+        "evidence_state": null,
+        "relationship_tags": [],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [],
+        "evidence_notes": null,
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null
+      }
+    },
+    "extraction_provenance": {
+      "primary_key": "provenance_id",
+      "foreign_keys": [
+        "report_id -> reports.report_id"
+      ],
+      "row_unit": "one report × one extraction/audit event",
+      "records": [],
+      "blank_record": {
+        "provenance_id": null,
+        "report_id": null,
+        "extractor_a_b": {
+          "extractor_A": null,
+          "extractor_B": null,
+          "independent_entry_complete": null,
+          "verification_complete": null
+        },
+        "adjudication": null,
+        "ai_assistance": {
+          "used": null,
+          "tool_model_date": null,
+          "task_prompt_version": null,
+          "output_checked_by_human": null
+        },
+        "open_data": null,
+        "integrity_status": null,
+        "recorded_at": null,
+        "provenance_notes": null
+      }
+    },
+    "study_families": {
+      "primary_key": "study_id",
+      "foreign_keys": [],
+      "row_unit": "one study protocol/research programme",
+      "records": [],
+      "blank_record": {
+        "study_id": null,
+        "study_label": null,
+        "design": null,
+        "registry_ids": [],
+        "training_load": null,
+        "cointerventions": null,
+        "study_notes": null
+      }
+    }
+  },
+  "referential_integrity_checks": [
+    "all foreign keys resolve",
+    "cohort.study_id agrees with bridge/sample/measurement study_id",
+    "each measurement.sample_set_ids[] resolves to sample_sets in the same cohort/study",
+    "each precision row resolves to a report and any optional measurement",
+    "Each assay_universe_id links one assay-level summary to its named candidates/result rows; preserve tested-universe and supplement locators.",
+    "Primary keys are unique, nonempty stable IDs; required linkage keys are never NR/NA/UNCLEAR.",
+    "Every sample, measurement and precision report_id/study_id/cohort_id tuple exists in report_cohort_links.",
+    "Each measurement.sample_set_ids[] belongs to its report as well as its cohort/study; optional precision measurement_id, when present, matches the same report/study/cohort.",
+    "Cohort-specific A/B membership uses report_cohort_links.scope_streams; one cohort in both streams is counted once overall."
+  ],
+  "guardrails": [
+    "No decisions or extracted scientific values are prefilled.",
+    "No aggregate precision score.",
+    "Participant n, biological samples, cells and technical replicates remain separate.",
+    "Named immune candidates found in original aims/methods and accessible supplements are recorded regardless of significance; unreported feature rows are not invented.",
+    "Values read from figures must be predeclared as a separate digitization procedure, tagged digitized_from_figure, and checked by two reviewers.",
+    "Support B requires same marker + same participants across >=2 distinct bout_id values, known timing and baseline/comparator."
+  ]
+}

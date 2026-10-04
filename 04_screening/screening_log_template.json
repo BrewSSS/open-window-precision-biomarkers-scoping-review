@@ -1,0 +1,148 @@
+{
+  "template_status": "blank_template_no_formal_screening_results",
+  "protocol_version": "2.0",
+  "protocol_date": "2026-10-02",
+  "formal_search_cutoff": null,
+  "formal_screening_status": "NOT_YET_STARTED",
+  "screening_counts_status": "NOT_YET_AVAILABLE",
+  "reviewer_roles": {
+    "reviewer_1": null,
+    "reviewer_2": null,
+    "adjudicator": null
+  },
+  "calibration": {
+    "planned_sample_size": 50,
+    "random_seed": 20261002,
+    "sampling_algorithm": "Python random.Random(seed).sample(sorted(unique_record_ids), 50)",
+    "pool_manifest_path": null,
+    "pool_manifest_sha256": null,
+    "sampled_record_ids": [],
+    "raw_agreement": null,
+    "cohens_kappa_descriptive": null,
+    "conceptual_disagreements_resolved": null,
+    "pilot_passed": null,
+    "repeat_pilot_seeds": [],
+    "results": null,
+    "manual_version": null,
+    "pool_source_provenance": [],
+    "python_version": null,
+    "repeat_seed_rule": "seed = 20261002 + round_number - 1; first repeat round_number=2; exclude all IDs sampled in earlier rounds",
+    "pilot_rounds": []
+  },
+  "records": [],
+  "field_schema": {
+    "record_id": "Stable unique report identifier from the deduplicated formal-search pool.",
+    "report_id": "Bibliographic report identifier; link versions and related reports.",
+    "study_id": "Underlying study identifier, if established.",
+    "cohort_id": "Participant cohort identifier; used to prevent double counting.",
+    "source_database_or_route": "Database/platform or documented citation-chasing route.",
+    "preprint_linked_publication_id": "Record identifier for version linkage, if applicable.",
+    "title_abstract": {
+      "reviewer_1": {
+        "decision": null,
+        "primary_reason": null,
+        "rationale_or_quote": null,
+        "decided_at": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "primary_reason": null,
+        "rationale_or_quote": null,
+        "decided_at": null
+      },
+      "reconciliation": {
+        "status": null,
+        "final_disposition": null,
+        "adjudicator_referral": null,
+        "notes": null
+      }
+    },
+    "retrieval": {
+      "status": null,
+      "attempts": [],
+      "not_retrieved_reason": null,
+      "translation_status": null,
+      "awaiting_classification_reason": null,
+      "translation_independent_human_check": null
+    },
+    "full_text": {
+      "reviewer_1": {
+        "decision": null,
+        "primary_exclusion_code": null,
+        "secondary_failed_dimensions": [],
+        "A_eligible": null,
+        "B_eligible": null,
+        "evidence_locations": [],
+        "rationale": null,
+        "decided_at": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "primary_exclusion_code": null,
+        "secondary_failed_dimensions": [],
+        "A_eligible": null,
+        "B_eligible": null,
+        "evidence_locations": [],
+        "rationale": null,
+        "decided_at": null
+      },
+      "reconciliation": {
+        "status": null,
+        "final_disposition": null,
+        "final_primary_exclusion_code": null,
+        "A_eligible": null,
+        "B_eligible": null,
+        "adjudicator_referral": null,
+        "discussion_and_rule_clarification": null
+      }
+    },
+    "eligibility_checks": {
+      "human": null,
+      "generally_healthy_baseline": null,
+      "active_infection_absent": null,
+      "healthy_stratum_extractable_if_mixed": null,
+      "exercise_bout_identifiable": null,
+      "post_cessation_sample_present": null,
+      "baseline_or_suitable_comparator": null,
+      "B_at_least_two_linked_bouts_if_applicable": null,
+      "eligible_immune_link": null,
+      "mixed_intervention_separable": null,
+      "peer_reviewed_original_for_core": null,
+      "known_clinical_or_metabolic_disease_absent": null,
+      "B_same_marker_after_at_least_two_bouts": null,
+      "B_same_individuals_linked": null
+    },
+    "screening_dispositions": [
+      "ADVANCE",
+      "EXCLUDE_TA",
+      "FRONTIER_PREPRINT",
+      "AWAITING_CLASSIFICATION",
+      "INCLUDE_A",
+      "INCLUDE_B",
+      "INCLUDE_A_AND_B",
+      "EXCLUDE_FT",
+      "NOT_RETRIEVED",
+      "AWAITING_TRANSLATION",
+      "DUPLICATE_RECORD",
+      "DUPLICATE_VERSION"
+    ],
+    "notes": null,
+    "administrative": {
+      "status": null,
+      "retained_record_id": null,
+      "duplicate_or_version_rationale": null,
+      "source_links": [],
+      "source_publication_status": null,
+      "frontier_register_id": null
+    }
+  },
+  "record_validation_rules": [
+    "Field schema describes a blank future record; records remains empty until actual screening.",
+    "Two human reviewer decisions are stored independently and locked before reconciliation; AI cannot populate an independent reviewer decision.",
+    "Scientific EXCLUDE_FT requires exactly one first-established FT01–FT08 code; administrative statuses require null primary exclusion codes.",
+    "INCLUDE_B or INCLUDE_A_AND_B requires source evidence for same immune marker, same individuals, >=2 identifiable bouts, post-cessation timing and baseline/comparator.",
+    "Keep retrieval, translation, publication/version and eligibility states separately; missing information is not an established exclusion.",
+    "Pilot records count formally only if identified through documented formal search/citation chasing; pilot_rounds stores actual results only.",
+    "NR = not reported; NA = inapplicable; UNCLEAR = genuinely ambiguous. Null fields here are unpopulated template values, not negative findings."
+  ]
+}

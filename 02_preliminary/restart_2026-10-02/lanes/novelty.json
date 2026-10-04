@@ -1,0 +1,411 @@
+{
+  "lane": "novelty",
+  "cutoff_date": "2026-10-02",
+  "searched_at_date": "2026-10-02",
+  "queries": [
+    {
+      "source": "Public web search; PubMed and publisher records opened for verification",
+      "query": "Minuzzi 2026 immunometabolomics exercise review; Kotewitsch ncRNA exercise immunology systematic review; precision sports nutrition endurance athletes scoping review",
+      "date": "2026-10-02",
+      "notes": "Checked article type, issue/online dates, identifiers, abstract and available full text."
+    },
+    {
+      "source": "Public web search; PubMed/PMC, Frontiers and PROSPERO records",
+      "query": "exercise open window systematic review 2024 2025 older adults Th1 Th2 markers protocol PROSPERO",
+      "date": "2026-10-02",
+      "notes": "Located Teodoro et al. (2025), a directly relevant, narrowly scoped systematic review."
+    },
+    {
+      "source": "Public web search; journal and PubMed records",
+      "query": "2024 2025 exercise immunology systematic review B cell immunity infection biomarkers marathon URTI meta-analysis",
+      "date": "2026-10-02",
+      "notes": "Compared acute exercise, training, biomarker and clinical infection outcome scopes."
+    },
+    {
+      "source": "Public web search; Annual Reviews, PubMed, Frontiers, Wiley and APS records",
+      "query": "2026 exercise immune inflammatory biomarkers umbrella review acute myokine review neutrophil lymphocyte ratio systematic review",
+      "date": "2026-10-02",
+      "notes": "Included only records with publication dates at or before the cutoff; distinguished online publication from DOI year."
+    },
+    {
+      "source": "Public web search; PROSPERO and journal records",
+      "query": "site:crd.york.ac.uk/PROSPERO exercise immunity athletes biomarkers systematic review protocol",
+      "date": "2026-10-02",
+      "notes": "Verified protocol identifiers stated by published reviews; search did not establish that no other relevant protocol exists."
+    },
+    {
+      "source": "Public web search; PubMed, publisher and PMC records",
+      "query": "PMC11022769 Biomarkers in Endurance Exercise Hacker journal DOI; Nieman Immunometabolism multi-omics authors 2019",
+      "date": "2026-10-02",
+      "notes": "Used to correct two material citation/type errors in the earlier collision report."
+    },
+    {
+      "source": "Public web search; journal/PubMed indexed records",
+      "query": "exercise review biomarker review corrigendum erratum retraction 2024 2025 2026",
+      "date": "2026-10-02",
+      "notes": "No obvious correction or retraction notice surfaced for the reviewed records; this was not a systematic retraction-database audit."
+    }
+  ],
+  "sources": [
+    {
+      "id": "novelty-01",
+      "title": "Immunometabolomics Applied to Physical Exercise: Accomplishments and New Directions for Health Improvement",
+      "authors": "Luciele Guerra Minuzzi; Alex Castro; Claudia Regina Cavaglieri; Ana Valéria Colnaghi Simionato",
+      "year": 2026,
+      "publication_date": "2026-05 (volume publication date)",
+      "doi": "10.1146/annurev-anchem-091024-095826",
+      "pmid": "42141366",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42141366/",
+      "source_type": "narrative_review",
+      "access_level": "abstract",
+      "population": "Narrative coverage across health and disease; abstract highlights evidence from human trials, without fixed population eligibility or a single target cohort.",
+      "design": "Annual Review narrative review; no systematic review protocol or reproducible search method identified in the accessible article record.",
+      "sample_size": null,
+      "exercise_context": "Exercise effects across time, tissue and modality, during and after exercise; acute and adaptation contexts are discussed broadly.",
+      "sampling_times": null,
+      "biomarkers": "Immunometabolic metabolites including succinate, itaconate, lactate, short-chain fatty acids and kynurenine; metabolomics and multi-omics methods. Traditional immune markers are not charted as a comprehensive panel.",
+      "key_finding": "Frames metabolites as links between energy metabolism and immune regulation and emphasizes time-, tissue- and modality-specific exercise responses.",
+      "clinical_endpoint": "No defined post-exercise infection incidence or URI endpoint is reported in the abstract/article scope inspected.",
+      "validation": "Discusses human-trial evidence and methodological advances; does not establish validated individual infection-risk prediction performance.",
+      "limitations": "Broad narrative treatment of immunometabolism rather than a map of post-exercise immune vulnerability; no systematic eligibility, marker-by-marker evidence chart, or infection outcome synthesis identified.",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Publisher abstract and publication information; PubMed publication type and identifiers.",
+      "verification_urls": [
+        "https://www.annualreviews.org/content/journals/10.1146/annurev-anchem-091024-095826",
+        "https://pubmed.ncbi.nlm.nih.gov/42141366/"
+      ],
+      "integrity_notes": "The review is within the cutoff. PubMed labels it Review; publisher abstract explicitly calls it a narrative review. No obvious correction/retraction record surfaced in the targeted public-web check."
+    },
+    {
+      "id": "novelty-02",
+      "title": "Non-coding RNAs in exercise immunology: A systematic review",
+      "authors": "Mona Kotewitsch; Melina Heimer; Boris Schmitz; Frank C. Mooren",
+      "year": 2024,
+      "publication_date": "2024-05 (Epub 2023-11-03)",
+      "doi": "10.1016/j.jshs.2023.11.001",
+      "pmid": "37925072",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37925072/",
+      "source_type": "systematic_review",
+      "access_level": "full_text",
+      "population": "Healthy human exercise-study populations with varied activity/training levels; not athlete-only. In-vitro validated target databases were additionally used to map immune targets, not as exercise intervention cohorts.",
+      "design": "PRISMA systematic review and qualitative synthesis; PROSPERO CRD42023408388; searches in PubMed, Web of Science and SPORTDiscus, with two complementary search strategies and reference checking.",
+      "sample_size": null,
+      "exercise_context": "Acute and chronic/endurance and resistance exercise responses are separated; chronic evidence includes exercise programs and habitual training comparisons.",
+      "sampling_times": null,
+      "biomarkers": "miRNAs, lncRNAs and circRNAs, with immune target pathways; expression and assay platforms include sequencing, microarray and qPCR.",
+      "key_finding": "Synthesized 95 studies reporting 164 miRNAs; identified six studies on lncRNA/circRNA. Endurance miRNAs had consistency categories, but resistance evidence and functional interpretation remained limited.",
+      "clinical_endpoint": "No direct infection incidence or pathogen-confirmed infection endpoint synthesized; discusses immune pathways and function as biological relevance.",
+      "validation": "Classifies miRNA consistency as validated/plausible/suggestive based on repeated directional findings; this is not clinical biomarker validation or validated infection prediction.",
+      "limitations": "Omics/epigenetic layer only; no conventional marker panel, no infection outcome synthesis, and no full cross-scale open-window evidence map. Expression shifts do not by themselves establish changed immune function.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "PubMed abstract; full-text Methods (search and eligibility) and Results/flow diagram.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/37925072/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11116971/"
+      ],
+      "integrity_notes": "The issue date is May 2024 although electronic publication was November 2023. PROSPERO number is stated in the full text."
+    },
+    {
+      "id": "novelty-03",
+      "title": "Towards Precision Sports Nutrition for Endurance Athletes: A Scoping Review of Application of Omics and Wearables Technologies",
+      "authors": "Leon Bedrač; Leon Deutsch; Sanja Terzić; Matej Červek; Julij Šelb; Urška Ašič; Laure M. G. Verstraeten; Enej Kuščer; Filip Cvetko",
+      "year": 2024,
+      "publication_date": "2024-11-19",
+      "doi": "10.3390/nu16223943",
+      "pmid": "39599728",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39599728/",
+      "source_type": "scoping_review",
+      "access_level": "full_text",
+      "population": "Endurance athletes; some CGM studies also include people with diabetes. Distance runners were the most represented group.",
+      "design": "PRISMA-ScR/PCC scoping review of original English-language research; PubMed, Scopus and Web of Science, supplemented by Google Scholar and citation searching; 52 studies included; PEDro used for RCT quality assessment.",
+      "sample_size": null,
+      "exercise_context": "Endurance sport, nutrition interventions, recovery and CGM; not structured as a post-exercise immune-window review and not a systematic acute-versus-training immune comparison.",
+      "sampling_times": null,
+      "biomarkers": "Metagenomics, nutrigenetics, metabolomics, multi-omics, proteomics, epigenomics, lipidomics and glucose wearables; plasma, stool and other matrices. Conventional immune-marker panels are not its organizing focus.",
+      "key_finding": "Maps 52 studies and makes clear that ‘scoping review + omics + precision/endurance athlete’ is already an established combination; many studies remain proof-of-concept with weak links to performance, recovery or long-term health.",
+      "clinical_endpoint": "No infection outcome was identified in the review text; outcomes were nutrition, performance, recovery and health parameters.",
+      "validation": "Assesses RCT quality using PEDro, but reports insufficient links between candidate biomarkers and meaningful outcomes; no immune-infection prediction validation.",
+      "limitations": "Nutrition-centered PCC and endurance athlete focus; it neither maps exercise immune status/function nor integrates sIgA, NK function, immune-cell kinetics, infection events and immune multi-omics.",
+      "scope_fit": "context_only",
+      "evidence_anchor": "PubMed abstract; full-text Methods (search window, PCC and eligibility), Results and Discussion.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/39599728/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11597302/",
+        "https://www.mdpi.com/2072-6643/16/22/3943"
+      ],
+      "integrity_notes": "Confirmed as a peer-reviewed 2024 Nutrients scoping review, 16(22):3943, DOI 10.3390/nu16223943; it is not an exercise-immunity review."
+    },
+    {
+      "id": "novelty-04",
+      "title": "Impact of exercise on markers of B cell-related immunity: A systematic review",
+      "authors": "David Walzik; Sergen Belen; Karen Wilisch; Marie Kupjetz; Silvana Kirschke; Tobias Esser; Niklas Joisten; Alexander Schenk; Sebastian Proschinger; Philipp Zimmer",
+      "year": 2024,
+      "publication_date": "2024-05 (Epub 2023-10-11)",
+      "doi": "10.1016/j.jshs.2023.10.002",
+      "pmid": "37832643",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37832643/",
+      "source_type": "systematic_review",
+      "access_level": "full_text",
+      "population": "Adults aged 18 or older, healthy participants and patients; multiple ages, health states and exercise backgrounds across included studies.",
+      "design": "PRISMA systematic review, PROSPERO CRD42021245527; MEDLINE, Web of Science and Embase searched 2023-03-08; controlled/non-randomized controlled and crossover trials; 67 studies (22 acute, 45 training).",
+      "sample_size": null,
+      "exercise_context": "Acute endurance/resistance exercise and structured exercise training are analyzed separately.",
+      "sampling_times": null,
+      "biomarkers": "B-cell counts/proportions, plasma immunoglobulins, salivary/secretory IgA, salivary flow and secretion rate; no omics panel.",
+      "key_finding": "Acute studies often show within-session changes, but only a few differ from control. Training results are heterogeneous; some IgA outcomes rise while most remain unchanged versus controls.",
+      "clinical_endpoint": "Infection protection is discussed as a rationale, but direct infection incidence was not among the review's extracted outcomes and causality is explicitly uncertain.",
+      "validation": "Trial quality/reporting assessed with TESTEX; review concludes evidence confidence is limited and recommends functional B-cell outcomes and larger studies.",
+      "limitations": "Narrow B-cell/humoral marker scope; clinical infection outcomes and omics are not synthesized; review restricted to controlled/crossover designs and adults.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "PubMed abstract; full-text Methods (eligibility/search), Results and Discussion/Conclusion.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/37832643/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11116964/"
+      ],
+      "integrity_notes": "The issue publication date is May 2024 although the article appeared online in October 2023. Its stated PROSPERO registration was verified in the review text."
+    },
+    {
+      "id": "novelty-05",
+      "title": "The effects of acute and chronic exercise on immune markers of TH1/TH2 cells in older adults: a systematic review",
+      "authors": "Thiago Henrique Teodoro; Katerine Palharini Manfrin Costa; Jonato Prestes; et al.",
+      "year": 2025,
+      "publication_date": "2025-02-11",
+      "doi": "10.3389/fphys.2025.1453747",
+      "pmid": "40008210",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11850391/",
+      "source_type": "systematic_review",
+      "access_level": "full_text",
+      "population": "Older adults; diseased patients, animal studies and isolated-cell studies were excluded.",
+      "design": "PRISMA systematic review; PubMed, Web of Science, Embase, ScienceDirect and Scopus searched through March 2024; PROSPERO CRD42021244426; 14 studies, 525 participants.",
+      "sample_size": 525,
+      "exercise_context": "Three acute-exercise studies and eleven chronic/training studies; explicitly asks whether post-exercise immune alteration can characterize the ‘open window’.",
+      "sampling_times": "Acute IL-4, IL-6 and IL-10 measured immediately post-exercise and returned to baseline within 1 hour in the reported synthesis; chronic outcomes included after 24 weeks.",
+      "biomarkers": "Th1/Th2 cytokine and CD4/CD8 balance markers, including IL-4, IL-6, IL-10, TNF-α and CD4/CD8; no omics.",
+      "key_finding": "This is a direct framework-level neighbor that the prior collision report missed: it names the open-window question and synthesizes acute plus training markers, but only for older adults and one immune axis.",
+      "clinical_endpoint": "Infection susceptibility is background/rationale; actual infection incidence or pathogen-confirmed infection was not an included outcome.",
+      "validation": "ROB2 quality assessment; no biomarker diagnostic or infection-prediction validation.",
+      "limitations": "Older-adult subgroup only, restricted Th1/Th2 marker set, 14 small/heterogeneous studies, no traditional-plus-omics integration and no direct infection outcome.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "Full-text Abstract; Introduction (open-window rationale); Methods; Results 3.1 and Conclusion.",
+      "verification_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11850391/",
+        "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2025.1453747/full",
+        "https://pubmed.ncbi.nlm.nih.gov/40008210/"
+      ],
+      "integrity_notes": "Directly refutes the prior report's categorical statement that no systematic review had applied an open-window framing. The review is narrow and does not duplicate the full proposed PCC. Registration identifier is stated in the paper."
+    },
+    {
+      "id": "novelty-06",
+      "title": "Rigorous methodological approaches to address knowledge gaps in exercise, nutrition, immunity, and infection risk research",
+      "authors": "Glen Davison; C. Chidley; A. W. Jones",
+      "year": 2025,
+      "publication_date": "2025-07-25",
+      "doi": "10.14814/phy2.70479",
+      "pmid": "40709812",
+      "url": "https://physoc.onlinelibrary.wiley.com/doi/full/10.14814/phy2.70479",
+      "source_type": "invited_review",
+      "access_level": "full_text",
+      "population": "General population and athletes, including people exposed to exercise-related occupational stress; no fixed review inclusion population.",
+      "design": "Invited review/recommendations article; no systematic database search or evidence-map method identified in the article inspected.",
+      "sample_size": null,
+      "exercise_context": "Exercise and nutrition research in acute and training/athlete contexts, viewed through URTI risk and study-design rigor.",
+      "sampling_times": null,
+      "biomarkers": "Critiques reliance on ex-vivo immune markers and recommends in-vivo integrated immune measures, pathogen screening and validated URTI logs; no multi-omics survey.",
+      "key_finding": "Argues biomarker changes can diverge from infection risk and recommends clinically relevant outcomes, in-vivo markers, larger samples and stringent controls.",
+      "clinical_endpoint": "URTI symptoms, pathogen-confirmed infection and viral load are recommended as primary/clinically relevant outcomes; the article is methodological guidance rather than an endpoint meta-analysis.",
+      "validation": "No new marker validation; offers research-design recommendations and explains limits of mechanistic ex-vivo endpoints.",
+      "limitations": "Not a systematic review or biomarker inventory; focuses heavily on nutrition-intervention research, but materially constrains claims that a marker change equals infection risk.",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Publisher Abstract, article type/date; full-text discussion of ex-vivo/in-vivo markers and URTI outcomes.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/40709812/",
+        "https://physoc.onlinelibrary.wiley.com/doi/full/10.14814/phy2.70479",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12290944/"
+      ],
+      "integrity_notes": "Publisher identifies this as an Open Access Invited Review, first published 2025-07-25. It is not a systematic review of candidate exercise biomarkers."
+    },
+    {
+      "id": "novelty-07",
+      "title": "Higher risk of upper respiratory tract infection post marathon running: when physical exercise becomes a threat to the immune system",
+      "authors": "Amanda Veiga Sardeli; Rafaela Bertini de Araujo; Jeffery A. Woods; Janet M. Lord; Mara Patrícia Traina Chacon-Mikahil",
+      "year": 2024,
+      "publication_date": "2024-12-31",
+      "doi": "10.22029/eir.2024.1759",
+      "pmid": "39094181",
+      "url": "https://journals.ub.uni-giessen.de/eir/article/view/1759",
+      "source_type": "systematic_review_and_meta_analysis",
+      "access_level": "full_text",
+      "population": "Human marathon runners; within-person pre/post marathon comparisons of URTI symptoms.",
+      "design": "PICOS systematic review/meta-analysis; MEDLINE, Embase, Scopus, Web of Science, Cochrane Library and EBSCOhost searched 2022-12-01; PROSPERO CRD42022380991; seven studies pooled.",
+      "sample_size": null,
+      "exercise_context": "Single marathon event with symptom follow-up from one to four weeks; not multi-day training or biomarker sampling.",
+      "sampling_times": "URTI symptom follow-up 1–4 weeks; baseline and post-race follow-up durations were adjusted to align.",
+      "biomarkers": "No biomarkers synthesized; clinical symptom outcome only.",
+      "key_finding": "Meta-analysis estimated an 18% higher post-marathon URTI incidence (OR 1.18, 95% CI 1.05–1.33), with moderate certainty and important limitations in measurement/confounding.",
+      "clinical_endpoint": "Self-reported URTI symptoms; no pathogen verification. Directly informs the infection-outcome layer but not biomarker prediction.",
+      "validation": "GRADE level reported as moderate; adjustment for unequal follow-up is a strength, but symptom subjectivity and time-varying confounding remain.",
+      "limitations": "Only marathon exposures and seven studies; does not measure immune markers, test marker-outcome links, or estimate post-exercise vulnerability in broader exercise settings.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "Journal abstract: methods, eligibility, synthesis, limitations and PROSPERO identifier.",
+      "verification_urls": [
+        "https://journals.ub.uni-giessen.de/eir/article/view/1759",
+        "https://pubmed.ncbi.nlm.nih.gov/39094181/"
+      ],
+      "integrity_notes": "Publisher page gives exact publication date and PROSPERO number. This is clinical infection evidence, not a biomarker review."
+    },
+    {
+      "id": "novelty-08",
+      "title": "The impact of exercise on inflammatory biomarkers: an umbrella review of systematic reviews and meta-analyses",
+      "authors": "Wei Zhang; Minghui Du; Zhiyuan Zhang; Yixing Zhan; Longwei Chen; Jie Dong",
+      "year": 2026,
+      "publication_date": "2026-08-25",
+      "doi": "10.3389/fimmu.2026.1892544",
+      "pmid": "42713168",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42713168/",
+      "source_type": "umbrella_review",
+      "access_level": "full_text",
+      "population": "Broad health-status populations, including healthy adults, athletes/long-distance runners and multiple chronic disease groups; not athlete-only.",
+      "design": "Registered umbrella review CRD420251236842; PubMed, Embase, Web of Science and Cochrane searched through 2026-01; two reviewers; AMSTAR 2 and GRADE; 61 meta-analyses/318 exercise-biomarker-population associations.",
+      "sample_size": null,
+      "exercise_context": "Mix of acute exercise and longer-term exercise interventions across included meta-analyses; explicitly cautions against interpreting chronic disease adaptations as acute responses in healthy people.",
+      "sampling_times": null,
+      "biomarkers": "Circulating inflammatory markers, especially CRP, IL-6, TNF-α and IL-10; no multi-omics or comprehensive immune-function panel.",
+      "key_finding": "Finds substantial population and design heterogeneity; evidence certainty is mostly low/very low, and acute physiological marker changes must be distinguished from chronic inflammation reduction.",
+      "clinical_endpoint": "No infection-incidence synthesis; focuses on inflammatory biomarker associations.",
+      "validation": "Assesses certainty of underlying meta-analyses using AMSTAR 2 and GRADE; no individual infection prediction validation.",
+      "limitations": "Umbrella-level biomarker evidence is broad, often chronic/disease-oriented and not post-exercise immune vulnerability; indirect comparisons and low certainty limit conclusions.",
+      "scope_fit": "context_only",
+      "evidence_anchor": "PubMed abstract and Frontiers full text: Methods, Results, discussion of population heterogeneity and acute/chronic distinctions.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42713168/",
+        "https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2026.1892544/full"
+      ],
+      "integrity_notes": "Publication date 2026-08-25 precedes cutoff. The stated PROSPERO identifier was verified in the full text."
+    },
+    {
+      "id": "novelty-09",
+      "title": "Circulating Myokine Responses to Acute Endurance Exercise and Their Role in Immunoregulation: A Systematic Review and Meta-Analysis",
+      "authors": "Miriam Ringleb; Fabian Fabritius; Jakob Godde; Christian Puta; Wilhelm Bloch; Florian Javelle",
+      "year": 2026,
+      "publication_date": "2026-02-28 (Epub 2026-02-09)",
+      "doi": "10.1096/fj.202504780R",
+      "pmid": "41661185",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41661185/",
+      "source_type": "systematic_review_and_meta_analysis",
+      "access_level": "full_text",
+      "population": "Healthy adults aged 18–50; illnesses, injuries and older adults excluded. Included participants were predominantly male (80%).",
+      "design": "PRISMA 2020, PROSPERO CRD42024535364; MEDLINE/PubMed, Web of Science, Cochrane Library and SPORTDiscus searched 2024-06-13; 167 studies in systematic review, 148 in meta-analyses, 3,622 participants across 294 interventions.",
+      "sample_size": 3622,
+      "exercise_context": "Single acute endurance bout of at least 20 minutes; only immediate post-exercise sample within five minutes retained. Training interventions excluded except acute bouts embedded in a program.",
+      "sampling_times": "Same-day pre-exercise and immediate post-exercise within five minutes; later follow-up excluded.",
+      "biomarkers": "Serum/plasma IL-6, IL-10, IL-1ra, TNF-α, IL-15, IL-7, IL-8, TGF-β1 and fractalkine; conventional protein/cytokine markers, no omics platform.",
+      "key_finding": "Immediate acute endurance exercise increased six pooled myokines; response size varied by exercise dose, modality, age, sex, sample and training-related factors. Heterogeneity and risk of bias were substantial for some outcomes.",
+      "clinical_endpoint": "No infection incidence or pathogen-confirmed endpoint; acute biochemical changes were the outcome.",
+      "validation": "Dose/moderator analyses and GRADE evidence rating, not clinical predictive validation. Only a five-minute post-exercise window was analyzed.",
+      "limitations": "Immediate endpoint only, no recovery time course beyond five minutes, no chronic adaptation or infection-risk assessment, and underrepresentation of women.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "PubMed abstract; publisher/PMC Methods 2.1–2.2, Results 3.1–3.4 and Conclusion.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41661185/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12885107/",
+        "https://faseb.onlinelibrary.wiley.com/doi/10.1096/fj.202504780R"
+      ],
+      "integrity_notes": "The article's DOI contains 2025, but PubMed/publisher issue and publication date are 2026-02; include as 2026 evidence. Registration CRD42024535364 is stated in the full text."
+    },
+    {
+      "id": "novelty-10",
+      "title": "Change in neutrophil-to-lymphocyte ratio after acute and chronic exercise: a systematic review and meta-analysis",
+      "authors": "Shokufe Khanzade; Sanam Mohammadzadeh; Farzad Fayedeh; Richard K. Shields",
+      "year": 2026,
+      "publication_date": "2026-08-01 (Epub 2026-07-02)",
+      "doi": "10.1152/japplphysiol.00530.2025",
+      "pmid": "42390909",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42390909/",
+      "source_type": "systematic_review_and_meta_analysis",
+      "access_level": "full_text",
+      "population": "Human participants of any age and health status; not limited to athletes or healthy adults.",
+      "design": "PICO systematic review/meta-analysis; PROSPERO CRD420251042422; PubMed, Embase, Scopus, Web of Science and Cochrane Library; 26 studies and 1,203 participants.",
+      "sample_size": 1203,
+      "exercise_context": "Within-person NLR response to acute and chronic exercise; broad modalities and health states pooled.",
+      "sampling_times": "Immediately after and 1–3 hours after acute exercise; chronic training pre/post.",
+      "biomarkers": "Peripheral-blood neutrophil-to-lymphocyte ratio only.",
+      "key_finding": "Pooled NLR did not change immediately after acute exercise, increased at 1–3 hours, and decreased after chronic exercise; heterogeneity was very high (I² approximately 94–98%).",
+      "clinical_endpoint": "No exercise-related infection follow-up; NLR's relevance to infection in other clinical contexts is not evidence of post-exercise infection prediction.",
+      "validation": "Sensitivity and publication-bias analyses reported; no individual-level model or infection-risk validation.",
+      "limitations": "Single simple marker, mixed healthy/patient populations and exercise contexts, very high heterogeneity, no omics or clinical exercise-related infection outcome.",
+      "scope_fit": "context_only",
+      "evidence_anchor": "PubMed publication metadata and abstract; APS publisher full text/abstract, search and PICO methods.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42390909/",
+        "https://journals.physiology.org/doi/10.1152/japplphysiol.00530.2025"
+      ],
+      "integrity_notes": "Published 2026-08-01 despite a 2025 suffix in the DOI; within cutoff. PROSPERO CRD420251042422 is stated in the paper."
+    }
+  ],
+  "findings": [
+    {
+      "claim": "The prior collision report's categorical claim that no recent systematic review uses an open-window framing is not supportable: Teodoro et al. (2025) explicitly frames whether acute exercise causes an open-window period and systematically maps acute/chronic Th1/Th2 markers in older adults. It is a narrow neighbor, not a full-scope duplicate.",
+      "source_ids": ["novelty-05"],
+      "certainty": "high",
+      "protocol_implication": "Replace ‘no review has addressed the open window’ with a qualified comparison: an older-adult Th1/Th2 systematic review directly discussed that framework, while the proposed review would map broader human exercise contexts, immune-marker classes and omics, and separately chart function, infection linkage and validation."
+    },
+    {
+      "claim": "Recent reviews already cover both the ncRNA immune-omics layer (Kotewitsch 2024) and the scoping-review/precision/athlete/omics combination (Bedrač 2024). Novelty cannot rest on being first to map exercise immune ncRNAs, first to use a scoping review, or first to map omics in athletes.",
+      "source_ids": ["novelty-02", "novelty-03"],
+      "certainty": "high",
+      "protocol_implication": "Differentiate through cross-layer synthesis in the post-exercise immune-perturbation context, explicit infection outcomes, time-resolved sampling and an evidence ladder from concentration/expression through immune function to clinical association and validated prediction."
+    },
+    {
+      "claim": "Marker change, immune function and infection incidence remain distinct endpoints. The B-cell review notes uncertain causal links; Davison et al. warns that ex-vivo marker shifts need not align with URTI risk; the marathon meta-analysis assesses symptoms without markers or pathogen confirmation.",
+      "source_ids": ["novelty-04", "novelty-06", "novelty-07"],
+      "certainty": "high",
+      "protocol_implication": "Retain separate charting fields for biomarker concentration/expression, functional assay, self-reported illness, medically assessed illness and pathogen-confirmed infection. Do not infer infection risk from a changed biomarker alone."
+    },
+    {
+      "claim": "Acute timing is a material scope decision: a 2026 systematic review restricts synthesis to samples within five minutes, while a 2026 NLR meta-analysis reports a different signal at 1–3 hours. A blanket exclusion of samples before 30 minutes would discard evidence needed to map immediate kinetics.",
+      "source_ids": ["novelty-09", "novelty-10"],
+      "certainty": "high",
+      "protocol_implication": "Remove the arbitrary under-30-minute exclusion or justify it against the research question. Chart exercise/≤5 min, 6–29 min, 30–60 min, 1–3 h, 3–24 h, >24 h and training-cycle periods separately; retain infection follow-up as a separate time scale."
+    },
+    {
+      "claim": "The nearest recent literature is fragmented by scope: immunometabolomics narrative synthesis (Minuzzi 2026), ncRNA systematics, conventional B-cell/Th1-Th2 reviews, broad inflammatory-marker umbrellas, acute myokine synthesis, and a clinical marathon-URTI meta-analysis. No single verified record in this limited public-web scan integrated these layers and outcomes together.",
+      "source_ids": ["novelty-01", "novelty-02", "novelty-04", "novelty-05", "novelty-07", "novelty-08", "novelty-09", "novelty-10"],
+      "certainty": "medium",
+      "protocol_implication": "Treat the remaining contribution as a provisional synthesis gap, not proof of a first-ever review. Recheck PROSPERO and databases with a librarian-built strategy immediately before protocol registration and again before manuscript submission."
+    },
+    {
+      "claim": "The collision report contains material citation/type errors: its Hacker et al. 2023 item is an original study in BioMed Research International (49 participants, repeat acute endurance trials, biomarkers and 24-h recovery/performance prediction), not a Translational Sports Medicine narrative review. Its ‘Immunometabolism’ reference misattributes authors: the article is Nieman, Lila and Gillitt (2019), not Nieman and Wentz.",
+      "source_ids": [],
+      "certainty": "high",
+      "protocol_implication": "Correct the reference list and classify Hacker et al. as original research. Treat its individual recovery prediction as adjacent evidence only: it did not validate infection-risk prediction. Verify every cited reference against PubMed/publisher metadata before retaining the previous collision report's conclusions."
+    },
+    {
+      "claim": "The prior collision report discloses ‘simulated databases’ rather than reproducible live database exports, and its 2026 re-assessment omits at least the 2025 Teodoro systematic review. Its ‘no collision/first review’ verdict therefore exceeds the evidence shown.",
+      "source_ids": ["novelty-05"],
+      "certainty": "high",
+      "protocol_implication": "Do not reuse the previous novelty claim as established fact. Mark novelty as provisional pending the formally documented multi-database restart search."
+    }
+  ],
+  "gaps": [
+    "No verified 2024–2026 source in this lane combines conventional immune indices and multi-omics candidates with human post-exercise time courses, immune-function assays, infection outcomes and individual predictive validation; the limited search cannot establish global absence.",
+    "Recent review evidence repeatedly separates immediate acute biomarker changes from chronic training adaptation, while the proposed protocol currently merges these unless charting strata are operationalized.",
+    "Clinical infection outcomes are measured in a narrow set of event-based studies and often rely on subjective symptom reporting; biomarker-to-infection associations and pathogen-confirmed prediction remain under-mapped.",
+    "Precision-biomarker claims need operational criteria: within-person repeatability, a defined target outcome, discrimination/calibration, external validation, and evidence that the candidate adds value over simple baselines."
+  ],
+  "proposed_updates": [
+    "Replace the protocol novelty paragraph's categorical ‘no existing review’ statement with a qualified table comparing Teodoro 2025, Kotewitsch 2024, Bedrač 2024, Minuzzi 2026, and the narrower marker/infection reviews.",
+    "Revise the 30-minute post-exercise exclusion. Include immediate samples when they characterize kinetics, but label phase bins and distinguish immediate concentration changes from later functional or clinical vulnerability.",
+    "Separate acute exercise challenges, repeated training/adaptation studies, competition/event cohorts, and resting cross-sectional comparisons. Do not treat them as one exposure or infer acute kinetics from chronic studies.",
+    "Keep healthy human participants as the core. Chart older adults as a prespecified subgroup; chart disease populations, animal/in-vitro evidence and non-human contexts separately or exclude them explicitly.",
+    "Add a two-level endpoint map: biological measures (counts, concentrations, transcript levels) versus demonstrated function (cytotoxicity, proliferation, mucosal function, pathogen response), then separately clinical infection associations and prediction/validation.",
+    "Operationalize ‘precision’: baseline-adjusted within-person variation, repeated-measure reliability, population subgroup/moderator analysis, predictive performance and external validation. Label candidates as mechanistic, responsive, function-linked, infection-associated or prediction-validated; do not treat them as equivalent.",
+    "Use a broad but explicit omics taxonomy: transcriptomics (including ncRNA), proteomics/extracellular vesicles, metabolomics/lipidomics/immunometabolomics and epigenomics; report when a study is multi-omics versus a single platform.",
+    "Before formal registration/search, verify review registrations including CRD42023408388, CRD42021245527, CRD42021244426, CRD42022380991, CRD42024535364, CRD420251042422 and CRD420251236842; identify any newly registered protocol through documented PROSPERO/database searches."
+  ],
+  "search_limitations": [
+    "This was a targeted public-web evidence check using search-engine results and opened PubMed/PMC, publisher and journal pages. It was not a full live search of PubMed/MEDLINE, Embase, Scopus, Web of Science or SPORTDiscus and did not generate reproducible database exports or PRISMA counts.",
+    "PROSPERO was checked through publicly indexed records and identifiers stated by papers, not through a complete saved registry export; lack of a surfaced matching protocol is not evidence none exists.",
+    "Some publisher pages were abstract-only or partially accessible; full-text claims were used only where a publisher/PMC full text was available. Sample sizes are null where the source did not state a total participant count.",
+    "A targeted correction/retraction search found no obvious notice for the reviewed records, but a comprehensive Crossmark, publisher and retraction-database audit was not performed."
+  ]
+}

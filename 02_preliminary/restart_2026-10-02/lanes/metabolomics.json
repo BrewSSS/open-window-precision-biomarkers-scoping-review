@@ -1,0 +1,416 @@
+{
+  "lane": "metabolomics",
+  "cutoff_date": "2026-10-02",
+  "searched_at_date": "2026-10-02",
+  "queries": [
+    {
+      "source": "Web search; public PubMed/PMC and publisher records",
+      "query": "acute exercise metabolomics immune multiomics human 2024 2025 exercise plasma metabolomics PBMC",
+      "date": "2026-10-02",
+      "notes": "Followed the Contrepois 2020 Cell study and searched for acute human exercise, blood/PBMC metabolomics, lipidomics and integrated immune assays. Search-engine access only; no claim of direct subscription-database searching."
+    },
+    {
+      "source": "Web search; public PubMed/PMC and publisher records",
+      "query": "exercise immunology lipidomics metabolomics human acute exercise multiomics 2024",
+      "date": "2026-10-02",
+      "notes": "Targeted searches for lipid mediator/oxylipin responses and immune functional readouts."
+    },
+    {
+      "source": "Web search; public PubMed/PMC and publisher records",
+      "query": "exercise immune metabolomics human endurance exercise PBMC metabolites infection prospective study",
+      "date": "2026-10-02",
+      "notes": "Searched for infection susceptibility/illness outcomes linked to exercise metabolomics, including athlete cohorts and training-camp illness."
+    },
+    {
+      "source": "Web search; public PubMed/PMC, bioRxiv and publisher records",
+      "query": "MoTrPAC human acute blood exercise plasma metabolomics proteomics transcriptomics 2026",
+      "date": "2026-10-02",
+      "notes": "Identified and verified the 2026 MoTrPAC human blood preprint and separately followed animal training results; verified v1/v2 dates with the public bioRxiv API."
+    },
+    {
+      "source": "Web search; public PubMed and publisher records",
+      "query": "exercise metabolomics infection risk athletes acute exercise prospective illness metabolomics",
+      "date": "2026-10-02",
+      "notes": "Found the 2024 cross-country-ski conference abstract; retained as an excluded boundary source because the protocol excludes conference abstracts absent a full paper."
+    },
+    {
+      "source": "Web search; PubMed/PMC and publisher indexing",
+      "query": "[study title] retraction correction erratum",
+      "date": "2026-10-02",
+      "notes": "Limited title-specific integrity searches for Contrepois, Walzik, Song and the MoTrPAC human preprint did not return a correction/retraction notice; this was not an exhaustive status audit."
+    }
+  ],
+  "sources": [
+    {
+      "id": "metab01",
+      "title": "Molecular Choreography of Acute Exercise",
+      "authors": "Kévin Contrepois et al.",
+      "year": 2020,
+      "publication_date": "2020-05-28",
+      "doi": "10.1016/j.cell.2020.04.043",
+      "pmid": "32470399",
+      "url": "https://doi.org/10.1016/j.cell.2020.04.043",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "population": "36 well-characterized adult volunteers; cohort includes insulin-resistant participants.",
+      "design": "Longitudinal acute exercise challenge with dense blood multi-omics and integrative analyses.",
+      "sample_size": "36",
+      "exercise_context": "Controlled symptom-limited cardiopulmonary exercise test.",
+      "sampling_times": "Pre-exercise and 2, 15, 30, and 60 minutes in recovery.",
+      "biomarkers": "Plasma untargeted metabolomics (728 metabolites), semi-targeted lipidomics (710 complex lipids), plasma proteomics/immunome, and PBMC transcriptomics.",
+      "key_finding": "Time-series integration identified coordinated early energy-metabolism, oxidative-stress and immune-response signals, followed by later homeostasis and repair. Many exercise responses were dampened or reversed in insulin-resistant participants. The study also developed models for fitness-related measures using resting analytes.",
+      "clinical_endpoint": "No infection incidence or post-exercise immune functional endpoint. Resting biomarkers were used to predict peak VO2/fitness measures, not infection susceptibility.",
+      "validation": "Multi-omic time-course and internal association/prediction analyses; no external validation of an infection-risk model and no pathogen challenge.",
+      "limitations": "Small cohort and short recovery follow-up; systemic metabolite/lipid changes are not themselves evidence of immune suppression or altered pathogen defense. Pathway integration does not establish that circulating metabolites mediate PBMC function.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "Abstract; Results, ‘Multi-omic changes in response to exercise’ and PBMC gene-expression sections; Methods, cohort and sampling design.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/32470399/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7299174/",
+        "https://www.sciencedirect.com/science/article/pii/S0092867420305080"
+      ],
+      "integrity_notes": "Bibliographic record and DOI verified through PubMed/PMC and publisher indexing. Limited title-specific notice search found no matching correction/retraction, not an exhaustive audit."
+    },
+    {
+      "id": "metab02",
+      "title": "Vitamin D status modulates innate immune responses and metabolomic profiles following acute prolonged cycling",
+      "authors": "Arwel W. Jones, Adrian Mironas, Luis A. J. Mur, Manfred Beckmann, Rhys Thatcher, Glen Davison",
+      "year": 2023,
+      "publication_date": "2023-07-17",
+      "doi": "10.1007/s00394-023-03181-1",
+      "pmid": "37458775",
+      "url": "https://doi.org/10.1007/s00394-023-03181-1",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "population": "23 healthy recreationally active men, age 25 ± 7 years; vitamin-D-deficient n=7 and non-deficient n=16.",
+      "design": "Acute prolonged exercise study stratified observationally by baseline vitamin D status; metabolomic and immune responses assessed within participants.",
+      "sample_size": "23",
+      "exercise_context": "2.5 hours of cycling at 15% delta (approximately 55–60% VO2max).",
+      "sampling_times": "Pre-exercise, immediately post-exercise, and 1 hour post-exercise for the reported metabolite/immune response measures.",
+      "biomarkers": "Plasma untargeted metabolomics; leukocyte counts; bacteria-stimulated neutrophil elastase release per neutrophil after ex-vivo stimulation with extracts of Staphylococcus aureus, Pseudomonas fluorescens and Enterobacter aerogenes; PMA-stimulated oxidative burst.",
+      "key_finding": "Low vitamin D status was associated with a larger post-exercise fall in bacteria-stimulated neutrophil degranulation (elastase) at 1 hour (-43% in deficient vs approximately no change in non-deficient participants) and with different metabolomic profiles, including purine/pyrimidine catabolites and linoleic-acid-related features.",
+      "clinical_endpoint": "Direct ex-vivo innate immune functional co-measurement: bacteria-stimulated neutrophil degranulation (elastase release per neutrophil); PMA-stimulated oxidative burst also measured. This is not a live-pathogen killing assay and there was no prospective infection endpoint.",
+      "validation": "Neutrophil function was measured alongside metabolomics in the same small cohort; the group-by-time neutrophil degranulation result is a functional co-measurement, not independent validation of a specific metabolite signature. No intervention/causal mediation, external replication or infection prediction.",
+      "limitations": "Small all-male sample; vitamin D status was not randomized and metabolites were not shown to mediate the functional response. Bacterial-extract-stimulated elastase release is an ex-vivo degranulation assay, not pathogen killing or clinical protection; no vitamin D intervention or prospective infection follow-up. Two-and-a-half-hour cycling is a specific prolonged endurance challenge.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "Abstract; Methods, neutrophil degranulation / oxidative burst assays and metabolomics; Results, neutrophil responses and plasma metabolomics.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/37458775/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10468936/",
+        "https://kar.kent.ac.uk/102289/"
+      ],
+      "integrity_notes": "DOI, publication date and abstract verified in PubMed; open full text and university repository also inspected. No correction/retraction conclusion claimed."
+    },
+    {
+      "id": "metab03",
+      "title": "The exercise metabolome: acute aerobic and anaerobic signatures",
+      "authors": "Joseph K. Pellegrino, Tracy G. Anthony, Peter Gillies, Shawn M. Arent",
+      "year": 2022,
+      "publication_date": "2022-10-11",
+      "doi": "10.1080/15502783.2022.2115858",
+      "pmid": "36250148",
+      "url": "https://doi.org/10.1080/15502783.2022.2115858",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "population": "40 healthy, physically active men and women.",
+      "design": "Within-participant acute comparison on separate days using discovery metabolomics.",
+      "sample_size": "40",
+      "exercise_context": "45 minutes of aerobic cycling and, on a separate day, resistance exercise.",
+      "sampling_times": "Rest, immediately after exercise, and 1 hour post-exercise.",
+      "biomarkers": "Serum untargeted metabolomics, including purine turnover, substrate catabolism/mobilization, fatty-acid use and features annotated to inflammatory signaling.",
+      "key_finding": "Both exercise modes changed the serum metabolome immediately after exercise, with broad movement toward baseline by 1 hour. Shared changes included purine metabolism, substrate mobilization and inflammatory-signaling annotations; aerobic exercise had greater lipid/substrate diversity and resistance exercise more purine turnover/glycolytic flux.",
+      "clinical_endpoint": "No immune-cell functional test, infection outcome, or clinical prediction.",
+      "validation": "Acute modality comparison only; no independent validation or immune functional confirmation.",
+      "limitations": "Useful metabolic time-course reference but immune relevance is pathway annotation, not measured immune dysfunction or pathogen defense. Follow-up ends at 1 hour.",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Abstract; Methods, exercise and blood sampling; Results, exercise-metabolome comparison.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/36250148/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9559054/",
+        "https://www.tandfonline.com/doi/10.1080/15502783.2022.2115858"
+      ],
+      "integrity_notes": "DOI and PMID verified through PubMed and full text."
+    },
+    {
+      "id": "metab04",
+      "title": "Regular moderate physical activity potentially accelerates and strengthens both the pro-inflammatory and pro-resolving lipid mediator response after acute exercise stress",
+      "authors": "Linda Malan, Lizelle Zandberg, Cindy Pienaar, Arista Nienaber, Lize Havemann-Nel",
+      "year": 2024,
+      "publication_date": "2024-03",
+      "doi": "10.1016/j.plefa.2024.102642",
+      "pmid": null,
+      "url": "https://doi.org/10.1016/j.plefa.2024.102642",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "population": "33 healthy men aged 18–35: 18 recreational runners and 15 less-active controls.",
+      "design": "Pre-post acute resistance challenge comparing habitual-activity groups.",
+      "sample_size": "33",
+      "exercise_context": "Unaccustomed multi-joint resistance exercise: three sets of 8–10 repetitions at 80% 1RM for squat, leg press and knee extension.",
+      "sampling_times": "Pre-exercise, immediately post, 1 hour, 2 hours, 24 hours and 72 hours.",
+      "biomarkers": "Plasma PUFA-derived lipid mediators 5-HETE, 15-HETE, 18-HEPE and 17-HDHA, plus leukocyte PTGES2 and ALOX15 expression.",
+      "key_finding": "Lipid-mediator and leukocyte gene-expression trajectories differed by habitual activity. 5- and 15-HETE changed over time in runners; 18-HEPE changed in both groups, and 17-HDHA evidence was borderline. The pattern suggests earlier or stronger mediator kinetics in runners but does not establish net immune suppression or resolution function.",
+      "clinical_endpoint": "No infection or immune-cell functional endpoint.",
+      "validation": "Within-study assay of genes and circulating lipids; no external cohort or predictive validation.",
+      "limitations": "Small all-male sample; runner/control grouping is non-randomized; eicosanoid-related concentrations and gene expression are proxies, not functional assays. Several tested lipid mediators did not show clear group-specific effects.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "Abstract; Methods, exercise protocol and blood collection; Results, mediator and gene-expression trajectories.",
+      "verification_urls": [
+        "https://doi.org/10.1016/j.plefa.2024.102642",
+        "https://repository.nwu.ac.za/items/b6365f3b-c9a2-4a87-9e87-ff2297a8ff86",
+        "https://repository.nwu.ac.za/bitstreams/71762a3e-cd55-4f9a-a505-2478dd127c17/download"
+      ],
+      "integrity_notes": "Journal DOI and the institutional repository abstract/full-text record verified. The PDF endpoint was inconsistently accessible through the search tool; bibliographic and study details were available in repository and publisher-indexed records."
+    },
+    {
+      "id": "metab05",
+      "title": "Acute exercise boosts NAD+ metabolism of human peripheral blood mononuclear cells",
+      "authors": "David Walzik et al.",
+      "year": 2025,
+      "publication_date": "2024-11-03",
+      "doi": "10.1016/j.bbi.2024.11.004",
+      "pmid": "39500416",
+      "url": "https://doi.org/10.1016/j.bbi.2024.11.004",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "population": "Trial 1: 24 healthy young recreational runners (12 female). Trial 2: 12 healthy young adults (6 female), with lower fitness than trial 1.",
+      "design": "Two complementary human acute-exercise studies: randomized crossover modality comparison and a separate high-temporal-resolution exercise trial.",
+      "sample_size": "36 across two separate trials (24 + 12); analysis sample counts vary by assay.",
+      "exercise_context": "Trial 1: time- and energy-matched treadmill HIIT versus moderate continuous running. Trial 2: 40-minute cycling at 60% VO2peak.",
+      "sampling_times": "Trial 1: baseline, immediately post and 1 hour post. Trial 2: baseline, after warm-up, exercise minutes 5, 10, 15 and 30, exercise cessation, and 1 hour post (eight timepoints).",
+      "biomarkers": "PBMC NAD+ pathway enzyme gene expression/protein and intracellular NAD+ metabolites; serum nicotinamide and related NAD+ metabolites.",
+      "key_finding": "Acute exercise increased PBMC NAMPT expression and intracellular NAD+; serum nicotinamide decreased. Trial 2 localized the strongest NAMPT-expression response to exercise itself, with detailed sampling showing pathway-specific timing. This is direct human immunometabolic measurement, but not an assay of antimicrobial function.",
+      "clinical_endpoint": "No ex-vivo immune effector assay, pathogen challenge, infection incidence or prediction model.",
+      "validation": "Direction of response was observed in two independent exercise trials within the same paper; no external research-group replication or infection outcome validation.",
+      "limitations": "Small cohorts, young adults, brief follow-up ending at 1 hour; metabolite/enzyme changes are mechanistic candidates and cannot be equated with improved or impaired host defense.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "Abstract; Results, PBMC NAD+ response in trials 1 and 2; Methods, acute exercise and blood/PBMC collection.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/39500416/",
+        "https://doi.org/10.1016/j.bbi.2024.11.004",
+        "https://eldorado.tu-dortmund.de/server/api/core/bitstreams/4d4d4d38-0c06-4c02-b69f-2b7d17cd4b1e/content"
+      ],
+      "integrity_notes": "PubMed abstract and open author-institution full text were checked; DOI, Epub date and trial details agree."
+    },
+    {
+      "id": "metab06",
+      "title": "Temporal dynamics of the multi-omic response to endurance exercise training",
+      "authors": "MoTrPAC Study Group and Lead Analysts",
+      "year": 2024,
+      "publication_date": "2024-05-01",
+      "doi": "10.1038/s41586-023-06877-w",
+      "pmid": "38693412",
+      "url": "https://doi.org/10.1038/s41586-023-06877-w",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "population": "Male and female Fischer 344 rats; animal model only, not a human training study.",
+      "design": "MoTrPAC progressive treadmill endurance-training experiment with multi-tissue, multi-omic analyses.",
+      "sample_size": null,
+      "exercise_context": "Eight-week progressive endurance training; tissue collection at training weeks 1, 2, 4 and 8; sedentary, sex-matched controls.",
+      "sampling_times": "Training timepoints 1, 2, 4 and 8 weeks; trained animals were sampled 48 hours after their last exercise bout.",
+      "biomarkers": "Metabolomics/lipidomics plus transcriptomics, proteomics, immunoassays, epigenomics and other platforms across whole blood, plasma and 18 solid tissues; 9,466 assays, 25 platforms, 19 tissues.",
+      "key_finding": "Training produced widespread tissue- and time-specific metabolic and immune-pathway changes, including inflammatory, tissue-remodeling and metabolic adaptations. This is a valuable hypothesis-generating resource for candidate pathways and time-course design.",
+      "clinical_endpoint": "No human clinical infection endpoint; immune pathway/analyte signals are measured in rats.",
+      "validation": "Public multi-omic data repository and some cross-species comparisons with published human exercise datasets; no validation as a human post-exercise infection biomarker.",
+      "limitations": "Animal training physiology, species and tissue differences prevent direct inference about the human open window. Training adaptation collected 48 hours after the final bout is distinct from a human acute post-bout time course.",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Abstract; Results, animal study design and training-regulated features; Methods and data availability.",
+      "verification_urls": [
+        "https://www.nature.com/articles/s41586-023-06877-w",
+        "https://doi.org/10.1038/s41586-023-06877-w",
+        "https://motrpac-data.org/"
+      ],
+      "integrity_notes": "Nature full text and DOI verified. Explicitly classified as animal evidence."
+    },
+    {
+      "id": "metab07",
+      "title": "Metabolomics Signatures of a Respiratory Tract Infection During an Altitude Training Camp in Elite Rowers",
+      "authors": "Félix Boudry, Fabienne Durand, Corentine Goossens",
+      "year": 2025,
+      "publication_date": "2025-06-17",
+      "doi": "10.3390/metabo15060408",
+      "pmid": "40559432",
+      "url": "https://doi.org/10.3390/metabo15060408",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "population": "27 elite rowers (15 male, 12 female) in an altitude camp; nine developed respiratory illness (eight COVID-19 and one bronchitis).",
+      "design": "Observational real-world training-camp illness comparison using repeated urine metabolomics and separate comparisons intended to distinguish illness from altitude/training effects.",
+      "sample_size": "27 total; illness comparison DS1 used 9 ill and 9 healthy-control samples/participants.",
+      "exercise_context": "12-day altitude training camp at 1,850 m; not a standardized acute exercise challenge.",
+      "sampling_times": "Daily urine samples; illness-day versus each athlete's day-1 baseline, plus asymptomatic day-1/day-3 and day-1/day-8 comparisons for altitude/training context.",
+      "biomarkers": "Urinary 1H-NMR metabolomics; illness-associated kynurenine, N-methylnicotinamide, pyroglutamate, propionate, N-formyltryptophan, tryptophan and glucose among highlighted features.",
+      "key_finding": "A small illness-day versus baseline model identified a candidate urinary metabolite profile distinct from early/prolonged altitude-training comparisons. For the illness comparison, cross-validated Q2 was 0.36; the study itself calls for larger confirmation.",
+      "clinical_endpoint": "Clinically reported respiratory illness during the camp; infection association is present, but the metabolites were not shown to predict illness prospectively before onset or to reflect a standardized post-bout window.",
+      "validation": "Internal cross-validation and permutation testing only; no independent external cohort or prospective pre-symptom validation.",
+      "limitations": "Only nine illness cases; illness-day samples may be after symptoms began; altitude, training load and infection timing are hard to separate; urine signatures do not establish immune-cell function or exercise-caused susceptibility.",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Abstract; Results, baseline characteristics and illness-vs-altitude/training datasets; Methods, daily urine collection and NMR.",
+      "verification_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12195379/",
+        "https://doi.org/10.3390/metabo15060408",
+        "https://pubmed.ncbi.nlm.nih.gov/40559432/"
+      ],
+      "integrity_notes": "Open full text, PubMed record and DOI checked. No external validation reported in the paper."
+    },
+    {
+      "id": "metab08",
+      "title": "Identification of biomarkers of illness incidence in national team cross-country skiers using metabolomics (BJSM abstract FO15)",
+      "authors": "Helen Hanstock, Öyvind Karlsson, Andrew Govus, Kerry McGawley",
+      "year": 2024,
+      "publication_date": "2024-02-29",
+      "doi": null,
+      "pmid": null,
+      "url": "https://bjsm.bmj.com/content/58/Suppl_2/A7.1",
+      "source_type": "conference_abstract",
+      "access_level": "abstract",
+      "population": "23 national-team cross-country skiers, 13 male and 10 female, age 21 ± 1; illness-susceptible n=14 and non-susceptible n=8 in the reported analyses.",
+      "design": "Prospective athlete cohort abstract with baseline/post-exercise metabolomics and 15-week illness diary follow-up using OSTRC-H.",
+      "sample_size": "23 enrolled; abstract reports 14 susceptible plus 8 non-susceptible in the analysis (one participant not represented in those group totals).",
+      "exercise_context": "Rest and post-maximal incremental exercise test; illness monitored during a 15-week training period.",
+      "sampling_times": "Rest and post-exercise; exact post-exercise interval not stated in the abstract.",
+      "biomarkers": "Capillary whole-blood targeted and untargeted liquid- and gas-chromatography metabolomics; 346 identified metabolites; resting glucose-6-phosphate, squalene and deoxycholic acid contributed to separation after feature selection.",
+      "key_finding": "A resting metabolite classifier was significant only after restricting features to VIP>1; no significant OPLS-DA model was achieved for metabolite responses to exercise. Pathway enrichment showed no significant activity differences.",
+      "clinical_endpoint": "Prospectively recorded illness incidence, but not a peer-reviewed full-paper analysis in this record.",
+      "validation": "No independent validation; exercise-response model not significant; internal feature selection risks optimism.",
+      "limitations": "Conference abstract only and therefore excluded by the current protocol unless a peer-reviewed full paper is located; small cohort, abstract-level methods, and no post-exercise prediction signal.",
+      "scope_fit": "exclude",
+      "evidence_anchor": "Conference abstract, design, results and conclusion.",
+      "verification_urls": [
+        "https://bjsm.bmj.com/content/58/Suppl_2/A7.1"
+      ],
+      "integrity_notes": "BJSM abstract page verified. Search did not identify a peer-reviewed full paper under this exact title; this does not prove one is absent."
+    },
+    {
+      "id": "metab09",
+      "title": "Blood Biochemical Responses to Acute Exercise: Findings from the Molecular Transducers of Physical Activity Consortium (MoTrPAC)",
+      "authors": "Jeremy M. Robbins et al.; MoTrPAC Study Group",
+      "year": 2026,
+      "publication_date": "2026-03-11",
+      "doi": "10.64898/2026.03.02.704798",
+      "pmid": "41835387",
+      "url": "https://doi.org/10.64898/2026.03.02.704798",
+      "source_type": "preprint",
+      "access_level": "full_text",
+      "population": "Sedentary adults in the pre-COVID MoTrPAC cohort. 176 completed the baseline acute test (EE n=66, RE n=73, CON n=37); 175 had at least one biospecimen and comprise the reported baseline analytic cohort (EE n=65, RE n=73, CON n=37). Mean age 41±15 years; 72% female. The post-training repeat cohort was much smaller.",
+      "design": "Randomized, multi-center endurance exercise / resistance exercise / non-exercise control acute-bout blood profiling; the paper reports cross-omic feature/time/mode analyses and baseline CCA of plasma metabolites with exercise/clinical traits. This is a bioRxiv preprint, current PMC record Version 2, and is listed separately as frontier evidence rather than peer-reviewed core evidence.",
+      "sample_size": "176 completed baseline acute test (EE 66, RE 73, CON 37); 175 with ≥1 biospecimen / baseline analytic cohort (EE 65, RE 73, CON 37). Omics subsets: plasma metabolomics n=175 participants; whole-blood transcriptomics n=173; Olink plasma proteomics n=44 participants. Olink generated 378 repeated samples across 9 plates; 4 samples from 3 participants were excluded, so 374 samples remained for analysis. After QC/annotation: 1,141 plasma metabolites, 20,524 whole-blood transcripts and 1,417 plasma proteins. 45 completed a post-intervention acute retest and 44 had biospecimen collections; these follow-up omics data were not analyzed in this preprint due to low N/confounding.",
+      "exercise_context": "Baseline 40-minute cycling at approximately 65% VO2peak or multi-exercise resistance work to volitional fatigue; non-exercise supine control.",
+      "sampling_times": "Baseline and acute session sampling up to 7 timepoints over 24 h; pre-exercise; EE and CON also at 20 and 40 min; recovery at about 10 min, 30 min, 3.5 h and 24 h, with the schedule depending on randomized group/time profile. Not every participant contributes to every timepoint/omics assay.",
+      "biomarkers": "Plasma LC-MS metabolomics (1,141 metabolites across 4 targeted and 6 untargeted platforms; n=175 participants), PAXgene whole-blood transcriptomics (20,524 transcripts; n=173), and Olink plasma proteomics (1,417 proteins; n=44 participants / 378 repeated samples before exclusion of 4 sample outliers from 3 participants). 7,066 transcripts, 189 proteins and 448 metabolites were differentially abundant vs non-exercise control. Cross-omic and time/mode comparisons were performed, but assay coverage was unbalanced; baseline metabolome was also integrated with clinical/exercise phenotypes by CCA.",
+      "key_finding": "The study reports temporal and modality-dependent blood responses across transcriptomic, plasma protein and metabolite data; many analytes changed over time in controls too. RNA-based immune-cell/pathway signatures (including early NK/CD8, neutrophil and broader immune-effector annotations) and lipid-metabolic features are hypothesis-generating; the study did not measure immune-cell effector function or pathogen defense. Cross-omic breadth does not make every signal a jointly validated immune biomarker.",
+      "clinical_endpoint": "No infection incidence, pathogen challenge, vaccine response or direct immune effector-function outcome. Whole-blood transcriptomic signals cannot fully distinguish cell-composition shifts from per-cell activation; targeted Olink coverage constrained enrichment analysis.",
+      "validation": "Randomized exercise/control contrast, repeated sampling and multi-omic analysis within one cohort; no independent cohort validation and no infection-risk prediction. The small post-training data (45 retests / 44 biospecimen collections) were not analyzed.",
+      "limitations": "Preprint, not peer reviewed as of 2026-10-02. Assay subsets differ sharply (metabolomics 175, transcriptomics 173, Olink proteomics 44 participants), and repeated Olink sample count is not participant count; several timepoint/group cells are small. Whole-blood RNA is sensitive to cell mobilization and cannot unambiguously identify per-cell activation; no direct PBMC/neutrophil function or clinical infection endpoint. Baseline analytic cohort was sedentary, pre-COVID and not representative of trained athletes; acute exercise prescription is specific.",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Current PMC/bioRxiv Version 2; Abstract; Results, research design/clinical characteristics and analyte/time-course findings; STAR Methods, omics sample sizes, sampling and Olink QC.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41835387/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12980391/",
+        "https://www.biorxiv.org/content/10.64898/2026.03.02.704798v2.full",
+        "https://doi.org/10.64898/2026.03.02.704798",
+        "https://api.biorxiv.org/details/biorxiv/2026-03-04/2026-03-04/120",
+        "https://api.biorxiv.org/details/biorxiv/2026-03-11/2026-03-11/60"
+      ],
+      "integrity_notes": "The public bioRxiv version API records Version 1 posted 2026-03-04 and Version 2 posted 2026-03-11; current PMC full text is explicitly labeled [Version 2]. DOI 10.64898/2026.03.02.704798 is the versioned record identifier without a v2 suffix. This is a preprint and had not been peer reviewed as of the cutoff; keep in a separate frontier/preprint table, not the peer-reviewed core."
+    },
+    {
+      "id": "metab10",
+      "title": "Multiomics profiling identifies molecular and cellular signatures of regular exercise in human peripheral blood",
+      "authors": "Xuemei Song et al.",
+      "year": 2026,
+      "publication_date": "2026-09-18",
+      "doi": "10.1126/sciadv.aeh0260",
+      "pmid": "42758809",
+      "url": "https://doi.org/10.1126/sciadv.aeh0260",
+      "source_type": "original_study",
+      "access_level": "abstract",
+      "population": "86 non-obese adults ages 20–40 in the Chinese Immune Multi-Omics Atlas reanalysis: 40 self-reported regular exercisers and 46 sedentary controls.",
+      "design": "Cross-sectional comparison of habitual activity groups using existing cohort blood data; no exercise intervention or acute post-bout sampling.",
+      "sample_size": "86",
+      "exercise_context": "Regular exercise exposure defined by self-reported habitual activity; fasting morning plasma and immune-cell profiles compared between groups.",
+      "sampling_times": "Single fasting morning blood collection; no exercise-linked time course reported.",
+      "biomarkers": "Plasma metabolomics and lipidomics integrated with single-cell PBMC transcriptomics and chromatin-accessibility profiles.",
+      "key_finding": "Regular exercise was associated with plasma signatures consistent with fatty-acid oxidation and antioxidant metabolism, alongside APC antigen-presentation transcription/accessibility and epigenetic priming of CD8 cytotoxic T and mature NK-cell effector programs. Cell-cell communication analyses inferred greater MHC-I/II signaling and lower inflammatory networks.",
+      "clinical_endpoint": "No acute immune function assay, pathogen challenge, or prospective infection outcome; intercellular communication and effector readiness are molecular/inferred features.",
+      "validation": "Multi-layer concordance within existing cohort data; no longitudinal training intervention or external infection-risk validation.",
+      "limitations": "Cross-sectional exposure, small selected sample and self-reported activity; causality/direction cannot be established. This informs training-associated immune phenotype but does not map the acute open-window trajectory.",
+      "scope_fit": "context_only",
+      "evidence_anchor": "PubMed abstract; publication date and DOI; sample details verified against the study authors' institutional report.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42758809/",
+        "https://www.science.org/doi/10.1126/sciadv.aeh0260",
+        "https://en.genomics.cn/en-scientificdiscoverie-7638.html"
+      ],
+      "integrity_notes": "Peer-reviewed journal metadata and abstract verified in PubMed; exact group counts and CIMA reanalysis details checked against the authors' institutional report."
+    }
+  ],
+  "findings": [
+    {
+      "claim": "The most direct metabolomics-to-immune-function human evidence in this set is the small Jones et al. study: prolonged cycling, vitamin D stratification, plasma metabolomics and bacteria-stimulated neutrophil degranulation were measured together. It gives a plausible signal of effect modification, but does not show that the metabolite pattern causes dysfunction or predicts infection.",
+      "source_ids": [
+        "metab02"
+      ],
+      "certainty": "moderate for the measured within-study association; low for causal or predictive interpretation",
+      "protocol_implication": "Separate metabolite abundance/pathway association from a directly measured immune function assay; extract the function assay's stimulus, cell type, and post-bout timepoint."
+    },
+    {
+      "claim": "Acute human exercise metabolomics is dynamic and often dominated by generic energetic, purine, lipid-substrate and stress responses. Contrepois and Pellegrino show immediate-to-1-hour trajectories, while the MoTrPAC human preprint maps additional time- and mode-dependent analytes out to 24 hours; this does not by itself establish an open-window deficit.",
+      "source_ids": [
+        "metab01",
+        "metab03",
+        "metab09"
+      ],
+      "certainty": "high for temporal blood-metabolome perturbation; low for immune functional meaning",
+      "protocol_implication": "Chart raw metabolite classes, tissue source and time since exercise separately from immune pathway annotation or measured immune function."
+    },
+    {
+      "claim": "Lipid mediators and NAD+ pathway metabolites are promising immune-adjacent candidates with actual human blood/PBMC measurements. Current studies are small, stop by 72 hours (lipid mediators) or 1 hour (NAD+), and lack infection or pathogen-defense validation.",
+      "source_ids": [
+        "metab04",
+        "metab05"
+      ],
+      "certainty": "moderate for observed molecular responses; low for implications to infection susceptibility",
+      "protocol_implication": "Use separate candidate classes for systemic lipid mediators and cell-intrinsic PBMC metabolites; record whether any downstream response was directly assayed."
+    },
+    {
+      "claim": "There are emerging infection-linked metabolomics observations, but they do not yet establish validated post-exercise prediction: the 2025 rower study detects illness-day urine differences in nine cases; the 2024 skier conference abstract reports a resting model but no significant exercise-response model and is ineligible under the current source-type rule.",
+      "source_ids": [
+        "metab07",
+        "metab08"
+      ],
+      "certainty": "low",
+      "protocol_implication": "Extract infection timing/definition, whether samples precede symptoms, prospective follow-up, model validation and sensitivity/specificity. Keep conference abstracts out of the included-source evidence set unless a full paper is found."
+    },
+    {
+      "claim": "MoTrPAC materially expands multi-omic discovery resources, but the evidence type matters: its 2024 training atlas is rat-only; the 2026 acute human blood analysis is a preprint and still lacks direct immune function or infection outcomes; the 2026 regular-exercise immune atlas is cross-sectional rather than an acute challenge.",
+      "source_ids": [
+        "metab06",
+        "metab09",
+        "metab10"
+      ],
+      "certainty": "high for the stated study designs and omic breadth; low for application to acute infection vulnerability",
+      "protocol_implication": "Maintain explicit design/species/publication-status strata and do not combine these sources as equivalent human acute-window evidence."
+    }
+  ],
+  "gaps": [
+    "Few studies co-measure untargeted/targeted metabolomics with cell-specific immune functional assays after acute exercise; most multi-omics integrates molecular layers but not a functional infection-defense outcome.",
+    "Prospective infection incidence is rarely paired with acute pre/post-exercise metabolite sampling. The 2024 skier report located here is conference-abstract-only and its post-exercise model was non-significant; the 2025 rower illness samples may follow symptom onset.",
+    "Follow-up to 24–72 hours is uncommon in large human metabolomics datasets, while immediate changes can be transient and resolution kinetics can differ by modality, fitness and participant status.",
+    "Analytical platforms, metabolite identification confidence, pathway annotations, food/fasting control, plasma-volume shifts and exercise-dose reporting vary substantially.",
+    "The newest habitual-exercise immune multi-omics evidence is cross-sectional and cannot separate training adaptation from selection, diet, body composition or reverse causality."
+  ],
+  "proposed_updates": [
+    "Keep acute-bout challenge and longitudinal training as separate evidence strata; add a separate stratum for habitual-activity cross-sectional studies and label all animal studies distinctly.",
+    "Reframe the 30-minute rule: include a study when it has at least one post-bout observation at or beyond 30 minutes, but preserve immediate/0–10-minute samples as early kinetics. Studies ending before 30 minutes can be excluded or listed as boundary evidence; do not discard an otherwise eligible study merely because it also samples immediately.",
+    "Require every multi-omics record to state which assay was applied to which matrix/cell type and whether layers were statistically integrated, merely measured in parallel, or tied to an immune functional outcome.",
+    "Use a tiered evidence map: molecular abundance or enrichment; direct immune-cell function; prospective infection association; externally validated prediction. Never promote pathway enrichment, inferred signaling, or cell counts to functional suppression or infection prediction.",
+    "Prespecify charting of exercise modality, dose/intensity and relative intensity, training status, sex, nutritional/fasting controls, collection matrix, exact sampling times, metabolite assay/annotation confidence, cell composition, plasma-volume correction, and immune assay stimulus/readout.",
+    "For infection studies, chart the infection case definition, ascertainment method, onset relative to exercise and sample collection, event follow-up duration, model development/validation split, calibration/discrimination and external replication."
+  ],
+  "search_limitations": [
+    "This is a targeted public-web evidence scan, not formal database searching or the registered scoping review. PubMed/PMC and publisher records were surfaced via web search; no subscription database export, duplicate removal, screening log or exhaustive citation chaining was performed.",
+    "Some PMC pages and ScienceDirect/repository endpoints intermittently returned CAPTCHA, 403, 401 or timeout responses; PubMed abstracts, publisher search-indexed text, institutional repositories and publicly indexed full-text records were used to verify the included details.",
+    "The MoTrPAC acute human blood paper was identified as a bioRxiv preprint as of the cutoff and must remain labeled preprint unless a peer-reviewed version available by 2026-10-02 is confirmed in the formal restart.",
+    "A limited title-specific retraction/correction search was run for selected key records and returned no notice; this does not constitute an exhaustive integrity check across all records or databases.",
+    "The BJSM skier metabolomics report is a conference abstract. It is shown as an excluded boundary record because the supplied protocol excludes abstracts without peer-reviewed full-text versions; a formal search should check for a subsequent full paper."
+  ]
+}

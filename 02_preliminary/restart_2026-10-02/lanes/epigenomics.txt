@@ -1,0 +1,35 @@
+# Epigenomics lane — restart evidence notes (cutoff 2026-10-02)
+
+## Main findings
+
+1. Human immune-cell epigenomics evidence is real but sparse. The clearest acute cell-specific DNAm evidence is a five-woman sorted-NK pilot: 33 FDR-corrected CpGs changed one minute after a short cycling test, but the authors did not measure gene expression or NK killing. A separate healthy-women study linked acute KIR2DS4 promoter demethylation with RNA increase, yet did not test NK cytotoxicity. These are molecular associations, not demonstrated immune protection. [Schenk et al. 2019](https://pmc.ncbi.nlm.nih.gov/articles/PMC6562781/), [Schenk et al. 2019 KIR study](https://pubmed.ncbi.nlm.nih.gov/30508863/)
+
+2. CIMA is a valuable, close adjacent study and should be included in a distinct habitual-training/context layer. The formal [Science Advances article](https://pubmed.ncbi.nlm.nih.gov/42758809/) compares 40 regular exercisers with 46 sedentary adults from the CIMA cohort, using scRNA-seq and scATAC-seq on a large number of circulating immune cells. This is a one-time cross-sectional comparison, not an exercise intervention, acute recovery profile, or infection study. Its “epigenetic preactivation” label reflects chromatin/transcription patterns; no ex-vivo challenge, cytotoxicity or infection endpoint is reported. Count the [bioRxiv preprint](https://www.biorxiv.org/content/10.64898/2026.01.13.699221v2) as the same study/version lineage, not as an independent source. The formal title and preprint title differ slightly; authors, CIMA population, modalities and central findings match.
+
+3. A new [2026 high-performance swimmer study](https://pubmed.ncbi.nlm.nih.gov/42285772/) reports immediate pre/post whole-blood methylation differences after two exercise intensities, including immune-related promoter regions. It is an acute blood biomarker candidate, but only n=10, includes ages 16–24, and does not assay sorted immune cells or immune function. Treat whole-blood signals as mixed-cell data even though estimated major cell proportions were described as relatively stable.
+
+4. Longitudinal human training work provides weak-to-moderate evidence of peripheral leukocyte methylome change, but is small and mostly not immune-function focused. Four weeks of sprint interval training and eight weeks of resistance training were each studied in 8–12 healthy young men, with resting white-cell methylation before/after. The latter reported immune-pathway enrichment; neither establishes infection protection or durable immune memory. [Denham et al. 2015](https://pubmed.ncbi.nlm.nih.gov/25539938/), [Denham et al. 2016](https://pubmed.ncbi.nlm.nih.gov/27155847/)
+
+5. Do not call human exercise evidence “trained immunity” yet. The direct exercise–ATAC–LPS functional study is in mice: 8 weeks of training altered BMDM accessibility and metabolism and dampened LPS inflammatory responses. That is important mechanistic context, but the lower LPS response may indicate tolerance/anti-inflammatory adaptation and is not the canonical enhanced heterologous secondary response used to define trained immunity. A 2026 review explicitly identifies direct demonstration of exercise-induced classical trained immunity as a gap. [Murugathasan et al. 2023](https://pubmed.ncbi.nlm.nih.gov/37306389/)
+
+## Most useful evidence and the main counterweight
+
+- The closest recent competitor for broad human immune epigenomics is CIMA (formal publication 2026-09-18; DOI 10.1126/sciadv.aeh0260; PMID 42758809). Include as a cross-sectional long-term activity association, not as acute open-window evidence or functional validation.
+- The most directly relevant human cell-specific acute data are the sorted-NK methylation pilot and the KIR2DS4 promoter/RNA study. Both need the caveat that no immune killing assay ties methylation to function.
+- The strongest counterweight to claims of widespread acute blood epigenetic change is the [2026 systematic review of 29 human peripheral-blood exercise studies](https://link.springer.com/article/10.1186/s13148-026-02123-y): acute changes were generally small/transient and often nonsignificant, and studies were heterogeneous. Its search ended 2025-05-29, so it misses CIMA and the 2026 swimmer paper.
+- A 2025 healthy-male trial used cfDNA EM-seq, immune-cell origin deconvolution and 90 cytokines across training and detraining. It is useful for circulating DNA/cell-release markers, but cfDNA is not an intrinsic methylome or chromatin memory in intact immune cells. [Rodrigues et al. 2025](https://pubmed.ncbi.nlm.nih.gov/39805013/)
+
+## Protocol updates
+
+- Keep epigenomics, but split DNA methylation, histone/chromatin accessibility (including scATAC), cfDNA methylation/cell-of-origin, and trained-immunity claims into separate evidence classes.
+- Do not exclude sampling within 30 minutes. The informative human methylation studies sample immediately or at 1 minute; preserve the exact sampling time and stratify immediate (≤30 min), early recovery (>30 min to hours), delayed (≥24 h), training pre/post, and detraining/retraining.
+- Add fields for blood matrix (whole blood, leukocytes, PBMC, sorted subset, cfDNA), cell purification/markers, cell-composition adjustment, platform/coverage, CpG/regions and multiple-testing method, concurrent RNA/protein/metabolites, and whether the same locus was functionally tested.
+- Separate “epigenetic change,” “transcript concordance,” “cellular immune function,” and “clinical infection/vaccine outcome.” A chromatin-accessibility signal or computational ligand–receptor inference does not establish pathogen response.
+- For trained immunity, require first stimulus, stimulus washout/rest interval, heterologous secondary challenge, persistence, and a functional response. Otherwise label as priming, adaptation, or tolerance-compatible/uncertain.
+- Record CIMA once under the formal Science Advances publication. Keep its bioRxiv preprint URL as version metadata. Include the formal study as context-only for long-term habitual exercise, outside acute open-window evidence.
+
+## Search boundary and files
+
+I searched public PubMed, PMC, GEO, journal/publisher pages, bioRxiv and author-institution material; I did not run a subscription-database export. Science.org and bioRxiv full-text fetches returned 403 in this session, so CIMA design details were cross-checked through PubMed and the authors’ institutional news item. I also found a 2026 women’s “immune cell-associated methylation” paper (PMID 41412308), but it reanalyzes two public whole-blood exercise datasets with estimated cell fractions and is not independent sorted-cell evidence.
+
+Files: `02_preliminary/restart_2026-10-02/lanes/epigenomics.json` and `02_preliminary/restart_2026-10-02/lanes/epigenomics.txt`.

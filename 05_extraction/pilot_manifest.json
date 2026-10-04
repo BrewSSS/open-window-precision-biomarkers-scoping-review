@@ -1,0 +1,282 @@
+{
+  "status": "Proposed purposive charting calibration only; not completed screening and not the random 50-record screening agreement pilot. Human decisions are blank.",
+  "date": "2026-10-02",
+  "n_items": 10,
+  "selection_source": "02_preliminary/restart_2026-10-02/pilot_manifest.json",
+  "notes": [
+    "Reference and lane entry IDs point to current restart ledger/lanes.",
+    "R01 and R19 link multiple lane rows about the same report; do not double count.",
+    "This list is not a formal included-study count.",
+    "R42 is the pooled-urine training boundary/background example under the v2 contract; pilot selection does not imply A/B eligibility."
+  ],
+  "items": [
+    {
+      "pilot_item_id": "pilot_01",
+      "reference_id": "R59",
+      "title": "Salivary immunity and lower respiratory tract infections in non-elite marathon runners",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0206059",
+      "lane_links": [
+        {
+          "lane_file": "lanes/traditional.json",
+          "lane_entry_id": "traditional-10",
+          "ledger_lane_id": "traditional-10",
+          "source_locator_in_restart": "Full text: Methods, Subjects/Case definition, Saliva collection; Results sections Salivary IgA and Lower respiratory tract infections; Discussion limitations."
+        }
+      ],
+      "pilot_purpose": "感染症状定义与采样先后",
+      "status": "not_started",
+      "reviewer_A_decision": null,
+      "reviewer_B_decision": null,
+      "consensus_decision": null,
+      "reviewer_A_extraction": null,
+      "reviewer_B_extraction": null,
+      "adjudication": null,
+      "source_locations": [],
+      "minutes_per_reviewer": null,
+      "unresolved_questions": []
+    },
+    {
+      "pilot_item_id": "pilot_02",
+      "reference_id": "R56",
+      "title": "Anxiety and Mood Disturbance Are Prospectively Associated With Respiratory Infection Risk and the Mucosal Immune Response to Exercise",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12480926/",
+      "lane_links": [
+        {
+          "lane_file": "lanes/traditional.json",
+          "lane_entry_id": "traditional-07",
+          "ledger_lane_id": "traditional-07",
+          "source_locator_in_restart": "Abstract; Study 1/Study 2 Methods and Results in PubMed Central record."
+        }
+      ],
+      "pilot_purpose": "sIgA阴性结果与多个子研究",
+      "status": "not_started",
+      "reviewer_A_decision": null,
+      "reviewer_B_decision": null,
+      "consensus_decision": null,
+      "reviewer_A_extraction": null,
+      "reviewer_B_extraction": null,
+      "adjudication": null,
+      "source_locations": [],
+      "minutes_per_reviewer": null,
+      "unresolved_questions": []
+    },
+    {
+      "pilot_item_id": "pilot_03",
+      "reference_id": "R61",
+      "title": "Single-Cell RNA Sequencing Analysis Reveals Exercise-Induced Transcriptional Dynamics in Half-Marathon Runners",
+      "url": "https://doi.org/10.1111/sms.70018",
+      "lane_links": [
+        {
+          "lane_file": "lanes/transcriptomics.json",
+          "lane_entry_id": "tr02",
+          "ledger_lane_id": "tr02",
+          "source_locator_in_restart": "Full-text Methods 2.1 (enrollment/sampling; PDF p.1), Results (QC exclusion; PDF p.2), Methods 2.5 (paired pseudo-bulk; PDF p.2), and Data Availability Statement."
+        }
+      ],
+      "pilot_purpose": "单细胞供者数与质控",
+      "status": "not_started",
+      "reviewer_A_decision": null,
+      "reviewer_B_decision": null,
+      "consensus_decision": null,
+      "reviewer_A_extraction": null,
+      "reviewer_B_extraction": null,
+      "adjudication": null,
+      "source_locations": [],
+      "minutes_per_reviewer": null,
+      "unresolved_questions": []
+    },
+    {
+      "pilot_item_id": "pilot_04",
+      "reference_id": "R62",
+      "title": "Endurance training attenuates acute exercise-induced monocyte transcriptomic responses in adolescents: sex-specific molecular adaptations",
+      "url": "https://doi.org/10.1152/japplphysiol.00282.2026",
+      "lane_links": [
+        {
+          "lane_file": "lanes/transcriptomics.json",
+          "lane_entry_id": "tr04",
+          "ledger_lane_id": "tr04",
+          "source_locator_in_restart": "Abstract; Methods: Study Design, Blood Sampling and Analysis, Library Construction, Bioinformatic Analysis; Results; Data Availability; GEO GSE324210."
+        }
+      ],
+      "pilot_purpose": "青少年训练前后急性挑战",
+      "status": "not_started",
+      "reviewer_A_decision": null,
+      "reviewer_B_decision": null,
+      "consensus_decision": null,
+      "reviewer_A_extraction": null,
+      "reviewer_B_extraction": null,
+      "adjudication": null,
+      "source_locations": [],
+      "minutes_per_reviewer": null,
+      "unresolved_questions": []
+    },
+    {
+      "pilot_item_id": "pilot_05",
+      "reference_id": "R46",
+      "title": "Immunological Protein Signature During Acute Exercise",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12615995/",
+      "lane_links": [
+        {
+          "lane_file": "lanes/proteomics.json",
+          "lane_entry_id": "proteomics_05",
+          "ledger_lane_id": "proteomics_05",
+          "source_locator_in_restart": "Abstract and Methods (Participants, exercise, blood-sampling schedule, Olink panel); Results (time-dependent proteins and exploratory model)."
+        }
+      ],
+      "pilot_purpose": "靶向蛋白动力学与共享队列",
+      "status": "not_started",
+      "reviewer_A_decision": null,
+      "reviewer_B_decision": null,
+      "consensus_decision": null,
+      "reviewer_A_extraction": null,
+      "reviewer_B_extraction": null,
+      "adjudication": null,
+      "source_locations": [],
+      "minutes_per_reviewer": null,
+      "unresolved_questions": []
+    },
+    {
+      "pilot_item_id": "pilot_06",
+      "reference_id": "R42",
+      "title": "Identification of Urinary Biomarkers for Exercise-Induced Immunosuppression by iTRAQ Proteomics",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7003279/",
+      "lane_links": [
+        {
+          "lane_file": "lanes/proteomics.json",
+          "lane_entry_id": "proteomics_01",
+          "ledger_lane_id": "proteomics_01",
+          "source_locator_in_restart": "Full-text Methods (Participants, training protocol, sample collection, proteomics, ELISA) and Results (immune indices, urinary protein candidates); Abstract for reported outcomes."
+        }
+      ],
+      "pilot_purpose": "混合尿样、技术重复与运动—采样时序边界（按v2契约先作背景校准；仅全文澄清事件与时间关系后再评估A/B资格）",
+      "status": "not_started",
+      "reviewer_A_decision": null,
+      "reviewer_B_decision": null,
+      "consensus_decision": null,
+      "reviewer_A_extraction": null,
+      "reviewer_B_extraction": null,
+      "adjudication": null,
+      "source_locations": [],
+      "minutes_per_reviewer": null,
+      "unresolved_questions": []
+    },
+    {
+      "pilot_item_id": "pilot_07",
+      "reference_id": "R12",
+      "title": "Vitamin D status modulates innate immune responses and metabolomic profiles following acute prolonged cycling",
+      "url": "https://doi.org/10.1007/s00394-023-03181-1",
+      "lane_links": [
+        {
+          "lane_file": "lanes/metabolomics.json",
+          "lane_entry_id": "metab02",
+          "ledger_lane_id": "metab02",
+          "source_locator_in_restart": "Abstract; Methods, neutrophil degranulation / oxidative burst assays and metabolomics; Results, neutrophil responses and plasma metabolomics."
+        }
+      ],
+      "pilot_purpose": "代谢组与直接免疫功能共测",
+      "status": "not_started",
+      "reviewer_A_decision": null,
+      "reviewer_B_decision": null,
+      "consensus_decision": null,
+      "reviewer_A_extraction": null,
+      "reviewer_B_extraction": null,
+      "adjudication": null,
+      "source_locations": [],
+      "minutes_per_reviewer": null,
+      "unresolved_questions": []
+    },
+    {
+      "pilot_item_id": "pilot_08",
+      "reference_id": "R03",
+      "title": "Impact of Acute Aerobic Exercise on Genome-Wide DNA-Methylation in Natural Killer Cells—A Pilot Study",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6562781/",
+      "lane_links": [
+        {
+          "lane_file": "lanes/epigenomics.json",
+          "lane_entry_id": "epi_03",
+          "ledger_lane_id": "epi_03",
+          "source_locator_in_restart": "Abstract；Methods 2.1–2.7；Results 3.2；Discussion 4.1–4.3。"
+        }
+      ],
+      "pilot_purpose": "分选NK细胞甲基化与即刻采样",
+      "status": "not_started",
+      "reviewer_A_decision": null,
+      "reviewer_B_decision": null,
+      "consensus_decision": null,
+      "reviewer_A_extraction": null,
+      "reviewer_B_extraction": null,
+      "adjudication": null,
+      "source_locations": [],
+      "minutes_per_reviewer": null,
+      "unresolved_questions": []
+    },
+    {
+      "pilot_item_id": "pilot_09",
+      "reference_id": "R01",
+      "title": "Multiomics profiling identifies molecular and cellular signatures of regular exercise in human peripheral blood",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42758809/",
+      "lane_links": [
+        {
+          "lane_file": "lanes/epigenomics.json",
+          "lane_entry_id": "epi_01",
+          "ledger_lane_id": "epi_01",
+          "source_locator_in_restart": "PubMed Abstract；BGI Research study-design news (2026-09-19)。"
+        },
+        {
+          "lane_file": "lanes/metabolomics.json",
+          "lane_entry_id": "metab10",
+          "ledger_lane_id": "metab10",
+          "source_locator_in_restart": "PubMed abstract; publication date and DOI; sample details verified against the study authors' institutional report."
+        }
+      ],
+      "pilot_purpose": "静息横断面背景及预印本版本合并",
+      "status": "not_started",
+      "reviewer_A_decision": null,
+      "reviewer_B_decision": null,
+      "consensus_decision": null,
+      "reviewer_A_extraction": null,
+      "reviewer_B_extraction": null,
+      "adjudication": null,
+      "source_locations": [],
+      "minutes_per_reviewer": null,
+      "unresolved_questions": []
+    },
+    {
+      "pilot_item_id": "pilot_10",
+      "reference_id": "R19",
+      "title": "Blood Biochemical Responses to Acute Exercise: Findings from the Molecular Transducers of Physical Activity Consortium (MoTrPAC)",
+      "url": "https://doi.org/10.64898/2026.03.02.704798",
+      "lane_links": [
+        {
+          "lane_file": "lanes/metabolomics.json",
+          "lane_entry_id": "metab09",
+          "ledger_lane_id": "metab09",
+          "source_locator_in_restart": "Current PMC/bioRxiv Version 2; Abstract; Results, research design/clinical characteristics and analyte/time-course findings; STAR Methods, omics sample sizes, sampling and Olink QC."
+        },
+        {
+          "lane_file": "lanes/proteomics.json",
+          "lane_entry_id": "proteomics_06",
+          "ledger_lane_id": "proteomics_06",
+          "source_locator_in_restart": "PubMed abstract; full-text Methods/Results for cohort groups, up-to-seven timepoints, panel counts, and integrated analyte responses."
+        },
+        {
+          "lane_file": "lanes/transcriptomics.json",
+          "lane_entry_id": "tr10",
+          "ledger_lane_id": "tr10",
+          "source_locator_in_restart": "bioRxiv v2 posted 2026-03-11; Abstract; Results: research design/clinical characteristics; Methods; NLM preprint status."
+        }
+      ],
+      "pilot_purpose": "预印本、多平台不同n及重复样本",
+      "status": "not_started",
+      "reviewer_A_decision": null,
+      "reviewer_B_decision": null,
+      "consensus_decision": null,
+      "reviewer_A_extraction": null,
+      "reviewer_B_extraction": null,
+      "adjudication": null,
+      "source_locations": [],
+      "minutes_per_reviewer": null,
+      "unresolved_questions": []
+    }
+  ]
+}

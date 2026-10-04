@@ -1,0 +1,18 @@
+运动免疫标志物项目：证据更新与重启准备
+日期：2026-10-02
+
+先打开 restart_report.html（中文主报告，含可筛选来源目录）。
+
+本轮是公开网页定向摸底，不是五库正式检索或完成的scoping review。用户已确认五库/全文资源和第二人工筛选者可用。原协议未改。
+
+文件用途：
+- evidence_ledger.json：65条去重来源记录（53科学文献+12方法来源），不是65项纳入研究；含主代理临时范围分类。
+- data_dictionary.json：61字段草案，按模块试用；NR/NA/UNCLEAR分开。
+- update_backlog.json：16项任务、职责、依赖、交付物和验收条件。
+- restart_schedule.json：准备阶段估计；正式工作量须试筛后估算。
+- pilot_manifest.json：建议的10篇有目的试提取样本，人工结果留空。
+- lanes/：六个Luna分支与主代理方法学笔记，保留原文定位和检索/访问限制；临时scope冲突以evidence_ledger中主代理裁决为准。
+- verification/：Crossref/PubMed元数据、补核说明、实际探索式与命中结果、复跑脚本。
+- report_body.html / build_packet.py：报告正文源和生成器。
+
+阅读顺序：研究定位 → 证据变化 → 相邻综述 → 方案更新 → 重启安排。来源身份核验不等于结果质量认证。正式纳排、重要数字与结论须由人类研究者完成双人核查。

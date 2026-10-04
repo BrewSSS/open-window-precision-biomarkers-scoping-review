@@ -1,0 +1,102 @@
+{
+  "verified_on": "2026-10-03",
+  "protocol_version": "2.0",
+  "json_files_checked": 12,
+  "markdown_files_checked": 20,
+  "checks": [
+    {
+      "check": "Current design JSON parses",
+      "passed": true
+    },
+    {
+      "check": "Seven domain IDs agree across extraction and synthesis",
+      "passed": true
+    },
+    {
+      "check": "Appraisal precision profile contains the same seven domains",
+      "passed": true
+    },
+    {
+      "check": "Eight relational tables have no invented extracted records",
+      "passed": true
+    },
+    {
+      "check": "All 61 legacy fields map to valid current columns",
+      "passed": true
+    },
+    {
+      "check": "Donor counts are explicit",
+      "passed": true
+    },
+    {
+      "check": "Candidate-selection and supplement provenance fields exist",
+      "passed": true
+    },
+    {
+      "check": "Ten purposefully selected calibration items, not inclusion results",
+      "passed": true
+    },
+    {
+      "check": "Formal search hits and dates are unpopulated",
+      "passed": true
+    },
+    {
+      "check": "Registration and result counts remain unclaimed",
+      "passed": true
+    },
+    {
+      "check": "Three analytic maps defined",
+      "passed": true
+    },
+    {
+      "check": "protocol_EN_full.md contains complete A-L",
+      "passed": true
+    },
+    {
+      "check": "protocol_CN.md contains complete A-L",
+      "passed": true
+    },
+    {
+      "check": "Typeset Markdown exactly equals canonical full English",
+      "passed": true
+    },
+    {
+      "check": "Generated artifact hashes match final sources",
+      "passed": true
+    },
+    {
+      "check": "Local links in active protocol and manuals resolve",
+      "passed": true
+    },
+    {
+      "check": "Canonical PDF matches current build",
+      "passed": true
+    },
+    {
+      "check": "Legacy PDF entry points resolve to canonical PDF",
+      "passed": true
+    },
+    {
+      "check": "PDF contains title, governance, execution and references",
+      "passed": true
+    },
+    {
+      "check": "No TeX errors, undefined references or overfull boxes",
+      "passed": true
+    },
+    {
+      "check": "Archived originals retain checksums: manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Archived originals retain checksums: supplemental_manifest.json",
+      "passed": true
+    }
+  ],
+  "limitations": [
+    "These are document/schema/build consistency checks, not human calibration or PRESS review.",
+    "No five-database formal searches, inclusion decisions, extraction results or registration performed.",
+    "Native editor initial compilation timed out while downloading its TeX format; local TeX compilation/export succeeded.",
+    "Source-specific headings and full database strategies still require platform verification."
+  ]
+}

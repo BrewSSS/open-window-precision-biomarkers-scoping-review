@@ -1,0 +1,21 @@
+{
+  "version": "2.0",
+  "protocol_date": "2026-10-02",
+  "source": "protocol_EN_full.md",
+  "tex_status": "local_pdf_compilation_confirmed",
+  "files": {
+    "protocol_EN_full.md": "3717108b142cd487590adabacb915c455a8dd0ac2eada431375c377c22f3ea8b",
+    "protocol_CN.md": "b5457e969becc6c6922c233aff1e189e7375c3c0360de416b0dddf2a352503c2",
+    "protocol_EN_typeset.md": "3717108b142cd487590adabacb915c455a8dd0ac2eada431375c377c22f3ea8b",
+    "protocol_EN_typeset.tex": "a22d90a08086924e76e39e76fe4e6392c46c06226af17de7f5473a86d97dbef5",
+    "protocol_CN.html": "30cf6988008ef7714b465c7bd017d4ab2c810064a3b02f4d2a1b593e5658f0e7",
+    "protocol_EN_full.html": "b49601e2d61a482b7d197488f0a6cf636023c0d54ebbd72dc72332db246e98b3",
+    "execution_plan.html": "8bb2568134138f6d3f0bd63c16a916bf9e645a8ce1f47ffbb8296a3d02d00476"
+  },
+  "pdf_export": {
+    "compiler": "pdfTeX via latex-paper-en compile.py and latexmk",
+    "path": "protocol_EN_typeset.pdf",
+    "sha256": "2628eb323d558f2f32f83fcd23894b3c15d19c9eba1c5b786c876eb06a2ad366",
+    "log": "build_v2/protocol_EN_typeset.log"
+  }
+}

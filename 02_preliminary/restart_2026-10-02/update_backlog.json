@@ -1,0 +1,216 @@
+{
+  "date": "2026-10-02",
+  "status": "proposed; original protocol unchanged",
+  "confirmed_resources": {
+    "databases": [
+      "PubMed",
+      "Web of Science",
+      "Scopus",
+      "Embase",
+      "SPORTDiscus"
+    ],
+    "second_human_reviewer": true
+  },
+  "tasks": [
+    {
+      "id": "U01",
+      "priority": "P0",
+      "section": "标题/背景/RQ",
+      "change": "把open window改为历史假说与作者解释标签；研究对象为运动后免疫反应及恢复",
+      "owner_role": "PI+免疫学内容专家",
+      "deliverable": "一页研究边界和中英文题目",
+      "acceptance": "所有纳入规则不以指标下降或抑制方向为必要条件",
+      "depends_on": []
+    },
+    {
+      "id": "U02",
+      "priority": "P0",
+      "section": "PCC与时间边界",
+      "change": "取消仅因运动后随访不足30分钟而排除整项研究的规则；保留即刻研究，原始时点加无重叠分箱",
+      "owner_role": "两位筛选者",
+      "deliverable": "纳排手册v0.1",
+      "acceptance": "即刻/30分钟/24h及无时间报告案例能一致处理",
+      "depends_on": [
+        "U01"
+      ]
+    },
+    {
+      "id": "U03",
+      "priority": "P0",
+      "section": "暴露分层",
+      "change": "急性挑战为核心且须有直接免疫测量或预设免疫分析；纵向支持层要求明确训练/比赛暴露与同一免疫标志物重复采样；静息横断面仅背景",
+      "owner_role": "PI+两位筛选者",
+      "deliverable": "边界案例表",
+      "acceptance": "CIMA、尿蛋白训练、急性scRNA、肌肉组学能被一致分流",
+      "depends_on": [
+        "U01"
+      ]
+    },
+    {
+      "id": "U04",
+      "priority": "P0",
+      "section": "创新性",
+      "change": "重建相邻综述比较表，纠正错引，删除无撞车/首次的确定口吻",
+      "owner_role": "主研究者+第二研究者",
+      "deliverable": "可追踪竞品矩阵及修订引言依据",
+      "acceptance": "每篇综述有正确DOI、类型、范围与差异；检索日期更新",
+      "depends_on": []
+    },
+    {
+      "id": "U05",
+      "priority": "P0",
+      "section": "检索",
+      "change": "开发免疫主路和组学补充路；五库逐库翻译与PRESS复核；建议建库起检索，重审2000年及英语限制",
+      "owner_role": "检索负责人+研究馆员/另一检索专家",
+      "deliverable": "03_search下五库策略草案及PRESS检查",
+      "acceptance": "种子集含正例/边界例；遗漏原因逐项排查；不把小种子集检出当总召回率",
+      "depends_on": [
+        "U01",
+        "U03",
+        "U04"
+      ]
+    },
+    {
+      "id": "U06",
+      "priority": "P0",
+      "section": "数据提取",
+      "change": "试用本包data_dictionary，区分招募n、分析n、细胞数和样本数",
+      "owner_role": "两位提取者",
+      "deliverable": "10篇多设计试提取与字段说明",
+      "acceptance": "每种主要平台/设计至少一例；关键字段能追溯原文",
+      "depends_on": [
+        "U02",
+        "U03"
+      ]
+    },
+    {
+      "id": "U07",
+      "priority": "P0",
+      "section": "验证与结论",
+      "change": "定义响应、功能、临床关联、预测与个体化验证多标签；保存阴性结果",
+      "owner_role": "PI+方法学负责人",
+      "deliverable": "证据描述规则",
+      "acceptance": "功能富集不能升级为功能测量；同期患病区分不能升级为未来预测",
+      "depends_on": [
+        "U06"
+      ]
+    },
+    {
+      "id": "U08",
+      "priority": "P0",
+      "section": "版本统一",
+      "change": "以完整英文稿为结构底稿，吸收中文细节并统一日期、作者、资金、软件和修订说明",
+      "owner_role": "主研究者",
+      "deliverable": "protocol v2.0及变更日志",
+      "acceptance": "中英与PDF内容一致；所有占位信息已处理",
+      "depends_on": [
+        "U01",
+        "U02",
+        "U03",
+        "U05",
+        "U06",
+        "U07"
+      ]
+    },
+    {
+      "id": "U09",
+      "priority": "P1",
+      "section": "技术维护",
+      "change": "纠正PRISMA/数据提取图错配、图片路径、BibTeX路径及脚本旧机器绝对路径",
+      "owner_role": "技术负责人",
+      "deliverable": "可复现源文件及图清单",
+      "acceptance": "图名图注内容吻合；原始v1.0保留",
+      "depends_on": [
+        "U08"
+      ]
+    },
+    {
+      "id": "U10",
+      "priority": "P0",
+      "section": "注册",
+      "change": "整理OSF注册草稿，披露2026-10-02前期探索工作并冻结正式方案",
+      "owner_role": "PI",
+      "deliverable": "OSF待提交注册包",
+      "acceptance": "注明当前研究阶段、范围、搜索、纳排、提取、分析、AI、修订策略",
+      "depends_on": [
+        "U08"
+      ]
+    },
+    {
+      "id": "U11",
+      "priority": "P0",
+      "section": "筛选校准",
+      "change": "两位研究者随机50篇独立试筛，讨论分歧并复测",
+      "owner_role": "两位筛选者+仲裁者",
+      "deliverable": "校准记录及定版纳排手册",
+      "acceptance": "达到预先设定一致率，关键边界无未解决歧义；50篇为项目选择",
+      "depends_on": [
+        "U02",
+        "U03",
+        "U05"
+      ]
+    },
+    {
+      "id": "U12",
+      "priority": "P1",
+      "section": "正式检索",
+      "change": "协议冻结/注册后执行五库，保存原始导出及完整日志；近投稿时更新",
+      "owner_role": "检索负责人",
+      "deliverable": "03_search原始导出、检索日志",
+      "acceptance": "记录数据库+平台+完整式+日期+命中/导出数+文件校验；不覆盖原始导出",
+      "depends_on": [
+        "U05",
+        "U10",
+        "U11"
+      ]
+    },
+    {
+      "id": "U13",
+      "priority": "P1",
+      "section": "去重与全文",
+      "change": "DOI/PMID/标题多级去重；建立报告-研究-队列关联；追踪全文获取",
+      "owner_role": "文献管理员",
+      "deliverable": "04_screening审计记录",
+      "acceptance": "去重删除保留关系可复核；同队列与版本不会重复当独立证据",
+      "depends_on": [
+        "U12"
+      ]
+    },
+    {
+      "id": "U14",
+      "priority": "P1",
+      "section": "筛选/提取",
+      "change": "双人独立纳排与关键数据提取，第三人仲裁；全文排除理由使用标准词表",
+      "owner_role": "两位研究者+仲裁者",
+      "deliverable": "04/05阶段正式记录",
+      "acceptance": "每个决定及关键数字可追溯；AI仅辅助且由真实研究者复核",
+      "depends_on": [
+        "U06",
+        "U07",
+        "U13"
+      ]
+    },
+    {
+      "id": "U15",
+      "priority": "P1",
+      "section": "证据图与写作",
+      "change": "按时间、平台、基质、情境、功能/临床验证绘图；预印本单列并追踪正式版",
+      "owner_role": "综合负责人",
+      "deliverable": "06_synthesis研究地图和讨论",
+      "acceptance": "地图显示独立研究数量与实际证据类型，不把特征数作为证据强度",
+      "depends_on": [
+        "U14"
+      ]
+    },
+    {
+      "id": "U16",
+      "priority": "P0",
+      "section": "团队/AI/质量管理",
+      "change": "确认仲裁与检索复核职责、软件、共享文件规则和AI日志；用户已有五库和第二筛选者",
+      "owner_role": "PI",
+      "deliverable": "团队职责表、AI使用日志模板",
+      "acceptance": "六个Luna为本轮探索辅助，不作为正式第二筛选者；方案承诺与实际流程一致",
+      "depends_on": []
+    }
+  ]
+}

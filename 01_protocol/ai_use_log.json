@@ -1,0 +1,74 @@
+{
+  "status": "actual_design_assistance_logged_human_verification_pending",
+  "records": [
+    {
+      "date": "2026-10-02",
+      "tool": "Codex desktop",
+      "coordinator_model": "GPT-6 family; exact runtime identifier not independently exported",
+      "delegated_model": "gpt-6-luna",
+      "delegated_roles": [
+        "traditional immunology/screening",
+        "transcriptomics/extraction",
+        "proteomics/search",
+        "metabolomics/synthesis",
+        "epigenomics/appraisal",
+        "novelty/Chinese protocol"
+      ],
+      "tasks": [
+        "public-source reconnaissance",
+        "citation metadata checking",
+        "project audit",
+        "protocol and implementation drafting",
+        "cross-file consistency review"
+      ],
+      "prompt_source": "Current project conversation; earlier web reconnaissance recorded in restart packet",
+      "output_sources": [
+        "protocol_EN_full.md",
+        "protocol_CN.md",
+        "../03_search",
+        "../04_screening",
+        "../05_extraction",
+        "../06_synthesis"
+      ],
+      "human_verification_status": "Required before execution/registration; not yet recorded",
+      "human_verifier": null,
+      "not_performed": [
+        "automatic exclusion",
+        "independent human screening",
+        "formal extraction",
+        "formal critical appraisal",
+        "external registration",
+        "author messaging"
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "tool": "Codex desktop",
+      "delegated_model": "gpt-6.1-sol",
+      "delegated_agents_started": 6,
+      "tasks": [
+        "focused bilingual protocol review",
+        "search strategy consistency",
+        "screening implementation",
+        "extraction schema consistency",
+        "appraisal consistency",
+        "synthesis consistency"
+      ],
+      "status": "Some edits and findings were saved before usage-limit errors; coordinator inspected resulting files. Sol tasks stopped and necessary search completion returned to the existing Luna agent on user instruction.",
+      "human_verification_status": "Named research team review remains pending",
+      "human_verifier": null,
+      "formal_review_decisions_made": false
+    }
+  ],
+  "future_entry_fields": [
+    "date",
+    "tool_and_version",
+    "model_if_known",
+    "task",
+    "prompt_reference",
+    "output_reference",
+    "human_verifier",
+    "verification_method",
+    "decision_on_output"
+  ]
+}

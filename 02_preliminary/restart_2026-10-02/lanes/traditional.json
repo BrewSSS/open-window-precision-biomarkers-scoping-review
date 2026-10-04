@@ -1,0 +1,409 @@
+{
+  "lane": "traditional",
+  "cutoff_date": "2026-10-02",
+  "searched_at_date": "2026-10-02",
+  "queries": [
+    {
+      "source": "Web search prioritizing PubMed, publisher, PMC, and university repository records",
+      "query": "Davison 2025 exercise immunity methodological review acute exercise biomarkers open window infection",
+      "date": "2026-10-02",
+      "notes": "Located and verified the Physiological Reports review via publisher and PubMed records; used its methods recommendations and endpoint distinctions."
+    },
+    {
+      "source": "Web search prioritizing PubMed and PMC",
+      "query": "Rumpf 2021 natural killer cell exercise meta-analysis NK cells exercise infection",
+      "date": "2026-10-02",
+      "notes": "Verified bibliographic data and abstract; inspected accessible full-text search extracts for assay and moderator details."
+    },
+    {
+      "source": "Web search prioritizing PubMed and institutional repository",
+      "query": "Kakanis open window susceptibility infection acute exercise healthy young male elite athletes 24 h leukocyte NK 2010",
+      "date": "2026-10-02",
+      "notes": "Verified PubMed and Bond University record; PubMed provides the detailed abstract."
+    },
+    {
+      "source": "Web search prioritizing PubMed and Frontiers",
+      "query": "2026 acute sprint interval exercise healthy participants leukocyte lymphocyte IL-6 sIgA systematic review",
+      "date": "2026-10-02",
+      "notes": "Verified the 2026 Frontiers in Medicine systematic review using PubMed and full-text publisher/PMC records."
+    },
+    {
+      "source": "Web search prioritizing PubMed and journal/university repository",
+      "query": "salivary IgA secretion rate prospective infection athletes training cohort exercise study",
+      "date": "2026-10-02",
+      "notes": "Retrieved prospective swimmer and marathon cohorts; extracted whether illness was symptom-defined, physician-verified, or pathogen-confirmed."
+    },
+    {
+      "source": "Web search prioritizing PubMed, PMC, and publisher pages",
+      "query": "exercise marathon respiratory infection pathogen confirmed prospective cohort athlete saliva immune markers",
+      "date": "2026-10-02",
+      "notes": "Searched for prospective post-exercise clinical outcomes and pathogen testing; retrieved mostly symptom-based or clinical-syndrome definitions, not pathogen confirmation."
+    },
+    {
+      "source": "Web search prioritizing PubMed, PMC, and publisher pages",
+      "query": "exercise induced immune suppression open window evidence against lymphocyte redistribution Campbell Turner 2018",
+      "date": "2026-10-02",
+      "notes": "Verified the open-window critique and read the full publisher-hosted article."
+    },
+    {
+      "source": "Web search for integrity notices plus PubMed/publisher records",
+      "query": "selected article titles retraction correction erratum",
+      "date": "2026-10-02",
+      "notes": "No correction/retraction notice surfaced for the selected records in this targeted check; this is not an exhaustive integrity audit."
+    }
+  ],
+  "sources": [
+    {
+      "id": "traditional-01",
+      "title": "Rigorous methodological approaches to address knowledge gaps in exercise, nutrition, immunity, and infection risk research",
+      "authors": "Glen Davison; Corinna Chidley; A. W. Jones",
+      "year": 2025,
+      "publication_date": "2025-07-25",
+      "doi": "10.14814/phy2.70479",
+      "pmid": "40709812",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40709812/",
+      "source_type": "narrative_review",
+      "access_level": "full_text",
+      "population": "Review of exercise, nutrition, immunity, and infection-risk research; no original cohort.",
+      "design": "Invited methodological review.",
+      "sample_size": null,
+      "exercise_context": "Reviews acute exercise, training, and nutrition research in healthy participants and athletes.",
+      "sampling_times": null,
+      "biomarkers": "Traditional ex vivo markers (circulating cell counts/functions, mucosal markers, cytokines, hormones), in vivo immune-function measures, symptom outcomes, and pathogen screening.",
+      "key_finding": "Standalone ex vivo markers often have weak clinical relevance because immune redundancy and compensation can uncouple marker shifts from illness. Recommends validated illness logs, broad pathogen screening, in vivo/integrated immune measures, adequate sample sizes, and stronger control of exposure, sleep, stress, nutrition, vaccination, and other confounders.",
+      "clinical_endpoint": "Methodological review; distinguishes symptom logs from pathogen-verified infection and describes misclassification between self-report, physician assessment, and laboratory testing.",
+      "validation": "No biomarker prediction model validated; recommendations are methodological.",
+      "limitations": "Narrative review rather than a new systematic synthesis; much of the exercise-immunity evidence concerns nutrition interventions and cannot directly establish acute exercise causality.",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Abstract; sections 2.1 and 6; Table 1 recommendations.",
+      "verification_urls": [
+        "https://physoc.onlinelibrary.wiley.com/doi/full/10.14814/phy2.70479",
+        "https://pubmed.ncbi.nlm.nih.gov/40709812/"
+      ],
+      "integrity_notes": "Bibliographic data cross-checked against PubMed and publisher/repository records. No correction or retraction notice surfaced in the targeted title search; not an exhaustive audit."
+    },
+    {
+      "id": "traditional-02",
+      "title": "Debunking the Myth of Exercise-Induced Immune Suppression: Redefining the Impact of Exercise on Immunological Health Across the Lifespan",
+      "authors": "John P. Campbell; James E. Turner",
+      "year": 2018,
+      "publication_date": "2018-04-16",
+      "doi": "10.3389/fimmu.2018.00648",
+      "pmid": "29713319",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5911985/",
+      "source_type": "narrative_review",
+      "access_level": "full_text",
+      "population": "Review of human exercise-immunology research across age groups; no original cohort.",
+      "design": "Narrative review and theoretical critique of the open-window hypothesis.",
+      "sample_size": null,
+      "exercise_context": "Acute exercise and habitual physical activity, including prolonged vigorous exercise and endurance races.",
+      "sampling_times": null,
+      "biomarkers": "Peripheral lymphocyte counts and function, immune-cell redistribution, salivary IgA, and reported respiratory illness.",
+      "key_finding": "Argues that evidence connecting post-exercise blood lymphopenia or lower sIgA to greater infection risk is limited; interprets much of the short-term blood-cell decline as redistribution to peripheral tissues and increased immune surveillance rather than whole-system immune failure.",
+      "clinical_endpoint": "Reassesses early race cohorts, which largely recorded self-reported respiratory symptoms; does not provide new clinical validation.",
+      "validation": "No new prediction model or prospective validation.",
+      "limitations": "Narrative and explicitly argumentative review; redistribution is a plausible interpretation but does not itself prove host protection or rule out adverse effects after extreme exercise.",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Abstract; Part A, especially sections on infection, sIgA, and post-exercise lymphocyte redistribution.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/29713319/",
+        "https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2018.00648/full"
+      ],
+      "integrity_notes": "PubMed and publisher full text checked. No correction or retraction notice surfaced in the targeted title search; not an exhaustive audit."
+    },
+    {
+      "id": "traditional-03",
+      "title": "The Effect of Acute Physical Exercise on NK-Cell Cytolytic Activity: A Systematic Review and Meta-Analysis",
+      "authors": "Christopher Rumpf; Sebastian Proschinger; Alexander Schenk; Wilhelm Bloch; Amit Lampit; Florian Javelle; Philipp Zimmer",
+      "year": 2021,
+      "publication_date": "2021-01-04",
+      "doi": "10.1007/s40279-020-01402-9",
+      "pmid": "33398798",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33398798/",
+      "source_type": "systematic_review",
+      "access_level": "full_text",
+      "population": "Healthy human participants represented in 12 controlled acute-exercise studies; pooled total participant count not given in the abstract.",
+      "design": "Systematic review, meta-analysis, and meta-regression; 12 studies and 18 effect sizes.",
+      "sample_size": null,
+      "exercise_context": "Single acute exercise bouts; endurance and resistance protocols with passive controls.",
+      "sampling_times": "Pre-exercise, immediately post-exercise, and recovery during the first 2 hours.",
+      "biomarkers": "NK-cell cytolytic activity (NKCA); NK-cell counts were analyzed as a potential moderator; assays used whole blood or PBMCs.",
+      "key_finding": "NKCA increased immediately after exercise (Hedges g=1.02, 95% CI 0.59–1.46). During recovery, NKCA did not differ from pre-exercise (g=0.06, 95% CI -0.37 to 0.50). The exercise-related NKCA change was not explained by change in NK-cell count; assay blood material did not significantly moderate the response.",
+      "clinical_endpoint": "No prospective infection or symptom endpoint in the meta-analysis.",
+      "validation": "No clinical prediction or infection-risk validation; tests the short-term NKCA response only.",
+      "limitations": "Recovery comparison only spans the first 2 hours; substantial between-study heterogeneity and assay/protocol diversity; functional assay changes cannot be translated directly into infection protection.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "Abstract; methods eligibility criteria; Results, meta-analysis and moderator analyses.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/33398798/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7900082/",
+        "https://doi.org/10.1007/s40279-020-01402-9"
+      ],
+      "integrity_notes": "PMID, DOI, and publisher record verified. No correction or retraction notice surfaced in the targeted title search; not an exhaustive audit."
+    },
+    {
+      "id": "traditional-04",
+      "title": "The open window of susceptibility to infection after acute exercise in healthy young male elite athletes",
+      "authors": "Michael W. Kakanis; Jonathan Peake; E. W. Brenu; M. Simmonds; B. Gray; S. L. Hooper; S. M. Marshall-Gradisnik",
+      "year": 2010,
+      "publication_date": "2010",
+      "doi": null,
+      "pmid": "20839496",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20839496/",
+      "source_type": "original_study",
+      "access_level": "abstract",
+      "population": "Ten healthy male A-grade cyclists, age 24.2 ± 5.3 years.",
+      "design": "Single-group acute exercise time-course study.",
+      "sample_size": 10,
+      "exercise_context": "Two hours cycling at 90% of second ventilatory threshold.",
+      "sampling_times": "Pre-exercise; immediately post; 2, 4, 6, 8, and 24 hours post-exercise.",
+      "biomarkers": "Total leukocytes; total lymphocytes and CD4+, CD8+, CD16+/56+ NK subsets; CD56dimCD16+ and CD56brightCD16- NK phenotypes; NK cytolytic activity; neutrophil counts, oxidative burst, and phagocytosis; eosinophils.",
+      "key_finding": "Total lymphocytes rose immediately then fell by 2 hours. Circulating CD16+/56+ NK-cell counts were below baseline at 4–8 hours while CD56brightCD16- counts rose immediately. Neutrophil counts stayed elevated through 8 hours; oxidative burst did not change, while phagocytic function was lower at 2–24 hours. This demonstrates marker- and time-specific responses after a long strenuous bout.",
+      "clinical_endpoint": "No prospective infection outcome was measured; increased URI risk is proposed in the discussion rather than tested.",
+      "validation": "No clinical prediction or pathogen testing.",
+      "limitations": "Very small, all-male trained cyclist sample; no control arm; one exercise dose; blood counts do not reveal tissue redistribution or prove whole-body functional suppression.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "PubMed abstract; Bond University record, Abstract.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/20839496/",
+        "https://research.bond.edu.au/en/publications/the-open-window-of-susceptibility-to-infection-after-acute-exerci/"
+      ],
+      "integrity_notes": "PubMed and institutional record cross-checked. DOI not listed in the verified PubMed record and left null; a separately indexed conference abstract has a DOI but was not conflated with this article. No correction or retraction notice surfaced in the targeted check."
+    },
+    {
+      "id": "traditional-05",
+      "title": "The acute effect of sprint interval training on the immune system: a systematic review and meta-regression analysis",
+      "authors": "Weibao Liang; Yiqiang Wang; Tianyuan Yu; Yu Hou; Shuting Xu; Zikun Lyu; Yasong Zhang; Wenbai Huang",
+      "year": 2026,
+      "publication_date": "2026-02-02",
+      "doi": "10.3389/fmed.2025.1703829",
+      "pmid": "41705158",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41705158/",
+      "source_type": "systematic_review",
+      "access_level": "full_text",
+      "population": "Healthy participants spanning untrained to trained status; 21 studies and 359 participants, predominantly male.",
+      "design": "Systematic review, random-effects meta-analysis, subgroup analysis, and meta-regression.",
+      "sample_size": "21 studies; 359 participants",
+      "exercise_context": "One acute sprint-interval session; cycling was common, with running and other modalities also represented.",
+      "sampling_times": "Baseline and within 1 hour post-session; the primary analysis prioritized 0–15 minutes. No extended recovery synthesis.",
+      "biomarkers": "Total leukocytes, neutrophils, lymphocytes, IL-6, IL-10, salivary IgA concentration and flow/secretion measures.",
+      "key_finding": "SIT increased circulating total leukocytes, neutrophils, lymphocytes, and IL-6 immediately/early after exercise. IL-10 change was small and nonsignificant. sIgA was stable in trained athletes but more variable in untrained participants. The pooled result describes acute mobilization/signaling, not a subsequent immune deficit.",
+      "clinical_endpoint": "No illness, pathogen-confirmed infection, or future-risk endpoint.",
+      "validation": "GRADE assessment of biomarker evidence; no clinical prediction validation.",
+      "limitations": "Small total evidence base and cohort size; 14 studies recruited men only, 2 women only, 3 mixed; sampling focused on the first post-exercise hour, so cannot characterize later lymphopenia or the 3–72-hour period.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "Abstract; Methods outcome timing; Results pooled biomarker estimates and training-status subgroups.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41705158/",
+        "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1703829/full",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12908032/"
+      ],
+      "integrity_notes": "Publication date, DOI, and PMID verified on PubMed and Frontiers; publisher PDF also inspected. No correction or retraction notice surfaced in the targeted title search; not an exhaustive audit."
+    },
+    {
+      "id": "traditional-06",
+      "title": "Immunosurveillance associated with upper respiratory symptoms in elite swimmers: The 8-month period leading into Commonwealth Games",
+      "authors": "Lauren H. Baker; Terun Desai; Mark Green; Amy V. Wells",
+      "year": 2024,
+      "publication_date": "2024-03",
+      "doi": "10.1016/j.jsams.2023.11.011",
+      "pmid": "38071136",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38071136/",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "population": "Fourteen elite international swimmers (9 male, 5 female), mean age 19.9 years.",
+      "design": "Eight-month longitudinal monitoring study during the season leading into the Commonwealth Games.",
+      "sample_size": 14,
+      "exercise_context": "Weekly monitoring across low, moderate, and high training loads and competition periods; not a single acute-bout experiment.",
+      "sampling_times": "Weekly symptom/training-load records and saliva samples over 8 months; one baseline venous sample for EBV status.",
+      "biomarkers": "Salivary sIgA concentration, saliva flow rate, calculated sIgA secretion rate; EBV serostatus.",
+      "key_finding": "Seventy self-reported upper-respiratory-symptom episodes occurred; episode incidence, severity, and duration were higher during high-load weeks. Absolute sIgA concentration was lower in weeks with symptoms (p=0.033), but flow rate and secretion rate were not (p=0.172 and p=0.382). Within-person sIgA was about 12% lower during symptoms, but the before/during/after comparison was nonsignificant (p=0.101); the proposed pre-symptom trend is exploratory.",
+      "clinical_endpoint": "Weekly self-reported upper-respiratory symptoms and missed training; no pathogen screening or clinician confirmation. EBV was past serostatus, not acute infection testing.",
+      "validation": "No prespecified prediction model or independent validation; individual trends are hypothesis-generating.",
+      "limitations": "Only 14 swimmers; no control group; symptoms may include noninfectious airway irritation; high within- and between-person sIgA variation; multiple contextual confounders.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "Abstract; Methods; Results sIgA and illness comparisons; Discussion/Conclusion on individual monitoring.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/38071136/",
+        "https://uhra.herts.ac.uk/id/eprint/11737/1/1-s2.0-S1440244023004899-main.pdf",
+        "https://doi.org/10.1016/j.jsams.2023.11.011"
+      ],
+      "integrity_notes": "PubMed record and publisher-version PDF checked. No correction or retraction notice surfaced in the targeted title search; not an exhaustive audit."
+    },
+    {
+      "id": "traditional-07",
+      "title": "Anxiety and Mood Disturbance Are Prospectively Associated With Respiratory Infection Risk and the Mucosal Immune Response to Exercise",
+      "authors": "Sophie Harrison; Jason Edwards; Ross Roberts; Neil Walsh",
+      "year": 2025,
+      "publication_date": "2025-09-30",
+      "doi": "10.1002/ejsc.70058",
+      "pmid": "41024702",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12480926/",
+      "source_type": "original_study",
+      "access_level": "abstract",
+      "population": "Study 1: 406 adult Snowdonia Marathon participants (67% male). Study 2: 45 adults (51% male) in a laboratory crossover.",
+      "design": "Prospective observational marathon cohort plus randomized-order exercise/rest crossover study.",
+      "sample_size": "Study 1 n=406; Study 2 n=45",
+      "exercise_context": "Study 1 monitored two weeks before and after an arduous marathon. Study 2 compared 60 minutes running at 65% VO2peak with seated rest.",
+      "sampling_times": "Study 1 saliva immediately before and after the marathon; symptom logs twice weekly for two weeks before and after. Study 2 saliva pre/post exercise and rest.",
+      "biomarkers": "Salivary SIgA concentration, secretion rate and flow; trait/state anxiety, total mood disturbance, perceived psychological stress.",
+      "key_finding": "Fifty runners recorded post-marathon RTI symptoms. Prospective trait anxiety and mood disturbance were associated with symptom-defined RTI, but exercise-related mucosal immunity was not associated with RTI risk (OR 1.00, 95% CI 0.97–1.01). In the laboratory study, the SIgA secretion-rate response did not differ significantly between exercise and rest; psychological measures correlated with response in men.",
+      "clinical_endpoint": "Self-reported respiratory symptoms after marathon; no pathogen confirmation or clinician diagnosis.",
+      "validation": "Prospective association for psychological exposures only; no validated SIgA prediction model, discrimination, calibration, or external validation.",
+      "limitations": "Symptoms are not confirmed infection; cannot control pathogen exposure/hygiene; laboratory sample modest; non-elite participants; not a causal test of strenuous marathon exercise against rest.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "Abstract; Study 1/Study 2 Methods and Results in PubMed Central record.",
+      "verification_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12480926/",
+        "https://pubmed.ncbi.nlm.nih.gov/41024702/",
+        "https://doi.org/10.1002/ejsc.70058"
+      ],
+      "integrity_notes": "PMID, DOI, date, and author repository record cross-checked; repository full-PDF fetch timed out, so abstract-level details are used. No correction or retraction notice surfaced in the targeted title search; not an exhaustive audit."
+    },
+    {
+      "id": "traditional-08",
+      "title": "Change in salivary IgA following a competitive marathon race",
+      "authors": "David C. Nieman; David A. Henson; Orlando R. Fagoaga; Andrew C. Utter; David M. Vinci; James M. Davis; Susan L. Nehlsen-Cannarella",
+      "year": 2002,
+      "publication_date": "2002-01",
+      "doi": "10.1055/s-2002-19375",
+      "pmid": "11774070",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11774070/",
+      "source_type": "original_study",
+      "access_level": "abstract",
+      "population": "Ninety-eight runners in two competitive marathons; 93 returned health/sickness logs.",
+      "design": "Prospective post-race observational follow-up nested in a carbohydrate/placebo study.",
+      "sample_size": "98 sampled; 93 returned logs; 16 reported post-race URTI",
+      "exercise_context": "Competitive marathon; carbohydrate beverage compared with placebo, with age/sex comparisons.",
+      "sampling_times": "Saliva and blood before and approximately 1.5 hours after the race; illness logs for 15 days.",
+      "biomarkers": "Salivary sIgA concentration, sIgA:total-protein ratio, sIgA secretion rate, saliva secretion/flow, plasma cortisol.",
+      "key_finding": "By 1.5 hours post-race, sIgA concentration, IgA:protein ratio, and secretion rate were lower by 21%, 31%, and 25%. Among runners who later reported URTI, only the post-race IgA:protein ratio was lower; concentration and secretion rate were not. The ratio was negatively correlated with plasma cortisol (r=-0.36).",
+      "clinical_endpoint": "Self-reported URTI in the 15 days after the race; no physician or pathogen confirmation.",
+      "validation": "Association only; no prespecified or externally validated prediction model.",
+      "limitations": "Only 16 reported cases; no pathogen testing; concentration and output measures differed after adjustment for saliva protein/flow; marathon-only results may not generalize to ordinary acute exercise.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "PubMed abstract; Results on adjusted saliva measures and symptom logs.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/11774070/",
+        "https://doi.org/10.1055/s-2002-19375"
+      ],
+      "integrity_notes": "PubMed and DOI metadata checked. No correction or retraction notice surfaced in the targeted title search; not an exhaustive audit."
+    },
+    {
+      "id": "traditional-09",
+      "title": "Salivary IgA levels and infection risk in elite swimmers",
+      "authors": "Maree Gleeson; Warren A. McDonald; David B. Pyne; Allan W. Cripps; John L. Francis; Peter A. Fricker; Robert L. Clancy",
+      "year": 1999,
+      "publication_date": "1999-01",
+      "doi": "10.1097/00005768-199901000-00012",
+      "pmid": "9927012",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9927012/",
+      "source_type": "original_study",
+      "access_level": "abstract",
+      "population": "Twenty-six elite swimmers followed over a 7-month training season plus 12 moderately exercising controls.",
+      "design": "Prospective seasonal cohort with regression analyses.",
+      "sample_size": "26 swimmers; 12 moderately exercising controls",
+      "exercise_context": "Training-volume variation across seven months; not a single-bout study.",
+      "sampling_times": "Preseason/pretraining saliva and repeated pretraining measures over the season; exact sampling cadence is not specified in the abstract.",
+      "biomarkers": "Salivary IgA concentration; training volume; psychological stress/anxiety.",
+      "key_finding": "Infections were physician-verified. Lower preseason and mean pretraining IgA and within-season downward slopes predicted infection counts in swimmers in regression models (P=0.05, 0.006, and 0.03 respectively). Posttraining IgA was not significantly correlated with infection rate.",
+      "clinical_endpoint": "Prospectively recorded physician-verified infections; pathogen testing is not specified in the abstract.",
+      "validation": "Within-cohort association/regression only; no independent validation, calibration, or discrimination metrics reported.",
+      "limitations": "Small cohort; outcome is infections generally rather than pathogen-confirmed post-bout infection; concentration-only assay; older methods and a trained-swimmer context limit generalization.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "PubMed abstract; Methods and Results.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/9927012/",
+        "https://doi.org/10.1097/00005768-199901000-00012"
+      ],
+      "integrity_notes": "PMID, DOI, and bibliographic data verified. No correction or retraction notice surfaced in the targeted title search; not an exhaustive audit."
+    },
+    {
+      "id": "traditional-10",
+      "title": "Salivary immunity and lower respiratory tract infections in non-elite marathon runners",
+      "authors": "Elisabet Cantó; Emma Roca; Lidia Perea; Ana Rodrigo-Troyano; Guillermo Suarez-Cuartin; Jordi Giner; Anna Feliu; Jose Manuel Soria; Lexa Nescolarde; Silvia Vidal; Oriol Sibila",
+      "year": 2018,
+      "publication_date": "2018-11-21",
+      "doi": "10.1371/journal.pone.0206059",
+      "pmid": "30462646",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0206059",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "population": "Forty-seven healthy non-elite runners completing the 2016 Barcelona Marathon (28 male, 19 female).",
+      "design": "Prospective observational marathon cohort.",
+      "sample_size": 47,
+      "exercise_context": "Single marathon, 42.195 km; symptom follow-up for two weeks.",
+      "sampling_times": "Saliva and blood one day before and two days after the marathon; symptoms reported for two weeks before and after.",
+      "biomarkers": "sIgA normalized to total salivary protein, salivary lactoferrin, lysozyme and Groα/Groβ/MCP-1; blood haemogram/leukocytes and biochemistry.",
+      "key_finding": "Eight runners met the study's LRTI syndrome definition after the race. sIgA/total-protein ratio neither changed pre-to-post nor differed between runners with and without LRTI. Post-race lysozyme was higher in those with LRTI; some chemokines fell in those without LRTI. Salivary lysozyme correlated with blood leukocyte counts.",
+      "clinical_endpoint": "Clinically defined symptom syndrome: cough plus another lower-respiratory symptom, fever ≥38°C, symptoms >3 days, and no alternative explanation. No microbiology/pathogen testing; authors explicitly note etiologies were not determined.",
+      "validation": "Small exploratory association; no prediction model or external validation.",
+      "limitations": "Only eight LRTI cases; pathogen cause unverified; saliva measured two days after rather than during immediate recovery; no secretion-rate measure; possible feeding/dehydration effects.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "Full text: Methods, Subjects/Case definition, Saliva collection; Results sections Salivary IgA and Lower respiratory tract infections; Discussion limitations.",
+      "verification_urls": [
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0206059",
+        "https://pubmed.ncbi.nlm.nih.gov/30462646/",
+        "https://doi.org/10.1371/journal.pone.0206059"
+      ],
+      "integrity_notes": "PubMed and full PLOS article checked. No correction or retraction notice surfaced in the targeted title search; not an exhaustive audit."
+    }
+  ],
+  "findings": [
+    {
+      "claim": "“Open window” is not represented by one consistent peripheral-blood trajectory: intense exercise first mobilizes leukocytes/lymphocytes; later counts and subsets can fall below baseline, while different functions recover on different schedules. Counts alone cannot distinguish cell redistribution from loss of functional capacity.",
+      "source_ids": ["traditional-04", "traditional-05", "traditional-02", "traditional-01"],
+      "certainty": "中等：急性生理变化的方向有研究支持，但细胞计数与组织免疫/感染结果之间的临床推断很弱。",
+      "protocol_implication": "保留运动中、即刻、30分钟至数小时及24小时以上的分时段观察；记录绝对计数、比例、血浆容量相关校正和功能测定，不将血中短暂减少等同全身免疫抑制。"
+    },
+    {
+      "claim": "NK细胞数与单位细胞/标准化细胞毒功能不能互作替代。12项研究的meta分析显示NK cytolytic activity即刻升高、前2小时恢复期不低于基线；其变化未由NK数量解释。极端长时骑行后循环NK亚群数量则可低至8小时，显示两类终点存在不同时间曲线。",
+      "source_ids": ["traditional-03", "traditional-04"],
+      "certainty": "中等（短期NKCA）；低（2小时以后的功能轨迹和感染临床意义）。",
+      "protocol_implication": "分别提取NK绝对数、亚群比例和功能；记录全血/PBMC、效靶比、靶细胞、标准化方式、刺激条件、测量时间，禁止用细胞数推定单位细胞杀伤能力。"
+    },
+    {
+      "claim": "sIgA的浓度、IgA/总蛋白比、流率与分泌率给出不同关联结果。马拉松后1.5小时浓度和分泌率可下降，但其后症状组只在IgA/蛋白比上有差异；精英游泳队列后来发现浓度与有症状周相关而分泌率不相关；2025年队列没有发现运动后黏膜免疫反应与后续症状风险关联。",
+      "source_ids": ["traditional-08", "traditional-06", "traditional-07", "traditional-10"],
+      "certainty": "低：研究对象、采集时点、归一化与疾病定义差异大，个体内监测信号尚未前瞻独立验证。",
+      "protocol_implication": "并列提取sIgA浓度、唾液流率、分泌率、总蛋白或其他比值及采集方法；注明单位与分母。预先区分组间绝对值和个体内偏离基线。"
+    },
+    {
+      "claim": "存在有限的前瞻预测信号：一项小型七个月游泳队列以医生确认感染为结局，赛季前和赛季内sIgA水平/斜率与感染计数相关；近年的马拉松与游泳研究多用症状日志，关联不稳定且未作病原确认。当前所核实的传统指标文献未建立急性运动后标志物对未来病原学确认感染的外部验证预测模型。",
+      "source_ids": ["traditional-09", "traditional-06", "traditional-07", "traditional-08", "traditional-10", "traditional-01"],
+      "certainty": "低：单一小队列的医生核实感染关联未复现，后续高质量病原学前瞻预测证据稀缺。",
+      "protocol_implication": "提取临床终点证据等级、病例判定工具、随访长度、病原检测与采样、预测时间顺序、模型表现和外部验证；症状不得等同感染。"
+    },
+    {
+      "claim": "30分钟不适合作为通用纳入阈值。即刻至15分钟的数据对区分运动诱发的细胞动员和其后的淋巴细胞/NK下降不可缺；近期SIT meta分析也将0–15分钟设为主要时间窗。不同功能读数的下降可能发生在2小时后，不能用某一时点定义整个开放窗口。",
+      "source_ids": ["traditional-04", "traditional-05", "traditional-03"],
+      "certainty": "高（它是一个采样/归类决策，不应截断完整动力学）；证据指示各指标时程不同。",
+      "protocol_implication": "撤销“运动后随访<30分钟即排除”的规则；纳入并单独标记运动中/即刻、0–<30分钟、30–120分钟、2–8小时、8–24小时、24–72小时及更晚时点。"
+    },
+    {
+      "claim": "细胞因子和皮质醇的短时变化属于应激/运动响应，不能仅凭IL-6升高、皮质醇相关或单一循环浓度判定病原防御受损。急性SIT合并研究显示IL-6上升、IL-10变化小且不显著；马拉松队列中皮质醇与IgA/蛋白比相关，但不是感染因果证据。",
+      "source_ids": ["traditional-05", "traditional-08", "traditional-01"],
+      "certainty": "中等（急性指标变化）；低（感染易感性推断）。",
+      "protocol_implication": "提取采样基质、昼夜时点、运动剂量、训练状态、预分析和检测平台；把IL-6等作为机制/应激读数，与经确认感染结局分开呈现。"
+    }
+  ],
+  "gaps": [
+    "缺少在健康人中同步连续测量运动后传统标志物，并对随后呼吸道感染进行宽谱病原检测的前瞻队列。",
+    "症状、医生判断、临床综合征和病原确认常混合称为URTI/感染；一些呼吸道症状可能由冷空气、通气、过敏或黏膜刺激导致。",
+    "NK细胞数量、NKCA、靶细胞杀伤和刺激后细胞因子并无统一报告方法，单位细胞功能与总池功能不宜混淆。",
+    "sIgA浓度、唾液流率、分泌率及总蛋白归一化的比较缺少标准化；性别、采样方法、补水、进食、时段和个体内变异可能影响结果。",
+    "多数临床队列样本很小，女性和不同年龄/训练水平代表不足，且训练负荷、心理压力、睡眠、营养及病原暴露常未充分控制。",
+    "现有预测结论很少报告预设阈值、区分度、校准或外部验证；独立的个体预测能力尚不明确。"
+  ],
+  "proposed_updates": [
+    "将运动后少于30分钟的研究从排除标准改为采样分层；若主分析只讨论运动后时段，可把运动中/即刻作为独立动力学层，而不是剔除整项研究。",
+    "将急性单次运动、数日/数周训练周期、竞技赛事与赛季追踪分别编码，不把训练负荷关联写成单次运动的因果效应。",
+    "加设临床结局分类：病原确认感染、医生/临床综合征判定、标准化症状量表、自报症状、非特异疾病；另编码病例判定者、PCR/培养/血清学、检测范围和阴性检测限制。",
+    "把“指标响应”“免疫功能”“症状/感染关联”“前瞻预测”分列；预测需记录指标是否先于结局、模型是否预设、AUC/灵敏度/特异度/校准及外部验证。",
+    "NK数据分拆为绝对细胞数/比例/亚群与功能读数，纳入每孔效靶比、全血或PBMC、靶细胞、刺激条件、归一化、测量时点和血容量校正。",
+    "sIgA至少提取浓度、样本体积/采样时长、唾液流率、计算分泌率、总蛋白归一化、刺激/非刺激采样及具体单位；同时记录个体均值基线和个体内变化。",
+    "WBC/淋巴细胞记录绝对计数及比例；细胞因子/皮质醇记录血清、血浆、唾液或鼻腔基质、检测平台、昼夜时点、饮食/睡眠/压力等协变量。",
+    "将“3–72小时开放窗口”从既定机制描述改写为待评估的时间范围，不由指标变化推定感染风险增加。"
+  ],
+  "search_limitations": "截至2026-10-02的定向网络检索与来源核验；访问公开PubMed、PMC、出版社页面及高校仓储。未实际检索订阅型Scopus、SPORTDiscus、Embase或Web of Science，也未运行正式系统检索、去重、双人筛选或PRISMA流程，因此不能据此判断证据的完整性、定量流行率或综述撞车情况。部分PMC页面触发机器人验证，改用PubMed摘要、出版社页面或高校仓储；Harrison等2025作者版PDF请求超时，按可核实摘要信息提取。对所选题目做过有限的更正/撤稿线索搜索；未发现线索不等于正式确认无更正/撤稿。"
+}

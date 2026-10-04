@@ -1,0 +1,1212 @@
+{
+  "metadata": {
+    "title": "V2 extraction relational data dictionary",
+    "version": "2.0",
+    "date": "2026-10-02",
+    "status": "draft for human calibration; no records extracted",
+    "source": "02_preliminary/restart_2026-10-02/data_dictionary.json",
+    "legacy_source_field_count": 61,
+    "field_count_note": "The 61 legacy source fields are retained and mapped; the operational schema adds relational, donor-count, assay-universe, candidate-selection, supplement-traceability and digitization fields.",
+    "schema_verified_date": "2026-10-03"
+  },
+  "missing_value_semantics": {
+    "blank_template_null": "Not yet extracted; do not interpret as absent/unreported.",
+    "codes": {
+      "NR": "未报告",
+      "NA": "不适用",
+      "UNCLEAR": "全文仍不清楚"
+    },
+    "counts": "Use integer if reported; after source review use NR, NA or UNCLEAR as string, not null.",
+    "identifiers": "Primary keys and required linkage keys are assigned stable nonempty IDs, never NR/NA/UNCLEAR. Optional links may be null when inapplicable; unresolved required links remain pending and cannot enter the reconciled dataset."
+  },
+  "relational_model": {
+    "table_specs": {
+      "reports": {
+        "description": "一篇出版报告或可区分版本；与cohort经桥表关联。",
+        "row_unit": "one report/version/correction",
+        "primary_key": "report_id",
+        "foreign_keys": [],
+        "blank_record": {
+          "report_id": null,
+          "reference_id": null,
+          "title": null,
+          "authors": null,
+          "year": null,
+          "doi": null,
+          "pmid": null,
+          "url": null,
+          "publication_status": null,
+          "version_date": null,
+          "version_label": null,
+          "source_locator": [],
+          "scope_stream": null,
+          "inclusion_reason": null,
+          "exclusion_reason": null,
+          "immune_link": [],
+          "screening_A": null,
+          "screening_B": null,
+          "consensus_screening_decision": null,
+          "primary_fulltext_exclusion_reason": null,
+          "reviewer_notes": null,
+          "author_stated_use": null
+        }
+      },
+      "cohorts": {
+        "description": "一个独立招募来源/参与者集合；同队列跨报告复用cohort_id。",
+        "row_unit": "one recruited participant cohort or separable stratum",
+        "primary_key": "cohort_id",
+        "foreign_keys": [
+          "study_id -> study_families.study_id"
+        ],
+        "blank_record": {
+          "cohort_id": null,
+          "study_id": null,
+          "cohort_label": null,
+          "baseline_health": null,
+          "n_recruited": null,
+          "age_sex": null,
+          "training_status": null,
+          "sport": null,
+          "cohort_notes": null
+        }
+      },
+      "report_cohort_links": {
+        "description": "报告—队列多对多桥接；支持一报告多子研究和一队列多报告。",
+        "row_unit": "one report × study × cohort relationship",
+        "primary_key": "link_id",
+        "foreign_keys": [
+          "report_id -> reports.report_id",
+          "study_id -> study_families.study_id",
+          "cohort_id -> cohorts.cohort_id"
+        ],
+        "blank_record": {
+          "link_id": null,
+          "report_id": null,
+          "study_id": null,
+          "cohort_id": null,
+          "n_analyzed": null,
+          "report_specific_population": null,
+          "link_notes": null,
+          "scope_streams": []
+        }
+      },
+      "sample_sets": {
+        "description": "同一报告/队列/组别 × 矩阵 × assay/platform × 精确采样时间的样本集合；分母不同时拆行。",
+        "row_unit": "one group × assay/matrix × exact timepoint sample set",
+        "primary_key": "sample_set_id",
+        "foreign_keys": [
+          "report_id -> reports.report_id",
+          "study_id -> study_families.study_id",
+          "cohort_id -> cohorts.cohort_id"
+        ],
+        "blank_record": {
+          "sample_set_id": null,
+          "report_id": null,
+          "study_id": null,
+          "cohort_id": null,
+          "group_condition": null,
+          "intervention_phase": null,
+          "exercise_mode": null,
+          "dose": null,
+          "control": null,
+          "training_load": null,
+          "cointerventions": null,
+          "exercise_end_definition": null,
+          "sample_role": null,
+          "timepoint_as_reported": null,
+          "time_from_exercise_end_value": null,
+          "time_unit": null,
+          "time_bin": null,
+          "matrix": null,
+          "assay_platform": null,
+          "n_participants": null,
+          "n_biological_samples": null,
+          "n_cells": null,
+          "n_technical_replicates": null,
+          "n_aliquots": null,
+          "repeated_sampling": null,
+          "pairing_structure": null,
+          "age_sex_stratum": null,
+          "preanalytics": null,
+          "normalization": null,
+          "circadian": null,
+          "missing_data": null,
+          "cell_context": null,
+          "source_locator": [],
+          "sample_notes": null,
+          "bout_id": null,
+          "bout_number": null,
+          "participant_linkage": null,
+          "n_donors": null,
+          "donor_count_basis": null
+        }
+      },
+      "measurements": {
+        "description": "已报告分析物/明确特征集 × 统计比较；只记录原文结果。",
+        "row_unit": "One assay-level tested-universe summary OR one named candidate/feature × comparison; include all named immune candidates from original aims/methods regardless of significance.",
+        "primary_key": "measurement_id",
+        "foreign_keys": [
+          "report_id -> reports.report_id",
+          "study_id -> study_families.study_id",
+          "cohort_id -> cohorts.cohort_id",
+          "sample_set_ids[] -> sample_sets.sample_set_id"
+        ],
+        "blank_record": {
+          "measurement_id": null,
+          "report_id": null,
+          "study_id": null,
+          "cohort_id": null,
+          "sample_set_ids": [],
+          "analyte_id": {
+            "original_label": null,
+            "standard_name": null,
+            "database_id": null
+          },
+          "biological_level": null,
+          "platform": null,
+          "omics_integration": null,
+          "cell_context": null,
+          "assay_validity": null,
+          "feature_identification": null,
+          "comparison": null,
+          "effect_measure": null,
+          "effect_value": null,
+          "effect_unit": null,
+          "effect_uncertainty": null,
+          "multiplicity": null,
+          "confounding": null,
+          "donor_level_inference": null,
+          "missing_data": null,
+          "null_findings": null,
+          "result_direction": null,
+          "reported_feature_count": null,
+          "measurement_notes": null,
+          "source_locator": [],
+          "record_type": null,
+          "assay_universe_id": null,
+          "marker_series_id": null,
+          "tested_universe_n": null,
+          "tested_universe_unit": null,
+          "tested_universe": null,
+          "feature_total_count": null,
+          "feature_total_unit": null,
+          "feature_universe_locator": [],
+          "candidate_selection_rule": null,
+          "candidate_selection_basis": null,
+          "candidate_prespecification_status": null,
+          "candidate_in_original_aims_methods": null,
+          "candidate_source_locator": [],
+          "supplement_availability": null,
+          "supplement_sources": [],
+          "result_status": null,
+          "effect_value_source": null,
+          "digitization_predeclared_method": null,
+          "digitization_software_version": null,
+          "figure_panel_locator": null,
+          "digitizer_A_value": null,
+          "digitizer_B_value": null,
+          "digitizer_A": null,
+          "digitizer_B": null,
+          "digitization_reconciled_value": null,
+          "digitization_notes": null
+        }
+      },
+      "precision_validation": {
+        "description": "多维precision/validation长表；每行仅一个维度，不汇总成总分。",
+        "row_unit": "one report/cohort/measurement × one domain",
+        "primary_key": "precision_record_id",
+        "foreign_keys": [
+          "report_id -> reports.report_id",
+          "study_id -> study_families.study_id",
+          "cohort_id -> cohorts.cohort_id",
+          "measurement_id -> measurements.measurement_id (optional)"
+        ],
+        "blank_record": {
+          "precision_record_id": null,
+          "report_id": null,
+          "study_id": null,
+          "cohort_id": null,
+          "measurement_id": null,
+          "precision_domain": null,
+          "evidence_state": null,
+          "relationship_tags": [],
+          "response_evidence": null,
+          "functional_evidence": null,
+          "replication": null,
+          "clinical_endpoint": null,
+          "temporal_order": null,
+          "prediction_design": null,
+          "prediction_metrics": null,
+          "leakage_control": null,
+          "individualization": null,
+          "field_feasibility": null,
+          "source_locator": [],
+          "evidence_notes": null,
+          "intended_use": null,
+          "linkage_subtype": null,
+          "validation_use_subtype": null
+        }
+      },
+      "extraction_provenance": {
+        "description": "提取者、独立复核、分歧裁决、AI辅助、数据访问与出版完整性审计。",
+        "row_unit": "one report × one extraction/audit event",
+        "primary_key": "provenance_id",
+        "foreign_keys": [
+          "report_id -> reports.report_id"
+        ],
+        "blank_record": {
+          "provenance_id": null,
+          "report_id": null,
+          "extractor_a_b": {
+            "extractor_A": null,
+            "extractor_B": null,
+            "independent_entry_complete": null,
+            "verification_complete": null
+          },
+          "adjudication": null,
+          "ai_assistance": {
+            "used": null,
+            "tool_model_date": null,
+            "task_prompt_version": null,
+            "output_checked_by_human": null
+          },
+          "open_data": null,
+          "integrity_status": null,
+          "recorded_at": null,
+          "provenance_notes": null
+        }
+      },
+      "study_families": {
+        "description": "独立研究/试验/项目家族；同一试验不同报告共用study_id。",
+        "row_unit": "one study protocol/research programme",
+        "primary_key": "study_id",
+        "foreign_keys": [],
+        "blank_record": {
+          "study_id": null,
+          "study_label": null,
+          "design": null,
+          "registry_ids": [],
+          "training_load": null,
+          "cointerventions": null,
+          "study_notes": null
+        }
+      }
+    },
+    "rules": [
+      "One study_families row may have multiple cohorts.",
+      "One report may describe multiple cohorts/studies, and one cohort may produce multiple reports: link through report_cohort_links, never infer independent cohorts from distinct publications alone.",
+      "A sample_set is one group × matrix × assay/platform × exact time. Split when n or measurement process differs.",
+      "A measurement can be an assay-level tested-universe record or a named-candidate/result record; candidate records share assay_universe_id and link sample_sets.",
+      "For assays with large feature spaces, record tested universe and source/availability; enumerate all named immune candidates identified in original aims/methods in accessible article text and supplements without a significance filter. Do not fabricate rows for unnamed/unreported features.",
+      "A measurement links all sample_sets used in its contrast with sample_set_ids; marker_series_id links the same marker across identified exercise bouts when evaluating Support B.",
+      "Participants, donors, biospecimens, cells, aliquots, timepoints and technical replicates are separate counts; none except unique participant/donor n is an independent human biological n.",
+      "precision_validation uses exactly seven parent domains with separate subfacets; domains are descriptive and no total score is computed.",
+      "All sample, measurement and precision rows must match an existing report-study-cohort tuple in report_cohort_links; cohort.study_id must agree with that tuple.",
+      "report_cohort_links.scope_streams records cohort-specific A/B memberships; one cohort may contribute to both streams and is counted once overall.",
+      "Primary and required linkage IDs cannot use missing-value codes; null is allowed in blank templates and optional inapplicable links only."
+    ]
+  },
+  "controlled_vocabulary": {
+    "missing_codes": {
+      "NR": "未报告",
+      "NA": "不适用",
+      "UNCLEAR": "全文仍不清楚"
+    },
+    "scope_stream": [
+      "A_core_acute",
+      "B_support_repeated_bouts",
+      "background_context",
+      "excluded",
+      "awaiting_classification",
+      "not_retrieved"
+    ],
+    "publication_status": [
+      "peer_reviewed_version_of_record",
+      "peer_reviewed_online_first",
+      "preprint",
+      "conference_abstract",
+      "protocol",
+      "editorial_or_commentary",
+      "correction",
+      "retraction",
+      "other",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "immune_link": [
+      "direct_immune_cell_or_count",
+      "direct_immune_subset",
+      "direct_effector_function",
+      "recognized_immune_mediator",
+      "immune_cell_omics",
+      "biofluid_omics_with_immune_objective_in_original_aims_methods",
+      "posthoc_immune_pathway_only",
+      "no_identifiable_immune_link",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "time_bin": [
+      "pre_exercise_baseline",
+      "during",
+      "0_to_<30min",
+      "30min_to_<3h",
+      "3h_to_<24h",
+      "24h_to_72h_inclusive",
+      ">72h",
+      "matched_control_time",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "sample_role": [
+      "pre_exercise_baseline",
+      "during_exercise",
+      "immediate_post",
+      "recovery_post",
+      "nonexercise_control",
+      "matched_control",
+      "other",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "precision_domain": [
+      "analytical_reliability",
+      "temporal_validity",
+      "immune_specificity",
+      "individualization",
+      "functional_clinical_linkage",
+      "independent_validation_and_use",
+      "feasibility"
+    ],
+    "evidence_state": [
+      "evidence_present",
+      "measured_null",
+      "not_demonstrated",
+      "not_reported",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "relationship_tags": [
+      "co_measured_without_association_test",
+      "within_cohort_association",
+      "same_cohort_replication",
+      "internal_validation_same_participants",
+      "internal_validation_participant_split",
+      "independent_external_validation",
+      "clinical_followup_no_prediction",
+      "clinical_prediction_internal",
+      "clinical_prediction_external",
+      "direct_in_vitro_or_ex_vivo_function_test",
+      "direct_in_vivo_function_test",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "clinical_endpoint": [
+      "none_reported",
+      "self_reported_symptoms",
+      "clinician_defined_syndrome",
+      "pathogen_confirmed_infection",
+      "other_clinical_endpoint",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "validation_split": [
+      "none",
+      "resampling_same_participants",
+      "participant_level_holdout_same_cohort",
+      "independent_site_or_cohort",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "biological_level": [
+      "cell_count_or_subset",
+      "cellular_function",
+      "RNA_mRNA",
+      "RNA_miRNA",
+      "RNA_lncRNA",
+      "RNA_circRNA",
+      "RNA_other",
+      "protein",
+      "cytokine_or_immune_mediator",
+      "metabolite",
+      "lipid",
+      "DNA_methylation",
+      "chromatin_accessibility",
+      "other",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "omics_integration": [
+      "single_omics",
+      "multiple_omics_parallel",
+      "integrated_multiomics",
+      "not_omics",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "intended_use": [
+      "mechanistic_research",
+      "acute_response_monitoring",
+      "recovery_monitoring",
+      "training_adaptation_monitoring",
+      "immune_function_assessment",
+      "infection_risk_prediction",
+      "infection_diagnosis",
+      "clinical_decision_support",
+      "return_to_training",
+      "athletic_performance",
+      "other",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "linkage_subtype": [
+      "direct_functional_evidence",
+      "functional_assay_association",
+      "clinical_symptom_outcome",
+      "clinician_defined_outcome",
+      "pathogen_confirmed_outcome",
+      "combined_functional_and_clinical",
+      "no_linkage_evidence",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "validation_use_subtype": [
+      "independent_cohort_replication",
+      "independent_external_model_validation",
+      "internal_validation",
+      "prospective_use_or_impact_validation",
+      "implementation_or_field_use_validation",
+      "no_validation_or_use_test",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "measurement_record_type": [
+      "assay_universe_summary",
+      "named_immune_candidate",
+      "reported_result_summary"
+    ],
+    "candidate_selection_rule": [
+      "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+      "complete_targeted_panel",
+      "author_reported_feature_set",
+      "other_source_defined_rule",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "candidate_selection_basis": [
+      "original_aims",
+      "original_methods",
+      "registered_protocol_or_analysis_plan",
+      "supplement",
+      "other",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "candidate_prespecification_status": [
+      "registered_protocol_or_analysis_plan",
+      "stated_in_original_aims_or_methods_no_registration_required",
+      "posthoc_or_results_only",
+      "timing_unclear",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "candidate_result_status": [
+      "reported_significant",
+      "explicitly_reported_non_significant_or_null",
+      "named_candidate_result_not_located",
+      "assay_universe_only_no_candidate_result_reported",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "supplement_availability": [
+      "accessible",
+      "linked_but_not_accessible",
+      "not_listed",
+      "not_checked",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "effect_value_source": [
+      "reported_main_text_or_table",
+      "reported_supplement",
+      "author_provided",
+      "digitized_from_figure",
+      "not_reported",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "participant_linkage": [
+      "same_participants_identified",
+      "same_participants_aggregate_pairing_documented",
+      "some_participant_overlap",
+      "different_participants",
+      "not_reported",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "donor_count_basis": [
+      "unique_human_donors",
+      "unique_participants_equivalent",
+      "pooled_or_composite_donor_material",
+      "donor_identity_not_resolved",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "digitization_check": [
+      "not_applicable",
+      "not_started",
+      "independently_checked_by_second_reviewer",
+      "discrepancy_reconciled",
+      "not_double_checked",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ]
+  },
+  "legacy_61_fields": [
+    {
+      "field": "report_id",
+      "description": "每篇报告唯一ID",
+      "module": "identity",
+      "destination_table": "reports",
+      "destination_column": "report_id",
+      "data_type": "string",
+      "missing_value_rule": "Assign a stable nonempty unique ID; NR/NA/UNCLEAR are forbidden. JSON null is allowed only in the unfilled blank_record."
+    },
+    {
+      "field": "study_id",
+      "description": "独立研究ID",
+      "module": "identity",
+      "destination_table": "study_families",
+      "destination_column": "study_id",
+      "data_type": "string",
+      "missing_value_rule": "Assign a stable nonempty unique ID; NR/NA/UNCLEAR are forbidden. JSON null is allowed only in the unfilled blank_record."
+    },
+    {
+      "field": "cohort_id",
+      "description": "队列ID；同队列多报告关联",
+      "module": "identity",
+      "destination_table": "cohorts",
+      "destination_column": "cohort_id",
+      "data_type": "string",
+      "missing_value_rule": "Assign a stable nonempty unique ID; NR/NA/UNCLEAR are forbidden. JSON null is allowed only in the unfilled blank_record."
+    },
+    {
+      "field": "doi_pmid",
+      "description": "DOI/PMID",
+      "module": "identity",
+      "destination_table": "reports",
+      "destination_column": "doi; pmid",
+      "data_type": "object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "publication_status",
+      "description": "同行评审/预印本/会议摘要/更正/撤稿",
+      "module": "identity",
+      "destination_table": "reports",
+      "destination_column": "publication_status",
+      "data_type": "enum",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "version_date",
+      "description": "在线首发与当前版本日期",
+      "module": "identity",
+      "destination_table": "reports",
+      "destination_column": "version_date",
+      "data_type": "object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "source_locator",
+      "description": "全文页码/节/表/补充材料定位",
+      "module": "identity",
+      "destination_table": "reports",
+      "destination_column": "source_locator",
+      "data_type": "array",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "scope_stream",
+      "description": "acute_core / longitudinal_support / contextual / excluded / uncertain",
+      "module": "eligibility",
+      "destination_table": "reports",
+      "destination_column": "scope_stream",
+      "data_type": "enum",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "inclusion_reason",
+      "description": "逐项PCC纳入依据",
+      "module": "eligibility",
+      "destination_table": "reports",
+      "destination_column": "inclusion_reason",
+      "data_type": "string",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "exclusion_reason",
+      "description": "全文排除主原因",
+      "module": "eligibility",
+      "destination_table": "reports",
+      "destination_column": "exclusion_reason",
+      "data_type": "string",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "immune_link",
+      "description": "直接免疫细胞/功能/预设免疫分析/仅通路解释",
+      "module": "eligibility",
+      "destination_table": "reports",
+      "destination_column": "immune_link",
+      "data_type": "multi_enum",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "baseline_health",
+      "description": "健康定义；感染/疾病排除规则",
+      "module": "eligibility",
+      "destination_table": "cohorts",
+      "destination_column": "baseline_health",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "n_recruited",
+      "description": "招募人数",
+      "module": "population",
+      "destination_table": "cohorts",
+      "destination_column": "n_recruited",
+      "data_type": "integer_or_missing_code",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "n_analyzed",
+      "description": "该分析有效独立受试者数",
+      "module": "population",
+      "destination_table": "report_cohort_links",
+      "destination_column": "n_analyzed",
+      "data_type": "integer_or_missing_code",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "n_by_assay_time",
+      "description": "每组、每平台、每时间点实际人数",
+      "module": "population",
+      "destination_table": "sample_sets",
+      "destination_column": "n_participants; n_biological_samples; n_cells; n_technical_replicates",
+      "data_type": "separate_counts",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "age_sex",
+      "description": "年龄、性别及亚组",
+      "module": "population",
+      "destination_table": "cohorts",
+      "destination_column": "age_sex",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "training_status",
+      "description": "未训练/休闲/训练/精英",
+      "module": "population",
+      "destination_table": "cohorts",
+      "destination_column": "training_status",
+      "data_type": "enum_or_text",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "sport",
+      "description": "运动项目",
+      "module": "population",
+      "destination_table": "cohorts",
+      "destination_column": "sport",
+      "data_type": "string_or_array",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "repeated_sampling",
+      "description": "受试者配对及重复测量结构",
+      "module": "population",
+      "destination_table": "sample_sets",
+      "destination_column": "repeated_sampling; pairing_structure",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "design",
+      "description": "随机/交叉/单组前后/前瞻队列/横断面",
+      "module": "exposure",
+      "destination_table": "study_families",
+      "destination_column": "design",
+      "data_type": "enum_or_text",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "exercise_mode",
+      "description": "耐力/抗阻/混合/比赛",
+      "module": "exposure",
+      "destination_table": "sample_sets",
+      "destination_column": "exercise_mode",
+      "data_type": "enum_or_text",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "dose",
+      "description": "持续时间、强度及强度量化方法",
+      "module": "exposure",
+      "destination_table": "sample_sets",
+      "destination_column": "dose",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "control",
+      "description": "无运动/对照负荷/个体基线等",
+      "module": "exposure",
+      "destination_table": "sample_sets",
+      "destination_column": "control",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "training_load",
+      "description": "先前负荷、训练期与恢复安排",
+      "module": "exposure",
+      "destination_table": "study_families; sample_sets",
+      "destination_column": "training_load",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "cointerventions",
+      "description": "营养、补剂、睡眠或其他干预",
+      "module": "exposure",
+      "destination_table": "study_families; sample_sets",
+      "destination_column": "cointerventions",
+      "data_type": "string_or_array",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "exercise_end_definition",
+      "description": "采样计时起点",
+      "module": "exposure",
+      "destination_table": "sample_sets",
+      "destination_column": "exercise_end_definition",
+      "data_type": "string",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "exact_times",
+      "description": "保留原始运动前/中/后时间，不能只留分箱",
+      "module": "sampling",
+      "destination_table": "sample_sets",
+      "destination_column": "timepoint_as_reported; time_from_exercise_end_value; time_unit",
+      "data_type": "object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "time_bin",
+      "description": "仅为呈现：运动中、0–<30min、30min–<3h、3–<24h、24–72h、>72h、未报告",
+      "module": "sampling",
+      "destination_table": "sample_sets",
+      "destination_column": "time_bin",
+      "data_type": "enum",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "matrix",
+      "description": "全血/血浆/血清/PBMC/唾液/尿/汗/组织分别编码",
+      "module": "sampling",
+      "destination_table": "sample_sets",
+      "destination_column": "matrix",
+      "data_type": "enum_or_text",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "preanalytics",
+      "description": "采集、储存、处理延迟、冻融",
+      "module": "sampling",
+      "destination_table": "sample_sets",
+      "destination_column": "preanalytics",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "normalization",
+      "description": "血容量/水合、尿肌酐/比重、唾液流率/分泌率、细胞数等",
+      "module": "sampling",
+      "destination_table": "sample_sets",
+      "destination_column": "normalization",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "circadian",
+      "description": "采样时刻与昼夜控制",
+      "module": "sampling",
+      "destination_table": "sample_sets",
+      "destination_column": "circadian",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "analyte_id",
+      "description": "标准名称与数据库ID；记录原文名称",
+      "module": "biomarkers",
+      "destination_table": "measurements",
+      "destination_column": "analyte_id",
+      "data_type": "object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "biological_level",
+      "description": "细胞/蛋白/代谢物/脂质/RNA/表观遗传/功能读数",
+      "module": "biomarkers",
+      "destination_table": "measurements",
+      "destination_column": "biological_level",
+      "data_type": "enum_or_text",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "platform",
+      "description": "靶向检测/流式/质谱/RNA-seq/ATAC/甲基化等",
+      "module": "biomarkers",
+      "destination_table": "measurements",
+      "destination_column": "platform",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "omics_integration",
+      "description": "单组学、多平台并列、多组学整合分别编码",
+      "module": "biomarkers",
+      "destination_table": "measurements",
+      "destination_column": "omics_integration",
+      "data_type": "enum",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "cell_context",
+      "description": "细胞亚群、bulk组成与细胞比例校正",
+      "module": "biomarkers",
+      "destination_table": "measurements",
+      "destination_column": "cell_context",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "assay_validity",
+      "description": "检测限、可靠性、单位、QC；未报记NR",
+      "module": "biomarkers",
+      "destination_table": "measurements",
+      "destination_column": "assay_validity",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "feature_identification",
+      "description": "代谢物/蛋白鉴定置信度与平台批次",
+      "module": "biomarkers",
+      "destination_table": "measurements",
+      "destination_column": "feature_identification",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "comparison",
+      "description": "哪组与哪组/哪个时间点相较",
+      "module": "analysis",
+      "destination_table": "measurements",
+      "destination_column": "comparison",
+      "data_type": "string",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "effect_uncertainty",
+      "description": "幅度、单位、CI/SE或原文不确定性",
+      "module": "analysis",
+      "destination_table": "measurements",
+      "destination_column": "effect_uncertainty",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "multiplicity",
+      "description": "多重检验校正及预设阈值",
+      "module": "analysis",
+      "destination_table": "measurements",
+      "destination_column": "multiplicity",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "confounding",
+      "description": "睡眠、营养、应激、感染暴露、季节、月经周期等已控制/未报",
+      "module": "analysis",
+      "destination_table": "measurements",
+      "destination_column": "confounding",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "donor_level_inference",
+      "description": "单细胞/技术重复是否错误当独立受试者",
+      "module": "analysis",
+      "destination_table": "measurements",
+      "destination_column": "donor_level_inference",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "missing_data",
+      "description": "质控排除、缺失及处理",
+      "module": "analysis",
+      "destination_table": "sample_sets; measurements",
+      "destination_column": "missing_data",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "null_findings",
+      "description": "阴性/不一致结果同样记录",
+      "module": "analysis",
+      "destination_table": "measurements",
+      "destination_column": "null_findings",
+      "data_type": "string_or_array",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "response_evidence",
+      "description": "仅运动相关变化？",
+      "module": "validation",
+      "destination_table": "precision_validation",
+      "destination_column": "response_evidence",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "functional_evidence",
+      "description": "实际免疫功能试验；计算预测功能另标",
+      "module": "validation",
+      "destination_table": "precision_validation",
+      "destination_column": "functional_evidence",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "replication",
+      "description": "同样本技术复核/同队列复现/独立队列分别编码",
+      "module": "validation",
+      "destination_table": "precision_validation",
+      "destination_column": "replication",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "clinical_endpoint",
+      "description": "症状日记/医生诊断/病原学确认分别编码",
+      "module": "validation",
+      "destination_table": "precision_validation",
+      "destination_column": "clinical_endpoint",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "temporal_order",
+      "description": "标志物是否测于发病之前；随访长度",
+      "module": "validation",
+      "destination_table": "precision_validation",
+      "destination_column": "temporal_order",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "prediction_design",
+      "description": "预设结局、模型开发/内验证/外验证",
+      "module": "validation",
+      "destination_table": "precision_validation",
+      "destination_column": "prediction_design",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "prediction_metrics",
+      "description": "区分度、校准、阈值、净获益；不把训练AUC当外部效能",
+      "module": "validation",
+      "destination_table": "precision_validation",
+      "destination_column": "prediction_metrics",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "leakage_control",
+      "description": "按参与者/队列划分，特征选择在训练折内部",
+      "module": "validation",
+      "destination_table": "precision_validation",
+      "destination_column": "leakage_control",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "individualization",
+      "description": "重复基线、个体内变异、个体阈值/决策验证",
+      "module": "validation",
+      "destination_table": "precision_validation",
+      "destination_column": "individualization",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "field_feasibility",
+      "description": "采样负担、成本、周转时间与真实应用测试",
+      "module": "validation",
+      "destination_table": "precision_validation",
+      "destination_column": "field_feasibility",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "extractor_a_b",
+      "description": "两位研究者独立提取记录",
+      "module": "provenance",
+      "destination_table": "extraction_provenance",
+      "destination_column": "extractor_a_b",
+      "data_type": "object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "adjudication",
+      "description": "分歧、依据与最终决定",
+      "module": "provenance",
+      "destination_table": "extraction_provenance",
+      "destination_column": "adjudication",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "ai_assistance",
+      "description": "模型/日期/任务/提示词版本/输出/人工复核",
+      "module": "provenance",
+      "destination_table": "extraction_provenance",
+      "destination_column": "ai_assistance",
+      "data_type": "object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "open_data",
+      "description": "数据集登录号、代码、访问条件与复用许可",
+      "module": "provenance",
+      "destination_table": "extraction_provenance",
+      "destination_column": "open_data",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    },
+    {
+      "field": "integrity_status",
+      "description": "出版商/PubMed更正撤稿检查日期及结果，不把未发现写成保证",
+      "module": "provenance",
+      "destination_table": "extraction_provenance",
+      "destination_column": "integrity_status",
+      "data_type": "string_or_object",
+      "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
+    }
+  ],
+  "precision_dimensions": {
+    "type": "seven multidimensional descriptive parent labels with child facets",
+    "dimensions": [
+      "analytical_reliability",
+      "temporal_validity",
+      "immune_specificity",
+      "individualization",
+      "functional_clinical_linkage",
+      "independent_validation_and_use",
+      "feasibility"
+    ],
+    "subfacets": {
+      "functional_clinical_linkage": [
+        "direct_functional_evidence",
+        "functional_assay_association",
+        "clinical_symptom_outcome",
+        "clinician_defined_outcome",
+        "pathogen_confirmed_outcome",
+        "combined_functional_and_clinical",
+        "no_linkage_evidence",
+        "NR",
+        "NA",
+        "UNCLEAR"
+      ],
+      "independent_validation_and_use": [
+        "independent_cohort_replication",
+        "independent_external_model_validation",
+        "internal_validation",
+        "prospective_use_or_impact_validation",
+        "implementation_or_field_use_validation",
+        "no_validation_or_use_test",
+        "NR",
+        "NA",
+        "UNCLEAR"
+      ]
+    },
+    "rule": "No sum, mean, ranking, readiness score, GRADE synthesis or clinical ranking."
+  },
+  "analysis_unit_rules": {
+    "n_recruited": "Unique people enrolled, before exclusion.",
+    "n_analyzed": "Unique people contributing to a defined report-cohort analysis; report_cohort_links.",
+    "n_by_assay_time": "One sample_sets row per assay × matrix × group × time; keep participant, biological sample, cell, technical repeat and aliquot counts separate.",
+    "single_cell": "Record participant n, donor n and cell n separately. Donor count basis must be explicit; donor-level pseudobulk/mixed inference cannot be inferred from cell number.",
+    "individual_variation": "Record repeated baselines, repeat challenges and within-person variance/measurement error; raw pre-post difference alone does not establish reproducible responder status or personalized utility.",
+    "candidate_universe": "For each assay, record the tested feature universe and available source files; enumerate every named immune candidate that meets the original aims/methods definition in accessible article/supplements regardless of significance. Never infer unreported nulls.",
+    "figure_values": "Use numbers reported in text/tables/supplements first. If later digitization is necessary, predeclare the method and mark as digitized-from-figure; preserve panel locator, independent A/B readings and reconciliation.",
+    "support_B": "Require the same marker and same participants across at least two distinct identified exercise-bout IDs, known bout-to-sample timing, and a baseline/comparator."
+  },
+  "legacy_mapping_notes": {
+    "doi_pmid": "Split to reports.doi and reports.pmid.",
+    "n_by_assay_time": "Represent with sample_sets, not a nested assay×time map.",
+    "exact_times": "Preserve source wording plus normalized time from exercise end; time_bin is presentation only.",
+    "validation": "Put each dimension in its own precision_validation row; label co-measurement, association, internal and independent external validation distinctly.",
+    "provenance": "Reviewer/human decisions remain blank until performed.",
+    "semicolon_targets": "Split destination_table and destination_column on semicolons and trim whitespace. Broadcast a single table across multiple columns, or a single column across multiple tables; when both contain multiple targets, pair them positionally. Verify every resulting table.column against the template."
+  },
+  "new_operational_fields_not_in_legacy_61": {
+    "sample_sets.n_donors": "Number of unique biological donors contributing to this assay/time sample set; record separately from participants and cells.",
+    "sample_sets.donor_count_basis": "Basis used to identify/count biological donors and relation to participant IDs.",
+    "sample_sets.bout_id / bout_number": "Distinct identified exercise event and sequence number; required to test Support B across bouts.",
+    "sample_sets.participant_linkage": "Whether the same individuals are documented across repeated event sample sets.",
+    "measurements.record_type / assay_universe_id": "Distinguish assay-level universe summary from named candidate and reported-result rows; connect rows from one assay universe.",
+    "measurements.candidate_selection_rule / basis / prespecification_status": "Record candidate selection rule, source in original aims/methods/protocol, and timing. Original aims/methods qualify without preregistration.",
+    "measurements.candidate_in_original_aims_methods / source_locator": "Audit why each named immune candidate enters the map; include regardless of statistical significance.",
+    "measurements.supplement_availability / sources": "Record whether supplementary candidate/feature lists were available and exact links/locations, including inaccessible files.",
+    "measurements.feature_total_count / unit / universe_locator": "Record total features or candidates in the reported/testing universe and the file/table/accession where it can be checked.",
+    "measurements.result_status": "Distinguish explicit null/nonsignificant result from a named candidate whose result was not retrievable or not separately reported.",
+    "measurements.marker_series_id": "Link the same marker across at least two identified exercise bouts for Support B review.",
+    "measurements.effect_value_source and digitization fields": "Distinguish author-reported values from digitized figure readings; record the predeclared method, panel, two readings and reconciliation.",
+    "precision_validation.linkage_subtype": "Functional and clinical linkage remain child facets under one parent domain.",
+    "precision_validation.validation_use_subtype": "Independent validation and use/impact testing remain child facets under one parent domain.",
+    "measurements.tested_universe / n / unit": "Explicit assay-level tested feature space/denominator: definition plus count and unit, including platform and QC/filtering rules.",
+    "report_cohort_links.scope_streams": "Record applicable A_core_acute and/or B_support_repeated_bouts streams for this report-study-cohort relationship. Both may coexist; deduplicate overall cohort counts. Keep report-level scope_stream as the legacy summary; link-level memberships govern cohort-stratified maps."
+  },
+  "immune_link_definition": "For biofluid omics, an immune objective/candidate must be identifiable in original study aims or methods; preregistration is not required. Post-hoc immune pathway enrichment alone is context, not sufficient main-map immune linkage."
+}

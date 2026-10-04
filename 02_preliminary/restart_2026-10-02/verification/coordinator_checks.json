@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-02",
+  "metadata_summary": {
+    "cutoff_date": "2026-10-02",
+    "research_type": "Targeted public-web reconnaissance, not a completed scoping review",
+    "lane_source_entries": 72,
+    "unique_reference_records": 65,
+    "scientific_reference_records": 53,
+    "methods_reference_records": 12,
+    "doi_records": 55,
+    "crossref_matched_dois": 53,
+    "pubmed_records_retrieved": 53,
+    "counting_caveat": "Reference records are NOT included studies or independent cohorts; shared cohorts require formal linking."
+  },
+  "resolved_lookup_flags": [
+    {
+      "doi": "10.22029/eir.2024.1759",
+      "result": "Publisher confirms DOI and title despite Crossref 404 and absent DOI in PubMed.",
+      "url": "https://journals.ub.uni-giessen.de/eir/article/view/1759"
+    },
+    {
+      "doi": "10.3389/fmed.2025.1703829",
+      "result": "PubMed and Frontiers confirm identity; Crossref lookup was rate limited. Published 2026-02-02 despite DOI containing 2025.",
+      "url": "https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2025.1703829/full"
+    }
+  ],
+  "interpretation_corrections": [
+    "Original <30 min rule refers to study follow-up duration; it does not exclude all early samples in studies with longer follow-up.",
+    "Sardeli 2024 reports OR 1.18 (95% CI 1.05–1.33). Do not call this an 18 percentage-point increase or equate odds ratio with risk ratio.",
+    "MoTrPAC participant and repeated-sample counts reconciled using metab09; shared publications are not independent cohorts.",
+    "CIMA is published cross-sectional regular-activity evidence; its preprint is a version, not another study.",
+    "Reviews and guidance are contextual regardless of individual lane scope labels.",
+    "Contrepois metabolic-health eligibility remains unresolved under a strictly healthy population definition.",
+    "PubMed ErratumIn for Shalmon 2025 concerns affiliation; PRISMA-ScR CommentIn is commentary, not an erratum.",
+    "Absence of a retraction notice in targeted checks is not proof of absence in every source."
+  ]
+}

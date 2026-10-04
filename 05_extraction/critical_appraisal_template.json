@@ -1,0 +1,294 @@
+{
+  "template_version": "1.0.0",
+  "protocol_version": "2.0",
+  "accessed_on": "2026-10-02",
+  "purpose": "Descriptive design-appropriate critical appraisal and a separate project-defined precision/assay profile. No composite score, rank, exclusion threshold, or GRADE certainty rating.",
+  "record_unit": "One record per report_id and appraised analysis; link report_id, study_id, and cohort_id so multiple reports/analyses do not double-count participants.",
+  "tool_selection": {
+    "randomized_parallel_or_crossover_exercise_intervention": "JBI_RCT_CURRENT",
+    "nonrandomized_intervention_or_single_group_pre_post_exercise_challenge": "JBI_QUASI_EXPERIMENTAL_CURRENT",
+    "observational_exposure_defined_longitudinal_cohort": "JBI_COHORT_CURRENT",
+    "analytical_cross_sectional_analysis": "JBI_ANALYTICAL_CROSS_SECTIONAL_CURRENT",
+    "true_case_control_sampling_by_outcome": "JBI_CASE_CONTROL_CURRENT",
+    "diagnostic_index_test_against_reference_standard": "JBI_DTA_CURRENT",
+    "individual_level_prediction_model_development_or_evaluation": "PROBAST_AI_2025",
+    "note": "Use a tool only when its design/question applies. Do not apply JBI RCT/RoB 2 to all studies. JBI DTA is for an actual index-test/reference-standard diagnostic accuracy question. PROBAST+AI retains its published scope for diagnostic and prognostic prediction-model studies; for this review, trigger it for a genuine individual-level model predicting a defined future outcome, including a future immune-response outcome. A contemporaneous exercise-versus-control classifier, discovery classifier, group-level association, clustering, or descriptive omics analysis alone does not trigger it.",
+    "source_directory": "https://jbi.global/critical-appraisal-tools",
+    "source_accessed_on": "2026-10-02",
+    "tool_registry": [
+      {
+        "tool_id": "JBI_RCT_CURRENT",
+        "tool_name": "JBI randomized controlled trials checklist",
+        "method_paper": "Barker TH et al. JBI Evid Synth. 2023;21(3):494-506.",
+        "official_form_url": "https://jbi.global/sites/default/files/2026-09/Revised%20Checklist%20for%20RCTs.docx",
+        "official_directory": "https://jbi.global/critical-appraisal-tools",
+        "official_file_link_date": "2026-09",
+        "selection_note": "For randomized parallel or crossover exercise interventions. For crossover designs also narratively note sequence, period, washout/carryover, and paired analysis; no extra score."
+      },
+      {
+        "tool_id": "JBI_QUASI_EXPERIMENTAL_CURRENT",
+        "tool_name": "JBI quasi-experimental studies checklist, revised",
+        "method_paper": "Barker TH et al. JBI Evid Synth. 2024;22(3):378-388.",
+        "official_form_url": "https://jbi.global/sites/default/files/2026-05/2_JBI%20checklist%20for%20quasi-experimental%20studies.docx",
+        "official_directory": "https://jbi.global/critical-appraisal-tools",
+        "official_file_link_date": "2026-05",
+        "selection_note": "For non-randomized exercise interventions and one-group acute pre/post challenges with an identifiable bout and comparator/baseline."
+      },
+      {
+        "tool_id": "JBI_COHORT_CURRENT",
+        "tool_name": "JBI cohort studies checklist, revised",
+        "method_paper": "Barker TH et al. JBI Evid Synth. 2025;23(3):441-453.",
+        "official_form_url": "https://jbi.global/sites/default/files/2026-09/Checklist_for_Cohort_Studies%202025.docx",
+        "official_directory": "https://jbi.global/critical-appraisal-tools",
+        "official_file_link_date": "2026-09",
+        "selection_note": "For observational exposure-defined longitudinal cohorts; repeated measurements alone do not make a cohort."
+      },
+      {
+        "tool_id": "JBI_ANALYTICAL_CROSS_SECTIONAL_CURRENT",
+        "tool_name": "JBI analytical cross-sectional studies risk-of-bias assessment, revised",
+        "method_paper": "Barker TH et al. JBI Evid Synth. 2026;24(3):401-408.",
+        "official_form_url": "https://jbi.global/sites/default/files/2026-05/Assessment%20of%20Risk%20of%20Bias%20for%20Analytical%20Cross-sectional%20Studies%202026.docx",
+        "official_directory": "https://jbi.global/critical-appraisal-tools",
+        "official_file_link_date": "2026-05",
+        "selection_note": "Habitual-exercise-only cross-sectional evidence is background under v2 and excluded from the core A/B appraisal denominator unless separately labeled as contextual."
+      },
+      {
+        "tool_id": "JBI_CASE_CONTROL_CURRENT",
+        "tool_name": "JBI case-control studies checklist",
+        "method_paper": "Use the current checklist linked from the live JBI directory; no revised-tool publication date asserted here.",
+        "official_form_url": "https://jbi.global/sites/default/files/2026-05/Checklist_for_Case_Control_Studies.docx",
+        "official_directory": "https://jbi.global/critical-appraisal-tools",
+        "official_file_link_date": "2026-05",
+        "selection_note": "Only for a true outcome-sampled case-control design."
+      },
+      {
+        "tool_id": "JBI_DTA_CURRENT",
+        "tool_name": "JBI diagnostic test accuracy studies checklist",
+        "method_paper": "JBI Critical Appraisal Tools directory links JBI Manual for Evidence Synthesis, Chapter 9 (2020).",
+        "official_form_url": "https://jbi.global/sites/default/files/2026-05/Checklist_for_Diagnostic_Test_Accuracy_Studies.docx",
+        "official_directory": "https://jbi.global/critical-appraisal-tools",
+        "official_file_link_date": "2026-05",
+        "selection_note": "Only for an index assay tested against a stated reference standard for a defined target condition. Do not classify a biomarker association or exploratory pathway analysis as DTA."
+      },
+      {
+        "tool_id": "PROBAST_AI_2025",
+        "tool_name": "PROBAST+AI",
+        "method_paper": "Moons KGM et al. PROBAST+AI: an updated quality, risk of bias, and applicability assessment tool for prediction models using regression or artificial intelligence methods. BMJ. 2025;388:e082505. doi:10.1136/bmj-2024-082505.",
+        "official_form_url": "https://www.bmj.com/content/388/bmj-2024-082505",
+        "official_directory": "https://www.probast.org/",
+        "publication_date": "2025-03-24",
+        "selection_note": "Published PROBAST+AI scope covers diagnostic and prognostic prediction-model development, updating, and evaluation using regression or AI/ML. This review applies it when an individual-level model predicts a defined future outcome, including a future immune-response outcome; this is the review's tool-selection rule, not a restriction on the instrument's general scope. A contemporaneous exercise-versus-control or molecular discovery classifier does not trigger it. Specify development and/or evaluation, and distinguish apparent, internal, and external validation.",
+        "pubmed_id": "40127903",
+        "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40127903/"
+      }
+    ]
+  },
+  "status_codes": {
+    "tool_response_normalized": [
+      "YES",
+      "NO",
+      "UNCLEAR",
+      "NA"
+    ],
+    "reporting_status": [
+      "REPORTED",
+      "NR",
+      "CONFLICTING",
+      "NOT_APPLICABLE"
+    ],
+    "precision_profile_status": [
+      "EVIDENCE_REPORTED",
+      "NOT_REPORTED",
+      "UNCLEAR",
+      "NOT_APPLICABLE"
+    ],
+    "coding_note": "Keep any source instrument's exact answer label in tool_response_verbatim. No report information is usually tool_response_normalized=UNCLEAR and reporting_status=NR, not NO. NR means not reported; it does not mean failed or absent. NA requires a rationale. Status codes are descriptive, not points or a scale.",
+    "eligibility_stratum": [
+      "CORE_A",
+      "CORE_B",
+      "FRONTIER_PREPRINT",
+      "CONTEXT_ONLY",
+      "BOUNDARY_PILOT"
+    ],
+    "core_appraisal_denominator": [
+      "YES",
+      "NO",
+      "PENDING"
+    ],
+    "publication_status": [
+      "PEER_REVIEWED",
+      "PREPRINT",
+      "OTHER",
+      "UNCLEAR"
+    ],
+    "prediction_model_phase": [
+      "NOT_APPLICABLE",
+      "DEVELOPMENT",
+      "EVALUATION",
+      "BOTH"
+    ],
+    "prediction_validation_type": [
+      "NOT_APPLICABLE",
+      "APPARENT",
+      "INTERNAL",
+      "EXTERNAL",
+      "MULTIPLE",
+      "NR"
+    ],
+    "consensus_status": [
+      "NOT_STARTED",
+      "DISCUSSED_RESOLVED",
+      "ADJUDICATOR_REQUIRED",
+      "ADJUDICATED"
+    ],
+    "functional_linkage_type": [
+      "MOLECULAR_CONCORDANCE",
+      "CELL_COUNT_OR_SUBSET",
+      "EX_VIVO_FUNCTION",
+      "VACCINE_OR_ANTIBODY",
+      "SYMPTOM",
+      "PATHOGEN_CONFIRMED_INFECTION",
+      "OTHER",
+      "NR"
+    ],
+    "validation_unit": [
+      "PARTICIPANT",
+      "COHORT",
+      "SITE",
+      "TIME_PERIOD",
+      "OTHER",
+      "NR"
+    ],
+    "decision_use_status": [
+      "TESTED",
+      "NOT_TESTED",
+      "PROPOSED_ONLY",
+      "NR",
+      "UNCLEAR",
+      "NA"
+    ]
+  },
+  "appraisal_record_template": {
+    "report_id": "",
+    "study_id": "",
+    "cohort_id": "",
+    "analysis_id": "",
+    "eligibility_stratum": "",
+    "core_appraisal_denominator": "",
+    "publication_status": "",
+    "design_as_appraised": "",
+    "design_rationale": "",
+    "tool_id": "",
+    "tool_title_as_used": "",
+    "tool_release_or_form_date": "",
+    "tool_source_url": "",
+    "tool_file_archived_path": "",
+    "tool_file_sha256": "",
+    "tool_downloaded_on": "",
+    "analysis_phase_if_prediction_model": "",
+    "validation_type_if_prediction_model": "",
+    "appraiser_1_id": "",
+    "appraiser_1_completed_on": "",
+    "appraiser_2_id": "",
+    "appraiser_2_completed_on": "",
+    "items": [
+      {
+        "item_id_as_printed": "",
+        "tool_response_verbatim": "",
+        "response_normalized": "",
+        "reporting_status": "",
+        "appraiser_id": "",
+        "rationale": "",
+        "evidence_locator": "PDF page; section/table/figure/supplement or stable URL"
+      }
+    ],
+    "official_tool_outputs": [
+      {
+        "domain_or_output_name_as_defined_by_tool": "",
+        "judgment_as_defined_by_tool": "",
+        "rationale": "",
+        "evidence_locator": ""
+      }
+    ],
+    "crossover_or_other_design_specific_note": "",
+    "initial_disagreements": [
+      {
+        "item_id": "",
+        "appraiser_1_response": "",
+        "appraiser_2_response": "",
+        "resolution_note": ""
+      }
+    ],
+    "consensus_status": "",
+    "consensus_items": [
+      {
+        "item_id": "",
+        "response_normalized": "",
+        "reporting_status": "",
+        "rationale": "",
+        "evidence_locator": ""
+      }
+    ],
+    "adjudicator_id": "",
+    "adjudication_note": "",
+    "descriptive_appraisal_summary": "",
+    "precision_profile": {
+      "analytical_reliability": {
+        "status": "",
+        "evidence_note": "",
+        "evidence_locator": ""
+      },
+      "temporal_validity": {
+        "status": "",
+        "evidence_note": "",
+        "evidence_locator": ""
+      },
+      "immune_specificity": {
+        "status": "",
+        "evidence_note": "",
+        "evidence_locator": ""
+      },
+      "individualization": {
+        "status": "",
+        "evidence_note": "",
+        "evidence_locator": ""
+      },
+      "functional_clinical_linkage": {
+        "status": "",
+        "evidence_note": "",
+        "linkage_type": "",
+        "evidence_locator": ""
+      },
+      "independent_validation_and_use": {
+        "independent_validation": {
+          "status": "",
+          "evidence_note": "",
+          "validation_unit": "",
+          "evidence_locator": ""
+        },
+        "decision_use_evidence": {
+          "status": "",
+          "intended_or_author_stated_use": "",
+          "use_tested": "",
+          "decision_context": "",
+          "threshold_or_action": "",
+          "implementation_or_decision_impact": "",
+          "evidence_locator": ""
+        }
+      },
+      "feasibility": {
+        "status": "",
+        "evidence_note": "",
+        "evidence_locator": ""
+      }
+    },
+    "record_updated_on": "",
+    "precision_profile_note": "Dimensions are reported separately and are not a validated scale, composite score, or ladder. Independent validation and tested decision use are recorded as separate facets within one protocol domain."
+  },
+  "process": {
+    "independent_human_reviewers": 2,
+    "calibration": "Use the 10 purposively selected calibration/boundary reports to clarify design selection and item evidence locators; these do not create included-study counts. The screening pilot agreement threshold does not apply to appraisal.",
+    "disagreement_resolution": "Discussion first; then the predesignated adjudicator if unresolved. The adjudicator's identity is pending and must be supplied before formal appraisal.",
+    "reporting": "Preserve both initial appraisals and consensus; summarize concerns descriptively by design without total score, ranking, appraisal-based exclusion, GRADE, or clinical recommendations."
+  }
+}

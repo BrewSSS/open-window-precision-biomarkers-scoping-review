@@ -1,0 +1,30 @@
+# Proteomics lane — evidence update through 2026-10-02
+
+Files saved:
+- `/Users/USER/Desktop/Precise immunological markers/02_preliminary/restart_2026-10-02/lanes/proteomics.json`
+- `/Users/USER/Desktop/Precise immunological markers/02_preliminary/restart_2026-10-02/lanes/proteomics.txt`
+
+## Main conclusions
+
+1. The closest recent multi-fluid exercise proteomics study is Kurgan et al. (2025), a bioRxiv preprint in 25 fit young men. It profiles plasma, stimulated saliva, and urine from before exercise through 24 h after 45-min cycling; only the plasma assay has a separate-cohort replication (n=24). Humoral-immune pathway enrichment and transient cytokines are molecular response signals, not evidence of immune suppression or infection risk. [Preprint](https://www.biorxiv.org/content/10.1101/2025.05.28.656705v1)
+
+2. Xu et al. (2020; PMID 32047808) should remain an exploratory urine candidate, with its headline inference sharply bounded. The exercise study followed 15 young men for four weeks and reported changing blood-cell indices and four urinary candidates, but the iTRAQ discovery used one pooled sample per time point (biological n=1/time point; technical duplicate analyses). At week 4, the paper reports WBC −15%, neutrophils −27.4%, CD4% −11.8%, and CD8% +27.3%; CD4/CD8 was lower from week 1. Sampling after the final bout was unspecified, urine concentration correction was not reported, and the immune measures were counts/subsets—not functional assays or infections. ELISA in the same study is not independent validation. Searches of title/DOI/PMID plus retraction/correction terms found no notice in the PubMed/PMC and publisher-facing records checked on 2026-10-02; that is not an exhaustive guarantee that no notice exists. [Full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC7003279/), [PubMed](https://pubmed.ncbi.nlm.nih.gov/32047808/)
+
+3. Distinguish three blood evidence classes. Wenzel et al. (2025; n=12) used targeted Olink PEA (92 immune proteins) for minute-by-minute acute exercise kinetics through 1 h recovery. MoTrPAC (2026; n=176, preprint) integrates Olink plasma proteins, metabolomics, and whole-blood transcriptomics across up to seven points in 24 h, with a non-exercise control. Neither demonstrates clinical infection risk or direct functional immune impairment. [Wenzel](https://pmc.ncbi.nlm.nih.gov/articles/PMC12615995/), [MoTrPAC](https://pmc.ncbi.nlm.nih.gov/articles/PMC12980391/)
+
+4. Urine is particularly vulnerable to competing interpretations. A 3000-m time trial study (10 runners; targeted assays) reported both urinary inflammatory mediators and renal/gut injury changes alongside altered urine concentration indices. In the 2024 Boston Marathon cohort (72 qualified runners; 60 with complete samples), kidney injury markers rose after urine-specific-gravity correction and regardless of hydration group. Acute plasma-volume change can approach 14% after exercise in the contextual running/cycling study. Thus neither a urinary rise nor an immediate plasma concentration change is automatically immune-specific. [3000-m trial](https://pmc.ncbi.nlm.nih.gov/articles/PMC7826822/), [Boston Marathon](https://pmc.ncbi.nlm.nih.gov/articles/PMC12924623/), [plasma-volume study](https://pmc.ncbi.nlm.nih.gov/articles/PMC9355650/)
+
+5. Saliva and sweat are promising collection matrices, but the opened evidence is early. The 2023 saliva recovery systematic review (14 studies, 226 volunteers) mainly covers targeted cortisol/testosterone/alpha-amylase/IgA with heterogeneous and inconsistent recovery results, not proteomics. Sweat proteomics from 2025–2026 is about heat stress or acclimatization, and so should not be merged with ordinary acute post-exercise immune recovery. [Saliva review](https://pmc.ncbi.nlm.nih.gov/articles/PMC10386489/), [2025 sweat study](https://pmc.ncbi.nlm.nih.gov/articles/PMC12019370/), [2026 abstract](https://pubmed.ncbi.nlm.nih.gov/42611616/)
+
+## Most relevant studies and protocol edits
+
+- Keep Xu 2020 as a directly relevant but low-confidence chronic-training urine discovery report; label its proteomic biological n as one pooled specimen per time point. Separate same-study ELISA from independent validation.
+- Add Kurgan 2025 as a recent acute cross-fluid discovery preprint, with plasma-only cohort replication explicitly distinguished from unreplicated saliva/urine discovery.
+- Include Wenzel 2025 and MoTrPAC 2026 as blood-protein kinetics and multi-omics context, respectively; retain assay class and whether the endpoint is molecular, cellular, functional, infection-associated, or predictive.
+- Add fields for biological/technical n, pooled versus individual specimens, last-bout-to-sample interval, urine concentration correction, plasma-volume correction, hydration and injury markers, and sweat site/rate/thermal context.
+- Synthesize acute exercise, repeated training, heat stress, and heat acclimatization separately. Treat 30 min as a sampling boundary for re-evaluation, not a biological definition of an immune open window.
+- Preserve the outcome ladder: biomarker change ≠ altered cell count ≠ impaired immune function ≠ infection association ≠ validated individual prediction.
+
+## Search limits
+
+This was targeted public-web/PubMed/PMC/publisher/preprint checking, not a formal search of the subscription databases listed in the project brief. No dedicated academic-search MCP was available in the surfaced tools. The 2026 sweat paper was available only as an abstract. No PRISMA counts or exhaustive absence claims are made. A generic salivary exercise proteomics pilot and a 2026 tear/nasal multi-fluid study were left outside the core set because they do not directly test immune recovery in the specified matrices.

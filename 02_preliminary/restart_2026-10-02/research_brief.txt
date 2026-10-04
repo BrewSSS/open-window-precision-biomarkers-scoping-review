@@ -1,0 +1,12 @@
+研究任务：截至 2026-10-02 的重启前证据摸底。
+用户已确认：PubMed、Web of Science、Scopus、Embase、SPORTDiscus及所询问数据库全文/检索资源全部可用；已有第二位筛选者。资源可用不代表本轮代理已登录或实际运行五库正式搜索。
+项目原题：Mapping the Landscape of Precision Biomarkers for Exercise-Induced Open Window: From Traditional Indices to Emerging Multi-Omics Candidates。
+现状：protocol 阶段，尚无正式数据库导出、筛选或提取数据。原协议见 01_protocol/protocol_EN_full.md 与 protocol_CN.md。用户已认可：不预设开放窗口成立；区分指标变化、免疫功能、感染关联、预测验证；重审30分钟规则；分开急性运动与训练研究；统一版本；重新核验创新性。
+本轮目的：给出可核验的近期证据与反证、哪些原方案需要更新、正式重启需要准备哪些具体工作。不是正式 scoping review，不生成虚构PRISMA数字，不推断无撞车。
+使用方法：deep-research 文献综述/来源核验思想与 nature-academic-search 多源检索。无专门 academic-search MCP 可用，使用 web 搜索检索公共 PubMed、出版商与官方指南；必要时公共 Crossref/NCBI API核验。不得声称已实际检索订阅数据库。仅真实打开并核验过的来源可进入核心表。
+检索优先2024–2026，可纳入2020–2023关键研究，以及必要的更早奠基研究。人类健康人群是核心；动物、疾病人群、静息横断面、预印本须标为背景或边界案例。发布日期晚于2026-10-02不得作为本轮证据。搜索当前撤稿/更正线索；未查到不等于确认没有。
+每个分支独立负责自己的 lanes/<lane>.json 和 lanes/<lane>.txt，不修改原协议，不相互覆盖文件。文献目标每分支6–10项，质量与真实性优先；稀缺可少于6项并说明。避免重复采集同一队列却算多个独立证据。
+JSON字段：lane, cutoff_date, searched_at_date, queries:[{source,query,date,notes}], sources:[{id,title,authors,year,publication_date,doi,pmid,url,source_type,access_level,population,design,sample_size,exercise_context,sampling_times,biomarkers,key_finding,clinical_endpoint,validation,limitations,scope_fit,evidence_anchor,verification_urls,integrity_notes}], findings:[{claim,source_ids,certainty,protocol_implication}], gaps, proposed_updates, search_limitations。
+id 使用各分支前缀+数字；doi未知填null，不凭记忆编造。sample_size、采样时间等仅填来源明确给出值，未知填null。access_level=full_text/abstract/metadata。scope_fit=core_candidate/context_only/exclude/needs_full_text。evidence_anchor 为 Abstract/Methods/具体章节，不虚构页码。source_type分别标 original_study/systematic_review/narrative_review/guideline/preprint 等。
+TXT给主代理：最重要3–5个结论、最接近竞品/最有价值的原始研究、核心反证、具体协议修改建议、完成文件路径。每项事实附来源链接。概括改写，不复制大段原文；单一来源总体引用/改写不要超工具限额。不要从小样本、转录变化或横断面关联推断功能受损、感染因果或个体预测能力。
+结论用中文。记录失败工具/访问限制。不要为了凑文献数纳入不相干文章。请在20分钟左右收束并返回。

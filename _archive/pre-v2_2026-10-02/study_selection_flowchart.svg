@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 950" width="850" height="950">
+
+  <!-- Background -->
+  <rect width="850" height="950" fill="#FAFAFA"/>
+
+  <!-- Title -->
+  <text x="425" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold"
+        text-anchor="middle" fill="#2C3E50">PRISMA-ScR Flow Diagram</text>
+
+  <!-- ==================== PHASE LABELS (Left Side) ==================== -->
+
+  <!-- Identification Phase Label -->
+  <rect x="30" y="80" width="110" height="180" rx="8" ry="8"
+        fill="#E8F4F8" stroke="#5DADE2" stroke-width="2"/>
+  <text x="85" y="175" font-family="Arial, sans-serif" font-size="13" font-weight="bold"
+        text-anchor="middle" fill="#2980B9">Identification</text>
+
+  <!-- Screening Phase Label -->
+  <rect x="30" y="290" width="110" height="150" rx="8" ry="8"
+        fill="#E8F6F3" stroke="#58D68D" stroke-width="2"/>
+  <text x="85" y="370" font-family="Arial, sans-serif" font-size="13" font-weight="bold"
+        text-anchor="middle" fill="#27AE60">Screening</text>
+
+  <!-- Eligibility Phase Label -->
+  <rect x="30" y="470" width="110" height="180" rx="8" ry="8"
+        fill="#FEF9E7" stroke="#F4D03F" stroke-width="2"/>
+  <text x="85" y="565" font-family="Arial, sans-serif" font-size="13" font-weight="bold"
+        text-anchor="middle" fill="#B7950B">Eligibility</text>
+
+  <!-- Included Phase Label -->
+  <rect x="30" y="680" width="110" height="120" rx="8" ry="8"
+        fill="#FADBD8" stroke="#E74C3C" stroke-width="2"/>
+  <text x="85" y="745" font-family="Arial, sans-serif" font-size="13" font-weight="bold"
+        text-anchor="middle" fill="#C0392B">Included</text>
+
+  <!-- ==================== IDENTIFICATION PHASE ==================== -->
+
+  <!-- Database Records Box -->
+  <rect x="180" y="80" width="260" height="70" rx="6" ry="6"
+        fill="#EBF5FB" stroke="#5DADE2" stroke-width="1.5"/>
+  <text x="310" y="108" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#2C3E50">
+    Records identified from databases</text>
+  <text x="310" y="124" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#5D6D7E">
+    (PubMed, Web of Science, Scopus,</text>
+  <text x="310" y="138" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#5D6D7E">
+    SPORTDiscus, Embase)</text>
+
+  <!-- Other Sources Box -->
+  <rect x="480" y="80" width="260" height="70" rx="6" ry="6"
+        fill="#EBF5FB" stroke="#5DADE2" stroke-width="1.5"/>
+  <text x="610" y="108" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#2C3E50">
+    Records identified from other sources</text>
+  <text x="610" y="124" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#5D6D7E">
+    (Citation tracking, hand-searching</text>
+  <text x="610" y="138" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#5D6D7E">
+    key journals)</text>
+
+  <!-- Arrows down from both boxes -->
+  <path d="M310,150 L310,175 L460,175 L460,200"
+        fill="none" stroke="#5D6D7E" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <path d="M610,150 L610,175 L460,175"
+        fill="none" stroke="#5D6D7E" stroke-width="1.5"/>
+
+  <!-- Duplicates Removed Box -->
+  <rect x="330" y="200" width="260" height="55" rx="6" ry="6"
+        fill="#EBF5FB" stroke="#5DADE2" stroke-width="1.5"/>
+  <text x="460" y="223" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#2C3E50">
+    Records after duplicates removed</text>
+  <text x="460" y="241" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#5D6D7E">
+    (n = )</text>
+
+  <!-- Arrow Definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#5D6D7E"/>
+    </marker>
+  </defs>
+
+  <!-- ==================== SCREENING PHASE ==================== -->
+
+  <!-- Arrow from Duplicates to Screening -->
+  <path d="M460,255 L460,305"
+        fill="none" stroke="#5D6D7E" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Records Screened Box -->
+  <rect x="330" y="305" width="260" height="55" rx="6" ry="6"
+        fill="#E8F8F5" stroke="#58D68D" stroke-width="1.5"/>
+  <text x="460" y="328" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#2C3E50">
+    Records screened</text>
+  <text x="460" y="346" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#5D6D7E">
+    (Title and abstract screening)</text>
+
+  <!-- Orthogonal Arrow to Excluded (Screening) -->
+  <path d="M590,332 L650,332 L650,380"
+        fill="none" stroke="#5D6D7E" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Excluded at Screening Box -->
+  <rect x="570" y="380" width="160" height="55" rx="6" ry="6"
+        fill="#FDF2E9" stroke="#E59866" stroke-width="1.5"/>
+  <text x="650" y="403" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#2C3E50">
+    Records excluded</text>
+  <text x="650" y="421" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#5D6D7E">
+    (n = )</text>
+
+  <!-- ==================== ELIGIBILITY PHASE ==================== -->
+
+  <!-- Arrow from Screening to Eligibility -->
+  <path d="M460,360 L460,410 L310,410 L310,490"
+        fill="none" stroke="#5D6D7E" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Full-text Assessed Box -->
+  <rect x="180" y="490" width="260" height="55" rx="6" ry="6"
+        fill="#FEF9E7" stroke="#F4D03F" stroke-width="1.5"/>
+  <text x="310" y="513" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#2C3E50">
+    Full-text articles assessed for eligibility</text>
+  <text x="310" y="531" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#5D6D7E">
+    (n = )</text>
+
+  <!-- Orthogonal Arrow to Excluded (Eligibility) -->
+  <path d="M440,517 L500,517 L500,570"
+        fill="none" stroke="#5D6D7E" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Excluded at Eligibility Box -->
+  <rect x="420" y="570" width="220" height="90" rx="6" ry="6"
+        fill="#FDF2E9" stroke="#E59866" stroke-width="1.5"/>
+  <text x="530" y="593" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#2C3E50">
+    Full-text articles excluded</text>
+  <text x="530" y="611" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#5D6D7E">
+    with reasons (n = )</text>
+  <text x="530" y="632" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7F8C8D">
+    • Not relevant to open window</text>
+  <text x="530" y="648" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7F8C8D">
+    • Animal/in vitro studies</text>
+
+  <!-- ==================== INCLUDED PHASE ==================== -->
+
+  <!-- Arrow from Eligibility to Included -->
+  <path d="M310,545 L310,700"
+        fill="none" stroke="#5D6D7E" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+  <!-- Studies Included Box -->
+  <rect x="180" y="700" width="260" height="80" rx="6" ry="6"
+        fill="#FADBD8" stroke="#E74C3C" stroke-width="1.5"/>
+  <text x="310" y="728" font-family="Arial, sans-serif" font-size="11" font-weight="bold"
+        text-anchor="middle" fill="#2C3E50">
+    Studies included in scoping review</text>
+  <text x="310" y="748" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="#5D6D7E">
+    (n = )</text>
+  <text x="310" y="768" font-family="Arial, sans-serif" font-size="9" text-anchor="middle" fill="#7F8C8D">
+    Data charting and synthesis</text>
+
+  <!-- ==================== FOOTER ==================== -->
+
+  <text x="425" y="870" font-family="Arial, sans-serif" font-size="9"
+        text-anchor="middle" fill="#95A5A6">
+    Adapted from PRISMA-ScR (Tricco et al., 2018)</text>
+
+  <text x="425" y="890" font-family="Arial, sans-serif" font-size="8"
+        text-anchor="middle" fill="#BDC3C7">
+    Figure: Study selection flow diagram for scoping review</text>
+
+</svg>

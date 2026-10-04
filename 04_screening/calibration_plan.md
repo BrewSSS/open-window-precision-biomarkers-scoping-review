@@ -1,0 +1,32 @@
+# Screening calibration plan
+
+**Status:** planned only. No sample has been drawn, no reviewers have screened records, and no agreement statistic is available.
+
+## Reviewers and independence
+
+Two human reviewers will independently screen every title/abstract and every retrieved full text. The project lead will record the two reviewer roles before screening starts. A third-person adjudicator role is reserved for unresolved conflicts, but the person's identity is pending and must not be fabricated. AI cannot replace either independent human reviewer or serve as the adjudicator. Reviewers use the same frozen manual and code list, and do not see each other's decisions until both have locked the relevant stage.
+
+## Initial pilot: 50 deduplicated records
+
+1. Freeze and preserve the deduplicated draft record-ID pool before calibration. Save the pool manifest, its SHA-256 hash, draft-search/source provenance (not a claim that the formal search has run), and exact record IDs.
+2. Sort unique record IDs lexicographically and draw 50 without replacement using Python 3's random.Random(20261002).sample(sorted(unique_record_ids), 50). The initial reproducible seed is **20261002**. Save the Python version, seed, sorted-pool manifest/hash, and drawn IDs in the calibration record. If fewer than 50 eligible unique IDs exist, do not silently reduce the sample: document the shortfall and obtain coordinator resolution before calling the calibration complete.
+3. Both reviewers screen all 50 titles/abstracts independently using the controlled stage decision. For pilot agreement, calculate exact raw agreement on the binary primary disposition: **progress / do not exclude** (ADVANCE, AWAITING_CLASSIFICATION, or FRONTIER_PREPRINT) versus **EXCLUDE_TA**, across all 50 jointly assessed records. Report numerator, denominator, percentage, and Cohen's kappa descriptively. The threshold applies to raw agreement, not kappa.
+4. Separately compare conceptual application of the manual, including A/B timing (same marker in the same people after at least two bouts for B), health, immune-link, publication-status, translation, retrieval, and mixed-intervention rules. Resolve and document **every conceptual disagreement**, even if both reviewers chose the same advance/exclude disposition. Update the manual or decision examples when discussion exposes ambiguity; preserve the change and rationale.
+5. Calibration passes only if raw agreement is **at least 80%** and every conceptual disagreement has been resolved. This is a project rule, not a threshold attributed to JBI. Kappa is descriptive and has no pass threshold.
+6. If raw agreement is below 80%, or conceptual disagreement remains unresolved, clarify the manual and run a fresh 50-record pilot. For reproducibility use Python random.Random(20261002 + round_number - 1) with round numbers beginning at 2 (round 2 seed: 20261003), sampling without replacement from the sorted frozen pool after excluding records used in earlier pilot rounds; if fewer than 50 unseen records remain, document the shortfall and expand the draft pool or obtain a recorded methodological resolution before proceeding; save each seed, sample IDs, manual version, and all statistics. Do not re-use the same exact sample as the sole repeat pilot. Repeat until both pass conditions are met; record actual outcomes without backfilling or altering the threshold.
+
+Draft-pool pilot records enter the eventual formal screening pool only if retrieved by a documented formal search or citation-chasing route; calibration alone does not add them to its denominator. Following calibration, both reviewers independently complete title/abstract decisions for the entire deduplicated formal-search pool, including any pilot records that belong to that pool, under the final clarified manual. Any pilot decision affected by a rule clarification is re-screened independently.
+
+## Separate charting pilot
+
+The 10-report charting pilot is purposive and uses the extraction materials in `05_extraction`; it is distinct from this random 50-record title/abstract pilot. Its reports may include excluded boundary cases. Do not substitute its sample size or agreement for screening calibration. Two humans independently extract the substantive fields; purely bibliographic entry may be completed by one and verified by the other. No pilot statistics or decisions are available yet.
+
+## Full-text stage
+
+Complete source-grounded full-text boundary exercises before formal full-text screening, documenting rule interpretations and unresolved questions. All reports advanced to full text are independently assessed by both reviewers using the fixed primary exclusion hierarchy. Preserve the original independent decisions, evidence locations, full-text retrieval state, discussion, final disposition, and any adjudicator referral. Full-text agreement is described; the initial 50-record title/abstract threshold is not silently reinterpreted as a full-text threshold. Discuss disagreements against the actual methods/results/supplement. Escalate only unresolved conflicts to the predesignated adjudicator.
+
+## Records to retain
+
+For each pilot round retain: frozen pool manifest and hash; seed and sampling algorithm; sample record IDs; reviewer role IDs; date and manual version; independent decisions before discussion; raw agreement numerator/denominator; Cohen's kappa and method (including prevalence limitations or undefined kappa when no variation permits calculation); conceptual disagreement log; resolutions/manual edits; pass/fail against both prespecified conditions; and, if needed, the repeat-round seed and sample. Do not record a planned statistic as a result.
+
+No formal search hits, deduplicated totals, pilot decisions, screening totals, exclusions, or PRISMA flow counts are available yet. They must be populated only after the corresponding work is actually completed.

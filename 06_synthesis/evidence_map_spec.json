@@ -1,0 +1,339 @@
+{
+  "specification_version": "2.0",
+  "design_date": "2026-10-02",
+  "status": "design_only_no_formal_results",
+  "project_focus": "precision monitoring of post-exercise immunity",
+  "methodology": {
+    "review_type": "JBI scoping review",
+    "framework": "PCC",
+    "reporting": [
+      "PRISMA-ScR",
+      "PRISMA-S"
+    ],
+    "appraisal": "Prespecified design-appropriate critical appraisal, described domain by domain; no aggregate score and no GRADE."
+  },
+  "research_questions": [
+    {
+      "id": "RQ1",
+      "focus": "Biomarkers, platforms, cells/fluids, populations, and exercise contexts assessed after exercise.",
+      "outputs": [
+        "Table 1",
+        "Table 2",
+        "Figure 1"
+      ]
+    },
+    {
+      "id": "RQ2",
+      "focus": "Temporal response/recovery coverage and sensitivity to cell composition, hydration, sampling, and other confounders.",
+      "outputs": [
+        "Table 2",
+        "Figure 1"
+      ]
+    },
+    {
+      "id": "RQ3",
+      "focus": "Individual baselines, within-person variability/repeatability, response heterogeneity, subgroup or individualized models, and validation.",
+      "outputs": [
+        "Table 3",
+        "Figure 2",
+        "Figure 3"
+      ]
+    },
+    {
+      "id": "RQ4",
+      "focus": "Functional co-measurement versus demonstrated association, clinical outcomes, validated prediction/use, and remaining development requirements.",
+      "outputs": [
+        "Table 3",
+        "Figure 2",
+        "Figure 3",
+        "Narrative gaps"
+      ]
+    }
+  ],
+  "linked_units": {
+    "cohort_id": {
+      "definition": "Distinct participant cohort; primary evidence-counting unit.",
+      "counting_rule": "Count the same people once even when represented by several reports, arms, assays, or timepoints. Link repeated cohorts across strata A and B; overall totals use the union, not a sum."
+    },
+    "study_id": {
+      "definition": "Underlying trial, experiment, or cohort project; may link multiple reports and separately identifiable cohorts."
+    },
+    "report_id": {
+      "definition": "One publication/version/report, including article, preprint, abstract, or protocol.",
+      "counting_rule": "Report counts are separate from cohort counts. Link preprint/published versions and related publications; count only eligible peer-reviewed reports in the core."
+    },
+    "record_id": {
+      "definition": "Marker/analyte or panel × assay/platform × matrix/cell × exercise contrast × exact timepoint observation; never an independent cohort."
+    },
+    "n_fields": [
+      "participant_n_distinct",
+      "arm_n",
+      "biospecimen_n",
+      "cell_or_preparation_n",
+      "assay_n",
+      "technical_replicate_n",
+      "paired_within_person_status"
+    ]
+  },
+  "eligibility_strata": {
+    "A_acute_bout": "Identifiable acute bout/competition, pre-bout baseline or suitable comparator, and at least one post-cessation sample. Immediate-only informs response, not recovery. During-only is excluded. No <30-minute minimum and no hard 72-hour maximum.",
+    "B_repeated_bout": "The same immune-related marker is measured in the same individuals after at least two identifiable bouts or competitions; each post-bout sample has a known or reliably recoverable exercise-to-sampling relation, and a baseline or appropriate comparator enables interpretation. Separate from A; a cohort may meet both and must not be double-counted overall.",
+    "background_only": [
+      "Habitual activity cross-sectional studies",
+      "General weekly or seasonal resting monitoring with unknown last-bout timing",
+      "Pure training pre/post snapshots with unknown exercise-to-sampling timing",
+      "Post-hoc immune pathway enrichment in otherwise general muscle/metabolic work without the prespecified immune link",
+      "Animal or in-vitro-only reports"
+    ],
+    "frontier_preprints": "Separate register and denominator; never included in peer-reviewed core totals. Link duplicate preprint-to-published versions."
+  },
+  "precision_domains": [
+    {
+      "id": "analytical_reliability",
+      "meaning": "Assay validation, precision, repeatability, standardization, quality controls, and measurement error."
+    },
+    {
+      "id": "temporal_validity",
+      "meaning": "Sampling coverage, timing anchor, response and recovery behavior, and repeatability over time."
+    },
+    {
+      "id": "immune_specificity",
+      "meaning": "Immune-cell/mediator specificity and distinction between immune biology and generic exercise/metabolic or tissue-repair response."
+    },
+    {
+      "id": "individualization",
+      "meaning": "Within-person baselines/variation, subgroup effects, individualized reference intervals or models, and response heterogeneity."
+    },
+    {
+      "id": "functional_clinical_linkage",
+      "meaning": "Direct immune effector function, tested association between marker and function, clinical illness/infection, or decision-relevant outcome; these are distinct evidence states."
+    },
+    {
+      "id": "independent_validation_and_use",
+      "meaning": "Independent validation in distinct participants/cohorts and evidence that a stated monitoring, prediction, or decision use was actually tested. A proposed or inferred use alone is not tested use; distinguish internal resampling from external validation and label validation and use separately."
+    },
+    {
+      "id": "feasibility",
+      "meaning": "Sampling burden, turnaround, cost, platform access, interpretability, and deployment context where reported."
+    }
+  ],
+  "evidence_state_codes": {
+    "direction": [
+      "increase",
+      "decrease",
+      "no_detected_difference",
+      "mixed_or_inconsistent",
+      "NR",
+      "UNCLEAR"
+    ],
+    "reporting_status": [
+      "reported",
+      "NR",
+      "NA",
+      "UNCLEAR",
+      "not_retrieved_awaiting_classification"
+    ],
+    "functional_relation": [
+      "not_measured",
+      "co_measured_no_association_test_reported",
+      "statistically_associated",
+      "mechanistically_linked",
+      "NR",
+      "UNCLEAR"
+    ],
+    "clinical_endpoint": [
+      "self_reported_symptoms",
+      "clinician_defined_syndrome",
+      "pathogen_confirmed_infection",
+      "no_clinical_endpoint",
+      "NR",
+      "UNCLEAR"
+    ],
+    "validation": [
+      "none_reported",
+      "internal_resampling",
+      "participant_separated_test_set",
+      "independent_cohort",
+      "NR",
+      "UNCLEAR"
+    ],
+    "tested_use": [
+      "not_tested",
+      "proposed_only",
+      "tested_internal",
+      "tested_in_independent_cohort_or_prospective_setting",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ]
+  },
+  "missingness_rules": {
+    "NR": "Not reported in accessible material; not evidence that it was absent or not performed.",
+    "NA": "Not applicable by design.",
+    "UNCLEAR": "Cannot be determined from reviewed evidence.",
+    "not_retrieved_awaiting_classification": "Access/language/eligibility remains unresolved; do not mark scientifically ineligible.",
+    "denominator": "Every count or percentage names its unit and denominator. Use field-specific eligible/assessable denominators and show n/N. Do not infer sample sizes or aggregate analyte/timepoint rows as cohorts."
+  },
+  "time_display_only": {
+    "origin": "Retain exact source-reported timing and whether anchored to exercise onset, cessation, or another event.",
+    "bins": [
+      "during",
+      "0_to_lt30min",
+      "30min_to_lt3h",
+      "3h_to_lt24h",
+      "24h_to_72h_inclusive",
+      "gt72h",
+      "NR"
+    ],
+    "rule": "Bins are for visualization only; never apply as eligibility cutoffs or definitions of recovery. During-exercise observations are ancillary. Keep illness symptom timing on a separate axis."
+  },
+  "outputs": {
+    "figures": [
+      {
+        "id": "Figure 1",
+        "type": "time_by_immune_compartment_or_matrix",
+        "questions": [
+          "RQ1",
+          "RQ2"
+        ],
+        "dimensions": [
+          "exact post-exercise time from stated anchor",
+          "display-only time bin",
+          "immune compartment or matrix",
+          "exercise/population context",
+          "marker class/platform annotation"
+        ],
+        "unit_and_denominator": "Unique cohorts are the primary unit within each displayed cell; reports are shown separately. A cohort represented in multiple bins is coverage in each bin, not a new cohort; do not add bin totals. Timepoints and assay records are not independent evidence."
+      },
+      {
+        "id": "Figure 2",
+        "type": "candidate_monitoring_use_by_seven_precision_domains",
+        "questions": [
+          "RQ3",
+          "RQ4"
+        ],
+        "dimensions": [
+          "candidate or candidate family and stated monitoring use",
+          "analytical reliability",
+          "temporal validity",
+          "immune specificity",
+          "individualization",
+          "functional/clinical linkage",
+          "independent validation and tested use",
+          "feasibility"
+        ],
+        "unit_and_denominator": "Report unique-cohort and report denominators separately for each candidate/domain. Candidate rows/facets can share cohorts and must not be added as independent evidence. Proposed use is not tested use; show NR/NA/UNCLEAR explicitly."
+      },
+      {
+        "id": "Figure 3",
+        "type": "cohort_level_validation_links",
+        "questions": [
+          "RQ3",
+          "RQ4"
+        ],
+        "dimensions": [
+          "cohort_id",
+          "linked report_id/version",
+          "assay or candidate record",
+          "direct function or clinical endpoint",
+          "tested association",
+          "technical/repeated-bout/independent validation",
+          "tested prediction or decision use"
+        ],
+        "unit_and_denominator": "Unique cohorts are primary; report, assay, outcome, and validation links are descriptive linked records. Multiple links from one cohort do not increase the cohort count."
+      }
+    ],
+    "standard_reporting_figure": {
+      "id": "PRISMA-ScR flow diagram",
+      "status": "Template only until formal searches and screening are complete.",
+      "rule": "Never enter zero or any synthetic count; distinguish database and other-source records and report-level selection from cohort-level synthesis."
+    },
+    "tables": [
+      {
+        "id": "Table 1",
+        "type": "cohort_and_report_inventory",
+        "unit": "Linked cohort_id/study_id/report_id",
+        "includes": [
+          "n and population",
+          "design",
+          "exercise",
+          "A/B stratum",
+          "immune-link basis",
+          "duplicate/version links",
+          "appraisal pointer",
+          "marker class/platform and matrix/compartment landscape"
+        ]
+      },
+      {
+        "id": "Table 2",
+        "type": "marker_and_postexercise_measurement_inventory",
+        "unit": "record_id",
+        "includes": [
+          "assay/platform",
+          "matrix/cell",
+          "exact time and origin",
+          "participant/sample/cell/technical-repeat n",
+          "pairing",
+          "comparator",
+          "confounders",
+          "direction/null/uncertainty"
+        ]
+      },
+      {
+        "id": "Table 3",
+        "type": "precision_function_clinical_validation_and_tested_use_matrix",
+        "unit": "Cohort-candidate-domain record",
+        "includes": [
+          "domain-specific state across seven domains",
+          "functional assay details",
+          "association test status",
+          "clinical definition/timing",
+          "validation type",
+          "whether a stated monitoring/decision use was tested",
+          "feasibility",
+          "critical appraisal concerns"
+        ],
+        "rule": "No aggregate score or candidate rank."
+      }
+    ]
+  },
+  "synthesis_rules": [
+    "Count independent cohorts primarily and reports separately; assay records, analytes, platforms, cells, timepoints, and repeated samples are not independent evidence.",
+    "A and B are separate non-exclusive views; B requires the same immune-related marker in the same individuals after at least two identifiable bouts, with a recoverable sample-to-bout relation and an interpretable baseline/comparator; report overlap and use unique cohort union for any overall total.",
+    "Include null, inconsistent, and negative findings; no significance filter and no inference of baseline return from non-significance.",
+    "Functional co-measurement is not association. State an association only when the original report explicitly tests it.",
+    "Separate molecular annotation from direct function and self-reported symptoms from clinician-defined and pathogen-confirmed illness.",
+    "Do not call raw-change/noise-defined participants responders; assess measurement error and within-person variability before individual labeling.",
+    "No meta-analysis, clinical ranking, GRADE, or composite precision-readiness score.",
+    "Critical appraisal is descriptive, domain-specific, and not an unstated ranking or exclusion filter.",
+    "Keep the seven precision domains separate; proposed monitoring/decision utility is not evidence of tested use."
+  ],
+  "submission_fit": {
+    "target": "Frontiers in Immunology",
+    "portal_category_plan": "Select Systematic Review if it remains available for the chosen specialty section at submission; Frontiers currently lists scoping reviews under this category.",
+    "method_and_reporting": "Keep JBI scoping review/PCC methodology with PRISMA-ScR and PRISMA-S; do not force PICO or meta-analysis.",
+    "acceptance": "No acceptance or editorial-fit guarantee. Reconfirm current specialty dropdown, article type, and author instructions before submission.",
+    "official_sources": [
+      "https://www.frontiersin.org/journals/immunology/sections/systems-immunology/for-authors/article-types",
+      "https://www.frontiersin.org/for-authors/where-to-publish/article-types"
+    ]
+  },
+  "prohibited_inferences": [
+    "The open-window hypothesis is proven or necessarily means post-exercise immunosuppression.",
+    "A group mean or omics/AI finding alone demonstrates precision or individual utility.",
+    "A marker measured with a functional readout is associated with that readout without an explicit test.",
+    "NR means not assessed, absent, or no effect.",
+    "A non-significant test proves no change or recovery to baseline.",
+    "A time-display bin is a biological threshold or eligibility criterion.",
+    "A within-cohort random split is external validation or a raw change establishes responder status.",
+    "The synthesis establishes clinical readiness or return-to-training decisions."
+  ],
+  "not_results": {
+    "formal_searches_executed": false,
+    "screening_counts_available": false,
+    "included_cohort_counts": null,
+    "included_report_counts": null,
+    "prisma_flow_counts": null,
+    "note": "Nulls above mean no formal results are available in this design artifact; they are not zero counts."
+  }
+}

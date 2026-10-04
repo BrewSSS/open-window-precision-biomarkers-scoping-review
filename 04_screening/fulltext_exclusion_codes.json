@@ -1,0 +1,141 @@
+{
+  "taxonomy_status": "predefined_fixed_hierarchy_no_formal_exclusion_results",
+  "protocol_version": "2.0",
+  "protocol_date": "2026-10-02",
+  "purpose": "Assign exactly one primary scientific full-text exclusion reason to a retrieved report that is demonstrably ineligible for the peer-reviewed core A/B map. Preserve other failed dimensions in reviewer notes.",
+  "primary_reason_rule": {
+    "apply_in_order": true,
+    "hierarchy": [
+      "FT01_SOURCE_TYPE_NOT_CORE",
+      "FT02_NOT_ORIGINAL_HUMAN_RESEARCH",
+      "FT03_POPULATION_NOT_ELIGIBLE",
+      "FT04_NO_QUALIFYING_EXERCISE_EXPOSURE",
+      "FT05_NO_POST_CESSATION_SAMPLE",
+      "FT06_NO_BASELINE_OR_SUITABLE_COMPARATOR",
+      "FT07_NO_ELIGIBLE_IMMUNE_LINK",
+      "FT08_MIXED_INTERVENTION_NOT_SEPARABLE"
+    ],
+    "instruction": "Choose the first established reason in this hierarchy. Do not code an unresolved or merely unreported fact as an exclusion. If a reason is uncertain, use awaiting classification. A report may have secondary failed dimensions in notes, but only one primary full-text code."
+  },
+  "codes": [
+    {
+      "code": "FT01_SOURCE_TYPE_NOT_CORE",
+      "label": "Source type is not eligible for peer-reviewed core map",
+      "definition": "Review, editorial, protocol, or conference abstract without an eligible full paper. Public preprints are routed to the separate frontier register, not assigned a core full-text exclusion code; if a peer-reviewed version exists, screen that version and link/deduplicate reports.",
+      "examples": [
+        "Narrative or systematic review",
+        "Study protocol without results",
+        "Conference abstract only"
+      ]
+    },
+    {
+      "code": "FT02_NOT_ORIGINAL_HUMAN_RESEARCH",
+      "label": "No eligible original human research",
+      "definition": "Animal-only, in-vitro-only, computational-only without eligible original human measurements, or other non-human report.",
+      "examples": [
+        "Rodent exercise experiment only",
+        "Cell culture stimulation without human participant data"
+      ]
+    },
+    {
+      "code": "FT03_POPULATION_NOT_ELIGIBLE",
+      "label": "Population outside target or eligible healthy stratum not separable",
+      "definition": "Participants have active infection or known clinical/metabolic disease, are a disease-treatment/clinical cohort outside the generally healthy target, or a mixed cohort's eligible generally healthy stratum and results cannot be separated. Metabolic-health ambiguity alone is not sufficient; adjudicate explicitly using reported diagnoses and stratum separability.",
+      "examples": [
+        "Exercise intervention in a disease-treatment cohort",
+        "Active infection cohort",
+        "Mixed healthy and clinical sample with no separable eligible results"
+      ]
+    },
+    {
+      "code": "FT04_NO_QUALIFYING_EXERCISE_EXPOSURE",
+      "label": "No identifiable acute bout or qualifying repeated-bout monitoring",
+      "definition": "Neither an identifiable acute bout/competition for Core A nor Support B's same immune-related marker measured after at least two identified bouts in the same participants with known or reliably recoverable sample-to-bout relations is present. Establish the exposure failure from the source; unknown timing remains awaiting classification. Evaluate post-cessation sampling and baseline/comparator separately under FT05 and FT06.",
+      "examples": [
+        "Habitual exercise versus sedentary cross-sectional comparison only",
+        "General seasonal or weekly sampling with unknown relation to exercise bouts",
+        "Training pre/post comparison with no recoverable acute bout or post-exercise sampling relation"
+      ]
+    },
+    {
+      "code": "FT05_NO_POST_CESSATION_SAMPLE",
+      "label": "No sample collected after exercise cessation",
+      "definition": "For an otherwise qualifying acute exercise report, immune sampling occurs only during exercise and there is no post-cessation sample. This code does not apply when a post-cessation sample exists but is immediate (<30 minutes).",
+      "examples": [
+        "During-only sampling with no sample after cessation"
+      ]
+    },
+    {
+      "code": "FT06_NO_BASELINE_OR_SUITABLE_COMPARATOR",
+      "label": "No pre-bout baseline or suitable non-exercise/comparator condition",
+      "definition": "The report has no pre-bout baseline and no suitable non-exercise/comparator condition enabling interpretation of an otherwise qualifying post-exercise immune measure. For B, the required baseline/comparator is absent.",
+      "examples": [
+        "Post-exercise sample only, with no baseline or comparator in report or linked report"
+      ]
+    },
+    {
+      "code": "FT07_NO_ELIGIBLE_IMMUNE_LINK",
+      "label": "No eligible immune measure or immune-focused omics analysis",
+      "definition": "No direct immune-cell/count/subset/function measure, recognized immune mediator, immune-cell omics, or biofluid omics with a stated immune objective/analysis and identifiable immune candidates is present.",
+      "examples": [
+        "Cortisol-only response",
+        "CK, lactate, or HRV only",
+        "General muscle/metabolic omics with merely post-hoc immune pathway enrichment and no stated immune objective/analysis"
+      ]
+    },
+    {
+      "code": "FT08_MIXED_INTERVENTION_NOT_SEPARABLE",
+      "label": "Exercise effect inseparable from a mixed intervention",
+      "definition": "Exercise is combined with feeding, supplementation, or another intervention and the study design provides no interpretable control/placebo or factorial contrast separating the exercise effect relevant to this review. A placebo label alone is insufficient; an interpretable exercise contrast or pre-bout baseline in the unaffected arm must be established.",
+      "examples": [
+        "All participants receive exercise and an active supplement with no comparator or separable contrast"
+      ]
+    }
+  ],
+  "not_scientific_exclusion_statuses": [
+    {
+      "status": "DUPLICATE_RECORD",
+      "meaning": "Duplicate bibliographic record identified during deduplication.",
+      "handling": "Retain provenance, duplicate-to-retained linkage and rationale; count administratively outside scientific exclusion reasons."
+    },
+    {
+      "status": "DUPLICATE_VERSION",
+      "meaning": "Superseded version of the same report, such as a preprint with a linked peer-reviewed publication.",
+      "handling": "Link to the retained publication/version, retain version metadata and do not double count. Distinct complementary reports from one cohort remain linked rather than discarded."
+    },
+    {
+      "status": "NOT_RETRIEVED",
+      "meaning": "Full text remains unavailable after institutional access attempts.",
+      "handling": "Awaiting classification; keep outside scientific full-text exclusion counts; no full-text exclusion code."
+    },
+    {
+      "status": "AWAITING_TRANSLATION",
+      "meaning": "A report in a language other than directly read English or Chinese is awaiting translation and independent human checking.",
+      "handling": "No language-based exclusion; keep outside scientific full-text exclusion counts."
+    },
+    {
+      "status": "AWAITING_CLASSIFICATION",
+      "meaning": "A material fact such as timing, health status, cohort linkage, or intervention separability is unresolved.",
+      "handling": "Keep pending and resolve from full text/supplement or adjudication; do not infer failure."
+    },
+    {
+      "status": "FRONTIER_PREPRINT",
+      "meaning": "Public preprint with no peer-reviewed version at the final update.",
+      "handling": "Track in the separate frontier register; do not count as core evidence or as a scientific full-text exclusion."
+    }
+  ],
+  "explicitly_not_exclusion_reasons": [
+    "No functional assay or functional evidence",
+    "No individualized baseline, personalized model, or precision terminology",
+    "No infection or symptom follow-up",
+    "No pathogen-confirmed infection endpoint",
+    "No clinical prediction or external validation",
+    "Immediate post-cessation sample collected before 30 minutes",
+    "Sampling later than 72 hours when the acute exercise relation remains identifiable",
+    "Null, nonsignificant, or unexpected-direction result",
+    "Non-English language before translation/checking",
+    "Inaccessible full text before institutional access attempts are documented",
+    "Small sample size alone, including otherwise eligible generally healthy case observations/series"
+  ],
+  "formal_exclusion_results": null
+}

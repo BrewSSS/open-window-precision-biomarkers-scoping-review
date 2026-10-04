@@ -1,0 +1,407 @@
+{
+  "lane": "proteomics",
+  "cutoff_date": "2026-10-02",
+  "searched_at_date": "2026-10-02",
+  "queries": [
+    {
+      "source": "Web search; PubMed, PMC, and publisher records opened",
+      "query": "acute exercise body fluid proteomic landscape plasma saliva urine sweat healthy human 2024 2025 2026",
+      "date": "2026-10-02",
+      "notes": "Targeted discovery for human exercise immunoproteomics and non-invasive fluid candidates; screened for fluid, assay, population, timing, and immune-specific endpoint."
+    },
+    {
+      "source": "Web search; PubMed/PMC and publisher full text opened",
+      "query": "exercise urinary biomarkers immunosuppression iTRAQ Xu 2020 32047808 correction retraction erratum",
+      "date": "2026-10-02",
+      "notes": "Seed paper methods and results checked; separate queries combined title/DOI/PMID with correction, corrigendum, erratum, and retraction terms. No notice surfaced in the records checked; this is not proof of absence in every index."
+    },
+    {
+      "source": "Web search; PubMed/PMC and publisher full text opened",
+      "query": "acute exercise Olink immune proteins healthy adults plasma 2025 Wenzel immunological protein signature",
+      "date": "2026-10-02",
+      "notes": "Checked acute time-series sampling, panel type, and whether functional or infection outcomes were measured."
+    },
+    {
+      "source": "Web search; PubMed/PMC and publisher full text opened",
+      "query": "exercise sweat proteomics heat acclimatization immune proteins 2025 2026 human",
+      "date": "2026-10-02",
+      "notes": "Checked for non-invasive sweat proteomic studies; heat strain/acclimatization was separated from immune-open-window outcomes."
+    },
+    {
+      "source": "Web search; PubMed/PMC and publisher full text opened",
+      "query": "exercise urine inflammation organ injury hydration specific gravity 3000 m time trial marathon biomarkers 2021 2025",
+      "date": "2026-10-02",
+      "notes": "Used to distinguish urine concentration, renal/gastrointestinal injury, and inflammation-associated changes from immune-specific biomarkers."
+    }
+  ],
+  "sources": [
+    {
+      "id": "proteomics_01",
+      "title": "Identification of Urinary Biomarkers for Exercise-Induced Immunosuppression by iTRAQ Proteomics",
+      "authors": "Xu G, Lin W, McAinch AJ, Yan X, Weng X",
+      "year": 2020,
+      "publication_date": "2020-01-25",
+      "doi": "10.1155/2020/3030793",
+      "pmid": "32047808",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7003279/",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "population": "15 healthy young men (19.2 ± 0.7 y), not regular high-intensity trainers",
+      "design": "Four-week incremental treadmill training, 5 days/week, with weekly immune-cell counts and urinary proteomic sampling. The iTRAQ material was pooled across participants by week; duplicate analysis was technical replication.",
+      "sample_size": "15 enrolled; urinary iTRAQ discovery used one pooled urine specimen per time point (baseline and each training week), assayed in technical duplicate; biological n for proteomic contrasts is therefore 1/time point.",
+      "exercise_context": "Treadmill intervals at progressively increasing intensities (60%, 70%, 80%, 90% VO2max); reported daily run duration 48–60 min over 4 weeks.",
+      "sampling_times": "Fasting blood and midstream urine at 07:00 before training and at the end of each training week; interval from final exercise bout to sample not specified.",
+      "biomarkers": "iTRAQ urinary proteome (1,854 proteins); candidate SEMG-1, PIP, PDGFRL, and NME2/NDPK; weekly WBC, neutrophil, CD4+, CD8+ counts/percentages and CD4/CD8 ratio. Four candidates also assessed by commercial ELISA in the same study.",
+      "key_finding": "After four weeks, the paper reports WBC −15%, neutrophils −27.4%, CD4% −11.8%, and CD8% +27.3%; the CD4/CD8 ratio was already lower from week 1. Alongside increasing pooled urinary abundance of four candidates, these are exploratory training-associated cell-count/proportion and pooled-proteome changes—not an acute recovery marker, immune-function deficit, infection risk, or individual-level association.",
+      "clinical_endpoint": "No infection incidence, symptoms, vaccine response, or direct ex vivo immune-function outcome. Cell counts/subsets were measured, not functional competence.",
+      "validation": "Same-study ELISA follow-up of four candidates was reported, but the ELISA biological sample unit and any independent cohort are not clearly established in Methods; it is not external validation. No urine concentration correction is reported.",
+      "limitations": "Pooled discovery means no between-person inference and no meaningful biological variance estimate; last-bout-to-sample interval unknown; no urine creatinine, osmolality, or specific-gravity normalization; repeated training rather than acute open-window kinetics; cell counts/percentages do not establish functional suppression. Search of title/DOI/PMID plus correction/erratum/retraction terms in PubMed/PMC and publisher-facing records on 2026-10-02 found no notice, which is not exhaustive proof of none.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "Full-text Methods (Participants, training protocol, sample collection, proteomics, ELISA) and Results (immune indices, urinary protein candidates); Abstract for reported outcomes.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/32047808/",
+        "https://onlinelibrary.wiley.com/doi/10.1155/2020/3030793",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7003279/"
+      ],
+      "integrity_notes": "No retraction/correction notice surfaced in the specified public records/searches through cutoff; absence is not guaranteed across all indexes."
+    },
+    {
+      "id": "proteomics_02",
+      "title": "Changes in Urinary Biomarkers of Organ Damage, Inflammation, Oxidative Stress, and Bone Turnover Following a 3000-m Time Trial",
+      "authors": "Tominaga T, Ma S, Sugama K, Kanda K, Omae C, Choi W, Hashimoto S, Aoyama K, Yoshikai Y, Suzuki K",
+      "year": 2021,
+      "publication_date": "2021-01-09",
+      "doi": "10.3390/antiox10010079",
+      "pmid": "33435279",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7826822/",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "population": "10 healthy recreational male runners, mean age 19.4 ± 1.5 y; a subset of seven had prior-intervention cytokine/hydration measurements reused for some analyses.",
+      "design": "Pre/post 3000-m time trial; targeted urinary biomarker panel rather than proteomic discovery.",
+      "sample_size": "10 runners overall; 7 for a portion of cytokine and urine hydration-marker analyses, as stated in Methods.",
+      "exercise_context": "Single strenuous 3000-m time trial.",
+      "sampling_times": "Urine 30–60 min before and within 30 min after the time trial; no later recovery series.",
+      "biomarkers": "Targeted urinary inflammatory mediators (including IL-1β, IL-1ra, IL-6, C5a, MPO, calprotectin, MCP-1, M-CSF, IL-4, IL-10, TNF-α and others), renal/GI injury markers (protein, albumin, NAG, L-FABP, I-FABP), and urine creatinine, osmolality, and specific gravity.",
+      "key_finding": "Several urinary inflammatory mediators increased, while IL-4/IL-10 decreased and multiple other cytokines were unchanged. Renal and intestinal injury markers also rose and urine concentration indices shifted, so a post-exercise urine immune-panel change is not by itself immune-specific.",
+      "clinical_endpoint": "No infection or immune-function endpoint; urinary concentrations are physiological surrogate measurements.",
+      "validation": "Targeted ELISA/assay measurements within this small exercise study; no independent validation cohort. The investigators used creatinine correction and examined osmolality-related sensitivity for urine interpretation.",
+      "limitations": "Small male-only sample, single immediate post-exercise time point, reuse of a seven-person subset for some measurements, concurrent renal/GI injury and urine dilution/concentration shifts, and no circulating matched immune panel or clinical outcome.",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Methods (Subjects, sample collection, urine assay/normalization) and Results (inflammation-related factors and organ-damage markers); PubMed abstract.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/33435279/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7826822/",
+        "https://www.mdpi.com/2076-3921/10/1/79"
+      ],
+      "integrity_notes": null
+    },
+    {
+      "id": "proteomics_03",
+      "title": "Salivary Markers Responses in the Post-Exercise and Recovery Period: A Systematic Review",
+      "authors": "Neves RS, da Silva MAR, de Rezende MAC, Caldo-Silva A, Pinheiro J, Santos AMC",
+      "year": 2023,
+      "publication_date": "2023-07-18",
+      "doi": "10.3390/sports11070137",
+      "pmid": "37505624",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10386489/",
+      "source_type": "systematic_review",
+      "access_level": "full_text",
+      "population": "14 eligible healthy-human studies, 226 volunteers total (13 women; sex not reported in one included study), mostly young trained athletes.",
+      "design": "Systematic review of three databases covering studies from 2011–2021; 213 records found and 14 studies included after screening.",
+      "sample_size": "14 studies; 226 participants pooled across studies.",
+      "exercise_context": "Acute exhaustive exercise and post-exercise recovery; exercise types and sampling schedules varied among included studies.",
+      "sampling_times": "Study-specific immediate post-exercise through recovery windows, including approximately 30 min to 48 h; no single harmonized schedule.",
+      "biomarkers": "Mostly conventional targeted salivary cortisol, testosterone/testosterone:cortisol ratio, alpha-amylase, IgA, and occasional IgG or melatonin; not proteomics.",
+      "key_finding": "Cortisol/testosterone and related markers often respond to exercise, but recovery effects are heterogeneous; evidence for immediate IgA responses rests on relatively few small studies and is inconsistent. The review does not establish salivary markers as infection predictors.",
+      "clinical_endpoint": "No pooled infection prediction/causal endpoint; review focuses on marker time courses and recovery.",
+      "validation": "No new cohort or assay validation; narrative synthesis and study-level PEDro appraisal.",
+      "limitations": "Small, mostly male samples, heterogeneous exercise and recovery protocols, low representation of women, and no salivary proteome-level evidence in the review.",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Abstract and Results (study selection, participant characteristics, marker responses); Discussion/Conclusion on recovery uncertainty.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/37505624/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10386489/",
+        "https://www.mdpi.com/2075-4663/11/7/137"
+      ],
+      "integrity_notes": null
+    },
+    {
+      "id": "proteomics_04",
+      "title": "Body Fluid Proteomic Landscape of Acute Exercise",
+      "authors": "Kurgan et al.",
+      "year": 2025,
+      "publication_date": "2025-06-01",
+      "doi": "10.1101/2025.05.28.656705",
+      "pmid": null,
+      "url": "https://www.biorxiv.org/content/10.1101/2025.05.28.656705v1",
+      "source_type": "preprint",
+      "access_level": "full_text",
+      "population": "Discovery cohort: 25 healthy fit young men (mean age 29 ± 3 y). Plasma-only replication cohort: 24 healthy, less-active older adults (mean age 55 ± 8 y; 62.5% women).",
+      "design": "Acute-exercise body-fluid global DIA LC–MS/MS discovery, with plasma Olink profiling and a separate plasma-only exercise-mode replication cohort. The authors also measured a small cytokine panel by targeted assay; this is not a clinical immune-function validation.",
+      "sample_size": "Discovery n=25; plasma replication n=24.",
+      "exercise_context": "Discovery: 45-min cycling at about 75% HRmax; replication cohort completed aerobic continuous, HIIT, and resistance exercise conditions in a crossover design.",
+      "sampling_times": "Discovery plasma and stimulated saliva before, immediately after, 0.5, 1, 3, and 24 h; urine before, immediately after, and 24 h. Replication-cohort timing is described in the preprint figures but was not recoverable precisely from accessible text.",
+      "biomarkers": "Global DIA proteomics across plasma, stimulated saliva, and urine; Olink plasma proteins; separate targeted cytokines including TNF-α, IL-8, IL-6, and IL-10.",
+      "key_finding": "Hundreds to thousands of proteins changed transiently in plasma and hundreds in saliva/urine; a humoral-immune-response pathway was enriched among immediate post-exercise network hubs. Most plasma changes declined rapidly and urinary differentially abundant proteins were not evident at 24 h. Pathway enrichment indicates biological annotation, not functional suppression.",
+      "clinical_endpoint": "No infection, symptom incidence, vaccine response, or direct functional immune outcome.",
+      "validation": "Plasma Olink responses were examined in a separate cohort; the saliva and urine discovery signals did not receive external-cohort validation. Cytokine assays are orthogonal targeted measurements in-study, not independent immune-function validation.",
+      "limitations": "Preprint not peer reviewed as of cutoff; discovery cohort all men and fit; limited urine/saliva timepoints; no infection/functional endpoints; no reported urine concentration normalization; mode/cohort replication applies to plasma only; no proof immune-enriched proteins are immune-specific.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "Preprint Abstract and full-text Methods/Results (body-fluid collection, proteomics, response kinetics, second cohort and pathway analyses).",
+      "verification_urls": [
+        "https://www.biorxiv.org/content/10.1101/2025.05.28.656705v1",
+        "https://www.researchgate.net/publication/392313935_Body_Fluid_Proteomic_Landscape_of_Acute_Exercise"
+      ],
+      "integrity_notes": "The source record identifies this as a bioRxiv preprint; no peer-reviewed version surfaced in search through the cutoff date."
+    },
+    {
+      "id": "proteomics_05",
+      "title": "Immunological Protein Signature During Acute Exercise",
+      "authors": "Wenzel C, Walzik D, Wences T, Trebing S, Meyer K, Groll A, Zimmer P, Joisten N",
+      "year": 2025,
+      "publication_date": "2025-10-29",
+      "doi": "10.1111/apha.70125",
+      "pmid": "41163346",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12615995/",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "population": "12 healthy adults, 6 women and 6 men; mean age 25.5 ± 2.7 y.",
+      "design": "Acute exercise time series using targeted Olink 96 Immuno-Oncology proximity-extension assay; 92 immune proteins, not unbiased global proteomics.",
+      "sample_size": "12 participants.",
+      "exercise_context": "40-min aerobic exercise at 60% VO2peak after an overnight fast.",
+      "sampling_times": "Blood at baseline, after warm-up, 10, 15, 30, and 40 min/end of exercise, and 1 h recovery.",
+      "biomarkers": "Targeted 92-protein immune panel spanning cytokines, chemokines, effector molecules, cell markers, growth factors, and regulators; 44 proteins changed over time, including IL-6, IL-10, granzymes, and IFN-γ.",
+      "key_finding": "The study resolves short-lived immune-protein kinetics during moderate exercise; observed changes are acute circulating mediator trajectories, not evidence of impaired host defense or an infection-prone open window.",
+      "clinical_endpoint": "No infection or direct cellular functional assay. IL-10-at-1-h associations and leave-one-out model analyses are exploratory associations within the same small cohort.",
+      "validation": "No independent cohort or external predictive validation; assay is targeted Olink PEA rather than discovery mass spectrometry.",
+      "limitations": "Small n, one exercise intensity and session, one-hour recovery only, no clinical/functional immune endpoint, and no external replication.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "Abstract and Methods (Participants, exercise, blood-sampling schedule, Olink panel); Results (time-dependent proteins and exploratory model).",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41163346/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12615995/",
+        "https://onlinelibrary.wiley.com/doi/10.1111/apha.70125"
+      ],
+      "integrity_notes": null
+    },
+    {
+      "id": "proteomics_06",
+      "title": "Blood Biochemical Responses to Acute Exercise: Findings from the Molecular Transducers of Physical Activity Consortium (MoTrPAC)",
+      "authors": "Robbins JM, Katz DH, Many GM, Rao P, Smith GR, Tiwari G, Jin C, Spielmann G, Montalvo S, Iyer G, Amar D, Leach D, Coyne BJ, Lindholm ME, Goodpaster B, Walsh MJ, Clish CB, Burant CF, Gerszten RE, MoTrPAC Study Group",
+      "year": 2026,
+      "publication_date": "2026-03-11",
+      "doi": "10.64898/2026.03.02.704798",
+      "pmid": "41835387",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12980391/",
+      "source_type": "preprint",
+      "access_level": "full_text",
+      "population": "Sedentary adults aged 18–74 y in the acute-exercise cohort; 176 participants allocated to endurance exercise (66), resistance exercise (73), or non-exercise control (37).",
+      "design": "Large acute-exercise study integrating plasma Olink targeted proteomics, metabolomics, and whole-blood transcriptomics with a non-exercise control. PubMed classifies the record as a preprint/bioRxiv article as of cutoff.",
+      "sample_size": "176 completed the baseline acute test; 175 with at least one biospecimen comprise the analytic cohort. Whole-blood RNA n=173 participants; plasma metabolomics n=175; Olink plasma proteomics n=44 participants. 378 repeated Olink assay samples before exclusion of 4 samples; this is not a count of participants.",
+      "exercise_context": "Single endurance or resistance exercise bout versus non-exercise control.",
+      "sampling_times": "Up to 7 sampling timepoints over 24 h; exact analyte-specific schedule varies by assay and is detailed in the preprint.",
+      "biomarkers": "Plasma Olink protein panel, metabolomics, and whole-blood transcriptomics; reported 189 protein, 448 metabolite, and 7,066 transcript responses across exercise conditions.",
+      "key_finding": "The large controlled multi-omics dataset maps transient exercise-mode-specific plasma responses, including immune-cell recruitment and tissue-repair pathway signatures; it provides systemic molecular context, not proof of clinically meaningful immunosuppression.",
+      "clinical_endpoint": "No infection incidence or direct functional immune challenge; transcript changes in whole blood may also reflect shifts in cell composition.",
+      "validation": "Non-exercise control and multi-omics integration support temporal interpretation; no independent external cohort or immune-function validation reported in this preprint.",
+      "limitations": "Preprint; targeted affinity plasma proteomics rather than global plasma discovery; sedentary rather than trained cohort; many molecular outcomes but no infection/function endpoint; whole-blood RNA cell-composition caveat.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "PubMed abstract; full-text Methods/Results for cohort groups, up-to-seven timepoints, panel counts, and integrated analyte responses.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41835387/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12980391/",
+        "https://www.biorxiv.org/content/10.64898/2026.03.02.704798v2"
+      ],
+      "integrity_notes": "PubMed labels the record bioRxiv/preprint as of 2026-10-02; do not describe it as peer-reviewed evidence.",
+      "original_lane_sample_size": "176 participants (66 endurance, 73 resistance, 37 control); plasma proteomic assays included repeated samples across timepoints (378 assay samples reported in full text).",
+      "coordinator_correction": "2026-10-02: reconciled against metab09 v2/STAR Methods; original shorthand n preserved in original_lane_sample_size."
+    },
+    {
+      "id": "proteomics_07",
+      "title": "The molecular signature of heat stress in sweat reveals non-invasive biomarker candidates for health monitoring",
+      "authors": "Brasier N, Niederberger C, Zanella M, Othman A, Schlapbach R, Kunz L, Dittmann A, Reeve K, Prummer M, Goldhahn J",
+      "year": 2025,
+      "publication_date": "2025-04-23",
+      "doi": "10.1038/s42003-025-08080-1",
+      "pmid": "40269247",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12019370/",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "population": "20 healthy participants analyzed (10 women, 10 men); 23 recruited, with three dropouts and two visits excluded after sensor failure.",
+      "design": "Randomized crossover heat-stress study with sweat-patch untargeted mass-spectrometry proteomics and metabolomics; primary focus was heat-strain monitoring, not immune surveillance.",
+      "sample_size": "23 recruited; 20 analyzed.",
+      "exercise_context": "Separate personalized exposures to elevated ambient temperature, elevated relative humidity, exertion, and protective-clothing phases.",
+      "sampling_times": "Sweat patches across acclimatization, stress, stress plus protective clothing, and cool-down phases; collection windows varied by condition.",
+      "biomarkers": "Untargeted sweat proteome/metabolome; 137 proteins detected in at least half of samples; cortisol also measured as a targeted heat-stress-associated analyte.",
+      "key_finding": "This establishes exploratory sweat molecular measurement during heat stress, not exercise-induced immune suppression. Protein candidates were weaker and more missingness-sensitive than metabolite contrasts; heat/sweat rate and collection phase affect interpretability.",
+      "clinical_endpoint": "No infection or immune-function endpoint.",
+      "validation": "No independent cohort or targeted immune-protein validation; several protein/physiology associations did not remain compelling after multiplicity correction, with low-sweat conditions contributing missing data.",
+      "limitations": "Small crossover sample; heat/exertion exposures confounded with sweat rate and thermal stress; only 137 proteins sufficiently prevalent; high protein missingness in low-sweat conditions; not a recovery/open-window study.",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Full-text Results (participant flow, sweat proteome, heat-stressor contrasts, missingness) and Methods (conditions/patch collection).",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/40269247/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12019370/",
+        "https://www.nature.com/articles/s42003-025-08080-1"
+      ],
+      "integrity_notes": null
+    },
+    {
+      "id": "proteomics_08",
+      "title": "Proteomic Profiling of Human Sweat Reveals Molecular Adaptations to Heat Acclimatization Induced by Isothermic Conditioning",
+      "authors": "Alli-Shaik A, Parikh BH, Ler SG, Tan QSW, Tan SCC, Lee JKW, Gunaratne J, Su X",
+      "year": 2026,
+      "publication_date": "2026-08-18",
+      "doi": "10.1249/MSS.0000000000004103",
+      "pmid": "42611616",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42611616/",
+      "source_type": "original_study",
+      "access_level": "abstract",
+      "population": null,
+      "design": "Pre/post sweat mass-spectrometry proteome profiling surrounding a two-week isothermic conditioning program. Abstract does not state participant count or detailed controls.",
+      "sample_size": null,
+      "exercise_context": "Two weeks of jogging and circuit activities designed to maintain core temperature at or above 38.5 °C for heat acclimatization.",
+      "sampling_times": "Forehead and chest sweat collected before and after the two-week conditioning program; acute post-bout recovery windows are not reported in the abstract.",
+      "biomarkers": "Site-specific sweat proteome, with immune-annotated candidates including IL1RA, UTS2, CALM1, and HPX; pathway annotations included B-cell activation/interleukin signaling and vasoregulation.",
+      "key_finding": "Preliminary, non-invasive sweat evidence links heat acclimatization to site-specific protein changes with immune-pathway annotations; it does not establish immune function, acute open-window kinetics, or infection prediction.",
+      "clinical_endpoint": "No clinical infection or direct immune-function endpoint in the abstract.",
+      "validation": "No independent validation or targeted confirmation is described in the available abstract; full methods/sample size require full-text retrieval.",
+      "limitations": "Abstract-only at search; sample size, exact assay/normalization, control design, and validation cannot be assessed; adaptation to thermal load is not interchangeable with acute immune recovery.",
+      "scope_fit": "needs_full_text",
+      "evidence_anchor": "PubMed abstract only (Methods/Results/Conclusion).",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42611616/",
+        "https://doi.org/10.1249/MSS.0000000000004103"
+      ],
+      "integrity_notes": "Ahead-of-print PubMed record dated 2026-08-18; record and abstract accessed before cutoff."
+    },
+    {
+      "id": "proteomics_09",
+      "title": "An Estimate of Plasma Volume Changes Following Moderate-High Intensity Running and Cycling Exercise and Adrenaline Infusion",
+      "authors": "Bjerre-Bastos JJ, Sejersen C, Bihlet AR, Secher NH, Mackey AL, Kitchen C-C, Drobinski P, Thudium CS, Nielsen HB",
+      "year": 2022,
+      "publication_date": "2022-07-22",
+      "doi": "10.3389/fphys.2022.948087",
+      "pmid": "35936903",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9355650/",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "population": "40 cardiovascularly healthy adults aged 42–75 y with knee osteoarthritis; not an immune-biomarker cohort.",
+      "design": "Serial hemoglobin/hematocrit-derived estimate of plasma-volume change with moderate-high-intensity running, cycling, and adrenaline infusion conditions.",
+      "sample_size": "40 recruited; 39 completed cycling and 37 completed running.",
+      "exercise_context": "Moderate-to-high-intensity running and cycling exercise.",
+      "sampling_times": "Before, during/immediately after, and serially through recovery; group plasma volume returned toward baseline by about 30 min.",
+      "biomarkers": "Hemoglobin and hematocrit used to estimate plasma-volume shifts; not proteomics or immunology.",
+      "key_finding": "Estimated plasma volume fell by roughly 14% after cycling and 14% after running in the study's primary summary, with substantial immediate changes resolving toward baseline over approximately 30 min; acute concentration changes can alter measured plasma/serum protein levels.",
+      "clinical_endpoint": "No immune, infection, or clinical exercise outcome; contextual measurement-method evidence only.",
+      "validation": "Physiological serial measurement, but not independent validation of a proteomic immune marker.",
+      "limitations": "Knee-osteoarthritis cohort and moderate-to-high exercise protocols; inferred from Hb/Hct rather than direct plasma volume; contextual rather than immune-proteomics evidence.",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Abstract and Methods/Results on serial Hb/Hct-derived plasma-volume estimates and recovery.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/35936903/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9355650/",
+        "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2022.948087/full"
+      ],
+      "integrity_notes": null
+    },
+    {
+      "id": "proteomics_10",
+      "title": "Biomarkers of organ stress and injury following the Boston Marathon",
+      "authors": "McKenna ZJ, Atkins WC, Butts CL, Zhao X, Morris AK, Perez R, Wierick SC, Gustus S, McDermott BP",
+      "year": 2025,
+      "publication_date": "2025-10-16",
+      "doi": "10.1152/japplphysiol.00775.2025",
+      "pmid": "41101781",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12924623/",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "population": "72 qualified recreational Boston Marathon runners (34 men, 38 women; mean age 50 ± 11 y); complete pre/post blood and/or urine samples were available for 60, with analyte-specific n values.",
+      "design": "Field pre/post 2024 Boston Marathon study measuring targeted plasma/serum and urine hydration, organ-injury, and microbial-translocation-associated markers.",
+      "sample_size": "72 recruited/completed; 60 had complete analyzable blood and/or urine pair; e.g., urine AKI marker analyses n=60 and hydration table n=67.",
+      "exercise_context": "2024 Boston Marathon, mean finish time 3:45 ± 0:32 h:min.",
+      "sampling_times": "Baseline blood at expo up to two days pre-race; prerace urine on race day; blood and urine immediately post-race. Samples processed within approximately 2 h; no recovery series in this study.",
+      "biomarkers": "Targeted urinary TIMP-2×IGFBP7, NGAL, KIM-1 and hydration indices; plasma I-FABP and sCD14, serum creatine kinase, and blood electrolyte/renal markers. Plasma/serum corrected for plasma-volume changes; urine injury markers normalized to specific gravity.",
+      "key_finding": "Renal and intestinal injury/stress markers rose post-marathon even where severe hypohydration was absent and after urine-specific-gravity correction; urine/blood injury signals are a strong competing explanation for post-exercise fluid biomarkers. sCD14 is an indirect microbial-translocation marker, not evidence of infection or immune suppression.",
+      "clinical_endpoint": "No infection incidence or immune functional endpoint; studied organ stress/injury and hydration, with symptoms not predictive of the measured injury marker shifts.",
+      "validation": "Targeted immunoassays with plasma-volume correction and urine-specific-gravity normalization; no external cohort validation.",
+      "limitations": "Field design, limited analyte-specific sample sizes, prerace blood not immediately before the race, no full recovery kinetics, extreme endurance event may not generalize to lab exercise, and most analytes are injury/hydration markers rather than immune-specific proteins.",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Full-text Methods (sample timing, plasma-volume correction, urine SG normalization) and Results/Discussion (hydration and renal/GI injury-marker responses).",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/41101781/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12924623/",
+        "https://journals.physiology.org/doi/10.1152/japplphysiol.00775.2025"
+      ],
+      "integrity_notes": null
+    }
+  ],
+  "findings": [
+    {
+      "claim": "The nearest recent broad fluid-discovery study is the 2025 Kurgan preprint: acute cycling altered plasma, saliva, and urine proteomes, but plasma alone had a separate-cohort replication; immune pathway enrichment and a targeted cytokine time course do not establish impaired host defense.",
+      "source_ids": [
+        "proteomics_04"
+      ],
+      "certainty": "moderate for reported assay and time-course design; low for clinical immune interpretation because no function or infection endpoint was measured and the study remains a preprint",
+      "protocol_implication": "Treat discovery MS, targeted cytokine assays, and independent-cohort replication as separate evidence classes; count the saliva/urine dataset as discovery only."
+    },
+    {
+      "claim": "The Xu 2020 paper's title overstates the validated inference: 15 men were followed during four weeks, but urinary iTRAQ discovery was performed on pooled samples (one biological pool per time point), while measured immune outcomes were cell counts/subsets rather than function or infection. No urine concentration correction was reported.",
+      "source_ids": [
+        "proteomics_01"
+      ],
+      "certainty": "high for sample pooling and study design as reported in full text; low for candidate biomarker validity",
+      "protocol_implication": "Retain as exploratory chronic-training urine proteomics, flag proteomic biological n=1/time point, and do not classify the four proteins as validated open-window biomarkers. Record the ELISA follow-up as same-study targeted assessment only."
+    },
+    {
+      "claim": "Targeted blood immune-protein panels and large integrated blood multi-omics capture transient post-exercise kinetics; current studies do not demonstrate infection susceptibility or functional immune impairment. Assays differ materially: Wenzel uses a 92-protein Olink PEA panel, while MoTrPAC integrates targeted plasma protein measurements with metabolites and whole-blood RNA.",
+      "source_ids": [
+        "proteomics_05",
+        "proteomics_06"
+      ],
+      "certainty": "high for assay/population/time windows; no evidence for infection-prediction validity",
+      "protocol_implication": "Separate targeted protein kinetics, multi-omics integration, and functional/clinical immune outcomes in extraction and synthesis; do not call pathway annotations a functional validation tier."
+    },
+    {
+      "claim": "Urinary inflammatory-marker changes after exercise overlap with kidney/gut injury and changing urine concentration; a marathon field study illustrates why SG normalization and plasma-volume correction materially matter, while plasma-volume change itself can approach 14% immediately after exercise.",
+      "source_ids": [
+        "proteomics_02",
+        "proteomics_09",
+        "proteomics_10"
+      ],
+      "certainty": "high that these confounders were measured/reported in the cited protocols; transfer of exact magnitudes to every protocol is context-dependent",
+      "protocol_implication": "Extract urine creatinine plus specific gravity or osmolality and perform sensitivity analyses; collect hydration, renal/GI injury and hemoconcentration/plasma-volume measures; report collection-to-last-bout interval."
+    },
+    {
+      "claim": "Non-invasive sweat immune-proteomics remains a heat-adaptation/heat-stress hypothesis space, not a validated exercise open-window biomarker pipeline. Salivary recovery literature primarily covers targeted hormones and IgA, with heterogeneous and inconsistent recovery findings rather than omics.",
+      "source_ids": [
+        "proteomics_03",
+        "proteomics_07",
+        "proteomics_08"
+      ],
+      "certainty": "moderate; the 2026 sweat study is abstract-only and requires full-text assessment",
+      "protocol_implication": "Include sweat and saliva, but tag heat acclimatization/heat stress separately from ordinary acute exercise recovery and distinguish targeted conventional assays from proteomics."
+    }
+  ],
+  "gaps": [
+    "No opened study in this lane links a proteomic candidate in plasma, serum, urine, saliva, or sweat to prospectively observed infection incidence or independently tested immune function.",
+    "The most directly relevant urine iTRAQ study has pooled discovery material, unknown final-bout sampling interval, and no reported urine concentration correction; no independent replication of SEMG-1/PIP/PDGFRL/NME2 was identified in the searched sources.",
+    "Recent cross-fluid global proteomics is preprint evidence; independent replication covers plasma only, while saliva and urine candidate profiles remain exploratory.",
+    "Sweat studies are focused on heat strain or acclimatization; sample size and methods are not available in the abstract-only 2026 study record. Salivary recovery review did not cover proteomics and found heterogeneous traditional-marker methods.",
+    "No serum-only proteomic immune-recovery study satisfying healthy-human, acute/recovery, and immune-specific criteria was opened in this lane; report this as a search observation, not an exhaustive absence claim."
+  ],
+  "proposed_updates": [
+    "Split the evidence map into unbiased proteomic discovery (LC-MS/MS/iTRAQ), targeted protein assays (ELISA/Olink/PEA), and integrated multi-omics; mark same-cohort assay confirmation separately from external replication.",
+    "Add extraction fields for biological versus technical n, pooled versus individual samples, and the exact interval from final exercise bout to each specimen; do not count pooled technical replicates as biological participants.",
+    "Require fluid-specific pre-analytics: urine creatinine and/or specific gravity/osmolality correction, plasma/serum hemoconcentration or plasma-volume correction, and sweat collection site/rate/volume and heat conditions.",
+    "Classify biomarkers by competing physiological source (immune mediator/cell traffic, muscle/tissue injury, renal or GI injury, hydration/concentration, hemoconcentration) before interpreting immune specificity.",
+    "Retain the hierarchy: marker change; immune-cell count/subset; direct functional immune assay; infection/symptom association; prospective prediction/independent validation. Do not infer across tiers.",
+    "Use acute exercise, repeated training, heat stress, and heat acclimatization as distinct exposure groups; revisit the 30-minute boundary as a sampling convention, not a biological definition."
+  ],
+  "search_limitations": [
+    "Searches were performed on 2026-10-02 using public web search with PubMed/PMC, publisher, and preprint records opened for source verification. The project brief states subscription databases are available, but this lane did not execute formal PubMed, Web of Science, Scopus, Embase, or SPORTDiscus database searches or export records.",
+    "No dedicated academic-search MCP was available in the surfaced tools. Public full text was accessible for most core records; the 2026 sweat acclimatization record was abstract-only.",
+    "Search was targeted rather than exhaustive, no formal screening or PRISMA count was attempted, and findings should not be interpreted as a comprehensive scoping-review result.",
+    "A general salivary resistance-exercise proteomics pilot and a 2026 tear/nasal multi-biofluid study were screened as adjacent boundary literature but not counted as core evidence because they do not directly test exercise immune recovery in the specified matrices/outcomes."
+  ]
+}

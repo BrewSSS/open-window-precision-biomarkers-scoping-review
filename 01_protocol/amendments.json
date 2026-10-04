@@ -1,0 +1,30 @@
+{
+  "protocol_version": "2.0",
+  "records": [
+    {
+      "amendment_id": "PRE-001",
+      "date": "2026-10-02",
+      "stage": "before_formal_search_and_registration",
+      "from": "v1.0 and exploratory restart design",
+      "to": "v2.0",
+      "reason": "User-approved retention of precision biomarkers and post-exercise focus; evidence and methods audit",
+      "changes_document": "../CHANGELOG.md",
+      "known_information": "Public exploratory evidence reconnaissance and neighboring reviews; no formal included-study results",
+      "approval_basis": "User requested planning and update of entire research design after agreeing to direction",
+      "human_team_freeze_date": null,
+      "re_screening_required": "No formal screening yet; apply v2 to future calibration and formal screening"
+    }
+  ],
+  "future_amendment_fields": [
+    "date",
+    "old_rule",
+    "new_rule",
+    "reason",
+    "work_stage",
+    "information_already_known",
+    "decision_by",
+    "reassessment_needed",
+    "affected_records",
+    "registry_update"
+  ]
+}

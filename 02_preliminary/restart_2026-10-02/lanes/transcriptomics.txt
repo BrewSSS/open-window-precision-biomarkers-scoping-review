@@ -1,0 +1,52 @@
+Lane: transcriptomics
+Cutoff: 2026-10-02
+Search date: 2026-10-02
+
+最重要的结论
+1. 转录变化高度依赖采样时间。36人急性CPX多组学研究报告PBMC转录变化多在60分钟内回落；Yu的马拉松单细胞队列仍观察到24小时及更慢的部分信号。protocol应保留0–1 h、3–4 h及约24 h采样，不把30分钟当作统一生物学分界。
+   - Molecular Choreography: https://pmc.ncbi.nlm.nih.gov/articles/PMC7299174/
+   - Yu 2023: https://pubmed.ncbi.nlm.nih.gov/37123249/
+
+2. 单细胞分辨率的急性运动证据仍是探索性小样本。Yu 2023为CPX和马拉松各3人；半马研究招募4人、其中3人获得可用于分析的质控合格文库，最终有效配对分析n=3（6份前后配对生物样本；4,211个细胞不能作为独立受试者）。
+   - 原文定位：Methods 2.1（招募/采样，PDF p.1）；Results（1人文库质控排除，PDF p.2）；Methods 2.5（配对pseudo-bulk/DESeq2，PDF p.2）。半马全文：PMC https://pmc.ncbi.nlm.nih.gov/articles/PMC11737006/；开放PDF https://iris.univr.it/retrieve/9ac8ac78-0e0f-4c74-b6dd-344bce484e50/Scandinavian%20Med%20Sci%20Sports%20-%202025%20-%20Veschetti%20-%20Single%E2%80%90Cell%20RNA%20Sequencing%20Analysis%20Reveals%20Exercise%E2%80%90Induced.pdf
+   - ENA PRJEB76303: https://www.ebi.ac.uk/ena/browser/view/PRJEB76303
+
+3. 转录组/miRNA/EV候选信号没有建立运动后临床感染风险。viral-response gene-set或推断的细胞毒通路并非病毒挑战、感染发生或直接功能测定。健康人体lncRNA/circRNA免疫证据尤其少：2024系统综述收录6项相关研究，共20种lncRNA和1种circRNA候选，整体偏倚风险高。
+   - ncRNA systematic review: https://pubmed.ncbi.nlm.nih.gov/37925072/
+   - 2025 PBMC miRNA-seq: https://pubmed.ncbi.nlm.nih.gov/40746988/
+
+4. 最新大样本人体血液图谱是MoTrPAC的2026 bioRxiv v2预印本（2026-03-11，未同行评审）：175名久坐成年人入组、173人有血液转录组，急性耐力/抗阻运动与不运动对照、最多7个采样时点至24小时。适合作为前沿附录/待更新来源，不进当前正式主证据；与MoTrPAC另一2026多组织预印本来自同一早期队列。
+   - v2预印本: https://pmc.ncbi.nlm.nih.gov/articles/PMC12980391/
+   - PubMed: https://pubmed.ncbi.nlm.nih.gov/41835387/
+
+5. 2025 Shalmon PBMC miRNA-seq把RNA信号和训练史/性能关联，但无外部预测验证或感染结局；文章的部分性别分层差异miRNA计数内部不一致，且数据为bulk PBMC，细胞组成、运动模式、性别可能共同影响结果。另有2025-11-07更正，仅修作者 affiliation。
+   - 原文: https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2025.1583870/full
+   - Correction: https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2025.1674758/pdf
+   - GEO GSE288760: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288760
+
+值得保留的原创研究与队列关系
+- Yu 2023 iScience：健康人CPX n=3 vs 常规马拉松跑者n=3；pre、5 min、1 h、4 h或24 h；NODE公开数据。通路推断并非功能或感染检测。来源：https://pubmed.ncbi.nlm.nih.gov/37123249/
+- Veschetti 2025 Scandinavian J Med Sci Sports：招募4人、3人得到质控合格文库，配对有效n=3；赛事采血仅pre和跑完15–30 min；ENA PRJEB76303。定位为Methods 2.1（PDF p.1）、Results质控排除及Methods 2.5统计方法（PDF p.2）。来源：https://pmc.ncbi.nlm.nih.gov/articles/PMC11737006/
+- Contrepois 2020 Cell Molecular Choreography：36人bulk PBMC，急性CPX后2、15、30、60 min采血；9,132个转录本中93.7%在60 min回到基线，展示快速时间动力学；公共数据portal。来源：https://pmc.ncbi.nlm.nih.gov/articles/PMC7299174/
+- Shalmon 2025 Frontiers：58人，22 runners/18 cyclists/18 active controls，最大测试和一周后亚最大到力竭测试，pre/immediate post；GSE288760；关联运动表现，不是临床感染预测。来源：https://pubmed.ncbi.nlm.nih.gov/40746988/
+- Kotewitsch 2024系统综述：95项研究、164 miRNA；lncRNA/circRNA只有6项研究；高偏倚风险。来源：https://pubmed.ncbi.nlm.nih.gov/37925072/
+- Walzik 2024 online/2025 journal：DRKS00017686 crossover n=24 + 单独纵向trial n=12，PBMC NAD代谢酶靶向表达与蛋白/代谢物验证；不是转录组测序，未测感染/杀伤。DRKS00017686与同年PBMC蛋白组研究属潜在同队列。来源：https://pubmed.ncbi.nlm.nih.gov/39500416/
+- Lavin 2023：n=40，TRAD 21 vs HITT 19，肌肉与血清EV小/长/circRNA；作为循环EV/非编码RNA机制背景，不是免疫细胞转录组或功能证据。来源：https://pmc.ncbi.nlm.nih.gov/articles/PMC10110731/
+- Plaza-Florido 2026 J Appl Physiol：健康青少年12男、9女，在8周监督耐力训练前后各完成一次急性间歇骑行；21人入组，RNA-seq可用83/84个计划样本（训练后一次运动后样本缺失），1名男生的训练前配对两样本被PCA判为离群并排除下游DE分析。分离单核细胞后做bulk poly(A)-mRNA-seq，急性运动前训练时女性/男性差异转录本5,135/567，训练后94/165；即时采血，无感染、病原挑战或单核细胞功能测定。GEO GSE324210可用，但GEO摘要给出5,148/571，与最终论文略有差异，采用最终论文数并记版本差异；分离细胞降低全血混杂，但未分型单核细胞亚群。来源：https://pubmed.ncbi.nlm.nih.gov/42545855/；https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324210
+- Ruple et al. 2025 AJP Endo bulk PBMC RNA-seq：n=15（年轻7、年长8），60 min单腿膝伸展，pre/immediate post；GSE293163；作者明言NK细胞毒未测。来源：https://pubmed.ncbi.nlm.nih.gov/40695537/；https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293163
+- MoTrPAC blood 2026 v2：preprint，N=175、whole-blood RNA n=173，EE/RE/control，最多7时间点至24h；另一个同cohort多组织预印本不能算独立重复。来源（bioRxiv v2，2026-03-11）：https://www.biorxiv.org/content/10.64898/2026.03.02.704798v2.full
+
+具体protocol修改
+- 把RNA组学分成whole-blood mRNA、PBMC/免疫细胞bulk、分选细胞bulk、scRNA/pseudobulk、PBMC miRNA、循环/EV RNA、肌肉RNA背景；不可把不同生物基质混在同一指标类别。
+- 每篇分别记录受试者n、有效配对n、样本n、细胞n、细胞比例测量、RNA批次/平台/处理、数据accession、注册号和是否外部验证。
+- acute与training分开；时间采样按运动中/即刻、0–1 h、3–4 h、24 h+编码；不固定30 min效应边界。
+- 把RNA表达/细胞比例、直接免疫功能、感染发生、临床预测设为递进的不同证据层。GO富集或已知miRNA target数据库不能升级为功能/感染因果。
+- 正式重启时用已确认可用的PubMed、Web of Science、Scopus、Embase、SPORTDiscus运行数据库适配的“acute exercise/exercise training × human × blood/PBMC/monocyte × RNA-seq/scRNA-seq/miRNA/lncRNA/circRNA”检索；第二位筛选者独立复筛标题摘要与全文。当前lane只做定向网页核验，不能替代正式检索或形成PRISMA数。
+- 用study-family ID识别同队列多组学论文；登记UCI青少年、半马、Yu、Stanford及MoTrPAC队列为不同研究家族，并核查MoTrPAC不同预印本的队列重叠。
+- 保持MoTrPAC 2026 blood v2为“frontier/preprint”附录，等正式出版/完整队列结果后更新，不计作外部复现。
+
+文件路径：
+- JSON: /Users/USER/Desktop/Precise immunological markers/02_preliminary/restart_2026-10-02/lanes/transcriptomics.json
+- TXT: /Users/USER/Desktop/Precise immunological markers/02_preliminary/restart_2026-10-02/lanes/transcriptomics.txt
+
+检索限制：本轮为定向公共网页、PubMed/PMC、GEO、ENA及出版商页面核对，不是已执行的五库正式检索；不能报告系统综述筛选数或PRISMA数据。

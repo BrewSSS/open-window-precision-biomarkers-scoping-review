@@ -1,0 +1,75 @@
+{
+  "protocol_version": "2.0",
+  "protocol_date": "2026-10-02",
+  "status": "pre_registration_working_protocol",
+  "confirmed_resources": {
+    "databases": [
+      "PubMed",
+      "Web of Science Core Collection",
+      "Scopus",
+      "Embase",
+      "SPORTDiscus"
+    ],
+    "fulltext_access_available": true,
+    "second_human_reviewer_available": true
+  },
+  "roles": {
+    "principal_investigator": null,
+    "reviewer_A": null,
+    "reviewer_B": null,
+    "search_lead": null,
+    "independent_PRESS_reviewer": null,
+    "adjudicator": null,
+    "data_manager": null,
+    "analysis_writing_lead": null
+  },
+  "platforms": {
+    "PubMed": "PubMed",
+    "Web of Science": "Core Collection; exact licensed collections pending",
+    "Scopus": "Scopus",
+    "Embase": null,
+    "SPORTDiscus": "EBSCOhost draft; confirm institutional platform"
+  },
+  "software": {
+    "reference_manager": null,
+    "screening": null,
+    "extraction": null,
+    "analysis": null
+  },
+  "declarations": {
+    "affiliations": null,
+    "funding": null,
+    "competing_interests": null,
+    "ethics_policy_review": null,
+    "author_contributions": null
+  },
+  "registration": {
+    "service": "OSF",
+    "status": "local_draft_not_submitted",
+    "id": null,
+    "url": null,
+    "submitted_at": null
+  },
+  "stages": {
+    "platform_validation": "pending",
+    "PRESS_review": "pending",
+    "random_50_screening_pilot": "pending",
+    "purposeful_10_charting_pilot": "pending",
+    "team_freeze": "pending",
+    "registration": "pending",
+    "formal_search": "pending",
+    "dual_screening": "pending",
+    "dual_extraction": "pending",
+    "critical_appraisal": "pending",
+    "synthesis": "pending",
+    "submission": "pending"
+  },
+  "flow_counts": null,
+  "actual_search_dates": null,
+  "frontier_preprint_counts": null,
+  "notes": [
+    "Database access confirmed by user does not imply database searches were run.",
+    "Only named human reviewers satisfy dual-review requirements.",
+    "No author contact, external registration or submission performed."
+  ]
+}

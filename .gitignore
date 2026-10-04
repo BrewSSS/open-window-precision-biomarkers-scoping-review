@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# LaTeX build artefacts (regenerable from source via scripts/build_protocol.py)
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+01_protocol/build/
+01_protocol/build_v2/
+
+# Python
+__pycache__/
+*.pyc
+
+# Local tool configuration (not research content)
+.claude/
+
+# Local scratch / exports that must never be committed raw
+# (database exports stay in 03_search/raw_exports/ only if licence permits; add explicit exceptions here)

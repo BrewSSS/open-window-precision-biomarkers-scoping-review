@@ -1,0 +1,429 @@
+{
+  "lane": "transcriptomics",
+  "cutoff_date": "2026-10-02",
+  "searched_at_date": "2026-10-02",
+  "queries": [
+    {
+      "source": "web search + PubMed/PMC",
+      "query": "acute exercise human PBMC single-cell RNA-seq marathon cardiopulmonary exercise Yu 2023 iScience 106532",
+      "date": "2026-10-02",
+      "notes": "Followed publisher/PubMed/PMC records and accessible article text; not a subscription-database search."
+    },
+    {
+      "source": "web search + publisher/PMC",
+      "query": "half-marathon single-cell RNA sequencing exercise immune cells Veschetti 2025 10.1111/sms.70018",
+      "date": "2026-10-02",
+      "notes": "Opened full text/PDF, methods, data statement, and supplementary/ENA record."
+    },
+    {
+      "source": "web search + PMC/GEO",
+      "query": "acute exercise PBMC RNA-seq transcriptome healthy humans bulk RNA-seq age specific exercise RNAseq",
+      "date": "2026-10-02",
+      "notes": "Followed original articles to GEO and publisher records; time points and participant-level n captured where explicitly reported."
+    },
+    {
+      "source": "web search + PubMed/PMC",
+      "query": "exercise immunology noncoding RNA miRNA lncRNA circRNA systematic review healthy human acute exercise",
+      "date": "2026-10-02",
+      "notes": "Used 2024 systematic review plus 2025 PBMC miRNA sequencing and 2023 small/long/circular RNA primary study."
+    },
+    {
+      "source": "web search + bioRxiv/PMC/PubMed",
+      "query": "MoTrPAC 2026 acute exercise whole blood transcriptomics N 175 24 hour bioRxiv",
+      "date": "2026-10-02",
+      "notes": "Recorded version 2 and posted date; treated as preprint/context, not peer-reviewed primary evidence."
+    },
+    {
+      "source": "web search + publisher/PubMed",
+      "query": "acute exercise PBMC NAMPT gene expression NAD metabolism Walzik 2024 2025 DRKS00017686",
+      "date": "2026-10-02",
+      "notes": "Targeted mRNA/protein/metabolite evidence included as mechanistic validation context, not transcriptome-wide RNA-seq."
+    },
+    {
+      "source": "web search + publisher/PubMed/GEO",
+      "query": "2026 adolescent monocyte RNA-seq acute exercise before after endurance training Plaza-Florido GSE324210",
+      "date": "2026-10-02",
+      "notes": "Final peer-reviewed article dated 2026-09-01; publisher full text, PubMed record and GEO accession checked. The GEO series abstract has transcript count differences from the final article."
+    }
+  ],
+  "sources": [
+    {
+      "id": "tr01",
+      "title": "Single-cell sequencing of immune cells after marathon and symptom-limited cardiopulmonary exercise",
+      "authors": "Yanli Yu et al.",
+      "year": 2023,
+      "publication_date": "2023-03-31",
+      "doi": "10.1016/j.isci.2023.106532",
+      "pmid": "37123249",
+      "url": "https://doi.org/10.1016/j.isci.2023.106532",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "population": "Healthy adults; 3 non-regular exercisers assigned to symptom-limited CPX and 3 regular marathon runners; separate short-exercise and marathon groups.",
+      "design": "Longitudinal PBMC scRNA-seq after one acute bout in two very small groups; not a randomized within-person comparison of CPX versus marathon.",
+      "sample_size": "6 participants total (3 CPX, 3 marathon); 12 serial libraries per group reported.",
+      "exercise_context": "10–15 min symptom-limited treadmill CPX in the CPX group; approximately 4 h marathon in regular runners.",
+      "sampling_times": "Pre-exercise, 5 min, 1 h, and 4 h after CPX; pre-exercise, 5 min, 1 h, and 24 h after marathon.",
+      "biomarkers": "PBMC scRNA-seq, cell-type proportions/subsets, transcript and pathway scores including cytotoxicity, trafficking, and monocyte state.",
+      "key_finding": "Circulating cell composition shifted over time; T-cell/cytotoxic transcriptional signatures after marathon recovered later than cell abundance. Effector/naive T-cell ratio was proposed as a more uniform acute response indicator than CD4/CD8 ratio.",
+      "clinical_endpoint": "No prospectively measured infection incidence, viral challenge, or clinical immune-protection outcome; immune function language is based mainly on RNA/pathway or abundance signatures.",
+      "validation": "scRNA-seq resource deposited at NODE and public; no independent cohort or functional replication reported; no original code reported.",
+      "limitations": "n=3 per group; habitual training differs by group and is confounded with exercise type/duration; cell-level observations do not replace participant-level replication; functional and infection claims are not established by pathway scores.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "Abstract; Results: Experimental design; Methods: Participants and exercise protocol; Data and code availability.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/37123249/",
+        "https://www.sciencedirect.com/science/article/pii/S2589004223006090"
+      ],
+      "integrity_notes": "This is the 2023 iScience seed study. Do not report inferred cytotoxicity/antiviral pathway activity as measured killing or infection susceptibility."
+    },
+    {
+      "id": "tr02",
+      "title": "Single-Cell RNA Sequencing Analysis Reveals Exercise-Induced Transcriptional Dynamics in Half-Marathon Runners",
+      "authors": "Laura Veschetti et al.",
+      "year": 2025,
+      "publication_date": "2025-01-16",
+      "doi": "10.1111/sms.70018",
+      "pmid": "39817606",
+      "url": "https://doi.org/10.1111/sms.70018",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "population": "Self-reportedly healthy amateur runners, age 29 ± 5 y; 2 men and 2 women were enrolled at a Verona 21.1-km event.",
+      "design": "Paired PBMC scRNA-seq pre/post half-marathon, followed by cell-type and participant-paired pseudo-bulk analyses.",
+      "sample_size": "4 recruited; 3 participants yielded QC-usable libraries; effective paired analysis n=3 participants (6 pre/post participant samples), 4,211 QC-passing cells. One runner’s samples did not yield libraries of sufficient quality. Cells are not independent biological replicates.",
+      "exercise_context": "21.1-km half-marathon; event-based acute endurance exercise in amateur runners.",
+      "sampling_times": "Pre-run 60–90 min before scheduled start; post-run 15–30 min after arrival, approximately 3 h after start. No later recovery sample.",
+      "biomarkers": "PBMC scRNA-seq in 9 annotated cell types, cell abundance and differential expression/pathway analyses, including platelet signal.",
+      "key_finding": "Cell-specific myeloid stress/viral-process, lymphoid activation, and platelet/coagulation transcript patterns were reported; classical-monocyte chemokine/IL1B-related transcripts were among decreases. Viral pathway enrichment is a gene-set annotation, not evidence of infection.",
+      "clinical_endpoint": "No measured infection, immune challenge, or ex vivo functional outcome.",
+      "validation": "Sequencing data publicly deposited at ENA project PRJEB76303; paired pseudo-bulk DESeq2 at participant sample level; no external cohort.",
+      "limitations": "Only 3 effective pairs, single immediate post-race time point, observational event setting; high risk of unstable estimates despite thousands of cells; platelets may reflect residual contamination; no functional or clinical endpoint.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "Full-text Methods 2.1 (enrollment/sampling; PDF p.1), Results (QC exclusion; PDF p.2), Methods 2.5 (paired pseudo-bulk; PDF p.2), and Data Availability Statement.",
+      "verification_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11737006/",
+        "https://iris.univr.it/retrieve/9ac8ac78-0e0f-4c74-b6dd-344bce484e50/Scandinavian%20Med%20Sci%20Sports%20-%202025%20-%20Veschetti%20-%20Single%E2%80%90Cell%20RNA%20Sequencing%20Analysis%20Reveals%20Exercise%E2%80%90Induced.pdf",
+        "https://www.ebi.ac.uk/ena/browser/view/PRJEB76303"
+      ],
+      "integrity_notes": "Abstract says n=4 collected; Methods state one participant's samples did not yield libraries of adequate quality and were excluded. For inference use effective n=3 paired people, not 4 and not 4,211 cells. Same Verona Run 4 Science context is separate from Yu's Chinese cohorts; no evidence these are the same individuals."
+    },
+    {
+      "id": "tr03",
+      "title": "Molecular Choreography of Acute Exercise",
+      "authors": "Kévin Contrepois et al.",
+      "year": 2020,
+      "publication_date": "2020-05-28",
+      "doi": "10.1016/j.cell.2020.04.043",
+      "pmid": "32470399",
+      "url": "https://doi.org/10.1016/j.cell.2020.04.043",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "population": "36 well-characterized adult volunteers, including insulin-sensitive and insulin-resistant participants.",
+      "design": "Longitudinal controlled symptom-limited cardiopulmonary exercise test with plasma/PBMC multi-omics and bulk PBMC RNA-seq.",
+      "sample_size": "36 volunteers.",
+      "exercise_context": "Single acute symptom-limited CPX bout.",
+      "sampling_times": "Baseline, then recovery at 2, 15, 30, and 60 min after exercise (the study reports peak transcript changes at 2 min; no exercise-time blood sample).",
+      "biomarkers": "Bulk PBMC RNA-seq plus immunome, proteome, metabolome, lipidome and clinical CPX phenotyping.",
+      "key_finding": "Thousands of transcripts responded rapidly; 93.7% of the exercise-responsive transcript set returned to baseline within 60 min. Acute pathways included early immune and oxidative-stress changes. This supports strongly time-dependent/transient expression rather than a universal fixed-duration immune suppression interval.",
+      "clinical_endpoint": "No post-exercise infection surveillance or immune challenge; fitness prediction analyses are within-cohort and concern VO2/physiology, not infection risk.",
+      "validation": "Raw/processed multi-omic data were made available through the Stanford Human Microbiome Project portal; extensive within-cohort longitudinal profiling, no independent external clinical validation.",
+      "limitations": "Bulk PBMC averages can conflate cell-intrinsic expression and exercise-driven cell redistribution; no direct pathogen defense endpoint; fitness model association does not validate immune risk prediction.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "Abstract; Results: multi-omic changes/time-series PBMC gene expression; Data Availability Statement.",
+      "verification_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7299174/",
+        "https://www.sciencedirect.com/science/article/pii/S0092867420305080"
+      ],
+      "integrity_notes": "Independent Stanford cohort from later German and Italian studies; no trial-registration overlap with them identified."
+    },
+    {
+      "id": "tr04",
+      "title": "Endurance training attenuates acute exercise-induced monocyte transcriptomic responses in adolescents: sex-specific molecular adaptations",
+      "authors": "Abel Plaza-Florido et al.",
+      "year": 2026,
+      "publication_date": "2026-09-01",
+      "doi": "10.1152/japplphysiol.00282.2026",
+      "pmid": "42545855",
+      "url": "https://doi.org/10.1152/japplphysiol.00282.2026",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "population": "Healthy adolescents aged 13–17 years: 12 males and 9 females; competitive athletes and chronic conditions were excluded.",
+      "design": "Within-participant acute exercise challenge before and after an 8-week supervised endurance-training intervention (with brief supplementary strength work).",
+      "sample_size": "21 enrolled; 83 RNA-seq samples available from 84 planned timepoint samples (one post-training post-exercise sample missing). Two pre-training samples from one male identified as PCA outliers were excluded from downstream differential-expression analyses (81 sample libraries remain).",
+      "exercise_context": "Acute challenge was 10 × 2-min cycling bouts at 70% of maximal work rate, separated by 1-min rest; repeated before and after 8 weeks of training (3 sessions/week, 60 min/session).",
+      "sampling_times": "At each acute challenge, blood was collected at baseline after 30-min catheter equilibration and immediately after exercise; challenges were before training and after the 8-week intervention. No recovery time course.",
+      "biomarkers": "Isolated circulating monocytes; bulk poly(A)-selected mRNA RNA-seq (Illumina NovaSeq 6000, paired-end 2×100 bp, ~30 million reads/sample), CBC/monocyte counts and lactate. One lncRNA (SCAMP1-AS1) is reported among shared exercise-responsive transcripts; assay is not a comprehensive ncRNA-seq assay.",
+      "key_finding": "Before training, acute exercise altered 567 transcripts in males and 5,135 in females; after training, 165 and 94 transcripts, respectively (FDR<0.1). The GEO series abstract has slightly different DEG totals (571/5,148), so final article values are used and the metadata discrepancy is flagged.",
+      "clinical_endpoint": "No infection surveillance, pathogen challenge, or direct monocyte functional assay. CBC/monocyte counts and lactate were measured; pathway results do not establish immune protection or dysfunction.",
+      "validation": "Raw RNA-seq data are public in GEO GSE324210; no external validation cohort. Linear models with FDR<0.1 were used for paired comparisons; exploratory threshold and within-person design should be retained in interpretation.",
+      "limitations": "Adolescent single-center cohort, modest n, immediate-only post-exercise sample, one missing sample and two outlier samples excluded. Isolated bulk monocytes reduce whole-blood/PBMC mixture confounding, but monocyte subset immunophenotyping was not performed; exercise mobilization/subset shifts may still contribute. Transcriptomic attenuation after training is not a functional assay.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "Abstract; Methods: Study Design, Blood Sampling and Analysis, Library Construction, Bioinformatic Analysis; Results; Data Availability; GEO GSE324210.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42545855/",
+        "https://journals.physiology.org/doi/10.1152/japplphysiol.00282.2026",
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE324210"
+      ],
+      "integrity_notes": "Distinct adolescent UCI cohort from Yu/Veschetti/Stanford/MoTrPAC cohorts. Do not equate transcript counts or inferred cardiovascular pathways with direct immune function or clinical infection risk. GEO series abstract and final article report modestly different transcript counts; cite final peer-reviewed article values (567/5,135 pre-training) and preserve this version discrepancy."
+    },
+    {
+      "id": "tr05",
+      "title": "Transcriptomic analyses of peripheral blood mononuclear cells reveal age-specific basal and acute exercise responsiveness differences in humans",
+      "authors": "Bradley A. Ruple et al.",
+      "year": 2025,
+      "publication_date": "2025-07-22",
+      "doi": "10.1152/ajpendo.00169.2025",
+      "pmid": "40695537",
+      "url": "https://doi.org/10.1152/ajpendo.00169.2025",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "population": "Healthy adults free of overt cardiovascular/metabolic disease: young 23 ± 4 y and older 65 ± 7 y.",
+      "design": "Paired bulk PBMC RNA-seq before and immediately after acute knee-extension exercise, with age-stratified groups.",
+      "sample_size": "15 total: young n=7 (2 men, 5 women), older n=8 (4 men, 4 women).",
+      "exercise_context": "Single 60-min aerobic single-leg knee-extension bout.",
+      "sampling_times": "Immediately before and within 1 min of exercise cessation.",
+      "biomarkers": "PBMC RNA-seq and plasma IL-6/TNF-alpha concentrations.",
+      "key_finding": "53 genes changed in the young group and 1,026 in the older group; NK-related enrichment was reported in the young group and immune-signaling differences in older adults. Authors explicitly say cytotoxicity was not measured.",
+      "clinical_endpoint": "No infection outcome and no direct cytotoxicity, proliferation, or stimulated immune assay.",
+      "validation": "RNA-seq data public in GEO GSE293163; no independent validation cohort.",
+      "limitations": "Small age-stratified groups, single immediate post sample, bulk-PBMC cellular composition confounding, exploratory pathway inference, no functional readout.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "Abstract; Methods: Participants/Experimental Design; Results: Exercise-induced changes; Discussion; Data availability.",
+      "verification_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12352121/",
+        "https://journals.physiology.org/doi/10.1152/ajpendo.00169.2025",
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE293163"
+      ],
+      "integrity_notes": "Age is deliberately contrasted with exercise exposure; don't interpret DEG counts as age-specific immune protection or as functional NK cytotoxicity."
+    },
+    {
+      "id": "tr06",
+      "title": "Maximal and sub-maximal exercise tests alter PBMC microRNA expression: insights into sport- and sex-specific variations",
+      "authors": "Guy Shalmon et al.",
+      "year": 2025,
+      "publication_date": "2025-07-17",
+      "doi": "10.3389/fphys.2025.1583870",
+      "pmid": "40746988",
+      "url": "https://doi.org/10.3389/fphys.2025.1583870",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "population": "58 healthy participants: 22 runners (9 women), 18 cyclists (9 women), and 18 active controls (9 women); groups differed by habitual sport/training volume.",
+      "design": "PBMC small-RNA sequencing before/immediately after maximal and submaximal sport-specific tests; sport/sex association analyses.",
+      "sample_size": "58 participants (22 runners, 18 cyclists, 18 active controls); repeat exercise tests in the cohort.",
+      "exercise_context": "VO2max maximal test and a separate time-to-exhaustion test at 85% VO2max, performed one week apart; runners/cyclists exercised in their sport mode.",
+      "sampling_times": "Pre and immediately post each test; no recovery series.",
+      "biomarkers": "PBMC small-RNA-seq, PBMC and leukocyte counts, training-volume and exercise-performance covariates.",
+      "key_finding": "Large group-specific miRNA differences reported (e.g., 279 miRNAs in runners versus 7 in cyclists after maximal test); signal is exploratory and may reflect cell mobilization/composition, training history, mode and sex.",
+      "clinical_endpoint": "No immune-function assay or prospective infection endpoint. Associations with time-to-exhaustion/training volume are not external prediction validation.",
+      "validation": "GEO GSE288760 / SRA available; no external cohort. Publisher correction dated 2025-11-07 only corrected an author affiliation.",
+      "limitations": "Bulk PBMC miRNA cannot distinguish within-cell regulation from cell-subset shifts; tests differ by mode/training history; no recovery/function/infection outcomes; numerical inconsistencies among subgroup significant/upregulated miRNA counts in the article mean those subgroup counts should not be reused without reanalysis.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "Abstract; Methods: Exercise tests/Blood collection/Statistics; Results; Data Availability; 2025 correction notice.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/40746988/",
+        "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2025.1583870/full",
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE288760",
+        "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2025.1674758/pdf"
+      ],
+      "integrity_notes": "A 2025 correction changed affiliation only. Full paper reports subgroup counts that do not reconcile arithmetically (e.g. upregulated count exceeds significant total in a subgroup); treat specific sex-stratified counts as uncertain."
+    },
+    {
+      "id": "tr07",
+      "title": "Non-coding RNAs in exercise immunology: A systematic review",
+      "authors": "Mona Kotewitsch, Melina Heimer, Boris Schmitz, Frank C. Mooren",
+      "year": 2024,
+      "publication_date": "2023-11-03",
+      "doi": "10.1016/j.jshs.2023.11.001",
+      "pmid": "37925072",
+      "url": "https://doi.org/10.1016/j.jshs.2023.11.001",
+      "source_type": "systematic_review",
+      "access_level": "full_text",
+      "population": "Systematic review of exercise interventions in healthy humans; 95 eligible studies entered miRNA synthesis.",
+      "design": "Systematic review and qualitative evidence grading of human exercise-related ncRNA literature, with immune target databases added for miRNAs.",
+      "sample_size": null,
+      "exercise_context": "Acute and chronic exercise, endurance and resistance modalities; review is heterogeneous by protocol and assay.",
+      "sampling_times": "Study-specific; review separates acute and chronic categories but no single pooled time point.",
+      "biomarkers": "164 miRNAs across review-filtered exercise studies; 6 studies covering lncRNAs/circRNAs; 20 lncRNAs and 1 circRNA identified as possible exercise-immunology regulators.",
+      "key_finding": "15 endurance-associated miRNAs met the review's consistency threshold, mostly with acute endurance evidence; evidence for lncRNA/circRNA remained sparse.",
+      "clinical_endpoint": "No pooled clinical infection endpoint; proposed immune actions derive from target/pathway mapping and source studies.",
+      "validation": "Review searches PubMed, Web of Science, SPORTDiscus and validated-target resources; authors rated overall risk of bias high.",
+      "limitations": "Heterogeneous designs; database target validation does not demonstrate in vivo mediation by exercise; six lnc/circ studies only; high overall risk of bias.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "PubMed Abstract; Results/figure caption describing searches, eligible studies and risk of bias.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/37925072/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11116971/"
+      ],
+      "integrity_notes": "Online first 2023-11-03; journal issue is 2024. Do not treat database-predicted target genes as experimental immune function."
+    },
+    {
+      "id": "tr08",
+      "title": "Acute exercise boosts NAD+ metabolism of human peripheral blood mononuclear cells",
+      "authors": "David Walzik et al.",
+      "year": 2025,
+      "publication_date": "2024-11-03",
+      "doi": "10.1016/j.bbi.2024.11.004",
+      "pmid": "39500416",
+      "url": "https://doi.org/10.1016/j.bbi.2024.11.004",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "population": "Healthy young adults in two exercise trials.",
+      "design": "Two complementary repeated-sampling trials using targeted PBMC gene/protein and NAD metabolite assays; not transcriptome-wide RNA-seq.",
+      "sample_size": "Trial 1 randomized crossover n=24 (12 women); separate longitudinal kinetics trial n=12 (6 women).",
+      "exercise_context": "Trial 1 compared time/energy-matched HIIT and moderate continuous exercise; trial 2 used a single cycling bout.",
+      "sampling_times": "Trial 1 pre, exercise-related serial points, immediate post and 1 h post; trial 2 eight time points from baseline through exercise to 1 h recovery.",
+      "biomarkers": "Targeted NAD biosynthetic enzyme mRNA and protein abundance, intracellular PBMC NAD+, serum nicotinamide and related metabolites.",
+      "key_finding": "NAMPT and other NAD-related enzyme transcripts changed acutely; NAMPT response accompanied increases in PBMC NAD+ and protein abundance, providing molecular-to-metabolite concordance.",
+      "clinical_endpoint": "No infection or direct immune effector-function outcome; metabolite/protein corroboration supports the biochemical mechanism but not a clinical immune benefit.",
+      "validation": "Separate 12-person kinetics cohort supports temporal replication within the same research program; targeted endpoints, no external group.",
+      "limitations": "Targeted panel, small young cohorts, blood cell redistribution not eliminated by PBMC bulk measurements, no infection/function readout; trial 1 DRKS00017686 overlaps with other German exercise-immunology reports, so check registration before counting those as independent cohorts.",
+      "scope_fit": "core_candidate",
+      "evidence_anchor": "PubMed Abstract; full-text Results and Methods: randomized crossover and longitudinal exercise trials.",
+      "verification_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/39500416/",
+        "https://eldorado.tu-dortmund.de/items/174ca8d6-aa19-4a7e-aea2-70f845cadecc",
+        "https://eldorado.tu-dortmund.de/server/api/core/bitstreams/4d4d4d38-0c06-4c02-b69f-2b7d17cd4b1e/content"
+      ],
+      "integrity_notes": "Published online November 2024; journal issue volume is 2025. Trial 1 shares registration DRKS00017686 with a 2025 PBMC proteomics report (not counted here as a separate RNA study)."
+    },
+    {
+      "id": "tr09",
+      "title": "Dynamic transcriptomic responses to divergent acute exercise stimuli in young adults",
+      "authors": "Kaleen M. Lavin et al.",
+      "year": 2023,
+      "publication_date": "2023-03-20",
+      "doi": "10.1152/physiolgenomics.00144.2022",
+      "pmid": "36939205",
+      "url": "https://doi.org/10.1152/physiolgenomics.00144.2022",
+      "source_type": "original_study",
+      "access_level": "full_text",
+      "population": "Healthy, previously untrained young adults aged 18–27 y, randomized to combined exercise modalities.",
+      "design": "Acute randomized TRAD versus HITT protocol; small/long/circular RNA sequencing of skeletal muscle and serum-derived extracellular vesicles.",
+      "sample_size": "40 participants total: TRAD n=21 (12 men, 9 women); HITT n=19 (11 men, 8 women).",
+      "exercise_context": "TRAD combined steady-state cycling and resistance exercise (~90 min); HITT combined maximal intervals and intensive resistance exercise (~45 min); modalities were not duration/work-matched.",
+      "sampling_times": "Serum EV samples pre, immediately post (h0), 3 h, 24 h; muscle biopsy pre, 3 h, 24 h.",
+      "biomarkers": "Protein-coding and noncoding RNA, including miRNA, lncRNA and circRNA, in skeletal muscle and serum EVs.",
+      "key_finding": "EV and muscle RNA profiles changed across time/modalities; some EV pathways were annotated to leukocyte activation/immune response. circRNA findings were sparse; authors note EV cell/tissue origins and lncRNA function need experimental validation.",
+      "clinical_endpoint": "No immune functional assay, infection outcome, or cell-specific immune assay; immune annotations are indirect EV gene/pathway signatures.",
+      "validation": "FASTQ/raw counts available at GEO GSE209880; no external cohort or functional validation.",
+      "limitations": "Muscle and EV fractions are not PBMC/immune-cell transcriptomes; serum EV source and cargo function uncertain; modalities differ in duration and exercise dose; pathway inference does not establish immune activity.",
+      "scope_fit": "context_only",
+      "evidence_anchor": "Abstract; Methods: exercise/sampling/RNA isolation; Results: EV transcriptomics; Discussion; Data availability.",
+      "verification_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10110731/",
+        "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE209880"
+      ],
+      "integrity_notes": "Use as adjacent evidence for circulating EV and noncoding RNA discovery, not as direct evidence of leukocyte-intrinsic immunological biomarkers."
+    },
+    {
+      "id": "tr10",
+      "title": "Blood Biochemical Responses to Acute Exercise: Findings from the Molecular Transducers of Physical Activity Consortium (MoTrPAC)",
+      "authors": "Jeremy M. Robbins, Daniel H. Katz, Gina M. Many et al.; MoTrPAC Study Group",
+      "year": 2026,
+      "publication_date": "2026-03-11",
+      "doi": "10.64898/2026.03.02.704798",
+      "pmid": "41835387",
+      "url": "https://www.biorxiv.org/content/10.64898/2026.03.02.704798v2.full",
+      "source_type": "preprint",
+      "access_level": "full_text",
+      "population": "Sedentary, medically screened adults randomized to acute endurance, resistance, or non-exercise control; enrollment stopped during COVID-19 pandemic.",
+      "design": "Large randomized acute exercise/control multi-omic blood profiling; second version of a bioRxiv preprint, not peer reviewed as of cutoff.",
+      "sample_size": "175 participants with at least one blood multi-omic sample; whole-blood transcriptomics n=173; group sizes at baseline acute bout EE=66, RE=73, CON=37 before biospecimen losses.",
+      "exercise_context": "EE: 40 min cycling around 65% VO2peak; RE: 8 upper/lower-body exercises, 3 sets of 8–12 repetitions to volitional fatigue; non-exercise control.",
+      "sampling_times": "Up to 7 time points during and through 24 h; exact times vary by randomized temporal profile/tissue.",
+      "biomarkers": "Whole-blood RNA-seq plus plasma proteomic and metabolomic profiling.",
+      "key_finding": "Preprint reports 7,066 transcript changes (as well as protein/metabolite changes) comparing exercise with non-exercise control and reports exercise-mode/time-dependent blood molecular and immune-related pathway signals.",
+      "clinical_endpoint": "No prospective infection endpoint and no direct pathogen-challenge/immune effector assay; molecular associations with fitness/phenotypes are not clinical infection prediction.",
+      "validation": "Data/code and datasets described by MoTrPAC Data Hub/GitHub and consortium data plan; no independent external validation in this report.",
+      "limitations": "Version 2 posted 2026-03-11; not peer reviewed; pandemic-interrupted early subset rather than full MoTrPAC trial; blood bulk RNA composition and assay/timepoint sample-size variability remain concerns.",
+      "scope_fit": "context_only",
+      "evidence_anchor": "bioRxiv v2 posted 2026-03-11; Abstract; Results: research design/clinical characteristics; Methods; NLM preprint status.",
+      "verification_urls": [
+        "https://www.biorxiv.org/content/10.64898/2026.03.02.704798v2.full",
+        "https://pubmed.ncbi.nlm.nih.gov/41835387/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12980391/"
+      ],
+      "integrity_notes": "Frontier evidence only, not peer-reviewed; version 2 was posted 2026-03-11 (before the 2026-10-02 cutoff). Keep in a separate frontier/preprint appendix, not the formal core set, because review status and cohort completeness remain provisional. It belongs to the same early MoTrPAC human cohort as the 2026 multi-tissue preprint (DOI 10.64898/2026.02.27.702183); do not double count the two reports as independent cohorts.",
+      "version": "bioRxiv version 2; posted 2026-03-11"
+    }
+  ],
+  "findings": [
+    {
+      "claim": "健康人急性运动RNA信号有较强时间依赖性，简单按“运动后30分钟”截断会漏掉运动中、1小时、3–4小时及24小时的差异；一项36人PBMC多组学研究报告大多数转录变化在60分钟内回到基线，马拉松/单细胞研究则显示某些转录或细胞组成信号更久。",
+      "source_ids": [
+        "tr01",
+        "tr02",
+        "tr03",
+        "tr10"
+      ],
+      "certainty": "moderate for transient/time-varying expression; low for any universal recovery threshold",
+      "protocol_implication": "将采样窗口按运动中/即刻、0–1 h、3–4 h、约24 h分层，记录连续时间；不设统一30分钟规则或由RNA推定感染风险窗口。"
+    },
+    {
+      "claim": "scRNA-seq的主要增量是分开细胞组成与细胞内表达，但当前最贴题的人体运动研究有效生物学样本很小：Yu每组3人，Veschetti半马只剩3个有效配对。细胞数不等于受试者数。",
+      "source_ids": [
+        "tr01",
+        "tr02"
+      ],
+      "certainty": "high",
+      "protocol_implication": "提取participants n、paired biological samples n、cells n三种分母；标明单细胞pseudo-bulk是否以受试者为统计单位；把小样本研究作为机制/候选证据而非预测验证。"
+    },
+    {
+      "claim": "PBMC miRNA、目标mRNA和EV RNA有候选信号，但结果受运动类型、训练背景、性别、采样分数及血液细胞动员影响；ncRNA系统综述发现lncRNA/circRNA人体免疫证据极少且总体偏倚风险高。",
+      "source_ids": [
+        "tr06",
+        "tr07",
+        "tr08",
+        "tr09"
+      ],
+      "certainty": "low to moderate for association; low for causal immune function",
+      "protocol_implication": "单独归类PBMC miRNA、靶向mRNA、血清EV RNA、肌肉RNA；抽取RNA分馏/平台/细胞计数/批次和验证；不把预测靶点或富集通路升级成体内功能。"
+    },
+    {
+      "claim": "已检索RNA组学研究基本测量表达、通路或细胞比例，未验证运动后临床感染发生率；病毒/抗菌通路富集不能等同病原体感染、功能下降或临床免疫抑制。",
+      "source_ids": [
+        "tr01",
+        "tr02",
+        "tr03",
+        "tr04",
+        "tr05",
+        "tr06",
+        "tr07",
+        "tr08",
+        "tr09",
+        "tr10"
+      ],
+      "certainty": "high for included sources",
+      "protocol_implication": "协议的结果层级应明确区分表达变化、细胞数量/比例、直接免疫功能、感染发生、预后/个体预测；RNA差异只支持候选标志物。"
+    },
+    {
+      "claim": "同一队列重复分析需要审查注册号/时间地点：Walzik的DRKS00017686第一试验与德国2025 PBMC蛋白组研究登记号相同；半马Veschetti、Yu、Stanford 2020、UCI青少年2026及MoTrPAC均为不同队列/项目；MoTrPAC两个2026预印本来自同一早期队列。",
+      "source_ids": [
+        "tr01",
+        "tr02",
+        "tr03",
+        "tr08",
+        "tr10"
+      ],
+      "certainty": "high for registration or source-record overlap where specified; moderate otherwise",
+      "protocol_implication": "筛选/提取时以受试者队列、注册号、地点、采样年份建立study-family ID，衍生组学论文合并成同一队列而非独立证据。"
+    }
+  ],
+  "gaps": [
+    "健康人急性运动转录组与临床感染结局的直接连接缺失；本轮10项来源没有一项用前瞻性监测证实感染因果或个体风险预测。",
+    "有高时间分辨率但样本小，或样本相对较大但PBMC/全血bulk混杂；需要配套CBC/分类计数、流式或细胞去卷积并以受试者为生物学重复。",
+    "健康人体lncRNA/circRNA免疫研究非常稀少；EV来源、RNA cargo功能和靶细胞仍未解决。",
+    "研究集中在年轻男性/运动员、少量极端赛事或单中心样本；性别、年龄、月经周期、训练水平、运动模式/剂量间缺少独立验证。",
+    "多数数据可公开复用（GEO/ENA/NODE）；部分GEO系列摘要与最终期刊文章的差异表达计数存在轻微版本不一致，应以最终出版稿为准并保留审计记录。"
+  ],
+  "proposed_updates": [
+    "新增“转录组与非编码RNA” biomarker family，区分：PBMC/免疫细胞bulk mRNA、whole-blood mRNA、scRNA/pseudo-bulk、PBMC miRNA、血清/EV miRNA及lncRNA/circRNA；肌肉RNA可列为生理机制背景，不与外周免疫细胞混合。",
+    "在protocol明确acute bout与training intervention不同层；另编码exercise type/intensity/duration/fitness/training background/sex/age，时间按运动中、即刻、0–1 h、3–4 h、24 h及更晚，不预设30-min门槛。",
+    "数据提取时必须分别记受试者总n、有效配对n、RNA样本n、单细胞数；对scRNA记录样本级pseudo-bulk/混合模型和细胞比例分析，单细胞数量不可当独立n。",
+    "为whole blood/PBMC标注是否同步CBC/分类计数/流式或去卷积；将细胞比例变化与细胞内表达变化分开，EV RNA/细胞游离RNA不能归因给免疫细胞除非来源被验证。",
+    "对每项RNA证据按递进层级提取：表达/细胞比例变化→直接功能测量→感染监测→外部预测验证；GO“viral response”、靶点数据库或组内性能相关不算感染结局/临床预测。",
+    "新增版本/队列审查字段：注册号、study family、发布版本、Correction、数据仓库 accession；同注册试验的多组学论文只计一个队列。将GEO摘要与最终出版文中差异表达统计不一致的情况记入版本核查日志。",
+    "将MoTrPAC 2026 blood v2作为前沿附录/待同行评审更新项，并于正式五库检索后用受试者数、组别、时间分层及结果完整度复核；不与其同一队列的多组织预印本重复计数。",
+    "正式重启使用用户已确认可用的PubMed、Web of Science、Scopus、Embase和SPORTDiscus，按各库语法运行“acute exercise/exercise training × human × blood/PBMC/monocyte × RNA-seq/scRNA-seq/miRNA/lncRNA/circRNA”检索块；由第二位筛选者独立复筛标题摘要和全文，去重后按study-family合并队列。当前lane仅为公共网页定向核验，不能替代数据库导出或形成PRISMA筛选数。"
+  ],
+  "search_limitations": "本轮为定向公共网页/期刊/PubMed/PMC/NCBI GEO/ENA核查，不是五个订阅数据库的正式检索或系统筛查，不能声称PRISMA流程或穷尽。仅可打开/明确核验的文献入表。部分全文站点对自动访问有验证码或403，已用出版社全文、开放仓储、PubMed/PMC索引和GEO/ENA元数据交叉核对。当前定向范围未检索到临床感染或外部预测验证；该结论仅对本轮纳入来源成立。"
+}
