@@ -1,0 +1,24 @@
+# CITATION.cff for the protocol repository.
+# !!! Authors are placeholders: TO BE FILLED BY TEAM — do not release with placeholders.
+# Fill in names (and ORCIDs/affiliations) and keep them identical to .zenodo.json before tagging a release.
+# After Zenodo archives the release, add the version DOI under "identifiers" / "doi" (see scripts/README.md).
+cff-version: 1.2.0
+message: "If you use this protocol or its materials, please cite the archived release (Zenodo DOI assigned on release)."
+type: dataset
+title: "Precision biomarkers of the exercise-induced immune “open window”: a scoping review of the validation readiness of conventional and omics candidates"
+version: "3.0"
+license: CC-BY-4.0
+authors:
+  - name: "TO BE FILLED BY TEAM — do not release with placeholders"
+keywords:
+  - "exercise immunology"
+  - "open window"
+  - "post-exercise immune response"
+  - "immune biomarkers"
+  - "precision monitoring"
+  - "validation readiness"
+  - "omics"
+  - "scoping review protocol"
+  - "JBI"
+  - "PRISMA-ScR"
+abstract: "This scoping review will map human evidence on candidate immune biomarkers measured within the exercise-induced “open window”, used here solely as an organizing construct that defines the post-exercise period after an identifiable bout, the sampling time points and the marker families to be charted. Across conventional immune indices and omics candidates in generally healthy adults after single identifiable bouts (Core A) and across repeated bouts in the same individuals (Support B), we will chart, marker by marker, which of seven precision-evidence domains have actually been investigated: analytical reliability, temporal validity, immune specificity, individualization, functional or clinical linkage, independent validation and use, and feasibility. The resulting per-marker validation-readiness map is a descriptive domain-by-domain profile, not a score, ranking or development ladder. The review does not test whether an open window of increased infection susceptibility exists, and original authors’ endorsement or rejection of that hypothesis neither determines eligibility nor weights evidence."

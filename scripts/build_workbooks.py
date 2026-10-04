@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Build blank screening, extraction and critical-appraisal Excel workbooks from the
-project's JSON templates (protocol v2 and later).
+project's JSON templates (protocol v2 and later; v3 stage map and records_master fields read from JSON).
 
 Rule: edit the JSON templates, then regenerate with this script. Never hand-edit the
 structure (sheets, columns, dropdowns, protection) of the generated .xlsx files.
@@ -43,7 +43,7 @@ except ImportError:  # pragma: no cover
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUT = ROOT / 'templates_xlsx'
-SCRIPT_VERSION = '1.0.0'
+SCRIPT_VERSION = '1.1.0'
 MAX_ROW = 1048576
 MULTI_SEP = '; '                      # Excel-mechanics: separator for multi-valued cells
 BOOLEAN_VALUES = ['TRUE', 'FALSE']    # Excel-mechanics default for JSON booleans
@@ -69,12 +69,13 @@ APPRAISAL_SOURCES = ['appraisal_template', 'appraisal_manual']
 # ---------------------------------------------------------------------------------------------
 INTERPRETATIONS = {
     'screening': [
-        'TA decision list = screening_log_template.field_schema.screening_dispositions filtered to the dispositions '
-        'printed in bold in screening_manual.md section "B. Title/abstract" (the JSON does not tag dispositions by stage). '
+        'TA decision list = screening_log_template.field_schema.screening_dispositions whose '
+        'field_schema.screening_disposition_stages entry contains "TA"; cross-checked against the dispositions printed in bold '
+        'in screening_manual.md section "B. Title/abstract" (any difference is listed under Template issues). '
         'The task wording "include / exclude / unclear" is implemented with these JSON values: ADVANCE ~ include/progress, '
         'EXCLUDE_TA ~ exclude, AWAITING_CLASSIFICATION ~ unclear, FRONTIER_PREPRINT = preprint routing.',
-        'FT decision list = all screening_dispositions except the TA-only ones (TA dispositions that are not '
-        'administrative statuses in fulltext_exclusion_codes.json).',
+        'FT decision list = screening_dispositions whose screening_disposition_stages entry contains "FT" (cross-checked '
+        'against "all dispositions except TA-only, non-administrative ones"; any difference is listed under Template issues).',
         'TA primary_reason dropdown re-uses the FT01-FT08 eligibility hierarchy (the manual requires "one primary reason" '
         'at TA but defines no separate TA reason codes).',
         'FT primary_exclusion_code dropdown contains only FT01-FT08. The administrative statuses (DUPLICATE_*, NOT_RETRIEVED, '
@@ -85,11 +86,12 @@ INTERPRETATIONS = {
         'FT agreement is also summarised on a 3-group collapse: INCLUDE (non-administrative, non-exclusion FT dispositions), '
         'SCIENTIFIC_EXCLUSION (non-administrative dispositions containing "EXCLUDE"), ADMINISTRATIVE_STATUS '
         '(statuses listed in fulltext_exclusion_codes.json). The group labels are formula mechanics, not protocol codes.',
-        'dedup_status uses the administrative statuses whose name starts with DUPLICATE; blank means retained/unique '
-        '(no JSON label exists for a retained record). Rows flagged as duplicates are hidden from the reviewer sheets.',
-        'records_master columns: record_id/source/route conventions follow screening_log_template and search_log_template; '
-        'the bibliographic columns (title, authors, year, journal, doi, pmid, abstract) and dedup_group_id are not defined '
-        'in any JSON template and follow the task specification.',
+        'dedup_status dropdown = screening_log_template.field_schema.dedup_status_values whose name starts with DUPLICATE '
+        '(cross-checked against the administrative statuses in fulltext_exclusion_codes.json); RETAINED is entered as a blank '
+        'cell, as dedup_status_values specifies. Rows flagged as duplicates are hidden from the reviewer sheets.',
+        'records_master header comments come from screening_log_template.field_schema entries tagged "(records_master.<column>)"; '
+        'the column order is fixed by the generator (scripts/merge_screening.py reads it). Columns with no JSON definition are '
+        'listed in the next line.',
         'A_eligible / B_eligible use TRUE/FALSE (JSON booleans) plus NR/NA/UNCLEAR from data_dictionary.json.',
         'FT "page/location" is the JSON field evidence_locations; "supporting passage" and "note" are added columns.',
     ],
@@ -350,15 +352,31 @@ def screening_enums(src) -> dict:
     dic = src['dictionary']['data']
     search = src['search_log']['data']
 
-    disp = list(log['field_schema']['screening_dispositions'])
+    fsch = log['field_schema']
+    disp = list(fsch['screening_dispositions'])
+    problems = []
     sec = re.search(r'^### B\. Title/abstract.*?(?=^### )', manual, re.S | re.M)
     if not sec:
         raise SystemExit('screening_manual.md: section "### B. Title/abstract" not found')
     bold = set(re.findall(r'\*\*([A-Z][A-Z_]+)\*\*', sec.group(0)))
-    ta = [d for d in disp if d in bold]
+    ta_manual = [d for d in disp if d in bold]
     admin = [s['status'] for s in ftj['not_scientific_exclusion_statuses']]
+    ft_derived = [d for d in disp if d not in [x for x in ta_manual if x not in admin]]
+    stages = fsch.get('screening_disposition_stages')
+    if stages:   # v3: the JSON tags each disposition by stage
+        unstaged = [d for d in disp if d not in stages]
+        if unstaged:
+            problems.append(f'screening_disposition_stages has no entry for {unstaged}')
+        ta = [d for d in disp if 'TA' in stages.get(d, [])]
+        ft = [d for d in disp if 'FT' in stages.get(d, [])]
+        if ta != ta_manual:
+            problems.append(f'TA dispositions in screening_disposition_stages {ta} differ from the bold dispositions in '
+                            f'screening_manual.md section B {ta_manual}')
+        if ft != ft_derived:
+            problems.append(f'FT dispositions in screening_disposition_stages {ft} differ from the manual-derived list {ft_derived}')
+    else:        # pre-v3 templates: derive from the manual
+        ta, ft = ta_manual, ft_derived
     ta_only = [d for d in ta if d not in admin]
-    ft = [d for d in disp if d not in ta_only]
     hierarchy = list(ftj['primary_reason_rule']['hierarchy'])
     code_info = {c['code']: c for c in ftj['codes']}
     ft_excl = [d for d in ft if d not in admin and 'EXCLUDE' in d]
@@ -373,7 +391,6 @@ def screening_enums(src) -> dict:
     thr = re.search(r'raw agreement is \*\*at least (\d+(?:\.\d+)?)%\*\*', plan)
     if not thr:
         raise SystemExit('calibration_plan.md: raw agreement threshold not found')
-    problems = []
     if set(progress) | {excl_label} != set(ta):
         problems.append(f'calibration binary groups {progress}+[{excl_label}] differ from TA dispositions {ta}')
     if [c['code'] for c in ftj['codes']] != hierarchy:
@@ -382,7 +399,32 @@ def screening_enums(src) -> dict:
         if s not in disp:
             problems.append(f'administrative status {s} is not in screening_dispositions')
     missing_codes = list(dic['missing_value_semantics']['codes'])
-    dups = [s for s in admin if s.startswith('DUPLICATE')]
+    dsv = fsch.get('dedup_status_values')
+    if dsv:
+        dups = [s for s in dsv if s.startswith('DUPLICATE')]
+        retained = [s for s in dsv if not s.startswith('DUPLICATE')]
+        if set(dups) != {s for s in admin if s.startswith('DUPLICATE')}:
+            problems.append(f'dedup_status_values duplicates {dups} differ from the DUPLICATE* administrative statuses in '
+                            'fulltext_exclusion_codes.json')
+    else:
+        dups, retained = [s for s in admin if s.startswith('DUPLICATE')], []
+    # records_master columns defined in the JSON field_schema ("(records_master.<column>)" tags)
+    master_defined = {}
+    for key, val in fsch.items():
+        if isinstance(val, str):
+            for c in re.findall(r'records_master\.(\w+)\)', val):
+                master_defined[c] = key
+    for c in ('record_id', 'dedup_status'):
+        if c in fsch:
+            master_defined.setdefault(c, c)
+    if 'retained_record_id' in fsch.get('administrative', {}):
+        master_defined.setdefault('retained_record_id', 'administrative.retained_record_id')
+    for c in master_defined:
+        if c not in MASTER_COLUMNS:
+            problems.append(f'field_schema defines records_master.{c}, which the generator does not lay out')
+    generator_only = [c for c in MASTER_COLUMNS if c not in master_defined]
+    interpretations = list(INTERPRETATIONS['screening']) + [
+        'records_master columns without a JSON definition (generator layout only): ' + (', '.join(generator_only) or 'none') + '.']
     cal = log['calibration']
     rule = cal.get('repeat_seed_rule', '')
     seed_offset_ok = bool(re.search(r'\+\s*round_number\s*-\s*1', rule))
@@ -391,7 +433,8 @@ def screening_enums(src) -> dict:
         'codes': hierarchy, 'code_info': code_info, 'ft_excl': ft_excl, 'ft_incl': ft_incl, 'ta_excl': ta_excl,
         'binary_labels': [prog_label, excl_label], 'binary_map': {d: (excl_label if d == excl_label else prog_label) for d in ta},
         'threshold': float(thr.group(1)) / 100.0, 'missing_codes': missing_codes,
-        'booleans': BOOLEAN_VALUES + missing_codes, 'duplicates': dups,
+        'booleans': BOOLEAN_VALUES + missing_codes, 'duplicates': dups, 'retained_labels': retained,
+        'master_defined': master_defined, 'generator_only': generator_only, 'interpretations': interpretations,
         'not_exclusion_reasons': ftj['explicitly_not_exclusion_reasons'],
         'searches': search['searches'], 'calibration': cal, 'seed_offset_ok': seed_offset_ok,
         'ta_fields': list(log['field_schema']['title_abstract']['reviewer_1'].keys()),
@@ -496,7 +539,7 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
     codes.add('lst_FT_group', list(E['ft_groups']), 'FT 3-group labels (formula mechanics)')
     codes.add('lst_admin_status', E['admin'], 'administrative statuses (not scientific exclusions)',
               extra=[('meaning', [s['meaning'] for s in E['admin_info']]), ('handling', [s['handling'] for s in E['admin_info']])])
-    codes.add('lst_dedup_duplicate', E['duplicates'], 'dedup_status values (blank = retained)')
+    codes.add('lst_dedup_duplicate', E['duplicates'], 'dedup_status values (blank = ' + (' / '.join(E['retained_labels']) or 'retained') + ')')
     codes.add('lst_search_id', [s['id'] for s in E['searches']], 'search_id (search_log_template)',
               extra=[('database', [s['database'] for s in E['searches']]), ('platform', [s['platform'] for s in E['searches']]),
                      ('route', [s['route'] for s in E['searches']])])
@@ -509,18 +552,19 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
     # ---- records_master (read-only) ----------------------------------------------------------
     fs = E['field_schema']
     dbs = sorted({s['database'] for s in E['searches']})
-    m_comments = {
+    retained_txt = ' / '.join(E['retained_labels']) or 'retained/unique record'
+    m_comments = {c: fs[k] for c, k in E['master_defined'].items() if isinstance(fs.get(k), str)}   # JSON definitions
+    m_comments.update({
         'record_id': fs['record_id'] + ' Text format; never reuse an ID.',
-        'source_database': fs['source_database_or_route'] + f' Values (search_log_template): {"; ".join(dbs)}. '
-                           f'Several sources for one record: separate with "{MULTI_SEP}".',
-        'search_id': 'search_log_template.searches[].id of the export(s) containing this record; several: "; ".',
-        'route': 'search_log_template route (E AND I / E AND O / supplemental). Several: "; ".',
-        'doi': 'Text format: keep exactly as exported.', 'pmid': 'Text format (leading zeros preserved).',
-        'dedup_group_id': 'Same value for all rows that are copies/versions of one report.',
-        'dedup_status': f'Blank = retained/unique record. {" / ".join(E["duplicates"])} (fulltext_exclusion_codes.json) '
+        'source_database': m_comments.get('source_database', fs['source_database_or_route'])
+                           + f' Values (search_log_template): {"; ".join(dbs)}. Several sources: separate with "{MULTI_SEP}".',
+        'doi': m_comments.get('doi', 'DOI.') + ' Text format.', 'pmid': m_comments.get('pmid', 'PubMed ID.') + ' Text format.',
+        'dedup_group_id': 'Same value for all rows that are copies/versions of one report (generator layout; no JSON field).',
+        'abstract': 'Abstract as exported (generator layout; no JSON field).',
+        'dedup_status': f'Blank = {retained_txt}. {" / ".join(E["duplicates"])} (screening_log_template dedup_status_values) '
                         'for removed duplicates; such rows are hidden from the reviewer sheets.',
         'retained_record_id': 'screening_log_template administrative.retained_record_id: record_id kept for a duplicate.',
-    }
+    })
     ws = S['records_master']
     write_header(ws, MASTER_COLUMNS, m_comments)
     for i in range(1, len(MASTER_COLUMNS) + 1):
@@ -858,7 +902,7 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
         ('维护规则 Maintenance rule', [
             '先修改 JSON 模板，再运行脚本重新生成；不得手工修改生成的 xlsx 结构（sheet、列、下拉、保护）。',
             '工作表保护不设密码，仅用于防止误改结构。', '下拉列表全部来自 codes 工作表，codes 由 JSON 生成。']),
-        ('模板解释 Interpretations of JSON fields', INTERPRETATIONS['screening']),
+        ('模板解释 Interpretations of JSON fields', E['interpretations']),
         ('模板不一致提示 Template issues detected', E['problems'] or ['none detected by the generator']),
     ])
     S['README'].sheet_properties.tabColor = '000000'

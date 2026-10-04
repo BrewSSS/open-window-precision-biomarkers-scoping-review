@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Post-exercise immune monitoring | Protocol v2.0</title>
+  <title>Open-window precision biomarkers | Protocol v3.0</title>
   <style>
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -31,10 +31,11 @@
 <nav id="TOC" role="doc-toc">
 <ul>
 <li><a
-href="#candidate-biomarkers-for-precision-monitoring-of-post-exercise-immunity-a-scoping-review-of-conventional-and-omics-evidence"
-id="toc-candidate-biomarkers-for-precision-monitoring-of-post-exercise-immunity-a-scoping-review-of-conventional-and-omics-evidence">Candidate
-biomarkers for precision monitoring of post-exercise immunity: a scoping
-review of conventional and omics evidence</a>
+href="#precision-biomarkers-of-the-exercise-induced-immune-open-window-a-scoping-review-of-the-validation-readiness-of-conventional-and-omics-candidates"
+id="toc-precision-biomarkers-of-the-exercise-induced-immune-open-window-a-scoping-review-of-the-validation-readiness-of-conventional-and-omics-candidates">Precision
+biomarkers of the exercise-induced immune “open window”: a scoping
+review of the validation readiness of conventional and omics
+candidates</a>
 <ul>
 <li><a href="#a.-background-and-rationale"
 id="toc-a.-background-and-rationale">A. Background and
@@ -60,9 +61,9 @@ Critical appraisal</a></li>
 <li><a href="#i.-synthesis-and-planned-outputs"
 id="toc-i.-synthesis-and-planned-outputs">I. Synthesis and planned
 outputs</a></li>
-<li><a href="#j.-registration-governance-and-transparency"
-id="toc-j.-registration-governance-and-transparency">J. Registration,
-governance and transparency</a></li>
+<li><a href="#j.-registration-archiving-governance-and-transparency"
+id="toc-j.-registration-archiving-governance-and-transparency">J.
+Registration, archiving, governance and transparency</a></li>
 <li><a href="#k.-roles-and-execution-plan"
 id="toc-k.-roles-and-execution-plan">K. Roles and execution
 plan</a></li>
@@ -74,17 +75,26 @@ decision status</a></li>
 </ul>
 </nav>
 <h1
-id="candidate-biomarkers-for-precision-monitoring-of-post-exercise-immunity-a-scoping-review-of-conventional-and-omics-evidence">Candidate
-biomarkers for precision monitoring of post-exercise immunity: a scoping
-review of conventional and omics evidence</h1>
-<p><strong>Protocol version:</strong> 2.0 — 2 October 2026<br />
-<strong>Status:</strong> Pre-registration working protocol; formal
-searches, screening and synthesis have not begun.<br />
+id="precision-biomarkers-of-the-exercise-induced-immune-open-window-a-scoping-review-of-the-validation-readiness-of-conventional-and-omics-candidates">Precision
+biomarkers of the exercise-induced immune “open window”: a scoping
+review of the validation readiness of conventional and omics
+candidates</h1>
+<p><strong>Protocol version:</strong> 3.0 (draft for team freeze) — 4
+October 2026<br />
+<strong>Status:</strong> Pre-archive working protocol; formal searches,
+screening and synthesis have not begun.<br />
 <strong>Target journal:</strong> <em>Frontiers in Immunology</em>, under
-the applicable Systematic Review article category, which includes
-scoping reviews; specialty section to be selected.<br />
-<strong>Registration:</strong> OSF draft prepared locally; not
-submitted; no registration identifier.<br />
+the Systematic Review article type, which includes scoping reviews;
+specialty section to be selected. Submission will include the PRISMA-ScR
+checklist and flow diagram as supplementary material and an AI-use
+disclosure in both Methods and Acknowledgments stating tool name,
+version, model and source.<br />
+<strong>Registration and archiving:</strong> Public GitHub repository
+with a GitHub Release archived by Zenodo, which assigns a dated,
+immutable version DOI and a concept DOI on release. No release exists,
+no DOI has been assigned, and this project has never been registered in
+any registry; PROSPERO does not accept scoping reviews and OSF
+Registries is no longer the planned route.<br />
 <strong>Team:</strong> Access to all five databases and a second human
 reviewer are confirmed. Names, adjudicator, search peer reviewer,
 funding and competing-interest declarations remain to be supplied.</p>
@@ -93,50 +103,93 @@ aligned implementation version. The rendered English source and PDF are
 generated from this complete document; they are not a shortened
 independent protocol. Operational appendices in
 <code>03_search</code>–<code>06_synthesis</code> implement the decisions
-below. This version follows public exploratory reconnaissance and source
-verification. The protocol date is not a completed formal search cutoff.
-No search yield, eligibility decision, included-study count or review
-result is claimed here.</p>
+below. This version follows three pre-archive activities disclosed in J:
+an internal protocol (version 1.0, January 2026), public exploratory
+reconnaissance and source verification on 2 October 2026 (Codex), and a
+collision re-check of the narrowed framing against published and
+registered reviews on 4 October 2026 (Claude Code;
+<code>02_preliminary/collision_recheck_2026-10-04.md</code>). The
+protocol date is not a completed formal search cutoff. No search yield,
+eligibility decision, included-study count or review result is claimed
+here.</p>
 <h2 id="a.-background-and-rationale">A. Background and rationale</h2>
 <p>Exercise can alter circulating immune-cell counts, immune mediators,
 mucosal measurements and immune-cell function over different time
-scales. The historical “open window” hypothesis has linked some
-post-exercise changes to temporary immune suppression and infection
-susceptibility. These interpretations remain contested: a circulating
-cell-count reduction does not establish a loss of whole-body immune
-function, and immune responses do not by themselves establish subsequent
-infection risk. Redistribution, plasma-volume changes, circadian
-variation and sampling methods can affect interpretation [1,2]. This
-review treats the open window as a historical hypothesis and an
-author-reported interpretation, rather than an established phase or an
-eligibility requirement.</p>
-<p>Conventional measures include leukocyte subsets, immune-cell effector
-assays, immunoglobulins, salivary secretory IgA, cytokines and
-complement. Transcriptomics, proteomics, metabolomics, lipidomics,
-non-coding RNA and epigenetic measurements provide additional
-candidates. Higher measurement dimensionality does not alone confer
-immune specificity or individual predictive value. A group-average
-response, an in-silico pathway annotation, an association with symptoms
-and a validated individual prediction address different questions.
-Candidate usefulness also depends on the exercise exposure, tissue or
-fluid, analytical method, sampling interval and intended monitoring
-use.</p>
-<p>The intended contribution is an evidence map of <strong>candidate
-biomarkers for precision monitoring</strong>, emphasizing individual
-baselines, within-person variation, repeatability, time-resolved
-interpretation, functional or clinical links, and independent
-validation. This is not a catalogue that labels every statistically
-significant omics feature a precise biomarker. Analytical and clinical
-validation must be interpreted for a specified context of use [3].</p>
-<p>Existing reviews address exercise-associated non-coding RNAs,
-B-cell-related immunity, open-window interpretations in older adults and
-exercise immunometabolomics [4–7]. Public reconnaissance has identified
-substantial adjacent literature. We therefore make no “first review” or
-“no competing review” claim. The proposed distinction is the joint
-mapping of conventional and omics evidence against explicitly defined
-post-exercise timing and separate precision-monitoring domains. That
-distinction will be rechecked against published and registered reviews
-before registration and at the final search update.</p>
+scales. The “open window” has been used to describe the hours to days
+after strenuous or prolonged exercise during which immune changes have
+been proposed to coincide with reduced host protection [15,16]. Whether
+such a period exists remains debated: lymphocytopenia may reflect
+redistribution rather than loss of whole-body function, and
+plasma-volume change, circadian timing and sampling alter interpretation
+[1,2]. This review does not adjudicate that debate. It uses the open
+window solely as an organizing construct that defines the post-exercise
+period (0–72 hours after cessation of an identifiable bout), the
+sampling time points and the marker families within which candidates are
+charted, irrespective of whether original authors endorse, reject or
+omit the hypothesis.</p>
+<p>Candidates are charted by marker family. Conventional families
+include leukocyte and lymphocyte redistribution, natural-killer-cell
+counts and cytotoxicity, neutrophil function, T-cell subsets and
+function, mucosal secretory IgA, cytokines and other inflammatory
+mediators, and immunoglobulins and complement. Omics families include
+immune-cell transcriptomics, proteomics, metabolomics and lipidomics,
+epigenomics, non-coding RNA and single-cell measurements. Higher
+measurement dimensionality does not alone confer immune specificity or
+individual predictive value. A group-average response, an in-silico
+pathway annotation, an association with symptoms and a validated
+individual prediction address different questions. Candidate usefulness
+also depends on the exercise exposure, tissue or fluid, analytical
+method, sampling interval and intended monitoring use.</p>
+<p>The intended contribution is a per-marker
+<strong>validation-readiness map</strong> of candidates measured within
+the organizing window. Throughout this protocol and its appendices, a
+validation-readiness map means a descriptive, domain-by-domain profile,
+for each marker or marker family, of which of the seven
+precision-evidence domains defined in C have actually been investigated
+and with what result. It is not a score, ranking, grade or development
+ladder, and every later prohibition on readiness scores or rankings
+refers to this definition. The map emphasizes individual baselines,
+within-person variation, repeatability, time-resolved interpretation,
+functional or clinical links and independent validation. It is not a
+catalogue that labels every statistically significant omics feature a
+precise biomarker. Analytical and clinical validation must be
+interpreted for a specified context of use [3].</p>
+<p>In their 2017 review of immune recovery after exercise, Peake and
+colleagues concluded that, “except for salivary IgA, clear and
+consistent markers of this immunodepression remain elusive” [15]; that
+statement is the auditable starting point for this map. The debate on
+whether the open window exists is held by Peake et al. 2017 [15],
+Campbell and Turner 2018 [1], Simpson et al. 2020 [16], Reitzner and
+Brodin 2026 [19] and Xie et al. 2026 [17]; this review does not join it.
+Narrative reviews have also proposed marker agendas around the open
+window: Xie et al. 2026 in <em>Frontiers in Immunology</em>
+(tissue-resident memory T cells and their circulating precursors) [17];
+Shi et al. 2025, also in <em>Frontiers in Immunology</em>
+(workload-dependent recovery of conventional indices) [18]; Reitzner and
+Brodin 2026 (the immune system as a systems-level biosensor of health
+and performance) [19]; and Mănescu et al. 2026 (molecular biomarkers of
+training responses) [20]. Davison et al. 2025 questioned the clinical
+relevance of ex vivo immune assays [2]. None of these charts human
+evidence marker by marker against prespecified validation domains with a
+reproducible search, and systematic reviews to date address single
+marker families or single populations: exercise-associated non-coding
+RNAs, B-cell-related immunity, TH1/TH2 markers in older adults and
+exercise immunometabolomics [4–7]. The registered reviews nearest to
+this protocol differ in Population–Concept–Context: PROSPERO
+CRD42020186264 is confined to salivary IgA and respiratory-infection
+risk; PROSPERO CRD42022324139 is confined to the acute effect of
+high-intensity interval training; and OSF osf.io/4hsdr shares the JBI
+and PRISMA-ScR method stack but is restricted to athletes aged 10–17
+years and to conventional markers, without omics, open-window or
+validation dimensions, whereas this review includes adults only. The 4
+October 2026 re-check that identified these items is filed at
+<code>02_preliminary/collision_recheck_2026-10-04.md</code>. We make no
+“first review” or “no competing review” claim. The proposed distinction
+is the joint, time-resolved charting of conventional and omics
+candidates within one organizing window against separately recorded
+precision domains. That distinction will be rechecked against published
+and registered reviews before the v3.0 archive release and at the final
+search update.</p>
 <p>A scoping review is appropriate because the primary questions concern
 the distribution, measurement, interpretation and validation of
 heterogeneous evidence, rather than one intervention effect or
@@ -147,28 +200,50 @@ interpretation. We will not conduct a meta-analysis or turn appraisal
 into a clinical ranking.</p>
 <h2 id="b.-objective-and-review-questions">B. Objective and review
 questions</h2>
-<p>The objective is to identify and map human evidence on immune-related
-candidate biomarkers measured after exercise and determine which aspects
-of precision monitoring have actually been investigated.</p>
+<p>This scoping review will map human evidence on candidate immune
+biomarkers measured within the exercise-induced “open window”, used here
+solely as an organizing construct that defines the post-exercise period
+after an identifiable bout, the sampling time points and the marker
+families to be charted. Across conventional immune indices and omics
+candidates in generally healthy adults after single identifiable bouts
+(Core A) and across repeated bouts in the same individuals (Support B),
+we will chart, marker by marker, which of seven precision-evidence
+domains have actually been investigated: analytical reliability,
+temporal validity, immune specificity, individualization, functional or
+clinical linkage, independent validation and use, and feasibility. The
+resulting per-marker validation-readiness map is a descriptive
+domain-by-domain profile, not a score, ranking or development ladder.
+The review does not test whether an open window of increased infection
+susceptibility exists, and original authors’ endorsement or rejection of
+that hypothesis neither determines eligibility nor weights evidence.</p>
 <ol type="1">
-<li><strong>Measurements and context:</strong> Which biomarkers,
-analytical platforms, immune compartments and sample matrices have been
-studied, in which populations and exercise settings?</li>
-<li><strong>Timing and interpretation:</strong> Which response and
-recovery intervals are covered, and how are cell composition, hydration,
-sampling and other relevant confounders addressed?</li>
+<li><strong>Measurements and context:</strong> Which marker families,
+individual biomarkers, analytical platforms, immune compartments and
+sample matrices have been measured within the organizing window (0–72
+hours after cessation), in which adult populations and exercise
+settings?</li>
+<li><strong>Timing, confounding and interpretation:</strong> Which time
+points within the window (immediate, 30 minutes to &lt;3 hours, 3 to
+&lt;24 hours, 24 to 72 hours) and which outside-window recovery points
+are covered; how are cell composition, hydration, sampling and other
+relevant confounders addressed; and how do original authors interpret
+their findings in relation to the open window (charted descriptively
+only)?</li>
 <li><strong>Individualization:</strong> What evidence exists on personal
-baselines, within-person variability, repeatability, response
-heterogeneity, subgroup interpretation or individualized models, and how
-has it been validated?</li>
+baselines, within-person variability, repeatability across bouts,
+response heterogeneity, subgroup interpretation or individualized
+models, and how has it been validated?</li>
 <li><strong>Function, outcomes and use:</strong> Which functions or
 clinical outcomes were merely co-measured, which were associated with
 biomarkers, and which monitoring or prediction uses underwent
-independent validation? What development requirements remain?</li>
+independent validation? Together with questions 1–3 this yields the
+per-marker validation-readiness map and the development requirements
+that remain.</li>
 </ol>
 <p>Positive, null and inconsistent findings are all relevant. The
-questions do not presuppose that exercise is immunosuppressive or that
-any candidate is ready to predict infection.</p>
+questions do not presuppose that exercise is immunosuppressive, nor test
+whether an open window exists, nor assume that any candidate is ready to
+predict infection.</p>
 <h2 id="c.-framework-and-operational-definitions">C. Framework and
 operational definitions</h2>
 <p>Eligibility uses Population–Concept–Context (PCC). “Post-exercise”
@@ -176,10 +251,21 @@ begins at cessation of an identifiable bout or competition. Exact times
 and their reported origin are retained. During-exercise samples can be
 ancillary observations in an eligible study but cannot alone establish
 post-exercise eligibility.</p>
+<p>The <strong>organizing post-exercise window</strong> is the period
+from cessation to 72 hours inclusive. It is a charting frame, not an
+eligibility cap: a study qualifies through at least one post-cessation
+immune-related sample, and samples taken after 72 hours in an otherwise
+eligible study are extracted in full and tagged “outside-window
+recovery” because they document recovery endpoints. No exclusion code
+refers to the window. <strong>Author open-window interpretation</strong>
+is a descriptive tag recording whether the original authors used the
+open-window term, invoked immunosuppression or susceptibility without
+the term, interpreted changes as redistribution, or offered no window
+interpretation; it affects neither eligibility nor weighting.</p>
 <p>For this project, <strong>precision monitoring</strong> means
-interpreting an immune-related measurement for a defined person or
-subgroup, exercise context, sampling time and intended monitoring use.
-Seven domains are recorded separately:</p>
+interpreting an immune-related measurement within the organizing window
+for a defined person or subgroup, exercise context, sampling time and
+intended monitoring use. Seven domains are recorded separately:</p>
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -199,8 +285,9 @@ pre-analytical handling</td>
 </tr>
 <tr>
 <td>Temporal validity</td>
-<td>Exact exercise-to-sample intervals, longitudinal coverage and how
-response or recovery is defined</td>
+<td>Exact exercise-to-sample intervals, position relative to the
+organizing window, longitudinal coverage and how response or recovery is
+defined</td>
 </tr>
 <tr>
 <td>Immune specificity</td>
@@ -232,11 +319,12 @@ implementation, when reported</td>
 </table>
 <p>These are project operational domains, not a validated scale,
 regulatory designation or ordinal development ladder. There will be no
-combined “precision score.” Omics measurement, machine learning or a
-group mean difference alone does not establish personalized usefulness.
-Individualization or clinical validation is <strong>not required for
-inclusion</strong>; absence of such reporting is itself a mapping
-finding.</p>
+combined “precision score”; domain evidence is summarized only as the
+per-marker validation-readiness map defined in A. Omics measurement,
+machine learning or a group mean difference alone does not establish
+personalized usefulness. Individualization or clinical validation is
+<strong>not required for inclusion</strong>; absence of such reporting
+is itself a mapping finding.</p>
 <p>A <strong>response</strong> is an observed post-exercise measurement
 or contrast. A <strong>recovery trajectory</strong> requires
 longitudinal observations and an explicit endpoint; a single early
@@ -268,11 +356,16 @@ taxonomies.</p>
 is not evidence of biological absence or methodological failure.</p>
 <h2 id="d.-eligibility-criteria">D. Eligibility criteria</h2>
 <h3 id="d.1-population">D.1 Population</h3>
-<p>Eligible participants are humans of any age, sex or training status
-who are generally healthy at baseline and do not have an active
-infection. Athletes, recreational exercisers and untrained participants
-are eligible; age and training strata are charted separately.
-Extractable healthy strata within mixed cohorts are eligible. Cohorts
+<p>Eligible participants are adults aged 18 years or older, of any sex
+or training status, who are generally healthy at baseline and do not
+have an active infection. Athletes, recreational exercisers and
+untrained participants are eligible; training strata are charted
+separately. Older adults are eligible and flagged as a subgroup.
+Children and adolescents (&lt;18 years) are excluded; mixed-age cohorts
+are eligible only where an adult stratum is separable in the report.
+This boundary distinguishes the review from the registered youth-athlete
+scoping review osf.io/4hsdr (10–17 years). Extractable healthy adult
+strata within cohorts of mixed health status are also eligible. Cohorts
 with known clinical/metabolic disease or disease-treatment exercise
 programmes are excluded from the main map. Ambiguous metabolic-health
 descriptions, including insulin resistance without a clear clinical
@@ -281,27 +374,38 @@ diagnosis and separability of strata, rather than an automatic healthy
 designation.</p>
 <h3 id="d.2-exercise-context-and-evidence-streams">D.2 Exercise context
 and evidence streams</h3>
-<p><strong>Core A — acute challenge:</strong> An identifiable bout or
-competition of endurance, resistance, interval/sprint or mixed exercise,
-with at least one post-cessation immune-related sample and either a
-pre-bout baseline or a suitable non-exercise/comparator condition.
-Immediate samples are eligible. There is no minimum 30-minute follow-up
-and no maximum 72-hour interval. During-only studies are ineligible.
+<p><strong>Core A — acute challenge:</strong> An identifiable single
+bout or competition of endurance, resistance, interval/sprint or mixed
+exercise, with at least one post-cessation immune-related sample and
+either a pre-bout baseline or a suitable non-exercise/comparator
+condition. No intensity, duration or mode threshold is imposed: any
+identifiable bout qualifies, and intensity, duration and mode are
+recorded as reported and used as evidence-map strata, never as
+eligibility filters, because the open-window literature defines
+“prolonged” and “intense” inconsistently and a threshold would discard
+comparator evidence. Immediate samples are eligible and there is no
+minimum 30-minute follow-up. The organizing window of 0–72 hours after
+cessation frames the charting; it is not a maximum interval, and samples
+beyond 72 hours in an eligible study are extracted and tagged
+“outside-window recovery” (C). During-only studies are ineligible.
 Repeated acute challenges before and after a training programme qualify
 for A; training moderation is extracted separately. Immediate-only
 studies contribute response evidence, not a complete recovery
 trajectory.</p>
-<p><strong>Support B — repeated post-exercise monitoring:</strong> The
-same immune-related marker is measured in the same individuals after at
-least two identifiable bouts or competitions, with a known or reliably
-recoverable exercise-to-sampling relation and a baseline or appropriate
-comparator enabling interpretation. B is presented separately. A cohort
-may meet both A and B; linked cohort identifiers prevent duplicate
-overall counting. General weekly or seasonal resting surveillance with
-unknown last-bout timing, training pre/post snapshots with unknown
-exercise-to-sampling intervals, and habitual-exercise cross-sectional
-comparisons are background only. A long observation period cannot
-substitute for an identifiable post-exercise time relation.</p>
+<p><strong>Support B — repeated post-exercise windows in the same
+people:</strong> The same immune-related marker is measured in the same
+individuals in the post-exercise windows after at least two identifiable
+bouts or competitions, with a known or reliably recoverable
+exercise-to-sampling relation and a baseline or appropriate comparator
+enabling interpretation. B is the cross-bout monitoring layer and the
+main evidence source for the individualization and repeatability
+domains; it is presented separately from A. A cohort may meet both A and
+B; linked cohort identifiers prevent duplicate overall counting. General
+weekly or seasonal resting surveillance with unknown last-bout timing,
+training pre/post snapshots with unknown exercise-to-sampling intervals,
+and habitual-exercise cross-sectional comparisons are background only. A
+long observation period cannot substitute for an identifiable
+post-exercise time relation.</p>
 <p>Studies involving supplementation, diet or other co-interventions
 qualify only where an exercise contrast is interpretable separately, for
 example through an appropriate control/placebo arm or factorial
@@ -313,11 +417,13 @@ and publication status</h3>
 original human measurements. There is no requirement for the words
 “precision,” “biomarker,” “open window” or “recovery,” for a particular
 direction or significance level, or for a functional/infection endpoint.
-Designs may include randomized or nonrandomized experiments, crossover
-studies, before–after studies and observational designs that satisfy the
-timing and comparator rules. No arbitrary minimum sample size is
-imposed; small designs are clearly identified and appraised
-appropriately.</p>
+Studies are neither selected nor weighted according to whether their
+authors endorse, reject or ignore the open-window hypothesis; the author
+interpretation is charted as a descriptive tag (C). Designs may include
+randomized or nonrandomized experiments, crossover studies, before–after
+studies and observational designs that satisfy the timing and comparator
+rules. No arbitrary minimum sample size is imposed; small designs are
+clearly identified and appraised appropriately.</p>
 <p>The primary A/B map includes peer-reviewed original reports. Reviews
 support background and citation chasing. Animal-only or in-vitro-only
 studies, protocols, editorials, conference abstracts without a full
@@ -362,24 +468,42 @@ The immune route covers immune cells, mediators, function and relevant
 mucosal/infection terms. The omics route covers transcriptomics,
 RNA/non-coding RNA, proteomics, metabolomics, lipidomics, epigenetics
 and multi-omics. The exercise block includes relevant training,
-competition and sport terminology. “Precision,” “biomarker,” “open
-window” and “recovery” are not mandatory search concepts.</p>
+competition and sport terminology. The search is by construct, not by
+label: “precision,” “biomarker,” “open window” and “recovery” are not
+mandatory search concepts, and the organizing window and all eligibility
+rules are applied at screening rather than in the query. The phrase
+“open window” is unsuitable as a filter—a PubMed title/abstract query
+combining it with exercise and immune terms returned 18 records for
+2018–2026 at the 4 October 2026 re-check, and original studies rarely
+use it—so open-window-type terms may be added only as OR supplements or
+used for citation chasing, never as AND terms. Post-exercise and
+recovery terms remain a diagnostic block rather than a required
+concept.</p>
 <p>Full working strategies and a search-log template are in
 <code>03_search</code>. They are <strong>drafts, not platform-validated
 searches</strong>. A search specialist or experienced independent search
 reviewer will use PRESS [11]; resulting revisions and resolution of
 comments will be retained. Known eligible and boundary examples will
-test strategy behavior. Retrieval of a few selected positive seeds is a
-debugging check, not an estimate of overall recall. A seed not retrieved
-will be investigated; strategy changes must retain a conceptual
-rationale rather than simply fitting known papers.</p>
+test strategy behavior; the v3 seed list includes open-window-centred
+original studies of conventional indices (for example salivary IgA,
+natural-killer-cell and lymphocyte redistribution responses after
+prolonged exercise) and boundary cases (immediate-only sampling,
+sampling only beyond 72 hours, youth cohorts and resting training
+studies). Retrieval of a few selected positive seeds is a debugging
+check, not an estimate of overall recall. A seed not retrieved will be
+investigated; strategy changes must retain a conceptual rationale rather
+than simply fitting known papers.</p>
 <p>Backward references and forward citations of included reports and
-relevant neighboring reviews will be checked. Registered/ongoing reviews
-and adjacent recent reviews will inform the novelty assessment.
-Supplemental preprint searches will record sites, exact queries, dates,
-filters, results examined and stopping rules. Citation chasing has a
-defined sweep and documented closure/update; it is not silently
-unlimited browsing.</p>
+relevant neighboring reviews will be checked, including forward citation
+tracking of Peake et al. [15] and Campbell and Turner [1] before
+submission. Registered and ongoing reviews in OSF Registries, PROSPERO,
+INPLASY, Research Registry and Zenodo, together with adjacent recent
+reviews, will inform the novelty assessment; the 4 October 2026 registry
+scan is pre-archive reconnaissance and will be repeated before
+submission. Supplemental preprint searches will record sites, exact
+queries, dates, filters, results examined and stopping rules. Citation
+chasing has a defined sweep and documented closure/update; it is not
+silently unlimited browsing.</p>
 <p>For every run, preserve the exact query, database/platform, run date
 and time, limits, hits, export counts, file format, immutable raw export
 and checksum. Record search amendments, supplementary routes and
@@ -398,16 +522,20 @@ titles/abstracts and <strong>all</strong> sought full texts. At
 title/abstract stage, missing timing or methodological detail normally
 proceeds to full text rather than being guessed. AI does not make
 automatic exclusions or replace either reviewer.</p>
-<p>Before formal screening, a saved random procedure selects 50 records
-from a frozen deduplicated draft-search pool. The pool version, eligible
+<p>After the v3.0 protocol has been archived (J) and before formal
+screening, a saved random procedure selects 50 records from a frozen
+deduplicated draft-search pool; the pool is generated after the archive
+release and retained with its version. The pool version, eligible
 sampling universe, random seed, selected IDs and reviewer decisions are
 retained. The project criterion is at least 80% raw agreement plus
 resolution of all conceptual disagreements; this threshold is not
 attributed to JBI. Cohen’s kappa is reported descriptively with
 prevalence limitations. If the criterion is unmet, the manual is
-clarified and a fresh pilot is performed. The 50-record pilot does not
-confer final study eligibility. Full-text boundary exercises follow
-before formal full-text screening.</p>
+clarified and a fresh pilot is performed. If the pilot changes an
+eligibility rule, the protocol is re-released with justification before
+formal searching (J). The 50-record pilot does not confer final study
+eligibility. Full-text boundary exercises follow before formal full-text
+screening.</p>
 <p>Disagreements are discussed; unresolved decisions go to a
 predesignated adjudicator whose name must be supplied before formal
 screening. Changes to an eligibility interpretation are dated and
@@ -416,15 +544,20 @@ records retain separate independent decisions and the consensus
 decision.</p>
 <p>The screening manual defines this fixed primary exclusion hierarchy:
 FT01 ineligible source type; FT02 not original human research; FT03
-ineligible population; FT04 no qualifying identifiable exercise context;
-FT05 no post-cessation sample; FT06 no baseline or suitable comparator;
-FT07 no eligible immune link; FT08 inseparable mixed intervention. Only
-the first established scientific reason is assigned at full-text
-exclusion; secondary concerns and supporting passages remain in notes.
-Unresolved information is not treated as an established failure.
-Duplicate reports/versions, not-retrieved reports and
-awaiting-classification records have administrative statuses outside the
-scientific exclusion hierarchy. The actual flow will reconcile
+ineligible population, including cohorts under 18 years without a
+separable adult stratum; FT04 no qualifying identifiable exercise
+context, where any intensity, duration or mode qualifies and the code
+applies only when no identifiable bout, or for B no qualifying
+repeated-bout relation, can be established; FT05 no post-cessation
+sample, where sampling only beyond 72 hours is not a reason for this
+code because the organizing window is a charting frame; FT06 no baseline
+or suitable comparator; FT07 no eligible immune link; FT08 inseparable
+mixed intervention. Only the first established scientific reason is
+assigned at full-text exclusion; secondary concerns and supporting
+passages remain in notes. Unresolved information is not treated as an
+established failure. Duplicate reports/versions, not-retrieved reports
+and awaiting-classification records have administrative statuses outside
+the scientific exclusion hierarchy. The actual flow will reconcile
 identification, duplicates, screening, sought/retrieved reports,
 exclusions and included reports/cohorts, with the frontier register
 separate. Counts remain unavailable, not zero, until work is
@@ -432,20 +565,25 @@ performed.</p>
 <h2 id="g.-data-charting">G. Data charting</h2>
 <h3 id="g.1-pilot-structure-and-verification">G.1 Pilot, structure and
 verification</h3>
-<p>Ten purposively chosen reports will calibrate charting across
-exercise designs, conventional assays, cell/biofluid omics, early
-samples, repeated-bout monitoring and timing/population boundary cases.
-These reports are training material, not ten included studies, and may
-include cases ultimately excluded. Their source, selection rationale and
-unresolved questions are recorded in the pilot manifest. Pilot
-refinements are versioned before full extraction.</p>
+<p>After the archive release, ten purposively chosen reports will
+calibrate charting across exercise designs, conventional assays,
+cell/biofluid omics, early samples, repeated-bout monitoring, and timing
+and population boundary cases, including an adolescent cohort used as a
+population boundary case. These reports are training material, not ten
+included studies, and may include cases ultimately excluded. Their
+source, selection rationale and unresolved questions are recorded in the
+pilot manifest. Pilot refinements are versioned before full
+extraction.</p>
 <p>Two humans independently extract eligibility, timing, sample sizes,
 effects/uncertainty, precision domains, functional/clinical outcomes,
 validation and appraisal. One may enter purely bibliographic metadata
 for the other to verify. Discrepancies are resolved against source
-passages, with adjudication where necessary. The v2 dictionary, template
-and manual in <code>05_extraction</code> define the operational schema.
-Data use linked report, study and cohort tables with long-form
+passages, with adjudication where necessary. The v3 dictionary, template
+and manual in <code>05_extraction</code> define the operational schema;
+the Excel workbooks used for screening, extraction and appraisal are
+generated from those JSON templates by
+<code>scripts/build_workbooks.py</code>, and CSV exports are versioned
+in git. Data use linked report, study and cohort tables with long-form
 assay/marker/time/comparison records. Raw independent extractions and
 reconciled data are retained separately.</p>
 <h3 id="g.2-charting-domains">G.2 Charting domains</h3>
@@ -454,27 +592,36 @@ reconciled data are retained separately.</p>
 status, correction/retraction checks and dates, study/cohort links,
 source locations, extractor and decision history.</li>
 <li><strong>Participants:</strong> Eligibility and health definitions,
-infection screening, recruitment/analysis numbers, age, sex, training
-status, per-group/time/platform participant numbers and within-person
+infection screening, recruitment/analysis numbers, age range and
+separability of the adult stratum, sex, training status, older-adult
+subgroup, per-group/time/platform participant numbers and within-person
 pairing.</li>
-<li><strong>Exposure:</strong> Design, exercise mode, duration,
-intensity metric, comparator, training background, previous load,
-co-interventions, environmental conditions and recovery schedule.</li>
-<li><strong>Sampling:</strong> Exact time and time origin; matrix/immune
+<li><strong>Exposure:</strong> Design, exercise mode, duration, absolute
+and relative intensity metrics and values as reported, comparator,
+training background, previous load, co-interventions, environmental
+conditions and recovery schedule.</li>
+<li><strong>Sampling:</strong> Exact time and time origin, and position
+relative to the organizing window (within window, outside-window
+recovery, pre-exercise baseline or matched control time); matrix/immune
 compartment; collection, processing, storage, delay/freeze–thaw;
 circadian timing; plasma-volume/hydration correction; urinary dilution
 adjustment; salivary flow/secretion rate; cell composition and
 normalization.</li>
-<li><strong>Measurements:</strong> Original and standardized marker
-names/identifiers, modality, targeted/untargeted assay, platform, units,
-detection/quantification limits, quality control, batch effects,
-molecular-identification confidence, bulk/single-cell structure and
-integration method.</li>
+<li><strong>Measurements:</strong> Marker family (A); original and
+standardized marker names/identifiers, modality, targeted/untargeted
+assay, platform, units, detection/quantification limits, quality
+control, batch effects, molecular-identification confidence,
+bulk/single-cell structure and integration method.</li>
 <li><strong>Results:</strong> Relevant contrasts, direction and
 magnitude, effect estimates and reported CI/SE or other uncertainty,
 multiplicity control, missing data, quality-control exclusions and
 measured/adjusted confounders. Relevant null and discordant findings are
 retained.</li>
+<li><strong>Author open-window interpretation:</strong> Whether the
+report uses the open-window term, invokes immunosuppression or
+susceptibility without the term, interprets changes as redistribution,
+or offers no window interpretation, with the source passage; recorded
+descriptively and never used for eligibility or weighting.</li>
 <li><strong>Precision domains:</strong> All seven domains in C are
 charted separately: analytical reliability; temporal validity; immune
 specificity; individualization; functional/clinical linkage; independent
@@ -511,13 +658,16 @@ measurement/within-person noise assessment do not establish reproducible
 responder status.</p>
 <h3 id="g.3-time-representation">G.3 Time representation</h3>
 <p>Exact exercise-to-sampling times are primary. Optional display bins
-are: during exercise (ancillary); 0 to &lt;30 minutes; 30 minutes to
-&lt;3 hours; 3 to &lt;24 hours; 24 to 72 hours inclusive; &gt;72 hours;
-and NR. Bins are mutually exclusive display categories, not eligibility
-thresholds. Unknown timing is not imputed to a bin; uncertainty about
-exercise linkage may prevent main-map eligibility. Symptom/infection
-follow-up uses a separate time axis, with marker measurement before,
-concurrent with or after onset recorded explicitly.</p>
+are: pre-exercise baseline; matched control time; during exercise
+(ancillary); 0 to &lt;30 minutes; 30 minutes to &lt;3 hours; 3 to &lt;24
+hours; 24 to 72 hours inclusive; &gt;72 hours; and NR. Bins up to and
+including 24 to 72 hours lie within the organizing window; &gt;72 hours
+is outside-window recovery. Bins are mutually exclusive display
+categories, not eligibility thresholds. Unknown timing is not imputed to
+a bin; uncertainty about exercise linkage may prevent main-map
+eligibility. Symptom/infection follow-up uses a separate time axis, with
+marker measurement before, concurrent with or after onset recorded
+explicitly.</p>
 <h2 id="h.-critical-appraisal">H. Critical appraisal</h2>
 <p>Critical appraisal is prespecified to explain evidence limitations,
 not to create a clinical recommendation. Two reviewers independently
@@ -545,8 +695,9 @@ pre-analytical handling, normalization, cell composition,
 repeated-measure analysis, multiplicity and independent validation.
 These custom descriptors are not a validated risk-of-bias tool. There is
 no quality sum, quality-threshold exclusion, GRADE certainty assessment
-or numerical readiness ranking. Appraisal findings contextualize the
-maps, including unresolved reporting limitations.</p>
+or numerical readiness ranking; domain evidence enters only the
+validation-readiness map as defined in A. Appraisal findings
+contextualize the maps, including unresolved reporting limitations.</p>
 <h2 id="i.-synthesis-and-planned-outputs">I. Synthesis and planned
 outputs</h2>
 <p>Synthesis is descriptive, stratified and narrative. Independent
@@ -558,13 +709,14 @@ include applicable/NR/UNCLEAR information as appropriate. A/B overlap is
 disclosed, and the two stream totals are not simply added.</p>
 <p>Three primary evidence maps are planned:</p>
 <ol type="1">
-<li><strong>Time by immune compartment/matrix:</strong> Exact sampling
-coverage and optional time bins, exercise contexts and population
-strata.</li>
-<li><strong>Candidate monitoring use by precision domain:</strong>
-Separate domain evidence, assay reliability, individualization and
-practical implementation, with conventional and omics candidates
-distinguishable.</li>
+<li><strong>Open-window time by immune compartment and marker
+family:</strong> Exact sampling coverage and optional time bins within
+and beyond the organizing window, by immune compartment or matrix,
+marker family, exercise context and population stratum.</li>
+<li><strong>Per-marker validation-readiness map:</strong> Marker or
+marker family by the seven precision domains, with conventional and
+omics candidates distinguishable; the descriptive profile defined in A,
+not a score or ranking.</li>
 <li><strong>Cohort-level validation links:</strong> Technical
 confirmation, repeated bouts, independent participants/cohorts, directly
 measured function, tested associations and clinical/prediction outcomes,
@@ -579,47 +731,71 @@ denominators. Counts of studies reporting a direction may be descriptive
 but are not a vote-counting estimate of effect or truth. Null,
 contradictory and unreported findings remain visible.</p>
 <p>We will not pool effects, derive a diagnostic threshold, validate a
-marker, recommend return-to-training decisions or conclude that a
-candidate predicts infection from group differences alone. Discovery of
-a potentially homogeneous subset will be documented as a future
-focused-review opportunity. Any later decision to add an effect
-synthesis requires an explicit protocol amendment and appropriate
-methods before analysis. The manuscript will retain the scoping
-methodology regardless of the submission portal’s article-category label
-[14].</p>
-<h2 id="j.-registration-governance-and-transparency">J. Registration,
-governance and transparency</h2>
-<p>An OSF registration draft will be finalized and submitted by the
-authorized research team before formal five-database searching. No
-registration has been submitted during this design update. Public
-preliminary reconnaissance, citation verification and any
-strategy/calibration pilots preceding registration will be disclosed
-with dates, scope and their influence on decisions. The work is not
-described as wholly prospective from before any knowledge of the
-literature.</p>
+marker, recommend return-to-training decisions, conclude that a
+candidate predicts infection from group differences alone, or adjudicate
+whether an open window exists. Discovery of a potentially homogeneous
+subset will be documented as a future focused-review opportunity. Any
+later decision to add an effect synthesis requires an explicit protocol
+amendment and appropriate methods before analysis. The manuscript will
+retain the scoping methodology regardless of the submission portal’s
+article-category label [14].</p>
+<h2 id="j.-registration-archiving-governance-and-transparency">J.
+Registration, archiving, governance and transparency</h2>
+<p>The protocol is archived publicly rather than registered in a review
+registry. After the research team freezes version 3.0, the public GitHub
+repository will be tagged and a GitHub Release archived automatically by
+Zenodo, which assigns a dated, immutable version DOI and a concept DOI
+for the record series; the DOI is assigned on release and cannot be
+stated earlier. The release precedes the 50-record screening pilot and
+the 10-report charting pilot, and formal five-database searching starts
+only after the archived release exists. If the pilots change a rule,
+version 3.1 is released with justification, as a new tag and version DOI
+under the same concept DOI, before formal searching. PROSPERO does not
+accept scoping reviews, and OSF Registries is no longer the planned
+route. At the date of this draft no release, DOI or registration of any
+kind exists, and the project has never been registered in any
+registry.</p>
+<p>Pre-archive knowledge is disclosed rather than denied. An internal
+protocol (version 1.0, January 2026) with its own literature collision
+assessments, public reconnaissance and source verification on 2 October
+2026 (Codex), and a collision re-check of the narrowed framing against
+published and registered reviews on 4 October 2026 (Claude Code;
+<code>02_preliminary/collision_recheck_2026-10-04.md</code>) all precede
+the archive, and the two pilots are planned stages that will also
+precede formal searching. Their dates, scope and influence on decisions
+are recorded in the archive release record and the amendment log. The
+work is not described as wholly prospective from before any knowledge of
+the literature.</p>
 <p>Substantive amendments record the previous rule, new rule, reason,
 date, work stage, information already known, authorizing team decision
-and need to revisit earlier records. Raw search exports and independent
-decisions remain immutable. The canonical protocol and execution
-appendices are versioned together.</p>
+and need to revisit earlier records; after the archive release, each
+amendment also produces a new tagged Release and version DOI. Raw search
+exports and independent decisions remain immutable. The canonical
+protocol and execution appendices are versioned together.</p>
 <p>This review uses published or lawfully accessible material and does
 not recruit participants or intervene in exercise. Institutional
 requirements for ethical review/exemption will be checked and recorded;
-no approval or exemption number is invented. Shareable search
-strategies, dictionaries, decision metadata and synthesis data are
-intended for an open repository; copyrighted full texts and restricted
+no approval or exemption number is invented. The GitHub repository and
+Zenodo archive hold the protocol, manuals, templates, search strategies,
+dictionaries, decision metadata and shareable synthesis data under CC BY
+4.0 for documents and MIT for scripts; copyrighted full texts and raw
 database exports are not redistributed contrary to their terms. Author
 names, affiliations, funding and competing interests are pending human
 declarations.</p>
-<p>AI has supported public-source reconnaissance, evidence organization
-and drafting in this project, including coordinator and delegated
-Luna-agent work. Actual tools/models, dates, tasks, prompt/output
-references and human verification will be logged. AI is not an author,
-human independent reviewer or adjudicator. Named humans remain
-responsible for eligibility, data, appraisal, citations and conclusions.
-No AI-produced citation or numerical claim is accepted without source
-verification. Final disclosure follows the then-current journal and
-institutional requirements.</p>
+<p>AI has supported public-source reconnaissance, evidence organization,
+consistency checking and drafting in this project: Codex desktop with
+delegated agents on 2–3 October 2026, and Claude Code (Anthropic) on 4
+October 2026 for the collision re-check and this v3.0 revision. Tool
+names, versions, models, sources, dates, tasks, prompt/output references
+and human verification are logged in
+<code>01_protocol/ai_use_log.json</code>, and the manuscript will
+disclose tool name, version, model and source in both Methods and
+Acknowledgments [14]. AI is not an author, human independent reviewer or
+adjudicator. Named humans remain responsible for eligibility, data,
+appraisal, citations and conclusions. No AI-produced citation or
+numerical claim is accepted without source verification. Final
+disclosure follows the then-current journal and institutional
+requirements.</p>
 <h2 id="k.-roles-and-execution-plan">K. Roles and execution plan</h2>
 <p>Roles to name are: principal investigator; reviewers A and B; search
 lead; independent PRESS reviewer; adjudicator; data/version manager; and
@@ -628,45 +804,69 @@ databases/full texts are available. Other roles may overlap where
 independence is preserved, but an adjudicator must be named before
 formal screening. Funding and competing interests cannot be inferred
 from the absence of information.</p>
-<p>Use a reference manager with exportable identifiers and a tool that
-preserves blinded independent screening decisions; record software and
-versions before execution. The supplied JSON templates are
-specifications and exchange templates, not a claim that a production
-screening interface is already configured. The team may use its licensed
-screening software or controlled independent sheets with reconciliation;
-export and auditability are required.</p>
+<p>Screening, extraction and appraisal use Excel workbooks generated
+from the JSON templates in <code>04_screening</code> and
+<code>05_extraction</code> by <code>scripts/build_workbooks.py</code>: a
+read-only record master, one locked decision workbook per reviewer,
+dropdown-controlled codes, and identifier and gene-name columns stored
+as text. Each reviewer’s workbook is locked at completion and its
+SHA-256 hash committed to git before the two files are merged;
+<code>scripts/merge_screening.py</code> performs the deduplication
+checks, merge, agreement, kappa and PRISMA counts, and CSV exports are
+versioned in git. Rayyan, Covidence or similar platforms are not used. A
+reference manager with exportable identifiers is still to be chosen;
+software and versions are recorded before execution.</p>
 <p>Preparation is estimated at approximately 2–3 working weeks,
 depending on team availability: 3–5 working days to verify platforms and
-search strategies; 5–7 working days for reviewer training, pilot
-screening and charting, with parallel work where feasible; and 2–3
-working days to resolve changes and finalize registration. These are
-planning estimates, not a promised completion date. Full-review effort
-will be estimated after the 50-record screening pilot and 10-report
-charting pilot, using actual yields and per-record effort. A provisional
-budget should distinguish two-person screening/extraction from
-single-person work and allow adjudication and update searches.</p>
-<p>The local execution plan and registration draft specify stage gates
-and deliverables. Formal stages remain pending until the required human
-work is completed; completing this document does not certify PRESS
-review, calibration or registration.</p>
+search strategies and to generate the workbooks; 2–3 working days to
+resolve team comments, freeze version 3.0 and publish the archived
+release; and 5–7 working days for reviewer training and the pilot
+screening and charting, with parallel work where feasible. If the pilots
+change a rule, a conditional re-release follows before formal searching.
+These are planning estimates, not a promised completion date.
+Full-review effort will be estimated after the 50-record screening pilot
+and 10-report charting pilot, using actual yields and per-record effort.
+A provisional budget should distinguish two-person screening/extraction
+from single-person work and allow adjudication and update searches.</p>
+<p>The local execution plan and archive release record specify stage
+gates and deliverables. Formal stages remain pending until the required
+human work is completed; completing this document does not certify PRESS
+review, calibration or archiving.</p>
 <h2 id="l.-version-history-and-decision-status">L. Version history and
 decision status</h2>
-<p>Version 1.0 and associated build artifacts are preserved in the dated
-archive. Version 2.0 replaces the open-window-led title with candidate
-biomarkers for post-exercise precision monitoring; defines seven
-independent precision domains; separates acute A from strictly
-time-linked repeated-bout B; retains immediate samples without a 72-hour
-ceiling; expands searching to inception without a language filter;
-removes mandatory precision/biomarker/open-window terms; adds cohort
-linkage, complete outcome/validation fields, design-appropriate
-descriptive appraisal and AI transparency; and removes unsupported
-novelty claims.</p>
-<p>The scope and operational design are ready for team calibration.
-Still pending are named administrative declarations, platform-specific
-verification/PRESS review, human pilots, archived appraisal forms, local
-software configuration and OSF submission. Subsequent formal searches,
-screening, extraction and synthesis are distinct execution stages and
-have not been performed.</p>
+<p>Version 1.0 (January 2026) and associated build artifacts are
+preserved in the dated archive. Version 2.0 (2 October 2026) replaced
+the open-window-led title with candidate biomarkers for post-exercise
+precision monitoring; defined seven independent precision domains;
+separated acute A from strictly time-linked repeated-bout B; retained
+immediate samples without a 72-hour ceiling; expanded searching to
+inception without a language filter; removed mandatory
+precision/biomarker/open-window terms; added cohort linkage, complete
+outcome/validation fields, design-appropriate descriptive appraisal and
+AI transparency; and removed unsupported novelty claims.</p>
+<p>Version 3.0 (this draft, 4 October 2026) follows the collision
+re-check of the same date. It re-adopts the open window as the
+organizing construct that defines the 0–72 hour post-exercise window,
+the sampling time points and the marker families, without adjudicating
+whether it exists; defines the per-marker validation-readiness map as
+the deliverable; removes any exercise intensity, duration or mode
+threshold; restricts the population to adults aged 18 years or older,
+with older adults as a subgroup; retains Support B as the cross-bout
+monitoring layer; adds the author open-window interpretation tag, marker
+family and window-position fields; replaces OSF registration with a
+public GitHub repository and a Zenodo-archived Release, to be published
+after team freeze and before the pilots; specifies Excel workbooks
+generated from the JSON templates with scripted merging and agreement;
+adopts CC BY 4.0 for documents and MIT for scripts; and adds the
+Frontiers in Immunology submission requirements (PRISMA-ScR checklist
+and flow diagram, AI-use disclosure in Methods and Acknowledgments). The
+v3.0 date becomes the actual team freeze date at release.</p>
+<p>The scope and operational design are ready for team freeze. Still
+pending are named administrative declarations, platform-specific
+verification/PRESS review, the Zenodo release, human pilots, archived
+appraisal forms and local software configuration. Subsequent formal
+searches, screening, extraction and synthesis are distinct execution
+stages and have not been performed.</p>
 <h2 id="references">References</h2>
 <ol type="1">
 <li>Campbell JP, Turner JE. Debunking the Myth of Exercise-Induced
@@ -713,7 +913,7 @@ for Reporting Literature Searches in Systematic Reviews. <em>Systematic
 Reviews</em>. 2021. <a
 href="https://doi.org/10.1186/s13643-020-01542-z">doi:10.1186/s13643-020-01542-z</a>.</li>
 <li>McGowan J, et al. PRESS Peer Review of Electronic Search Strategies:
-2015 Guideline Statement. <em>Journal of Clinical Epidemiology</em>.
+2015 Guideline Statement. <em>Journal of Clinical Epidemiology</em>.
 2016. <a
 href="https://doi.org/10.1016/j.jclinepi.2016.01.021">doi:10.1016/j.jclinepi.2016.01.021</a>.</li>
 <li>JBI. <a href="https://jbi.global/critical-appraisal-tools">Critical
@@ -725,9 +925,43 @@ artificial intelligence methods. <em>BMJ</em>. 2025;388:e082505. <a
 href="https://doi.org/10.1136/bmj-2024-082505">doi:10.1136/bmj-2024-082505</a>.</li>
 <li>Frontiers. <a
 href="https://www.frontiersin.org/journals/immunology/for-authors/article-types">Immunology
-article types</a> and <a
+article types</a>, including the Systematic Review type and its PRISMA
+reporting and flow-diagram requirement; <a
 href="https://www.frontiersin.org/guidelines/author-guidelines">author
-guidelines</a>. Accessed 2 October 2026; recheck before submission.</li>
+guidelines</a>; and <a
+href="https://www.frontiersin.org/guidelines/policies-and-publication-ethics#artificial-intelligence-policy">policies
+and publication ethics</a>, including reporting guidelines and the
+artificial-intelligence fair use and disclosure policy. Accessed 4
+October 2026; recheck before submission.</li>
+<li>Peake JM, Neubauer O, Walsh NP, Simpson RJ. Recovery of the immune
+system after exercise. <em>Journal of Applied Physiology</em>.
+2017;122(5):1077–1087. <a
+href="https://doi.org/10.1152/japplphysiol.00622.2016">doi:10.1152/japplphysiol.00622.2016</a>.
+PMID 27909225.</li>
+<li>Simpson RJ, Campbell JP, Gleeson M, et al. Can exercise affect
+immune function to increase susceptibility to infection? <em>Exercise
+Immunology Review</em>. 2020;26:8–22. PMID 32139352; no DOI.</li>
+<li>Xie E, He Y, Cao T, et al. Exercise and tissue-resident memory T
+cells: from circulating numbers to spatial immune remodeling.
+<em>Frontiers in Immunology</em>. 2026;17:1822561. <a
+href="https://doi.org/10.3389/fimmu.2026.1822561">doi:10.3389/fimmu.2026.1822561</a>.
+PMID 42183211.</li>
+<li>Shi X, Hu L, Nieman DC, et al. Exercise workload: a key determinant
+of immune health – a narrative review. <em>Frontiers in Immunology</em>.
+2025;16:1617261. <a
+href="https://doi.org/10.3389/fimmu.2025.1617261">doi:10.3389/fimmu.2025.1617261</a>.
+PMID 40777031.</li>
+<li>Reitzner SM, Brodin P. The Immune System as a Biosensor of Health
+and Athletic Performance. <em>Scandinavian Journal of Medicine &amp;
+Science in Sports</em>. 2026;36(3):e70258. <a
+href="https://doi.org/10.1111/sms.70258">doi:10.1111/sms.70258</a>. PMID
+41842715.</li>
+<li>Mănescu DC, Voinea A, Plastoi CD, et al. Molecular Biomarkers of
+Training Responses: A Systems Framework for Exercise Adaptation and
+Athlete Monitoring. <em>International Journal of Molecular
+Sciences</em>. 2026;27(8):3601. <a
+href="https://doi.org/10.3390/ijms27083601">doi:10.3390/ijms27083601</a>.
+PMID 42074239.</li>
 </ol>
 </body>
 </html>

@@ -1,5 +1,8 @@
-% v2 EN protocol library; protocol prints source references directly.
-% Crossref cache plus PubMed 40127903 and official methods/journal pages.
+% v3.0 EN protocol library (protocol_EN_full.md refs 1-20); the protocol prints source references directly.
+% Refs 1-14: v2 Crossref cache (02_preliminary/restart_2026-10-02/verification/crossref_metadata.json), PubMed 40127903
+% and official methods/journal pages. Refs 15-20 (v3.0 additions): Crossref records in references/crossref_metadata_v3.json
+% (retrieved 2026-10-04) cross-checked against PubMed esummary; Simpson 2020 has no DOI (PubMed only).
+% Hand-edited for v3.0: scripts/update_protocol_references.py must not be run with --write without updating (scripts/README.md).
 
 @article{Campbell2018,
   author = {Campbell, John P. and Turner, James E.},
@@ -65,7 +68,7 @@
 }
 
 @article{Rethlefsen2021,
-  author = {Rethlefsen, Melissa L. and Kirtley, Shona and Waffenschmidt, Siw and Ayala, Ana Patricia and Moher, David and Page, Matthew J. and Koffel, Jonathan B. and ,  and Blunt, Heather and Brigham, Tara and Chang, Steven and Clark, Justin and Conway, Aislinn and Couban, Rachel and de Kock, Shelley and Farrah, Kelly and Fehrmann, Paul and Foster, Margaret and Fowler, Susan A. and Glanville, Julie and Harris, Elizabeth and Hoffecker, Lilian and Isojarvi, Jaana and Kaunelis, David and Ket, Hans and Levay, Paul and Lyon, Jennifer and McGowan, Jessie and Murad, M. Hassan and Nicholson, Joey and Pannabecker, Virginia and Paynter, Robin and Pinotti, Rachel and Ross-White, Amanda and Sampson, Margaret and Shields, Tracy and Stevens, Adrienne and Sutton, Anthea and Weinfurter, Elizabeth and Wright, Kath and Young, Sarah},
+  author = {Rethlefsen, Melissa L. and Kirtley, Shona and Waffenschmidt, Siw and Ayala, Ana Patricia and Moher, David and Page, Matthew J. and Koffel, Jonathan B. and {PRISMA-S Group} and Blunt, Heather and Brigham, Tara and Chang, Steven and Clark, Justin and Conway, Aislinn and Couban, Rachel and de Kock, Shelley and Farrah, Kelly and Fehrmann, Paul and Foster, Margaret and Fowler, Susan A. and Glanville, Julie and Harris, Elizabeth and Hoffecker, Lilian and Isojarvi, Jaana and Kaunelis, David and Ket, Hans and Levay, Paul and Lyon, Jennifer and McGowan, Jessie and Murad, M. Hassan and Nicholson, Joey and Pannabecker, Virginia and Paynter, Robin and Pinotti, Rachel and Ross-White, Amanda and Sampson, Margaret and Shields, Tracy and Stevens, Adrienne and Sutton, Anthea and Weinfurter, Elizabeth and Wright, Kath and Young, Sarah},
   title = {{PRISMA-S: an extension to the PRISMA Statement for Reporting Literature Searches in Systematic Reviews}},
   journal = {Systematic Reviews},
   year = {2021},
@@ -91,6 +94,80 @@
   pages = {e082505},
   doi = {10.1136/bmj-2024-082505},
   url = {https://pubmed.ncbi.nlm.nih.gov/40127903/}
+}
+
+@article{Peake2017,
+  author = {Peake, Jonathan M. and Neubauer, Oliver and Walsh, Neil P. and Simpson, Richard J.},
+  title = {{Recovery of the immune system after exercise}},
+  journal = {Journal of Applied Physiology},
+  year = {2017},
+  volume = {122},
+  number = {5},
+  pages = {1077--1087},
+  doi = {10.1152/japplphysiol.00622.2016},
+  url = {https://doi.org/10.1152/japplphysiol.00622.2016},
+  note = {PMID 27909225}
+}
+
+@article{Simpson2020,
+  author = {Simpson, R. J. and Campbell, J. P. and Gleeson, M. and Kr{\"u}ger, K. and Nieman, D. C. and Pyne, D. B. and Turner, J. E. and Walsh, N. P.},
+  title = {{Can exercise affect immune function to increase susceptibility to infection?}},
+  journal = {Exercise Immunology Review},
+  year = {2020},
+  volume = {26},
+  pages = {8--22},
+  url = {https://pubmed.ncbi.nlm.nih.gov/32139352/},
+  note = {PMID 32139352; no DOI}
+}
+
+@article{Xie2026,
+  author = {Xie, Enli and He, Yushan and Cao, Tainan and Li, Changchun and Wang, Zhiming},
+  title = {{Exercise and tissue-resident memory T cells: from circulating numbers to spatial immune remodeling}},
+  journal = {Frontiers in Immunology},
+  year = {2026},
+  volume = {17},
+  pages = {1822561},
+  doi = {10.3389/fimmu.2026.1822561},
+  url = {https://doi.org/10.3389/fimmu.2026.1822561},
+  note = {PMID 42183211}
+}
+
+@article{Shi2025,
+  author = {Shi, Xinxin and Hu, Lunuo and Nieman, David C. and Li, Fei and Chen, Peijie and Shi, Hui and Shi, Yue},
+  title = {{Exercise workload: a key determinant of immune health -- a narrative review}},
+  journal = {Frontiers in Immunology},
+  year = {2025},
+  volume = {16},
+  pages = {1617261},
+  doi = {10.3389/fimmu.2025.1617261},
+  url = {https://doi.org/10.3389/fimmu.2025.1617261},
+  note = {PMID 40777031}
+}
+
+@article{Reitzner2026,
+  author = {Reitzner, Stefan Markus and Brodin, Petter},
+  title = {{The Immune System as a Biosensor of Health and Athletic Performance}},
+  journal = {Scandinavian Journal of Medicine \& Science in Sports},
+  year = {2026},
+  volume = {36},
+  number = {3},
+  pages = {e70258},
+  doi = {10.1111/sms.70258},
+  url = {https://doi.org/10.1111/sms.70258},
+  note = {PMID 41842715}
+}
+
+@article{Manescu2026,
+  author = {M{\u{a}}nescu, Dan Cristian and Voinea, Andreea and Plastoi, Camelia Daniela and Iacobini, Alexandra Reta and Vulpe, Alina Anca and P{\^{\i}}rvan, Ancu{\c{t}}a and Dinciu, Corina Claudia and Vulpe, Bogdan Iulian and B{\u{a}}lt{\u{a}}re{\c{t}}u, Cristian and Iacobini, Adrian},
+  title = {{Molecular Biomarkers of Training Responses: A Systems Framework for Exercise Adaptation and Athlete Monitoring}},
+  journal = {International Journal of Molecular Sciences},
+  year = {2026},
+  volume = {27},
+  number = {8},
+  pages = {3601},
+  doi = {10.3390/ijms27083601},
+  url = {https://doi.org/10.3390/ijms27083601},
+  note = {PMID 42074239}
 }
 
 @misc{BESTValidation,

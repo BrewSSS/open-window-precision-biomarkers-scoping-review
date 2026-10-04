@@ -1,37 +1,89 @@
-# 构建与维护
+# 构建与维护（方案 v3）
 
-所有新脚本从自身位置解析项目根目录，不依赖旧机器路径。
+所有脚本从自身位置解析项目根目录，不依赖本机绝对路径；下文命令均在仓库根目录运行，路径为仓库相对路径（外部工具用 `$HOME`）。版本号与日期只在 `01_protocol/project_settings.json`（`protocol_version`、`protocol_date`、`status`）维护，`build_protocol.py`、`publish_protocol_pdf.py`、`create_flowchart.py`、`validate_design.py` 均从此读取；`scripts/protocol_header.tex` 的页眉 “Protocol v<版本>” 须与之一致（`build_protocol.py` 不一致即停止）。
 
-1. 修改`01_protocol/protocol_EN_full.md`和对齐的`protocol_CN.md`；不要手动维护排版副本。
-2. `python3 scripts/build_protocol.py`生成与完整EN相同的typeset Markdown、独立LaTeX、中文/英文/执行计划HTML。依赖Pandoc。样式为`protocol_header.tex`和`protocol.css`；生成的TeX不依赖外部图片或BibTeX文件。
-3. 将生成的TeX在Codex内置LaTeX编辑器打开并编译诊断。需要导出PDF时，本机已安装TeX，可通过latex-paper-en技能的`compile.py`包装器生成；不要手动改PDF。当前命令为：
+## 1. 方案构建链（顺序固定）
 
-   `python3 /Users/USER/.codex/skills/latex-paper-en/scripts/compile.py 01_protocol/protocol_EN_typeset.tex --compiler pdflatex --outdir build_v2`
+手工编辑的源文件：`01_protocol/protocol_EN_full.md`（唯一英文源稿）、`protocol_CN.md`、`execution_plan.md`、`project_settings.json` 及 03–06 目录的手册/JSON。生成物不要手改。
 
-   编译成功后运行`python3 scripts/publish_protocol_pdf.py`，将`build_v2`中的实际产物同步至方案PDF及根目录旧入口；此步骤检查源文件时间和编译日志，避免旧PDF残留。
+1. 修改源文件（含 `protocol_header.tex` 页眉）。
+2. `python3 scripts/build_protocol.py` → `protocol_EN_typeset.md`（与 EN 源稿逐字节相同）、`protocol_EN_typeset.tex`（独立 TeX，PDF 元数据标题取自 EN 第一行 H1）、`protocol_CN.html`、`protocol_EN_full.html`、`execution_plan.html`，并重写 `build_manifest.json`（version/date 取自设置文件，`files` 为 SHA-256）。依赖 Pandoc。
+3. 编译 PDF（本机 TeX Live + latexmk，经 latex-paper-en 技能的包装器）：
 
-4. `python3 scripts/create_flowchart.py`生成v2研究设计SVG，根目录同名脚本为兼容入口。
-5. `python3 scripts/update_protocol_references.py`按已核验的本地元数据重建英文参考文献和BibTeX；重新取源后应先核验，再更新缓存。此脚本不进行正式文献检索。
+   `python3 $HOME/.codex/skills/latex-paper-en/scripts/compile.py 01_protocol/protocol_EN_typeset.tex --compiler pdflatex --outdir build_v3`
 
-`fix_figure_bg.py`已停用，原脚本及原图在归档。旧`01_protocol/build`仅属v1历史构建，当前输出在`01_protocol/build_v2`。脚本成功运行不表示研究方法已由人工审核、平台语法已验证或正式研究已执行。
+   输出在 `01_protocol/build_v3/`（相对 TeX 所在目录）。日志不得含 `Overfull`、`undefined references` 或以 `!` 开头的错误；长标题若再次造成 Overfull，应改 `protocol_header.tex` 或 TeX 生成参数，不改 Markdown 源稿。
+4. `python3 scripts/publish_protocol_pdf.py`：要求 `build_v3` 中的 PDF 新于 EN 源稿与 TeX、日志含 “Output written on”；随后复制为 `01_protocol/protocol_EN_typeset.pdf`，重建根目录两个符号链接（`scoping_review_protocol_EN.pdf`、`SRprotocol.pdf`），并在 `build_manifest.json.pdf_export` 写入 PDF 的 SHA-256、日志路径与方案版本。
+5. `python3 scripts/create_flowchart.py` → `figures/research_design_v3.svg`（计划流程图，无 PRISMA 数字；v2 图保留并在 `figures/README.md` 标为 superseded）。根目录 `create_flowchart.py` 只是兼容入口。
+6. `python3 scripts/validate_design.py` → `01_protocol/verification/integration_checks.json`（见第 2 节）。
 
-6. `python3 scripts/validate_design.py`核对当前JSON、七域枚举、61旧字段映射、空表、文件链接、PDF同步与原始归档校验值；这不是PRESS或人工试筛验证。核对记录在`01_protocol/verification/integration_checks.json`。
+注意：`build_protocol.py` 会重写 manifest 并去掉 `pdf_export`，所以每次运行后必须重新执行 3–4 步，否则 validator 失败。
 
-## Excel 工作簿（筛选 / 提取 / 严格评价）
+### build_v3 与公开克隆
 
-**规则：先修改 JSON 模板，再重新生成；不得手工修改生成的 xlsx 结构（sheet、列、下拉、保护）。** 工作簿只是录入界面，结构的唯一来源是 `04_screening/*.json`、`05_extraction/*.json` 与 `03_search/search_log_template.json`。依赖 openpyxl（本机已有 3.1.5）；`merge_screening.py selftest` 的公式交叉核对另需 LibreOffice `soffice`（缺失时该项跳过）。
+`01_protocol/build_v3/`（PDF、log、aux 等）**不提交**（`.gitignore`）。提交的是发布后的 `01_protocol/protocol_EN_typeset.pdf`，其哈希记录在 `build_manifest.json.pdf_export.sha256`。`validate_design.py` 的处理：
 
-重新生成（协议 v3 改 JSON 后同样运行）：
+- 始终严格检查：规范 PDF 与 manifest 记录的哈希一致、根目录链接指向规范 PDF；若装有 `pdftotext`（poppler），还检查 PDF 文本含新标题、`J. Registration`、`K. Roles`、`L. Version`、`References`。
+- 依赖本机构建的检查（规范 PDF 与 `build_v3` PDF 逐字节相同、TeX 日志无错误/Overfull）：`build_v3` 存在时严格执行；不存在时（如干净克隆）记为 `skipped` 并打印 WARNING，不计入 passed，也不导致失败。未装 `pdftotext` 时 PDF 文本检查同样记为 skipped。
+- 发布前在本机完整跑一遍 2–6 步，确保 0 skipped。
+
+旧 `01_protocol/build`（v1）与 `01_protocol/build_v2`（v2）只是本机历史构建，任何脚本都不再使用。
+
+## 2. 一致性校验（validate_design.py）
+
+核对：JSON 可解析；七域 ID 在字典、spec、评价模板一致；8 张关系表 `records` 为空；61 个旧字段映射有效；字典 `relational_model.table_specs[*].blank_record` 与 `extraction_template.json` 8 张表的 `blank_record` 字段名、顺序、空值逐字段相同；时间箱列表（ID、顺序、窗口位置）在字典、模板 `controlled_vocabulary_shared`、`evidence_map_spec.json.time_display_only` 三处相同且含 `pre_exercise_baseline`/`matched_control_time`；01_protocol、README、CHANGELOG 与 03–06 的 Markdown 不使用“开窗期”（声明该命名规则本身的“不用‘开窗期’”除外，契约 8.1）；登记字段：`registration.id` 为 null，或为 Zenodo DOI（`10.5281/zenodo.N`）且等于 `version_doi`，`release_tag`/`release_commit`/`concept_doi`/`version_doi` 要么全空要么全填且 tag = `v<protocol_version>`；EN/CN 恰含 A–L；typeset 与 EN 逐字节相同；manifest 哈希、版本与日期和设置文件一致；本地链接可解析；PDF 与 TeX 日志（见上）；归档原件校验值。`verified_on` 为运行当日，`protocol_version`/`protocol_date` 读自设置文件。这不是 PRESS 或人工试筛验证。
+
+## 3. Excel 工作簿（筛选 / 提取 / 严格评价）
+
+**规则：先修改 JSON 模板，再重新生成；不得手工修改生成的 xlsx 结构（sheet、列、下拉、保护）。** 工作簿只是录入界面，结构的唯一来源是 `04_screening/*.json`、`05_extraction/*.json` 与 `03_search/search_log_template.json`。依赖 openpyxl（3.1.5 已测）；`merge_screening.py selftest` 的公式交叉核对另需 LibreOffice `soffice`（缺失时该项跳过）。
+
+重新生成（任何 JSON 改动后）：
 
 `python3 scripts/build_workbooks.py --reviewer A --reviewer B`
 
-- 输出到 `templates_xlsx/`：`screening_workbook.xlsx`、`extraction_workbook.xlsx`（未分配母版）、`extraction_workbook_A.xlsx` / `_B.xlsx`（每位提取者一份，README 与文件名带标签）、`appraisal_workbook.xlsx`。所有数据行为空。
-- `--rows N`：筛选工作簿公式行数（默认 5000，须 ≥ records_master 记录数）；`--only screening|extraction|appraisal`；`--out-dir`。
-- 生成后自动用 openpyxl 重新载入并核对 sheet 名、表头、数据验证、保护标志与空数据行；任一不符即返回非零。
-- 下拉值全部来自 JSON（个别由手册句子解析，见各工作簿 README 的 “Interpretations” 与 “Template issues” 两节）。工作表保护无密码，仅防误改结构。
+- 输出到 `templates_xlsx/`：`screening_workbook.xlsx`、`extraction_workbook.xlsx`（未分配母版）、`extraction_workbook_A.xlsx` / `_B.xlsx`、`appraisal_workbook.xlsx`。所有数据行为空。打开工作簿产生的 `~$*.xlsx` 锁文件已被忽略。
+- v3：TA/FT 决定下拉取自 `screening_log_template.json` 的 `field_schema.screening_disposition_stages`，`dedup_status` 取自 `dedup_status_values`（RETAINED 记为空白），`records_master` 列注释取自标注 `(records_master.<列>)` 的字段说明；仍与筛选手册加粗处置及 `fulltext_exclusion_codes.json` 交叉核对，不一致写入工作簿 README 的 “Template issues”。列顺序由生成器固定（`merge_screening.py` 依赖）；无 JSON 定义的列（当前为 `abstract`、`dedup_group_id`）在 README 中列出。
+- `--rows N`（筛选工作簿公式行数，默认 5000，须 ≥ records_master 记录数）；`--only screening|extraction|appraisal`；`--out-dir`。生成后自动重新载入核对 sheet 名、表头、数据验证、保护与空数据行；任一不符即非零退出。工作表保护无密码，仅防误改结构。
+- 独立性：每位审阅者只在自己的工作簿中决定并锁定；锁定后的工作簿 SHA-256 记入 `screening_log_template.json.workbook_workflow.locks` 并先提交 git，再合并；CSV 导出入 git。
 
-合并两位审阅者的独立筛选结果（CSV，或已在 Excel/LibreOffice 中保存过的 xlsx）：
+合并两位审阅者的独立结果（CSV，或在 Excel/LibreOffice 中保存过的 xlsx）：
 
-- `python3 scripts/merge_screening.py merge --stage TA --a A.xlsx --b B.xlsx --out-dir <dir> [--reconciled R.csv] [--calibration-ids ids.txt]` → `merged_TA.csv`、`conflicts_TA.csv`、`agreement_TA.json`（一致标记、冲突、每人计数、原始一致率、Cohen kappa；校准按 ≥80% 原始一致率，kappa 仅描述）。全文阶段用 `--stage FT [--population merged_TA.csv]`。
-- `python3 scripts/merge_screening.py prisma [--master <records_master>] [--ta merged_TA.csv] [--ft merged_FT.csv] --out prisma.csv`：未执行或未完成的阶段数值留空（状态 NOT_YET_PERFORMED / INCOMPLETE），绝不写 0。
-- `python3 scripts/merge_screening.py selftest`：仅在临时目录用合成数据核对 Python kappa 与工作簿公式（LibreOffice 重算）一致，不写入项目文件。
+- `python3 scripts/merge_screening.py merge --stage TA --a A.xlsx --b B.xlsx --out-dir <dir> [--reconciled R.csv] [--calibration-ids ids.txt]` → `merged_TA.csv`、`conflicts_TA.csv`、`agreement_TA.json`（一致、冲突、每人计数、原始一致率、Cohen kappa；校准按 ≥80% 原始一致率，kappa 仅描述）。全文阶段用 `--stage FT [--population merged_TA.csv]`。
+- `python3 scripts/merge_screening.py prisma [--master <records_master>] [--ta merged_TA.csv] [--ft merged_FT.csv] --out prisma.csv`：未执行或未完成的阶段数值留空（NOT_YET_PERFORMED / INCOMPLETE），绝不写 0。
+- `python3 scripts/merge_screening.py selftest`：只在临时目录用合成数据核对 Python kappa 与工作簿公式（LibreOffice 重算），不写项目文件（2026-10-04：27/27 通过）。
+
+## 4. 参考文献（update_protocol_references.py）—— 未更新前不得以 --write 运行
+
+v3.0 的参考文献 1–20 在 `protocol_EN_full.md` 中人工写定；`references/references.bib` 与 `references/README.md` 于 2026-10-04 **人工编辑**，新增 15–20（Peake 2017、Simpson 2020、Xie 2026、Shi 2025、Reitzner & Brodin 2026、Mănescu 2026）。脚本已扩充 DOI 列表、Simpson 2020 手工条目（无 DOI，PMID 32139352），并读取第二个缓存 `references/crossref_metadata_v3.json`（`02_preliminary` 下的 v2 缓存只读）。但其逐行改写逻辑会把 15、17–20 简化为“作者 et al. 题名. 期刊. 年份.”并删去卷期页与 PMID（干跑可见），因此：
+
+- 默认 `python3 scripts/update_protocol_references.py` 仅干跑，打印将改动的差异，不写任何文件；
+- `--write` 若会改动方案文本即拒绝执行；
+- 在改写逻辑能逐字节保留方案参考文献行之前，不要用它重建 bib/README（其中 README 文本仍是 v2 版本）。新文献须先经 PubMed/Crossref 核验进缓存，再在 `01_protocol/ai_use_log.json` 中标注人工核验状态（契约 8.3k）。
+
+`fix_figure_bg.py` 已停用（原脚本及原图在 `_archive/pre-v2_2026-10-02/`）。脚本成功运行不表示研究方法已由人工审核、平台语法已验证或正式研究已执行。
+
+## 5. 许可证
+
+- 文档（方案、手册、模板、记录、图件、文献库等非代码内容）：CC BY 4.0，见根目录 `LICENSE`。
+- 脚本（`scripts/`，及根目录兼容入口 `create_flowchart.py`）：MIT，见 `scripts/LICENSE`。
+- 两者同时写入 `.zenodo.json`（`license: cc-by-4.0`，notes 说明脚本 MIT）、`CITATION.cff` 与方案 J 节。受版权保护的全文与原始数据库导出不入库。
+- `LICENSE`、`scripts/LICENSE`、`.zenodo.json`、`CITATION.cff` 中的著作权人/作者目前是占位符 “TO BE FILLED BY TEAM — do not release with placeholders”；**带占位符不得发布**。
+
+## 6. 发布流程（冻结 → tag → GitHub Release → Zenodo → 回写 DOI）
+
+1. 团队冻结 v3.0：把 `project_settings.json.protocol_date` 改为实际冻结日，EN/CN 首部去掉 “draft for team freeze”（契约 8.3i），`status` 改为归档状态；填好 creators（`.zenodo.json`、`CITATION.cff`、两份 LICENSE）；完成第 7 节推送前清理。
+2. 完整运行第 1 节 2–6 步与 `build_workbooks.py`；validator 须 0 failed、0 skipped；`git status` 干净后提交。
+3. 在 GitHub 公开仓库启用 Zenodo 集成（Zenodo → GitHub → 打开该仓库开关），再推送并打标签：`git tag -a v3.0 -m "Protocol v3.0"`、`git push origin main v3.0`。
+4. 在 GitHub 由 `v3.0` 创建 Release；Zenodo 自动存档并分配 version DOI 与 concept DOI（DOI 只能在发布后得到，归档内文本写作 “DOI assigned on release”）。
+5. 回写 `project_settings.json.registration`：`release_tag`（`v3.0`）、`release_commit`（标签所指提交 SHA）、`version_doi`、`concept_doi`（均为 `10.5281/zenodo.N`）、`repository_url`；`id` 可保持 null 或设为 version DOI（validator 要求四个字段同时填写、DOI 格式正确、tag = `v<protocol_version>`）。同时在 `CITATION.cff` 加入 DOI，在 `.zenodo.json.related_identifiers` 中补充需要的关联，填写 `01_protocol/archive_release_record.md`。
+6. 重新运行构建链与 validator，提交（该提交在 Release 之后，不属于已存档版本）。试点后若规则改变：修订、记入 amendments，发布 `v3.1`（新 version DOI，同一 concept DOI），之后才开始正式检索。
+
+## 7. 推送前清理清单（契约 §4）
+
+公开推送前逐项处理并记录（2026-10-04 扫描结果）：
+
+- 本机用户名/绝对路径：`01_protocol/verification/build_output.txt`（latexmk 输出含本机路径）；`02_preliminary/restart_2026-10-02/lanes/{metabolomics,novelty,proteomics,transcriptomics}.txt`；`_archive/pre-v2_2026-10-02/create_flowchart.py` 与 `_archive/pre-v2_2026-10-02/scripts/create_flowchart.py`（旧机器路径）。本文件已改为仓库相对路径与 `$HOME`。
+- 第三方作者电子邮箱：`02_preliminary/restart_2026-10-02/verification/crossref_metadata.json`（Crossref 记录中的作者邮箱）——团队决定是否删除；`references/crossref_metadata_v3.json` 只保留姓名/ORCID。
+- `.playwright-mcp/`：虽在 `.gitignore` 中，但有 32 个文件已在初始提交中被跟踪（含网页快照中的第三方邮箱），推送前需 `git rm -r --cached .playwright-mcp` 并提交。
+- 本机构建目录（`01_protocol/build*`）与 `.claude/` 已忽略；推送前用 `git ls-files | xargs grep -l -I -E '/(Users|home)/|<本机用户名>'` 复查。
+- 占位符：creators/著作权人未填写时不得打 tag。

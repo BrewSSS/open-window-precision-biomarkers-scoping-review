@@ -1,8 +1,13 @@
 {
-  "verified_on": "2026-10-03",
-  "protocol_version": "2.0",
+  "verified_on": "2026-10-04",
+  "protocol_version": "3.0",
+  "protocol_date": "2026-10-04",
+  "settings_source": "01_protocol/project_settings.json",
   "json_files_checked": 12,
   "markdown_files_checked": 20,
+  "passed": 27,
+  "skipped": 0,
+  "warnings": [],
   "checks": [
     {
       "check": "Current design JSON parses",
@@ -41,7 +46,7 @@
       "passed": true
     },
     {
-      "check": "Registration and result counts remain unclaimed",
+      "check": "Registration is unclaimed or a consistent Zenodo release (id null or = version DOI 10.5281/zenodo.N); result counts unclaimed",
       "passed": true
     },
     {
@@ -57,6 +62,18 @@
       "passed": true
     },
     {
+      "check": "Data dictionary and extraction template blank_records identical (8 tables, field names, order, blank values)",
+      "passed": true
+    },
+    {
+      "check": "One time-bin list shared by dictionary, template and evidence-map spec (IDs, order, window positions)",
+      "passed": true
+    },
+    {
+      "check": "Chinese term \"开放窗口\" used; no source Markdown uses \"开窗期\" (contract 8.1)",
+      "passed": true
+    },
+    {
       "check": "Typeset Markdown exactly equals canonical full English",
       "passed": true
     },
@@ -65,7 +82,15 @@
       "passed": true
     },
     {
+      "check": "Build manifest and TeX page header carry the project_settings version/date",
+      "passed": true
+    },
+    {
       "check": "Local links in active protocol and manuals resolve",
+      "passed": true
+    },
+    {
+      "check": "Canonical PDF is the published export recorded in build_manifest.json",
       "passed": true
     },
     {
@@ -95,8 +120,8 @@
   ],
   "limitations": [
     "These are document/schema/build consistency checks, not human calibration or PRESS review.",
-    "No five-database formal searches, inclusion decisions, extraction results or registration performed.",
-    "Native editor initial compilation timed out while downloading its TeX format; local TeX compilation/export succeeded.",
+    "No five-database formal searches, inclusion decisions or extraction results are recorded; no GitHub Release/Zenodo DOI exists yet and the project is not registered in any registry.",
+    "Checks against the local TeX build (build_v3) and pdftotext are environment-dependent: strict when present, recorded as skipped (never as passed) when absent.",
     "Source-specific headings and full database strategies still require platform verification."
   ]
 }

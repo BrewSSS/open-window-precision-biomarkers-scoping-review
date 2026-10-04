@@ -10,8 +10,16 @@
 *.fls
 *.fdb_latexmk
 *.synctex.gz
+# Local TeX build output (compile.py --outdir build_v3). Not committed: the published PDF is
+# 01_protocol/protocol_EN_typeset.pdf (hash in build_manifest.json); validate_design.py skips build checks when absent.
+01_protocol/build_v3/
+# Superseded local build directories (v1, v2); not used by any script
 01_protocol/build/
 01_protocol/build_v2/
+
+# Excel/LibreOffice lock files created while a generated workbook is open
+templates_xlsx/~$*.xlsx
+templates_xlsx/.~lock.*#
 
 # Python
 __pycache__/

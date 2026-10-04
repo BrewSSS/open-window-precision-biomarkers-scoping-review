@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1400" viewBox="0 0 1100 1400">
+<rect width="1100" height="1400" fill="#f4f7f8"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#54767a"/></marker></defs>
+<text x="550" y="46" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#193b43">PRECISION BIOMARKERS OF THE EXERCISE-INDUCED</text>
+<text x="550" y="80" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#193b43">IMMUNE “OPEN WINDOW”</text>
+<text x="550" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="normal" fill="#193b43">Planned research design | Protocol v3.0 (draft for team freeze) | 4 October 2026</text>
+<rect x="180" y="135" width="740" height="100" rx="12" fill="#ffffff" stroke="#bfd0d3"/>
+<text x="550.0" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="bold" fill="#193b43">Define the organising construct and use</text>
+<text x="550.0" y="196" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#193b43">Open window = organising construct only; not a hypothesis under test</text>
+<text x="550.0" y="221" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#193b43">Seven precision domains per marker; no score, ranking or ladder</text>
+<path d="M550 235 L550 265" stroke="#54767a" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="180" y="265" width="740" height="100" rx="12" fill="#ffffff" stroke="#bfd0d3"/>
+<text x="550.0" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="bold" fill="#193b43">Verify strategy, freeze and archive</text>
+<text x="550.0" y="326" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#193b43">PRESS + platform verification; team freeze of the protocol</text>
+<text x="550.0" y="351" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#193b43">Tag → GitHub Release → Zenodo version DOI + concept DOI</text>
+<path d="M550 365 L550 395" stroke="#54767a" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="110" y="395" width="560" height="112" rx="12" fill="#ffffff" stroke="#bfd0d3"/>
+<text x="390.0" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="bold" fill="#193b43">Calibration pilots (two humans)</text>
+<text x="390.0" y="456" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#193b43">50-record screening pilot</text>
+<text x="390.0" y="481" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#193b43">10-report charting pilot</text>
+<rect x="730" y="395" width="320" height="112" rx="12" fill="#fbfcfc" stroke="#bfd0d3" stroke-dasharray="8 6" stroke-width="2"/>
+<text x="890.0" y="425" text-anchor="middle" font-family="Arial, sans-serif" font-size="19" font-weight="bold" fill="#193b43">Conditional re-release</text>
+<text x="890.0" y="456" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="normal" fill="#193b43">Only if pilots change rules:</text>
+<text x="890.0" y="481" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="normal" fill="#193b43">new tag + new version DOI</text>
+<path d="M670 451 L726 451" stroke="#54767a" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<path d="M390 507 L390 540" stroke="#54767a" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M890 507 L710 540" stroke="#54767a" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#arrow)"/>
+<rect x="180" y="540" width="740" height="100" rx="12" fill="#ffffff" stroke="#bfd0d3"/>
+<text x="550.0" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="bold" fill="#193b43">Execute formal searches and independent dual screening</text>
+<text x="550.0" y="601" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#193b43">Five databases: exercise AND (immunity OR omics); window at screening</text>
+<text x="550.0" y="626" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#193b43">Formal searches and flow counts: NOT YET AVAILABLE</text>
+<path d="M410 640 L275 680" stroke="#54767a" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M690 640 L825 680" stroke="#54767a" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="50" y="680" width="450" height="122" rx="12" fill="#e4f0ef" stroke="#bfd0d3"/>
+<text x="275.0" y="710" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="bold" fill="#193b43">CORE A: acute challenge</text>
+<text x="275.0" y="741" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#193b43">Adults ≥18 y; identifiable bout, any intensity</text>
+<text x="275.0" y="766" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#193b43">Post-cessation sample + baseline/comparator</text>
+<text x="275.0" y="791" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#193b43">0–72 h organising window; &gt;72 h tagged</text>
+<rect x="600" y="680" width="450" height="122" rx="12" fill="#e4f0ef" stroke="#bfd0d3"/>
+<text x="825.0" y="710" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="bold" fill="#193b43">SUPPORT B: repeated bouts</text>
+<text x="825.0" y="741" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#193b43">Same marker / person after ≥2 bouts</text>
+<text x="825.0" y="766" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#193b43">Known exercise-to-sample timing</text>
+<text x="825.0" y="791" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#193b43">Baseline or comparator; chart separately</text>
+<path d="M275 802 L410 846" stroke="#54767a" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M825 802 L690 846" stroke="#54767a" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="180" y="846" width="740" height="125" rx="12" fill="#ffffff" stroke="#bfd0d3"/>
+<text x="550.0" y="876" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="bold" fill="#193b43">Chart and appraise with two humans</text>
+<text x="550.0" y="907" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#193b43">Timing vs window, marker family, assay quality, n, effects</text>
+<text x="550.0" y="932" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#193b43">Author open-window interpretation: descriptive tag only</text>
+<text x="550.0" y="957" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#193b43">Design-specific appraisal; original-source locations</text>
+<path d="M550 971 L550 1005" stroke="#54767a" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="100" y="1005" width="900" height="135" rx="12" fill="#d9ebe9" stroke="#bfd0d3"/>
+<text x="550.0" y="1035" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="bold" fill="#193b43">THREE EVIDENCE MAPS</text>
+<text x="550.0" y="1066" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#193b43">1  Open-window time × immune compartment / marker family</text>
+<text x="550.0" y="1091" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#193b43">2  Per-marker validation-readiness map (seven domains; not a score)</text>
+<text x="550.0" y="1116" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#193b43">3  Cohort-level validation linkage</text>
+<path d="M550 1140 L550 1174" stroke="#54767a" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="180" y="1174" width="740" height="100" rx="12" fill="#ffffff" stroke="#bfd0d3"/>
+<text x="550.0" y="1204" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="bold" fill="#193b43">Update search and prepare Frontiers submission</text>
+<text x="550.0" y="1235" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#193b43">PRISMA-ScR checklist + flow diagram; AI-use disclosure</text>
+<text x="550.0" y="1260" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#193b43">Scoping methodology; no meta-analysis or clinical ranking</text>
+<text x="550" y="1310" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#193b43">Independent cohorts are the main density unit; A/B overlap is deduplicated.</text>
+<text x="550" y="1340" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#193b43">Public preprints: separate frontier register and denominators.</text>
+<text x="550" y="1372" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" font-weight="normal" fill="#526c75">This figure describes the plan. It contains no completed-review results or PRISMA counts.</text>
+</svg>
