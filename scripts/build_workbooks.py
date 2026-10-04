@@ -247,6 +247,7 @@ def input_column(ws, col: int, text: bool = True):
 
 def add_dv(ws, col: int, formula1: str, kind: str = 'list', style: str = 'stop', prompt: str = '',
            title: str = '', first_row: int = 2, last_row: int = MAX_ROW, registry=None, label=''):
+    formula1 = formula1.lstrip('=')   # OOXML stores validation formulas without a leading "="
     dv = DataValidation(type=kind, formula1=formula1, allow_blank=True, showErrorMessage=True,
                         errorStyle=style, showInputMessage=bool(prompt))
     if kind == 'list':
