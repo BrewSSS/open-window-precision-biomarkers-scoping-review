@@ -22,3 +22,6 @@ __pycache__/
 
 # Local scratch / exports that must never be committed raw
 # (database exports stay in 03_search/raw_exports/ only if licence permits; add explicit exceptions here)
+
+# Browser-automation scratch created by AI tooling
+.playwright-mcp/
