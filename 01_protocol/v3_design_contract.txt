@@ -68,3 +68,34 @@ Evidence basis: 02_preliminary/collision_recheck_2026-10-04.md (no direct collis
    - Names/roles: PI, Reviewer A/B, search lead, independent PRESS reviewer, adjudicator, data manager.
    - Embase platform (Embase.com vs Ovid); reference manager; funding, competing interests, ethics policy check.
    - GitHub owner (personal vs organisation) and public-push date.
+
+8. APPROVED TITLE, LICENCE AND DEFAULT RULINGS (A, 2026-10-04, after the change map was reviewed)
+   8.1 Title EN: Precision biomarkers of the exercise-induced immune "open window": a scoping review of the validation
+       readiness of conventional and omics candidates
+       Title CN: 运动诱导免疫"开放窗口"的精准生物标志物：传统免疫指标与组学候选物验证就绪度的范围综述
+       Chinese documents use "开放窗口" throughout (not "开窗期").
+   8.2 Licence: documents (protocol, manuals, templates, records) CC BY 4.0; scripts MIT. Both go into LICENSE files,
+       .zenodo.json / CITATION.cff and protocol section J.
+   8.3 Default rulings adopted by the coordinator as conventional choices (team may override; record any override
+       as an amendment):
+       a. "Search by construct" = keep the v2 two-route strategy E AND (I OR O); the 0-72 h organising window and
+          all eligibility rules are applied at screening. The post-exercise/recovery T-block stays diagnostic only.
+          "open window"-type terms may be added only as OR supplements or for citation chasing, never as AND terms.
+       b. Cortisol, creatine kinase, lactate or HRV alone do not satisfy immune linkage (v2 rule kept); charted as
+          covariates in otherwise eligible studies.
+       c. Mixed-age cohorts are eligible only if an adult (>= 18 y) stratum is separable in the report.
+       d. Author open-window interpretation is charted descriptively under RQ2; no separate RQ.
+       e. "Validation-readiness map" is defined identically everywhere: a per-marker, domain-by-domain descriptive
+          profile across the seven precision domains; not a score, ranking, grade or development ladder. Existing
+          prohibitions on "readiness scores/rankings" stay and must reference this definition.
+       f. Time-bin IDs: one controlled list used by data_dictionary.json, extraction_template.json and
+          evidence_map_spec.json, including pre_exercise_baseline and matched_control_time; bins up to and including
+          24-72 h are "within organising window"; >72 h is "outside-window recovery".
+       g. Core A / Support B labels: one controlled vocabulary (A_core_acute, B_support_repeated_bouts, background,
+          excluded, uncertain) used in dictionary, CN/EN text, evidence-map spec and screening dispositions.
+       h. Build directory renamed build_v2 -> build_v3; scripts and .gitignore updated accordingly.
+       i. v3.0 date = actual team freeze date; until then documents carry "3.0 (draft for team freeze) - 4 October 2026".
+       j. Section J heading keeps the prefix "J. Registration" (now "J. Registration, archiving, governance and
+          transparency") so existing validator checks remain meaningful until the validator is revised.
+       k. New references are appended (15-20) rather than renumbering 1-14; all new citations must be verified
+          against PubMed/Crossref before use and are flagged for human verification in ai_use_log.json.
