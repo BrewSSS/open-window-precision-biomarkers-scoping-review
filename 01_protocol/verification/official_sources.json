@@ -22,9 +22,48 @@
       "doi": "10.1136/bmj-2024-082505"
     },
     {
-      "name": "Frontiers in Immunology article types",
+      "name": "Frontiers in Immunology article types (Systematic Review type, includes scoping reviews)",
       "url": "https://www.frontiersin.org/journals/immunology/for-authors/article-types",
-      "note": "Category includes scoping reviews; section-specific availability must be rechecked."
+      "note": "Re-verified 2026-10-04: the Systematic Review article type text lists meta-syntheses, meta-analyses, mapping reviews and scoping reviews, and states that systematic reviews must conform to reporting guidelines (e.g., PRISMA) and include the PRISMA flow diagram. Section-specific availability must be rechecked before submission.",
+      "accessed": "2026-10-04"
+    },
+    {
+      "name": "Frontiers article types overview (Systematic Reviews limits)",
+      "url": "https://www.frontiersin.org/for-authors/where-to-publish/article-types",
+      "accessed": "2026-10-04",
+      "note": "Systematic Reviews: 350-word abstract, 15 figures/tables, 12,000 words (as displayed 2026-10-04)."
+    },
+    {
+      "name": "Frontiers artificial intelligence: fair use and disclosure policy",
+      "url": "https://www.frontiersin.org/guidelines/policies-and-publication-ethics#artificial-intelligence-policy",
+      "accessed": "2026-10-04",
+      "note": "Policy text (2026-10-04): AI-generated main text must be clearly disclosed in the acknowledgments; generative AI may not be an author; authors are responsible for the factual accuracy of AI-produced quotes, citations and references. The author-guidelines page mirrors this under \"Guidelines for artificial intelligence and related technologies\". The protocol commits to disclosure in both Methods and Acknowledgments with tool name, version, model and source. The same page lists, under reporting guidelines, \"Systematic reviews and meta-analyses: PRISMA guidelines, flowchart, and structured abstract checklist\" (re-accessed 2026-10-04)."
+    },
+    {
+      "name": "PROSPERO guidance for registering human studies (eligibility)",
+      "url": "https://www.crd.york.ac.uk/prospero/documents/Guidance%20for%20registering%20human%20studies.pdf",
+      "accessed": "2026-10-04",
+      "note": "PDF (14 pages) lists \"Scoping reviews\" under \"PROSPERO does not accept\". The JavaScript-rendered PROSPERO site states \"Scoping reviews are not currently accepted but may be in future\" (2026-10-04 collision re-check). Hence PROSPERO is not applicable to this protocol."
+    },
+    {
+      "name": "OSF Registries: Generalized Systematic Review registration template",
+      "url": "https://www.cos.io/blog/generalized-systematic-review-template-joins-osf-registries",
+      "accessed": "2026-10-04",
+      "note": "Recorded for completeness: OSF Registries was the v2 route and is replaced in v3 by a GitHub repository plus Zenodo-archived release. No OSF registration was ever created."
+    },
+    {
+      "name": "JBI Manual 10.2.2 Developing your protocol (scoping reviews)",
+      "url": "https://jbi-global.atlassian.net/wiki/spaces/MANUAL/pages/355862811",
+      "accessed": "2026-10-04",
+      "note": "JBI scoping-review protocol guidance; the a-priori protocol is archived publicly (GitHub + Zenodo) because PROSPERO does not accept scoping reviews."
+    },
+    {
+      "name": "Zenodo GitHub integration (archive route)",
+      "url": "https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content",
+      "accessed": "2026-10-04",
+      "note": "Route decided 2026-10-04 (contract section 4). Page accessed 2026-10-04 (HTTP 200): Zenodo can archive a GitHub repository and issue a DOI for the archive; Zenodo can only access public repositories, and archiving an organisation-owned repository may require the organisation owner to approve the Zenodo application. Re-check Zenodo's own GitHub documentation before the release."
     }
-  ]
+  ],
+  "last_updated": "2026-10-04",
+  "note": "Entries without an \"accessed\" field were verified on 2026-10-02 (v2). Entries added or re-verified on 2026-10-04 (v3) carry \"accessed\": \"2026-10-04\"; verification = HTTP 200 plus text match of the quoted statement via curl on that date. Human re-check before submission."
 }

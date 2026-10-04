@@ -1,5 +1,5 @@
 {
-  "protocol_version": "2.0",
+  "protocol_version": "3.0",
   "records": [
     {
       "amendment_id": "PRE-001",
@@ -17,7 +17,7 @@
     {
       "amendment_id": "PRE-002",
       "date": "2026-10-04",
-      "stage": "before_formal_search_and_registration",
+      "stage": "before_archive_release_pilots_and_formal_search",
       "from": "v2.0 (candidate biomarkers for precision monitoring of post-exercise immunity)",
       "to": "v3.0 (precision biomarkers of the exercise-induced immune open window; open window as organising construct)",
       "reason": "Team decision after 2026-10-04 collision re-check: broad post-exercise framing has high and rising collision risk (single-marker SR/MA wave, Front Immunol umbrella reviews); narrowed framing has no direct collision provided the open window is an organising construct, not an adjudicated hypothesis",
@@ -30,11 +30,13 @@
       },
       "registration_change": "OSF Registries -> GitHub repository + Zenodo-archived Release (DOI), archived after v3 freeze and before pilots",
       "known_information": "Public collision re-check 2026-10-04 (02_preliminary/collision_recheck_2026-10-04.md); no formal search, screening or extraction performed",
-      "approval_basis": "Decisions taken by A (framing, window, population, Support B, archive timing) and B, C (exposure threshold, Excel tooling) in session with Claude Code on 2026-10-04",
-      "decision_by": "A; B+C for exposure and tooling",
+      "approval_basis": "Decisions taken on 2026-10-04 in session with Claude Code: framing, population, Support B and archive timing by A; organising window by A with the immunology content expert; exposure threshold and Excel tooling by B and C; title, licence and default rulings (contract section 8) by A after review of the change map",
+      "decision_by": "A (framing, population, Support B, archive, title, licence); A + immunology content expert (organising window); B + C (exposure threshold, tooling)",
       "reassessment_needed": "No formal screening yet; apply v3 to calibration and formal screening",
-      "registry_update": "not applicable yet (no archive exists); v3.0 will be the first archived release",
-      "implementation_status": "protocol text revision pending"
+      "release_update": "not applicable yet (no archive exists); v3.0 will be the first tagged GitHub Release archived by Zenodo (concept DOI + version DOI assigned on release)",
+      "implementation_status": "implemented in v3.0 draft pending team freeze",
+      "implementation_date": "2026-10-04",
+      "implementation_record": "01_protocol/verification/v3_change_map_2026-10-04.md (sections B1, B3); CHANGELOG.md 3.0"
     }
   ],
   "future_amendment_fields": [
@@ -47,6 +49,6 @@
     "decision_by",
     "reassessment_needed",
     "affected_records",
-    "registry_update"
+    "release_update"
   ]
 }

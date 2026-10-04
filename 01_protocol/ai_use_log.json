@@ -39,7 +39,10 @@
         "formal critical appraisal",
         "external registration",
         "author messaging"
-      ]
+      ],
+      "tool_version": "not recorded at the time; not recoverable from the session logs",
+      "provider_source": "OpenAI Codex desktop application",
+      "model": "coordinator GPT-6 family (exact identifier not exported); delegated gpt-6-luna"
     },
     {
       "date": "2026-10-03",
@@ -57,7 +60,10 @@
       "status": "Some edits and findings were saved before usage-limit errors; coordinator inspected resulting files. Sol tasks stopped and necessary search completion returned to the existing Luna agent on user instruction.",
       "human_verification_status": "Named research team review remains pending",
       "human_verifier": null,
-      "formal_review_decisions_made": false
+      "formal_review_decisions_made": false,
+      "tool_version": "not recorded at the time; not recoverable from the session logs",
+      "provider_source": "OpenAI Codex desktop application",
+      "model": "delegated gpt-6.1-sol; coordinator identifier not recorded"
     },
     {
       "date": "2026-10-04",
@@ -87,13 +93,112 @@
         "extraction",
         "registration submission",
         "public push or release"
+      ],
+      "tool_version": "not independently exported — to be filled by A from the Claude Code `--version` output",
+      "provider_source": "Anthropic; Claude Code CLI with models served by the Anthropic API",
+      "model": "coordinator claude-fable-5-1; delegated claude-fable-5-1 and claude-opus-5-5"
+    },
+    {
+      "date": "2026-10-04",
+      "tool": "Claude Code (Anthropic) desktop CLI",
+      "tool_version": "not independently exported — to be filled by A from the Claude Code `--version` output",
+      "coordinator_model": "claude-fable-5-1",
+      "delegated_models": [
+        "claude-fable-5-1 (first protocol-editor agent; edited the files listed below and was interrupted by an API usage limit before reporting)",
+        "claude-opus-5-5 (takeover protocol-editor agent; audited rows E1-E47 and B3 against the contract, completed the remaining edits and re-verified references 15-20 and the Frontiers/GitHub-Zenodo pages)"
+      ],
+      "model": "claude-fable-5-1 (coordinator and first delegated editor); claude-opus-5-5 (takeover delegated editor)",
+      "provider_source": "Anthropic; Claude Code CLI with models served by the Anthropic API",
+      "tasks": [
+        "v3.0 revision of protocol_EN_full.md implementing v3_design_contract.txt and change-map rows E1-E47 (verification/v3_change_map_2026-10-04.md, section B1)",
+        "governance files per change-map section B3: registration_draft.md renamed archive_release_record.md and rewritten; execution_plan.md; README.md; CHANGELOG.md; amendments.json; project_settings.json; ai_use_log.json; three root entry stubs; verification/official_sources.json and verification/README.md",
+        "PubMed E-utilities (esummary/efetch) verification of new references 15-20 and of the Peake 2017 abstract sentence quoted in section A",
+        "live access check (HTTP 200 and text match) of the Frontiers AI policy, Frontiers Systematic Review article-type, PROSPERO registration-guidance, OSF Generalized Systematic Review template and JBI 10.2.2 pages recorded in official_sources.json",
+        "takeover audit 2026-10-04 (claude-opus-5-5): row-by-row check of E1-E47 and B3; Introduction positioning names the open-window debate holders and adjacent reviews; PubMed efetch and Crossref re-check of references 15-20; Frontiers PRISMA and GitHub-Zenodo pages re-accessed"
+      ],
+      "prompt_source": "Coordinator work order in the 2026-10-04 Claude Code session (change map B1/B3 plus contract section 8 default rulings)",
+      "output_sources": [
+        "protocol_EN_full.md",
+        "archive_release_record.md",
+        "execution_plan.md",
+        "../README.md",
+        "../CHANGELOG.md",
+        "amendments.json",
+        "project_settings.json",
+        "ai_use_log.json",
+        "../scoping_review_protocol.md",
+        "../scoping_review_protocol_EN.md",
+        "../scoping_review_protocol_CN.md",
+        "verification/official_sources.json",
+        "verification/README.md"
+      ],
+      "citations_added_pending_human_verification": [
+        {
+          "ref": 15,
+          "citation": "Peake JM, Neubauer O, Walsh NP, Simpson RJ. J Appl Physiol 2017;122(5):1077-1087",
+          "pmid": "27909225",
+          "doi": "10.1152/japplphysiol.00622.2016",
+          "quoted_sentence_verified_from_efetch_abstract": "However, except for salivary IgA, clear and consistent markers of this immunodepression remain elusive.",
+          "status": "verified by AI 2026-10-04; human verification pending"
+        },
+        {
+          "ref": 16,
+          "citation": "Simpson RJ, Campbell JP, Gleeson M, et al. Exerc Immunol Rev 2020;26:8-22",
+          "pmid": "32139352",
+          "doi": null,
+          "status": "verified by AI 2026-10-04 (no DOI in PubMed record); human verification pending"
+        },
+        {
+          "ref": 17,
+          "citation": "Xie E, He Y, Cao T, Li C, Wang Z. Front Immunol 2026;17:1822561",
+          "pmid": "42183211",
+          "doi": "10.3389/fimmu.2026.1822561",
+          "status": "verified by AI 2026-10-04; human verification pending"
+        },
+        {
+          "ref": 18,
+          "citation": "Shi X, Hu L, Nieman DC, Li F, Chen P, Shi H, Shi Y. Front Immunol 2025;16:1617261",
+          "pmid": "40777031",
+          "doi": "10.3389/fimmu.2025.1617261",
+          "status": "verified by AI 2026-10-04; human verification pending"
+        },
+        {
+          "ref": 19,
+          "citation": "Reitzner SM, Brodin P. Scand J Med Sci Sports 2026;36(3):e70258",
+          "pmid": "41842715",
+          "doi": "10.1111/sms.70258",
+          "status": "verified by AI 2026-10-04; human verification pending"
+        },
+        {
+          "ref": 20,
+          "citation": "Mănescu DC, Voinea A, Plastoi CD, et al. Int J Mol Sci 2026;27(8):3601",
+          "pmid": "42074239",
+          "doi": "10.3390/ijms27083601",
+          "status": "verified by AI 2026-10-04 (article number 3601 from PII; esummary pages field empty); human verification pending"
+        }
+      ],
+      "human_verification_status": "pending — named team review required at v3.0 freeze before the archived release",
+      "human_verifier": null,
+      "formal_review_decisions_made": false,
+      "not_performed": [
+        "protocol_CN.md alignment (later agent)",
+        "edits to 03_search, 04_screening, 05_extraction, 06_synthesis, scripts, figures, references",
+        "build chain (build_protocol.py, TeX/PDF compile, publish_protocol_pdf.py, create_flowchart.py, update_protocol_references.py)",
+        "formal database search",
+        "screening decisions",
+        "extraction",
+        "critical appraisal",
+        "registration/archive submission",
+        "public push or release"
       ]
     }
   ],
   "future_entry_fields": [
     "date",
-    "tool_and_version",
-    "model_if_known",
+    "tool",
+    "tool_version",
+    "model",
+    "provider_source",
     "task",
     "prompt_reference",
     "output_reference",

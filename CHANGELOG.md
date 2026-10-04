@@ -1,5 +1,30 @@
 # 版本变更记录
 
+## 3.0 — 2026-10-04（团队冻结前草稿；存档前工作方案）
+
+依据2026-10-04团队决策（`01_protocol/v3_design_contract.txt`）与同日撞车复核（`02_preliminary/collision_recheck_2026-10-04.md`）改写v2设计。v3.0正式日期为团队实际冻结日；冻结前文件标注“3.0 (draft for team freeze) — 4 October 2026”。
+
+| v2问题 | v3处理 |
+|---|---|
+| 宽泛的“运动后免疫标志物”框架撞车风险高且在上升（单标志物SR/MA浪潮、目标期刊伞式综述） | 题目改为“运动诱导免疫‘开放窗口’的精准生物标志物：传统免疫指标与组学候选物验证就绪度的范围综述”；开放窗口为**组织构念**（界定0–72小时组织窗口、采样时点、标志物族），综述不裁决其是否存在；作者立场仅作描述标签并入RQ2 |
+| 交付物为泛指“证据图” | 定义**逐标志物验证就绪度图谱**（逐标志物、逐域描述，七域不变），并在A节定义一次，其余禁止“分数/排序/阶梯”处均引用该定义 |
+| 引言仅对照4–7号综述 | 以Peake 2017“except for salivary IgA…remain elusive”为锚点；正面定位Campbell & Turner 2018、Simpson 2020、Xie 2026、Shi 2025、Reitzner & Brodin 2026、Mănescu 2026、Davison 2025；点名PROSPERO CRD42020186264、CRD42022324139与OSF osf.io/4hsdr并以PCC区分；仍不作“首次/无撞车”断言；新增参考文献15–20（已经PubMed核验，待人工复核） |
+| 核心A未明确强度/时长规则 | 不设强度、时长、方式门槛；任何可识别单次运动均纳入，强度等作为提取字段与分层 |
+| “无72小时硬上限”仅为否定表述 | 0–72小时为组织窗口（非纳入上限）；>72小时样本照常提取并标记“窗外恢复”；FT01–FT08不新增排除码；时间箱加基线与对照时点 |
+| 人群为任何年龄 | 仅≥18岁成人；老年人亚组；<18岁排除；混龄需可分出成人层（与osf.io/4hsdr区分） |
+| 支持B | 保留，改写为“同一人重复出现的运动后窗口”，作为个体化与重复性域主要来源 |
+| 检索说明 | 保留两路并集；明确按构念检索，“open window”不作AND词（2018–2026 PubMed题摘18条），仅作OR补充/引文追踪；种子清单补传统指标阳性种子与边界案例；注册库复查扩至OSF、PROSPERO、INPLASY、Research Registry、Zenodo，投稿前对Peake 2017与Campbell & Turner 2018做前向引文追踪 |
+| 提取字段 | 新增marker_family、相对组织窗口的位置、作者开放窗口解释标签、绝对/相对强度、年龄范围与成人层可分性 |
+| 三类证据图名称 | 图1“开放窗口时间×免疫区室/标志物族”；图2“逐标志物验证就绪度图谱（标志物/族×七域；传统vs组学）”；图3不变 |
+| 注册走OSF Registries | 改为公开GitHub仓库+Zenodo自动存档Release（发布时分配version DOI与concept DOI）；PROSPERO不接受范围综述；存档在团队冻结后、50篇试筛与10篇试提取之前；试点改规则则发布v3.1；正式检索前须有已存档版本；`registration_draft.md`改名为`archive_release_record.md` |
+| 披露 | 明确2026-01内部方案、2026-10-02公开侦察（Codex）、2026-10-04撞车复核（Claude Code）为存档前已知工作；不描述为完全前瞻 |
+| 筛选/提取工具待定 | Excel工作簿由`scripts/build_workbooks.py`从JSON模板生成，每位评审一份锁定工作簿，哈希提交git后由`scripts/merge_screening.py`合并/一致性/kappa；CSV入git；不用Rayyan/Covidence |
+| 投稿要求 | Frontiers in Immunology Systematic Review栏目：PRISMA-ScR清单与流程图随稿；AI使用在Methods与Acknowledgments两处披露工具名、版本、模型、来源；MDPI/Frontiers不再作为排除去向 |
+| 许可证未定 | 文档CC BY 4.0，脚本MIT（LICENSE、`.zenodo.json`/`CITATION.cff`发布前添加） |
+| 构建产物与附件对齐 | 本次改写只改源文件与治理文件；排版副本、PDF、构建清单、流程图、参考文献库、中文稿与`03_search`–`06_synthesis`附件由后续步骤对齐，验证器在构建链重跑前预期失败 |
+
+本次v3.0仅完成英文方案源稿与治理文件修订（PRE-002）。团队冻结、存档发布、PRESS、人工校准、正式检索、筛选、提取和结果仍待执行。
+
 ## 2.0 — 2026-10-02（注册前工作方案）
 
 由用户认可的“精准标志物＋运动后”方向重建研究设计，目标Frontiers in Immunology。
@@ -21,4 +46,4 @@
 
 旧稿/图/构建保存在`_archive/pre-v2_2026-10-02`并有校验清单。前期报告仍保留为探索记录，其中支持B的较宽设想由本版收紧。
 
-本版完成的是研究设计及实施材料。正式检索、PRESS、人工校准、注册、筛选、提取和结果仍待执行。此后修改记入`01_protocol/amendments.json`，不得静默覆盖已注册规则。
+本版完成的是研究设计及实施材料。正式检索、PRESS、人工校准、存档发布、筛选、提取和结果仍待执行。此后修改记入`01_protocol/amendments.json`，不得静默覆盖已存档规则。
