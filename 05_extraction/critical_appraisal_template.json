@@ -1,8 +1,10 @@
 {
   "template_version": "1.0.0",
-  "protocol_version": "2.0",
+  "protocol_version": "3.0",
+  "protocol_version_label": "3.0 (draft for team freeze) - 4 October 2026",
+  "design_contract": "01_protocol/v3_design_contract.txt",
   "accessed_on": "2026-10-02",
-  "purpose": "Descriptive design-appropriate critical appraisal and a separate project-defined precision/assay profile. No composite score, rank, exclusion threshold, or GRADE certainty rating.",
+  "purpose": "Descriptive design-appropriate critical appraisal and a separate project-defined precision/assay profile. No composite score, rank, exclusion threshold, or GRADE certainty rating. The precision profile feeds the validation-readiness map (see the validation-readiness map definition in this file; contract 8.3e). Validation-readiness map: a per-marker, domain-by-domain descriptive profile across the seven precision domains; not a score, ranking, grade or development ladder.",
   "record_unit": "One record per report_id and appraised analysis; link report_id, study_id, and cohort_id so multiple reports/analyses do not double-count participants.",
   "tool_selection": {
     "randomized_parallel_or_crossover_exercise_intervention": "JBI_RCT_CURRENT",
@@ -50,7 +52,7 @@
         "official_form_url": "https://jbi.global/sites/default/files/2026-05/Assessment%20of%20Risk%20of%20Bias%20for%20Analytical%20Cross-sectional%20Studies%202026.docx",
         "official_directory": "https://jbi.global/critical-appraisal-tools",
         "official_file_link_date": "2026-05",
-        "selection_note": "Habitual-exercise-only cross-sectional evidence is background under v2 and excluded from the core A/B appraisal denominator unless separately labeled as contextual."
+        "selection_note": "Habitual-exercise-only cross-sectional evidence is background under v3 (contract 2.5, unchanged from v2) and excluded from the Core A / Support B appraisal denominator unless separately labeled as background."
       },
       {
         "tool_id": "JBI_CASE_CONTROL_CURRENT",
@@ -104,12 +106,14 @@
     ],
     "coding_note": "Keep any source instrument's exact answer label in tool_response_verbatim. No report information is usually tool_response_normalized=UNCLEAR and reporting_status=NR, not NO. NR means not reported; it does not mean failed or absent. NA requires a rationale. Status codes are descriptive, not points or a scale.",
     "eligibility_stratum": [
-      "CORE_A",
-      "CORE_B",
+      "A_core_acute",
+      "B_support_repeated_bouts",
+      "background",
+      "uncertain",
       "FRONTIER_PREPRINT",
-      "CONTEXT_ONLY",
       "BOUNDARY_PILOT"
     ],
+    "eligibility_stratum_note": "A_core_acute / B_support_repeated_bouts / background / uncertain are the shared scope vocabulary (data_dictionary.json vocabulary_crosswalks.scope_stream; contract 8.3g); FRONTIER_PREPRINT and BOUNDARY_PILOT are appraisal-only routing labels. Former CORE_A, CORE_B, CONTEXT_ONLY are deprecated. Appraise per analysis: an acute-bout analysis is A_core_acute, a cross-bout analysis is B_support_repeated_bouts; one cohort in both streams is counted once.",
     "core_appraisal_denominator": [
       "YES",
       "NO",
@@ -166,7 +170,15 @@
       "NR",
       "UNCLEAR",
       "NA"
-    ]
+    ],
+    "window_coverage": [
+      "WITHIN_WINDOW_ONLY",
+      "WITHIN_AND_OUTSIDE_WINDOW",
+      "OUTSIDE_WINDOW_ONLY",
+      "NR",
+      "UNCLEAR"
+    ],
+    "precision_profile_status_crosswalk": "Mapping to the canonical extraction evidence_state (data_dictionary.json vocabulary_crosswalks.evidence_state): EVIDENCE_REPORTED <- evidence_present | measured_null | not_demonstrated (evidence_note must name which); NOT_REPORTED <- NR; NOT_APPLICABLE <- NA; UNCLEAR <- UNCLEAR."
   },
   "appraisal_record_template": {
     "report_id": "",
@@ -241,6 +253,8 @@
       "temporal_validity": {
         "status": "",
         "evidence_note": "",
+        "window_coverage": "",
+        "window_bins_covered": "",
         "evidence_locator": ""
       },
       "immune_specificity": {
@@ -283,12 +297,12 @@
       }
     },
     "record_updated_on": "",
-    "precision_profile_note": "Dimensions are reported separately and are not a validated scale, composite score, or ladder. Independent validation and tested decision use are recorded as separate facets within one protocol domain."
+    "precision_profile_note": "Dimensions are reported separately and are not a validated scale, composite score, or ladder; they feed the validation-readiness map (see the validation-readiness map definition in this file; contract 8.3e). Independent validation and tested decision use are recorded as separate facets within one protocol domain. temporal_validity.window_coverage summarises sample positions relative to the 0-72 h organising window (outside-window recovery samples are charted, never excluded); window_bins_covered lists the data_dictionary.json time_bin IDs covered, \"; \"-separated."
   },
   "process": {
     "independent_human_reviewers": 2,
     "calibration": "Use the 10 purposively selected calibration/boundary reports to clarify design selection and item evidence locators; these do not create included-study counts. The screening pilot agreement threshold does not apply to appraisal.",
     "disagreement_resolution": "Discussion first; then the predesignated adjudicator if unresolved. The adjudicator's identity is pending and must be supplied before formal appraisal.",
-    "reporting": "Preserve both initial appraisals and consensus; summarize concerns descriptively by design without total score, ranking, appraisal-based exclusion, GRADE, or clinical recommendations."
+    "reporting": "Preserve both initial appraisals and consensus; summarize concerns descriptively by design without total score, ranking, appraisal-based exclusion, GRADE, or clinical recommendations. Precision-profile results enter only the validation-readiness map (see the validation-readiness map definition in this file; contract 8.3e)."
   }
 }

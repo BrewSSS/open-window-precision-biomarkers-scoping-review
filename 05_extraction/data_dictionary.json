@@ -1,13 +1,18 @@
 {
   "metadata": {
-    "title": "V2 extraction relational data dictionary",
-    "version": "2.0",
-    "date": "2026-10-02",
-    "status": "draft for human calibration; no records extracted",
+    "title": "V3 extraction relational data dictionary",
+    "version": "3.0",
+    "version_label": "3.0 (draft for team freeze) - 4 October 2026",
+    "date": "2026-10-04",
+    "status": "draft for team freeze and human calibration; no records extracted",
+    "source_contract": "01_protocol/v3_design_contract.txt",
     "source": "02_preliminary/restart_2026-10-02/data_dictionary.json",
     "legacy_source_field_count": 61,
-    "field_count_note": "The 61 legacy source fields are retained and mapped; the operational schema adds relational, donor-count, assay-universe, candidate-selection, supplement-traceability and digitization fields.",
-    "schema_verified_date": "2026-10-03"
+    "field_count_note": "The 61 legacy source fields are retained and mapped (no legacy table or column renamed); the operational schema adds relational, donor-count, assay-universe, candidate-selection, supplement-traceability, digitization and, in v3, open-window organising-construct fields (marker family, window position, exposure as reported, adult-stratum separability, author window interpretation).",
+    "schema_verified_date": "2026-10-04",
+    "organising_construct": "The exercise-induced immune \"open window\" is an organising construct only: it defines the post-exercise period after an identifiable bout (organising window 0-72 h after cessation, 72 h inclusive), the sampling time points and the marker families to be charted. The review does not test or adjudicate whether an open window exists; original authors' interpretations are charted descriptively (author_window_interpretation) and never affect eligibility or weighting.",
+    "validation_readiness_map_definition": "Validation-readiness map: a per-marker, domain-by-domain descriptive profile across the seven precision domains; not a score, ranking, grade or development ladder.",
+    "excel_workbooks": "Extraction workbooks are generated from this dictionary and extraction_template.json by scripts/build_workbooks.py; edit the JSON and regenerate, never hand-edit workbook structure. CSV exports are versioned in git."
   },
   "missing_value_semantics": {
     "blank_template_null": "Not yet extracted; do not interpret as absent/unreported.",
@@ -39,16 +44,18 @@
           "version_date": null,
           "version_label": null,
           "source_locator": [],
-          "scope_stream": null,
+          "scope_stream": [],
           "inclusion_reason": null,
           "exclusion_reason": null,
           "immune_link": [],
-          "screening_A": null,
-          "screening_B": null,
+          "screening_decision_reviewer_A": null,
+          "screening_decision_reviewer_B": null,
           "consensus_screening_decision": null,
           "primary_fulltext_exclusion_reason": null,
           "reviewer_notes": null,
-          "author_stated_use": null
+          "author_stated_use": null,
+          "author_window_interpretation": [],
+          "author_window_interpretation_locator": []
         }
       },
       "cohorts": {
@@ -67,7 +74,10 @@
           "age_sex": null,
           "training_status": null,
           "sport": null,
-          "cohort_notes": null
+          "cohort_notes": null,
+          "age_range": null,
+          "adult_stratum_separable": null,
+          "older_adult_subgroup": null
         }
       },
       "report_cohort_links": {
@@ -138,7 +148,11 @@
           "bout_number": null,
           "participant_linkage": null,
           "n_donors": null,
-          "donor_count_basis": null
+          "donor_count_basis": null,
+          "exercise_duration": null,
+          "intensity_metric": null,
+          "intensity_value": null,
+          "within_organising_window": null
         }
       },
       "measurements": {
@@ -208,11 +222,13 @@
           "digitizer_A": null,
           "digitizer_B": null,
           "digitization_reconciled_value": null,
-          "digitization_notes": null
+          "digitization_notes": null,
+          "marker_family": null,
+          "digitization_check": null
         }
       },
       "precision_validation": {
-        "description": "多维precision/validation长表；每行仅一个维度，不汇总成总分。",
+        "description": "多维precision/validation长表；每行仅一个维度，不汇总成总分；evidence_state 为逐标志物 validation-readiness map 的单元格状态（见 metadata.validation_readiness_map_definition）。",
         "row_unit": "one report/cohort/measurement × one domain",
         "primary_key": "precision_record_id",
         "foreign_keys": [
@@ -244,7 +260,8 @@
           "evidence_notes": null,
           "intended_use": null,
           "linkage_subtype": null,
-          "validation_use_subtype": null
+          "validation_use_subtype": null,
+          "validation_split": null
         }
       },
       "extraction_provenance": {
@@ -300,10 +317,13 @@
       "For assays with large feature spaces, record tested universe and source/availability; enumerate all named immune candidates identified in original aims/methods in accessible article text and supplements without a significance filter. Do not fabricate rows for unnamed/unreported features.",
       "A measurement links all sample_sets used in its contrast with sample_set_ids; marker_series_id links the same marker across identified exercise bouts when evaluating Support B.",
       "Participants, donors, biospecimens, cells, aliquots, timepoints and technical replicates are separate counts; none except unique participant/donor n is an independent human biological n.",
-      "precision_validation uses exactly seven parent domains with separate subfacets; domains are descriptive and no total score is computed.",
+      "precision_validation uses exactly seven parent domains with separate subfacets; domains are descriptive and no total score is computed. Domain rows feed the validation-readiness map (metadata.validation_readiness_map_definition): not a score, ranking, grade or development ladder.",
       "All sample, measurement and precision rows must match an existing report-study-cohort tuple in report_cohort_links; cohort.study_id must agree with that tuple.",
-      "report_cohort_links.scope_streams records cohort-specific A/B memberships; one cohort may contribute to both streams and is counted once overall.",
-      "Primary and required linkage IDs cannot use missing-value codes; null is allowed in blank templates and optional inapplicable links only."
+      "report_cohort_links.scope_streams records cohort-specific A/B memberships (A_core_acute, B_support_repeated_bouts); one cohort may contribute to both streams and is counted once overall. reports.scope_stream is the multi-valued report-level summary using the same vocabulary (vocabulary_crosswalks.scope_stream).",
+      "Primary and required linkage IDs cannot use missing-value codes; null is allowed in blank templates and optional inapplicable links only.",
+      "sample_sets.within_organising_window is derived from time_bin through time_bin_rules.window_position; samples later than 72 h after cessation are extracted in full and tagged outside_window_recovery, never excluded (contract 2.2).",
+      "Exercise mode, duration and intensity are recorded as reported (exercise_mode, exercise_duration, intensity_metric, intensity_value; dose keeps the verbatim legacy summary); they are evidence-map strata, never eligibility thresholds (contract 2.1).",
+      "measurements.marker_family is assigned to every named-candidate and assay-universe row; it groups rows for Figure 1 and the per-marker validation-readiness map (Figure 2) and is not an independent evidence count."
     ]
   },
   "controlled_vocabulary": {
@@ -315,10 +335,12 @@
     "scope_stream": [
       "A_core_acute",
       "B_support_repeated_bouts",
-      "background_context",
+      "background",
       "excluded",
-      "awaiting_classification",
-      "not_retrieved"
+      "uncertain",
+      "NR",
+      "NA",
+      "UNCLEAR"
     ],
     "publication_status": [
       "peer_reviewed_version_of_record",
@@ -350,11 +372,11 @@
     "time_bin": [
       "pre_exercise_baseline",
       "during",
-      "0_to_<30min",
-      "30min_to_<3h",
-      "3h_to_<24h",
+      "0_to_lt30min",
+      "30min_to_lt3h",
+      "3h_to_lt24h",
       "24h_to_72h_inclusive",
-      ">72h",
+      "gt72h",
       "matched_control_time",
       "NR",
       "NA",
@@ -385,7 +407,6 @@
       "evidence_present",
       "measured_null",
       "not_demonstrated",
-      "not_reported",
       "NR",
       "NA",
       "UNCLEAR"
@@ -548,7 +569,6 @@
       "reported_supplement",
       "author_provided",
       "digitized_from_figure",
-      "not_reported",
       "NR",
       "NA",
       "UNCLEAR"
@@ -558,7 +578,6 @@
       "same_participants_aggregate_pairing_documented",
       "some_participant_overlap",
       "different_participants",
-      "not_reported",
       "NR",
       "NA",
       "UNCLEAR"
@@ -573,7 +592,6 @@
       "UNCLEAR"
     ],
     "digitization_check": [
-      "not_applicable",
       "not_started",
       "independently_checked_by_second_reviewer",
       "discrepancy_reconciled",
@@ -581,7 +599,306 @@
       "NR",
       "NA",
       "UNCLEAR"
+    ],
+    "within_organising_window": [
+      "within_window",
+      "outside_window_recovery",
+      "pre_exercise_baseline",
+      "matched_control_time",
+      "during_exercise_ancillary",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "marker_family": [
+      "leukocyte_redistribution",
+      "NK_count_or_cytotoxicity",
+      "neutrophil_function",
+      "T_cell_subsets_or_function",
+      "mucosal_sIgA",
+      "cytokine_or_inflammatory_mediator",
+      "immunoglobulin_or_complement",
+      "immune_cell_transcriptome",
+      "proteome",
+      "metabolome_or_lipidome",
+      "epigenome",
+      "ncRNA",
+      "single_cell",
+      "other",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "author_window_interpretation": [
+      "explicit_open_window_term",
+      "immunosuppression_or_susceptibility_without_term",
+      "redistribution_interpretation",
+      "no_window_interpretation",
+      "NR"
+    ],
+    "adult_stratum_separable": [
+      "all_participants_adult",
+      "mixed_age_adult_stratum_separable",
+      "mixed_age_adult_stratum_not_separable",
+      "all_participants_under_18",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "older_adult_subgroup": [
+      "older_adult_cohort",
+      "older_adult_stratum_separable",
+      "no_older_adult_stratum",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "result_direction": [
+      "increase",
+      "decrease",
+      "no_detected_difference",
+      "mixed_or_inconsistent",
+      "NR",
+      "NA",
+      "UNCLEAR"
     ]
+  },
+  "time_bin_rules": {
+    "ids": "controlled_vocabulary.time_bin (single list shared verbatim by extraction_template.json controlled_vocabulary_shared.time_bin and evidence_map_spec.json time_display_only.bins; contract 8.3f)",
+    "labels": {
+      "pre_exercise_baseline": "pre-exercise baseline",
+      "during": "during exercise (ancillary)",
+      "0_to_lt30min": "0 to <30 min after cessation",
+      "30min_to_lt3h": "30 min to <3 h",
+      "3h_to_lt24h": "3 to <24 h",
+      "24h_to_72h_inclusive": "24 to 72 h inclusive",
+      "gt72h": ">72 h (outside-window recovery)",
+      "matched_control_time": "matched control time (non-exercise condition)",
+      "NR": "not reported",
+      "NA": "not applicable",
+      "UNCLEAR": "unclear after full-text review"
+    },
+    "window_position": {
+      "pre_exercise_baseline": "pre_exercise_baseline",
+      "during": "during_exercise_ancillary",
+      "0_to_lt30min": "within_window",
+      "30min_to_lt3h": "within_window",
+      "3h_to_lt24h": "within_window",
+      "24h_to_72h_inclusive": "within_window",
+      "gt72h": "outside_window_recovery",
+      "matched_control_time": "matched_control_time",
+      "NR": "NR",
+      "NA": "NA",
+      "UNCLEAR": "UNCLEAR"
+    },
+    "rule": "Bins are mutually exclusive display categories derived from the exact time from cessation; never eligibility thresholds and never a substitute for the exact time. Bins up to and including 24h_to_72h_inclusive are within the organising window; gt72h is outside-window recovery. during is ancillary and not a post-exercise bin. Unknown timing is not imputed to a bin. ASCII IDs (lt/gt instead of < and >) avoid Excel operator parsing in COUNTIF/filters and CSV/shell quoting problems."
+  },
+  "vocabulary_crosswalks": {
+    "scope_stream": {
+      "vocabulary": [
+        "A_core_acute",
+        "B_support_repeated_bouts",
+        "background",
+        "excluded",
+        "uncertain",
+        "NR",
+        "NA",
+        "UNCLEAR"
+      ],
+      "definitions": {
+        "A_core_acute": "Core A: identifiable single bout or competition (any intensity, duration or mode), >=1 post-cessation immune-related sample, and a pre-bout baseline or suitable comparator; adults >= 18 y.",
+        "B_support_repeated_bouts": "Support B (retained; cross-bout open-window monitoring layer): same immune-related marker in the same individuals after >=2 identified bouts, explicit bout-to-sample timing and a baseline/suitable comparator; deduplicated against Core A by cohort_id and presented separately.",
+        "background": "Retained for context or citation chasing only (reviews; habitual-exercise or resting cross-sectional studies; training snapshots or seasonal surveillance with unknown last-bout timing); outside every original-study denominator.",
+        "excluded": "Excluded at title/abstract or full text (one primary FT01-FT08 code at full text).",
+        "uncertain": "Eligibility unresolved (awaiting classification/translation or not retrieved); never counted as excluded.",
+        "NR": "Not reported (missing-value code).",
+        "NA": "Not applicable, e.g. a duplicate record whose scope follows the retained record.",
+        "UNCLEAR": "Unclear after full-text review (missing-value code)."
+      },
+      "from_screening_disposition": {
+        "INCLUDE_A": [
+          "A_core_acute"
+        ],
+        "INCLUDE_B": [
+          "B_support_repeated_bouts"
+        ],
+        "INCLUDE_A_AND_B": [
+          "A_core_acute",
+          "B_support_repeated_bouts"
+        ],
+        "EXCLUDE_TA": [
+          "excluded",
+          "or background if retained for context"
+        ],
+        "EXCLUDE_FT": [
+          "excluded",
+          "or background if retained for context"
+        ],
+        "AWAITING_CLASSIFICATION": [
+          "uncertain"
+        ],
+        "AWAITING_TRANSLATION": [
+          "uncertain"
+        ],
+        "NOT_RETRIEVED": [
+          "uncertain"
+        ],
+        "FRONTIER_PREPRINT": [
+          "substantive stream as assessed (A_core_acute and/or B_support_repeated_bouts, or uncertain); publication_status = preprint keeps the report in the separate frontier register, never in core totals"
+        ],
+        "DUPLICATE_RECORD": [
+          "NA (scope follows the retained record)"
+        ],
+        "DUPLICATE_VERSION": [
+          "NA (scope follows the retained record)"
+        ],
+        "ADVANCE": [
+          "none: title/abstract-only disposition, not a final scope"
+        ]
+      },
+      "deprecated_labels": {
+        "acute_core": "A_core_acute",
+        "longitudinal_support": "B_support_repeated_bouts",
+        "contextual": "background",
+        "background_context": "background",
+        "awaiting_classification": "uncertain",
+        "not_retrieved": "uncertain",
+        "A_acute_bout": "A_core_acute",
+        "B_repeated_bout": "B_support_repeated_bouts",
+        "background_only": "background",
+        "CORE_A": "A_core_acute",
+        "CORE_B": "B_support_repeated_bouts",
+        "CONTEXT_ONLY": "background"
+      },
+      "rule": "One controlled vocabulary for dictionary, extraction template, appraisal template, evidence-map spec, protocol text and screening dispositions (contract 8.3g). reports.scope_stream (legacy, report level) and report_cohort_links.scope_streams (cohort level) are multi-valued so INCLUDE_A_AND_B maps to both A and B; overall cohort totals use the union, never the sum."
+    },
+    "evidence_state": {
+      "canonical": "data_dictionary.json controlled_vocabulary.evidence_state (precision_validation.evidence_state); the validation-readiness map cells use these states.",
+      "rows": [
+        {
+          "evidence_state": "evidence_present",
+          "meaning": "The report contains data that address this domain for this marker and support it.",
+          "appraisal_precision_profile_status": "EVIDENCE_REPORTED",
+          "map_reporting_status": "reported",
+          "map_validation_codes": [
+            "independent_site_or_cohort (validation supports the marker)"
+          ]
+        },
+        {
+          "evidence_state": "measured_null",
+          "meaning": "The domain was examined with data and the result was null, not supported or did not replicate.",
+          "appraisal_precision_profile_status": "EVIDENCE_REPORTED (evidence_note states the null result)",
+          "map_reporting_status": "reported",
+          "map_validation_codes": [
+            "independent_site_or_cohort (validation did not support or replicate)"
+          ]
+        },
+        {
+          "evidence_state": "not_demonstrated",
+          "meaning": "The report addresses or proposes the domain but its data do not demonstrate it (co-measured without an association test; proposed use only; internal or same-participant validation only when independent validation is charted).",
+          "appraisal_precision_profile_status": "EVIDENCE_REPORTED (evidence_note states what was not demonstrated)",
+          "map_reporting_status": "reported",
+          "map_validation_codes": [
+            "none",
+            "resampling_same_participants",
+            "participant_level_holdout_same_cohort"
+          ]
+        },
+        {
+          "evidence_state": "NR",
+          "meaning": "Nothing on this domain is reported in the accessible report; not evidence of absence.",
+          "appraisal_precision_profile_status": "NOT_REPORTED",
+          "map_reporting_status": "NR",
+          "map_validation_codes": [
+            "NR"
+          ]
+        },
+        {
+          "evidence_state": "NA",
+          "meaning": "Domain not applicable to this marker/design.",
+          "appraisal_precision_profile_status": "NOT_APPLICABLE",
+          "map_reporting_status": "NA",
+          "map_validation_codes": [
+            "NA"
+          ]
+        },
+        {
+          "evidence_state": "UNCLEAR",
+          "meaning": "Information is present but cannot be classified after full-text review.",
+          "appraisal_precision_profile_status": "UNCLEAR",
+          "map_reporting_status": "UNCLEAR",
+          "map_validation_codes": [
+            "UNCLEAR"
+          ]
+        },
+        {
+          "evidence_state": "(none: report-level status, not a domain state)",
+          "meaning": "Report not retrieved or awaiting classification; no precision_validation rows exist.",
+          "appraisal_precision_profile_status": "(no appraisal record)",
+          "map_reporting_status": "not_retrieved_awaiting_classification",
+          "map_validation_codes": []
+        }
+      ],
+      "deprecated_values": {
+        "evidence_state.not_reported": "NR",
+        "effect_value_source.not_reported": "NR",
+        "participant_linkage.not_reported": "NR",
+        "digitization_check.not_applicable": "NA",
+        "evidence_map_spec.validation.none_reported": "none",
+        "evidence_map_spec.validation.internal_resampling": "resampling_same_participants",
+        "evidence_map_spec.validation.participant_separated_test_set": "participant_level_holdout_same_cohort",
+        "evidence_map_spec.validation.independent_cohort": "independent_site_or_cohort",
+        "evidence_map_spec.clinical_endpoint.no_clinical_endpoint": "none_reported"
+      },
+      "functional_relation_to_relationship_tags": {
+        "not_measured": "no functional tag; functional_evidence = NR or NA",
+        "co_measured_no_association_test_reported": "co_measured_without_association_test",
+        "statistically_associated": "within_cohort_association",
+        "mechanistically_linked": "direct_in_vitro_or_ex_vivo_function_test | direct_in_vivo_function_test",
+        "NR": "NR",
+        "UNCLEAR": "UNCLEAR"
+      },
+      "tested_use_to_dictionary_and_appraisal": {
+        "not_tested": "validation_use_subtype = no_validation_or_use_test | appraisal decision_use_status = NOT_TESTED",
+        "proposed_only": "validation_use_subtype = no_validation_or_use_test, with reports.author_stated_use or precision_validation.intended_use recorded | PROPOSED_ONLY",
+        "tested_internal": "validation_use_subtype = internal_validation | TESTED",
+        "tested_in_independent_cohort_or_prospective_setting": "validation_use_subtype = independent_cohort_replication | independent_external_model_validation | prospective_use_or_impact_validation | implementation_or_field_use_validation | TESTED",
+        "NR": "NR | NR",
+        "NA": "NA | NA",
+        "UNCLEAR": "UNCLEAR | UNCLEAR"
+      },
+      "rule": "Appraisal precision_profile_status is a coarser reporting-level code; three extraction states collapse onto EVIDENCE_REPORTED and the appraisal evidence_note must name which. Map validation codes are identical to controlled_vocabulary.validation_split. NR is the only not-reported code."
+    },
+    "renamed_or_deprecated_columns": {
+      "reports.screening_A": "renamed to reports.screening_decision_reviewer_A (v3; not a legacy-61 column)",
+      "reports.screening_B": "renamed to reports.screening_decision_reviewer_B (v3; not a legacy-61 column)",
+      "reports.exclusion_reason": "deprecated alias of reports.primary_fulltext_exclusion_reason; legacy-61 column kept null"
+    },
+    "marker_family_classes": {
+      "conventional": [
+        "leukocyte_redistribution",
+        "NK_count_or_cytotoxicity",
+        "neutrophil_function",
+        "T_cell_subsets_or_function",
+        "mucosal_sIgA",
+        "cytokine_or_inflammatory_mediator",
+        "immunoglobulin_or_complement"
+      ],
+      "omics": [
+        "immune_cell_transcriptome",
+        "proteome",
+        "metabolome_or_lipidome",
+        "epigenome",
+        "ncRNA",
+        "single_cell"
+      ],
+      "other_or_missing": [
+        "other",
+        "NR",
+        "NA",
+        "UNCLEAR"
+      ]
+    }
   },
   "legacy_61_fields": [
     {
@@ -649,11 +966,11 @@
     },
     {
       "field": "scope_stream",
-      "description": "acute_core / longitudinal_support / contextual / excluded / uncertain",
+      "description": "A_core_acute / B_support_repeated_bouts / background / excluded / uncertain (+ NR / NA / UNCLEAR); multi-valued so INCLUDE_A_AND_B records both A and B. Legacy labels acute_core / longitudinal_support / contextual map to A_core_acute / B_support_repeated_bouts / background (vocabulary_crosswalks.scope_stream).",
       "module": "eligibility",
       "destination_table": "reports",
       "destination_column": "scope_stream",
-      "data_type": "enum",
+      "data_type": "multi_enum",
       "missing_value_rule": "After review: NR / NA / UNCLEAR. JSON null in blank_record means not yet extracted."
     },
     {
@@ -667,7 +984,7 @@
     },
     {
       "field": "exclusion_reason",
-      "description": "全文排除主原因",
+      "description": "全文排除主原因 — DEPRECATED alias in v3: record the single FT01-FT08 code in reports.primary_fulltext_exclusion_reason (canonical) and leave this legacy column null; retained only so the legacy-61 mapping resolves.",
       "module": "eligibility",
       "destination_table": "reports",
       "destination_column": "exclusion_reason",
@@ -721,7 +1038,7 @@
     },
     {
       "field": "age_sex",
-      "description": "年龄、性别及亚组",
+      "description": "年龄、性别及亚组；v3 另记 cohorts.age_range、adult_stratum_separable、older_adult_subgroup。",
       "module": "population",
       "destination_table": "cohorts",
       "destination_column": "age_sex",
@@ -775,7 +1092,7 @@
     },
     {
       "field": "dose",
-      "description": "持续时间、强度及强度量化方法",
+      "description": "持续时间、强度及强度量化方法（原文汇总）；v3 另以 sample_sets.exercise_duration / intensity_metric / intensity_value 分项按原文记录，不设任何暴露门槛。",
       "module": "exposure",
       "destination_table": "sample_sets",
       "destination_column": "dose",
@@ -829,7 +1146,7 @@
     },
     {
       "field": "time_bin",
-      "description": "仅为呈现：运动中、0–<30min、30min–<3h、3–<24h、24–72h、>72h、未报告",
+      "description": "仅为呈现（controlled_vocabulary.time_bin）：pre_exercise_baseline、during、0_to_lt30min、30min_to_lt3h、3h_to_lt24h、24h_to_72h_inclusive、gt72h、matched_control_time、NR/NA/UNCLEAR；24h_to_72h_inclusive 及之前的运动后分箱属组织窗口内，gt72h 为 outside-window recovery（time_bin_rules）。",
       "module": "sampling",
       "destination_table": "sample_sets",
       "destination_column": "time_bin",
@@ -1170,7 +1487,7 @@
         "UNCLEAR"
       ]
     },
-    "rule": "No sum, mean, ranking, readiness score, GRADE synthesis or clinical ranking."
+    "rule": "No sum, mean, ranking, readiness score, GRADE synthesis or clinical ranking. Domain evidence is summarised only as the validation-readiness map (see metadata.validation_readiness_map_definition; contract 8.3e)."
   },
   "analysis_unit_rules": {
     "n_recruited": "Unique people enrolled, before exclusion.",
@@ -1180,7 +1497,9 @@
     "individual_variation": "Record repeated baselines, repeat challenges and within-person variance/measurement error; raw pre-post difference alone does not establish reproducible responder status or personalized utility.",
     "candidate_universe": "For each assay, record the tested feature universe and available source files; enumerate every named immune candidate that meets the original aims/methods definition in accessible article/supplements regardless of significance. Never infer unreported nulls.",
     "figure_values": "Use numbers reported in text/tables/supplements first. If later digitization is necessary, predeclare the method and mark as digitized-from-figure; preserve panel locator, independent A/B readings and reconciliation.",
-    "support_B": "Require the same marker and same participants across at least two distinct identified exercise-bout IDs, known bout-to-sample timing, and a baseline/comparator."
+    "support_B": "Support B is retained (contract 2.4) as the cross-bout open-window monitoring layer: require the same marker and same participants across at least two distinct identified exercise-bout IDs, known bout-to-sample timing, and a baseline/comparator; deduplicate against Core A by cohort_id and present separately. It is the main evidence source for the individualization and repeatability domains.",
+    "organising_window": "0-72 h after cessation (72 h inclusive) is the organising window; immediate (0 h) samples are kept; samples later than 72 h are extracted as usual and tagged outside_window_recovery in sample_sets.within_organising_window. No exclusion code or administrative status refers to the window.",
+    "population": "Adults >= 18 y (generally healthy people and athletes); older adults are included and flagged (cohorts.older_adult_subgroup, as defined by the original authors; the review imposes no older-adult cut-off). Mixed-age cohorts are eligible only if an adult stratum is separable (cohorts.adult_stratum_separable); < 18 y establishes FT03."
   },
   "legacy_mapping_notes": {
     "doi_pmid": "Split to reports.doi and reports.pmid.",
@@ -1201,12 +1520,56 @@
     "measurements.supplement_availability / sources": "Record whether supplementary candidate/feature lists were available and exact links/locations, including inaccessible files.",
     "measurements.feature_total_count / unit / universe_locator": "Record total features or candidates in the reported/testing universe and the file/table/accession where it can be checked.",
     "measurements.result_status": "Distinguish explicit null/nonsignificant result from a named candidate whose result was not retrievable or not separately reported.",
-    "measurements.marker_series_id": "Link the same marker across at least two identified exercise bouts for Support B review.",
+    "measurements.marker_series_id": "Link the same marker across at least two identified exercise bouts for Support B review (cross-bout open-window monitoring layer).",
     "measurements.effect_value_source and digitization fields": "Distinguish author-reported values from digitized figure readings; record the predeclared method, panel, two readings and reconciliation.",
     "precision_validation.linkage_subtype": "Functional and clinical linkage remain child facets under one parent domain.",
     "precision_validation.validation_use_subtype": "Independent validation and use/impact testing remain child facets under one parent domain.",
     "measurements.tested_universe / n / unit": "Explicit assay-level tested feature space/denominator: definition plus count and unit, including platform and QC/filtering rules.",
-    "report_cohort_links.scope_streams": "Record applicable A_core_acute and/or B_support_repeated_bouts streams for this report-study-cohort relationship. Both may coexist; deduplicate overall cohort counts. Keep report-level scope_stream as the legacy summary; link-level memberships govern cohort-stratified maps."
+    "report_cohort_links.scope_streams": "Record applicable A_core_acute and/or B_support_repeated_bouts streams for this report-study-cohort relationship (controlled_vocabulary.scope_stream). Both may coexist; deduplicate overall cohort counts. Report-level scope_stream (multi-valued legacy summary) uses the same vocabulary; link-level memberships govern cohort-stratified maps.",
+    "reports.reference_id": "Project reference identifier: the record_id of the retained deduplicated screening record, or for pilot items the restart ledger ID (e.g. R59). Text; never reused.",
+    "reports.title": "Report title exactly as published in the version consulted (bibliographic metadata; single-person entry, second-person verification).",
+    "reports.authors": "Author list as published (surname and initials, \"; \"-separated).",
+    "reports.year": "Publication year of the version consulted (text, four digits).",
+    "reports.url": "Stable URL of the version consulted (DOI resolver preferred, otherwise PMC/publisher/preprint server URL).",
+    "reports.version_label": "Version label as published (e.g. version of record, online first, bioRxiv v2, correction notice); paired with version_date.",
+    "reports.screening_decision_reviewer_A": "Full-text screening disposition of human Reviewer A, copied verbatim from Reviewer A's locked screening workbook / merge output (04_screening/screening_log_template.json field_schema.screening_dispositions, FT stage). A reviewer decision, not Core A membership. Renamed in v3 from screening_A (not legacy-61).",
+    "reports.screening_decision_reviewer_B": "Full-text screening disposition of human Reviewer B, copied verbatim from Reviewer B's locked screening workbook / merge output (screening_dispositions, FT stage). A reviewer decision, not Support B membership. Renamed in v3 from screening_B (not legacy-61).",
+    "reports.consensus_screening_decision": "Reconciled full-text disposition (screening_log_template full_text.reconciliation.final_disposition): INCLUDE_A, INCLUDE_B, INCLUDE_A_AND_B, EXCLUDE_FT or an administrative status; maps to scope_stream through vocabulary_crosswalks.scope_stream.from_screening_disposition.",
+    "reports.primary_fulltext_exclusion_reason": "Canonical v3 field for the single primary full-text exclusion code (first established FT01-FT08 code; 04_screening/fulltext_exclusion_codes.json). Null unless consensus_screening_decision = EXCLUDE_FT; administrative statuses take no code. Supersedes the legacy column reports.exclusion_reason (deprecated alias, kept null).",
+    "reports.reviewer_notes": "Free-text reviewer notes on the report (secondary failed dimensions, boundary reasoning, unresolved questions) with source locators; not a decision field.",
+    "reports.author_stated_use": "Use of the marker(s) stated by the original authors, verbatim with locator (e.g. \"recovery monitoring\"); distinct from precision_validation.intended_use, the use actually evaluated.",
+    "reports.author_window_interpretation / locator": "Author open-window interpretation (controlled_vocabulary.author_window_interpretation; multi-valued, \"; \"): whether the report uses the open-window term, invokes immunosuppression or susceptibility without the term, interprets changes as redistribution, or offers no window interpretation; plus the locator(s) of the source passage. Charted descriptively under RQ2 (contract 8.3d); never used for eligibility or weighting. no_window_interpretation and NR are not combined with other values.",
+    "cohorts.cohort_label": "Short human-readable cohort label (e.g. \"recreational half-marathon runners, 2019 race\"); not an identifier.",
+    "cohorts.cohort_notes": "Free-text notes on the cohort (recruitment source, overlap reasoning with other reports, separable strata) with locators.",
+    "cohorts.age_range": "Age range and summary exactly as reported (e.g. \"18-35 y; mean 24.1 (SD 3.2)\"), including any older-adult threshold used by the authors; NR if not reported (unreported age remains awaiting classification at screening, not FT03).",
+    "cohorts.adult_stratum_separable": "Adult-population status (controlled_vocabulary.adult_stratum_separable): all participants >= 18 y; mixed-age cohort with a separable adult stratum (eligible; chart that stratum only); mixed-age cohort without a separable adult stratum, or all < 18 y (FT03; appears only in boundary/pilot records).",
+    "cohorts.older_adult_subgroup": "Older-adult subgroup flag (controlled_vocabulary.older_adult_subgroup) as defined by the original authors; the review imposes no older-adult age cut-off. Older adults are eligible and presented as a subgroup.",
+    "report_cohort_links.report_specific_population": "Subset of the cohort analysed in this report as described by the report (e.g. \"male finishers with complete saliva samples\").",
+    "report_cohort_links.link_notes": "Free-text justification of the report-study-cohort link (shared registry ID, identical baseline table, author statement) with locators.",
+    "sample_sets.group_condition": "Group or experimental condition of this sample set as reported (e.g. exercise arm, rest control, placebo + exercise).",
+    "sample_sets.intervention_phase": "Training-programme phase in which the bout was performed (e.g. pre-training, post-training, detraining), or single bout only; distinguishes acute challenges before and after training.",
+    "sample_sets.assay_platform": "Assay/platform of this sample set (e.g. flow-cytometry panel, ELISA kit, Olink panel, RNA-seq); rows are split when n differs between platforms. Sample-set counterpart of measurements.platform.",
+    "sample_sets.n_aliquots": "Number of aliquots analysed for this sample set; a processing count, never an independent biological n.",
+    "sample_sets.age_sex_stratum": "Age/sex stratum of this sample set when results are reported by stratum (e.g. women 18-30 y; older adults as defined by the authors); NA when results are not stratified.",
+    "sample_sets.sample_notes": "Free-text notes on the sample set (timing-anchor ambiguity, pooling, exclusions) with locators.",
+    "sample_sets.exercise_duration / intensity_metric / intensity_value": "Exercise exposure as reported, never an eligibility threshold (contract 2.1): duration with unit (e.g. \"90 min\", \"42.2 km, 3 h 41 min\"); intensity metric exactly as reported, absolute or relative (e.g. %VO2max, %HRmax, %1RM, W, RPE, race pace); intensity value with unit and dispersion as reported. NR when not reported. dose keeps the verbatim legacy summary; exercise_mode stays the legacy mode field.",
+    "sample_sets.within_organising_window": "Position of this sample set relative to the 0-72 h organising window (controlled_vocabulary.within_organising_window), derived from time_bin via time_bin_rules.window_position: within_window (0 to 72 h inclusive after cessation), outside_window_recovery (> 72 h; extracted and tagged, never excluded), pre_exercise_baseline, matched_control_time or during_exercise_ancillary.",
+    "measurements.effect_measure": "Type of effect statistic as reported (e.g. mean difference, fold change, log2FC, % change, ratio, correlation r, AUC).",
+    "measurements.effect_value": "Point estimate of the effect statistic exactly as reported (text, original precision); its origin is recorded in effect_value_source; NR if not reported. Reviewers never compute or convert values here.",
+    "measurements.effect_unit": "Unit of effect_value as reported (e.g. cells/uL, pg/mL, % of baseline, log2 units); NA for unitless statistics.",
+    "measurements.result_direction": "Direction of the reported result for this comparison (controlled_vocabulary.result_direction): increase, decrease, no_detected_difference, mixed_or_inconsistent; describes what the report says, not evidence certainty; non-significance is not recovery.",
+    "measurements.reported_feature_count": "Number of features for which the report presents results (rows in its results table or supplement), as stated or counted from the source; distinct from tested_universe_n (features tested) and feature_total_count (features in the reported/testing universe).",
+    "measurements.measurement_notes": "Free-text notes on the measurement row (unit conversions declined, ambiguous labels, cross-references) with locators.",
+    "measurements.figure_panel_locator": "Figure and panel from which a value was read (e.g. \"Fig. 3B, left\"); required when effect_value_source = digitized_from_figure, otherwise NA.",
+    "measurements.marker_family": "Marker family (controlled_vocabulary.marker_family; conventional vs omics classes in vocabulary_crosswalks.marker_family_classes) used to organise Figure 1 and the per-marker validation-readiness map (Figure 2). Assigned per row from the measured analyte/platform, not from author framing.",
+    "measurements.digitization_check": "Status of the second-reviewer check of a digitized value (controlled_vocabulary.digitization_check); NA when effect_value_source is not digitized_from_figure.",
+    "precision_validation.evidence_notes": "Free-text statement of the evidence object, sample unit, n, timing, cohort independence and locator supporting evidence_state for this domain row.",
+    "precision_validation.validation_split": "How validation participants were separated from development data (controlled_vocabulary.validation_split; identical to evidence_map_spec validation codes): none, resampling of the same participants, participant-level hold-out in the same cohort, independent site or cohort. Only independent_site_or_cohort can support evidence_present for independent validation (vocabulary_crosswalks.evidence_state).",
+    "extraction_provenance.recorded_at": "Date-time (ISO 8601 with time zone) at which the extraction or audit event was recorded.",
+    "extraction_provenance.provenance_notes": "Free-text notes on the extraction/audit event (deviations from the manual, access problems, AI-assistance details) with locators.",
+    "study_families.study_label": "Short human-readable study/trial label (e.g. acronym or programme name); not an identifier.",
+    "study_families.registry_ids": "Trial or study registry identifiers as reported (e.g. NCT, ISRCTN, ChiCTR, DRKS numbers), \"; \"-separated; NR if none is reported.",
+    "study_families.study_notes": "Free-text notes on the study family (linked protocols, sub-studies, programme history) with locators."
   },
-  "immune_link_definition": "For biofluid omics, an immune objective/candidate must be identifiable in original study aims or methods; preregistration is not required. Post-hoc immune pathway enrichment alone is context, not sufficient main-map immune linkage."
+  "immune_link_definition": "For biofluid omics, an immune objective/candidate must be identifiable in original study aims or methods; preregistration is not required. Post-hoc immune pathway enrichment alone is context, not sufficient main-map immune linkage. Cortisol, creatine kinase, lactate or HRV alone do not satisfy immune linkage; they are charted as covariates in otherwise eligible studies (contract 8.3b)."
 }

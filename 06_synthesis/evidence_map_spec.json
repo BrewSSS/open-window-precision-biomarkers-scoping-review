@@ -1,8 +1,12 @@
 {
-  "specification_version": "2.0",
-  "design_date": "2026-10-02",
+  "specification_version": "3.0",
+  "design_date": "2026-10-04",
+  "version_label": "3.0 (draft for team freeze) - 4 October 2026",
+  "design_contract": "01_protocol/v3_design_contract.txt",
   "status": "design_only_no_formal_results",
-  "project_focus": "precision monitoring of post-exercise immunity",
+  "project_focus": "precision biomarkers of the exercise-induced immune \"open window\": per-marker validation-readiness map of conventional and omics candidates within the 0-72 h organising window",
+  "organising_construct": "The exercise-induced immune \"open window\" is an organising construct only: it defines the post-exercise period after an identifiable bout (organising window 0-72 h after cessation, 72 h inclusive), the sampling time points and the marker families to be charted. The review does not test or adjudicate whether an open window exists; original authors' interpretations are charted descriptively (author_window_interpretation) and never affect eligibility or weighting.",
+  "validation_readiness_map_definition": "Validation-readiness map: a per-marker, domain-by-domain descriptive profile across the seven precision domains; not a score, ranking, grade or development ladder.",
   "methodology": {
     "review_type": "JBI scoping review",
     "framework": "PCC",
@@ -15,7 +19,7 @@
   "research_questions": [
     {
       "id": "RQ1",
-      "focus": "Biomarkers, platforms, cells/fluids, populations, and exercise contexts assessed after exercise.",
+      "focus": "Marker families, individual biomarkers, platforms, immune compartments and matrices measured within the organising window (0-72 h after cessation), in which adult populations and exercise settings (mode, duration and intensity as reported).",
       "outputs": [
         "Table 1",
         "Table 2",
@@ -24,7 +28,7 @@
     },
     {
       "id": "RQ2",
-      "focus": "Temporal response/recovery coverage and sensitivity to cell composition, hydration, sampling, and other confounders.",
+      "focus": "Time points covered within the window (0 to <30 min, 30 min to <3 h, 3 to <24 h, 24 to 72 h) and outside-window recovery points; handling of cell composition, hydration, sampling and other confounders; original authors' open-window interpretation, charted descriptively only.",
       "outputs": [
         "Table 2",
         "Figure 1"
@@ -32,7 +36,7 @@
     },
     {
       "id": "RQ3",
-      "focus": "Individual baselines, within-person variability/repeatability, response heterogeneity, subgroup or individualized models, and validation.",
+      "focus": "Individualization: personal baselines, within-person variability, repeatability across bouts (Support B), response heterogeneity, subgroup (including older adults) or individualized models, and how they were validated.",
       "outputs": [
         "Table 3",
         "Figure 2",
@@ -41,7 +45,7 @@
     },
     {
       "id": "RQ4",
-      "focus": "Functional co-measurement versus demonstrated association, clinical outcomes, validated prediction/use, and remaining development requirements.",
+      "focus": "Functions and clinical outcomes merely co-measured versus associated with markers; independent validation of monitoring or prediction uses; together with RQ1-RQ3 this yields the per-marker validation-readiness map and the remaining development requirements.",
       "outputs": [
         "Table 3",
         "Figure 2",
@@ -63,29 +67,86 @@
       "counting_rule": "Report counts are separate from cohort counts. Link preprint/published versions and related publications; count only eligible peer-reviewed reports in the core."
     },
     "record_id": {
-      "definition": "Marker/analyte or panel × assay/platform × matrix/cell × exercise contrast × exact timepoint observation; never an independent cohort."
+      "definition": "Marker/analyte or panel × assay/platform × matrix/cell × exercise contrast × exact timepoint observation; never an independent cohort. In the extraction template this is a measurements row (measurement_id) linked to sample_sets through sample_set_ids; not the screening record_id."
     },
     "n_fields": [
-      "participant_n_distinct",
-      "arm_n",
-      "biospecimen_n",
-      "cell_or_preparation_n",
-      "assay_n",
-      "technical_replicate_n",
-      "paired_within_person_status"
-    ]
+      "cohorts.n_recruited",
+      "report_cohort_links.n_analyzed",
+      "sample_sets.n_participants",
+      "sample_sets.n_donors",
+      "sample_sets.n_biological_samples",
+      "sample_sets.n_cells",
+      "sample_sets.n_technical_replicates",
+      "sample_sets.n_aliquots",
+      "sample_sets.pairing_structure",
+      "sample_sets.participant_linkage"
+    ],
+    "n_fields_note": "Field names are extraction_template.json table.column names. Former labels: participant_n_distinct -> sample_sets.n_participants (cohort level: report_cohort_links.n_analyzed); arm_n -> sample_sets.n_participants on the row of each group_condition; biospecimen_n -> sample_sets.n_biological_samples; cell_or_preparation_n -> sample_sets.n_cells; technical_replicate_n -> sample_sets.n_technical_replicates; paired_within_person_status -> sample_sets.pairing_structure and participant_linkage; assay_n is a derived count of distinct measurements.assay_universe_id, never an independent n."
   },
   "eligibility_strata": {
-    "A_acute_bout": "Identifiable acute bout/competition, pre-bout baseline or suitable comparator, and at least one post-cessation sample. Immediate-only informs response, not recovery. During-only is excluded. No <30-minute minimum and no hard 72-hour maximum.",
-    "B_repeated_bout": "The same immune-related marker is measured in the same individuals after at least two identifiable bouts or competitions; each post-bout sample has a known or reliably recoverable exercise-to-sampling relation, and a baseline or appropriate comparator enables interpretation. Separate from A; a cohort may meet both and must not be double-counted overall.",
-    "background_only": [
+    "vocabulary": [
+      "A_core_acute",
+      "B_support_repeated_bouts",
+      "background",
+      "excluded",
+      "uncertain",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "A_core_acute": "Identifiable single bout or competition of any intensity, duration or mode (recorded as reported; never an eligibility threshold), pre-bout baseline or suitable comparator, and at least one post-cessation sample; adults >= 18 y (separable adult stratum in mixed-age cohorts; older adults flagged as a subgroup). Immediate-only informs response, not recovery. During-only is excluded. No <30-minute minimum; 0-72 h is the organising window, not a maximum: later samples are charted and tagged outside-window recovery.",
+    "B_support_repeated_bouts": "Retained as the cross-bout open-window monitoring layer: the same immune-related marker is measured in the same individuals after at least two identifiable bouts or competitions; each post-bout sample has a known or reliably recoverable exercise-to-sampling relation, and a baseline or appropriate comparator enables interpretation. Main evidence source for the individualization and repeatability domains. Separate from A; a cohort may meet both and is deduplicated against A by cohort_id, never double-counted overall.",
+    "background": [
       "Habitual activity cross-sectional studies",
       "General weekly or seasonal resting monitoring with unknown last-bout timing",
       "Pure training pre/post snapshots with unknown exercise-to-sampling timing",
       "Post-hoc immune pathway enrichment in otherwise general muscle/metabolic work without the prespecified immune link",
       "Animal or in-vitro-only reports"
     ],
-    "frontier_preprints": "Separate register and denominator; never included in peer-reviewed core totals. Link duplicate preprint-to-published versions."
+    "excluded": "Excluded at title/abstract or full text with one primary FT01-FT08 code; not mapped.",
+    "uncertain": "Awaiting classification or translation, or not retrieved; shown separately, never counted as excluded or as evidence.",
+    "frontier_preprints": "Separate register and denominator; never included in peer-reviewed core totals. Link duplicate preprint-to-published versions.",
+    "screening_disposition_crosswalk": {
+      "INCLUDE_A": [
+        "A_core_acute"
+      ],
+      "INCLUDE_B": [
+        "B_support_repeated_bouts"
+      ],
+      "INCLUDE_A_AND_B": [
+        "A_core_acute",
+        "B_support_repeated_bouts"
+      ],
+      "EXCLUDE_TA": [
+        "excluded",
+        "or background if retained for context"
+      ],
+      "EXCLUDE_FT": [
+        "excluded",
+        "or background if retained for context"
+      ],
+      "AWAITING_CLASSIFICATION": [
+        "uncertain"
+      ],
+      "AWAITING_TRANSLATION": [
+        "uncertain"
+      ],
+      "NOT_RETRIEVED": [
+        "uncertain"
+      ],
+      "FRONTIER_PREPRINT": [
+        "substantive stream as assessed (A_core_acute and/or B_support_repeated_bouts, or uncertain); publication_status = preprint keeps the report in the separate frontier register, never in core totals"
+      ],
+      "DUPLICATE_RECORD": [
+        "NA (scope follows the retained record)"
+      ],
+      "DUPLICATE_VERSION": [
+        "NA (scope follows the retained record)"
+      ],
+      "ADVANCE": [
+        "none: title/abstract-only disposition, not a final scope"
+      ]
+    }
   },
   "precision_domains": [
     {
@@ -94,7 +155,7 @@
     },
     {
       "id": "temporal_validity",
-      "meaning": "Sampling coverage, timing anchor, response and recovery behavior, and repeatability over time."
+      "meaning": "Sampling coverage relative to the 0-72 h organising window (within-window bins and outside-window recovery), timing anchor, response and recovery behavior, and repeatability over time."
     },
     {
       "id": "immune_specificity",
@@ -118,12 +179,21 @@
     }
   ],
   "evidence_state_codes": {
+    "evidence_state": [
+      "evidence_present",
+      "measured_null",
+      "not_demonstrated",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
     "direction": [
       "increase",
       "decrease",
       "no_detected_difference",
       "mixed_or_inconsistent",
       "NR",
+      "NA",
       "UNCLEAR"
     ],
     "reporting_status": [
@@ -142,19 +212,22 @@
       "UNCLEAR"
     ],
     "clinical_endpoint": [
+      "none_reported",
       "self_reported_symptoms",
       "clinician_defined_syndrome",
       "pathogen_confirmed_infection",
-      "no_clinical_endpoint",
+      "other_clinical_endpoint",
       "NR",
+      "NA",
       "UNCLEAR"
     ],
     "validation": [
-      "none_reported",
-      "internal_resampling",
-      "participant_separated_test_set",
-      "independent_cohort",
+      "none",
+      "resampling_same_participants",
+      "participant_level_holdout_same_cohort",
+      "independent_site_or_cohort",
       "NR",
+      "NA",
       "UNCLEAR"
     ],
     "tested_use": [
@@ -165,7 +238,105 @@
       "NR",
       "NA",
       "UNCLEAR"
-    ]
+    ],
+    "source_note": "evidence_state, direction, clinical_endpoint and validation are verbatim copies of data_dictionary.json controlled_vocabulary.evidence_state, result_direction, clinical_endpoint and validation_split. Map cells use evidence_state; the other lists are facet details mapped in crosswalk.",
+    "crosswalk": {
+      "canonical": "data_dictionary.json controlled_vocabulary.evidence_state (precision_validation.evidence_state); the validation-readiness map cells use these states.",
+      "rows": [
+        {
+          "evidence_state": "evidence_present",
+          "meaning": "The report contains data that address this domain for this marker and support it.",
+          "appraisal_precision_profile_status": "EVIDENCE_REPORTED",
+          "map_reporting_status": "reported",
+          "map_validation_codes": [
+            "independent_site_or_cohort (validation supports the marker)"
+          ]
+        },
+        {
+          "evidence_state": "measured_null",
+          "meaning": "The domain was examined with data and the result was null, not supported or did not replicate.",
+          "appraisal_precision_profile_status": "EVIDENCE_REPORTED (evidence_note states the null result)",
+          "map_reporting_status": "reported",
+          "map_validation_codes": [
+            "independent_site_or_cohort (validation did not support or replicate)"
+          ]
+        },
+        {
+          "evidence_state": "not_demonstrated",
+          "meaning": "The report addresses or proposes the domain but its data do not demonstrate it (co-measured without an association test; proposed use only; internal or same-participant validation only when independent validation is charted).",
+          "appraisal_precision_profile_status": "EVIDENCE_REPORTED (evidence_note states what was not demonstrated)",
+          "map_reporting_status": "reported",
+          "map_validation_codes": [
+            "none",
+            "resampling_same_participants",
+            "participant_level_holdout_same_cohort"
+          ]
+        },
+        {
+          "evidence_state": "NR",
+          "meaning": "Nothing on this domain is reported in the accessible report; not evidence of absence.",
+          "appraisal_precision_profile_status": "NOT_REPORTED",
+          "map_reporting_status": "NR",
+          "map_validation_codes": [
+            "NR"
+          ]
+        },
+        {
+          "evidence_state": "NA",
+          "meaning": "Domain not applicable to this marker/design.",
+          "appraisal_precision_profile_status": "NOT_APPLICABLE",
+          "map_reporting_status": "NA",
+          "map_validation_codes": [
+            "NA"
+          ]
+        },
+        {
+          "evidence_state": "UNCLEAR",
+          "meaning": "Information is present but cannot be classified after full-text review.",
+          "appraisal_precision_profile_status": "UNCLEAR",
+          "map_reporting_status": "UNCLEAR",
+          "map_validation_codes": [
+            "UNCLEAR"
+          ]
+        },
+        {
+          "evidence_state": "(none: report-level status, not a domain state)",
+          "meaning": "Report not retrieved or awaiting classification; no precision_validation rows exist.",
+          "appraisal_precision_profile_status": "(no appraisal record)",
+          "map_reporting_status": "not_retrieved_awaiting_classification",
+          "map_validation_codes": []
+        }
+      ],
+      "deprecated_values": {
+        "evidence_state.not_reported": "NR",
+        "effect_value_source.not_reported": "NR",
+        "participant_linkage.not_reported": "NR",
+        "digitization_check.not_applicable": "NA",
+        "evidence_map_spec.validation.none_reported": "none",
+        "evidence_map_spec.validation.internal_resampling": "resampling_same_participants",
+        "evidence_map_spec.validation.participant_separated_test_set": "participant_level_holdout_same_cohort",
+        "evidence_map_spec.validation.independent_cohort": "independent_site_or_cohort",
+        "evidence_map_spec.clinical_endpoint.no_clinical_endpoint": "none_reported"
+      },
+      "functional_relation_to_relationship_tags": {
+        "not_measured": "no functional tag; functional_evidence = NR or NA",
+        "co_measured_no_association_test_reported": "co_measured_without_association_test",
+        "statistically_associated": "within_cohort_association",
+        "mechanistically_linked": "direct_in_vitro_or_ex_vivo_function_test | direct_in_vivo_function_test",
+        "NR": "NR",
+        "UNCLEAR": "UNCLEAR"
+      },
+      "tested_use_to_dictionary_and_appraisal": {
+        "not_tested": "validation_use_subtype = no_validation_or_use_test | appraisal decision_use_status = NOT_TESTED",
+        "proposed_only": "validation_use_subtype = no_validation_or_use_test, with reports.author_stated_use or precision_validation.intended_use recorded | PROPOSED_ONLY",
+        "tested_internal": "validation_use_subtype = internal_validation | TESTED",
+        "tested_in_independent_cohort_or_prospective_setting": "validation_use_subtype = independent_cohort_replication | independent_external_model_validation | prospective_use_or_impact_validation | implementation_or_field_use_validation | TESTED",
+        "NR": "NR | NR",
+        "NA": "NA | NA",
+        "UNCLEAR": "UNCLEAR | UNCLEAR"
+      },
+      "rule": "Appraisal precision_profile_status is a coarser reporting-level code; three extraction states collapse onto EVIDENCE_REPORTED and the appraisal evidence_note must name which. Map validation codes are identical to controlled_vocabulary.validation_split. NR is the only not-reported code."
+    }
   },
   "missingness_rules": {
     "NR": "Not reported in accessible material; not evidence that it was absent or not performed.",
@@ -177,52 +348,87 @@
   "time_display_only": {
     "origin": "Retain exact source-reported timing and whether anchored to exercise onset, cessation, or another event.",
     "bins": [
+      "pre_exercise_baseline",
       "during",
       "0_to_lt30min",
       "30min_to_lt3h",
       "3h_to_lt24h",
       "24h_to_72h_inclusive",
       "gt72h",
-      "NR"
+      "matched_control_time",
+      "NR",
+      "NA",
+      "UNCLEAR"
     ],
-    "rule": "Bins are for visualization only; never apply as eligibility cutoffs or definitions of recovery. During-exercise observations are ancillary. Keep illness symptom timing on a separate axis."
+    "labels": {
+      "pre_exercise_baseline": "pre-exercise baseline",
+      "during": "during exercise (ancillary)",
+      "0_to_lt30min": "0 to <30 min after cessation",
+      "30min_to_lt3h": "30 min to <3 h",
+      "3h_to_lt24h": "3 to <24 h",
+      "24h_to_72h_inclusive": "24 to 72 h inclusive",
+      "gt72h": ">72 h (outside-window recovery)",
+      "matched_control_time": "matched control time (non-exercise condition)",
+      "NR": "not reported",
+      "NA": "not applicable",
+      "UNCLEAR": "unclear after full-text review"
+    },
+    "window_position": {
+      "pre_exercise_baseline": "pre_exercise_baseline",
+      "during": "during_exercise_ancillary",
+      "0_to_lt30min": "within_window",
+      "30min_to_lt3h": "within_window",
+      "3h_to_lt24h": "within_window",
+      "24h_to_72h_inclusive": "within_window",
+      "gt72h": "outside_window_recovery",
+      "matched_control_time": "matched_control_time",
+      "NR": "NR",
+      "NA": "NA",
+      "UNCLEAR": "UNCLEAR"
+    },
+    "rule": "Single controlled list shared with data_dictionary.json controlled_vocabulary.time_bin and extraction_template.json (contract 8.3f). Bins up to and including 24h_to_72h_inclusive are within the organising window; gt72h is outside-window recovery and is shown separately, never dropped. Bins are for visualization only; never apply them as eligibility cutoffs or definitions of recovery. During-exercise observations are ancillary. Keep illness symptom timing on a separate axis."
   },
   "outputs": {
     "figures": [
       {
         "id": "Figure 1",
-        "type": "time_by_immune_compartment_or_matrix",
+        "title": "Open-window time x immune compartment/marker family map",
+        "type": "open_window_time_by_immune_compartment_and_marker_family",
         "questions": [
           "RQ1",
           "RQ2"
         ],
         "dimensions": [
           "exact post-exercise time from stated anchor",
-          "display-only time bin",
+          "time bin (display only) and window position: within organising window vs outside-window recovery",
           "immune compartment or matrix",
-          "exercise/population context",
-          "marker class/platform annotation"
+          "marker family (controlled_vocabulary.marker_family), conventional vs omics",
+          "exercise context (mode, duration and intensity as reported) and population stratum (including older adults)"
         ],
         "unit_and_denominator": "Unique cohorts are the primary unit within each displayed cell; reports are shown separately. A cohort represented in multiple bins is coverage in each bin, not a new cohort; do not add bin totals. Timepoints and assay records are not independent evidence."
       },
       {
         "id": "Figure 2",
-        "type": "candidate_monitoring_use_by_seven_precision_domains",
+        "title": "Per-marker validation-readiness map",
+        "type": "per_marker_validation_readiness_map",
         "questions": [
           "RQ3",
           "RQ4"
         ],
+        "definition": "validation_readiness_map_definition (contract 8.3e)",
         "dimensions": [
-          "candidate or candidate family and stated monitoring use",
+          "marker or marker family (rows), conventional vs omics candidates distinguishable",
           "analytical reliability",
           "temporal validity",
           "immune specificity",
           "individualization",
           "functional/clinical linkage",
           "independent validation and tested use",
-          "feasibility"
+          "feasibility",
+          "evidence_state per cell (evidence_present, measured_null, not_demonstrated, NR, NA, UNCLEAR)",
+          "Core A / Support B stream"
         ],
-        "unit_and_denominator": "Report unique-cohort and report denominators separately for each candidate/domain. Candidate rows/facets can share cohorts and must not be added as independent evidence. Proposed use is not tested use; show NR/NA/UNCLEAR explicitly."
+        "unit_and_denominator": "Report unique-cohort and report denominators separately for each marker/domain cell. Marker rows can share cohorts and must not be added as independent evidence. Proposed use is not tested use; show NR/NA/UNCLEAR explicitly. Cells are descriptive states, never summed across domains into a score, ranking, grade or ladder."
       },
       {
         "id": "Figure 3",
@@ -246,7 +452,7 @@
     "standard_reporting_figure": {
       "id": "PRISMA-ScR flow diagram",
       "status": "Template only until formal searches and screening are complete.",
-      "rule": "Never enter zero or any synthetic count; distinguish database and other-source records and report-level selection from cohort-level synthesis."
+      "rule": "Never enter zero or any synthetic count; distinguish database and other-source records and report-level selection from cohort-level synthesis. Submitted with the PRISMA-ScR checklist as supplementary material (Frontiers in Immunology requirement verified 2026-10-04)."
     },
     "tables": [
       {
@@ -261,7 +467,10 @@
           "immune-link basis",
           "duplicate/version links",
           "appraisal pointer",
-          "marker class/platform and matrix/compartment landscape"
+          "marker class/platform and matrix/compartment landscape",
+          "age range, adult-stratum separability and older-adult subgroup",
+          "exercise mode, duration and intensity as reported",
+          "author open-window interpretation tag"
         ]
       },
       {
@@ -276,7 +485,9 @@
           "pairing",
           "comparator",
           "confounders",
-          "direction/null/uncertainty"
+          "direction/null/uncertainty",
+          "marker family",
+          "time bin and window position (within organising window / outside-window recovery)"
         ]
       },
       {
@@ -293,7 +504,7 @@
           "feasibility",
           "critical appraisal concerns"
         ],
-        "rule": "No aggregate score or candidate rank."
+        "rule": "No aggregate score or candidate rank; cells feed the validation-readiness map (see the validation-readiness map definition in this file; contract 8.3e)."
       }
     ]
   },
@@ -304,29 +515,44 @@
     "Functional co-measurement is not association. State an association only when the original report explicitly tests it.",
     "Separate molecular annotation from direct function and self-reported symptoms from clinician-defined and pathogen-confirmed illness.",
     "Do not call raw-change/noise-defined participants responders; assess measurement error and within-person variability before individual labeling.",
-    "No meta-analysis, clinical ranking, GRADE, or composite precision-readiness score.",
+    "No meta-analysis, clinical ranking, GRADE, or composite precision-readiness score; domain evidence is shown only as the validation-readiness map (see the validation-readiness map definition in this file; contract 8.3e).",
     "Critical appraisal is descriptive, domain-specific, and not an unstated ranking or exclusion filter.",
-    "Keep the seven precision domains separate; proposed monitoring/decision utility is not evidence of tested use."
+    "Keep the seven precision domains separate; proposed monitoring/decision utility is not evidence of tested use.",
+    "The open window is an organising construct only; the synthesis neither tests nor adjudicates whether an open window exists, and author open-window interpretations are charted descriptively.",
+    "Report samples within the 0-72 h organising window separately from outside-window recovery samples (> 72 h); both are charted.",
+    "Exercise mode, duration and intensity are evidence-map strata, never eligibility thresholds.",
+    "Only adults (>= 18 y) are charted; older adults are presented as a subgroup."
   ],
   "submission_fit": {
     "target": "Frontiers in Immunology",
-    "portal_category_plan": "Select Systematic Review if it remains available for the chosen specialty section at submission; Frontiers currently lists scoping reviews under this category.",
+    "portal_category_plan": "Frontiers in Immunology \"Systematic Review\" article type, which includes scoping reviews (verified 2026-10-04); reconfirm the specialty-section dropdown at submission.",
     "method_and_reporting": "Keep JBI scoping review/PCC methodology with PRISMA-ScR and PRISMA-S; do not force PICO or meta-analysis.",
     "acceptance": "No acceptance or editorial-fit guarantee. Reconfirm current specialty dropdown, article type, and author instructions before submission.",
+    "reporting_supplements": [
+      "PRISMA-ScR checklist (supplementary material)",
+      "PRISMA-ScR flow diagram (supplementary material; template until real counts exist)",
+      "PRISMA-S search appendix"
+    ],
+    "ai_disclosure": "Disclose AI use in both Methods and Acknowledgments with tool name, version, model and source, from 01_protocol/ai_use_log.json.",
+    "protocol_and_data_availability": "Protocol v3.0 archived as a GitHub Release with a Zenodo version DOI (assigned on release); never registered in any registry. Data, templates and code: public GitHub repository + Zenodo DOI; documents CC BY 4.0, scripts MIT.",
     "official_sources": [
       "https://www.frontiersin.org/journals/immunology/sections/systems-immunology/for-authors/article-types",
-      "https://www.frontiersin.org/for-authors/where-to-publish/article-types"
+      "https://www.frontiersin.org/for-authors/where-to-publish/article-types",
+      "https://www.frontiersin.org/guidelines/author-guidelines",
+      "https://www.frontiersin.org/guidelines/policies-and-publication-ethics#artificial-intelligence-policy"
     ]
   },
   "prohibited_inferences": [
-    "The open-window hypothesis is proven or necessarily means post-exercise immunosuppression.",
+    "The review adjudicates whether an open window exists, or the open-window hypothesis is proven, refuted or necessarily means post-exercise immunosuppression (the open window is an organising construct only).",
     "A group mean or omics/AI finding alone demonstrates precision or individual utility.",
     "A marker measured with a functional readout is associated with that readout without an explicit test.",
     "NR means not assessed, absent, or no effect.",
     "A non-significant test proves no change or recovery to baseline.",
     "A time-display bin is a biological threshold or eligibility criterion.",
     "A within-cohort random split is external validation or a raw change establishes responder status.",
-    "The synthesis establishes clinical readiness or return-to-training decisions."
+    "The synthesis establishes clinical readiness or return-to-training decisions, or a validation-readiness map cell is a score, rank or grade (see the validation-readiness map definition in this file; contract 8.3e).",
+    "Samples later than 72 h are outside the evidence base (they are charted as outside-window recovery).",
+    "An author's endorsement or rejection of the open-window hypothesis strengthens or weakens a marker's evidence."
   ],
   "not_results": {
     "formal_searches_executed": false,

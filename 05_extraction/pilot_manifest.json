@@ -1,13 +1,17 @@
 {
-  "status": "Proposed purposive charting calibration only; not completed screening and not the random 50-record screening agreement pilot. Human decisions are blank.",
-  "date": "2026-10-02",
+  "status": "Proposed purposive charting calibration only; not completed screening and not the random 50-record screening agreement pilot. Runs after the archived v3.0 release (GitHub Release + Zenodo version DOI) and before formal searching. Human decisions are blank.",
+  "date": "2026-10-04",
+  "protocol_version_label": "3.0 (draft for team freeze) - 4 October 2026",
+  "design_contract": "01_protocol/v3_design_contract.txt",
   "n_items": 10,
   "selection_source": "02_preliminary/restart_2026-10-02/pilot_manifest.json",
   "notes": [
     "Reference and lane entry IDs point to current restart ledger/lanes.",
     "R01 and R19 link multiple lane rows about the same report; do not double count.",
     "This list is not a formal included-study count.",
-    "R42 is the pooled-urine training boundary/background example under the v2 contract; pilot selection does not imply A/B eligibility."
+    "R42 is the pooled-urine training boundary/background example under the v3 contract (rules unchanged from v2 for resting/training studies, contract 2.5); pilot selection does not imply A/B eligibility.",
+    "R62 (adolescent cohort) is repurposed in v3 as the population boundary case: participants < 18 y establish FT03 under contract 2.3, so it calibrates age_range, adult_stratum_separable and the FT03 decision; it is not expected to be charted as eligible evidence. The item count stays 10.",
+    "If the pilot changes a rule, the protocol is re-released as v3.1 (new Zenodo version DOI, same concept DOI) before formal searching."
   ],
   "items": [
     {
@@ -98,7 +102,7 @@
           "source_locator_in_restart": "Abstract; Methods: Study Design, Blood Sampling and Analysis, Library Construction, Bioinformatic Analysis; Results; Data Availability; GEO GSE324210."
         }
       ],
-      "pilot_purpose": "青少年训练前后急性挑战",
+      "pilot_purpose": "人群边界案例：青少年（<18 岁）队列——按 v3 契约 2.3 属 FT03（不可分出成人层），用于校准 age_range、adult_stratum_separable 与 FT03 判定；不预期作为合格证据提取",
       "status": "not_started",
       "reviewer_A_decision": null,
       "reviewer_B_decision": null,
@@ -148,7 +152,7 @@
           "source_locator_in_restart": "Full-text Methods (Participants, training protocol, sample collection, proteomics, ELISA) and Results (immune indices, urinary protein candidates); Abstract for reported outcomes."
         }
       ],
-      "pilot_purpose": "混合尿样、技术重复与运动—采样时序边界（按v2契约先作背景校准；仅全文澄清事件与时间关系后再评估A/B资格）",
+      "pilot_purpose": "混合尿样、技术重复与运动—采样时序边界（按 v3 契约先作背景校准，静息/训练研究规则沿用 v2；仅全文澄清事件与时间关系后再评估 A/B 资格）",
       "status": "not_started",
       "reviewer_A_decision": null,
       "reviewer_B_decision": null,

@@ -114,7 +114,8 @@
         "governance files per change-map section B3: registration_draft.md renamed archive_release_record.md and rewritten; execution_plan.md; README.md; CHANGELOG.md; amendments.json; project_settings.json; ai_use_log.json; three root entry stubs; verification/official_sources.json and verification/README.md",
         "PubMed E-utilities (esummary/efetch) verification of new references 15-20 and of the Peake 2017 abstract sentence quoted in section A",
         "live access check (HTTP 200 and text match) of the Frontiers AI policy, Frontiers Systematic Review article-type, PROSPERO registration-guidance, OSF Generalized Systematic Review template and JBI 10.2.2 pages recorded in official_sources.json",
-        "takeover audit 2026-10-04 (claude-opus-5-5): row-by-row check of E1-E47 and B3; Introduction positioning names the open-window debate holders and adjacent reviews; PubMed efetch and Crossref re-check of references 15-20; Frontiers PRISMA and GitHub-Zenodo pages re-accessed"
+        "takeover audit 2026-10-04 (claude-opus-5-5): row-by-row check of E1-E47 and B3; Introduction positioning names the open-window debate holders and adjacent reviews; PubMed efetch and Crossref re-check of references 15-20; Frontiers PRISMA and GitHub-Zenodo pages re-accessed",
+        "05_extraction/06_synthesis v3 edit (data dictionary fields and vocabularies, template sync, evidence-map spec, synthesis plan, manuscript blueprint) by delegated model claude-opus-5-5; 03_search/04_screening v3 edit by claude-opus-5-5; CN protocol alignment by claude-opus-5-5"
       ],
       "prompt_source": "Coordinator work order in the 2026-10-04 Claude Code session (change map B1/B3 plus contract section 8 default rulings)",
       "output_sources": [

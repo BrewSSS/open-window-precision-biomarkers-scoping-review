@@ -1,18 +1,62 @@
 {
   "metadata": {
-    "schema_version": "2.0",
+    "schema_version": "3.0",
+    "version_label": "3.0 (draft for team freeze) - 4 October 2026",
     "status": "empty template; no included studies or extraction records",
     "created_date": "2026-10-02",
+    "updated_date": "2026-10-04",
     "dictionary": "data_dictionary.json",
-    "source_contract": "01_protocol/v2_design_contract.txt",
-    "note": "blank_record null means not yet entered; after source review use NR/NA/UNCLEAR.",
+    "source_contract": "01_protocol/v3_design_contract.txt",
+    "note": "blank_record null means not yet entered; after source review use NR/NA/UNCLEAR. blank_record structures are identical, field for field and in order, to data_dictionary.json relational_model.table_specs (checked by script).",
     "legacy_source_field_count": 61,
-    "field_count_note": "The 61 legacy source fields are retained and mapped; the operational schema adds relational, donor-count, assay-universe, candidate-selection, supplement-traceability and digitization fields."
+    "field_count_note": "The 61 legacy source fields are retained and mapped (no legacy table or column renamed); the operational schema adds relational, donor-count, assay-universe, candidate-selection, supplement-traceability, digitization and, in v3, open-window organising-construct fields (marker family, window position, exposure as reported, adult-stratum separability, author window interpretation).",
+    "organising_construct": "The exercise-induced immune \"open window\" is an organising construct only: it defines the post-exercise period after an identifiable bout (organising window 0-72 h after cessation, 72 h inclusive), the sampling time points and the marker families to be charted. The review does not test or adjudicate whether an open window exists; original authors' interpretations are charted descriptively (author_window_interpretation) and never affect eligibility or weighting.",
+    "validation_readiness_map_definition": "Validation-readiness map: a per-marker, domain-by-domain descriptive profile across the seven precision domains; not a score, ranking, grade or development ladder.",
+    "excel_workbooks": "Generated from this template and data_dictionary.json by scripts/build_workbooks.py (--only extraction; --reviewer A/B for per-reviewer files); CSV exports versioned in git."
   },
   "missing_codes": {
     "NR": "未报告",
     "NA": "不适用",
     "UNCLEAR": "全文仍不清楚"
+  },
+  "controlled_vocabulary_shared": {
+    "source": "Verbatim copies of data_dictionary.json controlled_vocabulary.time_bin, time_bin_rules.window_position and controlled_vocabulary.scope_stream (contract 8.3f, 8.3g); the dictionary is canonical.",
+    "time_bin": [
+      "pre_exercise_baseline",
+      "during",
+      "0_to_lt30min",
+      "30min_to_lt3h",
+      "3h_to_lt24h",
+      "24h_to_72h_inclusive",
+      "gt72h",
+      "matched_control_time",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ],
+    "time_bin_window_position": {
+      "pre_exercise_baseline": "pre_exercise_baseline",
+      "during": "during_exercise_ancillary",
+      "0_to_lt30min": "within_window",
+      "30min_to_lt3h": "within_window",
+      "3h_to_lt24h": "within_window",
+      "24h_to_72h_inclusive": "within_window",
+      "gt72h": "outside_window_recovery",
+      "matched_control_time": "matched_control_time",
+      "NR": "NR",
+      "NA": "NA",
+      "UNCLEAR": "UNCLEAR"
+    },
+    "scope_stream": [
+      "A_core_acute",
+      "B_support_repeated_bouts",
+      "background",
+      "excluded",
+      "uncertain",
+      "NR",
+      "NA",
+      "UNCLEAR"
+    ]
   },
   "tables": {
     "reports": {
@@ -33,16 +77,18 @@
         "version_date": null,
         "version_label": null,
         "source_locator": [],
-        "scope_stream": null,
+        "scope_stream": [],
         "inclusion_reason": null,
         "exclusion_reason": null,
         "immune_link": [],
-        "screening_A": null,
-        "screening_B": null,
+        "screening_decision_reviewer_A": null,
+        "screening_decision_reviewer_B": null,
         "consensus_screening_decision": null,
         "primary_fulltext_exclusion_reason": null,
         "reviewer_notes": null,
-        "author_stated_use": null
+        "author_stated_use": null,
+        "author_window_interpretation": [],
+        "author_window_interpretation_locator": []
       }
     },
     "cohorts": {
@@ -61,7 +107,10 @@
         "age_sex": null,
         "training_status": null,
         "sport": null,
-        "cohort_notes": null
+        "cohort_notes": null,
+        "age_range": null,
+        "adult_stratum_separable": null,
+        "older_adult_subgroup": null
       }
     },
     "report_cohort_links": {
@@ -132,7 +181,11 @@
         "bout_number": null,
         "participant_linkage": null,
         "n_donors": null,
-        "donor_count_basis": null
+        "donor_count_basis": null,
+        "exercise_duration": null,
+        "intensity_metric": null,
+        "intensity_value": null,
+        "within_organising_window": null
       }
     },
     "measurements": {
@@ -202,7 +255,9 @@
         "digitizer_A": null,
         "digitizer_B": null,
         "digitization_reconciled_value": null,
-        "digitization_notes": null
+        "digitization_notes": null,
+        "marker_family": null,
+        "digitization_check": null
       }
     },
     "precision_validation": {
@@ -238,7 +293,8 @@
         "evidence_notes": null,
         "intended_use": null,
         "linkage_subtype": null,
-        "validation_use_subtype": null
+        "validation_use_subtype": null,
+        "validation_split": null
       }
     },
     "extraction_provenance": {
@@ -295,14 +351,19 @@
     "Primary keys are unique, nonempty stable IDs; required linkage keys are never NR/NA/UNCLEAR.",
     "Every sample, measurement and precision report_id/study_id/cohort_id tuple exists in report_cohort_links.",
     "Each measurement.sample_set_ids[] belongs to its report as well as its cohort/study; optional precision measurement_id, when present, matches the same report/study/cohort.",
-    "Cohort-specific A/B membership uses report_cohort_links.scope_streams; one cohort in both streams is counted once overall."
+    "Cohort-specific A/B membership uses report_cohort_links.scope_streams; one cohort in both streams is counted once overall.",
+    "sample_sets.within_organising_window agrees with time_bin through time_bin_window_position."
   ],
   "guardrails": [
     "No decisions or extracted scientific values are prefilled.",
-    "No aggregate precision score.",
+    "No aggregate precision score, readiness score or ranking; domain rows feed only the validation-readiness map (see the validation-readiness map definition in this file; contract 8.3e).",
     "Participant n, biological samples, cells and technical replicates remain separate.",
     "Named immune candidates found in original aims/methods and accessible supplements are recorded regardless of significance; unreported feature rows are not invented.",
     "Values read from figures must be predeclared as a separate digitization procedure, tagged digitized_from_figure, and checked by two reviewers.",
-    "Support B requires same marker + same participants across >=2 distinct bout_id values, known timing and baseline/comparator."
+    "Support B (retained; cross-bout open-window monitoring layer) requires same marker + same participants across >=2 distinct bout_id values, known timing and baseline/comparator; deduplicated against Core A by cohort_id.",
+    "Samples later than 72 h after cessation are extracted and tagged outside_window_recovery; nothing is excluded for falling outside the 0-72 h organising window.",
+    "Exercise duration and intensity are recorded as reported and never used as eligibility thresholds.",
+    "Only adults (>= 18 y) or separable adult strata are charted; older adults are flagged as a subgroup.",
+    "Author open-window interpretation is a descriptive tag; it never affects eligibility or weighting."
   ]
 }
