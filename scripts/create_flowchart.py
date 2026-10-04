@@ -42,7 +42,7 @@ box(600,680,450,122,'SUPPORT B: repeated bouts',['Same marker / person after ≥
 arrow(275,802,410,846);arrow(825,802,690,846)
 box(180,846,740,125,'Chart and appraise with two humans',['Timing vs window, marker family, assay quality, n, effects','Author open-window interpretation: descriptive tag only','Design-specific appraisal; original-source locations'])
 arrow(550,971,550,1005)
-box(100,1005,900,135,'THREE EVIDENCE MAPS',['1  Open-window time × immune compartment / marker family','2  Per-marker validation-readiness map (seven domains; not a score)','3  Cohort-level validation linkage'],'#d9ebe9')
+box(100,1005,900,135,'THREE EVIDENCE MAPS',['1  Open-window time × immune compartment / marker family','2  Per-marker validation-readiness map (seven domains; not a score)','3  Cohort-level validation links'],'#d9ebe9')
 arrow(550,1140,550,1174)
 box(180,1174,740,100,'Update search and prepare Frontiers submission',['PRISMA-ScR checklist + flow diagram; AI-use disclosure','Scoping methodology; no meta-analysis or clinical ranking'])
 txt(550,1310,'Independent cohorts are the main density unit; A/B overlap is deduplicated.',17)

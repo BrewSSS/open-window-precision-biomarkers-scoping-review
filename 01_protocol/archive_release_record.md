@@ -21,7 +21,7 @@ JBI范围综述；PRISMA-ScR报告；PRISMA-S检索报告；按设计适配的�
 | 项目 | 值 |
 |---|---|
 | GitHub仓库URL | 待填（owner待团队决定） |
-| Release tag | 待填（建议`protocol-v3.0`） |
+| Release tag | 待填（须为`v3.0`，即`v<protocol_version>`；见`scripts/README.md`第6节） |
 | 提交SHA | 待填 |
 | Zenodo concept DOI | 待填（首次发布时分配，指向全部版本） |
 | Zenodo version DOI | 待填（本次发布专属） |
@@ -52,7 +52,7 @@ JBI范围综述；PRISMA-ScR报告；PRISMA-S检索报告；按设计适配的�
 - [ ] 许可证文件：根目录`LICENSE`（CC BY 4.0）、`scripts/LICENSE`（MIT）；与方案J节、README一致。
 - [ ] `.zenodo.json`或`CITATION.cff`：标题、creators、许可证、关键词、描述、版本号`3.0`、related identifiers。
 - [ ] 理解concept DOI与version DOI：首次发布同时产生两者，再发布只新增version DOI；引用方案时用version DOI。
-- [ ] 公开推送前清理（契约第4节）：删除`scripts/README.md`、`01_protocol/verification/build_output.txt`、`02_preliminary/restart_2026-10-02/lanes/*.txt`中的本机用户名路径；决定是否去除`02_preliminary/restart_2026-10-02/verification/*.json`中的第三方作者邮箱；确认`.gitignore`不放过原始数据库导出。
+- [ ] 公开推送前清理（契约第4节；当前逐项清单见`scripts/README.md`第7节）：删除`01_protocol/verification/build_output.txt`、`02_preliminary/restart_2026-10-02/lanes/*.txt`中的本机用户名路径（`scripts/README.md`已改为相对路径）；决定是否去除`02_preliminary/restart_2026-10-02/verification/*.json`中的第三方作者邮箱；确认`.gitignore`不放过原始数据库导出。
 - [ ] GitHub owner（个人/组织）与公开日期已由团队决定；仓库已设为公开（Zenodo只能存档公开仓库；组织仓库可能需组织所有者授权Zenodo）；GitHub–Zenodo集成已对目标仓库开启。
 - [ ] 探索、试点、正式检索的界线与日期准确；所有字段由团队核查；不存在虚构命中、纳入、结果或声明。
 - [ ] 打tag、发布Release、等待Zenodo存档完成后，把DOI、tag、提交SHA、SHA-256清单填入上表。

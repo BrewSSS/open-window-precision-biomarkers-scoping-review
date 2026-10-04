@@ -2,6 +2,7 @@
 # !!! Authors are placeholders: TO BE FILLED BY TEAM — do not release with placeholders.
 # Fill in names (and ORCIDs/affiliations) and keep them identical to .zenodo.json before tagging a release.
 # After Zenodo archives the release, add the version DOI under "identifiers" / "doi" (see scripts/README.md).
+# Licences: documents CC BY 4.0 (LICENSE); scripts MIT (scripts/LICENSE). The "license" field below covers the documents.
 cff-version: 1.2.0
 message: "If you use this protocol or its materials, please cite the archived release (Zenodo DOI assigned on release)."
 type: dataset

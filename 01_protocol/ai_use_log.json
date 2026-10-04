@@ -105,9 +105,11 @@
       "coordinator_model": "claude-fable-5-1",
       "delegated_models": [
         "claude-fable-5-1 (first protocol-editor agent; edited the files listed below and was interrupted by an API usage limit before reporting)",
-        "claude-opus-5-5 (takeover protocol-editor agent; audited rows E1-E47 and B3 against the contract, completed the remaining edits and re-verified references 15-20 and the Frontiers/GitHub-Zenodo pages)"
+        "claude-opus-5-5 (takeover protocol-editor agent; audited rows E1-E47 and B3 against the contract, completed the remaining edits and re-verified references 15-20 and the Frontiers/GitHub-Zenodo pages)",
+        "claude-opus-5-5 (build-chain/validator agent; scripts, validator, workbook generator, flowchart, references library, LICENSE and Zenodo metadata)",
+        "claude-opus-5-5 (final consistency reviewer; cross-file audit with small fixes and build re-run)"
       ],
-      "model": "claude-fable-5-1 (coordinator and first delegated editor); claude-opus-5-5 (takeover delegated editor)",
+      "model": "claude-fable-5-1 (coordinator and first delegated editor); claude-opus-5-5 (takeover delegated editor, build-chain/validator agent and final consistency reviewer)",
       "provider_source": "Anthropic; Claude Code CLI with models served by the Anthropic API",
       "tasks": [
         "v3.0 revision of protocol_EN_full.md implementing v3_design_contract.txt and change-map rows E1-E47 (verification/v3_change_map_2026-10-04.md, section B1)",
@@ -115,7 +117,9 @@
         "PubMed E-utilities (esummary/efetch) verification of new references 15-20 and of the Peake 2017 abstract sentence quoted in section A",
         "live access check (HTTP 200 and text match) of the Frontiers AI policy, Frontiers Systematic Review article-type, PROSPERO registration-guidance, OSF Generalized Systematic Review template and JBI 10.2.2 pages recorded in official_sources.json",
         "takeover audit 2026-10-04 (claude-opus-5-5): row-by-row check of E1-E47 and B3; Introduction positioning names the open-window debate holders and adjacent reviews; PubMed efetch and Crossref re-check of references 15-20; Frontiers PRISMA and GitHub-Zenodo pages re-accessed",
-        "05_extraction/06_synthesis v3 edit (data dictionary fields and vocabularies, template sync, evidence-map spec, synthesis plan, manuscript blueprint) by delegated model claude-opus-5-5; 03_search/04_screening v3 edit by claude-opus-5-5; CN protocol alignment by claude-opus-5-5"
+        "05_extraction/06_synthesis v3 edit (data dictionary fields and vocabularies, template sync, evidence-map spec, synthesis plan, manuscript blueprint) by delegated model claude-opus-5-5; 03_search/04_screening v3 edit by claude-opus-5-5; CN protocol alignment by claude-opus-5-5",
+        "build chain and validator by delegated model claude-opus-5-5: version/date read from project_settings.json; build_v2 -> build_v3; TeX header and PDF rebuild; validate_design.py extended to 27 checks; build_workbooks.py reads stage/dedup/bibliographic fields from the JSON templates and regenerates the Excel workbooks; create_flowchart.py -> figures/research_design_v3.svg; references.bib entries 15-20 and references/crossref_metadata_v3.json; LICENSE (CC BY 4.0), scripts/LICENSE (MIT), .zenodo.json and CITATION.cff with creator placeholders",
+        "final cross-file consistency pass by claude-opus-5-5 (2026-10-04): EN<->CN equivalence spot-check of sections A, B, D, F, I and J (Chinese corrected, English untouched); CN references 27 (BEST Resource) and 28 (Frontiers article types/author guidelines/policies) added and cited; Trybulski et al. 2026 (PMID 42278474) verified by PubMed esummary/efetch; terminology sweep; title/version/stage/domain/map-name/licence consistency across governance files, appendices, .zenodo.json, CITATION.cff and the flowchart; README, CHANGELOG and status records updated; build chain and validator re-run"
       ],
       "prompt_source": "Coordinator work order in the 2026-10-04 Claude Code session (change map B1/B3 plus contract section 8 default rulings)",
       "output_sources": [
@@ -131,7 +135,21 @@
         "../scoping_review_protocol_EN.md",
         "../scoping_review_protocol_CN.md",
         "verification/official_sources.json",
-        "verification/README.md"
+        "verification/README.md",
+        "../scripts/",
+        "../figures/research_design_v3.svg",
+        "../references/references.bib",
+        "../references/crossref_metadata_v3.json",
+        "../LICENSE",
+        "../scripts/LICENSE",
+        "../.zenodo.json",
+        "../CITATION.cff",
+        "../templates_xlsx/",
+        "protocol_CN.md",
+        "../03_search/",
+        "../04_screening/",
+        "../05_extraction/",
+        "../06_synthesis/"
       ],
       "citations_added_pending_human_verification": [
         {
@@ -176,15 +194,21 @@
           "pmid": "42074239",
           "doi": "10.3390/ijms27083601",
           "status": "verified by AI 2026-10-04 (article number 3601 from PII; esummary pages field empty); human verification pending"
+        },
+        {
+          "ref": "manuscript blueprint / search strategy only (not a protocol reference)",
+          "citation": "Trybulski R, Bjelica D, Çitozi R, Kisilewicz A, Smoter M, Urban J. Acute Cytokine Responses to High-Intensity Intermittent Exercise in Humans: A Systematic Review. Int J Mol Sci 2026;27(11):4950",
+          "pmid": "42278474",
+          "doi": "10.3390/ijms27114950",
+          "quoted_phrase_verified_from_efetch_abstract": "Sampling was mapped to prespecified recovery windows.",
+          "status": "verified by AI 2026-10-04 (article number 4950 from PII; esummary pages field empty); human verification pending. Note: the review is itself registered on OSF (osf.io/wspr6) and is an adjacent review for the team's positioning check"
         }
       ],
       "human_verification_status": "pending — named team review required at v3.0 freeze before the archived release",
       "human_verifier": null,
       "formal_review_decisions_made": false,
       "not_performed": [
-        "protocol_CN.md alignment (later agent)",
-        "edits to 03_search, 04_screening, 05_extraction, 06_synthesis, scripts, figures, references",
-        "build chain (build_protocol.py, TeX/PDF compile, publish_protocol_pdf.py, create_flowchart.py, update_protocol_references.py)",
+        "update_protocol_references.py --write (dry-run only; see scripts/README.md section 4)",
         "formal database search",
         "screening decisions",
         "extraction",

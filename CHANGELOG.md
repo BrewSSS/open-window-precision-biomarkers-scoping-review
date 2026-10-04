@@ -20,10 +20,14 @@
 | 披露 | 明确2026-01内部方案、2026-10-02公开侦察（Codex）、2026-10-04撞车复核（Claude Code）为存档前已知工作；不描述为完全前瞻 |
 | 筛选/提取工具待定 | Excel工作簿由`scripts/build_workbooks.py`从JSON模板生成，每位评审一份锁定工作簿，哈希提交git后由`scripts/merge_screening.py`合并/一致性/kappa；CSV入git；不用Rayyan/Covidence |
 | 投稿要求 | Frontiers in Immunology Systematic Review栏目：PRISMA-ScR清单与流程图随稿；AI使用在Methods与Acknowledgments两处披露工具名、版本、模型、来源；MDPI/Frontiers不再作为排除去向 |
-| 许可证未定 | 文档CC BY 4.0，脚本MIT（LICENSE、`.zenodo.json`/`CITATION.cff`发布前添加） |
-| 构建产物与附件对齐 | 本次改写只改源文件与治理文件；排版副本、PDF、构建清单、流程图、参考文献库、中文稿与`03_search`–`06_synthesis`附件由后续步骤对齐，验证器在构建链重跑前预期失败 |
+| 许可证未定 | 文档CC BY 4.0（根目录`LICENSE`），脚本MIT（`scripts/LICENSE`）；方案J节、README、存档发布记录、`.zenodo.json`与`CITATION.cff`一致；著作权人/creators为占位符，填写前不得发布 |
+| 构建产物与附件对齐 | 中文稿与`03_search`–`06_synthesis`附件已按v3对齐；排版副本、TeX、PDF与构建清单由构建链重新生成；参考文献库（`references.bib`，新增15–20）与流程图已更新 |
+| 构建链 | 版本与日期只在`project_settings.json`维护，`build_protocol.py`、`publish_protocol_pdf.py`、`create_flowchart.py`、`validate_design.py`均从中读取；构建目录`build_v2`→`build_v3`；TeX页眉改为“Open-window precision biomarkers / Protocol v3.0”；PDF按v3重建并发布 |
+| 验证器 | `scripts/validate_design.py`扩至27项：新增字典与模板字段同步、三处共用时间箱列表、源Markdown不用“开窗期”、登记字段为null或与Release字段一致的Zenodo DOI；依赖本机构建的检查在干净克隆中记为skipped而非passed |
+| 工作簿生成器 | `scripts/build_workbooks.py`从JSON模板读取筛选处置阶段、去重状态与书目字段说明，生成筛选、提取（母版及A/B）与评价工作簿并重新载入核对；`scripts/merge_screening.py`负责合并、一致率、kappa与PRISMA计数 |
+| LICENSE与Zenodo元数据 | 新增根目录`LICENSE`（CC BY 4.0）、`scripts/LICENSE`（MIT）、`.zenodo.json`与`CITATION.cff`（题目、版本3.0、关键词、摘要；creators为占位符）；推送前清理清单见`scripts/README.md`第7节 |
 
-本次v3.0仅完成英文方案源稿与治理文件修订（PRE-002）。团队冻结、存档发布、PRESS、人工校准、正式检索、筛选、提取和结果仍待执行。
+本次v3.0完成了英文方案源稿与治理文件修订（PRE-002）、中文稿与`03_search`–`06_synthesis`附件对齐、构建链、验证器、工作簿生成器及许可证/Zenodo元数据，并于2026-10-04做了跨文件一致性复核。团队冻结、存档发布、PRESS、人工校准、正式检索、筛选、提取和结果仍待执行。
 
 ## 2.0 — 2026-10-02（注册前工作方案）
 

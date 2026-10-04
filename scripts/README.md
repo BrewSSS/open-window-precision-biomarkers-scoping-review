@@ -84,6 +84,6 @@ v3.0 的参考文献 1–20 在 `protocol_EN_full.md` 中人工写定；`referen
 
 - 本机用户名/绝对路径：`01_protocol/verification/build_output.txt`（latexmk 输出含本机路径）；`02_preliminary/restart_2026-10-02/lanes/{metabolomics,novelty,proteomics,transcriptomics}.txt`；`_archive/pre-v2_2026-10-02/create_flowchart.py` 与 `_archive/pre-v2_2026-10-02/scripts/create_flowchart.py`（旧机器路径）。本文件已改为仓库相对路径与 `$HOME`。
 - 第三方作者电子邮箱：`02_preliminary/restart_2026-10-02/verification/crossref_metadata.json`（Crossref 记录中的作者邮箱）——团队决定是否删除；`references/crossref_metadata_v3.json` 只保留姓名/ORCID。
-- `.playwright-mcp/`：虽在 `.gitignore` 中，但有 32 个文件已在初始提交中被跟踪（含网页快照中的第三方邮箱），推送前需 `git rm -r --cached .playwright-mcp` 并提交。
+- `.playwright-mcp/`：32 个网页快照文件（含第三方邮箱）已在提交 5db147d 中从索引与磁盘移除，但仍保存在初始提交 4364808 的 git 历史中；推送整个历史即会公开它们。推送前须由团队决定改写历史（如 `git filter-repo --path .playwright-mcp --invert-paths`）或以不含该历史的新仓库推送。
 - 本机构建目录（`01_protocol/build*`）与 `.claude/` 已忽略；推送前用 `git ls-files | xargs grep -l -I -E '/(Users|home)/|<本机用户名>'` 复查。
 - 占位符：creators/著作权人未填写时不得打 tag。
