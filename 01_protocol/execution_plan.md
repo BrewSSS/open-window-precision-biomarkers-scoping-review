@@ -4,7 +4,7 @@
 
 2026-10-05更新（v3.1，修订PRE-004与PRE-005）：v3.0已于2026-10-05冻结并存档（Zenodo 10.5281/zenodo.23147973）；50条题名/摘要试筛与10篇提取试点已完成并被A接受为校准。修订PRE-005把筛选改为两阶段：第1阶段只看题名（封闭清单排除、进入优先），两阶段之间补全摘要，第2阶段按v3规则筛选题名/摘要（`04_screening/screening_manual.md` §3A′、§3B）。下表第5、6阶段已按此改写；正式检索须在v3.1发布之后。
 
-2026-10-05更新（修订PRE-006，纳入v3.1）：数据库改为PubMed、Web of Science Core Collection、Scopus，Google Scholar作有记录的补充检索；Embase与SPORTDiscus撤除。策略v0.9为单一路线E AND I AND T，并设检索阶段限制（PubMed仅动物与仅儿童排除；三库出版/文献类型限制，被移除的综述作为引文追踪清单）。PubMed诊断计数7,846条（含英文与预印本限制；非正式检索）。A于2026-10-04的PRESS签署（v0.7）作废，须重新复核v0.9；2026-10-05的PubMed v0.7导出与D的WoS EO第1批已被取代，作为过程文件保留，不计入PRISMA；TA试筛、提取试点与200条不含T样本仍为有效校准。第1、5阶段与“近期优先顺序”已按此更新（第1阶段行中的历史状态保留）。
+2026-10-05更新（修订PRE-006，纳入v3.1）：数据库改为PubMed、Web of Science Core Collection、Scopus，Google Scholar作有记录的补充检索；Embase与SPORTDiscus撤除。策略v0.9为单一路线E AND I AND T，并设检索阶段限制（PubMed仅动物与仅儿童排除；三库出版/文献类型限制，被移除的综述作为引文追踪清单）。PubMed诊断计数7,846条（含英文与预印本限制；非正式检索）。A于2026-10-04的PRESS签署（v0.7）作废，A已于2026-10-05重新复核并接受v0.9；2026-10-05的PubMed v0.7导出与D的WoS EO第1批已被取代，作为过程文件保留，不计入PRISMA；TA试筛、提取试点与200条不含T样本仍为有效校准。第1、5阶段与“近期优先顺序”已按此更新（第1阶段行中的历史状态保留）。
 
 ## 研究价值与交付标准
 
@@ -32,7 +32,7 @@
 | 2. v3冻结与GitHub+Zenodo存档 | 2–3个工作日 | 同步中英文及手册；人员/资金/COI；creators与许可证文件；`.zenodo.json`/`CITATION.cff`；公开推送前路径清理；打tag发布Release | 人类团队确认最终方案；creators、LICENSE、tag、Zenodo version/concept DOI齐备并写回`project_settings.json`与存档发布记录 |
 | 3. 人工校准（存档后） | 5–7个工作日，依可用时间调整 | 存档后生成并冻结草案题录池；保存种子的50篇随机试筛；PRE-003召回检验（≥30篇阳性种子含≥5篇仅数字时间的重测、不含T的随机样本敏感性检索）与`train*`样本检验；全文边界练习；10篇目的性试提取 | 原始一致率≥80%且概念分歧解决；字典可填；两人能区分时间、窗口位置、样本单位和验证类型 |
 | 4. 试点后修订与再发布（条件性） | 1–2个工作日，仅在试点改变规则时 | `amendments.json`条目；修订后的方案/手册；新tag Release与新version DOI | 新DOI写回；正式检索只按已存档的最终规则运行 |
-| 5. 正式检索与去重（v3.1发布后） | 试点后估计 | D按固定顺序导出：PubMed → Web of Science核心合集 → Scopus（PRE-006；Embase与SPORTDiscus已撤除），每库导出平台允许的最完整记录（尽量含摘要与文献类型；WoS用完整记录，Scopus在有授权时用COMPLETE视图）；检索阶段限制按PRE-006（物种/年龄、出版类型、英文、期刊论文）、原始导出、校验值、去重映射（`records_master`填`document_type`，第1阶段不填摘要）、Google Scholar补充检索（每式前200条，记录日期、筛选数与停止规则）、被出版类型限制移除的综述清单（引文追踪来源）、补充搜索与前沿登记；启动条件：v3.1已发布且A已对v0.9重新签署PRESS | 所有数据来源及去重计数可核对；已冻结去重合集及其清单与哈希（供题名试筛抽样） |
+| 5. 正式检索与去重（v3.1发布后） | 试点后估计 | D按固定顺序导出：PubMed → Web of Science核心合集 → Scopus（PRE-006；Embase与SPORTDiscus已撤除），每库导出平台允许的最完整记录（尽量含摘要与文献类型；WoS用完整记录，Scopus在有授权时用COMPLETE视图）；检索阶段限制按PRE-006（物种/年龄、出版类型、英文、期刊论文）、原始导出、校验值、去重映射（`records_master`填`document_type`，第1阶段不填摘要）、Google Scholar补充检索（每式前200条，记录日期、筛选数与停止规则）、被出版类型限制移除的综述清单（引文追踪来源）、补充搜索与前沿登记；启动条件已满足：A于2026-10-05重新签署PRESS，三库导出同日完成，v3.1发布中 | 所有数据来源及去重计数可核对；已冻结去重合集及其清单与哈希（供题名试筛抽样） |
 | 6.1a 题名试筛（第1阶段校准） | 约1个工作日 | 从冻结去重合集按`random.Random(20261005).sample(sorted(ids), 100)`抽100条；两人在第1阶段工作簿（无摘要、无AI提示）中独立判断，各记总用时；`merge_screening.py merge --stage TI --calibration-ids` | 二分类（进入/排除）原始一致率≥80%；分歧讨论并记录；未达标则澄清手册、按种子20261005+轮次−1另抽100条 |
 | 6.1b 正式第1阶段：题名筛选 | 按记录数估计（题名约为题名/摘要的1/3–1/4用时） | 全部去重记录；每人锁定工作簿哈希先提交git；`merge --stage TI`按“进入优先”自动形成共识，冲突清单仅记录 | 全部记录有最终TI处置；第1阶段排除均有封闭清单代码；冲突已记录 |
 | 6.AC 摘要补全（两阶段之间） | 视缺摘要记录数而定 | D为第1阶段保留记录补摘要：①含摘要的导出 ②PubMed（PMID或DOI→PMID）③来源库完整记录 ④A的人工请求清单`fulltext_requests/abstract_requests.csv`；`records_master.abstract_source`逐条记录来源，无法获得者记`abstract_unavailable`；`abstract_completion.counts`填写；生成只含保留记录的第2阶段工作簿 | 每条保留记录都有摘要或abstract_unavailable标记；人工请求已结清或记not_available |

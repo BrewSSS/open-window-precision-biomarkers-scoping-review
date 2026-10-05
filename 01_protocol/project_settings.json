@@ -56,7 +56,7 @@
   },
   "registration": {
     "service": "GitHub repository + Zenodo release archive (DOI); team decision 2026-10-04 replacing OSF Registries",
-    "status": "v3.0 archived 2026-10-05 (version DOI 10.5281/zenodo.23147973); v3.1 (PRE-004, PRE-005, PRE-006) release pending",
+    "status": "v3.0 archived 2026-10-05 (version DOI 10.5281/zenodo.23147973); v3.1 (PRE-004, PRE-005, PRE-006) release created 2026-10-05, Zenodo DOI pending write-back",
     "id": null,
     "url": null,
     "submitted_at": null,
@@ -89,7 +89,7 @@
     "archive_release_zenodo": "done_2026-10-05",
     "random_50_screening_pilot": "accepted_by_A_2026-10-05 (raw agreement 1.00, kappa 1.00; AI hint visible — limitation recorded; no AI hints in formal screening)",
     "purposeful_10_charting_pilot": "ai_assisted_extraction_done_2026-10-05 (9/10 reports; R62 human extraction pending under v3.0 rules); accepted by A 2026-10-05 as calibration of rule clarity (not human inter-rater agreement)",
-    "formal_search": "in_progress_2026-10-05_v0.9_provisional (PubMed v0.9 exported 7,846 with abstracts 99.5%; WoS and Scopus being exported by D with English/article limits; exports become formal if A's PRESS re-review leaves v0.9 unchanged; v3.1 release pending)",
+    "formal_search": "completed_2026-10-05_v0.9 (PubMed 7,846; Web of Science 13,242; Scopus 11,065; all with abstracts; PRESS re-review of v0.9 accepted by A on 2026-10-05; D's seed test passed; Google Scholar supplement deferred until after deduplication and title screening; deduplication in progress)",
     "dual_screening": "pending",
     "dual_extraction": "pending",
     "critical_appraisal": "pending",
@@ -98,17 +98,20 @@
     "amendment_PRE-004": "adopted_2026-10-05 (A): C01-C20 adopted, C21-C23 deferred; staged in 05_extraction/pre004_staging, applied after R62",
     "amendment_PRE-005": "adopted_2026-10-05 (A): two-stage screening (title stage with closed list and advance-wins consensus; abstract completion; title/abstract stage); staged with PRE-004 in 05_extraction/pre004_staging",
     "amendment_PRE-006": "adopted_2026-10-05 (A): databases PubMed, WoS Core Collection, Scopus + Google Scholar supplement (Embase, SPORTDiscus withdrawn); search-stage limits (PubMed animal-only and child-only NOT; publication/document-type limits); strategy v0.9 single route E AND I AND T; PubMed diagnostic 7,846 records (English, no preprints); included in the v3.1 release",
-    "protocol_v3_1_release": "pending (GitHub Release v3.1 with PRE-004, PRE-005 and PRE-006 + Zenodo version DOI before formal search)",
+    "protocol_v3_1_release": "in_progress_2026-10-05 (tag v3.1 + GitHub Release; Zenodo version DOI to be written back)",
     "human_calibration_round_v3_1": "pending (reduced human charting calibration by B and C on v3.1 rules)",
     "title_screening_pilot_100": "pending (100 records from the deduplicated formal union, seed 20261005; raw agreement >= 0.80 on the binary TI disposition before formal stage 1)",
     "abstract_completion": "pending (after stage 1)",
-    "TA_recalibration_25_v3_1": "pending (25 records from the stage-1 retained set, seed 20261003; before formal stage 2)"
+    "TA_recalibration_25_v3_1": "pending (25 records from the stage-1 retained set, seed 20261003; before formal stage 2)",
+    "press_rereview_v0_9": "accepted_2026-10-05 (A, no changes; PRESS_review_checklist.md 'v0.9 re-review')"
   },
   "flow_counts": null,
   "actual_search_dates": {
     "PubMed": "2026-10-05",
     "note": "PubMed 2026-10-05 export used strategy v0.7 and is superseded by PRE-006 (kept as an artefact, not a PRISMA count); the formal v0.9 search dates are not yet set",
-    "PubMed_v0.9": "2026-10-05"
+    "PubMed_v0.9": "2026-10-05",
+    "Web of Science Core Collection": "2026-10-05",
+    "Scopus": "2026-10-05"
   },
   "frontier_preprint_counts": null,
   "notes": [
