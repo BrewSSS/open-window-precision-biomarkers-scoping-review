@@ -44,17 +44,17 @@
     "author_contributions": null
   },
   "registration": {
-    "service": "GitHub repository + Zenodo-archived GitHub Release (version DOI + concept DOI); team decision 2026-10-04 replacing OSF Registries; PROSPERO not applicable (does not accept scoping reviews)",
-    "status": "local_git_initialised_2026-10-04_not_pushed_no_release_no_doi_never_registered_in_any_registry",
-    "id": null,
-    "url": null,
-    "submitted_at": null,
+    "service": "GitHub repository + Zenodo release archive (DOI); team decision 2026-10-04 replacing OSF Registries",
+    "status": "archived_v3.0_2026-10-05",
+    "id": "10.5281/zenodo.23147973",
+    "url": "https://doi.org/10.5281/zenodo.23147973",
+    "submitted_at": "2026-10-05T00:19:03Z",
     "timing_rule": "archive frozen v3.0 after team freeze and before the 50-record screening pilot and 10-report charting pilot; formal five-database search only after the archived release exists; re-release (v3.1, new version DOI, same concept DOI) with justification if pilots change rules",
-    "release_tag": null,
-    "release_commit": null,
-    "concept_doi": null,
-    "version_doi": null,
-    "repository_url": null,
+    "release_tag": "v3.0",
+    "release_commit": "fea09eaee5caf8b926ea46c58e07616e5072542e",
+    "concept_doi": "10.5281/zenodo.23147972",
+    "version_doi": "10.5281/zenodo.23147973",
+    "repository_url": "https://github.com/BrewSSS/open-window-precision-biomarkers-scoping-review",
     "license": "CC BY 4.0 (documents); MIT (scripts)"
   },
   "stages": {
@@ -62,7 +62,7 @@
     "PRESS_review": "accepted_with_conditions_2026-10-04",
     "protocol_v3_revision": "3.0 draft completed 2026-10-04 (PRE-002): EN source, governance files, CN protocol, 03-06 appendices, build chain, validator, workbook generator, LICENSE and Zenodo metadata aligned; cross-file consistency pass 2026-10-04; team freeze pending",
     "team_freeze": "done_2026-10-05",
-    "archive_release_zenodo": "pending",
+    "archive_release_zenodo": "done_2026-10-05",
     "random_50_screening_pilot": "pending",
     "purposeful_10_charting_pilot": "pending",
     "formal_search": "pending",
@@ -85,6 +85,7 @@
     "registration.id/url/submitted_at are kept null for the validator; release_tag, release_commit, concept_doi, version_doi and repository_url are filled only after the Zenodo-archived release exists.",
     "2026-10-04 (A): team members are identified by codes A-D in all project files; real names/affiliations are entered only into Zenodo/CITATION metadata immediately before release. Citation verification of newly added references is deferred to the manuscript stage; AI tool version numbers are not recorded at protocol stage.",
     "2026-10-04 (A): amendment PRE-003 (included in v3.0 release) makes the post-exercise/acute-bout T-block a required search concept, E AND (I OR O) AND T (design contract §9 supersedes §3 and 8.3a), after PubMed parser validation (union without T 255,019 records, ~8,500 two-reviewer person-hours; with T ~15,900 records, 10/10 positive PubMed seeds). PRESS accepted with conditions: no infection-outcome terms; train* retained until the pilot sample test. Mitigations re-tested in the pilot: >=30 positive seeds (>=5 numeric-only timing), T-free random-sample sensitivity run, citation chasing. Licensed platforms (WoS, Scopus, Embase, SPORTDiscus) pending D login.",
-    "2026-10-05: team (A) froze v3.0 after PubMed validation and PRESS acceptance; licensed-platform syntax remains marked as pending D's login checks; v3.1 will follow only if those checks change concepts."
+    "2026-10-05: team (A) froze v3.0 after PubMed validation and PRESS acceptance; licensed-platform syntax remains marked as pending D's login checks; v3.1 will follow only if those checks change concepts.",
+    "2026-10-05: v3.0 released (tag v3.0, commit fea09ea); Zenodo version DOI 10.5281/zenodo.23147973, concept DOI 10.5281/zenodo.23147972. Next: 50-record screening pilot and 10-report charting pilot; D's licensed-platform syntax checks."
   ]
 }

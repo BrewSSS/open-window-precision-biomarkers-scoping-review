@@ -120,7 +120,7 @@
   ],
   "limitations": [
     "These are document/schema/build consistency checks, not human calibration or PRESS review.",
-    "No five-database formal searches, inclusion decisions or extraction results are recorded; no GitHub Release/Zenodo DOI exists yet and the project is not registered in any registry.",
+    "No five-database formal searches, inclusion decisions or extraction results are recorded; archive release v3.0 / 10.5281/zenodo.23147973 recorded in project_settings.json.",
     "Checks against the local TeX build (build_v3) and pdftotext are environment-dependent: strict when present, recorded as skipped (never as passed) when absent.",
     "Source-specific headings and full database strategies still require platform verification."
   ]
