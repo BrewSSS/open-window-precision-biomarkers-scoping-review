@@ -1,0 +1,191 @@
+{
+  "round": "citation_chasing_round1",
+  "label": "Supplemental citation-chasing round 1 over the five open-window reviews named in protocol v3.0 section E (protocol_EN_full.md A-section citation list and Amendment PRE-003 mitigations). This is NOT the second citation-chasing round over INCLUDED studies, which happens after screening.",
+  "generated_datetime_utc": "2026-10-05T08:02:07Z",
+  "searcher": "D (search lead) role; executed by an AI agent on D's behalf",
+  "sources_named_in_protocol": [
+    {
+      "review": "Peake_2017",
+      "pmid": "27909225",
+      "doi": "10.1152/japplphysiol.00622.2016",
+      "citation": "Peake JM et al. J Appl Physiol 2017."
+    },
+    {
+      "review": "Campbell_Turner_2018",
+      "pmid": "29713319",
+      "doi": "10.3389/fimmu.2018.00648",
+      "citation": "Campbell JP, Turner JE. Front Immunol 2018;9:648."
+    },
+    {
+      "review": "Simpson_2020",
+      "pmid": "32139352",
+      "doi": null,
+      "citation": "Simpson RJ et al. Exerc Immunol Rev 2020;26:8-22. No DOI registered by publisher per protocol; OpenAlex lists an institutional-repository DOI (10.22029/eir.2020.1730) not asserted by the journal -- recorded but not relied upon as the canonical identifier."
+    },
+    {
+      "review": "Shi_2025",
+      "pmid": "40777031",
+      "doi": "10.3389/fimmu.2025.1617261",
+      "citation": "Shi et al. Front Immunol 2025."
+    },
+    {
+      "review": "Xie_2026",
+      "pmid": "42183211",
+      "doi": "10.3389/fimmu.2026.1822561",
+      "citation": "Xie E et al. Front Immunol 2026;17:1822561."
+    }
+  ],
+  "apis_used": [
+    {
+      "api": "NCBI E-utilities efetch.fcgi (db=pubmed, retmode=xml)",
+      "purpose": "backward: PubMed <ReferenceList> where present",
+      "user_agent": "scoping-review-citation-chasing/1.0",
+      "rate_limit_applied": "<=3 req/s, no API key, no e-mail sent"
+    },
+    {
+      "api": "NCBI E-utilities elink.fcgi (dbfrom=pubmed, linkname=pubmed_pubmed_citedin)",
+      "purpose": "forward: PubMed citing PMIDs",
+      "user_agent": "scoping-review-citation-chasing/1.0",
+      "rate_limit_applied": "<=3 req/s, single batched call for all 5 source PMIDs"
+    },
+    {
+      "api": "Crossref REST API works/<doi> (reference array)",
+      "purpose": "backward fallback when PubMed <ReferenceList> absent (Peake 2017)",
+      "user_agent": "scoping-review-citation-chasing/1.0 (anonymous, no mailto)",
+      "rate_limit_applied": "polite pool defaults; anonymous (no e-mail parameter per privacy instruction)"
+    },
+    {
+      "api": "Crossref REST API works (query.bibliographic title search)",
+      "purpose": "attempted DOI discovery for Simpson 2020 (Exerc Immunol Rev, no DOI); no match found",
+      "user_agent": "scoping-review-citation-chasing/1.0"
+    },
+    {
+      "api": "OpenAlex API works?filter=doi:... and works/pmid:<id>",
+      "purpose": "resolve DOI-only references to PMID/title/year/journal; fallback backward referenced_works check for Simpson 2020 (returned 0 referenced_works)",
+      "user_agent": "scoping-review-citation-chasing/1.0",
+      "rate_limit_applied": "polite, anonymous, no mailto parameter"
+    },
+    {
+      "api": "OpenAlex API works?filter=cites:<openalex_id>",
+      "purpose": "forward: cited-by records, cursor-paginated, select=id,doi,title,publication_year,primary_location,ids",
+      "user_agent": "scoping-review-citation-chasing/1.0"
+    },
+    {
+      "api": "OpenCitations Index (api.opencitations.net/index/v2/citations/<doi>)",
+      "purpose": "forward: intended third source for merge",
+      "status": "FAILED for all 5 DOIs in this run (repeated connection timeouts HTTP 000; two attempts returned HTTP 400). Not merged into forward.csv or union_dedup.csv this round. See failures below."
+    }
+  ],
+  "per_review": {
+    "Peake_2017": {
+      "pmid": "27909225",
+      "doi": "10.1152/japplphysiol.00622.2016",
+      "backward": {
+        "total": 129,
+        "with_pmid": 117,
+        "doi_only_no_pmid": 1,
+        "unresolved_no_pmid_no_doi": 11
+      },
+      "forward": {
+        "total": 393,
+        "with_pmid": 254,
+        "doi_only_no_pmid": 135,
+        "unresolved_no_pmid_no_doi": 4
+      }
+    },
+    "Campbell_Turner_2018": {
+      "pmid": "29713319",
+      "doi": "10.3389/fimmu.2018.00648",
+      "backward": {
+        "total": 249,
+        "with_pmid": 245,
+        "doi_only_no_pmid": 3,
+        "unresolved_no_pmid_no_doi": 1
+      },
+      "forward": {
+        "total": 682,
+        "with_pmid": 465,
+        "doi_only_no_pmid": 214,
+        "unresolved_no_pmid_no_doi": 3
+      }
+    },
+    "Simpson_2020": {
+      "pmid": "32139352",
+      "doi": null,
+      "backward": {
+        "total": 0,
+        "with_pmid": 0,
+        "doi_only_no_pmid": 0,
+        "unresolved_no_pmid_no_doi": 0
+      },
+      "forward": {
+        "total": 397,
+        "with_pmid": 235,
+        "doi_only_no_pmid": 158,
+        "unresolved_no_pmid_no_doi": 4
+      }
+    },
+    "Shi_2025": {
+      "pmid": "40777031",
+      "doi": "10.3389/fimmu.2025.1617261",
+      "backward": {
+        "total": 203,
+        "with_pmid": 197,
+        "doi_only_no_pmid": 5,
+        "unresolved_no_pmid_no_doi": 1
+      },
+      "forward": {
+        "total": 24,
+        "with_pmid": 21,
+        "doi_only_no_pmid": 3,
+        "unresolved_no_pmid_no_doi": 0
+      }
+    },
+    "Xie_2026": {
+      "pmid": "42183211",
+      "doi": "10.3389/fimmu.2026.1822561",
+      "backward": {
+        "total": 128,
+        "with_pmid": 125,
+        "doi_only_no_pmid": 0,
+        "unresolved_no_pmid_no_doi": 3
+      },
+      "forward": {
+        "total": 1,
+        "with_pmid": 1,
+        "doi_only_no_pmid": 0,
+        "unresolved_no_pmid_no_doi": 0
+      }
+    }
+  },
+  "totals": {
+    "backward_total": 709,
+    "forward_total": 1497,
+    "union_before_dedup": 2206,
+    "union_after_dedup": 1938,
+    "in_pool": 528,
+    "new_not_in_pool": 916,
+    "no_pmid_non_pubmed_items": 494,
+    "unresolved_no_pmid_no_doi_across_backward_and_forward": 27
+  },
+  "pool_reference": {
+    "file": "04_screening/pilot_2026-10-05/pool_pmids.txt",
+    "pool_size": 20090,
+    "strategy_version": "v0.7"
+  },
+  "deduplication_rule": "Grouped by PMID first; else by lower-cased DOI; else by normalized (lower-cased, whitespace-collapsed) exact title string for the small residual set with neither PMID nor DOI. No fuzzy title matching was attempted; this may under-merge paraphrased or OCR-variant citation strings for the no-PMID/no-DOI residual, which is disclosed as a limitation.",
+  "failures_and_limitations": [
+    "OpenCitations Index (COCI/successor) could not be reached reliably from this environment: 3/5 DOIs timed out (HTTP 000) after retries, 2/5 (Simpson's OpenAlex-attributed DOI; Shi 2025) returned HTTP 400. No OpenCitations data is included in forward.csv or union_dedup.csv this round; PubMed elink and OpenAlex cited-by were used as the two forward sources actually merged.",
+    "Simpson 2020 (Exerc Immunol Rev, PMID 32139352) has no DOI asserted by the publisher per protocol section E; Crossref title search for this reference found no match; PubMed efetch XML has no <ReferenceList> for this record; OpenAlex referenced_works for this record is empty (0 entries). Backward chasing for Simpson 2020 therefore yielded 0 records in this round -- a documented source gap, not a coding error.",
+    "Peake 2017 and Simpson 2020 PubMed XML records carry no <ReferenceList>; Peake 2017 backward references were obtained via Crossref works/<doi> reference array instead (129 entries, 118 with a publisher-asserted DOI, 11 with author/year/journal/volume/page only and no DOI in Crossref -- these 11 are recorded as unresolved).",
+    "For DOI-only forward/backward records (no PMID in OpenAlex ids.pmid), no additional per-DOI PubMed ESearch-by-DOI pass was run in this round to recover PMIDs for very recent or non-MEDLINE-indexed citing works; these remain doi_only. This is a scope limitation, not an error, and can be tightened in round 2.",
+    "No fuzzy/approximate title matching, no author-name disambiguation, and no manual verification of any individual record occurred; this is an automated API merge only.",
+    "Eligibility was NOT assessed for any record in this round. Records are titles/DOIs/PMIDs/years/journals only -- no abstracts were retrieved or stored anywhere in this output."
+  ],
+  "privacy_and_compliance": {
+    "no_person_email_in_any_request": true,
+    "user_agent_used": "scoping-review-citation-chasing/1.0",
+    "ncbi_rate_limit": "<=3 requests/second observed throughout",
+    "crossref_openalex_opencitations": "polite pool conventions followed anonymously; no mailto/API key supplied"
+  }
+}

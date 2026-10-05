@@ -5843,6 +5843,99 @@
         "seed_recall": "19/24",
         "run_log": "04_screening/pilot_2026-10-05/pool_run_log.json"
       }
-    ]
+    ],
+    "citation_chasing_round1_2026_10_05": {
+      "description": "Supplemental search round 1: backward+forward citation chasing of the five open-window reviews named as citation-chasing sources in protocol v3.0 section E / Amendment PRE-003 (Peake 2017, Campbell & Turner 2018, Simpson 2020, Shi 2025, Xie 2026). NOT a formal search: produces no PRISMA counts and populates none of the formal-run fields in `searches`, which stay null. The second citation-chasing round (over INCLUDED studies, post-screening) is separate and not yet run. Full detail: 03_search/citation_chasing_round1_2026-10-05/summary.json and README.md.",
+      "entries": [
+        {
+          "id": "CITECHASE_R1_Peake_2017_2026-10-05",
+          "run_type": "citation_chasing_supplemental",
+          "formal_search": false,
+          "prisma_counts": false,
+          "description": "Supplemental citation-chasing round 1 (backward+forward) on a single protocol-section-E review. Not a formal search: the formal-run fields in `searches` stay null. Eligibility NOT assessed; titles only, no abstracts stored.",
+          "source_review": "Peake_2017",
+          "source_pmid": "27909225",
+          "source_doi": "10.1152/japplphysiol.00622.2016",
+          "date_time_utc": "2026-10-05T16:02:00Z",
+          "backward_query": "PubMed efetch <ReferenceList> (db=pubmed, retmode=xml); Crossref works/<doi> reference array fallback for Peake 2017; OpenAlex works/pmid:<id> referenced_works fallback for Simpson 2020 (0 returned)",
+          "forward_query": "PubMed elink.fcgi dbfrom=pubmed linkname=pubmed_pubmed_citedin (batched call, 5 source PMIDs); OpenAlex works?filter=cites:<openalex_id> (cursor-paginated); OpenCitations api.opencitations.net/index/v2/citations/<doi> attempted, FAILED for all 5 DOIs (see summary.json)",
+          "backward_count": 129,
+          "forward_count": 393,
+          "output_dir": "03_search/citation_chasing_round1_2026-10-05/"
+        },
+        {
+          "id": "CITECHASE_R1_Campbell_Turner_2018_2026-10-05",
+          "run_type": "citation_chasing_supplemental",
+          "formal_search": false,
+          "prisma_counts": false,
+          "description": "Supplemental citation-chasing round 1 (backward+forward) on a single protocol-section-E review. Not a formal search: the formal-run fields in `searches` stay null. Eligibility NOT assessed; titles only, no abstracts stored.",
+          "source_review": "Campbell_Turner_2018",
+          "source_pmid": "29713319",
+          "source_doi": "10.3389/fimmu.2018.00648",
+          "date_time_utc": "2026-10-05T16:02:00Z",
+          "backward_query": "PubMed efetch <ReferenceList> (db=pubmed, retmode=xml); Crossref works/<doi> reference array fallback for Peake 2017; OpenAlex works/pmid:<id> referenced_works fallback for Simpson 2020 (0 returned)",
+          "forward_query": "PubMed elink.fcgi dbfrom=pubmed linkname=pubmed_pubmed_citedin (batched call, 5 source PMIDs); OpenAlex works?filter=cites:<openalex_id> (cursor-paginated); OpenCitations api.opencitations.net/index/v2/citations/<doi> attempted, FAILED for all 5 DOIs (see summary.json)",
+          "backward_count": 249,
+          "forward_count": 682,
+          "output_dir": "03_search/citation_chasing_round1_2026-10-05/"
+        },
+        {
+          "id": "CITECHASE_R1_Simpson_2020_2026-10-05",
+          "run_type": "citation_chasing_supplemental",
+          "formal_search": false,
+          "prisma_counts": false,
+          "description": "Supplemental citation-chasing round 1 (backward+forward) on a single protocol-section-E review. Not a formal search: the formal-run fields in `searches` stay null. Eligibility NOT assessed; titles only, no abstracts stored.",
+          "source_review": "Simpson_2020",
+          "source_pmid": "32139352",
+          "source_doi": null,
+          "date_time_utc": "2026-10-05T16:02:00Z",
+          "backward_query": "PubMed efetch <ReferenceList> (db=pubmed, retmode=xml); Crossref works/<doi> reference array fallback for Peake 2017; OpenAlex works/pmid:<id> referenced_works fallback for Simpson 2020 (0 returned)",
+          "forward_query": "PubMed elink.fcgi dbfrom=pubmed linkname=pubmed_pubmed_citedin (batched call, 5 source PMIDs); OpenAlex works?filter=cites:<openalex_id> (cursor-paginated); OpenCitations api.opencitations.net/index/v2/citations/<doi> attempted, FAILED for all 5 DOIs (see summary.json)",
+          "backward_count": 0,
+          "forward_count": 397,
+          "output_dir": "03_search/citation_chasing_round1_2026-10-05/"
+        },
+        {
+          "id": "CITECHASE_R1_Shi_2025_2026-10-05",
+          "run_type": "citation_chasing_supplemental",
+          "formal_search": false,
+          "prisma_counts": false,
+          "description": "Supplemental citation-chasing round 1 (backward+forward) on a single protocol-section-E review. Not a formal search: the formal-run fields in `searches` stay null. Eligibility NOT assessed; titles only, no abstracts stored.",
+          "source_review": "Shi_2025",
+          "source_pmid": "40777031",
+          "source_doi": "10.3389/fimmu.2025.1617261",
+          "date_time_utc": "2026-10-05T16:02:00Z",
+          "backward_query": "PubMed efetch <ReferenceList> (db=pubmed, retmode=xml); Crossref works/<doi> reference array fallback for Peake 2017; OpenAlex works/pmid:<id> referenced_works fallback for Simpson 2020 (0 returned)",
+          "forward_query": "PubMed elink.fcgi dbfrom=pubmed linkname=pubmed_pubmed_citedin (batched call, 5 source PMIDs); OpenAlex works?filter=cites:<openalex_id> (cursor-paginated); OpenCitations api.opencitations.net/index/v2/citations/<doi> attempted, FAILED for all 5 DOIs (see summary.json)",
+          "backward_count": 203,
+          "forward_count": 24,
+          "output_dir": "03_search/citation_chasing_round1_2026-10-05/"
+        },
+        {
+          "id": "CITECHASE_R1_Xie_2026_2026-10-05",
+          "run_type": "citation_chasing_supplemental",
+          "formal_search": false,
+          "prisma_counts": false,
+          "description": "Supplemental citation-chasing round 1 (backward+forward) on a single protocol-section-E review. Not a formal search: the formal-run fields in `searches` stay null. Eligibility NOT assessed; titles only, no abstracts stored.",
+          "source_review": "Xie_2026",
+          "source_pmid": "42183211",
+          "source_doi": "10.3389/fimmu.2026.1822561",
+          "date_time_utc": "2026-10-05T16:02:00Z",
+          "backward_query": "PubMed efetch <ReferenceList> (db=pubmed, retmode=xml); Crossref works/<doi> reference array fallback for Peake 2017; OpenAlex works/pmid:<id> referenced_works fallback for Simpson 2020 (0 returned)",
+          "forward_query": "PubMed elink.fcgi dbfrom=pubmed linkname=pubmed_pubmed_citedin (batched call, 5 source PMIDs); OpenAlex works?filter=cites:<openalex_id> (cursor-paginated); OpenCitations api.opencitations.net/index/v2/citations/<doi> attempted, FAILED for all 5 DOIs (see summary.json)",
+          "backward_count": 128,
+          "forward_count": 1,
+          "output_dir": "03_search/citation_chasing_round1_2026-10-05/"
+        }
+      ],
+      "totals": {
+        "backward_total": 709,
+        "forward_total": 1497,
+        "union_after_dedup": 1938,
+        "in_pool": 528,
+        "new_not_in_pool": 916,
+        "no_pmid_non_pubmed_items": 494
+      }
+    }
   }
 }
