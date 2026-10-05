@@ -71,8 +71,9 @@
     "protocol_version_doi": null,
     "protocol_release_commit": null,
     "reviewer_workbook_sha256": {
-      "reviewer_A": null,
-      "reviewer_B": null
+      "B": "e6e67f7ff7b6ff21a4fe692cabd881594737d0920624e7547c899b70188140e3",
+      "C": "ca0b60d3c549c7c895e33b243aa1e734091ead7393b19cef7ea91f04c5213625",
+      "locked_at": "2026-10-05T04:18:18+00:00"
     },
     "concept_comparison_items": [
       "Core A identifiable bout and post-cessation timing",
@@ -102,7 +103,29 @@
     "python_version": null,
     "repeat_seed_rule": "seed = 20261002 + round_number - 1; first repeat round_number=2; exclude all IDs sampled in earlier rounds",
     "pilot_rounds": [],
-    "manual_version_rule": "Record the screening_manual.md version as the protocol release tag plus git commit SHA used to generate the workbooks."
+    "manual_version_rule": "Record the screening_manual.md version as the protocol release tag plus git commit SHA used to generate the workbooks.",
+    "pilot_2026-10-05_mode": "Decisions entered by reviewers B and C through the coordinator's AskUserQuestion interface, one reviewer at a time with the other away from the screen; an AI-generated hint (recommended option) was visible for every record; recorded as AI-assisted calibration in ai_use_log.json",
+    "result_2026-10-05": {
+      "records": 50,
+      "raw_agreement": 1.0,
+      "kappa": 1.0,
+      "conflicts": 0,
+      "dispositions": {
+        "ADVANCE": 10,
+        "EXCLUDE_TA": 40
+      },
+      "reason_codes": {
+        "FT02_NOT_ORIGINAL_HUMAN_RESEARCH": 21,
+        "FT01_SOURCE_TYPE_NOT_CORE": 7,
+        "FT03_POPULATION_NOT_ELIGIBLE": 6,
+        "FT04_NO_QUALIFYING_EXERCISE_EXPOSURE": 3,
+        "FT07_NO_ELIGIBLE_IMMUNE_LINK": 3
+      },
+      "criterion": "raw agreement >= 0.80 met",
+      "limitation": "AI hint visible to both reviewers; acceptance pending A",
+      "merge_output": "pilot_2026-10-05/merge_TA_2026-10-05/agreement_TA.json",
+      "recorded_at": "2026-10-05T04:18:44+00:00"
+    }
   },
   "records": [],
   "field_schema": {

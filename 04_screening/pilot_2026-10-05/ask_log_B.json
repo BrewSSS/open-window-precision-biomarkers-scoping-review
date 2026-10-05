@@ -1,0 +1,208 @@
+{
+ "reviewer": "B",
+ "mode": "AskUserQuestion with AI hint shown (recorded in ai_use_log)",
+ "started": "2026-10-05T03:49:48.936689Z",
+ "decisions": {
+  "P001": {
+   "decision": "ADVANCE",
+   "reason": ""
+  },
+  "P002": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT02_NOT_ORIGINAL_HUMAN_RESEARCH"
+  },
+  "P003": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT03_POPULATION_NOT_ELIGIBLE"
+  },
+  "P004": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT02_NOT_ORIGINAL_HUMAN_RESEARCH"
+  },
+  "P005": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT01_SOURCE_TYPE_NOT_CORE"
+  },
+  "P006": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT03_POPULATION_NOT_ELIGIBLE"
+  },
+  "P007": {
+   "decision": "ADVANCE",
+   "reason": ""
+  },
+  "P008": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT01_SOURCE_TYPE_NOT_CORE"
+  },
+  "P009": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT02_NOT_ORIGINAL_HUMAN_RESEARCH"
+  },
+  "P010": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT03_POPULATION_NOT_ELIGIBLE"
+  },
+  "P011": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT04_NO_QUALIFYING_EXERCISE_EXPOSURE"
+  },
+  "P012": {
+   "decision": "ADVANCE",
+   "reason": ""
+  },
+  "P013": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT02_NOT_ORIGINAL_HUMAN_RESEARCH"
+  },
+  "P014": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT01_SOURCE_TYPE_NOT_CORE"
+  },
+  "P015": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT02_NOT_ORIGINAL_HUMAN_RESEARCH"
+  },
+  "P016": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT04_NO_QUALIFYING_EXERCISE_EXPOSURE"
+  },
+  "P017": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT02_NOT_ORIGINAL_HUMAN_RESEARCH"
+  },
+  "P018": {
+   "decision": "ADVANCE",
+   "reason": ""
+  },
+  "P019": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT07_NO_ELIGIBLE_IMMUNE_LINK"
+  },
+  "P020": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT02_NOT_ORIGINAL_HUMAN_RESEARCH"
+  },
+  "P021": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT02_NOT_ORIGINAL_HUMAN_RESEARCH"
+  },
+  "P022": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT03_POPULATION_NOT_ELIGIBLE"
+  },
+  "P023": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT03_POPULATION_NOT_ELIGIBLE"
+  },
+  "P024": {
+   "decision": "ADVANCE",
+   "reason": ""
+  },
+  "P025": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT02_NOT_ORIGINAL_HUMAN_RESEARCH"
+  },
+  "P026": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT02_NOT_ORIGINAL_HUMAN_RESEARCH"
+  },
+  "P027": {
+   "decision": "ADVANCE",
+   "reason": ""
+  },
+  "P028": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT02_NOT_ORIGINAL_HUMAN_RESEARCH"
+  },
+  "P029": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT02_NOT_ORIGINAL_HUMAN_RESEARCH"
+  },
+  "P030": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT04_NO_QUALIFYING_EXERCISE_EXPOSURE"
+  },
+  "P031": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT02_NOT_ORIGINAL_HUMAN_RESEARCH"
+  },
+  "P032": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT01_SOURCE_TYPE_NOT_CORE"
+  },
+  "P033": {
+   "decision": "ADVANCE",
+   "reason": ""
+  },
+  "P034": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT03_POPULATION_NOT_ELIGIBLE"
+  },
+  "P035": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT02_NOT_ORIGINAL_HUMAN_RESEARCH"
+  },
+  "P036": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT02_NOT_ORIGINAL_HUMAN_RESEARCH"
+  },
+  "P037": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT02_NOT_ORIGINAL_HUMAN_RESEARCH"
+  },
+  "P038": {
+   "decision": "ADVANCE",
+   "reason": ""
+  },
+  "P039": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT02_NOT_ORIGINAL_HUMAN_RESEARCH"
+  },
+  "P040": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT07_NO_ELIGIBLE_IMMUNE_LINK"
+  },
+  "P041": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT02_NOT_ORIGINAL_HUMAN_RESEARCH"
+  },
+  "P042": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT02_NOT_ORIGINAL_HUMAN_RESEARCH"
+  },
+  "P043": {
+   "decision": "ADVANCE",
+   "reason": ""
+  },
+  "P044": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT02_NOT_ORIGINAL_HUMAN_RESEARCH"
+  },
+  "P045": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT01_SOURCE_TYPE_NOT_CORE"
+  },
+  "P046": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT01_SOURCE_TYPE_NOT_CORE"
+  },
+  "P047": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT02_NOT_ORIGINAL_HUMAN_RESEARCH"
+  },
+  "P048": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT07_NO_ELIGIBLE_IMMUNE_LINK"
+  },
+  "P049": {
+   "decision": "EXCLUDE_TA",
+   "reason": "FT01_SOURCE_TYPE_NOT_CORE"
+  },
+  "P050": {
+   "decision": "ADVANCE",
+   "reason": ""
+  }
+ },
+ "completed": "2026-10-05T04:04:14.180000+00:00"
+}

@@ -63,7 +63,7 @@
     "protocol_v3_revision": "3.0 draft completed 2026-10-04 (PRE-002): EN source, governance files, CN protocol, 03-06 appendices, build chain, validator, workbook generator, LICENSE and Zenodo metadata aligned; cross-file consistency pass 2026-10-04; team freeze pending",
     "team_freeze": "done_2026-10-05",
     "archive_release_zenodo": "done_2026-10-05",
-    "random_50_screening_pilot": "pending",
+    "random_50_screening_pilot": "done_2026-10-05 (PubMed-only pool; raw agreement 1.00, kappa 1.00; AI hint visible — see ai_use_log)",
     "purposeful_10_charting_pilot": "pending",
     "formal_search": "pending",
     "dual_screening": "pending",
@@ -86,6 +86,7 @@
     "2026-10-04 (A): team members are identified by codes A-D in all project files; real names/affiliations are entered only into Zenodo/CITATION metadata immediately before release. Citation verification of newly added references is deferred to the manuscript stage; AI tool version numbers are not recorded at protocol stage.",
     "2026-10-04 (A): amendment PRE-003 (included in v3.0 release) makes the post-exercise/acute-bout T-block a required search concept, E AND (I OR O) AND T (design contract §9 supersedes §3 and 8.3a), after PubMed parser validation (union without T 255,019 records, ~8,500 two-reviewer person-hours; with T ~15,900 records, 10/10 positive PubMed seeds). PRESS accepted with conditions: no infection-outcome terms; train* retained until the pilot sample test. Mitigations re-tested in the pilot: >=30 positive seeds (>=5 numeric-only timing), T-free random-sample sensitivity run, citation chasing. Licensed platforms (WoS, Scopus, Embase, SPORTDiscus) pending D login.",
     "2026-10-05: team (A) froze v3.0 after PubMed validation and PRESS acceptance; licensed-platform syntax remains marked as pending D's login checks; v3.1 will follow only if those checks change concepts.",
-    "2026-10-05: v3.0 released (tag v3.0, commit fea09ea); Zenodo version DOI 10.5281/zenodo.23147973, concept DOI 10.5281/zenodo.23147972. Next: 50-record screening pilot and 10-report charting pilot; D's licensed-platform syntax checks."
+    "2026-10-05: v3.0 released (tag v3.0, commit fea09ea); Zenodo version DOI 10.5281/zenodo.23147973, concept DOI 10.5281/zenodo.23147972. Next: 50-record screening pilot and 10-report charting pilot; D's licensed-platform syntax checks.",
+    "2026-10-05 pilot TA: 50/50 agreement, 10 ADVANCE / 40 EXCLUDE_TA (FT02 21, FT01 7, FT03 6, FT04 3, FT07 3); conducted with visible AI hints; acceptance as calibration pending A."
   ]
 }

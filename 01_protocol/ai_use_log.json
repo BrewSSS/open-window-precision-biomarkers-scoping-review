@@ -216,6 +216,30 @@
         "registration/archive submission",
         "public push or release"
       ]
+    },
+    {
+      "date": "2026-10-05",
+      "tool": "Claude Code (Anthropic) desktop CLI",
+      "coordinator_model": "claude-fable-5-1",
+      "delegated_models": [
+        "claude-opus-5-5 (pilot pool build)"
+      ],
+      "tasks": [
+        "PubMed v0.7 draft pool (20,090) and 50-record sample (seed 20261002)",
+        "50-record title/abstract pilot conducted through the coordinator's AskUserQuestion interface: each record shown with a key-facts summary and an AI-generated recommended option; reviewer B answered all 50 first with C away from the screen, then C answered all 50; humans made every decision; coordinator transcribed decisions into the locked workbooks and ran scripts/merge_screening.py"
+      ],
+      "output_sources": [
+        "../04_screening/pilot_2026-10-05/pilot_TA_decisions_2026-10-05.csv",
+        "../04_screening/pilot_2026-10-05/merge_TA_2026-10-05/agreement_TA.json",
+        "../04_screening/screening_log_template.json (calibration)"
+      ],
+      "human_verification_status": "Decisions are human (B, C). Limitation recorded: a visible AI hint for every record makes the 50/50 agreement (kappa 1.0) an over-estimate of unaided inter-reviewer agreement; A decides whether a hint-free second sample is required.",
+      "not_performed": [
+        "automatic exclusion",
+        "formal search",
+        "formal screening",
+        "extraction"
+      ]
     }
   ],
   "future_entry_fields": [

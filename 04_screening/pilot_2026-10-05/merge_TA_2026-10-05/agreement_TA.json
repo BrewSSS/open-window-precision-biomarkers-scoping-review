@@ -1,0 +1,57 @@
+{
+  "stage": "TA",
+  "records_in_stage": 50,
+  "decided_A": 50,
+  "decided_B": 50,
+  "jointly_decided": 50,
+  "conflicts": 0,
+  "unresolved": 0,
+  "counts_A": {
+    "ADVANCE": 10,
+    "EXCLUDE_TA": 40,
+    "FRONTIER_PREPRINT": 0,
+    "AWAITING_CLASSIFICATION": 0
+  },
+  "counts_B": {
+    "ADVANCE": 10,
+    "EXCLUDE_TA": 40,
+    "FRONTIER_PREPRINT": 0,
+    "AWAITING_CLASSIFICATION": 0
+  },
+  "exact_disposition": {
+    "n": 50,
+    "agreements": 50,
+    "raw_agreement": 1.0,
+    "p_e": 0.68,
+    "kappa": 1.0,
+    "note": ""
+  },
+  "group_disposition": {
+    "n": 50,
+    "agreements": 50,
+    "raw_agreement": 1.0,
+    "p_e": 0.68,
+    "kappa": 1.0,
+    "note": ""
+  },
+  "group_labels": [
+    "progress / do not exclude",
+    "EXCLUDE_TA"
+  ],
+  "calibration": {
+    "planned_sample_size": 50,
+    "ids_given": 50,
+    "ids_not_in_pool": [],
+    "jointly_assessed": 50,
+    "agreements": 50,
+    "raw_agreement": 1.0,
+    "kappa_descriptive": 1.0,
+    "kappa_note": "",
+    "threshold": 0.8,
+    "binary_groups": [
+      "progress / do not exclude",
+      "EXCLUDE_TA"
+    ],
+    "status": "RAW_AGREEMENT_CRITERION_MET (pass also requires every conceptual disagreement to be resolved and documented by the reviewers)"
+  }
+}
