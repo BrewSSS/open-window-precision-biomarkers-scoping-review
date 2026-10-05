@@ -65,3 +65,4 @@ __pycache__/
 # platform screenshots may show account names: never commit
 03_search/search_checks_*/*.png
 03_search/search_checks_*/*.jpg
+!03_search/formal_runs/*/*/*_uts.txt

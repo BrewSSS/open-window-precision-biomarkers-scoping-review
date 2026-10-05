@@ -1,0 +1,46 @@
+{
+  "database": "Scopus",
+  "route": "EI (single route E AND I AND T, strategy v0.9-draft)",
+  "searcher": "D (web interface, BibTeX export with all available information)",
+  "export_date": "2026-10-05",
+  "export_time_utc_from_filename": "2026-10-05T13:34:12Z",
+  "query_source": "03_search/paste_ready_v0.9/SCOPUS_v0.9_FULL_single_line.txt (primary fields TITLE-ABS + AUTHKEY) plus the English-language and article limits added on 2026-10-05; D to confirm the platform-displayed query and final hit count",
+  "limits_assumed": "AND DOCTYPE(ar OR ip) AND LANGUAGE(english) AND NOT DOCTYPE(re OR ed OR le OR no OR er OR sh OR cr)",
+  "platform_count_before_language_article_limits": 12347,
+  "platform_count_after_limits": "to be confirmed by D (export total below)",
+  "files": [
+    {
+      "file": "SCOPUS_EI_2026-10-05.bib",
+      "original_name": "export_e34f6ff1-6a73-4a3d-bb00-d592612bcf19_2026-10-05T133412.622545041.bib",
+      "bytes": 27185278,
+      "sha256": "82ce3af3a7dc89b3e22bccf94a3830f47c4ee3f59a4c1af8f1b54ae0322d5263",
+      "format": "BibTeX (Scopus export, UTF-8)"
+    }
+  ],
+  "records_total": 11065,
+  "unique_EID": 11065,
+  "duplicate_EID_rows": 0,
+  "records_with_abstract": 11026,
+  "records_with_DOI": 10216,
+  "records_with_PubMed_ID": 8255,
+  "bibtex_type_values": {
+    "Article": 11065
+  },
+  "publication_stage_values": {
+    "Final": 11017,
+    "Article in press": 48
+  },
+  "language_field": {
+    "(no language field)": 11065
+  },
+  "committed": [
+    "manifest.json",
+    "SCOPUS_EI_2026-10-05_eids.txt",
+    "SCOPUS_EI_2026-10-05_dois.txt",
+    "SCOPUS_EI_2026-10-05_pmids.txt"
+  ],
+  "git_ignored": [
+    "SCOPUS_EI_2026-10-05.bib"
+  ],
+  "status": "provisional formal export (A instructed exports on 2026-10-05; A's PRESS re-review of v0.9 and the v3.1 release pending; seed test on the platform pending)"
+}

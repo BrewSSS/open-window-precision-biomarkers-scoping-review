@@ -1,0 +1,81 @@
+{
+  "database": "Web of Science Core Collection",
+  "route": "EI (single route E AND I AND T, strategy v0.9-draft)",
+  "searcher": "D (web interface, Fast 5000 export)",
+  "export_date": "2026-10-05",
+  "export_time_utc_from_file_mtimes": [
+    "2026-10-05T13:18:09Z",
+    "2026-10-05T13:18:50Z",
+    "2026-10-05T13:19:18Z"
+  ],
+  "query_source": "03_search/paste_ready_v0.9/WOS_v0.9_FULL_single_line.txt (primary fields TI/AB/AK) plus the English-language and Article limits added on 2026-10-05; D to confirm the platform-displayed query and final hit count",
+  "limits_assumed": "NOT DT=(Review OR Editorial Material OR Letter OR Correction) AND DT=(Article) AND LA=(English)",
+  "platform_count_before_language_article_limits": 14094,
+  "platform_count_after_limits": "to be confirmed by D (export total below)",
+  "files": [
+    {
+      "file": "WOS_EI_2026-10-05_part1.txt",
+      "original_name": "savedrecs (3).txt",
+      "bytes": 13457314,
+      "sha256": "5a0b7dee17396da799248aaefd7efc362e2b84fbcb9bee4cc737fbdfd8c0c7cf",
+      "records": 5000,
+      "encoding": "UTF-8 with BOM, tab-delimited, CRLF",
+      "columns": 55,
+      "file_mtime_utc": "2026-10-05T13:18:09Z"
+    },
+    {
+      "file": "WOS_EI_2026-10-05_part2.txt",
+      "original_name": "savedrecs (4).txt",
+      "bytes": 13130510,
+      "sha256": "66cabe1e5545ebd08bcf4ee0cf7b6d9f9e668ec592c269c428db0d7beaabb7fd",
+      "records": 5000,
+      "encoding": "UTF-8 with BOM, tab-delimited, CRLF",
+      "columns": 55,
+      "file_mtime_utc": "2026-10-05T13:18:50Z"
+    },
+    {
+      "file": "WOS_EI_2026-10-05_part3.txt",
+      "original_name": "savedrecs (5).txt",
+      "bytes": 8462047,
+      "sha256": "5b657629234d78681ab32d0d18b70b6919c3e11379d09636267be126819eaba9",
+      "records": 3242,
+      "encoding": "UTF-8 with BOM, tab-delimited, CRLF",
+      "columns": 55,
+      "file_mtime_utc": "2026-10-05T13:19:18Z"
+    }
+  ],
+  "records_total": 13242,
+  "unique_UT": 13242,
+  "duplicate_UT_rows_across_parts": 0,
+  "records_with_abstract": 13217,
+  "records_with_DOI": 12055,
+  "records_with_PubMed_ID": 0,
+  "document_type_values": {
+    "Article; Article": 12849,
+    "Article; Proceedings Paper; Article; Meeting": 269,
+    "Article; Early Access; Article; Early Access": 49,
+    "Article; Book Chapter; Article; Book": 48,
+    "Article; Retracted Publication; Article; Retracted Publication": 22,
+    "Article; Data Paper; Article; Data Paper": 5
+  },
+  "publication_years_top": {
+    "2023": 543,
+    "2024": 579,
+    "2025": 684,
+    "2026": 646,
+    "2027": 4
+  },
+  "columns_note": "Fast 5000 export includes TI, SO, PY, DI (DOI), UT, PM (PubMed ID), DT, AB (abstract), AK, C1, WC",
+  "committed": [
+    "manifest.json",
+    "WOS_EI_2026-10-05_uts.txt",
+    "WOS_EI_2026-10-05_dois.txt",
+    "WOS_EI_2026-10-05_pmids.txt"
+  ],
+  "git_ignored": [
+    "WOS_EI_2026-10-05_part1.txt",
+    "WOS_EI_2026-10-05_part2.txt",
+    "WOS_EI_2026-10-05_part3.txt"
+  ],
+  "status": "provisional formal export (A instructed exports on 2026-10-05; A's PRESS re-review of v0.9 and the v3.1 release pending; seed test on the platform pending)"
+}
