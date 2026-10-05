@@ -104,7 +104,22 @@ v3.0 的参考文献 1–20 在 `protocol_EN_full.md` 中人工写定；`referen
 - 本机构建目录（`01_protocol/build*`）与 `.claude/` 已忽略；推送前用 `git ls-files | xargs grep -l -I -E '/(Users|home)/|<本机用户名>'` 复查。
 - 占位符：creators/著作权人未填写时不得打 tag。
 
-## 8. 正式检索执行（Formal search execution）— Scopus（run_formal_scopus.py）
+## 8. 正式检索执行（Formal search execution）
+
+**总体顺序**（D 执行；各脚本均不读写 `search_log_template.json` 的正式字段，运行结果由 D 手动粘贴进去，粘贴前这些字段始终为 `null`）：
+
+1. D 在四个有许可数据库（Web of Science、Scopus、Embase、SPORTDiscus）各自的官方检索界面手工执行 v0.7 的 EI/EO 两条 route（`03_search/search_strategy_draft.txt` §4-§7），把原始导出文件放入 `03_search/formal_runs/<date>/<database>/`（`<date>` 为本次正式检索窗口的日期，`<database>` ∈ `wos`/`scopus`/`embase`/`ovid_embase`/`sportdiscus`）。
+2. `python3 scripts/run_formal_pubmed.py --label formal` → 写入 `03_search/formal_runs/<date>/pubmed/`。
+3. `python3 scripts/run_preprint_search.py --label formal` → 写入 `03_search/formal_runs/<date>/preprints/`（供参考的补充检索，不计入五库核心计数）。
+4. 若 Scopus `COMPLETE` 视图/`cursor` 授权已到位：`python3 scripts/run_formal_scopus.py --route both --label formal --view auto` → 写入 `03_search/formal_runs/<date>/scopus/`（见下）。
+5. `python3 scripts/dedup_records.py --inputs 03_search/formal_runs/<date>/ --out-dir 04_screening/formal_<date>/ --formal`（§9）合并五库+预印本导出为带来源追溯的去重 `records_master.csv`，再按需 `python3 scripts/fill_abstracts.py --master .../records_master.csv` 补全缺失摘要。
+6. D 把每个脚本 manifest 里的字段（命名对齐 `search_log_template.json.searches[]`：`exact_query_as_run`、`date_time_timezone`、`hit_count`/`result_total`、`export_count`、`export_filename_and_format`、`query_checksum_sha256` 等）逐条粘贴进 `search_log_template.json`，并记录 `final_search_date`。
+
+**命名约定**：D 手工导出的许可数据库原始文件统一为 `<DB>_<route>_<date>.ris` 或 `.txt`（例如 `WOS_EI_2026-10-05.ris`、`SPORTDISCUS_EO_2026-10-05.txt`），放在对应 `03_search/formal_runs/<date>/<database>/` 目录下，与各脚本自己写的 `*.jsonl.gz` 导出同级。
+
+**原始导出永不进 git**：`03_search/formal_runs/**` 下任何路线/任何日期目录里的原始导出（所有脚本的 `*.jsonl.gz`，以及 D 手工的 `<DB>_<route>_<date>.ris`/`.txt`）一律不提交；`.gitignore` 只显式解除忽略具名、不含摘要的文件——`manifest.json`、`run_manifest.json`、`route_overlap.json`、`*_eids.txt`、`*_dois.txt`、`*_pmids.txt`（按脚本列在各自小节）。新增任何脚本若要提交其它文件名，须在 `.gitignore` 里补一条同样精确的具名例外，不要放宽为按扩展名的笼统例外（笼统的 `*.txt`/`*.json` 例外会连带放行 D 手工许可数据库原始导出，已在 2026-10-05 发现并收紧过一次）。
+
+### Scopus（run_formal_scopus.py）
 
 查询文本单一来源是 `03_search/paste_ready_v0.7/SCOPUS_EI.txt` / `SCOPUS_EO.txt`（逐字节读取；两份文件由检索策略 v0.7 §5 的 `R1_SCOPUS_EI = E AND I AND T` / `R2_SCOPUS_EO = E AND O AND T` 生成）。脚本从不读写 `search_log_template.json` 的正式字段，由 D 手动把运行结果填入。
 
@@ -113,8 +128,29 @@ v3.0 的参考文献 1–20 在 `protocol_EN_full.md` 中人工写定；`referen
 - `--view auto`（默认）：先探测 `COMPLETE`；本机/本网络返回 `401 AUTHORIZATION_ERROR`（**需要校园网 IP、VPN，或机构 `X-ELS-Insttoken`**才能用 `COMPLETE`），探测失败即打印醒目警告并回退 `STANDARD`——`STANDARD` 视图没有摘要字段（`dc:description`），回退后导出**不含摘要**。`--view COMPLETE`/`STANDARD` 强制指定，不探测、不回退。
 - **已知配额限制（2026-10-05 实测）**：`cursor` 参数本身需要独立于 `COMPLETE`/`STANDARD` 视图的另一项授权；本网络/本 key 不带 `cursor` 的请求成功，带 `cursor=*` 返回 `403 ENTITLEMENTS_ERROR "Use of the cursor parameter is restricted"`。正式导出（非 dry-run）仍按本任务要求使用 `cursor` 分页；若遇到该 403，脚本以清晰报错中止，不会静默改用 `start` 偏移分页。在校园网/VPN 或机构 token 到位后，连同 `cursor` 授权一并与 Elsevier 确认。
 - 正式导出：按 route 落盘 gzip JSONL（`<ROUTE>_<date>.jsonl.gz`，每行一条 Scopus entry 的全部返回字段）、`<ROUTE>_eids.txt` / `_dois.txt` / `_pmids.txt`（可提交的标识符列表）、`route_overlap.json`（EI∩EO by EID，仅文档用途，不是去重步骤）与 `run_manifest.json`（逐 route 的 UTC 时间、精确查询、`totalResults`、页数、写入条数、含摘要条数、所用 view、导出文件 SHA-256/大小）。遵守 `x-ratelimit-remaining`：剩余 < 100 时在下一页请求前停止并给出明确信息；429/5xx 退避重试；≤2 请求/秒。
-- `.gitignore`：`03_search/formal_runs/**` 下原始导出（`*.jsonl.gz`，以及 D 手工的 `<DB>_<route>_<date>.ris`/`.txt` 许可数据库导出）永不提交；仅 `run_manifest.json`、`route_overlap.json` 与 `*_eids.txt`/`*_dois.txt`/`*_pmids.txt` 这些具名的无摘要文件被显式解除忽略。
+- `.gitignore`：见本节开头"原始导出永不进 git"——`run_manifest.json`、`route_overlap.json` 与 `*_eids.txt`/`*_dois.txt`/`*_pmids.txt` 是具名例外（不是按扩展名的笼统例外，避免放行 D 手工的同目录 `.txt` 原始导出）。
 - 用法：`python3 scripts/run_formal_scopus.py --dry-run --route both --label pilot`；正式运行示例：`python3 scripts/run_formal_scopus.py --route both --label formal --view auto --insttoken-env SCOPUS_INSTTOKEN`（等 `COMPLETE` 视图授权到位后再执行，本次任务只跑了 dry-run）。
+
+### PubMed（run_formal_pubmed.py）
+
+查询文本单一来源是 `03_search/search_strategy_draft.txt` §3 的 `E_PUBMED`/`I_PUBMED`/`O_PUBMED`/`T_PUBMED` 自由文本块与对应四条 MeSH 行，逐字节读取——复用 `scripts/fetch_pilot_pool.py` 的 `load_blocks()`（§3 区块解析）与 `check_against_validation()`（与 2026-10-04 `parser_validation_runs.pubmed_2026_10_04_v07_addendum3` 的 SHA-256 核对），不另建 JSON 副本。R1（EI）= E AND I AND T，R2（EO）= E AND O AND T；脚本额外把 R1/R2/UNION_PUBMED_FINAL 三个完整路线字符串的 SHA-256 也与该验证记录的 `route_entries` 核对（`check_against_validation()` 原本只核对到区块级与 UNION，不含 R1/R2 路线级）。
+
+- E-utilities 层复用 `fetch_pilot_pool.py` 的 `EUtils`/`run_search`/`fetch_metadata`/`parse_article`/`parse_book`（年份切分突破 esearch 单次 10,000 条上限、efetch ≤400/批），只覆盖其 `USER_AGENT`/`TOOL` 为本任务要求的 `scoping-review-search/1.0`/`scoping-review-search`（fetch_pilot_pool 自己的试点身份是 `scoping-review-pilot/1.0`），其余逻辑不变；≤3 请求/秒，不发送邮箱。
+- `--dry-run`：对 R1、R2 各发一次 `retmax=0` 的 esearch 取 count/querytranslation，另发一次 UNION_PUBMED_FINAL 仅作为与 2026-10-04 的 20,090 对照，不单独导出（策略 §1 要求 EI/EO 分开导出，去重前不合并）。2026-10-05 结果见 `03_search/formal_run_prep_2026-10-05/pubmed_dryrun.json`：EI=17,445、EO=4,004、UNION=20,090，与 2026-10-04 验证记录完全一致（差 0%）。
+- 正式导出：按 route 分别下载全部 PMID 并 efetch 元数据（title/abstract/authors/journal/year/doi/pubtypes/mesh_major），写 `03_search/formal_runs/<date>/pubmed/PUBMED_EI_<date>.jsonl.gz`/`PUBMED_EO_<date>.jsonl.gz`（gitignore）与 `manifest.json`（提交；逐 route 的 `hit_count`/`export_count`/`export_checksum_sha256`/`exact_query_as_run`/`query_translation_or_parser_details`/`seed_detection_by_seed_id` 等，字段名对齐 `search_log_template.json.searches[]` 的 `PUBMED_EI`/`PUBMED_EO` 两条记录，可直接粘贴）。`seed_detection_by_seed_id` 按下载到的 PMID 集合核对 `known_seed_test_list.md` 里有 PMID 的种子是否被该 route 检出。
+- `--limit-ids N` 仅供流水线自测（截断 efetch 前的 PMID 列表），强制 `--label pilot`，正式运行（`--label formal`）禁止使用。
+- 用法：`python3 scripts/run_formal_pubmed.py --dry-run --label formal`；正式运行：`python3 scripts/run_formal_pubmed.py --label formal`（默认写入 `03_search/formal_runs/<date>/pubmed/`，本次任务只跑了 dry-run）。
+
+### 预印本 bioRxiv/medRxiv（run_preprint_search.py）
+
+查询文本单一来源是 `03_search/search_strategy_draft.txt` §9.6 第 6 点已经写好的两条完整字符串——F1（免疫/标志物路线）与 F2（omics 路线），v0.7 起两者末尾都已并入 T 块。脚本逐字节提取后按顶层 ` AND ` 切成恰好 3 段（E、I-or-O、T，断言段数=3），每段再按顶层 ` OR ` 拆出词条；不读 PubMed §3 的独立 E/I/O/T 区块（字段语法不同，且 preprint 的 T 用拼出的短语而非邻近算子）。
+
+- **为何用本地正则而不是策略 §9.6 指定的 medRxiv Advanced Search 网页**（对策略字面方法的一个记录在案的偏离）：bioRxiv/medRxiv 唯一的公开 API `https://api.biorxiv.org/details/{server}/{from}/{to}/{cursor}` 没有任何查询/关键词参数，只能按日期窗口把一个服务器的全部记录分页枚举出来；要在程序里重现 F1/F2 的布尔逻辑，只能把窗口内每条记录的 title+abstract 拉下来后在本地比对同一套词表。脚本把每个 OR 词组转成大小写不敏感的正则并集（短语内词之间用 `[\s-]?` 兼容空格/短横/无分隔三种写法；词尾 `*` 转 `\w*`），E、I-or-O、T 三组正则都命中才算 F1/F2 匹配——这是对原布尔字符串的一种记录在案的近似，是自动化的补充方法，不替代、而是补充 D 手工跑 medRxiv Advanced Search 网页（若两者都跑，都要各自记录到 `search_log_template.json`）。`filter_version` 字段单独追踪这套本地匹配逻辑的版本，与策略文本的版本号分开。
+- **分页坑（2026-10-05 实测发现）**：API 文档写每页至多 100 条，但对当前日期窗口实测每页只返回 30 条；脚本不假设固定页大小，只在某页返回 0 条或累计条数达到 API 当次报告的 `total` 时才判定该窗口抓取完整，否则标记 `bounded_by_max_pages`/`completeness_status: INCOMPLETE`，绝不会因为"这页不满 100 条"就误判为已抓完。
+- `--dry-run`：默认窗口为"最近 `--window-days`（默认 60）天"，外加每服务器页数上限 `--max-pages-dry-run`（默认 10）——只是一个有界抽样的连通性/流水线测试，不代表全库计数，报告中把 API 当次报告的窗口总数（`window_total_reported_by_api`）与本次实际扫描条数（`records_scanned`）分开列出。另外按 DOI 单独取回已知阳性种子 POS-S2（`known_seed_test_list.md` §A；bioRxiv DOI `10.1101/2025.05.28.656705`，因为是纯预印本而没有 PubMed 记录，所以不在 PubMed 的验证记录里，恰好适合在这里复核）并核对其 F1/F2 匹配结果，作为"匹配逻辑在真实记录上确实生效"的复核，而不只是合成字符串自测。2026-10-05 结果见 `03_search/formal_run_prep_2026-10-05/preprint_dryrun.json`：窗口 2026-04-08–2026-10-05，biorxiv/medrxiv 窗口内 API 报告总数分别为 37,353／10,999，本次有界抽样各扫描 240 条（8 页×30 条，`bounded_by_max_pages: true`，远未抓完），抽样内 F1/F2 匹配数均为 0（抽样小且落在窗口最早连续 8 天，不能代表全窗口检出率）；POS-S2 复核：F1、F2 均正确命中（`matches_expectation: true`）。
+- 正式导出（不设日期上限，`--from`/`--to` 可覆盖默认的服务器上线日期/今天）：每个服务器只抓一次，同时判定 F1、F2 两条路线，按 `<ROUTE>_<server>_<date>.jsonl.gz` 落盘（4 个文件：F1/F2 × biorxiv/medrxiv；gitignore）与 `manifest.json`（提交；字段名对齐 `search_log_template.json.searches[]` 的 `PREPRINT_F1_IMMUNE`/`PREPRINT_F2_OMICS` 两条记录，含 `completeness_status`、`publication_version_linkage_checked` 等）。因为是两个服务器的全量历史枚举（各几十万条量级），预计单次运行需数十分钟到一小时以上；本次任务按要求只跑了 dry-run，没有执行正式导出。
+- 礼仪：`User-Agent: scoping-review-search/1.0`，≤1 请求/秒（比 PubMed 的 ≤3/秒更严格，遵守 bioRxiv 的礼貌使用请求），不发送邮箱。
+- 用法：`python3 scripts/run_preprint_search.py --dry-run`；正式运行：`python3 scripts/run_preprint_search.py --label formal`（默认写入 `03_search/formal_runs/<date>/preprints/`）。
 
 ## 9. 去重与摘要补全（Deduplication and abstract completion）
 

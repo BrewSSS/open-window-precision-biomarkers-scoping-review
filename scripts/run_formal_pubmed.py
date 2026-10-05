@@ -95,6 +95,24 @@ def sha256_bytes(b: bytes) -> str:
     return hashlib.sha256(b).hexdigest()
 
 
+def with_retries(fn, *a, attempts=8, delay=3, **kw):
+    """fetch_pilot_pool.EUtils.post() already retries up to 5 times on 429/5xx/timeout and re-raises as
+    SystemExit on exhaustion; this outer retry absorbs occasional sandbox-network dropouts (observed:
+    transient 'No route to host' bursts that clear within a few seconds) without touching that module."""
+    last = None
+    for i in range(attempts):
+        try:
+            return fn(*a, **kw)
+        except SystemExit as e:
+            last = e
+            if i == attempts - 1:
+                raise
+            print(f'  retrying after: {e} (attempt {i + 1}/{attempts})', file=sys.stderr)
+            import time
+            time.sleep(delay)
+    raise last
+
+
 # ---------------------------------------------------------------------------------------------
 # Strategy blocks -> R1 / R2 / UNION strings, verified against the 2026-10-04 validation record
 # ---------------------------------------------------------------------------------------------
@@ -172,7 +190,7 @@ def dry_run(routes: dict, union: str, checks: dict) -> dict:
     out = {}
     for sid, q in routes.items():
         when = utc_now()
-        r = eu.esearch(q, retmax=0, usehistory=False)
+        r = with_retries(eu.esearch, q, retmax=0, usehistory=False)
         out[sid] = {
             'datetime_utc': when, 'count': int(r['count']),
             'querytranslation': r.get('querytranslation'),
@@ -180,7 +198,7 @@ def dry_run(routes: dict, union: str, checks: dict) -> dict:
             'validated_count_2026_10_04': checks['validated_counts'][sid],
         }
     when = utc_now()
-    ru = eu.esearch(union, retmax=0, usehistory=False)
+    ru = with_retries(eu.esearch, union, retmax=0, usehistory=False)
     out['UNION_PUBMED_FINAL'] = {
         'datetime_utc': when, 'count': int(ru['count']),
         'querytranslation': ru.get('querytranslation'),
@@ -215,13 +233,13 @@ def full_run(routes: dict, checks: dict, out_dir: Path, date: str, label: str, l
     manifest_routes = {}
     for sid, q in routes.items():
         print(f'== {sid} ==', file=sys.stderr)
-        res = fpp.run_search(eu, q)
+        res = with_retries(fpp.run_search, eu, q)
         pmids = res.pop('pmids')
         truncated = False
         if limit_ids is not None and len(pmids) > limit_ids:
             pmids = pmids[:limit_ids]
             truncated = True
-        meta, fetch_times = fpp.fetch_metadata(eu, pmids)
+        meta, fetch_times = with_retries(fpp.fetch_metadata, eu, pmids)
         not_returned = sorted(set(pmids) - set(meta))
         records = [meta[p] for p in pmids if p in meta]
         export_name = f'{sid}_{date}.jsonl.gz'
