@@ -1,0 +1,360 @@
+{
+  "purpose": "Hashes and identifiers of the full texts and supplementary files retrieved for the 10-report purposive charting pilot. The files themselves are NOT committed (git-ignored folder 05_extraction/pilot_2026-10-05/fulltexts/); this manifest holds only identifiers, source URLs, sizes and SHA-256 values.",
+  "prepared_on": "2026-10-05",
+  "prepared_for": "D (data manager); work done by an AI agent on D's behalf, no eligibility or extraction decisions",
+  "protocol": "v3.0 (Zenodo version DOI 10.5281/zenodo.23147973)",
+  "source": "PMC Open Access subset via the PMC Cloud Service (https://pmc-oa-opendata.s3.amazonaws.com/): metadata/<PMCID>.<version>.json gives licence, retraction flag, pdf_url and media_urls with MD5; latest PMC version taken; every file checked against the PMC MD5 and SHA-256 recorded here. Supplementary files = all non-image media in the PMC package (figure images skipped). Publisher sites may list further supplements not in the PMC package.",
+  "identifier_checks": "PMID->DOI/PMCID via PubMed esummary and PMC ID Converter; DOI, title and year checked against Crossref /works (metadata only; no citation-quality verification). All 10 matched the restart ledger.",
+  "etiquette": {
+    "user_agent": "scoping-review-pilot/1.0",
+    "tool": "scoping-review-pilot",
+    "email_sent": false,
+    "api_key": null,
+    "max_rate_per_s": "<=3 (E-utilities); 1 file/s for downloads"
+  },
+  "n_items": 10,
+  "n_downloaded_items": 9,
+  "n_files": 20,
+  "verify": "shasum -a 256 05_extraction/pilot_2026-10-05/fulltexts/*  (compare with files[].sha256)",
+  "items": [
+    {
+      "pilot_item_id": "pilot_01",
+      "reference_id": "R59",
+      "doi": "10.1371/journal.pone.0206059",
+      "pmid": "30462646",
+      "pmcid": "PMC6248899",
+      "fulltext_source": "PMC",
+      "open_access": "yes",
+      "pmc_version": 1,
+      "pmc_citation": "PLoS One. 2018 Nov 21;13(11):e0206059. doi: 10.1371/journal.pone.0206059",
+      "licence": "CC BY",
+      "pmc_is_retracted": false,
+      "files": [
+        {
+          "kind": "fulltext_pdf",
+          "path": "05_extraction/pilot_2026-10-05/fulltexts/R59_PMC6248899.1.pdf",
+          "bytes": 872952,
+          "sha256": "cb14229182d830b81d4a3e9dd8c82ffd1dc9f414d78018270167d7ca2951b5d9",
+          "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC6248899.1/PMC6248899.1.pdf",
+          "pmc_md5_verified": true,
+          "retrieved_at_utc": "2026-10-05T04:26:20+00:00"
+        },
+        {
+          "kind": "supplement",
+          "path": "05_extraction/pilot_2026-10-05/fulltexts/R59_supp_pone.0206059.s001.xlsx",
+          "bytes": 17608,
+          "sha256": "4bf040d6c825743d7a4e39b398dc03e9866fff563be5e29a262a84803377ff67",
+          "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC6248899.1/pone.0206059.s001.xlsx",
+          "pmc_md5_verified": true,
+          "retrieved_at_utc": "2026-10-05T04:26:25+00:00"
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "pilot_item_id": "pilot_02",
+      "reference_id": "R56",
+      "doi": "10.1002/ejsc.70058",
+      "pmid": "41024702",
+      "pmcid": "PMC12480926",
+      "fulltext_source": "PMC",
+      "open_access": "yes",
+      "pmc_version": 1,
+      "pmc_citation": "Eur J Sport Sci. 2025 Sep 30;25(10):e70058. doi: 10.1002/ejsc.70058",
+      "licence": "CC BY",
+      "pmc_is_retracted": false,
+      "files": [
+        {
+          "kind": "fulltext_pdf",
+          "path": "05_extraction/pilot_2026-10-05/fulltexts/R56_PMC12480926.1.pdf",
+          "bytes": 872485,
+          "sha256": "ebc784da53e6d9643fb5921867c10ed26dfa7fd5e149d26a9a649a11525c0b45",
+          "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12480926.1/PMC12480926.1.pdf",
+          "pmc_md5_verified": true,
+          "retrieved_at_utc": "2026-10-05T04:26:27+00:00"
+        },
+        {
+          "kind": "supplement",
+          "path": "05_extraction/pilot_2026-10-05/fulltexts/R56_supp_EJSC-25-e70058-s001.docx",
+          "bytes": 478389,
+          "sha256": "1b9f5e943c4681a45ac8fbfb7949f40c62772a019da91d8e24060d1d5cae5110",
+          "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12480926.1/EJSC-25-e70058-s001.docx",
+          "pmc_md5_verified": true,
+          "retrieved_at_utc": "2026-10-05T04:26:35+00:00"
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "pilot_item_id": "pilot_03",
+      "reference_id": "R61",
+      "doi": "10.1111/sms.70018",
+      "pmid": "39817606",
+      "pmcid": "PMC11737006",
+      "fulltext_source": "PMC",
+      "open_access": "yes",
+      "pmc_version": 1,
+      "pmc_citation": "Scand J Med Sci Sports. 2025 Jan 16;35(1):e70018. doi: 10.1111/sms.70018",
+      "licence": "CC BY",
+      "pmc_is_retracted": false,
+      "files": [
+        {
+          "kind": "fulltext_pdf",
+          "path": "05_extraction/pilot_2026-10-05/fulltexts/R61_PMC11737006.1.pdf",
+          "bytes": 2165123,
+          "sha256": "42347f3b1fd61c593165882f0040fa855c5400f830bc4357103ffcdcc182789f",
+          "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11737006.1/PMC11737006.1.pdf",
+          "pmc_md5_verified": true,
+          "retrieved_at_utc": "2026-10-05T04:26:38+00:00"
+        },
+        {
+          "kind": "supplement",
+          "path": "05_extraction/pilot_2026-10-05/fulltexts/R61_supp_SMS-35-e70018-s001.xlsx",
+          "bytes": 438249,
+          "sha256": "8f4b262c46b087dd5543b5716d871651502104fe0aded5a4fd38fb283ea864c0",
+          "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11737006.1/SMS-35-e70018-s001.xlsx",
+          "pmc_md5_verified": true,
+          "retrieved_at_utc": "2026-10-05T04:26:43+00:00"
+        },
+        {
+          "kind": "supplement",
+          "path": "05_extraction/pilot_2026-10-05/fulltexts/R61_supp_SMS-35-e70018-s002.docx",
+          "bytes": 905962,
+          "sha256": "81bb6c2e17dd4ffb0429a63f376eefe544bf99f245bb02c442fcd0a18554a786",
+          "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC11737006.1/SMS-35-e70018-s002.docx",
+          "pmc_md5_verified": true,
+          "retrieved_at_utc": "2026-10-05T04:26:47+00:00"
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "pilot_item_id": "pilot_04",
+      "reference_id": "R62",
+      "doi": "10.1152/japplphysiol.00282.2026",
+      "pmid": "42545855",
+      "pmcid": null,
+      "fulltext_source": "needs institutional access",
+      "open_access": "no",
+      "pmc_version": null,
+      "pmc_citation": null,
+      "licence": null,
+      "pmc_is_retracted": null,
+      "files": [],
+      "status": "NOT_RETRIEVED: needs institutional access (D to fetch; see PILOT_README.md section 3)"
+    },
+    {
+      "pilot_item_id": "pilot_05",
+      "reference_id": "R46",
+      "doi": "10.1111/apha.70125",
+      "pmid": "41163346",
+      "pmcid": "PMC12615995",
+      "fulltext_source": "PMC",
+      "open_access": "yes",
+      "pmc_version": 1,
+      "pmc_citation": "Acta Physiol (Oxf). 2025 Oct 29;241(12):e70125. doi: 10.1111/apha.70125",
+      "licence": "CC BY",
+      "pmc_is_retracted": false,
+      "files": [
+        {
+          "kind": "fulltext_pdf",
+          "path": "05_extraction/pilot_2026-10-05/fulltexts/R46_PMC12615995.1.pdf",
+          "bytes": 2095632,
+          "sha256": "608d729651bfd12f92a7f47207fa5ca7b6e180936000112039759c7afd86fa9f",
+          "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12615995.1/PMC12615995.1.pdf",
+          "pmc_md5_verified": true,
+          "retrieved_at_utc": "2026-10-05T04:26:51+00:00"
+        },
+        {
+          "kind": "supplement",
+          "path": "05_extraction/pilot_2026-10-05/fulltexts/R46_supp_APHA-241-e70125-s001.xlsx",
+          "bytes": 69677,
+          "sha256": "391c62f3a5378324424d4dec36dc78e068aa3d8b872c9ac2fd66a1d5f7232936",
+          "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12615995.1/APHA-241-e70125-s001.xlsx",
+          "pmc_md5_verified": true,
+          "retrieved_at_utc": "2026-10-05T04:26:57+00:00"
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "pilot_item_id": "pilot_06",
+      "reference_id": "R42",
+      "doi": "10.1155/2020/3030793",
+      "pmid": "32047808",
+      "pmcid": "PMC7003279",
+      "fulltext_source": "PMC",
+      "open_access": "yes",
+      "pmc_version": 1,
+      "pmc_citation": "Biomed Res Int. 2020 Jan 23;2020:3030793. doi: 10.1155/2020/3030793",
+      "licence": "CC BY",
+      "pmc_is_retracted": false,
+      "files": [
+        {
+          "kind": "fulltext_pdf",
+          "path": "05_extraction/pilot_2026-10-05/fulltexts/R42_PMC7003279.1.pdf",
+          "bytes": 1893141,
+          "sha256": "1df5f3ec3209c2f6e5bef9a9b078087642d42a804fa03a378b324dc839bf5691",
+          "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC7003279.1/PMC7003279.1.pdf",
+          "pmc_md5_verified": true,
+          "retrieved_at_utc": "2026-10-05T04:27:00+00:00"
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "pilot_item_id": "pilot_07",
+      "reference_id": "R12",
+      "doi": "10.1007/s00394-023-03181-1",
+      "pmid": "37458775",
+      "pmcid": "PMC10468936",
+      "fulltext_source": "PMC",
+      "open_access": "yes",
+      "pmc_version": 1,
+      "pmc_citation": "Eur J Nutr. 2023 Jul 17;62(7):2977–90. doi: 10.1007/s00394-023-03181-1",
+      "licence": "CC BY",
+      "pmc_is_retracted": false,
+      "files": [
+        {
+          "kind": "fulltext_pdf",
+          "path": "05_extraction/pilot_2026-10-05/fulltexts/R12_PMC10468936.1.pdf",
+          "bytes": 1630595,
+          "sha256": "1d9e25b71aa7bce8580824883d7aca258aef62cd4ee8e7c4720044df3b9895e2",
+          "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10468936.1/PMC10468936.1.pdf",
+          "pmc_md5_verified": true,
+          "retrieved_at_utc": "2026-10-05T04:27:08+00:00"
+        },
+        {
+          "kind": "supplement",
+          "path": "05_extraction/pilot_2026-10-05/fulltexts/R12_supp_394_2023_3181_MOESM1_ESM.docx",
+          "bytes": 20080,
+          "sha256": "b1f14e634274a328727fca3e16598de07e9f0bbf1f6976b52ef78611867edaa8",
+          "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC10468936.1/394_2023_3181_MOESM1_ESM.docx",
+          "pmc_md5_verified": true,
+          "retrieved_at_utc": "2026-10-05T04:27:15+00:00"
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "pilot_item_id": "pilot_08",
+      "reference_id": "R03",
+      "doi": "10.3390/genes10050380",
+      "pmid": "31109152",
+      "pmcid": "PMC6562781",
+      "fulltext_source": "PMC",
+      "open_access": "yes",
+      "pmc_version": 1,
+      "pmc_citation": "Genes (Basel). 2019 May 19;10(5):380. doi: 10.3390/genes10050380",
+      "licence": "CC BY",
+      "pmc_is_retracted": false,
+      "files": [
+        {
+          "kind": "fulltext_pdf",
+          "path": "05_extraction/pilot_2026-10-05/fulltexts/R03_PMC6562781.1.pdf",
+          "bytes": 223270,
+          "sha256": "3846ef38e42fc34c9efb91de44bfcfbae4a99613e2b790367e5aeaf234a861c2",
+          "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC6562781.1/PMC6562781.1.pdf",
+          "pmc_md5_verified": true,
+          "retrieved_at_utc": "2026-10-05T04:27:17+00:00"
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "pilot_item_id": "pilot_09",
+      "reference_id": "R01",
+      "doi": "10.1126/sciadv.aeh0260",
+      "pmid": "42758809",
+      "pmcid": "PMC13588174",
+      "fulltext_source": "PMC",
+      "open_access": "yes",
+      "pmc_version": 1,
+      "pmc_citation": "Sci Adv. 2026 Sep 18;12(38):eaeh0260. doi: 10.1126/sciadv.aeh0260",
+      "licence": "CC BY-NC",
+      "pmc_is_retracted": false,
+      "files": [
+        {
+          "kind": "fulltext_pdf",
+          "path": "05_extraction/pilot_2026-10-05/fulltexts/R01_PMC13588174.1.pdf",
+          "bytes": 4310855,
+          "sha256": "c285a7f07c1e5f800dc56c6b45dc99a9e7d5833f044a7898f1d169afd885b6c5",
+          "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13588174.1/PMC13588174.1.pdf",
+          "pmc_md5_verified": true,
+          "retrieved_at_utc": "2026-10-05T04:27:20+00:00"
+        },
+        {
+          "kind": "supplement",
+          "path": "05_extraction/pilot_2026-10-05/fulltexts/R01_supp_sciadv.aeh0260_sm.pdf",
+          "bytes": 3455729,
+          "sha256": "202165c0301d5bdef564637ef8c2db573f701dbcf2e02db1001cdda22608b954",
+          "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13588174.1/sciadv.aeh0260_sm.pdf",
+          "pmc_md5_verified": true,
+          "retrieved_at_utc": "2026-10-05T04:27:32+00:00"
+        },
+        {
+          "kind": "supplement",
+          "path": "05_extraction/pilot_2026-10-05/fulltexts/R01_supp_sciadv.aeh0260_tables_s1_to_s5.zip",
+          "bytes": 3891952,
+          "sha256": "db961dcfb993879ecbe590cd19ba9357da4f90ab4f8f9cffe63ea39a29f4a566",
+          "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13588174.1/sciadv.aeh0260_tables_s1_to_s5.zip",
+          "pmc_md5_verified": true,
+          "retrieved_at_utc": "2026-10-05T04:27:39+00:00"
+        }
+      ],
+      "status": "downloaded"
+    },
+    {
+      "pilot_item_id": "pilot_10",
+      "reference_id": "R19",
+      "doi": "10.64898/2026.03.02.704798",
+      "pmid": "41835387",
+      "pmcid": "PMC12980391",
+      "fulltext_source": "PMC",
+      "open_access": "yes",
+      "pmc_version": 2,
+      "pmc_citation": "bioRxiv. 2026 Mar 11:2026.03.02.704798. Preprint. [Version 2] doi: 10.64898/2026.03.02.704798",
+      "licence": "CC BY",
+      "pmc_is_retracted": false,
+      "files": [
+        {
+          "kind": "fulltext_pdf",
+          "path": "05_extraction/pilot_2026-10-05/fulltexts/R19_PMC12980391.2.pdf",
+          "bytes": 8125010,
+          "sha256": "3e11d3a1322b9687a5fc61818563cc1fd6facc8ee4d2fbf4a49c906f45176485",
+          "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12980391.2/PMC12980391.2.pdf",
+          "pmc_md5_verified": true,
+          "retrieved_at_utc": "2026-10-05T04:27:52+00:00"
+        },
+        {
+          "kind": "supplement",
+          "path": "05_extraction/pilot_2026-10-05/fulltexts/R19_supp_NIHPP2026.03.02.704798v2-supplement-3.pdf",
+          "bytes": 3248264,
+          "sha256": "a758fa2d1daec50c0e7f1761f47a567eb2bcac5efc7bca045cd2d31bf9892e75",
+          "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12980391.2/NIHPP2026.03.02.704798v2-supplement-3.pdf",
+          "pmc_md5_verified": true,
+          "retrieved_at_utc": "2026-10-05T04:28:06+00:00"
+        },
+        {
+          "kind": "supplement",
+          "path": "05_extraction/pilot_2026-10-05/fulltexts/R19_supp_media-1.xlsx",
+          "bytes": 138399,
+          "sha256": "9512ccc013dd04e47c7fb20b0517c738aad04aff9103013832f6ae2a50931d0c",
+          "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12980391.2/media-1.xlsx",
+          "pmc_md5_verified": true,
+          "retrieved_at_utc": "2026-10-05T04:28:16+00:00"
+        },
+        {
+          "kind": "supplement",
+          "path": "05_extraction/pilot_2026-10-05/fulltexts/R19_supp_media-2.docx",
+          "bytes": 6476011,
+          "sha256": "2ddf5a7a35247a921756e52542d9452fb9d4ff3b7f952797f76cb429442d9325",
+          "source_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC12980391.2/media-2.docx",
+          "pmc_md5_verified": true,
+          "retrieved_at_utc": "2026-10-05T04:28:19+00:00"
+        }
+      ],
+      "status": "downloaded"
+    }
+  ]
+}

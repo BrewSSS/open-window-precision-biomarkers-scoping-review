@@ -11,7 +11,8 @@ binary grouping and threshold); every such interpretation is listed in INTERPRET
 written into the README sheet of the workbook it affects. Only Excel-mechanics defaults
 (TRUE/FALSE, the multi-value separator, group labels used inside formulas) are hard-coded.
 
-No records, decisions or counts are written: every data row is empty.
+No records, decisions or counts are written: every data row is empty (pilot options fill only the documented
+metadata/key cells).
 
 Usage:
     python3 scripts/build_workbooks.py                       # screening + extraction + appraisal
@@ -21,6 +22,11 @@ Usage:
         --reviewer-label B --out 04_screening/pilot_2026-10-05/pilot_screening_B.xlsx
         # pilot: one reviewer's screening workbook, generated from the same JSON sources, with records_master
         # filled from the CSV; only that reviewer's TA sheet is unlocked/visible (B -> slot A, C -> slot B).
+    python3 scripts/build_workbooks.py --populate-reports 05_extraction/pilot_2026-10-05/pilot_reports.csv \
+        --reviewer-label B --out 05_extraction/pilot_2026-10-05/pilot_extraction_B.xlsx
+        # charting pilot: one reviewer's extraction workbook; only the bibliographic/identifier cells of `reports`
+        # and the provenance_id/report_id keys of `extraction_provenance` are filled (locked); every judgement
+        # field is empty; adds a pilot_notes sheet and per-report minutes/question cells in README.
 Options --rows (formula rows in the screening workbook, default 5000; with --populate, the record count) and --out-dir.
 After building, every workbook is reloaded and checked (sheet names, headers, data
 validations, protection flags, empty data rows); use --no-verify to skip.
@@ -49,7 +55,7 @@ except ImportError:  # pragma: no cover
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUT = ROOT / 'templates_xlsx'
-SCRIPT_VERSION = '1.1.0'
+SCRIPT_VERSION = '1.2.0'
 MAX_ROW = 1048576
 MULTI_SEP = '; '                      # Excel-mechanics: separator for multi-valued cells
 BOOLEAN_VALUES = ['TRUE', 'FALSE']    # Excel-mechanics default for JSON booleans
@@ -1121,9 +1127,12 @@ def extraction_fields(src):
     return tables, codes, vocab, unmapped, undefined, problems
 
 
-def build_extraction(src, out_path: Path, reviewer: str | None = None, registry=None):
+def build_extraction(src, out_path: Path, reviewer: str | None = None, registry=None, pilot=None):
+    """pilot: None (blank template) or the dict from load_pilot_reports() -> one reviewer's charting-pilot workbook."""
     registry = {} if registry is None else registry
     tables, mcodes, vocab, unmapped, undefined, problems = extraction_fields(src)
+    if pilot:
+        check_pilot_report_columns(tables)
     dic = src['dictionary']['data']
     tmpl = src['extraction_template']['data']
     n_tables = len(tables)
@@ -1131,9 +1140,13 @@ def build_extraction(src, out_path: Path, reviewer: str | None = None, registry=
     ws_readme = wb.active
     ws_readme.title = 'README'
     sheets = {t: wb.create_sheet(t) for t in tables}
+    ws_notes = wb.create_sheet(PILOT_NOTES_SHEET) if pilot else None
     ws_dd = wb.create_sheet('data_dictionary')
     ws_codes = wb.create_sheet('codes')
     codes = Codes(wb, ws_codes)
+    if pilot:
+        codes.add(PILOT_RID_LIST, [r['report_id'] for r in pilot['reports']], 'pilot report_id (--populate-reports CSV)',
+                  note='Charting pilot only: the report_id values pre-filled in the reports sheet.')
     ids_neq = ','.join(f'"{c}"' for c in mcodes)
     headers = {}
     for t, info in tables.items():
@@ -1166,6 +1179,9 @@ def build_extraction(src, out_path: Path, reviewer: str | None = None, registry=
                 add_dv(ws, i, f'IF(ISNUMBER({c}),AND({c}>=0,{c}=INT({c})),OR(' + ','.join(f'{c}="{x}"' for x in mcodes) + '))',
                        kind='custom', prompt=f'Integer ≥ 0, or {"/".join(mcodes)} after source review.', title=m['field'],
                        registry=registry, label=f'{t}.{m["field"]}')
+            elif m['is_id'] and pilot and m['fk'] and m['fk'][0] == 'reports.report_id':
+                add_dv(ws, i, '=' + PILOT_RID_LIST, prompt='Pilot report_id (pre-filled in the reports sheet).',
+                       title=m['field'], registry=registry, label=f'{t}.{m["field"]}')
             elif m['is_id']:
                 c = f'{L(i)}2'
                 add_dv(ws, i, f'AND(' + ','.join(f'{c}<>"{x}"' for x in mcodes) + ')', kind='custom',
@@ -1176,6 +1192,9 @@ def build_extraction(src, out_path: Path, reviewer: str | None = None, registry=
         ws.auto_filter.ref = f'A1:{L(len(cols))}1'
         protect(ws, allow_row_edit=True)
         ws.sheet_properties.tabColor = '2E75B6'
+    if pilot:
+        build_pilot_notes(ws_notes, tables, codes, registry)
+        headers[PILOT_NOTES_SHEET] = list(PILOT_NOTES_COLUMNS)
     # vocabularies not mapped to any column: still listed for reference
     for k in unmapped:
         codes.add(f'voc_unmapped_{k}', vocab[k], f'{k} (UNMAPPED: no column)',
@@ -1211,7 +1230,8 @@ def build_extraction(src, out_path: Path, reviewer: str | None = None, registry=
     tbl_rows = [(t, f'row unit: {i["spec"]["row_unit"]} | PK: {i["spec"]["primary_key"]} | FK: '
                     f'{"; ".join(i["spec"].get("foreign_keys", [])) or "—"} | {len(i["fields"])} columns | {i["spec"].get("description", "")}')
                 for t, i in tables.items()]
-    write_readme(ws_readme, f'提取工作簿 Extraction workbook — reviewer {reviewer or "(unassigned)"}', [
+    readme_title = f'提取工作簿 Extraction workbook — reviewer {reviewer or "(unassigned)"}'
+    readme_sections = [
         ('生成信息 Generation', [('extractor / reviewer', label), ('generated_on', gen),
                                 ('generator', f'scripts/build_workbooks.py v{SCRIPT_VERSION}'),
                                 ('tables', f'{n_tables} tables (confirmed from data_dictionary.json relational_model.table_specs)'),
@@ -1236,17 +1256,25 @@ def build_extraction(src, out_path: Path, reviewer: str | None = None, registry=
         ('模板解释 Interpretations of JSON fields', INTERPRETATIONS['extraction']),
         ('无定义字段 Columns without a dictionary definition', [', '.join(undefined)] if undefined else ['none']),
         ('模板不一致提示 Template issues detected', problems or ['none detected by the generator']),
-    ])
+    ]
+    if pilot:
+        readme_title, readme_sections = extraction_pilot_readme(pilot, readme_sections)
+    write_readme(ws_readme, readme_title, readme_sections)
     ws_readme.sheet_properties.tabColor = '000000'
+    if pilot:
+        apply_extraction_pilot(wb, sheets, tables, pilot)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     wb.save(out_path)
-    spec = {'sheets': ['README'] + list(tables) + ['data_dictionary', 'codes'], 'headers': headers,
-            'protected': ['README'] + list(tables) + ['data_dictionary', 'codes'], 'unprotected': [],
+    extra = [PILOT_NOTES_SHEET] if pilot else []
+    spec = {'sheets': ['README'] + list(tables) + extra + ['data_dictionary', 'codes'], 'headers': headers,
+            'protected': ['README'] + list(tables) + extra + ['data_dictionary', 'codes'], 'unprotected': [],
             'unlocked_cols': {t: [L(i + 1) for i in range(len(c))] for t, c in headers.items()},
             'locked_cols': {}, 'empty_input_sheets': list(tables), 'formula_input_sheets': [],
             'dv': registry, 'names': list(codes.names), 'unlocked_cells': {},
             'text_cols': {t: [L(i + 1) for i, m in enumerate(tables[t]['fields']) if not m['is_count']] for t in tables},
             'reviewer': reviewer}
+    if pilot:
+        spec = extraction_pilot_spec(spec, pilot, wb, tables)
     return spec, {'n_tables': n_tables, 'unmapped': unmapped, 'undefined': undefined, 'problems': problems,
                   'n_fields': sum(len(v['fields']) for v in tables.values())}
 
@@ -1647,6 +1675,234 @@ def verify_pilot(path: Path, spec: dict) -> list:
 
 
 # ---------------------------------------------------------------------------------------------
+# Charting-pilot extraction workbooks (--populate-reports): same generator, same JSON sources; only the
+# bibliographic/identifier cells of `reports` and the report keys of `extraction_provenance` are filled
+# ---------------------------------------------------------------------------------------------
+# reports column <- CSV column. Only bibliographic/identifier columns (identity module or bibliographic
+# new fields of data_dictionary.json); every judgement column (publication_status, version_*, source_locator,
+# eligibility, screening decisions, notes, author use/interpretation) stays empty.
+PILOT_REPORT_PREFILL = {'reference_id': 'reference_id', 'title': 'title', 'authors': 'authors', 'year': 'year',
+                        'doi': 'doi', 'pmid': 'pmid', 'url': 'url'}
+PILOT_REPORT_CSV_FIELDS = ['pilot_item_id'] + list(PILOT_REPORT_PREFILL.values())
+PILOT_REPORT_ID = 'PILOT-{reference_id}'                  # reports.report_id (stable, pilot-only, never reused)
+PILOT_PROVENANCE_ID = 'PROV-{report_id}-{label}'          # extraction_provenance.provenance_id (one event per reviewer)
+PILOT_RID_LIST = 'lst_pilot_report_id'
+PILOT_NOTES_SHEET = 'pilot_notes'
+PILOT_NOTES_COLUMNS = ['report_id', 'table', 'field', 'row_key', 'issue_type', 'question', 'source_locator',
+                       'suggested_change']
+# Pilot mechanics (not protocol codes): category of a field-level question, used by scripts/compare_extraction.py.
+PILOT_ISSUE_TYPES = ['definition_ambiguous', 'manual_unclear_or_conflicting', 'vocabulary_missing_value',
+                     'not_extractable_from_text', 'row_unit_or_key_unclear', 'prefilled_metadata_mismatch', 'other']
+PILOT_MINUTES_HEADER = 'minutes (input)'
+PILOT_QUESTIONS_HEADER = 'unresolved_questions (input)'
+PILOT_DATE_LABEL = 'date finished (input, YYYY-MM-DD)'
+
+
+def load_pilot_reports(csv_path: Path, label: str) -> dict:
+    import csv
+    csv_path = Path(csv_path).resolve()
+    raw = csv_path.read_bytes()
+    rows = list(csv.DictReader(io.StringIO(raw.decode('utf-8-sig'))))
+    if not rows:
+        raise SystemExit(f'{csv_path}: no reports')
+    miss = [f for f in PILOT_REPORT_CSV_FIELDS if f not in rows[0]]
+    if miss:
+        raise SystemExit(f'{csv_path}: missing columns {miss}')
+    reports = []
+    for r in rows:
+        if not r['reference_id'].strip():
+            raise SystemExit(f'{csv_path}: empty reference_id')
+        rec = {col: (r.get(c) or '').strip() for col, c in PILOT_REPORT_PREFILL.items()}
+        rec['report_id'] = PILOT_REPORT_ID.format(reference_id=rec['reference_id'])
+        rec['provenance_id'] = PILOT_PROVENANCE_ID.format(report_id=rec['report_id'], label=label)
+        rec['_csv'] = {k: (v or '').strip() for k, v in r.items()}
+        reports.append(rec)
+    ids = [r['report_id'] for r in reports]
+    if len(set(ids)) != len(ids):
+        raise SystemExit(f'{csv_path}: reference_id must be unique')
+    try:
+        shown = str(csv_path.relative_to(ROOT))
+    except ValueError:
+        shown = csv_path.name
+    return {'label': label, 'slot': PILOT_SLOT[label], 'reports': reports, 'csv': shown,
+            'csv_sha256': hashlib.sha256(raw).hexdigest()}
+
+
+def check_pilot_report_columns(tables):
+    """Pre-filled columns must exist in the dictionary and be plain text (no vocabulary, not a count)."""
+    rep = {m['field']: m for m in tables['reports']['fields']}
+    for col in ['report_id'] + list(PILOT_REPORT_PREFILL):
+        m = rep.get(col)
+        if m is None or m['list_name'] or m['is_count']:
+            raise SystemExit(f'reports.{col}: not a plain bibliographic/identifier column in data_dictionary.json')
+    prov = {m['field']: m for m in tables['extraction_provenance']['fields']}
+    if not (prov.get('provenance_id', {}).get('is_pk') and prov.get('report_id', {}).get('fk')):
+        raise SystemExit('extraction_provenance: provenance_id (PK) / report_id (FK) not as expected in data_dictionary.json')
+
+
+def build_pilot_notes(ws, tables, codes, registry):
+    codes.add('lst_pilot_table', list(tables) + ['README', 'manual'], 'pilot_notes.table')
+    seen = []
+    for info in tables.values():
+        for m in info['fields']:
+            if m['field'] not in seen:
+                seen.append(m['field'])
+    codes.add('lst_pilot_field', seen, 'pilot_notes.field (all dictionary columns)')
+    codes.add('lst_pilot_issue_type', PILOT_ISSUE_TYPES, 'pilot_notes.issue_type (pilot mechanics, not protocol codes)')
+    write_header(ws, PILOT_NOTES_COLUMNS, {
+        'report_id': 'Pilot report_id (dropdown).',
+        'table': 'Sheet whose field is unclear (or README / manual for general questions).',
+        'field': 'Exact column header (dropdown; nested columns as parent.child). One row per field and question.',
+        'row_key': 'Primary-key value of the row concerned (e.g. your sample_set_id), if any.',
+        'issue_type': 'definition_ambiguous | manual_unclear_or_conflicting | vocabulary_missing_value | '
+                      'not_extractable_from_text | row_unit_or_key_unclear | prefilled_metadata_mismatch | other.',
+        'question': 'What is unclear, what you entered (or why you left it blank).',
+        'source_locator': 'Page / section / table / figure / supplement in the full text.',
+        'suggested_change': 'Optional: proposed wording for the dictionary or manual.'})
+    for i, h in enumerate(PILOT_NOTES_COLUMNS, start=1):
+        input_column(ws, i)
+        ws.column_dimensions[L(i)].width = 50 if h in ('question', 'suggested_change') else 22
+    c = {h: i + 1 for i, h in enumerate(PILOT_NOTES_COLUMNS)}
+    add_dv(ws, c['report_id'], '=' + PILOT_RID_LIST, registry=registry, label='pilot_notes.report_id',
+           prompt='Pilot report_id.', title='report_id')
+    add_dv(ws, c['table'], '=lst_pilot_table', registry=registry, label='pilot_notes.table', prompt='Sheet name.',
+           title='table')
+    add_dv(ws, c['field'], '=lst_pilot_field', style='warning', registry=registry, label='pilot_notes.field',
+           prompt='Column header (several: "; ").', title='field')
+    add_dv(ws, c['issue_type'], '=lst_pilot_issue_type', registry=registry, label='pilot_notes.issue_type',
+           prompt=' | '.join(PILOT_ISSUE_TYPES), title='issue_type')
+    ws.auto_filter.ref = f'A1:{L(len(PILOT_NOTES_COLUMNS))}1'
+    protect(ws, allow_row_edit=True)
+    ws.sheet_properties.tabColor = 'C55A11'
+
+
+def extraction_pilot_readme(pilot: dict, sections: list):
+    lab, slot = pilot['label'], pilot['slot']
+    other = next(k for k in PILOT_SLOT if k != lab)
+    n = len(pilot['reports'])
+    title = f'PILOT charting extraction workbook — reviewer {lab} ({n} reports; NOT formal extraction; pilot data are not results)'
+    rows = [
+        ('reviewer', f'{lab}（团队成员）。另一位审阅者 {other} 使用另一个文件。'),
+        ('status', '试点 PILOT ONLY：10 篇目的性 charting 试点，检验 data_dictionary.json 与 extraction_manual.md 是否可执行；'
+                   '不是正式提取，试点数据不是结果，不进入任何计数、证据图或 validation-readiness map。'),
+        ('1. 独立', f'独立提取。在 D 记录并提交两份返回文件的 SHA-256 之前，不与 {other} 或他人讨论任何报告、字段或取值；'
+                   '对手册的疑问发给 A/D 并记入日志。'),
+        ('2. 预填内容', f'reports 的 report_id、{", ".join(PILOT_REPORT_PREFILL)} 与 extraction_provenance 的 provenance_id、'
+                      'report_id 由生成器从 CSV 写入并锁定；其他所有单元格为空，由你填写。若预填书目信息与全文不符，'
+                      '不要改动，在 pilot_notes 记一行（issue_type = prefilled_metadata_mismatch）。'),
+        ('3. 你的槽位', f'工作簿列名沿用 A/B 槽位：{lab} → reports.screening_decision_reviewer_{slot}（你的全文处置）与 '
+                      f'extraction_provenance.extractor_a_b.extractor_{slot}（填 "{lab}"）；另一槽位列留空。'
+                      'consensus_screening_decision 与 primary_fulltext_exclusion_reason 留空（D 协调后填）；'
+                      '若你判排除，在 reviewer_notes 写 "provisional FT code: FTxx" 与原文定位。'),
+        ('4. 填写', '按 extraction_manual.md 填 8 张关联表，顺序 study_families → reports → cohorts → report_cohort_links → '
+                   'sample_sets → measurements → precision_validation → extraction_provenance。核查原文后每个字段填值或 '
+                   'NR/NA/UNCLEAR；空白只表示“未提取/无法按手册决定”。report_id 列为下拉。'),
+        ('5. 疑问', '每个含义不清、手册未覆盖、下拉缺值或原文无法提取的字段，在 pilot_notes 记一行（report_id、table、field、'
+                   'row_key、issue_type、question、source_locator）；每篇报告的概括写在下表 unresolved_questions。'),
+        ('6. 计时', '每篇报告分别计时（打开全文到该报告所有行填完，含补充材料），分钟数填在下表 minutes 列。'),
+        ('7. 返回', '保存为 .xlsx，保留文件名，不改 sheet 名，关闭后发给 D。发送后不再修改；D 记录 SHA-256 并提交 git，'
+                   '之后才比对（scripts/compare_extraction.py）。'),
+        ('source file', f'{pilot["csv"]} (sha256={pilot["csv_sha256"][:16]}…)'),
+        (PILOT_DATE_LABEL, ''),
+    ]
+    rep_rows = [('report_id', 'reference_id · pilot item · full text · title — pilot purpose')]
+    for r in pilot['reports']:
+        c = r['_csv']
+        rep_rows.append((r['report_id'], f'{r["reference_id"]} · {c.get("pilot_item_id", "")} · {c.get("fulltext_source", "")} · '
+                                         f'{r["title"]} — {c.get("pilot_purpose", "")}'))
+    head = [('试点 PILOT — read this first', rows), ('每篇报告 Per report: minutes and unresolved questions', rep_rows)]
+    gen = [x for x in sections if x[0].startswith('生成信息')]
+    rest = [x for x in sections if not x[0].startswith('生成信息')]
+    if gen:
+        g = [(k, (f'{lab} (charting pilot; generator slot {slot})' if k == 'extractor / reviewer' else v))
+             for k, v in gen[0][1]]
+        gen = [(gen[0][0], g + [('populated by', f'scripts/build_workbooks.py --populate-reports {pilot["csv"]} '
+                                                  f'--reviewer-label {lab}')])]
+    return title, head + gen + rest
+
+
+def apply_extraction_pilot(wb, sheets, tables, pilot: dict):
+    for t, keys in (('reports', ['report_id'] + list(PILOT_REPORT_PREFILL)),
+                    ('extraction_provenance', ['provenance_id', 'report_id'])):
+        ws = sheets[t]
+        col = {m['field']: i + 1 for i, m in enumerate(tables[t]['fields'])}
+        for r, rec in enumerate(pilot['reports'], start=2):
+            for k in keys:
+                v = rec[k]
+                if not v:
+                    continue
+                c = ws.cell(row=r, column=col[k], value=str(v))
+                c.number_format, c.protection, c.alignment = '@', LOCKED, WRAP
+    rd = wb['README']
+    rd.column_dimensions['C'].width = 16
+    rd.column_dimensions['D'].width = 70
+    a = {c.value: c.row for c in rd['A'] if c.value}
+    hr = a['report_id']
+    for col, text in ((3, PILOT_MINUTES_HEADER), (4, PILOT_QUESTIONS_HEADER)):
+        h = rd.cell(row=hr, column=col, value=text)
+        h.font = Font(bold=True)
+    dv = DataValidation(type='decimal', operator='between', formula1='0', formula2='100000', allow_blank=True,
+                        showErrorMessage=True, errorTitle='Minutes', error='Enter minutes as a number.')
+    rd.add_data_validation(dv)
+    for rec in pilot['reports']:
+        r = a[rec['report_id']]
+        rd.cell(row=r, column=1).font = Font(bold=True)
+        m = rd.cell(row=r, column=3)
+        m.number_format, m.protection, m.fill = '0.0', UNLOCKED, FILL['inputcell']
+        dv.add(m.coordinate)
+        q = rd.cell(row=r, column=4)
+        q.number_format, q.protection, q.fill, q.alignment = '@', UNLOCKED, FILL['inputcell'], WRAP
+    d = rd.cell(row=a[PILOT_DATE_LABEL], column=2)
+    d.value, d.number_format, d.protection, d.fill = None, '@', UNLOCKED, FILL['inputcell']
+    rd.cell(row=a[PILOT_DATE_LABEL], column=1).font = Font(bold=True)
+    for w in wb.worksheets:
+        w.sheet_view.tabSelected = (w.title == 'README')
+    wb.active = 0
+    wb.security = WorkbookProtection(lockStructure=True)
+
+
+def extraction_pilot_spec(spec: dict, pilot: dict, wb, tables) -> dict:
+    spec = dict(spec)
+    spec['empty_input_sheets'] = [s for s in spec['empty_input_sheets'] if s not in ('reports', 'extraction_provenance')]
+    spec['empty_input_sheets'].append(PILOT_NOTES_SHEET)
+    spec['text_cols'] = dict(spec['text_cols'], **{PILOT_NOTES_SHEET: [L(i + 1) for i in range(len(PILOT_NOTES_COLUMNS))]})
+    rd = wb['README']
+    a = {c.value: c.row for c in rd['A'] if c.value}
+    cells = [f'B{a[PILOT_DATE_LABEL]}'] + [f'{x}{a[r["report_id"]]}' for r in pilot['reports'] for x in ('C', 'D')]
+    spec['unlocked_cells'] = dict(spec['unlocked_cells'], README=cells)
+    spec['pilot'] = {'label': pilot['label'], 'slot': pilot['slot'], 'reports': pilot['reports'],
+                     'fields': {t: [m['field'] for m in tables[t]['fields']] for t in ('reports', 'extraction_provenance')}}
+    return spec
+
+
+def verify_extraction_pilot(path: Path, spec: dict) -> list:
+    wb = openpyxl.load_workbook(path)
+    errs = []
+    P = spec['pilot']
+    if not (wb.security and wb.security.lockStructure):
+        errs.append('workbook structure not protected')
+    if wb.security and wb.security.workbookPassword:
+        errs.append('workbook protection has a password')
+    if f'reviewer {P["label"]}' not in str(wb['README']['A1'].value):
+        errs.append('README title does not carry the reviewer label')
+    for t, filled in (('reports', ['report_id'] + list(PILOT_REPORT_PREFILL)),
+                      ('extraction_provenance', ['provenance_id', 'report_id'])):
+        ws = wb[t]
+        fields = P['fields'][t]
+        if ws.max_row != len(P['reports']) + 1:
+            errs.append(f'{t}: {ws.max_row - 1} data rows, expected {len(P["reports"])}')
+        for r, rec in enumerate(P['reports'], start=2):
+            for j, f in enumerate(fields, start=1):
+                c = ws.cell(row=r, column=j)
+                want = rec[f] if f in filled else None
+                if (c.value or None) != (want or None):
+                    errs.append(f'{t} row {r} {f}: {c.value!r} != expected {want!r}')
+                if f in filled and want and c.protection.locked is not True:
+                    errs.append(f'{t} row {r} {f}: pre-filled cell not locked')
+    return errs
+
+
+# ---------------------------------------------------------------------------------------------
 # Verification (reload with openpyxl)
 # ---------------------------------------------------------------------------------------------
 def verify(path: Path, spec: dict) -> dict:
@@ -1733,10 +1989,41 @@ def main(argv=None):
                          'title, abstract, authors, journal, year); requires --reviewer-label and --out')
     ap.add_argument('--reviewer-label', choices=sorted(PILOT_SLOT),
                     help='pilot reviewer (team label): B -> decision sheet screen_TA_reviewer_A, C -> screen_TA_reviewer_B; '
-                         'the other reviewer slot, FT and merge sheets are hidden and locked')
+                         'the other reviewer slot, FT and merge sheets are hidden and locked. With --populate-reports: '
+                         'stamps the label; B uses the *_A slot columns, C the *_B slot columns')
+    ap.add_argument('--populate-reports', type=Path, metavar='CSV',
+                    help='charting pilot: build ONE extraction workbook with only the bibliographic/identifier columns of '
+                         'reports (report_id <- PILOT-<reference_id>, reference_id, title, authors, year, doi, pmid, url) '
+                         'and the provenance_id/report_id keys of extraction_provenance filled from CSV (needs columns '
+                         'pilot_item_id, reference_id, title, authors, year, doi, pmid, url); requires --reviewer-label '
+                         'and --out')
     ap.add_argument('--out', type=Path, help='pilot: output .xlsx path')
     args = ap.parse_args(argv)
     src = load_sources()
+    if args.populate_reports:
+        if args.populate:
+            ap.error('--populate (screening pilot) and --populate-reports (charting pilot) are separate runs')
+        if not (args.reviewer_label and args.out):
+            ap.error('--populate-reports requires --reviewer-label and --out')
+        if args.only or args.reviewer:
+            ap.error('--populate-reports builds only the pilot extraction workbook; do not combine with --only/--reviewer')
+        pilot = load_pilot_reports(args.populate_reports, args.reviewer_label)
+        out = args.out.resolve()
+        spec, info = build_extraction(src, out, reviewer=args.reviewer_label, pilot=pilot)
+        line = {'written': str(out.relative_to(ROOT)) if out.is_relative_to(ROOT) else str(out),
+                'reviewer_label': args.reviewer_label, 'slot': pilot['slot'], 'reports': len(pilot['reports']),
+                'source_csv_sha256': pilot['csv_sha256']}
+        failed = False
+        if not args.no_verify:
+            v = verify(out, spec)
+            errs = v['errors'] + verify_extraction_pilot(out, spec)
+            line.update({k: v[k] for k in ('sheets', 'data_validations_checked', 'protected_sheets')})
+            line['verify'] = 'OK' if not errs else errs
+            failed = bool(errs)
+        line['sha256'] = sha256(out)
+        line.update({'tables': info['n_tables'], 'fields': info['n_fields'], 'template_issues': len(info['problems'])})
+        print(json.dumps(line, ensure_ascii=False))
+        return 1 if failed else 0
     if args.populate or args.reviewer_label or args.out:
         if not (args.populate and args.reviewer_label and args.out):
             ap.error('--populate, --reviewer-label and --out must be given together')

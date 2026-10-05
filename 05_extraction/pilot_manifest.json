@@ -5,6 +5,18 @@
   "design_contract": "01_protocol/v3_design_contract.txt",
   "n_items": 10,
   "selection_source": "02_preliminary/restart_2026-10-02/pilot_manifest.json",
+  "materials": {
+    "date": "2026-10-05",
+    "folder": "05_extraction/pilot_2026-10-05/",
+    "readme": "05_extraction/pilot_2026-10-05/PILOT_README.md",
+    "reports_csv": "05_extraction/pilot_2026-10-05/pilot_reports.csv",
+    "fulltexts_manifest": "05_extraction/pilot_2026-10-05/fulltexts_manifest.json",
+    "workbooks": [
+      "05_extraction/pilot_2026-10-05/pilot_extraction_B.xlsx",
+      "05_extraction/pilot_2026-10-05/pilot_extraction_C.xlsx"
+    ],
+    "note": "Materials prepared by D (AI agent on D's behalf); no reviewer field below is filled. Full texts are git-ignored; only their hashes are versioned."
+  },
   "notes": [
     "Reference and lane entry IDs point to current restart ledger/lanes.",
     "R01 and R19 link multiple lane rows about the same report; do not double count.",
@@ -28,7 +40,8 @@
         }
       ],
       "pilot_purpose": "感染症状定义与采样先后",
-      "status": "not_started",
+      "status": "materials_prepared",
+      "fulltext_source": "PMC",
       "reviewer_A_decision": null,
       "reviewer_B_decision": null,
       "consensus_decision": null,
@@ -53,7 +66,8 @@
         }
       ],
       "pilot_purpose": "sIgA阴性结果与多个子研究",
-      "status": "not_started",
+      "status": "materials_prepared",
+      "fulltext_source": "PMC",
       "reviewer_A_decision": null,
       "reviewer_B_decision": null,
       "consensus_decision": null,
@@ -78,7 +92,8 @@
         }
       ],
       "pilot_purpose": "单细胞供者数与质控",
-      "status": "not_started",
+      "status": "materials_prepared",
+      "fulltext_source": "PMC",
       "reviewer_A_decision": null,
       "reviewer_B_decision": null,
       "consensus_decision": null,
@@ -103,7 +118,8 @@
         }
       ],
       "pilot_purpose": "人群边界案例：青少年（<18 岁）队列——按 v3 契约 2.3 属 FT03（不可分出成人层），用于校准 age_range、adult_stratum_separable 与 FT03 判定；不预期作为合格证据提取",
-      "status": "not_started",
+      "status": "materials_prepared",
+      "fulltext_source": "needs institutional access",
       "reviewer_A_decision": null,
       "reviewer_B_decision": null,
       "consensus_decision": null,
@@ -128,7 +144,8 @@
         }
       ],
       "pilot_purpose": "靶向蛋白动力学与共享队列",
-      "status": "not_started",
+      "status": "materials_prepared",
+      "fulltext_source": "PMC",
       "reviewer_A_decision": null,
       "reviewer_B_decision": null,
       "consensus_decision": null,
@@ -153,7 +170,8 @@
         }
       ],
       "pilot_purpose": "混合尿样、技术重复与运动—采样时序边界（按 v3 契约先作背景校准，静息/训练研究规则沿用 v2；仅全文澄清事件与时间关系后再评估 A/B 资格）",
-      "status": "not_started",
+      "status": "materials_prepared",
+      "fulltext_source": "PMC",
       "reviewer_A_decision": null,
       "reviewer_B_decision": null,
       "consensus_decision": null,
@@ -178,7 +196,8 @@
         }
       ],
       "pilot_purpose": "代谢组与直接免疫功能共测",
-      "status": "not_started",
+      "status": "materials_prepared",
+      "fulltext_source": "PMC",
       "reviewer_A_decision": null,
       "reviewer_B_decision": null,
       "consensus_decision": null,
@@ -203,7 +222,8 @@
         }
       ],
       "pilot_purpose": "分选NK细胞甲基化与即刻采样",
-      "status": "not_started",
+      "status": "materials_prepared",
+      "fulltext_source": "PMC",
       "reviewer_A_decision": null,
       "reviewer_B_decision": null,
       "consensus_decision": null,
@@ -234,7 +254,8 @@
         }
       ],
       "pilot_purpose": "静息横断面背景及预印本版本合并",
-      "status": "not_started",
+      "status": "materials_prepared",
+      "fulltext_source": "PMC",
       "reviewer_A_decision": null,
       "reviewer_B_decision": null,
       "consensus_decision": null,
@@ -271,7 +292,8 @@
         }
       ],
       "pilot_purpose": "预印本、多平台不同n及重复样本",
-      "status": "not_started",
+      "status": "materials_prepared",
+      "fulltext_source": "PMC",
       "reviewer_A_decision": null,
       "reviewer_B_decision": null,
       "consensus_decision": null,

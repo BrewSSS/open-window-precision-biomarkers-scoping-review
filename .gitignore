@@ -38,3 +38,6 @@ __pycache__/
 04_screening/pilot_*/pool_metadata.json.gz
 04_screening/pilot_*/pilot_sample_*.csv
 04_screening/pilot_*/*.xlsx
+
+# Charting-pilot full texts and supplements (publisher/PMC copies; hashes in 05_extraction/pilot_2026-10-05/fulltexts_manifest.json)
+05_extraction/pilot_2026-10-05/fulltexts/
