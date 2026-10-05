@@ -1,0 +1,119 @@
+{
+  "protocol_version": "3.1",
+  "records": [
+    {
+      "amendment_id": "PRE-001",
+      "date": "2026-10-02",
+      "stage": "before_formal_search_and_registration",
+      "from": "v1.0 and exploratory restart design",
+      "to": "v2.0",
+      "reason": "User-approved retention of precision biomarkers and post-exercise focus; evidence and methods audit",
+      "changes_document": "../CHANGELOG.md",
+      "known_information": "Public exploratory evidence reconnaissance and neighboring reviews; no formal included-study results",
+      "approval_basis": "User requested planning and update of entire research design after agreeing to direction",
+      "human_team_freeze_date": null,
+      "re_screening_required": "No formal screening yet; apply v2 to future calibration and formal screening"
+    },
+    {
+      "amendment_id": "PRE-002",
+      "date": "2026-10-04",
+      "stage": "before_archive_release_pilots_and_formal_search",
+      "from": "v2.0 (candidate biomarkers for precision monitoring of post-exercise immunity)",
+      "to": "v3.0 (precision biomarkers of the exercise-induced immune open window; open window as organising construct)",
+      "reason": "Team decision after 2026-10-04 collision re-check: broad post-exercise framing has high and rising collision risk (single-marker SR/MA wave, Front Immunol umbrella reviews); narrowed framing has no direct collision provided the open window is an organising construct, not an adjudicated hypothesis",
+      "changes_document": "v3_design_contract.txt",
+      "eligibility_decisions": {
+        "exposure_threshold": "none; intensity/duration/mode charted",
+        "organising_window": "0-72 h; outside-window samples extracted and tagged, no new exclusion code",
+        "population": "adults >=18, healthy and athletes; older adults subgroup; <18 excluded",
+        "support_B": "retained as cross-bout monitoring layer"
+      },
+      "registration_change": "OSF Registries -> GitHub repository + Zenodo-archived Release (DOI), archived after v3 freeze and before pilots",
+      "known_information": "Public collision re-check 2026-10-04 (02_preliminary/collision_recheck_2026-10-04.md); no formal search, screening or extraction performed",
+      "approval_basis": "Decisions taken on 2026-10-04 in session with Claude Code: framing, population, Support B and archive timing by A; organising window by A with the immunology content expert; exposure threshold and Excel tooling by B and C; title, licence and default rulings (contract section 8) by A after review of the change map",
+      "decision_by": "A (framing, population, Support B, archive, title, licence); A + immunology content expert (organising window); B + C (exposure threshold, tooling)",
+      "reassessment_needed": "No formal screening yet; apply v3 to calibration and formal screening",
+      "release_update": "not applicable yet (no archive exists); v3.0 will be the first tagged GitHub Release archived by Zenodo (concept DOI + version DOI assigned on release)",
+      "implementation_status": "implemented in v3.0 draft pending team freeze",
+      "implementation_date": "2026-10-04",
+      "implementation_record": "01_protocol/verification/v3_change_map_2026-10-04.md (sections B1, B3); CHANGELOG.md 3.0"
+    },
+    {
+      "amendment_id": "PRE-003",
+      "date": "2026-10-04",
+      "old_rule": "Design contract §3 and ruling 8.3a: search by construct with the v2 two-route strategy E AND (I OR O); the post-exercise/recovery T-block is diagnostic only; the 0-72 h window and all eligibility rules are applied at screening",
+      "new_rule": "The post-exercise/acute-bout T-block is a required concept: E AND (I OR O) AND T. T does not encode the 0-72 h organising window, which with all eligibility rules is still applied at screening; open-window-type terms remain OR supplements or citation-chasing routes only. PRESS accepted with conditions: no infection-outcome terms in the strategy (eligibility via the immune-link rule; infection outcomes charted when present); train* retained until the pilot sample test; protocol E no longer claims the strategy covers infection terms",
+      "reason": "PubMed validation showed the construct-at-screening strategy is not screenable by two reviewers (255,019 records, about 8,500 person-hours of title/abstract screening before the other four databases), whereas requiring T reduced volume to about 15,900 records with 10/10 positive PubMed seeds retrieved. Trade-off disclosed as recall versus feasibility. Mitigations: positive seed set expanded to >=30 (including >=5 numeric-only timing reports) and re-tested in the pilot; backward/forward citation chasing of included studies and the five citation-chasing reviews (Peake 2017, Campbell & Turner 2018, Simpson 2020, Shi 2025, Xie 2026); T-free sensitivity run on a random sample during the pilot",
+      "work_stage": "before_archive_release_pilots_and_formal_search",
+      "information_already_known": "PubMed parser-validation counts of 2026-10-04 (03_search/platform_validation_2026-10-04.md, Addendum 2): v0.6 union E AND (I OR O) 255,019 records (8,500.6 person-hours, two reviewers at 1 min/record; five-database raw x1.5-2.5 assumption 12,751-21,252); union AND T 15,883 records with 9/10 positive seeds; with post hoc proximity fix (\"after marathon\"[tiab:~1]) 15,930 records with 10/10 positive seeds (19/24 seeds overall; lost seeds were 2 negative-eligibility seeds and 3 citation-chasing reviews). Evidence base = 10 positive PubMed seeds; numeric-only timing untested; PubMed only; not a recall estimate. No formal search, screening or extraction performed",
+      "decision_by": "A",
+      "reassessment_needed": "Pilot recall test on an expanded positive seed set of >=30 reports (including >=5 numeric-only timing reports) across platforms, plus a T-free sensitivity run on a random sample during the pilot; if either shows unacceptable loss, T is revised by a further amendment before formal searching. No records exist yet to re-screen",
+      "affected_records": "none (no formal search, screening or extraction performed); affects 03_search strategy (v0.7 by D), design contract §3/§8.3a (superseded by §9), protocol EN/CN section E and L",
+      "release_update": "included in v3.0 release",
+      "changes_document": "v3_design_contract.txt §9",
+      "implementation_date": "2026-10-04"
+    },
+    {
+      "amendment_id": "PRE-004",
+      "date": "2026-10-05",
+      "old_rule": "Protocol v3.0 section G and 05_extraction v3.0: measurements row = \"one assay-level tested-universe summary OR one named candidate/feature x comparison\", enumerating all named immune candidates in accessible article text AND supplements; sample_sets row = one group x assay/platform x matrix x exact time, split when n or process differs; precision_validation = one row per report/cohort/measurement x domain; no time-bin boundary rule (\"unknown timing is not imputed to a bin\"); no denominator rule for several reported n; no background disposition (EXCLUDE_TA/EXCLUDE_FT mapped to \"excluded, or background if retained for context\") and background charting depth left to the manual; figure values digitised under a predeclared two-reviewer procedure when needed; adult status by reported age without an operational rule (unreported age = awaiting classification); legacy matrix/exercise_mode/training_status/design/time_unit entered as free text",
+      "new_rule": "Row units: measurements = one named analyte x one author-reported test (conventional/targeted); omics = one assay_universe_summary row per analysis universe + every candidate named in the main text, main tables or figure legends, candidates prespecified in aims/methods always enumerated, supplementary result tables summarised by counts and locators, set-level results one reported_result_summary row per analysis; sample_sets = one row per cohort x group/arm x matrix x time point as sampled, platforms in assay_platform, split by platform only when a platform-specific n is reported and differs, subgroups only when subgroup n and results are reported; precision_validation = seven domain rows per report x cohort x marker family (new optional last column precision_validation.marker_family), analyte-level rows only for analyte-specific evidence, measurement_id single ID or null; mandatory ID patterns. Vocabulary: marker_family + mucosal_antimicrobial_protein (conventional; analytes classified by analyte, not platform); sample_role + periodic_training_monitoring, resting_habitual_group (nonexercise_control vs matched_control defined); candidate_selection_rule + statistically_selected_hits_from_untargeted_screen; candidate_selection_basis + results_statistical_selection; record_type and candidate_* fields defined (candidate_* apply to all non-universe rows; prespecification refers to the named candidate; result_status follows the author-reported test and threshold); controlled lists for matrix, exercise_mode, training_status, design, time_unit (field names unchanged); screening disposition RETAIN_BACKGROUND (administrative full-text status, not a scientific exclusion, no primary FT code, maps to scope_stream background). Time bins: value = earliest stated bound; straddling interval -> later bin + TIME_BIN_STRADDLE; day-level timing -> nominal hours + DAY_LEVEL_TIMING; \"immediately after\" without a number -> 0_to_lt30min + IMMEDIATE_NONNUMERIC; bin IDs, order and window positions unchanged. Denominators: n_recruited = pre-exclusion enrolment; n_analyzed = analysed n for the primary immune outcome, other denominators in notes; per-platform n only when reported; counts integer or missing code only; DERIVED_N for arithmetic derivations. Missing-value decision tree (NA by row type/design, NR not reported, UNCLEAR conflicting) and no-inference rule. Age rule: adult when an explicit range/minimum >= 18 y is reported or mean - 2*SD >= 18 y; otherwise AWAITING_CLASSIFICATION (not FT03) unless the report states < 18 y participants. Background reports (scope_stream background): bibliographic, design, population, platforms and n only, no per-marker results, no precision_validation rows, one extractor + one checker. Figure-only values are not digitised: direction and significance only, effect_value NR, figure_panel_locator filled, flag FIGURE_ONLY. Also: author_window_interpretation coded from the authors' own voice, exhaustive, one locator per value; immune_link exhaustive, omics_integration at analysis level; one reports row per version (reference_id suffix, version stubs DUPLICATE_VERSION / scope NA, linked to the study family after verification); publication_status = review/version status only, short-format article type in version_label, version_date ISO 8601 (online > issue > accepted with flag); screening/consensus fields copy-only in charting workbooks",
+      "reason": "The purposive 10-report charting pilot (AI-assisted stand-ins for B and C; accepted by A on 2026-10-05 as calibration of rule clarity, not human inter-rater agreement) showed that disagreement came mainly from undefined row units rather than misreading: 55.7% of disagreement items were row-unit/alignment, 24.6% wording of the same fact, 10.2% precision_validation granularity, 2.5% reading differences; row counts differed sharply (sample_sets 131 vs 109, measurements 137 vs 231, precision_validation 140 vs 84); controlled/count agreement was 0.723 overall and 0.840 / 0.755 on content-aligned sample_sets / measurements rows. Vocabulary gaps (salivary antimicrobial proteins, training-monitoring samples, background disposition, statistically selected hits), undefined denominators, time-bin boundary cases, age inference and short-format publication status produced the remaining disagreements (05_extraction/pilot_2026-10-05/PILOT_FINDINGS_2026-10-05.md; pre004_candidates.json)",
+      "work_stage": "after_v3.0_archive_release_and_pilots_before_formal_search",
+      "information_already_known": "Results of the 50-record title/abstract pilot (raw agreement 1.00, kappa 1.00; AI hint visible) and of the 10-report charting pilot (9/10 reports charted by AI stand-ins; R62 pending human extraction). Pilot items are purposive calibration material, not included studies; no formal search, formal screening or formal extraction has been performed, so no included-study result is known",
+      "decision_by": "A (2026-10-05): pilot accepted as calibration; all 12 required (C01-C12) and 8 recommended (C13-C20) candidates adopted; age rule, background charting depth and figure-only rule set by A; the 3 optional candidates (C21 association values for result_direction, C22 measurements.n_in_contrast, C23 study-family/shared-cohort rules) deferred",
+      "candidates_adopted": [
+        "PRE-004-C01",
+        "PRE-004-C02",
+        "PRE-004-C03",
+        "PRE-004-C04",
+        "PRE-004-C05",
+        "PRE-004-C06",
+        "PRE-004-C07",
+        "PRE-004-C08",
+        "PRE-004-C09",
+        "PRE-004-C10",
+        "PRE-004-C11",
+        "PRE-004-C12",
+        "PRE-004-C13",
+        "PRE-004-C14",
+        "PRE-004-C15",
+        "PRE-004-C16",
+        "PRE-004-C17",
+        "PRE-004-C18",
+        "PRE-004-C19",
+        "PRE-004-C20"
+      ],
+      "candidates_deferred": {
+        "PRE-004-C21": "result_direction values positive_association / negative_association / no_detected_association (associations stay mixed_or_inconsistent with a note until decided)",
+        "PRE-004-C22": "new count column measurements.n_in_contrast (per-contrast denominator for Figure 2)",
+        "PRE-004-C23": "study-family split for unrelated sub-studies, pooled secondary analyses of parent trials, mandatory shared-cohort check"
+      },
+      "deviations_from_candidate_text": [
+        "C07: the candidate kept a primary FT code under RETAIN_BACKGROUND so that PRISMA exclusion counts stay unchanged; A specified RETAIN_BACKGROUND as an administrative status (no primary FT code; failed dimension in secondary_failed_dimensions; separate PRISMA line).",
+        "C08: the candidate allowed named measurement rows cited in synthesis; A limited background charting to bibliographic, design, population, platforms and n (no per-marker results).",
+        "C09: the candidate defined n_analyzed as the largest unique-participant n in any immune analysis; A specified the analysed n for the primary immune outcome, other denominators in notes.",
+        "C18: publication_status is mapped as proposed (no new value such as short_report_primary_data); article type goes to version_label.",
+        "C19: digitisation is not performed (direction and significance only; flag FIGURE_ONLY)."
+      ],
+      "reassessment_needed": "Reduced human calibration round with B and C on the revised rules before formal extraction (suggested R59 conventional, R46 targeted omics, R61 single-cell, R42 background, plus R62); R62 is being charted under v3.0 rules and is re-checked under v3.1 after release. No formal records exist to re-screen or re-extract. Screening: the age rule and RETAIN_BACKGROUND apply to all formal full-text screening; TA pilot decisions are unaffected (no TA disposition changed)",
+      "affected_records": "none formal; pilot charting records of 2026-10-05 (R01-R61, R62 pending) are calibration material and are not migrated. Affects 05_extraction/data_dictionary.json, extraction_template.json, extraction_manual.md, critical_appraisal_manual.md; 04_screening/screening_log_template.json, fulltext_exclusion_codes.json, screening_manual.md; 06_synthesis/evidence_map_spec.json, synthesis_plan.md; protocol EN/CN sections A (marker family list), D, F, G, J, L and header; scripts/load_ai_extraction.py (C12 guard)",
+      "release_update": "v3.1: new GitHub Release (tag v3.1) and Zenodo version DOI under concept DOI 10.5281/zenodo.23147972, before the formal search (contract §4); version DOI recorded in project_settings.json after archiving",
+      "tool_follow_up": "Not rule changes and not needed for v3.1 validity: compare_extraction.py content-key alignment and unscored locator/notes columns (C13); build_workbooks.py reserved version rows in pilot workbooks (C17) and conditional NA prefill in generated rows (C20). Implemented in v3.1: load_ai_extraction.py refuses to write screening/consensus fields (C12)",
+      "changes_document": "../CHANGELOG.md (3.1); 05_extraction/pre004_staging/APPLY_NOTES.md",
+      "implementation_date": "2026-10-05"
+    }
+  ],
+  "future_amendment_fields": [
+    "date",
+    "old_rule",
+    "new_rule",
+    "reason",
+    "work_stage",
+    "information_already_known",
+    "decision_by",
+    "reassessment_needed",
+    "affected_records",
+    "release_update"
+  ]
+}

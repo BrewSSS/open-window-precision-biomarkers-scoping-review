@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T13:54:24",
+  "generated_at": "2026-10-05T15:40:13",
   "generator": "scripts/load_ai_extraction.py v1.0.0",
   "reviewer": "C",
   "json_dir": "05_extraction/pilot_2026-10-05/ai_extraction/C",
@@ -198,11 +198,32 @@
       "minutes_spent": 95.0,
       "unresolved_questions_written": true,
       "eligibility_opinion_logged": true
+    },
+    "R62": {
+      "rows_per_table": {
+        "study_families": 1,
+        "reports": 1,
+        "cohorts": 1,
+        "report_cohort_links": 1,
+        "sample_sets": 8,
+        "measurements": 37,
+        "precision_validation": 7,
+        "extraction_provenance": 1
+      },
+      "conflicts": [],
+      "violations": [],
+      "unknown_fields": [],
+      "unknown_tables": [],
+      "errors": [],
+      "warnings": [],
+      "minutes_spent": 100.0,
+      "unresolved_questions_written": true,
+      "eligibility_opinion_logged": true
     }
   },
   "totals": {
-    "files_processed": 9,
-    "rows_written": 472,
+    "files_processed": 10,
+    "rows_written": 529,
     "conflicts": 0,
     "violations": 0,
     "unknown_fields": 0,

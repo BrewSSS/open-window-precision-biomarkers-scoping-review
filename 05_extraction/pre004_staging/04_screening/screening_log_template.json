@@ -1,0 +1,393 @@
+{
+  "template_status": "blank_template_no_formal_screening_results",
+  "protocol_version": "3.1",
+  "protocol_date": "2026-10-05",
+  "protocol_version_label": "3.1 (amendment PRE-004) - 5 October 2026",
+  "design_contract": "01_protocol/v3_design_contract.txt",
+  "protocol_release_tag": null,
+  "protocol_version_doi": null,
+  "formal_search_cutoff": null,
+  "formal_screening_status": "NOT_YET_STARTED",
+  "screening_counts_status": "NOT_YET_AVAILABLE",
+  "reviewer_roles": {
+    "reviewer_1": null,
+    "reviewer_2": null,
+    "adjudicator": null
+  },
+  "workbook_workflow": {
+    "generator": "scripts/build_workbooks.py (--only screening); one copy per reviewer, generated from this template, fulltext_exclusion_codes.json, screening_manual.md, calibration_plan.md and 03_search/search_log_template.json",
+    "merge_and_agreement": "scripts/merge_screening.py merge --stage TA|FT; prisma for flow counts",
+    "independence_rule": "Each reviewer decides only in their own workbook and locks it; the SHA-256 of each locked workbook is recorded here and committed to git before any merge; reviewers do not see each other's decisions before both are locked.",
+    "exports": "CSV exports of reviewer sheets and merge outputs are versioned in git; no Rayyan/Covidence.",
+    "AI_role": "AI may prepare, transform, check and summarise; it never decides eligibility or acts as reviewer/adjudicator.",
+    "locks": [
+      {
+        "stage": "TA",
+        "round": null,
+        "reviewer_A_workbook_sha256": null,
+        "reviewer_B_workbook_sha256": null,
+        "locked_at": null,
+        "hash_commit": null,
+        "merge_output_paths": []
+      },
+      {
+        "stage": "FT",
+        "round": null,
+        "reviewer_A_workbook_sha256": null,
+        "reviewer_B_workbook_sha256": null,
+        "locked_at": null,
+        "hash_commit": null,
+        "merge_output_paths": []
+      }
+    ]
+  },
+  "calibration": {
+    "planned_sample_size": 50,
+    "random_seed": 20261002,
+    "sampling_algorithm": "Python random.Random(seed).sample(sorted(unique_record_ids), 50)",
+    "pass_rule": {
+      "sample_size": 50,
+      "sampling": "random without replacement from the sorted frozen deduplicated draft pool",
+      "random_seed": 20261002,
+      "agreement_metric": "raw agreement on the binary TA disposition",
+      "binary_groups": {
+        "progress_do_not_exclude": [
+          "ADVANCE",
+          "AWAITING_CLASSIFICATION",
+          "FRONTIER_PREPRINT"
+        ],
+        "exclude": [
+          "EXCLUDE_TA"
+        ]
+      },
+      "raw_agreement_min": 0.8,
+      "raw_agreement_comparison": ">=",
+      "all_concept_disagreements_resolved_required": true,
+      "kappa": "Cohen's kappa reported descriptively; no pass threshold",
+      "source": "04_screening/calibration_plan.md (human-readable rule; the generator parses the threshold and binary groups from that file, so both must agree)"
+    },
+    "timing": "After the v3.0 archive release (GitHub Release + Zenodo version DOI) and before the formal search; if the pilot changes rules, release v3.1 with justification.",
+    "protocol_release_tag": null,
+    "protocol_version_doi": null,
+    "protocol_release_commit": null,
+    "reviewer_workbook_sha256": {
+      "B": "e6e67f7ff7b6ff21a4fe692cabd881594737d0920624e7547c899b70188140e3",
+      "C": "ca0b60d3c549c7c895e33b243aa1e734091ead7393b19cef7ea91f04c5213625",
+      "locked_at": "2026-10-05T04:18:18+00:00"
+    },
+    "concept_comparison_items": [
+      "Core A identifiable bout and post-cessation timing",
+      "Support B same marker, same people, >= 2 identified bouts",
+      "position relative to the 0-72 h organising window (outside-window samples tagged, not excluded)",
+      "exercise intensity/duration/mode recorded, not thresholded",
+      "adult >= 18 y or separable adult stratum",
+      "author open-window framing does not affect eligibility",
+      "health status",
+      "immune link",
+      "publication status/preprint",
+      "translation",
+      "retrieval",
+      "mixed-intervention separability"
+    ],
+    "pool_manifest_path": null,
+    "pool_manifest_sha256": null,
+    "sampled_record_ids": [],
+    "raw_agreement": null,
+    "cohens_kappa_descriptive": null,
+    "conceptual_disagreements_resolved": null,
+    "pilot_passed": null,
+    "repeat_pilot_seeds": [],
+    "results": null,
+    "manual_version": null,
+    "pool_source_provenance": [],
+    "python_version": null,
+    "repeat_seed_rule": "seed = 20261002 + round_number - 1; first repeat round_number=2; exclude all IDs sampled in earlier rounds",
+    "pilot_rounds": [],
+    "manual_version_rule": "Record the screening_manual.md version as the protocol release tag plus git commit SHA used to generate the workbooks.",
+    "pilot_2026-10-05_mode": "Decisions entered by reviewers B and C through the coordinator's AskUserQuestion interface, one reviewer at a time with the other away from the screen; an AI-generated hint (recommended option) was visible for every record; recorded as AI-assisted calibration in ai_use_log.json",
+    "result_2026-10-05": {
+      "records": 50,
+      "raw_agreement": 1.0,
+      "kappa": 1.0,
+      "conflicts": 0,
+      "dispositions": {
+        "ADVANCE": 10,
+        "EXCLUDE_TA": 40
+      },
+      "reason_codes": {
+        "FT02_NOT_ORIGINAL_HUMAN_RESEARCH": 21,
+        "FT01_SOURCE_TYPE_NOT_CORE": 7,
+        "FT03_POPULATION_NOT_ELIGIBLE": 6,
+        "FT04_NO_QUALIFYING_EXERCISE_EXPOSURE": 3,
+        "FT07_NO_ELIGIBLE_IMMUNE_LINK": 3
+      },
+      "criterion": "raw agreement >= 0.80 met",
+      "limitation": "AI hint visible to both reviewers; acceptance pending A",
+      "merge_output": "pilot_2026-10-05/merge_TA_2026-10-05/agreement_TA.json",
+      "recorded_at": "2026-10-05T04:18:44+00:00",
+      "acceptance": "accepted by A 2026-10-05 as calibration; limitation (visible AI hint) recorded; formal screening without AI hints"
+    }
+  },
+  "records": [],
+  "field_schema": {
+    "record_id": "Stable unique report identifier from the deduplicated formal-search pool.",
+    "report_id": "Bibliographic report identifier; link versions and related reports.",
+    "study_id": "Underlying study identifier, if established.",
+    "cohort_id": "Participant cohort identifier; used to prevent double counting.",
+    "source_database_or_route": "Database/platform or documented citation-chasing route.",
+    "preprint_linked_publication_id": "Record identifier for version linkage, if applicable.",
+    "title": "Record title as exported (records_master.title).",
+    "authors": "Author list as exported (records_master.authors).",
+    "year": "Publication year as exported; text (records_master.year).",
+    "journal": "Journal or source title (records_master.journal).",
+    "doi": "DOI exactly as exported; text, no URL prefix (records_master.doi).",
+    "pmid": "PubMed ID; text, leading zeros preserved (records_master.pmid).",
+    "source_database": "Database/platform from search_log_template.searches[].database, or the documented supplemental route; several separated by \"; \" (records_master.source_database).",
+    "search_id": "search_log_template.searches[].id of the export(s) containing the record (records_master.search_id).",
+    "route": "search_log_template route: E AND I, E AND O, or the supplemental route label (records_master.route).",
+    "dedup_status": "One of dedup_status_values; in the Excel records_master a blank dedup_status cell means RETAINED.",
+    "title_abstract": {
+      "reviewer_1": {
+        "decision": null,
+        "primary_reason": null,
+        "rationale_or_quote": null,
+        "decided_at": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "primary_reason": null,
+        "rationale_or_quote": null,
+        "decided_at": null
+      },
+      "reconciliation": {
+        "status": null,
+        "final_disposition": null,
+        "adjudicator_referral": null,
+        "notes": null
+      }
+    },
+    "retrieval": {
+      "status": null,
+      "attempts": [],
+      "not_retrieved_reason": null,
+      "translation_status": null,
+      "awaiting_classification_reason": null,
+      "translation_independent_human_check": null
+    },
+    "full_text": {
+      "reviewer_1": {
+        "decision": null,
+        "primary_exclusion_code": null,
+        "secondary_failed_dimensions": [],
+        "A_eligible": null,
+        "B_eligible": null,
+        "evidence_locations": [],
+        "rationale": null,
+        "decided_at": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "primary_exclusion_code": null,
+        "secondary_failed_dimensions": [],
+        "A_eligible": null,
+        "B_eligible": null,
+        "evidence_locations": [],
+        "rationale": null,
+        "decided_at": null
+      },
+      "reconciliation": {
+        "status": null,
+        "final_disposition": null,
+        "final_primary_exclusion_code": null,
+        "A_eligible": null,
+        "B_eligible": null,
+        "adjudicator_referral": null,
+        "discussion_and_rule_clarification": null
+      }
+    },
+    "eligibility_checks": {
+      "human": null,
+      "generally_healthy_baseline": null,
+      "active_infection_absent": null,
+      "healthy_stratum_extractable_if_mixed": null,
+      "exercise_bout_identifiable": null,
+      "post_cessation_sample_present": null,
+      "baseline_or_suitable_comparator": null,
+      "B_at_least_two_linked_bouts_if_applicable": null,
+      "eligible_immune_link": null,
+      "mixed_intervention_separable": null,
+      "peer_reviewed_original_for_core": null,
+      "known_clinical_or_metabolic_disease_absent": null,
+      "B_same_marker_after_at_least_two_bouts": null,
+      "B_same_individuals_linked": null,
+      "adult_or_separable_adult_stratum": null,
+      "post_cessation_sample_within_window": null
+    },
+    "eligibility_check_semantics": {
+      "allowed_values": [
+        "TRUE",
+        "FALSE",
+        "NR",
+        "NA",
+        "UNCLEAR"
+      ],
+      "required_for_core_A": [
+        "human",
+        "generally_healthy_baseline",
+        "active_infection_absent",
+        "adult_or_separable_adult_stratum",
+        "exercise_bout_identifiable",
+        "post_cessation_sample_present",
+        "baseline_or_suitable_comparator",
+        "eligible_immune_link",
+        "mixed_intervention_separable",
+        "peer_reviewed_original_for_core",
+        "known_clinical_or_metabolic_disease_absent"
+      ],
+      "required_for_support_B": [
+        "B_at_least_two_linked_bouts_if_applicable",
+        "B_same_marker_after_at_least_two_bouts",
+        "B_same_individuals_linked"
+      ],
+      "conditional": {
+        "healthy_stratum_extractable_if_mixed": "Required only when the cohort mixes healthy and clinical participants.",
+        "adult_or_separable_adult_stratum": "TRUE when all participants are >= 18 y or an adult stratum and its results are separable, judged by the age rule: explicit age range/minimum >= 18 y, or mean - 2*SD >= 18 y. UNCLEAR (record AWAITING_CLASSIFICATION) when the rule cannot be met and the report does not state that participants < 18 y were included. FALSE (FT03) only when < 18 y participation is stated and no adult stratum with results is separable."
+      },
+      "tagging_only_not_eligibility": {
+        "post_cessation_sample_within_window": "TRUE if at least one post-cessation sample falls within 0-72 h after cessation of the identifiable bout. FALSE (only samples > 72 h) does NOT exclude: the record stays eligible and its samples are tagged outside-window recovery (contract 2.2; no exclusion code)."
+      },
+      "no_intensity_check": "No exposure-intensity, duration or mode eligibility check exists (contract 2.1); use exposure_as_reported to record them."
+    },
+    "exposure_as_reported": {
+      "mode": null,
+      "duration": null,
+      "intensity_metric": null,
+      "intensity_value": null,
+      "rule": "Recording only; never an eligibility criterion. Full values are charted at extraction (sample_sets)."
+    },
+    "screening_dispositions": [
+      "ADVANCE",
+      "EXCLUDE_TA",
+      "FRONTIER_PREPRINT",
+      "AWAITING_CLASSIFICATION",
+      "INCLUDE_A",
+      "INCLUDE_B",
+      "INCLUDE_A_AND_B",
+      "EXCLUDE_FT",
+      "RETAIN_BACKGROUND",
+      "NOT_RETRIEVED",
+      "AWAITING_TRANSLATION",
+      "DUPLICATE_RECORD",
+      "DUPLICATE_VERSION"
+    ],
+    "screening_disposition_stages": {
+      "ADVANCE": [
+        "TA"
+      ],
+      "EXCLUDE_TA": [
+        "TA"
+      ],
+      "FRONTIER_PREPRINT": [
+        "TA",
+        "FT"
+      ],
+      "AWAITING_CLASSIFICATION": [
+        "TA",
+        "FT"
+      ],
+      "INCLUDE_A": [
+        "FT"
+      ],
+      "INCLUDE_B": [
+        "FT"
+      ],
+      "INCLUDE_A_AND_B": [
+        "FT"
+      ],
+      "EXCLUDE_FT": [
+        "FT"
+      ],
+      "RETAIN_BACKGROUND": [
+        "FT"
+      ],
+      "NOT_RETRIEVED": [
+        "FT"
+      ],
+      "AWAITING_TRANSLATION": [
+        "FT"
+      ],
+      "DUPLICATE_RECORD": [
+        "DEDUP",
+        "FT"
+      ],
+      "DUPLICATE_VERSION": [
+        "DEDUP",
+        "FT"
+      ]
+    },
+    "screening_disposition_stage_notes": {
+      "TA": "Title/abstract dispositions; must equal the bold dispositions in screening_manual.md section 3B, from which scripts/build_workbooks.py derives the TA dropdown.",
+      "FT": "Full-text dispositions; administrative statuses (DUPLICATE_*, NOT_RETRIEVED, AWAITING_*, FRONTIER_PREPRINT, RETAIN_BACKGROUND) take no FT code. RETAIN_BACKGROUND (v3.1) is full-text only and maps to scope_stream background.",
+      "DEDUP": "Record preparation (records_master.dedup_status). A duplicate/version recognised later may also be recorded at FT."
+    },
+    "dedup_status_values": {
+      "RETAINED": "Unique record, or the retained member of a duplicate/version group; screened. Not a disposition and not an administrative exclusion status. Entered as a blank dedup_status cell in the Excel records_master.",
+      "DUPLICATE_RECORD": "Exact bibliographic duplicate of a retained record (fulltext_exclusion_codes.json administrative status).",
+      "DUPLICATE_VERSION": "Superseded version (for example preprint vs publication) of a retained report (fulltext_exclusion_codes.json administrative status)."
+    },
+    "title_abstract_primary_reason_codes": "EXCLUDE_TA primary_reason uses the FT01-FT08 codes from fulltext_exclusion_codes.json (first clearly failed dimension in hierarchy order); there are no separate TA codes. Null for every other TA disposition.",
+    "A_B_eligible_allowed_values": {
+      "A_eligible": [
+        "TRUE",
+        "FALSE",
+        "NR",
+        "NA",
+        "UNCLEAR"
+      ],
+      "B_eligible": [
+        "TRUE",
+        "FALSE",
+        "NR",
+        "NA",
+        "UNCLEAR"
+      ],
+      "note": "TRUE/FALSE are the JSON booleans true/false; NR/NA/UNCLEAR follow 05_extraction/data_dictionary.json missing_value_semantics. Scope labels used downstream: A_core_acute, B_support_repeated_bouts, background, excluded, uncertain (contract 8.3g). RETAIN_BACKGROUND records A_eligible = FALSE and B_eligible = FALSE."
+    },
+    "notes": null,
+    "administrative": {
+      "status": null,
+      "retained_record_id": null,
+      "duplicate_or_version_rationale": null,
+      "source_links": [],
+      "source_publication_status": null,
+      "frontier_register_id": null,
+      "status_allowed_values": [
+        "RETAINED",
+        "DUPLICATE_RECORD",
+        "DUPLICATE_VERSION",
+        "NOT_RETRIEVED",
+        "AWAITING_TRANSLATION",
+        "AWAITING_CLASSIFICATION",
+        "FRONTIER_PREPRINT",
+        "RETAIN_BACKGROUND"
+      ]
+    }
+  },
+  "record_validation_rules": [
+    "Field schema describes a blank future record; records remains empty until actual screening.",
+    "Two human reviewer decisions are stored independently and locked before reconciliation; AI cannot populate an independent reviewer decision.",
+    "Scientific EXCLUDE_FT requires exactly one first-established FT01–FT08 code; administrative statuses require null primary exclusion codes.",
+    "EXCLUDE_TA requires exactly one primary_reason from FT01-FT08 (first clearly failed dimension); other TA dispositions require a null primary_reason.",
+    "INCLUDE_B or INCLUDE_A_AND_B requires source evidence for same immune marker, same individuals, >=2 identifiable bouts, post-cessation timing and baseline/comparator.",
+    "Keep retrieval, translation, publication/version and eligibility states separately; missing information is not an established exclusion.",
+    "Pilot records count formally only if identified through documented formal search/citation chasing; pilot_rounds stores actual results only.",
+    "NR = not reported; NA = inapplicable; UNCLEAR = genuinely ambiguous. Null fields here are unpopulated template values, not negative findings.",
+    "Participants < 18 y (stated in the report), or a mixed-age cohort with stated < 18 y participants and no separable adult stratum, establish FT03; adult status follows the age rule (explicit range/minimum >= 18 y or mean - 2*SD >= 18 y); otherwise AWAITING_CLASSIFICATION. Older adults are eligible and flagged as a subgroup.",
+    "There is no exposure-intensity, duration or mode eligibility check; exposure_as_reported is recording only.",
+    "post_cessation_sample_within_window = FALSE (only samples > 72 h) never establishes an exclusion; samples are tagged outside-window recovery. FT05 applies only to during-only sampling.",
+    "Use of the term 'open window' or the authors' stance on it never affects eligibility.",
+    "Each reviewer's locked workbook SHA-256 is recorded in workbook_workflow.locks (and calibration.reviewer_workbook_sha256 for the pilot) and committed to git before merge_screening.py is run.",
+    "RETAIN_BACKGROUND (v3.1) is an administrative full-text disposition: null primary exclusion code, the failed dimension (normally FT04) in secondary_failed_dimensions, A_eligible and B_eligible FALSE; allowed only for original, generally healthy adult human studies with an eligible immune link whose only failure is a background exposure/timing pattern.",
+    "A related version (preprint, accepted manuscript) of a retained peer-reviewed report is DUPLICATE_VERSION with retained_record_id; it is charted only as a version stub (bibliographic and version fields; scope NA). FRONTIER_PREPRINT is used only when no peer-reviewed version exists at the final update."
+  ]
+}

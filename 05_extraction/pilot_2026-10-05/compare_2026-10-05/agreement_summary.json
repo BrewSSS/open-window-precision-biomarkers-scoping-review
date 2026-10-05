@@ -1,17 +1,17 @@
 {
-  "generated_at_utc": "2026-10-05T05:54:24+00:00",
+  "generated_at_utc": "2026-10-05T07:40:13+00:00",
   "generator": "scripts/compare_extraction.py",
   "inputs": {
     "B": {
       "path": "05_extraction/pilot_2026-10-05/pilot_extraction_B.xlsx",
       "sha256": {
-        "pilot_extraction_B.xlsx": "d2d1f7db2c2d518ce746c23ee1ae965c1892f7bdbb77c837d678ab75c2b5b2b0"
+        "pilot_extraction_B.xlsx": "0bf0aa5114c3abba9b75a22178dd6b50257f2c32c5d502702c8c5d15342dc812"
       }
     },
     "C": {
       "path": "05_extraction/pilot_2026-10-05/pilot_extraction_C.xlsx",
       "sha256": {
-        "pilot_extraction_C.xlsx": "9ded1ae8eb2b52a81056a2df9fc9ba3993d5235a6fe7b552c3d91ac7c6fde6c0"
+        "pilot_extraction_C.xlsx": "07fa00180e92af7052a2d6ae0e634ac5b270fbdbc8701d6ad96831c429a4ed13"
       }
     }
   },
@@ -23,20 +23,20 @@
   "align_mode": "auto",
   "status": "Descriptive agreement between two independent extractions; not results. Free-text exact-match agreement is reported but should be read, not scored.",
   "overall": {
-    "cells_compared": 9410,
-    "agree": 4533,
-    "disagree": 3976,
-    "only_B": 115,
-    "only_C": 786,
-    "agreement_both_filled": 0.5327,
-    "agreement_any_filled": 0.4817
+    "cells_compared": 10483,
+    "agree": 4907,
+    "disagree": 4657,
+    "only_B": 124,
+    "only_C": 795,
+    "agreement_both_filled": 0.5131,
+    "agreement_any_filled": 0.4681
   },
   "disagreement_categories": {
-    "disagree": 3976,
-    "only_B": 115,
-    "only_C": 786,
-    "row_only_B": 186,
-    "row_only_C": 202
+    "disagree": 4657,
+    "only_B": 124,
+    "only_C": 795,
+    "row_only_B": 216,
+    "row_only_C": 229
   },
   "not_scored_columns": [
     "extraction_provenance.extractor_a_b.extractor_A",
@@ -64,156 +64,156 @@
       "rows_only_B": 0,
       "rows_only_C": 0,
       "duplicate_keys": [],
-      "cells_compared": 118,
-      "agree": 30,
-      "disagree": 70,
+      "cells_compared": 130,
+      "agree": 36,
+      "disagree": 76,
       "only_B": 10,
       "only_C": 8,
-      "agreement_both_filled": 0.3,
-      "agreement_any_filled": 0.2542,
+      "agreement_both_filled": 0.3214,
+      "agreement_any_filled": 0.2769,
       "coded_and_counts_only": {
-        "cells_compared": 47,
-        "agree": 28,
+        "cells_compared": 51,
+        "agree": 32,
         "disagree": 9,
         "only_B": 7,
         "only_C": 3,
-        "agreement_both_filled": 0.7568,
-        "agreement_any_filled": 0.5957
+        "agreement_both_filled": 0.7805,
+        "agreement_any_filled": 0.6275
       }
     },
     "cohorts": {
       "align": "key:cohort_id",
       "rows": {
-        "B": 10,
-        "C": 10
+        "B": 11,
+        "C": 11
       },
-      "rows_matched": 10,
+      "rows_matched": 11,
       "rows_only_B": 0,
       "rows_only_C": 0,
       "duplicate_keys": [],
-      "cells_compared": 110,
-      "agree": 34,
-      "disagree": 76,
+      "cells_compared": 121,
+      "agree": 36,
+      "disagree": 85,
       "only_B": 0,
       "only_C": 0,
-      "agreement_both_filled": 0.3091,
-      "agreement_any_filled": 0.3091,
+      "agreement_both_filled": 0.2975,
+      "agreement_any_filled": 0.2975,
       "coded_and_counts_only": {
-        "cells_compared": 30,
-        "agree": 24,
-        "disagree": 6,
+        "cells_compared": 33,
+        "agree": 25,
+        "disagree": 8,
         "only_B": 0,
         "only_C": 0,
-        "agreement_both_filled": 0.8,
-        "agreement_any_filled": 0.8
+        "agreement_both_filled": 0.7576,
+        "agreement_any_filled": 0.7576
       }
     },
     "report_cohort_links": {
       "align": "key:link_id",
       "rows": {
-        "B": 10,
-        "C": 10
+        "B": 11,
+        "C": 11
       },
-      "rows_matched": 10,
+      "rows_matched": 11,
       "rows_only_B": 0,
       "rows_only_C": 0,
       "duplicate_keys": [],
-      "cells_compared": 70,
-      "agree": 46,
-      "disagree": 24,
+      "cells_compared": 77,
+      "agree": 50,
+      "disagree": 27,
       "only_B": 0,
       "only_C": 0,
-      "agreement_both_filled": 0.6571,
-      "agreement_any_filled": 0.6571,
+      "agreement_both_filled": 0.6494,
+      "agreement_any_filled": 0.6494,
       "coded_and_counts_only": {
-        "cells_compared": 20,
-        "agree": 16,
-        "disagree": 4,
+        "cells_compared": 22,
+        "agree": 17,
+        "disagree": 5,
         "only_B": 0,
         "only_C": 0,
-        "agreement_both_filled": 0.8,
-        "agreement_any_filled": 0.8
+        "agreement_both_filled": 0.7727,
+        "agreement_any_filled": 0.7727
       }
     },
     "sample_sets": {
       "align": "key:sample_set_id",
       "rows": {
-        "B": 131,
-        "C": 109
+        "B": 155,
+        "C": 117
       },
-      "rows_matched": 70,
-      "rows_only_B": 61,
+      "rows_matched": 78,
+      "rows_only_B": 77,
       "rows_only_C": 39,
       "duplicate_keys": [],
-      "cells_compared": 2940,
-      "agree": 1261,
-      "disagree": 1672,
+      "cells_compared": 3276,
+      "agree": 1357,
+      "disagree": 1912,
       "only_B": 1,
       "only_C": 6,
-      "agreement_both_filled": 0.4299,
-      "agreement_any_filled": 0.4289,
+      "agreement_both_filled": 0.4151,
+      "agreement_any_filled": 0.4142,
       "coded_and_counts_only": {
-        "cells_compared": 770,
-        "agree": 554,
-        "disagree": 216,
+        "cells_compared": 858,
+        "agree": 610,
+        "disagree": 248,
         "only_B": 0,
         "only_C": 0,
-        "agreement_both_filled": 0.7195,
-        "agreement_any_filled": 0.7195
+        "agreement_both_filled": 0.711,
+        "agreement_any_filled": 0.711
       }
     },
     "measurements": {
       "align": "key:measurement_id",
       "rows": {
-        "B": 137,
-        "C": 231
+        "B": 147,
+        "C": 268
       },
-      "rows_matched": 89,
+      "rows_matched": 99,
       "rows_only_B": 48,
-      "rows_only_C": 142,
+      "rows_only_C": 169,
       "duplicate_keys": [],
-      "cells_compared": 4587,
-      "agree": 2268,
-      "disagree": 1714,
-      "only_B": 65,
-      "only_C": 540,
-      "agreement_both_filled": 0.5696,
-      "agreement_any_filled": 0.4944,
+      "cells_compared": 5117,
+      "agree": 2465,
+      "disagree": 2029,
+      "only_B": 74,
+      "only_C": 549,
+      "agreement_both_filled": 0.5485,
+      "agreement_any_filled": 0.4817,
       "coded_and_counts_only": {
-        "cells_compared": 1335,
-        "agree": 848,
-        "disagree": 367,
+        "cells_compared": 1485,
+        "agree": 920,
+        "disagree": 445,
         "only_B": 0,
         "only_C": 120,
-        "agreement_both_filled": 0.6979,
-        "agreement_any_filled": 0.6352
+        "agreement_both_filled": 0.674,
+        "agreement_any_filled": 0.6195
       }
     },
     "precision_validation": {
       "align": "key:precision_record_id",
       "rows": {
-        "B": 140,
-        "C": 84
+        "B": 161,
+        "C": 91
       },
-      "rows_matched": 63,
-      "rows_only_B": 77,
+      "rows_matched": 70,
+      "rows_only_B": 91,
       "rows_only_C": 21,
       "duplicate_keys": [],
-      "cells_compared": 1440,
-      "agree": 865,
-      "disagree": 308,
+      "cells_compared": 1601,
+      "agree": 933,
+      "disagree": 401,
       "only_B": 35,
       "only_C": 232,
-      "agreement_both_filled": 0.7374,
-      "agreement_any_filled": 0.6007,
+      "agreement_both_filled": 0.6994,
+      "agreement_any_filled": 0.5828,
       "coded_and_counts_only": {
-        "cells_compared": 502,
-        "agree": 316,
-        "disagree": 83,
+        "cells_compared": 558,
+        "agree": 335,
+        "disagree": 120,
         "only_B": 0,
         "only_C": 103,
-        "agreement_both_filled": 0.792,
-        "agreement_any_filled": 0.6295
+        "agreement_both_filled": 0.7363,
+        "agreement_any_filled": 0.6004
       }
     },
     "extraction_provenance": {
@@ -226,13 +226,13 @@
       "rows_only_B": 0,
       "rows_only_C": 0,
       "duplicate_keys": [],
-      "cells_compared": 87,
-      "agree": 20,
-      "disagree": 65,
+      "cells_compared": 97,
+      "agree": 21,
+      "disagree": 74,
       "only_B": 2,
       "only_C": 0,
-      "agreement_both_filled": 0.2353,
-      "agreement_any_filled": 0.2299,
+      "agreement_both_filled": 0.2211,
+      "agreement_any_filled": 0.2165,
       "coded_and_counts_only": {
         "cells_compared": 0,
         "agree": 0,
@@ -246,20 +246,20 @@
     "study_families": {
       "align": "key:study_id",
       "rows": {
-        "B": 10,
-        "C": 10
+        "B": 11,
+        "C": 11
       },
-      "rows_matched": 10,
+      "rows_matched": 11,
       "rows_only_B": 0,
       "rows_only_C": 0,
       "duplicate_keys": [],
-      "cells_compared": 58,
+      "cells_compared": 64,
       "agree": 9,
-      "disagree": 47,
+      "disagree": 53,
       "only_B": 2,
       "only_C": 0,
-      "agreement_both_filled": 0.1607,
-      "agreement_any_filled": 0.1552,
+      "agreement_both_filled": 0.1452,
+      "agreement_any_filled": 0.1406,
       "coded_and_counts_only": {
         "cells_compared": 0,
         "agree": 0,
@@ -274,127 +274,127 @@
   "families": [
     {
       "family": "analysis",
-      "cells_compared": 1049,
-      "agree": 326,
-      "disagree": 573,
+      "cells_compared": 1167,
+      "agree": 331,
+      "disagree": 686,
       "only_B": 0,
       "only_C": 150,
-      "agreement_both_filled": 0.3626,
-      "agreement_any_filled": 0.3108,
+      "agreement_both_filled": 0.3255,
+      "agreement_any_filled": 0.2836,
       "coded_and_counts_only": {
-        "cells_compared": 89,
-        "agree": 50,
-        "disagree": 33,
+        "cells_compared": 99,
+        "agree": 52,
+        "disagree": 41,
         "only_B": 0,
         "only_C": 6,
-        "agreement_both_filled": 0.6024,
-        "agreement_any_filled": 0.5618
+        "agreement_both_filled": 0.5591,
+        "agreement_any_filled": 0.5253
       }
     },
     {
       "family": "author_use_and_window_interpretation",
-      "cells_compared": 27,
-      "agree": 5,
-      "disagree": 22,
+      "cells_compared": 30,
+      "agree": 6,
+      "disagree": 24,
       "only_B": 0,
       "only_C": 0,
-      "agreement_both_filled": 0.1852,
-      "agreement_any_filled": 0.1852,
+      "agreement_both_filled": 0.2,
+      "agreement_any_filled": 0.2,
       "coded_and_counts_only": {
-        "cells_compared": 9,
-        "agree": 5,
+        "cells_compared": 10,
+        "agree": 6,
         "disagree": 4,
         "only_B": 0,
         "only_C": 0,
-        "agreement_both_filled": 0.5556,
-        "agreement_any_filled": 0.5556
+        "agreement_both_filled": 0.6,
+        "agreement_any_filled": 0.6
       }
     },
     {
       "family": "biomarkers",
-      "cells_compared": 1030,
-      "agree": 420,
-      "disagree": 566,
+      "cells_compared": 1146,
+      "agree": 452,
+      "disagree": 650,
       "only_B": 0,
       "only_C": 44,
-      "agreement_both_filled": 0.426,
-      "agreement_any_filled": 0.4078,
+      "agreement_both_filled": 0.4102,
+      "agreement_any_filled": 0.3944,
       "coded_and_counts_only": {
-        "cells_compared": 267,
-        "agree": 182,
-        "disagree": 85,
+        "cells_compared": 297,
+        "agree": 204,
+        "disagree": 93,
         "only_B": 0,
         "only_C": 0,
-        "agreement_both_filled": 0.6816,
-        "agreement_any_filled": 0.6816
+        "agreement_both_filled": 0.6869,
+        "agreement_any_filled": 0.6869
       }
     },
     {
       "family": "candidate_universe",
-      "cells_compared": 1191,
-      "agree": 584,
-      "disagree": 401,
+      "cells_compared": 1331,
+      "agree": 635,
+      "disagree": 490,
       "only_B": 63,
       "only_C": 143,
-      "agreement_both_filled": 0.5929,
-      "agreement_any_filled": 0.4903,
+      "agreement_both_filled": 0.5644,
+      "agreement_any_filled": 0.4771,
       "coded_and_counts_only": {
-        "cells_compared": 712,
-        "agree": 399,
-        "disagree": 242,
+        "cells_compared": 792,
+        "agree": 430,
+        "disagree": 291,
         "only_B": 0,
         "only_C": 71,
-        "agreement_both_filled": 0.6225,
-        "agreement_any_filled": 0.5604
+        "agreement_both_filled": 0.5964,
+        "agreement_any_filled": 0.5429
       }
     },
     {
       "family": "digitization",
-      "cells_compared": 623,
-      "agree": 511,
-      "disagree": 0,
+      "cells_compared": 693,
+      "agree": 577,
+      "disagree": 4,
       "only_B": 0,
       "only_C": 112,
-      "agreement_both_filled": 1.0,
-      "agreement_any_filled": 0.8202,
+      "agreement_both_filled": 0.9931,
+      "agreement_any_filled": 0.8326,
       "coded_and_counts_only": {
-        "cells_compared": 178,
-        "agree": 146,
-        "disagree": 0,
+        "cells_compared": 198,
+        "agree": 162,
+        "disagree": 4,
         "only_B": 0,
         "only_C": 32,
-        "agreement_both_filled": 1.0,
-        "agreement_any_filled": 0.8202
+        "agreement_both_filled": 0.9759,
+        "agreement_any_filled": 0.8182
       }
     },
     {
       "family": "eligibility",
-      "cells_compared": 66,
-      "agree": 24,
-      "disagree": 24,
+      "cells_compared": 72,
+      "agree": 29,
+      "disagree": 25,
       "only_B": 10,
       "only_C": 8,
-      "agreement_both_filled": 0.5,
-      "agreement_any_filled": 0.3636,
+      "agreement_both_filled": 0.537,
+      "agreement_any_filled": 0.4028,
       "coded_and_counts_only": {
-        "cells_compared": 39,
-        "agree": 24,
+        "cells_compared": 42,
+        "agree": 27,
         "disagree": 5,
         "only_B": 7,
         "only_C": 3,
-        "agreement_both_filled": 0.8276,
-        "agreement_any_filled": 0.6154
+        "agreement_both_filled": 0.8438,
+        "agreement_any_filled": 0.6429
       }
     },
     {
       "family": "exposure",
-      "cells_compared": 940,
-      "agree": 277,
-      "disagree": 657,
+      "cells_compared": 1047,
+      "agree": 281,
+      "disagree": 760,
       "only_B": 0,
       "only_C": 6,
-      "agreement_both_filled": 0.2966,
-      "agreement_any_filled": 0.2947,
+      "agreement_both_filled": 0.2699,
+      "agreement_any_filled": 0.2684,
       "coded_and_counts_only": {
         "cells_compared": 0,
         "agree": 0,
@@ -407,16 +407,16 @@
     },
     {
       "family": "identity",
-      "cells_compared": 54,
-      "agree": 13,
-      "disagree": 39,
+      "cells_compared": 60,
+      "agree": 14,
+      "disagree": 44,
       "only_B": 2,
       "only_C": 0,
-      "agreement_both_filled": 0.25,
-      "agreement_any_filled": 0.2407,
+      "agreement_both_filled": 0.2414,
+      "agreement_any_filled": 0.2333,
       "coded_and_counts_only": {
-        "cells_compared": 9,
-        "agree": 9,
+        "cells_compared": 10,
+        "agree": 10,
         "disagree": 0,
         "only_B": 0,
         "only_C": 0,
@@ -426,13 +426,13 @@
     },
     {
       "family": "keys",
-      "cells_compared": 851,
-      "agree": 727,
-      "disagree": 89,
+      "cells_compared": 947,
+      "agree": 815,
+      "disagree": 97,
       "only_B": 35,
       "only_C": 0,
-      "agreement_both_filled": 0.8909,
-      "agreement_any_filled": 0.8543,
+      "agreement_both_filled": 0.8936,
+      "agreement_any_filled": 0.8606,
       "coded_and_counts_only": {
         "cells_compared": 0,
         "agree": 0,
@@ -445,13 +445,13 @@
     },
     {
       "family": "notes",
-      "cells_compared": 359,
-      "agree": 73,
-      "disagree": 264,
+      "cells_compared": 399,
+      "agree": 83,
+      "disagree": 294,
       "only_B": 1,
       "only_C": 21,
-      "agreement_both_filled": 0.2166,
-      "agreement_any_filled": 0.2033,
+      "agreement_both_filled": 0.2202,
+      "agreement_any_filled": 0.208,
       "coded_and_counts_only": {
         "cells_compared": 0,
         "agree": 0,
@@ -464,51 +464,51 @@
     },
     {
       "family": "other",
-      "cells_compared": 178,
-      "agree": 141,
-      "disagree": 15,
+      "cells_compared": 198,
+      "agree": 142,
+      "disagree": 34,
       "only_B": 0,
       "only_C": 22,
-      "agreement_both_filled": 0.9038,
-      "agreement_any_filled": 0.7921,
+      "agreement_both_filled": 0.8068,
+      "agreement_any_filled": 0.7172,
       "coded_and_counts_only": {
-        "cells_compared": 89,
-        "agree": 71,
-        "disagree": 7,
+        "cells_compared": 99,
+        "agree": 72,
+        "disagree": 16,
         "only_B": 0,
         "only_C": 11,
-        "agreement_both_filled": 0.9103,
-        "agreement_any_filled": 0.7978
+        "agreement_both_filled": 0.8182,
+        "agreement_any_filled": 0.7273
       }
     },
     {
       "family": "population",
-      "cells_compared": 870,
-      "agree": 395,
-      "disagree": 475,
+      "cells_compared": 968,
+      "agree": 428,
+      "disagree": 540,
       "only_B": 0,
       "only_C": 0,
-      "agreement_both_filled": 0.454,
-      "agreement_any_filled": 0.454,
+      "agreement_both_filled": 0.4421,
+      "agreement_any_filled": 0.4421,
       "coded_and_counts_only": {
-        "cells_compared": 600,
-        "agree": 395,
-        "disagree": 205,
+        "cells_compared": 668,
+        "agree": 428,
+        "disagree": 240,
         "only_B": 0,
         "only_C": 0,
-        "agreement_both_filled": 0.6583,
-        "agreement_any_filled": 0.6583
+        "agreement_both_filled": 0.6407,
+        "agreement_any_filled": 0.6407
       }
     },
     {
       "family": "provenance",
-      "cells_compared": 78,
-      "agree": 20,
-      "disagree": 56,
+      "cells_compared": 87,
+      "agree": 21,
+      "disagree": 64,
       "only_B": 2,
       "only_C": 0,
-      "agreement_both_filled": 0.2632,
-      "agreement_any_filled": 0.2564,
+      "agreement_both_filled": 0.2471,
+      "agreement_any_filled": 0.2414,
       "coded_and_counts_only": {
         "cells_compared": 0,
         "agree": 0,
@@ -521,32 +521,32 @@
     },
     {
       "family": "sampling",
-      "cells_compared": 700,
-      "agree": 343,
-      "disagree": 357,
+      "cells_compared": 780,
+      "agree": 379,
+      "disagree": 401,
       "only_B": 0,
       "only_C": 0,
-      "agreement_both_filled": 0.49,
-      "agreement_any_filled": 0.49,
+      "agreement_both_filled": 0.4859,
+      "agreement_any_filled": 0.4859,
       "coded_and_counts_only": {
-        "cells_compared": 210,
-        "agree": 189,
+        "cells_compared": 234,
+        "agree": 213,
         "disagree": 21,
         "only_B": 0,
         "only_C": 0,
-        "agreement_both_filled": 0.9,
-        "agreement_any_filled": 0.9
+        "agreement_both_filled": 0.9103,
+        "agreement_any_filled": 0.9103
       }
     },
     {
       "family": "source_locator",
-      "cells_compared": 325,
+      "cells_compared": 370,
       "agree": 4,
-      "disagree": 268,
-      "only_B": 2,
-      "only_C": 51,
-      "agreement_both_filled": 0.0147,
-      "agreement_any_filled": 0.0123,
+      "disagree": 295,
+      "only_B": 11,
+      "only_C": 60,
+      "agreement_both_filled": 0.0134,
+      "agreement_any_filled": 0.0108,
       "coded_and_counts_only": {
         "cells_compared": 0,
         "agree": 0,
@@ -559,27 +559,27 @@
     },
     {
       "family": "validation",
-      "cells_compared": 1069,
-      "agree": 670,
-      "disagree": 170,
+      "cells_compared": 1188,
+      "agree": 710,
+      "disagree": 249,
       "only_B": 0,
       "only_C": 229,
-      "agreement_both_filled": 0.7976,
-      "agreement_any_filled": 0.6268,
+      "agreement_both_filled": 0.7404,
+      "agreement_any_filled": 0.5976,
       "coded_and_counts_only": {
-        "cells_compared": 502,
-        "agree": 316,
-        "disagree": 83,
+        "cells_compared": 558,
+        "agree": 335,
+        "disagree": 120,
         "only_B": 0,
         "only_C": 103,
-        "agreement_both_filled": 0.792,
-        "agreement_any_filled": 0.6295
+        "agreement_both_filled": 0.7363,
+        "agreement_any_filled": 0.6004
       }
     }
   ],
   "empty_by_both": {
-    "cells": 186,
-    "table_field_report_entries": 61
+    "cells": 164,
+    "table_field_report_entries": 39
   },
   "slot_warnings": [
     {
@@ -1459,6 +1459,76 @@
     },
     {
       "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
       "reviewer": "C",
       "column": "digitizer_A_value",
       "report_id": "PILOT-R01",
@@ -2743,6 +2813,265 @@
       "reviewer": "C",
       "column": "digitizer_A_value",
       "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R62",
       "value": "NA"
     },
     {
@@ -3594,6 +3923,76 @@
     },
     {
       "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
       "reviewer": "C",
       "column": "digitizer_A",
       "report_id": "PILOT-R01",
@@ -4878,6 +5277,265 @@
       "reviewer": "C",
       "column": "digitizer_A",
       "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R62",
       "value": "NA"
     },
     {
@@ -4914,8 +5572,8 @@
     "C": ""
   },
   "pilot_notes": {
-    "B": 10,
-    "C": 9
+    "B": 11,
+    "C": 10
   },
   "outputs": [
     "agreement_by_family.csv",

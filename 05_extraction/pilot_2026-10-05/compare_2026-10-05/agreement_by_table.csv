@@ -1,9 +1,9 @@
 table,align,rows.B,rows.C,rows_matched,rows_only_B,rows_only_C,duplicate_keys,cells_compared,agree,disagree,only_B,only_C,agreement_both_filled,agreement_any_filled,coded_and_counts_only.cells_compared,coded_and_counts_only.agree,coded_and_counts_only.disagree,coded_and_counts_only.only_B,coded_and_counts_only.only_C,coded_and_counts_only.agreement_both_filled,coded_and_counts_only.agreement_any_filled
-reports,key:report_id,10,10,10,0,0,,118,30,70,10,8,0.3,0.2542,47,28,9,7,3,0.7568,0.5957
-cohorts,key:cohort_id,10,10,10,0,0,,110,34,76,0,0,0.3091,0.3091,30,24,6,0,0,0.8,0.8
-report_cohort_links,key:link_id,10,10,10,0,0,,70,46,24,0,0,0.6571,0.6571,20,16,4,0,0,0.8,0.8
-sample_sets,key:sample_set_id,131,109,70,61,39,,2940,1261,1672,1,6,0.4299,0.4289,770,554,216,0,0,0.7195,0.7195
-measurements,key:measurement_id,137,231,89,48,142,,4587,2268,1714,65,540,0.5696,0.4944,1335,848,367,0,120,0.6979,0.6352
-precision_validation,key:precision_record_id,140,84,63,77,21,,1440,865,308,35,232,0.7374,0.6007,502,316,83,0,103,0.792,0.6295
-extraction_provenance,key:report_id,10,10,10,0,0,,87,20,65,2,0,0.2353,0.2299,0,0,0,0,0,,
-study_families,key:study_id,10,10,10,0,0,,58,9,47,2,0,0.1607,0.1552,0,0,0,0,0,,
+reports,key:report_id,10,10,10,0,0,,130,36,76,10,8,0.3214,0.2769,51,32,9,7,3,0.7805,0.6275
+cohorts,key:cohort_id,11,11,11,0,0,,121,36,85,0,0,0.2975,0.2975,33,25,8,0,0,0.7576,0.7576
+report_cohort_links,key:link_id,11,11,11,0,0,,77,50,27,0,0,0.6494,0.6494,22,17,5,0,0,0.7727,0.7727
+sample_sets,key:sample_set_id,155,117,78,77,39,,3276,1357,1912,1,6,0.4151,0.4142,858,610,248,0,0,0.711,0.711
+measurements,key:measurement_id,147,268,99,48,169,,5117,2465,2029,74,549,0.5485,0.4817,1485,920,445,0,120,0.674,0.6195
+precision_validation,key:precision_record_id,161,91,70,91,21,,1601,933,401,35,232,0.6994,0.5828,558,335,120,0,103,0.7363,0.6004
+extraction_provenance,key:report_id,10,10,10,0,0,,97,21,74,2,0,0.2211,0.2165,0,0,0,0,0,,
+study_families,key:study_id,11,11,11,0,0,,64,9,53,2,0,0.1452,0.1406,0,0,0,0,0,,

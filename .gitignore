@@ -41,3 +41,10 @@ __pycache__/
 
 # Charting-pilot full texts and supplements (publisher/PMC copies; hashes in 05_extraction/pilot_2026-10-05/fulltexts_manifest.json)
 05_extraction/pilot_2026-10-05/fulltexts/
+
+# Formal-search raw exports and metadata (PubMed/preprint abstracts, licensed-database .ris/.txt/.csv/.nbib/.xml
+# exports): never committed, any route, any dated run folder. The run manifest.json in the same folder IS
+# committed (counts + SHA-256 + query text only, no abstracts) via the negation below; see
+# scripts/README.md "Formal search execution" and scripts/run_formal_pubmed.py / run_preprint_search.py.
+03_search/formal_runs/*/*/*
+!03_search/formal_runs/*/*/manifest*.json
