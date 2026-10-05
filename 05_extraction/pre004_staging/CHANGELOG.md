@@ -1,5 +1,40 @@
 # 版本变更记录
 
+## 3.1 — 2026-10-05（修订PRE-004与PRE-005；待作为新的Zenodo version发布，concept DOI 10.5281/zenodo.23147972）
+
+依据10篇目的性charting试点（2026-10-05，AI代理代B、C录入；A接受为规则清晰度校准，不是人类间一致性）与`05_extraction/pilot_2026-10-05/PILOT_FINDINGS_2026-10-05.md`、`pre004_candidates.json`。A决定采纳全部12项“必须”（C01–C12）与8项“建议”（C13–C20），推迟3项“可选”（C21关联类`result_direction`取值、C22 `measurements.n_in_contrast`、C23研究家族与共享队列规则）。记入`01_protocol/amendments.json`（PRE-004）。
+
+| v3.0问题（试点证据） | v3.1处理 |
+|---|---|
+| 行单位未定义：分歧条目55.7%来自行单位/行对齐；行数 sample_sets 131对109、measurements 137对231、precision_validation 140对84 | measurements：一个具名分析物×一项作者报告的检验；组学每个分析全集1行universe+正文/正文表/图注中具名的每个候选，aims/methods预设候选始终逐个列出，补充材料结果表以计数与定位汇总；集合层面结果每项分析1行。sample_sets：队列×组/臂×基质×实际采样时点，平台写入`assay_platform`，仅当原文报告不同的平台n时按平台拆行；亚组仅在有亚组n与结果时拆行。precision_validation：每个报告×队列×标志物族一组七域行，新增可选列`precision_validation.marker_family`（追加于表末，字典与模板`blank_record`同步）；`measurement_id`为单个ID或null；ID格式强制（M-/SS-/PV-<ref>-NNN） |
+| `record_type`与candidate_*字段含义不清（对齐行一致率0.27–0.67） | 定义三种record_type；candidate_*适用于全部非universe行（含传统检测）；“预设”指具名候选本身；新增`statistically_selected_hits_from_untargeted_screen`、`results_statistical_selection`；`result_status`按作者检验与阈值 |
+| 词表缺口 | `marker_family`新增`mucosal_antimicrobial_protein`（传统族，分析物按分析物而非平台归类）；`sample_role`新增`periodic_training_monitoring`、`resting_habitual_group`，并定义`nonexercise_control`与`matched_control`；matrix、exercise_mode、training_status、design、time_unit改为受控列表（字段名不变） |
+| 时间分箱边界无规则 | 数值取最早明确界值；跨箱区间归较晚箱并标`TIME_BIN_STRADDLE`；日级换算名义小时`DAY_LEVEL_TIMING`；无数字的“immediately”归`0_to_lt30min`并标`IMMEDIATE_NONNUMERIC`；时间箱ID、顺序与窗口位置不变 |
+| 多个分母、计数字段写散文 | `n_recruited`=排除前入组数；`n_analyzed`=主要免疫结局的分析人数，其余分母写入notes；每平台n仅在报告时单列；计数字段只填整数或缺失码，算术推导标`DERIVED_N`；`donor_count_basis`仅用于单细胞/分选细胞 |
+| 缺失码混用、按惯例推断 | NA/NR/UNCLEAR判定顺序；自由文本只填裸码；不得按平台惯例、通常做法或图标推断 |
+| background无处置、提取深度未定 | 新增全文行政处置`RETAIN_BACKGROUND`（不是科学排除，无主FT代码，失败维度入次要失败维度，映射`background`，PRISMA单列）；EXCLUDE_TA/FT只映射excluded；background报告只提取书目、设计、人群、平台与n，无逐标志物结果、无precision行，一人提取一人核对 |
+| 年龄/成人身份推断不一 | 年龄规则：明确范围/最低年龄≥18岁，或均值−2·SD≥18岁即为成人；否则AWAITING_CLASSIFICATION（非FT03），除非原文说明纳入<18岁者；FT03定义与筛选手册同步 |
+| 仅图示数值（每人21行） | 不做数字化：只记方向与显著性，`effect_value`=NR，填`figure_panel_locator`，标`FIGURE_ONLY` |
+| 作者窗口解释、immune_link、omics_integration编码分歧 | 只编码作者本人说法，穷举多值，每值一条定位；immune_link穷举，全血转录组算immune_cell_omics；omics_integration按行所报告的分析判断 |
+| 预印本/版本存根行无处安放 | 每个版本一行，`reference_id`加后缀（R01-V1），版本存根只填书目与版本字段、DUPLICATE_VERSION、scope NA，核实后经桥表链到同一研究家族 |
+| 短篇格式的publication_status | 只描述评审/版本状态；文章类型写入`version_label`；`version_date`用ISO在线日期（无则卷期日期，再无则accepted日期并标记） |
+| AI在筛选字段写入处置 | 筛选与共识字段在charting工作簿中只能照录；`scripts/load_ai_extraction.py`拒绝写入这些字段（selftest新增一项） |
+
+方案EN/CN：页首版本与存档状态、A节标志物族列表、D节年龄规则与背景、F节RETAIN_BACKGROUND、G节提取单位与约定、G.3边界规则、J节存档事实、L节v3.1条目。`project_settings.json`升至3.1（v3.0 Release字段移入`registration.previous_releases`，当前Release字段待v3.1发布后填写）；TeX页眉改为“Protocol v3.1”。工具后续（不属规则变更）：比对脚本内容键对齐与不计分定位/备注列（C13）、试点工作簿预留版本行（C17）、生成行的条件NA预填（C20）。
+
+### 修订PRE-005：两阶段筛选（A决定，2026-10-05；与PRE-004一并作为v3.1发布）
+
+| v3.0问题 | v3.1处理 |
+|---|---|
+| 单一题名/摘要阶段：五库原始记录量估计60,000–90,000条（2026-10-05：PubMed 20,090；WoS EO路线6,669；Scopus EO路线6,159），校外经API不能统一取得摘要 | 第1阶段题名筛选（TI）：两人独立，只看题名、来源、年份、文献类型、DOI/PMID，无摘要、无AI提示；处置ADVANCE_TO_ABSTRACT / EXCLUDE_TITLE / AWAITING_CLASSIFICATION；题名筛选约快3–4倍 |
+| 题名阶段排除可能损失召回 | 排除仅限封闭清单（`fulltext_exclusion_codes.json` → `title_stage_closed_list`）：TI01综述/社论/方案/会议摘要→FT01；TI02仅动物/体外→FT02；TI03明确<18岁→FT03；TI04看不出运动情境→FT04；TI05看不出免疫/炎症/组学内容→FT07；题名未说明者一律进入；共识自动“进入优先”（任一人进入即进入，两人都排除才排除），分歧只记录不裁决 |
+| 题名阶段无校准 | 100条题名试筛（正式去重合集，种子20261005），二分类原始一致率≥80%后才开始正式第1阶段（`screening_log_template.json` → `title_calibration`） |
+| 摘要来源不统一 | 两阶段之间补全摘要：①含摘要的数据库导出（PubMed、WoS完整记录）②PubMed按PMID或DOI→PMID（NCBI ID Converter）③来源库完整记录（Scopus COMPLETE视图、Embase/SPORTDiscus导出）④A的人工请求清单`fulltext_requests/abstract_requests.csv`；无法获得者标`abstract_unavailable`，以题名和可得文本进入第2阶段，不因此排除；`records_master`新增`document_type`、`abstract_source`列 |
+| 第2阶段校准基于v3.0代码 | 第2阶段（TA）规则不变；正式第2阶段前做25条再校准（第2轮，种子20261003，取自第1阶段保留记录；`calibration.recalibration_v3_1`） |
+| 流程图只有一个筛选框 | PRISMA-ScR流程图新增第1阶段框，逐阶段报告计数，第1阶段排除按封闭清单理由及FT代码报告（`evidence_map_spec.json` → `flow_stages`；`merge_screening.py prisma --ti`） |
+
+文件：筛选手册新增§3A′（题名筛选、封闭清单、共识、题名试筛、摘要补全）与§3B再校准；`calibration_plan.md`新增题名试筛与再校准两节；`screening_log_template.json`（TI阶段、`title_calibration`、`abstract_completion`、`calibration.recalibration_v3_1`、TI锁定项）；`fulltext_exclusion_codes.json`（`title_stage_closed_list`，FT01–FT08不变）；数据字典与证据图规格的处置映射新增两项；方案EN/CN页首、F、I、J、K、L节；`execution_plan.md`筛选阶段拆分；`scripts/build_workbooks.py`新增`screen_TI_reviewer_A/B`与`merge_TI`（进入优先共识、冲突清单、一致率与kappa、100条校准区块），`scripts/merge_screening.py`新增`merge --stage TI`、TA的`--population merged_TI.csv`、`--planned-size`与PRISMA题名阶段计数（selftest扩充）。
+
 ## 3.0 — 2026-10-04（2026-10-05 冻结并存档：Zenodo 10.5281/zenodo.23147973）（团队冻结前草稿；存档前工作方案）
 
 依据2026-10-04团队决策（`01_protocol/v3_design_contract.txt`）与同日撞车复核（`02_preliminary/collision_recheck_2026-10-04.md`）改写v2设计。v3.0正式日期为团队实际冻结日；冻结前文件标注“3.0 (draft for team freeze) — 4 October 2026”。

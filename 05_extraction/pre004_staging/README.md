@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23147973.svg)](https://doi.org/10.5281/zenodo.23147973)
 
-**当前版本：v3.0（已于2026-10-05存档，version DOI 10.5281/zenodo.23147973，concept DOI 10.5281/zenodo.23147972）（团队冻结前草稿）｜方案日期2026-10-04｜存档前工作方案**
+**当前版本：v3.1（修订PRE-004与PRE-005，2026-10-05；待作为新的Zenodo version发布）｜上一存档版本：v3.0（2026-10-05存档，version DOI 10.5281/zenodo.23147973；concept DOI 10.5281/zenodo.23147972）**
 
 最后整合核对：2026-10-04（v3英文源稿、中文稿、03–06附件、治理文件、构建链与验证器已对齐；排版版/PDF/构建清单已按v3重新生成，`scripts/validate_design.py`全部27项通过、0项跳过）。
 

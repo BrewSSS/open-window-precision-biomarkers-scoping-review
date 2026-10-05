@@ -1,7 +1,7 @@
 {
   "specification_version": "3.1",
   "design_date": "2026-10-05",
-  "version_label": "3.1 (amendment PRE-004) - 5 October 2026",
+  "version_label": "3.1 (amendments PRE-004 and PRE-005) - 5 October 2026",
   "design_contract": "01_protocol/v3_design_contract.txt",
   "status": "design_only_no_formal_results",
   "project_focus": "precision biomarkers of the exercise-induced immune \"open window\": per-marker validation-readiness map of conventional and omics candidates within the 0-72 h organising window",
@@ -103,10 +103,16 @@
       "Assigned only at full text through the administrative disposition RETAIN_BACKGROUND (original, generally healthy adult human studies with an eligible immune link whose only failure is exposure/timing); charted at reduced depth (bibliographic, design, population, platforms, n); no per-marker results or validation-readiness cells; outside every original-study denominator; not a census",
       "Reviews (citation chasing), animal/in-vitro-only reports and post-hoc immune pathway enrichment without the prespecified immune link are excluded with their FT code, not background (v3.1)"
     ],
-    "excluded": "Excluded at title/abstract or full text with one primary FT01-FT08 code; not mapped.",
+    "excluded": "Excluded at title (stage 1; closed-list code mapped to an FT code), title/abstract (stage 2) or full text with one primary FT01-FT08 code; not mapped.",
     "uncertain": "Awaiting classification or translation, or not retrieved; shown separately, never counted as excluded or as evidence.",
     "frontier_preprints": "Separate register and denominator; never included in peer-reviewed core totals. Link duplicate preprint-to-published versions.",
     "screening_disposition_crosswalk": {
+      "ADVANCE_TO_ABSTRACT": [
+        "none: title-stage disposition (v3.1, PRE-005), not a final scope"
+      ],
+      "EXCLUDE_TITLE": [
+        "excluded"
+      ],
       "INCLUDE_A": [
         "A_core_acute"
       ],
@@ -456,7 +462,20 @@
     "standard_reporting_figure": {
       "id": "PRISMA-ScR flow diagram",
       "status": "Template only until formal searches and screening are complete.",
-      "rule": "Never enter zero or any synthetic count; distinguish database and other-source records and report-level selection from cohort-level synthesis. Submitted with the PRISMA-ScR checklist as supplementary material (Frontiers in Immunology requirement verified 2026-10-04)."
+      "rule": "Never enter zero or any synthetic count; distinguish database and other-source records and report-level selection from cohort-level synthesis. Submitted with the PRISMA-ScR checklist as supplementary material (Frontiers in Immunology requirement verified 2026-10-04).",
+      "flow_stages": {
+        "amendment": "PRE-005 (v3.1): two-stage screening adds a title-screening box before the title/abstract box",
+        "boxes": [
+          "Identification: records identified per database and other source; duplicates removed (DUPLICATE_RECORD / DUPLICATE_VERSION)",
+          "Stage 1 title screening: records screened; records excluded (EXCLUDE_TITLE), reported by closed-list code TI01-TI05 with its FT code",
+          "Abstract completion (process note, not an exclusion box): stage-1 retained records by abstract source; abstract_unavailable shown, not excluded",
+          "Stage 2 title/abstract screening: records screened; records excluded (EXCLUDE_TA) by FT code; frontier preprints routed to the separate register",
+          "Retrieval: reports sought; reports not retrieved",
+          "Full-text assessment: reports assessed; EXCLUDE_FT by primary FT code; RETAIN_BACKGROUND as its own line; awaiting classification/translation",
+          "Included: reports and unique cohorts (A, B, A and B), with the frontier register separate"
+        ],
+        "count_rule": "Counts are reported per stage only when that stage is complete (scripts/merge_screening.py prisma); otherwise blank and marked not yet performed, never zero."
+      }
     },
     "tables": [
       {

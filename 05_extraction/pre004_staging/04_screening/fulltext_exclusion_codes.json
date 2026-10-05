@@ -2,7 +2,7 @@
   "taxonomy_status": "predefined_fixed_hierarchy_no_formal_exclusion_results",
   "protocol_version": "3.1",
   "protocol_date": "2026-10-05",
-  "protocol_version_label": "3.1 (amendment PRE-004) - 5 October 2026",
+  "protocol_version_label": "3.1 (amendments PRE-004 and PRE-005) - 5 October 2026",
   "design_contract": "01_protocol/v3_design_contract.txt",
   "purpose": "Assign exactly one primary scientific full-text exclusion reason to a retrieved report that is demonstrably ineligible for the peer-reviewed core A/B map. Preserve other failed dimensions in reviewer notes.",
   "primary_reason_rule": {
@@ -151,6 +151,85 @@
     "Older-adult cohort (included and flagged as a subgroup)"
   ],
   "formal_exclusion_results": null,
-  "window_and_exposure_note": "v3 contract 2.1-2.2: there is no exposure-intensity threshold, and 0-72 h after cessation is an organising window, not an inclusion cap. Samples later than 72 h are extracted and tagged outside-window recovery. No exclusion code or administrative status refers to the window; FT05 applies only to during-only sampling. v3.1 (PRE-004) adds one administrative status, RETAIN_BACKGROUND, for background reports; the FT01-FT08 hierarchy is unchanged.",
-  "title_abstract_reason_rule": "At title/abstract, EXCLUDE_TA records one primary_reason drawn from the same FT01-FT08 codes, naming the first clearly failed dimension in hierarchy order. There are no separate TA reason codes. Criteria that can only be judged in full text are not TA exclusion grounds."
+  "window_and_exposure_note": "v3 contract 2.1-2.2: there is no exposure-intensity threshold, and 0-72 h after cessation is an organising window, not an inclusion cap. Samples later than 72 h are extracted and tagged outside-window recovery. No exclusion code or administrative status refers to the window; FT05 applies only to during-only sampling. v3.1 (PRE-004) adds one administrative status, RETAIN_BACKGROUND, for background reports; the FT01-FT08 hierarchy is unchanged. v3.1 (PRE-005) adds a title-only screening stage whose closed list of title-evident reasons maps onto FT01-FT04 and FT07 (title_stage_closed_list); FT01-FT08 are unchanged.",
+  "title_abstract_reason_rule": "At title/abstract, EXCLUDE_TA records one primary_reason drawn from the same FT01-FT08 codes, naming the first clearly failed dimension in hierarchy order. There are no separate TA reason codes. Criteria that can only be judged in full text are not TA exclusion grounds.",
+  "title_stage_closed_list": {
+    "amendment": "PRE-005 (decision by A, 2026-10-05)",
+    "stage": "TI (stage 1: title screening; reviewers see title, source/journal, year, document type, DOI and PMID only; no abstract and no AI hint)",
+    "purpose": "Closed list of the only reasons for which a record may be excluded at title screening (disposition EXCLUDE_TITLE). Each reason must be evident from the title or the exported document type; each maps to one FT code so that title-stage exclusions can be reported in the FT hierarchy. Anything not covered, or not evident, is ADVANCE_TO_ABSTRACT.",
+    "primary_reason_rule": "EXCLUDE_TITLE records exactly one closed-list code: the first evident reason in the order below, which follows the FT hierarchy. If no listed reason is evident, the decision is ADVANCE_TO_ABSTRACT; if the title cannot be read or the record identity is unclear, AWAITING_CLASSIFICATION. Doubt never excludes.",
+    "not_title_stage_reasons": "FT05, FT06 and FT08; clinical, diseased or infected cohorts; health status; timing relative to the bout; comparator; mixed interventions; preprint status; language; missing abstract; and every item of explicitly_not_exclusion_reasons. These are judged at stage 2 or at full text.",
+    "codes": [
+      {
+        "code": "TI01_SOURCE_TYPE_EVIDENT",
+        "ft_code": "FT01_SOURCE_TYPE_NOT_CORE",
+        "label": "Review, editorial, protocol or conference abstract evident from the title or document type",
+        "evident_when": [
+          "The exported document type is Review, Systematic Review, Meta-Analysis, Editorial, Editorial Material, Comment, Meeting Abstract or Conference Abstract, and no source exports the record as an original article",
+          "The title states that the report is a review (narrative, systematic, scoping or umbrella), meta-analysis, position stand, consensus statement, editorial or commentary",
+          "The title states a study or trial protocol, or \"design and rationale\", without results"
+        ],
+        "not_sufficient": [
+          "Letter, research letter, correspondence, short communication, case report, or full conference/proceedings paper (may contain original data)",
+          "Words such as overview, update, perspective or insights in a title exported as an original article",
+          "Document types that disagree across sources, unless the title itself states the source type"
+        ]
+      },
+      {
+        "code": "TI02_NON_HUMAN_EVIDENT",
+        "ft_code": "FT02_NOT_ORIGINAL_HUMAN_RESEARCH",
+        "label": "Animal-only or in-vitro-only study evident from the title",
+        "evident_when": [
+          "The title names only non-human organisms (for example mice, rats, murine, rodent, equine, horses, dogs, pigs, zebrafish)",
+          "The title describes only cell lines or cultured cells, with no human participants"
+        ],
+        "not_sufficient": [
+          "Humans and animals both named, or the organism not named",
+          "Ex vivo or in vitro assays on samples from human participants (for example stimulated human blood)",
+          "Computational or secondary analyses of human data (not on the closed list; judged at stage 2)"
+        ]
+      },
+      {
+        "code": "TI03_PAEDIATRIC_EVIDENT",
+        "ft_code": "FT03_POPULATION_NOT_ELIGIBLE",
+        "label": "Cohort clearly under 18 years in the title",
+        "evident_when": [
+          "The title names only participants under 18 years: children, adolescents, adolescent athletes, schoolchildren, boys or girls, infants, paediatric/pediatric, an age range entirely below 18 years, or an under-18 age-group team (for example U-16)"
+        ],
+        "not_sufficient": [
+          "Mixed adolescent and adult groups (for example \"adolescent and adult athletes\")",
+          "young, young adults, youth, junior, students, college or collegiate, cadets, recruits, or no age descriptor",
+          "Clinical, diseased or infected cohorts (not on the closed list; judged at stage 2 under FT03)"
+        ]
+      },
+      {
+        "code": "TI04_NO_EXERCISE_CONTEXT_EVIDENT",
+        "ft_code": "FT04_NO_QUALIFYING_EXERCISE_EXPOSURE",
+        "label": "No exercise or physical-activity context evident in the title",
+        "evident_when": [
+          "The title describes the study exposure or topic, that exposure is evidently not exercise or physical activity (for example a drug, diet-only, vaccine, sleep, surgery, disease course or psychological-stress study), and the title contains no reference to exercise, physical activity, sport, training, athletes, competition, physical exertion or a physically demanding occupational or military task"
+        ],
+        "not_sufficient": [
+          "A title that names no exposure at all (for example only markers, cells or a population): the exercise context may be in the abstract",
+          "Fitness, VO2max, sedentary behaviour, steps, physical work or any form of training named in the title",
+          "Habitual or cross-sectional physical activity (judged at stage 2 or full text; possible RETAIN_BACKGROUND)"
+        ]
+      },
+      {
+        "code": "TI05_NO_IMMUNE_OR_OMICS_CONTENT_EVIDENT",
+        "ft_code": "FT07_NO_ELIGIBLE_IMMUNE_LINK",
+        "label": "No immune, inflammatory or omics content evident in the title",
+        "evident_when": [
+          "The title names the study outcomes and none is immune, inflammatory or omics content (for example only performance, VO2max, strength, glycogen, lactate, heart-rate variability, cortisol or other hormones, bone, cognition or mood)"
+        ],
+        "not_sufficient": [
+          "A title that names no outcome",
+          "Generic or possibly immune content: blood or salivary markers, biomarkers, recovery or stress markers, proteins, plasma, serum, saliva, gene expression, muscle damage, oxidative stress, infection, illness, upper respiratory symptoms or health",
+          "Any immune cell, cytokine, immunoglobulin, complement, inflammation, leukocyte or omics term"
+        ]
+      }
+    ],
+    "conflict_rule": "Title-stage consensus is automatic: any ADVANCE_TO_ABSTRACT by either reviewer wins; EXCLUDE_TITLE is final only when both reviewers chose it (if their codes differ, the earlier code in this list is recorded and the difference logged); every other combination is AWAITING_CLASSIFICATION, which proceeds to stage 2 with the advanced records. Conflicts are logged, not adjudicated.",
+    "reporting": "PRISMA-ScR flow: title-stage exclusions are reported as a separate box, by closed-list code and its FT code."
+  }
 }

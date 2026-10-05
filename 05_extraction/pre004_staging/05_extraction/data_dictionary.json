@@ -797,13 +797,19 @@
         "A_core_acute": "Core A: identifiable single bout or competition (any intensity, duration or mode), >=1 post-cessation immune-related sample, and a pre-bout baseline or suitable comparator; adults >= 18 y.",
         "B_support_repeated_bouts": "Support B (retained; cross-bout open-window monitoring layer): same immune-related marker in the same individuals after >=2 identified bouts, explicit bout-to-sample timing and a baseline/suitable comparator; deduplicated against Core A by cohort_id and presented separately.",
         "background": "Original adult human studies with an eligible immune link that are retained for context through the full-text disposition RETAIN_BACKGROUND because their only failure is exposure/timing (habitual-exercise or resting cross-sectional comparisons; periodic, weekly or seasonal monitoring with unknown last-bout timing; training pre/post snapshots with unknown exercise-to-sampling interval). Charted at reduced depth (relational_model.rules); outside every original-study denominator. Reviews used for citation chasing are excluded (FT01), not background. The background register is not a census: RETAIN_BACKGROUND is assigned only at full text.",
-        "excluded": "Excluded at title/abstract or full text (one primary FT01-FT08 code at full text).",
+        "excluded": "Excluded at title (stage 1, closed-list code mapped to FT01-FT04/FT07), title/abstract (stage 2) or full text (one primary FT01-FT08 code at full text).",
         "uncertain": "Eligibility unresolved (awaiting classification/translation or not retrieved); never counted as excluded.",
         "NR": "Not reported (missing-value code).",
         "NA": "Not applicable, e.g. a duplicate record or a superseded version (DUPLICATE_RECORD / DUPLICATE_VERSION) whose scope follows the retained record; version stubs use NA, never uncertain.",
         "UNCLEAR": "Unclear after full-text review (missing-value code)."
       },
       "from_screening_disposition": {
+        "ADVANCE_TO_ABSTRACT": [
+          "none: title-stage disposition (v3.1, PRE-005), not a final scope"
+        ],
+        "EXCLUDE_TITLE": [
+          "excluded"
+        ],
         "INCLUDE_A": [
           "A_core_acute"
         ],

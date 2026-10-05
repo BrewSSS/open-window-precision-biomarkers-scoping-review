@@ -1,7 +1,7 @@
 {
   "protocol_version": "3.1",
   "protocol_date": "2026-10-05",
-  "status": "v3.1_amendment_PRE-004_applied_release_pending",
+  "status": "v3.1_amendments_PRE-004_PRE-005_applied_release_pending",
   "confirmed_resources": {
     "databases": [
       "PubMed",
@@ -85,8 +85,12 @@
     "synthesis": "pending",
     "submission": "pending",
     "amendment_PRE-004": "adopted_2026-10-05 (A): C01-C20 adopted, C21-C23 deferred; staged in 05_extraction/pre004_staging, applied after R62",
+    "amendment_PRE-005": "adopted_2026-10-05 (A): two-stage screening (title stage with closed list and advance-wins consensus; abstract completion; title/abstract stage); staged with PRE-004 in 05_extraction/pre004_staging",
     "protocol_v3_1_release": "pending (GitHub Release v3.1 + Zenodo version DOI before formal search)",
-    "human_calibration_round_v3_1": "pending (reduced human charting calibration by B and C on v3.1 rules)"
+    "human_calibration_round_v3_1": "pending (reduced human charting calibration by B and C on v3.1 rules)",
+    "title_screening_pilot_100": "pending (100 records from the deduplicated formal union, seed 20261005; raw agreement >= 0.80 on the binary TI disposition before formal stage 1)",
+    "abstract_completion": "pending (after stage 1)",
+    "TA_recalibration_25_v3_1": "pending (25 records from the stage-1 retained set, seed 20261003; before formal stage 2)"
   },
   "flow_counts": null,
   "actual_search_dates": null,
@@ -105,6 +109,7 @@
     "2026-10-05: v3.0 released (tag v3.0, commit fea09ea); Zenodo version DOI 10.5281/zenodo.23147973, concept DOI 10.5281/zenodo.23147972. Next: 50-record screening pilot and 10-report charting pilot; D's licensed-platform syntax checks.",
     "2026-10-05 pilot TA: 50/50 agreement, 10 ADVANCE / 40 EXCLUDE_TA (FT02 21, FT01 7, FT03 6, FT04 3, FT07 3); conducted with visible AI hints; acceptance as calibration pending A.",
     "2026-10-05: A accepted the TA pilot as calibration with the AI-hint limitation recorded; formal screening will show no AI recommendations. Next: 10-report charting pilot.",
-    "2026-10-05 (A): charting pilot accepted as calibration; amendment PRE-004 adopted (row units, vocabularies, time-bin boundary rules, denominators, RETAIN_BACKGROUND, age rule explicit range/minimum >= 18 or mean - 2*SD >= 18, background charting depth with one extractor + one checker, figure-only values not digitised); protocol 3.1 to be released as a new Zenodo version before the formal search. Deferred: C21-C23."
+    "2026-10-05 (A): charting pilot accepted as calibration; amendment PRE-004 adopted (row units, vocabularies, time-bin boundary rules, denominators, RETAIN_BACKGROUND, age rule explicit range/minimum >= 18 or mean - 2*SD >= 18, background charting depth with one extractor + one checker, figure-only values not digitised); protocol 3.1 to be released as a new Zenodo version before the formal search. Deferred: C21-C23.",
+    "2026-10-05 (A): amendment PRE-005 (released with PRE-004 as v3.1) replaces the single title/abstract stage with two-stage screening: stage 1 title screening (closed list of title-evident reasons, any ADVANCE wins, 100-record title pilot) -> abstract completion -> stage 2 title/abstract screening (v3 rules; 25-record re-calibration). Rationale: five-database raw volume estimated at 60,000-90,000 records (PubMed 20,090; Web of Science EO route 6,669; Scopus EO route 6,159 on 2026-10-05) and abstracts not uniformly available through APIs off campus."
   ]
 }

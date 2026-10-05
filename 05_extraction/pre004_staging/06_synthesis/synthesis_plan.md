@@ -1,6 +1,6 @@
-# Synthesis plan — version 3.0
+# Synthesis plan — version 3.1
 
-**Version:** 3.0 (draft for team freeze) - 4 October 2026; implements `01_protocol/v3_design_contract.txt`.
+**Version:** 3.1 (amendments PRE-004 and PRE-005) - 5 October 2026; implements `01_protocol/v3_design_contract.txt` and amendments PRE-004 and PRE-005 (`01_protocol/amendments.json`).
 **Status:** design specification only. Formal searches and screening have not been run; no included-study results, counts, denominators, or PRISMA flow values are available. The reconnaissance dates (2026-10-02 public-web reconnaissance; 2026-10-04 collision re-check) are not the formal search cutoff. Update the cutoff to the actual final search date.
 
 ## Synthesis objective
@@ -92,7 +92,7 @@ Full extraction, excluded full-text reasons, search strategies, study-specific c
 2. **Per-marker validation-readiness map (Figure 2):** marker or marker family (rows; conventional and omics candidates distinguishable) by the seven precision domains — analytical reliability, temporal validity, immune specificity, individualization, functional/clinical linkage, independent validation and tested use, and feasibility — each cell showing its evidence state with unique-cohort/report denominators. It is the descriptive profile defined above; markers are labels/facets, not independent evidence counts. A proposed use is not a tested use.
 3. **Cohort-level validation links (Figure 3):** depict linked cohort → report → assay/function/clinical outcome/model-validation relations, including technical confirmation, repeated-bout evidence, independent participants/cohorts, direct function, tested associations, and clinical/prediction outcomes. The cohort is the primary count; reports and assay/function/clinical links are descriptive linked records, not independent cohorts. Label gaps explicitly.
 
-A PRISMA-ScR selection flow diagram is a required reporting artifact when data exist; it is separate from these three analytic maps and, with the PRISMA-ScR checklist, is submitted as supplementary material. Before selection is complete, it remains a template and must not contain zeroes or fabricated counts.
+A PRISMA-ScR selection flow diagram is a required reporting artifact when data exist; it is separate from these three analytic maps and, with the PRISMA-ScR checklist, is submitted as supplementary material. Under two-stage screening (amendment PRE-005) it has a stage-1 title-screening box (records screened; records excluded by closed-list code TI01-TI05 with the mapped FT code) before the stage-2 title/abstract box, notes the number of stage-1 retained records screened without an abstract, and reports counts per stage (`06_synthesis/evidence_map_spec.json` standard_reporting_figure.flow_stages). Before selection is complete, it remains a template and must not contain zeroes or fabricated counts.
 
 ## Quantitative and narrative synthesis
 
