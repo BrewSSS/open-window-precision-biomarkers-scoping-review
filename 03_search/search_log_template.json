@@ -5822,6 +5822,27 @@
       },
       "workload_assumptions": "Title/abstract screening at 1 min per record per reviewer, two reviewers: person-hours = records x 2 / 60; five-database raw volume assumed 1.5-2.5x PubMed before deduplication (assumption, as Addendum 2).",
       "not_verified": "WoS, Scopus, Embase.com/Ovid and SPORTDiscus T translations not live-parser checked (proximity semantics, stop words in phrases, hyphens, thesaurus T headings: strategy §8 login checks). Recall of T for numeric-only timing reports is untested (no such seed)."
-    }
+    },
+    "pilot_pool_runs": [
+      {
+        "id": "PILOT_POOL_PUBMED_v07_2026-10-05",
+        "run_type": "pilot_draft_pool",
+        "formal_search": false,
+        "prisma_counts": false,
+        "description": "PubMed-only DRAFT POOL from strategy v0.7 for the post-release 50-record title/abstract screening pilot. Not a formal search: the formal-run fields in `searches` stay null.",
+        "strategy_version": "0.7-draft",
+        "protocol_release": "v3.0 (10.5281/zenodo.23147973)",
+        "date_time_utc": "2026-10-05T00:35:23Z",
+        "query": "UNION_PUBMED_FINAL (v0.7 §3)",
+        "exact_query_sha256": "261e368940b58826c6722318721fdec0715124e9e640844539b31a3c51aa8f4e",
+        "count": 20090,
+        "querytranslation_recorded_in": "04_screening/pilot_2026-10-05/pool_run_log.json",
+        "pool_pmid_file_sha256": "d64a178fb041ec458cd55b1f8c1a4cba19bd1bbcf54235e211be481cc0490dac",
+        "sample_seed": 20261002,
+        "sample_n": 50,
+        "seed_recall": "19/24",
+        "run_log": "04_screening/pilot_2026-10-05/pool_run_log.json"
+      }
+    ]
   }
 }

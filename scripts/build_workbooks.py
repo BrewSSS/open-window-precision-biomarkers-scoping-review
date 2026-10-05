@@ -17,7 +17,11 @@ Usage:
     python3 scripts/build_workbooks.py                       # screening + extraction + appraisal
     python3 scripts/build_workbooks.py --reviewer A --reviewer B   # also extraction_workbook_A/B
     python3 scripts/build_workbooks.py --only extraction --reviewer A
-Options --rows (formula rows in the screening workbook, default 5000) and --out-dir.
+    python3 scripts/build_workbooks.py --populate 04_screening/pilot_2026-10-05/pilot_sample_50.csv \
+        --reviewer-label B --out 04_screening/pilot_2026-10-05/pilot_screening_B.xlsx
+        # pilot: one reviewer's screening workbook, generated from the same JSON sources, with records_master
+        # filled from the CSV; only that reviewer's TA sheet is unlocked/visible (B -> slot A, C -> slot B).
+Options --rows (formula rows in the screening workbook, default 5000; with --populate, the record count) and --out-dir.
 After building, every workbook is reloaded and checked (sheet names, headers, data
 validations, protection flags, empty data rows); use --no-verify to skip.
 """
@@ -26,6 +30,7 @@ from __future__ import annotations
 import argparse
 import datetime as _dt
 import hashlib
+import io
 import json
 import re
 import sys
@@ -37,6 +42,7 @@ try:
     from openpyxl.styles import Alignment, Font, PatternFill, Protection
     from openpyxl.utils import get_column_letter
     from openpyxl.workbook.defined_name import DefinedName
+    from openpyxl.workbook.protection import WorkbookProtection
     from openpyxl.worksheet.datavalidation import DataValidation
 except ImportError:  # pragma: no cover
     sys.exit('openpyxl is required: python3 -m pip install --user openpyxl')
@@ -504,7 +510,8 @@ def agreement_block(wb, ws, top: int, left: int, cats, rng_a: str, rng_b: str, p
     return sr + len(rows) + 1, out
 
 
-def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 1000, registry=None):
+def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 1000, registry=None, pilot=None):
+    """pilot: None (blank template) or the dict from load_pilot() -> one reviewer's populated pilot workbook."""
     E = screening_enums(src)
     registry = {} if registry is None else registry
     wb = openpyxl.Workbook()
@@ -883,7 +890,8 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
     # ---- README --------------------------------------------------------------------------------
     gen = _dt.date.today().isoformat()
     cal = E['calibration']
-    write_readme(S['README'], '筛选工作簿 Screening workbook (blank template — no records, no decisions)', [
+    readme_title = '筛选工作簿 Screening workbook (blank template — no records, no decisions)'
+    readme_sections = [
         ('生成信息 Generation', [('generated_on', gen), ('generator', f'scripts/build_workbooks.py v{SCRIPT_VERSION}'),
                                 ('formula rows (--rows)', rows), ('conflict list rows', conflict_rows),
                                 ('regenerate', 'python3 scripts/build_workbooks.py --reviewer A --reviewer B'),
@@ -904,8 +912,13 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
             '工作表保护不设密码，仅用于防止误改结构。', '下拉列表全部来自 codes 工作表，codes 由 JSON 生成。']),
         ('模板解释 Interpretations of JSON fields', E['interpretations']),
         ('模板不一致提示 Template issues detected', E['problems'] or ['none detected by the generator']),
-    ])
+    ]
+    if pilot:
+        readme_title, readme_sections = pilot_readme(pilot, E, readme_sections)
+    write_readme(S['README'], readme_title, readme_sections)
     S['README'].sheet_properties.tabColor = '000000'
+    if pilot:
+        apply_pilot(wb, S, pilot, ta_cols, ft_cols)
 
     wb.calculation.fullCalcOnLoad = True
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -925,6 +938,8 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
         'formula_input_sheets': ['screen_TA_reviewer_A', 'screen_TA_reviewer_B', 'screen_FT_reviewer_A', 'screen_FT_reviewer_B'],
         'dv': registry, 'names': list(codes.names), 'unlocked_cells': registry.get('_unlocked_cells', {}),
     }
+    if pilot:
+        spec = pilot_spec(spec, pilot, wb, ta_cols, ft_cols)
     return spec, E
 
 
@@ -1404,6 +1419,234 @@ def build_appraisal(src, out_path: Path, registry=None):
 
 
 # ---------------------------------------------------------------------------------------------
+# Pilot reviewer workbooks (--populate): same generator, same JSON sources; only data rows filled
+# ---------------------------------------------------------------------------------------------
+# Team reviewer label -> generator reviewer slot. The generator and scripts/merge_screening.py use the
+# slots A/B (screen_<stage>_reviewer_A/B); the pilot reviewers are team members B and C. Sheets are never
+# renamed: reviewer B decides in screen_TA_reviewer_A, reviewer C in screen_TA_reviewer_B, so that
+# `merge_screening.py merge --a <B file> --b <C file>` finds the right sheet by default.
+PILOT_SLOT = {'B': 'A', 'C': 'B'}
+PILOT_CSV_FIELDS = ['record_id', 'pmid', 'doi', 'title', 'abstract', 'authors', 'journal', 'year']
+PILOT_MASTER_DEFAULTS = {'source_database': 'PubMed/MEDLINE',
+                         'search_id': 'PILOT_DRAFT_POOL (not a formal search)',
+                         'route': 'E AND (I OR O) AND T (PubMed v0.7 pilot union)'}
+PILOT_INPUT_LABELS = {'minutes': 'TOTAL MINUTES for all records (input, number)',
+                      'date': 'date finished (input, YYYY-MM-DD)'}
+
+
+def load_pilot(csv_path: Path, label: str) -> dict:
+    import csv
+    csv_path = Path(csv_path).resolve()
+    raw = csv_path.read_bytes()
+    rows = list(csv.DictReader(io.StringIO(raw.decode('utf-8-sig'))))
+    if not rows:
+        raise SystemExit(f'{csv_path}: no records')
+    miss = [f for f in PILOT_CSV_FIELDS if f not in rows[0]]
+    if miss:
+        raise SystemExit(f'{csv_path}: missing columns {miss}')
+    ids = [r['record_id'] for r in rows]
+    if len(set(ids)) != len(ids) or not all(ids):
+        raise SystemExit(f'{csv_path}: record_id must be unique and non-empty')
+    for r in rows:
+        for k, v in r.items():
+            if v and len(v) > 32767:
+                raise SystemExit(f'{r["record_id"]}.{k}: longer than an Excel cell allows')
+    run_log = None
+    rl = csv_path.parent / 'pool_run_log.json'
+    if rl.exists():
+        run_log = json.loads(rl.read_text(encoding='utf-8'))
+    try:
+        shown = str(csv_path.relative_to(ROOT))
+    except ValueError:
+        shown = csv_path.name
+    return {'label': label, 'slot': PILOT_SLOT[label], 'records': rows, 'csv': shown,
+            'csv_sha256': hashlib.sha256(raw).hexdigest(), 'run_log': run_log}
+
+
+def pilot_readme(pilot: dict, E: dict, sections: list):
+    lab, slot = pilot['label'], pilot['slot']
+    other = next(k for k, v in PILOT_SLOT.items() if k != lab)
+    n = len(pilot['records'])
+    rl = pilot.get('run_log') or {}
+    srch, smp, pool = rl.get('search', {}), rl.get('sample', {}), rl.get('pool', {})
+    title = (f'PILOT title/abstract screening workbook — reviewer {lab} '
+             f'(decision sheet screen_TA_reviewer_{slot}; {n} records; NOT formal screening)')
+    pilot_rows = [
+        ('reviewer', f'{lab} (team member). Your decision sheet: screen_TA_reviewer_{slot} '
+                     f'(generator slot {slot}; reviewer {other} uses slot {PILOT_SLOT[other]} in a separate file). '
+                     'Do not rename, add, delete, sort or reorder sheets, rows or columns.'),
+        ('status', 'PILOT ONLY (calibration_plan.md, initial 50-record round). Pilot decisions are not formal screening '
+                   'results; no PRISMA count is produced from this file.'),
+        ('records', f'{n} records in records_master (read-only). Row n of your sheet = row n of records_master: read the '
+                    'title and abstract in records_master, decide in your sheet.'),
+        ('pool and sample', f'PubMed-only draft pool, strategy v0.7 union E AND (I OR O) AND T; run {srch.get("datetime_utc", "?")}; '
+                            f'{srch.get("count", "?")} records; pool SHA-256 {str(pool.get("pmid_file_sha256", "?"))[:16]}…; '
+                            f'sample {smp.get("algorithm", "random.Random(20261002).sample(sorted(pool), 50)")}.'),
+        ('source file', f'{pilot["csv"]} (sha256={pilot["csv_sha256"][:16]}…)'),
+        ('1. Independent and blind', f'Screen alone. Do not discuss any record, rule or decision with reviewer {other} '
+                                      '(or anyone else) until BOTH files are locked and their SHA-256 hashes are committed '
+                                      'to git by the data manager. Questions about the manual go to A/D and are logged.'),
+        ('2. Decisions from the dropdowns only', 'decision: ' + ' / '.join(E['ta']) + '. Use the dropdown; never type '
+                                                  'free text into decision or primary_reason. When uncertain: ADVANCE or '
+                                                  'AWAITING_CLASSIFICATION; never exclude by assumption.'),
+        ('3. One primary reason', 'primary_reason only for EXCLUDE_TA: exactly one FT01-FT08 code, the FIRST clearly failed '
+                                  'dimension in hierarchy order (screening_manual.md §3B). Leave it blank for every other '
+                                  'decision. Put the abstract quote/basis in rationale_or_quote and the date in decided_at.'),
+        ('4. Rules that are never TA exclusion grounds', 'exercise intensity/duration/mode; absence of the phrase "open '
+                                                         'window"; sampling later than 72 h (tagged, not excluded); '
+                                                         'full-text-only criteria. Adults >= 18 y (or a separable adult '
+                                                         'stratum); Support B retained.'),
+        ('5. Time yourself', 'Time each record (start when you open its abstract, stop when the decision is entered); add up '
+                             'and write the TOTAL minutes for all records in the green cell below. Optional per-record '
+                             'times may go in the note column.'),
+        (PILOT_INPUT_LABELS['minutes'], None),
+        (PILOT_INPUT_LABELS['date'], None),
+        ('6. Lock and return', 'Save the file (keep .xlsx, keep the file name, do not rename sheets), close it, and send it '
+                               'to A/D. After sending, do not edit it again: the data manager records its SHA-256 and '
+                               'commits it to git before any merge; that commit is the lock. A correction after the lock '
+                               'needs a new file and a log entry.'),
+        ('7. Merge (data manager only)', 'python3 scripts/merge_screening.py merge --stage TA --a pilot_screening_B.xlsx '
+                                         '--b pilot_screening_C.xlsx --calibration-ids <pilot_sample_50.csv> --out-dir <dir>'),
+        ('8. Pass rule', f'raw agreement on the binary TA disposition ({E["binary_labels"][0]} vs {E["binary_labels"][1]}) '
+                         f'>= {E["threshold"]:.0%} across all {n} records AND every conceptual disagreement resolved; '
+                         'kappa descriptive only. Failure: discuss concept disagreements, revise the manual, draw a fresh '
+                         '50 with seed 20261003 from the unseen pool.'),
+        ('hidden sheets', f'screen_TA_reviewer_{PILOT_SLOT[other]} (the other reviewer slot; empty), both FT sheets and the '
+                          'merge sheets are hidden and locked in this pilot file; the workbook structure is protected '
+                          '(no password) so sheets cannot be renamed or unhidden by accident.'),
+    ]
+    rows = [r if r[1] is not None else (r[0], '') for r in pilot_rows]
+    head = [('试点 PILOT — read this first', rows)]
+    gen = [x for x in sections if x[0].startswith('生成信息')]
+    rest = [x for x in sections if not x[0].startswith('生成信息')]
+    if gen:
+        gen = [(gen[0][0], list(gen[0][1]) + [('populated by', f'scripts/build_workbooks.py --populate {pilot["csv"]} '
+                                                                f'--reviewer-label {lab}')])]
+    return title, head + gen + rest
+
+
+def _defined_cell(wb, name: str):
+    dn = wb.defined_names[name]
+    sheet, ref = dn.attr_text.split('!')
+    return sheet.strip("'"), ref.replace('$', '')
+
+
+def apply_pilot(wb, S, pilot: dict, ta_cols, ft_cols):
+    ws = S['records_master']
+    col = {h: i + 1 for i, h in enumerate(MASTER_COLUMNS)}
+    for i, rec in enumerate(pilot['records'], start=2):
+        vals = {h: (rec.get(h) or None) for h in MASTER_COLUMNS}
+        for k, v in PILOT_MASTER_DEFAULTS.items():
+            vals[k] = rec.get(k) or v
+        vals['dedup_status'] = None   # blank = retained (single database; PMIDs unique)
+        for h, v in vals.items():
+            if v is None:
+                continue
+            c = ws.cell(row=i, column=col[h], value=str(v))
+            c.number_format = '@'
+            c.alignment = WRAP
+    ws.column_dimensions[L(col['abstract'])].width = 110
+    ws.freeze_panes = 'B2'
+    own = f'screen_TA_reviewer_{pilot["slot"]}'
+    for stage, cols in (('TA', ta_cols), ('FT', ft_cols)):
+        for rv in ('A', 'B'):
+            name = f'screen_{stage}_reviewer_{rv}'
+            if name == own:
+                continue
+            w = S[name]
+            for i, h in enumerate(cols, start=1):
+                if h not in ('record_id', 'title', 'check_code_rule'):
+                    w.column_dimensions[L(i)].protection = LOCKED
+            w.sheet_state = 'hidden'
+            w.sheet_properties.tabColor = '808080'
+    for name in ('merge_TA', 'merge_FT'):
+        S[name].sheet_state = 'hidden'
+    # calibration block in merge_TA: round 1 and the sampled record IDs (P001.., in sampled order)
+    sh, ref = _defined_cell(wb, 'TA_cal_round')
+    wb[sh][ref] = 1
+    mt = S['merge_TA']
+    hdr = next(c for row in mt.iter_rows() for c in row if c.value == 'record_id (input)')
+    for i, rec in enumerate(pilot['records']):
+        mt.cell(row=hdr.row + 1 + i, column=hdr.column, value=rec['record_id'])
+    # README input cells
+    rd = S['README']
+    for key, label in PILOT_INPUT_LABELS.items():
+        r = next(c.row for c in rd['A'] if c.value == label)
+        cell = rd.cell(row=r, column=2)
+        cell.value = None
+        cell.protection, cell.fill = UNLOCKED, FILL['inputcell']
+        if key == 'minutes':
+            cell.number_format = '0.0'
+            dv = DataValidation(type='decimal', operator='between', formula1='0', formula2='100000', allow_blank=True,
+                                showErrorMessage=True, errorTitle='Minutes', error='Enter total minutes as a number.')
+        else:
+            cell.number_format = '@'
+            dv = None
+        if dv is not None:
+            dv.add(cell.coordinate)
+            rd.add_data_validation(dv)
+        define_cell(wb, f'PILOT_{key}', rd, cell.coordinate)
+        rd.cell(row=r, column=1).font = Font(bold=True)
+    for w in wb.worksheets:
+        w.sheet_view.tabSelected = (w.title == 'README')
+    wb.active = 0
+    wb.security = WorkbookProtection(lockStructure=True)
+
+
+def pilot_spec(spec: dict, pilot: dict, wb, ta_cols, ft_cols) -> dict:
+    own = f'screen_TA_reviewer_{pilot["slot"]}'
+    spec = dict(spec)
+    spec['empty_input_sheets'] = [s for s in spec['empty_input_sheets'] if s != 'records_master']
+    spec['unlocked_cols'] = {s: c for s, c in spec['unlocked_cols'].items() if s == own}
+    spec['locked_input_cols'] = {
+        f'screen_{st}_reviewer_{rv}': [L(i + 1) for i, h in enumerate(cols) if h not in ('record_id', 'title', 'check_code_rule')]
+        for st, cols in (('TA', ta_cols), ('FT', ft_cols)) for rv in ('A', 'B') if f'screen_{st}_reviewer_{rv}' != own}
+    spec['hidden'] = sorted(spec['locked_input_cols']) + ['merge_FT', 'merge_TA']
+    spec['visible'] = ['README', 'records_master', own, 'codes', 'log']
+    cells = {k: _defined_cell(wb, f'PILOT_{k}')[1] for k in PILOT_INPUT_LABELS}
+    spec['unlocked_cells'] = dict(spec['unlocked_cells'], README=list(cells.values()))
+    spec['pilot'] = {'records': pilot['records'], 'own_sheet': own, 'structure_locked': True,
+                     'cal_ids': [r['record_id'] for r in pilot['records']]}
+    return spec
+
+
+def verify_pilot(path: Path, spec: dict) -> list:
+    wb = openpyxl.load_workbook(path)
+    errs = []
+    for s, cols in spec['locked_input_cols'].items():
+        for c in cols:
+            if wb[s].column_dimensions[c].protection.locked is False:
+                errs.append(f'{s}: column {c} should be locked in the pilot file')
+    for s in spec['hidden']:
+        if wb[s].sheet_state == 'visible':
+            errs.append(f'{s}: should be hidden')
+    for s in spec['visible']:
+        if wb[s].sheet_state != 'visible':
+            errs.append(f'{s}: should be visible')
+    if not (wb.security and wb.security.lockStructure):
+        errs.append('workbook structure not protected')
+    if wb.security and (wb.security.workbookPassword or getattr(wb.security, 'workbook_password', None)):
+        errs.append('workbook protection has a password')
+    ws = wb['records_master']
+    head = [c.value for c in ws[1]]
+    recs = spec['pilot']['records']
+    if ws.max_row != len(recs) + 1:
+        errs.append(f'records_master has {ws.max_row - 1} rows, expected {len(recs)}')
+    for i, rec in enumerate(recs, start=2):
+        for f in PILOT_CSV_FIELDS:
+            got = ws.cell(row=i, column=head.index(f) + 1).value
+            if (got or '') != (rec.get(f) or ''):
+                errs.append(f'records_master row {i} {f}: value differs from the CSV')
+                break
+    mt = wb['merge_TA']
+    hdr = next(c for row in mt.iter_rows() for c in row if c.value == 'record_id (input)')
+    got = [mt.cell(row=hdr.row + 1 + i, column=hdr.column).value for i in range(len(spec['pilot']['cal_ids']))]
+    if got != spec['pilot']['cal_ids']:
+        errs.append('merge_TA calibration record_ids differ from the sample')
+    return errs
+
+
+# ---------------------------------------------------------------------------------------------
 # Verification (reload with openpyxl)
 # ---------------------------------------------------------------------------------------------
 def verify(path: Path, spec: dict) -> dict:
@@ -1477,14 +1720,49 @@ def verify(path: Path, spec: dict) -> dict:
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--out-dir', type=Path, default=DEFAULT_OUT)
-    ap.add_argument('--rows', type=int, default=5000, help='formula rows in the screening workbook (>= records in pool)')
+    ap.add_argument('--rows', type=int, default=None,
+                    help='formula rows in the screening workbook (>= records in pool; default 5000, or the number of '
+                         'records with --populate)')
     ap.add_argument('--conflict-rows', type=int, default=1000)
     ap.add_argument('--reviewer', action='append', choices=['A', 'B'], default=[],
                     help='also build extraction_workbook_<R>.xlsx stamped with this extractor label (repeatable)')
     ap.add_argument('--only', choices=['screening', 'extraction', 'appraisal'], action='append', default=[])
     ap.add_argument('--no-verify', action='store_true')
+    ap.add_argument('--populate', type=Path, metavar='CSV',
+                    help='pilot: build ONE screening workbook with records_master filled from CSV (record_id, pmid, doi, '
+                         'title, abstract, authors, journal, year); requires --reviewer-label and --out')
+    ap.add_argument('--reviewer-label', choices=sorted(PILOT_SLOT),
+                    help='pilot reviewer (team label): B -> decision sheet screen_TA_reviewer_A, C -> screen_TA_reviewer_B; '
+                         'the other reviewer slot, FT and merge sheets are hidden and locked')
+    ap.add_argument('--out', type=Path, help='pilot: output .xlsx path')
     args = ap.parse_args(argv)
     src = load_sources()
+    if args.populate or args.reviewer_label or args.out:
+        if not (args.populate and args.reviewer_label and args.out):
+            ap.error('--populate, --reviewer-label and --out must be given together')
+        if args.only or args.reviewer:
+            ap.error('--populate builds only the pilot screening workbook; do not combine with --only/--reviewer')
+        pilot = load_pilot(args.populate, args.reviewer_label)
+        rows = args.rows or len(pilot['records'])
+        if rows < len(pilot['records']):
+            ap.error('--rows is smaller than the number of records')
+        out = args.out.resolve()
+        spec, E = build_screening(src, out, rows=rows, conflict_rows=min(args.conflict_rows, rows), pilot=pilot)
+        line = {'written': str(out.relative_to(ROOT)) if out.is_relative_to(ROOT) else str(out),
+                'reviewer_label': args.reviewer_label, 'decision_sheet': spec['pilot']['own_sheet'],
+                'records': len(pilot['records']), 'source_csv_sha256': pilot['csv_sha256']}
+        failed = False
+        if not args.no_verify:
+            v = verify(out, spec)
+            errs = v['errors'] + verify_pilot(out, spec)
+            line.update({k: v[k] for k in ('sheets', 'data_validations_checked', 'protected_sheets')})
+            line['verify'] = 'OK' if not errs else errs
+            failed = bool(errs)
+        line['sha256'] = sha256(out)
+        line['template_issues'] = len(E['problems'])
+        print(json.dumps(line, ensure_ascii=False))
+        return 1 if failed else 0
+    args.rows = args.rows or 5000
     only = set(args.only) or {'screening', 'extraction', 'appraisal'}
     built, failed = [], False
     if 'screening' in only:

@@ -50,6 +50,8 @@
 
 - `python3 scripts/merge_screening.py merge --stage TA --a A.xlsx --b B.xlsx --out-dir <dir> [--reconciled R.csv] [--calibration-ids ids.txt]` → `merged_TA.csv`、`conflicts_TA.csv`、`agreement_TA.json`（一致、冲突、每人计数、原始一致率、Cohen kappa；校准按 ≥80% 原始一致率，kappa 仅描述）。全文阶段用 `--stage FT [--population merged_TA.csv]`。
 - `python3 scripts/merge_screening.py prisma [--master <records_master>] [--ta merged_TA.csv] [--ft merged_FT.csv] --out prisma.csv`：未执行或未完成的阶段数值留空（NOT_YET_PERFORMED / INCOMPLETE），绝不写 0。
+- 试点工作簿（`--populate`）：`python3 scripts/build_workbooks.py --populate 04_screening/pilot_2026-10-05/pilot_sample_50.csv --reviewer-label B|C --out <xlsx>`。由同一生成器、同一 JSON 生成，仅填入 records_master 数据行；B 用 `screen_TA_reviewer_A`、C 用 `screen_TA_reviewer_B`（不改 sheet 名，`merge_screening.py` 默认读取），另一槽位、FT 与 merge 工作表隐藏并锁定，工作簿结构保护（无密码），README 含计时输入格。
+- 试点草稿池：`python3 scripts/fetch_pilot_pool.py` 逐字节读取检索策略 v0.7 §3 的 PubMed 块（哈希须与 2026-10-04 验证一致），E-utilities 运行并集、下载全部 PMID 与元数据（efetch ≤400/批，≤3 次/秒，不发送电子邮件），按 seed 20261002 抽取 50 条；已有池时不再查询 PubMed（幂等）。仅为试点，不是正式检索，不填正式运行字段。
 - `python3 scripts/merge_screening.py selftest`：只在临时目录用合成数据核对 Python kappa 与工作簿公式（LibreOffice 重算），不写项目文件（2026-10-04：27/27 通过）。
 
 ## 4. 参考文献（update_protocol_references.py）—— 未更新前不得以 --write 运行

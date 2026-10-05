@@ -33,3 +33,8 @@ __pycache__/
 
 # Browser-automation scratch created by AI tooling
 .playwright-mcp/
+
+# Pilot/search exports containing publisher abstracts: rebuildable from pool_pmids.txt via scripts/fetch_pilot_pool.py; not published (see scripts/README.md)
+04_screening/pilot_*/pool_metadata.json.gz
+04_screening/pilot_*/pilot_sample_*.csv
+04_screening/pilot_*/*.xlsx
