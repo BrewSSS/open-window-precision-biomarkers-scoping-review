@@ -1,6 +1,6 @@
 # 版本变更记录
 
-## 3.1 — 2026-10-05（修订PRE-004、PRE-005与PRE-006；待作为新的Zenodo version发布，concept DOI 10.5281/zenodo.23147972）
+## 3.1 — 2026-10-05（修订PRE-004、PRE-005与PRE-006；已于2026-10-05存档，version DOI 10.5281/zenodo.23163768，concept DOI 10.5281/zenodo.23147972）
 
 依据10篇目的性charting试点（2026-10-05，AI代理代B、C录入；A接受为规则清晰度校准，不是人类间一致性）与`05_extraction/pilot_2026-10-05/PILOT_FINDINGS_2026-10-05.md`、`pre004_candidates.json`。A决定采纳全部12项“必须”（C01–C12）与8项“建议”（C13–C20），推迟3项“可选”（C21关联类`result_direction`取值、C22 `measurements.n_in_contrast`、C23研究家族与共享队列规则）。记入`01_protocol/amendments.json`（PRE-004）。
 

@@ -76,3 +76,17 @@ JBI范围综述；PRISMA-ScR报告；PRISMA-S检索报告；按设计适配的�
 | v3.0 | 2026-10-05 | v3.0 | fea09eaee5ca | [10.5281/zenodo.23147973](https://doi.org/10.5281/zenodo.23147973) | [10.5281/zenodo.23147972](https://doi.org/10.5281/zenodo.23147972) | 冻结的 v3.0 方案、手册、模板、检索策略 v0.7、PRESS 记录、撞车复核、AI 使用日志；创作者为代号 A–D |
 
 发布后说明：Zenodo 记录在发布时自动生成，本仓库在发布后的提交里写回了 DOI（不构成新版本）。中文稿标题下的状态行在 v3.0 存档内仍写“存档前工作方案”，已于发布后提交修正；若 D 的付费库核对改变检索概念，发布 v3.1。
+
+
+## v3.1 存档记录（2026-10-05）
+
+| 项目 | 值 |
+|---|---|
+| Release tag | v3.1 |
+| Release commit | 0dbca34d2076118240fe6ee5fe54e76840ac19a4 |
+| GitHub Release | https://github.com/BrewSSS/open-window-precision-biomarkers-scoping-review/releases/tag/v3.1 |
+| Zenodo version DOI | 10.5281/zenodo.23163768（https://doi.org/10.5281/zenodo.23163768） |
+| Concept DOI | 10.5281/zenodo.23147972（与v3.0相同） |
+| Zenodo 创建时间 | 2026-10-05T13:46:34Z |
+| 内容 | 修订PRE-004（提取规则）、PRE-005（两阶段筛选）、PRE-006（数据库组合PubMed/WoS/Scopus+Google Scholar补充、检索阶段限制含英文与期刊论文、策略v0.9）；A于2026-10-05重新复核并接受v0.9的PRESS；三库正式检索于2026-10-05完成（原始导出不在存档内，仅清单与标识符列表） |
+| 发布方式 | 协调AI按A的决定（2026-10-05）打tag并创建GitHub Release，Zenodo自动归档；DOI在发布后的提交里写回 |

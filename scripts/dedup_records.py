@@ -454,6 +454,134 @@ def map_wos_text_record(rec: dict) -> dict:
 
 
 # ---------------------------------------------------------------------------------------------
+# WoS "Fast 5000" tab-delimited export (UTF-8(-BOM), CRLF, 55-column header of two-letter WoS tags;
+# detected by a first line starting with "PT\tAU" or containing "\tUT\t"; confirmed against the real
+# 2026-10-05 v0.9 export files -- unlike the FN/ER plain-text parser above, this one IS verified
+# against live data)
+# ---------------------------------------------------------------------------------------------
+def looks_like_wos_tsv(text: str) -> bool:
+    lines = text.splitlines()
+    if not lines:
+        return False
+    first_line = lines[0]
+    return first_line.startswith('PT\tAU') or '\tUT\t' in first_line
+
+
+def parse_wos_tsv_text(text: str):
+    """-> (list[dict[str,str]], n_unparseable_lines, n_lenient_recovered).
+    Observed real exports carry exactly one extra, always-empty trailing tab-delimited field on every
+    data line relative to the header (55 header names, 56 tab-split values per data row); that
+    trailing field is dropped silently (not counted as lenient -- it is the expected, consistent
+    shape). A data line whose column count differs from that expectation is still mapped (padded with
+    '' or truncated) rather than dropped, and counted under n_lenient_recovered. Blank lines are
+    skipped and not counted as unparseable."""
+    lines = text.splitlines()
+    if not lines:
+        return [], 0, 0
+    header = lines[0].split('\t')
+    ncols = len(header)
+    records = []
+    lenient = 0
+    for line in lines[1:]:
+        if not line.strip():
+            continue
+        cols = line.split('\t')
+        if len(cols) == ncols + 1 and cols[-1] == '':
+            cols = cols[:-1]
+        elif len(cols) != ncols:
+            lenient += 1
+            cols = cols[:ncols] if len(cols) > ncols else cols + [''] * (ncols - len(cols))
+        records.append(dict(zip(header, cols)))
+    return records, 0, lenient
+
+
+def map_wos_tsv_record(rec: dict, hint_route: str) -> dict:
+    authors_raw = (rec.get('AU') or '').strip()
+    authors = [a.strip() for a in authors_raw.split(';') if a.strip()]
+    doc_type = (rec.get('DT') or '').strip()
+    return blank_record(
+        source_database='Web of Science Core Collection', route=hint_route,
+        pmid=extract_pmid_candidate((rec.get('PM') or '').strip()) or '',
+        doi=(rec.get('DI') or '').strip(), title=(rec.get('TI') or '').strip(),
+        year=(rec.get('PY') or '').strip(), journal=(rec.get('SO') or '').strip(),
+        authors=authors, abstract=(rec.get('AB') or '').strip(),
+        pubtypes=[doc_type] if doc_type else [],
+    )
+
+
+# ---------------------------------------------------------------------------------------------
+# Scopus BibTeX export (header line "Scopus / EXPORT DATE: ..." then "@ARTICLE{<key>," entries;
+# fields author/title/year/journal/volume/number/pages/doi/url/abstract/pmid/publication_stage/type/
+# note/source; EID is recovered from the url field's "publications/<id>" segment as "2-s2.0-<id>" but,
+# like WoS's UT, is not persisted to a dedicated output column -- see map_scopus_json/
+# map_wos_text_record precedent above; source_file+source_row in dedup_map.csv gives full provenance
+# back to the exact entry instead)
+# ---------------------------------------------------------------------------------------------
+BIB_ENTRY_START_RE = re.compile(r'(?m)^@ARTICLE\{')
+BIB_FIELD_RE = re.compile(r'([A-Za-z][A-Za-z0-9_-]*)\s*=\s*\{')
+BIB_EID_RE = re.compile(r'publications/(\d+)')
+
+
+def looks_like_scopus_bibtex(text: str) -> bool:
+    return bool(BIB_ENTRY_START_RE.search(text[:200000]))
+
+
+def split_bibtex_entries(text: str) -> list:
+    """Split on literal '@ARTICLE{' line starts (per the task brief) rather than by counting braces
+    across the whole file: entries are reliably delimited by this marker even though individual
+    field *values* use nested braces internally (see parse_bibtex_fields)."""
+    starts = [m.start() for m in BIB_ENTRY_START_RE.finditer(text)]
+    return [text[s:(starts[i + 1] if i + 1 < len(starts) else len(text))] for i, s in enumerate(starts)]
+
+
+def parse_bibtex_fields(entry_text: str) -> dict:
+    """Brace-balanced field extractor: for each 'name = {' found, scans forward counting nested
+    '{'/'}' to locate the matching close brace, so values that themselves contain braces (bibtex
+    case-protection grouping, e.g. '{DNA}') are captured whole instead of truncated at the first '}'.
+    Matches that fall inside a field value already consumed this way (e.g. an incidental 'x = {'
+    inside an abstract) are skipped via the position check. A small number of real entries (3 of
+    11,065 in the 2026-10-05 v0.9 export) carry a genuinely unbalanced brace inside the raw abstract
+    text itself (an encoding artifact, e.g. '...growth factor ãŸ}(TGF-...' where a stray '}'
+    appears with no opening partner); for those, abstract capture ends early at that stray brace and
+    any fields appearing later in the same entry resume parsing correctly from that point -- only the
+    tail of that one abstract is lost, nothing else in the file is affected."""
+    fields = {}
+    n = len(entry_text)
+    pos = 0
+    for m in BIB_FIELD_RE.finditer(entry_text):
+        if m.start() < pos:
+            continue
+        name = m.group(1).lower()
+        depth = 1
+        j = m.end()
+        start = j
+        while j < n and depth > 0:
+            c = entry_text[j]
+            if c == '{':
+                depth += 1
+            elif c == '}':
+                depth -= 1
+            j += 1
+        fields[name] = entry_text[start:j - 1]
+        pos = j
+    return fields
+
+
+def map_scopus_bibtex_record(fields: dict, hint_route: str) -> dict:
+    authors_raw = (fields.get('author') or '').strip()
+    authors = [a.strip() for a in authors_raw.split(' and ') if a.strip()]
+    doc_type = (fields.get('type') or '').strip()
+    return blank_record(
+        source_database='Scopus', route=hint_route,
+        pmid=extract_pmid_candidate((fields.get('pmid') or '').strip()) or '',
+        doi=(fields.get('doi') or '').strip(), title=(fields.get('title') or '').strip(),
+        year=(fields.get('year') or '').strip(), journal=(fields.get('journal') or '').strip(),
+        authors=authors, abstract=(fields.get('abstract') or '').strip(),
+        pubtypes=[doc_type] if doc_type else [],
+    )
+
+
+# ---------------------------------------------------------------------------------------------
 # JSON / JSONL (PubMed formal export + pilot-pool stand-in; Scopus Search-API JSONL)
 # ---------------------------------------------------------------------------------------------
 def load_json_any(raw: bytes):
@@ -573,7 +701,8 @@ def parse_csv_text(text: str, path_hint_db: str, path_hint_route: str):
 # ---------------------------------------------------------------------------------------------
 # File discovery and per-file parsing
 # ---------------------------------------------------------------------------------------------
-SUPPORTED_SUFFIXES = ('.jsonl.gz', '.jsonl', '.ris.gz', '.ris', '.txt.gz', '.txt', '.csv.gz', '.csv')
+SUPPORTED_SUFFIXES = ('.jsonl.gz', '.jsonl', '.ris.gz', '.ris', '.txt.gz', '.txt', '.csv.gz', '.csv',
+                      '.bib.gz', '.bib')
 
 
 def _matches_supported(name: str) -> bool:
@@ -636,7 +765,14 @@ def parse_file(path: Path, search_id_lookup: dict) -> tuple:
 
     elif bare.endswith('.txt'):
         text = read_text_maybe_gz(path)
-        if looks_like_wos_plaintext(text):
+        if looks_like_wos_tsv(text):
+            wos_recs, bad, lenient = parse_wos_tsv_text(text)
+            stats['format'] = 'wos_tsv'
+            stats['unparseable_lines'] = bad
+            stats['lenient_recovered'] = lenient
+            for r in wos_recs:
+                out.append(map_wos_tsv_record(r, hint_route))
+        elif looks_like_wos_plaintext(text):
             wos_recs, bad = parse_wos_text(text)
             stats['format'] = 'wos_plaintext'
             stats['unparseable_lines'] = bad
@@ -652,6 +788,15 @@ def parse_file(path: Path, search_id_lookup: dict) -> tuple:
         stats['format'] = 'csv'
         stats['unparseable_lines'] = bad
         out.extend(csv_recs)
+
+    elif bare.endswith('.bib'):
+        text = read_text_maybe_gz(path)
+        entries = split_bibtex_entries(text)
+        stats['format'] = 'scopus_bibtex'
+        stats['unparseable_lines'] = 0
+        for entry in entries:
+            fields = parse_bibtex_fields(entry)
+            out.append(map_scopus_bibtex_record(fields, hint_route))
 
     else:
         stats['format'] = 'unrecognised'
