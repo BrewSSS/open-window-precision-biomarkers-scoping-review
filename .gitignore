@@ -61,3 +61,7 @@ __pycache__/
 # Manual database exports by D (raw records with abstracts): never committed; manifests only
 03_search/full_exports_*/*
 !03_search/full_exports_*/*.json
+
+# platform screenshots may show account names: never commit
+03_search/search_checks_*/*.png
+03_search/search_checks_*/*.jpg

@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23147973.svg)](https://doi.org/10.5281/zenodo.23147973)
 
-**当前版本：v3.0（已于2026-10-05存档，version DOI 10.5281/zenodo.23147973，concept DOI 10.5281/zenodo.23147972）（团队冻结前草稿）｜方案日期2026-10-04｜存档前工作方案**
+**当前版本：v3.1（修订PRE-004、PRE-005与PRE-006，2026-10-05；待作为新的Zenodo version发布）｜上一存档版本：v3.0（2026-10-05存档，version DOI 10.5281/zenodo.23147973；concept DOI 10.5281/zenodo.23147972）**
 
 最后整合核对：2026-10-04（v3英文源稿、中文稿、03–06附件、治理文件、构建链与验证器已对齐；排版版/PDF/构建清单已按v3重新生成，`scripts/validate_design.py`全部27项通过、0项跳过）。
 
@@ -31,7 +31,7 @@
 - **支持B：** 同一人在至少两次具体运动后的窗口内重复测同一免疫指标，时序明确并有基线/合适对照；作为个体化与重复性域的主要来源，单独呈现，与A按cohort ID去重。
 - **人群：** ≥18岁一般健康成人与运动员；老年人为亚组；<18岁排除；混龄队列需可分出成人层。
 - **精准监测七个域：** 分析可靠性、时间有效性、免疫特异性、个体化、功能/临床关联、独立验证及使用验证、可行性。分别描述，不合成为分数。
-- **检索：** 按构念检索——五库从建库起至实际执行日，不设语言限制；运动×(免疫∪组学)×运动后时窗词块（E AND (I OR O) AND T；修订PRE-003，2026-10-04：PubMed验证中不含T的检索式命中255,019条、双人题摘筛选约8,500人时，加T后约15,900条且10个阳性种子全部检出；以召回率换取可行性，缓解措施为≥30篇阳性种子（含≥5篇仅数字时间）试点重测、试点中不含T的随机样本敏感性检索、纳入研究与五篇综述的引文追踪）；“open window”不作AND词（2018–2026 PubMed题摘含该词组者仅18条），0–72小时组织窗口与资格在筛选阶段执行；不设感染结局检索词。PubMed已完成解析验证；PRESS已于2026-10-04接受附条件（T为必需概念、不加感染结局词、`train*`保留至试点检验）；授权平台待D登录验证。
+- **检索：** 按构念检索——PubMed、Web of Science Core Collection、Scopus三库从建库起至实际执行日，限英文与期刊论文（article；2026-10-05决定，作为局限披露），Google Scholar作有记录的补充检索（修订PRE-006，2026-10-05：Embase与SPORTDiscus因授权与可行性撤除，召回损失作为局限披露，以引文追踪、Google Scholar补充与扩充种子集缓解）。策略v0.9为单一路线E AND I AND T（运动×免疫×运动后时窗词块；组学路线取消，组学词表保留用于标注；T为必需概念，见修订PRE-003）；检索阶段限制：PubMed仅动物与仅儿童排除、三库出版/文献类型限制（综述等移出筛选，作为引文追踪清单保存）。PubMed诊断（非正式检索）：v0.7的20,090条→v0.9的7,846条（含英文与预印本限制；三项NOT限制时8,013条），同行评审的原阳性种子全部检出、扩充种子51个中检出50个；预计去重后约9,000–13,000条。“open window”不作AND词（2018–2026 PubMed题摘含该词组者仅18条），0–72小时组织窗口与其余资格在筛选阶段执行；不设感染结局检索词。A于2026-10-04对v0.7的PRESS签署已作废，正式检索前须重新复核v0.9；WoS与Scopus检索式仍为草案，待D种子测试。
 - **人工流程与工具：** 两位研究者独立全量筛选与关键字段提取；Excel工作簿由`scripts/build_workbooks.py`从JSON模板生成，每人一份锁定工作簿，哈希提交git后由`scripts/merge_screening.py`合并；CSV入git；无Rayyan/Covidence；无AI自动排除。50篇随机试筛、10篇有目的试提取安排在存档发布之后。
 - **计数：** 独立队列为主要证据密度单位；报告数、样本数、细胞数、特征数分别记录。预印本另表、另分母。
 
@@ -40,7 +40,7 @@
 | 阶段 | 入口 | 当前状态 |
 |---|---|---|
 | 前期探索 | [重启报告](02_preliminary/restart_2026-10-02/restart_report.html)；[撞车复核2026-10-04](02_preliminary/collision_recheck_2026-10-04.md) | 公开网页探索、来源核验与收窄框架撞车复核已完成；不是正式纳入结果 |
-| 正式检索 | [检索说明](03_search/README.md) | 检索草案（按PRE-003改为E AND (I OR O) AND T，由D修订）、日志模板、PRESS清单和种子清单已建立；PubMed已解析验证，PRESS于2026-10-04附条件接受；**2026-10-05PubMed正式导出已完成**（Route EI与EO分别导出，含摘要；详见下方）；Web of Science、Scopus、Embase、SPORTDiscus仍待D登录执行，五库去重未完成 |
+| 正式检索 | [检索说明](03_search/README.md) | 策略v0.9（修订PRE-006：PubMed、WoS、Scopus+Google Scholar补充；单一路线E AND I AND T；检索阶段限制）由D修订中；PubMed v0.9已做诊断计数（7,846条），WoS/Scopus检索式待D种子测试；A须对v0.9重新做PRESS复核；**2026-10-05按v0.7完成的PubMed导出已被取代**（作为过程文件保留，不计入PRISMA）；正式检索在v3.1发布与PRESS重签之后开始 |
 | 筛选 | [筛选手册](04_screening/screening_manual.md) | v3规则、FT01–FT08与空模板完成；Excel筛选工作簿已由`scripts/build_workbooks.py`生成（`templates_xlsx/`）；50篇双人试筛待存档发布后执行 |
 | 提取 | [提取手册](05_extraction/extraction_manual.md) | v3关联数据字典与空模板完成；提取工作簿（母版及评审A/B各一份）已生成；10篇试提取待存档发布后执行 |
 | 评价 | [批判评价手册](05_extraction/critical_appraisal_manual.md) | 工具选择与评价模板完成，评价工作簿已生成；正式JBI表单归档及人工评价待执行 |
@@ -48,11 +48,11 @@
 
 ## 已确认资源及未完成事项
 
-已确认：PubMed、Web of Science、Scopus、Embase、SPORTDiscus及全文获取资源可用；有第二位人工筛选者；Excel工作簿生成与合并脚本已建立。
+已确认：PubMed、Web of Science Core Collection、Scopus、Google Scholar及全文获取资源可用（Embase与SPORTDiscus按修订PRE-006撤除）；有第二位人工筛选者；Excel工作簿生成与合并脚本已建立。
 
-角色已按代号分配：A负责人、PRESS复核与写作，B、C独立筛选，D检索、数据与仲裁。仍须补充：实际Embase平台、参考文献管理软件、资金/利益声明、机构伦理政策核实、GitHub owner与公开日期。执行顺序为平台/PRESS复核与工作簿生成、团队冻结与GitHub+Zenodo存档发布、人工校准（50篇试筛、10篇试提取）、视需要修订并再发布、正式检索、双人筛选、提取/评价、综合和投稿。准备阶段估计2–3个工作周，正式研究时长在试筛及试提取后据真实工作量估计。
+角色已按代号分配：A负责人、PRESS复核与写作，B、C独立筛选，D检索、数据与仲裁。仍须补充：参考文献管理软件、资金/利益声明、机构伦理政策核实、GitHub owner与公开日期。执行顺序为平台/PRESS复核与工作簿生成、团队冻结与GitHub+Zenodo存档发布、人工校准（50篇试筛、10篇试提取）、视需要修订并再发布、正式检索、双人筛选、提取/评价、综合和投稿。准备阶段估计2–3个工作周，正式研究时长在试筛及试提取后据真实工作量估计。
 
-**PubMed正式检索导出已于2026-10-05完成**：Route EI（E AND I AND T）17,445条、Route EO（E AND O AND T）4,004条，均含摘要（分别99.2%、99.6%非空摘要），按策略§1要求分开导出，去重后唯一PMID 20,090条，与2026-10-04 pilot pool联集计数一致（无新增索引差异）；见`03_search/formal_runs/2026-10-05/pubmed/run_manifest.json`与`search_log_template.json`。**其余四个授权数据库（Web of Science、Scopus、Embase、SPORTDiscus）与跨库去重仍待D执行，纳入研究数、PRISMA结果、Release、DOI或任何注册库登记号目前仍不可用。** 所有模板中的空值表示未执行，不能写成零。前期证据条目和pilot材料不得视为正式纳入研究。
+**2026-10-05按策略v0.7完成的PubMed导出已被修订PRE-006取代**：当时Route EI（E AND I AND T）17,445条、Route EO（E AND O AND T）4,004条，去重后唯一PMID 20,090条（见`03_search/formal_runs/2026-10-05/pubmed/run_manifest.json`）；该导出与D的WoS EO第1批作为过程文件保留，不计入PRISMA。v0.9的正式检索（PubMed、Web of Science、Scopus及Google Scholar补充）在v3.1发布（含PRE-004、PRE-005、PRE-006）和A的PRESS重新签署之后执行。**纳入研究数、PRISMA结果、v3.1 Release与DOI或任何注册库登记号目前仍不可用。** 所有模板中的空值表示未执行，不能写成零。前期证据条目和pilot材料不得视为正式纳入研究。
 
 ## 版本管理
 

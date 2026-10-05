@@ -45,6 +45,11 @@ Behaviour
   reviewer-slot meaning this script does not know how to fill safely; it is therefore never
   written into a judgement cell. It is logged into pilot_notes (issue_type=other) instead, so it
   is visible to D rather than silently dropped.
+- Screening/consensus fields (PRE-004 C12, protocol v3.1): reports.screening_decision_reviewer_A/_B,
+  consensus_screening_decision, primary_fulltext_exclusion_reason and the deprecated exclusion_reason
+  are copy-only from the locked screening workbook. The loader REFUSES to write them: a non-empty JSON
+  value is logged (load_report "refused_fields"; pilot_notes issue_type=other) and the cell is left
+  untouched.
 - Workbook structure: openpyxl keeps data validations/sheet & workbook protection/number formats
   for cells it does not touch. Cells it *does* write (new rows, or previously-untouched columns
   of the pre-filled reports/extraction_provenance rows) get the EXACT style build_workbooks.py's
@@ -93,9 +98,14 @@ LOCKED_FIELDS = {
     'reports': ['report_id', 'reference_id'] + list(PILOT_REPORT_PREFILL),
     'extraction_provenance': ['provenance_id', 'report_id'],
 }
+# PRE-004 C12: screening/consensus cells are copy-only from the locked screening records; never written here.
+REFUSED_FIELDS = {
+    'reports': ['screening_decision_reviewer_A', 'screening_decision_reviewer_B', 'consensus_screening_decision',
+                'primary_fulltext_exclusion_reason', 'exclusion_reason'],
+}
 CONFIDENCE_VALUES = {'high', 'medium', 'low'}
 LOAD_REPORT_NAME = 'load_report.json'
-SCRIPT_VERSION = '1.0.0'
+SCRIPT_VERSION = '1.1.0'
 
 
 # ---------------------------------------------------------------------------------------------
@@ -183,7 +193,7 @@ def readme_row_index(rd) -> dict:
 # ---------------------------------------------------------------------------------------------
 def new_report_summary() -> dict:
     return {
-        'rows_per_table': {}, 'conflicts': [], 'violations': [], 'unknown_fields': [],
+        'rows_per_table': {}, 'conflicts': [], 'violations': [], 'unknown_fields': [], 'refused_fields': [],
         'unknown_tables': [], 'errors': [], 'warnings': [],
         'minutes_spent': None, 'unresolved_questions_written': False, 'eligibility_opinion_logged': False,
     }
@@ -225,6 +235,7 @@ def process_table_row(wb, schema: dict, counters: dict, table: str, row: dict, r
 
     ws = wb[table]
     locked = set(LOCKED_FIELDS.get(table, []))
+    refused = set(REFUSED_FIELDS.get(table, []))
     if table in LOCKED_FIELDS:
         rid = flat.get('report_id') or report_id
         r = find_row_by_key(ws, schema[table]['col']['report_id'], rid)
@@ -248,6 +259,13 @@ def process_table_row(wb, schema: dict, counters: dict, table: str, row: dict, r
             continue
         text = cell_text(value)
         col = schema[table]['col'][field]
+        if field in refused:
+            if text:
+                rep_summary['refused_fields'].append({'table': table, 'field': field, 'row': r, 'json_value': text})
+                append_pilot_note(wb, counters, report_id, table, field, row_key_value, 'other',
+                                   f'Screening/consensus field not written (copy-only from the locked screening '
+                                   f'records, PRE-004 C12); AI value {text!r} ignored.')
+            continue  # never write a screening/consensus cell
         if field in locked:
             existing = norm(ws.cell(row=r, column=col).value)
             if text and existing and text != existing:
@@ -385,6 +403,7 @@ def run_load(json_dir: Path, workbook_path: Path, reviewer: str, dry_run: bool, 
         'conflicts': sum(len(r['conflicts']) for r in reports.values()),
         'violations': sum(len(r['violations']) for r in reports.values()),
         'unknown_fields': sum(len(r['unknown_fields']) for r in reports.values()),
+        'refused_fields': sum(len(r['refused_fields']) for r in reports.values()),
         'unknown_tables': sorted({t for r in reports.values() for t in r['unknown_tables']}),
         'errors': sum(len(r['errors']) for r in reports.values()),
     }
@@ -425,7 +444,8 @@ def print_summary(summary: dict):
     if summary['warnings']:
         print('workbook warnings:', '; '.join(summary['warnings']))
     print(f"totals: conflicts={t['conflicts']} violations={t['violations']} "
-          f"unknown_fields={t['unknown_fields']} unknown_tables={t['unknown_tables']} errors={t['errors']}")
+          f"unknown_fields={t['unknown_fields']} refused_fields={t['refused_fields']} "
+          f"unknown_tables={t['unknown_tables']} errors={t['errors']}")
     print(f"load_report written to {summary['load_report_path']}")
 
 
@@ -465,6 +485,8 @@ def selftest() -> int:
                     'publication_status': 'peer_reviewed_version_of_record',
                     'scope_stream': ['A_core_acute', 'NOT_A_REAL_CODE'],  # deliberate vocab violation
                     'reviewer_notes': 'synthetic selftest row',
+                    'consensus_screening_decision': 'INCLUDE_A',   # PRE-004 C12: must be refused
+                    'screening_decision_reviewer_A': 'INCLUDE_A',  # PRE-004 C12: must be refused
                     '_locators': {'publication_status': "p.1: 'published online'"},
                     '_confidence': 'high',
                 }],
@@ -547,6 +569,11 @@ def selftest() -> int:
               any(row[4] == 'prefilled_metadata_mismatch' for row in note_rows))
         check('eligibility_opinion logged in pilot_notes (not written to a judgement cell)',
               any('eligibility opinion' in (row[5] or '') for row in note_rows))
+        check('screening/consensus fields refused (PRE-004 C12): cells empty, 2 refusals logged',
+              rep.cell(row=r, column=rid_col['consensus_screening_decision']).value is None
+              and rep.cell(row=r, column=rid_col['screening_decision_reviewer_A']).value is None
+              and summary['totals']['refused_fields'] == 2
+              and sum(1 for row in note_rows if 'PRE-004 C12' in (row[5] or '')) == 2)
 
         ss = wb2['sample_sets']
         ss_head = {c.value: i + 1 for i, c in enumerate(ss[1])}

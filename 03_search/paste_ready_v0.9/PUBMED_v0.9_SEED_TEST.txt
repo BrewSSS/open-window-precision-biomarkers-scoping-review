@@ -1,0 +1,24 @@
+# PubMed v0.9 seed test. Run the final set (PUBMED_v0.9_FULL_single_line.txt), then AND it with the line below:
+#   (<final set>) AND <seed line>
+# Expected: 13 of 14. POS-S3 (PMID 41835387) is a preprint and is removed by NOT preprint[pt]; it belongs to the supplemental
+# preprint route. Diagnostic run 2026-10-05T13:23Z (strategy_tightening_2026-10-05.md §4): 13 of 14 retrieved, POS-S3 not.
+# (Before the English/preprint limits, 2026-10-05T13:03:46Z: 14 of 14.)
+(32470399[uid] OR 39817606[uid] OR 41163346[uid] OR 32047808[uid] OR 41835387[uid] OR 30462646[uid] OR 41024702[uid] OR 8567513[uid] OR 8550256[uid] OR 1967046[uid] OR 1836784[uid] OR 15292740[uid] OR 23273667[uid] OR 9286741[uid])
+
+# Group 1: original positive seeds (10)
+POS-A1 | PMID 32470399 | acute exercise multi-omics (molecular choreography)
+POS-A2 | PMID 39817606 | scRNA-seq, half-marathon
+POS-A3 | PMID 41163346 | immunological protein signature during acute exercise
+POS-S1 | PMID 32047808 | urinary biomarkers of exercise-induced immunosuppression (iTRAQ)
+POS-S3 | PMID 41835387 | MoTrPAC preprint record (expected NOT retrieved: preprint, see header)
+POS-C1 | PMID 30462646 | salivary immunity, marathon runners
+POS-C2 | PMID 41024702 | mucosal immune response to exercise
+POS-C3 | PMID 8567513 | NK response to 2.5 h running
+POS-C4 | PMID 8550256 | strenuous exercise and immunological changes
+POS-C5 | PMID 1967046 | lymphocyte subsets after a 2.5 h running test
+
+# Group 2: Package B recall check (T additions; designed after these misses were seen, so not an independent test)
+X01 | PMID 1836784 | preexercise / h of recovery
+X24 | PMID 15292740 | postrace / triathlon
+X47 | PMID 23273667 | ultra-marathon
+X48 | PMID 9286741 | hr after / marathon runners

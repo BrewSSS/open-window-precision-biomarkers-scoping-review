@@ -1,8 +1,8 @@
 {
   "template_status": "blank_template_no_formal_screening_results",
-  "protocol_version": "3.0",
-  "protocol_date": "2026-10-04",
-  "protocol_version_label": "3.0 (draft for team freeze) - 4 October 2026",
+  "protocol_version": "3.1",
+  "protocol_date": "2026-10-05",
+  "protocol_version_label": "3.1 (amendments PRE-004 and PRE-005) - 5 October 2026",
   "design_contract": "01_protocol/v3_design_contract.txt",
   "protocol_release_tag": null,
   "protocol_version_doi": null,
@@ -16,11 +16,20 @@
   },
   "workbook_workflow": {
     "generator": "scripts/build_workbooks.py (--only screening); one copy per reviewer, generated from this template, fulltext_exclusion_codes.json, screening_manual.md, calibration_plan.md and 03_search/search_log_template.json",
-    "merge_and_agreement": "scripts/merge_screening.py merge --stage TA|FT; prisma for flow counts",
-    "independence_rule": "Each reviewer decides only in their own workbook and locks it; the SHA-256 of each locked workbook is recorded here and committed to git before any merge; reviewers do not see each other's decisions before both are locked.",
+    "merge_and_agreement": "scripts/merge_screening.py merge --stage TI|TA|FT (TA with --population merged_TI.csv, FT with --population merged_TA.csv); prisma for flow counts",
+    "independence_rule": "Each reviewer decides only in their own workbook and locks it; the SHA-256 of each locked workbook is recorded here and committed to git before any merge; reviewers do not see each other's decisions before both are locked. No AI hint, recommended option or pre-classification is shown to reviewers at title (TI), title/abstract (TA) or full-text (FT) screening (v3.1).",
     "exports": "CSV exports of reviewer sheets and merge outputs are versioned in git; no Rayyan/Covidence.",
     "AI_role": "AI may prepare, transform, check and summarise; it never decides eligibility or acts as reviewer/adjudicator.",
     "locks": [
+      {
+        "stage": "TI",
+        "round": null,
+        "reviewer_A_workbook_sha256": null,
+        "reviewer_B_workbook_sha256": null,
+        "locked_at": null,
+        "hash_commit": null,
+        "merge_output_paths": []
+      },
       {
         "stage": "TA",
         "round": null,
@@ -39,7 +48,70 @@
         "hash_commit": null,
         "merge_output_paths": []
       }
-    ]
+    ],
+    "stage_workbooks": "v3.1 (PRE-005): stage 1 uses a workbook whose records_master holds the whole deduplicated pool WITHOUT abstracts (abstract column left empty; reviewers decide in screen_TI_reviewer_A/B). Stage 2 uses a fresh workbook generated from the same templates whose records_master holds only the stage-1 retained records (final TI disposition ADVANCE_TO_ABSTRACT or AWAITING_CLASSIFICATION) with completed abstracts and abstract_source filled."
+  },
+  "title_calibration": {
+    "amendment": "PRE-005 (A, 2026-10-05)",
+    "stage": "TI",
+    "planned_sample_size": 100,
+    "random_seed": 20261005,
+    "sampling_frame": "Deduplicated union of the formal database exports (PubMed, Web of Science Core Collection, Scopus; amendment PRE-006) (records_master rows with a blank dedup_status), frozen and hashed before sampling",
+    "sampling_algorithm": "Python random.Random(20261005).sample(sorted(unique_record_ids), 100)",
+    "pass_rule": {
+      "sample_size": 100,
+      "sampling": "random without replacement from the sorted frozen deduplicated union",
+      "random_seed": 20261005,
+      "agreement_metric": "raw agreement on the binary TI disposition",
+      "binary_groups": {
+        "progress_do_not_exclude": [
+          "ADVANCE_TO_ABSTRACT",
+          "AWAITING_CLASSIFICATION"
+        ],
+        "exclude": [
+          "EXCLUDE_TITLE"
+        ]
+      },
+      "raw_agreement_min": 0.8,
+      "raw_agreement_comparison": ">=",
+      "all_concept_disagreements_resolved_required": false,
+      "disagreement_handling": "Every disagreement (disposition or closed-list code) is discussed and logged with any manual clarification; the pass rule is the raw-agreement threshold only (A, 2026-10-05).",
+      "kappa": "Cohen's kappa reported descriptively; no pass threshold"
+    },
+    "timing": "After the formal searches and deduplication and before formal stage-1 title screening; protocol v3.1 must be released first.",
+    "visible_fields": [
+      "record_id",
+      "title",
+      "journal",
+      "year",
+      "document_type",
+      "doi",
+      "pmid"
+    ],
+    "ai_hints": "none",
+    "repeat_seed_rule": "seed = 20261005 + round_number - 1; first repeat round_number=2; exclude all IDs sampled in earlier rounds",
+    "pilot_records_rule": "Pilot records stay in the formal stage-1 pool and are screened again under the final manual; pilot decisions are calibration only.",
+    "pool_manifest_path": null,
+    "pool_manifest_sha256": null,
+    "python_version": null,
+    "sampled_record_ids": [],
+    "reviewer_workbook_sha256": {
+      "A": null,
+      "B": null,
+      "locked_at": null
+    },
+    "minutes_per_reviewer": {
+      "A": null,
+      "B": null
+    },
+    "raw_agreement": null,
+    "cohens_kappa_descriptive": null,
+    "conflicts_logged": null,
+    "pilot_passed": null,
+    "repeat_pilot_seeds": [],
+    "pilot_rounds": [],
+    "results": null,
+    "manual_version": null
   },
   "calibration": {
     "planned_sample_size": 50,
@@ -126,7 +198,101 @@
       "merge_output": "pilot_2026-10-05/merge_TA_2026-10-05/agreement_TA.json",
       "recorded_at": "2026-10-05T04:18:44+00:00",
       "acceptance": "accepted by A 2026-10-05 as calibration; limitation (visible AI hint) recorded; formal screening without AI hints"
+    },
+    "recalibration_v3_1": {
+      "amendment": "PRE-005 (A, 2026-10-05)",
+      "stage": "TA",
+      "reason": "The 50-record TA pilot (round 1, 2026-10-05) was run under v3.0 codes; v3.1 changes the screening codes (TI stage, RETAIN_BACKGROUND, age rule), so a reduced TA re-calibration is required before formal stage 2.",
+      "round_number": 2,
+      "planned_sample_size": 25,
+      "random_seed": 20261003,
+      "seed_basis": "repeat_seed_rule of this calibration block (20261002 + round_number - 1)",
+      "sampling_frame": "Sorted stage-1 retained set (final TI disposition ADVANCE_TO_ABSTRACT or AWAITING_CLASSIFICATION) after abstract completion, excluding any ID sampled in earlier rounds",
+      "sampling_algorithm": "Python random.Random(20261003).sample(sorted(stage1_retained_record_ids), 25)",
+      "pass_rule": "Same as calibration.pass_rule (raw agreement >= 0.80 on the binary TA disposition and every conceptual disagreement resolved; kappa descriptive), applied to 25 records",
+      "ai_hints": "none",
+      "timing": "After abstract completion and before formal stage-2 title/abstract screening.",
+      "sampled_record_ids": [],
+      "reviewer_workbook_sha256": {
+        "A": null,
+        "B": null,
+        "locked_at": null
+      },
+      "raw_agreement": null,
+      "cohens_kappa_descriptive": null,
+      "conceptual_disagreements_resolved": null,
+      "pilot_passed": null,
+      "results": null
     }
+  },
+  "abstract_completion": {
+    "amendment": "PRE-005 (A, 2026-10-05)",
+    "status": "NOT_YET_STARTED",
+    "applies_to": "Records whose final TI disposition is ADVANCE_TO_ABSTRACT or AWAITING_CLASSIFICATION (the stage-1 retained set)",
+    "timing": "After both TI workbooks are locked and merged; before the stage-2 re-calibration and formal stage 2. Abstracts are not shown to reviewers at stage 1.",
+    "source_priorities": [
+      {
+        "rank": 1,
+        "code": "database_export",
+        "description": "Abstract already contained in a database export of the record (PubMed MEDLINE/XML export; Web of Science full-record export; any other export that includes it)."
+      },
+      {
+        "rank": 2,
+        "code": "pubmed_pmid_or_doi",
+        "description": "PubMed record retrieved by PMID, or by DOI converted to PMID with the NCBI ID Converter."
+      },
+      {
+        "rank": 3,
+        "code": "source_full_record",
+        "description": "Full-record retrieval from the source database: Scopus COMPLETE view where entitled; Web of Science full record (Embase and SPORTDiscus withdrawn under PRE-006)."
+      },
+      {
+        "rank": 4,
+        "code": "manual_request",
+        "description": "Manual request list for A, fulltext_requests/abstract_requests.csv (same pattern as fulltext_requests.csv): A obtains the abstract through institutional access and D records it."
+      }
+    ],
+    "source_values": [
+      "database_export",
+      "pubmed_pmid_or_doi",
+      "source_full_record",
+      "manual_request",
+      "abstract_unavailable"
+    ],
+    "abstract_unavailable_rule": "A record for which no abstract is obtainable after ranks 1-4 is screened at stage 2 on its title and any other available text and recorded as abstract_unavailable in records_master.abstract_source. A missing abstract is never an exclusion reason.",
+    "record_rule": "The first source in rank order that yields an abstract is recorded in records_master.abstract_source; the abstract text is pasted unchanged into records_master.abstract. Retrieval attempts that fail are logged in the workbook log sheet.",
+    "manual_request_file": "fulltext_requests/abstract_requests.csv",
+    "manual_request_columns": [
+      "request_id",
+      "stage",
+      "record_id",
+      "first_author_year",
+      "title",
+      "journal",
+      "year",
+      "doi",
+      "pmid",
+      "source_database",
+      "sources_tried",
+      "reason",
+      "status"
+    ],
+    "manual_request_status_values": [
+      "requested",
+      "received",
+      "not_available"
+    ],
+    "performed_by": "D (data manager); A for manual requests",
+    "counts": {
+      "records_retained_stage_1": null,
+      "abstract_from_database_export": null,
+      "abstract_from_pubmed_pmid_or_doi": null,
+      "abstract_from_source_full_record": null,
+      "abstract_from_manual_request": null,
+      "abstract_unavailable": null,
+      "manual_requests_sent": null
+    },
+    "completed_at": null
   },
   "records": [],
   "field_schema": {
@@ -144,8 +310,31 @@
     "pmid": "PubMed ID; text, leading zeros preserved (records_master.pmid).",
     "source_database": "Database/platform from search_log_template.searches[].database, or the documented supplemental route; several separated by \"; \" (records_master.source_database).",
     "search_id": "search_log_template.searches[].id of the export(s) containing the record (records_master.search_id).",
-    "route": "search_log_template route: E AND I, E AND O, or the supplemental route label (records_master.route).",
+    "route": "search_log_template route: E AND I (the single route under amendment PRE-006; E AND O appears only in superseded v0.7 artefacts), or the supplemental route label, e.g. the Google Scholar string ID (records_master.route).",
     "dedup_status": "One of dedup_status_values; in the Excel records_master a blank dedup_status cell means RETAINED.",
+    "document_type": "Document/publication type exactly as exported (PubMed publication type, Web of Science/Scopus document type); several sources separated by \"; \"; shown to reviewers at title screening (records_master.document_type).",
+    "abstract_source": "abstract_completion.source_values code for how records_master.abstract was obtained (database_export, pubmed_pmid_or_doi, source_full_record, manual_request) or abstract_unavailable; blank until abstract completion (records_master.abstract_source).",
+    "title_screening": {
+      "reviewer_1": {
+        "decision": null,
+        "primary_reason": null,
+        "rationale_or_quote": null,
+        "decided_at": null
+      },
+      "reviewer_2": {
+        "decision": null,
+        "primary_reason": null,
+        "rationale_or_quote": null,
+        "decided_at": null
+      },
+      "reconciliation": {
+        "status": null,
+        "final_disposition": null,
+        "final_primary_reason": null,
+        "conflict_logged": null,
+        "notes": null
+      }
+    },
     "title_abstract": {
       "reviewer_1": {
         "decision": null,
@@ -251,7 +440,7 @@
       ],
       "conditional": {
         "healthy_stratum_extractable_if_mixed": "Required only when the cohort mixes healthy and clinical participants.",
-        "adult_or_separable_adult_stratum": "TRUE when all participants are >= 18 y or an adult stratum and its results are separable; FALSE establishes FT03."
+        "adult_or_separable_adult_stratum": "TRUE when all participants are >= 18 y or an adult stratum and its results are separable, judged by the age rule: explicit age range/minimum >= 18 y, or mean - 2*SD >= 18 y. UNCLEAR (record AWAITING_CLASSIFICATION) when the rule cannot be met and the report does not state that participants < 18 y were included. FALSE (FT03) only when < 18 y participation is stated and no adult stratum with results is separable."
       },
       "tagging_only_not_eligibility": {
         "post_cessation_sample_within_window": "TRUE if at least one post-cessation sample falls within 0-72 h after cessation of the identifiable bout. FALSE (only samples > 72 h) does NOT exclude: the record stays eligible and its samples are tagged outside-window recovery (contract 2.2; no exclusion code)."
@@ -266,6 +455,8 @@
       "rule": "Recording only; never an eligibility criterion. Full values are charted at extraction (sample_sets)."
     },
     "screening_dispositions": [
+      "ADVANCE_TO_ABSTRACT",
+      "EXCLUDE_TITLE",
       "ADVANCE",
       "EXCLUDE_TA",
       "FRONTIER_PREPRINT",
@@ -274,12 +465,19 @@
       "INCLUDE_B",
       "INCLUDE_A_AND_B",
       "EXCLUDE_FT",
+      "RETAIN_BACKGROUND",
       "NOT_RETRIEVED",
       "AWAITING_TRANSLATION",
       "DUPLICATE_RECORD",
       "DUPLICATE_VERSION"
     ],
     "screening_disposition_stages": {
+      "ADVANCE_TO_ABSTRACT": [
+        "TI"
+      ],
+      "EXCLUDE_TITLE": [
+        "TI"
+      ],
       "ADVANCE": [
         "TA"
       ],
@@ -291,6 +489,7 @@
         "FT"
       ],
       "AWAITING_CLASSIFICATION": [
+        "TI",
         "TA",
         "FT"
       ],
@@ -304,6 +503,9 @@
         "FT"
       ],
       "EXCLUDE_FT": [
+        "FT"
+      ],
+      "RETAIN_BACKGROUND": [
         "FT"
       ],
       "NOT_RETRIEVED": [
@@ -322,8 +524,9 @@
       ]
     },
     "screening_disposition_stage_notes": {
-      "TA": "Title/abstract dispositions; must equal the bold dispositions in screening_manual.md section 3B, from which scripts/build_workbooks.py derives the TA dropdown.",
-      "FT": "Full-text dispositions; administrative statuses (DUPLICATE_*, NOT_RETRIEVED, AWAITING_*, FRONTIER_PREPRINT) take no FT code.",
+      "TI": "Title screening (stage 1; v3.1, PRE-005): must equal the bold dispositions in screening_manual.md section A', from which scripts/build_workbooks.py derives the TI dropdown. Reviewers see title, source/journal, year, document type, DOI and PMID only. EXCLUDE_TITLE requires one title_stage_primary_reason_codes code; consensus is automatic (title_stage_rules).",
+      "TA": "Title/abstract dispositions (stage 2; records retained at TI); must equal the bold dispositions in screening_manual.md section 3B, from which scripts/build_workbooks.py derives the TA dropdown.",
+      "FT": "Full-text dispositions; administrative statuses (DUPLICATE_*, NOT_RETRIEVED, AWAITING_*, FRONTIER_PREPRINT, RETAIN_BACKGROUND) take no FT code. RETAIN_BACKGROUND (v3.1) is full-text only and maps to scope_stream background.",
       "DEDUP": "Record preparation (records_master.dedup_status). A duplicate/version recognised later may also be recorded at FT."
     },
     "dedup_status_values": {
@@ -331,7 +534,41 @@
       "DUPLICATE_RECORD": "Exact bibliographic duplicate of a retained record (fulltext_exclusion_codes.json administrative status).",
       "DUPLICATE_VERSION": "Superseded version (for example preprint vs publication) of a retained report (fulltext_exclusion_codes.json administrative status)."
     },
-    "title_abstract_primary_reason_codes": "EXCLUDE_TA primary_reason uses the FT01-FT08 codes from fulltext_exclusion_codes.json (first clearly failed dimension in hierarchy order); there are no separate TA codes. Null for every other TA disposition.",
+    "title_stage_primary_reason_codes": {
+      "codes": [
+        "TI01_SOURCE_TYPE_EVIDENT",
+        "TI02_NON_HUMAN_EVIDENT",
+        "TI03_PAEDIATRIC_EVIDENT",
+        "TI04_NO_EXERCISE_CONTEXT_EVIDENT",
+        "TI05_NO_IMMUNE_OR_OMICS_CONTENT_EVIDENT"
+      ],
+      "source": "04_screening/fulltext_exclusion_codes.json title_stage_closed_list (definitions and FT mapping)",
+      "rule": "EXCLUDE_TITLE records exactly one code from this closed list (first evident reason in list order, which follows the FT hierarchy); null for ADVANCE_TO_ABSTRACT and AWAITING_CLASSIFICATION."
+    },
+    "title_stage_rules": {
+      "visible_fields": [
+        "record_id",
+        "title",
+        "journal",
+        "year",
+        "document_type",
+        "doi",
+        "pmid"
+      ],
+      "abstract_shown": false,
+      "ai_hints": false,
+      "progress_group": [
+        "ADVANCE_TO_ABSTRACT",
+        "AWAITING_CLASSIFICATION"
+      ],
+      "exclude_group": [
+        "EXCLUDE_TITLE"
+      ],
+      "consensus_rule": "Advance wins: if either reviewer chose ADVANCE_TO_ABSTRACT the final disposition is ADVANCE_TO_ABSTRACT; EXCLUDE_TITLE only when both chose EXCLUDE_TITLE (final_primary_reason = the earlier of the two codes in closed-list order); any other complete pair is AWAITING_CLASSIFICATION. No adjudication at this stage.",
+      "conflict_logging": "A conflict is a different disposition, or two EXCLUDE_TITLE decisions with different codes; conflicts are counted and listed (merge_TI, conflicts_TI.csv) but not adjudicated.",
+      "next_stage": "ADVANCE_TO_ABSTRACT and AWAITING_CLASSIFICATION records go to abstract completion and stage 2 (TA); EXCLUDE_TITLE records leave the flow with their closed-list code."
+    },
+    "title_abstract_primary_reason_codes": "At stage 2, EXCLUDE_TA primary_reason uses the FT01-FT08 codes from fulltext_exclusion_codes.json (first clearly failed dimension in hierarchy order); there are no separate TA codes. Null for every other TA disposition.",
     "A_B_eligible_allowed_values": {
       "A_eligible": [
         "TRUE",
@@ -347,7 +584,7 @@
         "NA",
         "UNCLEAR"
       ],
-      "note": "TRUE/FALSE are the JSON booleans true/false; NR/NA/UNCLEAR follow 05_extraction/data_dictionary.json missing_value_semantics. Scope labels used downstream: A_core_acute, B_support_repeated_bouts, background, excluded, uncertain (contract 8.3g)."
+      "note": "TRUE/FALSE are the JSON booleans true/false; NR/NA/UNCLEAR follow 05_extraction/data_dictionary.json missing_value_semantics. Scope labels used downstream: A_core_acute, B_support_repeated_bouts, background, excluded, uncertain (contract 8.3g). RETAIN_BACKGROUND records A_eligible = FALSE and B_eligible = FALSE."
     },
     "notes": null,
     "administrative": {
@@ -364,7 +601,8 @@
         "NOT_RETRIEVED",
         "AWAITING_TRANSLATION",
         "AWAITING_CLASSIFICATION",
-        "FRONTIER_PREPRINT"
+        "FRONTIER_PREPRINT",
+        "RETAIN_BACKGROUND"
       ]
     }
   },
@@ -377,10 +615,15 @@
     "Keep retrieval, translation, publication/version and eligibility states separately; missing information is not an established exclusion.",
     "Pilot records count formally only if identified through documented formal search/citation chasing; pilot_rounds stores actual results only.",
     "NR = not reported; NA = inapplicable; UNCLEAR = genuinely ambiguous. Null fields here are unpopulated template values, not negative findings.",
-    "Participants < 18 y, or a mixed-age cohort without a separable adult stratum, establish FT03; older adults are eligible and flagged as a subgroup.",
+    "Participants < 18 y (stated in the report), or a mixed-age cohort with stated < 18 y participants and no separable adult stratum, establish FT03; adult status follows the age rule (explicit range/minimum >= 18 y or mean - 2*SD >= 18 y); otherwise AWAITING_CLASSIFICATION. Older adults are eligible and flagged as a subgroup.",
     "There is no exposure-intensity, duration or mode eligibility check; exposure_as_reported is recording only.",
     "post_cessation_sample_within_window = FALSE (only samples > 72 h) never establishes an exclusion; samples are tagged outside-window recovery. FT05 applies only to during-only sampling.",
     "Use of the term 'open window' or the authors' stance on it never affects eligibility.",
-    "Each reviewer's locked workbook SHA-256 is recorded in workbook_workflow.locks (and calibration.reviewer_workbook_sha256 for the pilot) and committed to git before merge_screening.py is run."
+    "Each reviewer's locked workbook SHA-256 is recorded in workbook_workflow.locks (and calibration.reviewer_workbook_sha256 for the pilot) and committed to git before merge_screening.py is run.",
+    "RETAIN_BACKGROUND (v3.1) is an administrative full-text disposition: null primary exclusion code, the failed dimension (normally FT04) in secondary_failed_dimensions, A_eligible and B_eligible FALSE; allowed only for original, generally healthy adult human studies with an eligible immune link whose only failure is a background exposure/timing pattern.",
+    "A related version (preprint, accepted manuscript) of a retained peer-reviewed report is DUPLICATE_VERSION with retained_record_id; it is charted only as a version stub (bibliographic and version fields; scope NA). FRONTIER_PREPRINT is used only when no peer-reviewed version exists at the final update.",
+    "Title screening (TI, v3.1 PRE-005): EXCLUDE_TITLE requires exactly one title_stage_primary_reason_codes code; ADVANCE_TO_ABSTRACT and AWAITING_CLASSIFICATION require a null primary_reason. Only the closed-list reasons in fulltext_exclusion_codes.json title_stage_closed_list may exclude at TI; anything else is ADVANCE_TO_ABSTRACT.",
+    "TI consensus is automatic (title_stage_rules.consensus_rule: any ADVANCE_TO_ABSTRACT wins; EXCLUDE_TITLE only when both reviewers chose it); conflicts are logged, not adjudicated.",
+    "Stage 2 (TA) screens exactly the stage-1 retained set; a record without an obtainable abstract is screened on its title and available text with abstract_source = abstract_unavailable and is never excluded for that reason."
   ]
 }

@@ -1,0 +1,21 @@
+# Scopus seed test. Run the final combined set, then AND it with this DOI line.
+# Expected: every seed that Scopus indexes is retrieved. First check indexing alone with the DOI line by itself.
+(DOI("10.1016/j.cell.2020.04.043") OR DOI("10.1111/sms.70018") OR DOI("10.1111/apha.70125") OR DOI("10.1155/2020/3030793") OR DOI("10.64898/2026.03.02.704798") OR DOI("10.1371/journal.pone.0206059") OR DOI("10.1002/ejsc.70058") OR DOI("10.1152/jappl.1995.79.3.748") OR DOI("10.1055/s-2007-973039") OR DOI("10.1152/jappl.1991.71.3.1089") OR DOI("10.1249/01.mss.0000135778.57355.ca") OR DOI("10.1016/j.cyto.2012.11.019") OR DOI("10.1123/ijsn.7.3.173"))
+
+# Group 1: original positive seeds (10)
+POS-A1 | PMID 32470399 | DOI 10.1016/j.cell.2020.04.043 | Contrepois 2020 Cell, Molecular choreography of acute exercise
+POS-A2 | PMID 39817606 | DOI 10.1111/sms.70018 | Veschetti 2025 Scand J Med Sci Sports, scRNA-seq half-marathon
+POS-A3 | PMID 41163346 | DOI 10.1111/apha.70125 | Wenzel, Immunological protein signature during acute exercise
+POS-S1 | PMID 32047808 | DOI 10.1155/2020/3030793 | Xu 2020, urinary biomarkers of exercise-induced immunosuppression (iTRAQ)
+POS-S3 | PMID 41835387 | DOI 10.64898/2026.03.02.704798 | MoTrPAC preprint (likely NOT indexed in WoS/Scopus; record as not indexed if absent)
+POS-C1 | PMID 30462646 | DOI 10.1371/journal.pone.0206059 | Canto 2018 PLoS One, salivary immunity marathon runners
+POS-C2 | PMID 41024702 | DOI 10.1002/ejsc.70058 | Harrison 2025 Eur J Sport Sci, mucosal immune response to exercise
+POS-C3 | PMID 8567513 | DOI 10.1152/jappl.1995.79.3.748 | Nieman 1995 J Appl Physiol, NK response to 2.5 h running
+POS-C4 | PMID 8550256 | DOI 10.1055/s-2007-973039 | Shek 1995 Int J Sports Med, strenuous exercise and immunological changes
+POS-C5 | PMID 1967046 | DOI (no DOI) | Order 1990 J Clin Lab Immunol 32(2):97-102, lymphocyte subsets after a 2.5 h running test; search by title
+
+# Group 2: Package B recall check (T additions)
+X01 | PMID 1836784 | DOI 10.1152/jappl.1991.71.3.1089 | Field 1991 (preexercise / h of recovery)
+X24 | PMID 15292740 | DOI 10.1249/01.mss.0000135778.57355.ca | Nieman 2004 (postrace / triathlon)
+X47 | PMID 23273667 | DOI 10.1016/j.cyto.2012.11.019 | Shin 2013 (ultra-marathon)
+X48 | PMID 9286741 | DOI 10.1123/ijsn.7.3.173 | Nieman 1997 (hr after / marathon runners)

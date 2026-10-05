@@ -1,0 +1,18 @@
+{
+  "strategy": "v0.9-draft",
+  "date": "2026-10-05",
+  "mode": "main FULL_single_line queries with document-type limits",
+  "WoS": {
+    "count": 14094,
+    "url": "https://www.webofscience.com/wos/woscc/summary/049b1919-d1bf-4ce7-9e93-4c31ebd9c616-01cc1b1f01/relevance/1",
+    "source": "WOS_v0.9_FULL_single_line.txt"
+  },
+  "Scopus": {
+    "count": 12347,
+    "url": "https://www.scopus.com/pages/search/publications?searchId=748ea35f-7aab-4d58-9fbc-23f092246bba",
+    "source": "SCOPUS_v0.9_FULL_single_line.txt"
+  },
+  "optionalAnimalIndexExclusion": false,
+  "seedValidation": "not performed",
+  "exported": false
+}

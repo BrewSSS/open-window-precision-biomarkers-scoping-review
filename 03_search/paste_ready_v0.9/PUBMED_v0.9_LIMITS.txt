@@ -1,0 +1,11 @@
+# PubMed v0.9 limits (PRE-006). Apply in this order, each as (<previous set>) NOT <line> or, for line 4, (<previous set>) AND <line>
+# 1. NOT animal-only (FT02, in part): records indexed for both animals and humans, and unindexed records, are kept
+# 2. NOT publication type (FT01, in part)
+# 3. NOT child-only (FT03, in part): records also indexed Adult, and unindexed records, are kept
+# 4. AND English (decision of A, 2026-10-05, after D's first WoS/Scopus runs)
+# 5. NOT preprint (preprints are searched only in the separate supplemental preprint route; POS-S3 drops out of the core route)
+(animals[mh] NOT humans[mh])
+(review[pt] OR editorial[pt] OR letter[pt] OR comment[pt] OR "case reports"[pt])
+((infant[mh] OR child[mh] OR adolescent[mh]) NOT adult[mh])
+(english[la])
+(preprint[pt])

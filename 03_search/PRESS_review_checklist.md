@@ -1,4 +1,4 @@
-# PRESS peer-review checklist — signed off by A: accept with changes (2026-10-04, strategy v0.7-draft)
+# PRESS peer-review checklist — signed off by A: accept with changes (2026-10-04, strategy v0.7-draft) — VOID for v0.9; re-review pending (see "v0.9 re-review")
 
 | Field | Value |
 |---|---|
@@ -7,7 +7,7 @@
 | Seed list reviewed | `known_seed_test_list.md` (v3, 2026-10-04) |
 | PRESS reviewer | **A** (independent PRESS reviewer). An AI agent prepared this draft. A decides on every item; agent text is not reviewer approval. |
 | Date of draft | 2026-10-04 |
-| Status | **Signed off by A on 2026-10-04: accept with changes. The sign-off applies to `search_strategy_draft.txt` v0.7-draft** (see the sign-off block). The findings below were drafted on v0.4 |
+| Status | **Signed off by A on 2026-10-04: accept with changes. The sign-off applies to `search_strategy_draft.txt` v0.7-draft** (see the sign-off block). The findings below were drafted on v0.4. **2026-10-05: the sign-off is void for strategy v0.9-draft; A's re-review is pending (section "v0.9 re-review", unsigned).** |
 | Guideline | PRESS 2015 Guideline Statement (McGowan et al., J Clin Epidemiol 2016), six elements |
 
 **How this draft was made.** This was a desk review of the files listed above. **No database, preprint or registry search was run, and no hit counts exist.** The agent made these checks (2026-10-04):
@@ -463,6 +463,36 @@ Overall decision (tick one):
 - Strategy version on which sign-off applies: **v0.7-draft** (`search_strategy_draft.txt`, 2026-10-04) (sign-off is void for any later version unless re-reviewed)
 - Note: the T-block requirement arose from the volume evidence (Addendum 2) and is recorded as a protocol amendment (PRE-003). It is not a PRESS finding. Licensed-platform login checks (WoS, Scopus, Embase, SPORTDiscus) remain open and are not covered by this sign-off.
 - Author (search lead) responses and the revised strategy are to be filed as a dated version pair (e.g. v0.5 + response table keyed to the item IDs above).
+
+---
+
+## v0.9 re-review (strategy v0.9-draft, 2026-10-05) — UNSIGNED
+
+Prepared for A by the search methodologist (an AI agent). **Nothing in this section is a PRESS decision**; the decision fields are blank until A fills them. Strategy: `search_strategy_draft.txt` **v0.9-draft (2026-10-05)**; change record §11; evidence `strategy_review_2026-10-05.md` and `strategy_tightening_2026-10-05.md`; paste-ready strings `paste_ready_v0.9/`. The team decisions behind v0.9 (A, 2026-10-05) are design decisions; this section asks A to review their **search-technical execution** under PRESS. PubMed numbers are diagnostic runs, not formal searches. Seeds below: positive = 10 original + 51 expanded.
+
+| # | Item to re-review (PRESS element) | What changed in v0.9 | Evidence (PubMed, diagnostic) | A's decision (accept / accept with changes / revise and re-review) | A's comment |
+|---|---|---|---|---|---|
+| R1 | **Limits and filters** (element 6) | PubMed: `NOT (animals[mh] NOT humans[mh])`, `NOT (review[pt] OR editorial[pt] OR letter[pt] OR comment[pt] OR "case reports"[pt])`, `NOT ((infant[mh] OR child[mh] OR adolescent[mh]) NOT adult[mh])`, applied in that order. WoS `NOT DT=(Review OR "Editorial Material" OR Letter OR Correction)`; Scopus `AND NOT DOCTYPE(re OR ed OR le OR no OR er OR sh OR cr)`. The Scopus INDEXTERMS animal exclusion is optional, untested and not adopted. FT01-FT03 thereby sit partly in the query (PRE-006); the v0.7 element-6 row said "No filters added". **Added later on 2026-10-05 (A, after D's first runs):** English and journal articles only: PubMed `AND english[la]`, `NOT preprint[pt]`; WoS `AND DT=(Article) AND LA=(English)`; Scopus `AND DOCTYPE(ar OR ip) AND LANGUAGE(english)` (positive limits before AND NOT) | Animal-only −4,360 and publication type −2,954 in the v0.7 pool, 0/20 each; child-only −490, only BND-Y1 (intended FT03 exclusion) lost; unindexed records pass. English + NOT preprint: 8,013 → 7,846; only POS-S3 (preprint, covered by the preprint route) lost | | |
+| R2 | **E field restriction** (element 4) | Ten generic E terms (`sport*`, `train*`, `competition*`, `race*`, `endurance`, `aerobic`, four interval phrases) title-only on all platforms; `resistance` AND `train*[ti]` | −2,368 abstract-only generic records in the v0.7 pool; 0/20; no seed lost; E MeSH line retained | | |
+| R3 | **`train*` condition** (sign-off condition 2; PRESS 4.8; "9.4b" in the strategy review) | Proposed as resolved: `train*` retained but title-only, so "trained immunity" in an abstract no longer satisfies E. The R2 evidence stands in for the planned pilot marginal-yield test | As R2 | | |
+| R4 | **E removals** (element 4) | Bare `run[tiab]` (WoS/Scopus `run*`) removed; `(physical[tiab] AND activit*[tiab])` removed (PubMed only); `running`, `runn*` and the "physical activity/activities" phrases kept | −348 and −159; 0/20 each; no seed lost | | |
+| R5 | **I vocabulary** (element 4) | `immun*` replaced by an immune-meaning list (immune, immunity, immunolog*, immunosuppress*, immunodepress*, immunomodulat*, ... immuniz*, immunis*; WoS/Scopus also immunogenic*); mucosal clause narrowed; `complement` and `cytotoxic*` title-only plus specific phrases (incl. NK cytotoxicity proximity forms) | −773 (20/20 method-word hits; pilot ADVANCE PMID 22403007 lost, judged a false positive), −178 (0/20), −26 (0/20); I MeSH line unchanged | | |
+| R6 | **T block** (elements 2 and 4) | Removed `"time course"`, `"time-course"`, `"pre and post"`, `"baseline and post"`. Added Package B (preexercise, postrace, prerace, hr/hrs after/post, h/min/hours of recovery, acute effects, marathon*, ultramarathon*, ultra-marathon(s), triathlon*, ironman), with `[tiab:~0]` for the hr and "of recovery" forms in PubMed. Package B was designed after the misses were seen | −924, 0/20; Package B +280 in the single route; recovers 6 of 7 v0.7 T misses (X50 still missed) | | |
+| R7 | **Single route** (element 1) | E AND I AND T only; EO dropped because FT07 requires an immune anchor (E AND O AND I AND T ⊂ E AND I AND T); O kept as tagging vocabulary; preprint F2 suspended and F1 to be regenerated from the v0.9 lists (generic E terms cannot be title-limited on medRxiv) | No positive seed was EO-only; R1_PUBMED_v09 = 7,846 with all limits (8,013 before English/preprint; EO diagnostic 1,798) | | |
+| R8 | **Field narrowing in WoS and Scopus** (element 6) | Primary fields TI/AB/AK (no Keywords Plus) and TITLE-ABS + AUTHKEY (no index terms), conditional on D's seed test (10 original positive + 4 Package-B seeds; `*_SEED_TEST.txt`); fallback `TS=` / `TITLE-ABS-KEY` | D's platform runs before the English/article limits: WoS 14,094, Scopus 12,347; seed recall untested | | |
+| R9 | **Google Scholar procedure** (supplementary search) | Three strings of at most 256 characters without truncation; first 200 results each, sorted by relevance; exact string, date, reported count and number screened recorded; new records enter the same title-stage screening (strategy §6, draft) | Not run | | |
+| R10 | **Recall summary** (additional) | Seed results of the v0.9 PubMed route | All limits (7,846): positive 59/61 (POS-S3 preprint by design; X50 missed); before English/preprint (8,013): 60/61. Boundary 6/7 (BND-Y1 by design); pilot ADVANCE 9/10; NEG and CIT not retrieved by design | | |
+| R11 | **For information: sources** | Embase and SPORTDiscus withdrawn (A's decision; PRE-006 limitation). Not a PRESS item, but it changes what elements 3 and 5 cover (no Emtree/EBSCO syntax left to check) | — | | |
+
+Conditions of the v0.7 sign-off: (1) no infection-outcome terms — still met (no infection terms in v0.9); (2) `train*` retained pending the pilot test — see R3; (3) T required (PRE-003) — still met.
+
+Overall decision on v0.9-draft (tick one; blank until A decides):
+- [ ] Accept
+- [ ] Accept with changes. Conditions: ______
+- [ ] Revise and re-review
+
+- Reviewer: A — signature/initials: ______ Date: ______
+- Strategy version on which this decision applies: v0.9-draft (`search_strategy_draft.txt`, 2026-10-05). Any later change voids it unless re-reviewed.
 
 ---
 

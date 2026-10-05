@@ -1,7 +1,7 @@
 {
-  "specification_version": "3.0",
-  "design_date": "2026-10-04",
-  "version_label": "3.0 (draft for team freeze) - 4 October 2026",
+  "specification_version": "3.1",
+  "design_date": "2026-10-05",
+  "version_label": "3.1 (amendments PRE-004 and PRE-005) - 5 October 2026",
   "design_contract": "01_protocol/v3_design_contract.txt",
   "status": "design_only_no_formal_results",
   "project_focus": "precision biomarkers of the exercise-induced immune \"open window\": per-marker validation-readiness map of conventional and omics candidates within the 0-72 h organising window",
@@ -67,7 +67,7 @@
       "counting_rule": "Report counts are separate from cohort counts. Link preprint/published versions and related publications; count only eligible peer-reviewed reports in the core."
     },
     "record_id": {
-      "definition": "Marker/analyte or panel × assay/platform × matrix/cell × exercise contrast × exact timepoint observation; never an independent cohort. In the extraction template this is a measurements row (measurement_id) linked to sample_sets through sample_set_ids; not the screening record_id."
+      "definition": "A measurements row (measurement_id) linked to sample_sets through sample_set_ids; never an independent cohort and not the screening record_id. Row units (PRE-004): conventional/targeted assays one named analyte × one author-reported test; omics one assay-universe summary row per analysis universe plus every candidate named in the main text, main tables or figure legends (prespecified candidates always), supplementary tables summarised by counts; set-level results one summary row per analysis."
     },
     "n_fields": [
       "cohorts.n_recruited",
@@ -81,7 +81,7 @@
       "sample_sets.pairing_structure",
       "sample_sets.participant_linkage"
     ],
-    "n_fields_note": "Field names are extraction_template.json table.column names. Former labels: participant_n_distinct -> sample_sets.n_participants (cohort level: report_cohort_links.n_analyzed); arm_n -> sample_sets.n_participants on the row of each group_condition; biospecimen_n -> sample_sets.n_biological_samples; cell_or_preparation_n -> sample_sets.n_cells; technical_replicate_n -> sample_sets.n_technical_replicates; paired_within_person_status -> sample_sets.pairing_structure and participant_linkage; assay_n is a derived count of distinct measurements.assay_universe_id, never an independent n."
+    "n_fields_note": "Field names are extraction_template.json table.column names. Former labels: participant_n_distinct -> sample_sets.n_participants (cohort level: report_cohort_links.n_analyzed); arm_n -> sample_sets.n_participants on the row of each group_condition; biospecimen_n -> sample_sets.n_biological_samples; cell_or_preparation_n -> sample_sets.n_cells; technical_replicate_n -> sample_sets.n_technical_replicates; paired_within_person_status -> sample_sets.pairing_structure and participant_linkage; assay_n is a derived count of distinct measurements.assay_universe_id, never an independent n. Denominator rule (PRE-004): n_recruited = pre-exclusion enrolment; n_analyzed = unique participants analysed for the primary immune outcome of the report-cohort link, other denominators in link_notes; per-platform n only when reported (sample_sets split by platform); counts are integers or missing codes only."
   },
   "eligibility_strata": {
     "vocabulary": [
@@ -97,16 +97,22 @@
     "A_core_acute": "Identifiable single bout or competition of any intensity, duration or mode (recorded as reported; never an eligibility threshold), pre-bout baseline or suitable comparator, and at least one post-cessation sample; adults >= 18 y (separable adult stratum in mixed-age cohorts; older adults flagged as a subgroup). Immediate-only informs response, not recovery. During-only is excluded. No <30-minute minimum; 0-72 h is the organising window, not a maximum: later samples are charted and tagged outside-window recovery.",
     "B_support_repeated_bouts": "Retained as the cross-bout open-window monitoring layer: the same immune-related marker is measured in the same individuals after at least two identifiable bouts or competitions; each post-bout sample has a known or reliably recoverable exercise-to-sampling relation, and a baseline or appropriate comparator enables interpretation. Main evidence source for the individualization and repeatability domains. Separate from A; a cohort may meet both and is deduplicated against A by cohort_id, never double-counted overall.",
     "background": [
-      "Habitual activity cross-sectional studies",
+      "Habitual activity or resting cross-sectional studies",
       "General weekly or seasonal resting monitoring with unknown last-bout timing",
       "Pure training pre/post snapshots with unknown exercise-to-sampling timing",
-      "Post-hoc immune pathway enrichment in otherwise general muscle/metabolic work without the prespecified immune link",
-      "Animal or in-vitro-only reports"
+      "Assigned only at full text through the administrative disposition RETAIN_BACKGROUND (original, generally healthy adult human studies with an eligible immune link whose only failure is exposure/timing); charted at reduced depth (bibliographic, design, population, platforms, n); no per-marker results or validation-readiness cells; outside every original-study denominator; not a census",
+      "Reviews (citation chasing), animal/in-vitro-only reports and post-hoc immune pathway enrichment without the prespecified immune link are excluded with their FT code, not background (v3.1)"
     ],
-    "excluded": "Excluded at title/abstract or full text with one primary FT01-FT08 code; not mapped.",
+    "excluded": "Excluded at title (stage 1; closed-list code mapped to an FT code), title/abstract (stage 2) or full text with one primary FT01-FT08 code; not mapped.",
     "uncertain": "Awaiting classification or translation, or not retrieved; shown separately, never counted as excluded or as evidence.",
     "frontier_preprints": "Separate register and denominator; never included in peer-reviewed core totals. Link duplicate preprint-to-published versions.",
     "screening_disposition_crosswalk": {
+      "ADVANCE_TO_ABSTRACT": [
+        "none: title-stage disposition (v3.1, PRE-005), not a final scope"
+      ],
+      "EXCLUDE_TITLE": [
+        "excluded"
+      ],
       "INCLUDE_A": [
         "A_core_acute"
       ],
@@ -118,12 +124,13 @@
         "B_support_repeated_bouts"
       ],
       "EXCLUDE_TA": [
-        "excluded",
-        "or background if retained for context"
+        "excluded"
       ],
       "EXCLUDE_FT": [
-        "excluded",
-        "or background if retained for context"
+        "excluded"
+      ],
+      "RETAIN_BACKGROUND": [
+        "background"
       ],
       "AWAITING_CLASSIFICATION": [
         "uncertain"
@@ -343,7 +350,9 @@
     "NA": "Not applicable by design.",
     "UNCLEAR": "Cannot be determined from reviewed evidence.",
     "not_retrieved_awaiting_classification": "Access/language/eligibility remains unresolved; do not mark scientifically ineligible.",
-    "denominator": "Every count or percentage names its unit and denominator. Use field-specific eligible/assessable denominators and show n/N. Do not infer sample sizes or aggregate analyte/timepoint rows as cohorts."
+    "denominator": "Every count or percentage names its unit and denominator. Use field-specific eligible/assessable denominators and show n/N. Do not infer sample sizes or aggregate analyte/timepoint rows as cohorts.",
+    "figure_only": "Results shown only in figures are not digitised: direction and significance are charted, values are NR and flagged FIGURE_ONLY; such rows are counted as reporting a direction, not a magnitude.",
+    "background": "Background reports are listed in a separate background register (bibliographic, design, population, platforms, n) and never enter original-study denominators, marker counts or validation-readiness cells."
   },
   "time_display_only": {
     "origin": "Retain exact source-reported timing and whether anchored to exercise onset, cessation, or another event.",
@@ -386,7 +395,7 @@
       "NA": "NA",
       "UNCLEAR": "UNCLEAR"
     },
-    "rule": "Single controlled list shared with data_dictionary.json controlled_vocabulary.time_bin and extraction_template.json (contract 8.3f). Bins up to and including 24h_to_72h_inclusive are within the organising window; gt72h is outside-window recovery and is shown separately, never dropped. Bins are for visualization only; never apply them as eligibility cutoffs or definitions of recovery. During-exercise observations are ancillary. Keep illness symptom timing on a separate axis."
+    "rule": "Single controlled list shared with data_dictionary.json controlled_vocabulary.time_bin and extraction_template.json (contract 8.3f). Bins up to and including 24h_to_72h_inclusive are within the organising window; gt72h is outside-window recovery and is shown separately, never dropped. Bins are for visualization only; never apply them as eligibility cutoffs or definitions of recovery. During-exercise observations are ancillary. Keep illness symptom timing on a separate axis. Boundary rules (data_dictionary.json time_bin_rules.boundary_rules; PRE-004): numeric value = earliest stated bound; an interval straddling a bin boundary goes to the later bin (flag TIME_BIN_STRADDLE); day-level timing converted to nominal hours (flag DAY_LEVEL_TIMING); \"immediately after\" without a number = 0_to_lt30min (flag IMMEDIATE_NONNUMERIC). Bin IDs, order and window positions are unchanged."
   },
   "outputs": {
     "figures": [
@@ -402,7 +411,7 @@
           "exact post-exercise time from stated anchor",
           "time bin (display only) and window position: within organising window vs outside-window recovery",
           "immune compartment or matrix",
-          "marker family (controlled_vocabulary.marker_family), conventional vs omics",
+          "marker family (controlled_vocabulary.marker_family, including mucosal_antimicrobial_protein from v3.1), conventional vs omics; named analytes classified by analyte, not platform",
           "exercise context (mode, duration and intensity as reported) and population stratum (including older adults)"
         ],
         "unit_and_denominator": "Unique cohorts are the primary unit within each displayed cell; reports are shown separately. A cohort represented in multiple bins is coverage in each bin, not a new cohort; do not add bin totals. Timepoints and assay records are not independent evidence."
@@ -428,7 +437,7 @@
           "evidence_state per cell (evidence_present, measured_null, not_demonstrated, NR, NA, UNCLEAR)",
           "Core A / Support B stream"
         ],
-        "unit_and_denominator": "Report unique-cohort and report denominators separately for each marker/domain cell. Marker rows can share cohorts and must not be added as independent evidence. Proposed use is not tested use; show NR/NA/UNCLEAR explicitly. Cells are descriptive states, never summed across domains into a score, ranking, grade or ladder."
+        "unit_and_denominator": "Report unique-cohort and report denominators separately for each marker/domain cell. Marker rows can share cohorts and must not be added as independent evidence. Proposed use is not tested use; show NR/NA/UNCLEAR explicitly. Cells are descriptive states, never summed across domains into a score, ranking, grade or ladder. Source rows (PRE-004): precision_validation rows per report × cohort × marker_family (seven domains), plus analyte-level rows where analyte-specific evidence exists; background reports contribute no cells. Figure-only results (FIGURE_ONLY) contribute direction and significance only, never digitised values."
       },
       {
         "id": "Figure 3",
@@ -453,7 +462,20 @@
     "standard_reporting_figure": {
       "id": "PRISMA-ScR flow diagram",
       "status": "Template only until formal searches and screening are complete.",
-      "rule": "Never enter zero or any synthetic count; distinguish database and other-source records and report-level selection from cohort-level synthesis. Submitted with the PRISMA-ScR checklist as supplementary material (Frontiers in Immunology requirement verified 2026-10-04)."
+      "rule": "Never enter zero or any synthetic count; distinguish database and other-source records and report-level selection from cohort-level synthesis. Submitted with the PRISMA-ScR checklist as supplementary material (Frontiers in Immunology requirement verified 2026-10-04).",
+      "flow_stages": {
+        "amendment": "PRE-005 (v3.1): two-stage screening adds a title-screening box before the title/abstract box",
+        "boxes": [
+          "Identification: records identified per database and other source; duplicates removed (DUPLICATE_RECORD / DUPLICATE_VERSION)",
+          "Stage 1 title screening: records screened; records excluded (EXCLUDE_TITLE), reported by closed-list code TI01-TI05 with its FT code",
+          "Abstract completion (process note, not an exclusion box): stage-1 retained records by abstract source; abstract_unavailable shown, not excluded",
+          "Stage 2 title/abstract screening: records screened; records excluded (EXCLUDE_TA) by FT code; frontier preprints routed to the separate register",
+          "Retrieval: reports sought; reports not retrieved",
+          "Full-text assessment: reports assessed; EXCLUDE_FT by primary FT code; RETAIN_BACKGROUND as its own line; awaiting classification/translation",
+          "Included: reports and unique cohorts (A, B, A and B), with the frontier register separate"
+        ],
+        "count_rule": "Counts are reported per stage only when that stage is complete (scripts/merge_screening.py prisma); otherwise blank and marked not yet performed, never zero."
+      }
     },
     "tables": [
       {
@@ -494,7 +516,7 @@
       {
         "id": "Table 3",
         "type": "precision_function_clinical_validation_and_tested_use_matrix",
-        "unit": "Cohort-candidate-domain record",
+        "unit": "Cohort × marker family (or analyte, where analyte-specific evidence exists) × domain record",
         "includes": [
           "domain-specific state across seven domains",
           "functional assay details",
@@ -522,7 +544,9 @@
     "The open window is an organising construct only; the synthesis neither tests nor adjudicates whether an open window exists, and author open-window interpretations are charted descriptively.",
     "Report samples within the 0-72 h organising window separately from outside-window recovery samples (> 72 h); both are charted.",
     "Exercise mode, duration and intensity are evidence-map strata, never eligibility thresholds.",
-    "Only adults (>= 18 y) are charted; older adults are presented as a subgroup."
+    "Only adults (>= 18 y) are charted; older adults are presented as a subgroup.",
+    "Background reports (RETAIN_BACKGROUND) are described separately and do not contribute marker results or validation-readiness cells.",
+    "Figure-only results contribute direction and significance only; no values are digitised (PRE-004)."
   ],
   "submission_fit": {
     "target": "Frontiers in Immunology",
@@ -535,7 +559,7 @@
       "PRISMA-S search appendix"
     ],
     "ai_disclosure": "Disclose AI use in both Methods and Acknowledgments with tool name, version, model and source, from 01_protocol/ai_use_log.json.",
-    "protocol_and_data_availability": "Protocol v3.0 archived as a GitHub Release with a Zenodo version DOI (assigned on release); never registered in any registry. Data, templates and code: public GitHub repository + Zenodo DOI; documents CC BY 4.0, scripts MIT.",
+    "protocol_and_data_availability": "Protocol v3.0 archived as GitHub Release v3.0 with Zenodo version DOI 10.5281/zenodo.23147973 (concept DOI 10.5281/zenodo.23147972); v3.1 (amendment PRE-004) is released as a new version under the same concept DOI; never registered in any registry. Data, templates and code: public GitHub repository + Zenodo DOI; documents CC BY 4.0, scripts MIT.",
     "official_sources": [
       "https://www.frontiersin.org/journals/immunology/sections/systems-immunology/for-authors/article-types",
       "https://www.frontiersin.org/for-authors/where-to-publish/article-types",

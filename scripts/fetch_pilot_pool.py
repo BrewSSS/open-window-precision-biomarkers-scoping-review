@@ -35,6 +35,11 @@ Etiquette: User-Agent scoping-review-pilot/1.0, tool=scoping-review-pilot, no AP
 in any header, URL or payload; >= 0.4 s between requests (<= 3 per second).
 
 Usage: python3 scripts/fetch_pilot_pool.py [--out-dir 04_screening/pilot_2026-10-05] [--no-search-log]
+
+Change 2026-10-05 (strategy v0.9-draft): search_strategy_draft.txt §3 now holds the v0.9 blocks; the v0.7 blocks
+this pilot pool is defined on moved verbatim to "## Appendix A." (names suffixed _V07). load_blocks() reads them
+from there by default (load_blocks('0.9-draft') reads §3 for scripts/run_formal_pubmed.py). The v0.7 strings,
+their SHA-256 check and this script's behaviour are otherwise unchanged.
 """
 from __future__ import annotations
 
@@ -113,26 +118,40 @@ def _balanced(s: str, i: int) -> str:
     raise SystemExit('unbalanced parentheses in strategy block')
 
 
-def load_blocks() -> dict:
+def load_blocks(strategy_version: str = '0.7-draft') -> dict:
+    """Read the PubMed blocks of one strategy version from search_strategy_draft.txt.
+
+    2026-10-05 (strategy v0.9-draft): the file's §3 now holds the v0.9 blocks (one line each, plus
+    LIMITS_PUBMED_* lines); the v0.7 blocks moved verbatim to "## Appendix A." with the suffix _V07
+    (strings byte-identical to the validated v0.7 ones). strategy_version='0.7-draft' (the default, used
+    by this pilot-pool script) reads Appendix A when the file is newer than v0.7; '0.9-draft' reads §3
+    (used by scripts/run_formal_pubmed.py). The returned 'union' is the v0.7 formula and is only
+    meaningful for v0.7.
+    """
     txt = STRATEGY.read_text(encoding='utf-8')
     m = re.search(r'^Version: ([0-9][^,\s]*)', txt, re.M)
     version = m.group(1) if m else None
-    if version != '0.7-draft':
-        raise SystemExit(f'strategy version is {version!r}; this pilot pool is defined on v0.7-draft')
-    sec = txt[txt.index('## 3. PubMed'):txt.index('## 4. Web of Science')]
+    if version == strategy_version:
+        sec, suffix = txt[txt.index('## 3. PubMed'):txt.index('## 4. Web of Science')], ''
+    elif strategy_version == '0.7-draft' and '## Appendix A.' in txt:
+        sec, suffix = txt[txt.index('## Appendix A.'):txt.index('## Appendix B.')], '_V07'
+    else:
+        raise SystemExit(f'strategy file version is {version!r}; blocks for {strategy_version!r} not found')
     blocks = {}
     for b in re.findall(r'```text\n(.*?)```', sec, re.S):
         for mm in re.finditer(r'^([A-Z0-9_]+) = \(', b, re.M):
-            if mm.group(1).endswith('_FINAL'):
+            name = mm.group(1)
+            if name.endswith('_FINAL') or (suffix and not name.endswith(suffix)):
                 continue
-            blocks[mm.group(1)] = re.sub(r'\s*\n\s*', ' ', _balanced(b, mm.end() - 1))
+            blocks[name[:len(name) - len(suffix)] if suffix else name] = \
+                re.sub(r'\s*\n\s*', ' ', _balanced(b, mm.end() - 1))
     need = [f'{c}_{k}PUBMED' for c in 'EIOT' for k in ('', 'MESH_')]
     missing = [n for n in need if n not in blocks]
     if missing:
         raise SystemExit(f'strategy §3 blocks not found: {missing}')
     all_ = {c: f'({blocks[c + "_PUBMED"]} OR {blocks[c + "_MESH_PUBMED"]})' for c in 'EIOT'}
     union = f'{all_["E"]} AND ({all_["I"]} OR {all_["O"]}) AND {all_["T"]}'
-    return {'version': version, 'blocks': blocks, 'union': union,
+    return {'version': strategy_version, 'file_version': version, 'blocks': blocks, 'union': union,
             'strategy_sha256': sha256_bytes(STRATEGY.read_bytes())}
 
 

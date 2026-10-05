@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Build blank screening, extraction and critical-appraisal Excel workbooks from the
-project's JSON templates (protocol v2 and later; v3 stage map and records_master fields read from JSON).
+project's JSON templates (protocol v2 and later; v3 stage map and records_master fields read from JSON;
+v3.1 / PRE-005: optional title-screening stage TI with screen_TI_reviewer_A/B and merge_TI when the stage map tags
+dispositions with "TI").
 
 Rule: edit the JSON templates, then regenerate with this script. Never hand-edit the
 structure (sheets, columns, dropdowns, protection) of the generated .xlsx files.
@@ -55,7 +57,7 @@ except ImportError:  # pragma: no cover
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUT = ROOT / 'templates_xlsx'
-SCRIPT_VERSION = '1.2.0'
+SCRIPT_VERSION = '1.3.0'
 MAX_ROW = 1048576
 MULTI_SEP = '; '                      # Excel-mechanics: separator for multi-valued cells
 BOOLEAN_VALUES = ['TRUE', 'FALSE']    # Excel-mechanics default for JSON booleans
@@ -87,7 +89,7 @@ INTERPRETATIONS = {
         'The task wording "include / exclude / unclear" is implemented with these JSON values: ADVANCE ~ include/progress, '
         'EXCLUDE_TA ~ exclude, AWAITING_CLASSIFICATION ~ unclear, FRONTIER_PREPRINT = preprint routing.',
         'FT decision list = screening_dispositions whose screening_disposition_stages entry contains "FT" (cross-checked '
-        'against "all dispositions except TA-only, non-administrative ones"; any difference is listed under Template issues).',
+        'against "all dispositions except TA-only and TI-only, non-administrative ones"; any difference is listed under Template issues).',
         'TA primary_reason dropdown re-uses the FT01-FT08 eligibility hierarchy (the manual requires "one primary reason" '
         'at TA but defines no separate TA reason codes).',
         'FT primary_exclusion_code dropdown contains only FT01-FT08. The administrative statuses (DUPLICATE_*, NOT_RETRIEVED, '
@@ -106,6 +108,17 @@ INTERPRETATIONS = {
         'listed in the next line.',
         'A_eligible / B_eligible use TRUE/FALSE (JSON booleans) plus NR/NA/UNCLEAR from data_dictionary.json.',
         'FT "page/location" is the JSON field evidence_locations; "supporting passage" and "note" are added columns.',
+        'v3.1 (PRE-005) TI decision list = screening_dispositions whose screening_disposition_stages entry contains "TI"; '
+        'cross-checked against the bold dispositions in screening_manual.md section "A\'. Title screening". TI primary_reason '
+        'dropdown = fulltext_exclusion_codes.json title_stage_closed_list codes (cross-checked against screening_log_template '
+        'field_schema.title_stage_primary_reason_codes); each code carries its FT code.',
+        'TI consensus (merge_TI, merge_screening.py) is computed, not adjudicated: the non-administrative progress disposition '
+        '(ADVANCE_TO_ABSTRACT) wins if either reviewer chose it; the exclusion is final only when both chose it (earlier '
+        'closed-list code kept when codes differ); any other complete pair gives the administrative progress disposition '
+        '(AWAITING_CLASSIFICATION). Binary groups and the raw-agreement threshold of the 100-record title pilot come from '
+        'screening_log_template.title_calibration.pass_rule (JSON, not calibration_plan.md).',
+        'TI reviewer sheets show title, journal, year, document_type, doi and pmid as formulas from records_master; the '
+        'abstract is not shown (the stage-1 records_master carries no abstracts; screening_manual.md section A\').',
     ],
     'extraction': [
         'Nested JSON objects (analyte_id, extractor_a_b, ai_assistance) are flattened to "parent.child" columns.',
@@ -373,8 +386,9 @@ def screening_enums(src) -> dict:
     bold = set(re.findall(r'\*\*([A-Z][A-Z_]+)\*\*', sec.group(0)))
     ta_manual = [d for d in disp if d in bold]
     admin = [s['status'] for s in ftj['not_scientific_exclusion_statuses']]
-    ft_derived = [d for d in disp if d not in [x for x in ta_manual if x not in admin]]
     stages = fsch.get('screening_disposition_stages')
+    ti_staged = [d for d in disp if 'TI' in (stages or {}).get(d, [])]
+    ft_derived = [d for d in disp if d not in [x for x in ta_manual + ti_staged if x not in admin]]
     if stages:   # v3: the JSON tags each disposition by stage
         unstaged = [d for d in disp if d not in stages]
         if unstaged:
@@ -440,7 +454,8 @@ def screening_enums(src) -> dict:
     cal = log['calibration']
     rule = cal.get('repeat_seed_rule', '')
     seed_offset_ok = bool(re.search(r'\+\s*round_number\s*-\s*1', rule))
-    return {
+    ti_e = title_stage_enums(log, ftj, manual, disp, admin, hierarchy, prog_label, problems)
+    return {**ti_e,
         'dispositions': disp, 'ta': ta, 'ft': ft, 'admin': admin, 'admin_info': ftj['not_scientific_exclusion_statuses'],
         'codes': hierarchy, 'code_info': code_info, 'ft_excl': ft_excl, 'ft_incl': ft_incl, 'ta_excl': ta_excl,
         'binary_labels': [prog_label, excl_label], 'binary_map': {d: (excl_label if d == excl_label else prog_label) for d in ta},
@@ -456,11 +471,100 @@ def screening_enums(src) -> dict:
     }
 
 
+def title_stage_enums(log, ftj, manual, disp, admin, hierarchy, prog_label, problems) -> dict:
+    """v3.1 (PRE-005) title stage TI. Empty lists when the stage map has no TI entry (v3.0 templates)."""
+    fsch = log['field_schema']
+    stages = fsch.get('screening_disposition_stages') or {}
+    ti = [d for d in disp if 'TI' in stages.get(d, [])]
+    out = {'ti': ti, 'ti_codes': [], 'ti_code_info': {}, 'ti_excl': [], 'ti_advance': None, 'ti_fallback': None,
+           'ti_binary_labels': [], 'ti_binary_map': {}, 'ti_threshold': None, 'ti_calibration': {}, 'ti_fields': [],
+           'abstract_sources': list((log.get('abstract_completion') or {}).get('source_values') or [])}
+    if not ti:
+        return out
+    sec = re.search(r"^### A'\. Title screening.*?(?=^### )", manual, re.S | re.M)
+    if not sec:
+        problems.append('screening_manual.md: section "### A\'. Title screening" not found (TI stage)')
+    else:
+        bold = set(re.findall(r'\*\*([A-Z][A-Z_]+)\*\*', sec.group(0)))
+        ti_manual = [d for d in disp if d in bold]
+        if ti != ti_manual:
+            problems.append(f'TI dispositions in screening_disposition_stages {ti} differ from the bold dispositions in '
+                            f"screening_manual.md section A' {ti_manual}")
+    closed = ftj.get('title_stage_closed_list') or {}
+    codes = closed.get('codes') or []
+    if not codes:
+        raise SystemExit('fulltext_exclusion_codes.json: title_stage_closed_list.codes is required for the TI stage')
+    ti_codes = [c['code'] for c in codes]
+    pos = []
+    for c in codes:
+        if c.get('ft_code') not in hierarchy:
+            problems.append(f'title_stage_closed_list {c["code"]}: ft_code {c.get("ft_code")} is not an FT01-FT08 code')
+        else:
+            pos.append(hierarchy.index(c['ft_code']))
+    if pos != sorted(pos):
+        problems.append('title_stage_closed_list codes are not in FT hierarchy order')
+    listed = (fsch.get('title_stage_primary_reason_codes') or {}).get('codes')
+    if listed != ti_codes:
+        problems.append(f'field_schema.title_stage_primary_reason_codes {listed} differ from title_stage_closed_list {ti_codes}')
+    tcal = log.get('title_calibration') or {}
+    rule = tcal.get('pass_rule') or {}
+    groups = rule.get('binary_groups') or {}
+    progress, excl = list(groups.get('progress_do_not_exclude') or []), list(groups.get('exclude') or [])
+    if set(progress) | set(excl) != set(ti) or set(progress) & set(excl):
+        problems.append(f'title_calibration binary groups {progress}+{excl} differ from TI dispositions {ti}')
+    rules = fsch.get('title_stage_rules') or {}
+    if rules and (rules.get('progress_group') != progress or rules.get('exclude_group') != excl):
+        problems.append('field_schema.title_stage_rules progress/exclude groups differ from title_calibration.pass_rule.binary_groups')
+    ti_excl = [d for d in ti if d in excl]
+    adv = [d for d in progress if d not in admin]
+    fallback = [d for d in progress if d in admin]
+    if len(ti_excl) != 1 or len(adv) != 1 or len(fallback) != 1:
+        raise SystemExit(f'TI stage needs exactly one exclusion, one advance and one administrative progress disposition; '
+                         f'got exclude={ti_excl} advance={adv} administrative={fallback}')
+    if 'raw_agreement_min' not in rule:
+        raise SystemExit('screening_log_template.title_calibration.pass_rule.raw_agreement_min is required for the TI stage')
+    if not out['abstract_sources']:
+        problems.append('screening_log_template.abstract_completion.source_values missing (records_master.abstract_source dropdown)')
+    labels = [prog_label, ti_excl[0]]
+    out.update({'ti_codes': ti_codes, 'ti_code_info': {c['code']: c for c in codes}, 'ti_excl': ti_excl,
+                'ti_advance': adv[0], 'ti_fallback': fallback[0], 'ti_binary_labels': labels,
+                'ti_binary_map': {d: (labels[1] if d in ti_excl else labels[0]) for d in ti},
+                'ti_threshold': float(rule['raw_agreement_min']), 'ti_calibration': tcal,
+                'ti_fields': list(fsch['title_screening']['reviewer_1'].keys())})
+    return out
+
+
+def ti_consensus(da, db, ra, rb, E):
+    """Advance-wins consensus of two complete TI decisions -> (final_disposition, final_primary_reason, rule)."""
+    if da is None or db is None:
+        return None, None, None
+    ex = E['ti_excl'][0]
+    if da == ex and db == ex:
+        codes = E['ti_codes']
+        cands = [c for c in (ra, rb) if c in codes]
+        return ex, (min(cands, key=codes.index) if cands else None), 'both_excluded'
+    if E['ti_advance'] in (da, db):
+        return E['ti_advance'], None, 'advance_wins'
+    return E['ti_fallback'], None, 'no_advance_not_both_excluded'
+
+
+def screening_columns(E) -> dict:
+    """Reviewer-sheet columns per stage (shared with scripts/merge_screening.py)."""
+    cols = {'TA': ['record_id', 'title'] + E['ta_fields'] + ['note'],
+            'FT': ['record_id', 'title'] + E['ft_fields'] + ['supporting_passage', 'note', 'check_code_rule']}
+    if E.get('ti'):
+        cols = {'TI': ['record_id'] + TI_SHOWN + E['ti_fields'] + ['note', 'check_reason_rule'], **cols}
+    return cols
+
+
 # ---------------------------------------------------------------------------------------------
 # Screening workbook
 # ---------------------------------------------------------------------------------------------
 MASTER_COLUMNS = ['record_id', 'source_database', 'search_id', 'route', 'title', 'authors', 'year', 'journal',
-                  'doi', 'pmid', 'abstract', 'dedup_group_id', 'dedup_status', 'retained_record_id']
+                  'doi', 'pmid', 'abstract', 'dedup_group_id', 'dedup_status', 'retained_record_id',
+                  'document_type', 'abstract_source']   # v3.1: last two appended (PRE-005); earlier positions unchanged
+TI_SHOWN = ['title', 'journal', 'year', 'document_type', 'doi', 'pmid']   # records_master columns shown at title screening
+FORMULA_COLS = {'record_id', 'check_code_rule', 'check_reason_rule'} | set(TI_SHOWN)
 
 
 def agreement_block(wb, ws, top: int, left: int, cats, rng_a: str, rng_b: str, prefix: str, title: str):
@@ -521,8 +625,10 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
     E = screening_enums(src)
     registry = {} if registry is None else registry
     wb = openpyxl.Workbook()
-    names = ['README', 'records_master', 'screen_TA_reviewer_A', 'screen_TA_reviewer_B',
-             'screen_FT_reviewer_A', 'screen_FT_reviewer_B', 'merge_TA', 'merge_FT', 'codes', 'log']
+    SC = screening_columns(E)
+    stages = list(SC)            # ['TI', 'TA', 'FT'] (v3.1) or ['TA', 'FT'] (no TI in the stage map)
+    rev_sheets = [f'screen_{s}_reviewer_{rv}' for s in stages for rv in ('A', 'B')]
+    names = ['README', 'records_master'] + rev_sheets + [f'merge_{s}' for s in stages] + ['codes', 'log']
     ws_readme = wb.active
     ws_readme.title = names[0]
     S = {'README': ws_readme}
@@ -559,6 +665,17 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
     codes.add('lst_database', sorted({s['database'] for s in E['searches']}), 'source_database values')
     codes.add('lst_route', sorted({s['route'] for s in E['searches']}), 'route values')
     codes.add('lst_not_exclusion', E['not_exclusion_reasons'], 'explicitly NOT exclusion reasons (reference)')
+    if E['ti']:
+        tci = E['ti_code_info']
+        codes.add('lst_TI_decision', E['ti'], 'TI decision (screening_dispositions, TI stage; v3.1 PRE-005)')
+        codes.add('lst_TI_reason', E['ti_codes'], 'TI primary_reason (closed list: fulltext_exclusion_codes.json title_stage_closed_list)',
+                  extra=[('FT code', [tci[c]['ft_code'] for c in E['ti_codes']]), ('label', [tci[c]['label'] for c in E['ti_codes']])])
+        codes.add('lst_TI_excl', E['ti_excl'], 'TI dispositions that require a closed-list reason')
+        codes.add('lst_TI_binary_map', E['ti'], 'TI disposition → title-pilot binary group',
+                  extra=[('binary group', [E['ti_binary_map'][d] for d in E['ti']])])
+        codes.add('lst_TI_binary', E['ti_binary_labels'], 'title-pilot binary groups (screening_log_template.title_calibration)')
+    if E['abstract_sources']:
+        codes.add('lst_abstract_source', E['abstract_sources'], 'abstract_source (screening_log_template.abstract_completion)')
     protect(S['codes'])
     S['codes'].sheet_properties.tabColor = '808080'
 
@@ -577,6 +694,8 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
         'dedup_status': f'Blank = {retained_txt}. {" / ".join(E["duplicates"])} (screening_log_template dedup_status_values) '
                         'for removed duplicates; such rows are hidden from the reviewer sheets.',
         'retained_record_id': 'screening_log_template administrative.retained_record_id: record_id kept for a duplicate.',
+        'document_type': m_comments.get('document_type', 'Document type as exported (generator layout; no JSON field).'),
+        'abstract_source': m_comments.get('abstract_source', 'How the abstract was obtained (generator layout; no JSON field).'),
     })
     ws = S['records_master']
     write_header(ws, MASTER_COLUMNS, m_comments)
@@ -593,6 +712,11 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
            prompt='Database (search_log_template); several separated by "; "', title='source_database')
     add_dv(ws, col['route'], '=lst_route', style='warning', registry=registry, label='route',
            prompt='Route (search_log_template)', title='route')
+    if E['abstract_sources']:
+        add_dv(ws, col['abstract_source'], '=lst_abstract_source', registry=registry, label='abstract_source',
+               prompt='Filled at abstract completion (after stage 1); abstract_unavailable = no abstract obtainable.',
+               title='abstract_source')
+    ws.column_dimensions[L(col['document_type'])].width = 22
     ws.auto_filter.ref = f'A1:{L(len(MASTER_COLUMNS))}1'
     protect(ws)
     ws.sheet_properties.tabColor = '1F4E78'
@@ -603,8 +727,6 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
         return (f'=IF(OR(records_master!${mc["record_id"]}{r}="",ISNUMBER(MATCH(records_master!${mc["dedup_status"]}{r},'
                 f'lst_dedup_duplicate,0))),"",records_master!${mc["record_id"]}{r})')
 
-    ta_cols = ['record_id', 'title'] + E['ta_fields'] + ['note']
-    ft_cols = ['record_id', 'title'] + E['ft_fields'] + ['supporting_passage', 'note', 'check_code_rule']
     ta_comments = {
         'record_id': 'Formula from records_master (locked). Do not sort or insert rows: row n = records_master row n.',
         'title': 'Formula from records_master (locked); read the abstract in records_master.',
@@ -628,10 +750,26 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
         'supporting_passage': 'Verbatim supporting passage from the full text.', 'note': 'Free text.',
         'check_code_rule': 'Formula: flags EXCLUDE without code, or a code without EXCLUDE (screening_log record_validation_rules).',
     }
-    for stage, cols, cmts in (('TA', ta_cols, ta_comments), ('FT', ft_cols, ft_comments)):
+    ti_comments = {
+        'record_id': ta_comments['record_id'],
+        'title': 'Formula from records_master (locked). Stage 1 shows no abstract (screening_manual.md §3A\').',
+        'journal': 'Source (journal) from records_master (locked).', 'year': 'Year from records_master (locked).',
+        'document_type': 'Document type as exported, from records_master (locked); TI01 may rely on it.',
+        'doi': 'DOI from records_master (locked).', 'pmid': 'PMID from records_master (locked).',
+        'decision': (f'Independent TI disposition (screening_manual.md §3A\'). Default {E["ti_advance"]}; '
+                     f'{"/".join(E["ti_excl"])} only for a closed-list reason evident from the title or document type; '
+                     f'{E["ti_fallback"]} when the title cannot be read or the identity is unclear.'),
+        'primary_reason': 'Required only for ' + '/'.join(E['ti_excl']) + ': one closed-list code (first evident in list order).',
+        'rationale_or_quote': 'Title words or document type supporting an exclusion (optional otherwise).',
+        'decided_at': 'YYYY-MM-DD (text).', 'note': 'Free text.',
+        'check_reason_rule': 'Formula: flags an exclusion without a closed-list reason, or a reason with another decision.',
+    } if E['ti'] else {}
+    stage_comments = {'TI': ti_comments, 'TA': ta_comments, 'FT': ft_comments}
+    for stage in stages:
+        cols, cmts = SC[stage], stage_comments[stage]
         for rv in ('A', 'B'):
             ws = S[f'screen_{stage}_reviewer_{rv}']
-            kinds = {h: ('formula' if h in ('record_id', 'title', 'check_code_rule') else 'input') for h in cols}
+            kinds = {h: ('formula' if h in FORMULA_COLS else 'input') for h in cols}
             write_header(ws, cols, cmts, kinds, freeze='C2')
             ws.column_dimensions['B'].width = 50
             c = {h: i + 1 for i, h in enumerate(cols)}
@@ -640,8 +778,25 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
                     input_column(ws, c[h])
             for r in range(2, last + 1):
                 ws.cell(row=r, column=1, value=rid_formula(r))
-                ws.cell(row=r, column=2, value=f'=IF($A{r}="","",records_master!${mc["title"]}{r})')
-            if stage == 'TA':
+                if stage == 'TI':
+                    for h in TI_SHOWN:
+                        ws.cell(row=r, column=c[h], value=f'=IF($A{r}="","",records_master!${mc[h]}{r}&"")')
+                else:
+                    ws.cell(row=r, column=2, value=f'=IF($A{r}="","",records_master!${mc["title"]}{r})')
+            if stage == 'TI':
+                add_dv(ws, c['decision'], '=lst_TI_decision', registry=registry, label='TI decision',
+                       prompt=f'Title-only disposition. Default {E["ti_advance"]}; exclude only for an evident closed-list reason.',
+                       title='TI decision')
+                add_dv(ws, c['primary_reason'], '=lst_TI_reason', registry=registry, label='TI primary_reason',
+                       prompt='Only with ' + '/'.join(E['ti_excl']) + ': one closed-list code (TI01-TI05).', title='TI reason')
+                d, k = L(c['decision']), L(c['primary_reason'])
+                for r in range(2, last + 1):
+                    ws.cell(row=r, column=c['check_reason_rule'], value=(
+                        f'=IF($A{r}="","",IF(AND(ISNUMBER(MATCH({d}{r},lst_TI_excl,0)),{k}{r}=""),"MISSING TI REASON",'
+                        f'IF(AND(NOT(ISNUMBER(MATCH({d}{r},lst_TI_excl,0))),{k}{r}<>""),"REASON NOT ALLOWED FOR THIS DECISION","")))'))
+                for h in ('journal', 'document_type'):
+                    ws.column_dimensions[L(c[h])].width = 24
+            elif stage == 'TA':
                 add_dv(ws, c['decision'], '=lst_TA_decision', registry=registry, label='TA decision',
                        prompt='TA disposition (screening_dispositions). Uncertain -> ADVANCE / AWAITING_CLASSIFICATION.',
                        title='TA decision')
@@ -670,22 +825,31 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
     def merge_sheet(stage: str):
         ws = S[f'merge_{stage}']
         ra, rb = f'screen_{stage}_reviewer_A', f'screen_{stage}_reviewer_B'
-        rcols = ta_cols if stage == 'TA' else ft_cols
+        rcols = SC[stage]
         rc = {h: L(i + 1) for i, h in enumerate(rcols)}
-        reason = 'primary_reason' if stage == 'TA' else 'primary_exclusion_code'
-        grp = 'binary' if stage == 'TA' else 'group'
-        gmap = 'lst_TA_binary_map_table' if stage == 'TA' else 'lst_FT_group_map_table'
+        reason = 'primary_exclusion_code' if stage == 'FT' else 'primary_reason'
+        grp = 'group' if stage == 'FT' else 'binary'
+        gmap = {'TI': 'lst_TI_binary_map_table', 'TA': 'lst_TA_binary_map_table', 'FT': 'lst_FT_group_map_table'}[stage]
         heads = ['record_id', 'decision_A', 'decision_B', f'{reason}_A', f'{reason}_B', 'both_decided', 'exact_agree',
                  f'{grp}_A', f'{grp}_B', f'{grp}_agree']
         if stage == 'FT':
             heads.append('code_agree')
+        if stage == 'TI':
+            heads.append('reason_agree')
         heads += ['conflict', 'conflict_seq']
+        if stage == 'TI':
+            heads += ['consensus', 'consensus_reason']
+        conflict_txt = {'TA': '.', 'FT': ' or both chose an exclusion with different FT codes.',
+                        'TI': ' or both chose the exclusion with different closed-list codes (logged; not adjudicated).'}[stage]
         write_header(ws, heads, {
             'record_id': 'Formula. Rows align with records_master; duplicates are blank.',
             'exact_agree': '1 = same disposition, 0 = different, blank = not jointly decided.',
-            f'{grp}_A': 'Collapsed group used for the ' + ('calibration (binary)' if stage == 'TA' else '3-group') + ' table.',
-            'conflict': '1 when the dispositions differ' + (' or both chose an exclusion with different FT codes.' if stage == 'FT' else '.'),
+            f'{grp}_A': 'Collapsed group used for the ' + ('3-group' if stage == 'FT' else 'calibration (binary)') + ' table.',
+            'conflict': '1 when the dispositions differ' + conflict_txt,
             'code_agree': 'Both scientific exclusion: 1 same FT code, 0 different.',
+            'reason_agree': 'Both excluded at title: 1 same closed-list code, 0 different.',
+            'consensus': 'Advance-wins consensus (screening_manual.md §3A\'): computed, not adjudicated.',
+            'consensus_reason': 'Closed-list code of a consensus exclusion (earlier code in list order when the two differ).',
         }, {h: 'formula' for h in heads}, width=14, freeze='B2')
         h = {x: L(i + 1) for i, x in enumerate(heads)}
         for r in range(2, last + 1):
@@ -706,6 +870,16 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
                                    f'ISNUMBER(MATCH({h["decision_B"]}{r},lst_FT_sci_excl,0))),'
                                    f'IF({h[reason + "_A"]}{r}={h[reason + "_B"]}{r},1,0),"")')
                 f['conflict'] = f'=IF(OR({h["exact_agree"]}{r}=0,{h["code_agree"]}{r}=0),1,"")'
+            elif stage == 'TI':
+                ex, adv, fb = E['ti_excl'][0], E['ti_advance'], E['ti_fallback']
+                dA, dB = f'{h["decision_A"]}{r}', f'{h["decision_B"]}{r}'
+                rA, rB = f'{h[reason + "_A"]}{r}', f'{h[reason + "_B"]}{r}'
+                f['reason_agree'] = f'=IF(AND({dA}="{ex}",{dB}="{ex}"),IF({rA}={rB},1,0),"")'
+                f['conflict'] = f'=IF(OR({h["exact_agree"]}{r}=0,{h["reason_agree"]}{r}=0),1,"")'
+                f['consensus'] = (f'=IF({h["both_decided"]}{r}<>1,"",IF(AND({dA}="{ex}",{dB}="{ex}"),"{ex}",'
+                                  f'IF(OR({dA}="{adv}",{dB}="{adv}"),"{adv}","{fb}")))')
+                f['consensus_reason'] = (f'=IF({h["consensus"]}{r}<>"{ex}","",IFERROR(IF(MATCH({rA},lst_TI_reason,0)<='
+                                         f'MATCH({rB},lst_TI_reason,0),{rA},{rB}),IF({rA}<>"",{rA},{rB})))')
             else:
                 f['conflict'] = f'=IF({h["exact_agree"]}{r}=0,1,"")'
             f['conflict_seq'] = f'=IF({h["conflict"]}{r}=1,COUNTIF(${h["conflict"]}$2:{h["conflict"]}{r},1),"")'
@@ -741,6 +915,12 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
             ws.cell(row=r, column=lab, value=(
                 f'Pass rule (calibration_plan.md): raw agreement on binary {E["binary_labels"][0]} vs {E["binary_labels"][1]} '
                 f'≥ {E["threshold"]:.0%} AND every conceptual disagreement resolved. Kappa is descriptive only.'))
+        elif stage == 'TI':
+            ws.cell(row=r, column=lab, value=(
+                f'Consensus (screening_manual.md §3A\'): {E["ti_advance"]} wins if either reviewer chose it; {E["ti_excl"][0]} '
+                f'only when both chose it; any other complete pair gives {E["ti_fallback"]}. Conflicts are logged, not adjudicated. '
+                f'Title-pilot pass rule (screening_log_template.title_calibration): raw agreement on binary '
+                f'{E["ti_binary_labels"][0]} vs {E["ti_binary_labels"][1]} ≥ {E["ti_threshold"]:.0%}. Kappa is descriptive only.'))
         else:
             ws.cell(row=r, column=lab, value=('Full-text agreement is descriptive; the TA calibration threshold is not '
                                               'reinterpreted as a full-text threshold (calibration_plan.md, Full-text stage).'))
@@ -765,7 +945,7 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
             r += 1
         r += 1
         # per-reviewer counts
-        cats = E['ta'] if stage == 'TA' else E['ft']
+        cats = {'TI': E['ti'], 'TA': E['ta'], 'FT': E['ft']}[stage]
         ws.cell(row=r, column=lab, value='Counts per reviewer (all decided records)').font = Font(bold=True)
         ws.cell(row=r, column=lab).fill = FILL['section']
         ws.cell(row=r, column=val, value='reviewer A').font = Font(bold=True)
@@ -777,6 +957,31 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
             ws.cell(row=r, column=val + 1, value=f'=COUNTIF({rng("decision_B")},{L(lab)}{r})')
             r += 1
         r += 1
+        if stage == 'TI':
+            ws.cell(row=r, column=lab, value='Consensus (advance wins; jointly decided records)').font = Font(bold=True)
+            ws.cell(row=r, column=lab).fill = FILL['section']
+            ws.cell(row=r, column=val, value='records').font = Font(bold=True)
+            r += 1
+            for cat in cats:
+                ws.cell(row=r, column=lab, value=cat)
+                c = ws.cell(row=r, column=val, value=f'=COUNTIF({rng("consensus")},{L(lab)}{r})')
+                c.fill = FILL['result']
+                define_cell(wb, f'TI_cons_{cat}', ws, f'{L(val)}{r}')
+                r += 1
+            r += 1
+            ws.cell(row=r, column=lab, value='Title-stage exclusions by closed-list code (consensus; PRISMA stage-1 box)').font = Font(bold=True)
+            ws.cell(row=r, column=lab).fill = FILL['section']
+            ws.cell(row=r, column=val, value='records').font = Font(bold=True)
+            ws.cell(row=r, column=val + 1, value='FT code').font = Font(bold=True)
+            r += 1
+            for code in E['ti_codes']:
+                ws.cell(row=r, column=lab, value=code)
+                c = ws.cell(row=r, column=val, value=f'=COUNTIFS({rng("consensus")},"{E["ti_excl"][0]}",{rng("consensus_reason")},{L(lab)}{r})')
+                c.fill = FILL['result']
+                ws.cell(row=r, column=val + 1, value=E['ti_code_info'][code]['ft_code'])
+                define_cell(wb, f'TI_excl_{code[:4]}', ws, f'{L(val)}{r}')
+                r += 1
+            r += 1
         if stage == 'FT':
             ws.cell(row=r, column=lab, value='Scientific exclusions by primary FT code').font = Font(bold=True)
             ws.cell(row=r, column=lab).fill = FILL['section']
@@ -793,16 +998,24 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
             r += 1
         r, _ = agreement_block(wb, ws, r, lab, cats, rng('decision_A'), rng('decision_B'), f'{stage}_exact',
                                f'Agreement on exact {stage} disposition ({len(cats)}×{len(cats)})')
-        gcats = E['binary_labels'] if stage == 'TA' else list(E['ft_groups'])
+        gcats = {'TI': E['ti_binary_labels'], 'TA': E['binary_labels'], 'FT': list(E['ft_groups'])}[stage]
         r, _ = agreement_block(wb, ws, r, lab, gcats, rng(grp + '_A'), rng(grp + '_B'), f'{stage}_{grp}',
-                               f'Agreement on {"calibration binary" if stage == "TA" else "3-group"} disposition '
+                               f'Agreement on {"3-group" if stage == "FT" else "calibration binary"} disposition '
                                f'({len(gcats)}×{len(gcats)})')
         unlocked = []
-        if stage == 'TA':
-            cal = E['calibration']
+        if stage in ('TA', 'TI'):
+            if stage == 'TA':
+                cal, thr, need_resolved, seed_ok = E['calibration'], E['threshold'], True, E['seed_offset_ok']
+                blabels = E['binary_labels']
+                cal_title = 'initial pilot (calibration_plan.md)'
+            else:
+                cal, thr, blabels = E['ti_calibration'], E['ti_threshold'], E['ti_binary_labels']
+                need_resolved = bool(cal.get('pass_rule', {}).get('all_concept_disagreements_resolved_required'))
+                seed_ok = bool(re.search(r'\+\s*round_number\s*-\s*1', cal.get('repeat_seed_rule', '')))
+                cal_title = 'title pilot (screening_log_template.title_calibration)'
             n_cal = int(cal['planned_sample_size'])
             r += 1
-            ws.cell(row=r, column=lab, value=(f'calibration_{n_cal} — initial pilot (calibration_plan.md): {n_cal} records '
+            ws.cell(row=r, column=lab, value=(f'calibration_{n_cal} — {cal_title}: {n_cal} records '
                                               f'drawn with random.Random(seed).sample(sorted(pool), {n_cal}); paste sampled '
                                               f'record_ids below (green cells).')).font = Font(bold=True)
             ws.cell(row=r, column=lab).fill = FILL['section']
@@ -812,10 +1025,12 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
                 ('base random_seed (screening_log_template)', cal['random_seed'], 'cal_seed', False),
                 ('round_number (1 = initial; input)', None, 'cal_round', True),
                 ('seed for this round (= seed + round_number - 1)',
-                 f'=IF({L(val)}{r + 2}="","",{L(val)}{r + 1}+{L(val)}{r + 2}-1)' if E['seed_offset_ok'] else 'see repeat_seed_rule', 'cal_round_seed', False),
-                ('raw-agreement threshold (calibration_plan.md)', E['threshold'], 'cal_threshold', False),
-                ('all conceptual disagreements resolved? (TRUE/FALSE; input)', None, 'cal_resolved', True),
+                 f'=IF({L(val)}{r + 2}="","",{L(val)}{r + 1}+{L(val)}{r + 2}-1)' if seed_ok else 'see repeat_seed_rule', 'cal_round_seed', False),
+                ('raw-agreement threshold (' + ('calibration_plan.md' if stage == 'TA' else 'title_calibration.pass_rule') + ')',
+                 thr, 'cal_threshold', False),
             ]
+            if need_resolved:
+                params.append(('all conceptual disagreements resolved? (TRUE/FALSE; input)', None, 'cal_resolved', True))
             pr = {}
             for label, value, key, is_input in params:
                 ws.cell(row=r, column=lab, value=label)
@@ -826,12 +1041,13 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
                     c.protection = UNLOCKED
                     c.fill = FILL['inputcell']
                     unlocked.append(f'{L(val)}{r}')
-                define_cell(wb, f'TA_{key}', ws, f'{L(val)}{r}')
+                define_cell(wb, f'{stage}_{key}', ws, f'{L(val)}{r}')
                 pr[key] = f'{L(val)}{r}'
                 r += 1
-            add_dv(ws, val, '=lst_boolean', first_row=int(pr['cal_resolved'][len(L(val)):]),
-                   last_row=int(pr['cal_resolved'][len(L(val)):]), registry=registry, label='cal_resolved',
-                   prompt='TRUE only when every conceptual disagreement is resolved and documented.', title='resolved?')
+            if need_resolved:
+                add_dv(ws, val, '=lst_boolean', first_row=int(pr['cal_resolved'][len(L(val)):]),
+                       last_row=int(pr['cal_resolved'][len(L(val)):]), registry=registry, label=f'{stage} cal_resolved',
+                       prompt='TRUE only when every conceptual disagreement is resolved and documented.', title='resolved?')
             # results placeholder rows, then the per-ID table
             res_top = r
             r += 7
@@ -856,8 +1072,10 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
             t1 = t0 + n_cal - 1
             ra_ = f'${L(lab + 3)}${t0}:${L(lab + 3)}${t1}'
             rb_ = f'${L(lab + 4)}${t0}:${L(lab + 4)}${t1}'
-            _, kap = agreement_block(wb, ws, t1 + 2, lab, E['binary_labels'], ra_, rb_, 'TA_cal',
+            _, kap = agreement_block(wb, ws, t1 + 2, lab, blabels, ra_, rb_, f'{stage}_cal',
                                      f'calibration_{n_cal}: binary agreement table on the sampled records')
+            passed = (f'AND({L(val)}{res_top + 4}>={pr["cal_threshold"]},{pr["cal_resolved"]}="TRUE")' if need_resolved
+                      else f'{L(val)}{res_top + 4}>={pr["cal_threshold"]}')
             rows_res = [
                 ('sample IDs entered', f'=SUMPRODUCT(--({L(lab + 1)}{t0}:{L(lab + 1)}{t1}<>""))', 'cal_ids'),
                 ('IDs not found in pool', f'=COUNTIF({L(lab + 2)}{t0}:{L(lab + 2)}{t1},"NOT IN POOL")', 'cal_notfound'),
@@ -867,7 +1085,7 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
                 ("Cohen's kappa (descriptive; see table below)", f'={kap["kappa"]}', 'cal_kappa'),
                 ('calibration status',
                  f'=IF({L(val)}{res_top + 2}<{pr["cal_planned"]},"INCOMPLETE: "&{L(val)}{res_top + 2}&"/"&{pr["cal_planned"]}&" jointly assessed",'
-                 f'IF(AND({L(val)}{res_top + 4}>={pr["cal_threshold"]},{pr["cal_resolved"]}="TRUE"),"PASS",'
+                 f'IF({passed},"PASS",'
                  f'"NOT PASSED: clarify manual and run a fresh round (new seed, unseen records)"))', 'cal_status'),
             ]
             for i, (label, formula, key) in enumerate(rows_res):
@@ -876,13 +1094,13 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
                 c.fill = FILL['result']
                 if key == 'cal_raw':
                     c.number_format = '0.0%'
-                define_cell(wb, f'TA_{key}', ws, f'{L(val)}{res_top + i}')
+                define_cell(wb, f'{stage}_{key}', ws, f'{L(val)}{res_top + i}')
         protect(ws)
         ws.sheet_properties.tabColor = '548235'
         registry.setdefault('_unlocked_cells', {})[ws.title] = unlocked
 
-    merge_sheet('TA')
-    merge_sheet('FT')
+    for st in stages:
+        merge_sheet(st)
 
     # ---- log -----------------------------------------------------------------------------------
     ws = S['log']
@@ -912,7 +1130,10 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
             '5. 冲突讨论后仍未解决者交预先指定的裁决者（姓名待定，不得虚构）。讨论记录写入 log。',
             '6. 全文阶段同理：screen_FT_reviewer_A/B → merge_FT。管理状态（重复、未获取、待翻译、待分类、预印本前沿登记）不是科学排除，不填 FT 代码；check_code_rule 列会提示违规。',
             '7. 任何未执行阶段的计数一律留空或记为 NOT YET AVAILABLE，绝不写 0。',
-        ]),
+        ] + ([
+            f'8. v3.1两阶段筛选（修订PRE-005；screening_manual.md §3A′）：第1阶段工作簿的 records_master 不填摘要；审阅者只在本人 screen_TI_reviewer_A 或 _B 中按封闭清单判断（{" / ".join(E["ti"])}），不显示AI提示。merge_TI 按“进入优先”自动给出共识（consensus）、冲突清单（只记录、不裁决）、一致率与 Cohen kappa，以及第1阶段排除按封闭清单代码的计数；calibration_{E["ti_calibration"].get("planned_sample_size")} 区块用于题名试筛（seed={E["ti_calibration"].get("random_seed")}，原始一致率 ≥{E["ti_threshold"]:.0%}）。',
+            '9. 摘要补全后（来源顺序见 screening_log_template.abstract_completion），用同一模板另生成第2阶段工作簿，其 records_master 只含第1阶段保留记录并填写 abstract 与 abstract_source；无法获得摘要者记 abstract_unavailable，照常筛选、不因此排除。第2阶段在 screen_TA_reviewer_A/B 中进行，合并用 merge_screening.py merge --stage TA --population merged_TI.csv。',
+        ] if E['ti'] else [])),
         ('维护规则 Maintenance rule', [
             '先修改 JSON 模板，再运行脚本重新生成；不得手工修改生成的 xlsx 结构（sheet、列、下拉、保护）。',
             '工作表保护不设密码，仅用于防止误改结构。', '下拉列表全部来自 codes 工作表，codes 由 JSON 生成。']),
@@ -924,28 +1145,25 @@ def build_screening(src, out_path: Path, rows: int = 5000, conflict_rows: int = 
     write_readme(S['README'], readme_title, readme_sections)
     S['README'].sheet_properties.tabColor = '000000'
     if pilot:
-        apply_pilot(wb, S, pilot, ta_cols, ft_cols)
+        apply_pilot(wb, S, pilot, SC)
 
     wb.calculation.fullCalcOnLoad = True
     out_path.parent.mkdir(parents=True, exist_ok=True)
     wb.save(out_path)
+    sheet_cols = {f'screen_{s}_reviewer_{rv}': SC[s] for s in stages for rv in ('A', 'B')}
     spec = {
         'sheets': names,
-        'headers': {'records_master': MASTER_COLUMNS, 'screen_TA_reviewer_A': ta_cols, 'screen_TA_reviewer_B': ta_cols,
-                    'screen_FT_reviewer_A': ft_cols, 'screen_FT_reviewer_B': ft_cols, 'log': ['date', 'who', 'action', 'free_text']},
-        'protected': ['README', 'records_master', 'screen_TA_reviewer_A', 'screen_TA_reviewer_B', 'screen_FT_reviewer_A',
-                      'screen_FT_reviewer_B', 'merge_TA', 'merge_FT', 'codes'],
+        'headers': {'records_master': MASTER_COLUMNS, **sheet_cols, 'log': ['date', 'who', 'action', 'free_text']},
+        'protected': ['README', 'records_master'] + rev_sheets + [f'merge_{s}' for s in stages] + ['codes'],
         'unprotected': ['log'],
-        'unlocked_cols': {s: [L(i + 1) for i, hh in enumerate(cols) if hh not in ('record_id', 'title', 'check_code_rule')]
-                          for s, cols in (('screen_TA_reviewer_A', ta_cols), ('screen_TA_reviewer_B', ta_cols),
-                                          ('screen_FT_reviewer_A', ft_cols), ('screen_FT_reviewer_B', ft_cols))},
-        'locked_cols': {s: ['A', 'B'] for s in ('screen_TA_reviewer_A', 'screen_TA_reviewer_B', 'screen_FT_reviewer_A', 'screen_FT_reviewer_B')},
+        'unlocked_cols': {s: [L(i + 1) for i, hh in enumerate(cols) if hh not in FORMULA_COLS] for s, cols in sheet_cols.items()},
+        'locked_cols': {s: ['A', 'B'] for s in rev_sheets},
         'empty_input_sheets': ['records_master', 'log'],
-        'formula_input_sheets': ['screen_TA_reviewer_A', 'screen_TA_reviewer_B', 'screen_FT_reviewer_A', 'screen_FT_reviewer_B'],
+        'formula_input_sheets': list(rev_sheets),
         'dv': registry, 'names': list(codes.names), 'unlocked_cells': registry.get('_unlocked_cells', {}),
     }
     if pilot:
-        spec = pilot_spec(spec, pilot, wb, ta_cols, ft_cols)
+        spec = pilot_spec(spec, pilot, wb, SC)
     return spec, E
 
 
@@ -1539,7 +1757,8 @@ def pilot_readme(pilot: dict, E: dict, sections: list):
                          f'>= {E["threshold"]:.0%} across all {n} records AND every conceptual disagreement resolved; '
                          'kappa descriptive only. Failure: discuss concept disagreements, revise the manual, draw a fresh '
                          '50 with seed 20261003 from the unseen pool.'),
-        ('hidden sheets', f'screen_TA_reviewer_{PILOT_SLOT[other]} (the other reviewer slot; empty), both FT sheets and the '
+        ('hidden sheets', f'screen_TA_reviewer_{PILOT_SLOT[other]} (the other reviewer slot; empty), the '
+                          + ('TI and ' if E.get('ti') else '') + 'FT sheets and the '
                           'merge sheets are hidden and locked in this pilot file; the workbook structure is protected '
                           '(no password) so sheets cannot be renamed or unhidden by accident.'),
     ]
@@ -1559,7 +1778,7 @@ def _defined_cell(wb, name: str):
     return sheet.strip("'"), ref.replace('$', '')
 
 
-def apply_pilot(wb, S, pilot: dict, ta_cols, ft_cols):
+def apply_pilot(wb, S, pilot: dict, SC: dict):
     ws = S['records_master']
     col = {h: i + 1 for i, h in enumerate(MASTER_COLUMNS)}
     for i, rec in enumerate(pilot['records'], start=2):
@@ -1576,18 +1795,18 @@ def apply_pilot(wb, S, pilot: dict, ta_cols, ft_cols):
     ws.column_dimensions[L(col['abstract'])].width = 110
     ws.freeze_panes = 'B2'
     own = f'screen_TA_reviewer_{pilot["slot"]}'
-    for stage, cols in (('TA', ta_cols), ('FT', ft_cols)):
+    for stage, cols in SC.items():
         for rv in ('A', 'B'):
             name = f'screen_{stage}_reviewer_{rv}'
             if name == own:
                 continue
             w = S[name]
             for i, h in enumerate(cols, start=1):
-                if h not in ('record_id', 'title', 'check_code_rule'):
+                if h not in FORMULA_COLS:
                     w.column_dimensions[L(i)].protection = LOCKED
             w.sheet_state = 'hidden'
             w.sheet_properties.tabColor = '808080'
-    for name in ('merge_TA', 'merge_FT'):
+    for name in [n for n in S if n.startswith('merge_')]:
         S[name].sheet_state = 'hidden'
     # calibration block in merge_TA: round 1 and the sampled record IDs (P001.., in sampled order)
     sh, ref = _defined_cell(wb, 'TA_cal_round')
@@ -1621,15 +1840,15 @@ def apply_pilot(wb, S, pilot: dict, ta_cols, ft_cols):
     wb.security = WorkbookProtection(lockStructure=True)
 
 
-def pilot_spec(spec: dict, pilot: dict, wb, ta_cols, ft_cols) -> dict:
+def pilot_spec(spec: dict, pilot: dict, wb, SC: dict) -> dict:
     own = f'screen_TA_reviewer_{pilot["slot"]}'
     spec = dict(spec)
     spec['empty_input_sheets'] = [s for s in spec['empty_input_sheets'] if s != 'records_master']
     spec['unlocked_cols'] = {s: c for s, c in spec['unlocked_cols'].items() if s == own}
     spec['locked_input_cols'] = {
-        f'screen_{st}_reviewer_{rv}': [L(i + 1) for i, h in enumerate(cols) if h not in ('record_id', 'title', 'check_code_rule')]
-        for st, cols in (('TA', ta_cols), ('FT', ft_cols)) for rv in ('A', 'B') if f'screen_{st}_reviewer_{rv}' != own}
-    spec['hidden'] = sorted(spec['locked_input_cols']) + ['merge_FT', 'merge_TA']
+        f'screen_{st}_reviewer_{rv}': [L(i + 1) for i, h in enumerate(cols) if h not in FORMULA_COLS]
+        for st, cols in SC.items() for rv in ('A', 'B') if f'screen_{st}_reviewer_{rv}' != own}
+    spec['hidden'] = sorted(spec['locked_input_cols']) + sorted(s for s in spec['sheets'] if s.startswith('merge_'))
     spec['visible'] = ['README', 'records_master', own, 'codes', 'log']
     cells = {k: _defined_cell(wb, f'PILOT_{k}')[1] for k in PILOT_INPUT_LABELS}
     spec['unlocked_cells'] = dict(spec['unlocked_cells'], README=list(cells.values()))
@@ -1915,7 +2134,7 @@ def verify(path: Path, spec: dict) -> dict:
         got = [ws.cell(row=1, column=i + 1).value for i in range(len(heads))]
         if got != heads:
             errs.append(f'{s}: header mismatch')
-        if ws.cell(row=1, column=len(heads) + 1).value not in (None, '') and s not in ('merge_TA', 'merge_FT'):
+        if ws.cell(row=1, column=len(heads) + 1).value not in (None, '') and not s.startswith('merge_'):
             errs.append(f'{s}: extra header cells')
         for i in range(len(heads)):
             if ws.cell(row=1, column=i + 1).protection.locked is not True:
@@ -2055,7 +2274,8 @@ def main(argv=None):
     if 'screening' in only:
         p = args.out_dir / 'screening_workbook.xlsx'
         spec, E = build_screening(src, p, rows=args.rows, conflict_rows=args.conflict_rows)
-        built.append((p, spec, {'TA decisions': E['ta'], 'FT decisions': E['ft'], 'issues': E['problems']}))
+        built.append((p, spec, {**({'TI decisions': E['ti'], 'TI reasons': E['ti_codes']} if E['ti'] else {}),
+                                'TA decisions': E['ta'], 'FT decisions': E['ft'], 'issues': E['problems']}))
     if 'extraction' in only:
         targets = [None] if not (args.reviewer and args.only) else []
         targets += sorted(set(args.reviewer))

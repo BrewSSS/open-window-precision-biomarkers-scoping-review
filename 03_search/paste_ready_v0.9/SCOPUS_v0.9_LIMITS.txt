@@ -1,0 +1,9 @@
+# Scopus v0.9 limits. Scopus evaluates AND NOT last, so keep the positive limits before AND NOT:
+#   (#E AND #I AND #T) AND DOCTYPE(ar OR ip) AND LANGUAGE(english) AND NOT DOCTYPE(re OR ed OR le OR no OR er OR sh OR cr)
+# "ip" (article in press) is kept so that in-press articles are not lost. English and article restriction added by
+# decision of A, 2026-10-05 (after D's first runs).
+AND DOCTYPE(ar OR ip) AND LANGUAGE(english)
+AND NOT DOCTYPE(re OR ed OR le OR no OR er OR sh OR cr)
+
+# OPTIONAL, untested index-term animal exclusion (use only if all indexed seeds survive; record counts with and without):
+AND NOT (INDEXTERMS(nonhuman OR animal OR animals OR "animal experiment" OR rat OR rats OR mouse OR mice) AND NOT INDEXTERMS(human OR humans))

@@ -108,20 +108,21 @@ v3.0 的参考文献 1–20 在 `protocol_EN_full.md` 中人工写定；`referen
 
 **总体顺序**（D 执行；各脚本均不读写 `search_log_template.json` 的正式字段，运行结果由 D 手动粘贴进去，粘贴前这些字段始终为 `null`）：
 
-1. D 在四个有许可数据库（Web of Science、Scopus、Embase、SPORTDiscus）各自的官方检索界面手工执行 v0.7 的 EI/EO 两条 route（`03_search/search_strategy_draft.txt` §4-§7），把原始导出文件放入 `03_search/formal_runs/<date>/<database>/`（`<date>` 为本次正式检索窗口的日期，`<database>` ∈ `wos`/`scopus`/`embase`/`ovid_embase`/`sportdiscus`）。
+0. **修订 PRE-006（2026-10-05）**：数据库为 PubMed、Web of Science Core Collection、Scopus，Google Scholar 为有记录的补充检索；Embase 与 SPORTDiscus 已撤除。策略 v0.9 为单一路线 E AND I AND T（取消 EO 路线），并设检索阶段限制（PubMed 仅动物/仅儿童排除；三库出版/文献类型限制）。正式检索在 v3.1 发布且 A 对 v0.9 重新签署 PRESS 之后执行。2026-10-05 按 v0.7 的 PubMed 导出（`formal_runs/2026-10-05/pubmed/`）与 D 的 WoS EO 第1批已被取代，保留为过程文件，不计入 PRISMA。下列脚本中仍按 v0.7 EI/EO 写死的查询来源与 route 标签（`run_formal_pubmed.py`、`run_formal_scopus.py` 的 `--route both`、`dedup_records.py` 的 EI/EO 推断）须在正式运行前按 v0.9 核对或更新（`run_formal_pubmed.py` 由检索代理另行修订）。
+1. D 在 Web of Science 与 Scopus 各自的官方网页界面手工执行 v0.9 的单一路线 EI（`03_search/paste_ready_v0.9/`；题名/摘要/作者关键词字段以 10 个种子测试为条件，否则用 `*_FALLBACK_*` 宽字段版本），把原始导出文件放入 `03_search/formal_runs/<date>/<database>/`（`<date>` 为本次正式检索窗口的日期，`<database>` ∈ `wos`/`scopus`）；Google Scholar 补充检索的检索式、日期、每式查看的前 200 条与停止规则另行记录。
 2. `python3 scripts/run_formal_pubmed.py --label formal` → 写入 `03_search/formal_runs/<date>/pubmed/`。
-3. `python3 scripts/run_preprint_search.py --label formal` → 写入 `03_search/formal_runs/<date>/preprints/`（供参考的补充检索，不计入五库核心计数）。
+3. `python3 scripts/run_preprint_search.py --label formal` → 写入 `03_search/formal_runs/<date>/preprints/`（供参考的补充检索，不计入核心数据库计数）。
 4. 若 Scopus `COMPLETE` 视图/`cursor` 授权已到位：`python3 scripts/run_formal_scopus.py --route both --label formal --view auto` → 写入 `03_search/formal_runs/<date>/scopus/`（见下）。
-5. `python3 scripts/dedup_records.py --inputs 03_search/formal_runs/<date>/ --out-dir 04_screening/formal_<date>/ --formal`（§9）合并五库+预印本导出为带来源追溯的去重 `records_master.csv`，再按需 `python3 scripts/fill_abstracts.py --master .../records_master.csv` 补全缺失摘要。
+5. `python3 scripts/dedup_records.py --inputs 03_search/formal_runs/<date>/ --out-dir 04_screening/formal_<date>/ --formal`（§9）合并三库（PRE-006）+Google Scholar 补充+预印本导出为带来源追溯的去重 `records_master.csv`，再按需 `python3 scripts/fill_abstracts.py --master .../records_master.csv` 补全缺失摘要。
 6. D 把每个脚本 manifest 里的字段（命名对齐 `search_log_template.json.searches[]`：`exact_query_as_run`、`date_time_timezone`、`hit_count`/`result_total`、`export_count`、`export_filename_and_format`、`query_checksum_sha256` 等）逐条粘贴进 `search_log_template.json`，并记录 `final_search_date`。
 
-**命名约定**：D 手工导出的许可数据库原始文件统一为 `<DB>_<route>_<date>.ris` 或 `.txt`（例如 `WOS_EI_2026-10-05.ris`、`SPORTDISCUS_EO_2026-10-05.txt`），放在对应 `03_search/formal_runs/<date>/<database>/` 目录下，与各脚本自己写的 `*.jsonl.gz` 导出同级。
+**命名约定**：D 手工导出的许可数据库原始文件统一为 `<DB>_<route>_<date>.ris` 或 `.txt`（例如 `WOS_EI_<date>.ris`、`SCOPUS_EI_<date>.csv`；PRE-006 后只有 EI 路线），放在对应 `03_search/formal_runs/<date>/<database>/` 目录下，与各脚本自己写的 `*.jsonl.gz` 导出同级。
 
 **原始导出永不进 git**：`03_search/formal_runs/**` 下任何路线/任何日期目录里的原始导出（所有脚本的 `*.jsonl.gz`，以及 D 手工的 `<DB>_<route>_<date>.ris`/`.txt`）一律不提交；`.gitignore` 只显式解除忽略具名、不含摘要的文件——`manifest.json`、`run_manifest.json`、`route_overlap.json`、`*_eids.txt`、`*_dois.txt`、`*_pmids.txt`（按脚本列在各自小节）。新增任何脚本若要提交其它文件名，须在 `.gitignore` 里补一条同样精确的具名例外，不要放宽为按扩展名的笼统例外（笼统的 `*.txt`/`*.json` 例外会连带放行 D 手工许可数据库原始导出，已在 2026-10-05 发现并收紧过一次）。
 
 ### Scopus（run_formal_scopus.py）
 
-查询文本单一来源是 `03_search/paste_ready_v0.7/SCOPUS_EI.txt` / `SCOPUS_EO.txt`（逐字节读取；两份文件由检索策略 v0.7 §5 的 `R1_SCOPUS_EI = E AND I AND T` / `R2_SCOPUS_EO = E AND O AND T` 生成）。脚本从不读写 `search_log_template.json` 的正式字段，由 D 手动把运行结果填入。
+查询文本单一来源是 `03_search/paste_ready_v0.7/SCOPUS_EI.txt` / `SCOPUS_EO.txt`（逐字节读取；两份文件由检索策略 v0.7 §5 的 `R1_SCOPUS_EI = E AND I AND T` / `R2_SCOPUS_EO = E AND O AND T` 生成）。**PRE-006 后已过时**：v0.9 只有 EI 路线，查询文本在 `03_search/paste_ready_v0.9/`，D 在网页界面手工执行；若仍用本脚本，须先改为读取 v0.9 文本并只跑 EI。脚本从不读写 `search_log_template.json` 的正式字段，由 D 手动把运行结果填入。
 
 - API：`https://api.elsevier.com/content/search/scopus`，鉴权头 `X-ELS-APIKey`（读取环境变量 `SCOPUS_API_KEY`，否则读 `~/.config/scoping_review/secrets.env`，密钥本身永不打印/落盘）；`User-Agent: scoping-review-search/1.0`；请求中不含任何个人邮箱。可选 `--insttoken-env`（默认 `SCOPUS_INSTTOKEN`）在设置时附带 `X-ELS-Insttoken` 头。
 - `--dry-run`：每条 route 一次 `count=1` 请求（不带 `cursor`），只返回 `totalResults` 与配额头，不下载条目、不写 `03_search/formal_runs/`，除非给 `--out-file`。2026-10-05 的 dry-run 结果见 `03_search/formal_run_prep_2026-10-05/scopus_dryrun.json`：STANDARD 视图下 EI=29,437、EO=6,159。
@@ -132,6 +133,8 @@ v3.0 的参考文献 1–20 在 `protocol_EN_full.md` 中人工写定；`referen
 - 用法：`python3 scripts/run_formal_scopus.py --dry-run --route both --label pilot`；正式运行示例：`python3 scripts/run_formal_scopus.py --route both --label formal --view auto --insttoken-env SCOPUS_INSTTOKEN`（等 `COMPLETE` 视图授权到位后再执行，本次任务只跑了 dry-run）。
 
 ### PubMed（run_formal_pubmed.py）
+
+> **v0.9（2026-10-05）更新：** 脚本现按策略v0.9运行单一路线`--route EI`（E AND I AND T），依次套用仅动物NOT、出版类型NOT、仅儿童NOT、`AND english[la]`、`NOT preprint[pt]`，并与`search_log_template.json`中v0.9诊断记录（7,846条，SHA-256前缀6ad15420fe1f）核对；以下段落中的EI/EO双路线描述为v0.7历史说明。
 
 查询文本单一来源是 `03_search/search_strategy_draft.txt` §3 的 `E_PUBMED`/`I_PUBMED`/`O_PUBMED`/`T_PUBMED` 自由文本块与对应四条 MeSH 行，逐字节读取——复用 `scripts/fetch_pilot_pool.py` 的 `load_blocks()`（§3 区块解析）与 `check_against_validation()`（与 2026-10-04 `parser_validation_runs.pubmed_2026_10_04_v07_addendum3` 的 SHA-256 核对），不另建 JSON 副本。R1（EI）= E AND I AND T，R2（EO）= E AND O AND T；脚本额外把 R1/R2/UNION_PUBMED_FINAL 三个完整路线字符串的 SHA-256 也与该验证记录的 `route_entries` 核对（`check_against_validation()` 原本只核对到区块级与 UNION，不含 R1/R2 路线级）。
 
@@ -154,7 +157,7 @@ v3.0 的参考文献 1–20 在 `protocol_EN_full.md` 中人工写定；`referen
 
 ## 9. 去重与摘要补全（Deduplication and abstract completion）
 
-两个离线/纯文本脚本，把五个数据库（加引文追溯）的正式检索导出合并为 `04_screening/screening_manual.md` §3A 要求的、带完整来源追溯的去重后 `records_master`，再尽量补全缺失摘要。两者都只读写明确给定的路径；`dedup_records.py` 完全不联网，`fill_abstracts.py` 是唯一联网脚本（PubMed efetch + NCBI ID Converter），遵守本任务的礼仪要求：`User-Agent: scoping-review-search/1.0`、请求中不含任何个人邮箱、≤3 次/秒（复用 `scripts/fetch_pilot_pool.py` 的 `EUtils`/`fetch_metadata` 层，只覆盖其 `USER_AGENT`/`TOOL`，做法与 `run_formal_pubmed.py` 相同）。
+两个离线/纯文本脚本，把正式数据库检索导出（PRE-006 后为 PubMed、Web of Science、Scopus，加 Google Scholar 补充与引文追溯）合并为 `04_screening/screening_manual.md` §3A 要求的、带完整来源追溯的去重后 `records_master`，再尽量补全缺失摘要。两者都只读写明确给定的路径；`dedup_records.py` 完全不联网，`fill_abstracts.py` 是唯一联网脚本（PubMed efetch + NCBI ID Converter），遵守本任务的礼仪要求：`User-Agent: scoping-review-search/1.0`、请求中不含任何个人邮箱、≤3 次/秒（复用 `scripts/fetch_pilot_pool.py` 的 `EUtils`/`fetch_metadata` 层，只覆盖其 `USER_AGENT`/`TOOL`，做法与 `run_formal_pubmed.py` 相同）。
 
 ### scripts/dedup_records.py
 

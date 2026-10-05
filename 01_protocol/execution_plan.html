@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>研究执行计划｜v3.0</title>
+  <title>研究执行计划｜v3.1</title>
   <style>
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -48,10 +48,21 @@ id="toc-工作量计算方法">工作量计算方法</a></li>
 <p>日期：2026-10-04（v3.0团队冻结前草稿）。对应完整中英文v3方案。设计文件已建立；阶段1状态（2026-10-04）：PubMed已完成解析验证，PRESS已附条件接受（T词块为必需概念，修订PRE-003；不加感染结局词；<code>train*</code>保留至试点检验），Web
 of
 Science、Scopus、Embase、SPORTDiscus等授权平台待D登录验证。团队冻结、GitHub+Zenodo存档、人工校准及正式检索未完成。</p>
+<p>2026-10-05更新（v3.1，修订PRE-004与PRE-005）：v3.0已于2026-10-05冻结并存档（Zenodo
+10.5281/zenodo.23147973）；50条题名/摘要试筛与10篇提取试点已完成并被A接受为校准。修订PRE-005把筛选改为两阶段：第1阶段只看题名（封闭清单排除、进入优先），两阶段之间补全摘要，第2阶段按v3规则筛选题名/摘要（<code>04_screening/screening_manual.md</code>
+§3A′、§3B）。下表第5、6阶段已按此改写；正式检索须在v3.1发布之后。</p>
+<p>2026-10-05更新（修订PRE-006，纳入v3.1）：数据库改为PubMed、Web of
+Science Core Collection、Scopus，Google
+Scholar作有记录的补充检索；Embase与SPORTDiscus撤除。策略v0.9为单一路线E
+AND I AND
+T，并设检索阶段限制（PubMed仅动物与仅儿童排除；三库出版/文献类型限制，被移除的综述作为引文追踪清单）。PubMed诊断计数7,846条（含英文与预印本限制；非正式检索）。A于2026-10-04的PRESS签署（v0.7）作废，须重新复核v0.9；2026-10-05的PubMed
+v0.7导出与D的WoS
+EO第1批已被取代，作为过程文件保留，不计入PRISMA；TA试筛、提取试点与200条不含T样本仍为有效校准。第1、5阶段与“近期优先顺序”已按此更新（第1阶段行中的历史状态保留）。</p>
 <h2 id="研究价值与交付标准">研究价值与交付标准</h2>
 <p>面向Frontiers in
 Immunology的中心问题是：以运动诱导免疫“开放窗口”为组织构念（界定可识别单次运动后0–72小时的组织窗口、采样时点与标志物族），传统免疫指标与组学候选物在成人中各自在哪些精准证据域已被研究、哪些环节仍缺少验证，由此形成逐标志物验证就绪度图谱。综述不裁决开放窗口是否存在。全文围绕免疫测量及其验证链展开，训练负荷和恢复表现作为情境/协变量。讨论必须区分细胞重新分布、实测功能与感染结局，不以组学规模替代生物学或临床验证；就绪度图谱是逐域描述，不是分数、排序或开发阶梯。</p>
-<p>完成品包括：可复现五库与补充检索、可审计双人筛选（JSON模板生成的Excel工作簿与脚本合并）、独立队列关联的数据集、设计适配评价、三类证据图（开放窗口时间×免疫区室/标志物族；逐标志物验证就绪度图谱；队列层级验证关联）、同行评审证据和预印本分表、PRISMA-ScR及PRISMA-S清单、投稿稿件及公开方法附件；方案与附件以GitHub仓库+Zenodo存档Release（version
+<p>完成品包括：可复现的三库检索与Google
+Scholar等补充检索、可审计双人筛选（JSON模板生成的Excel工作簿与脚本合并）、独立队列关联的数据集、设计适配评价、三类证据图（开放窗口时间×免疫区室/标志物族；逐标志物验证就绪度图谱；队列层级验证关联）、同行评审证据和预印本分表、PRISMA-ScR及PRISMA-S清单、投稿稿件及公开方法附件；方案与附件以GitHub仓库+Zenodo存档Release（version
 DOI）公开。范围综述方法不因投稿类别名为Systematic Review而改变。</p>
 <h2 id="角色分工">角色分工</h2>
 <table>
@@ -124,10 +135,11 @@ DOI）公开。范围综述方法不因投稿类别名为Systematic Review而改
 <tbody>
 <tr>
 <td>1.
-策略与工具准备（2026-10-04：PubMed已验证；PRESS已附条件接受；授权平台待D登录）</td>
+策略与工具准备（2026-10-04：PubMed已验证；PRESS已附条件接受；授权平台待D登录。2026-10-05：PRE-006后策略v0.9待A重新PRESS复核，WoS/Scopus待D种子测试）</td>
 <td>3–5个工作日，可并行</td>
-<td>确认Embase平台；五库翻译（按PRE-003为E AND (I OR O) AND
-T）；PRESS记录；用<code>scripts/build_workbooks.py</code>从JSON模板生成筛选/提取/评价Excel工作簿（每位评审一份锁定工作簿），CSV导出入git；当前JBI表单归档</td>
+<td>三库翻译（按PRE-006为单一路线E AND I AND
+T及检索阶段限制；WoS/Scopus题名/摘要/作者关键词字段以10个种子测试为条件）与Google
+Scholar补充检索式；PRESS记录；用<code>scripts/build_workbooks.py</code>从JSON模板生成筛选/提取/评价Excel工作簿（每位评审一份锁定工作簿），CSV导出入git；当前JBI表单归档</td>
 <td>平台能解析、主题词核实、修订闭环、工作簿重新载入核对通过、日志可导出</td>
 </tr>
 <tr>
@@ -151,16 +163,50 @@ Release与新version DOI</td>
 <td>新DOI写回；正式检索只按已存档的最终规则运行</td>
 </tr>
 <tr>
-<td>5. 正式检索与去重</td>
+<td>5. 正式检索与去重（v3.1发布后）</td>
 <td>试点后估计</td>
-<td>五库原始导出、校验值、去重映射、补充搜索与前沿登记</td>
-<td>所有数据来源及去重计数可核对；已明确完整筛选集合</td>
+<td>D按固定顺序导出：PubMed → Web of Science核心合集 →
+Scopus（PRE-006；Embase与SPORTDiscus已撤除），每库导出平台允许的最完整记录（尽量含摘要与文献类型；WoS用完整记录，Scopus在有授权时用COMPLETE视图）；检索阶段限制按PRE-006（物种/年龄、出版类型、英文、期刊论文）、原始导出、校验值、去重映射（<code>records_master</code>填<code>document_type</code>，第1阶段不填摘要）、Google
+Scholar补充检索（每式前200条，记录日期、筛选数与停止规则）、被出版类型限制移除的综述清单（引文追踪来源）、补充搜索与前沿登记；启动条件：v3.1已发布且A已对v0.9重新签署PRESS</td>
+<td>所有数据来源及去重计数可核对；已冻结去重合集及其清单与哈希（供题名试筛抽样）</td>
 </tr>
 <tr>
-<td>6. 双人筛选</td>
-<td>按真实条目/全文量估计</td>
-<td>每人锁定工作簿及其SHA-256先提交git，再由<code>scripts/merge_screening.py</code>合并；独立判断、共识、全文位置、排除理由、检得情况、cohort关联初稿</td>
-<td>无未解释冲突；未检得/待分类明确列出；PRISMA计数相符</td>
+<td>6.1a 题名试筛（第1阶段校准）</td>
+<td>约1个工作日</td>
+<td>从冻结去重合集按<code>random.Random(20261005).sample(sorted(ids), 100)</code>抽100条；两人在第1阶段工作簿（无摘要、无AI提示）中独立判断，各记总用时；<code>merge_screening.py merge --stage TI --calibration-ids</code></td>
+<td>二分类（进入/排除）原始一致率≥80%；分歧讨论并记录；未达标则澄清手册、按种子20261005+轮次−1另抽100条</td>
+</tr>
+<tr>
+<td>6.1b 正式第1阶段：题名筛选</td>
+<td>按记录数估计（题名约为题名/摘要的1/3–1/4用时）</td>
+<td>全部去重记录；每人锁定工作簿哈希先提交git；<code>merge --stage TI</code>按“进入优先”自动形成共识，冲突清单仅记录</td>
+<td>全部记录有最终TI处置；第1阶段排除均有封闭清单代码；冲突已记录</td>
+</tr>
+<tr>
+<td>6.AC 摘要补全（两阶段之间）</td>
+<td>视缺摘要记录数而定</td>
+<td>D为第1阶段保留记录补摘要：①含摘要的导出
+②PubMed（PMID或DOI→PMID）③来源库完整记录
+④A的人工请求清单<code>fulltext_requests/abstract_requests.csv</code>；<code>records_master.abstract_source</code>逐条记录来源，无法获得者记<code>abstract_unavailable</code>；<code>abstract_completion.counts</code>填写；生成只含保留记录的第2阶段工作簿</td>
+<td>每条保留记录都有摘要或abstract_unavailable标记；人工请求已结清或记not_available</td>
+</tr>
+<tr>
+<td>6.2a 第2阶段再校准</td>
+<td>约0.5个工作日</td>
+<td>从保留记录中按种子20261003抽25条，两人无AI提示独立筛选；<code>merge --stage TA --calibration-ids &lt;ids&gt; --planned-size 25</code></td>
+<td>原始一致率≥80%且概念分歧全部解决</td>
+</tr>
+<tr>
+<td>6.2b 正式第2阶段：题名/摘要筛选</td>
+<td>按保留记录数估计</td>
+<td>每人锁定工作簿哈希先提交git；<code>merge --stage TA --population merged_TI.csv</code>；分歧讨论、仲裁</td>
+<td>无未解释冲突；保留记录全部有最终TA处置</td>
+</tr>
+<tr>
+<td>6.3 全文筛选</td>
+<td>按全文量估计</td>
+<td>独立判断、共识、全文位置、排除理由、检得情况、cohort关联初稿；<code>merge --stage FT --population merged_TA.csv</code>；<code>prisma --master --ti --ta --ft</code></td>
+<td>未检得/待分类明确列出；PRISMA各阶段计数相符</td>
 </tr>
 <tr>
 <td>7. 提取与评价</td>
@@ -185,14 +231,15 @@ Release与新version DOI</td>
 </table>
 <p>准备阶段合计约2–3个工作周，为规划估计。工作日可并行但双人独立判断不可省略；此表不承诺整个综述在三周内完成。</p>
 <h2 id="工作量计算方法">工作量计算方法</h2>
-<p>试筛记录两位评审各自用于50条初筛、全文与分歧解决的有效工时；试提取分别记录常规检测、组学报告的用时。用实际正式题录数和预估全文比例推算：初筛人时=题录数×单人每条分钟×2/60；全文人时=待评全文数×单人每篇分钟×2/60。提取与评价按研究类型分层估计，同一队列多报告共享信息可减少重复但仍需核对。另列检索、获取、去重、仲裁和更新工时；设置团队自定余量，不把未知命中数代入计算。</p>
+<p>试筛记录两位评审各自用于100条题名试筛、50条题名/摘要初筛、全文与分歧解决的有效工时；试提取分别记录常规检测、组学报告的用时。用实际正式题录数和预估全文比例推算：第1阶段人时=去重记录数×单人每条题名分钟×2/60；第2阶段人时=第1阶段保留记录数×单人每条题名/摘要分钟×2/60；摘要补全另计（D、A）；全文人时=待评全文数×单人每篇分钟×2/60。提取与评价按研究类型分层估计，同一队列多报告共享信息可减少重复但仍需核对。另列检索、获取、去重、仲裁和更新工时；设置团队自定余量，不把未知命中数代入计算。</p>
 <p>若正式数据量超出资源，先重新分配时间和人员；确需改范围时，在筛选/结果选择前形成有理由的修订并追溯重筛，并发布新version
 DOI。不得按显著性、方向、发表期刊或期望结论删减。</p>
 <h2 id="近期优先顺序">近期优先顺序</h2>
 <ol type="1">
-<li>团队填写<code>project_settings.json</code>中的人员、Embase平台、参考文献管理软件和声明；决定GitHub
+<li>团队填写<code>project_settings.json</code>中的人员、参考文献管理软件和声明；决定GitHub
 owner与公开日期；复核v3研究边界。</li>
-<li>检索负责人打开五库草案，完成主题词和语法核查，邀请独立PRESS复核；所有反馈写入日志。运行<code>scripts/build_workbooks.py</code>生成工作簿并核对。</li>
+<li>检索负责人完成三库v0.9草案（PRE-006）的主题词和语法核查及WoS/Scopus种子测试，起草Google
+Scholar补充检索式，邀请A重新做独立PRESS复核；所有反馈写入日志。运行<code>scripts/build_workbooks.py</code>生成工作簿并核对。</li>
 <li>团队冻结v3.0：补齐creators、LICENSE、<code>.zenodo.json</code>/<code>CITATION.cff</code>，清理本机路径，推送并打tag发布Release，等待Zenodo
 DOI，写回设置与存档发布记录。</li>
 <li>存档后生成并保留草案检索池，用50篇随机试筛和10篇目的性试提取检验可执行性。试点不等于正式完成。</li>

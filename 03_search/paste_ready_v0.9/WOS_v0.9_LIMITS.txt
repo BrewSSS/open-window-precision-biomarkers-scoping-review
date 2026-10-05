@@ -1,0 +1,6 @@
+# Web of Science v0.9 limits. Apply to the combined set #E AND #I AND #T as:
+#   ((#E AND #I AND #T) NOT DT=(Review OR "Editorial Material" OR Letter OR Correction)) AND DT=(Article) AND LA=(English)
+# DT=(Article) still matches records flagged "Article; Early Access"; Proceedings Papers, Meeting Abstracts, Book Chapters
+# and Data Papers are dropped (FT01). English and article restriction added by decision of A, 2026-10-05 (after D's first runs).
+NOT DT=(Review OR "Editorial Material" OR Letter OR Correction)
+AND DT=(Article) AND LA=(English)

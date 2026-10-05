@@ -36,6 +36,8 @@ Evidence basis: 02_preliminary/collision_recheck_2026-10-04.md (no direct collis
      construct: exercise x immune and exercise x omics routes as in v2, with eligibility and the 0-72 h window applied
      at screening. "Prespecified recovery windows" (Trybulski 2026) is a citable precedent for window-based charting.
    - Seed list must include open-window-centred originals and boundary cases (immediate-only, >72 h-only, youth, resting).
+   [Pointer: §9 (PRE-003) and §10 (PRE-006, 2026-10-05) govern the search where they differ from this section: single
+   route E AND I AND T, three databases + Google Scholar supplement, and search-stage limits. Historic text kept.]
 
 4. REGISTRATION / ARCHIVE (decision: A)
    - Route: public GitHub repository + GitHub Release archived automatically by Zenodo (dated, immutable DOI;
@@ -43,7 +45,9 @@ Evidence basis: 02_preliminary/collision_recheck_2026-10-04.md (no direct collis
      (does not accept scoping reviews; verified 2026-10-04).
    - Timing: archive v3.0 after team freeze and BEFORE the 50-record screening pilot and the 10-report charting pilot.
      If pilots change rules, release v3.1 with justification. Formal five-database search starts only after the
-     archived release exists (register-before-formal-search gate kept).
+     archived release exists (register-before-formal-search gate kept). [Pointer: under §10 (PRE-006) the formal
+     search covers PubMed, Web of Science Core Collection and Scopus plus a Google Scholar supplement; the gate is
+     unchanged.]
    - Disclosure in the archived protocol: 2026-01 internal protocol, 2026-10-02 public reconnaissance (Codex),
      2026-10-04 collision re-check (Claude), pilots as planned stages. Not described as wholly prospective.
    - Local repository initialised 2026-10-04 (branch main); nothing pushed yet. Before public push: remove local
@@ -66,7 +70,7 @@ Evidence basis: 02_preliminary/collision_recheck_2026-10-04.md (no direct collis
 
 7. OPEN ITEMS FOR THE TEAM (not decided today)
    - Names/roles: PI, Reviewer A/B, search lead, independent PRESS reviewer, adjudicator, data manager.
-   - Embase platform (Embase.com vs Ovid); reference manager; funding, competing interests, ethics policy check.
+   - Embase platform (Embase.com vs Ovid) [closed by §10: Embase withdrawn]; reference manager; funding, competing interests, ethics policy check.
    - GitHub owner (personal vs organisation) and public-push date.
 
 8. APPROVED TITLE, LICENCE AND DEFAULT RULINGS (A, 2026-10-04, after the change map was reviewed)
@@ -81,6 +85,8 @@ Evidence basis: 02_preliminary/collision_recheck_2026-10-04.md (no direct collis
        a. "Search by construct" = keep the v2 two-route strategy E AND (I OR O); the 0-72 h organising window and
           all eligibility rules are applied at screening. The post-exercise/recovery T-block stays diagnostic only.
           "open window"-type terms may be added only as OR supplements or for citation chasing, never as AND terms.
+          [Pointer: superseded by §9 (T required) and §10 (single route E AND I AND T; search-stage limits on
+          species, age and publication type) where they differ. Historic text kept.]
        b. Cortisol, creatine kinase, lactate or HRV alone do not satisfy immune linkage (v2 rule kept); charted as
           covariates in otherwise eligible studies.
        c. Mixed-age cohorts are eligible only if an adult (>= 18 y) stratum is separable in the report.
@@ -129,3 +135,72 @@ Evidence basis: 02_preliminary/collision_recheck_2026-10-04.md (no direct collis
        c. Protocol E must no longer state that the strategy covers infection terms.
    9.5 Recorded as PRE-003 in amendments.json; included in the v3.0 release (pre-archive, pre-pilot,
        pre-formal-search). 03_search is revised to v0.7 by D under this amendment.
+
+10. AMENDMENT PRE-006 (2026-10-05) — DATABASE SET, SEARCH-STAGE LIMITS AND STRATEGY v0.9 (decision: A)
+   10.1 Supersedes, where they differ, the five-database set (§4, protocol E), the two-route structure of §3/8.3a/§9.1
+       (E AND (I OR O) AND T) and the statement that all eligibility rules are applied at screening. Rest of §9
+       (T required; T does not encode the 0-72 h window; "open window" terms never AND terms; no infection-outcome
+       terms) unchanged.
+       New rule:
+       a. Databases: PubMed, Web of Science Core Collection, Scopus. Google Scholar is a documented SUPPLEMENTARY
+          search, not a core database. Embase and SPORTDiscus are withdrawn (licence/feasibility); D exports
+          manually from the web interfaces; API routes were abandoned.
+       b. Single route E AND I AND T. The omics route E AND O AND T is dropped: under the immune-link rule an
+          eligible omics study must have an identifiable immune anchor, so E AND O AND I AND T is a subset of
+          E AND I AND T; none of 61 positive seeds was retrieved only by the omics route. The omics vocabulary is
+          kept for charting and tagging.
+       c. Search-stage limits (new): (i) PubMed animal-only exclusion NOT (animals[mh] NOT humans[mh])
+          (Cochrane/CADTH form; keeps unindexed records); (ii) publication-type exclusion of reviews, editorials,
+          letters, comments and case reports in PubMed, and document-type limits in Web of Science (Review,
+          Editorial Material, Letter, Correction) and Scopus (re, ed, le, no, er, sh, cr); (iii) PubMed child-only
+          exclusion NOT ((infant[mh] OR child[mh] OR adolescent[mh]) NOT adult[mh]) (keeps mixed-age and
+          unindexed records). These move part of FT02 (animal-only), FT01 (source type) and FT03 (children only)
+          into the query; the FT01-FT08 codes and hierarchy are unchanged at screening. Reviews removed by (ii) are
+          kept as a logged, non-screened citation-chasing source list. Web of Science and Scopus have no species
+          or age tag: FT02/FT03 stay screening rules there.
+          (iv) Added by A on 2026-10-05 after D's first Web of Science and Scopus runs: an English-language limit
+          and a journal-article document-type limit in all three databases (PubMed AND english[la] NOT preprint[pt];
+          WoS DT=(Article) AND LA=(English); Scopus DOCTYPE(ar OR ip) AND LANGUAGE(english)). Trade-off: non-English
+          reports and non-article formats are lost at search; disclosed as a limitation. Citation chasing, the
+          Google Scholar supplement and the preprint supplement are not language-limited.
+       d. Strategy v0.9 vocabulary: generic exercise words in titles only; bare run and the loose
+          (physical AND activit*) pair removed; immun* replaced by a semantic immune list (immunoassay,
+          immunoblot, immunofluorescence no longer count as immune concepts); bare complement and cytotoxic* in
+          titles only, specific phrases in abstracts; T loses time course, time-course, pre and post, baseline and
+          post, and gains the Package B recall terms (preexercise, postrace, prerace, hr/hrs after/post,
+          h/min/hours of recovery, acute effects, marathon*, ultramarathon*, triathlon*, ironman).
+       e. Fields: Web of Science and Scopus are searched in title, abstract and author-keyword fields rather than
+          Topic / TITLE-ABS-KEY, conditional on D's 10-seed test; if a seed is lost, the broad fields are used.
+       f. Google Scholar: short strings (256-character limit, no truncation) recorded verbatim; first 200
+          results per string sorted by relevance; date, number screened and stopping rule logged; records enter
+          the same two-stage screening (PRE-005); reported under PRISMA-S as a supplementary source. Exact
+          strings are drafted in the 03_search strategy file.
+   10.2 Evidence (PubMed diagnostics 2026-10-05; NOT formal searches): v0.7 union 20,090 -> v0.8 (animal NOT +
+       generic E title-only + publication-type NOT) 11,448 -> plus child-only NOT, run and (physical AND activit*)
+       removed, semantic immune list, complement/cytotoxic* title-only 9,577 -> plus four T phrases removed 8,909
+       -> single route E AND I AND T 7,733 -> plus Package B (+280) 8,013 (v0.9 with the three NOT limits; 2026-10-05T13:03:39Z;
+       query SHA-256 prefix e30ec141aac4) -> plus English-language limit and NOT preprint[pt] 7,846 (final v0.9;
+       2026-10-05T13:23:01Z; query SHA-256 prefix 6ad15420fe1f; POS-S3, a preprint, drops out by design). Seeds (v0.9 EI): 10/10 original positive seeds; expanded seeds 50/51
+       (X50 missed, also missed by v0.7; the six v0.7 misses recovered rely on Package B terms chosen after those
+       misses, so this is not an independent recall estimate); boundary seeds 6/7 (BND-Y1 youth cohort removed
+       by the child-only NOT, as intended); one pilot ADVANCE record lost (PMID 22403007, method-word false
+       positive). Benchmark of 23 published reviews (03_search/strategy_review_2026-10-05.md): identified
+       records median 2,360; broad/scoping subgroup median 4,690, maximum 10,976. Projected unique volume across
+       PubMed, Web of Science, Scopus and the Google Scholar supplement roughly 9,000-13,000 records.
+   10.3 Trade-off disclosed in protocol E as a limitation: Embase adds unique records in biomedical reviews
+       (Bramer et al. 2017: MEDLINE + Embase + Web of Science + Google Scholar needed for about 98% recall;
+       reference to be added to the protocol reference list), and SPORTDiscus indexes sport-science journals not
+       all covered by Scopus or Web of Science. Search-stage limits can remove misindexed records.
+   10.4 Mitigations (all required): backward and forward citation chasing of all included reports and of the five
+       open-window reviews (§9.3b); the Google Scholar supplement (10.1f); the expanded positive seed set
+       (03_search/seed_expansion_2026-10-05.md) re-tested on v0.9 in every database.
+   10.5 Gates and consequences:
+       a. A's PRESS sign-off of 2026-10-04 (v0.7; §9.4) is VOID. A re-reviews v0.9 before any formal search,
+          including the §9.4 conditions (train* is now title-only under 10.1d).
+       b. The PubMed v0.7 export of 2026-10-05 and D's Web of Science EO batch 1 are superseded; kept as
+          artefacts, not PRISMA counts.
+       c. The 50-record TA pilot, the 10-report charting pilot and the 200-record T-free sample remain valid
+          calibration. Citation-chasing "in pool" flags are recomputed against the v0.9 pool.
+       d. Formal searching starts after the v3.1 release (PRE-004, PRE-005 and PRE-006) and A's PRESS re-sign.
+   10.6 Recorded as PRE-006 in amendments.json; included in the v3.1 release. 03_search is revised to v0.9 under
+       this amendment.

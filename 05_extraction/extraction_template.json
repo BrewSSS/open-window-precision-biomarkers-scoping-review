@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "schema_version": "3.0",
-    "version_label": "3.0 (draft for team freeze) - 4 October 2026",
-    "status": "empty template; no included studies or extraction records",
+    "schema_version": "3.1",
+    "version_label": "3.1 (amendment PRE-004) - 5 October 2026",
+    "status": "empty template; no included studies or extraction records (v3.1, amendment PRE-004)",
     "created_date": "2026-10-02",
-    "updated_date": "2026-10-04",
+    "updated_date": "2026-10-05",
     "dictionary": "data_dictionary.json",
     "source_contract": "01_protocol/v3_design_contract.txt",
     "note": "blank_record null means not yet entered; after source review use NR/NA/UNCLEAR. blank_record structures are identical, field for field and in order, to data_dictionary.json relational_model.table_specs (checked by script).",
     "legacy_source_field_count": 61,
-    "field_count_note": "The 61 legacy source fields are retained and mapped (no legacy table or column renamed); the operational schema adds relational, donor-count, assay-universe, candidate-selection, supplement-traceability, digitization and, in v3, open-window organising-construct fields (marker family, window position, exposure as reported, adult-stratum separability, author window interpretation).",
+    "field_count_note": "The 61 legacy source fields are retained and mapped (no legacy table or column renamed); the operational schema adds relational, donor-count, assay-universe, candidate-selection, supplement-traceability, digitization and, in v3, open-window organising-construct fields (marker family, window position, exposure as reported, adult-stratum separability, author window interpretation). v3.1 (PRE-004) appends one optional column, precision_validation.marker_family, at the end of that table; no column is renamed or removed.",
     "organising_construct": "The exercise-induced immune \"open window\" is an organising construct only: it defines the post-exercise period after an identifiable bout (organising window 0-72 h after cessation, 72 h inclusive), the sampling time points and the marker families to be charted. The review does not test or adjudicate whether an open window exists; original authors' interpretations are charted descriptively (author_window_interpretation) and never affect eligibility or weighting.",
     "validation_readiness_map_definition": "Validation-readiness map: a per-marker, domain-by-domain descriptive profile across the seven precision domains; not a score, ranking, grade or development ladder.",
     "excel_workbooks": "Generated from this template and data_dictionary.json by scripts/build_workbooks.py (--only extraction; --reviewer A/B for per-reviewer files); CSV exports versioned in git."
@@ -62,7 +62,7 @@
     "reports": {
       "primary_key": "report_id",
       "foreign_keys": [],
-      "row_unit": "one report/version/correction",
+      "row_unit": "one report or distinguishable version (preprint, accepted manuscript, version of record, correction): one reports row per version. Version rows of one report share the stem of reference_id with a suffix (e.g. R01, R01-V1) and, once the version relationship is verified, are linked through report_cohort_links to the same study_id (study family) and cohort_id; a version stub carries bibliographic and version fields only.",
       "records": [],
       "blank_record": {
         "report_id": null,
@@ -140,7 +140,7 @@
         "study_id -> study_families.study_id",
         "cohort_id -> cohorts.cohort_id"
       ],
-      "row_unit": "one group × assay/matrix × exact timepoint sample set",
+      "row_unit": "one cohort × group/arm × matrix × time point as sampled in the Methods (whether or not a result is reported for that combination); assay platforms are listed in assay_platform (\"; \"-separated). Split by platform only when the report gives a platform-specific n that differs between platforms at that time point; split by analysis subgroup only when subgroup n and subgroup results are reported; control-arm time points get their own rows.",
       "records": [],
       "blank_record": {
         "sample_set_id": null,
@@ -196,7 +196,7 @@
         "cohort_id -> cohorts.cohort_id",
         "sample_set_ids[] -> sample_sets.sample_set_id"
       ],
-      "row_unit": "One assay-level tested-universe summary OR one named candidate/feature × comparison; include all named immune candidates from original aims/methods regardless of significance.",
+      "row_unit": "Conventional/targeted assays: one named analyte × one author-reported statistical test (one row for a time main effect across time points; one row per time-point contrast only when each contrast is the reported test). Omics: one assay_universe_summary row per analysis universe (platform × matrix × analysis route) plus one named_immune_candidate row per candidate named in the main text, main tables or figure legends; supplementary result tables are summarised in the universe row by counts and locators; candidates prespecified in the original aims/methods are always enumerated (including nulls); set-level results (pathways, modules, hit counts) as one reported_result_summary row per analysis.",
       "records": [],
       "blank_record": {
         "measurement_id": null,
@@ -268,7 +268,7 @@
         "cohort_id -> cohorts.cohort_id",
         "measurement_id -> measurements.measurement_id (optional)"
       ],
-      "row_unit": "one report/cohort/measurement × one domain",
+      "row_unit": "one report × cohort × marker_family × one domain (default: one set of seven domain rows per report × cohort × marker family, measurement_id null); an additional analyte-level row (measurement_id = one measurement ID) only for a domain where the report gives analyte-specific evidence. No rows for background reports.",
       "records": [],
       "blank_record": {
         "precision_record_id": null,
@@ -294,7 +294,8 @@
         "intended_use": null,
         "linkage_subtype": null,
         "validation_use_subtype": null,
-        "validation_split": null
+        "validation_split": null,
+        "marker_family": null
       }
     },
     "extraction_provenance": {
@@ -352,18 +353,23 @@
     "Every sample, measurement and precision report_id/study_id/cohort_id tuple exists in report_cohort_links.",
     "Each measurement.sample_set_ids[] belongs to its report as well as its cohort/study; optional precision measurement_id, when present, matches the same report/study/cohort.",
     "Cohort-specific A/B membership uses report_cohort_links.scope_streams; one cohort in both streams is counted once overall.",
-    "sample_sets.within_organising_window agrees with time_bin through time_bin_window_position."
+    "sample_sets.within_organising_window agrees with time_bin through time_bin_window_position.",
+    "Row IDs follow M-<ref>-NNN, SS-<ref>-NN and PV-<ref>-NNN in order of appearance; no custom prefixes.",
+    "precision_validation.measurement_id is a single measurement ID or null; precision_validation.marker_family, when filled, matches the marker_family of the measurements it summarises."
   ],
   "guardrails": [
     "No decisions or extracted scientific values are prefilled.",
     "No aggregate precision score, readiness score or ranking; domain rows feed only the validation-readiness map (see the validation-readiness map definition in this file; contract 8.3e).",
     "Participant n, biological samples, cells and technical replicates remain separate.",
-    "Named immune candidates found in original aims/methods and accessible supplements are recorded regardless of significance; unreported feature rows are not invented.",
-    "Values read from figures must be predeclared as a separate digitization procedure, tagged digitized_from_figure, and checked by two reviewers.",
+    "Immune candidates named in the main text, main tables or figure legends, and candidates prespecified in the original aims/methods, are recorded regardless of significance; supplementary result tables are summarised by counts and locators in the assay-universe row; unreported feature rows are not invented.",
+    "Figure-only values are not digitised: record direction and significance only, effect_value NR, figure_panel_locator filled, flag FIGURE_ONLY (PRE-004).",
     "Support B (retained; cross-bout open-window monitoring layer) requires same marker + same participants across >=2 distinct bout_id values, known timing and baseline/comparator; deduplicated against Core A by cohort_id.",
     "Samples later than 72 h after cessation are extracted and tagged outside_window_recovery; nothing is excluded for falling outside the 0-72 h organising window.",
     "Exercise duration and intensity are recorded as reported and never used as eligibility thresholds.",
     "Only adults (>= 18 y) or separable adult strata are charted; older adults are flagged as a subgroup.",
-    "Author open-window interpretation is a descriptive tag; it never affects eligibility or weighting."
+    "Author open-window interpretation is a descriptive tag; it never affects eligibility or weighting.",
+    "Background reports are charted at reduced depth (bibliographic, design, population, platforms, n), with no per-marker results and no precision_validation rows; one extractor plus one checker.",
+    "Screening and consensus fields are copied from the locked screening records only; no eligibility opinion is written into them.",
+    "Count fields hold integers or bare missing codes; explanations go to notes."
   ]
 }

@@ -63,8 +63,8 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{\small Open-window precision biomarkers}
-\fancyhead[R]{\small Protocol v3.0}
-\fancyfoot[L]{\small Pre-archive working protocol}
+\fancyhead[R]{\small Protocol v3.1}
+\fancyfoot[L]{\small Amended protocol (PRE-004, PRE-005, PRE-006); v3.0 archived}
 \fancyfoot[R]{\thepage}
 \setlength{\headheight}{14pt}
 \usepackage{bookmark}
@@ -89,25 +89,36 @@ window'': a scoping review of the validation readiness of conventional
 and omics
 candidates}\label{precision-biomarkers-of-the-exercise-induced-immune-open-window-a-scoping-review-of-the-validation-readiness-of-conventional-and-omics-candidates}
 
-\textbf{Protocol version:} 3.0 --- designed 4 October 2026; frozen by
-the team on 5 October 2026 for public archiving (GitHub Release v3.0,
-Zenodo DOI assigned on release)\\
-\textbf{Status:} Frozen protocol for public archiving; pilots, formal
-searches, screening and synthesis have not begun.\\
+\textbf{Protocol version:} 3.1 --- amendments PRE-004, PRE-005 and
+PRE-006 of 5 October 2026 to version 3.0 (designed 4 October 2026;
+frozen by the team and archived on 5 October 2026 as GitHub Release
+v3.0, Zenodo version DOI 10.5281/zenodo.23147973)\\
+\textbf{Status:} Version 3.0 is archived. The 50-record screening pilot
+and the 10-report charting pilot have been completed and accepted as
+calibration; amendment PRE-004 revises the charting rules and two
+screening rules, amendment PRE-005 introduces two-stage screening
+(title, then title/abstract), and amendment PRE-006 sets the databases
+to PubMed, Web of Science Core Collection and Scopus with a Google
+Scholar supplement, adds search-stage limits and adopts the single-route
+strategy v0.9 (E, L). The PubMed export of 5 October 2026 under strategy
+v0.7 is superseded and is not a formal search result; formal searches,
+screening, extraction and synthesis have not begun.\\
 \textbf{Target journal:} \emph{Frontiers in Immunology}, under the
 Systematic Review article type, which includes scoping reviews;
 specialty section to be selected. Submission will include the PRISMA-ScR
 checklist and flow diagram as supplementary material and an AI-use
 disclosure in both Methods and Acknowledgments stating tool name,
 version, model and source.\\
-\textbf{Registration and archiving:} Public GitHub repository with a
-GitHub Release archived by Zenodo, which assigns a dated, immutable
-version DOI and a concept DOI on release. No release exists, no DOI has
-been assigned, and this project has never been registered in any
-registry; PROSPERO does not accept scoping reviews and OSF Registries is
-no longer the planned route.\\
-\textbf{Team:} Access to all five databases and a second human reviewer
-are confirmed. Team members are identified by codes: A (principal
+\textbf{Registration and archiving:} Public GitHub repository with
+GitHub Releases archived by Zenodo. Version 3.0 was archived on 5
+October 2026 (version DOI 10.5281/zenodo.23147973; concept DOI
+10.5281/zenodo.23147972); version 3.1 receives its own version DOI under
+the same concept DOI on release. The project has never been registered
+in any registry; PROSPERO does not accept scoping reviews and OSF
+Registries is no longer the planned route.\\
+\textbf{Team:} Access to PubMed, Web of Science Core Collection, Scopus,
+Google Scholar and full texts, and a second human reviewer, are
+confirmed. Team members are identified by codes: A (principal
 investigator, independent PRESS reviewer, analysis and writing lead), B
 and C (independent reviewers), D (search lead, data manager,
 adjudicator). Funding and competing-interest declarations remain to be
@@ -149,7 +160,8 @@ omit the hypothesis.
 Candidates are charted by marker family. Conventional families include
 leukocyte and lymphocyte redistribution, natural-killer-cell counts and
 cytotoxicity, neutrophil function, T-cell subsets and function, mucosal
-secretory IgA, cytokines and other inflammatory mediators, and
+secretory IgA, mucosal antimicrobial proteins such as lactoferrin and
+lysozyme, cytokines and other inflammatory mediators, and
 immunoglobulins and complement. Omics families include immune-cell
 transcriptomics, proteomics, metabolomics and lipidomics, epigenomics,
 non-coding RNA and single-cell measurements. Higher measurement
@@ -390,7 +402,13 @@ an active infection. Athletes, recreational exercisers and untrained
 participants are eligible; training strata are charted separately. Older
 adults are eligible and flagged as a subgroup. Children and adolescents
 (\textless18 years) are excluded; mixed-age cohorts are eligible only
-where an adult stratum is separable in the report. This boundary
+where an adult stratum is separable in the report. A cohort, or each
+separately reported group, counts as adult when an explicit age range or
+minimum age of at least 18 years is reported, or when the mean minus two
+standard deviations is at least 18 years; descriptors such as ``adults''
+or ``students'' do not suffice. Otherwise the report remains awaiting
+classification, not excluded, unless it states that participants younger
+than 18 years were included (amendment PRE-004). This boundary
 distinguishes the review from the registered youth-athlete scoping
 review osf.io/4hsdr (10--17 years). Extractable healthy adult strata
 within cohorts of mixed health status are also eligible. Cohorts with
@@ -433,9 +451,12 @@ domains; it is presented separately from A. A cohort may meet both A and
 B; linked cohort identifiers prevent duplicate overall counting. General
 weekly or seasonal resting surveillance with unknown last-bout timing,
 training pre/post snapshots with unknown exercise-to-sampling intervals,
-and habitual-exercise cross-sectional comparisons are background only. A
-long observation period cannot substitute for an identifiable
-post-exercise time relation.
+and habitual-exercise cross-sectional comparisons are background only:
+when such a report is otherwise an original study of generally healthy
+adults with an eligible immune link, it is retained at full text under
+the administrative status RETAIN\_BACKGROUND and charted at reduced
+depth (G.1). A long observation period cannot substitute for an
+identifiable post-exercise time relation.
 
 Studies involving supplementation, diet or other co-interventions
 qualify only where an exercise contrast is interpretable separately, for
@@ -460,11 +481,14 @@ minimum sample size is imposed; small designs are clearly identified and
 appraised appropriately.
 
 The primary A/B map includes peer-reviewed original reports. Reviews
-support background and citation chasing. Animal-only or in-vitro-only
-studies, protocols, editorials, conference abstracts without a full
-original report and pure methods papers without eligible human exercise
-observations are excluded from the primary map; potentially relevant
-abstracts are tracked for full publications.
+inform the rationale and citation chasing; they are excluded from the
+map (FT01), not retained as background records. In the database
+searches, reviews are removed by a publication-type limit and kept as a
+logged list of citation-chasing sources (E). Animal-only or
+in-vitro-only studies, protocols, editorials, conference abstracts
+without a full original report and pure methods papers without eligible
+human exercise observations are excluded from the primary map;
+potentially relevant abstracts are tracked for full publications.
 
 A bounded supplementary search of bioRxiv and medRxiv will identify
 publicly available preprints meeting the same substantive PCC criteria.
@@ -479,11 +503,18 @@ labelled public preprints may be cited under current Frontiers guidance
 retrieval}\label{d.4-date-language-and-retrieval}
 
 Searches run from database inception to their actual execution dates. No
-search language restriction is applied. English and Chinese full texts
-are read directly; other languages use translation with independent
-human checking of eligibility and key data. Unresolved language or
-eligibility information remains awaiting classification rather than
-being automatically scientifically excluded.
+search date restriction is applied. The search-stage limits are those of
+amendment PRE-006 (E): the species and age limits in PubMed, the
+publication-type limits in all three databases and, by the team decision
+of 5 October 2026, an English-language limit and a journal-article
+document-type limit in all three databases. Reports in other languages
+or formats that reach the team through citation chasing, Google Scholar
+or the preprint supplement are still assessed: English and Chinese full
+texts are read directly; other languages use translation with
+independent human checking of eligibility and key data. The language
+limit is reported as a limitation. Unresolved language or eligibility
+information remains awaiting classification rather than being
+automatically scientifically excluded.
 
 Institutional access and lawful public copies will be used for full
 texts. A sought but unobtained report is ``not retrieved,'' not a
@@ -494,43 +525,90 @@ attempts and unresolved reports are logged.
 \subsection{E. Information sources and search
 strategy}\label{e.-information-sources-and-search-strategy}
 
-The five planned databases are PubMed, Web of Science Core Collection,
-Scopus, Embase and SPORTDiscus. PubMed is reported as PubMed rather than
-implying a separate MEDLINE-platform search. Embase platform choice is
-unresolved: draft Embase.com and Ovid translations are supplied for
-confirmation; execution of one platform is not claimed as two databases.
-The SPORTDiscus draft uses EBSCOhost. Exact collections, platforms,
-interfaces and coverage will be recorded.
+Under amendment PRE-006 (5 October 2026), the bibliographic databases
+are PubMed, Web of Science Core Collection and Scopus, and Google
+Scholar is searched as a documented supplementary source rather than as
+a core database. PubMed is reported as PubMed rather than implying a
+separate MEDLINE-platform search. The search lead (D) runs Web of
+Science and Scopus in their web interfaces and exports from there;
+application-programming-interface routes were abandoned. Exact
+collections, platforms, interfaces and coverage will be recorded. Embase
+and SPORTDiscus, planned up to version 3.0, were withdrawn for licence
+and feasibility reasons; the resulting limitation is stated below.
 
-The planned search is \textbf{E AND (I OR O) AND T}, where E represents
-exercise, I immune concepts, O omics and T post-exercise or acute-bout
-wording; the immune and omics routes are run within this structure and
-deduplicated. Controlled vocabulary and free-text fields are adapted to
-each platform. The immune route covers immune cells, mediators, function
-and mucosal immune terms; infection outcomes are not search concepts,
-because an infection outcome alone does not meet the immune-link rule
-(C), and infection outcomes are charted whenever an eligible study
-reports them. The omics route covers transcriptomics, RNA/non-coding
-RNA, proteomics, metabolomics, lipidomics, epigenetics and multi-omics.
+The planned search is a single route, \textbf{E AND I AND T}, where E
+represents exercise, I immune concepts and T post-exercise or acute-bout
+wording. Controlled vocabulary and free-text fields are adapted to each
+platform. The immune block covers immune cells, mediators, function and
+mucosal immune terms through a list of named immune concepts rather than
+the \texttt{immun*} truncation, so that method words such as
+immunoassay, immunoblot or immunofluorescence do not by themselves count
+as immune concepts; the bare words \texttt{complement} and
+\texttt{cytotoxic*} are searched in titles, with specific phrases in
+abstracts. Infection outcomes are not search concepts, because an
+infection outcome alone does not meet the immune-link rule (C), and
+infection outcomes are charted whenever an eligible study reports them.
 The exercise block includes relevant training, competition and sport
-terminology; the broad \texttt{train*} truncation is retained until its
-marginal yield has been tested on a pilot sample. The search is by
-construct, not by label: ``precision,'' ``biomarker,'' ``open window''
-and ``recovery'' are not mandatory search concepts, and the organizing
-window and all eligibility rules are applied at screening rather than in
-the query. The phrase ``open window'' is unsuitable as a filter---a
-PubMed title/abstract query combining it with exercise and immune terms
-returned 18 records for 2018--2026 at the 4 October 2026 re-check, and
-original studies rarely use it---so open-window-type terms may be added
-only as OR supplements or used for citation chasing, never as AND terms.
+terminology; generic exercise words (for example \texttt{sport*},
+\texttt{train*}, \texttt{competition*}, \texttt{race*},
+\texttt{endurance} and \texttt{aerobic}) are searched in titles only,
+and the bare term \texttt{run} and the loose pairing of
+\texttt{physical} with \texttt{activit*} are not used. The former omics
+route (E AND O AND T) is dropped: under the immune-link rule an eligible
+omics study must have an identifiable immune anchor, so E AND O AND I
+AND T is a subset of E AND I AND T, and none of 61 positive seeds was
+retrieved only by the omics route. The omics vocabulary
+(transcriptomics, RNA/non-coding RNA, proteomics, metabolomics,
+lipidomics, epigenetics and multi-omics) is kept for charting and
+tagging. Web of Science and Scopus are searched in the title, abstract
+and author-keyword fields rather than Topic or TITLE-ABS-KEY, provided
+that D's test on 10 seeds loses no seed; otherwise the broad fields are
+used. The search is by construct, not by label: ``precision,''
+``biomarker,'' ``open window'' and ``recovery'' are not mandatory search
+concepts, and the organizing window is applied at screening. The phrase
+``open window'' is unsuitable as a filter---a PubMed title/abstract
+query combining it with exercise and immune terms returned 18 records
+for 2018--2026 at the 4 October 2026 re-check, and original studies
+rarely use it---so open-window-type terms may be added only as OR
+supplements or used for citation chasing, never as AND terms.
 
-Amendment PRE-003 (4 October 2026) makes T a required concept instead of
+Version 3.0 applied all eligibility rules at screening rather than in
+the query. Amendment PRE-006 moves part of three rules into the query.
+(a) In PubMed, animal-only records are removed with
+\texttt{NOT\ (animals{[}mh{]}\ NOT\ humans{[}mh{]})}, the form used by
+Cochrane and CADTH, which keeps records not yet indexed with MeSH. (b)
+Reviews, editorials, letters, comments and case reports are removed by
+publication type in PubMed, and the equivalent document types are
+excluded in Web of Science (Review, Editorial Material, Letter,
+Correction) and Scopus (re, ed, le, no, er, sh, cr). (c) In PubMed,
+child-only records are removed with
+\texttt{NOT\ ((infant{[}mh{]}\ OR\ child{[}mh{]}\ OR\ adolescent{[}mh{]})\ NOT\ adult{[}mh{]})},
+which keeps mixed-age and unindexed records. (d) By the team decision of
+5 October 2026, taken after D's first Web of Science and Scopus runs,
+the core routes are further limited to English-language records and to
+journal articles: PubMed
+\texttt{AND\ english{[}la{]}\ NOT\ preprint{[}pt{]}} (preprints stay in
+the supplementary preprint search), Web of Science
+\texttt{DT=(Article)\ AND\ LA=(English)} (records flagged Article and
+Early Access remain) and Scopus
+\texttt{DOCTYPE(ar\ OR\ ip)\ AND\ LANGUAGE(english)} (articles in press
+kept). Conference papers, meeting abstracts, book chapters and data
+papers are therefore dropped at search, consistent with FT01 and the
+title-stage closed list. These limits implement part of FT02
+(animal-only studies), FT01 (source type) and FT03 (children only) in
+the query. The codes and their hierarchy are unchanged and apply at
+screening to every record the limits do not remove; Web of Science and
+Scopus have no species or age tag, so FT02 and FT03 remain screening
+rules for their records. Reviews removed by limit (b) are not screened;
+they are kept as a logged list of citation-chasing sources.
+
+Amendment PRE-003 (4 October 2026) made T a required concept instead of
 a diagnostic block; T expresses that measurements follow an identifiable
 bout and does not encode the 0--72 hour window, which is still applied
 at screening. In PubMed parser validation on 4 October 2026, the
 construct-at-screening query E AND (I OR O) returned 255,019 records,
 about 8,500 person-hours of two-reviewer title/abstract screening before
-records from the other four databases (assumed to add 1.5--2.5 times the
+records from the other databases (assumed to add 1.5--2.5 times the
 PubMed volume before deduplication), whereas requiring T returned about
 15,900 records in the decision test and 20,090 records with the
 finalised v0.7 T block, retrieving all 10 positive PubMed seeds in both
@@ -548,23 +626,86 @@ named as citation-chasing sources (Peake et al.~{[}15{]}, Campbell and
 Turner {[}1{]}, Simpson et al.~{[}16{]}, Xie et al.~{[}17{]} and Shi et
 al.~{[}18{]}).
 
-Full working strategies and a search-log template are in
-\texttt{03\_search}. The PubMed strings were parser-validated on 4
-October 2026, and the independent PRESS review {[}11{]} was accepted
-with conditions on the same date (T required, no infection-outcome
-terms, \texttt{train*} retained pending the pilot test); the
-translations for the four licensed platforms remain \textbf{drafts, not
-platform-validated searches}. PRESS revisions and the resolution of
-comments are retained. Known eligible and boundary examples will test
-strategy behavior; the v3 seed list includes open-window-centred
-original studies of conventional indices (for example salivary IgA,
-natural-killer-cell and lymphocyte redistribution responses after
-prolonged exercise) and boundary cases (immediate-only sampling,
-sampling only beyond 72 hours, youth cohorts and resting training
-studies). Retrieval of a few selected positive seeds is a debugging
-check, not an estimate of overall recall. A seed not retrieved will be
-investigated; strategy changes must retain a conceptual rationale rather
-than simply fitting known papers.
+Strategy v0.9, which implements PRE-006, rests on PubMed diagnostic
+counts of 5 October 2026; these are diagnostics, not formal searches.
+The v0.7 union of both routes returned 20,090 records. Adding the
+animal-only exclusion, title-only generic exercise words and the
+publication-type exclusion (v0.8) gave 11,448; adding the child-only
+exclusion, the removal of \texttt{run} and of the physical-activity
+pairing, the named immune list and the title restriction of
+\texttt{complement} and \texttt{cytotoxic*} gave 9,577; removing four
+generic timing phrases from T (``time course,'' ``time-course,'' ``pre
+and post,'' ``baseline and post'') gave 8,909; keeping only the route E
+AND I AND T gave 7,733; and adding recall terms to T (unhyphenated
+preexercise, postrace and prerace; ``hr after'' and ``hr post'' forms;
+``h,'' ``min'' and ``hours of recovery''; ``acute effects''; and the
+race and event nouns marathon\emph{, ultramarathon}, triathlon* and
+ironman) gave 8,013 records for the v0.9 query with the three NOT limits
+(run at 2026-10-05T13:03:39Z; SHA-256 prefix of the query e30ec141aac4).
+With the English-language limit and the removal of preprints from the
+core route (decision of 5 October 2026), the final v0.9 PubMed route
+returns 7,846 records (run at 2026-10-05T13:23:01Z; SHA-256 prefix
+6ad15420fe1f); the only seed that drops out is POS-S3, a preprint that
+belongs to the supplementary preprint search. The final query retrieved
+all 10 original positive seeds and 50 of the 51 expanded positive seeds;
+the missed seed was also missed by v0.7, and the six v0.7 misses that
+were recovered depend on recall terms chosen after those misses, so this
+is not an independent recall estimate. Relative to v0.7, the only
+seed-list records lost were the youth boundary seed, removed by the
+child-only exclusion as intended, and one record advanced in the
+50-record pilot whose immune match was a method word. For comparison, 23
+published reviews in the field identified a median of 2,360 records from
+databases (broad multi-family and scoping reviews: median 4,690, maximum
+10,976; \texttt{03\_search/strategy\_review\_2026-10-05.md}). The
+projected unique volume across PubMed, Web of Science, Scopus and the
+Google Scholar supplement is roughly 9,000--13,000 records.
+
+Full working strategies (v0.9) and a search-log template are in
+\texttt{03\_search}. The PubMed v0.9 strings have been run only as
+diagnostics, and the Web of Science and Scopus translations remain
+\textbf{drafts, not platform-validated searches}, until D's seed tests.
+A's PRESS sign-off of 4 October 2026 applied to strategy v0.7 and is
+void under PRE-006; A re-reviews v0.9 under PRESS {[}11{]} before any
+formal search. PRESS revisions and the resolution of comments are
+retained. The PubMed export of 5 October 2026 under v0.7 and D's first
+Web of Science export batch for the former omics route are superseded;
+they are kept as artefacts and are not PRISMA counts. Known eligible and
+boundary examples will test strategy behavior; the v3 seed list includes
+open-window-centred original studies of conventional indices (for
+example salivary IgA, natural-killer-cell and lymphocyte redistribution
+responses after prolonged exercise) and boundary cases (immediate-only
+sampling, sampling only beyond 72 hours, youth cohorts and resting
+training studies). Retrieval of a few selected positive seeds is a
+debugging check, not an estimate of overall recall. A seed not retrieved
+will be investigated; strategy changes must retain a conceptual
+rationale rather than simply fitting known papers.
+
+Google Scholar is searched as a supplementary source. Because Google
+Scholar limits queries to 256 characters and does not support
+truncation, a small set of short query strings is used; the strings are
+drafted in the strategy file in \texttt{03\_search}, reviewed under
+PRESS with the rest of v0.9 and recorded verbatim. For each string, the
+first 200 results sorted by relevance are examined, and the search date,
+the number of results screened and the stopping rule are logged. Records
+found enter the same two-stage screening (F) and are reported under
+PRISMA-S {[}10{]} as a supplementary source.
+
+Withdrawing Embase and SPORTDiscus limits recall. Published comparisons
+show that Embase adds unique records in biomedical reviews; Bramer and
+colleagues found that MEDLINE, Embase, Web of Science and Google Scholar
+together were needed to reach about 98\% recall {[}ref to add{]}.
+SPORTDiscus indexes sport-science journals that are not all covered by
+Scopus or Web of Science. The search-stage limits add a smaller risk:
+PubMed records misindexed as animal-only, child-only or review, and Web
+of Science or Scopus records with an incorrect document type, are not
+screened. The English-language and article-only limits exclude
+non-English reports and non-article formats at search;
+exercise-immunology reports in other languages exist, so this is a
+recall limitation that is disclosed and only partly offset by citation
+chasing, which is not language-limited. Mitigations are backward and
+forward citation chasing of all included reports and of the five
+open-window reviews, the Google Scholar supplement and the expanded
+positive seed set; the limitation will be reported in the review.
 
 Backward references and forward citations of included reports and
 relevant neighboring reviews will be checked, including forward citation
@@ -595,11 +736,38 @@ available at protocol preparation.
 \subsection{F. Selection and
 calibration}\label{f.-selection-and-calibration}
 
-Two human reviewers independently screen \textbf{all} titles/abstracts
-and \textbf{all} sought full texts. At title/abstract stage, missing
-timing or methodological detail normally proceeds to full text rather
-than being guessed. AI does not make automatic exclusions or replace
-either reviewer.
+Screening has two record-level stages before full text (amendment
+PRE-005). At stage 1, two human reviewers independently screen the
+titles of \textbf{all} deduplicated records, seeing only the title,
+source, year, document type and identifiers. A record may be excluded at
+this stage only for a reason on a closed list that is evident from the
+title or document type: review, editorial, protocol or conference
+abstract (mapped to FT01); animal-only or in-vitro-only study (FT02); a
+cohort clearly under 18 years (FT03); no evident exercise or
+physical-activity context (FT04); or no evident immune, inflammatory or
+omics content (FT07). Every other record advances, including any record
+whose title is silent on a criterion. Consensus at stage 1 is automatic:
+a record advances if either reviewer advances it and is excluded only
+when both exclude it; conflicts are logged, not adjudicated. Abstracts
+are then completed for the retained records, taken in order from
+database exports that already contain them, from PubMed by PMID (or by
+DOI converted to a PMID), from the source database's full record and,
+failing these, by manual retrieval; a record without an obtainable
+abstract is screened on its title and other available text, flagged as
+such, and never excluded for that reason. At stage 2, two reviewers
+independently screen the titles and abstracts of \textbf{all} retained
+records under the version 3 rules, and they later screen \textbf{all}
+sought full texts. At title/abstract stage, missing timing or
+methodological detail normally proceeds to full text rather than being
+guessed. AI does not make automatic exclusions, replace either reviewer
+or show reviewers any hint at any stage. The split was adopted when the
+five-database volume under strategy v0.7 was estimated at 60,000--90,000
+records, and in response to uneven off-campus access to abstracts
+through database interfaces; title screening is about three to four
+times faster, and recall is protected by the narrow closed list and the
+advance-wins rule. Amendment PRE-006 later reduced the projected unique
+volume to roughly 9,000--13,000 records (E); the two stages are
+retained.
 
 After the v3.0 protocol has been archived (J) and before formal
 screening, a saved random procedure selects 50 records from a frozen
@@ -613,34 +781,47 @@ prevalence limitations. If the criterion is unmet, the manual is
 clarified and a fresh pilot is performed. If the pilot changes an
 eligibility rule, the protocol is re-released with justification before
 formal searching (J). The 50-record pilot does not confer final study
-eligibility. Full-text boundary exercises follow before formal full-text
-screening.
+eligibility. Under version 3.1, a 100-record title pilot drawn from the
+deduplicated formal union with a saved seed must reach at least 80\% raw
+agreement on the binary title disposition (advance versus exclude)
+before formal stage 1, and, because version 3.1 changed the screening
+codes, a 25-record title/abstract re-calibration drawn from the stage-1
+retained set, judged by the original criterion, precedes formal stage 2.
+Full-text boundary exercises follow before formal full-text screening.
 
-Disagreements are discussed; unresolved decisions go to a predesignated
-adjudicator whose name must be supplied before formal screening. Changes
-to an eligibility interpretation are dated and applied to previously
-screened records when relevant. Operational records retain separate
-independent decisions and the consensus decision.
+At stage 2 and at full text, disagreements are discussed; unresolved
+decisions go to a predesignated adjudicator whose name must be supplied
+before formal screening. Changes to an eligibility interpretation are
+dated and applied to previously screened records when relevant.
+Operational records retain separate independent decisions and the
+consensus decision.
 
 The screening manual defines this fixed primary exclusion hierarchy:
 FT01 ineligible source type; FT02 not original human research; FT03
-ineligible population, including cohorts under 18 years without a
-separable adult stratum; FT04 no qualifying identifiable exercise
-context, where any intensity, duration or mode qualifies and the code
-applies only when no identifiable bout, or for B no qualifying
-repeated-bout relation, can be established; FT05 no post-cessation
-sample, where sampling only beyond 72 hours is not a reason for this
-code because the organizing window is a charting frame; FT06 no baseline
-or suitable comparator; FT07 no eligible immune link; FT08 inseparable
-mixed intervention. Only the first established scientific reason is
-assigned at full-text exclusion; secondary concerns and supporting
-passages remain in notes. Unresolved information is not treated as an
-established failure. Duplicate reports/versions, not-retrieved reports
-and awaiting-classification records have administrative statuses outside
-the scientific exclusion hierarchy. The actual flow will reconcile
-identification, duplicates, screening, sought/retrieved reports,
-exclusions and included reports/cohorts, with the frontier register
-separate. Counts remain unavailable, not zero, until work is performed.
+ineligible population, including cohorts stated to include participants
+under 18 years without a separable adult stratum (age rule in D.1); FT04
+no qualifying identifiable exercise context, where any intensity,
+duration or mode qualifies and the code applies only when no
+identifiable bout, or for B no qualifying repeated-bout relation, can be
+established; FT05 no post-cessation sample, where sampling only beyond
+72 hours is not a reason for this code because the organizing window is
+a charting frame; FT06 no baseline or suitable comparator; FT07 no
+eligible immune link; FT08 inseparable mixed intervention. Only the
+first established scientific reason is assigned at full-text exclusion;
+secondary concerns and supporting passages remain in notes. Unresolved
+information is not treated as an established failure. Duplicate
+reports/versions, not-retrieved reports and awaiting-classification
+records have administrative statuses outside the scientific exclusion
+hierarchy. So does RETAIN\_BACKGROUND (amendment PRE-004), assigned at
+full text to background reports as defined in D.2: it carries no
+exclusion code (the failed dimension is kept as a secondary note),
+appears as a separate line in the flow diagram and places the report in
+a background register outside every original-study denominator. The
+actual flow will reconcile identification, duplicates, title screening
+(with stage-1 exclusions by closed-list reason), title/abstract
+screening, sought/retrieved reports, exclusions and included
+reports/cohorts, with the frontier register separate. Counts remain
+unavailable, not zero, until work is performed.
 
 \subsection{G. Data charting}\label{g.-data-charting}
 
@@ -655,6 +836,11 @@ population boundary case. These reports are training material, not ten
 included studies, and may include cases ultimately excluded. Their
 source, selection rationale and unresolved questions are recorded in the
 pilot manifest. Pilot refinements are versioned before full extraction.
+The charting pilot was run on 5 October 2026 with AI agents standing in
+for both extractors; the team accepted it as calibration of rule
+clarity, not as human inter-rater agreement. Its findings, chiefly
+undefined row units, led to amendment PRE-004 (L), and a reduced human
+calibration round on the revised rules precedes formal extraction.
 
 Two humans independently extract eligibility, timing, sample sizes,
 effects/uncertainty, precision domains, functional/clinical outcomes,
@@ -667,7 +853,10 @@ generated from those JSON templates by
 \texttt{scripts/build\_workbooks.py}, and CSV exports are versioned in
 git. Data use linked report, study and cohort tables with long-form
 assay/marker/time/comparison records. Raw independent extractions and
-reconciled data are retained separately.
+reconciled data are retained separately. Background reports (D.2) are
+charted by one extractor and verified by a second person, limited to
+bibliographic data, design, population, assay platforms and sample
+sizes, without per-marker results or precision-domain records.
 
 \subsubsection{G.2 Charting domains}\label{g.2-charting-domains}
 
@@ -730,19 +919,43 @@ reconciled data are retained separately.
   outcome, biomarker timing relative to onset and follow-up duration.
 \end{itemize}
 
-For large omics datasets, chart the assay-level tested universe and all
-named immune candidates meeting the original aims/methods definition in
-accessible main text and supplements, regardless of significance. Retain
-reported feature counts and linked accessible supplements rather than
-inventing thousands of unreported rows. Record any candidate-selection
-rule and unavailable supplementary data. Preserve result units and avoid
-selecting only significant features. Unreported effect sizes are NR.
-Figure-derived extraction must identify the source figure/panel, reading
-or digitization method, software/settings, units and uncertainty
-handling; two reviewers independently check the source and values and
-retain their extractions and reconciliation. Estimated values are not
-presented as directly reported data. Where reliable extraction is
-impossible, use NR or UNCLEAR with the reason.
+For large omics datasets, chart one summary record of the tested
+universe per analysis and every immune candidate named in the main text,
+main tables or figure legends, regardless of significance; candidates
+prespecified in the original aims or methods are always charted,
+wherever their results appear. Features reported only in supplementary
+result tables are summarized by counts and locations rather than charted
+one by one, and unreported rows are never invented. Record any
+candidate-selection rule and unavailable supplementary data. Preserve
+result units and avoid selecting only significant features. Unreported
+effect sizes are NR. Values shown only in figures are not digitized: the
+direction and statistical significance are charted from the figure,
+legend or text, the figure panel is recorded, and the value is NR and
+flagged as figure-only. Estimated values are never presented as directly
+reported data. Where reliable extraction is impossible, use NR or
+UNCLEAR with the reason.
+
+Charting units and conventions are fixed by amendment PRE-004. A
+measurement record is one named analyte by one author-reported
+statistical test, plus the omics summary records above. A sample-set
+record is one cohort by group or arm by matrix by time point as sampled;
+assay platforms are listed as a field, with separate records per
+platform only when platform-specific sample sizes are reported.
+Precision-domain records form one set of seven per report, cohort and
+marker family, with analyte-level records only where analyte-specific
+evidence exists. Recruited participants are counted before any
+exclusion; the analysed number is that for the primary immune outcome,
+other denominators are recorded in notes, and per-platform numbers are
+recorded separately where reported. Named analytes are assigned to a
+marker family by analyte, not by platform. Author open-window
+interpretations are coded from the authors' own voice (adopted
+rationale, discussion and conclusions), exhaustively, each with a source
+location. Publication status records peer-review and version status
+only; short-report formats are coded by their review status, and the
+article type is recorded with the version. Coded fields use controlled
+vocabularies, missing values follow a fixed not-applicable,
+not-reported, unclear order, and nothing is inferred from platform
+conventions, typical practice or figure icons.
 
 Participant count, biological sample count, cell count and technical
 repeats are different fields. The donor is the independent unit for
@@ -761,10 +974,14 @@ to \textless24 hours; 24 to 72 hours inclusive; \textgreater72 hours;
 and NR. Bins up to and including 24 to 72 hours lie within the
 organizing window; \textgreater72 hours is outside-window recovery. Bins
 are mutually exclusive display categories, not eligibility thresholds.
-Unknown timing is not imputed to a bin; uncertainty about exercise
-linkage may prevent main-map eligibility. Symptom/infection follow-up
-uses a separate time axis, with marker measurement before, concurrent
-with or after onset recorded explicitly.
+The numeric time is the earliest stated bound of a reported interval; an
+interval that straddles a bin boundary is assigned to the later bin and
+flagged; day-level timing is converted to nominal hours; and
+``immediately after'' without a number is assigned to 0 to \textless30
+minutes and flagged. Otherwise unknown timing is not imputed to a bin;
+uncertainty about exercise linkage may prevent main-map eligibility.
+Symptom/infection follow-up uses a separate time axis, with marker
+measurement before, concurrent with or after onset recorded explicitly.
 
 \subsection{H. Critical appraisal}\label{h.-critical-appraisal}
 
@@ -833,11 +1050,13 @@ Three primary evidence maps are planned:
   explicitly labelled gaps.
 \end{enumerate}
 
-The PRISMA flow is an additional process figure. Main tables describe
-study/cohort context, measurement/timing and limitations,
-individualization/validation evidence, and differences from adjacent
-reviews. Core A, support B and the frontier preprint register are
-visibly separated. Background sources do not enter original-study
+The PRISMA-ScR flow is an additional process figure. It reports counts
+for each screening stage, with a separate box for title screening whose
+exclusions are given by closed-list reason and its FT code (F). Main
+tables describe study/cohort context, measurement/timing and
+limitations, individualization/validation evidence, and differences from
+adjacent reviews. Core A, support B and the frontier preprint register
+are visibly separated. Background sources do not enter original-study
 denominators. Counts of studies reporting a direction may be descriptive
 but are not a vote-counting estimate of effect or truth. Null,
 contradictory and unreported findings remain visible.
@@ -856,18 +1075,21 @@ article-category label {[}14{]}.
 transparency}\label{j.-registration-archiving-governance-and-transparency}
 
 The protocol is archived publicly rather than registered in a review
-registry. After the research team freezes version 3.0, the public GitHub
-repository will be tagged and a GitHub Release archived automatically by
-Zenodo, which assigns a dated, immutable version DOI and a concept DOI
-for the record series; the DOI is assigned on release and cannot be
-stated earlier. The release precedes the 50-record screening pilot and
-the 10-report charting pilot, and formal five-database searching starts
-only after the archived release exists. If the pilots change a rule,
-version 3.1 is released with justification, as a new tag and version DOI
-under the same concept DOI, before formal searching. PROSPERO does not
-accept scoping reviews, and OSF Registries is no longer the planned
-route. At the date of this draft no release, DOI or registration of any
-kind exists, and the project has never been registered in any registry.
+registry. After the research team froze version 3.0, the public GitHub
+repository was tagged and the GitHub Release was archived automatically
+by Zenodo on 5 October 2026, which assigned a dated, immutable version
+DOI (10.5281/zenodo.23147973) and a concept DOI for the record series
+(10.5281/zenodo.23147972). The release preceded the 50-record screening
+pilot and the 10-report charting pilot, and formal database searching
+starts only after an archived release exists. Because the charting pilot
+changed charting rules, the team adopted two-stage screening and the
+database set and search strategy were revised, version 3.1 (amendments
+PRE-004, PRE-005 and PRE-006) is released with justification, as a new
+tag and version DOI under the same concept DOI, before formal searching;
+formal searching also waits for A's PRESS re-review of strategy v0.9.
+PROSPERO does not accept scoping reviews, and OSF Registries is no
+longer the planned route. The project has never been registered in any
+registry.
 
 Pre-archive knowledge is disclosed rather than denied. An internal
 protocol (version 1.0, January 2026) with its own literature collision
@@ -902,9 +1124,11 @@ declarations.
 AI has supported public-source reconnaissance, evidence organization,
 consistency checking and drafting in this project: Codex desktop with
 delegated agents on 2--3 October 2026, and Claude Code (Anthropic) on 4
-October 2026 for the collision re-check and this v3.0 revision. Tool
-names, versions, models, sources, dates, tasks, prompt/output references
-and human verification are logged in
+October 2026 for the collision re-check and the v3.0 revision, and on 5
+October 2026 for the AI-assisted charting pilot, the PubMed diagnostics
+of strategy v0.9 and the drafting of amendments PRE-004, PRE-005 and
+PRE-006. Tool names, versions, models, sources, dates, tasks,
+prompt/output references and human verification are logged in
 \texttt{01\_protocol/ai\_use\_log.json}, and the manuscript will
 disclose tool name, version, model and source in both Methods and
 Acknowledgments {[}14{]}. AI is not an author, human independent
@@ -919,11 +1143,11 @@ plan}\label{k.-roles-and-execution-plan}
 
 Roles to name are: principal investigator; reviewers A and B; search
 lead; independent PRESS reviewer; adjudicator; data/version manager; and
-analysis/writing lead. A second human reviewer and access to all five
-databases/full texts are available. Other roles may overlap where
-independence is preserved, but an adjudicator must be named before
-formal screening. Funding and competing interests cannot be inferred
-from the absence of information.
+analysis/writing lead. A second human reviewer and access to PubMed, Web
+of Science Core Collection, Scopus, Google Scholar and full texts are
+available. Other roles may overlap where independence is preserved, but
+an adjudicator must be named before formal screening. Funding and
+competing interests cannot be inferred from the absence of information.
 
 Screening, extraction and appraisal use Excel workbooks generated from
 the JSON templates in \texttt{04\_screening} and \texttt{05\_extraction}
@@ -946,10 +1170,11 @@ team comments, freeze version 3.0 and publish the archived release; and
 charting, with parallel work where feasible. If the pilots change a
 rule, a conditional re-release follows before formal searching. These
 are planning estimates, not a promised completion date. Full-review
-effort will be estimated after the 50-record screening pilot and
-10-report charting pilot, using actual yields and per-record effort. A
-provisional budget should distinguish two-person screening/extraction
-from single-person work and allow adjudication and update searches.
+effort will be estimated after the 50-record screening pilot, the
+100-record title pilot and the 10-report charting pilot, using actual
+yields and per-record effort. A provisional budget should distinguish
+two-person screening/extraction from single-person work and allow
+adjudication and update searches.
 
 The local execution plan and archive release record specify stage gates
 and deliverables. Formal stages remain pending until the required human
@@ -970,36 +1195,108 @@ precision/biomarker/open-window terms; added cohort linkage, complete
 outcome/validation fields, design-appropriate descriptive appraisal and
 AI transparency; and removed unsupported novelty claims.
 
-Version 3.0 (this draft, 4 October 2026) follows the collision re-check
-of the same date. It re-adopts the open window as the organizing
-construct that defines the 0--72 hour post-exercise window, the sampling
-time points and the marker families, without adjudicating whether it
-exists; defines the per-marker validation-readiness map as the
-deliverable; removes any exercise intensity, duration or mode threshold;
-restricts the population to adults aged 18 years or older, with older
-adults as a subgroup; retains Support B as the cross-bout monitoring
-layer; adds the author open-window interpretation tag, marker family and
-window-position fields; replaces OSF registration with a public GitHub
-repository and a Zenodo-archived Release, to be published after team
-freeze and before the pilots; specifies Excel workbooks generated from
-the JSON templates with scripted merging and agreement; adopts CC BY 4.0
-for documents and MIT for scripts; and adds the Frontiers in Immunology
-submission requirements (PRISMA-ScR checklist and flow diagram, AI-use
-disclosure in Methods and Acknowledgments). Amendment PRE-003 (4 October
-2026, decision by A; included in the v3.0 release) makes the
+Version 3.0 (designed 4 October 2026; frozen and archived 5 October
+2026) follows the collision re-check of 4 October 2026. It re-adopts the
+open window as the organizing construct that defines the 0--72 hour
+post-exercise window, the sampling time points and the marker families,
+without adjudicating whether it exists; defines the per-marker
+validation-readiness map as the deliverable; removes any exercise
+intensity, duration or mode threshold; restricts the population to
+adults aged 18 years or older, with older adults as a subgroup; retains
+Support B as the cross-bout monitoring layer; adds the author
+open-window interpretation tag, marker family and window-position
+fields; replaces OSF registration with a public GitHub repository and a
+Zenodo-archived Release, to be published after team freeze and before
+the pilots; specifies Excel workbooks generated from the JSON templates
+with scripted merging and agreement; adopts CC BY 4.0 for documents and
+MIT for scripts; and adds the Frontiers in Immunology submission
+requirements (PRISMA-ScR checklist and flow diagram, AI-use disclosure
+in Methods and Acknowledgments). Amendment PRE-003 (4 October 2026,
+decision by A; included in the v3.0 release) makes the
 post-exercise/acute-bout block T a required search concept (E AND (I OR
 O) AND T) on PubMed validation evidence, with an expanded seed set, a
 T-free pilot sensitivity run and citation chasing as mitigations, and
 records the PRESS conditions (no infection-outcome terms;
-\texttt{train*} retained pending the pilot test). The v3.0 date becomes
-the actual team freeze date at release.
+\texttt{train*} retained pending the pilot test).
 
-The scope and operational design are ready for team freeze. Still
-pending are named administrative declarations, verification of the four
-licensed database platforms, the Zenodo release, human pilots, archived
-appraisal forms and local software configuration. Subsequent formal
-searches, screening, extraction and synthesis are distinct execution
-stages and have not been performed.
+Version 3.1 (5 October 2026) implements amendment PRE-004 (decision by
+A), adopted after the 10-report charting pilot, in which AI agents stood
+in for both extractors and which the team accepted as calibration of
+rule clarity; most disagreements arose from undefined row units rather
+than misreading. It fixes the charting units for measurements, sample
+sets and precision-domain records (adding an optional marker-family
+column to the precision records); adds the marker family ``mucosal
+antimicrobial protein'', sample roles for periodic training monitoring
+and resting habitual groups, and a candidate-selection value for
+statistically selected hits; converts matrix, exercise mode, training
+status, design and time unit to controlled lists; defines time-bin
+boundary rules, denominators, missing-value coding,
+author-interpretation coding and publication status for short reports;
+adds the administrative full-text status RETAIN\_BACKGROUND, with
+background reports charted at reduced depth by one extractor and one
+checker; makes the adult age rule operational (explicit range or minimum
+of at least 18 years, or mean minus two standard deviations of at least
+18 years; otherwise awaiting classification); and replaces figure
+digitization with direction-and-significance charting of figure-only
+results. Time-bin identifiers, the seven precision domains and the
+legacy field names are unchanged. Three optional proposals (association
+values for result direction, a per-contrast denominator field and
+study-family rules) are deferred. No formal search, screening or
+extraction had been performed when the amendment was adopted.
+
+Version 3.1 also implements amendment PRE-005 (5 October 2026, decision
+by A), which replaces the single title/abstract stage with two-stage
+screening (F). Stage 1 screens titles only, with exclusion limited to a
+closed list of title-evident reasons mapped to FT01--FT04 and FT07,
+automatic advance-wins consensus and a 100-record title pilot (at least
+80\% raw agreement) before formal use. Abstracts are then completed for
+the retained records in a fixed source order, and records without an
+obtainable abstract are flagged rather than excluded. Stage 2 applies
+the unchanged version 3 title/abstract rules after a 25-record
+re-calibration. The PRISMA-ScR flow gains a title-screening box. The
+reason is feasibility: five-database volume was estimated at
+60,000--90,000 records from the counts of 5 October 2026 (PubMed 20,090;
+exercise--omics (EO) route 6,669 in Web of Science and 6,159 in Scopus),
+abstracts are not uniformly available through database interfaces off
+campus, and title screening is about three to four times faster. Recall
+is protected by the narrow closed list and the advance-wins rule. No
+formal records had been screened.
+
+Version 3.1 also implements amendment PRE-006 (5 October 2026, decision
+by A), ``Database set, search-stage limits and strategy v0.9'' (E). The
+databases are PubMed, Web of Science Core Collection and Scopus, with
+Google Scholar as a documented supplementary source; Embase and
+SPORTDiscus are withdrawn for licence and feasibility reasons, and the
+loss of recall is disclosed as a limitation with citation chasing, the
+Google Scholar supplement and the expanded seed set as mitigations.
+PubMed animal-only and child-only exclusions and publication-type or
+document-type limits in all three databases move part of FT02, FT03 and
+FT01 into the query; removed reviews become a logged citation-chasing
+list. Strategy v0.9 restricts generic exercise words to titles, replaces
+\texttt{immun*} with named immune concepts, restricts bare
+\texttt{complement} and \texttt{cytotoxic*} to titles, revises the T
+block and drops the omics route, leaving E AND I AND T; Web of Science
+and Scopus use title, abstract and author-keyword fields if D's 10-seed
+test loses no seed. In PubMed diagnostics on 5 October 2026 the volume
+fell from 20,090 records (v0.7) to 8,013 (v0.9 with the three NOT
+limits) and 7,846 with the English-language and preprint limits, with no
+peer-reviewed positive seed retrievable by v0.7 lost. A's PRESS sign-off
+of strategy v0.7 is void and A re-reviews v0.9 before the formal search.
+The PubMed v0.7 export of 5 October 2026 and D's first Web of Science
+batch for the omics route are superseded artefacts, not PRISMA counts;
+the 50-record screening pilot, the 10-report charting pilot and the
+200-record T-free sample remain valid calibration, and citation-chasing
+flags for records already in the pool are recomputed against the v0.9
+pool. No formal records had been screened.
+
+Still pending are named administrative declarations, A's PRESS re-review
+of strategy v0.9, D's seed tests and platform verification in Web of
+Science and Scopus, the Google Scholar search strings, the v3.1 Zenodo
+release, the reduced human charting calibration on the revised rules,
+the 100-record title pilot and the 25-record title/abstract
+re-calibration, archived appraisal forms and local software
+configuration. Subsequent formal searches, screening, extraction and
+synthesis are distinct execution stages and have not been performed.
 
 \subsection{References}\label{references}
 

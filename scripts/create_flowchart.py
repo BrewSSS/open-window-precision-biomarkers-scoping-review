@@ -35,7 +35,7 @@ box(110,395,560,112,'Calibration pilots (two humans)',['50-record screening pilo
 box(730,395,320,112,'Conditional re-release',['Only if pilots change rules:','new tag + new version DOI'],'#fbfcfc',dashed=True)
 arrow(670,451,726,451,dashed=True)
 arrow(390,507,390,540);arrow(890,507,710,540,dashed=True)
-box(180,540,740,100,'Execute formal searches and independent dual screening',['Five databases: exercise AND (immunity OR omics); window at screening','Formal searches and flow counts: NOT YET AVAILABLE'])
+box(180,540,740,100,'Execute formal searches and independent dual screening',['PubMed, WoS, Scopus + Google Scholar: E AND I AND T; window at screening','Formal searches and flow counts: NOT YET AVAILABLE'])
 arrow(410,640,275,680);arrow(690,640,825,680)
 box(50,680,450,122,'CORE A: acute challenge',['Adults ≥18 y; identifiable bout, any intensity','Post-cessation sample + baseline/comparator','0–72 h organising window; >72 h tagged'],'#e4f0ef')
 box(600,680,450,122,'SUPPORT B: repeated bouts',['Same marker / person after ≥2 bouts','Known exercise-to-sample timing','Baseline or comparator; chart separately'],'#e4f0ef')

@@ -2,16 +2,20 @@
 """Merge two independent reviewer screening exports and summarise agreement and PRISMA counts.
 
 Subcommands
-  merge    --stage TA|FT --a A.(csv|xlsx) --b B.(csv|xlsx) [--reconciled R.csv] [--calibration-ids ids.txt]
-           [--population merged_TA.csv] --out-dir DIR
+  merge    --stage TI|TA|FT --a A.(csv|xlsx) --b B.(csv|xlsx) [--reconciled R.csv] [--calibration-ids ids.txt]
+           [--planned-size N] [--population merged_TI.csv (TA) | merged_TA.csv (FT)] --out-dir DIR
            -> DIR/merged_<stage>.csv, DIR/conflicts_<stage>.csv, DIR/agreement_<stage>.json
-  prisma   [--master records_master.(csv|xlsx)] [--ta merged_TA.csv] [--ft merged_FT.csv] --out prisma.csv
+           TI (v3.1, PRE-005: title screening): the final disposition is computed by the advance-wins rule
+           (build_workbooks.ti_consensus); conflicts are listed and counted but need no reconciliation.
+  prisma   [--master records_master.(csv|xlsx)] [--ti merged_TI.csv] [--ta merged_TA.csv] [--ft merged_FT.csv]
+           [--master-ta stage-2 records_master.(csv|xlsx)] --out prisma.csv
   selftest  synthetic example (temporary files only): checks Python kappa against a textbook value and
             against the screening workbook formulas recalculated by LibreOffice (skipped if soffice is absent).
 
 Inputs: the reviewer sheets of templates_xlsx/screening_workbook.xlsx (screen_<stage>_reviewer_A/B), saved by
 Excel/LibreOffice so formula results are cached, or CSV exports of those sheets. Column names come from
-04_screening/screening_log_template.json (record_id, decision, primary_reason | primary_exclusion_code).
+04_screening/screening_log_template.json (record_id, decision, primary_reason | primary_exclusion_code); the TI
+closed-list codes come from 04_screening/fulltext_exclusion_codes.json (title_stage_closed_list).
 Code lists come from the JSON templates via build_workbooks.screening_enums().
 
 Rules: values outside the code lists stop the merge; the two exports must contain the same record_ids;
@@ -82,6 +86,11 @@ def default_sheet(path: Path, stage: str, reviewer: str) -> str | None:
 
 
 def stage_cfg(E: dict, stage: str) -> dict:
+    if stage == 'TI':
+        if not E.get('ti'):
+            raise MergeError('the screening templates define no TI stage (screening_disposition_stages)')
+        return {'decisions': E['ti'], 'reason': 'primary_reason', 'reasons': E['ti_codes'],
+                'group': E['ti_binary_map'], 'group_labels': E['ti_binary_labels'], 'sci_excl': []}
     if stage == 'TA':
         return {'decisions': E['ta'], 'reason': 'primary_reason', 'reasons': E['codes'],
                 'group': E['binary_map'], 'group_labels': E['binary_labels'], 'sci_excl': []}
@@ -135,6 +144,10 @@ def merge(rows_a, rows_b, stage: str, E: dict, reconciled=None, population=None)
                 bad.append(f'{who}:{rid}: decision {d!r} not in {stage} list')
             if c is not None and c not in cfg['reasons']:
                 bad.append(f'{who}:{rid}: {rf} {c!r} not in code list')
+            if stage == 'TI' and d in E['ti_excl'] and c is None:
+                bad.append(f'{who}:{rid}: {d} without a closed-list reason')
+            if stage == 'TI' and d is not None and d not in E['ti_excl'] and c is not None:
+                bad.append(f'{who}:{rid}: {rf} {c!r} given with {d} (only {"/".join(E["ti_excl"])} takes a reason)')
     recon = {}
     for r in reconciled or []:
         rid = r.get('record_id')
@@ -152,15 +165,14 @@ def merge(rows_a, rows_b, stage: str, E: dict, reconciled=None, population=None)
         raise MergeError('invalid values:\n  ' + '\n  '.join(bad[:50]))
 
     ids = list(A)
-    if stage == 'FT':
-        if population is not None:
-            pop = set(population)
-            missing = sorted(pop - set(ids))
-            if missing:
-                raise MergeError(f'population records missing from FT exports: {missing[:20]}')
-            ids = [i for i in ids if i in pop]
-        else:
-            ids = [i for i in ids if A[i].get('decision') or B[i].get('decision')]
+    if population is not None and stage in ('TA', 'FT'):
+        pop = set(population)
+        missing = sorted(pop - set(ids))
+        if missing:
+            raise MergeError(f'population records missing from {stage} exports: {missing[:20]}')
+        ids = [i for i in ids if i in pop]
+    elif stage == 'FT':
+        ids = [i for i in ids if A[i].get('decision') or B[i].get('decision')]
 
     merged, exact_pairs, group_pairs = [], [], []
     for rid in ids:
@@ -171,16 +183,20 @@ def merge(rows_a, rows_b, stage: str, E: dict, reconciled=None, population=None)
         ga = cfg['group'].get(da) if da else None
         gb = cfg['group'].get(db) if db else None
         gagree = (1 if ga == gb else 0) if both else None
-        code_agree = None
+        code_agree = reason_agree = None
         if stage == 'FT' and da in cfg['sci_excl'] and db in cfg['sci_excl']:
             code_agree = 1 if ca == cb else 0
-        conflict = 1 if (exact == 0 or code_agree == 0) else None
+        if stage == 'TI' and da in E['ti_excl'] and db in E['ti_excl']:
+            reason_agree = 1 if ca == cb else 0
+        conflict = 1 if (exact == 0 or code_agree == 0 or reason_agree == 0) else None
         if both:
             exact_pairs.append((da, db))
             group_pairs.append((ga, gb))
         final, fcode, fsrc = None, None, None
         if rid in recon and recon[rid][0]:
             final, fcode, fsrc = recon[rid][0], recon[rid][1], 'reconciled'
+        elif stage == 'TI' and both:
+            final, fcode, fsrc = bw.ti_consensus(da, db, ca, cb, E)   # advance wins; never unresolved
         elif both and not conflict:
             final, fcode, fsrc = da, (ca if da in cfg['sci_excl'] else None), 'agreement'
         elif both:
@@ -194,9 +210,13 @@ def merge(rows_a, rows_b, stage: str, E: dict, reconciled=None, population=None)
                            ('group_A', ga), ('group_B', gb), ('group_agree', gagree)])
         if stage == 'FT':
             row['code_agree'] = code_agree
+        if stage == 'TI':
+            row['reason_agree'] = reason_agree
         row.update([('conflict', conflict), ('final_disposition', final)])
         if stage == 'FT':
             row['final_primary_exclusion_code'] = fcode
+        if stage == 'TI':
+            row['final_primary_reason'] = fcode
         row['final_source'] = fsrc
         merged.append(row)
 
@@ -215,27 +235,38 @@ def merge(rows_a, rows_b, stage: str, E: dict, reconciled=None, population=None)
             stats[f'scientific_exclusions_by_code_{who}'] = {
                 c: sum(1 for r in merged if r[f'decision_{who}'] in cfg['sci_excl'] and r[f'{rf}_{who}'] == c)
                 for c in cfg['reasons']}
+    if stage == 'TI':
+        stats['consensus_rule'] = 'advance wins (screening_log_template field_schema.title_stage_rules.consensus_rule)'
+        stats['consensus_counts'] = {d: sum(1 for r in merged if r['final_disposition'] == d) for d in cfg['decisions']}
+        stats['exclusions_by_code_consensus'] = {
+            c: sum(1 for r in merged if r['final_disposition'] in E['ti_excl'] and r['final_primary_reason'] == c)
+            for c in cfg['reasons']}
+        stats['closed_list_ft_codes'] = {c: E['ti_code_info'][c]['ft_code'] for c in cfg['reasons']}
     stats['exact_disposition'] = cohen_kappa(exact_pairs)
     stats['group_disposition'] = cohen_kappa(group_pairs)
     stats['group_labels'] = cfg['group_labels']
     return merged, stats
 
 
-def calibration(merged, ids, E) -> dict:
+def calibration(merged, ids, E, stage: str = 'TA', planned: int | None = None) -> dict:
     by = {r['record_id']: r for r in merged}
-    planned = int(E['calibration']['planned_sample_size'])
+    cal = E['ti_calibration'] if stage == 'TI' else E['calibration']
+    thr = E['ti_threshold'] if stage == 'TI' else E['threshold']
+    labels = E['ti_binary_labels'] if stage == 'TI' else E['binary_labels']
+    planned = int(planned or cal['planned_sample_size'])
     found = [i for i in ids if i in by]
     pairs = [(by[i]['group_A'], by[i]['group_B']) for i in found if by[i]['group_A'] and by[i]['group_B']]
     k = cohen_kappa(pairs)
     out = {'planned_sample_size': planned, 'ids_given': len(ids), 'ids_not_in_pool': sorted(set(ids) - set(by)),
            'jointly_assessed': k['n'], 'agreements': k['agreements'], 'raw_agreement': k['raw_agreement'],
-           'kappa_descriptive': k['kappa'], 'kappa_note': k['note'], 'threshold': E['threshold'],
-           'binary_groups': E['binary_labels']}
+           'kappa_descriptive': k['kappa'], 'kappa_note': k['note'], 'threshold': thr,
+           'binary_groups': labels, 'stage': stage}
     if k['n'] < planned:
         out['status'] = f'INCOMPLETE: {k["n"]}/{planned} jointly assessed'
-    elif k['raw_agreement'] >= E['threshold']:
+    elif k['raw_agreement'] >= thr:
         out['status'] = ('RAW_AGREEMENT_CRITERION_MET (pass also requires every conceptual disagreement to be '
-                         'resolved and documented by the reviewers)')
+                         'resolved and documented by the reviewers)') if stage == 'TA' else 'PASS (raw agreement criterion)'
+
     else:
         out['status'] = 'NOT_PASSED: clarify manual and run a fresh round (new seed, unseen records)'
     return out
@@ -244,8 +275,9 @@ def calibration(merged, ids, E) -> dict:
 # ---------------------------------------------------------------------------------------------
 # PRISMA summary
 # ---------------------------------------------------------------------------------------------
-def prisma(E, master_rows=None, ta_rows=None, ft_rows=None):
-    """Return a list of (section, item, value, status, note); value is None unless status == COMPLETE."""
+def prisma(E, master_rows=None, ta_rows=None, ft_rows=None, ti_rows=None, ta_master_rows=None):
+    """Return a list of (section, item, value, status, note); value is None unless status == COMPLETE.
+    ti_rows: merged_TI rows (v3.1 title stage); ta_master_rows: stage-2 records_master (abstract_source)."""
     admin = set(E['admin'])
     ta_excl = E['ta_excl']
     ta_sought = [d for d in E['ta'] if d not in admin and d not in ta_excl]
@@ -273,6 +305,34 @@ def prisma(E, master_rows=None, ta_rows=None, ft_rows=None):
     for s in E['duplicates']:
         add('identification', f'duplicates_removed:{s}', sum(1 for r in dups if r['dedup_status'] == s), st)
 
+    # title screening (stage 1; v3.1, PRE-005)
+    ti_progress = []
+    if E.get('ti'):
+        ex = E['ti_excl'][0]
+        ti_progress = [d for d in E['ti'] if d not in E['ti_excl']]
+        if not ti_rows:
+            ti_st, ti_note = 'NOT_YET_PERFORMED', ''
+        else:
+            unresolved = sum(1 for r in ti_rows if not r.get('final_disposition'))
+            ti_st = 'COMPLETE' if unresolved == 0 else 'INCOMPLETE'
+            ti_note = '' if unresolved == 0 else f'{unresolved} of {len(ti_rows)} records without a final TI disposition'
+        ti_list = ti_rows or []
+        fti = Counter(r.get('final_disposition') for r in ti_list)
+        no_reason = sum(1 for r in ti_list if r.get('final_disposition') == ex and not r.get('final_primary_reason'))
+        add('screening_title', 'records_screened_TI', len(ti_list), ti_st, ti_note or 'stage 1: title, source, year, document type only')
+        add('screening_title', 'records_excluded_TI', fti[ex], ti_st, ti_note)
+        for c in E['ti_codes']:
+            add('screening_title', f'records_excluded_TI:{c}', sum(1 for r in ti_list if r.get('final_disposition') == ex
+                                                                     and r.get('final_primary_reason') == c),
+                ti_st if not no_reason else 'INCOMPLETE',
+                ti_note or (f'{no_reason} title exclusions lack a code' if no_reason else f'maps to {E["ti_code_info"][c]["ft_code"]}'))
+        add('screening_title', 'records_advanced_to_abstract_stage', sum(fti[d] for d in ti_progress), ti_st,
+            ti_note or f'final TI disposition in {ti_progress}')
+        add('screening_title', f'TI_{E["ti_fallback"]}', fti[E['ti_fallback']], ti_st,
+            'proceeds to stage 2; not an exclusion')
+        add('screening_title', 'conflicts_TI_logged', sum(1 for r in ti_list if r.get('conflict') in (1, '1')), ti_st,
+            'resolved by the advance-wins rule; not adjudicated')
+
     # title/abstract
     if not ta_rows:
         ta_st, ta_note = 'NOT_YET_PERFORMED', ''
@@ -284,6 +344,17 @@ def prisma(E, master_rows=None, ta_rows=None, ft_rows=None):
     fin = Counter(r.get('final_disposition') for r in ta_rows)
     add('screening', 'records_screened_TA', len(ta_rows), ta_st, ta_note)
     add('screening', 'records_excluded_TA', sum(fin[d] for d in ta_excl), ta_st, ta_note)
+    if E.get('ti'):
+        if not ta_rows:
+            add('screening', 'records_screened_TA_without_abstract', None, 'NOT_YET_PERFORMED')
+        elif not ta_master_rows:
+            add('screening', 'records_screened_TA_without_abstract', None, 'INCOMPLETE',
+                'stage-2 records_master (--master-ta) not supplied')
+        else:
+            src = {r.get('record_id'): r.get('abstract_source') for r in ta_master_rows}
+            add('screening', 'records_screened_TA_without_abstract',
+                sum(1 for r in ta_rows if src.get(r.get('record_id')) == 'abstract_unavailable'), ta_st,
+                ta_note or 'abstract_source = abstract_unavailable; screened on title and available text, not excluded')
     for d in E['ta']:
         if d not in ta_excl and d not in ta_sought:
             add('screening', f'TA_{d}', fin[d], ta_st, 'not a scientific exclusion; tracked separately')
@@ -317,6 +388,10 @@ def prisma(E, master_rows=None, ta_rows=None, ft_rows=None):
         ft_note or 'reports; study/cohort counts require report_cohort_links')
     for d in incl:
         add('included', f'reports_{d}', ff[d], ft_st, ft_note)
+    if E.get('ti') and ti_rows and ti_st == 'COMPLETE' and ta_st == 'COMPLETE':
+        adv = sum(fti[d] for d in ti_progress)
+        if adv != len(ta_rows):
+            add('checks', 'advanced_TI_vs_TA_rows', None, 'CHECK', f'advanced from TI={adv} but TA export has {len(ta_rows)} records')
     if ta_st == 'COMPLETE' and ft_st == 'COMPLETE':
         sought = sum(fin[d] for d in ta_sought)
         if sought != len(ft_rows):
@@ -354,16 +429,23 @@ def cmd_merge(args, E):
     recon = read_table(args.reconciled) if args.reconciled else None
     pop = None
     if args.population:
-        pop = [r['record_id'] for r in read_table(args.population) if r.get('final_disposition') in
-               [d for d in E['ta'] if d not in E['admin'] and d not in E['ta_excl']]]
+        if args.stage == 'TI':
+            raise MergeError('--population applies to TA (merged_TI.csv) and FT (merged_TA.csv) only')
+        if args.stage == 'TA':   # stage-2 population = final TI disposition that progresses (v3.1)
+            keep = [d for d in E['ti'] if d not in E['ti_excl']]
+        else:
+            keep = [d for d in E['ta'] if d not in E['admin'] and d not in E['ta_excl']]
+        pop = [r['record_id'] for r in read_table(args.population) if r.get('final_disposition') in keep]
     merged, stats = merge(ra, rb, args.stage, E, recon, pop)
+    if args.planned_size and not args.calibration_ids:
+        raise MergeError('--planned-size requires --calibration-ids')
     if args.calibration_ids:
         p = Path(args.calibration_ids)
         ids = ([r['record_id'] for r in read_table(p) if r.get('record_id')] if p.suffix.lower() in ('.csv', '.xlsx')
                else [x.strip() for x in p.read_text(encoding='utf-8').splitlines() if x.strip()])
-        if args.stage != 'TA':
-            raise MergeError('--calibration-ids applies to the TA stage only')
-        stats['calibration'] = calibration(merged, ids, E)
+        if args.stage not in ('TA', 'TI'):
+            raise MergeError('--calibration-ids applies to the TI and TA stages only')
+        stats['calibration'] = calibration(merged, ids, E, args.stage, args.planned_size)
     out = Path(args.out_dir)
     write_csv(out / f'merged_{args.stage}.csv', merged)
     write_csv(out / f'conflicts_{args.stage}.csv', [r for r in merged if r['conflict']],
@@ -382,7 +464,11 @@ def cmd_prisma(args, E):
     if args.master:
         sheet = 'records_master' if Path(args.master).suffix.lower() == '.xlsx' else None
         master = read_table(args.master, sheet)
-    rows = prisma(E, master, read_table(args.ta) if args.ta else None, read_table(args.ft) if args.ft else None)
+    ta_master = None
+    if args.master_ta:
+        ta_master = read_table(args.master_ta, 'records_master' if Path(args.master_ta).suffix.lower() == '.xlsx' else None)
+    rows = prisma(E, master, read_table(args.ta) if args.ta else None, read_table(args.ft) if args.ft else None,
+                  read_table(args.ti) if args.ti else None, ta_master)
     write_csv(Path(args.out), rows, header=['section', 'item', 'value', 'status', 'note'])
     for r in rows:
         print(f'{r[0]:15} {r[1]:45} {"" if r[2] is None else r[2]:>6}  {r[3]}  {r[4]}')
@@ -463,8 +549,8 @@ def cmd_selftest(args, E):
             for i, v in enumerate(values, start=2):
                 ws.cell(row=i, column=c, value=v)
 
-        ta_cols = ['record_id', 'title'] + E['ta_fields'] + ['note']
-        ft_cols = ['record_id', 'title'] + E['ft_fields'] + ['supporting_passage', 'note', 'check_code_rule']
+        SC = bw.screening_columns(E)
+        ta_cols, ft_cols = SC['TA'], SC['FT']
         put('screen_TA_reviewer_A', 'decision', ta_a, ta_cols)
         put('screen_TA_reviewer_B', 'decision', ta_b, ta_cols)
         put('screen_TA_reviewer_A', 'primary_reason', [codes[i % len(codes)] if d == excl_ta else None for i, d in enumerate(ta_a)], ta_cols)
@@ -483,11 +569,25 @@ def cmd_selftest(args, E):
         put('screen_FT_reviewer_B', 'decision', ft_b, ft_cols)
         put('screen_FT_reviewer_A', 'primary_exclusion_code', code_a, ft_cols)
         put('screen_FT_reviewer_B', 'primary_exclusion_code', code_b, ft_cols)
-        # calibration block: first 10 synthetic IDs (fewer than planned -> INCOMPLETE)
-        ws = wb['merge_TA']
-        cal_cells = [c for c in ws.iter_rows() for c in c if c.protection.locked is False and c.number_format == '@']
-        for cell, rid in zip(cal_cells, ids[:10]):
-            cell.value = rid
+        # TI (v3.1 title stage): advance-wins cases; record 19 (index 18) undecided by B
+        has_ti = bool(E.get('ti'))
+        if has_ti:
+            adv, ex, fb, tc = E['ti_advance'], E['ti_excl'][0], E['ti_fallback'], E['ti_codes']
+            ti_pairs = [(adv, None, adv, None), (ex, tc[0], ex, tc[0]), (ex, tc[2], ex, tc[1]), (adv, None, ex, tc[3]),
+                        (ex, tc[4], fb, None), (fb, None, fb, None), (ex, tc[1], ex, tc[1]), (adv, None, adv, None),
+                        (adv, None, fb, None), (ex, tc[3], ex, tc[3]), (adv, None, adv, None), (ex, tc[4], adv, None),
+                        (adv, None, adv, None), (ex, tc[0], ex, tc[0]), (adv, None, adv, None), (fb, None, adv, None),
+                        (adv, None, adv, None), (ex, tc[2], ex, tc[2]), (adv, None, None, None)]
+            put('screen_TI_reviewer_A', 'decision', [x[0] for x in ti_pairs], SC['TI'])
+            put('screen_TI_reviewer_A', 'primary_reason', [x[1] for x in ti_pairs], SC['TI'])
+            put('screen_TI_reviewer_B', 'decision', [x[2] for x in ti_pairs], SC['TI'])
+            put('screen_TI_reviewer_B', 'primary_reason', [x[3] for x in ti_pairs], SC['TI'])
+        # calibration blocks: first 10 synthetic IDs (fewer than planned -> INCOMPLETE)
+        for sheet in (['merge_TA', 'merge_TI'] if has_ti else ['merge_TA']):
+            ws = wb[sheet]
+            cal_cells = [c for c in ws.iter_rows() for c in c if c.protection.locked is False and c.number_format == '@']
+            for cell, rid in zip(cal_cells, ids[:10]):
+                cell.value = rid
         wb.save(wbp)
         rec = _recalc(wbp, tmp / 'recalc')
         if rec is None:
@@ -549,6 +649,64 @@ def cmd_selftest(args, E):
                   f'screened={d["records_screened_TA"][2]} excluded={d["records_excluded_TA"][2]}')
             check('PRISMA: FT not supplied -> NOT_YET_PERFORMED blanks', d['reports_assessed_FT'][2] is None and
                   d['reports_assessed_FT'][3] == 'NOT_YET_PERFORMED')
+            check('calibration --planned-size overrides the JSON sample size',
+                  not calibration(ta_merged, ids[:10], E, 'TA', 10)['status'].startswith('INCOMPLETE'))
+            if has_ti:
+                ra_ti, rb_ti = read_table(rec, 'screen_TI_reviewer_A'), read_table(rec, 'screen_TI_reviewer_B')
+                ti_merged, st = merge(ra_ti, rb_ti, 'TI', E)
+                for key, py in (('exact_kappa', st['exact_disposition']['kappa']),
+                                ('exact_po', st['exact_disposition']['raw_agreement']),
+                                ('binary_kappa', st['group_disposition']['kappa']),
+                                ('binary_po', st['group_disposition']['raw_agreement']),
+                                ('n_joint', st['jointly_decided']), ('n_conflict', st['conflicts'])):
+                    xl = _named(v, f'TI_{key}')
+                    ok = (py is None and xl in (None, '')) or (py is not None and isinstance(xl, (int, float)) and abs(xl - py) < 1e-9)
+                    check(f'TI {key}: python vs workbook', ok, f'python={py} workbook={xl}')
+                mism = [(d_, st['consensus_counts'][d_], _named(v, f'TI_cons_{d_}')) for d_ in E['ti']
+                        if st['consensus_counts'][d_] != _named(v, f'TI_cons_{d_}')]
+                check('TI advance-wins consensus counts: python vs workbook', not mism, f'mismatches={mism} {st["consensus_counts"]}')
+                mism = [(c, st['exclusions_by_code_consensus'][c], _named(v, f'TI_excl_{c[:4]}')) for c in tc
+                        if st['exclusions_by_code_consensus'][c] != _named(v, f'TI_excl_{c[:4]}')]
+                tot = sum(st['exclusions_by_code_consensus'].values())
+                check('TI exclusions by closed-list code: python vs workbook', not mism and tot > 0, f'mismatches={mism} total={tot}')
+                by = {r['record_id']: r for r in ti_merged}
+                check('TI advance wins over an exclusion (conflict logged)',
+                      by[ids[3]]['final_disposition'] == adv and by[ids[3]]['conflict'] == 1 and by[ids[11]]['final_disposition'] == adv)
+                check('TI both excluded with different codes -> earlier closed-list code, conflict logged',
+                      by[ids[2]]['final_disposition'] == ex and by[ids[2]]['final_primary_reason'] == tc[1] and by[ids[2]]['conflict'] == 1)
+                check('TI exclusion vs awaiting -> awaiting classification (not excluded)',
+                      by[ids[4]]['final_disposition'] == fb and by[ids[5]]['final_disposition'] == fb)
+                check('TI conflicts never left unresolved', st['unresolved'] == 1 and
+                      all(r['final_source'] != 'unresolved_conflict' for r in ti_merged), f'unresolved={st["unresolved"]}')
+                cal_ti = calibration(ti_merged, ids[:10], E, 'TI')
+                xl_raw, xl_k, xl_s = _named(v, 'TI_cal_raw'), _named(v, 'TI_cal_kappa'), _named(v, 'TI_cal_status')
+                pk = cal_ti['kappa_descriptive']
+                okk = ((pk is None and (xl_k in (None, '') or str(xl_k).startswith('undefined'))) or
+                       (pk is not None and isinstance(xl_k, (int, float)) and abs(xl_k - pk) < 1e-9))
+                check('TI calibration raw agreement and kappa: python vs workbook',
+                      okk and abs((xl_raw or 0) - (cal_ti['raw_agreement'] or 0)) < 1e-9, f'python={cal_ti["raw_agreement"]}/{pk} workbook={xl_raw}/{xl_k}')
+                check('TI calibration INCOMPLETE below the 100-record plan', str(xl_s).startswith('INCOMPLETE')
+                      and cal_ti['status'].startswith('INCOMPLETE'), f'{xl_s} | {cal_ti["status"]}')
+                d = {r[1]: r for r in prisma(E, master, None, None, ti_merged)}
+                check('PRISMA: incomplete TI -> title box blank', d['records_screened_TI'][2] is None
+                      and d['records_screened_TI'][3] == 'INCOMPLETE')
+                rb_done = [dict(r) for r in rb_ti]
+                for r in rb_done:
+                    if r.get('record_id') == ids[18]:
+                        r['decision'] = adv
+                ti_done, _ = merge(ra_ti, rb_done, 'TI', E)
+                d = {r[1]: r for r in prisma(E, master, None, None, ti_done)}
+                n_ex = sum(1 for r in ti_done if r['final_disposition'] == ex)
+                by_code = sum(d[f'records_excluded_TI:{c}'][2] for c in tc)
+                check('PRISMA: complete TI -> title box filled by closed-list code',
+                      d['records_screened_TI'][2] == n - 1 and d['records_excluded_TI'][2] == n_ex == by_code and
+                      d['records_advanced_to_abstract_stage'][2] == n - 1 - n_ex and d['records_screened_TI'][3] == 'COMPLETE',
+                      f'screened={d["records_screened_TI"][2]} excluded={n_ex} by_code={by_code}')
+                ta_master = [{'record_id': ids[0], 'abstract_source': 'abstract_unavailable'},
+                             {'record_id': ids[1], 'abstract_source': 'database_export'}]
+                d = {r[1]: r for r in prisma(E, master, ta_done, None, ti_done, ta_master)}
+                check('PRISMA: TA rows differing from advanced TI records -> CHECK row', 'advanced_TI_vs_TA_rows' in d)
+                check('PRISMA: records screened at TA without abstract counted', d['records_screened_TA_without_abstract'][2] == 1)
             # CLI end-to-end on the recalculated workbook
             od = tmp / 'cli'
             rc = main(['merge', '--stage', 'TA', '--a', str(rec), '--b', str(rec), '--out-dir', str(od),
@@ -560,6 +718,25 @@ def cmd_selftest(args, E):
             with contextlib.redirect_stderr(io.StringIO()):
                 rc = main(['merge', '--stage', 'TA', '--a', str(bad), '--b', str(bad), '--out-dir', str(od)])
             check('CLI merge rejects values outside the JSON code list', rc == 2)
+            if has_ti:
+                oti = tmp / 'cli_ti'
+                rc = main(['merge', '--stage', 'TI', '--a', str(rec), '--b', str(rec), '--out-dir', str(oti),
+                           '--calibration-ids', str(_write_ids(tmp / 'ids_ti.txt', ids[:10]))])
+                agr = json.loads((oti / 'agreement_TI.json').read_text())
+                check('CLI merge --stage TI writes merged/conflicts/agreement files', rc == 0 and (oti / 'merged_TI.csv').exists()
+                      and (oti / 'conflicts_TI.csv').exists() and agr['calibration']['stage'] == 'TI')
+                prog = [d_ for d_ in E['ti'] if d_ not in E['ti_excl']]
+                keep = [r['record_id'] for r in read_table(oti / 'merged_TI.csv') if r.get('final_disposition') in prog]
+                ota = tmp / 'cli_ta_pop'
+                rc = main(['merge', '--stage', 'TA', '--a', str(rec), '--b', str(rec), '--out-dir', str(ota),
+                           '--population', str(oti / 'merged_TI.csv')])
+                agr = json.loads((ota / 'agreement_TA.json').read_text())
+                check('CLI merge --stage TA --population merged_TI.csv screens only TI-retained records',
+                      rc == 0 and agr['records_in_stage'] == len(keep) < n - 1, f'{agr["records_in_stage"]} of {n - 1}')
+                bad = _write_rows(tmp / 'bad_ti.csv', [{'record_id': 'X1', 'decision': E['ti_excl'][0], 'primary_reason': ''}])
+                with contextlib.redirect_stderr(io.StringIO()):
+                    rc = main(['merge', '--stage', 'TI', '--a', str(bad), '--b', str(bad), '--out-dir', str(oti)])
+                check('CLI merge --stage TI rejects a title exclusion without a closed-list reason', rc == 2)
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
     width = max(len(r[0]) for r in results)
@@ -574,17 +751,22 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest='cmd', required=True)
     m = sub.add_parser('merge')
-    m.add_argument('--stage', choices=['TA', 'FT'], required=True)
+    m.add_argument('--stage', choices=['TI', 'TA', 'FT'], required=True)
     m.add_argument('--a', type=Path, required=True)
     m.add_argument('--b', type=Path, required=True)
     m.add_argument('--sheet-a')
     m.add_argument('--sheet-b')
     m.add_argument('--reconciled', type=Path, help='CSV: record_id, final_disposition[, final_primary_exclusion_code]')
-    m.add_argument('--population', type=Path, help='FT only: merged_TA.csv; FT population = final TA "sought" records')
-    m.add_argument('--calibration-ids', help='TA only: sampled record_ids (txt one per line, or CSV/XLSX with record_id)')
+    m.add_argument('--population', type=Path, help='TA: merged_TI.csv (population = final TI disposition that progresses); '
+                                                    'FT: merged_TA.csv (population = final TA "sought" records)')
+    m.add_argument('--calibration-ids', help='TI/TA: sampled record_ids (txt one per line, or CSV/XLSX with record_id)')
+    m.add_argument('--planned-size', type=int, help='calibration round size if it differs from the JSON planned_sample_size '
+                                                    '(e.g. 25 for the v3.1 TA re-calibration)')
     m.add_argument('--out-dir', type=Path, required=True)
     p = sub.add_parser('prisma')
     p.add_argument('--master', type=Path)
+    p.add_argument('--ti', type=Path, help='merged_TI.csv (v3.1 title stage)')
+    p.add_argument('--master-ta', type=Path, help='stage-2 records_master (abstract_source) for the without-abstract count')
     p.add_argument('--ta', type=Path)
     p.add_argument('--ft', type=Path)
     p.add_argument('--out', type=Path, required=True)

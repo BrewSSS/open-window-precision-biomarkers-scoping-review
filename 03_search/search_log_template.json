@@ -1,12 +1,12 @@
 {
-  "template_status": "DRAFT — NOT EXECUTED",
-  "strategy_version": "v3.0 / search-draft-0.7",
-  "protocol_version": "3.0",
+  "template_status": "DRAFT — v0.9 NOT EXECUTED (v0.7 PubMed export of 2026-10-05 superseded)",
+  "strategy_version": "v3.0 / search-draft-0.9 (v3.1 with amendment PRE-006 in preparation)",
+  "protocol_version": "3.1",
   "protocol_date": "2026-10-04",
   "protocol_version_label": "3.0 (draft for team freeze) - 4 October 2026",
   "design_contract": "01_protocol/v3_design_contract.txt",
   "v3_search_rules": {
-    "search_by_construct": "Main query E AND (I OR O) AND T on all platforms from strategy v0.7 (routes EI = E AND I AND T, EO = E AND O AND T); T = post-exercise/acute-bout wording, required per team decision of A 2026-10-04 recorded as contract amendment PRE-003. The open window is an organising construct and is not searched as a phrase (contract §3, ruling 8.3a as amended by PRE-003).",
+    "search_by_construct": "Single route E AND I AND T on PubMed, WoS and Scopus from strategy v0.9 (decision of A, 2026-10-05; EO dropped because an omics study needs an immune anchor under FT07, so E AND O AND I AND T is a subset of E AND I AND T; O kept as tagging vocabulary). T = post-exercise/acute-bout wording, required since v0.7 (PRE-003). The open window is an organising construct and is not searched as a phrase (contract §3, ruling 8.3a as amended by PRE-003). Up to v0.7: E AND (I OR O) AND T as routes EI and EO.",
     "open_window_terms_role": "OR supplement inside the I block or citation-chasing source only; never an AND term, filter or eligibility criterion. If an OR supplement line is used, log it as a separate search-history line within the EI entry and record its marginal yield during seed testing.",
     "open_window_phrase_evidence": "18 PubMed title/abstract records 2018-2026 combine \"open window\"/\"open-window\" with exercise and immune terms (02_preliminary/collision_recheck_2026-10-04.md §6 query a; reconnaissance, not a protocol search).",
     "organising_window": "0-72 h after cessation of an identifiable bout, applied at screening/charting; not a search limit or inclusion cap. Samples > 72 h are extracted and tagged outside-window recovery; no new exclusion code.",
@@ -15,8 +15,9 @@
     "exposure_threshold": null,
     "exposure_rule": "No intensity, duration or mode threshold; these are recorded at extraction and used as evidence-map strata.",
     "support_B": "Retained (cross-bout open-window monitoring layer); applied at screening.",
-    "T_block_role": "REQUIRED concept in every route on every platform and in the preprint F1/F2 strings from strategy v0.7 (PRE-003; search_strategy_draft.txt §1 and §8). T is a concept block, not a timing limit; the 0-72 h organising window stays a screening/charting rule. The T-free union E AND (I OR O) is kept only as a pilot sensitivity check on a random sample of E AND (I OR O) NOT T records.",
-    "pilot_timing": "50-record screening pilot runs after the v3.0 archive release (GitHub Release + Zenodo version DOI) on a preserved draft search pool; formal five-database search starts only after the archived release exists."
+    "T_block_role": "REQUIRED concept in the single route on every platform and in the preprint string (PRE-003; strategy §1 and §8). v0.9: \"time course\", \"time-course\", \"pre and post\", \"baseline and post\" removed; Package B added (post hoc). T is a concept block, not a timing limit; the 0-72 h organising window stays a screening/charting rule. The T-free set is kept only as a pilot sensitivity check.",
+    "pilot_timing": "50-record screening pilot runs after the v3.0 archive release (GitHub Release + Zenodo version DOI) on a preserved draft search pool; formal five-database search starts only after the archived release exists.",
+    "eligibility_rules_partly_in_query": "From strategy v0.9 (amendment PRE-006): FT01 (publication/document type; PubMed, WoS, Scopus), FT02 (animal-only; PubMed MeSH) and FT03 (child-only; PubMed MeSH). Unindexed records pass; screening applies FT01-FT03 in full."
   },
   "searches": [
     {
@@ -39,7 +40,7 @@
         "note": "WebEnv not stored (session token, expires)."
       },
       "notes": "FIRST FORMAL RUN (PubMed). 17,445 hits, 17,445 exported, 17,303 (99.2%) with a non-empty abstract; 142 records have no abstract (older/non-abstract-bearing MEDLINE records). Union cross-check (E AND (I OR O) AND T, count-only esearch, not downloaded separately per strategy §1 \"Export the EI and EO result sets separately before deduplication\"): 20,090 hits (2026-10-05T10:09:27Z UTC), identical to the 2026-10-04 PubMed parser-validation/pilot-pool union count (20,090; no difference -- no new PubMed indexing changed this query's result between 2026-10-04 and 2026-10-05). Deduplicated PMID union of this run's two exports also = 20,090 (EI 17,445 + EO 4,004 - 1,359 overlap), written to 03_search/formal_runs/2026-10-05/pubmed/pubmed_pmids.txt (committable, no abstracts). Full run detail: 03_search/formal_runs/2026-10-05/pubmed/run_manifest.json and manifest.json. scripts/fetch_pilot_pool.py EUtils.post() timeout/retry constants were tuned (180s/5 tries -> 25s/14 tries) on 2026-10-05 to cope with this run environment's intermittent NCBI connectivity; no query, rate limit or recorded result was changed by that patch.",
-      "execution_status": "EXECUTED_2026-10-05 (formal; see run_manifest.json)",
+      "execution_status": "EXECUTED_2026-10-05 (formal; see run_manifest.json) — SUPERSEDED by v0.9",
       "query_translation_or_parser_details": "(\"exercis*\"[Title/Abstract] OR \"physical activity\"[Title/Abstract] OR \"physical activities\"[Title/Abstract] OR (\"physical\"[Title/Abstract] AND \"activit*\"[Title/Abstract]) OR \"Physical Exertion\"[Title/Abstract] OR \"sport*\"[Title/Abstract] OR \"train*\"[Title/Abstract] OR \"workout*\"[Title/Abstract] OR \"athlet*\"[Title/Abstract] OR \"competition*\"[Title/Abstract] OR \"run\"[Title/Abstract] OR \"Running\"[Title/Abstract] OR \"runn*\"[Title/Abstract] OR \"jog\"[Title/Abstract] OR \"jogging\"[Title/Abstract] OR \"jogg*\"[Title/Abstract] OR \"cycling\"[Title/Abstract] OR \"cyclist*\"[Title/Abstract] OR \"cycle ergomet*\"[Title/Abstract] OR \"ergomet*\"[Title/Abstract] OR \"bicycl*\"[Title/Abstract] OR \"marathon*\"[Title/Abstract] OR \"race*\"[Title/Abstract] OR (\"resistance\"[Title/Abstract] AND \"train*\"[Title/Abstract]) OR \"strength training\"[Title/Abstract] OR \"endurance\"[Title/Abstract] OR \"aerobic\"[Title/Abstract] OR \"interval train*\"[Title/Abstract] OR \"interval exercis*\"[Title/Abstract] OR \"sprint interval*\"[Title/Abstract] OR \"high intensity interval*\"[Title/Abstract] OR \"HIIT\"[Title/Abstract] OR \"HIIE\"[Title/Abstract] OR \"sprint*\"[Title/Abstract] OR \"weightlift*\"[Title/Abstract] OR \"swim*\"[Title/Abstract] OR \"Exercise Test\"[Title/Abstract] OR \"exercise tests\"[Title/Abstract] OR \"exercise challenge\"[Title/Abstract] OR \"exercise challenges\"[Title/Abstract] OR \"physical effort\"[Title/Abstract] OR (\"Exercise\"[MeSH Terms] OR \"Physical Exertion\"[MeSH Terms] OR \"Sports\"[MeSH Terms] OR \"Exercise Test\"[MeSH Terms] OR \"Running\"[MeSH Terms] OR \"Swimming\"[MeSH Terms] OR \"Bicycling\"[MeSH Terms] OR \"Resistance Training\"[MeSH Terms] OR \"High-Intensity Interval Training\"[MeSH Terms])) AND (\"immun*\"[Title/Abstract] OR \"inflammat*\"[Title/Abstract] OR \"leukocyt*\"[Title/Abstract] OR \"leucocyt*\"[Title/Abstract] OR \"lymphocyt*\"[Title/Abstract] OR \"neutrophil*\"[Title/Abstract] OR \"monocyt*\"[Title/Abstract] OR \"eosinophil*\"[Title/Abstract] OR \"basophil*\"[Title/Abstract] OR \"natural killer\"[Title/Abstract] OR \"NK cell\"[Title/Abstract] OR \"NK cells\"[Title/Abstract] OR \"T cell\"[Title/Abstract] OR \"T cells\"[Title/Abstract] OR \"B cell\"[Title/Abstract] OR \"B cells\"[Title/Abstract] OR \"CD4\"[Title/Abstract] OR \"CD8\"[Title/Abstract] OR \"cytokine*\"[Title/Abstract] OR \"chemokine*\"[Title/Abstract] OR \"immunoglobulin*\"[Title/Abstract] OR \"immunoglobulin a\"[Title/Abstract] OR \"secretory immunoglobulin A\"[Title/Abstract] OR \"IgA\"[Title/Abstract] OR \"siga\"[Title/Abstract] OR \"siga\"[Title/Abstract] OR \"secretory IgA\"[Title/Abstract] OR \"interleukin*\"[Title/Abstract] OR \"interleukin 6\"[Title/Abstract] OR \"IL-6\"[Title/Abstract] OR \"IL6\"[Title/Abstract] OR \"CRP\"[Title/Abstract] OR \"c reactive protein\"[Title/Abstract] OR \"c reactive protein\"[Title/Abstract] OR \"phagocyt*\"[Title/Abstract] OR \"cytotoxic*\"[Title/Abstract] OR \"complement\"[Title/Abstract] OR (\"mucosal\"[Title/Abstract] AND \"immun*\"[Title/Abstract]) OR \"immune function\"[Title/Abstract] OR \"immune response\"[Title/Abstract] OR \"effector function\"[Title/Abstract] OR \"immunophenotyp*\"[Title/Abstract] OR \"immune cell\"[Title/Abstract] OR \"immune cells\"[Title/Abstract] OR \"white blood cell*\"[Title/Abstract] OR \"mononuclear cell*\"[Title/Abstract] OR \"pbmc*\"[Title/Abstract] OR \"granulocyt*\"[Title/Abstract] OR \"lymphopeni*\"[Title/Abstract] OR \"lymphocytopeni*\"[Title/Abstract] OR \"leukocytosis\"[Title/Abstract] OR \"TNF\"[Title/Abstract] OR \"TNF-alpha\"[Title/Abstract] OR \"tumor necrosis factor*\"[Title/Abstract] OR \"tumour necrosis factor*\"[Title/Abstract] OR \"IFN\"[Title/Abstract] OR \"IFN-gamma\"[Title/Abstract] OR \"interferon*\"[Title/Abstract] OR \"IL-10\"[Title/Abstract] OR \"IL10\"[Title/Abstract] OR \"IL-1\"[Title/Abstract] OR \"IL1\"[Title/Abstract] OR \"IL-1beta\"[Title/Abstract] OR \"IL-8\"[Title/Abstract] OR \"IL8\"[Title/Abstract] OR (\"Immunity\"[MeSH Terms] OR \"immunity, mucosal\"[MeSH Terms] OR \"Leukocytes\"[MeSH Terms] OR \"Lymphocytes\"[MeSH Terms] OR \"killer cells, natural\"[MeSH Terms] OR \"Neutrophils\"[MeSH Terms] OR \"Monocytes\"[MeSH Terms] OR \"Leukocyte Count\"[MeSH Terms] OR \"Lymphocyte Count\"[MeSH Terms] OR \"Cytokines\"[MeSH Terms] OR \"Chemokines\"[MeSH Terms] OR \"Interleukins\"[MeSH Terms] OR \"interleukin 6\"[MeSH Terms] OR \"Immunoglobulins\"[MeSH Terms] OR \"immunoglobulin a\"[MeSH Terms] OR \"immunoglobulin a, secretory\"[MeSH Terms] OR \"Complement System Proteins\"[MeSH Terms] OR \"c reactive protein\"[MeSH Terms] OR \"Phagocytosis\"[MeSH Terms] OR \"cytotoxicity, immunologic\"[MeSH Terms])) AND (\"post-exercise\"[Title/Abstract] OR \"postexercise\"[Title/Abstract] OR \"post-exercise\"[Title/Abstract] OR \"after exercise\"[Title/Abstract] OR \"following exercise\"[Title/Abstract] OR \"exercise-induced\"[Title/Abstract] OR \"acute exercise\"[Title/Abstract] OR \"acute bout\"[Title/Abstract] OR \"single bout\"[Title/Abstract] OR \"bout of\"[Title/Abstract] OR \"exercise bout*\"[Title/Abstract] OR \"post-race\"[Title/Abstract] OR \"post-marathon\"[Title/Abstract] OR \"recovery period\"[Title/Abstract] OR \"during recovery\"[Title/Abstract:~0] OR \"immediately after\"[Title/Abstract] OR \"hours after\"[Title/Abstract] OR \"h post\"[Title/Abstract] OR \"post-match\"[Title/Abstract] OR \"post-competition\"[Title/Abstract] OR \"exercise session*\"[Title/Abstract] OR \"exercise challenge*\"[Title/Abstract] OR \"exercise test*\"[Title/Abstract] OR \"after marathon\"[Title/Abstract:~1] OR \"after race\"[Title/Abstract:~1] OR \"after racing\"[Title/Abstract:~0] OR \"after strenuous exercise\"[Title/Abstract:~0] OR \"after prolonged exercise\"[Title/Abstract:~0] OR \"after intense exercise\"[Title/Abstract:~0] OR \"following bout\"[Title/Abstract:~1] OR \"post-bout\"[Title/Abstract] OR \"exercise recovery\"[Title/Abstract] OR \"recovery from exercise\"[Title/Abstract] OR \"time-course\"[Title/Abstract] OR \"time-course\"[Title/Abstract] OR \"pre and post exercise\"[Title/Abstract] OR \"pre-exercise\"[Title/Abstract] OR \"pre and post\"[Title/Abstract] OR \"baseline and post\"[Title/Abstract:~1] OR \"min post\"[Title/Abstract] OR \"h after\"[Title/Abstract] OR \"hours post\"[Title/Abstract] OR \"Post-Exercise Recovery\"[MeSH Terms])",
       "search_purpose": null,
       "update_of_search_id": null,
@@ -78,7 +79,8 @@
         "CIT-R5": false,
         "POS-S2": null
       },
-      "planned_query_checksum_sha256": "9cb9f8d16116429ba032d0c67e2e3a7cfab685255e90bedde1577d4901d5a4ec"
+      "planned_query_checksum_sha256": "9cb9f8d16116429ba032d0c67e2e3a7cfab685255e90bedde1577d4901d5a4ec",
+      "supersession_note": "SUPERSEDED by strategy v0.9 (2026-10-05): this v0.7 export is kept as an artefact only and must not enter screening; re-run under v0.9 as PUBMED_EI_V09 after A's PRESS re-sign-off and the v3.1 release (PRE-006). Formal fields below are left unchanged as the record of the v0.7 run."
     },
     {
       "id": "PUBMED_EO",
@@ -100,7 +102,7 @@
         "note": "WebEnv not stored (session token, expires)."
       },
       "notes": "FIRST FORMAL RUN (PubMed). 4,004 hits, 4,004 exported, 3,987 (99.6%) with a non-empty abstract; 17 records have no abstract (older/non-abstract-bearing MEDLINE records). Union cross-check (E AND (I OR O) AND T, count-only esearch, not downloaded separately per strategy §1 \"Export the EI and EO result sets separately before deduplication\"): 20,090 hits (2026-10-05T10:09:27Z UTC), identical to the 2026-10-04 PubMed parser-validation/pilot-pool union count (20,090; no difference -- no new PubMed indexing changed this query's result between 2026-10-04 and 2026-10-05). Deduplicated PMID union of this run's two exports also = 20,090 (EI 17,445 + EO 4,004 - 1,359 overlap), written to 03_search/formal_runs/2026-10-05/pubmed/pubmed_pmids.txt (committable, no abstracts). Full run detail: 03_search/formal_runs/2026-10-05/pubmed/run_manifest.json and manifest.json. scripts/fetch_pilot_pool.py EUtils.post() timeout/retry constants were tuned (180s/5 tries -> 25s/14 tries) on 2026-10-05 to cope with this run environment's intermittent NCBI connectivity; no query, rate limit or recorded result was changed by that patch.",
-      "execution_status": "EXECUTED_2026-10-05 (formal; see run_manifest.json)",
+      "execution_status": "EXECUTED_2026-10-05 (formal; see run_manifest.json) — SUPERSEDED by v0.9",
       "query_translation_or_parser_details": "(\"exercis*\"[Title/Abstract] OR \"physical activity\"[Title/Abstract] OR \"physical activities\"[Title/Abstract] OR (\"physical\"[Title/Abstract] AND \"activit*\"[Title/Abstract]) OR \"Physical Exertion\"[Title/Abstract] OR \"sport*\"[Title/Abstract] OR \"train*\"[Title/Abstract] OR \"workout*\"[Title/Abstract] OR \"athlet*\"[Title/Abstract] OR \"competition*\"[Title/Abstract] OR \"run\"[Title/Abstract] OR \"Running\"[Title/Abstract] OR \"runn*\"[Title/Abstract] OR \"jog\"[Title/Abstract] OR \"jogging\"[Title/Abstract] OR \"jogg*\"[Title/Abstract] OR \"cycling\"[Title/Abstract] OR \"cyclist*\"[Title/Abstract] OR \"cycle ergomet*\"[Title/Abstract] OR \"ergomet*\"[Title/Abstract] OR \"bicycl*\"[Title/Abstract] OR \"marathon*\"[Title/Abstract] OR \"race*\"[Title/Abstract] OR (\"resistance\"[Title/Abstract] AND \"train*\"[Title/Abstract]) OR \"strength training\"[Title/Abstract] OR \"endurance\"[Title/Abstract] OR \"aerobic\"[Title/Abstract] OR \"interval train*\"[Title/Abstract] OR \"interval exercis*\"[Title/Abstract] OR \"sprint interval*\"[Title/Abstract] OR \"high intensity interval*\"[Title/Abstract] OR \"HIIT\"[Title/Abstract] OR \"HIIE\"[Title/Abstract] OR \"sprint*\"[Title/Abstract] OR \"weightlift*\"[Title/Abstract] OR \"swim*\"[Title/Abstract] OR \"Exercise Test\"[Title/Abstract] OR \"exercise tests\"[Title/Abstract] OR \"exercise challenge\"[Title/Abstract] OR \"exercise challenges\"[Title/Abstract] OR \"physical effort\"[Title/Abstract] OR (\"Exercise\"[MeSH Terms] OR \"Physical Exertion\"[MeSH Terms] OR \"Sports\"[MeSH Terms] OR \"Exercise Test\"[MeSH Terms] OR \"Running\"[MeSH Terms] OR \"Swimming\"[MeSH Terms] OR \"Bicycling\"[MeSH Terms] OR \"Resistance Training\"[MeSH Terms] OR \"High-Intensity Interval Training\"[MeSH Terms])) AND (\"omic*\"[Title/Abstract] OR \"proteom*\"[Title/Abstract] OR \"metabolom*\"[Title/Abstract] OR \"lipidom*\"[Title/Abstract] OR \"transcriptom*\"[Title/Abstract] OR \"epigenom*\"[Title/Abstract] OR \"epigenet*\"[Title/Abstract] OR \"dna methylation\"[Title/Abstract] OR \"methylom*\"[Title/Abstract] OR \"multiomic*\"[Title/Abstract] OR \"multi-omic\"[Title/Abstract] OR \"multi-omics\"[Title/Abstract] OR \"single-cell\"[Title/Abstract] OR \"single-cell\"[Title/Abstract] OR \"scRNA-seq\"[Title/Abstract] OR \"RNA-seq\"[Title/Abstract] OR \"RNA sequencing\"[Title/Abstract] OR \"microrna*\"[Title/Abstract] OR \"mirna*\"[Title/Abstract] OR \"lncrna*\"[Title/Abstract] OR \"circrna*\"[Title/Abstract] OR \"Mass Spectrometry\"[Title/Abstract] OR \"protein profiling\"[Title/Abstract] OR \"metabolite profiling\"[Title/Abstract] OR \"high-throughput sequencing\"[Title/Abstract] OR \"microarray*\"[Title/Abstract] OR \"gene expression profil*\"[Title/Abstract] OR \"expression profil*\"[Title/Abstract] OR (\"Proteomics\"[MeSH Terms] OR \"Metabolomics\"[MeSH Terms] OR \"Lipidomics\"[MeSH Terms] OR \"Transcriptome\"[MeSH Terms] OR \"Gene Expression Profiling\"[MeSH Terms] OR \"Single-Cell Analysis\"[MeSH Terms] OR \"Multiomics\"[MeSH Terms] OR \"Epigenomics\"[MeSH Terms] OR \"dna methylation\"[MeSH Terms] OR \"MicroRNAs\"[MeSH Terms] OR \"rna, long noncoding\"[MeSH Terms] OR \"sequence analysis, rna\"[MeSH Terms] OR \"Mass Spectrometry\"[MeSH Terms:noexp])) AND (\"post-exercise\"[Title/Abstract] OR \"postexercise\"[Title/Abstract] OR \"post-exercise\"[Title/Abstract] OR \"after exercise\"[Title/Abstract] OR \"following exercise\"[Title/Abstract] OR \"exercise-induced\"[Title/Abstract] OR \"acute exercise\"[Title/Abstract] OR \"acute bout\"[Title/Abstract] OR \"single bout\"[Title/Abstract] OR \"bout of\"[Title/Abstract] OR \"exercise bout*\"[Title/Abstract] OR \"post-race\"[Title/Abstract] OR \"post-marathon\"[Title/Abstract] OR \"recovery period\"[Title/Abstract] OR \"during recovery\"[Title/Abstract:~0] OR \"immediately after\"[Title/Abstract] OR \"hours after\"[Title/Abstract] OR \"h post\"[Title/Abstract] OR \"post-match\"[Title/Abstract] OR \"post-competition\"[Title/Abstract] OR \"exercise session*\"[Title/Abstract] OR \"exercise challenge*\"[Title/Abstract] OR \"exercise test*\"[Title/Abstract] OR \"after marathon\"[Title/Abstract:~1] OR \"after race\"[Title/Abstract:~1] OR \"after racing\"[Title/Abstract:~0] OR \"after strenuous exercise\"[Title/Abstract:~0] OR \"after prolonged exercise\"[Title/Abstract:~0] OR \"after intense exercise\"[Title/Abstract:~0] OR \"following bout\"[Title/Abstract:~1] OR \"post-bout\"[Title/Abstract] OR \"exercise recovery\"[Title/Abstract] OR \"recovery from exercise\"[Title/Abstract] OR \"time-course\"[Title/Abstract] OR \"time-course\"[Title/Abstract] OR \"pre and post exercise\"[Title/Abstract] OR \"pre-exercise\"[Title/Abstract] OR \"pre and post\"[Title/Abstract] OR \"baseline and post\"[Title/Abstract:~1] OR \"min post\"[Title/Abstract] OR \"h after\"[Title/Abstract] OR \"hours post\"[Title/Abstract] OR \"Post-Exercise Recovery\"[MeSH Terms])",
       "search_purpose": null,
       "update_of_search_id": null,
@@ -139,14 +141,84 @@
         "CIT-R5": false,
         "POS-S2": null
       },
-      "planned_query_checksum_sha256": "f0d533500132c22ac2c69847e5808d441390de18359b25cfe2c004fdfb9c3ee2"
+      "planned_query_checksum_sha256": "f0d533500132c22ac2c69847e5808d441390de18359b25cfe2c004fdfb9c3ee2",
+      "supersession_note": "SUPERSEDED by strategy v0.9 (2026-10-05): this v0.7 export is kept as an artefact only and must not enter screening; re-run under v0.9 as PUBMED_EI_V09 after A's PRESS re-sign-off and the v3.1 release (PRE-006). Formal fields below are left unchanged as the record of the v0.7 run. The EO route itself is dropped in v0.9."
+    },
+    {
+      "id": "PUBMED_EI_V09",
+      "database": "PubMed/MEDLINE",
+      "platform": "PubMed",
+      "route": "E AND I AND T",
+      "strategy_reference": "search_strategy_draft.txt §3 R1_PUBMED_v09 (v0.9); paste_ready_v0.9/PUBMED_v0.9_*.txt",
+      "exact_query_as_run": null,
+      "date_time_timezone": null,
+      "searcher": null,
+      "platform/database_version": null,
+      "filters_applied": null,
+      "hit_count": null,
+      "export_count": null,
+      "export_filename_and_format": null,
+      "saved_search_or_history_id": null,
+      "notes": null,
+      "execution_status": "NOT_EXECUTED (planned v0.9 formal PubMed run; waits for A's PRESS re-sign-off and the v3.1 release with PRE-006)",
+      "query_translation_or_parser_details": null,
+      "search_purpose": null,
+      "update_of_search_id": null,
+      "saved_query_history_or_screenshot": null,
+      "parsed_query": null,
+      "query_checksum_sha256": null,
+      "export_checksum_sha256": null,
+      "strategy_file_checksum_sha256": null,
+      "seed_detection_by_seed_id": {
+        "POS-A1": null,
+        "POS-A2": null,
+        "POS-A3": null,
+        "POS-S1": null,
+        "POS-S3": null,
+        "POS-C1": null,
+        "POS-C2": null,
+        "POS-C3": null,
+        "POS-C4": null,
+        "POS-C5": null,
+        "BND-Y1": null,
+        "BND-Y2": null,
+        "BND-W1": null,
+        "BND-I1": null,
+        "BND-L1": null,
+        "BND-B1": null,
+        "BND-OW1": null,
+        "NEG-E1": null,
+        "NEG-E2": null,
+        "CIT-R1": null,
+        "CIT-R2": null,
+        "CIT-R3": null,
+        "CIT-R4": null,
+        "CIT-R5": null,
+        "POS-S2": null
+      },
+      "planned_query_checksum_sha256": "6ad15420fe1fbfc45ff2f2ff71a4b91848ed071ad76df379fdb55768c2e98c97",
+      "strategy_version_planned": "0.9-draft",
+      "limits_planned": "NOT (animals[mh] NOT humans[mh]); NOT (review[pt] OR editorial[pt] OR letter[pt] OR comment[pt] OR \"case reports\"[pt]); NOT ((infant[mh] OR child[mh] OR adolescent[mh]) NOT adult[mh]); AND (english[la]); NOT (preprint[pt]) -- applied in this order",
+      "diagnostic_count_check": {
+        "count": 7846,
+        "utc": "2026-10-05T13:23:01Z",
+        "sha256_prefix": "6ad15420fe1f",
+        "count_before_english_preprint_limits": 8013,
+        "utc_before": "2026-10-05T13:03:39Z",
+        "sha256_prefix_before": "e30ec141aac4",
+        "source": "parser_validation_runs.pubmed_2026_10_05_v09_diagnostic",
+        "note": "diagnostic E-utilities counts; not a formal search"
+      },
+      "controlled_vocabulary_mapping": null,
+      "heading_scope_and_explosion_decisions": null,
+      "platform_validation_date": null
     },
     {
       "id": "WOS_EI",
       "database": "Web of Science Core Collection",
       "platform": "Web of Science",
       "route": "E AND I AND T",
-      "strategy_reference": "search_strategy_draft.txt §4",
+      "strategy_reference": "search_strategy_draft.txt §4 (v0.9); paste_ready_v0.9/WOS_v0.9_*.txt",
       "exact_query_as_run": null,
       "date_time_timezone": null,
       "searcher": null,
@@ -194,7 +266,19 @@
         "CIT-R4": null,
         "CIT-R5": null
       },
-      "planned_query_checksum_sha256": null
+      "planned_query_checksum_sha256": null,
+      "strategy_version_planned": "0.9-draft",
+      "fields_planned": "primary TI=/AB=/AK= (Keywords Plus excluded) with TI= clauses for generic E terms and I complement/cytotoxic*; fallback TS= (WOS_v0.9_FALLBACK_TS_*) if any indexed seed is missed",
+      "limits_planned": "NOT DT=(Review OR \"Editorial Material\" OR Letter OR Correction) AND DT=(Article) AND LA=(English) (\"Article; Early Access\" still matches DT=Article; Proceedings Papers, Meeting Abstracts, Book Chapters, Data Papers dropped)",
+      "seed_test_rule": "Run *_SEED_TEST.txt before export: indexed seeds of group 1 (10 original positive) and group 2 (X01, X24, X47, X48) must all be retrieved; else use the fallback fields and log the reason and both counts.",
+      "diagnostic_count_check": {
+        "count": 14094,
+        "date": "2026-10-05",
+        "run_by": "D (web interface)",
+        "source": "03_search/search_checks_v0.9_2026-10-05/results.json",
+        "note": "D's diagnostic platform run of the primary single line with the document-type NOT, BEFORE the English/article limits; seed test pending; no export; not a formal count"
+      },
+      "export_plan": "WoS 'Fast 5000' (title, source, year, DOI, UT only; abstracts added later for records retained at the title stage; PRE-005)"
     },
     {
       "id": "WOS_EO",
@@ -213,7 +297,7 @@
       "export_filename_and_format": null,
       "saved_search_or_history_id": null,
       "notes": null,
-      "execution_status": "NOT_EXECUTED",
+      "execution_status": "WITHDRAWN (strategy v0.9 single route E AND I AND T; EO dropped, decision of A 2026-10-05)",
       "query_translation_or_parser_details": null,
       "search_purpose": null,
       "update_of_search_id": null,
@@ -249,14 +333,15 @@
         "CIT-R4": null,
         "CIT-R5": null
       },
-      "planned_query_checksum_sha256": null
+      "planned_query_checksum_sha256": null,
+      "supersession_note": "D's manual WoS export of the v0.7 EO route, records 1-500 (03_search/full_exports_2026-10-05/), is superseded and kept only as a v0.7 artefact."
     },
     {
       "id": "SCOPUS_EI",
       "database": "Scopus",
       "platform": "Scopus Advanced Search",
       "route": "E AND I AND T",
-      "strategy_reference": "search_strategy_draft.txt §5",
+      "strategy_reference": "search_strategy_draft.txt §5 (v0.9); paste_ready_v0.9/SCOPUS_v0.9_*.txt",
       "exact_query_as_run": null,
       "date_time_timezone": null,
       "searcher": null,
@@ -303,7 +388,19 @@
         "CIT-R4": null,
         "CIT-R5": null
       },
-      "planned_query_checksum_sha256": null
+      "planned_query_checksum_sha256": null,
+      "strategy_version_planned": "0.9-draft",
+      "fields_planned": "primary TITLE-ABS(...) OR AUTHKEY(...) (index terms excluded) with TITLE(...) clauses; fallback TITLE-ABS-KEY (SCOPUS_v0.9_FALLBACK_TAK_*) if any indexed seed is missed",
+      "limits_planned": "AND DOCTYPE(ar OR ip) AND LANGUAGE(english) AND NOT DOCTYPE(re OR ed OR le OR no OR er OR sh OR cr) (positive limits before AND NOT; optional INDEXTERMS animal exclusion untested and not part of v0.9)",
+      "seed_test_rule": "Run *_SEED_TEST.txt before export: indexed seeds of group 1 (10 original positive) and group 2 (X01, X24, X47, X48) must all be retrieved; else use the fallback fields and log the reason and both counts.",
+      "diagnostic_count_check": {
+        "count": 12347,
+        "date": "2026-10-05",
+        "run_by": "D (web interface)",
+        "source": "03_search/search_checks_v0.9_2026-10-05/results.json",
+        "note": "D's diagnostic platform run of the primary single line with the document-type NOT, BEFORE the English/article limits; seed test pending; no export; not a formal count"
+      },
+      "export_plan": "Scopus full-record export with abstracts (PRE-005)"
     },
     {
       "id": "SCOPUS_EO",
@@ -321,7 +418,7 @@
       "export_filename_and_format": null,
       "saved_search_or_history_id": null,
       "notes": null,
-      "execution_status": "NOT_EXECUTED",
+      "execution_status": "WITHDRAWN (strategy v0.9 single route E AND I AND T; EO dropped, decision of A 2026-10-05)",
       "query_translation_or_parser_details": null,
       "search_purpose": null,
       "update_of_search_id": null,
@@ -364,7 +461,7 @@
       "database": "Embase",
       "platform": "Embase.com",
       "route": "E AND I AND T",
-      "strategy_reference": "search_strategy_draft.txt §6",
+      "strategy_reference": "search_strategy_draft.txt Appendix B (withdrawn v0.7 draft)",
       "exact_query_as_run": null,
       "date_time_timezone": null,
       "searcher": null,
@@ -376,7 +473,7 @@
       "export_filename_and_format": null,
       "saved_search_or_history_id": null,
       "notes": null,
-      "execution_status": "NOT_EXECUTED",
+      "execution_status": "WITHDRAWN under PRE-006 (strategy v0.9, decision of A 2026-10-05: licence/feasibility); not to be executed",
       "query_translation_or_parser_details": null,
       "search_purpose": null,
       "update_of_search_id": null,
@@ -414,7 +511,7 @@
         "CIT-R4": null,
         "CIT-R5": null
       },
-      "platform_selection_status": "CANDIDATE_INTERFACE; NOT SELECTED / NOT EXECUTED",
+      "platform_selection_status": "WITHDRAWN under PRE-006 (strategy v0.9, decision of A 2026-10-05: licence/feasibility); not to be executed",
       "planned_query_checksum_sha256": null
     },
     {
@@ -422,7 +519,7 @@
       "database": "Embase",
       "platform": "Embase.com",
       "route": "E AND O AND T",
-      "strategy_reference": "search_strategy_draft.txt §6",
+      "strategy_reference": "search_strategy_draft.txt Appendix B (withdrawn v0.7 draft)",
       "exact_query_as_run": null,
       "date_time_timezone": null,
       "searcher": null,
@@ -434,7 +531,7 @@
       "export_filename_and_format": null,
       "saved_search_or_history_id": null,
       "notes": null,
-      "execution_status": "NOT_EXECUTED",
+      "execution_status": "WITHDRAWN under PRE-006 (strategy v0.9, decision of A 2026-10-05: licence/feasibility); not to be executed",
       "query_translation_or_parser_details": null,
       "search_purpose": null,
       "update_of_search_id": null,
@@ -472,7 +569,7 @@
         "CIT-R4": null,
         "CIT-R5": null
       },
-      "platform_selection_status": "CANDIDATE_INTERFACE; NOT SELECTED / NOT EXECUTED",
+      "platform_selection_status": "WITHDRAWN under PRE-006 (strategy v0.9, decision of A 2026-10-05: licence/feasibility); not to be executed",
       "planned_query_checksum_sha256": null
     },
     {
@@ -480,7 +577,7 @@
       "database": "Embase",
       "platform": "Ovid (Embase segment)",
       "route": "E AND I AND T",
-      "strategy_reference": "search_strategy_draft.txt §6 Ovid adaptation",
+      "strategy_reference": "search_strategy_draft.txt Appendix B (withdrawn v0.7 draft)",
       "exact_query_as_run": null,
       "date_time_timezone": null,
       "searcher": null,
@@ -493,7 +590,7 @@
       "export_filename_and_format": null,
       "saved_search_or_history_id": null,
       "notes": null,
-      "execution_status": "NOT_EXECUTED",
+      "execution_status": "WITHDRAWN under PRE-006 (strategy v0.9, decision of A 2026-10-05: licence/feasibility); not to be executed",
       "query_translation_or_parser_details": null,
       "search_purpose": null,
       "update_of_search_id": null,
@@ -531,7 +628,7 @@
         "CIT-R4": null,
         "CIT-R5": null
       },
-      "platform_selection_status": "ALTERNATIVE_INTERFACE_DRAFT; NOT SELECTED / NOT EXECUTED",
+      "platform_selection_status": "WITHDRAWN under PRE-006 (strategy v0.9, decision of A 2026-10-05: licence/feasibility); not to be executed",
       "planned_query_checksum_sha256": null
     },
     {
@@ -539,7 +636,7 @@
       "database": "Embase",
       "platform": "Ovid (Embase segment)",
       "route": "E AND O AND T",
-      "strategy_reference": "search_strategy_draft.txt §6 Ovid adaptation",
+      "strategy_reference": "search_strategy_draft.txt Appendix B (withdrawn v0.7 draft)",
       "exact_query_as_run": null,
       "date_time_timezone": null,
       "searcher": null,
@@ -552,7 +649,7 @@
       "export_filename_and_format": null,
       "saved_search_or_history_id": null,
       "notes": null,
-      "execution_status": "NOT_EXECUTED",
+      "execution_status": "WITHDRAWN under PRE-006 (strategy v0.9, decision of A 2026-10-05: licence/feasibility); not to be executed",
       "query_translation_or_parser_details": null,
       "search_purpose": null,
       "update_of_search_id": null,
@@ -590,7 +687,7 @@
         "CIT-R4": null,
         "CIT-R5": null
       },
-      "platform_selection_status": "ALTERNATIVE_INTERFACE_DRAFT; NOT SELECTED / NOT EXECUTED",
+      "platform_selection_status": "WITHDRAWN under PRE-006 (strategy v0.9, decision of A 2026-10-05: licence/feasibility); not to be executed",
       "planned_query_checksum_sha256": null
     },
     {
@@ -598,7 +695,7 @@
       "database": "SPORTDiscus",
       "platform": "EBSCOhost",
       "route": "E AND I AND T",
-      "strategy_reference": "search_strategy_draft.txt §7",
+      "strategy_reference": "search_strategy_draft.txt Appendix B (withdrawn v0.7 draft)",
       "exact_query_as_run": null,
       "date_time_timezone": null,
       "searcher": null,
@@ -611,7 +708,7 @@
       "export_filename_and_format": null,
       "saved_search_or_history_id": null,
       "notes": null,
-      "execution_status": "NOT_EXECUTED",
+      "execution_status": "WITHDRAWN under PRE-006 (strategy v0.9, decision of A 2026-10-05: licence/feasibility); not to be executed",
       "query_translation_or_parser_details": null,
       "search_purpose": null,
       "update_of_search_id": null,
@@ -657,7 +754,7 @@
       "database": "SPORTDiscus",
       "platform": "EBSCOhost",
       "route": "E AND O AND T",
-      "strategy_reference": "search_strategy_draft.txt §7",
+      "strategy_reference": "search_strategy_draft.txt Appendix B (withdrawn v0.7 draft)",
       "exact_query_as_run": null,
       "date_time_timezone": null,
       "searcher": null,
@@ -670,7 +767,7 @@
       "export_filename_and_format": null,
       "saved_search_or_history_id": null,
       "notes": null,
-      "execution_status": "NOT_EXECUTED",
+      "execution_status": "WITHDRAWN under PRE-006 (strategy v0.9, decision of A 2026-10-05: licence/feasibility); not to be executed",
       "query_translation_or_parser_details": null,
       "search_purpose": null,
       "update_of_search_id": null,
@@ -712,6 +809,26 @@
       "planned_query_checksum_sha256": null
     },
     {
+      "id": "GOOGLE_SCHOLAR_SUPPLEMENTARY",
+      "database": "Google Scholar",
+      "platform": "Google Scholar web interface (signed out, personalisation off)",
+      "route": "Supplementary: short strings GS-1 to GS-3 (strategy §6), first 200 results each, sorted by relevance",
+      "strategy_reference": "search_strategy_draft.txt §6 (DRAFT for A)",
+      "exact_query_as_run": null,
+      "date_time_timezone": null,
+      "searcher": null,
+      "result_count_reported": null,
+      "results_screened_n": null,
+      "record_list_or_export": null,
+      "new_records_after_dedup": null,
+      "hit_count": null,
+      "export_count": null,
+      "export_checksum_sha256": null,
+      "execution_status": "NOT_EXECUTED (procedure draft pending A)",
+      "notes": "Records not already in the database pool enter the same title-stage screening (stage 1, PRE-005). Reported as other sources, separately from the three databases. 256-character query limit and no truncation (D confirms at run).",
+      "planned_query_checksum_sha256": null
+    },
+    {
       "id": "PREPRINT_F1_IMMUNE",
       "database": "bioRxiv + medRxiv",
       "platform": "medRxiv Advanced Search",
@@ -742,7 +859,8 @@
       "query_checksum_sha256": null,
       "export_checksum_sha256": null,
       "strategy_file_checksum_sha256": null,
-      "planned_query_checksum_sha256": null
+      "planned_query_checksum_sha256": null,
+      "v09_status": "Kept; the planned_query_draft carries the v0.7 vocabulary and must be regenerated from the v0.9 E/I/T lists before execution (medRxiv has no title field, so the title-only E rule cannot be applied; A decides). Strategy §9.6."
     },
     {
       "id": "PREPRINT_F2_OMICS",
@@ -761,7 +879,7 @@
       "full_text_checked_for_plausible_records": null,
       "record_list_or_export": null,
       "publication_version_linkage_checked": null,
-      "execution_status": "NOT_EXECUTED",
+      "execution_status": "SUSPENDED (strategy v0.9 single-route decision; A confirms withdrawal at the PRESS re-review)",
       "query_translation_or_parser_details": null,
       "search_purpose": null,
       "update_of_search_id": null,
@@ -1732,7 +1850,7 @@
   ],
   "final_search_date": null,
   "deduplicated_pool_count": null,
-  "press_reviewer_and_date": "A, 2026-10-04 (accept with changes; strategy v0.7-draft)",
+  "press_reviewer_and_date": "A, 2026-10-04 (accept with changes; strategy v0.7-draft). VOID for v0.9: re-review by A required (PRESS_review_checklist.md, section 'v0.9 re-review').",
   "dual_screening_pilot": {
     "random_seed": null,
     "records_drawn": null,
@@ -1748,7 +1866,9 @@
     "Preprint, citation-chain and registry-overlap records are kept separate from core five-database counts. All query/result fields remain null because none was executed. The 2026-10-04 collision re-check is prior reconnaissance and populates none of these fields.",
     "Protocol v3.0 (draft for team freeze) dated 2026-10-04; strategy v0.4-draft. Parsed queries, run-query/export checksums, route-level seed detection (including the v3 seeds POS-C*, BND-*, CIT-*), final dates and hit counts remain null until genuine execution.",
     "2026-10-04 (strategy v0.5-draft): PubMed parser-validation runs, MeSH validation and PubMed seed detection are stored under parser_validation_runs only. They are not formal searches and produce no PRISMA counts; formal-run fields in `searches` remain null.",
-    "2026-10-04 (strategy v0.7-draft): T made a required concept (PRE-003); PubMed v0.7 confirmation stored under parser_validation_runs.pubmed_2026_10_04_v07_addendum3 (parser validation only; no PRISMA counts). Planned routes in `searches` now read E AND I AND T / E AND O AND T; every formal-run field remains null."
+    "2026-10-04 (strategy v0.7-draft): T made a required concept (PRE-003); PubMed v0.7 confirmation stored under parser_validation_runs.pubmed_2026_10_04_v07_addendum3 (parser validation only; no PRISMA counts). Planned routes in `searches` now read E AND I AND T / E AND O AND T; every formal-run field remains null.",
+    "2026-10-05 (strategy v0.9-draft; decision of A, PRE-006): single route E AND I AND T; databases PubMed, WoS Core Collection, Scopus, plus Google Scholar (supplementary); Embase and SPORTDiscus entries kept below but marked WITHDRAWN. The v0.7 PubMed formal export of 2026-10-05 (PUBMED_EI/PUBMED_EO; formal fields kept unchanged as a record) is SUPERSEDED and must be re-run under v0.9 as PUBMED_EI_V09. D's WoS EO 1-500 manual export (03_search/full_exports_2026-10-05/) is superseded. Citation-chasing in_pool flags must be recomputed against the v0.9 pool. PubMed v0.9 diagnostic counts are under parser_validation_runs.pubmed_2026_10_05_v09_diagnostic (not formal; no PRISMA counts).",
+    "2026-10-05 (later; decision of A after D's first WoS/Scopus runs): English and journal articles only at the search stage (PubMed AND english[la], NOT preprint[pt]; WoS AND DT=(Article) AND LA=(English); Scopus AND DOCTYPE(ar OR ip) AND LANGUAGE(english)). PubMed re-count 7,846 (2026-10-05T13:23:01Z, SHA-256 prefix 6ad15420fe1f; 8,013 before). D's WoS 14,094 and Scopus 12,347 were platform runs before these limits (diagnostic). Protocol side updated by the protocol owner."
   ],
   "supplemental_stopping_rules": {
     "preprints": {
@@ -1779,19 +1899,19 @@
       "stop": "inspect visible matches or log cap/coverage limitation"
     }
   },
-  "draft_updated": "2026-10-04",
+  "draft_updated": "2026-10-05",
   "selected_embase_platform": null,
-  "embase_platform_rule": "Select Embase.com OR Ovid as one of five databases; alternative interface is a translation option, not a sixth source.",
+  "embase_platform_rule": "WITHDRAWN under PRE-006 (strategy v0.9). Historical rule: Select Embase.com OR Ovid as one of five databases; alternative interface is a translation option, not a sixth source.",
   "execution_gate": {
     "status": "PENDING",
-    "database_platform_selection": null,
-    "thesaurus_and_parser_validation": "PARTIAL (2026-10-04): PubMed v0.7 E/I/O/T blocks, MeSH lines (incl. T heading Post-Exercise Recovery D000096062) and routes parser-validated through E-utilities (parser_validation_runs.pubmed_2026_10_04_v07_addendum3); WoS/Scopus/Embase/SPORTDiscus live parser checks (incl. T proximity/stop-word/hyphen login checks, strategy §8) and Emtree/SPORTDiscus thesaurus mapping pending D's login.",
-    "known_seed_tests": "PARTIAL (2026-10-04, strategy v0.7): PubMed only; T-required union retrieves 19/24 seeds with a PubMed record (positive 10/10, boundary 7/7); missed NEG-E1, NEG-E2 (expected exclusions) and CIT-R3, CIT-R4, CIT-R5 (citation-chasing reviews); no seed tests numeric-only timing; pilot must expand positive seeds to >=30 incl. >=5 numeric-only; other databases not tested.",
-    "PRESS_review": "A, 2026-10-04: accept with changes, on strategy v0.7-draft (PRESS_review_checklist.md sign-off block). Conditions: no infection-outcome terms; train* retained pending the pilot sample test; T-block required per team decision PRE-003 (a protocol amendment, not a PRESS finding). Void for later versions unless re-reviewed.",
-    "note": "No formal run until all gates are recorded (archive-before-formal-search gate, licensed-platform login checks, thesaurus validation, pilot). Platform validation tests are logged separately from formal search/update runs."
+    "database_platform_selection": "Strategy v0.9 (A, 2026-10-05; PRE-006): PubMed + Web of Science Core Collection + Scopus, Google Scholar supplementary; Embase and SPORTDiscus withdrawn.",
+    "thesaurus_and_parser_validation": "PARTIAL: PubMed v0.9 blocks, MeSH lines (unchanged since v0.6) and the single route with limits run as diagnostic E-utilities queries without errors or warnings (parser_validation_runs.pubmed_2026_10_05_v09_diagnostic). WoS/Scopus v0.9 primary strings run once by D on the web interfaces before the English/article limits (WoS 14,094; Scopus 12,347; 03_search/search_checks_v0.9_2026-10-05/results.json; diagnostic); parser display and login checks (strategy §8) pending D. Emtree/SPORTDiscus mapping no longer needed (withdrawn). [v0.7 status, superseded: PARTIAL (2026-10-04): PubMed v0.7 E/I/O/T blocks, MeSH lines (incl. T heading Post-Exercise Recovery D000096062) and routes parser-validated through E-utilities (parser_validation_runs.pubmed_2026_10_04_v07_addendum3); WoS/Scopus/Embase/SPORTDiscus live parser checks (incl. T proximity/stop-word/hyphen login checks, strategy §8) and Emtree/SPORTDiscus thesaurus mapping pending D's login.]",
+    "known_seed_tests": "PARTIAL (strategy v0.9, 2026-10-05): PubMed only, diagnostic. With all five limits (7,846) positive seeds 59/61 (POS-S3 preprint removed by NOT preprint[pt] by design; X50 missed). Before the English/preprint limits (8,013) R1_PUBMED_v09 retrieves positive seeds 60/61 (10/10 original; 50/51 expanded, X50 missed), boundary 6/7 (BND-Y1 removed by the child-only NOT as intended), pilot ADVANCE 9/10 (PMID 22403007 method-word false positive); NEG-E1/E2 and CIT-R1-R5 not retrieved by design. WoS/Scopus seed tests (10 + 4 seeds; paste_ready_v0.9/*_SEED_TEST.txt) pending D and gate the field narrowing. [v0.7 status, superseded: PARTIAL (2026-10-04, strategy v0.7): PubMed only; T-required union retrieves 19/24 seeds with a PubMed record (positive 10/10, boundary 7/7); missed NEG-E1, NEG-E2 (expected exclusions) and CIT-R3, CIT-R4, CIT-R5 (citation-chasing reviews); no seed tests numeric-only timing; pilot must expand positive seeds to >=30 incl. >=5 numeric-only; other databases not tested.]",
+    "PRESS_review": "VOID for v0.9; re-review by A required (PRESS_review_checklist.md, 'v0.9 re-review'). Previous: A, 2026-10-04: accept with changes, on strategy v0.7-draft (PRESS_review_checklist.md sign-off block). Conditions: no infection-outcome terms; train* retained pending the pilot sample test; T-block required per team decision PRE-003 (a protocol amendment, not a PRESS finding). Void for later versions unless re-reviewed.",
+    "note": "No formal run until all gates are recorded (archive-before-formal-search gate, licensed-platform login checks, thesaurus validation, pilot). Platform validation tests are logged separately from formal search/update runs. v0.9: formal runs also wait for A's PRESS re-sign-off, the v3.1 archive release containing PRE-006 and D's WoS/Scopus seed tests."
   },
-  "selected_embase_platform_status": "PENDING; no Embase interface selected or searched",
-  "alternative_embase_platform_status": "Ovid/Embase.com is an alternative interface translation only; do not count it as a sixth database or execute both unless protocol is amended",
+  "selected_embase_platform_status": "WITHDRAWN under PRE-006 (strategy v0.9, 2026-10-05): Embase is not searched; no platform selected",
+  "alternative_embase_platform_status": "WITHDRAWN under PRE-006 (strategy v0.9, 2026-10-05)",
   "parser_validation_runs": {
     "description": "Parser/platform validation runs only. They are NOT formal searches: they produce no PRISMA counts and populate none of the formal-run fields in `searches` (exact_query_as_run, date_time_timezone, hit_count, export_*), which stay null. Record: 03_search/platform_validation_2026-10-04.md.",
     "pubmed_2026_10_04": {
@@ -7598,6 +7718,329 @@
         "output_csv": "03_search/t_free_sensitivity_sample_2026-10-05.csv"
       },
       "not_verified": "Other four databases not run. Eligibility judged from abstracts by one AI reader for seed selection only. Simpson 2020 reference list not mined. Proposals designed after misses were seen (post hoc)."
+    },
+    "pubmed_2026_10_05_v09_diagnostic": {
+      "description": "Strategy v0.9-draft (decision of A, 2026-10-05): PubMed diagnostic runs of the exact v0.9 blocks, limits and single route. Not formal searches: no PRISMA counts, no exports, no search date; formal fields of PUBMED_EI_V09 stay null. Record: 03_search/strategy_tightening_2026-10-05.md (scratch: /tmp/strategy_v09_diag/, not archived).",
+      "strategy_version": "0.9-draft",
+      "date": "2026-10-05",
+      "time_zone": "UTC",
+      "user_agent": "scoping-review-search/1.0",
+      "tool": "scoping-review-search",
+      "rate_limit": ">=1 s between requests; no API key; no e-mail parameter",
+      "run_window_utc": [
+        "2026-10-05T12:46:00Z",
+        "2026-10-05T13:23:04Z"
+      ],
+      "string_source": "Blocks as written on one line in search_strategy_draft.txt v0.9 §3 (identical to final_v09.json 'blocks'). Route formula: ((((E OR E_MESH) AND (I OR I_MESH) AND (T OR T_MESH)) NOT LIMITS_PUBMED_ANIMALONLY) NOT LIMITS_PUBMED_PUBTYPE) NOT LIMITS_PUBMED_CHILDONLY, then AND LIMITS_PUBMED_ENGLISH, then NOT LIMITS_PUBMED_PREPRINT, each step written as '(<previous>) NOT|AND <limit>'. Entries suffixed _three_limits are the 12:54-13:03Z runs before the English/preprint limits.",
+      "warnings_or_errors": "none returned for any query",
+      "block_entries": [
+        {
+          "id": "PV09_E_PUBMED",
+          "block_or_route": "E_PUBMED",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST)",
+          "run_type": "diagnostic",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "search methodologist role; executed by an AI agent",
+          "strategy_version": "0.9-draft",
+          "exact_string_sent": "(exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR \"physical exertion\"[tiab] OR sport*[ti] OR train*[ti] OR workout*[tiab] OR athlet*[tiab] OR competition*[ti] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycling[tiab] OR cyclist*[tiab] OR \"cycle ergomet*\"[tiab] OR ergomet*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[ti] OR (resistance[tiab] AND train*[ti]) OR \"strength training\"[tiab] OR endurance[ti] OR aerobic[ti] OR \"interval train*\"[ti] OR \"interval exercis*\"[ti] OR \"sprint interval*\"[ti] OR \"high-intensity interval*\"[ti] OR HIIT[tiab] OR HIIE[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab])",
+          "string_sha256": "d5af1041d985c42668ba75dcdab3e576f4e7a8b65fe4a534fc9c9bcc36313357"
+        },
+        {
+          "id": "PV09_I_PUBMED",
+          "block_or_route": "I_PUBMED",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST)",
+          "run_type": "diagnostic",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "search methodologist role; executed by an AI agent",
+          "strategy_version": "0.9-draft",
+          "exact_string_sent": "((immune[tiab] OR immunity[tiab] OR immunolog*[tiab] OR immunosuppress*[tiab] OR immunodepress*[tiab] OR immunomodulat*[tiab] OR immunocompet*[tiab] OR immunosurveillance[tiab] OR immunosenescen*[tiab] OR immunoregulat*[tiab] OR immunoenhanc*[tiab] OR immunostimulat*[tiab] OR immunodeficien*[tiab] OR immunometabol*[tiab] OR immunoprotect*[tiab] OR immunoendocrin*[tiab] OR immuniz*[tiab] OR immunis*[tiab]) OR inflammat*[tiab] OR leukocyt*[tiab] OR leucocyt*[tiab] OR lymphocyt*[tiab] OR neutrophil*[tiab] OR monocyt*[tiab] OR eosinophil*[tiab] OR basophil*[tiab] OR \"natural killer\"[tiab] OR \"NK cell\"[tiab] OR \"NK cells\"[tiab] OR \"T cell\"[tiab] OR \"T cells\"[tiab] OR \"B cell\"[tiab] OR \"B cells\"[tiab] OR CD4[tiab] OR CD8[tiab] OR cytokine*[tiab] OR chemokine*[tiab] OR immunoglobulin*[tiab] OR \"immunoglobulin A\"[tiab] OR \"secretory immunoglobulin A\"[tiab] OR IgA[tiab] OR sIgA[tiab] OR SIgA[tiab] OR \"secretory IgA\"[tiab] OR interleukin*[tiab] OR \"interleukin-6\"[tiab] OR \"IL-6\"[tiab] OR IL6[tiab] OR CRP[tiab] OR \"C-reactive protein\"[tiab] OR \"C reactive protein\"[tiab] OR phagocyt*[tiab] OR (cytotoxic*[ti] OR \"cytotoxic activity\"[tiab] OR \"cytotoxic T\"[tiab] OR \"cytotoxic lymphocyte*\"[tiab] OR \"cell-mediated cytotoxicity\"[tiab] OR \"cell mediated cytotoxicity\"[tiab] OR \"NK cytotoxicity\"[tiab:~2] OR \"NK cell cytotoxicity\"[tiab] OR \"natural killer cytotoxicity\"[tiab:~3] OR \"NK cell activity\"[tiab:~2] OR \"natural killer cell activity\"[tiab:~3] OR NKCA[tiab] OR \"cytolytic activity\"[tiab] OR \"killer cell activity\"[tiab:~2]) OR (complement[ti] OR \"complement system\"[tiab] OR \"complement activation\"[tiab] OR \"complement component*\"[tiab] OR \"complement protein*\"[tiab] OR \"complement factor*\"[tiab] OR \"complement C3\"[tiab] OR \"complement C4\"[tiab] OR \"complement levels\"[tiab] OR \"serum complement\"[tiab] OR \"plasma complement\"[tiab] OR C3a[tiab] OR C5a[tiab]) OR (mucosal[tiab] AND (immune[tiab] OR immunity[tiab] OR immunolog*[tiab])) OR \"immune function\"[tiab] OR \"immune response\"[tiab] OR \"effector function\"[tiab] OR immunophenotyp*[tiab] OR \"immune cell\"[tiab] OR \"immune cells\"[tiab] OR \"white blood cell*\"[tiab] OR \"mononuclear cell*\"[tiab] OR PBMC*[tiab] OR granulocyt*[tiab] OR lymphopeni*[tiab] OR lymphocytopeni*[tiab] OR leukocytosis[tiab] OR TNF[tiab] OR \"TNF-alpha\"[tiab] OR \"tumor necrosis factor*\"[tiab] OR \"tumour necrosis factor*\"[tiab] OR IFN[tiab] OR \"IFN-gamma\"[tiab] OR interferon*[tiab] OR \"IL-10\"[tiab] OR IL10[tiab] OR \"IL-1\"[tiab] OR IL1[tiab] OR \"IL-1beta\"[tiab] OR \"IL-8\"[tiab] OR IL8[tiab])",
+          "string_sha256": "ed7ce5ca665b58b3d1159ecb0fc000398994ea689bea6d3fc9be8777f45326b1"
+        },
+        {
+          "id": "PV09_O_PUBMED",
+          "block_or_route": "O_PUBMED",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST)",
+          "run_type": "diagnostic",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "search methodologist role; executed by an AI agent",
+          "strategy_version": "0.9-draft",
+          "exact_string_sent": "( omic*[tiab] OR proteom*[tiab] OR metabolom*[tiab] OR lipidom*[tiab] OR transcriptom*[tiab] OR epigenom*[tiab] OR epigenet*[tiab] OR \"DNA methylation\"[tiab] OR methylom*[tiab] OR multiomic*[tiab] OR \"multi-omic\"[tiab] OR \"multi-omics\"[tiab] OR \"single-cell\"[tiab] OR \"single cell\"[tiab] OR \"scRNA-seq\"[tiab] OR \"RNA-seq\"[tiab] OR \"RNA sequencing\"[tiab] OR microRNA*[tiab] OR miRNA*[tiab] OR lncRNA*[tiab] OR circRNA*[tiab] OR \"mass spectrometry\"[tiab] OR \"protein profiling\"[tiab] OR \"metabolite profiling\"[tiab] OR \"high-throughput sequencing\"[tiab] OR microarray*[tiab] OR \"gene expression profil*\"[tiab] OR \"expression profil*\"[tiab] )",
+          "string_sha256": "b978389e2b057a2cf31c91c7d9d857638a7c347abcddb8499a49222b9f518010"
+        },
+        {
+          "id": "PV09_T_PUBMED",
+          "block_or_route": "T_PUBMED",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST)",
+          "run_type": "diagnostic",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "search methodologist role; executed by an AI agent",
+          "strategy_version": "0.9-draft",
+          "exact_string_sent": "(\"post-exercise\"[tiab] OR postexercise[tiab] OR \"post exercise\"[tiab] OR \"after exercise\"[tiab] OR \"following exercise\"[tiab] OR \"exercise-induced\"[tiab] OR \"acute exercise\"[tiab] OR \"acute bout\"[tiab] OR \"single bout\"[tiab] OR \"bout of\"[tiab] OR \"exercise bout*\"[tiab] OR \"post-race\"[tiab] OR \"post-marathon\"[tiab] OR \"recovery period\"[tiab] OR \"during recovery\"[tiab:~0] OR \"immediately after\"[tiab] OR \"hours after\"[tiab] OR \"h post\"[tiab] OR \"post-match\"[tiab] OR \"post-competition\"[tiab] OR \"exercise session*\"[tiab] OR \"exercise challenge*\"[tiab] OR \"exercise test*\"[tiab] OR \"after marathon\"[tiab:~1] OR \"after race\"[tiab:~1] OR \"after racing\"[tiab:~0] OR \"after strenuous exercise\"[tiab:~0] OR \"after prolonged exercise\"[tiab:~0] OR \"after intense exercise\"[tiab:~0] OR \"following bout\"[tiab:~1] OR \"post-bout\"[tiab] OR \"exercise recovery\"[tiab] OR \"recovery from exercise\"[tiab] OR \"pre- and post-exercise\"[tiab] OR \"pre-exercise\"[tiab] OR \"min post\"[tiab] OR \"h after\"[tiab] OR \"hours post\"[tiab] OR preexercise[tiab] OR postrace[tiab] OR prerace[tiab] OR \"hr after\"[tiab:~0] OR \"hr post\"[tiab:~0] OR \"hrs after\"[tiab:~0] OR \"hrs post\"[tiab:~0] OR \"h of recovery\"[tiab:~0] OR \"min of recovery\"[tiab:~0] OR \"hours of recovery\"[tiab:~0] OR \"acute effects\"[tiab] OR marathon*[tiab] OR ultramarathon*[tiab] OR \"ultra-marathon\"[tiab] OR \"ultra-marathons\"[tiab] OR triathlon*[tiab] OR ironman[tiab])",
+          "string_sha256": "15d4521ce96a5f76836692c42cb4431c51f176f25e87189d6e7af54a105f7c80"
+        },
+        {
+          "id": "PV09_E_MESH_PUBMED",
+          "block_or_route": "E_MESH_PUBMED",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST)",
+          "run_type": "diagnostic",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "search methodologist role; executed by an AI agent",
+          "strategy_version": "0.9-draft",
+          "exact_string_sent": "(\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Sports\"[Mesh] OR \"Exercise Test\"[Mesh] OR \"Running\"[Mesh] OR \"Swimming\"[Mesh] OR \"Bicycling\"[Mesh] OR \"Resistance Training\"[Mesh] OR \"High-Intensity Interval Training\"[Mesh])",
+          "string_sha256": "9a18ec26ee72c8ac8b0b4f7ce1718b3e0cb0deb90aed10620d264583b4ecd5f5"
+        },
+        {
+          "id": "PV09_I_MESH_PUBMED",
+          "block_or_route": "I_MESH_PUBMED",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST)",
+          "run_type": "diagnostic",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "search methodologist role; executed by an AI agent",
+          "strategy_version": "0.9-draft",
+          "exact_string_sent": "(\"Immunity\"[Mesh] OR \"Immunity, Mucosal\"[Mesh] OR \"Leukocytes\"[Mesh] OR \"Lymphocytes\"[Mesh] OR \"Killer Cells, Natural\"[Mesh] OR \"Neutrophils\"[Mesh] OR \"Monocytes\"[Mesh] OR \"Leukocyte Count\"[Mesh] OR \"Lymphocyte Count\"[Mesh] OR \"Cytokines\"[Mesh] OR \"Chemokines\"[Mesh] OR \"Interleukins\"[Mesh] OR \"Interleukin-6\"[Mesh] OR \"Immunoglobulins\"[Mesh] OR \"Immunoglobulin A\"[Mesh] OR \"Immunoglobulin A, Secretory\"[Mesh] OR \"Complement System Proteins\"[Mesh] OR \"C-Reactive Protein\"[Mesh] OR \"Phagocytosis\"[Mesh] OR \"Cytotoxicity, Immunologic\"[Mesh])",
+          "string_sha256": "44271ec61fe9721ccf45831b1cb9e31a36a193bff627a8b5af694fd3255a7f70"
+        },
+        {
+          "id": "PV09_O_MESH_PUBMED",
+          "block_or_route": "O_MESH_PUBMED",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST)",
+          "run_type": "diagnostic",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "search methodologist role; executed by an AI agent",
+          "strategy_version": "0.9-draft",
+          "exact_string_sent": "(\"Proteomics\"[Mesh] OR \"Metabolomics\"[Mesh] OR \"Lipidomics\"[Mesh] OR \"Transcriptome\"[Mesh] OR \"Gene Expression Profiling\"[Mesh] OR \"Single-Cell Analysis\"[Mesh] OR \"Multiomics\"[Mesh] OR \"Epigenomics\"[Mesh] OR \"DNA Methylation\"[Mesh] OR \"MicroRNAs\"[Mesh] OR \"RNA, Long Noncoding\"[Mesh] OR \"Sequence Analysis, RNA\"[Mesh] OR \"Mass Spectrometry\"[Mesh:NoExp])",
+          "string_sha256": "5aa95f9d3b580876f1a317116194bcc436555b6ceae229725781106bc6374824"
+        },
+        {
+          "id": "PV09_T_MESH_PUBMED",
+          "block_or_route": "T_MESH_PUBMED",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST)",
+          "run_type": "diagnostic",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "search methodologist role; executed by an AI agent",
+          "strategy_version": "0.9-draft",
+          "exact_string_sent": "(\"Post-Exercise Recovery\"[Mesh])",
+          "string_sha256": "8473898b016ac7b337636d0fac7a37e90e95e8fbc21cfded76956d3d4ca3689c"
+        },
+        {
+          "id": "PV09_LIMITS_PUBMED_ANIMALONLY",
+          "block_or_route": "LIMITS_PUBMED_ANIMALONLY",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST)",
+          "run_type": "diagnostic",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "search methodologist role; executed by an AI agent",
+          "strategy_version": "0.9-draft",
+          "exact_string_sent": "(animals[mh] NOT humans[mh])",
+          "string_sha256": "0087f6ea9765881a5443478c592f7476cc557bf9a37a9a4e49534da001904eca"
+        },
+        {
+          "id": "PV09_LIMITS_PUBMED_PUBTYPE",
+          "block_or_route": "LIMITS_PUBMED_PUBTYPE",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST)",
+          "run_type": "diagnostic",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "search methodologist role; executed by an AI agent",
+          "strategy_version": "0.9-draft",
+          "exact_string_sent": "(review[pt] OR editorial[pt] OR letter[pt] OR comment[pt] OR \"case reports\"[pt])",
+          "string_sha256": "1464ca5e66b35090947254f7d7a89adec150b3a0c796163984a621ee3ba5fbea"
+        },
+        {
+          "id": "PV09_LIMITS_PUBMED_CHILDONLY",
+          "block_or_route": "LIMITS_PUBMED_CHILDONLY",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST)",
+          "run_type": "diagnostic",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "search methodologist role; executed by an AI agent",
+          "strategy_version": "0.9-draft",
+          "exact_string_sent": "((infant[mh] OR child[mh] OR adolescent[mh]) NOT adult[mh])",
+          "string_sha256": "c228eca23022e6796bc50c5f57925ed10232d6c5b9a29ebef7426f77aefb9ade"
+        },
+        {
+          "id": "PV09_LIMITS_PUBMED_ENGLISH",
+          "block_or_route": "LIMITS_PUBMED_ENGLISH",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST)",
+          "run_type": "diagnostic",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "search methodologist role; executed by an AI agent",
+          "strategy_version": "0.9-draft",
+          "exact_string_sent": "(english[la])",
+          "string_sha256": "7d1aa3fbae084029d4c7072bed626644fafbaf26adeafc266bd2a4dfb54d4ae9"
+        },
+        {
+          "id": "PV09_LIMITS_PUBMED_PREPRINT",
+          "block_or_route": "LIMITS_PUBMED_PREPRINT",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST)",
+          "run_type": "diagnostic",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "search methodologist role; executed by an AI agent",
+          "strategy_version": "0.9-draft",
+          "exact_string_sent": "(preprint[pt])",
+          "string_sha256": "966597d22224c540ebf548e93c2d82975aead0976d194de06eef66011373ee4e"
+        }
+      ],
+      "route_entries": [
+        {
+          "id": "PV09_R1",
+          "block_or_route": "R1_PUBMED_v09",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST)",
+          "run_type": "diagnostic",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "search methodologist role; executed by an AI agent",
+          "strategy_version": "0.9-draft",
+          "exact_string_sent": "(((((((exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR \"physical exertion\"[tiab] OR sport*[ti] OR train*[ti] OR workout*[tiab] OR athlet*[tiab] OR competition*[ti] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycling[tiab] OR cyclist*[tiab] OR \"cycle ergomet*\"[tiab] OR ergomet*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[ti] OR (resistance[tiab] AND train*[ti]) OR \"strength training\"[tiab] OR endurance[ti] OR aerobic[ti] OR \"interval train*\"[ti] OR \"interval exercis*\"[ti] OR \"sprint interval*\"[ti] OR \"high-intensity interval*\"[ti] OR HIIT[tiab] OR HIIE[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab]) OR (\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Sports\"[Mesh] OR \"Exercise Test\"[Mesh] OR \"Running\"[Mesh] OR \"Swimming\"[Mesh] OR \"Bicycling\"[Mesh] OR \"Resistance Training\"[Mesh] OR \"High-Intensity Interval Training\"[Mesh])) AND (((immune[tiab] OR immunity[tiab] OR immunolog*[tiab] OR immunosuppress*[tiab] OR immunodepress*[tiab] OR immunomodulat*[tiab] OR immunocompet*[tiab] OR immunosurveillance[tiab] OR immunosenescen*[tiab] OR immunoregulat*[tiab] OR immunoenhanc*[tiab] OR immunostimulat*[tiab] OR immunodeficien*[tiab] OR immunometabol*[tiab] OR immunoprotect*[tiab] OR immunoendocrin*[tiab] OR immuniz*[tiab] OR immunis*[tiab]) OR inflammat*[tiab] OR leukocyt*[tiab] OR leucocyt*[tiab] OR lymphocyt*[tiab] OR neutrophil*[tiab] OR monocyt*[tiab] OR eosinophil*[tiab] OR basophil*[tiab] OR \"natural killer\"[tiab] OR \"NK cell\"[tiab] OR \"NK cells\"[tiab] OR \"T cell\"[tiab] OR \"T cells\"[tiab] OR \"B cell\"[tiab] OR \"B cells\"[tiab] OR CD4[tiab] OR CD8[tiab] OR cytokine*[tiab] OR chemokine*[tiab] OR immunoglobulin*[tiab] OR \"immunoglobulin A\"[tiab] OR \"secretory immunoglobulin A\"[tiab] OR IgA[tiab] OR sIgA[tiab] OR SIgA[tiab] OR \"secretory IgA\"[tiab] OR interleukin*[tiab] OR \"interleukin-6\"[tiab] OR \"IL-6\"[tiab] OR IL6[tiab] OR CRP[tiab] OR \"C-reactive protein\"[tiab] OR \"C reactive protein\"[tiab] OR phagocyt*[tiab] OR (cytotoxic*[ti] OR \"cytotoxic activity\"[tiab] OR \"cytotoxic T\"[tiab] OR \"cytotoxic lymphocyte*\"[tiab] OR \"cell-mediated cytotoxicity\"[tiab] OR \"cell mediated cytotoxicity\"[tiab] OR \"NK cytotoxicity\"[tiab:~2] OR \"NK cell cytotoxicity\"[tiab] OR \"natural killer cytotoxicity\"[tiab:~3] OR \"NK cell activity\"[tiab:~2] OR \"natural killer cell activity\"[tiab:~3] OR NKCA[tiab] OR \"cytolytic activity\"[tiab] OR \"killer cell activity\"[tiab:~2]) OR (complement[ti] OR \"complement system\"[tiab] OR \"complement activation\"[tiab] OR \"complement component*\"[tiab] OR \"complement protein*\"[tiab] OR \"complement factor*\"[tiab] OR \"complement C3\"[tiab] OR \"complement C4\"[tiab] OR \"complement levels\"[tiab] OR \"serum complement\"[tiab] OR \"plasma complement\"[tiab] OR C3a[tiab] OR C5a[tiab]) OR (mucosal[tiab] AND (immune[tiab] OR immunity[tiab] OR immunolog*[tiab])) OR \"immune function\"[tiab] OR \"immune response\"[tiab] OR \"effector function\"[tiab] OR immunophenotyp*[tiab] OR \"immune cell\"[tiab] OR \"immune cells\"[tiab] OR \"white blood cell*\"[tiab] OR \"mononuclear cell*\"[tiab] OR PBMC*[tiab] OR granulocyt*[tiab] OR lymphopeni*[tiab] OR lymphocytopeni*[tiab] OR leukocytosis[tiab] OR TNF[tiab] OR \"TNF-alpha\"[tiab] OR \"tumor necrosis factor*\"[tiab] OR \"tumour necrosis factor*\"[tiab] OR IFN[tiab] OR \"IFN-gamma\"[tiab] OR interferon*[tiab] OR \"IL-10\"[tiab] OR IL10[tiab] OR \"IL-1\"[tiab] OR IL1[tiab] OR \"IL-1beta\"[tiab] OR \"IL-8\"[tiab] OR IL8[tiab]) OR (\"Immunity\"[Mesh] OR \"Immunity, Mucosal\"[Mesh] OR \"Leukocytes\"[Mesh] OR \"Lymphocytes\"[Mesh] OR \"Killer Cells, Natural\"[Mesh] OR \"Neutrophils\"[Mesh] OR \"Monocytes\"[Mesh] OR \"Leukocyte Count\"[Mesh] OR \"Lymphocyte Count\"[Mesh] OR \"Cytokines\"[Mesh] OR \"Chemokines\"[Mesh] OR \"Interleukins\"[Mesh] OR \"Interleukin-6\"[Mesh] OR \"Immunoglobulins\"[Mesh] OR \"Immunoglobulin A\"[Mesh] OR \"Immunoglobulin A, Secretory\"[Mesh] OR \"Complement System Proteins\"[Mesh] OR \"C-Reactive Protein\"[Mesh] OR \"Phagocytosis\"[Mesh] OR \"Cytotoxicity, Immunologic\"[Mesh])) AND ((\"post-exercise\"[tiab] OR postexercise[tiab] OR \"post exercise\"[tiab] OR \"after exercise\"[tiab] OR \"following exercise\"[tiab] OR \"exercise-induced\"[tiab] OR \"acute exercise\"[tiab] OR \"acute bout\"[tiab] OR \"single bout\"[tiab] OR \"bout of\"[tiab] OR \"exercise bout*\"[tiab] OR \"post-race\"[tiab] OR \"post-marathon\"[tiab] OR \"recovery period\"[tiab] OR \"during recovery\"[tiab:~0] OR \"immediately after\"[tiab] OR \"hours after\"[tiab] OR \"h post\"[tiab] OR \"post-match\"[tiab] OR \"post-competition\"[tiab] OR \"exercise session*\"[tiab] OR \"exercise challenge*\"[tiab] OR \"exercise test*\"[tiab] OR \"after marathon\"[tiab:~1] OR \"after race\"[tiab:~1] OR \"after racing\"[tiab:~0] OR \"after strenuous exercise\"[tiab:~0] OR \"after prolonged exercise\"[tiab:~0] OR \"after intense exercise\"[tiab:~0] OR \"following bout\"[tiab:~1] OR \"post-bout\"[tiab] OR \"exercise recovery\"[tiab] OR \"recovery from exercise\"[tiab] OR \"pre- and post-exercise\"[tiab] OR \"pre-exercise\"[tiab] OR \"min post\"[tiab] OR \"h after\"[tiab] OR \"hours post\"[tiab] OR preexercise[tiab] OR postrace[tiab] OR prerace[tiab] OR \"hr after\"[tiab:~0] OR \"hr post\"[tiab:~0] OR \"hrs after\"[tiab:~0] OR \"hrs post\"[tiab:~0] OR \"h of recovery\"[tiab:~0] OR \"min of recovery\"[tiab:~0] OR \"hours of recovery\"[tiab:~0] OR \"acute effects\"[tiab] OR marathon*[tiab] OR ultramarathon*[tiab] OR \"ultra-marathon\"[tiab] OR \"ultra-marathons\"[tiab] OR triathlon*[tiab] OR ironman[tiab]) OR (\"Post-Exercise Recovery\"[Mesh]))) NOT (animals[mh] NOT humans[mh])) NOT (review[pt] OR editorial[pt] OR letter[pt] OR comment[pt] OR \"case reports\"[pt])) NOT ((infant[mh] OR child[mh] OR adolescent[mh]) NOT adult[mh])) AND (english[la])) NOT (preprint[pt])",
+          "string_sha256": "6ad15420fe1fbfc45ff2f2ff71a4b91848ed071ad76df379fdb55768c2e98c97",
+          "validation_hit_count": 7846,
+          "date_time_utc": "2026-10-05T13:23:01Z",
+          "note": "Final v0.9 string with all five limits (English and preprint added by A, 2026-10-05, after D's first WoS/Scopus runs). One re-count; seeds re-run at 2026-10-05T13:23:04Z."
+        },
+        {
+          "id": "PV09_R1_THREE_LIMITS",
+          "block_or_route": "R1_PUBMED_v09_three_limits",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST)",
+          "run_type": "diagnostic",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "search methodologist role; executed by an AI agent",
+          "strategy_version": "0.9-draft",
+          "exact_string_sent": "(((((exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR \"physical exertion\"[tiab] OR sport*[ti] OR train*[ti] OR workout*[tiab] OR athlet*[tiab] OR competition*[ti] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycling[tiab] OR cyclist*[tiab] OR \"cycle ergomet*\"[tiab] OR ergomet*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[ti] OR (resistance[tiab] AND train*[ti]) OR \"strength training\"[tiab] OR endurance[ti] OR aerobic[ti] OR \"interval train*\"[ti] OR \"interval exercis*\"[ti] OR \"sprint interval*\"[ti] OR \"high-intensity interval*\"[ti] OR HIIT[tiab] OR HIIE[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab]) OR (\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Sports\"[Mesh] OR \"Exercise Test\"[Mesh] OR \"Running\"[Mesh] OR \"Swimming\"[Mesh] OR \"Bicycling\"[Mesh] OR \"Resistance Training\"[Mesh] OR \"High-Intensity Interval Training\"[Mesh])) AND (((immune[tiab] OR immunity[tiab] OR immunolog*[tiab] OR immunosuppress*[tiab] OR immunodepress*[tiab] OR immunomodulat*[tiab] OR immunocompet*[tiab] OR immunosurveillance[tiab] OR immunosenescen*[tiab] OR immunoregulat*[tiab] OR immunoenhanc*[tiab] OR immunostimulat*[tiab] OR immunodeficien*[tiab] OR immunometabol*[tiab] OR immunoprotect*[tiab] OR immunoendocrin*[tiab] OR immuniz*[tiab] OR immunis*[tiab]) OR inflammat*[tiab] OR leukocyt*[tiab] OR leucocyt*[tiab] OR lymphocyt*[tiab] OR neutrophil*[tiab] OR monocyt*[tiab] OR eosinophil*[tiab] OR basophil*[tiab] OR \"natural killer\"[tiab] OR \"NK cell\"[tiab] OR \"NK cells\"[tiab] OR \"T cell\"[tiab] OR \"T cells\"[tiab] OR \"B cell\"[tiab] OR \"B cells\"[tiab] OR CD4[tiab] OR CD8[tiab] OR cytokine*[tiab] OR chemokine*[tiab] OR immunoglobulin*[tiab] OR \"immunoglobulin A\"[tiab] OR \"secretory immunoglobulin A\"[tiab] OR IgA[tiab] OR sIgA[tiab] OR SIgA[tiab] OR \"secretory IgA\"[tiab] OR interleukin*[tiab] OR \"interleukin-6\"[tiab] OR \"IL-6\"[tiab] OR IL6[tiab] OR CRP[tiab] OR \"C-reactive protein\"[tiab] OR \"C reactive protein\"[tiab] OR phagocyt*[tiab] OR (cytotoxic*[ti] OR \"cytotoxic activity\"[tiab] OR \"cytotoxic T\"[tiab] OR \"cytotoxic lymphocyte*\"[tiab] OR \"cell-mediated cytotoxicity\"[tiab] OR \"cell mediated cytotoxicity\"[tiab] OR \"NK cytotoxicity\"[tiab:~2] OR \"NK cell cytotoxicity\"[tiab] OR \"natural killer cytotoxicity\"[tiab:~3] OR \"NK cell activity\"[tiab:~2] OR \"natural killer cell activity\"[tiab:~3] OR NKCA[tiab] OR \"cytolytic activity\"[tiab] OR \"killer cell activity\"[tiab:~2]) OR (complement[ti] OR \"complement system\"[tiab] OR \"complement activation\"[tiab] OR \"complement component*\"[tiab] OR \"complement protein*\"[tiab] OR \"complement factor*\"[tiab] OR \"complement C3\"[tiab] OR \"complement C4\"[tiab] OR \"complement levels\"[tiab] OR \"serum complement\"[tiab] OR \"plasma complement\"[tiab] OR C3a[tiab] OR C5a[tiab]) OR (mucosal[tiab] AND (immune[tiab] OR immunity[tiab] OR immunolog*[tiab])) OR \"immune function\"[tiab] OR \"immune response\"[tiab] OR \"effector function\"[tiab] OR immunophenotyp*[tiab] OR \"immune cell\"[tiab] OR \"immune cells\"[tiab] OR \"white blood cell*\"[tiab] OR \"mononuclear cell*\"[tiab] OR PBMC*[tiab] OR granulocyt*[tiab] OR lymphopeni*[tiab] OR lymphocytopeni*[tiab] OR leukocytosis[tiab] OR TNF[tiab] OR \"TNF-alpha\"[tiab] OR \"tumor necrosis factor*\"[tiab] OR \"tumour necrosis factor*\"[tiab] OR IFN[tiab] OR \"IFN-gamma\"[tiab] OR interferon*[tiab] OR \"IL-10\"[tiab] OR IL10[tiab] OR \"IL-1\"[tiab] OR IL1[tiab] OR \"IL-1beta\"[tiab] OR \"IL-8\"[tiab] OR IL8[tiab]) OR (\"Immunity\"[Mesh] OR \"Immunity, Mucosal\"[Mesh] OR \"Leukocytes\"[Mesh] OR \"Lymphocytes\"[Mesh] OR \"Killer Cells, Natural\"[Mesh] OR \"Neutrophils\"[Mesh] OR \"Monocytes\"[Mesh] OR \"Leukocyte Count\"[Mesh] OR \"Lymphocyte Count\"[Mesh] OR \"Cytokines\"[Mesh] OR \"Chemokines\"[Mesh] OR \"Interleukins\"[Mesh] OR \"Interleukin-6\"[Mesh] OR \"Immunoglobulins\"[Mesh] OR \"Immunoglobulin A\"[Mesh] OR \"Immunoglobulin A, Secretory\"[Mesh] OR \"Complement System Proteins\"[Mesh] OR \"C-Reactive Protein\"[Mesh] OR \"Phagocytosis\"[Mesh] OR \"Cytotoxicity, Immunologic\"[Mesh])) AND ((\"post-exercise\"[tiab] OR postexercise[tiab] OR \"post exercise\"[tiab] OR \"after exercise\"[tiab] OR \"following exercise\"[tiab] OR \"exercise-induced\"[tiab] OR \"acute exercise\"[tiab] OR \"acute bout\"[tiab] OR \"single bout\"[tiab] OR \"bout of\"[tiab] OR \"exercise bout*\"[tiab] OR \"post-race\"[tiab] OR \"post-marathon\"[tiab] OR \"recovery period\"[tiab] OR \"during recovery\"[tiab:~0] OR \"immediately after\"[tiab] OR \"hours after\"[tiab] OR \"h post\"[tiab] OR \"post-match\"[tiab] OR \"post-competition\"[tiab] OR \"exercise session*\"[tiab] OR \"exercise challenge*\"[tiab] OR \"exercise test*\"[tiab] OR \"after marathon\"[tiab:~1] OR \"after race\"[tiab:~1] OR \"after racing\"[tiab:~0] OR \"after strenuous exercise\"[tiab:~0] OR \"after prolonged exercise\"[tiab:~0] OR \"after intense exercise\"[tiab:~0] OR \"following bout\"[tiab:~1] OR \"post-bout\"[tiab] OR \"exercise recovery\"[tiab] OR \"recovery from exercise\"[tiab] OR \"pre- and post-exercise\"[tiab] OR \"pre-exercise\"[tiab] OR \"min post\"[tiab] OR \"h after\"[tiab] OR \"hours post\"[tiab] OR preexercise[tiab] OR postrace[tiab] OR prerace[tiab] OR \"hr after\"[tiab:~0] OR \"hr post\"[tiab:~0] OR \"hrs after\"[tiab:~0] OR \"hrs post\"[tiab:~0] OR \"h of recovery\"[tiab:~0] OR \"min of recovery\"[tiab:~0] OR \"hours of recovery\"[tiab:~0] OR \"acute effects\"[tiab] OR marathon*[tiab] OR ultramarathon*[tiab] OR \"ultra-marathon\"[tiab] OR \"ultra-marathons\"[tiab] OR triathlon*[tiab] OR ironman[tiab]) OR (\"Post-Exercise Recovery\"[Mesh]))) NOT (animals[mh] NOT humans[mh])) NOT (review[pt] OR editorial[pt] OR letter[pt] OR comment[pt] OR \"case reports\"[pt])) NOT ((infant[mh] OR child[mh] OR adolescent[mh]) NOT adult[mh])",
+          "string_sha256": "e30ec141aac437a72f23b7cfb9b91a89e43428d91a8fd23e3b2d973449ba9cf5",
+          "validation_hit_count": 8013,
+          "date_time_utc": "2026-10-05T13:03:39Z"
+        },
+        {
+          "id": "PV09_R2_DIAG",
+          "block_or_route": "R2_PUBMED_v09_diagnostic_three_limits",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST)",
+          "run_type": "diagnostic",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "search methodologist role; executed by an AI agent",
+          "strategy_version": "0.9-draft",
+          "exact_string_sent": "(((((exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR \"physical exertion\"[tiab] OR sport*[ti] OR train*[ti] OR workout*[tiab] OR athlet*[tiab] OR competition*[ti] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycling[tiab] OR cyclist*[tiab] OR \"cycle ergomet*\"[tiab] OR ergomet*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[ti] OR (resistance[tiab] AND train*[ti]) OR \"strength training\"[tiab] OR endurance[ti] OR aerobic[ti] OR \"interval train*\"[ti] OR \"interval exercis*\"[ti] OR \"sprint interval*\"[ti] OR \"high-intensity interval*\"[ti] OR HIIT[tiab] OR HIIE[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab]) OR (\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Sports\"[Mesh] OR \"Exercise Test\"[Mesh] OR \"Running\"[Mesh] OR \"Swimming\"[Mesh] OR \"Bicycling\"[Mesh] OR \"Resistance Training\"[Mesh] OR \"High-Intensity Interval Training\"[Mesh])) AND (( omic*[tiab] OR proteom*[tiab] OR metabolom*[tiab] OR lipidom*[tiab] OR transcriptom*[tiab] OR epigenom*[tiab] OR epigenet*[tiab] OR \"DNA methylation\"[tiab] OR methylom*[tiab] OR multiomic*[tiab] OR \"multi-omic\"[tiab] OR \"multi-omics\"[tiab] OR \"single-cell\"[tiab] OR \"single cell\"[tiab] OR \"scRNA-seq\"[tiab] OR \"RNA-seq\"[tiab] OR \"RNA sequencing\"[tiab] OR microRNA*[tiab] OR miRNA*[tiab] OR lncRNA*[tiab] OR circRNA*[tiab] OR \"mass spectrometry\"[tiab] OR \"protein profiling\"[tiab] OR \"metabolite profiling\"[tiab] OR \"high-throughput sequencing\"[tiab] OR microarray*[tiab] OR \"gene expression profil*\"[tiab] OR \"expression profil*\"[tiab] ) OR (\"Proteomics\"[Mesh] OR \"Metabolomics\"[Mesh] OR \"Lipidomics\"[Mesh] OR \"Transcriptome\"[Mesh] OR \"Gene Expression Profiling\"[Mesh] OR \"Single-Cell Analysis\"[Mesh] OR \"Multiomics\"[Mesh] OR \"Epigenomics\"[Mesh] OR \"DNA Methylation\"[Mesh] OR \"MicroRNAs\"[Mesh] OR \"RNA, Long Noncoding\"[Mesh] OR \"Sequence Analysis, RNA\"[Mesh] OR \"Mass Spectrometry\"[Mesh:NoExp])) AND ((\"post-exercise\"[tiab] OR postexercise[tiab] OR \"post exercise\"[tiab] OR \"after exercise\"[tiab] OR \"following exercise\"[tiab] OR \"exercise-induced\"[tiab] OR \"acute exercise\"[tiab] OR \"acute bout\"[tiab] OR \"single bout\"[tiab] OR \"bout of\"[tiab] OR \"exercise bout*\"[tiab] OR \"post-race\"[tiab] OR \"post-marathon\"[tiab] OR \"recovery period\"[tiab] OR \"during recovery\"[tiab:~0] OR \"immediately after\"[tiab] OR \"hours after\"[tiab] OR \"h post\"[tiab] OR \"post-match\"[tiab] OR \"post-competition\"[tiab] OR \"exercise session*\"[tiab] OR \"exercise challenge*\"[tiab] OR \"exercise test*\"[tiab] OR \"after marathon\"[tiab:~1] OR \"after race\"[tiab:~1] OR \"after racing\"[tiab:~0] OR \"after strenuous exercise\"[tiab:~0] OR \"after prolonged exercise\"[tiab:~0] OR \"after intense exercise\"[tiab:~0] OR \"following bout\"[tiab:~1] OR \"post-bout\"[tiab] OR \"exercise recovery\"[tiab] OR \"recovery from exercise\"[tiab] OR \"pre- and post-exercise\"[tiab] OR \"pre-exercise\"[tiab] OR \"min post\"[tiab] OR \"h after\"[tiab] OR \"hours post\"[tiab] OR preexercise[tiab] OR postrace[tiab] OR prerace[tiab] OR \"hr after\"[tiab:~0] OR \"hr post\"[tiab:~0] OR \"hrs after\"[tiab:~0] OR \"hrs post\"[tiab:~0] OR \"h of recovery\"[tiab:~0] OR \"min of recovery\"[tiab:~0] OR \"hours of recovery\"[tiab:~0] OR \"acute effects\"[tiab] OR marathon*[tiab] OR ultramarathon*[tiab] OR \"ultra-marathon\"[tiab] OR \"ultra-marathons\"[tiab] OR triathlon*[tiab] OR ironman[tiab]) OR (\"Post-Exercise Recovery\"[Mesh]))) NOT (animals[mh] NOT humans[mh])) NOT (review[pt] OR editorial[pt] OR letter[pt] OR comment[pt] OR \"case reports\"[pt])) NOT ((infant[mh] OR child[mh] OR adolescent[mh]) NOT adult[mh])",
+          "string_sha256": "d395719668b758912f49413eeca328f9132ce7abd69cff52d1a56c48f1b8632e",
+          "validation_hit_count": 1798,
+          "date_time_utc": "2026-10-05T13:03:42Z"
+        },
+        {
+          "id": "PV09_UNION_DIAG",
+          "block_or_route": "UNION_PUBMED_v09_diagnostic_three_limits",
+          "database": "PubMed/MEDLINE",
+          "platform": "NCBI E-utilities esearch.fcgi (db=pubmed, retmode=json, HTTP POST)",
+          "run_type": "diagnostic",
+          "formal_search": false,
+          "prisma_counts": false,
+          "searcher": "search methodologist role; executed by an AI agent",
+          "strategy_version": "0.9-draft",
+          "exact_string_sent": "(((((exercis*[tiab] OR \"physical activity\"[tiab] OR \"physical activities\"[tiab] OR \"physical exertion\"[tiab] OR sport*[ti] OR train*[ti] OR workout*[tiab] OR athlet*[tiab] OR competition*[ti] OR running[tiab] OR runn*[tiab] OR jog[tiab] OR jogging[tiab] OR jogg*[tiab] OR cycling[tiab] OR cyclist*[tiab] OR \"cycle ergomet*\"[tiab] OR ergomet*[tiab] OR bicycl*[tiab] OR marathon*[tiab] OR race*[ti] OR (resistance[tiab] AND train*[ti]) OR \"strength training\"[tiab] OR endurance[ti] OR aerobic[ti] OR \"interval train*\"[ti] OR \"interval exercis*\"[ti] OR \"sprint interval*\"[ti] OR \"high-intensity interval*\"[ti] OR HIIT[tiab] OR HIIE[tiab] OR sprint*[tiab] OR weightlift*[tiab] OR swim*[tiab] OR \"exercise test\"[tiab] OR \"exercise tests\"[tiab] OR \"exercise challenge\"[tiab] OR \"exercise challenges\"[tiab] OR \"physical effort\"[tiab]) OR (\"Exercise\"[Mesh] OR \"Physical Exertion\"[Mesh] OR \"Sports\"[Mesh] OR \"Exercise Test\"[Mesh] OR \"Running\"[Mesh] OR \"Swimming\"[Mesh] OR \"Bicycling\"[Mesh] OR \"Resistance Training\"[Mesh] OR \"High-Intensity Interval Training\"[Mesh])) AND ((((immune[tiab] OR immunity[tiab] OR immunolog*[tiab] OR immunosuppress*[tiab] OR immunodepress*[tiab] OR immunomodulat*[tiab] OR immunocompet*[tiab] OR immunosurveillance[tiab] OR immunosenescen*[tiab] OR immunoregulat*[tiab] OR immunoenhanc*[tiab] OR immunostimulat*[tiab] OR immunodeficien*[tiab] OR immunometabol*[tiab] OR immunoprotect*[tiab] OR immunoendocrin*[tiab] OR immuniz*[tiab] OR immunis*[tiab]) OR inflammat*[tiab] OR leukocyt*[tiab] OR leucocyt*[tiab] OR lymphocyt*[tiab] OR neutrophil*[tiab] OR monocyt*[tiab] OR eosinophil*[tiab] OR basophil*[tiab] OR \"natural killer\"[tiab] OR \"NK cell\"[tiab] OR \"NK cells\"[tiab] OR \"T cell\"[tiab] OR \"T cells\"[tiab] OR \"B cell\"[tiab] OR \"B cells\"[tiab] OR CD4[tiab] OR CD8[tiab] OR cytokine*[tiab] OR chemokine*[tiab] OR immunoglobulin*[tiab] OR \"immunoglobulin A\"[tiab] OR \"secretory immunoglobulin A\"[tiab] OR IgA[tiab] OR sIgA[tiab] OR SIgA[tiab] OR \"secretory IgA\"[tiab] OR interleukin*[tiab] OR \"interleukin-6\"[tiab] OR \"IL-6\"[tiab] OR IL6[tiab] OR CRP[tiab] OR \"C-reactive protein\"[tiab] OR \"C reactive protein\"[tiab] OR phagocyt*[tiab] OR (cytotoxic*[ti] OR \"cytotoxic activity\"[tiab] OR \"cytotoxic T\"[tiab] OR \"cytotoxic lymphocyte*\"[tiab] OR \"cell-mediated cytotoxicity\"[tiab] OR \"cell mediated cytotoxicity\"[tiab] OR \"NK cytotoxicity\"[tiab:~2] OR \"NK cell cytotoxicity\"[tiab] OR \"natural killer cytotoxicity\"[tiab:~3] OR \"NK cell activity\"[tiab:~2] OR \"natural killer cell activity\"[tiab:~3] OR NKCA[tiab] OR \"cytolytic activity\"[tiab] OR \"killer cell activity\"[tiab:~2]) OR (complement[ti] OR \"complement system\"[tiab] OR \"complement activation\"[tiab] OR \"complement component*\"[tiab] OR \"complement protein*\"[tiab] OR \"complement factor*\"[tiab] OR \"complement C3\"[tiab] OR \"complement C4\"[tiab] OR \"complement levels\"[tiab] OR \"serum complement\"[tiab] OR \"plasma complement\"[tiab] OR C3a[tiab] OR C5a[tiab]) OR (mucosal[tiab] AND (immune[tiab] OR immunity[tiab] OR immunolog*[tiab])) OR \"immune function\"[tiab] OR \"immune response\"[tiab] OR \"effector function\"[tiab] OR immunophenotyp*[tiab] OR \"immune cell\"[tiab] OR \"immune cells\"[tiab] OR \"white blood cell*\"[tiab] OR \"mononuclear cell*\"[tiab] OR PBMC*[tiab] OR granulocyt*[tiab] OR lymphopeni*[tiab] OR lymphocytopeni*[tiab] OR leukocytosis[tiab] OR TNF[tiab] OR \"TNF-alpha\"[tiab] OR \"tumor necrosis factor*\"[tiab] OR \"tumour necrosis factor*\"[tiab] OR IFN[tiab] OR \"IFN-gamma\"[tiab] OR interferon*[tiab] OR \"IL-10\"[tiab] OR IL10[tiab] OR \"IL-1\"[tiab] OR IL1[tiab] OR \"IL-1beta\"[tiab] OR \"IL-8\"[tiab] OR IL8[tiab]) OR (\"Immunity\"[Mesh] OR \"Immunity, Mucosal\"[Mesh] OR \"Leukocytes\"[Mesh] OR \"Lymphocytes\"[Mesh] OR \"Killer Cells, Natural\"[Mesh] OR \"Neutrophils\"[Mesh] OR \"Monocytes\"[Mesh] OR \"Leukocyte Count\"[Mesh] OR \"Lymphocyte Count\"[Mesh] OR \"Cytokines\"[Mesh] OR \"Chemokines\"[Mesh] OR \"Interleukins\"[Mesh] OR \"Interleukin-6\"[Mesh] OR \"Immunoglobulins\"[Mesh] OR \"Immunoglobulin A\"[Mesh] OR \"Immunoglobulin A, Secretory\"[Mesh] OR \"Complement System Proteins\"[Mesh] OR \"C-Reactive Protein\"[Mesh] OR \"Phagocytosis\"[Mesh] OR \"Cytotoxicity, Immunologic\"[Mesh])) OR (( omic*[tiab] OR proteom*[tiab] OR metabolom*[tiab] OR lipidom*[tiab] OR transcriptom*[tiab] OR epigenom*[tiab] OR epigenet*[tiab] OR \"DNA methylation\"[tiab] OR methylom*[tiab] OR multiomic*[tiab] OR \"multi-omic\"[tiab] OR \"multi-omics\"[tiab] OR \"single-cell\"[tiab] OR \"single cell\"[tiab] OR \"scRNA-seq\"[tiab] OR \"RNA-seq\"[tiab] OR \"RNA sequencing\"[tiab] OR microRNA*[tiab] OR miRNA*[tiab] OR lncRNA*[tiab] OR circRNA*[tiab] OR \"mass spectrometry\"[tiab] OR \"protein profiling\"[tiab] OR \"metabolite profiling\"[tiab] OR \"high-throughput sequencing\"[tiab] OR microarray*[tiab] OR \"gene expression profil*\"[tiab] OR \"expression profil*\"[tiab] ) OR (\"Proteomics\"[Mesh] OR \"Metabolomics\"[Mesh] OR \"Lipidomics\"[Mesh] OR \"Transcriptome\"[Mesh] OR \"Gene Expression Profiling\"[Mesh] OR \"Single-Cell Analysis\"[Mesh] OR \"Multiomics\"[Mesh] OR \"Epigenomics\"[Mesh] OR \"DNA Methylation\"[Mesh] OR \"MicroRNAs\"[Mesh] OR \"RNA, Long Noncoding\"[Mesh] OR \"Sequence Analysis, RNA\"[Mesh] OR \"Mass Spectrometry\"[Mesh:NoExp]))) AND ((\"post-exercise\"[tiab] OR postexercise[tiab] OR \"post exercise\"[tiab] OR \"after exercise\"[tiab] OR \"following exercise\"[tiab] OR \"exercise-induced\"[tiab] OR \"acute exercise\"[tiab] OR \"acute bout\"[tiab] OR \"single bout\"[tiab] OR \"bout of\"[tiab] OR \"exercise bout*\"[tiab] OR \"post-race\"[tiab] OR \"post-marathon\"[tiab] OR \"recovery period\"[tiab] OR \"during recovery\"[tiab:~0] OR \"immediately after\"[tiab] OR \"hours after\"[tiab] OR \"h post\"[tiab] OR \"post-match\"[tiab] OR \"post-competition\"[tiab] OR \"exercise session*\"[tiab] OR \"exercise challenge*\"[tiab] OR \"exercise test*\"[tiab] OR \"after marathon\"[tiab:~1] OR \"after race\"[tiab:~1] OR \"after racing\"[tiab:~0] OR \"after strenuous exercise\"[tiab:~0] OR \"after prolonged exercise\"[tiab:~0] OR \"after intense exercise\"[tiab:~0] OR \"following bout\"[tiab:~1] OR \"post-bout\"[tiab] OR \"exercise recovery\"[tiab] OR \"recovery from exercise\"[tiab] OR \"pre- and post-exercise\"[tiab] OR \"pre-exercise\"[tiab] OR \"min post\"[tiab] OR \"h after\"[tiab] OR \"hours post\"[tiab] OR preexercise[tiab] OR postrace[tiab] OR prerace[tiab] OR \"hr after\"[tiab:~0] OR \"hr post\"[tiab:~0] OR \"hrs after\"[tiab:~0] OR \"hrs post\"[tiab:~0] OR \"h of recovery\"[tiab:~0] OR \"min of recovery\"[tiab:~0] OR \"hours of recovery\"[tiab:~0] OR \"acute effects\"[tiab] OR marathon*[tiab] OR ultramarathon*[tiab] OR \"ultra-marathon\"[tiab] OR \"ultra-marathons\"[tiab] OR triathlon*[tiab] OR ironman[tiab]) OR (\"Post-Exercise Recovery\"[Mesh]))) NOT (animals[mh] NOT humans[mh])) NOT (review[pt] OR editorial[pt] OR letter[pt] OR comment[pt] OR \"case reports\"[pt])) NOT ((infant[mh] OR child[mh] OR adolescent[mh]) NOT adult[mh])",
+          "string_sha256": "3859f51a173a58f227dd25a4855a1c0eeb441954fcfc43e9d4bdd88b7d2d6322",
+          "validation_hit_count": 9233,
+          "date_time_utc": "2026-10-05T13:03:44Z"
+        }
+      ],
+      "seed_detection": {
+        "seed_pmids_tested": 85,
+        "retrieved": 75,
+        "missing": [
+          "BND-Y1",
+          "CIT-R1",
+          "CIT-R2",
+          "CIT-R3",
+          "CIT-R4",
+          "CIT-R5",
+          "NEG-E1",
+          "NEG-E2",
+          "P-22403007",
+          "X50"
+        ],
+        "utc": "2026-10-05T13:03:46Z",
+        "summary": "positive 60/61 (10/10 original; 50/51 expanded, X50 missed); boundary 6/7 (BND-Y1 by child-only NOT, intended); pilot ADVANCE 9/10 (P-22403007 method-word false positive); NEG-E1/E2 and CIT-R1-R5 not retrieved by design",
+        "applies_to": "three-limit route (8,013)"
+      },
+      "pmid_list": {
+        "n": 8013,
+        "location": "/tmp/strategy_v09_diag/ids_v09_EI.json (scratch, not archived)",
+        "overlap_with_v07_pool": 7742,
+        "not_in_v07_pool": 271,
+        "pilot_sample_50_in_v09": 20,
+        "pilot_advance_in_v09": "9/10"
+      },
+      "single_condition_results": "strategy_tightening_2026-10-05.md §3 (base v0.8 candidate union 11,448)",
+      "seed_detection_with_all_limits": {
+        "seed_pmids_tested": 85,
+        "retrieved": 74,
+        "missing": [
+          "BND-Y1",
+          "CIT-R1",
+          "CIT-R2",
+          "CIT-R3",
+          "CIT-R4",
+          "CIT-R5",
+          "NEG-E1",
+          "NEG-E2",
+          "P-22403007",
+          "POS-S3",
+          "X50"
+        ],
+        "newly_missing": [
+          "POS-S3"
+        ],
+        "utc": "2026-10-05T13:23:04Z",
+        "summary": "positive 59/61 (POS-S3 preprint by design; X50); boundary 6/7; pilot ADVANCE 9/10"
+      }
     }
+  },
+  "route": "EI only: E AND I AND T (strategy v0.9; EO dropped, decision A 2026-10-05)",
+  "database_set": {
+    "strategy_version": "0.9-draft",
+    "decided_by": "A",
+    "decision_date": "2026-10-05",
+    "governing_amendment": "PRE-006",
+    "bibliographic_databases": [
+      "PubMed/MEDLINE",
+      "Web of Science Core Collection",
+      "Scopus"
+    ],
+    "supplementary_sources": [
+      "Google Scholar (first 200 results per string; strategy §6, draft for A)"
+    ],
+    "withdrawn": [
+      "Embase (Embase.com / Ovid)",
+      "SPORTDiscus (EBSCOhost)"
+    ],
+    "withdrawal_reason": "licence and feasibility (decision of A, 2026-10-05); disclosed as a limitation in the protocol under PRE-006",
+    "field_rule": "WoS primary TI/AB/AK, Scopus primary TITLE-ABS + AUTHKEY, conditional on D's seed test (10 original positive + 4 Package-B seeds); fallback TS= / TITLE-ABS-KEY (strategy §4, §5)",
+    "limits_in_query": "PubMed: NOT animal-only, NOT publication type, NOT child-only, AND english[la], NOT preprint[pt]; WoS: NOT DT=(Review OR \"Editorial Material\" OR Letter OR Correction) AND DT=(Article) AND LA=(English); Scopus: AND DOCTYPE(ar OR ip) AND LANGUAGE(english) AND NOT DOCTYPE(re OR ed OR le OR no OR er OR sh OR cr). FT01/FT02/FT03 thereby sit partly in the query (PRE-006); screening still applies them in full.",
+    "language_and_article_restriction": "English and journal articles only at the search stage: decision of A, 2026-10-05, after D's first WoS/Scopus runs; a further change beyond the four v0.9 decisions; protocol side updated by the protocol owner. Preprints are excluded from the core PubMed route and covered only by the supplemental preprint route (POS-S3 drops out of the core route by design).",
+    "export_plan": "PRE-005 (title stage first, abstracts completed for retained records): WoS 'Fast 5000' export (title, source, year, DOI, UT only); Scopus full-record export with abstracts; PubMed full metadata via scripts/run_formal_pubmed.py."
   }
 }

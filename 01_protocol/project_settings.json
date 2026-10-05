@@ -1,17 +1,27 @@
 {
-  "protocol_version": "3.0",
-  "protocol_date": "2026-10-04",
-  "status": "frozen_for_archive_release_2026-10-05",
+  "protocol_version": "3.1",
+  "protocol_date": "2026-10-05",
+  "status": "v3.1_amendments_PRE-004_PRE-005_PRE-006_applied_release_pending",
   "confirmed_resources": {
     "databases": [
       "PubMed",
       "Web of Science Core Collection",
-      "Scopus",
-      "Embase",
-      "SPORTDiscus"
+      "Scopus"
     ],
     "fulltext_access_available": true,
-    "second_human_reviewer_available": true
+    "second_human_reviewer_available": true,
+    "supplementary_sources": [
+      "Google Scholar (documented supplementary search; PRE-006)"
+    ],
+    "withdrawn_databases": {
+      "Embase": "withdrawn 2026-10-05 (PRE-006; licence/feasibility)",
+      "SPORTDiscus": "withdrawn 2026-10-05 (PRE-006; licence/feasibility)"
+    },
+    "search_stage_limits_v0_9": {
+      "PubMed": "NOT (animals[mh] NOT humans[mh]); NOT (review/editorial/letter/comment/case reports [pt]); NOT ((infant OR child OR adolescent)[mh] NOT adult[mh]); AND english[la]; NOT preprint[pt]",
+      "Web of Science": "NOT DT=(Review OR \"Editorial Material\" OR Letter OR Correction); AND DT=(Article) AND LA=(English)",
+      "Scopus": "AND NOT DOCTYPE(re OR ed OR le OR no OR er OR sh OR cr); AND DOCTYPE(ar OR ip) AND LANGUAGE(english)"
+    }
   },
   "roles": {
     "principal_investigator": "A",
@@ -25,10 +35,11 @@
   },
   "platforms": {
     "PubMed": "PubMed",
-    "Web of Science": "Core Collection; exact licensed collections pending",
-    "Scopus": "Scopus",
-    "Embase": null,
-    "SPORTDiscus": "EBSCOhost draft; confirm institutional platform"
+    "Web of Science": "Core Collection web interface (manual export by D); exact licensed collections pending",
+    "Scopus": "Scopus web interface (manual export by D)",
+    "Google Scholar": "web interface; supplementary search (PRE-006)",
+    "Embase": "withdrawn (PRE-006)",
+    "SPORTDiscus": "withdrawn (PRE-006)"
   },
   "software": {
     "reference_manager": null,
@@ -45,36 +56,58 @@
   },
   "registration": {
     "service": "GitHub repository + Zenodo release archive (DOI); team decision 2026-10-04 replacing OSF Registries",
-    "status": "archived_v3.0_2026-10-05",
-    "id": "10.5281/zenodo.23147973",
-    "url": "https://doi.org/10.5281/zenodo.23147973",
-    "submitted_at": "2026-10-05T00:19:03Z",
-    "timing_rule": "archive frozen v3.0 after team freeze and before the 50-record screening pilot and 10-report charting pilot; formal five-database search only after the archived release exists; re-release (v3.1, new version DOI, same concept DOI) with justification if pilots change rules",
-    "release_tag": "v3.0",
-    "release_commit": "fea09eaee5caf8b926ea46c58e07616e5072542e",
-    "concept_doi": "10.5281/zenodo.23147972",
-    "version_doi": "10.5281/zenodo.23147973",
+    "status": "v3.0 archived 2026-10-05 (version DOI 10.5281/zenodo.23147973); v3.1 (PRE-004, PRE-005, PRE-006) release pending",
+    "id": null,
+    "url": null,
+    "submitted_at": null,
+    "timing_rule": "archive frozen v3.0 after team freeze and before the 50-record screening pilot and 10-report charting pilot; formal database search only after the archived release exists (PubMed, Web of Science, Scopus + Google Scholar supplement under PRE-006); re-release (v3.1, new version DOI, same concept DOI) with justification if pilots change rules",
+    "release_tag": null,
+    "release_commit": null,
+    "concept_doi": null,
+    "version_doi": null,
     "repository_url": "https://github.com/BrewSSS/open-window-precision-biomarkers-scoping-review",
-    "license": "CC BY 4.0 (documents); MIT (scripts)"
+    "license": "CC BY 4.0 (documents); MIT (scripts)",
+    "concept_doi_series": "10.5281/zenodo.23147972",
+    "previous_releases": [
+      {
+        "release_tag": "v3.0",
+        "release_commit": "fea09eaee5caf8b926ea46c58e07616e5072542e",
+        "version_doi": "10.5281/zenodo.23147973",
+        "concept_doi": "10.5281/zenodo.23147972",
+        "url": "https://doi.org/10.5281/zenodo.23147973",
+        "submitted_at": "2026-10-05T00:19:03Z",
+        "protocol_version": "3.0"
+      }
+    ],
+    "current_release_note": "release_tag/release_commit/concept_doi/version_doi/id/url/submitted_at describe the release of the CURRENT protocol_version (3.1) and stay null until the v3.1 GitHub Release is archived by Zenodo; then fill all of them together (release_tag v3.1, concept_doi 10.5281/zenodo.23147972, id = version_doi). The v3.0 release is kept in previous_releases."
   },
   "stages": {
-    "platform_validation": "pubmed_done_licensed_platforms_pending",
-    "PRESS_review": "accepted_with_conditions_2026-10-04",
+    "platform_validation": "pubmed_v0.9_diagnostics_done_2026-10-05; WoS/Scopus v0.9 seed tests pending D",
+    "PRESS_review": "v0.7 sign-off of 2026-10-04 void under PRE-006; re-review of v0.9 by A pending",
     "protocol_v3_revision": "3.0 draft completed 2026-10-04 (PRE-002): EN source, governance files, CN protocol, 03-06 appendices, build chain, validator, workbook generator, LICENSE and Zenodo metadata aligned; cross-file consistency pass 2026-10-04; team freeze pending",
     "team_freeze": "done_2026-10-05",
     "archive_release_zenodo": "done_2026-10-05",
     "random_50_screening_pilot": "accepted_by_A_2026-10-05 (raw agreement 1.00, kappa 1.00; AI hint visible — limitation recorded; no AI hints in formal screening)",
-    "purposeful_10_charting_pilot": "ai_assisted_extraction_done_2026-10-05 (9/10 reports; R62 pending D); comparison produced; human review and PRE-004 proposals pending",
-    "formal_search": "in_progress_2026-10-05 (PubMed exported; WoS/Scopus/Embase/SPORTDiscus pending D)",
+    "purposeful_10_charting_pilot": "ai_assisted_extraction_done_2026-10-05 (9/10 reports; R62 human extraction pending under v3.0 rules); accepted by A 2026-10-05 as calibration of rule clarity (not human inter-rater agreement)",
+    "formal_search": "pending_v0.9 (v0.7 PubMed export 2026-10-05 superseded; WoS/Scopus pending D after PRESS re-sign)",
     "dual_screening": "pending",
     "dual_extraction": "pending",
     "critical_appraisal": "pending",
     "synthesis": "pending",
-    "submission": "pending"
+    "submission": "pending",
+    "amendment_PRE-004": "adopted_2026-10-05 (A): C01-C20 adopted, C21-C23 deferred; staged in 05_extraction/pre004_staging, applied after R62",
+    "amendment_PRE-005": "adopted_2026-10-05 (A): two-stage screening (title stage with closed list and advance-wins consensus; abstract completion; title/abstract stage); staged with PRE-004 in 05_extraction/pre004_staging",
+    "amendment_PRE-006": "adopted_2026-10-05 (A): databases PubMed, WoS Core Collection, Scopus + Google Scholar supplement (Embase, SPORTDiscus withdrawn); search-stage limits (PubMed animal-only and child-only NOT; publication/document-type limits); strategy v0.9 single route E AND I AND T; PubMed diagnostic 7,846 records (English, no preprints); included in the v3.1 release",
+    "protocol_v3_1_release": "pending (GitHub Release v3.1 with PRE-004, PRE-005 and PRE-006 + Zenodo version DOI before formal search)",
+    "human_calibration_round_v3_1": "pending (reduced human charting calibration by B and C on v3.1 rules)",
+    "title_screening_pilot_100": "pending (100 records from the deduplicated formal union, seed 20261005; raw agreement >= 0.80 on the binary TI disposition before formal stage 1)",
+    "abstract_completion": "pending (after stage 1)",
+    "TA_recalibration_25_v3_1": "pending (25 records from the stage-1 retained set, seed 20261003; before formal stage 2)"
   },
   "flow_counts": null,
   "actual_search_dates": {
-    "PubMed": "2026-10-05"
+    "PubMed": "2026-10-05",
+    "note": "PubMed 2026-10-05 export used strategy v0.7 and is superseded by PRE-006 (kept as an artefact, not a PRISMA count); the formal v0.9 search dates are not yet set"
   },
   "frontier_preprint_counts": null,
   "notes": [
@@ -91,6 +124,10 @@
     "2026-10-05: v3.0 released (tag v3.0, commit fea09ea); Zenodo version DOI 10.5281/zenodo.23147973, concept DOI 10.5281/zenodo.23147972. Next: 50-record screening pilot and 10-report charting pilot; D's licensed-platform syntax checks.",
     "2026-10-05 pilot TA: 50/50 agreement, 10 ADVANCE / 40 EXCLUDE_TA (FT02 21, FT01 7, FT03 6, FT04 3, FT07 3); conducted with visible AI hints; acceptance as calibration pending A.",
     "2026-10-05: A accepted the TA pilot as calibration with the AI-hint limitation recorded; formal screening will show no AI recommendations. Next: 10-report charting pilot.",
-    "2026-10-05: first formal database run executed (PubMed, by an AI stand-in for D). Routes EI (E AND I AND T, 17,445 hits) and EO (E AND O AND T, 4,004 hits) exported separately per search_strategy_draft.txt §1/§3 (17,445 and 4,004 records respectively, 99.2% and 99.6% with a non-empty abstract); deduplicated union 20,090 PMIDs, identical to the 2026-10-04 pilot-pool union count (no new indexing). Exports (abstracts) are git-ignored under 03_search/formal_runs/2026-10-05/pubmed/; committable manifest.json, run_manifest.json and pubmed_pmids.txt are tracked. search_log_template.json PUBMED_EI/PUBMED_EO formal fields filled; the four licensed databases (WoS, Scopus, Embase, SPORTDiscus) remain null pending D. Dedup across all five databases and PRISMA counts are not yet available."
+    "2026-10-05 (A): charting pilot accepted as calibration; amendment PRE-004 adopted (row units, vocabularies, time-bin boundary rules, denominators, RETAIN_BACKGROUND, age rule explicit range/minimum >= 18 or mean - 2*SD >= 18, background charting depth with one extractor + one checker, figure-only values not digitised); protocol 3.1 to be released as a new Zenodo version before the formal search. Deferred: C21-C23.",
+    "2026-10-05 (A): amendment PRE-005 (released with PRE-004 as v3.1) replaces the single title/abstract stage with two-stage screening: stage 1 title screening (closed list of title-evident reasons, any ADVANCE wins, 100-record title pilot) -> abstract completion -> stage 2 title/abstract screening (v3 rules; 25-record re-calibration). Rationale: five-database raw volume estimated at 60,000-90,000 records (PubMed 20,090; Web of Science EO route 6,669; Scopus EO route 6,159 on 2026-10-05) and abstracts not uniformly available through APIs off campus.",
+    "2026-10-05: first formal database run executed (PubMed, by an AI stand-in for D). Routes EI (E AND I AND T, 17,445 hits) and EO (E AND O AND T, 4,004 hits) exported separately per search_strategy_draft.txt §1/§3 (17,445 and 4,004 records respectively, 99.2% and 99.6% with a non-empty abstract); deduplicated union 20,090 PMIDs, identical to the 2026-10-04 pilot-pool union count (no new indexing). Exports (abstracts) are git-ignored under 03_search/formal_runs/2026-10-05/pubmed/; committable manifest.json, run_manifest.json and pubmed_pmids.txt are tracked. search_log_template.json PUBMED_EI/PUBMED_EO formal fields filled; the four licensed databases (WoS, Scopus, Embase, SPORTDiscus) remain null pending D. Dedup across all five databases and PRISMA counts are not yet available.",
+    "2026-10-05 (A): amendment PRE-006 (included in the v3.1 release) sets the databases to PubMed, Web of Science Core Collection and Scopus with Google Scholar as a documented supplementary search (Embase and SPORTDiscus withdrawn: licence/feasibility; manual web-interface exports by D; API routes abandoned); adds search-stage limits (PubMed NOT (animals[mh] NOT humans[mh]); PubMed NOT ((infant[mh] OR child[mh] OR adolescent[mh]) NOT adult[mh]); publication/document-type exclusion of reviews, editorials, letters etc. in all three databases; removed reviews kept as a logged citation-chasing list); adopts strategy v0.9 with the single route E AND I AND T (omics route dropped as a subset under the immune-link rule). PubMed diagnostics: 20,090 (v0.7) -> 11,448 -> 9,577 -> 8,909 -> 7,733 (EI only) -> 8,013 (with Package B; 2026-10-05T13:03:39Z, query SHA-256 prefix e30ec141aac4) -> 7,846 (final v0.9 with English-language limit and NOT preprint[pt]; 2026-10-05T13:23:01Z, prefix 6ad15420fe1f); 10/10 original and 50/51 expanded positive seeds. A's PRESS sign-off of v0.7 is void; formal searching starts after the v3.1 release and A's PRESS re-sign. The PubMed v0.7 export of 2026-10-05 and D's WoS EO batch 1 are superseded artefacts, not PRISMA counts; the TA pilot, charting pilot and 200-record T-free sample remain valid calibration.",
+    "2026-10-05 (A, after D's first Web of Science and Scopus runs under v0.9): English-language and journal-article limits added to the core routes in all three databases (PubMed AND english[la] NOT preprint[pt]; WoS DT=(Article) AND LA=(English); Scopus DOCTYPE(ar OR ip) AND LANGUAGE(english)); recorded as an addendum to PRE-006 and disclosed as a limitation. D's first platform counts before these limits (primary narrowed fields): WoS 14,094; Scopus 12,347; seed test pending."
   ]
 }
