@@ -356,5 +356,47 @@
       ],
       "status": "downloaded"
     }
+  ],
+  "institutional_additions": [
+    {
+      "reference_id": "R62",
+      "request_id": "FTR-001",
+      "file": "R62_japplphysiol.00282.2026.pdf",
+      "sha256": "f4ce9f39ef34c7cf78570d7b7b4c6aef710b00fb9395af952f356ba4fef1a4e2",
+      "bytes": 2150036,
+      "added_by": "A via institutional library",
+      "added_on": "2026-10-05T06:51:02+00:00",
+      "note": "publisher PDF (J Appl Physiol 141:873-887, 2026); supplements not included — check publisher page"
+    },
+    {
+      "reference_id": "R01",
+      "request_id": "FTR-002",
+      "file": "R01_preprint_v2_2026.01.13.699221.pdf",
+      "sha256": "a46cb02a87b7c543a08e55777c17142fc6ba4b2d5b45031d31c48dda0616d90c",
+      "bytes": 1927162,
+      "added_by": "A via institutional library",
+      "added_on": "2026-10-05T06:51:02+00:00",
+      "note": "bioRxiv preprint v2 posted 2026-03-06 (v1 requested; v2 accepted for version-linking test)"
+    },
+    {
+      "reference_id": "R42",
+      "request_id": "FTR-003",
+      "file": "R42_publisher_hindawi_3030793.pdf",
+      "sha256": "a50478812d32bfb9dfcc6afbee772430aab6ece16c7f8052899160d245da124c",
+      "bytes": 1978407,
+      "added_by": "A via institutional library",
+      "added_on": "2026-10-05T06:51:02+00:00",
+      "note": "publisher PDF (Hindawi); no supplementary files supplied"
+    },
+    {
+      "reference_id": "R03",
+      "request_id": "FTR-004",
+      "file": "R03_publisher_genes-10-00380.pdf",
+      "sha256": "3846ef38e42fc34c9efb91de44bfcfbae4a99613e2b790367e5aeaf234a861c2",
+      "bytes": 223270,
+      "added_by": "A via institutional library",
+      "added_on": "2026-10-05T06:51:02+00:00",
+      "note": "publisher PDF (MDPI); no supplementary files supplied"
+    }
   ]
 }
