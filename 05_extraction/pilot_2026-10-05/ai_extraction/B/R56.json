@@ -1,0 +1,1836 @@
+{
+  "report_id": "PILOT-R56",
+  "reference_id": "R56",
+  "reviewer_role": "B (AI stand-in, sonnet)",
+  "extracted_at": "2026-10-05T05:09:17Z",
+  "tables": {
+    "study_families": [
+      {
+        "study_id": "S-R56-1",
+        "study_label": "Study 1: 2017 Snowdonia Marathon field cohort (RTI + psychological factors + saliva sIgA)",
+        "design": "Prospective field observational cohort; single-group pre-post marathon design with no non-exercise comparator arm; psychological factors measured prospectively before the race, RTI monitored for 2 weeks before and after.",
+        "registry_ids": "NR",
+        "training_load": "NR beyond habitual-training description at recruitment (not itemised in Methods).",
+        "cointerventions": "NR",
+        "study_notes": "Not pre-registered: 'Both studies received local university ethics committee approval and were conducted in accordance with the Declaration of Helsinki (2013) principles without pre-registration' (p.2).",
+        "_locators": {
+          "design": "p.2 Section 2.1.1"
+        },
+        "_confidence": "high"
+      },
+      {
+        "study_id": "S-R56-2",
+        "study_label": "Study 2: laboratory crossover (exercise vs seated-rest control)",
+        "design": "Randomised, repeated-measures crossover laboratory trial; each participant completed both an exercise (EX: 60 min treadmill running at 65% VO2peak) and a seated-rest control (CON) trial in randomised order, trials separated by >=48 h.",
+        "registry_ids": "NR",
+        "training_load": "Participants recreationally active, 3-9 h/week aerobic exercise (p.3); refrained from alcohol, caffeine, OTC medication and heavy exercise for 24 h before each trial.",
+        "cointerventions": "Standardised pre-trial meal (2.2 MJ) and 5 ml/kg water provided before each trial; fluid replaced during trials (3 ml/kg/h water in EX; equivalent 35 ml/kg/d in CON) to offset sweat losses (p.4).",
+        "study_notes": "Not pre-registered (see Study 1 note, p.2, applies to both studies).",
+        "_locators": {
+          "design": "p.3 Section 2.2.1; p.4 Section 2.2.3"
+        },
+        "_confidence": "high"
+      }
+    ],
+    "reports": [
+      {
+        "report_id": "PILOT-R56",
+        "reference_id": "R56",
+        "title": "Anxiety and Mood Disturbance Are Prospectively Associated With Respiratory Infection Risk and the Mucosal Immune Response to Exercise",
+        "authors": "Harrison SE; Edwards JP; Roberts R; Walsh NP",
+        "year": "2025",
+        "doi": "10.1002/ejsc.70058",
+        "pmid": "41024702",
+        "url": "https://doi.org/10.1002/ejsc.70058",
+        "publication_status": "peer_reviewed_version_of_record",
+        "version_date": "UNCLEAR - Received 2024-11-15, Revised 2025-09-05, Accepted 2025-09-15 (p.1); specific online-publication date not stated on the pages read.",
+        "version_label": "Version of record, European Journal of Sport Science 2025;25:e70058 (Original Paper, open access)",
+        "source_locator": [
+          "p.1 header/citation block"
+        ],
+        "scope_stream": [
+          "A_core_acute"
+        ],
+        "inclusion_reason": "Two sub-studies each built around an identifiable single bout with pre-bout baseline and post-cessation sampling in adults: Study 1 = 2017 Snowdonia Marathon (saliva pre- and immediately post-race, p.2); Study 2 = 60-min treadmill run at 65% VO2peak vs seated-rest control, saliva pre/immediate-post/+30min (p.4). Direct immune-linked measurement (salivary sIgA, a recognized immune mediator) satisfies immune_link; Study 1 additionally tracks a self-reported clinical outcome (RTI) for 2 weeks post-race.",
+        "exclusion_reason": null,
+        "immune_link": [
+          "recognized_immune_mediator"
+        ],
+        "screening_decision_reviewer_A": "INCLUDE_A",
+        "screening_decision_reviewer_B": null,
+        "consensus_screening_decision": null,
+        "primary_fulltext_exclusion_reason": "NA",
+        "reviewer_notes": "Provisional INCLUDE_A for both sub-studies (no repeated identified exercise bouts in the same people across >=2 events, so Support B does not apply; Study 2's EX-vs-CON crossover is a single exercise bout plus a non-exercise comparator, not a second bout). See unresolved_questions on whether Study 1 and Study 2 should be two cohorts under one study_id or two separate study_families as modelled here.",
+        "author_stated_use": "NR (no explicit named application such as recovery/return-to-training stated; the paper's framing is mechanistic/monitoring research into psychological-immune links, p.1-2).",
+        "author_window_interpretation": [
+          "immunosuppression_or_susceptibility_without_term"
+        ],
+        "author_window_interpretation_locator": [
+          "p.2 Introduction: 'with lower sIgA levels in saliva ... relating to increased RTI risk'; p.9 Discussion references reduced sIgA as a candidate mechanism for RTI risk. The phrase 'open window' does not appear in the text; the paper's own finding in Study 1 was explicitly NO association between the sIgA change and RTI risk (p.6)."
+        ],
+        "_locators": {},
+        "_confidence": "high"
+      }
+    ],
+    "cohorts": [
+      {
+        "cohort_id": "C-R56-1",
+        "study_id": "S-R56-1",
+        "cohort_label": "2017 Snowdonia Marathon runners (Study 1)",
+        "baseline_health": "RTI-analysis sample excluded n=11 'not healthy on marathon day' (Figure 1); otherwise general marathon-entrant population, no further explicit health-screening criteria reported.",
+        "n_recruited": 406,
+        "age_sex": "Recruited/consented n=406 (men n=271, age 46+-9 y, height 177+-12 cm, mass 78+-10 kg, BMI 24+-3; women n=135, age 43+-8 y, height 166+-6 cm, mass 62+-8 kg, BMI 23+-3) (p.2).",
+        "training_status": "Marathon entrants; Discussion notes 'participants in this study were not elite athletes' and that the average age was 'relatively high' (p.9) - i.e. recreational/non-elite.",
+        "sport": "Marathon running (Snowdonia Marathon: mountain/trail terrain, total ascent 939 m, p.2).",
+        "cohort_notes": "Final analysis samples are subsets of the 406 consented: RTI data n=336 (70 excluded: 59 insufficient dataset, 11 not healthy on marathon day); SIgA data n=210 (196 excluded: 101 no saliva sample, 84 incomplete dataset, 6 CV>15%, 5 statistical outlier); combined RTI+SIgA sample n=199 (Figure 1 flow chart, p.3).",
+        "age_range": "NR as an explicit range; mean+-SD by sex given (men 46+-9 y; women 43+-8 y, p.2); authors note the average age was 'relatively high in Study 1' compared with Study 2 and raise possible peri/post-menopausal status in women as a discussion point (p.8), but do not define an older-adult cut-off themselves.",
+        "adult_stratum_separable": "all_participants_adult",
+        "older_adult_subgroup": "no_older_adult_stratum",
+        "_locators": {
+          "age_sex": "p.2 Section 2.1.1",
+          "cohort_notes": "p.3 Figure 1 flow chart"
+        },
+        "_confidence": "high"
+      },
+      {
+        "cohort_id": "C-R56-2",
+        "study_id": "S-R56-2",
+        "cohort_label": "Recreationally active adults, laboratory crossover (Study 2)",
+        "baseline_health": "Healthy in the 7 days preceding each trial (no respiratory illness symptoms); nonsmokers; no prescription medication during the study or preceding month (p.3).",
+        "n_recruited": 45,
+        "age_sex": "n=45 (men n=26, women n=19); All age 22+-3 y, men 21+-2 y, women 23+-4 y (Table 1, p.4); height 174+-9 cm, body mass 72+-10 kg, BMI 24+-3 (All).",
+        "training_status": "Recreationally active, 3-9 h/week aerobic exercise (p.3).",
+        "sport": "General aerobic exercise (treadmill running test protocol); not a named competitive sport.",
+        "cohort_notes": "Females naturally menstruating (n=10) or using oral contraceptives (n=4) or a contraceptive implant (n=5); cycle phase matched across EX/CON by testing on the same day of two separate cycles for naturally menstruating women (p.3).",
+        "age_range": "NR as an explicit range; mean+-SD only (Table 1).",
+        "adult_stratum_separable": "all_participants_adult",
+        "older_adult_subgroup": "no_older_adult_stratum",
+        "_locators": {
+          "age_sex": "p.4 Table 1",
+          "baseline_health": "p.3 Section 2.2.1"
+        },
+        "_confidence": "high"
+      }
+    ],
+    "report_cohort_links": [
+      {
+        "link_id": "L-R56-1",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-1",
+        "cohort_id": "C-R56-1",
+        "n_analyzed": "336 (RTI analysis, Table 2); 210 (SIgA/mucosal-immunity analysis); 199 (combined RTI+SIgA regression models, Table 3) - three different denominators for three different analyses within the same cohort (Figure 1 flow chart, p.3).",
+        "report_specific_population": "Subset of the 406 consented runners with sufficient RTI symptom-diary data and/or usable saliva samples per Figure 1 exclusion criteria.",
+        "link_notes": "Single field cohort; denominators differ by outcome measured (RTI-only, SIgA-only, or both) - see Figure 1.",
+        "scope_streams": [
+          "A_core_acute"
+        ],
+        "_locators": {
+          "n_analyzed": "p.3 Figure 1"
+        },
+        "_confidence": "high"
+      },
+      {
+        "link_id": "L-R56-2",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-2",
+        "cohort_id": "C-R56-2",
+        "n_analyzed": "45 (all participants provided data for both EX and CON trials; no attrition/exclusion reported for Study 2 in the text read).",
+        "report_specific_population": "All 45 consented participants, analysed combined and separately by sex (Table 1; Figure 3 men-only subgroup, n~26).",
+        "link_notes": "Laboratory crossover cohort, independent of Study 1 (different participants, different setting).",
+        "scope_streams": [
+          "A_core_acute"
+        ],
+        "_locators": {},
+        "_confidence": "high"
+      }
+    ],
+    "sample_sets": [
+      {
+        "sample_set_id": "SS-R56-01",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-1",
+        "cohort_id": "C-R56-1",
+        "group_condition": "All runners with usable saliva data (final SIgA sample, n=210)",
+        "intervention_phase": "single bout only",
+        "exercise_mode": "endurance running / mountain marathon (competition)",
+        "dose": "Snowdonia Marathon (mixed road/trail terrain, total ascent 939 m); men avg completion 4 h 26 min+-46 min, women 4 h 55 min+-49 min",
+        "control": "No non-exercise control group in Study 1; within-person pre/post comparison only",
+        "training_load": "NR",
+        "cointerventions": "NR",
+        "exercise_end_definition": "UNCLEAR - clock-time based sample collection (9:16 AM+-36 min pre; 3:11 PM+-48 min post) rather than an explicit per-runner chip-time finish anchor (p.2).",
+        "sample_role": "pre_exercise_baseline",
+        "timepoint_as_reported": "prior to the marathon (9:16 AM +- 36 min); marathon started 10:30 AM",
+        "time_from_exercise_end_value": "NA",
+        "time_unit": "NA",
+        "time_bin": "pre_exercise_baseline",
+        "matrix": "saliva",
+        "assay_platform": "Versi-SAL swab collection; SIgA by ELISA (Salimetrics)",
+        "n_participants": 210,
+        "n_biological_samples": 210,
+        "n_cells": "NA",
+        "n_technical_replicates": "duplicate (mean intra-assay CV 2.9% for Study 1, p.5)",
+        "n_aliquots": "NR",
+        "repeated_sampling": "within-person paired pre/post design",
+        "pairing_structure": "same runners sampled pre and post",
+        "age_sex_stratum": "NA (All; Men n=150/Women n=60 reported separately in Figure 1 but not analysed as a distinct sample_set here)",
+        "preanalytics": "Versi-SAL swab under tongue 2 min; stored at 4C in field, transported to lab, centrifuged 1500g 4C 10 min, aliquoted, stored at -80C (p.5).",
+        "normalization": "Saliva flow rate (FR) = volume/collection time; SIgA secretion rate (SR) = FR x SIgA concentration (density assumed 1.00 g/ml) (p.5).",
+        "circadian": "Sample collection clock-times reported (9:16 AM pre; 3:11 PM post) but not treated as a controlled circadian factor.",
+        "missing_data": "196 of 406 excluded from SIgA analysis: 101 no saliva sample, 84 incomplete dataset, 6 CV>15%, 5 statistical outlier (Figure 1).",
+        "cell_context": "NA",
+        "source_locator": [
+          "p.2 Section 2.1.2; p.5 Section 2.4"
+        ],
+        "sample_notes": "Field-based swab method chosen over passive drool for practicality (p.5); pilot data cited showing SIgA stable at 4C for >=3h (journey duration ~20 min).",
+        "bout_id": "B-R56-S1-1",
+        "bout_number": 1,
+        "participant_linkage": "same_participants_identified",
+        "n_donors": "NA",
+        "donor_count_basis": "NA",
+        "exercise_duration": "NR (baseline, pre-exercise)",
+        "intensity_metric": "NR",
+        "intensity_value": "NR",
+        "within_organising_window": "pre_exercise_baseline",
+        "_locators": {},
+        "_confidence": "high"
+      },
+      {
+        "sample_set_id": "SS-R56-02",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-1",
+        "cohort_id": "C-R56-1",
+        "group_condition": "All runners with usable saliva data (final SIgA sample, n=210)",
+        "intervention_phase": "single bout only",
+        "exercise_mode": "endurance running / mountain marathon (competition)",
+        "dose": "Snowdonia Marathon (mixed road/trail terrain, total ascent 939 m); men avg completion 4 h 26 min+-46 min, women 4 h 55 min+-49 min",
+        "control": "No non-exercise control group in Study 1; within-person pre/post comparison only",
+        "training_load": "NR",
+        "cointerventions": "NR",
+        "exercise_end_definition": "UNCLEAR - clock-time based sample collection (9:16 AM+-36 min pre; 3:11 PM+-48 min post) rather than an explicit per-runner chip-time finish anchor (p.2).",
+        "sample_role": "immediate_post",
+        "timepoint_as_reported": "immediately after the marathon (3:11 PM +- 48 min)",
+        "time_from_exercise_end_value": "UNCLEAR (described as 'immediately after'; no numeric minutes-post-finish given)",
+        "time_unit": "UNCLEAR",
+        "time_bin": "0_to_lt30min",
+        "matrix": "saliva",
+        "assay_platform": "Versi-SAL swab collection; SIgA by ELISA (Salimetrics)",
+        "n_participants": 210,
+        "n_biological_samples": 210,
+        "n_cells": "NA",
+        "n_technical_replicates": "duplicate (mean intra-assay CV 2.9% for Study 1, p.5)",
+        "n_aliquots": "NR",
+        "repeated_sampling": "within-person paired pre/post design",
+        "pairing_structure": "same runners sampled pre and post",
+        "age_sex_stratum": "NA (All; Men n=150/Women n=60 reported separately in Figure 1 but not analysed as a distinct sample_set here)",
+        "preanalytics": "Versi-SAL swab under tongue 2 min; stored at 4C in field, transported to lab, centrifuged 1500g 4C 10 min, aliquoted, stored at -80C (p.5).",
+        "normalization": "Saliva flow rate (FR) = volume/collection time; SIgA secretion rate (SR) = FR x SIgA concentration (density assumed 1.00 g/ml) (p.5).",
+        "circadian": "Sample collection clock-times reported (9:16 AM pre; 3:11 PM post) but not treated as a controlled circadian factor.",
+        "missing_data": "196 of 406 excluded from SIgA analysis: 101 no saliva sample, 84 incomplete dataset, 6 CV>15%, 5 statistical outlier (Figure 1).",
+        "cell_context": "NA",
+        "source_locator": [
+          "p.2 Section 2.1.2; p.5 Section 2.4"
+        ],
+        "sample_notes": "Field-based swab method chosen over passive drool for practicality (p.5); pilot data cited showing SIgA stable at 4C for >=3h (journey duration ~20 min).",
+        "bout_id": "B-R56-S1-1",
+        "bout_number": 1,
+        "participant_linkage": "same_participants_identified",
+        "n_donors": "NA",
+        "donor_count_basis": "NA",
+        "exercise_duration": "Marathon; men 4h26min+-46min, women 4h55min+-49min",
+        "intensity_metric": "NR",
+        "intensity_value": "NR",
+        "within_organising_window": "within_window",
+        "_locators": {
+          "timepoint_as_reported": "p.2: 'Saliva samples were collected prior to and immediately after the marathon (9:16 AM +- 36 min and 3:11 PM +- 48 min, respectively).'"
+        },
+        "_confidence": "medium"
+      },
+      {
+        "sample_set_id": "SS-R56-03",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-2",
+        "cohort_id": "C-R56-2",
+        "group_condition": "EX trial, pre timepoint, All participants (n=45); randomised crossover order",
+        "intervention_phase": "single bout only (acute laboratory trial, not part of a training programme)",
+        "exercise_mode": "treadmill running (continuous, moderate intensity)",
+        "dose": "60 min continuous treadmill running at 65% VO2peak",
+        "control": "Within-subject crossover: EX trial compared with CON (seated rest) trial, >=48h apart, randomised order",
+        "training_load": "NR",
+        "cointerventions": "Standardised pre-trial meal (2.2 MJ) + 5 ml/kg water; fluid replacement during trial (3 ml/kg/h EX; equivalent 35 ml/kg/d CON)",
+        "exercise_end_definition": "End of the 60-min treadmill run (EX only); NA for CON (no exercise)",
+        "sample_role": "pre_exercise_baseline",
+        "timepoint_as_reported": "pre (EX trial)",
+        "time_from_exercise_end_value": "NA",
+        "time_unit": "NA",
+        "time_bin": "pre_exercise_baseline",
+        "matrix": "saliva",
+        "assay_platform": "passive drool (universal tube); SIgA by ELISA (Salimetrics)",
+        "n_participants": 45,
+        "n_biological_samples": 45,
+        "n_cells": "NA",
+        "n_technical_replicates": "duplicate (mean intra-assay CV 3.3% for Study 2, p.5)",
+        "n_aliquots": "NR",
+        "repeated_sampling": "within-person crossover (each participant provides both EX and CON data)",
+        "pairing_structure": "same 45 participants in both trials, randomised order, >=48h apart",
+        "age_sex_stratum": "NA (All; Men n=26/Women n=19 reported separately in Table 1/Supplement Table S2 but not split into separate sample_sets here - see unresolved_questions on a docx table merged-cell parsing ambiguity for the sex-stratified columns)",
+        "preanalytics": "Passive drool into pre-weighed universal tube, 5 min (up to 9 min if <200uL), centrifuged 1500g 4C 10 min, aliquoted, stored -80C (p.5).",
+        "normalization": "Saliva FR and SIgA SR calculated as in Study 1 (p.5).",
+        "circadian": "Each trial pair conducted at the same time of day for a given participant (p.4).",
+        "missing_data": "NR (no exclusions reported for Study 2 in the text read).",
+        "cell_context": "NA",
+        "source_locator": [
+          "p.3-4 Section 2.2; p.5 Section 2.4"
+        ],
+        "sample_notes": "Environmental conditions controlled (20+-1C, 43+-6% RH, 764+-27 mmHg, fan 0.2 m/s) for both trials (p.4).",
+        "bout_id": "B-R56-S2-EX",
+        "bout_number": 1,
+        "participant_linkage": "same_participants_identified",
+        "n_donors": "NA",
+        "donor_count_basis": "NA",
+        "exercise_duration": "60 min",
+        "intensity_metric": "%VO2peak",
+        "intensity_value": "65%",
+        "within_organising_window": "pre_exercise_baseline",
+        "_locators": {},
+        "_confidence": "high"
+      },
+      {
+        "sample_set_id": "SS-R56-04",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-2",
+        "cohort_id": "C-R56-2",
+        "group_condition": "EX trial, post timepoint, All participants (n=45); randomised crossover order",
+        "intervention_phase": "single bout only (acute laboratory trial, not part of a training programme)",
+        "exercise_mode": "treadmill running (continuous, moderate intensity)",
+        "dose": "60 min continuous treadmill running at 65% VO2peak",
+        "control": "Within-subject crossover: EX trial compared with CON (seated rest) trial, >=48h apart, randomised order",
+        "training_load": "NR",
+        "cointerventions": "Standardised pre-trial meal (2.2 MJ) + 5 ml/kg water; fluid replacement during trial (3 ml/kg/h EX; equivalent 35 ml/kg/d CON)",
+        "exercise_end_definition": "End of the 60-min treadmill run (EX only); NA for CON (no exercise)",
+        "sample_role": "immediate_post",
+        "timepoint_as_reported": "post (EX trial)",
+        "time_from_exercise_end_value": "0 (immediately post)",
+        "time_unit": "minutes",
+        "time_bin": "0_to_lt30min",
+        "matrix": "saliva",
+        "assay_platform": "passive drool (universal tube); SIgA by ELISA (Salimetrics)",
+        "n_participants": 45,
+        "n_biological_samples": 45,
+        "n_cells": "NA",
+        "n_technical_replicates": "duplicate (mean intra-assay CV 3.3% for Study 2, p.5)",
+        "n_aliquots": "NR",
+        "repeated_sampling": "within-person crossover (each participant provides both EX and CON data)",
+        "pairing_structure": "same 45 participants in both trials, randomised order, >=48h apart",
+        "age_sex_stratum": "NA (All; Men n=26/Women n=19 reported separately in Table 1/Supplement Table S2 but not split into separate sample_sets here - see unresolved_questions on a docx table merged-cell parsing ambiguity for the sex-stratified columns)",
+        "preanalytics": "Passive drool into pre-weighed universal tube, 5 min (up to 9 min if <200uL), centrifuged 1500g 4C 10 min, aliquoted, stored -80C (p.5).",
+        "normalization": "Saliva FR and SIgA SR calculated as in Study 1 (p.5).",
+        "circadian": "Each trial pair conducted at the same time of day for a given participant (p.4).",
+        "missing_data": "NR (no exclusions reported for Study 2 in the text read).",
+        "cell_context": "NA",
+        "source_locator": [
+          "p.3-4 Section 2.2; p.5 Section 2.4"
+        ],
+        "sample_notes": "Environmental conditions controlled (20+-1C, 43+-6% RH, 764+-27 mmHg, fan 0.2 m/s) for both trials (p.4).",
+        "bout_id": "B-R56-S2-EX",
+        "bout_number": 1,
+        "participant_linkage": "same_participants_identified",
+        "n_donors": "NA",
+        "donor_count_basis": "NA",
+        "exercise_duration": "60 min",
+        "intensity_metric": "%VO2peak",
+        "intensity_value": "65%",
+        "within_organising_window": "within_window",
+        "_locators": {},
+        "_confidence": "high"
+      },
+      {
+        "sample_set_id": "SS-R56-05",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-2",
+        "cohort_id": "C-R56-2",
+        "group_condition": "EX trial, +30min timepoint, All participants (n=45); randomised crossover order",
+        "intervention_phase": "single bout only (acute laboratory trial, not part of a training programme)",
+        "exercise_mode": "treadmill running (continuous, moderate intensity)",
+        "dose": "60 min continuous treadmill running at 65% VO2peak",
+        "control": "Within-subject crossover: EX trial compared with CON (seated rest) trial, >=48h apart, randomised order",
+        "training_load": "NR",
+        "cointerventions": "Standardised pre-trial meal (2.2 MJ) + 5 ml/kg water; fluid replacement during trial (3 ml/kg/h EX; equivalent 35 ml/kg/d CON)",
+        "exercise_end_definition": "End of the 60-min treadmill run (EX only); NA for CON (no exercise)",
+        "sample_role": "recovery_post",
+        "timepoint_as_reported": "+30min (EX trial)",
+        "time_from_exercise_end_value": "30",
+        "time_unit": "minutes",
+        "time_bin": "30min_to_lt3h",
+        "matrix": "saliva",
+        "assay_platform": "passive drool (universal tube); SIgA by ELISA (Salimetrics)",
+        "n_participants": 45,
+        "n_biological_samples": 45,
+        "n_cells": "NA",
+        "n_technical_replicates": "duplicate (mean intra-assay CV 3.3% for Study 2, p.5)",
+        "n_aliquots": "NR",
+        "repeated_sampling": "within-person crossover (each participant provides both EX and CON data)",
+        "pairing_structure": "same 45 participants in both trials, randomised order, >=48h apart",
+        "age_sex_stratum": "NA (All; Men n=26/Women n=19 reported separately in Table 1/Supplement Table S2 but not split into separate sample_sets here - see unresolved_questions on a docx table merged-cell parsing ambiguity for the sex-stratified columns)",
+        "preanalytics": "Passive drool into pre-weighed universal tube, 5 min (up to 9 min if <200uL), centrifuged 1500g 4C 10 min, aliquoted, stored -80C (p.5).",
+        "normalization": "Saliva FR and SIgA SR calculated as in Study 1 (p.5).",
+        "circadian": "Each trial pair conducted at the same time of day for a given participant (p.4).",
+        "missing_data": "NR (no exclusions reported for Study 2 in the text read).",
+        "cell_context": "NA",
+        "source_locator": [
+          "p.3-4 Section 2.2; p.5 Section 2.4"
+        ],
+        "sample_notes": "Environmental conditions controlled (20+-1C, 43+-6% RH, 764+-27 mmHg, fan 0.2 m/s) for both trials (p.4).",
+        "bout_id": "B-R56-S2-EX",
+        "bout_number": 1,
+        "participant_linkage": "same_participants_identified",
+        "n_donors": "NA",
+        "donor_count_basis": "NA",
+        "exercise_duration": "60 min",
+        "intensity_metric": "%VO2peak",
+        "intensity_value": "65%",
+        "within_organising_window": "within_window",
+        "_locators": {},
+        "_confidence": "high"
+      },
+      {
+        "sample_set_id": "SS-R56-06",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-2",
+        "cohort_id": "C-R56-2",
+        "group_condition": "CON trial, pre timepoint, All participants (n=45); randomised crossover order",
+        "intervention_phase": "single bout only (acute laboratory trial, not part of a training programme)",
+        "exercise_mode": "NA (seated rest control, no exercise)",
+        "dose": "60 min seated rest (watching a neutral video) under matched environmental conditions",
+        "control": "Within-subject crossover: EX trial compared with CON (seated rest) trial, >=48h apart, randomised order",
+        "training_load": "NR",
+        "cointerventions": "Standardised pre-trial meal (2.2 MJ) + 5 ml/kg water; fluid replacement during trial (3 ml/kg/h EX; equivalent 35 ml/kg/d CON)",
+        "exercise_end_definition": "End of the 60-min treadmill run (EX only); NA for CON (no exercise)",
+        "sample_role": "matched_control",
+        "timepoint_as_reported": "pre (CON trial)",
+        "time_from_exercise_end_value": "NA",
+        "time_unit": "NA",
+        "time_bin": "matched_control_time",
+        "matrix": "saliva",
+        "assay_platform": "passive drool (universal tube); SIgA by ELISA (Salimetrics)",
+        "n_participants": 45,
+        "n_biological_samples": 45,
+        "n_cells": "NA",
+        "n_technical_replicates": "duplicate (mean intra-assay CV 3.3% for Study 2, p.5)",
+        "n_aliquots": "NR",
+        "repeated_sampling": "within-person crossover (each participant provides both EX and CON data)",
+        "pairing_structure": "same 45 participants in both trials, randomised order, >=48h apart",
+        "age_sex_stratum": "NA (All; Men n=26/Women n=19 reported separately in Table 1/Supplement Table S2 but not split into separate sample_sets here - see unresolved_questions on a docx table merged-cell parsing ambiguity for the sex-stratified columns)",
+        "preanalytics": "Passive drool into pre-weighed universal tube, 5 min (up to 9 min if <200uL), centrifuged 1500g 4C 10 min, aliquoted, stored -80C (p.5).",
+        "normalization": "Saliva FR and SIgA SR calculated as in Study 1 (p.5).",
+        "circadian": "Each trial pair conducted at the same time of day for a given participant (p.4).",
+        "missing_data": "NR (no exclusions reported for Study 2 in the text read).",
+        "cell_context": "NA",
+        "source_locator": [
+          "p.3-4 Section 2.2; p.5 Section 2.4"
+        ],
+        "sample_notes": "Environmental conditions controlled (20+-1C, 43+-6% RH, 764+-27 mmHg, fan 0.2 m/s) for both trials (p.4).",
+        "bout_id": "NA",
+        "bout_number": "NA",
+        "participant_linkage": "same_participants_identified",
+        "n_donors": "NA",
+        "donor_count_basis": "NA",
+        "exercise_duration": "NA",
+        "intensity_metric": "NA",
+        "intensity_value": "NA",
+        "within_organising_window": "matched_control_time",
+        "_locators": {},
+        "_confidence": "high"
+      },
+      {
+        "sample_set_id": "SS-R56-07",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-2",
+        "cohort_id": "C-R56-2",
+        "group_condition": "CON trial, post timepoint, All participants (n=45); randomised crossover order",
+        "intervention_phase": "single bout only (acute laboratory trial, not part of a training programme)",
+        "exercise_mode": "NA (seated rest control, no exercise)",
+        "dose": "60 min seated rest (watching a neutral video) under matched environmental conditions",
+        "control": "Within-subject crossover: EX trial compared with CON (seated rest) trial, >=48h apart, randomised order",
+        "training_load": "NR",
+        "cointerventions": "Standardised pre-trial meal (2.2 MJ) + 5 ml/kg water; fluid replacement during trial (3 ml/kg/h EX; equivalent 35 ml/kg/d CON)",
+        "exercise_end_definition": "End of the 60-min treadmill run (EX only); NA for CON (no exercise)",
+        "sample_role": "matched_control",
+        "timepoint_as_reported": "post (CON trial)",
+        "time_from_exercise_end_value": "NA",
+        "time_unit": "NA",
+        "time_bin": "matched_control_time",
+        "matrix": "saliva",
+        "assay_platform": "passive drool (universal tube); SIgA by ELISA (Salimetrics)",
+        "n_participants": 45,
+        "n_biological_samples": 45,
+        "n_cells": "NA",
+        "n_technical_replicates": "duplicate (mean intra-assay CV 3.3% for Study 2, p.5)",
+        "n_aliquots": "NR",
+        "repeated_sampling": "within-person crossover (each participant provides both EX and CON data)",
+        "pairing_structure": "same 45 participants in both trials, randomised order, >=48h apart",
+        "age_sex_stratum": "NA (All; Men n=26/Women n=19 reported separately in Table 1/Supplement Table S2 but not split into separate sample_sets here - see unresolved_questions on a docx table merged-cell parsing ambiguity for the sex-stratified columns)",
+        "preanalytics": "Passive drool into pre-weighed universal tube, 5 min (up to 9 min if <200uL), centrifuged 1500g 4C 10 min, aliquoted, stored -80C (p.5).",
+        "normalization": "Saliva FR and SIgA SR calculated as in Study 1 (p.5).",
+        "circadian": "Each trial pair conducted at the same time of day for a given participant (p.4).",
+        "missing_data": "NR (no exclusions reported for Study 2 in the text read).",
+        "cell_context": "NA",
+        "source_locator": [
+          "p.3-4 Section 2.2; p.5 Section 2.4"
+        ],
+        "sample_notes": "Environmental conditions controlled (20+-1C, 43+-6% RH, 764+-27 mmHg, fan 0.2 m/s) for both trials (p.4).",
+        "bout_id": "NA",
+        "bout_number": "NA",
+        "participant_linkage": "same_participants_identified",
+        "n_donors": "NA",
+        "donor_count_basis": "NA",
+        "exercise_duration": "NA",
+        "intensity_metric": "NA",
+        "intensity_value": "NA",
+        "within_organising_window": "matched_control_time",
+        "_locators": {},
+        "_confidence": "high"
+      },
+      {
+        "sample_set_id": "SS-R56-08",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-2",
+        "cohort_id": "C-R56-2",
+        "group_condition": "CON trial, +30min timepoint, All participants (n=45); randomised crossover order",
+        "intervention_phase": "single bout only (acute laboratory trial, not part of a training programme)",
+        "exercise_mode": "NA (seated rest control, no exercise)",
+        "dose": "60 min seated rest (watching a neutral video) under matched environmental conditions",
+        "control": "Within-subject crossover: EX trial compared with CON (seated rest) trial, >=48h apart, randomised order",
+        "training_load": "NR",
+        "cointerventions": "Standardised pre-trial meal (2.2 MJ) + 5 ml/kg water; fluid replacement during trial (3 ml/kg/h EX; equivalent 35 ml/kg/d CON)",
+        "exercise_end_definition": "End of the 60-min treadmill run (EX only); NA for CON (no exercise)",
+        "sample_role": "matched_control",
+        "timepoint_as_reported": "+30min (CON trial)",
+        "time_from_exercise_end_value": "NA",
+        "time_unit": "NA",
+        "time_bin": "matched_control_time",
+        "matrix": "saliva",
+        "assay_platform": "passive drool (universal tube); SIgA by ELISA (Salimetrics)",
+        "n_participants": 45,
+        "n_biological_samples": 45,
+        "n_cells": "NA",
+        "n_technical_replicates": "duplicate (mean intra-assay CV 3.3% for Study 2, p.5)",
+        "n_aliquots": "NR",
+        "repeated_sampling": "within-person crossover (each participant provides both EX and CON data)",
+        "pairing_structure": "same 45 participants in both trials, randomised order, >=48h apart",
+        "age_sex_stratum": "NA (All; Men n=26/Women n=19 reported separately in Table 1/Supplement Table S2 but not split into separate sample_sets here - see unresolved_questions on a docx table merged-cell parsing ambiguity for the sex-stratified columns)",
+        "preanalytics": "Passive drool into pre-weighed universal tube, 5 min (up to 9 min if <200uL), centrifuged 1500g 4C 10 min, aliquoted, stored -80C (p.5).",
+        "normalization": "Saliva FR and SIgA SR calculated as in Study 1 (p.5).",
+        "circadian": "Each trial pair conducted at the same time of day for a given participant (p.4).",
+        "missing_data": "NR (no exclusions reported for Study 2 in the text read).",
+        "cell_context": "NA",
+        "source_locator": [
+          "p.3-4 Section 2.2; p.5 Section 2.4"
+        ],
+        "sample_notes": "Environmental conditions controlled (20+-1C, 43+-6% RH, 764+-27 mmHg, fan 0.2 m/s) for both trials (p.4).",
+        "bout_id": "NA",
+        "bout_number": "NA",
+        "participant_linkage": "same_participants_identified",
+        "n_donors": "NA",
+        "donor_count_basis": "NA",
+        "exercise_duration": "NA",
+        "intensity_metric": "NA",
+        "intensity_value": "NA",
+        "within_organising_window": "matched_control_time",
+        "_locators": {},
+        "_confidence": "high"
+      }
+    ],
+    "measurements": [
+      {
+        "measurement_id": "M-R56-001",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-1",
+        "cohort_id": "C-R56-1",
+        "sample_set_ids": [
+          "SS-R56-01",
+          "SS-R56-02"
+        ],
+        "analyte_id": {
+          "original_label": "Saliva flow rate (FR)",
+          "standard_name": "saliva flow rate",
+          "database_id": "NR"
+        },
+        "biological_level": "other",
+        "platform": "ELISA (Salimetrics); flow rate by gravimetric volume/time",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Mean intra-assay CV for sample duplicates: 2.9% (Study 1), 3.3% (Study 2); outliers >3x IQR removed (n=5 Study 1, n=3 Study 2) prior to analysis (p.5).",
+        "feature_identification": "NA (targeted ELISA)",
+        "comparison": "pre- vs immediately post-marathon, all participants (n=210, paired), Study 1",
+        "effect_measure": "mean difference (paired)",
+        "effect_value": "266+-208 (pre) vs 91+-65 (post) ul/min, p<0.001",
+        "effect_unit": "ul/min",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR for the descriptive pre/post or trial comparisons; covariate-adjusted regression models (Table 2/3) adjust for sex, age, BMI, race/trial duration and sleep duration.",
+        "confounding": "Study 1: adjusted for sex, age, BMI, marathon/race time, sleep duration the night before, and prior RTI in regression models (p.5); Study 2: controlled laboratory environment, standardised meal/fluid, menstrual-cycle/OC matching (p.3-4).",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data",
+        "null_findings": "Recorded where reported (see result_direction)",
+        "result_direction": "decrease",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "Reported in main text as part of 'Compared with pre-marathon, saliva FR and SIgA SR decreased and SIgA concentration increased post-marathon' and detailed in Supplementary Table S1.",
+        "source_locator": [
+          "p.6 Results 3.1; Supplementary Table S1"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R56-S1-saliva",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted saliva panel: flow rate, SIgA concentration, SIgA secretion rate (both studies, p.5).",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.5 Section 2.4-2.5"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.5 Section 2.4"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R56_supp_EJSC-25-e70058-s001.docx (Supporting Information S1: Tables S1-S2, Figures S1-S4)"
+        ],
+        "result_status": "reported_significant",
+        "effect_value_source": "reported_supplement",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "mucosal_sIgA",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.6 Results 3.1; Supplementary Table S1"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "measurement_id": "M-R56-002",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-1",
+        "cohort_id": "C-R56-1",
+        "sample_set_ids": [
+          "SS-R56-01",
+          "SS-R56-02"
+        ],
+        "analyte_id": {
+          "original_label": "Saliva SIgA concentration",
+          "standard_name": "secretory IgA concentration",
+          "database_id": "NR"
+        },
+        "biological_level": "protein",
+        "platform": "ELISA (Salimetrics); flow rate by gravimetric volume/time",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Mean intra-assay CV for sample duplicates: 2.9% (Study 1), 3.3% (Study 2); outliers >3x IQR removed (n=5 Study 1, n=3 Study 2) prior to analysis (p.5).",
+        "feature_identification": "NA (targeted ELISA)",
+        "comparison": "pre- vs immediately post-marathon, all participants (n=210, paired), Study 1",
+        "effect_measure": "mean difference (paired)",
+        "effect_value": "165+-101 (pre) vs 247+-156 (post) ug/ml, p<0.001",
+        "effect_unit": "ug/ml",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR for the descriptive pre/post or trial comparisons; covariate-adjusted regression models (Table 2/3) adjust for sex, age, BMI, race/trial duration and sleep duration.",
+        "confounding": "Study 1: adjusted for sex, age, BMI, marathon/race time, sleep duration the night before, and prior RTI in regression models (p.5); Study 2: controlled laboratory environment, standardised meal/fluid, menstrual-cycle/OC matching (p.3-4).",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data",
+        "null_findings": "Recorded where reported (see result_direction)",
+        "result_direction": "increase",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "Concentration effect is in the opposite direction to flow rate and secretion rate - concentration rises likely reflects the sharp drop in saliva volume (FR) rather than increased absolute antibody secretion; see SR below.",
+        "source_locator": [
+          "p.6 Results 3.1; Supplementary Table S1"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R56-S1-saliva",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted saliva panel: flow rate, SIgA concentration, SIgA secretion rate (both studies, p.5).",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.5 Section 2.4-2.5"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.5 Section 2.4"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R56_supp_EJSC-25-e70058-s001.docx (Supporting Information S1: Tables S1-S2, Figures S1-S4)"
+        ],
+        "result_status": "reported_significant",
+        "effect_value_source": "reported_supplement",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "mucosal_sIgA",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.6 Results 3.1; Supplementary Table S1"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "measurement_id": "M-R56-003",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-1",
+        "cohort_id": "C-R56-1",
+        "sample_set_ids": [
+          "SS-R56-01",
+          "SS-R56-02"
+        ],
+        "analyte_id": {
+          "original_label": "Saliva SIgA secretion rate (SR)",
+          "standard_name": "secretory IgA secretion rate",
+          "database_id": "NR"
+        },
+        "biological_level": "protein",
+        "platform": "ELISA (Salimetrics); flow rate by gravimetric volume/time",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Mean intra-assay CV for sample duplicates: 2.9% (Study 1), 3.3% (Study 2); outliers >3x IQR removed (n=5 Study 1, n=3 Study 2) prior to analysis (p.5).",
+        "feature_identification": "NA (targeted ELISA)",
+        "comparison": "pre- vs immediately post-marathon, all participants (n=210, paired), Study 1",
+        "effect_measure": "mean difference (paired)",
+        "effect_value": "33+-24 (pre) vs 19+-15 (post) ug/min, p<0.001",
+        "effect_unit": "ug/min",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR for the descriptive pre/post or trial comparisons; covariate-adjusted regression models (Table 2/3) adjust for sex, age, BMI, race/trial duration and sleep duration.",
+        "confounding": "Study 1: adjusted for sex, age, BMI, marathon/race time, sleep duration the night before, and prior RTI in regression models (p.5); Study 2: controlled laboratory environment, standardised meal/fluid, menstrual-cycle/OC matching (p.3-4).",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data",
+        "null_findings": "Recorded where reported (see result_direction)",
+        "result_direction": "decrease",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "SR (accounting for flow rate) decreased, consistent with a net reduction in total antibody secretion despite the rise in concentration.",
+        "source_locator": [
+          "p.6 Results 3.1; Supplementary Table S1"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R56-S1-saliva",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted saliva panel: flow rate, SIgA concentration, SIgA secretion rate (both studies, p.5).",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.5 Section 2.4-2.5"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.5 Section 2.4"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R56_supp_EJSC-25-e70058-s001.docx (Supporting Information S1: Tables S1-S2, Figures S1-S4)"
+        ],
+        "result_status": "reported_significant",
+        "effect_value_source": "reported_supplement",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "mucosal_sIgA",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.6 Results 3.1; Supplementary Table S1"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "measurement_id": "M-R56-004",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-1",
+        "cohort_id": "C-R56-1",
+        "sample_set_ids": [
+          "SS-R56-01",
+          "SS-R56-02"
+        ],
+        "analyte_id": {
+          "original_label": "Saliva flow rate change (pre-post) vs RTI risk",
+          "standard_name": "saliva flow rate pre-post change, logistic association with RTI",
+          "database_id": "NR"
+        },
+        "biological_level": "other",
+        "platform": "ELISA (Salimetrics); flow rate by gravimetric volume/time",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Mean intra-assay CV for sample duplicates: 2.9% (Study 1), 3.3% (Study 2); outliers >3x IQR removed (n=5 Study 1, n=3 Study 2) prior to analysis (p.5).",
+        "feature_identification": "NA (targeted ELISA)",
+        "comparison": "Hierarchical logistic regression, change pre-post marathon predicting RTI during 2-week follow-up (adjusted for sex, age, BMI, race time, sleep duration, prior RTI), n=199, Study 1",
+        "effect_measure": "odds ratio (adjusted logistic regression)",
+        "effect_value": "OR [95% CI] = 1.00 [1.00-1.00], p>0.05",
+        "effect_unit": "odds ratio",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR for the descriptive pre/post or trial comparisons; covariate-adjusted regression models (Table 2/3) adjust for sex, age, BMI, race/trial duration and sleep duration.",
+        "confounding": "Study 1: adjusted for sex, age, BMI, marathon/race time, sleep duration the night before, and prior RTI in regression models (p.5); Study 2: controlled laboratory environment, standardised meal/fluid, menstrual-cycle/OC matching (p.3-4).",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data",
+        "null_findings": "Recorded where reported (see result_direction)",
+        "result_direction": "no_detected_difference",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "This is the key explicit null finding of Study 1 (abstract: 'There was no association between mucosal immunity and RTI risk (OR [95% CI] = 1.00 [0.97-1.01])' refers to SIgA SR specifically; FR result given in Results 3.1.3).",
+        "source_locator": [
+          "p.6 Results 3.1.3"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R56-S1-saliva",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted saliva panel: flow rate, SIgA concentration, SIgA secretion rate (both studies, p.5).",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.5 Section 2.4-2.5"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.5 Section 2.4"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R56_supp_EJSC-25-e70058-s001.docx (Supporting Information S1: Tables S1-S2, Figures S1-S4)"
+        ],
+        "result_status": "explicitly_reported_non_significant_or_null",
+        "effect_value_source": "reported_main_text_or_table",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "mucosal_sIgA",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.6 Results 3.1.3"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "measurement_id": "M-R56-005",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-1",
+        "cohort_id": "C-R56-1",
+        "sample_set_ids": [
+          "SS-R56-01",
+          "SS-R56-02"
+        ],
+        "analyte_id": {
+          "original_label": "Saliva SIgA concentration change (pre-post) vs RTI risk",
+          "standard_name": "SIgA concentration pre-post change, logistic association with RTI",
+          "database_id": "NR"
+        },
+        "biological_level": "protein",
+        "platform": "ELISA (Salimetrics); flow rate by gravimetric volume/time",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Mean intra-assay CV for sample duplicates: 2.9% (Study 1), 3.3% (Study 2); outliers >3x IQR removed (n=5 Study 1, n=3 Study 2) prior to analysis (p.5).",
+        "feature_identification": "NA (targeted ELISA)",
+        "comparison": "Hierarchical logistic regression, n=199, Study 1 (same model family as M-R56-004)",
+        "effect_measure": "odds ratio (adjusted logistic regression)",
+        "effect_value": "OR [95% CI] = 1.00 [1.00-1.00], p>0.05",
+        "effect_unit": "odds ratio",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR for the descriptive pre/post or trial comparisons; covariate-adjusted regression models (Table 2/3) adjust for sex, age, BMI, race/trial duration and sleep duration.",
+        "confounding": "Study 1: adjusted for sex, age, BMI, marathon/race time, sleep duration the night before, and prior RTI in regression models (p.5); Study 2: controlled laboratory environment, standardised meal/fluid, menstrual-cycle/OC matching (p.3-4).",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data",
+        "null_findings": "Recorded where reported (see result_direction)",
+        "result_direction": "no_detected_difference",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "Explicit null result.",
+        "source_locator": [
+          "p.6 Results 3.1.3"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R56-S1-saliva",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted saliva panel: flow rate, SIgA concentration, SIgA secretion rate (both studies, p.5).",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.5 Section 2.4-2.5"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.5 Section 2.4"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R56_supp_EJSC-25-e70058-s001.docx (Supporting Information S1: Tables S1-S2, Figures S1-S4)"
+        ],
+        "result_status": "explicitly_reported_non_significant_or_null",
+        "effect_value_source": "reported_main_text_or_table",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "mucosal_sIgA",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.6 Results 3.1.3"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "measurement_id": "M-R56-006",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-1",
+        "cohort_id": "C-R56-1",
+        "sample_set_ids": [
+          "SS-R56-01",
+          "SS-R56-02"
+        ],
+        "analyte_id": {
+          "original_label": "Saliva SIgA secretion rate change (pre-post) vs RTI risk",
+          "standard_name": "SIgA SR pre-post change, logistic association with RTI",
+          "database_id": "NR"
+        },
+        "biological_level": "protein",
+        "platform": "ELISA (Salimetrics); flow rate by gravimetric volume/time",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Mean intra-assay CV for sample duplicates: 2.9% (Study 1), 3.3% (Study 2); outliers >3x IQR removed (n=5 Study 1, n=3 Study 2) prior to analysis (p.5).",
+        "feature_identification": "NA (targeted ELISA)",
+        "comparison": "Hierarchical logistic regression, n=199, Study 1",
+        "effect_measure": "odds ratio (adjusted logistic regression)",
+        "effect_value": "OR [95% CI] = 1.00 [0.97-1.01], p>0.05",
+        "effect_unit": "odds ratio",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR for the descriptive pre/post or trial comparisons; covariate-adjusted regression models (Table 2/3) adjust for sex, age, BMI, race/trial duration and sleep duration.",
+        "confounding": "Study 1: adjusted for sex, age, BMI, marathon/race time, sleep duration the night before, and prior RTI in regression models (p.5); Study 2: controlled laboratory environment, standardised meal/fluid, menstrual-cycle/OC matching (p.3-4).",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data",
+        "null_findings": "Recorded where reported (see result_direction)",
+        "result_direction": "no_detected_difference",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "Also stated in the Abstract: 'There was no association between mucosal immunity and RTI risk (OR [95% CI] 1.00 [0.97-1.01])'. This is the headline null finding matching this report's pilot purpose (sIgA null result).",
+        "source_locator": [
+          "p.1 Abstract; p.6 Results 3.1.3"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R56-S1-saliva",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted saliva panel: flow rate, SIgA concentration, SIgA secretion rate (both studies, p.5).",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.5 Section 2.4-2.5"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.5 Section 2.4"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R56_supp_EJSC-25-e70058-s001.docx (Supporting Information S1: Tables S1-S2, Figures S1-S4)"
+        ],
+        "result_status": "explicitly_reported_non_significant_or_null",
+        "effect_value_source": "reported_main_text_or_table",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "mucosal_sIgA",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.1 Abstract; p.6 Results 3.1.3"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "measurement_id": "M-R56-007",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-2",
+        "cohort_id": "C-R56-2",
+        "sample_set_ids": [
+          "SS-R56-03",
+          "SS-R56-04",
+          "SS-R56-05",
+          "SS-R56-06",
+          "SS-R56-07",
+          "SS-R56-08"
+        ],
+        "analyte_id": {
+          "original_label": "Saliva flow rate, EX vs CON (All)",
+          "standard_name": "saliva flow rate, exercise vs seated-rest trial",
+          "database_id": "NR"
+        },
+        "biological_level": "other",
+        "platform": "ELISA (Salimetrics); flow rate by gravimetric volume/time",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Mean intra-assay CV for sample duplicates: 2.9% (Study 1), 3.3% (Study 2); outliers >3x IQR removed (n=5 Study 1, n=3 Study 2) prior to analysis (p.5).",
+        "feature_identification": "NA (targeted ELISA)",
+        "comparison": "Repeated-measures ANOVA, group(trial) x time, All participants n=45, Study 2 (pre/post/+30min; EX vs CON)",
+        "effect_measure": "group x time ANOVA (main effects)",
+        "effect_value": "All, Pre: CON 207+-174 vs EX 159+-139; Post: CON 234+-198 vs EX 171+-143; +30min: CON 225+-174 vs EX 211+-169 (ul/min)",
+        "effect_unit": "ul/min",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR for the descriptive pre/post or trial comparisons; covariate-adjusted regression models (Table 2/3) adjust for sex, age, BMI, race/trial duration and sleep duration.",
+        "confounding": "Study 1: adjusted for sex, age, BMI, marathon/race time, sleep duration the night before, and prior RTI in regression models (p.5); Study 2: controlled laboratory environment, standardised meal/fluid, menstrual-cycle/OC matching (p.3-4).",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data",
+        "null_findings": "Recorded where reported (see result_direction)",
+        "result_direction": "mixed_or_inconsistent",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "Main effect of trial (footnote a) significant for All (EX lower than CON overall) and for Men only (footnote f), not women-specific; main effect of time present for pre-vs-+30min (All, footnote c). Text states the exercise bout itself did not change FR relative to CON (interaction/response p>0.05) while also stating FR was 'lower overall during EX versus CON in men and women combined and in men only, but not in women only' - these refer to different statistical contrasts (overall trial main effect vs the specific exercise-response interaction); see unresolved_questions.",
+        "source_locator": [
+          "p.6 Results 3.2; Supplementary Table S2"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R56-S2-saliva",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted saliva panel: flow rate, SIgA concentration, SIgA secretion rate (both studies, p.5).",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.5 Section 2.4-2.5"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.5 Section 2.4"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R56_supp_EJSC-25-e70058-s001.docx (Supporting Information S1: Tables S1-S2, Figures S1-S4)"
+        ],
+        "result_status": "reported_significant",
+        "effect_value_source": "reported_supplement",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "mucosal_sIgA",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.6 Results 3.2; Supplementary Table S2"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "measurement_id": "M-R56-008",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-2",
+        "cohort_id": "C-R56-2",
+        "sample_set_ids": [
+          "SS-R56-03",
+          "SS-R56-04",
+          "SS-R56-05",
+          "SS-R56-06",
+          "SS-R56-07",
+          "SS-R56-08"
+        ],
+        "analyte_id": {
+          "original_label": "Saliva SIgA concentration, EX vs CON (All)",
+          "standard_name": "SIgA concentration, exercise vs seated-rest trial",
+          "database_id": "NR"
+        },
+        "biological_level": "protein",
+        "platform": "ELISA (Salimetrics); flow rate by gravimetric volume/time",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Mean intra-assay CV for sample duplicates: 2.9% (Study 1), 3.3% (Study 2); outliers >3x IQR removed (n=5 Study 1, n=3 Study 2) prior to analysis (p.5).",
+        "feature_identification": "NA (targeted ELISA)",
+        "comparison": "Repeated-measures ANOVA, group(trial) x time, All participants n=45, Study 2",
+        "effect_measure": "group x time ANOVA (main effects)",
+        "effect_value": "All, Pre: CON 204+-111 vs EX 208+-102; Post: CON 232+-116 vs EX 228+-120; +30min: CON 192+-95 vs EX 206+-100 (ug/ml)",
+        "effect_unit": "ug/ml",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR for the descriptive pre/post or trial comparisons; covariate-adjusted regression models (Table 2/3) adjust for sex, age, BMI, race/trial duration and sleep duration.",
+        "confounding": "Study 1: adjusted for sex, age, BMI, marathon/race time, sleep duration the night before, and prior RTI in regression models (p.5); Study 2: controlled laboratory environment, standardised meal/fluid, menstrual-cycle/OC matching (p.3-4).",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data",
+        "null_findings": "Recorded where reported (see result_direction)",
+        "result_direction": "no_detected_difference",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "No main effect of trial for concentration (only time effects, footnotes b/d/e); consistent with main text: 'exercise bout did not lead to any changes in saliva FR, concentration or SIgA SR compared to CON ... p>0.05'.",
+        "source_locator": [
+          "p.6 Results 3.2; Supplementary Table S2"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R56-S2-saliva",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted saliva panel: flow rate, SIgA concentration, SIgA secretion rate (both studies, p.5).",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.5 Section 2.4-2.5"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.5 Section 2.4"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R56_supp_EJSC-25-e70058-s001.docx (Supporting Information S1: Tables S1-S2, Figures S1-S4)"
+        ],
+        "result_status": "explicitly_reported_non_significant_or_null",
+        "effect_value_source": "reported_supplement",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "mucosal_sIgA",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.6 Results 3.2; Supplementary Table S2"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "measurement_id": "M-R56-009",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-2",
+        "cohort_id": "C-R56-2",
+        "sample_set_ids": [
+          "SS-R56-03",
+          "SS-R56-04",
+          "SS-R56-05",
+          "SS-R56-06",
+          "SS-R56-07",
+          "SS-R56-08"
+        ],
+        "analyte_id": {
+          "original_label": "Saliva SIgA secretion rate, EX vs CON (All)",
+          "standard_name": "SIgA SR, exercise vs seated-rest trial",
+          "database_id": "NR"
+        },
+        "biological_level": "protein",
+        "platform": "ELISA (Salimetrics); flow rate by gravimetric volume/time",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Mean intra-assay CV for sample duplicates: 2.9% (Study 1), 3.3% (Study 2); outliers >3x IQR removed (n=5 Study 1, n=3 Study 2) prior to analysis (p.5).",
+        "feature_identification": "NA (targeted ELISA)",
+        "comparison": "Repeated-measures ANOVA, group(trial) x time, All participants n=45, Study 2",
+        "effect_measure": "group x time ANOVA (main effects)",
+        "effect_value": "All, Pre: CON 40+-33 vs EX 30+-26; Post: CON 46+-32 vs EX 34+-25; +30min: CON 40+-29 vs EX 42+-32 (ug/min)",
+        "effect_unit": "ug/min",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR for the descriptive pre/post or trial comparisons; covariate-adjusted regression models (Table 2/3) adjust for sex, age, BMI, race/trial duration and sleep duration.",
+        "confounding": "Study 1: adjusted for sex, age, BMI, marathon/race time, sleep duration the night before, and prior RTI in regression models (p.5); Study 2: controlled laboratory environment, standardised meal/fluid, menstrual-cycle/OC matching (p.3-4).",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data",
+        "null_findings": "Recorded where reported (see result_direction)",
+        "result_direction": "mixed_or_inconsistent",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "Main effect of trial present for All and for Men (footnotes a, f) but not reported as significant for Women specifically; time effects present pre-vs-post and pre-vs-+30min for All (footnotes b, c).",
+        "source_locator": [
+          "p.6 Results 3.2; Supplementary Table S2"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R56-S2-saliva",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted saliva panel: flow rate, SIgA concentration, SIgA secretion rate (both studies, p.5).",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.5 Section 2.4-2.5"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.5 Section 2.4"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R56_supp_EJSC-25-e70058-s001.docx (Supporting Information S1: Tables S1-S2, Figures S1-S4)"
+        ],
+        "result_status": "reported_significant",
+        "effect_value_source": "reported_supplement",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "mucosal_sIgA",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.6 Results 3.2; Supplementary Table S2"
+        ],
+        "_confidence": "medium"
+      }
+    ],
+    "precision_validation": [
+      {
+        "precision_record_id": "PV-R56-001",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-1",
+        "cohort_id": "C-R56-1",
+        "measurement_id": [
+          "M-R56-001",
+          "M-R56-002",
+          "M-R56-003",
+          "M-R56-004",
+          "M-R56-005",
+          "M-R56-006"
+        ],
+        "precision_domain": "analytical_reliability",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.5 Section 2.4-2.5; p.3 Figure 1"
+        ],
+        "evidence_notes": "[Study1 saliva sIgA/FR/SR vs RTI] ELISA (Salimetrics), mean intra-assay CV for duplicates 2.9% (Study 1); samples with CV>15% excluded (n=6, Figure 1); outliers >3x IQR removed (n=5) (p.5).",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.5 Section 2.4-2.5; p.3 Figure 1"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "precision_record_id": "PV-R56-002",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-1",
+        "cohort_id": "C-R56-1",
+        "measurement_id": [
+          "M-R56-001",
+          "M-R56-002",
+          "M-R56-003",
+          "M-R56-004",
+          "M-R56-005",
+          "M-R56-006"
+        ],
+        "precision_domain": "temporal_validity",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.2 Section 2.1.2; p.6 Results 3.1"
+        ],
+        "evidence_notes": "[Study1 saliva sIgA/FR/SR vs RTI] Only two timepoints: pre-marathon baseline and an 'immediately after' post sample (time_bin 0_to_lt30min, within_window) with no numeric minutes-post-finish reported; no 30min-72h follow-up saliva sampling. RTI outcome is tracked over a separate 2-week symptom-diary timeline, distinct from the exercise time-bin axis.",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.2 Section 2.1.2; p.6 Results 3.1"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "precision_record_id": "PV-R56-003",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-1",
+        "cohort_id": "C-R56-1",
+        "measurement_id": [
+          "M-R56-001",
+          "M-R56-002",
+          "M-R56-003",
+          "M-R56-004",
+          "M-R56-005",
+          "M-R56-006"
+        ],
+        "precision_domain": "immune_specificity",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.2 Introduction"
+        ],
+        "evidence_notes": "[Study1 saliva sIgA/FR/SR vs RTI] SIgA is a well-characterised, specific mucosal antibody; FR/SR are supportive secretion-rate measures rather than independent immune specificities.",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.2 Introduction"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "precision_record_id": "PV-R56-004",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-1",
+        "cohort_id": "C-R56-1",
+        "measurement_id": [
+          "M-R56-001",
+          "M-R56-002",
+          "M-R56-003",
+          "M-R56-004",
+          "M-R56-005",
+          "M-R56-006"
+        ],
+        "precision_domain": "individualization",
+        "evidence_state": "not_demonstrated",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.6 Results 3.1"
+        ],
+        "evidence_notes": "[Study1 saliva sIgA/FR/SR vs RTI] Only one pre/post pair per participant, group mean+-SD reported; no repeated baselines, ICC/CV of the biological measure across days, or individual responder/threshold analysis.",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.6 Results 3.1"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "precision_record_id": "PV-R56-005",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-1",
+        "cohort_id": "C-R56-1",
+        "measurement_id": [
+          "M-R56-001",
+          "M-R56-002",
+          "M-R56-003",
+          "M-R56-004",
+          "M-R56-005",
+          "M-R56-006"
+        ],
+        "precision_domain": "functional_clinical_linkage",
+        "evidence_state": "measured_null",
+        "relationship_tags": [
+          "within_cohort_association"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": "self_reported_symptoms",
+        "temporal_order": "Baseline psychological/sIgA measures precede the 2-week RTI follow-up by design; participants reporting RTI symptoms on marathon day itself were excluded to mitigate reverse causation (p.3).",
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.6 Results 3.1.3; p.1 Abstract"
+        ],
+        "evidence_notes": "[Study1 saliva sIgA/FR/SR vs RTI] Explicit null association between mucosal-immunity change (FR, SIgA concentration, SIgA SR) and RTI during the 2 weeks after the marathon (OR~1.00 for all three, p>0.05); RTI itself was self-reported (Jackson common cold questionnaire, >=6 score for >=2 consecutive days) with no pathogen confirmation.",
+        "intended_use": null,
+        "linkage_subtype": "clinical_symptom_outcome",
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.6 Results 3.1.3; p.1 Abstract"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "precision_record_id": "PV-R56-006",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-1",
+        "cohort_id": "C-R56-1",
+        "measurement_id": [
+          "M-R56-001",
+          "M-R56-002",
+          "M-R56-003",
+          "M-R56-004",
+          "M-R56-005",
+          "M-R56-006"
+        ],
+        "precision_domain": "independent_validation_and_use",
+        "evidence_state": "not_demonstrated",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.9 Discussion"
+        ],
+        "evidence_notes": "[Study1 saliva sIgA/FR/SR vs RTI] Single field cohort; no replication or external validation of the sIgA-RTI relationship (which was in any case null).",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": "no_validation_or_use_test",
+        "validation_split": "none",
+        "_locators": [
+          "p.9 Discussion"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "precision_record_id": "PV-R56-007",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-1",
+        "cohort_id": "C-R56-1",
+        "measurement_id": [
+          "M-R56-001",
+          "M-R56-002",
+          "M-R56-003",
+          "M-R56-004",
+          "M-R56-005",
+          "M-R56-006"
+        ],
+        "precision_domain": "feasibility",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.5 Section 2.4"
+        ],
+        "evidence_notes": "[Study1 saliva sIgA/FR/SR vs RTI] Field-adapted Versi-SAL swab collection chosen specifically for feasibility in a race setting where passive drool was impractical ('not readily available to perform a passive drool', p.5); stability pilot data cited for 4C storage over the ~20 min transport window.",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.5 Section 2.4"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "precision_record_id": "PV-R56-008",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-2",
+        "cohort_id": "C-R56-2",
+        "measurement_id": [
+          "M-R56-007",
+          "M-R56-008",
+          "M-R56-009"
+        ],
+        "precision_domain": "analytical_reliability",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.5 Section 2.4-2.5"
+        ],
+        "evidence_notes": "[Study2 saliva sIgA/FR/SR, EX vs CON] Same ELISA platform; mean intra-assay CV 3.3% (Study 2); outliers removed (n=3) (p.5).",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.5 Section 2.4-2.5"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "precision_record_id": "PV-R56-009",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-2",
+        "cohort_id": "C-R56-2",
+        "measurement_id": [
+          "M-R56-007",
+          "M-R56-008",
+          "M-R56-009"
+        ],
+        "precision_domain": "temporal_validity",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.4 Section 2.2.3; Supplementary Table S2"
+        ],
+        "evidence_notes": "[Study2 saliva sIgA/FR/SR, EX vs CON] Three within-window timepoints per trial (pre, immediate post [0_to_lt30min], +30 min post [30min_to_lt3h]) plus a matched non-exercise control trial (matched_control_time); better within-window density than Study 1.",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.4 Section 2.2.3; Supplementary Table S2"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "precision_record_id": "PV-R56-010",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-2",
+        "cohort_id": "C-R56-2",
+        "measurement_id": [
+          "M-R56-007",
+          "M-R56-008",
+          "M-R56-009"
+        ],
+        "precision_domain": "immune_specificity",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.2 Introduction"
+        ],
+        "evidence_notes": "[Study2 saliva sIgA/FR/SR, EX vs CON] Same analytes as Study 1 (SIgA, FR, SR); same specificity considerations.",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.2 Introduction"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "precision_record_id": "PV-R56-011",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-2",
+        "cohort_id": "C-R56-2",
+        "measurement_id": [
+          "M-R56-007",
+          "M-R56-008",
+          "M-R56-009"
+        ],
+        "precision_domain": "individualization",
+        "evidence_state": "not_demonstrated",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.7-8 Results 3.2.1; p.8 Figure 3"
+        ],
+        "evidence_notes": "[Study2 saliva sIgA/FR/SR, EX vs CON] Group mean+-SD by trial/time reported; between-person variability is explored only indirectly via correlation with psychological traits in men (Figure 3: trait anxiety r=-0.59, TMD r=-0.58, state anxiety r=-0.61, perceived stress r=-0.68, all vs change in SIgA SR, p<0.01, n~26) - this characterises some individual variation but is not a formal reliability/responder analysis of the sIgA marker itself.",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.7-8 Results 3.2.1; p.8 Figure 3"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "precision_record_id": "PV-R56-012",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-2",
+        "cohort_id": "C-R56-2",
+        "measurement_id": [
+          "M-R56-007",
+          "M-R56-008",
+          "M-R56-009"
+        ],
+        "precision_domain": "functional_clinical_linkage",
+        "evidence_state": "NA",
+        "relationship_tags": [
+          "NA"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": "NA",
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.3-4 Methods Study 2"
+        ],
+        "evidence_notes": "[Study2 saliva sIgA/FR/SR, EX vs CON] Study 2 is a mechanistic laboratory study with no clinical/infection outcome collected; functional/clinical linkage is not applicable to this sub-study.",
+        "intended_use": null,
+        "linkage_subtype": "NA",
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.3-4 Methods Study 2"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "precision_record_id": "PV-R56-013",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-2",
+        "cohort_id": "C-R56-2",
+        "measurement_id": [
+          "M-R56-007",
+          "M-R56-008",
+          "M-R56-009"
+        ],
+        "precision_domain": "independent_validation_and_use",
+        "evidence_state": "not_demonstrated",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.9 Discussion"
+        ],
+        "evidence_notes": "[Study2 saliva sIgA/FR/SR, EX vs CON] Single laboratory cohort; no external replication of the EX-vs-CON sIgA response pattern.",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": "no_validation_or_use_test",
+        "validation_split": "none",
+        "_locators": [
+          "p.9 Discussion"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "precision_record_id": "PV-R56-014",
+        "report_id": "PILOT-R56",
+        "study_id": "S-R56-2",
+        "cohort_id": "C-R56-2",
+        "measurement_id": [
+          "M-R56-007",
+          "M-R56-008",
+          "M-R56-009"
+        ],
+        "precision_domain": "feasibility",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.4 Section 2.2.3; p.5 Section 2.4"
+        ],
+        "evidence_notes": "[Study2 saliva sIgA/FR/SR, EX vs CON] Controlled laboratory environment (temperature/humidity/pressure/fan speed standardised); passive-drool collection used (more volume-reliable than the field swab, but requires controlled setting) (p.4-5).",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.4 Section 2.2.3; p.5 Section 2.4"
+        ],
+        "_confidence": "high"
+      }
+    ],
+    "extraction_provenance": [
+      {
+        "provenance_id": "PROV-PILOT-R56-B",
+        "report_id": "PILOT-R56",
+        "extractor_a_b": {
+          "extractor_A": "B (AI stand-in, Claude Sonnet 5)",
+          "extractor_B": null,
+          "independent_entry_complete": true,
+          "verification_complete": false
+        },
+        "adjudication": null,
+        "ai_assistance": {
+          "used": true,
+          "tool_model_date": "Claude Sonnet 5 (claude-sonnet-5); 2026-10-05",
+          "task_prompt_version": "10-report charting pilot, reviewer B AI stand-in instructions (2026-10-05)",
+          "output_checked_by_human": false
+        },
+        "open_data": "Supporting Information S1 (ejsc70058-sup-0001-suppl-data.docx: Supplementary Tables S1-S2, Figures S1-S4) is openly accessible (open-access article); no genomic/omics accession applicable; raw participant-level data not deposited in a public repository as far as reported.",
+        "integrity_status": "No correction/retraction notice visible on the PDF/pages reviewed 2026-10-05; not independently cross-checked against PubMed/Crossref update records beyond the PDF itself.",
+        "recorded_at": "2026-10-05T05:09:17Z",
+        "provenance_notes": "AI-assisted charting pilot extraction per PILOT_README.md Section 5-7. A docx table-extraction ambiguity (merged cells in Supplementary Table S2's Men/Women columns) limited confident extraction of sex-stratified Study 2 values; only the 'All' column values were used for measurement rows. See unresolved_questions.",
+        "_locators": {},
+        "_confidence": "high"
+      }
+    ]
+  },
+  "eligibility_opinion": {
+    "scope_stream": "A_core_acute",
+    "rationale": "Both sub-studies centre on an identifiable single bout with baseline and post-cessation sampling in adults: Study 1 is the 2017 Snowdonia Marathon with pre-/immediate-post saliva sampling and a 2-week self-reported RTI follow-up (p.2-3); Study 2 is a 60-min treadmill bout at 65% VO2peak with pre/immediate-post/+30min saliva sampling and a seated-rest comparator (p.3-4). Salivary sIgA is a recognized immune mediator (immune_link satisfied); no repeated identified exercise bouts in the same people across >=2 events are reported, so Support B does not apply to either sub-study."
+  },
+  "unresolved_questions": [
+    "Study unit structure: Study 1 (field marathon) and Study 2 (lab crossover) were modelled as two separate study_families/cohorts under one report, since they have different participants, settings and designs; the manual's examples do not explicitly cover a single report with two unrelated sub-studies of this kind, so this structural choice should be confirmed with A/D.",
+    "sample_sets.time_bin for Study 1 post-marathon sample: the text gives only 'immediately after the marathon' with clock-times (3:11 PM +-48 min) and no numeric minutes-since-finish; 0_to_lt30min was assigned by interpreting 'immediately' as consistent with other exercise-immunology usage, but this is an inference, not a reported number - flag for calibration of how the manual wants 'immediately after' handled when no numeric offset is given.",
+    "Supplementary Table S2 (Study 2) merged-cell parsing: the python-docx extraction of the Men/Women columns produced an inconsistent number of data columns (likely a merged-cell artefact in the original Word table), so sex-stratified EX/CON values could not be confidently extracted; only 'All' values were used in measurement rows. Needs either a corrected supplement re-extraction or a manual recheck against the rendered document.",
+    "measurements.result_direction for the group x time ANOVA rows (M-R56-007, M-R56-009): 'mixed_or_inconsistent' was used because the trial main effect was significant overall/in men but not in women, which is a different kind of 'mixed' than a single analyte giving contradictory point estimates; consider whether the vocabulary needs a sex-interaction-specific flag.",
+    "precision_validation.functional_clinical_linkage for Study 2: coded as NA because no clinical/infection outcome was collected in this sub-study; confirm this is the intended use of NA (domain not applicable to this design) versus NR (not reported).",
+    "reports.author_window_interpretation: the paper never uses 'open window' and its own Study 1 finding is a null sIgA-RTI association; classification as immunosuppression_or_susceptibility_without_term rests on the Introduction's framing of the literature rather than the authors' own conclusions, which could also support no_window_interpretation - flagged for a second reviewer's independent read.",
+    "cohorts.older_adult_subgroup / adult_stratum_separable for Study 1: mean ages (46 y men, 43 y women) are noticeably older than Study 2 (22 y); the authors discuss possible peri/post-menopausal status in Study 1 women as a post-hoc explanatory note (p.8) but do not formally define an older-adult subgroup - confirm whether this discussion-section reasoning should trigger an older_adult_subgroup flag even without an author-defined cut-off."
+  ],
+  "minutes_spent": 65
+}

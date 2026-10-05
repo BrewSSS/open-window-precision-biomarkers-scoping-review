@@ -1,0 +1,248 @@
+{
+  "generated_at": "2026-10-05T13:54:00",
+  "generator": "scripts/load_ai_extraction.py v1.0.0",
+  "reviewer": "B",
+  "json_dir": "05_extraction/pilot_2026-10-05/ai_extraction/B",
+  "workbook_in": "05_extraction/pilot_2026-10-05/pilot_extraction_B.xlsx",
+  "workbook_out": "05_extraction/pilot_2026-10-05/pilot_extraction_B.xlsx",
+  "dry_run": false,
+  "warnings": [],
+  "reports": {
+    "R01": {
+      "rows_per_table": {
+        "reports": 1,
+        "study_families": 1,
+        "cohorts": 1,
+        "report_cohort_links": 1,
+        "sample_sets": 10,
+        "measurements": 12,
+        "precision_validation": 14,
+        "extraction_provenance": 1
+      },
+      "conflicts": [],
+      "violations": [],
+      "unknown_fields": [],
+      "unknown_tables": [],
+      "errors": [
+        "reports: no pre-filled row for report_id='R01-PREPRINT' (report not in this pilot workbook, or not yet built)"
+      ],
+      "warnings": [],
+      "minutes_spent": 160.0,
+      "unresolved_questions_written": true,
+      "eligibility_opinion_logged": true
+    },
+    "R03": {
+      "rows_per_table": {
+        "reports": 1,
+        "study_families": 1,
+        "cohorts": 1,
+        "report_cohort_links": 1,
+        "sample_sets": 4,
+        "measurements": 4,
+        "precision_validation": 14,
+        "extraction_provenance": 1
+      },
+      "conflicts": [],
+      "violations": [],
+      "unknown_fields": [],
+      "unknown_tables": [],
+      "errors": [],
+      "warnings": [],
+      "minutes_spent": 50.0,
+      "unresolved_questions_written": true,
+      "eligibility_opinion_logged": true
+    },
+    "R12": {
+      "rows_per_table": {
+        "study_families": 1,
+        "reports": 1,
+        "cohorts": 1,
+        "report_cohort_links": 1,
+        "sample_sets": 24,
+        "measurements": 29,
+        "precision_validation": 28,
+        "extraction_provenance": 1
+      },
+      "conflicts": [],
+      "violations": [],
+      "unknown_fields": [],
+      "unknown_tables": [],
+      "errors": [],
+      "warnings": [],
+      "minutes_spent": 150.0,
+      "unresolved_questions_written": true,
+      "eligibility_opinion_logged": true
+    },
+    "R19": {
+      "rows_per_table": {
+        "study_families": 1,
+        "reports": 1,
+        "cohorts": 1,
+        "report_cohort_links": 1,
+        "sample_sets": 57,
+        "measurements": 14,
+        "precision_validation": 7,
+        "extraction_provenance": 1
+      },
+      "conflicts": [],
+      "violations": [
+        {
+          "table": "measurements",
+          "field": "result_direction",
+          "row": 47,
+          "value": "NR (assay-universe summary row; mixture of increase/decrease/no-difference across the tested universe – see named-candidate rows and Figure 1C for up/down split)",
+          "bad_values": [
+            "NR (assay-universe summary row; mixture of increase/decrease/no-difference across the tested universe – see named-candidate rows and Figure 1C for up/down split)"
+          ]
+        },
+        {
+          "table": "measurements",
+          "field": "result_direction",
+          "row": 48,
+          "value": "NR (assay-universe summary row; mixture of increase/decrease/no-difference across the tested universe – see named-candidate rows and Figure 1C for up/down split)",
+          "bad_values": [
+            "NR (assay-universe summary row; mixture of increase/decrease/no-difference across the tested universe – see named-candidate rows and Figure 1C for up/down split)"
+          ]
+        },
+        {
+          "table": "measurements",
+          "field": "result_direction",
+          "row": 49,
+          "value": "NR (assay-universe summary row; mixture of increase/decrease/no-difference across the tested universe – see named-candidate rows and Figure 1C for up/down split)",
+          "bad_values": [
+            "NR (assay-universe summary row; mixture of increase/decrease/no-difference across the tested universe – see named-candidate rows and Figure 1C for up/down split)"
+          ]
+        }
+      ],
+      "unknown_fields": [],
+      "unknown_tables": [],
+      "errors": [],
+      "warnings": [],
+      "minutes_spent": 150.0,
+      "unresolved_questions_written": true,
+      "eligibility_opinion_logged": true
+    },
+    "R42": {
+      "rows_per_table": {
+        "study_families": 1,
+        "reports": 1,
+        "cohorts": 1,
+        "report_cohort_links": 1,
+        "sample_sets": 15,
+        "measurements": 39,
+        "precision_validation": 21,
+        "extraction_provenance": 1
+      },
+      "conflicts": [],
+      "violations": [],
+      "unknown_fields": [],
+      "unknown_tables": [],
+      "errors": [],
+      "warnings": [],
+      "minutes_spent": 145.0,
+      "unresolved_questions_written": true,
+      "eligibility_opinion_logged": true
+    },
+    "R46": {
+      "rows_per_table": {
+        "study_families": 1,
+        "reports": 1,
+        "cohorts": 1,
+        "report_cohort_links": 1,
+        "sample_sets": 7,
+        "measurements": 7,
+        "precision_validation": 7,
+        "extraction_provenance": 1
+      },
+      "conflicts": [],
+      "violations": [],
+      "unknown_fields": [],
+      "unknown_tables": [],
+      "errors": [],
+      "warnings": [],
+      "minutes_spent": 50.0,
+      "unresolved_questions_written": true,
+      "eligibility_opinion_logged": true
+    },
+    "R56": {
+      "rows_per_table": {
+        "study_families": 2,
+        "reports": 1,
+        "cohorts": 2,
+        "report_cohort_links": 2,
+        "sample_sets": 8,
+        "measurements": 9,
+        "precision_validation": 14,
+        "extraction_provenance": 1
+      },
+      "conflicts": [],
+      "violations": [],
+      "unknown_fields": [],
+      "unknown_tables": [],
+      "errors": [],
+      "warnings": [],
+      "minutes_spent": 65.0,
+      "unresolved_questions_written": true,
+      "eligibility_opinion_logged": true
+    },
+    "R59": {
+      "rows_per_table": {
+        "study_families": 1,
+        "reports": 1,
+        "cohorts": 1,
+        "report_cohort_links": 1,
+        "sample_sets": 4,
+        "measurements": 16,
+        "precision_validation": 28,
+        "extraction_provenance": 1
+      },
+      "conflicts": [
+        {
+          "table": "reports",
+          "field": "authors",
+          "row": 2,
+          "prefilled": "Cantó E; Roca E; Perea L; Rodrigo-Troyano A; Suarez-Cuartin G; Giner J; Feliu A; Soria JM; Nescolarde L; Vidal S; Sibila O",
+          "json_value": "Canto E; Roca E; Perea L; Rodrigo-Troyano A; Suarez-Cuartin G; Giner J; Feliu A; Soria JM; Nescolarde L; Vidal S; Sibila O"
+        }
+      ],
+      "violations": [],
+      "unknown_fields": [],
+      "unknown_tables": [],
+      "errors": [],
+      "warnings": [],
+      "minutes_spent": 70.0,
+      "unresolved_questions_written": true,
+      "eligibility_opinion_logged": true
+    },
+    "R61": {
+      "rows_per_table": {
+        "study_families": 1,
+        "reports": 1,
+        "cohorts": 1,
+        "report_cohort_links": 1,
+        "sample_sets": 2,
+        "measurements": 7,
+        "precision_validation": 7,
+        "extraction_provenance": 1
+      },
+      "conflicts": [],
+      "violations": [],
+      "unknown_fields": [],
+      "unknown_tables": [],
+      "errors": [],
+      "warnings": [],
+      "minutes_spent": 75.0,
+      "unresolved_questions_written": true,
+      "eligibility_opinion_logged": true
+    }
+  },
+  "totals": {
+    "files_processed": 9,
+    "rows_written": 456,
+    "conflicts": 1,
+    "violations": 3,
+    "unknown_fields": 0,
+    "unknown_tables": [],
+    "errors": 1
+  }
+}

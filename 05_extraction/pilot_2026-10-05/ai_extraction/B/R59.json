@@ -1,0 +1,2657 @@
+{
+  "report_id": "PILOT-R59",
+  "reference_id": "R59",
+  "reviewer_role": "B (AI stand-in, sonnet)",
+  "extracted_at": "2026-10-05T05:09:17Z",
+  "tables": {
+    "study_families": [
+      {
+        "study_id": "S-R59-1",
+        "study_label": "2016 Barcelona Marathon saliva/blood immunity cohort",
+        "design": "Single-arm, prospective, within-person pre-post observational cohort (no non-exercise comparator arm); post-hoc stratified by incident lower respiratory tract infection (LRTI) during 2-week follow-up.",
+        "registry_ids": "NR",
+        "training_load": "Cohort-level: median ~10 y running experience, ~6.5 h/week training before the marathon (Table 1); no formal pre-marathon training-load protocol reported.",
+        "cointerventions": "NR (no experimental co-intervention; authors note feeding/hydration status was not controlled and raise it as a limitation, p.8).",
+        "study_notes": "Ethics approval: Comite Etic de Investigacio Clinica de la Fundacio de Gestio Sanitaria del Hospital de la Santa Creu i Sant Pau, project IIBSP-SUMMIT-2016-02 (p.2); this is an ethics-approval number, not a trial registry ID.",
+        "_locators": {
+          "design": "p.2 Methods/Subjects: 'Forty seven healthy non-elite marathon runners ... completed the 42.195 km'",
+          "training_load": "p.4 Table 1: 'Years training 9.7+-9.3 ... Hours training/week 6.5+-3.7'",
+          "study_notes": "p.2: 'approved by the local ethics committee ... project number IIBSP-SUMMIT-2016-02'"
+        },
+        "_confidence": "high"
+      }
+    ],
+    "reports": [
+      {
+        "report_id": "PILOT-R59",
+        "reference_id": "R59",
+        "title": "Salivary immunity and lower respiratory tract infections in non-elite marathon runners",
+        "authors": "Canto E; Roca E; Perea L; Rodrigo-Troyano A; Suarez-Cuartin G; Giner J; Feliu A; Soria JM; Nescolarde L; Vidal S; Sibila O",
+        "year": "2018",
+        "doi": "10.1371/journal.pone.0206059",
+        "pmid": "30462646",
+        "url": "https://doi.org/10.1371/journal.pone.0206059",
+        "publication_status": "peer_reviewed_version_of_record",
+        "version_date": "2018-11-21",
+        "version_label": "Version of record, PLOS ONE 13(11): e0206059, published 21 Nov 2018",
+        "source_locator": [
+          "p.1 header/citation block"
+        ],
+        "scope_stream": [
+          "A_core_acute"
+        ],
+        "inclusion_reason": "Identifiable single bout (2016 Barcelona Marathon, 42.195 km) with a pre-race baseline (1 day before) and a post-cessation sample (2 days after, within the 0-72h organising window) in healthy adults (mean age ~39-40 y); direct immune-linked measurements (salivary sIgA/AMPs/chemokines ELISA panel; blood leukocyte differential, CRP) satisfy immune_link; prospectively tracked LRTI over 2 weeks post-race.",
+        "exclusion_reason": null,
+        "immune_link": [
+          "recognized_immune_mediator",
+          "direct_immune_cell_or_count"
+        ],
+        "screening_decision_reviewer_A": "INCLUDE_A",
+        "screening_decision_reviewer_B": null,
+        "consensus_screening_decision": null,
+        "primary_fulltext_exclusion_reason": "NA",
+        "reviewer_notes": "Provisional INCLUDE_A (Core A): single identifiable bout, baseline + within-window post sample, adult cohort, direct immune measurements plus a self-reported clinical (LRTI) outcome. See unresolved_questions for age-reporting inconsistency and per-marker denominator variability.",
+        "author_stated_use": "NR (authors do not state an explicit intended clinical/monitoring 'use' of the markers beyond describing their relationship with LRTI risk; Discussion frames markers as candidates for understanding 'the development of LRTI after races', p.8-9, not as a named application such as return-to-training or diagnosis).",
+        "author_window_interpretation": [
+          "immunosuppression_or_susceptibility_without_term"
+        ],
+        "author_window_interpretation_locator": [
+          "p.2 Introduction: 'Within two weeks of completing such strenuous exercise, the risk of infection increased 100% to 500%'; p.8 Discussion: 'athletic performance is both a stress factor ... that may help to prevent disease' / 'immunological status may be important for the development of a LRTI'; the term 'open window' itself does not appear in the text."
+        ],
+        "_locators": {},
+        "_confidence": "high"
+      }
+    ],
+    "cohorts": [
+      {
+        "cohort_id": "C-R59-1",
+        "study_id": "S-R59-1",
+        "cohort_label": "2016 Barcelona Marathon non-elite runners (n=47)",
+        "baseline_health": "Healthy non-elite marathon runners; excluded if reported respiratory symptoms in the 2 weeks before the race; all baseline labs (glucose, electrolytes, CBC, CRP) in normal range (Table 1).",
+        "n_recruited": 47,
+        "age_sex": "28 male, 19 female; All runners age 39.0+-7.1 y (Table 1, mean+-SD); BMI higher in males than females (23.6+-2.1 vs 20.7+-1.4, p=0.01).",
+        "training_status": "Non-elite/recreational marathon runners; median years training ~10 (9.7+-9.3), ~6.5 h/week (6.5+-3.7) (Table 1).",
+        "sport": "Marathon running (42.195 km road race, 2016 Barcelona Marathon)",
+        "cohort_notes": "Single cohort, no sub-strata by recruitment source; post-hoc split into No-LRTI (n=39, 21M/18F) vs LRTI (n=8, 7M/1F) for several comparisons (Table 1).",
+        "age_range": "UNCLEAR - internally inconsistent: Results text states 'Median age was 30 years old' (p.4) but Table 1 reports mean age 39.0+-7.1 y for all runners (p.4); no min-max range given either way.",
+        "adult_stratum_separable": "all_participants_adult",
+        "older_adult_subgroup": "no_older_adult_stratum",
+        "_locators": {
+          "baseline_health": "p.2 Methods/Subjects and p.4 Table 1 (all labs NS/normal)",
+          "age_sex": "p.2 'Forty seven healthy non-elite marathon runners (28 males and 19 females)'; p.4 Table 1",
+          "training_status": "p.4 Table 1",
+          "age_range": "p.4 Results 'Median age was 30 years old' vs p.4 Table 1 'Age ... 39.0+-7.1'"
+        },
+        "_confidence": "medium"
+      }
+    ],
+    "report_cohort_links": [
+      {
+        "link_id": "L-R59-1",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "n_analyzed": "47 overall (Table 1: 21/18 No-LRTI, 7/1 LRTI = 39+8=47); individual assay denominators are smaller and vary by marker (22-44 of 47 for saliva ELISA outcomes per supplement raw-data file; see sample_sets.missing_data).",
+        "report_specific_population": "All 47 runners who completed the race and provided samples; no sub-population restriction stated beyond the 2-week pre-race symptom exclusion.",
+        "link_notes": "Single report, single cohort, single bout; LRTI vs no-LRTI is an outcome-based subgroup split of the same cohort, not a separate recruited cohort.",
+        "scope_streams": [
+          "A_core_acute"
+        ],
+        "_locators": {
+          "n_analyzed": "p.4 Table 1; supplement S1 file per-column counts"
+        },
+        "_confidence": "medium"
+      }
+    ],
+    "sample_sets": [
+      {
+        "sample_set_id": "SS-R59-01",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "group_condition": "All runners (whole cohort); analysed post-hoc by LRTI status in some comparisons",
+        "intervention_phase": "single bout only (no training-programme phase)",
+        "exercise_mode": "endurance running / marathon race (competition)",
+        "dose": "42.195 km marathon (2016 Barcelona Marathon); mean finishing time 3 h 38 min +-41 min",
+        "control": "No non-exercise control group; within-person pre- vs post-race comparison, and post-hoc LRTI vs no-LRTI subgroup comparison",
+        "training_load": "NR beyond Table 1 habitual training (see study_families)",
+        "cointerventions": "NR",
+        "exercise_end_definition": "UNCLEAR - 'end of the race' (finish line) used as the clock anchor for 'two days after'; exact per-runner finish-time basis for the 48h calculation not explicitly defined.",
+        "sample_role": "pre_exercise_baseline",
+        "timepoint_as_reported": "one day before the marathon",
+        "time_from_exercise_end_value": "NA",
+        "time_unit": "NA",
+        "time_bin": "pre_exercise_baseline",
+        "matrix": "saliva",
+        "assay_platform": "ELISA panel (sIgA, lactoferrin, lysozyme, Groalpha, Grobeta, MCP-1)",
+        "n_participants": 47,
+        "n_biological_samples": 47,
+        "n_cells": "NA",
+        "n_technical_replicates": "triplicate (all ELISA determinations performed in triplicate)",
+        "n_aliquots": "3 aliquots per saliva sample frozen at -20C",
+        "repeated_sampling": "within-person paired pre/post design",
+        "pairing_structure": "same 47 runners sampled before and after",
+        "age_sex_stratum": "NA (not stratified at sample-set level)",
+        "preanalytics": "Saliva collected into clean sterile tub, kept at 4C, centrifuged 9500xg 10 min at 4C, supernatant aspirated, 3 aliquots frozen at -20C until use.",
+        "normalization": "Marker concentrations expressed relative to total saliva protein (Qubit Protein Assay Kit); IgA/protein ratio >1 excluded as likely contamination.",
+        "circadian": "NR",
+        "missing_data": "UNCLEAR - per-marker analysable n varies (e.g., IgA n=43-44, lysozyme n=30, chemokines n=23 of 47 per supplement raw-data columns); reason for missing values by marker not stated in main text.",
+        "cell_context": "NA",
+        "source_locator": [
+          "p.3 Saliva and blood collection / Saliva analysis"
+        ],
+        "sample_notes": "IgA determinations with relative ratio >1 excluded due to possible contamination (p.3).",
+        "bout_id": "B-R59-1",
+        "bout_number": 1,
+        "participant_linkage": "same_participants_identified",
+        "n_donors": "NA",
+        "donor_count_basis": "NA",
+        "exercise_duration": "NR (baseline, pre-exercise)",
+        "intensity_metric": "NR",
+        "intensity_value": "NR",
+        "within_organising_window": "pre_exercise_baseline",
+        "_locators": {},
+        "_confidence": "high"
+      },
+      {
+        "sample_set_id": "SS-R59-02",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "group_condition": "All runners (whole cohort); analysed post-hoc by LRTI status in some comparisons",
+        "intervention_phase": "single bout only (no training-programme phase)",
+        "exercise_mode": "endurance running / marathon race (competition)",
+        "dose": "42.195 km marathon (2016 Barcelona Marathon); mean finishing time 3 h 38 min +-41 min",
+        "control": "No non-exercise control group; within-person pre- vs post-race comparison, and post-hoc LRTI vs no-LRTI subgroup comparison",
+        "training_load": "NR beyond Table 1 habitual training (see study_families)",
+        "cointerventions": "NR",
+        "exercise_end_definition": "UNCLEAR - 'end of the race' (finish line) used as the clock anchor for 'two days after'; exact per-runner finish-time basis for the 48h calculation not explicitly defined.",
+        "sample_role": "recovery_post",
+        "timepoint_as_reported": "two days after the end of the race",
+        "time_from_exercise_end_value": "48",
+        "time_unit": "hours (approximate; 'two days after')",
+        "time_bin": "24h_to_72h_inclusive",
+        "matrix": "saliva",
+        "assay_platform": "ELISA panel (sIgA, lactoferrin, lysozyme, Groalpha, Grobeta, MCP-1)",
+        "n_participants": 47,
+        "n_biological_samples": 47,
+        "n_cells": "NA",
+        "n_technical_replicates": "triplicate (all ELISA determinations performed in triplicate)",
+        "n_aliquots": "3 aliquots per saliva sample frozen at -20C",
+        "repeated_sampling": "within-person paired pre/post design",
+        "pairing_structure": "same 47 runners sampled before and after",
+        "age_sex_stratum": "NA (not stratified at sample-set level)",
+        "preanalytics": "Saliva collected into clean sterile tub, kept at 4C, centrifuged 9500xg 10 min at 4C, supernatant aspirated, 3 aliquots frozen at -20C until use.",
+        "normalization": "Marker concentrations expressed relative to total saliva protein (Qubit Protein Assay Kit); IgA/protein ratio >1 excluded as likely contamination.",
+        "circadian": "NR",
+        "missing_data": "UNCLEAR - per-marker analysable n varies (e.g., IgA n=43-44, lysozyme n=30, chemokines n=23 of 47 per supplement raw-data columns); reason for missing values by marker not stated in main text.",
+        "cell_context": "NA",
+        "source_locator": [
+          "p.3 Saliva and blood collection / Saliva analysis"
+        ],
+        "sample_notes": "IgA determinations with relative ratio >1 excluded due to possible contamination (p.3).",
+        "bout_id": "B-R59-1",
+        "bout_number": 1,
+        "participant_linkage": "same_participants_identified",
+        "n_donors": "NA",
+        "donor_count_basis": "NA",
+        "exercise_duration": "42.195 km, mean 3 h 38 min +-41 min",
+        "intensity_metric": "NR",
+        "intensity_value": "NR",
+        "within_organising_window": "within_window",
+        "_locators": {
+          "timepoint_as_reported": "p.3: 'Saliva and blood samples were collected one day before the marathon and two days after the end of the race.'"
+        },
+        "_confidence": "high"
+      },
+      {
+        "sample_set_id": "SS-R59-03",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "group_condition": "All runners; post-hoc LRTI vs no-LRTI subgroup comparison (Table 1)",
+        "intervention_phase": "single bout only",
+        "exercise_mode": "endurance running / marathon race (competition)",
+        "dose": "42.195 km marathon",
+        "control": "No non-exercise control group; within-person and LRTI-subgroup comparisons",
+        "training_load": "NR",
+        "cointerventions": "NR",
+        "exercise_end_definition": "UNCLEAR (see SS-R59-01/02)",
+        "sample_role": "pre_exercise_baseline",
+        "timepoint_as_reported": "one day before the marathon",
+        "time_from_exercise_end_value": "NA",
+        "time_unit": "NA",
+        "time_bin": "pre_exercise_baseline",
+        "matrix": "whole blood / plasma (CBC on whole blood; Na/K/creatinine/urea/CRP on plasma)",
+        "assay_platform": "ion-selective electrode analyser KNA1 (Na/K); AU5800 chemistry analyser (creatinine, urea, CRP); Unicel DxH800 automated haematology analyser (CBC/differential)",
+        "n_participants": 47,
+        "n_biological_samples": 47,
+        "n_cells": "NA",
+        "n_technical_replicates": "NR",
+        "n_aliquots": "NR",
+        "repeated_sampling": "within-person paired pre/post design",
+        "pairing_structure": "same 47 runners",
+        "age_sex_stratum": "NA",
+        "preanalytics": "3x10 mL venous blood from antecubital vein, transferred to lab <2h; centrifuged 800xg 10 min 4C; plasma aliquoted and stored at -80C on dry ice.",
+        "normalization": "NR",
+        "circadian": "NR",
+        "missing_data": "NR",
+        "cell_context": "NA",
+        "source_locator": [
+          "p.3 Blood analysis"
+        ],
+        "sample_notes": "Table 1 values are baseline (pre-marathon) only.",
+        "bout_id": "B-R59-1",
+        "bout_number": 1,
+        "participant_linkage": "same_participants_identified",
+        "n_donors": "NA",
+        "donor_count_basis": "NA",
+        "exercise_duration": "NR",
+        "intensity_metric": "NR",
+        "intensity_value": "NR",
+        "within_organising_window": "pre_exercise_baseline",
+        "_locators": {},
+        "_confidence": "high"
+      },
+      {
+        "sample_set_id": "SS-R59-04",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "group_condition": "All runners; post-hoc LRTI vs no-LRTI subgroup comparison (Table 1)",
+        "intervention_phase": "single bout only",
+        "exercise_mode": "endurance running / marathon race (competition)",
+        "dose": "42.195 km marathon",
+        "control": "No non-exercise control group; within-person and LRTI-subgroup comparisons",
+        "training_load": "NR",
+        "cointerventions": "NR",
+        "exercise_end_definition": "UNCLEAR (see SS-R59-01/02)",
+        "sample_role": "recovery_post",
+        "timepoint_as_reported": "two days after the end of the race",
+        "time_from_exercise_end_value": "48",
+        "time_unit": "hours (approximate; 'two days after')",
+        "time_bin": "24h_to_72h_inclusive",
+        "matrix": "whole blood / plasma (CBC on whole blood; Na/K/creatinine/urea/CRP on plasma)",
+        "assay_platform": "ion-selective electrode analyser KNA1 (Na/K); AU5800 chemistry analyser (creatinine, urea, CRP); Unicel DxH800 automated haematology analyser (CBC/differential)",
+        "n_participants": "31 (used only for the post-race blood-leukocyte correlation, Fig 4C; not tabulated in full as a post-race Table 1 equivalent)",
+        "n_biological_samples": "31",
+        "n_cells": "NA",
+        "n_technical_replicates": "NR",
+        "n_aliquots": "NR",
+        "repeated_sampling": "within-person paired pre/post design",
+        "pairing_structure": "same 47 runners",
+        "age_sex_stratum": "NA",
+        "preanalytics": "3x10 mL venous blood from antecubital vein, transferred to lab <2h; centrifuged 800xg 10 min 4C; plasma aliquoted and stored at -80C on dry ice.",
+        "normalization": "NR",
+        "circadian": "NR",
+        "missing_data": "NR",
+        "cell_context": "NA",
+        "source_locator": [
+          "p.3 Blood analysis"
+        ],
+        "sample_notes": "Post-race blood leukocyte count used only in the Fig 4C correlation with salivary lysozyme/protein after the race (n=31 per supplement raw-data columns); no full post-race haemogram table is presented in the main text.",
+        "bout_id": "B-R59-1",
+        "bout_number": 1,
+        "participant_linkage": "same_participants_identified",
+        "n_donors": "NA",
+        "donor_count_basis": "NA",
+        "exercise_duration": "NR",
+        "intensity_metric": "NR",
+        "intensity_value": "NR",
+        "within_organising_window": "within_window",
+        "_locators": {
+          "n_participants": "supplement R59_supp_pone.0206059.s001.xlsx, 'Fig 4C' columns (31 non-blank pairs); p.5/7 Fig 4C"
+        },
+        "_confidence": "medium"
+      }
+    ],
+    "measurements": [
+      {
+        "measurement_id": "M-R59-001",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "sample_set_ids": [
+          "SS-R59-01",
+          "SS-R59-02"
+        ],
+        "analyte_id": {
+          "original_label": "Salivary IgA (relative to total protein)",
+          "standard_name": "secretory IgA / total protein ratio",
+          "database_id": "NR"
+        },
+        "biological_level": "protein",
+        "platform": "ELISA (ebioscience/Affymetrix IgA kit; AssayPro lactoferrin/lysozyme/Groalpha/Grobeta/MCP-1 kits)",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Detection limits stated (p.3): IgA 1.6 ng/ml; lactoferrin 0.625 ng/ml; lysozyme 0.0781 ng/ml; Groalpha 15.63 pg/ml; Grobeta 15.63 pg/ml; MCP-1 15.63 pg/ml. All determinations in triplicate.",
+        "feature_identification": "NA (targeted ELISA, not feature-discovery platform)",
+        "comparison": "before vs after marathon, all runners (n=43-44, paired)",
+        "effect_measure": "mean difference (paired)",
+        "effect_value": "before 0.39+-0.25 vs after 0.35+-0.24 (ratio, unitless); total protein 2.34+-1.16 vs 2.37+-0.97 mg/ml",
+        "effect_unit": "ratio to total protein (unitless) / mg/ml",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR (no explicit multiple-testing correction stated for the panel of comparisons)",
+        "confounding": "Hydration/feeding status not controlled (authors note as limitation, p.8); sex not adjusted for in these comparisons.",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data (per-marker n < 47 for several analytes)",
+        "null_findings": "Recorded as such where reported (see result_direction)",
+        "result_direction": "no_detected_difference",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "No significant pre/post difference in total protein or in IgA/protein ratio (Fig 1A).",
+        "source_locator": [
+          "p.4 Results Salivary IgA; p.5 Fig 1A"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R59-saliva-ELISA-panel",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted panel of 6 pre-specified salivary analytes (IgA, lactoferrin, lysozyme, Groalpha, Grobeta, MCP-1) stated in Methods (p.3); blood panel per Table 1.",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.3 Saliva analysis / Blood analysis"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.3 Saliva analysis"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R59_supp_pone.0206059.s001.xlsx (S1 File, PONE-D-18-11926R3_Data.xlsx)"
+        ],
+        "result_status": "explicitly_reported_non_significant_or_null",
+        "effect_value_source": "reported_main_text_or_table",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "mucosal_sIgA",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.4 Results Salivary IgA; p.5 Fig 1A"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "measurement_id": "M-R59-002",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "sample_set_ids": [
+          "SS-R59-01",
+          "SS-R59-02"
+        ],
+        "analyte_id": {
+          "original_label": "Salivary IgA (relative to total protein), by LRTI status",
+          "standard_name": "secretory IgA / total protein ratio",
+          "database_id": "NR"
+        },
+        "biological_level": "protein",
+        "platform": "ELISA (ebioscience/Affymetrix IgA kit; AssayPro lactoferrin/lysozyme/Groalpha/Grobeta/MCP-1 kits)",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Detection limits stated (p.3): IgA 1.6 ng/ml; lactoferrin 0.625 ng/ml; lysozyme 0.0781 ng/ml; Groalpha 15.63 pg/ml; Grobeta 15.63 pg/ml; MCP-1 15.63 pg/ml. All determinations in triplicate.",
+        "feature_identification": "NA (targeted ELISA, not feature-discovery platform)",
+        "comparison": "No-LRTI vs LRTI, before and after marathon",
+        "effect_measure": "group comparison (unpaired)",
+        "effect_value": "no numeric values reported beyond Fig 1B boxplot; text: 'no differences in IgA levels were found between infected and non-infected runners'",
+        "effect_unit": "ratio to total protein (unitless)",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR (no explicit multiple-testing correction stated for the panel of comparisons)",
+        "confounding": "Hydration/feeding status not controlled (authors note as limitation, p.8); sex not adjusted for in these comparisons.",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data (per-marker n < 47 for several analytes)",
+        "null_findings": "Recorded as such where reported (see result_direction)",
+        "result_direction": "no_detected_difference",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "Values only shown graphically in Fig 1B; main text gives no numeric point estimates for this specific contrast.",
+        "source_locator": [
+          "p.4 Results Salivary IgA; p.5 Fig 1B"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R59-saliva-ELISA-panel",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted panel of 6 pre-specified salivary analytes (IgA, lactoferrin, lysozyme, Groalpha, Grobeta, MCP-1) stated in Methods (p.3); blood panel per Table 1.",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.3 Saliva analysis / Blood analysis"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.3 Saliva analysis"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R59_supp_pone.0206059.s001.xlsx (S1 File, PONE-D-18-11926R3_Data.xlsx)"
+        ],
+        "result_status": "explicitly_reported_non_significant_or_null",
+        "effect_value_source": "reported_main_text_or_table",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "mucosal_sIgA",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.4 Results Salivary IgA; p.5 Fig 1B"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "measurement_id": "M-R59-003",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "sample_set_ids": [
+          "SS-R59-01",
+          "SS-R59-02"
+        ],
+        "analyte_id": {
+          "original_label": "Salivary lactoferrin (relative to total protein)",
+          "standard_name": "lactoferrin / total protein ratio",
+          "database_id": "NR"
+        },
+        "biological_level": "protein",
+        "platform": "ELISA (ebioscience/Affymetrix IgA kit; AssayPro lactoferrin/lysozyme/Groalpha/Grobeta/MCP-1 kits)",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Detection limits stated (p.3): IgA 1.6 ng/ml; lactoferrin 0.625 ng/ml; lysozyme 0.0781 ng/ml; Groalpha 15.63 pg/ml; Grobeta 15.63 pg/ml; MCP-1 15.63 pg/ml. All determinations in triplicate.",
+        "feature_identification": "NA (targeted ELISA, not feature-discovery platform)",
+        "comparison": "before vs after marathon, all runners",
+        "effect_measure": "mean difference (paired)",
+        "effect_value": "0.013+-0.01 vs 0.010+-0.007",
+        "effect_unit": "ratio to total protein (unitless)",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR (no explicit multiple-testing correction stated for the panel of comparisons)",
+        "confounding": "Hydration/feeding status not controlled (authors note as limitation, p.8); sex not adjusted for in these comparisons.",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data (per-marker n < 47 for several analytes)",
+        "null_findings": "Recorded as such where reported (see result_direction)",
+        "result_direction": "no_detected_difference",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "No sex difference before marathon either (p.5).",
+        "source_locator": [
+          "p.5 Results Salivary antimicrobial proteins"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R59-saliva-ELISA-panel",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted panel of 6 pre-specified salivary analytes (IgA, lactoferrin, lysozyme, Groalpha, Grobeta, MCP-1) stated in Methods (p.3); blood panel per Table 1.",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.3 Saliva analysis / Blood analysis"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.3 Saliva analysis"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R59_supp_pone.0206059.s001.xlsx (S1 File, PONE-D-18-11926R3_Data.xlsx)"
+        ],
+        "result_status": "explicitly_reported_non_significant_or_null",
+        "effect_value_source": "reported_main_text_or_table",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "other",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.5 Results Salivary antimicrobial proteins"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "measurement_id": "M-R59-004",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "sample_set_ids": [
+          "SS-R59-01",
+          "SS-R59-02"
+        ],
+        "analyte_id": {
+          "original_label": "Salivary lactoferrin, by LRTI status",
+          "standard_name": "lactoferrin / total protein ratio",
+          "database_id": "NR"
+        },
+        "biological_level": "protein",
+        "platform": "ELISA (ebioscience/Affymetrix IgA kit; AssayPro lactoferrin/lysozyme/Groalpha/Grobeta/MCP-1 kits)",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Detection limits stated (p.3): IgA 1.6 ng/ml; lactoferrin 0.625 ng/ml; lysozyme 0.0781 ng/ml; Groalpha 15.63 pg/ml; Grobeta 15.63 pg/ml; MCP-1 15.63 pg/ml. All determinations in triplicate.",
+        "feature_identification": "NA (targeted ELISA, not feature-discovery platform)",
+        "comparison": "No-LRTI vs LRTI, before and after marathon",
+        "effect_measure": "group comparison",
+        "effect_value": "no numeric values reported for this contrast in main text",
+        "effect_unit": "ratio to total protein (unitless)",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR (no explicit multiple-testing correction stated for the panel of comparisons)",
+        "confounding": "Hydration/feeding status not controlled (authors note as limitation, p.8); sex not adjusted for in these comparisons.",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data (per-marker n < 47 for several analytes)",
+        "null_findings": "Recorded as such where reported (see result_direction)",
+        "result_direction": "no_detected_difference",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "'No differences in salivary lactoferrin levels before and after the race were observed' when comparing LRTI groups.",
+        "source_locator": [
+          "p.5 Results Salivary antimicrobial proteins"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R59-saliva-ELISA-panel",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted panel of 6 pre-specified salivary analytes (IgA, lactoferrin, lysozyme, Groalpha, Grobeta, MCP-1) stated in Methods (p.3); blood panel per Table 1.",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.3 Saliva analysis / Blood analysis"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.3 Saliva analysis"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R59_supp_pone.0206059.s001.xlsx (S1 File, PONE-D-18-11926R3_Data.xlsx)"
+        ],
+        "result_status": "explicitly_reported_non_significant_or_null",
+        "effect_value_source": "reported_main_text_or_table",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "other",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.5 Results Salivary antimicrobial proteins"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "measurement_id": "M-R59-005",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "sample_set_ids": [
+          "SS-R59-01",
+          "SS-R59-02"
+        ],
+        "analyte_id": {
+          "original_label": "Salivary lysozyme (relative to total protein)",
+          "standard_name": "lysozyme / total protein ratio",
+          "database_id": "NR"
+        },
+        "biological_level": "protein",
+        "platform": "ELISA (ebioscience/Affymetrix IgA kit; AssayPro lactoferrin/lysozyme/Groalpha/Grobeta/MCP-1 kits)",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Detection limits stated (p.3): IgA 1.6 ng/ml; lactoferrin 0.625 ng/ml; lysozyme 0.0781 ng/ml; Groalpha 15.63 pg/ml; Grobeta 15.63 pg/ml; MCP-1 15.63 pg/ml. All determinations in triplicate.",
+        "feature_identification": "NA (targeted ELISA, not feature-discovery platform)",
+        "comparison": "before vs after marathon, all runners",
+        "effect_measure": "mean difference (paired)",
+        "effect_value": "0.0094+-0.007 vs 0.0078+-0.007",
+        "effect_unit": "ratio to total protein (unitless)",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR (no explicit multiple-testing correction stated for the panel of comparisons)",
+        "confounding": "Hydration/feeding status not controlled (authors note as limitation, p.8); sex not adjusted for in these comparisons.",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data (per-marker n < 47 for several analytes)",
+        "null_findings": "Recorded as such where reported (see result_direction)",
+        "result_direction": "no_detected_difference",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "Overall pre/post comparison across all 47 is non-significant; significant effects emerge only within LRTI subgroups (see M-R59-006/007).",
+        "source_locator": [
+          "p.5 Results Salivary antimicrobial proteins"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R59-saliva-ELISA-panel",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted panel of 6 pre-specified salivary analytes (IgA, lactoferrin, lysozyme, Groalpha, Grobeta, MCP-1) stated in Methods (p.3); blood panel per Table 1.",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.3 Saliva analysis / Blood analysis"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.3 Saliva analysis"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R59_supp_pone.0206059.s001.xlsx (S1 File, PONE-D-18-11926R3_Data.xlsx)"
+        ],
+        "result_status": "explicitly_reported_non_significant_or_null",
+        "effect_value_source": "reported_main_text_or_table",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "other",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.5 Results Salivary antimicrobial proteins"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "measurement_id": "M-R59-006",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "sample_set_ids": [
+          "SS-R59-01",
+          "SS-R59-02"
+        ],
+        "analyte_id": {
+          "original_label": "Salivary lysozyme, No-LRTI subgroup, before vs after",
+          "standard_name": "lysozyme / total protein ratio",
+          "database_id": "NR"
+        },
+        "biological_level": "protein",
+        "platform": "ELISA (ebioscience/Affymetrix IgA kit; AssayPro lactoferrin/lysozyme/Groalpha/Grobeta/MCP-1 kits)",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Detection limits stated (p.3): IgA 1.6 ng/ml; lactoferrin 0.625 ng/ml; lysozyme 0.0781 ng/ml; Groalpha 15.63 pg/ml; Grobeta 15.63 pg/ml; MCP-1 15.63 pg/ml. All determinations in triplicate.",
+        "feature_identification": "NA (targeted ELISA, not feature-discovery platform)",
+        "comparison": "No-LRTI subgroup, before vs after marathon (paired)",
+        "effect_measure": "mean difference (paired Wilcoxon)",
+        "effect_value": "0.010+-0.007 vs 0.006+-0.004, p=0.003",
+        "effect_unit": "ratio to total protein (unitless)",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR (no explicit multiple-testing correction stated for the panel of comparisons)",
+        "confounding": "Hydration/feeding status not controlled (authors note as limitation, p.8); sex not adjusted for in these comparisons.",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data (per-marker n < 47 for several analytes)",
+        "null_findings": "Recorded as such where reported (see result_direction)",
+        "result_direction": "decrease",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "Decrease in lysozyme after the race in runners who did NOT develop LRTI.",
+        "source_locator": [
+          "p.5 Results; p.6 Fig 2"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R59-saliva-ELISA-panel",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted panel of 6 pre-specified salivary analytes (IgA, lactoferrin, lysozyme, Groalpha, Grobeta, MCP-1) stated in Methods (p.3); blood panel per Table 1.",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.3 Saliva analysis / Blood analysis"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.3 Saliva analysis"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R59_supp_pone.0206059.s001.xlsx (S1 File, PONE-D-18-11926R3_Data.xlsx)"
+        ],
+        "result_status": "reported_significant",
+        "effect_value_source": "reported_main_text_or_table",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "other",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.5 Results; p.6 Fig 2"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "measurement_id": "M-R59-007",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "sample_set_ids": [
+          "SS-R59-02"
+        ],
+        "analyte_id": {
+          "original_label": "Salivary lysozyme, after marathon, No-LRTI vs LRTI",
+          "standard_name": "lysozyme / total protein ratio",
+          "database_id": "NR"
+        },
+        "biological_level": "protein",
+        "platform": "ELISA (ebioscience/Affymetrix IgA kit; AssayPro lactoferrin/lysozyme/Groalpha/Grobeta/MCP-1 kits)",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Detection limits stated (p.3): IgA 1.6 ng/ml; lactoferrin 0.625 ng/ml; lysozyme 0.0781 ng/ml; Groalpha 15.63 pg/ml; Grobeta 15.63 pg/ml; MCP-1 15.63 pg/ml. All determinations in triplicate.",
+        "feature_identification": "NA (targeted ELISA, not feature-discovery platform)",
+        "comparison": "After marathon, No-LRTI vs LRTI (unpaired)",
+        "effect_measure": "group comparison (unpaired t-test)",
+        "effect_value": "0.006+-0.004 (No-LRTI) vs 0.012+-0.01 (LRTI), p=0.02",
+        "effect_unit": "ratio to total protein (unitless)",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR (no explicit multiple-testing correction stated for the panel of comparisons)",
+        "confounding": "Hydration/feeding status not controlled (authors note as limitation, p.8); sex not adjusted for in these comparisons.",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data (per-marker n < 47 for several analytes)",
+        "null_findings": "Recorded as such where reported (see result_direction)",
+        "result_direction": "increase",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "Runners who developed LRTI had HIGHER post-race lysozyme than those who did not.",
+        "source_locator": [
+          "p.5 Results; p.6 Fig 2"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R59-saliva-ELISA-panel",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted panel of 6 pre-specified salivary analytes (IgA, lactoferrin, lysozyme, Groalpha, Grobeta, MCP-1) stated in Methods (p.3); blood panel per Table 1.",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.3 Saliva analysis / Blood analysis"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.3 Saliva analysis"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R59_supp_pone.0206059.s001.xlsx (S1 File, PONE-D-18-11926R3_Data.xlsx)"
+        ],
+        "result_status": "reported_significant",
+        "effect_value_source": "reported_main_text_or_table",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "other",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.5 Results; p.6 Fig 2"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "measurement_id": "M-R59-008",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "sample_set_ids": [
+          "SS-R59-01",
+          "SS-R59-02"
+        ],
+        "analyte_id": {
+          "original_label": "Salivary Groalpha/CXCL1 (relative to total protein)",
+          "standard_name": "CXCL1 (Groalpha) / total protein ratio",
+          "database_id": "NR"
+        },
+        "biological_level": "cytokine_or_immune_mediator",
+        "platform": "ELISA (ebioscience/Affymetrix IgA kit; AssayPro lactoferrin/lysozyme/Groalpha/Grobeta/MCP-1 kits)",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Detection limits stated (p.3): IgA 1.6 ng/ml; lactoferrin 0.625 ng/ml; lysozyme 0.0781 ng/ml; Groalpha 15.63 pg/ml; Grobeta 15.63 pg/ml; MCP-1 15.63 pg/ml. All determinations in triplicate.",
+        "feature_identification": "NA (targeted ELISA, not feature-discovery platform)",
+        "comparison": "before vs after marathon, all runners",
+        "effect_measure": "mean difference (paired)",
+        "effect_value": "no differences reported for the full-cohort pre/post contrast",
+        "effect_unit": "ratio to total protein (unitless)",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR (no explicit multiple-testing correction stated for the panel of comparisons)",
+        "confounding": "Hydration/feeding status not controlled (authors note as limitation, p.8); sex not adjusted for in these comparisons.",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data (per-marker n < 47 for several analytes)",
+        "null_findings": "Recorded as such where reported (see result_direction)",
+        "result_direction": "no_detected_difference",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "Overall cohort pre/post ns; significant decrease only in the No-LRTI subgroup (M-R59-009).",
+        "source_locator": [
+          "p.5 Results Salivary chemokines"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R59-saliva-ELISA-panel",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted panel of 6 pre-specified salivary analytes (IgA, lactoferrin, lysozyme, Groalpha, Grobeta, MCP-1) stated in Methods (p.3); blood panel per Table 1.",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.3 Saliva analysis / Blood analysis"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.3 Saliva analysis"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R59_supp_pone.0206059.s001.xlsx (S1 File, PONE-D-18-11926R3_Data.xlsx)"
+        ],
+        "result_status": "explicitly_reported_non_significant_or_null",
+        "effect_value_source": "reported_main_text_or_table",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "cytokine_or_inflammatory_mediator",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.5 Results Salivary chemokines"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "measurement_id": "M-R59-009",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "sample_set_ids": [
+          "SS-R59-01",
+          "SS-R59-02"
+        ],
+        "analyte_id": {
+          "original_label": "Salivary Groalpha/CXCL1, No-LRTI subgroup, before vs after",
+          "standard_name": "CXCL1 (Groalpha) / total protein ratio",
+          "database_id": "NR"
+        },
+        "biological_level": "cytokine_or_immune_mediator",
+        "platform": "ELISA (ebioscience/Affymetrix IgA kit; AssayPro lactoferrin/lysozyme/Groalpha/Grobeta/MCP-1 kits)",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Detection limits stated (p.3): IgA 1.6 ng/ml; lactoferrin 0.625 ng/ml; lysozyme 0.0781 ng/ml; Groalpha 15.63 pg/ml; Grobeta 15.63 pg/ml; MCP-1 15.63 pg/ml. All determinations in triplicate.",
+        "feature_identification": "NA (targeted ELISA, not feature-discovery platform)",
+        "comparison": "No-LRTI subgroup, before vs after marathon (paired)",
+        "effect_measure": "mean difference (paired, unpaired Mann-Whitney/Wilcoxon per legend)",
+        "effect_value": "0.37+-0.15 vs 0.30+-0.14, p=0.02",
+        "effect_unit": "ratio to total protein (unitless)",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR (no explicit multiple-testing correction stated for the panel of comparisons)",
+        "confounding": "Hydration/feeding status not controlled (authors note as limitation, p.8); sex not adjusted for in these comparisons.",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data (per-marker n < 47 for several analytes)",
+        "null_findings": "Recorded as such where reported (see result_direction)",
+        "result_direction": "decrease",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "Fig 3A.",
+        "source_locator": [
+          "p.5 Results; p.6 Fig 3A"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R59-saliva-ELISA-panel",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted panel of 6 pre-specified salivary analytes (IgA, lactoferrin, lysozyme, Groalpha, Grobeta, MCP-1) stated in Methods (p.3); blood panel per Table 1.",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.3 Saliva analysis / Blood analysis"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.3 Saliva analysis"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R59_supp_pone.0206059.s001.xlsx (S1 File, PONE-D-18-11926R3_Data.xlsx)"
+        ],
+        "result_status": "reported_significant",
+        "effect_value_source": "reported_main_text_or_table",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "cytokine_or_inflammatory_mediator",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.5 Results; p.6 Fig 3A"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "measurement_id": "M-R59-010",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "sample_set_ids": [
+          "SS-R59-01",
+          "SS-R59-02"
+        ],
+        "analyte_id": {
+          "original_label": "Salivary Grobeta/CXCL2, No-LRTI subgroup, before vs after",
+          "standard_name": "CXCL2 (Grobeta) / total protein ratio",
+          "database_id": "NR"
+        },
+        "biological_level": "cytokine_or_immune_mediator",
+        "platform": "ELISA (ebioscience/Affymetrix IgA kit; AssayPro lactoferrin/lysozyme/Groalpha/Grobeta/MCP-1 kits)",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Detection limits stated (p.3): IgA 1.6 ng/ml; lactoferrin 0.625 ng/ml; lysozyme 0.0781 ng/ml; Groalpha 15.63 pg/ml; Grobeta 15.63 pg/ml; MCP-1 15.63 pg/ml. All determinations in triplicate.",
+        "feature_identification": "NA (targeted ELISA, not feature-discovery platform)",
+        "comparison": "No-LRTI subgroup, before vs after marathon (paired)",
+        "effect_measure": "mean difference (paired)",
+        "effect_value": "0.47+-0.17 vs 0.37+-0.18, p=0.03",
+        "effect_unit": "ratio to total protein (unitless)",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR (no explicit multiple-testing correction stated for the panel of comparisons)",
+        "confounding": "Hydration/feeding status not controlled (authors note as limitation, p.8); sex not adjusted for in these comparisons.",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data (per-marker n < 47 for several analytes)",
+        "null_findings": "Recorded as such where reported (see result_direction)",
+        "result_direction": "decrease",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "Fig 3B; overall full-cohort pre/post and MCP-1 comparisons were all non-significant (text, p.5).",
+        "source_locator": [
+          "p.5 Results; p.6 Fig 3B"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R59-saliva-ELISA-panel",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted panel of 6 pre-specified salivary analytes (IgA, lactoferrin, lysozyme, Groalpha, Grobeta, MCP-1) stated in Methods (p.3); blood panel per Table 1.",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.3 Saliva analysis / Blood analysis"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.3 Saliva analysis"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R59_supp_pone.0206059.s001.xlsx (S1 File, PONE-D-18-11926R3_Data.xlsx)"
+        ],
+        "result_status": "reported_significant",
+        "effect_value_source": "reported_main_text_or_table",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "cytokine_or_inflammatory_mediator",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.5 Results; p.6 Fig 3B"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "measurement_id": "M-R59-011",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "sample_set_ids": [
+          "SS-R59-01",
+          "SS-R59-02"
+        ],
+        "analyte_id": {
+          "original_label": "Salivary MCP-1/CCL2 (relative to total protein)",
+          "standard_name": "CCL2 (MCP-1) / total protein ratio",
+          "database_id": "NR"
+        },
+        "biological_level": "cytokine_or_immune_mediator",
+        "platform": "ELISA (ebioscience/Affymetrix IgA kit; AssayPro lactoferrin/lysozyme/Groalpha/Grobeta/MCP-1 kits)",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Detection limits stated (p.3): IgA 1.6 ng/ml; lactoferrin 0.625 ng/ml; lysozyme 0.0781 ng/ml; Groalpha 15.63 pg/ml; Grobeta 15.63 pg/ml; MCP-1 15.63 pg/ml. All determinations in triplicate.",
+        "feature_identification": "NA (targeted ELISA, not feature-discovery platform)",
+        "comparison": "before vs after marathon, all runners, and by LRTI status",
+        "effect_measure": "mean difference",
+        "effect_value": "'No differences in MCP-1 levels were found' (no numeric values given)",
+        "effect_unit": "ratio to total protein (unitless)",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR (no explicit multiple-testing correction stated for the panel of comparisons)",
+        "confounding": "Hydration/feeding status not controlled (authors note as limitation, p.8); sex not adjusted for in these comparisons.",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data (per-marker n < 47 for several analytes)",
+        "null_findings": "Recorded as such where reported (see result_direction)",
+        "result_direction": "no_detected_difference",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "Only analyte among the 6 with no significant result in ANY comparison reported.",
+        "source_locator": [
+          "p.5 Results Salivary chemokines"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R59-saliva-ELISA-panel",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted panel of 6 pre-specified salivary analytes (IgA, lactoferrin, lysozyme, Groalpha, Grobeta, MCP-1) stated in Methods (p.3); blood panel per Table 1.",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.3 Saliva analysis / Blood analysis"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.3 Saliva analysis"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R59_supp_pone.0206059.s001.xlsx (S1 File, PONE-D-18-11926R3_Data.xlsx)"
+        ],
+        "result_status": "explicitly_reported_non_significant_or_null",
+        "effect_value_source": "reported_main_text_or_table",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "cytokine_or_inflammatory_mediator",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.5 Results Salivary chemokines"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "measurement_id": "M-R59-012",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "sample_set_ids": [
+          "SS-R59-01",
+          "SS-R59-03"
+        ],
+        "analyte_id": {
+          "original_label": "Salivary lactoferrin (before) vs blood lymphocyte count (before) - correlation",
+          "standard_name": "lactoferrin / total protein ratio vs blood lymphocyte count",
+          "database_id": "NR"
+        },
+        "biological_level": "protein",
+        "platform": "ELISA (ebioscience/Affymetrix IgA kit; AssayPro lactoferrin/lysozyme/Groalpha/Grobeta/MCP-1 kits)",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Detection limits stated (p.3): IgA 1.6 ng/ml; lactoferrin 0.625 ng/ml; lysozyme 0.0781 ng/ml; Groalpha 15.63 pg/ml; Grobeta 15.63 pg/ml; MCP-1 15.63 pg/ml. All determinations in triplicate.",
+        "feature_identification": "NA (targeted ELISA, not feature-discovery platform)",
+        "comparison": "Pearson/Spearman correlation across all runners before the race (n=30 per supplement)",
+        "effect_measure": "correlation coefficient",
+        "effect_value": "r=-0.138 (text)/r=-0.13 (abstract rounding), p=0.04",
+        "effect_unit": "correlation coefficient r",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR (no explicit multiple-testing correction stated for the panel of comparisons)",
+        "confounding": "Hydration/feeding status not controlled (authors note as limitation, p.8); sex not adjusted for in these comparisons.",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data (per-marker n < 47 for several analytes)",
+        "null_findings": "Recorded as such where reported (see result_direction)",
+        "result_direction": "mixed_or_inconsistent",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "Weak negative correlation; direction field used as no_detected_difference placeholder is imprecise for a correlation - see marker_family/vocabulary note in unresolved_questions; correlation itself is significant (within_cohort_association).",
+        "source_locator": [
+          "p.5 Results Systemic correlations; p.7 Fig 4A"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R59-saliva-ELISA-panel",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted panel of 6 pre-specified salivary analytes (IgA, lactoferrin, lysozyme, Groalpha, Grobeta, MCP-1) stated in Methods (p.3); blood panel per Table 1.",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.3 Saliva analysis / Blood analysis"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.3 Saliva analysis"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R59_supp_pone.0206059.s001.xlsx (S1 File, PONE-D-18-11926R3_Data.xlsx)"
+        ],
+        "result_status": "reported_significant",
+        "effect_value_source": "reported_main_text_or_table",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "other",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.5 Results Systemic correlations; p.7 Fig 4A"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "measurement_id": "M-R59-013",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "sample_set_ids": [
+          "SS-R59-01",
+          "SS-R59-03"
+        ],
+        "analyte_id": {
+          "original_label": "Salivary Groalpha (before) vs blood % basophils (before) - correlation",
+          "standard_name": "CXCL1 (Groalpha)/total protein vs blood basophil %",
+          "database_id": "NR"
+        },
+        "biological_level": "cytokine_or_immune_mediator",
+        "platform": "ELISA (ebioscience/Affymetrix IgA kit; AssayPro lactoferrin/lysozyme/Groalpha/Grobeta/MCP-1 kits)",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Detection limits stated (p.3): IgA 1.6 ng/ml; lactoferrin 0.625 ng/ml; lysozyme 0.0781 ng/ml; Groalpha 15.63 pg/ml; Grobeta 15.63 pg/ml; MCP-1 15.63 pg/ml. All determinations in triplicate.",
+        "feature_identification": "NA (targeted ELISA, not feature-discovery platform)",
+        "comparison": "Pearson/Spearman correlation across all runners before the race (n=21 per supplement)",
+        "effect_measure": "correlation coefficient",
+        "effect_value": "r=0.22, p=0.03",
+        "effect_unit": "correlation coefficient r",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR (no explicit multiple-testing correction stated for the panel of comparisons)",
+        "confounding": "Hydration/feeding status not controlled (authors note as limitation, p.8); sex not adjusted for in these comparisons.",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data (per-marker n < 47 for several analytes)",
+        "null_findings": "Recorded as such where reported (see result_direction)",
+        "result_direction": "mixed_or_inconsistent",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "Weak positive correlation (within_cohort_association); not a group comparison so increase/decrease labels do not strictly apply.",
+        "source_locator": [
+          "p.5 Results Systemic correlations; p.7 Fig 4B"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R59-saliva-ELISA-panel",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted panel of 6 pre-specified salivary analytes (IgA, lactoferrin, lysozyme, Groalpha, Grobeta, MCP-1) stated in Methods (p.3); blood panel per Table 1.",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.3 Saliva analysis / Blood analysis"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.3 Saliva analysis"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R59_supp_pone.0206059.s001.xlsx (S1 File, PONE-D-18-11926R3_Data.xlsx)"
+        ],
+        "result_status": "reported_significant",
+        "effect_value_source": "reported_main_text_or_table",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "cytokine_or_inflammatory_mediator",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.5 Results Systemic correlations; p.7 Fig 4B"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "measurement_id": "M-R59-014",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "sample_set_ids": [
+          "SS-R59-02",
+          "SS-R59-04"
+        ],
+        "analyte_id": {
+          "original_label": "Salivary lysozyme (after) vs blood leukocyte count (after) - correlation",
+          "standard_name": "lysozyme/total protein vs blood leukocyte count",
+          "database_id": "NR"
+        },
+        "biological_level": "protein",
+        "platform": "ELISA (ebioscience/Affymetrix IgA kit; AssayPro lactoferrin/lysozyme/Groalpha/Grobeta/MCP-1 kits)",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Detection limits stated (p.3): IgA 1.6 ng/ml; lactoferrin 0.625 ng/ml; lysozyme 0.0781 ng/ml; Groalpha 15.63 pg/ml; Grobeta 15.63 pg/ml; MCP-1 15.63 pg/ml. All determinations in triplicate.",
+        "feature_identification": "NA (targeted ELISA, not feature-discovery platform)",
+        "comparison": "Pearson/Spearman correlation across runners after the race (n=31 per supplement)",
+        "effect_measure": "correlation coefficient",
+        "effect_value": "r=0.26, p=0.006",
+        "effect_unit": "correlation coefficient r",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR (no explicit multiple-testing correction stated for the panel of comparisons)",
+        "confounding": "Hydration/feeding status not controlled (authors note as limitation, p.8); sex not adjusted for in these comparisons.",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data (per-marker n < 47 for several analytes)",
+        "null_findings": "Recorded as such where reported (see result_direction)",
+        "result_direction": "mixed_or_inconsistent",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "Positive correlation after the race (within_cohort_association).",
+        "source_locator": [
+          "p.5 Results Systemic correlations; p.7 Fig 4C"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R59-saliva-ELISA-panel",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted panel of 6 pre-specified salivary analytes (IgA, lactoferrin, lysozyme, Groalpha, Grobeta, MCP-1) stated in Methods (p.3); blood panel per Table 1.",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.3 Saliva analysis / Blood analysis"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.3 Saliva analysis"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R59_supp_pone.0206059.s001.xlsx (S1 File, PONE-D-18-11926R3_Data.xlsx)"
+        ],
+        "result_status": "reported_significant",
+        "effect_value_source": "reported_main_text_or_table",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "other",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.5 Results Systemic correlations; p.7 Fig 4C"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "measurement_id": "M-R59-015",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "sample_set_ids": [
+          "SS-R59-03"
+        ],
+        "analyte_id": {
+          "original_label": "Blood leukocyte differential (%): total leukocytes, lymphocytes, monocytes, neutrophils, eosinophils, basophils",
+          "standard_name": "blood leukocyte differential count (%)",
+          "database_id": "NR"
+        },
+        "biological_level": "cell_count_or_subset",
+        "platform": "ELISA (ebioscience/Affymetrix IgA kit; AssayPro lactoferrin/lysozyme/Groalpha/Grobeta/MCP-1 kits)",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Detection limits stated (p.3): IgA 1.6 ng/ml; lactoferrin 0.625 ng/ml; lysozyme 0.0781 ng/ml; Groalpha 15.63 pg/ml; Grobeta 15.63 pg/ml; MCP-1 15.63 pg/ml. All determinations in triplicate.",
+        "feature_identification": "NA (targeted ELISA, not feature-discovery platform)",
+        "comparison": "No-LRTI vs LRTI, before marathon (baseline, Table 1)",
+        "effect_measure": "group comparison (unpaired)",
+        "effect_value": "Leukocytes% 6.8+-1.4 vs 7.6+-2.2; Lymphocytes% 34.8+-6.5 vs 34.1+-11.9; Monocytes% 8.5+-2.9 vs 7.7+-1.3; Neutrophils% 53.5+-7.5 vs 55.8+-12.6; Eosinophils% 2.4+-1.7 vs 1.7+-1.5; Basophils% 0.7+-0.4 vs 0.4+-0.1; all NS",
+        "effect_unit": "% of total leukocytes",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR (no explicit multiple-testing correction stated for the panel of comparisons)",
+        "confounding": "Hydration/feeding status not controlled (authors note as limitation, p.8); sex not adjusted for in these comparisons.",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data (per-marker n < 47 for several analytes)",
+        "null_findings": "Recorded as such where reported (see result_direction)",
+        "result_direction": "no_detected_difference",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "Bundled row for pilot efficiency: six related differential-count variables from Table 1, all reported non-significant between LRTI groups at baseline; see unresolved_questions on whether these should be split into six separate measurement rows in the full extraction.",
+        "source_locator": [
+          "p.4 Table 1"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R59-blood-panel",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted panel of 6 pre-specified salivary analytes (IgA, lactoferrin, lysozyme, Groalpha, Grobeta, MCP-1) stated in Methods (p.3); blood panel per Table 1.",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.3 Saliva analysis / Blood analysis"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.3 Saliva analysis"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R59_supp_pone.0206059.s001.xlsx (S1 File, PONE-D-18-11926R3_Data.xlsx)"
+        ],
+        "result_status": "explicitly_reported_non_significant_or_null",
+        "effect_value_source": "reported_main_text_or_table",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "leukocyte_redistribution",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.4 Table 1"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "measurement_id": "M-R59-016",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "sample_set_ids": [
+          "SS-R59-03"
+        ],
+        "analyte_id": {
+          "original_label": "C-reactive protein (CRP)",
+          "standard_name": "C-reactive protein",
+          "database_id": "NR"
+        },
+        "biological_level": "protein",
+        "platform": "ELISA (ebioscience/Affymetrix IgA kit; AssayPro lactoferrin/lysozyme/Groalpha/Grobeta/MCP-1 kits)",
+        "omics_integration": "not_omics",
+        "cell_context": "NA",
+        "assay_validity": "Detection limits stated (p.3): IgA 1.6 ng/ml; lactoferrin 0.625 ng/ml; lysozyme 0.0781 ng/ml; Groalpha 15.63 pg/ml; Grobeta 15.63 pg/ml; MCP-1 15.63 pg/ml. All determinations in triplicate.",
+        "feature_identification": "NA (targeted ELISA, not feature-discovery platform)",
+        "comparison": "No-LRTI vs LRTI, before marathon (baseline, Table 1)",
+        "effect_measure": "group comparison (unpaired)",
+        "effect_value": "1.4+-2.4 mg/dl vs 1.0+-0.5 mg/dl, NS",
+        "effect_unit": "mg/dl",
+        "effect_uncertainty": "SD as reported (see effect_value)",
+        "multiplicity": "NR (no explicit multiple-testing correction stated for the panel of comparisons)",
+        "confounding": "Hydration/feeding status not controlled (authors note as limitation, p.8); sex not adjusted for in these comparisons.",
+        "donor_level_inference": "NA",
+        "missing_data": "See sample_sets.missing_data (per-marker n < 47 for several analytes)",
+        "null_findings": "Recorded as such where reported (see result_direction)",
+        "result_direction": "no_detected_difference",
+        "reported_feature_count": "NA (single named analyte)",
+        "measurement_notes": "CRP is a general acute-phase/inflammatory marker rather than a highly immune-cell-specific marker; immune_specificity should be read accordingly.",
+        "source_locator": [
+          "p.4 Table 1"
+        ],
+        "record_type": "named_immune_candidate",
+        "assay_universe_id": "AU-R59-blood-panel",
+        "marker_series_id": "NA",
+        "tested_universe_n": "NA",
+        "tested_universe_unit": "NA",
+        "tested_universe": "Targeted panel of 6 pre-specified salivary analytes (IgA, lactoferrin, lysozyme, Groalpha, Grobeta, MCP-1) stated in Methods (p.3); blood panel per Table 1.",
+        "feature_total_count": "NR",
+        "feature_total_unit": "NR",
+        "feature_universe_locator": [
+          "p.3 Saliva analysis / Blood analysis"
+        ],
+        "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+        "candidate_selection_basis": "original_methods",
+        "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+        "candidate_in_original_aims_methods": true,
+        "candidate_source_locator": [
+          "p.3 Saliva analysis"
+        ],
+        "supplement_availability": "accessible",
+        "supplement_sources": [
+          "R59_supp_pone.0206059.s001.xlsx (S1 File, PONE-D-18-11926R3_Data.xlsx)"
+        ],
+        "result_status": "explicitly_reported_non_significant_or_null",
+        "effect_value_source": "reported_main_text_or_table",
+        "digitization_predeclared_method": "NA",
+        "digitization_software_version": "NA",
+        "figure_panel_locator": "NA",
+        "digitizer_A_value": "NA",
+        "digitizer_B_value": "NA",
+        "digitizer_A": "NA",
+        "digitizer_B": "NA",
+        "digitization_reconciled_value": "NA",
+        "digitization_notes": "NA",
+        "marker_family": "cytokine_or_inflammatory_mediator",
+        "digitization_check": "NA",
+        "_locators": [
+          "p.4 Table 1"
+        ],
+        "_confidence": "high"
+      }
+    ],
+    "precision_validation": [
+      {
+        "precision_record_id": "PV-R59-001",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-001",
+          "M-R59-002"
+        ],
+        "precision_domain": "analytical_reliability",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.3 Saliva analysis / Blood analysis"
+        ],
+        "evidence_notes": "[Salivary sIgA] ELISA kits with stated detection limits and triplicate determinations (sIgA 1.6 ng/ml; lactoferrin 0.625 ng/ml; lysozyme 0.0781 ng/ml; chemokines 15.63 pg/ml each; p.3); automated haematology/chemistry analysers for blood panel. No ICC/CV reported for inter-assay or inter-day reliability.",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.3 Saliva analysis / Blood analysis"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "precision_record_id": "PV-R59-002",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-001",
+          "M-R59-002"
+        ],
+        "precision_domain": "temporal_validity",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.3 Saliva and blood collection"
+        ],
+        "evidence_notes": "[Salivary sIgA] Only two timepoints sampled: pre-race baseline (pre_exercise_baseline) and ~48 h post-race (within_window, 24h_to_72h_inclusive bin); no samples in the 0-30min/30min-3h/3h-24h bins and none beyond 72 h, so within-window temporal resolution is coarse.",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.3 Saliva and blood collection"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "precision_record_id": "PV-R59-003",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-001",
+          "M-R59-002"
+        ],
+        "precision_domain": "immune_specificity",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.3 Introduction / Methods"
+        ],
+        "evidence_notes": "[Salivary sIgA] Markers are recognised immune/antimicrobial mediators (sIgA, AMPs, chemokines) or direct leukocyte counts; CRP is a general acute-phase marker with lower immune-cell specificity (flagged in its own measurement row).",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.3 Introduction / Methods"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "precision_record_id": "PV-R59-004",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-001",
+          "M-R59-002"
+        ],
+        "precision_domain": "individualization",
+        "evidence_state": "not_demonstrated",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.4-7 Results"
+        ],
+        "evidence_notes": "[Salivary sIgA] Only one pre/post pair per participant reported as group mean+-SD; no repeated baselines, no individual-level variability/ICC/CV, and no responder definition or individual threshold is reported.",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.4-7 Results"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "precision_record_id": "PV-R59-005",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-003",
+          "M-R59-004",
+          "M-R59-005",
+          "M-R59-006",
+          "M-R59-007",
+          "M-R59-012",
+          "M-R59-014"
+        ],
+        "precision_domain": "analytical_reliability",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.3 Saliva analysis / Blood analysis"
+        ],
+        "evidence_notes": "[Salivary antimicrobial proteins (lactoferrin, lysozyme)] ELISA kits with stated detection limits and triplicate determinations (sIgA 1.6 ng/ml; lactoferrin 0.625 ng/ml; lysozyme 0.0781 ng/ml; chemokines 15.63 pg/ml each; p.3); automated haematology/chemistry analysers for blood panel. No ICC/CV reported for inter-assay or inter-day reliability.",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.3 Saliva analysis / Blood analysis"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "precision_record_id": "PV-R59-006",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-003",
+          "M-R59-004",
+          "M-R59-005",
+          "M-R59-006",
+          "M-R59-007",
+          "M-R59-012",
+          "M-R59-014"
+        ],
+        "precision_domain": "temporal_validity",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.3 Saliva and blood collection"
+        ],
+        "evidence_notes": "[Salivary antimicrobial proteins (lactoferrin, lysozyme)] Only two timepoints sampled: pre-race baseline (pre_exercise_baseline) and ~48 h post-race (within_window, 24h_to_72h_inclusive bin); no samples in the 0-30min/30min-3h/3h-24h bins and none beyond 72 h, so within-window temporal resolution is coarse.",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.3 Saliva and blood collection"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "precision_record_id": "PV-R59-007",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-003",
+          "M-R59-004",
+          "M-R59-005",
+          "M-R59-006",
+          "M-R59-007",
+          "M-R59-012",
+          "M-R59-014"
+        ],
+        "precision_domain": "immune_specificity",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.3 Introduction / Methods"
+        ],
+        "evidence_notes": "[Salivary antimicrobial proteins (lactoferrin, lysozyme)] Markers are recognised immune/antimicrobial mediators (sIgA, AMPs, chemokines) or direct leukocyte counts; CRP is a general acute-phase marker with lower immune-cell specificity (flagged in its own measurement row).",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.3 Introduction / Methods"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "precision_record_id": "PV-R59-008",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-003",
+          "M-R59-004",
+          "M-R59-005",
+          "M-R59-006",
+          "M-R59-007",
+          "M-R59-012",
+          "M-R59-014"
+        ],
+        "precision_domain": "individualization",
+        "evidence_state": "not_demonstrated",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.4-7 Results"
+        ],
+        "evidence_notes": "[Salivary antimicrobial proteins (lactoferrin, lysozyme)] Only one pre/post pair per participant reported as group mean+-SD; no repeated baselines, no individual-level variability/ICC/CV, and no responder definition or individual threshold is reported.",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.4-7 Results"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "precision_record_id": "PV-R59-009",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-008",
+          "M-R59-009",
+          "M-R59-010",
+          "M-R59-011",
+          "M-R59-013"
+        ],
+        "precision_domain": "analytical_reliability",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.3 Saliva analysis / Blood analysis"
+        ],
+        "evidence_notes": "[Salivary chemokines (Groalpha, Grobeta, MCP-1)] ELISA kits with stated detection limits and triplicate determinations (sIgA 1.6 ng/ml; lactoferrin 0.625 ng/ml; lysozyme 0.0781 ng/ml; chemokines 15.63 pg/ml each; p.3); automated haematology/chemistry analysers for blood panel. No ICC/CV reported for inter-assay or inter-day reliability.",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.3 Saliva analysis / Blood analysis"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "precision_record_id": "PV-R59-010",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-008",
+          "M-R59-009",
+          "M-R59-010",
+          "M-R59-011",
+          "M-R59-013"
+        ],
+        "precision_domain": "temporal_validity",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.3 Saliva and blood collection"
+        ],
+        "evidence_notes": "[Salivary chemokines (Groalpha, Grobeta, MCP-1)] Only two timepoints sampled: pre-race baseline (pre_exercise_baseline) and ~48 h post-race (within_window, 24h_to_72h_inclusive bin); no samples in the 0-30min/30min-3h/3h-24h bins and none beyond 72 h, so within-window temporal resolution is coarse.",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.3 Saliva and blood collection"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "precision_record_id": "PV-R59-011",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-008",
+          "M-R59-009",
+          "M-R59-010",
+          "M-R59-011",
+          "M-R59-013"
+        ],
+        "precision_domain": "immune_specificity",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.3 Introduction / Methods"
+        ],
+        "evidence_notes": "[Salivary chemokines (Groalpha, Grobeta, MCP-1)] Markers are recognised immune/antimicrobial mediators (sIgA, AMPs, chemokines) or direct leukocyte counts; CRP is a general acute-phase marker with lower immune-cell specificity (flagged in its own measurement row).",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.3 Introduction / Methods"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "precision_record_id": "PV-R59-012",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-008",
+          "M-R59-009",
+          "M-R59-010",
+          "M-R59-011",
+          "M-R59-013"
+        ],
+        "precision_domain": "individualization",
+        "evidence_state": "not_demonstrated",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.4-7 Results"
+        ],
+        "evidence_notes": "[Salivary chemokines (Groalpha, Grobeta, MCP-1)] Only one pre/post pair per participant reported as group mean+-SD; no repeated baselines, no individual-level variability/ICC/CV, and no responder definition or individual threshold is reported.",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.4-7 Results"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "precision_record_id": "PV-R59-013",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-015",
+          "M-R59-016"
+        ],
+        "precision_domain": "analytical_reliability",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.3 Saliva analysis / Blood analysis"
+        ],
+        "evidence_notes": "[Blood leukocyte differential and CRP (background covariates)] ELISA kits with stated detection limits and triplicate determinations (sIgA 1.6 ng/ml; lactoferrin 0.625 ng/ml; lysozyme 0.0781 ng/ml; chemokines 15.63 pg/ml each; p.3); automated haematology/chemistry analysers for blood panel. No ICC/CV reported for inter-assay or inter-day reliability.",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.3 Saliva analysis / Blood analysis"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "precision_record_id": "PV-R59-014",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-015",
+          "M-R59-016"
+        ],
+        "precision_domain": "temporal_validity",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.3 Saliva and blood collection"
+        ],
+        "evidence_notes": "[Blood leukocyte differential and CRP (background covariates)] Only two timepoints sampled: pre-race baseline (pre_exercise_baseline) and ~48 h post-race (within_window, 24h_to_72h_inclusive bin); no samples in the 0-30min/30min-3h/3h-24h bins and none beyond 72 h, so within-window temporal resolution is coarse.",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.3 Saliva and blood collection"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "precision_record_id": "PV-R59-015",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-015",
+          "M-R59-016"
+        ],
+        "precision_domain": "immune_specificity",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.3 Introduction / Methods"
+        ],
+        "evidence_notes": "[Blood leukocyte differential and CRP (background covariates)] Markers are recognised immune/antimicrobial mediators (sIgA, AMPs, chemokines) or direct leukocyte counts; CRP is a general acute-phase marker with lower immune-cell specificity (flagged in its own measurement row).",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.3 Introduction / Methods"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "precision_record_id": "PV-R59-016",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-015",
+          "M-R59-016"
+        ],
+        "precision_domain": "individualization",
+        "evidence_state": "not_demonstrated",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.4-7 Results"
+        ],
+        "evidence_notes": "[Blood leukocyte differential and CRP (background covariates)] Only one pre/post pair per participant reported as group mean+-SD; no repeated baselines, no individual-level variability/ICC/CV, and no responder definition or individual threshold is reported.",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.4-7 Results"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "precision_record_id": "PV-R59-017",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-001",
+          "M-R59-002"
+        ],
+        "precision_domain": "functional_clinical_linkage",
+        "evidence_state": "measured_null",
+        "relationship_tags": [
+          "within_cohort_association"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": "self_reported_symptoms",
+        "temporal_order": "Baseline sample precedes LRTI onset by design (pre-race) but post-race (48h) sample timing relative to each individual LRTI case's symptom onset is NR; LRTI follow-up window is 2 weeks post-race (p.2-3).",
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.4 Results; p.4 Table 1"
+        ],
+        "evidence_notes": "[Salivary sIgA] Logistic/graphical comparison of sIgA (pre, post, pre-post) against LRTI status showed no association ('no differences in IgA levels were found between infected and non-infected runners', p.4; Fig 1B).",
+        "intended_use": null,
+        "linkage_subtype": "clinical_symptom_outcome",
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.4 Results; p.4 Table 1"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "precision_record_id": "PV-R59-018",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-001",
+          "M-R59-002"
+        ],
+        "precision_domain": "independent_validation_and_use",
+        "evidence_state": "not_demonstrated",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.8 Discussion, Limitations"
+        ],
+        "evidence_notes": "[Salivary sIgA] Single cohort, no replication cohort, no external validation, no model/threshold validation of any marker for LRTI prediction; authors explicitly call for validation in other studies (Discussion, p.8).",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": "no_validation_or_use_test",
+        "validation_split": "none",
+        "_locators": [
+          "p.8 Discussion, Limitations"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "precision_record_id": "PV-R59-019",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-001",
+          "M-R59-002"
+        ],
+        "precision_domain": "feasibility",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.3 Saliva and blood collection; p.8 Discussion Limitations"
+        ],
+        "evidence_notes": "[Salivary sIgA] Field-deployable saliva collection (tub collection, passive drool not used here) and standard venous blood draw described; authors note hydration/feeding as practical confounders not controlled in the field setting (p.8), which is itself feasibility-relevant evidence.",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.3 Saliva and blood collection; p.8 Discussion Limitations"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "precision_record_id": "PV-R59-020",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-003",
+          "M-R59-004",
+          "M-R59-005",
+          "M-R59-006",
+          "M-R59-007",
+          "M-R59-012",
+          "M-R59-014"
+        ],
+        "precision_domain": "functional_clinical_linkage",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "within_cohort_association"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": "self_reported_symptoms",
+        "temporal_order": "Baseline sample precedes LRTI onset by design (pre-race) but post-race (48h) sample timing relative to each individual LRTI case's symptom onset is NR; LRTI follow-up window is 2 weeks post-race (p.2-3).",
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.4 Results; p.4 Table 1"
+        ],
+        "evidence_notes": "[Salivary antimicrobial proteins (lactoferrin, lysozyme)] Mixed within group: lysozyme showed a significant association with LRTI status (higher post-race lysozyme in LRTI vs no-LRTI, p=0.02; decrease over time in no-LRTI group, p=0.003); lactoferrin showed no association with LRTI status at any timepoint (measured_null component).",
+        "intended_use": null,
+        "linkage_subtype": "clinical_symptom_outcome",
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.4 Results; p.4 Table 1"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "precision_record_id": "PV-R59-021",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-003",
+          "M-R59-004",
+          "M-R59-005",
+          "M-R59-006",
+          "M-R59-007",
+          "M-R59-012",
+          "M-R59-014"
+        ],
+        "precision_domain": "independent_validation_and_use",
+        "evidence_state": "not_demonstrated",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.8 Discussion, Limitations"
+        ],
+        "evidence_notes": "[Salivary antimicrobial proteins (lactoferrin, lysozyme)] Single cohort, no replication cohort, no external validation, no model/threshold validation of any marker for LRTI prediction; authors explicitly call for validation in other studies (Discussion, p.8).",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": "no_validation_or_use_test",
+        "validation_split": "none",
+        "_locators": [
+          "p.8 Discussion, Limitations"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "precision_record_id": "PV-R59-022",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-003",
+          "M-R59-004",
+          "M-R59-005",
+          "M-R59-006",
+          "M-R59-007",
+          "M-R59-012",
+          "M-R59-014"
+        ],
+        "precision_domain": "feasibility",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.3 Saliva and blood collection; p.8 Discussion Limitations"
+        ],
+        "evidence_notes": "[Salivary antimicrobial proteins (lactoferrin, lysozyme)] Field-deployable saliva collection (tub collection, passive drool not used here) and standard venous blood draw described; authors note hydration/feeding as practical confounders not controlled in the field setting (p.8), which is itself feasibility-relevant evidence.",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.3 Saliva and blood collection; p.8 Discussion Limitations"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "precision_record_id": "PV-R59-023",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-008",
+          "M-R59-009",
+          "M-R59-010",
+          "M-R59-011",
+          "M-R59-013"
+        ],
+        "precision_domain": "functional_clinical_linkage",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "within_cohort_association"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": "self_reported_symptoms",
+        "temporal_order": "Baseline sample precedes LRTI onset by design (pre-race) but post-race (48h) sample timing relative to each individual LRTI case's symptom onset is NR; LRTI follow-up window is 2 weeks post-race (p.2-3).",
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.4 Results; p.4 Table 1"
+        ],
+        "evidence_notes": "[Salivary chemokines (Groalpha, Grobeta, MCP-1)] Groalpha and Grobeta each decreased significantly after the race only in the no-LRTI subgroup (p=0.02, p=0.03), i.e. an association between chemokine trajectory and LRTI status; MCP-1 showed no association/no significant change in any comparison (measured_null component).",
+        "intended_use": null,
+        "linkage_subtype": "clinical_symptom_outcome",
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.4 Results; p.4 Table 1"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "precision_record_id": "PV-R59-024",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-008",
+          "M-R59-009",
+          "M-R59-010",
+          "M-R59-011",
+          "M-R59-013"
+        ],
+        "precision_domain": "independent_validation_and_use",
+        "evidence_state": "not_demonstrated",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.8 Discussion, Limitations"
+        ],
+        "evidence_notes": "[Salivary chemokines (Groalpha, Grobeta, MCP-1)] Single cohort, no replication cohort, no external validation, no model/threshold validation of any marker for LRTI prediction; authors explicitly call for validation in other studies (Discussion, p.8).",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": "no_validation_or_use_test",
+        "validation_split": "none",
+        "_locators": [
+          "p.8 Discussion, Limitations"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "precision_record_id": "PV-R59-025",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-008",
+          "M-R59-009",
+          "M-R59-010",
+          "M-R59-011",
+          "M-R59-013"
+        ],
+        "precision_domain": "feasibility",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.3 Saliva and blood collection; p.8 Discussion Limitations"
+        ],
+        "evidence_notes": "[Salivary chemokines (Groalpha, Grobeta, MCP-1)] Field-deployable saliva collection (tub collection, passive drool not used here) and standard venous blood draw described; authors note hydration/feeding as practical confounders not controlled in the field setting (p.8), which is itself feasibility-relevant evidence.",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.3 Saliva and blood collection; p.8 Discussion Limitations"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "precision_record_id": "PV-R59-026",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-015",
+          "M-R59-016"
+        ],
+        "precision_domain": "functional_clinical_linkage",
+        "evidence_state": "measured_null",
+        "relationship_tags": [
+          "within_cohort_association"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": "self_reported_symptoms",
+        "temporal_order": "Baseline sample precedes LRTI onset by design (pre-race) but post-race (48h) sample timing relative to each individual LRTI case's symptom onset is NR; LRTI follow-up window is 2 weeks post-race (p.2-3).",
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.4 Results; p.4 Table 1"
+        ],
+        "evidence_notes": "[Blood leukocyte differential and CRP (background covariates)] Baseline leukocyte differential % and CRP did not differ between runners who later developed LRTI and those who did not (Table 1, all NS); used as baseline/covariate comparison rather than a primary aim analyte.",
+        "intended_use": null,
+        "linkage_subtype": "clinical_symptom_outcome",
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.4 Results; p.4 Table 1"
+        ],
+        "_confidence": "medium"
+      },
+      {
+        "precision_record_id": "PV-R59-027",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-015",
+          "M-R59-016"
+        ],
+        "precision_domain": "independent_validation_and_use",
+        "evidence_state": "not_demonstrated",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.8 Discussion, Limitations"
+        ],
+        "evidence_notes": "[Blood leukocyte differential and CRP (background covariates)] Single cohort, no replication cohort, no external validation, no model/threshold validation of any marker for LRTI prediction; authors explicitly call for validation in other studies (Discussion, p.8).",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": "no_validation_or_use_test",
+        "validation_split": "none",
+        "_locators": [
+          "p.8 Discussion, Limitations"
+        ],
+        "_confidence": "high"
+      },
+      {
+        "precision_record_id": "PV-R59-028",
+        "report_id": "PILOT-R59",
+        "study_id": "S-R59-1",
+        "cohort_id": "C-R59-1",
+        "measurement_id": [
+          "M-R59-015",
+          "M-R59-016"
+        ],
+        "precision_domain": "feasibility",
+        "evidence_state": "evidence_present",
+        "relationship_tags": [
+          "NR"
+        ],
+        "response_evidence": null,
+        "functional_evidence": null,
+        "replication": null,
+        "clinical_endpoint": null,
+        "temporal_order": null,
+        "prediction_design": null,
+        "prediction_metrics": null,
+        "leakage_control": null,
+        "individualization": null,
+        "field_feasibility": null,
+        "source_locator": [
+          "p.3 Saliva and blood collection; p.8 Discussion Limitations"
+        ],
+        "evidence_notes": "[Blood leukocyte differential and CRP (background covariates)] Field-deployable saliva collection (tub collection, passive drool not used here) and standard venous blood draw described; authors note hydration/feeding as practical confounders not controlled in the field setting (p.8), which is itself feasibility-relevant evidence.",
+        "intended_use": null,
+        "linkage_subtype": null,
+        "validation_use_subtype": null,
+        "validation_split": null,
+        "_locators": [
+          "p.3 Saliva and blood collection; p.8 Discussion Limitations"
+        ],
+        "_confidence": "medium"
+      }
+    ],
+    "extraction_provenance": [
+      {
+        "provenance_id": "PROV-PILOT-R59-B",
+        "report_id": "PILOT-R59",
+        "extractor_a_b": {
+          "extractor_A": "B (AI stand-in, Claude Sonnet 5)",
+          "extractor_B": null,
+          "independent_entry_complete": true,
+          "verification_complete": false
+        },
+        "adjudication": null,
+        "ai_assistance": {
+          "used": true,
+          "tool_model_date": "Claude Sonnet 5 (claude-sonnet-5); 2026-10-05",
+          "task_prompt_version": "10-report charting pilot, reviewer B AI stand-in instructions (2026-10-05)",
+          "output_checked_by_human": false
+        },
+        "open_data": "No external dataset/accession beyond the PLOS S1 File raw-data spreadsheet (R59_supp_pone.0206059.s001.xlsx), which is openly accessible under the article's CC BY licence; no GEO/SRA-type accession applicable.",
+        "integrity_status": "No correction/retraction notice visible on the PDF/landing information reviewed 2026-10-05; not independently cross-checked against PubMed/Crossref update records beyond the PDF itself.",
+        "recorded_at": "2026-10-05T05:09:17Z",
+        "provenance_notes": "AI-assisted charting pilot extraction per PILOT_README.md Section 5-7; AI did not make eligibility or value-judgment decisions beyond applying the controlled vocabularies as instructed. See eligibility_opinion and unresolved_questions in the companion JSON for judgment calls flagged for human review.",
+        "_locators": {},
+        "_confidence": "high"
+      }
+    ]
+  },
+  "eligibility_opinion": {
+    "scope_stream": "A_core_acute",
+    "rationale": "Identifiable single bout (2016 Barcelona Marathon, 42.195 km) with a pre-race baseline sample (1 day before, p.3) and a post-cessation sample at ~48 h (2 days after the race, within the 0-72h organising window, p.3) in a healthy adult cohort (p.2); direct immune-linked measurements (salivary sIgA/AMPs/chemokine ELISA panel, blood leukocyte differential, p.3-4) satisfy the immune-link rule and a self-reported clinical outcome (LRTI, p.2-3) is tracked for 2 weeks post-race."
+  },
+  "unresolved_questions": [
+    "cohorts.age_range: Results text states 'Median age was 30 years old' (p.4) but Table 1 reports mean age 39.0+-7.1 y for all runners (p.4); these cannot both be correct and the source of the discrepancy (typo vs wrong summary statistic) cannot be resolved from the PDF alone.",
+    "sample_sets.missing_data: per-marker analysable n within the nominal 47-runner cohort varies widely (e.g. IgA n=43-44, lysozyme n=22+8=30, chemokines n=17+6=23, per the S1 File raw-data columns) with no stated reason in the main text; unclear whether the manual wants separate sample_sets rows per marker when denominators differ this much, or whether a single sample_set with a missing_data note (as done here) is sufficient.",
+    "measurements.marker_family: the controlled vocabulary has no explicit category for salivary antimicrobial proteins (lactoferrin, lysozyme); they were filed under 'other', which may not be what a future validation-readiness map intends - recommend the team consider a dedicated marker_family value or explicit mapping rule.",
+    "precision_validation granularity: the manual states domains are recorded 'per report/cohort/measurement', which could mean per single analyte (6+ rows x 7 domains for this report alone) rather than per marker-group as done here (4 groups x 7 = 28 rows); grouping closely related analytes (e.g. the three chemokines) was a pragmatic pilot choice that should be confirmed with A/D.",
+    "clinical_endpoint vocabulary: LRTI here is ascertained by a formal symptom-based case definition (ERS/ESCMID criteria plus fever/duration rules, p.2) applied to self-reported symptoms, with no clinician visit described; it is unclear whether this should be coded self_reported_symptoms (used here) or clinician_defined_syndrome given the formal criteria.",
+    "measurements.result_direction for correlation rows (M-R59-012/013/014): the controlled vocabulary (increase/decrease/no_detected_difference/mixed_or_inconsistent) is designed for group/time comparisons, not correlation coefficients; 'mixed_or_inconsistent' was used as the closest fit but this may need a dedicated value for association/correlation results.",
+    "reports.author_stated_use and author_window_interpretation: the paper never uses the phrase 'open window' and never states an explicit marker 'use'; both fields required an interpretive judgment call (classified as immunosuppression_or_susceptibility_without_term / NR) that should be checked against Reviewer C's independent reading."
+  ],
+  "minutes_spent": 70
+}

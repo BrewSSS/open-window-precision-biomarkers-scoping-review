@@ -1,0 +1,4930 @@
+{
+  "generated_at_utc": "2026-10-05T05:54:24+00:00",
+  "generator": "scripts/compare_extraction.py",
+  "inputs": {
+    "B": {
+      "path": "05_extraction/pilot_2026-10-05/pilot_extraction_B.xlsx",
+      "sha256": {
+        "pilot_extraction_B.xlsx": "d2d1f7db2c2d518ce746c23ee1ae965c1892f7bdbb77c837d678ab75c2b5b2b0"
+      }
+    },
+    "C": {
+      "path": "05_extraction/pilot_2026-10-05/pilot_extraction_C.xlsx",
+      "sha256": {
+        "pilot_extraction_C.xlsx": "9ded1ae8eb2b52a81056a2df9fc9ba3993d5235a6fe7b552c3d91ac7c6fde6c0"
+      }
+    }
+  },
+  "slots": {
+    "B": "A",
+    "C": "B"
+  },
+  "dictionary_sha256": "c1f78637319a6cae9ec0130dd1a4386710ab7deb5ed108b05acf831deb400ba7",
+  "align_mode": "auto",
+  "status": "Descriptive agreement between two independent extractions; not results. Free-text exact-match agreement is reported but should be read, not scored.",
+  "overall": {
+    "cells_compared": 9410,
+    "agree": 4533,
+    "disagree": 3976,
+    "only_B": 115,
+    "only_C": 786,
+    "agreement_both_filled": 0.5327,
+    "agreement_any_filled": 0.4817
+  },
+  "disagreement_categories": {
+    "disagree": 3976,
+    "only_B": 115,
+    "only_C": 786,
+    "row_only_B": 186,
+    "row_only_C": 202
+  },
+  "not_scored_columns": [
+    "extraction_provenance.extractor_a_b.extractor_A",
+    "extraction_provenance.extractor_a_b.extractor_B",
+    "extraction_provenance.provenance_id",
+    "extraction_provenance.recorded_at",
+    "measurements.digitizer_A",
+    "measurements.digitizer_B",
+    "reports.authors",
+    "reports.doi",
+    "reports.pmid",
+    "reports.reference_id",
+    "reports.title",
+    "reports.url",
+    "reports.year"
+  ],
+  "tables": {
+    "reports": {
+      "align": "key:report_id",
+      "rows": {
+        "B": 10,
+        "C": 10
+      },
+      "rows_matched": 10,
+      "rows_only_B": 0,
+      "rows_only_C": 0,
+      "duplicate_keys": [],
+      "cells_compared": 118,
+      "agree": 30,
+      "disagree": 70,
+      "only_B": 10,
+      "only_C": 8,
+      "agreement_both_filled": 0.3,
+      "agreement_any_filled": 0.2542,
+      "coded_and_counts_only": {
+        "cells_compared": 47,
+        "agree": 28,
+        "disagree": 9,
+        "only_B": 7,
+        "only_C": 3,
+        "agreement_both_filled": 0.7568,
+        "agreement_any_filled": 0.5957
+      }
+    },
+    "cohorts": {
+      "align": "key:cohort_id",
+      "rows": {
+        "B": 10,
+        "C": 10
+      },
+      "rows_matched": 10,
+      "rows_only_B": 0,
+      "rows_only_C": 0,
+      "duplicate_keys": [],
+      "cells_compared": 110,
+      "agree": 34,
+      "disagree": 76,
+      "only_B": 0,
+      "only_C": 0,
+      "agreement_both_filled": 0.3091,
+      "agreement_any_filled": 0.3091,
+      "coded_and_counts_only": {
+        "cells_compared": 30,
+        "agree": 24,
+        "disagree": 6,
+        "only_B": 0,
+        "only_C": 0,
+        "agreement_both_filled": 0.8,
+        "agreement_any_filled": 0.8
+      }
+    },
+    "report_cohort_links": {
+      "align": "key:link_id",
+      "rows": {
+        "B": 10,
+        "C": 10
+      },
+      "rows_matched": 10,
+      "rows_only_B": 0,
+      "rows_only_C": 0,
+      "duplicate_keys": [],
+      "cells_compared": 70,
+      "agree": 46,
+      "disagree": 24,
+      "only_B": 0,
+      "only_C": 0,
+      "agreement_both_filled": 0.6571,
+      "agreement_any_filled": 0.6571,
+      "coded_and_counts_only": {
+        "cells_compared": 20,
+        "agree": 16,
+        "disagree": 4,
+        "only_B": 0,
+        "only_C": 0,
+        "agreement_both_filled": 0.8,
+        "agreement_any_filled": 0.8
+      }
+    },
+    "sample_sets": {
+      "align": "key:sample_set_id",
+      "rows": {
+        "B": 131,
+        "C": 109
+      },
+      "rows_matched": 70,
+      "rows_only_B": 61,
+      "rows_only_C": 39,
+      "duplicate_keys": [],
+      "cells_compared": 2940,
+      "agree": 1261,
+      "disagree": 1672,
+      "only_B": 1,
+      "only_C": 6,
+      "agreement_both_filled": 0.4299,
+      "agreement_any_filled": 0.4289,
+      "coded_and_counts_only": {
+        "cells_compared": 770,
+        "agree": 554,
+        "disagree": 216,
+        "only_B": 0,
+        "only_C": 0,
+        "agreement_both_filled": 0.7195,
+        "agreement_any_filled": 0.7195
+      }
+    },
+    "measurements": {
+      "align": "key:measurement_id",
+      "rows": {
+        "B": 137,
+        "C": 231
+      },
+      "rows_matched": 89,
+      "rows_only_B": 48,
+      "rows_only_C": 142,
+      "duplicate_keys": [],
+      "cells_compared": 4587,
+      "agree": 2268,
+      "disagree": 1714,
+      "only_B": 65,
+      "only_C": 540,
+      "agreement_both_filled": 0.5696,
+      "agreement_any_filled": 0.4944,
+      "coded_and_counts_only": {
+        "cells_compared": 1335,
+        "agree": 848,
+        "disagree": 367,
+        "only_B": 0,
+        "only_C": 120,
+        "agreement_both_filled": 0.6979,
+        "agreement_any_filled": 0.6352
+      }
+    },
+    "precision_validation": {
+      "align": "key:precision_record_id",
+      "rows": {
+        "B": 140,
+        "C": 84
+      },
+      "rows_matched": 63,
+      "rows_only_B": 77,
+      "rows_only_C": 21,
+      "duplicate_keys": [],
+      "cells_compared": 1440,
+      "agree": 865,
+      "disagree": 308,
+      "only_B": 35,
+      "only_C": 232,
+      "agreement_both_filled": 0.7374,
+      "agreement_any_filled": 0.6007,
+      "coded_and_counts_only": {
+        "cells_compared": 502,
+        "agree": 316,
+        "disagree": 83,
+        "only_B": 0,
+        "only_C": 103,
+        "agreement_both_filled": 0.792,
+        "agreement_any_filled": 0.6295
+      }
+    },
+    "extraction_provenance": {
+      "align": "key:report_id",
+      "rows": {
+        "B": 10,
+        "C": 10
+      },
+      "rows_matched": 10,
+      "rows_only_B": 0,
+      "rows_only_C": 0,
+      "duplicate_keys": [],
+      "cells_compared": 87,
+      "agree": 20,
+      "disagree": 65,
+      "only_B": 2,
+      "only_C": 0,
+      "agreement_both_filled": 0.2353,
+      "agreement_any_filled": 0.2299,
+      "coded_and_counts_only": {
+        "cells_compared": 0,
+        "agree": 0,
+        "disagree": 0,
+        "only_B": 0,
+        "only_C": 0,
+        "agreement_both_filled": null,
+        "agreement_any_filled": null
+      }
+    },
+    "study_families": {
+      "align": "key:study_id",
+      "rows": {
+        "B": 10,
+        "C": 10
+      },
+      "rows_matched": 10,
+      "rows_only_B": 0,
+      "rows_only_C": 0,
+      "duplicate_keys": [],
+      "cells_compared": 58,
+      "agree": 9,
+      "disagree": 47,
+      "only_B": 2,
+      "only_C": 0,
+      "agreement_both_filled": 0.1607,
+      "agreement_any_filled": 0.1552,
+      "coded_and_counts_only": {
+        "cells_compared": 0,
+        "agree": 0,
+        "disagree": 0,
+        "only_B": 0,
+        "only_C": 0,
+        "agreement_both_filled": null,
+        "agreement_any_filled": null
+      }
+    }
+  },
+  "families": [
+    {
+      "family": "analysis",
+      "cells_compared": 1049,
+      "agree": 326,
+      "disagree": 573,
+      "only_B": 0,
+      "only_C": 150,
+      "agreement_both_filled": 0.3626,
+      "agreement_any_filled": 0.3108,
+      "coded_and_counts_only": {
+        "cells_compared": 89,
+        "agree": 50,
+        "disagree": 33,
+        "only_B": 0,
+        "only_C": 6,
+        "agreement_both_filled": 0.6024,
+        "agreement_any_filled": 0.5618
+      }
+    },
+    {
+      "family": "author_use_and_window_interpretation",
+      "cells_compared": 27,
+      "agree": 5,
+      "disagree": 22,
+      "only_B": 0,
+      "only_C": 0,
+      "agreement_both_filled": 0.1852,
+      "agreement_any_filled": 0.1852,
+      "coded_and_counts_only": {
+        "cells_compared": 9,
+        "agree": 5,
+        "disagree": 4,
+        "only_B": 0,
+        "only_C": 0,
+        "agreement_both_filled": 0.5556,
+        "agreement_any_filled": 0.5556
+      }
+    },
+    {
+      "family": "biomarkers",
+      "cells_compared": 1030,
+      "agree": 420,
+      "disagree": 566,
+      "only_B": 0,
+      "only_C": 44,
+      "agreement_both_filled": 0.426,
+      "agreement_any_filled": 0.4078,
+      "coded_and_counts_only": {
+        "cells_compared": 267,
+        "agree": 182,
+        "disagree": 85,
+        "only_B": 0,
+        "only_C": 0,
+        "agreement_both_filled": 0.6816,
+        "agreement_any_filled": 0.6816
+      }
+    },
+    {
+      "family": "candidate_universe",
+      "cells_compared": 1191,
+      "agree": 584,
+      "disagree": 401,
+      "only_B": 63,
+      "only_C": 143,
+      "agreement_both_filled": 0.5929,
+      "agreement_any_filled": 0.4903,
+      "coded_and_counts_only": {
+        "cells_compared": 712,
+        "agree": 399,
+        "disagree": 242,
+        "only_B": 0,
+        "only_C": 71,
+        "agreement_both_filled": 0.6225,
+        "agreement_any_filled": 0.5604
+      }
+    },
+    {
+      "family": "digitization",
+      "cells_compared": 623,
+      "agree": 511,
+      "disagree": 0,
+      "only_B": 0,
+      "only_C": 112,
+      "agreement_both_filled": 1.0,
+      "agreement_any_filled": 0.8202,
+      "coded_and_counts_only": {
+        "cells_compared": 178,
+        "agree": 146,
+        "disagree": 0,
+        "only_B": 0,
+        "only_C": 32,
+        "agreement_both_filled": 1.0,
+        "agreement_any_filled": 0.8202
+      }
+    },
+    {
+      "family": "eligibility",
+      "cells_compared": 66,
+      "agree": 24,
+      "disagree": 24,
+      "only_B": 10,
+      "only_C": 8,
+      "agreement_both_filled": 0.5,
+      "agreement_any_filled": 0.3636,
+      "coded_and_counts_only": {
+        "cells_compared": 39,
+        "agree": 24,
+        "disagree": 5,
+        "only_B": 7,
+        "only_C": 3,
+        "agreement_both_filled": 0.8276,
+        "agreement_any_filled": 0.6154
+      }
+    },
+    {
+      "family": "exposure",
+      "cells_compared": 940,
+      "agree": 277,
+      "disagree": 657,
+      "only_B": 0,
+      "only_C": 6,
+      "agreement_both_filled": 0.2966,
+      "agreement_any_filled": 0.2947,
+      "coded_and_counts_only": {
+        "cells_compared": 0,
+        "agree": 0,
+        "disagree": 0,
+        "only_B": 0,
+        "only_C": 0,
+        "agreement_both_filled": null,
+        "agreement_any_filled": null
+      }
+    },
+    {
+      "family": "identity",
+      "cells_compared": 54,
+      "agree": 13,
+      "disagree": 39,
+      "only_B": 2,
+      "only_C": 0,
+      "agreement_both_filled": 0.25,
+      "agreement_any_filled": 0.2407,
+      "coded_and_counts_only": {
+        "cells_compared": 9,
+        "agree": 9,
+        "disagree": 0,
+        "only_B": 0,
+        "only_C": 0,
+        "agreement_both_filled": 1.0,
+        "agreement_any_filled": 1.0
+      }
+    },
+    {
+      "family": "keys",
+      "cells_compared": 851,
+      "agree": 727,
+      "disagree": 89,
+      "only_B": 35,
+      "only_C": 0,
+      "agreement_both_filled": 0.8909,
+      "agreement_any_filled": 0.8543,
+      "coded_and_counts_only": {
+        "cells_compared": 0,
+        "agree": 0,
+        "disagree": 0,
+        "only_B": 0,
+        "only_C": 0,
+        "agreement_both_filled": null,
+        "agreement_any_filled": null
+      }
+    },
+    {
+      "family": "notes",
+      "cells_compared": 359,
+      "agree": 73,
+      "disagree": 264,
+      "only_B": 1,
+      "only_C": 21,
+      "agreement_both_filled": 0.2166,
+      "agreement_any_filled": 0.2033,
+      "coded_and_counts_only": {
+        "cells_compared": 0,
+        "agree": 0,
+        "disagree": 0,
+        "only_B": 0,
+        "only_C": 0,
+        "agreement_both_filled": null,
+        "agreement_any_filled": null
+      }
+    },
+    {
+      "family": "other",
+      "cells_compared": 178,
+      "agree": 141,
+      "disagree": 15,
+      "only_B": 0,
+      "only_C": 22,
+      "agreement_both_filled": 0.9038,
+      "agreement_any_filled": 0.7921,
+      "coded_and_counts_only": {
+        "cells_compared": 89,
+        "agree": 71,
+        "disagree": 7,
+        "only_B": 0,
+        "only_C": 11,
+        "agreement_both_filled": 0.9103,
+        "agreement_any_filled": 0.7978
+      }
+    },
+    {
+      "family": "population",
+      "cells_compared": 870,
+      "agree": 395,
+      "disagree": 475,
+      "only_B": 0,
+      "only_C": 0,
+      "agreement_both_filled": 0.454,
+      "agreement_any_filled": 0.454,
+      "coded_and_counts_only": {
+        "cells_compared": 600,
+        "agree": 395,
+        "disagree": 205,
+        "only_B": 0,
+        "only_C": 0,
+        "agreement_both_filled": 0.6583,
+        "agreement_any_filled": 0.6583
+      }
+    },
+    {
+      "family": "provenance",
+      "cells_compared": 78,
+      "agree": 20,
+      "disagree": 56,
+      "only_B": 2,
+      "only_C": 0,
+      "agreement_both_filled": 0.2632,
+      "agreement_any_filled": 0.2564,
+      "coded_and_counts_only": {
+        "cells_compared": 0,
+        "agree": 0,
+        "disagree": 0,
+        "only_B": 0,
+        "only_C": 0,
+        "agreement_both_filled": null,
+        "agreement_any_filled": null
+      }
+    },
+    {
+      "family": "sampling",
+      "cells_compared": 700,
+      "agree": 343,
+      "disagree": 357,
+      "only_B": 0,
+      "only_C": 0,
+      "agreement_both_filled": 0.49,
+      "agreement_any_filled": 0.49,
+      "coded_and_counts_only": {
+        "cells_compared": 210,
+        "agree": 189,
+        "disagree": 21,
+        "only_B": 0,
+        "only_C": 0,
+        "agreement_both_filled": 0.9,
+        "agreement_any_filled": 0.9
+      }
+    },
+    {
+      "family": "source_locator",
+      "cells_compared": 325,
+      "agree": 4,
+      "disagree": 268,
+      "only_B": 2,
+      "only_C": 51,
+      "agreement_both_filled": 0.0147,
+      "agreement_any_filled": 0.0123,
+      "coded_and_counts_only": {
+        "cells_compared": 0,
+        "agree": 0,
+        "disagree": 0,
+        "only_B": 0,
+        "only_C": 0,
+        "agreement_both_filled": null,
+        "agreement_any_filled": null
+      }
+    },
+    {
+      "family": "validation",
+      "cells_compared": 1069,
+      "agree": 670,
+      "disagree": 170,
+      "only_B": 0,
+      "only_C": 229,
+      "agreement_both_filled": 0.7976,
+      "agreement_any_filled": 0.6268,
+      "coded_and_counts_only": {
+        "cells_compared": 502,
+        "agree": 316,
+        "disagree": 83,
+        "only_B": 0,
+        "only_C": 103,
+        "agreement_both_filled": 0.792,
+        "agreement_any_filled": 0.6295
+      }
+    }
+  ],
+  "empty_by_both": {
+    "cells": 186,
+    "table_field_report_entries": 61
+  },
+  "slot_warnings": [
+    {
+      "table": "reports",
+      "reviewer": "B",
+      "column": "screening_decision_reviewer_B",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "reports",
+      "reviewer": "B",
+      "column": "screening_decision_reviewer_B",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "reports",
+      "reviewer": "B",
+      "column": "screening_decision_reviewer_B",
+      "report_id": "PILOT-R19",
+      "value": "NR"
+    },
+    {
+      "table": "reports",
+      "reviewer": "C",
+      "column": "screening_decision_reviewer_A",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R56",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R56",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R56",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R56",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R56",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R56",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R56",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R56",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R56",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R03",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R03",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R03",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R03",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R03",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A_value",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R19",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R56",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R56",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R56",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R56",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R56",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R56",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R56",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R56",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R56",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R59",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "B",
+      "column": "digitizer_B",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R01",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R03",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R03",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R03",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R03",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R03",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R12",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R42",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R46",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "measurements",
+      "reviewer": "C",
+      "column": "digitizer_A",
+      "report_id": "PILOT-R61",
+      "value": "NA"
+    },
+    {
+      "table": "extraction_provenance",
+      "reviewer": "B",
+      "column": "extractor_a_b.extractor_B",
+      "report_id": "PILOT-R61",
+      "value": "AI stand-in for reviewer B (Claude Sonnet 5)"
+    },
+    {
+      "table": "extraction_provenance",
+      "reviewer": "B",
+      "column": "extractor_a_b.extractor_B",
+      "report_id": "PILOT-R46",
+      "value": "AI stand-in for reviewer B (Claude Sonnet 5)"
+    },
+    {
+      "table": "extraction_provenance",
+      "reviewer": "B",
+      "column": "extractor_a_b.extractor_B",
+      "report_id": "PILOT-R42",
+      "value": "AI stand-in for reviewer B (Claude, sonnet)"
+    },
+    {
+      "table": "extraction_provenance",
+      "reviewer": "B",
+      "column": "extractor_a_b.extractor_B",
+      "report_id": "PILOT-R12",
+      "value": "AI stand-in for reviewer B (Claude, sonnet)"
+    }
+  ],
+  "date_finished": {
+    "B": "",
+    "C": ""
+  },
+  "pilot_notes": {
+    "B": 10,
+    "C": 9
+  },
+  "outputs": [
+    "agreement_by_family.csv",
+    "agreement_by_field.csv",
+    "agreement_by_table.csv",
+    "disagreements.csv",
+    "empty_by_both.csv",
+    "minutes_and_questions.csv",
+    "pilot_notes_combined.csv",
+    "row_coverage.csv"
+  ]
+}

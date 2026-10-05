@@ -240,6 +240,32 @@
         "formal screening",
         "extraction"
       ]
+    },
+    {
+      "date": "2026-10-05",
+      "tool": "Claude Code (Anthropic) desktop CLI",
+      "coordinator_model": "claude-fable-5-1",
+      "delegated_models": [
+        "claude-opus-5-5 (pilot materials, identifiers, OA full-text retrieval)",
+        "claude-sonnet-5 (10 parallel extraction stand-ins: 5 for reviewer B, 5 for reviewer C, 2 reports each; loader script)"
+      ],
+      "tasks": [
+        "10-report charting pilot: AI stand-ins for reviewers B and C extracted 9 open-access reports independently (no access to each other's output) into per-report JSON with page/section locators; scripts/load_ai_extraction.py loaded them into the two reviewer workbooks; scripts/compare_extraction.py produced field-by-field agreement, disagreements, empty-by-both and minutes/questions files",
+        "R62 (institutional access) not extracted"
+      ],
+      "output_sources": [
+        "../05_extraction/pilot_2026-10-05/ai_extraction/",
+        "../05_extraction/pilot_2026-10-05/compare_2026-10-05/",
+        "../05_extraction/pilot_2026-10-05/pilot_extraction_B.xlsx",
+        "../05_extraction/pilot_2026-10-05/pilot_extraction_C.xlsx"
+      ],
+      "human_verification_status": "Pending: B, C and D review the disagreement list and unresolved questions; pilot values are AI-suggested charting for calibration of the dictionary/manual, not formal extraction results",
+      "incident": "Two C-side files (R01, R03) were written with tables wrapped as {records:[...]}; normalised by the coordinator before loading (originals kept in load_report notes); agents shared /tmp scratch space — future prompts will assign per-agent scratch directories",
+      "not_performed": [
+        "formal extraction",
+        "critical appraisal",
+        "synthesis"
+      ]
     }
   ],
   "future_entry_fields": [

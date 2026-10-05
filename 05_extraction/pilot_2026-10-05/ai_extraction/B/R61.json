@@ -1,0 +1,1015 @@
+{
+ "report_id": "PILOT-R61",
+ "reference_id": "R61",
+ "reviewer_role": "B (AI stand-in, sonnet)",
+ "extracted_at": "2026-10-05T05:09:51Z",
+ "tables": {
+  "study_families": [
+   {
+    "study_id": "S-R61-1",
+    "study_label": "\"Run 4 Science\" project (Verona) – scRNAseq half-marathon sub-study",
+    "design": "Single-arm, paired pre/post acute-bout design (no non-exercise control arm); within-subject comparison, single identified half-marathon bout.",
+    "registry_ids": [
+     "NR"
+    ],
+    "training_load": "NR",
+    "cointerventions": "NR",
+    "study_notes": "\"Run 4 Science\" initiated 2014 in Verona to study endurance sport effects; this report is the scRNAseq sub-study on PBMCs from the 2019 half-marathon edition. Ethics approval: Azienda Ospedaliera Universitaria Integrata di Verona no. 1538, Dec 3, 2012 (local committee).",
+    "_locators": {
+     "study_label": "p.2 §2.1: '\"Run 4 Science\", a 21.1 km half marathon held in Verona (Italy) in April 2019'",
+     "design": "p.2 §2.1-2.2: pre-run/post-run paired PBMC sampling of the same enrolled runners",
+     "study_notes": "p.1 Introduction: 'The \"Run 4 Science\" project was initiated in 2014 in Verona (Italy)'; p.2 Ethics Statement locator"
+    },
+    "_confidence": "high"
+   }
+  ],
+  "reports": [
+   {
+    "report_id": "PILOT-R61",
+    "reference_id": "R61",
+    "title": "Single-Cell RNA Sequencing Analysis Reveals Exercise-Induced Transcriptional Dynamics in Half-Marathon Runners",
+    "authors": "Veschetti L; Patuzzo C; Treccani M; Moron Dalla Tor L; Deiana M; Cheri S; Griggio F; Lippi G; Schena F; De Santis D; Dalle Carbonare L; Tarperi C; Trabetti E; Valenti MT; Malerba G",
+    "year": "2025",
+    "doi": "10.1111/sms.70018",
+    "pmid": "39817606",
+    "url": "https://doi.org/10.1111/sms.70018",
+    "publication_status": "peer_reviewed_version_of_record",
+    "version_date": "NR",
+    "version_label": "NR",
+    "source_locator": [
+     "p.1 masthead: Received 9 Aug 2024; Revised 31 Dec 2024; Accepted 7 Jan 2025; Scand J Med Sci Sports 2025;35:e70018"
+    ],
+    "scope_stream": [
+     "A_core_acute"
+    ],
+    "inclusion_reason": "Single identifiable acute bout (21.1 km half-marathon) with pre-run baseline and post-run sample within the 0-72 h organising window; direct immune-cell transcriptome (scRNAseq of PBMCs) measurement satisfies immune linkage.",
+    "exclusion_reason": null,
+    "immune_link": [
+     "immune_cell_omics"
+    ],
+    "screening_decision_reviewer_A": "NA",
+    "screening_decision_reviewer_B": "NA",
+    "consensus_screening_decision": "NA",
+    "primary_fulltext_exclusion_reason": "NA",
+    "reviewer_notes": "Charting-pilot extraction only; full-text screening disposition (reviewer_A/B, consensus, FT code) belongs to the separate 50-record screening pilot and is out of scope for this 10-report charting task. Reviewer B's descriptive scope_stream judgement is recorded in eligibility_opinion instead.",
+    "author_stated_use": "'These insights contribute to a better understanding of the immune modulation mediated by endurance exercise and may help establish future training routines or nutritional guidelines based on individual gene expression levels.' (p.1 Abstract / p.9 Perspective)",
+    "author_window_interpretation": [
+     "explicit_open_window_term",
+     "redistribution_interpretation"
+    ],
+    "author_window_interpretation_locator": [
+     "p.7 Discussion: 'these results could suggest that the myeloid lineage cells suppress their immunological functions in favor of stress response and molecular repair... support the \"open window\" hypothesis'",
+     "p.7 Discussion: 'lymphoid cells active proliferation and increased adhesion could hint at a demargination to prepare the organism for potential immune challenges'"
+    ],
+    "_locators": {},
+    "_confidence": "high"
+   }
+  ],
+  "cohorts": [
+   {
+    "cohort_id": "C-R61-1",
+    "study_id": "S-R61-1",
+    "cohort_label": "Run 4 Science half-marathon amateur runners (scRNAseq sub-study)",
+    "baseline_health": "'self-reportedly healthy males and females' randomly selected from ~100 participants at the event (p.2 §2.1)",
+    "n_recruited": 4,
+    "age_sex": "two males and two females, 29±5 years (mean±SD)",
+    "training_status": "amateur (non-elite) runners",
+    "sport": "running (half-marathon, 21.1 km)",
+    "cohort_notes": "4 runners enrolled; final analysed scRNAseq dataset reduced to 2 donors (see report_cohort_links.link_notes and sample_sets.missing_data for the QC-exclusion chain, confirmed via supplement Table S2 sample list: only pre_1, pre_2, post_1, post_2).",
+    "age_range": "29±5 years (mean±SD); explicit min-max range NR",
+    "adult_stratum_separable": "all_participants_adult",
+    "older_adult_subgroup": "no_older_adult_stratum",
+    "_locators": {
+     "baseline_health": "p.2 §2.1: 'self-reportedly healthy males and females within the same age range'",
+     "n_recruited": "p.2 §2.1: 'Four age-matched amateur runners... were enrolled'",
+     "age_sex": "p.2 §2.1: 'two males and two females, 29±5 years'",
+     "training_status": "p.2 §2.1: 'Amateur runners were randomly selected'",
+     "sport": "p.1 title / p.2 §2.1",
+     "cohort_notes": "p.2 §2.2 and §2.3; Supplement Table S2 sample column list"
+    },
+    "_confidence": "high"
+   }
+  ],
+  "report_cohort_links": [
+   {
+    "link_id": "L-R61-1",
+    "report_id": "PILOT-R61",
+    "study_id": "S-R61-1",
+    "cohort_id": "C-R61-1",
+    "n_analyzed": 2,
+    "report_specific_population": "2 of 4 enrolled amateur runners whose PBMC samples passed both library-preparation QC and single-cell QC at both pre- and post-run timepoints; these 2 donors' paired data underpin all single-cell, pseudobulk DEA and GSEA results.",
+    "link_notes": "Methods text gives two QC-exclusion statements that read as potentially distinct events: (i) §2.2 'Samples from one amateur runner did not produce libraries of sufficient quality and were thus excluded from the sequencing experiment'; (ii) §2.3 'Samples from one amateur runner did not have sufficient high-quality cells and were thus excluded from further analyses'. The main text never states the resulting final n. Supplement Table S2 (cell-type counts) lists exactly 4 samples (pre_1, pre_2, post_1, post_2), and their cell totals (299+1110+954+1848=4211) exactly match the reported 'total of 4211 cells... deemed high-quality' (p.3). This confirms n_analyzed=2 donors (paired pre/post), i.e. of the 4 enrolled, 2 were excluded in total – consistent with, but not proven identical to, the two methods-section sentences describing one exclusion each. Flagged as unresolved (see unresolved_questions).",
+    "scope_streams": [
+     "A_core_acute"
+    ],
+    "_locators": {
+     "n_analyzed": "Supplement Table_S2 header row ('pre_1','pre_2','post_1','post_2'); p.3 §3 Results '4211 cells were deemed as high-quality'",
+     "link_notes": "p.2 §2.2; p.3 §2.3; Supplement Table_S2"
+    },
+    "_confidence": "medium"
+   }
+  ],
+  "sample_sets": [
+   {
+    "sample_set_id": "SS-R61-01",
+    "report_id": "PILOT-R61",
+    "study_id": "S-R61-1",
+    "cohort_id": "C-R61-1",
+    "group_condition": "single exercise arm; within-subject pre-run baseline (no separate non-exercise control group)",
+    "intervention_phase": "single bout only (no training intervention phase)",
+    "exercise_mode": "endurance running (half-marathon)",
+    "dose": "21.1 km half-marathon",
+    "control": "individual pre-run baseline used as within-subject comparator (paired design); no non-exercise control group",
+    "training_load": "NR",
+    "cointerventions": "NR",
+    "exercise_end_definition": "NA (pre-run sample; exercise not yet started)",
+    "sample_role": "pre_exercise_baseline",
+    "timepoint_as_reported": "pre run: 90-60 min before the scheduled 9 a.m. start time",
+    "time_from_exercise_end_value": "NA",
+    "time_unit": "NA",
+    "time_bin": "pre_exercise_baseline",
+    "matrix": "PBMC (Ficoll-Paque density-gradient isolation from venous blood)",
+    "assay_platform": "droplet-based scRNA-seq (Bio-Rad ddSEQ Single-Cell Isolator, SureCell WTA 3' kit; Illumina NextSeq 500)",
+    "n_participants": 2,
+    "n_biological_samples": 2,
+    "n_cells": 1409,
+    "n_technical_replicates": "NR",
+    "n_aliquots": "NR",
+    "repeated_sampling": "same 2 donors sampled again post-run (paired design)",
+    "pairing_structure": "paired pre/post within the same 2 donors",
+    "age_sex_stratum": "NA",
+    "preanalytics": "PBMCs purified by Ficoll-Paque density-gradient centrifugation within max. 2 h of sampling; kept at 10-15°C; resuspended in 1X PBS-0.1% filtered BSA, held at 5-10°C up to 1 h before library prep (p.2 §2.1)",
+    "normalization": "NR",
+    "circadian": "pre-run sampling 90-60 min before the scheduled 9 a.m. start",
+    "missing_data": "Of 4 enrolled runners, 1 excluded at library-prep QC and 1 excluded at cell-level QC (see report_cohort_links.link_notes); final n=2 donors contribute to this sample set.",
+    "cell_context": "PBMCs; 9 annotated cell types (classical/non-classical monocytes, myeloid DC, NK, CD8+ NKT-like, memory CD4+ T, naive CD4+ T, naive B, platelets) via SCType; pseudobulk-per-cluster aggregation also performed from the same cells (§2.7).",
+    "source_locator": [
+     "p.2 §2.1 Samples Collection and PBMC Isolation"
+    ],
+    "sample_notes": "Pre-run sample set; 2 of the enrolled 4 runners (sex of the final 2 not specified in text).",
+    "bout_id": "BOUT-R61-1",
+    "bout_number": 1,
+    "participant_linkage": "same_participants_identified",
+    "n_donors": 2,
+    "donor_count_basis": "unique_human_donors",
+    "exercise_duration": "NR (21.1 km distance reported; completion time for the analysed donors not reported)",
+    "intensity_metric": "NR",
+    "intensity_value": "NR",
+    "within_organising_window": "pre_exercise_baseline",
+    "_locators": {
+     "timepoint_as_reported": "p.2-3 §2.1: 'Pre run blood sampling occurred 90-60 min before the scheduled start time of 9 a.m.'",
+     "n_cells": "Supplement Table_S2: pre_1=299, pre_2=1110 cells (sum 1409)",
+     "preanalytics": "p.2 §2.1",
+     "missing_data": "p.2 §2.2; p.3 §2.3"
+    },
+    "_confidence": "medium"
+   },
+   {
+    "sample_set_id": "SS-R61-02",
+    "report_id": "PILOT-R61",
+    "study_id": "S-R61-1",
+    "cohort_id": "C-R61-1",
+    "group_condition": "single exercise arm; within-subject post-run sample (no separate non-exercise control group)",
+    "intervention_phase": "single bout only (no training intervention phase)",
+    "exercise_mode": "endurance running (half-marathon)",
+    "dose": "21.1 km half-marathon",
+    "control": "individual pre-run baseline (SS-R61-01) used as within-subject comparator",
+    "training_load": "NR",
+    "cointerventions": "NR",
+    "exercise_end_definition": "arrival/finish of the half-marathon",
+    "sample_role": "immediate_post",
+    "timepoint_as_reported": "post run: 15-30 min after arrival, approximately 3 h after the 11:45 a.m.-12:30 a.m. start",
+    "time_from_exercise_end_value": "15-30",
+    "time_unit": "min",
+    "time_bin": "0_to_lt30min",
+    "matrix": "PBMC (Ficoll-Paque density-gradient isolation from venous blood)",
+    "assay_platform": "droplet-based scRNA-seq (Bio-Rad ddSEQ Single-Cell Isolator, SureCell WTA 3' kit; Illumina NextSeq 500)",
+    "n_participants": 2,
+    "n_biological_samples": 2,
+    "n_cells": 2802,
+    "n_technical_replicates": "NR",
+    "n_aliquots": "NR",
+    "repeated_sampling": "same 2 donors as pre-run sample set (paired design)",
+    "pairing_structure": "paired pre/post within the same 2 donors",
+    "age_sex_stratum": "NA",
+    "preanalytics": "Identical handling to pre-run sample (p.2 §2.1)",
+    "normalization": "NR",
+    "circadian": "post-run sampling 15-30 min after arrival, ~3 h after the 11:45 a.m.-12:30 a.m. start time",
+    "missing_data": "Of 4 enrolled runners, 1 excluded at library-prep QC and 1 excluded at cell-level QC; final n=2 donors contribute to this sample set.",
+    "cell_context": "Same 9 annotated cell types as pre-run; cluster-level pseudobulk DEA (§2.5) and whole-sample pseudobulk DEA (§2.7) both performed on these cells.",
+    "source_locator": [
+     "p.2-3 §2.1 Samples Collection"
+    ],
+    "sample_notes": "Reported post-run window (15-30 min after arrival) straddles the 0_to_lt30min bin boundary; classified as 0_to_lt30min because the predominant reported range is <30 min, but the upper edge (30 min) is ambiguous – flagged in unresolved_questions.",
+    "bout_id": "BOUT-R61-1",
+    "bout_number": 1,
+    "participant_linkage": "same_participants_identified",
+    "n_donors": 2,
+    "donor_count_basis": "unique_human_donors",
+    "exercise_duration": "NR (21.1 km distance reported; completion time for the analysed donors not reported)",
+    "intensity_metric": "NR",
+    "intensity_value": "NR",
+    "within_organising_window": "within_window",
+    "_locators": {
+     "timepoint_as_reported": "p.2-3 §2.1: 'post run blood sampling was performed 15-30 min after arrival, approximately 3h after the start time (11:45-12:30 a.m.)'",
+     "n_cells": "Supplement Table_S2: post_1=954, post_2=1848 cells (sum 2802)",
+     "missing_data": "p.2 §2.2; p.3 §2.3"
+    },
+    "_confidence": "medium"
+   }
+  ],
+  "measurements": [
+   {
+    "measurement_id": "M-R61-001",
+    "report_id": "PILOT-R61",
+    "study_id": "S-R61-1",
+    "cohort_id": "C-R61-1",
+    "sample_set_ids": [
+     "SS-R61-01",
+     "SS-R61-02"
+    ],
+    "analyte_id": {
+     "original_label": "whole transcriptome (per-cluster pseudobulk)",
+     "standard_name": "NR",
+     "database_id": "NR"
+    },
+    "biological_level": "RNA_mRNA",
+    "platform": "droplet scRNA-seq (ddSEQ/STARsolo/Seurat) aggregated per annotated cluster into pseudobulk counts; DESeq2 paired DEA per cell type (§2.5)",
+    "omics_integration": "single_omics",
+    "cell_context": "9 annotated clusters analysed separately (classical/non-classical monocytes, myeloid DC, NK, CD8+NKT-like, memory CD4+T, naive CD4+T, naive B, platelets)",
+    "assay_validity": "QC: cells removed if UMI counts <200, gene counts <200, or >20% mitochondrial UMIs; genes not detected in ≥10 cells across the dataset discarded; batch/mitochondrial/cell-cycle effects corrected via Seurat SCTransform + IntegrateData (p.2 §2.3)",
+    "feature_identification": "NR (final retained gene count after the ≥10-cell filter not numerically stated)",
+    "comparison": "post-run vs pre-run, paired design, pre-run as reference level (DESeq2)",
+    "effect_measure": "log2 fold change (DESeq2), Benjamini-Hochberg-adjusted p",
+    "effect_value": "NA",
+    "effect_unit": "NA",
+    "effect_uncertainty": "Significance threshold: adjusted p<0.05 and |log2FC|>0.58",
+    "multiplicity": "Benjamini-Hochberg FDR correction across genes tested per cluster",
+    "confounding": "batch effect, mitochondrial expression and cell-cycle effect modelled as confounders and corrected (p.2 §2.3)",
+    "donor_level_inference": "Pseudobulk-per-cluster aggregation used specifically to avoid treating individual cells as independent biological replicates (p.2 §2.5); statistical unit = donor (n=2) per cluster.",
+    "missing_data": "see sample_sets.missing_data (2 of 4 enrolled donors excluded before this analysis)",
+    "null_findings": "No significantly modulated genes detected in myeloid dendritic cells or non-classical monocytes after multiple-testing correction (p.3 §3.1)",
+    "result_direction": "mixed_or_inconsistent",
+    "reported_feature_count": "23 DEGs in classical monocytes + 3 DEGs across lymphoid cell types (Table 1)",
+    "measurement_notes": "This row is the assay-level tested-universe/approach summary for the cluster-resolved pseudobulk DEA (§2.5), the paper's primary 'single-cell analysis approach'. Named-candidate rows below cover a representative subset of the tabulated significant genes; full gene×cluster transcription of Tables 1/2/S1/S4 (dozens of rows) was out of scope for this pilot pass – see unresolved_questions.",
+    "source_locator": [
+     "p.2 §2.5 Differential Expression Analysis",
+     "p.5 Table 1"
+    ],
+    "record_type": "assay_universe_summary",
+    "assay_universe_id": "AU-R61-scRNAseq-clusterDEA",
+    "marker_series_id": "NA",
+    "tested_universe_n": "NR",
+    "tested_universe_unit": "genes",
+    "tested_universe": "All expressed genes detected in ≥10 single cells across the whole dataset, ranked by log2FoldChange, tested per annotated cluster via DESeq2 (negative-binomial model, paired design)",
+    "feature_total_count": "NR",
+    "feature_total_unit": "genes",
+    "feature_universe_locator": [
+     "p.2 §2.5",
+     "p.2 §2.3 (gene filter: detected in ≥10 cells)"
+    ],
+    "candidate_selection_rule": "NA",
+    "candidate_selection_basis": "NA",
+    "candidate_prespecification_status": "NA",
+    "candidate_in_original_aims_methods": "NA",
+    "candidate_source_locator": [],
+    "supplement_availability": "accessible",
+    "supplement_sources": [
+     "R61_supp_SMS-35-e70018-s001.xlsx (Table_S1 GSEA pathways; Table_S4 pseudobulk-vs-single-cell gene overlap)"
+    ],
+    "result_status": "assay_universe_only_no_candidate_result_reported",
+    "effect_value_source": "NA",
+    "digitization_predeclared_method": "NA",
+    "digitization_software_version": "NA",
+    "figure_panel_locator": "NA",
+    "digitizer_A_value": "NA",
+    "digitizer_B_value": "NA",
+    "digitizer_A": "NA",
+    "digitizer_B": "NA",
+    "digitization_reconciled_value": "NA",
+    "digitization_notes": "NA",
+    "marker_family": "immune_cell_transcriptome",
+    "digitization_check": "NA",
+    "_locators": {},
+    "_confidence": "medium"
+   },
+   {
+    "measurement_id": "M-R61-002",
+    "report_id": "PILOT-R61",
+    "study_id": "S-R61-1",
+    "cohort_id": "C-R61-1",
+    "sample_set_ids": [
+     "SS-R61-01",
+     "SS-R61-02"
+    ],
+    "analyte_id": {
+     "original_label": "whole transcriptome (whole-sample pseudobulk, all cells as one cluster)",
+     "standard_name": "NR",
+     "database_id": "NR"
+    },
+    "biological_level": "RNA_mRNA",
+    "platform": "droplet scRNA-seq data re-analysed as simulated bulk RNA-seq (all cells pooled into a single pseudobulk sample per donor/timepoint); DESeq2 paired DEA (§2.7)",
+    "omics_integration": "single_omics",
+    "cell_context": "all cells treated as belonging to a single pseudobulk cluster (no cell-type resolution)",
+    "assay_validity": "Same QC pipeline and parameters as the cluster-resolved approach (§2.7: 'methodology and parameters used in the analyses are the same as the ones described for scRNAseq data')",
+    "feature_identification": "NR",
+    "comparison": "post-run vs pre-run, paired design, pre-run as reference level (DESeq2), whole-sample pseudobulk",
+    "effect_measure": "log2 fold change (DESeq2), Benjamini-Hochberg-adjusted p",
+    "effect_value": "NA",
+    "effect_unit": "NA",
+    "effect_uncertainty": "Significance threshold: adjusted p<0.05 and |log2FC|>0.58",
+    "multiplicity": "Benjamini-Hochberg FDR correction",
+    "confounding": "same confounders as cluster-level approach",
+    "donor_level_inference": "Whole-sample pseudobulk aggregation; statistical unit = donor (n=2); authors note this approach can gain power for some genes but loses cell-type-specific power for others (p.8 Discussion)",
+    "missing_data": "see sample_sets.missing_data",
+    "null_findings": "Results broadly concordant with the single-cell approach but 'indicate a loss of power to detect modulated pathways when compared to a single-cell approach' (p.8)",
+    "result_direction": "mixed_or_inconsistent",
+    "reported_feature_count": "27 DEGs (Table 2); 12 of these overlap with the single-cell approach (Table S4)",
+    "measurement_notes": "Second, distinct assay-level approach ('Pseudo-Bulk Analysis', §2.7) simulating a conventional bulk RNAseq experiment from the same scRNAseq data; kept as a separate assay_universe_id from M-R61-001 because the unit of analysis (whole sample vs per-cluster) differs.",
+    "source_locator": [
+     "p.2 §2.7 Pseudo-Bulk Analysis",
+     "p.6 §3.5",
+     "p.8 Table 2"
+    ],
+    "record_type": "assay_universe_summary",
+    "assay_universe_id": "AU-R61-scRNAseq-wholeSamplePseudobulk",
+    "marker_series_id": "NA",
+    "tested_universe_n": "NR",
+    "tested_universe_unit": "genes",
+    "tested_universe": "All expressed genes passing the same ≥10-cell detection filter, tested on whole-sample (single-cluster) pseudobulk counts via DESeq2",
+    "feature_total_count": "NR",
+    "feature_total_unit": "genes",
+    "feature_universe_locator": [
+     "p.2 §2.7"
+    ],
+    "candidate_selection_rule": "NA",
+    "candidate_selection_basis": "NA",
+    "candidate_prespecification_status": "NA",
+    "candidate_in_original_aims_methods": "NA",
+    "candidate_source_locator": [],
+    "supplement_availability": "accessible",
+    "supplement_sources": [
+     "R61_supp_SMS-35-e70018-s001.xlsx (Table_S4)"
+    ],
+    "result_status": "assay_universe_only_no_candidate_result_reported",
+    "effect_value_source": "NA",
+    "digitization_predeclared_method": "NA",
+    "digitization_software_version": "NA",
+    "figure_panel_locator": "NA",
+    "digitizer_A_value": "NA",
+    "digitizer_B_value": "NA",
+    "digitizer_A": "NA",
+    "digitizer_B": "NA",
+    "digitization_reconciled_value": "NA",
+    "digitization_notes": "NA",
+    "marker_family": "immune_cell_transcriptome",
+    "digitization_check": "NA",
+    "_locators": {},
+    "_confidence": "medium"
+   },
+   {
+    "measurement_id": "M-R61-003",
+    "report_id": "PILOT-R61",
+    "study_id": "S-R61-1",
+    "cohort_id": "C-R61-1",
+    "sample_set_ids": [
+     "SS-R61-01",
+     "SS-R61-02"
+    ],
+    "analyte_id": {
+     "original_label": "CDK11A",
+     "standard_name": "CDK11A",
+     "database_id": "NR"
+    },
+    "biological_level": "RNA_mRNA",
+    "platform": "scRNA-seq, cluster-resolved pseudobulk DESeq2 (§2.5); also significant in whole-sample pseudobulk (Table 2)",
+    "omics_integration": "single_omics",
+    "cell_context": "Downregulated in most lymphoid-lineage cell types: memory CD4+ T, naive B, NK and 'Unknown' clusters (Table 1); also in whole-sample pseudobulk (Table 2)",
+    "assay_validity": "adjusted p<0.05, |log2FC|>0.58 (DESeq2)",
+    "feature_identification": "NR",
+    "comparison": "post-run vs pre-run (lymphoid clusters; also whole-sample pseudobulk)",
+    "effect_measure": "log2 fold change (DESeq2)",
+    "effect_value": "-2.86 (memory CD4+ T); -3.41 (naive B); -2.73 (NK); -3.20 (Unknown); -3.53 (whole-sample pseudobulk)",
+    "effect_unit": "log2 fold change",
+    "effect_uncertainty": "whole-sample pseudobulk adjusted p=1.09E-20 (Table 2); per-cluster adjusted p<0.05 (exact values not given per cluster in Table 1)",
+    "multiplicity": "Benjamini-Hochberg FDR correction",
+    "confounding": "see M-R61-001",
+    "donor_level_inference": "pseudobulk per donor (n=2)",
+    "missing_data": "NR",
+    "null_findings": "Not significant in classical monocytes or platelets (Table 1 shows '—')",
+    "result_direction": "decrease",
+    "reported_feature_count": "NA",
+    "measurement_notes": "Authors highlight CDK11A ('plays a role in cell cycle progression, cytokinesis and apoptosis') as downregulated across most lymphoid types and interpret this as increased lymphoid-cell survival post-exercise (p.7 Discussion).",
+    "source_locator": [
+     "p.5 Table 1",
+     "p.8 Table 2",
+     "p.7 Discussion"
+    ],
+    "record_type": "named_immune_candidate",
+    "assay_universe_id": "AU-R61-scRNAseq-clusterDEA",
+    "marker_series_id": "NA",
+    "tested_universe_n": "NA",
+    "tested_universe_unit": "NA",
+    "tested_universe": "NA",
+    "feature_total_count": "NA",
+    "feature_total_unit": "NA",
+    "feature_universe_locator": [],
+    "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+    "candidate_selection_basis": "original_methods",
+    "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+    "candidate_in_original_aims_methods": "yes – part of the pre-specified whole-transcriptome DEA pipeline (§2.5)",
+    "candidate_source_locator": [
+     "p.5 Table 1",
+     "p.8 Table 2"
+    ],
+    "supplement_availability": "accessible",
+    "supplement_sources": [
+     "R61_supp_SMS-35-e70018-s001.xlsx Table_S4"
+    ],
+    "result_status": "reported_significant",
+    "effect_value_source": "reported_main_text_or_table",
+    "digitization_predeclared_method": "NA",
+    "digitization_software_version": "NA",
+    "figure_panel_locator": "NA",
+    "digitizer_A_value": "NA",
+    "digitizer_B_value": "NA",
+    "digitizer_A": "NA",
+    "digitizer_B": "NA",
+    "digitization_reconciled_value": "NA",
+    "digitization_notes": "NA",
+    "marker_family": "immune_cell_transcriptome",
+    "digitization_check": "NA",
+    "_locators": {
+     "effect_value": "Table 1 (per-cluster log2FC); Table 2 row CDK11A, LogFC=-3.53, adj p=1.09E-20"
+    },
+    "_confidence": "high"
+   },
+   {
+    "measurement_id": "M-R61-004",
+    "report_id": "PILOT-R61",
+    "study_id": "S-R61-1",
+    "cohort_id": "C-R61-1",
+    "sample_set_ids": [
+     "SS-R61-01",
+     "SS-R61-02"
+    ],
+    "analyte_id": {
+     "original_label": "IL1B",
+     "standard_name": "IL1B",
+     "database_id": "NR"
+    },
+    "biological_level": "RNA_mRNA",
+    "platform": "scRNA-seq, cluster-resolved pseudobulk DESeq2 (classical monocytes)",
+    "omics_integration": "single_omics",
+    "cell_context": "classical monocytes",
+    "assay_validity": "adjusted p<0.05, |log2FC|>0.58",
+    "feature_identification": "NR",
+    "comparison": "post-run vs pre-run, classical monocytes",
+    "effect_measure": "log2 fold change (DESeq2)",
+    "effect_value": "-0.93",
+    "effect_unit": "log2 fold change",
+    "effect_uncertainty": "adjusted p<0.05 (exact value not individually given in Table 1)",
+    "multiplicity": "Benjamini-Hochberg FDR correction",
+    "confounding": "see M-R61-001",
+    "donor_level_inference": "pseudobulk per donor (n=2)",
+    "missing_data": "NR",
+    "null_findings": "NA (reported significant)",
+    "result_direction": "decrease",
+    "reported_feature_count": "NA",
+    "measurement_notes": "IL1B (interleukin-1β family member) downregulated in classical monocytes post-run; discussed alongside LYZ and PTGS2 as markers of a 'decreased inflammatory response' (p.5-6 Discussion/Results).",
+    "source_locator": [
+     "p.5 Table 1",
+     "p.3 §3.1"
+    ],
+    "record_type": "named_immune_candidate",
+    "assay_universe_id": "AU-R61-scRNAseq-clusterDEA",
+    "marker_series_id": "NA",
+    "tested_universe_n": "NA",
+    "tested_universe_unit": "NA",
+    "tested_universe": "NA",
+    "feature_total_count": "NA",
+    "feature_total_unit": "NA",
+    "feature_universe_locator": [],
+    "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+    "candidate_selection_basis": "original_methods",
+    "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+    "candidate_in_original_aims_methods": "yes",
+    "candidate_source_locator": [
+     "p.5 Table 1"
+    ],
+    "supplement_availability": "accessible",
+    "supplement_sources": [
+     "R61_supp_SMS-35-e70018-s001.xlsx Table_S1"
+    ],
+    "result_status": "reported_significant",
+    "effect_value_source": "reported_main_text_or_table",
+    "digitization_predeclared_method": "NA",
+    "digitization_software_version": "NA",
+    "figure_panel_locator": "NA",
+    "digitizer_A_value": "NA",
+    "digitizer_B_value": "NA",
+    "digitizer_A": "NA",
+    "digitizer_B": "NA",
+    "digitization_reconciled_value": "NA",
+    "digitization_notes": "NA",
+    "marker_family": "cytokine_or_inflammatory_mediator",
+    "digitization_check": "NA",
+    "_locators": {
+     "effect_value": "Table 1, IL1B row, Classical monocytes column = -0.93"
+    },
+    "_confidence": "high"
+   },
+   {
+    "measurement_id": "M-R61-005",
+    "report_id": "PILOT-R61",
+    "study_id": "S-R61-1",
+    "cohort_id": "C-R61-1",
+    "sample_set_ids": [
+     "SS-R61-01",
+     "SS-R61-02"
+    ],
+    "analyte_id": {
+     "original_label": "CCL3 / CCL4 (platelets)",
+     "standard_name": "CCL3; CCL4",
+     "database_id": "NR"
+    },
+    "biological_level": "RNA_mRNA",
+    "platform": "scRNA-seq, cluster-resolved pseudobulk DESeq2 (platelets)",
+    "omics_integration": "single_omics",
+    "cell_context": "platelets (megakaryocyte-lineage, co-isolated with PBMCs, not a leukocyte population)",
+    "assay_validity": "adjusted p<0.05, |log2FC|>0.58",
+    "feature_identification": "NR",
+    "comparison": "post-run vs pre-run, platelets",
+    "effect_measure": "log2 fold change (DESeq2)",
+    "effect_value": "CCL3: -1.84; CCL4: -1.73",
+    "effect_unit": "log2 fold change",
+    "effect_uncertainty": "adjusted p<0.05 (exact values not individually given in Table 1)",
+    "multiplicity": "Benjamini-Hochberg FDR correction",
+    "confounding": "see M-R61-001",
+    "donor_level_inference": "pseudobulk per donor (n=2)",
+    "missing_data": "Platelet abundance not significantly different pre/post (p=0.09 trend only), so authors judge DEA/pathway results for platelets 'not affected by possible biases linked to abundance differences' (p.7-8)",
+    "null_findings": "NA (reported significant)",
+    "result_direction": "decrease",
+    "reported_feature_count": "NA",
+    "measurement_notes": "Authors explicitly flag platelets are not canonical immune cells but were incidentally retained/analysed as a PBMC-prep by-product and interpreted as 'proxies for megakaryocyte's response to endurance exercise' (p.6-7).",
+    "source_locator": [
+     "p.5 Table 1",
+     "p.4 §3.3"
+    ],
+    "record_type": "named_immune_candidate",
+    "assay_universe_id": "AU-R61-scRNAseq-clusterDEA",
+    "marker_series_id": "NA",
+    "tested_universe_n": "NA",
+    "tested_universe_unit": "NA",
+    "tested_universe": "NA",
+    "feature_total_count": "NA",
+    "feature_total_unit": "NA",
+    "feature_universe_locator": [],
+    "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+    "candidate_selection_basis": "original_methods",
+    "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+    "candidate_in_original_aims_methods": "yes",
+    "candidate_source_locator": [
+     "p.5 Table 1"
+    ],
+    "supplement_availability": "accessible",
+    "supplement_sources": [
+     "R61_supp_SMS-35-e70018-s001.xlsx Table_S1"
+    ],
+    "result_status": "reported_significant",
+    "effect_value_source": "reported_main_text_or_table",
+    "digitization_predeclared_method": "NA",
+    "digitization_software_version": "NA",
+    "figure_panel_locator": "NA",
+    "digitizer_A_value": "NA",
+    "digitizer_B_value": "NA",
+    "digitizer_A": "NA",
+    "digitizer_B": "NA",
+    "digitization_reconciled_value": "NA",
+    "digitization_notes": "NA",
+    "marker_family": "other",
+    "digitization_check": "NA",
+    "_locators": {
+     "cell_context": "p.4 §3.3 'Platelets Indicate Activation of the Coagulation Process'; platelets = megakaryocyte lineage, not leukocytes",
+     "effect_value": "Table 1, CCL3/CCL4 rows, Platelets column"
+    },
+    "_confidence": "medium"
+   },
+   {
+    "measurement_id": "M-R61-006",
+    "report_id": "PILOT-R61",
+    "study_id": "S-R61-1",
+    "cohort_id": "C-R61-1",
+    "sample_set_ids": [
+     "SS-R61-01",
+     "SS-R61-02"
+    ],
+    "analyte_id": {
+     "original_label": "NKG7",
+     "standard_name": "NKG7",
+     "database_id": "NR"
+    },
+    "biological_level": "RNA_mRNA",
+    "platform": "whole-sample pseudobulk DESeq2 (§2.7)",
+    "omics_integration": "single_omics",
+    "cell_context": "whole PBMC sample (not cell-type resolved)",
+    "assay_validity": "adjusted p<0.05, |log2FC|>0.58",
+    "feature_identification": "NR",
+    "comparison": "post-run vs pre-run, whole-sample pseudobulk",
+    "effect_measure": "log2 fold change (DESeq2)",
+    "effect_value": "-1.10",
+    "effect_unit": "log2 fold change",
+    "effect_uncertainty": "adjusted p=5.07E-03",
+    "multiplicity": "Benjamini-Hochberg FDR correction",
+    "confounding": "see M-R61-002",
+    "donor_level_inference": "pseudobulk per donor (n=2)",
+    "missing_data": "NR",
+    "null_findings": "NA (reported significant); not detected as significant in the cluster-resolved single-cell approach (one of 15 genes found only via whole-sample pseudobulk, p.4 §3.5)",
+    "result_direction": "decrease",
+    "reported_feature_count": "NA",
+    "measurement_notes": "NKG7 ('essential for cytotoxic degranulation of NK cells and CD8+ T cells') found modulated only via the whole-sample pseudobulk approach, illustrating the paper's point that pseudobulk can reveal findings missed by the cluster-resolved single-cell approach (p.4 §3.5).",
+    "source_locator": [
+     "p.8 Table 2",
+     "p.4 §3.5"
+    ],
+    "record_type": "named_immune_candidate",
+    "assay_universe_id": "AU-R61-scRNAseq-wholeSamplePseudobulk",
+    "marker_series_id": "NA",
+    "tested_universe_n": "NA",
+    "tested_universe_unit": "NA",
+    "tested_universe": "NA",
+    "feature_total_count": "NA",
+    "feature_total_unit": "NA",
+    "feature_universe_locator": [],
+    "candidate_selection_rule": "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+    "candidate_selection_basis": "original_methods",
+    "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+    "candidate_in_original_aims_methods": "yes",
+    "candidate_source_locator": [
+     "p.8 Table 2"
+    ],
+    "supplement_availability": "accessible",
+    "supplement_sources": [
+     "R61_supp_SMS-35-e70018-s001.xlsx Table_S4"
+    ],
+    "result_status": "reported_significant",
+    "effect_value_source": "reported_main_text_or_table",
+    "digitization_predeclared_method": "NA",
+    "digitization_software_version": "NA",
+    "figure_panel_locator": "NA",
+    "digitizer_A_value": "NA",
+    "digitizer_B_value": "NA",
+    "digitizer_A": "NA",
+    "digitizer_B": "NA",
+    "digitization_reconciled_value": "NA",
+    "digitization_notes": "NA",
+    "marker_family": "NK_count_or_cytotoxicity",
+    "digitization_check": "NA",
+    "_locators": {
+     "effect_value": "Table 2, NKG7 row: LogFC=-1.10, adj p=5.07E-03"
+    },
+    "_confidence": "high"
+   },
+   {
+    "measurement_id": "M-R61-007",
+    "report_id": "PILOT-R61",
+    "study_id": "S-R61-1",
+    "cohort_id": "C-R61-1",
+    "sample_set_ids": [
+     "SS-R61-01",
+     "SS-R61-02"
+    ],
+    "analyte_id": {
+     "original_label": "GO:0071347 cellular response to interleukin-1; GO:0048245 eosinophil chemotaxis",
+     "standard_name": "NR",
+     "database_id": "GO:0071347; GO:0048245"
+    },
+    "biological_level": "other",
+    "platform": "clusterProfiler GSEA on whole-sample pseudobulk ranked gene list (§2.5/2.7)",
+    "omics_integration": "single_omics",
+    "cell_context": "whole-sample pseudobulk",
+    "assay_validity": "gene sets size 3-800 genes; 100000 permutations; Benjamini-Hochberg adjusted p<0.05 (§2.5)",
+    "feature_identification": "NR",
+    "comparison": "post-run vs pre-run, GSEA on whole-sample pseudobulk ranked list",
+    "effect_measure": "normalized enrichment score (NES)",
+    "effect_value": "GO:0071347 NES=-2.22; GO:0048245 NES=-1.92",
+    "effect_unit": "NES (dimensionless)",
+    "effect_uncertainty": "GO:0071347: p=2.03E-05, p-adj=0.04, q=0.04; GO:0048245: p=2.08E-05, p-adj=0.04, q=0.04 (Table 3)",
+    "multiplicity": "Benjamini-Hochberg FDR correction across tested gene sets",
+    "confounding": "see M-R61-002",
+    "donor_level_inference": "pseudobulk per donor (n=2)",
+    "missing_data": "NR",
+    "null_findings": "NA (both pathways reported significant/suppressed)",
+    "result_direction": "decrease",
+    "reported_feature_count": "2 significantly modulated GO pathways in the whole-sample pseudobulk GSEA (Table 3); 24 related pathways activated in lymphoid cells and 6-6-4 in myeloid cells in the cluster-resolved GSEA (Figure 2, Table S1)",
+    "measurement_notes": "Pathway-level (GO enrichment), not a single-analyte measurement; per manual §'GO/pathway database results are annotation/hypothesis, not measured immune function'. Included here as a reported-result example with exact locatable statistics; the larger cluster-resolved GSEA pathway set (Figure 2/Table S1) was not individually transcribed (pilot scope).",
+    "source_locator": [
+     "p.8 Table 3",
+     "p.6 Figure 2"
+    ],
+    "record_type": "reported_result_summary",
+    "assay_universe_id": "AU-R61-scRNAseq-wholeSamplePseudobulk",
+    "marker_series_id": "NA",
+    "tested_universe_n": "NR",
+    "tested_universe_unit": "gene sets",
+    "tested_universe": "clusterProfiler gene sets (size 3-800 genes) from org.Hs.eg.db annotation",
+    "feature_total_count": "NR",
+    "feature_total_unit": "gene sets",
+    "feature_universe_locator": [
+     "p.2 §2.5"
+    ],
+    "candidate_selection_rule": "other_source_defined_rule",
+    "candidate_selection_basis": "original_methods",
+    "candidate_prespecification_status": "stated_in_original_aims_or_methods_no_registration_required",
+    "candidate_in_original_aims_methods": "yes – GSEA pre-specified as part of the DEA pipeline",
+    "candidate_source_locator": [
+     "p.8 Table 3"
+    ],
+    "supplement_availability": "accessible",
+    "supplement_sources": [
+     "R61_supp_SMS-35-e70018-s001.xlsx Table_S1, Table_S3"
+    ],
+    "result_status": "reported_significant",
+    "effect_value_source": "reported_main_text_or_table",
+    "digitization_predeclared_method": "NA",
+    "digitization_software_version": "NA",
+    "figure_panel_locator": "NA",
+    "digitizer_A_value": "NA",
+    "digitizer_B_value": "NA",
+    "digitizer_A": "NA",
+    "digitizer_B": "NA",
+    "digitization_reconciled_value": "NA",
+    "digitization_notes": "NA",
+    "marker_family": "immune_cell_transcriptome",
+    "digitization_check": "NA",
+    "_locators": {
+     "effect_value": "Table 3 rows GO:0071347 and GO:0048245"
+    },
+    "_confidence": "high"
+   }
+  ],
+  "precision_validation": [
+   {
+    "precision_record_id": "PV-R61-001",
+    "report_id": "PILOT-R61",
+    "study_id": "S-R61-1",
+    "cohort_id": "C-R61-1",
+    "measurement_id": "NA",
+    "precision_domain": "analytical_reliability",
+    "evidence_state": "not_demonstrated",
+    "relationship_tags": [
+     "NR"
+    ],
+    "response_evidence": "NA",
+    "functional_evidence": "NA",
+    "replication": "No technical replicates, no repeat library prep, no spike-ins or reliability metrics (ICC/CV) reported.",
+    "clinical_endpoint": "NA",
+    "temporal_order": "NA",
+    "prediction_design": "NA",
+    "prediction_metrics": "NA",
+    "leakage_control": "NA",
+    "individualization": "NA",
+    "field_feasibility": "NA",
+    "source_locator": [
+     "p.2 §2.2-2.3 (QC thresholds described; no reliability/replicate metrics reported)"
+    ],
+    "evidence_notes": "QC pipeline (UMI/gene/mito thresholds, batch correction) is described but no formal analytical-reliability statistic (repeat measurement, ICC, CV) is reported for the assay itself.",
+    "intended_use": "mechanistic_research",
+    "linkage_subtype": "NR",
+    "validation_use_subtype": "NR",
+    "validation_split": "NA",
+    "_locators": {},
+    "_confidence": "medium"
+   },
+   {
+    "precision_record_id": "PV-R61-002",
+    "report_id": "PILOT-R61",
+    "study_id": "S-R61-1",
+    "cohort_id": "C-R61-1",
+    "measurement_id": "NA",
+    "precision_domain": "temporal_validity",
+    "evidence_state": "evidence_present",
+    "relationship_tags": [
+     "NR"
+    ],
+    "response_evidence": "Pre-run baseline and a single immediate post-run (15-30 min after arrival) sample; both within the organising window (pre_exercise_baseline and 0_to_lt30min bins).",
+    "functional_evidence": "NA",
+    "replication": "NA",
+    "clinical_endpoint": "NA",
+    "temporal_order": "NA",
+    "prediction_design": "NA",
+    "prediction_metrics": "NA",
+    "leakage_control": "NA",
+    "individualization": "NA",
+    "field_feasibility": "NA",
+    "source_locator": [
+     "p.2-3 §2.1"
+    ],
+    "evidence_notes": "Only one post-exercise time bin sampled (0_to_lt30min); no further recovery timepoints (e.g., 24-72h) to chart the return-to-baseline trajectory noted by the authors as a limitation relative to Yu et al. [14] (>24h to reach baseline, p.9).",
+    "intended_use": "acute_response_monitoring",
+    "linkage_subtype": "NR",
+    "validation_use_subtype": "NR",
+    "validation_split": "NA",
+    "_locators": {},
+    "_confidence": "high"
+   },
+   {
+    "precision_record_id": "PV-R61-003",
+    "report_id": "PILOT-R61",
+    "study_id": "S-R61-1",
+    "cohort_id": "C-R61-1",
+    "measurement_id": "NA",
+    "precision_domain": "immune_specificity",
+    "evidence_state": "evidence_present",
+    "relationship_tags": [
+     "NR"
+    ],
+    "response_evidence": "NA",
+    "functional_evidence": "NA",
+    "replication": "NA",
+    "clinical_endpoint": "NA",
+    "temporal_order": "NA",
+    "prediction_design": "NA",
+    "prediction_metrics": "NA",
+    "leakage_control": "NA",
+    "individualization": "NA",
+    "field_feasibility": "NA",
+    "source_locator": [
+     "p.3 §2.4; Figure 1"
+    ],
+    "evidence_notes": "9 immune/megakaryocyte cell types annotated via SCType marker database, giving cell-type-specific transcriptomic resolution; however an 'Unknown' cluster (substantial fraction, see Figure 3) and co-isolated non-leukocyte platelets reduce overall specificity.",
+    "intended_use": "mechanistic_research",
+    "linkage_subtype": "NR",
+    "validation_use_subtype": "NR",
+    "validation_split": "NA",
+    "_locators": {},
+    "_confidence": "medium"
+   },
+   {
+    "precision_record_id": "PV-R61-004",
+    "report_id": "PILOT-R61",
+    "study_id": "S-R61-1",
+    "cohort_id": "C-R61-1",
+    "measurement_id": "NA",
+    "precision_domain": "individualization",
+    "evidence_state": "not_demonstrated",
+    "relationship_tags": [
+     "NR"
+    ],
+    "response_evidence": "NA",
+    "functional_evidence": "NA",
+    "replication": "NA",
+    "clinical_endpoint": "NA",
+    "temporal_order": "NA",
+    "prediction_design": "NA",
+    "prediction_metrics": "NA",
+    "leakage_control": "NA",
+    "individualization": "No repeated-baseline or repeated-bout data; n=2 analysed donors; authors explicitly state the small sample 'might restrict the generalizability and reliability of the results' and call for inclusion of more individuals in future work (p.9).",
+    "field_feasibility": "NA",
+    "source_locator": [
+     "p.8 Discussion (limitation paragraph)"
+    ],
+    "evidence_notes": "Individual-level variation is observed qualitatively (per-donor cell/gene differences implied by small n) but not quantified (no ICC/CV/response-heterogeneity statistic); authors frame results only as a 'complex dynamics attributable to different actors', not an individualised marker claim.",
+    "intended_use": "mechanistic_research",
+    "linkage_subtype": "NR",
+    "validation_use_subtype": "NR",
+    "validation_split": "NA",
+    "_locators": {},
+    "_confidence": "high"
+   },
+   {
+    "precision_record_id": "PV-R61-005",
+    "report_id": "PILOT-R61",
+    "study_id": "S-R61-1",
+    "cohort_id": "C-R61-1",
+    "measurement_id": "NA",
+    "precision_domain": "functional_clinical_linkage",
+    "evidence_state": "not_demonstrated",
+    "relationship_tags": [
+     "co_measured_without_association_test"
+    ],
+    "response_evidence": "NA",
+    "functional_evidence": "No direct in vitro/ex vivo/in vivo immune-function assays performed; GO pathway enrichment (viral process, stress response, coagulation pathways) is annotation-level, not a measured function per the manual's rule.",
+    "replication": "NA",
+    "clinical_endpoint": "none_reported",
+    "temporal_order": "NA",
+    "prediction_design": "NA",
+    "prediction_metrics": "NA",
+    "leakage_control": "NA",
+    "individualization": "NA",
+    "field_feasibility": "NA",
+    "source_locator": [
+     "p.6 Figure 2; p.8 Table 3"
+    ],
+    "evidence_notes": "No clinical/infection follow-up and no functional assay; only transcriptomic/pathway-annotation evidence, interpreted narratively as supporting 'open window' or 'immunoenhancement' hypotheses.",
+    "intended_use": "mechanistic_research",
+    "linkage_subtype": "no_linkage_evidence",
+    "validation_use_subtype": "NR",
+    "validation_split": "NA",
+    "_locators": {},
+    "_confidence": "high"
+   },
+   {
+    "precision_record_id": "PV-R61-006",
+    "report_id": "PILOT-R61",
+    "study_id": "S-R61-1",
+    "cohort_id": "C-R61-1",
+    "measurement_id": "NA",
+    "precision_domain": "independent_validation_and_use",
+    "evidence_state": "not_demonstrated",
+    "relationship_tags": [
+     "NR"
+    ],
+    "response_evidence": "NA",
+    "functional_evidence": "NA",
+    "replication": "Single cohort, single report; no technical or biological replication beyond the paired n=2 donors. Authors narratively note concordance with prior literature (Yu et al. [14], Condeminas et al. [15], Maqueda et al. [29]) for specific genes/pathways, but this is cross-study narrative corroboration, not a formal independent validation of this report's candidates.",
+    "clinical_endpoint": "NA",
+    "temporal_order": "NA",
+    "prediction_design": "NA",
+    "prediction_metrics": "NA",
+    "leakage_control": "NA",
+    "individualization": "NA",
+    "field_feasibility": "NA",
+    "source_locator": [
+     "p.7-9 Discussion"
+    ],
+    "evidence_notes": "No independent cohort or external dataset formally re-tests this report's specific DEGs/pathways; validation_split=none.",
+    "intended_use": "mechanistic_research",
+    "linkage_subtype": "NR",
+    "validation_use_subtype": "no_validation_or_use_test",
+    "validation_split": "none",
+    "_locators": {},
+    "_confidence": "high"
+   },
+   {
+    "precision_record_id": "PV-R61-007",
+    "report_id": "PILOT-R61",
+    "study_id": "S-R61-1",
+    "cohort_id": "C-R61-1",
+    "measurement_id": "NA",
+    "precision_domain": "feasibility",
+    "evidence_state": "evidence_present",
+    "relationship_tags": [
+     "NR"
+    ],
+    "response_evidence": "NA",
+    "functional_evidence": "NA",
+    "replication": "NA",
+    "clinical_endpoint": "NA",
+    "temporal_order": "NA",
+    "prediction_design": "NA",
+    "prediction_metrics": "NA",
+    "leakage_control": "NA",
+    "individualization": "NA",
+    "field_feasibility": "'we analyzed a small number of samples due to the high cost of single-cell sequencing' (p.9 Perspective) – explicit cost/throughput barrier reported for scRNAseq as a field method.",
+    "source_locator": [
+     "p.9 Perspective"
+    ],
+    "evidence_notes": "Authors explicitly discuss cost as a practical constraint limiting sample size/throughput, a direct feasibility statement (not a formal field-use test).",
+    "intended_use": "mechanistic_research",
+    "linkage_subtype": "NR",
+    "validation_use_subtype": "NR",
+    "validation_split": "NA",
+    "_locators": {},
+    "_confidence": "high"
+   }
+  ],
+  "extraction_provenance": [
+   {
+    "provenance_id": "PROV-PILOT-R61-B",
+    "report_id": "PILOT-R61",
+    "extractor_a_b": {
+     "extractor_A": "NR",
+     "extractor_B": "AI stand-in for reviewer B (Claude Sonnet 5)",
+     "independent_entry_complete": "yes (this file is an independent entry by reviewer B's slot, not cross-checked against reviewer C's folder)",
+     "verification_complete": "NR"
+    },
+    "adjudication": "NA (not yet compared against reviewer C; this is a pilot, not a reconciled record)",
+    "ai_assistance": {
+     "used": "yes",
+     "tool_model_date": "Claude Sonnet 5 (model id claude-sonnet-5), 2026-10-05",
+     "task_prompt_version": "10-report charting pilot instructions, reviewer-B stand-in, 2026-10-05",
+     "output_checked_by_human": "NR (pending human review as part of the pilot comparison process)"
+    },
+    "open_data": "Sequencing data deposited at European Nucleotide Archive, project PRJEB76303 (p.9 Data Availability Statement); no participant-level clinical/demographic dataset released.",
+    "integrity_status": "Not independently checked for corrections/retractions within this task's scope.",
+    "recorded_at": "2026-10-05T05:09:51Z",
+    "provenance_notes": "AI (Claude Sonnet 5) performed full-text extraction only; no eligibility/screening decision was made by the AI (see reports.reviewer_notes and eligibility_opinion below). Supplementary files R61_supp_SMS-35-e70018-s001.xlsx and -s002.docx were opened programmatically (openpyxl/python-docx) to resolve donor/cell-count and QC fields.",
+    "_locators": {},
+    "_confidence": "high"
+   }
+  ]
+ },
+ "eligibility_opinion": {
+  "scope_stream": "A_core_acute",
+  "rationale": "Single identifiable acute bout (21.1 km half-marathon, April 2019) with a pre-run baseline and an immediate post-run sample (15-30 min after arrival; p.2-3 §2.1), i.e. within the 0-72 h organising window with no exposure threshold required. Direct immune-cell transcriptome (scRNAseq of PBMCs; p.2 §2.1-2.4) satisfies the immune-linkage rule as immune_cell_omics."
+ },
+ "unresolved_questions": [
+  "Final analysed donor count (n=2) is only inferable by cross-referencing two separate QC-exclusion sentences in §2.2 and §2.3 with the supplement's sample list (Table_S2: pre_1/pre_2/post_1/post_2) and cell-count arithmetic (299+1110+954+1848=4211); the main text never states the final n explicitly, and it is not fully certain the two sentences describe two distinct runners rather than the same runner described twice. Manual should require reviewers to flag when final analysed n must be back-calculated from a supplement rather than stated directly.",
+  "Post-run sampling window ('15-30 min after arrival') straddles the 0_to_lt30min/30min_to_lt3h time_bin boundary; the manual does not specify how to bin a reported range that spans a bin edge.",
+  "marker_family vocabulary has no explicit category for non-leukocyte blood-cell transcriptome (platelets/megakaryocyte lineage); used 'other' for platelet CCL3/CCL4 rows but this is a judgement call, not a defined rule.",
+  "The omics 'record every named candidate regardless of significance' rule, combined with this report's multiple DEA approaches (cluster-resolved single-cell + whole-sample pseudobulk) and multiple tables (Table 1: 23 genes x up to 5 cell types; Table 2: 27 genes; Table S1/S4), implies dozens of measurement rows; this pilot recorded only a representative subset (assay-universe summaries + ~5 named-candidate examples) rather than every row, which is a feasibility/row-volume issue the manual should address for omics reports.",
+  "reports.version_date / version_label: no explicit online-first date or version label distinct from the Accepted date (7 Jan 2025) and issue pagination (e70018) is given in the text."
+ ],
+ "minutes_spent": 75
+}
