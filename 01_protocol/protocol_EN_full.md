@@ -1,7 +1,7 @@
 # Precision biomarkers of the exercise-induced immune “open window”: a scoping review of the validation readiness of conventional and omics candidates
 
-**Protocol version:** 3.0 (draft for team freeze) — 4 October 2026  
-**Status:** Pre-archive working protocol; formal searches, screening and synthesis have not begun.  
+**Protocol version:** 3.0 — designed 4 October 2026; frozen by the team on 5 October 2026 for public archiving (GitHub Release v3.0, Zenodo DOI assigned on release)  
+**Status:** Frozen protocol for public archiving; pilots, formal searches, screening and synthesis have not begun.  
 **Target journal:** *Frontiers in Immunology*, under the Systematic Review article type, which includes scoping reviews; specialty section to be selected. Submission will include the PRISMA-ScR checklist and flow diagram as supplementary material and an AI-use disclosure in both Methods and Acknowledgments stating tool name, version, model and source.  
 **Registration and archiving:** Public GitHub repository with a GitHub Release archived by Zenodo, which assigns a dated, immutable version DOI and a concept DOI on release. No release exists, no DOI has been assigned, and this project has never been registered in any registry; PROSPERO does not accept scoping reviews and OSF Registries is no longer the planned route.  
 **Team:** Access to all five databases and a second human reviewer are confirmed. Team members are identified by codes: A (principal investigator, independent PRESS reviewer, analysis and writing lead), B and C (independent reviewers), D (search lead, data manager, adjudicator). Funding and competing-interest declarations remain to be supplied.

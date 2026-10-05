@@ -1,7 +1,7 @@
 {
   "protocol_version": "3.0",
   "protocol_date": "2026-10-04",
-  "status": "pre_archive_working_protocol",
+  "status": "frozen_for_archive_release_2026-10-05",
   "confirmed_resources": {
     "databases": [
       "PubMed",
@@ -61,7 +61,7 @@
     "platform_validation": "pubmed_done_licensed_platforms_pending",
     "PRESS_review": "accepted_with_conditions_2026-10-04",
     "protocol_v3_revision": "3.0 draft completed 2026-10-04 (PRE-002): EN source, governance files, CN protocol, 03-06 appendices, build chain, validator, workbook generator, LICENSE and Zenodo metadata aligned; cross-file consistency pass 2026-10-04; team freeze pending",
-    "team_freeze": "pending",
+    "team_freeze": "done_2026-10-05",
     "archive_release_zenodo": "pending",
     "random_50_screening_pilot": "pending",
     "purposeful_10_charting_pilot": "pending",
@@ -84,6 +84,7 @@
     "2026-10-04 protocol_EN_full.md revised to 3.0 (draft for team freeze); registration_draft.md renamed archive_release_record.md; version 3.0 date becomes the actual team freeze date at release.",
     "registration.id/url/submitted_at are kept null for the validator; release_tag, release_commit, concept_doi, version_doi and repository_url are filled only after the Zenodo-archived release exists.",
     "2026-10-04 (A): team members are identified by codes A-D in all project files; real names/affiliations are entered only into Zenodo/CITATION metadata immediately before release. Citation verification of newly added references is deferred to the manuscript stage; AI tool version numbers are not recorded at protocol stage.",
-    "2026-10-04 (A): amendment PRE-003 (included in v3.0 release) makes the post-exercise/acute-bout T-block a required search concept, E AND (I OR O) AND T (design contract §9 supersedes §3 and 8.3a), after PubMed parser validation (union without T 255,019 records, ~8,500 two-reviewer person-hours; with T ~15,900 records, 10/10 positive PubMed seeds). PRESS accepted with conditions: no infection-outcome terms; train* retained until the pilot sample test. Mitigations re-tested in the pilot: >=30 positive seeds (>=5 numeric-only timing), T-free random-sample sensitivity run, citation chasing. Licensed platforms (WoS, Scopus, Embase, SPORTDiscus) pending D login."
+    "2026-10-04 (A): amendment PRE-003 (included in v3.0 release) makes the post-exercise/acute-bout T-block a required search concept, E AND (I OR O) AND T (design contract §9 supersedes §3 and 8.3a), after PubMed parser validation (union without T 255,019 records, ~8,500 two-reviewer person-hours; with T ~15,900 records, 10/10 positive PubMed seeds). PRESS accepted with conditions: no infection-outcome terms; train* retained until the pilot sample test. Mitigations re-tested in the pilot: >=30 positive seeds (>=5 numeric-only timing), T-free random-sample sensitivity run, citation chasing. Licensed platforms (WoS, Scopus, Embase, SPORTDiscus) pending D login.",
+    "2026-10-05: team (A) froze v3.0 after PubMed validation and PRESS acceptance; licensed-platform syntax remains marked as pending D's login checks; v3.1 will follow only if those checks change concepts."
   ]
 }

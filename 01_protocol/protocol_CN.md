@@ -1,7 +1,7 @@
 # 运动诱导免疫“开放窗口”的精准生物标志物：传统免疫指标与组学候选物验证就绪度的范围综述
 
 **英文题目：** *Precision biomarkers of the exercise-induced immune “open window”: a scoping review of the validation readiness of conventional and omics candidates*  
-**方案版本：** 3.0（团队冻结前草稿）— 2026年10月4日；存档发布时改为团队实际冻结日期。  
+**方案版本：** 3.0 — 2026年10月4日定稿设计；2026年10月5日由团队冻结并公开存档（GitHub Release v3.0，Zenodo于发布时分配DOI）
 **方案状态：** 存档前工作方案；正式检索、筛选和综合均未开始，尚无正式纳入研究或结果。  
 **拟投稿期刊：** *Frontiers in Immunology*，按Systematic Review文章类型投稿（该类型包含范围综述），具体专业栏目待定。投稿时随附PRISMA-ScR清单与流程图作为补充材料，并在方法（Methods）与致谢（Acknowledgments）两处披露AI使用，写明工具名、版本、模型和来源。  
 **注册与存档：** 采用公开GitHub仓库，并由Zenodo自动存档GitHub Release；发布时分配带日期、不可更改的version DOI和concept DOI。目前尚无任何发布，也未分配DOI，本项目从未在任何注册库注册。PROSPERO不接收范围综述，OSF Registries也不再是计划路线。  
