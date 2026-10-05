@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-10-05T20:11:20Z",
+  "records_in_master": 15750,
+  "records_merged": 15750,
+  "records_missing_an_ai_pass": 0,
+  "ai_B": {
+    "ADVANCE_TO_ABSTRACT": 8723,
+    "EXCLUDE_TITLE": 7027
+  },
+  "ai_C": {
+    "ADVANCE_TO_ABSTRACT": 7438,
+    "EXCLUDE_TITLE": 8312
+  },
+  "ai_merged": {
+    "ADVANCE_TO_ABSTRACT": 8929,
+    "EXCLUDE_TITLE": 6821
+  },
+  "ai_conflicts": 2032,
+  "ai_merged_codes": {
+    "TI04": 2425,
+    "TI05": 409,
+    "TI02": 3239,
+    "TI03": 428,
+    "TI01": 320
+  },
+  "ai_opus_rejudged": 2037,
+  "ai_final": {
+    "ADVANCE_TO_ABSTRACT": 7606,
+    "EXCLUDE_TITLE": 8144
+  },
+  "journal_safeguard_overturned_TI04": 22,
+  "review_scope": {
+    "ADVANCE_TO_TA": 7542,
+    "AI_EXCLUDE_UNVERIFIED": 7130,
+    "CONFLICT_SAMPLE_VERIFY": 334,
+    "SAMPLE_VERIFY": 644,
+    "PILOT_BLIND": 100
+  },
+  "sample_frac": 0.1,
+  "seed": 20261005,
+  "merge_rule": "advance wins (PRE-005); conflict = dispositions differ or exclusion codes differ",
+  "workbook_B_sha256": "cad8a9ca8c2dede3a3905fb1986fbf47576f5f2c20de003ca55a457166746a4c",
+  "workbook_C_sha256": "574f0c35e404da8b23f6cae382be589351ea36d6211586d50ce6ebcfcc0ae84e"
+}

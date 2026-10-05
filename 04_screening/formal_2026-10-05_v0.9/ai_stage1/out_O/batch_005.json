@@ -1,0 +1,602 @@
+[
+ {
+  "record_id": "FS-008225",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Wearable lactate detection device; only lactate outcome"
+ },
+ {
+  "record_id": "FS-008234",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Cotton plant resistance genetics; non-human"
+ },
+ {
+  "record_id": "FS-008239",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Exposure is acute inflammation, no exercise context"
+ },
+ {
+  "record_id": "FS-008242",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Labrador retriever dogs only"
+ },
+ {
+  "record_id": "FS-008247",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Depression/chronic stress model; no exercise"
+ },
+ {
+  "record_id": "FS-008255",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Vitamin D treatment of muscle atrophy; no exercise"
+ },
+ {
+  "record_id": "FS-008256",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "EIMD outcomes only muscle pain and range of motion"
+ },
+ {
+  "record_id": "FS-008274",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Herbal extract against cisplatin kidney injury; no exercise"
+ },
+ {
+  "record_id": "FS-008280",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes epicardial fat and VO2max only"
+ },
+ {
+  "record_id": "FS-008290",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Pyomyositis case; no exercise context"
+ },
+ {
+  "record_id": "FS-008303",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Whole body vibration exposure; outcome mechanism unclear"
+ },
+ {
+  "record_id": "FS-008314",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Treadmill exercise; only walking speed outcome"
+ },
+ {
+  "record_id": "FS-008316",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Protectin DX drug treatment in diabetes; no exercise"
+ },
+ {
+  "record_id": "FS-008334",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Fish (Schizothorax) muscle transcriptome"
+ },
+ {
+  "record_id": "FS-008338",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Vibrio strain from fish; non-human"
+ },
+ {
+  "record_id": "FS-008340",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Herbal granule for chronic fatigue syndrome; no exercise"
+ },
+ {
+  "record_id": "FS-008343",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "McArdle disease presenting as back pain; no exercise word"
+ },
+ {
+  "record_id": "FS-008344",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Anaphylaxis after vegan supplement; no exercise"
+ },
+ {
+  "record_id": "FS-008346",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "No exposure named; dead cell clearance outcome; organism unnamed"
+ },
+ {
+  "record_id": "FS-008349",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Supplements, performance and muscle recovery; recovery possibly immune"
+ },
+ {
+  "record_id": "FS-008353",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Chemsex autopsy; no exercise"
+ },
+ {
+  "record_id": "FS-008356",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "LPS-induced microglial training; trained immunity, no exercise"
+ },
+ {
+  "record_id": "FS-008364",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Paroxetine drug delivery; no exercise"
+ },
+ {
+  "record_id": "FS-008366",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Polo ponies only"
+ },
+ {
+  "record_id": "FS-008367",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Irisin in glaucoma neuroinflammation; no exercise word"
+ },
+ {
+  "record_id": "FS-008370",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Diabetic myoblast cell model only"
+ },
+ {
+  "record_id": "FS-008377",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Irisin and intestinal epithelial proliferation; no exercise"
+ },
+ {
+  "record_id": "FS-008380",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Kawasaki disease coronary complication case; no exercise"
+ },
+ {
+  "record_id": "FS-008385",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Mouse model of retinitis pigmentosa"
+ },
+ {
+  "record_id": "FS-008392",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI03",
+  "note": "Childhood asthma only"
+ },
+ {
+  "record_id": "FS-008401",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Equine athletes only"
+ },
+ {
+  "record_id": "FS-008404",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Acupotomy treatment case; no exercise"
+ },
+ {
+  "record_id": "FS-008414",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Common carp only"
+ },
+ {
+  "record_id": "FS-008420",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI03",
+  "note": "WDEIA in a teenage boy only"
+ },
+ {
+  "record_id": "FS-008428",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Prostate radiation therapy trial; no exercise"
+ },
+ {
+  "record_id": "FS-008433",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Acute IL-6 administration on brain enzymes; no exercise word"
+ },
+ {
+  "record_id": "FS-008435",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Lymphoma survival by race and age; no exercise"
+ },
+ {
+  "record_id": "FS-008445",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Sublingual immunotherapy adverse effect; no exercise"
+ },
+ {
+  "record_id": "FS-008448",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "miR-222 in pathological cardiac hypertrophy; disease topic, no exercise"
+ },
+ {
+  "record_id": "FS-008451",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Aeromonas pneumonia case; no exercise"
+ },
+ {
+  "record_id": "FS-008455",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Papaya leaf antifatigue phytochemistry; no exercise word"
+ },
+ {
+  "record_id": "FS-008464",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Banana plant transcriptome"
+ },
+ {
+  "record_id": "FS-008466",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "BV2 cell line only despite sports mention"
+ },
+ {
+  "record_id": "FS-008471",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Periodontitis and stroke; no exercise"
+ },
+ {
+  "record_id": "FS-008473",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "CSF irisin in elderly depression; no exercise"
+ },
+ {
+  "record_id": "FS-008474",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Adult mice only"
+ },
+ {
+  "record_id": "FS-008475",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Athlete horses only"
+ },
+ {
+  "record_id": "FS-008481",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Inflammation in fracture healing; no exercise"
+ },
+ {
+  "record_id": "FS-008483",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Herbal leaf antifatigue mechanism; no exercise word"
+ },
+ {
+  "record_id": "FS-008490",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Irisin and macrophage differentiation; no exercise word"
+ },
+ {
+  "record_id": "FS-008492",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "EIMD study; only muscle force recovery outcome named"
+ },
+ {
+  "record_id": "FS-008494",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Cancer immunotherapy response biomarker; no exercise"
+ },
+ {
+  "record_id": "FS-008495",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Mycobacterial mannan synthesis chemistry; no exercise"
+ },
+ {
+  "record_id": "FS-008499",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Songbirds only"
+ },
+ {
+  "record_id": "FS-008507",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Familial Mediterranean fever diagnosis; no exercise"
+ },
+ {
+  "record_id": "FS-008509",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Doxycycline antidepressant effect; no exercise"
+ },
+ {
+  "record_id": "FS-008510",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Lifestyle factors may include physical activity; not evident"
+ },
+ {
+  "record_id": "FS-008521",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Parakeets only"
+ },
+ {
+  "record_id": "FS-008524",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Thyroid cartilage rupture case; no exercise"
+ },
+ {
+  "record_id": "FS-008536",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI03",
+  "note": "Preschoolers only"
+ },
+ {
+  "record_id": "FS-008538",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Rodeo bulls only"
+ },
+ {
+  "record_id": "FS-008542",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Cancer genomics; Marathon of Hope is a network name"
+ },
+ {
+  "record_id": "FS-008543",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "MIS-C cardiovascular follow-up; disease course, no exercise"
+ },
+ {
+  "record_id": "FS-008544",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Insect host and fungus only"
+ },
+ {
+  "record_id": "FS-008555",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Swimming crab gene expression"
+ },
+ {
+  "record_id": "FS-008563",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Post-MIS-C myocarditis; only exercise limitation outcome"
+ },
+ {
+  "record_id": "FS-008564",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Takayasu arteritis case; no exercise"
+ },
+ {
+  "record_id": "FS-008571",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exercise and anticancer immunity; review type not stated in title"
+ },
+ {
+  "record_id": "FS-008579",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Alcohol and skeletal muscle; no exercise"
+ },
+ {
+  "record_id": "FS-008581",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Dairy cows only"
+ },
+ {
+  "record_id": "FS-008585",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Vaping and cardiac events; no exercise"
+ },
+ {
+  "record_id": "FS-008592",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Quercetin against LPS neuroinflammation; no exercise"
+ },
+ {
+  "record_id": "FS-008593",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Stress-induced antinociception; no exercise"
+ },
+ {
+  "record_id": "FS-008600",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Ethnicity and gender in eosinophilic esophagitis; no exercise"
+ },
+ {
+  "record_id": "FS-009607",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Exercise outcome only muscle fibre type switching"
+ },
+ {
+  "record_id": "FS-009614",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exercise-induced myokine protein; outcome possibly immune-related"
+ },
+ {
+  "record_id": "FS-009651",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Exercise antinociception via AMPK/endocannabinoids; no immune outcome"
+ },
+ {
+  "record_id": "FS-009673",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exercise-driven metabolic pathways; possible omics content"
+ },
+ {
+  "record_id": "FS-009738",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Exercise and nerve grafts; only regeneration outcome"
+ },
+ {
+  "record_id": "FS-009779",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Exercise joint lubrication; only joint pain outcome"
+ },
+ {
+  "record_id": "FS-009785",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI03",
+  "note": "Boys aged 14-18 years only"
+ },
+ {
+  "record_id": "FS-009790",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Acute exercise; outcomes myocardial apoptosis and stem cells"
+ },
+ {
+  "record_id": "FS-009797",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Yoga-related muscle rupture; no immune outcome"
+ },
+ {
+  "record_id": "FS-009803",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Nutraceuticals commentary; no exercise word"
+ },
+ {
+  "record_id": "FS-009808",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Resistance exercise; leptin adipokine possibly inflammatory"
+ },
+ {
+  "record_id": "FS-009839",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Laser therapy, exercise performance and postexercise recovery"
+ },
+ {
+  "record_id": "FS-009840",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Aerobic exercise; only brain microvascular outcomes"
+ },
+ {
+  "record_id": "FS-009842",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Strength training and muscle injury regeneration; muscle damage generic"
+ },
+ {
+  "record_id": "FS-009848",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Serum irisin in coronary disease; no exercise"
+ },
+ {
+  "record_id": "FS-009863",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Muscle contraction; only anabolic response outcome"
+ },
+ {
+  "record_id": "FS-009901",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Marathon; hydration and kidney function only"
+ },
+ {
+  "record_id": "FS-009907",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Bronchospasm hypothesis; fat emboli, no immune outcome"
+ },
+ {
+  "record_id": "FS-009953",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Swimming and stem cells; nerve functional recovery only"
+ },
+ {
+  "record_id": "FS-009957",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exercise training; adipokines possibly inflammatory"
+ },
+ {
+  "record_id": "FS-009982",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exercise plus systemic LPS; inflammatory content plausible"
+ },
+ {
+  "record_id": "FS-009995",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Exercise preconditioning; antiapoptotic and neurological outcomes only"
+ },
+ {
+  "record_id": "FS-010002",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Whey protein; runners' performance and recovery"
+ },
+ {
+  "record_id": "FS-010003",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Eccentric exercise; only HIF-1, VEGF, eNOS outcomes"
+ },
+ {
+  "record_id": "FS-010013",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Exercise; only Bdnf and Drd2 brain gene expression"
+ },
+ {
+  "record_id": "FS-010039",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Ultra run; body weight, sodium, renal function only"
+ }
+]

@@ -1,0 +1,602 @@
+[
+ {
+  "record_id": "FS-009172",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exercise named; organism unstated; gene expression outcome"
+ },
+ {
+  "record_id": "FS-009173",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Fish only"
+ },
+ {
+  "record_id": "FS-009200",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome only DOMS"
+ },
+ {
+  "record_id": "FS-009205",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome only cardiorespiratory fitness"
+ },
+ {
+  "record_id": "FS-009206",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Goldfish only"
+ },
+ {
+  "record_id": "FS-009212",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Genetic overexpression; no exercise word"
+ },
+ {
+  "record_id": "FS-009213",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome only DOMS"
+ },
+ {
+  "record_id": "FS-009215",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Hypoglycaemia causes; no exercise"
+ },
+ {
+  "record_id": "FS-009237",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Athletes named; outcome unspecified"
+ },
+ {
+  "record_id": "FS-009240",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Rice plant pathology"
+ },
+ {
+  "record_id": "FS-009253",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Fish only"
+ },
+ {
+  "record_id": "FS-009262",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Urticaria classification; no exercise word"
+ },
+ {
+  "record_id": "FS-009263",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Irisin in brain ischemia; no exercise"
+ },
+ {
+  "record_id": "FS-009267",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Clinical case; no exercise"
+ },
+ {
+  "record_id": "FS-009271",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Radiation brain injury drug; no exercise"
+ },
+ {
+  "record_id": "FS-009280",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Domestic cat only"
+ },
+ {
+  "record_id": "FS-009283",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Hemp food modelling; no exercise"
+ },
+ {
+  "record_id": "FS-009284",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI03",
+  "note": "Teenage athletes only"
+ },
+ {
+  "record_id": "FS-009292",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI03",
+  "note": "Adolescence cohort only"
+ },
+ {
+  "record_id": "FS-009301",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes only electrolytes and muscle pain"
+ },
+ {
+  "record_id": "FS-009305",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Sleep duration exposure; no exercise"
+ },
+ {
+  "record_id": "FS-009309",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Exercised animals only"
+ },
+ {
+  "record_id": "FS-009323",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes only hormonal and metabolic"
+ },
+ {
+  "record_id": "FS-009324",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "ATP signalling mechanism; no exercise word"
+ },
+ {
+  "record_id": "FS-009345",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Essential oil pharmacology; no exercise"
+ },
+ {
+  "record_id": "FS-009352",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Ocean water exposure; no exercise word"
+ },
+ {
+  "record_id": "FS-009353",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Mules only"
+ },
+ {
+  "record_id": "FS-009356",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Allergy case; no exercise"
+ },
+ {
+  "record_id": "FS-009370",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Ketamine drug; no exercise"
+ },
+ {
+  "record_id": "FS-009383",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Vitamin C exposure; no exercise"
+ },
+ {
+  "record_id": "FS-009387",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Post-exercise muscle damage"
+ },
+ {
+  "record_id": "FS-009410",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Trained immunity by Candida; no exercise"
+ },
+ {
+  "record_id": "FS-009412",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes only angiotensin, IGF-1, sirtuins, VEGF"
+ },
+ {
+  "record_id": "FS-009422",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Health worker training; not exercise"
+ },
+ {
+  "record_id": "FS-009427",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes only creatine metabolism markers"
+ },
+ {
+  "record_id": "FS-009438",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exercise and inflammation; type not stated"
+ },
+ {
+  "record_id": "FS-009439",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Ponies only"
+ },
+ {
+  "record_id": "FS-009441",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Experimental colitis; no exercise"
+ },
+ {
+  "record_id": "FS-009443",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Irisin with anaesthetic drug; no exercise"
+ },
+ {
+  "record_id": "FS-009444",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Melatonin in LPS model; no exercise"
+ },
+ {
+  "record_id": "FS-009445",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Hot-water immersion without exercise"
+ },
+ {
+  "record_id": "FS-009446",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Myasthenic crisis cases; no exercise"
+ },
+ {
+  "record_id": "FS-009449",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome only health-related quality of life"
+ },
+ {
+  "record_id": "FS-009456",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "Journal club commentary series"
+ },
+ {
+  "record_id": "FS-009465",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Athletes strength effort; serum profile outcome"
+ },
+ {
+  "record_id": "FS-009470",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Herbal drug for dementia"
+ },
+ {
+  "record_id": "FS-009472",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Fish only"
+ },
+ {
+  "record_id": "FS-009486",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Croup management; no exercise"
+ },
+ {
+  "record_id": "FS-009491",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Scallop larvae only"
+ },
+ {
+  "record_id": "FS-009495",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "IL-6 and exercise named; type not stated"
+ },
+ {
+  "record_id": "FS-009496",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes only walking performance and muscle oxygenation"
+ },
+ {
+  "record_id": "FS-009509",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Salivary defensin assay; no exposure named"
+ },
+ {
+  "record_id": "FS-009513",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Forensic drug detection"
+ },
+ {
+  "record_id": "FS-009516",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exercise and immune cells; type not stated"
+ },
+ {
+  "record_id": "FS-009529",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Resistance session muscle damage"
+ },
+ {
+  "record_id": "FS-009535",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Metabolite-receptor signalling; no exposure named; inflammation outcome"
+ },
+ {
+  "record_id": "FS-009545",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Induced intestinal inflammation model; no exercise"
+ },
+ {
+  "record_id": "FS-009548",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Chemical hepatotoxicity drug; no exercise"
+ },
+ {
+  "record_id": "FS-009555",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Xenon antidepressant drug; no exercise"
+ },
+ {
+  "record_id": "FS-009557",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Stressors unspecified; IL-1beta outcome"
+ },
+ {
+  "record_id": "FS-009560",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Fish only"
+ },
+ {
+  "record_id": "FS-009562",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Food anaphylaxis diagnosis; no exercise"
+ },
+ {
+  "record_id": "FS-009569",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes only physical fatigue and dopaminergic system"
+ },
+ {
+  "record_id": "FS-009571",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Sickle cell vascular disease; no exercise"
+ },
+ {
+  "record_id": "FS-009572",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Murine cardiomyocytes only"
+ },
+ {
+  "record_id": "FS-009585",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Antidepressant drug in epilepsy model"
+ },
+ {
+  "record_id": "FS-009590",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Surgical procedure outcome; no exercise exposure"
+ },
+ {
+  "record_id": "FS-009591",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Wheat gliadin proteomics"
+ },
+ {
+  "record_id": "FS-009593",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exercise muscle damage named"
+ },
+ {
+  "record_id": "FS-010208",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "Call to action commentary"
+ },
+ {
+  "record_id": "FS-010214",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Soccer player muscle re-injury case; no outcome named"
+ },
+ {
+  "record_id": "FS-010232",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exercise test muscle damage indices"
+ },
+ {
+  "record_id": "FS-010308",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Downhill running muscle remodelling; organism unstated"
+ },
+ {
+  "record_id": "FS-010312",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome only vascular growth via stem cells"
+ },
+ {
+  "record_id": "FS-010332",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Acute exercise; mechanisms unspecified"
+ },
+ {
+  "record_id": "FS-010337",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes only strength and cardiopulmonary status"
+ },
+ {
+  "record_id": "FS-010340",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Muscle damage named"
+ },
+ {
+  "record_id": "FS-010380",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Physical activity; adiponectin possibly inflammatory"
+ },
+ {
+  "record_id": "FS-010382",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exercise journal; salivary IgA outcome"
+ },
+ {
+  "record_id": "FS-010424",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Strenuous exercise muscle dysfunction; organism unstated"
+ },
+ {
+  "record_id": "FS-010462",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Muscle damage in athletes"
+ },
+ {
+  "record_id": "FS-010474",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Shear stress; organism and outcome unclear"
+ },
+ {
+  "record_id": "FS-010480",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome only endothelial function"
+ },
+ {
+  "record_id": "FS-010489",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes only CPET and CT findings"
+ },
+ {
+  "record_id": "FS-010491",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Acute exercise gene expression outcome"
+ },
+ {
+  "record_id": "FS-010495",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Diabetes prediction markers; no exercise"
+ },
+ {
+  "record_id": "FS-010499",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes only mitochondrial biogenesis"
+ },
+ {
+  "record_id": "FS-010512",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "Intervention design paper without results"
+ },
+ {
+  "record_id": "FS-010524",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Marathon runners renal failure; muscle damage possible"
+ },
+ {
+  "record_id": "FS-010531",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes only cardiac apoptosis and survival signalling"
+ },
+ {
+  "record_id": "FS-010557",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome only erythrocyte fatty acid composition"
+ },
+ {
+  "record_id": "FS-010558",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Statin myopathy and exercise case; muscle damage"
+ },
+ {
+  "record_id": "FS-010565",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exercise muscle damage named"
+ },
+ {
+  "record_id": "FS-010575",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Animals only"
+ },
+ {
+  "record_id": "FS-010582",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes only autophagy and glucose homeostasis"
+ },
+ {
+  "record_id": "FS-010587",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome only exercise-induced asthma occurrence"
+ },
+ {
+  "record_id": "FS-010592",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Animal model only"
+ },
+ {
+  "record_id": "FS-010604",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Marathon rhabdomyolysis muscle damage"
+ },
+ {
+  "record_id": "FS-010606",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Athletes asthma mechanisms; type not stated"
+ },
+ {
+  "record_id": "FS-010648",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Glutamine supplement preparation; no exercise"
+ }
+]

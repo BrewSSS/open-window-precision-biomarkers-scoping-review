@@ -1,0 +1,602 @@
+[
+ {
+  "record_id": "FS-002745",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome insulin resistance only"
+ },
+ {
+  "record_id": "FS-002762",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome glycaemic response only"
+ },
+ {
+  "record_id": "FS-002766",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes metabolic/glycaemic only with insulin reduction"
+ },
+ {
+  "record_id": "FS-002770",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes EMG and creatine kinase only"
+ },
+ {
+  "record_id": "FS-002774",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes exercise capacity and endothelin-1 only"
+ },
+ {
+  "record_id": "FS-002775",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome exercise capacity only"
+ },
+ {
+  "record_id": "FS-002782",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Monoclonal antibody drug pharmacokinetics; no exercise context"
+ },
+ {
+  "record_id": "FS-002786",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "International consensus statement on anaphylaxis"
+ },
+ {
+  "record_id": "FS-002788",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "In vitro human airway cells only"
+ },
+ {
+  "record_id": "FS-002796",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "DOMS recovery; outcome not restricted to soreness ratings"
+ },
+ {
+  "record_id": "FS-002804",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "DOMS reduction; outcome not restricted to soreness ratings"
+ },
+ {
+  "record_id": "FS-002811",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome muscular strength recovery only"
+ },
+ {
+  "record_id": "FS-002814",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Genome-wide association of PAD; no exercise context"
+ },
+ {
+  "record_id": "FS-002815",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome perceived muscle soreness only"
+ },
+ {
+  "record_id": "FS-002817",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome ergogenic (performance) effect only"
+ },
+ {
+  "record_id": "FS-002821",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome adrenergic (catecholamine) response only"
+ },
+ {
+  "record_id": "FS-002829",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "GDF-15 cytokine marker; no exposure named"
+ },
+ {
+  "record_id": "FS-002832",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes metabolic and hormonal responses only"
+ },
+ {
+  "record_id": "FS-002833",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Cardiovascular phenotype may include biomarkers; no exposure named"
+ },
+ {
+  "record_id": "FS-002836",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome submaximal muscle function only"
+ },
+ {
+  "record_id": "FS-002842",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes erythropoietin and neuron-specific enolase only"
+ },
+ {
+  "record_id": "FS-002853",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Neutrophil/lymphocyte ratio named"
+ },
+ {
+  "record_id": "FS-002861",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Diabetes and sarcopenia (disease course); no exercise context"
+ },
+ {
+  "record_id": "FS-002864",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome fat oxidation capacity only"
+ },
+ {
+  "record_id": "FS-002870",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome creatine kinase response only"
+ },
+ {
+  "record_id": "FS-002876",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Ozone exposure only; no exercise word"
+ },
+ {
+  "record_id": "FS-002881",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Circadian variation in variant angina; no exercise context"
+ },
+ {
+  "record_id": "FS-002883",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Omega-3 supplementation only in asthma; no exercise word"
+ },
+ {
+  "record_id": "FS-002898",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Propranolol drug response; no exercise context"
+ },
+ {
+  "record_id": "FS-002905",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Mean platelet volume blood marker in runners"
+ },
+ {
+  "record_id": "FS-002907",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI03",
+  "note": "Adolescent girls only"
+ },
+ {
+  "record_id": "FS-002924",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Ozone inhalation only; no exercise word"
+ },
+ {
+  "record_id": "FS-002933",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Neutrophil/lymphocyte ratio named"
+ },
+ {
+  "record_id": "FS-002936",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Lung injury in rugby; possibly inflammatory content"
+ },
+ {
+  "record_id": "FS-002937",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome pain threshold only"
+ },
+ {
+  "record_id": "FS-002946",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome atrial natriuretic factor (hormone) only"
+ },
+ {
+  "record_id": "FS-002962",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome shoulder pain risk only"
+ },
+ {
+  "record_id": "FS-002967",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Adrenoceptor (likely blood-cell receptors) in marathon runners; generic protein"
+ },
+ {
+  "record_id": "FS-002970",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome running endurance only"
+ },
+ {
+  "record_id": "FS-002974",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Inflamed joint reperfusion injury; exposure not stated"
+ },
+ {
+  "record_id": "FS-002981",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Irisin hormone only named"
+ },
+ {
+  "record_id": "FS-002996",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Disease prognosis in heart failure; no exercise context"
+ },
+ {
+  "record_id": "FS-002999",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Osteoprotegerin in ischaemia testing; possibly immune"
+ },
+ {
+  "record_id": "FS-003003",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Cytomegalovirus infection proteomics; no exercise context"
+ },
+ {
+  "record_id": "FS-003004",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Beta2-microglobulin marker; no exposure named"
+ },
+ {
+  "record_id": "FS-003007",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Unspecified stress damage; oxidative stress generic"
+ },
+ {
+  "record_id": "FS-003012",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "DOMS attenuation; outcome not restricted to soreness ratings"
+ },
+ {
+  "record_id": "FS-003013",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome dynamic hyperinflation only"
+ },
+ {
+  "record_id": "FS-003015",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Postprandial endotoxemia (diet only); no exercise context"
+ },
+ {
+  "record_id": "FS-003024",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Leucocyte behaviour in calf ischaemia; trigger unstated"
+ },
+ {
+  "record_id": "FS-003033",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Ambient ozone exposure only; no exercise word"
+ },
+ {
+  "record_id": "FS-003034",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Trimetazidine drug effect; no exercise context"
+ },
+ {
+  "record_id": "FS-003039",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome EIB only; no immune outcome named"
+ },
+ {
+  "record_id": "FS-003041",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Sepsis (disease) context; no exercise"
+ },
+ {
+  "record_id": "FS-003044",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "In silico analysis of exercise intolerance; possibly omics"
+ },
+ {
+  "record_id": "FS-003049",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes erythropoiesis, hemolysis, aerobic performance only"
+ },
+ {
+  "record_id": "FS-003050",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome post-exercise hyperglycaemia only"
+ },
+ {
+  "record_id": "FS-003077",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome bone turnover markers only; boys and young men"
+ },
+ {
+  "record_id": "FS-003078",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome exercise tolerance only"
+ },
+ {
+  "record_id": "FS-003079",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome glycaemia only"
+ },
+ {
+  "record_id": "FS-003081",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome growth hormone signalling only"
+ },
+ {
+  "record_id": "FS-003086",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Sulfur dioxide exposure only; no exercise word"
+ },
+ {
+  "record_id": "FS-003101",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Herbal adjunct trial in COPD; no exercise word"
+ },
+ {
+  "record_id": "FS-003102",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Passive hot water immersion without exercise"
+ },
+ {
+  "record_id": "FS-003104",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "PAD prevalence in HIV patients; no exercise context"
+ },
+ {
+  "record_id": "FS-003109",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Serum sphingolipid profiling with exercise; lipidomic content"
+ },
+ {
+  "record_id": "FS-003112",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome FGF21 (hormone) only"
+ },
+ {
+  "record_id": "FS-003119",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "IL-6 trans-signalling; no exposure named"
+ },
+ {
+  "record_id": "FS-003125",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "CXCR2 antagonist drug study; no exercise context"
+ },
+ {
+  "record_id": "FS-003126",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Tumour cell spheroid model only"
+ },
+ {
+  "record_id": "FS-003139",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome bone metabolism only"
+ },
+ {
+  "record_id": "FS-003151",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome ergogenic (performance) effect only"
+ },
+ {
+  "record_id": "FS-003154",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Roflumilast drug in asthma; no exercise context"
+ },
+ {
+  "record_id": "FS-003161",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Circulating progenitor cells after ischaemia; cells generic"
+ },
+ {
+  "record_id": "FS-003167",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes oxygen cost and core temperature only"
+ },
+ {
+  "record_id": "FS-003182",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "GM-CSF drug administration; no exercise context"
+ },
+ {
+  "record_id": "FS-003183",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome functional muscle ischaemia only"
+ },
+ {
+  "record_id": "FS-003185",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes cardiac mechanics, vascular, exercise capacity only"
+ },
+ {
+  "record_id": "FS-003198",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Diagnostic work-up of cardiomyopathy; no exercise context"
+ },
+ {
+  "record_id": "FS-003804",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "Design of a trial (protocol without results)"
+ },
+ {
+  "record_id": "FS-003807",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Experimental endotoxemia exposure; effort is motivational outcome"
+ },
+ {
+  "record_id": "FS-003837",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Irisin administration and denervation atrophy; no exercise"
+ },
+ {
+  "record_id": "FS-003850",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Postexercise recovery named; generic recovery content"
+ },
+ {
+  "record_id": "FS-003855",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome exercise capacity only"
+ },
+ {
+  "record_id": "FS-003860",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Inflammatory cytokines; no exposure named"
+ },
+ {
+  "record_id": "FS-003864",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "GM-CSF immune term with supervised exercise"
+ },
+ {
+  "record_id": "FS-003867",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Erythropoietin administration only; no exercise word"
+ },
+ {
+  "record_id": "FS-003868",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Disease phenotyping tool in lung disease; no exercise"
+ },
+ {
+  "record_id": "FS-003877",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Autonomic mechanisms in PAH; no exercise context"
+ },
+ {
+  "record_id": "FS-003883",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Corticosteroid-induced leukocytosis in pregnancy; no exercise"
+ },
+ {
+  "record_id": "FS-003897",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Ozone exposure only; no exercise word"
+ },
+ {
+  "record_id": "FS-003905",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Granulocyte complement receptors; provocation type not stated"
+ },
+ {
+  "record_id": "FS-003906",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Cardiovascular risk markers; no exposure named"
+ },
+ {
+  "record_id": "FS-003916",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Measles vaccination timing; no exercise context"
+ },
+ {
+  "record_id": "FS-003924",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Adult zebrafish only"
+ },
+ {
+  "record_id": "FS-003933",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Beetroot juice (diet only); no exercise word"
+ },
+ {
+  "record_id": "FS-003936",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Herbal drug liver injury metabolomics; no exercise context"
+ },
+ {
+  "record_id": "FS-003937",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Sclerostin in post-traumatic osteoarthritis; no exercise context"
+ },
+ {
+  "record_id": "FS-003939",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "COPD exacerbation (disease course); no exercise context"
+ },
+ {
+  "record_id": "FS-003940",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome exercise performance only"
+ }
+]

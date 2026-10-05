@@ -1,0 +1,1202 @@
+[
+ {
+  "record_id": "FS-006801",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "healthcare behavior COVID, no exercise"
+ },
+ {
+  "record_id": "FS-006802",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "fatigue recovery outcome only"
+ },
+ {
+  "record_id": "FS-006803",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+recovery, no marker named"
+ },
+ {
+  "record_id": "FS-006804",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "telerehabilitation thoracic surgery, no exercise"
+ },
+ {
+  "record_id": "FS-006805",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "PA+BCAA degradation, ambiguous"
+ },
+ {
+  "record_id": "FS-006806",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "xenogeneic mice model"
+ },
+ {
+  "record_id": "FS-006807",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "racehorses only"
+ },
+ {
+  "record_id": "FS-006808",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+epigenetic omics, ME/CFS"
+ },
+ {
+  "record_id": "FS-006809",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "knee OA hyaluronic acid, no exercise"
+ },
+ {
+  "record_id": "FS-006810",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+one-carbon metabolism, ambiguous"
+ },
+ {
+  "record_id": "FS-006811",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+systemic inflammation"
+ },
+ {
+  "record_id": "FS-006812",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "NSAID use ultra-endurance runners, ambiguous"
+ },
+ {
+  "record_id": "FS-006813",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "horses only"
+ },
+ {
+  "record_id": "FS-006814",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+oxidative stress/inflammation"
+ },
+ {
+  "record_id": "FS-006815",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise training+molecular profiling, ambiguous"
+ },
+ {
+  "record_id": "FS-006816",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "DOMS, soreness outcome only"
+ },
+ {
+  "record_id": "FS-006817",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+inflammation, probiotic"
+ },
+ {
+  "record_id": "FS-006818",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise(soccer)+muscle damage/oxidative stress"
+ },
+ {
+  "record_id": "FS-006819",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "ozone exposure study, no exercise"
+ },
+ {
+  "record_id": "FS-006820",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+GDF15, ambiguous"
+ },
+ {
+  "record_id": "FS-006821",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "training+inflammation, older women"
+ },
+ {
+  "record_id": "FS-006822",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "spondyloarthritis treatment, no exercise"
+ },
+ {
+  "record_id": "FS-006823",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+biochemical responses, ambiguous"
+ },
+ {
+  "record_id": "FS-006824",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "ELISA assay methodology, no exercise"
+ },
+ {
+  "record_id": "FS-006825",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "muscle strength/recovery outcome only"
+ },
+ {
+  "record_id": "FS-006826",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "study protocol, no results"
+ },
+ {
+  "record_id": "FS-006827",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "sodium channel neural injury, no exercise"
+ },
+ {
+  "record_id": "FS-006828",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+mucosal immune response"
+ },
+ {
+  "record_id": "FS-006829",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "rats only"
+ },
+ {
+  "record_id": "FS-006830",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+neutrophils"
+ },
+ {
+  "record_id": "FS-006831",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "military exercise+iron status, ambiguous"
+ },
+ {
+  "record_id": "FS-006832",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "muscle soreness relief outcome only"
+ },
+ {
+  "record_id": "FS-006833",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise(WBV)+myokine, ambiguous"
+ },
+ {
+  "record_id": "FS-006834",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "soreness/function recovery outcome only"
+ },
+ {
+  "record_id": "FS-006835",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+inflammatory markers"
+ },
+ {
+  "record_id": "FS-006836",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+inflammatory/hemostatic markers"
+ },
+ {
+  "record_id": "FS-006837",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "physical stress+stress biomarkers, ambiguous"
+ },
+ {
+  "record_id": "FS-006838",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+immunological modulation"
+ },
+ {
+  "record_id": "FS-006839",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+circulating cytokines"
+ },
+ {
+  "record_id": "FS-006840",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+salivary indicators, ambiguous"
+ },
+ {
+  "record_id": "FS-006841",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "commentary"
+ },
+ {
+  "record_id": "FS-006842",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+muscle damage, general"
+ },
+ {
+  "record_id": "FS-006843",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+molecular adipose response, ambiguous"
+ },
+ {
+  "record_id": "FS-006844",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "systematic review and meta-analysis"
+ },
+ {
+  "record_id": "FS-006845",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "mice only"
+ },
+ {
+  "record_id": "FS-006846",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "neurocognition outcome only"
+ },
+ {
+  "record_id": "FS-006847",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+NRF2, oxidative stress"
+ },
+ {
+  "record_id": "FS-006848",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise(marathon)+organ biomarkers, ambiguous"
+ },
+ {
+  "record_id": "FS-006849",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+exerkines, ambiguous"
+ },
+ {
+  "record_id": "FS-006850",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+muscle damage/oxidative stress"
+ },
+ {
+  "record_id": "FS-006851",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "plant pathology, no exercise"
+ },
+ {
+  "record_id": "FS-006852",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+cellular immune marker"
+ },
+ {
+  "record_id": "FS-006853",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+IL-6 blockade, RA"
+ },
+ {
+  "record_id": "FS-006854",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+PBMC BDNF"
+ },
+ {
+  "record_id": "FS-006855",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+systemic inflammation"
+ },
+ {
+  "record_id": "FS-006856",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+kidney injury biomarkers, ambiguous"
+ },
+ {
+  "record_id": "FS-006857",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "allergy diagnostics cohort, no exercise"
+ },
+ {
+  "record_id": "FS-006858",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "serotonin blood volume, no exercise"
+ },
+ {
+  "record_id": "FS-006859",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise training+inflammation, haemodialysis"
+ },
+ {
+  "record_id": "FS-006860",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "study protocol, no results"
+ },
+ {
+  "record_id": "FS-006861",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "wood smoke sputum proteomics, no exercise"
+ },
+ {
+  "record_id": "FS-006862",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+IL-6"
+ },
+ {
+  "record_id": "FS-006863",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+inflammatory markers"
+ },
+ {
+  "record_id": "FS-006864",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+white blood cell responses"
+ },
+ {
+  "record_id": "FS-006865",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "muscle fatigue outcome only"
+ },
+ {
+  "record_id": "FS-006866",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "mice only"
+ },
+ {
+  "record_id": "FS-006867",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "heart failure PBMC mitochondria, no exercise"
+ },
+ {
+  "record_id": "FS-006868",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+myokine, ambiguous"
+ },
+ {
+  "record_id": "FS-006869",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "lipedema pathophysiology, no exercise"
+ },
+ {
+  "record_id": "FS-006870",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise training+vascular insulin sensitivity, ambiguous"
+ },
+ {
+  "record_id": "FS-006871",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+immunological protein signature"
+ },
+ {
+  "record_id": "FS-006872",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "systematic review and meta-analysis"
+ },
+ {
+  "record_id": "FS-006873",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+epidermal function, ambiguous"
+ },
+ {
+  "record_id": "FS-006874",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+maternal/birth outcomes, ambiguous"
+ },
+ {
+  "record_id": "FS-006875",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "study protocol, no results"
+ },
+ {
+  "record_id": "FS-006876",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise(BFR)+IL-6"
+ },
+ {
+  "record_id": "FS-006877",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "soreness/fatigue outcome only"
+ },
+ {
+  "record_id": "FS-006878",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+platelet factor, ambiguous immune"
+ },
+ {
+  "record_id": "FS-006879",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+inflammatory biomarkers"
+ },
+ {
+  "record_id": "FS-006880",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+adipokine, ambiguous"
+ },
+ {
+  "record_id": "FS-006881",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+immune responses, EVs"
+ },
+ {
+  "record_id": "FS-006882",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+inflammatory cytokine"
+ },
+ {
+  "record_id": "FS-006883",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+proteomic changes"
+ },
+ {
+  "record_id": "FS-006884",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "systematic review and meta-analysis"
+ },
+ {
+  "record_id": "FS-006885",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "diving exertion+inflammatory responses"
+ },
+ {
+  "record_id": "FS-006886",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "muscle function/soreness outcome only"
+ },
+ {
+  "record_id": "FS-006887",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+cardiovascular response, ambiguous"
+ },
+ {
+  "record_id": "FS-006888",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+C1q/TNF-related proteins"
+ },
+ {
+  "record_id": "FS-006889",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exertion+plasma proteomics, ME/CFS"
+ },
+ {
+  "record_id": "FS-006890",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "insulin/GLP-1/PYY hormones only"
+ },
+ {
+  "record_id": "FS-006891",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+myokine IL-6"
+ },
+ {
+  "record_id": "FS-006892",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "COVID pulmonary embolism, no exercise"
+ },
+ {
+  "record_id": "FS-006893",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+transcriptomic response"
+ },
+ {
+  "record_id": "FS-006894",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise heat stress+kidney biomarkers, ambiguous"
+ },
+ {
+  "record_id": "FS-006895",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "CPET performance outcome only"
+ },
+ {
+  "record_id": "FS-006896",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "mechanical loading+inflammatory outcome, ambiguous"
+ },
+ {
+  "record_id": "FS-006897",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+cell-free DNA"
+ },
+ {
+  "record_id": "FS-006898",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "long COVID autoantibodies, no exercise"
+ },
+ {
+  "record_id": "FS-006899",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+inflammation, HRV"
+ },
+ {
+  "record_id": "FS-006900",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "correction, exercise+PBMC microRNA"
+ },
+ {
+  "record_id": "FS-006901",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "mice only"
+ },
+ {
+  "record_id": "FS-006902",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "protocol for investigating mechanisms"
+ },
+ {
+  "record_id": "FS-006903",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "mouse model only"
+ },
+ {
+  "record_id": "FS-006904",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "mixed pubertal/young adult soccer players"
+ },
+ {
+  "record_id": "FS-006905",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "platelet concentrate assessment, no exercise"
+ },
+ {
+  "record_id": "FS-006906",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "mice only"
+ },
+ {
+  "record_id": "FS-006907",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+metabolomics"
+ },
+ {
+  "record_id": "FS-006908",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "horses only"
+ },
+ {
+  "record_id": "FS-006909",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "PA+IL-6"
+ },
+ {
+  "record_id": "FS-006910",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+recovery, no marker named"
+ },
+ {
+  "record_id": "FS-006911",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "rats only"
+ },
+ {
+  "record_id": "FS-006912",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "IVIG myositis treatment, no exercise"
+ },
+ {
+  "record_id": "FS-006913",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "aerobic capacity performance outcome only"
+ },
+ {
+  "record_id": "FS-006914",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+phagocyte infiltration"
+ },
+ {
+  "record_id": "FS-006915",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "fatigue outcome only"
+ },
+ {
+  "record_id": "FS-006916",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "endotoxemia motivation scale, no exercise"
+ },
+ {
+  "record_id": "FS-006917",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "lifestyle/glucose back pain, no exercise"
+ },
+ {
+  "record_id": "FS-006918",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+immune-inflammatory improvement"
+ },
+ {
+  "record_id": "FS-006919",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+thermography stress, ambiguous"
+ },
+ {
+  "record_id": "FS-006920",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "radiation pneumonitis SCLC, no exercise"
+ },
+ {
+  "record_id": "FS-006921",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+eicosanoid metabolites"
+ },
+ {
+  "record_id": "FS-006922",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+endothelial EVs, ambiguous"
+ },
+ {
+  "record_id": "FS-006923",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "PA+immunometabolic changes"
+ },
+ {
+  "record_id": "FS-006924",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "anxiety-depression brain connectivity, no exercise"
+ },
+ {
+  "record_id": "FS-006925",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+lipocalin-2"
+ },
+ {
+  "record_id": "FS-006926",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+ventricular function, ambiguous"
+ },
+ {
+  "record_id": "FS-006927",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise(marathon)+inflammation"
+ },
+ {
+  "record_id": "FS-006928",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise serum+DNA damage repair, omics"
+ },
+ {
+  "record_id": "FS-006929",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+immune cell mobilization"
+ },
+ {
+  "record_id": "FS-006930",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+physiological response, ambiguous"
+ },
+ {
+  "record_id": "FS-006931",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+serum protein levels, ambiguous"
+ },
+ {
+  "record_id": "FS-006932",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+inflammatory responses, AF"
+ },
+ {
+  "record_id": "FS-006933",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+macrophage immune homeostasis"
+ },
+ {
+  "record_id": "FS-006934",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+EVs, ambiguous"
+ },
+ {
+  "record_id": "FS-006935",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "PA+cell-free DNA"
+ },
+ {
+  "record_id": "FS-006936",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+trained immunity macrophages"
+ },
+ {
+  "record_id": "FS-006937",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "hormonal changes outcome only"
+ },
+ {
+  "record_id": "FS-006938",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+T cell immunometabolic profiling"
+ },
+ {
+  "record_id": "FS-006939",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "mules only"
+ },
+ {
+  "record_id": "FS-006940",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+immune cell DNA methylation"
+ },
+ {
+  "record_id": "FS-006941",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+biomarker, ambiguous, COPD"
+ },
+ {
+  "record_id": "FS-006942",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+salivary HHV immune marker"
+ },
+ {
+  "record_id": "FS-006943",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "mice only"
+ },
+ {
+  "record_id": "FS-006944",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+inflammatory responses, youth soccer"
+ },
+ {
+  "record_id": "FS-006945",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+blood biomarkers/soreness, ambiguous"
+ },
+ {
+  "record_id": "FS-006946",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+metabolomic muscle damage biomarkers"
+ },
+ {
+  "record_id": "FS-006947",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+muscle damage, general"
+ },
+ {
+  "record_id": "FS-006948",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+immune/muscle damage response"
+ },
+ {
+  "record_id": "FS-006949",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise(BFR)+salivary proteomics"
+ },
+ {
+  "record_id": "FS-006950",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+placental transcriptomics/oxidative stress"
+ },
+ {
+  "record_id": "FS-006951",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise, no outcome named"
+ },
+ {
+  "record_id": "FS-006952",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+neuroprotective biomarkers, ambiguous"
+ },
+ {
+  "record_id": "FS-006953",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+plasma EV signatures, ambiguous"
+ },
+ {
+  "record_id": "FS-006954",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "activity+intestinal motility, ambiguous"
+ },
+ {
+  "record_id": "FS-006955",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+immune cell proteomics"
+ },
+ {
+  "record_id": "FS-006956",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "mice only"
+ },
+ {
+  "record_id": "FS-006957",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+cytokines, HSP"
+ },
+ {
+  "record_id": "FS-006958",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "study protocol, no results"
+ },
+ {
+  "record_id": "FS-006959",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+metabolomic markers"
+ },
+ {
+  "record_id": "FS-006960",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise(marathon)+biomarkers, ambiguous"
+ },
+ {
+  "record_id": "FS-006961",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+inflammatory cytokine"
+ },
+ {
+  "record_id": "FS-006962",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "food allergy clinical characteristics, no exercise"
+ },
+ {
+  "record_id": "FS-006963",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+immunotherapy context, ambiguous"
+ },
+ {
+  "record_id": "FS-006964",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "heart failure NIRS, no exercise bout"
+ },
+ {
+  "record_id": "FS-006965",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise(ultramarathon)+oxylipins"
+ },
+ {
+  "record_id": "FS-006966",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+STING/NF-kB immune signaling"
+ },
+ {
+  "record_id": "FS-006967",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+aging biomarkers, ambiguous"
+ },
+ {
+  "record_id": "FS-006968",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+lymphocytes/NK cells"
+ },
+ {
+  "record_id": "FS-006969",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "oral immunotherapy follow-up, no exercise"
+ },
+ {
+  "record_id": "FS-006970",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+epigenetic age, omics"
+ },
+ {
+  "record_id": "FS-006971",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+molecular mechanism, ambiguous"
+ },
+ {
+  "record_id": "FS-006972",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+gene/protein expression platform"
+ },
+ {
+  "record_id": "FS-006973",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "psychological outcome only"
+ },
+ {
+  "record_id": "FS-006974",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+myokine FGF-21, ambiguous"
+ },
+ {
+  "record_id": "FS-006975",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise(BFR), no outcome named"
+ },
+ {
+  "record_id": "FS-006976",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "autonomic phenotype long COVID, no exercise"
+ },
+ {
+  "record_id": "FS-006977",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+inflammation/muscle damage biomarkers"
+ },
+ {
+  "record_id": "FS-006978",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+inflammation/oxidative stress"
+ },
+ {
+  "record_id": "FS-006979",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "horses only"
+ },
+ {
+  "record_id": "FS-006980",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+EV RNA gene modulation, long COVID"
+ },
+ {
+  "record_id": "FS-006981",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI03",
+  "note": "adolescent girls only, under-18"
+ },
+ {
+  "record_id": "FS-006982",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "small animal model only"
+ },
+ {
+  "record_id": "FS-006983",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise(WBV)+oxidative stress"
+ },
+ {
+  "record_id": "FS-006984",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+phagocyte oxidative burst"
+ },
+ {
+  "record_id": "FS-006985",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "wearable sweat sensor device, no exercise"
+ },
+ {
+  "record_id": "FS-006986",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "training+gut metabolite, ambiguous"
+ },
+ {
+  "record_id": "FS-006987",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "catecholamine hormones outcome only"
+ },
+ {
+  "record_id": "FS-006988",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "testosterone/cortisol hormones outcome only"
+ },
+ {
+  "record_id": "FS-006989",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+sirtuin network, ambiguous"
+ },
+ {
+  "record_id": "FS-006990",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+performance/blood biomarkers, ambiguous"
+ },
+ {
+  "record_id": "FS-006991",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+hematological changes outcome"
+ },
+ {
+  "record_id": "FS-006992",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+trace element biomarkers, ambiguous"
+ },
+ {
+  "record_id": "FS-006993",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "comment on article"
+ },
+ {
+  "record_id": "FS-006994",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+B-cell phenotypes"
+ },
+ {
+  "record_id": "FS-006995",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+neutrophil-lymphocyte ratio"
+ },
+ {
+  "record_id": "FS-006996",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+oxidative capacity, ambiguous"
+ },
+ {
+  "record_id": "FS-006997",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise+inflammatory biomarkers, CAD"
+ },
+ {
+  "record_id": "FS-006998",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise rehab+metabolic adaptation, ambiguous"
+ },
+ {
+  "record_id": "FS-006999",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "panic attack model drug, no exercise"
+ },
+ {
+  "record_id": "FS-007000",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise(combat sports)+AKI, ambiguous"
+ }
+]

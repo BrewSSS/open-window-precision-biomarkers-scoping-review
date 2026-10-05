@@ -1,0 +1,602 @@
+[
+ {
+  "record_id": "FS-003234",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Animal model only"
+ },
+ {
+  "record_id": "FS-003240",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Ticlopidine drug trial in claudication; no exercise"
+ },
+ {
+  "record_id": "FS-003247",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Tooth-brushing technique training; not physical exercise"
+ },
+ {
+  "record_id": "FS-003254",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "High altitude exposure only; no exercise word"
+ },
+ {
+  "record_id": "FS-003255",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes only strength recovery and muscle soreness"
+ },
+ {
+  "record_id": "FS-003259",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Myocardial fibrosis in lupus; no exercise"
+ },
+ {
+  "record_id": "FS-003262",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome only exercise capacity decline in COPD"
+ },
+ {
+  "record_id": "FS-003268",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Obesity, inflammation and dyspnoea; no exercise word"
+ },
+ {
+  "record_id": "FS-003269",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Pneumatic compression device only; no exercise"
+ },
+ {
+  "record_id": "FS-003271",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Manual-labour exercise with recovery; generic recovery outcome"
+ },
+ {
+  "record_id": "FS-003274",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Aluminium oxide occupational exposure; no exercise"
+ },
+ {
+  "record_id": "FS-003283",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Mondor disease case; no exercise"
+ },
+ {
+  "record_id": "FS-003285",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Stress hormone model in mental disease; no exercise"
+ },
+ {
+  "record_id": "FS-003295",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Epoetin in Friedreich ataxia; no exercise"
+ },
+ {
+  "record_id": "FS-003303",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Elite cyclists training camp; recovery generic outcome"
+ },
+ {
+  "record_id": "FS-003304",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Critical illness cardiac mechanisms; no exercise"
+ },
+ {
+  "record_id": "FS-003326",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Gliadin allergy spectrum; no exercise word"
+ },
+ {
+  "record_id": "FS-003334",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Repetitive cryotherapy (cold) only; no exercise word"
+ },
+ {
+  "record_id": "FS-003339",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Inflammation after critical illness; disease course, not exercise"
+ },
+ {
+  "record_id": "FS-003341",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Drug pharmacokinetics in volunteers; no exercise"
+ },
+ {
+  "record_id": "FS-003347",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Acupuncture in allergic rhinitis; no exercise"
+ },
+ {
+  "record_id": "FS-003363",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Maneuver exercises with epigenetic (omics) content"
+ },
+ {
+  "record_id": "FS-003368",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Allergen challenge and ibuprofen; no exercise"
+ },
+ {
+  "record_id": "FS-003370",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome only endurance exercise performance"
+ },
+ {
+  "record_id": "FS-003372",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Pregnancy lipid metabolism and inflammation; no exercise"
+ },
+ {
+  "record_id": "FS-003380",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Fibrinogen in coronary disease; no exercise"
+ },
+ {
+  "record_id": "FS-003390",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Thermotherapy (heat) only; no exercise"
+ },
+ {
+  "record_id": "FS-003395",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "MIF in myocardial ischaemia; no exercise word"
+ },
+ {
+  "record_id": "FS-003404",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "EPO doping detection after hydration; no exercise"
+ },
+ {
+  "record_id": "FS-003410",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes only bone turnover and metabolism in ultra-marathon"
+ },
+ {
+  "record_id": "FS-003422",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome only exercise performance recovery"
+ },
+ {
+  "record_id": "FS-003439",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Ozone exposure in obese women; no exercise"
+ },
+ {
+  "record_id": "FS-003446",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Rheology during controlled ischaemia; no exercise"
+ },
+ {
+  "record_id": "FS-003450",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Yogic breathing practice with salivary inflammatory biomarkers; borderline exposure"
+ },
+ {
+  "record_id": "FS-003454",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes only muscle function and sprint performance"
+ },
+ {
+  "record_id": "FS-003458",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes only serotonin and cognitive performance"
+ },
+ {
+  "record_id": "FS-003466",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Exercise-induced asthmatic responses; lung function only"
+ },
+ {
+  "record_id": "FS-003467",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Lung transplant graft dysfunction; no exercise"
+ },
+ {
+  "record_id": "FS-003476",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Spleen volume after stroke; no exercise"
+ },
+ {
+  "record_id": "FS-003481",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Thumb exertion with generic stress-biomarker responses"
+ },
+ {
+  "record_id": "FS-003506",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Muscle-damaging exercise; outcomes only performance and range of motion"
+ },
+ {
+  "record_id": "FS-003507",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Myocardial scintigraphy in psoriasis; no exercise"
+ },
+ {
+  "record_id": "FS-003510",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Anti-insulin antibodies in diabetes; no exercise"
+ },
+ {
+  "record_id": "FS-003516",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Inflammatory markers in myocardial bridging; no exercise"
+ },
+ {
+  "record_id": "FS-003520",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Radiation dosimetry lymphocyte assay; no exercise"
+ },
+ {
+  "record_id": "FS-003527",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Climbing halls; outcome only lung function"
+ },
+ {
+  "record_id": "FS-003539",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "Symposium proceedings"
+ },
+ {
+  "record_id": "FS-003542",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Water polo players; recovery generic outcome"
+ },
+ {
+  "record_id": "FS-003550",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Counterpulsation therapy; no exercise"
+ },
+ {
+  "record_id": "FS-003554",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Shock wave therapy; outcome only DOMS relief"
+ },
+ {
+  "record_id": "FS-003564",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes only cardiovascular effects of performance-enhancing drugs"
+ },
+ {
+  "record_id": "FS-003566",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Antiphospholipid syndrome cardiac findings; no exercise"
+ },
+ {
+  "record_id": "FS-003573",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Leucocyte rheology in controlled coronary ischaemia; no exercise"
+ },
+ {
+  "record_id": "FS-003574",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome only cortical bone adaptations to training"
+ },
+ {
+  "record_id": "FS-003584",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome only substance use among ultramarathon runners"
+ },
+ {
+  "record_id": "FS-003585",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes only functional capacity and cardiac measures"
+ },
+ {
+  "record_id": "FS-003589",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Acute phase reactants and COPD severity; no exercise"
+ },
+ {
+  "record_id": "FS-003603",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Uric acid and leg ischaemia in PAD; no exercise"
+ },
+ {
+  "record_id": "FS-003606",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "EPO dosing physiology and haematology; no exercise word"
+ },
+ {
+  "record_id": "FS-003609",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes only endurance capacity and dyspnoea"
+ },
+ {
+  "record_id": "FS-003610",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Trimetazidine drug effects on interleukins; no exercise"
+ },
+ {
+  "record_id": "FS-003621",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "LV function prognosis cohort; no exercise"
+ },
+ {
+  "record_id": "FS-003628",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Hippo/YAP1 pathway in asthma; no exercise"
+ },
+ {
+  "record_id": "FS-003630",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome only brain connectivity after extreme exercise"
+ },
+ {
+  "record_id": "FS-003639",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "Trial design/protocol without results"
+ },
+ {
+  "record_id": "FS-003641",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Coronary endothelial dysfunction in HIV; no exercise"
+ },
+ {
+  "record_id": "FS-003651",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Omega-3 supplementation only; no exercise word"
+ },
+ {
+  "record_id": "FS-003655",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Electrical stimulation; outcomes only myoglobin and soreness"
+ },
+ {
+  "record_id": "FS-003680",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes only hormonal, metabolic, adrenergic receptor changes"
+ },
+ {
+  "record_id": "FS-003685",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome only creatine kinase isoenzymes after ultra run"
+ },
+ {
+  "record_id": "FS-003696",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Allopurinol in ischaemia; no exercise"
+ },
+ {
+  "record_id": "FS-003705",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome only running performance decrement"
+ },
+ {
+  "record_id": "FS-003729",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome only cycling performance"
+ },
+ {
+  "record_id": "FS-003736",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes only muscle function and soreness after eccentric exercise"
+ },
+ {
+  "record_id": "FS-003740",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Food allergen characterisation; no exercise"
+ },
+ {
+  "record_id": "FS-003742",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Beta-blocker receptor pharmacology; no exercise"
+ },
+ {
+  "record_id": "FS-003747",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Aspirin drug effects in muscle; no exercise word"
+ },
+ {
+  "record_id": "FS-003748",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Immunodeficiency respiratory screening survey; no exercise"
+ },
+ {
+  "record_id": "FS-003750",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome only muscle pain after eccentric exercise"
+ },
+ {
+  "record_id": "FS-003760",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Wheat gluten genetics; no exercise"
+ },
+ {
+  "record_id": "FS-003764",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Serotonin on NK cells in vitro; no exercise word"
+ },
+ {
+  "record_id": "FS-003765",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Pegfilgrastim preference survey; no exercise"
+ },
+ {
+  "record_id": "FS-003768",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Beta-blocker receptor changes; no exercise"
+ },
+ {
+  "record_id": "FS-003774",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Behcet surgery outcomes; no exercise"
+ },
+ {
+  "record_id": "FS-003784",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Monocyte-to-HDL ratio in cardiac syndrome X; no exercise"
+ },
+ {
+  "record_id": "FS-003789",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Beta-blocker haemodynamics; no exercise"
+ },
+ {
+  "record_id": "FS-003790",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome only muscle soreness after eccentric exercise"
+ },
+ {
+  "record_id": "FS-003792",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome only treadmill exercise time"
+ },
+ {
+  "record_id": "FS-003795",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Nutrition for COPD cachexia; no exercise"
+ },
+ {
+  "record_id": "FS-004812",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Mitogen-stimulated lymphocyte protein synthesis; no exercise"
+ },
+ {
+  "record_id": "FS-004817",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Epicardial fat haemodynamics in HFpEF; no exercise word"
+ },
+ {
+  "record_id": "FS-004821",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Exercise-induced asthma protection; lung function only"
+ },
+ {
+  "record_id": "FS-004831",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "Study design paper without results"
+ },
+ {
+  "record_id": "FS-004833",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Subclinical lung involvement in ACPA-positive; no exercise"
+ },
+ {
+  "record_id": "FS-004843",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "EPO microdose detection methods; no exercise"
+ },
+ {
+  "record_id": "FS-004852",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Sleep-disordered breathing and uric acid; no exercise"
+ },
+ {
+  "record_id": "FS-004855",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Aerobic training; outcome only asthma control (symptoms)"
+ },
+ {
+  "record_id": "FS-004859",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Testosterone supplementation during energy deficit; no exercise word"
+ },
+ {
+  "record_id": "FS-004883",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Parasite infection of cultured endothelial cells only"
+ },
+ {
+  "record_id": "FS-004884",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome only skin temperature after exercise and DOMS"
+ }
+]

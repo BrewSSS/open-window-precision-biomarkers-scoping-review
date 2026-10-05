@@ -1,0 +1,602 @@
+[
+ {
+  "record_id": "FS-002080",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Animal model of type 2 diabetes only"
+ },
+ {
+  "record_id": "FS-002081",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Wild-type and mdx (mouse) muscles only"
+ },
+ {
+  "record_id": "FS-002092",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Nitrogen dioxide inhalation exposure; no exercise word"
+ },
+ {
+  "record_id": "FS-002094",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Pulmonary function test diagnostics in COPD; no exercise context"
+ },
+ {
+  "record_id": "FS-002098",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Eponym series on Wegener granulomatosis; marathon figurative"
+ },
+ {
+  "record_id": "FS-002105",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome DOMS symptoms only; no immune term"
+ },
+ {
+  "record_id": "FS-002109",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exhaled breath temperature proposed airway inflammation marker"
+ },
+ {
+  "record_id": "FS-002119",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome NT-proBNP only during exercise"
+ },
+ {
+  "record_id": "FS-002120",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Angiography for digital replantation; no exercise context"
+ },
+ {
+  "record_id": "FS-002137",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome cough reflex sensitivity only"
+ },
+ {
+  "record_id": "FS-002141",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Immunoglobulins in asthma; no exposure named"
+ },
+ {
+  "record_id": "FS-002146",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Salmonella gut infection; no exercise context"
+ },
+ {
+  "record_id": "FS-002151",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome muscle fatigue only after exercise"
+ },
+ {
+  "record_id": "FS-002155",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome exercise capacity only"
+ },
+ {
+  "record_id": "FS-002163",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Autoantibodies in Chagas patients; no exposure named"
+ },
+ {
+  "record_id": "FS-002164",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes insulin sensitivity and body composition only"
+ },
+ {
+  "record_id": "FS-002186",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes exercise capacity and quality of life only"
+ },
+ {
+  "record_id": "FS-002200",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes running economy and VO2max only"
+ },
+ {
+  "record_id": "FS-002201",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Controlled ozone exposure; no exercise word"
+ },
+ {
+  "record_id": "FS-002203",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "LTB4 pathway in myositis muscle; no exposure named"
+ },
+ {
+  "record_id": "FS-002205",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Wheat allergen protein structural analysis; no exercise context"
+ },
+ {
+  "record_id": "FS-002209",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome insulin sensitivity only"
+ },
+ {
+  "record_id": "FS-002212",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Proinflammatory cytokines in heart failure; no exposure named"
+ },
+ {
+  "record_id": "FS-002216",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Wheat allergen diagnostic proteins; no exercise context"
+ },
+ {
+  "record_id": "FS-002224",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome exercise capacity only in IBD"
+ },
+ {
+  "record_id": "FS-002246",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Visfatin in heart failure; no exposure named"
+ },
+ {
+  "record_id": "FS-002248",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Immune biomarker coexpression; exposure not named"
+ },
+ {
+  "record_id": "FS-002250",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Ozone breathing exposure; no exercise word"
+ },
+ {
+  "record_id": "FS-002256",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "G-CSF and cell reinfusion trial; no exercise context"
+ },
+ {
+  "record_id": "FS-002257",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Controlled ischaemia trigger unstated; blood filterability generic"
+ },
+ {
+  "record_id": "FS-002260",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Perioperative nutrient supplementation after gastrectomy; no exercise"
+ },
+ {
+  "record_id": "FS-002274",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Opium addiction exposure; no exercise context"
+ },
+ {
+  "record_id": "FS-002287",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "Evidence-based analysis (health technology assessment review)"
+ },
+ {
+  "record_id": "FS-002288",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "Evidence-based analysis (health technology assessment review)"
+ },
+ {
+  "record_id": "FS-002289",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "In vitro wheat protein allergenicity; no exercise context"
+ },
+ {
+  "record_id": "FS-002296",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome exercise dysfunction only in HIV"
+ },
+ {
+  "record_id": "FS-002302",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Cryopneumatic device after knee arthroplasty; no exercise context"
+ },
+ {
+  "record_id": "FS-002307",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Induced limb ischaemia trigger unstated; blood rheology generic"
+ },
+ {
+  "record_id": "FS-002318",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Raltegravir pharmacokinetics; no exercise context"
+ },
+ {
+  "record_id": "FS-002322",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Cosmetic wheat protein sensitization; no exercise context"
+ },
+ {
+  "record_id": "FS-002323",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Platelet-rich plasma injection exposure; no exercise word"
+ },
+ {
+  "record_id": "FS-002339",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Dairy or soy ingestion only; no exercise word"
+ },
+ {
+  "record_id": "FS-002341",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Risk prediction in angina; exposure and outcome unspecified"
+ },
+ {
+  "record_id": "FS-002342",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome insulin sensitivity only"
+ },
+ {
+  "record_id": "FS-002355",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes cognitive impairment and physical recovery only"
+ },
+ {
+  "record_id": "FS-002357",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Genetic myopathy mechanism; no exercise context"
+ },
+ {
+  "record_id": "FS-002363",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes response, exercise capacity, quality of life only"
+ },
+ {
+  "record_id": "FS-002364",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes functional capacity and diastolic function only"
+ },
+ {
+  "record_id": "FS-002401",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Hypobaric decompression exposure; no exercise word"
+ },
+ {
+  "record_id": "FS-002403",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Particulate matter exposure; no exercise word"
+ },
+ {
+  "record_id": "FS-002412",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Carvedilol drug treatment in heart failure; no exercise context"
+ },
+ {
+  "record_id": "FS-002415",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Fitness vs insulin resistance only"
+ },
+ {
+  "record_id": "FS-002425",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome muscle strength recovery only"
+ },
+ {
+  "record_id": "FS-002429",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Phospholipase A2 in asthma; no exposure named"
+ },
+ {
+  "record_id": "FS-002436",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Platelet activity during unspecified stress; stressor not stated"
+ },
+ {
+  "record_id": "FS-002441",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Clinical service experience in pulmonary hypertension; no exercise"
+ },
+ {
+  "record_id": "FS-002443",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome erythropoietin (hormone) only during dive"
+ },
+ {
+  "record_id": "FS-002450",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "HTLV-1-infected cell lines only"
+ },
+ {
+  "record_id": "FS-002452",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Ozone exposure only; no exercise word"
+ },
+ {
+  "record_id": "FS-002456",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Lipid mediators in muscle; no exposure named"
+ },
+ {
+  "record_id": "FS-002464",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Physical therapy devices for tendinopathy; no exercise context"
+ },
+ {
+  "record_id": "FS-002473",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome exercise limitation only"
+ },
+ {
+  "record_id": "FS-002474",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome postprandial glucose metabolism only"
+ },
+ {
+  "record_id": "FS-002479",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "High altitude exposure only; no exercise word"
+ },
+ {
+  "record_id": "FS-002483",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Immune signatures; no exposure named"
+ },
+ {
+  "record_id": "FS-002485",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Altitude and cold air exposure; no exercise word"
+ },
+ {
+  "record_id": "FS-002499",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Amino acid infusion exposure; no exercise word"
+ },
+ {
+  "record_id": "FS-002522",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Neutrophil activation after claudication (walking exertion)"
+ },
+ {
+  "record_id": "FS-002528",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome muscle activation timing only"
+ },
+ {
+  "record_id": "FS-002549",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Urine drug removal chemistry; no exercise context"
+ },
+ {
+  "record_id": "FS-002556",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Basophils and mast cells; no exposure named"
+ },
+ {
+  "record_id": "FS-002561",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Drug-induced liver injury biomarkers; no exercise context"
+ },
+ {
+  "record_id": "FS-002566",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Periodontitis (inflammatory disease) with cardiorespiratory fitness"
+ },
+ {
+  "record_id": "FS-002573",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Interleukin-6 gene variant named"
+ },
+ {
+  "record_id": "FS-002579",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome exercise limitations only"
+ },
+ {
+  "record_id": "FS-002582",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome anaerobic threshold only"
+ },
+ {
+  "record_id": "FS-002586",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Aspirin effect on basophil histamine release; no exercise"
+ },
+ {
+  "record_id": "FS-002602",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Muscle damage marker; no exposure named"
+ },
+ {
+  "record_id": "FS-002604",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome 6-min walk distance only"
+ },
+ {
+  "record_id": "FS-002605",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome hormonal response only"
+ },
+ {
+  "record_id": "FS-002608",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Interleukin-1 blockade immune term; heart failure exercise capacity"
+ },
+ {
+  "record_id": "FS-002610",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Wheat allergy IgE diagnostics; no exercise word"
+ },
+ {
+  "record_id": "FS-002611",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Ischaemic preconditioning and ablation; no exercise context"
+ },
+ {
+  "record_id": "FS-002612",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Allergic autocytotoxicity in asthma; no exposure named"
+ },
+ {
+  "record_id": "FS-002613",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome run time to exhaustion only"
+ },
+ {
+  "record_id": "FS-002615",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Protein modification antibody in asthma; no exposure named"
+ },
+ {
+  "record_id": "FS-002637",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome neuromuscular exhaustion in myasthenia only"
+ },
+ {
+  "record_id": "FS-002646",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Serum cholinesterase marker; no exposure named"
+ },
+ {
+  "record_id": "FS-002661",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Cold exposure only; no exercise word"
+ },
+ {
+  "record_id": "FS-002673",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "CD163 and TWEAK markers; no exposure named"
+ },
+ {
+  "record_id": "FS-002677",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome exercise capacity only"
+ },
+ {
+  "record_id": "FS-002680",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Diurnal hormone patterns and adiposity; no exercise context"
+ },
+ {
+  "record_id": "FS-002689",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Herbal extract for osteoarthritis; no exercise context"
+ },
+ {
+  "record_id": "FS-002692",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome muscle soreness only"
+ },
+ {
+  "record_id": "FS-002705",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Allergen array diagnostics in anaphylaxis; no exercise word"
+ },
+ {
+  "record_id": "FS-002716",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Tear IgE in conjunctivitis; no exercise context"
+ },
+ {
+  "record_id": "FS-002718",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "Special issue introduction (editorial)"
+ },
+ {
+  "record_id": "FS-002732",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Dichlorophenol exposure and asthma; no exercise context"
+ },
+ {
+  "record_id": "FS-002738",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Gene expression after cycle test; young players"
+ },
+ {
+  "record_id": "FS-002740",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Wheat allergy IgE method; no exercise context"
+ }
+]

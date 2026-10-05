@@ -1,0 +1,1202 @@
+[
+ {
+  "record_id": "FS-000001",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + IL-6 outcome"
+ },
+ {
+  "record_id": "FS-000002",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "ultramarathon, haematological outcome"
+ },
+ {
+  "record_id": "FS-000003",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "diesel exhaust, no exercise"
+ },
+ {
+  "record_id": "FS-000004",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "ozone exposure, no exercise"
+ },
+ {
+  "record_id": "FS-000005",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + TNF/neutrophil"
+ },
+ {
+  "record_id": "FS-000006",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "noradrenaline infusion, no exercise"
+ },
+ {
+  "record_id": "FS-000007",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + NK cell"
+ },
+ {
+  "record_id": "FS-000008",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "ozone exposure, no exercise"
+ },
+ {
+  "record_id": "FS-000009",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "fibroblast cell line only"
+ },
+ {
+  "record_id": "FS-000010",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + leukocyte adhesion"
+ },
+ {
+  "record_id": "FS-000011",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "isometric exercise + inflammatory mediators"
+ },
+ {
+  "record_id": "FS-000012",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "exercise, outcome only blood flow"
+ },
+ {
+  "record_id": "FS-000013",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + saliva IgA"
+ },
+ {
+  "record_id": "FS-000014",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "exam stress, no exercise"
+ },
+ {
+  "record_id": "FS-000015",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "CMV infection, angioplasty, no exercise"
+ },
+ {
+  "record_id": "FS-000016",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "occupational vanadium exposure, no exercise"
+ },
+ {
+  "record_id": "FS-000017",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "exercise, outcome only gas exchange"
+ },
+ {
+  "record_id": "FS-000018",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + leukocyte DNA marker"
+ },
+ {
+  "record_id": "FS-000019",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "ambiguous, no clear exercise/non-exercise code"
+ },
+ {
+  "record_id": "FS-000020",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "endurance runners + granulocyte marker"
+ },
+ {
+  "record_id": "FS-000021",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + neutrophils"
+ },
+ {
+  "record_id": "FS-000022",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + neutrophil function"
+ },
+ {
+  "record_id": "FS-000023",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "exercise capacity, outcome not immune"
+ },
+ {
+  "record_id": "FS-000024",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "ozone exposure, no exercise"
+ },
+ {
+  "record_id": "FS-000025",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + HIV RNA (infection)"
+ },
+ {
+  "record_id": "FS-000026",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "exercise, outcome only reflex sensitivity"
+ },
+ {
+  "record_id": "FS-000027",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "no exposure named, only markers"
+ },
+ {
+  "record_id": "FS-000028",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "athletes + basophil marker"
+ },
+ {
+  "record_id": "FS-000029",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "running, outcome only neuroendocrine/hormone"
+ },
+ {
+  "record_id": "FS-000030",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "exercise, outcome only erythropoietin hormone"
+ },
+ {
+  "record_id": "FS-000031",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "MI/angina, no exercise"
+ },
+ {
+  "record_id": "FS-000032",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise test + immunological response"
+ },
+ {
+  "record_id": "FS-000033",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "training + immune responses"
+ },
+ {
+  "record_id": "FS-000034",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + NK cell activity"
+ },
+ {
+  "record_id": "FS-000035",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "marathon, no outcome named"
+ },
+ {
+  "record_id": "FS-000036",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise-induced anaphylaxis, immune outcome"
+ },
+ {
+  "record_id": "FS-000037",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "dialysis anemia correction, no exercise"
+ },
+ {
+  "record_id": "FS-000038",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + oxidative stress marker"
+ },
+ {
+  "record_id": "FS-000039",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + VEGF protein marker"
+ },
+ {
+  "record_id": "FS-000040",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + T lymphocytes"
+ },
+ {
+  "record_id": "FS-000041",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + MnSOD antioxidant"
+ },
+ {
+  "record_id": "FS-000042",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + neutrophil activation"
+ },
+ {
+  "record_id": "FS-000043",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "exercise, outcome only soreness/performance"
+ },
+ {
+  "record_id": "FS-000044",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "resistance training + immune function"
+ },
+ {
+  "record_id": "FS-000045",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "marathon runners + immune parameters"
+ },
+ {
+  "record_id": "FS-000046",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + leukocytosis/lymphocyte"
+ },
+ {
+  "record_id": "FS-000047",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise, clinical population, no outcome"
+ },
+ {
+  "record_id": "FS-000048",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "kidney transplant immunosuppression, no exercise"
+ },
+ {
+  "record_id": "FS-000049",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "exercise, outcome only erythropoietin"
+ },
+ {
+  "record_id": "FS-000050",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "training load + lymphocyte receptor"
+ },
+ {
+  "record_id": "FS-000051",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "mice only"
+ },
+ {
+  "record_id": "FS-000052",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "running + haematological/blood markers"
+ },
+ {
+  "record_id": "FS-000053",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise training + CD4 cells"
+ },
+ {
+  "record_id": "FS-000054",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "drug on keratinocytes, no exercise"
+ },
+ {
+  "record_id": "FS-000055",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "peripheral arterial disease cytokines, no exercise"
+ },
+ {
+  "record_id": "FS-000056",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + immune response"
+ },
+ {
+  "record_id": "FS-000057",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "ozone exposure, no exercise"
+ },
+ {
+  "record_id": "FS-000058",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "ozone exposure, no exercise"
+ },
+ {
+  "record_id": "FS-000059",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "tapering/competition, vague outcome"
+ },
+ {
+  "record_id": "FS-000060",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + leukocyte"
+ },
+ {
+  "record_id": "FS-000061",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "exercise performance, outcome not immune"
+ },
+ {
+  "record_id": "FS-000062",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "training stress + herpesvirus latency"
+ },
+ {
+  "record_id": "FS-000063",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "cell line Raji only"
+ },
+ {
+  "record_id": "FS-000064",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "ozone exposure, no exercise"
+ },
+ {
+  "record_id": "FS-000065",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "exercise test, outcome cardiac function only"
+ },
+ {
+  "record_id": "FS-000066",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "glucose/atherosclerosis epidemiology, no exercise"
+ },
+ {
+  "record_id": "FS-000067",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exertional hyperthermia + lymphocyte"
+ },
+ {
+  "record_id": "FS-000068",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "eccentric exercise + bradykinin"
+ },
+ {
+  "record_id": "FS-000069",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "ambiguous diving exposure/outcome"
+ },
+ {
+  "record_id": "FS-000070",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "drug pharmacokinetics, no exercise"
+ },
+ {
+  "record_id": "FS-000071",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "exercise, outcome only renal response"
+ },
+ {
+  "record_id": "FS-000072",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "endurance training + non-specific immunity"
+ },
+ {
+  "record_id": "FS-000073",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise, ambiguous prothrombotic outcome"
+ },
+ {
+  "record_id": "FS-000074",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + inflammatory response"
+ },
+ {
+  "record_id": "FS-000075",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI03",
+  "note": "prepubertal children only"
+ },
+ {
+  "record_id": "FS-000076",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + cytokines/neutrophil"
+ },
+ {
+  "record_id": "FS-000077",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "trophoblast growth factors, no exercise"
+ },
+ {
+  "record_id": "FS-000078",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "committee report document type"
+ },
+ {
+  "record_id": "FS-000079",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "exercise, outcome only nasal resistance"
+ },
+ {
+  "record_id": "FS-000080",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "rowing + immune response"
+ },
+ {
+  "record_id": "FS-000081",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "eccentric exercise + neutrophils"
+ },
+ {
+  "record_id": "FS-000082",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "exercise, outcome only collagen metabolism"
+ },
+ {
+  "record_id": "FS-000083",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "eccentric exercise + JNK signaling marker"
+ },
+ {
+  "record_id": "FS-000084",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "ozone exposure, no exercise"
+ },
+ {
+  "record_id": "FS-000085",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "asthma knowledge survey, no exercise"
+ },
+ {
+  "record_id": "FS-000086",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "soccer exercise + immune responses"
+ },
+ {
+  "record_id": "FS-000087",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "aspirin/CRP, no exercise"
+ },
+ {
+  "record_id": "FS-000088",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "exercise, outcome only erythropoietin hormone"
+ },
+ {
+  "record_id": "FS-000089",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "triathlon + cytokine/endotoxaemia"
+ },
+ {
+  "record_id": "FS-000090",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + VEGF gene expression"
+ },
+ {
+  "record_id": "FS-000091",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + NK cytotoxic response"
+ },
+ {
+  "record_id": "FS-000092",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "HIV/CXCR4 drug mechanism, no exercise"
+ },
+ {
+  "record_id": "FS-000093",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise, ambiguous fibrinolytic outcome"
+ },
+ {
+  "record_id": "FS-000094",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "peripheral arterial disease, no exercise"
+ },
+ {
+  "record_id": "FS-000095",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + lymphocyte subsets"
+ },
+ {
+  "record_id": "FS-000096",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + lymphocyte phenotype"
+ },
+ {
+  "record_id": "FS-000097",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + monocyte glucocorticoid sensitivity"
+ },
+ {
+  "record_id": "FS-000098",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + nitric oxide, ambiguous"
+ },
+ {
+  "record_id": "FS-000099",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "\"current recommendations\" guidance document"
+ },
+ {
+  "record_id": "FS-000100",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "female mice only"
+ },
+ {
+  "record_id": "FS-000101",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "no exposure named, cytokines in CFS"
+ },
+ {
+  "record_id": "FS-000102",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "rowers + saliva immunoglobulins"
+ },
+ {
+  "record_id": "FS-000103",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "GM-CSF/chemotherapy, no exercise"
+ },
+ {
+  "record_id": "FS-000104",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "exercise, outcome only growth hormone"
+ },
+ {
+  "record_id": "FS-000105",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "blood product storage, no exercise"
+ },
+ {
+  "record_id": "FS-000106",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise, ambiguous GI mucosal outcome"
+ },
+ {
+  "record_id": "FS-000107",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + cytokines/neutrophil priming"
+ },
+ {
+  "record_id": "FS-000108",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "exercise, outcome lipids/body composition only"
+ },
+ {
+  "record_id": "FS-000109",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "endurance training + CRP"
+ },
+ {
+  "record_id": "FS-000110",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + platelet factor 4 (chemokine)"
+ },
+ {
+  "record_id": "FS-000111",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + neutrophil function"
+ },
+ {
+  "record_id": "FS-000112",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + neutrophilia"
+ },
+ {
+  "record_id": "FS-000113",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "taper, vague physiological outcome"
+ },
+ {
+  "record_id": "FS-000114",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "sperm cell cytokines, no exercise"
+ },
+ {
+  "record_id": "FS-000115",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "chlamydia serology/asthma, no exercise"
+ },
+ {
+  "record_id": "FS-000116",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "exercise, outcome only endocrine/hormone"
+ },
+ {
+  "record_id": "FS-000117",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + neutrophil degranulation"
+ },
+ {
+  "record_id": "FS-000118",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "blood doping detection, no exercise wording"
+ },
+ {
+  "record_id": "FS-000119",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "exercise, outcome only neuromuscular"
+ },
+ {
+  "record_id": "FS-000120",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + leukocyte HSP"
+ },
+ {
+  "record_id": "FS-000121",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "ozone exposure (rat+human), no exercise"
+ },
+ {
+  "record_id": "FS-000122",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "ozone exposure, no exercise"
+ },
+ {
+  "record_id": "FS-000123",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "no exposure named, dendritic cell method"
+ },
+ {
+  "record_id": "FS-000124",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise-induced asthma + airway inflammation"
+ },
+ {
+  "record_id": "FS-000125",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "marathon + leucocyte counts"
+ },
+ {
+  "record_id": "FS-000126",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + IL-12"
+ },
+ {
+  "record_id": "FS-000127",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "wheat allergy/dermatitis, no exercise"
+ },
+ {
+  "record_id": "FS-000128",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "marathon, outcome not immune"
+ },
+ {
+  "record_id": "FS-000129",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + platelet/oxidized LDL"
+ },
+ {
+  "record_id": "FS-000130",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "marathon + matrix proteins"
+ },
+ {
+  "record_id": "FS-000131",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "drug pharmacokinetics, no exercise"
+ },
+ {
+  "record_id": "FS-000132",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "training, outcome only GH/IGF hormones"
+ },
+ {
+  "record_id": "FS-000133",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "ultramarathon + immune activation"
+ },
+ {
+  "record_id": "FS-000134",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise, ambiguous platelet outcome"
+ },
+ {
+  "record_id": "FS-000135",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + neutrophil oxidative activity"
+ },
+ {
+  "record_id": "FS-000136",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + perforin lymphocyte"
+ },
+ {
+  "record_id": "FS-000137",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "dogs only"
+ },
+ {
+  "record_id": "FS-000138",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "ozone exposure, no exercise"
+ },
+ {
+  "record_id": "FS-000139",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + neutrophil/platelet adhesion"
+ },
+ {
+  "record_id": "FS-000140",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI03",
+  "note": "children with cystic fibrosis only"
+ },
+ {
+  "record_id": "FS-000141",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "training + immune status"
+ },
+ {
+  "record_id": "FS-000142",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "azithromycin/ozone, no exercise"
+ },
+ {
+  "record_id": "FS-000143",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "angina/oxidant stress epidemiology, no exercise"
+ },
+ {
+  "record_id": "FS-000144",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "athletes + interleukins"
+ },
+ {
+  "record_id": "FS-000145",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "diabetes platelet-activating factor, no exercise"
+ },
+ {
+  "record_id": "FS-000146",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "drug metabolism in vitro, no exercise"
+ },
+ {
+  "record_id": "FS-000147",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "marathon + neutrophil oxygen radicals"
+ },
+ {
+  "record_id": "FS-000148",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + cytokines/adhesion molecules"
+ },
+ {
+  "record_id": "FS-000149",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + T-lymphocyte function"
+ },
+ {
+  "record_id": "FS-000150",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "muscle damage, outcome only insulin signaling"
+ },
+ {
+  "record_id": "FS-000151",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "CRP/coronary calcium epidemiology, no exercise"
+ },
+ {
+  "record_id": "FS-000152",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "exercise training, outcome only GLUT4"
+ },
+ {
+  "record_id": "FS-000153",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + granulocyte pool"
+ },
+ {
+  "record_id": "FS-000154",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise-induced muscle injury, no limiting outcome"
+ },
+ {
+  "record_id": "FS-000155",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "triathletes + immune response"
+ },
+ {
+  "record_id": "FS-000156",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "running exercise + leukocyte iNOS"
+ },
+ {
+  "record_id": "FS-000157",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "CRP/exercise test, ambiguous relevance"
+ },
+ {
+  "record_id": "FS-000158",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "marathon + JNK/p38 signaling marker"
+ },
+ {
+  "record_id": "FS-000159",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + VEGF gene expression"
+ },
+ {
+  "record_id": "FS-000160",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "endurance runners + leukocyte HSP"
+ },
+ {
+  "record_id": "FS-000161",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + monocyte subset"
+ },
+ {
+  "record_id": "FS-000162",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "rowing + cytokine/phagocytic response"
+ },
+ {
+  "record_id": "FS-000163",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + IL-6/TNF"
+ },
+ {
+  "record_id": "FS-000164",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + inflammatory response"
+ },
+ {
+  "record_id": "FS-000165",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "chromium toxicology, no exercise"
+ },
+ {
+  "record_id": "FS-000166",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "paroxetine/depression, no exercise"
+ },
+ {
+  "record_id": "FS-000167",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "myocardial ischemia, no exercise"
+ },
+ {
+  "record_id": "FS-000168",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "air pollution exposure, no exercise"
+ },
+ {
+  "record_id": "FS-000169",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "hyperosmolarity/cooling exposure, no exercise"
+ },
+ {
+  "record_id": "FS-000170",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + NK cells"
+ },
+ {
+  "record_id": "FS-000171",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + IL-1/IL-6/TNF"
+ },
+ {
+  "record_id": "FS-000172",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "hyperosmotic stress exposure, no exercise"
+ },
+ {
+  "record_id": "FS-000173",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + TNF-alpha"
+ },
+ {
+  "record_id": "FS-000174",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "training, vague exertional indices outcome"
+ },
+ {
+  "record_id": "FS-000175",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "rats only"
+ },
+ {
+  "record_id": "FS-000176",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "ozone exposure, no exercise"
+ },
+ {
+  "record_id": "FS-000177",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + monocyte cytokine"
+ },
+ {
+  "record_id": "FS-000178",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "adrenaline infusion, no exercise"
+ },
+ {
+  "record_id": "FS-000179",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + IL-6"
+ },
+ {
+  "record_id": "FS-000180",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + CRP"
+ },
+ {
+  "record_id": "FS-000181",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + gene expression"
+ },
+ {
+  "record_id": "FS-000182",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + muscle inflammation"
+ },
+ {
+  "record_id": "FS-000183",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + cytokine response"
+ },
+ {
+  "record_id": "FS-000184",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "ultramarathon + cytokine"
+ },
+ {
+  "record_id": "FS-000185",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise-induced airway narrowing, NO mediator"
+ },
+ {
+  "record_id": "FS-000186",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "gene polymorphism/atherosclerosis, no exercise"
+ },
+ {
+  "record_id": "FS-000187",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "antiretroviral therapy, no exercise"
+ },
+ {
+  "record_id": "FS-000188",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "cycling + saliva IgA"
+ },
+ {
+  "record_id": "FS-000189",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "supplement study, no exercise wording"
+ },
+ {
+  "record_id": "FS-000190",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + PBMC adhesion"
+ },
+ {
+  "record_id": "FS-000191",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "asthma diagnosis, no exercise"
+ },
+ {
+  "record_id": "FS-000192",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise, ambiguous platelet outcome"
+ },
+ {
+  "record_id": "FS-000193",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + white blood cells"
+ },
+ {
+  "record_id": "FS-000194",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "high altitude exposure, no exercise"
+ },
+ {
+  "record_id": "FS-000195",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "montelukast/SO2 exposure, no exercise"
+ },
+ {
+  "record_id": "FS-000196",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise + inflammatory response claudication"
+ },
+ {
+  "record_id": "FS-000197",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "ultramarathon + acute phase response"
+ },
+ {
+  "record_id": "FS-000198",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "GM-CSF drug therapy, no exercise"
+ },
+ {
+  "record_id": "FS-000199",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise-induced hypoxemia + basophils"
+ },
+ {
+  "record_id": "FS-000200",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "exercise-induced hypoxemia + basophils"
+ }
+]

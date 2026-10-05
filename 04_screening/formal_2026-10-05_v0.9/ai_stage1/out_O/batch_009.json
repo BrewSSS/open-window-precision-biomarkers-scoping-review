@@ -1,0 +1,602 @@
+[
+ {
+  "record_id": "FS-000610",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome only metabolic disturbances by 31P MRS; no immune term"
+ },
+ {
+  "record_id": "FS-000654",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome lower extremity functioning only; no immune term"
+ },
+ {
+  "record_id": "FS-000655",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Immune cell redistribution outcome; stressor type not stated"
+ },
+ {
+  "record_id": "FS-000656",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome asthma diagnosis prevalence only; no immune marker named"
+ },
+ {
+  "record_id": "FS-000660",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Determinants of EIB severity unnamed; may include airway inflammation"
+ },
+ {
+  "record_id": "FS-000671",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Trained runners; IL-6 immune term present in title"
+ },
+ {
+  "record_id": "FS-000677",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Biomaterial flow chamber validation; no exercise context"
+ },
+ {
+  "record_id": "FS-000686",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes physical and mental fatigue only after match"
+ },
+ {
+  "record_id": "FS-000689",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome erythrocyte hemolysis only; no immune term"
+ },
+ {
+  "record_id": "FS-000690",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Exposure diurnal variation in CAD patients; no exercise word"
+ },
+ {
+  "record_id": "FS-000692",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes desaturation and pulmonary haemodynamics only"
+ },
+ {
+  "record_id": "FS-000709",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Neutrophil outcomes; hypoxia/reoxygenation not evidently non-exercise"
+ },
+ {
+  "record_id": "FS-000713",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome ventilatory response only"
+ },
+ {
+  "record_id": "FS-000727",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes postprandial metabolism and vascular function only"
+ },
+ {
+  "record_id": "FS-000744",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes lung function, health status, functional capacity only"
+ },
+ {
+  "record_id": "FS-000772",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Asthma drug treatment guideline; no exercise context"
+ },
+ {
+  "record_id": "FS-000781",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome nandrolone excretion (hormone/doping) only"
+ },
+ {
+  "record_id": "FS-000806",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes glucose tolerance and serum lipids only"
+ },
+ {
+  "record_id": "FS-000810",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "RANKL is TNF-family cytokine; possibly immune content"
+ },
+ {
+  "record_id": "FS-000811",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome ionized magnesium only"
+ },
+ {
+  "record_id": "FS-000840",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome erythropoietic adaptations only"
+ },
+ {
+  "record_id": "FS-000850",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "Trial study design and safety aspects; stem cell trial protocol"
+ },
+ {
+  "record_id": "FS-000853",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome homocysteine only vs fitness"
+ },
+ {
+  "record_id": "FS-000857",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome microvascular parameters only"
+ },
+ {
+  "record_id": "FS-000863",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome pulmonary capillary integrity/oedema only"
+ },
+ {
+  "record_id": "FS-000866",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exhaled nitric oxide is airway inflammation marker"
+ },
+ {
+  "record_id": "FS-000878",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome arterial hypoxaemia only"
+ },
+ {
+  "record_id": "FS-000892",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Gene transcription (omics) named; type not stated"
+ },
+ {
+  "record_id": "FS-000898",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes insulin resistance and visceral fat only"
+ },
+ {
+  "record_id": "FS-000909",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Skeletal muscle cells in culture only"
+ },
+ {
+  "record_id": "FS-000910",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome EIB (lung function) only"
+ },
+ {
+  "record_id": "FS-000965",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Resistin adipokine possibly inflammatory; athletes"
+ },
+ {
+  "record_id": "FS-000980",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Muscle damage named; inflammatory markers possible"
+ },
+ {
+  "record_id": "FS-000981",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Intermittent hypobaric hypoxia exposure; no exercise word"
+ },
+ {
+  "record_id": "FS-001002",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome glomerular macromolecule passage only"
+ },
+ {
+  "record_id": "FS-001006",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome systolic blood pressure response only"
+ },
+ {
+  "record_id": "FS-001043",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes glucose tolerance and insulin action only"
+ },
+ {
+  "record_id": "FS-001047",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome melanoma occurrence only; no immune term"
+ },
+ {
+  "record_id": "FS-001048",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Cardiac rehabilitation; outcomes not specified in title"
+ },
+ {
+  "record_id": "FS-001052",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Adiponectin oligomers; possibly anti-inflammatory adipokine"
+ },
+ {
+  "record_id": "FS-001053",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes heart rate recovery and atherosclerosis only"
+ },
+ {
+  "record_id": "FS-001059",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes anaemia, exercise tolerance, renal, BNP only"
+ },
+ {
+  "record_id": "FS-001074",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Postexercise mRNA gene expression measured"
+ },
+ {
+  "record_id": "FS-001083",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome endothelial dysfunction only"
+ },
+ {
+  "record_id": "FS-001087",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome endothelial function only"
+ },
+ {
+  "record_id": "FS-001098",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exhaled breath condensate pH; airway inflammation marker"
+ },
+ {
+  "record_id": "FS-001102",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome EIB (lung function) only"
+ },
+ {
+  "record_id": "FS-001109",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Airway inflammation named in title"
+ },
+ {
+  "record_id": "FS-001111",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exertional rhabdomyolysis (muscle damage) in marathon runners"
+ },
+ {
+  "record_id": "FS-001112",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Immune function with marathon training"
+ },
+ {
+  "record_id": "FS-001156",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome functional status only after walking regimen"
+ },
+ {
+  "record_id": "FS-001159",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes cardiovascular and all-cause death only"
+ },
+ {
+  "record_id": "FS-001164",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Myostatin mRNA gene expression after loading"
+ },
+ {
+  "record_id": "FS-001188",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome lean mass only after resistance training"
+ },
+ {
+  "record_id": "FS-001206",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Adiponectin after acute exercise; possibly anti-inflammatory adipokine"
+ },
+ {
+  "record_id": "FS-001225",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome renal alterations only"
+ },
+ {
+  "record_id": "FS-001229",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exertional rhabdomyolysis (muscle damage) named"
+ },
+ {
+  "record_id": "FS-001252",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome flow-mediated dilation only"
+ },
+ {
+  "record_id": "FS-001272",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Normobaric hypoxia exposure; no exercise word"
+ },
+ {
+  "record_id": "FS-001273",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exercise-induced cholangitis/pancreatitis; inflammatory condition"
+ },
+ {
+  "record_id": "FS-001285",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Ventilation modelling of exhaled NO; no exercise context"
+ },
+ {
+  "record_id": "FS-001297",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Osteoprotegerin (TNF receptor family) possibly immune; exercise test"
+ },
+ {
+  "record_id": "FS-001307",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI03",
+  "note": "Childhood asthma only"
+ },
+ {
+  "record_id": "FS-001316",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes cardiovascular and all-cause death only"
+ },
+ {
+  "record_id": "FS-001325",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "PPARgamma gene expression possibly immune-relevant"
+ },
+ {
+  "record_id": "FS-001331",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Cardiac damage after exercise; generic damage marker"
+ },
+ {
+  "record_id": "FS-001360",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome stroke risk only"
+ },
+ {
+  "record_id": "FS-001377",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome fibre energy metabolism only"
+ },
+ {
+  "record_id": "FS-001383",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Hormone-immune interaction; sports journal, no type stated"
+ },
+ {
+  "record_id": "FS-001384",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Overtraining and infection susceptibility"
+ },
+ {
+  "record_id": "FS-001385",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exercise and immunity in athletes"
+ },
+ {
+  "record_id": "FS-001417",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome self-reported symptoms only"
+ },
+ {
+  "record_id": "FS-001425",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Muscle oxidative enzyme defect; metabolic outcomes only"
+ },
+ {
+  "record_id": "FS-001439",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome insulin sensitivity only"
+ },
+ {
+  "record_id": "FS-001449",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "EIB title names no outcome; type not stated"
+ },
+ {
+  "record_id": "FS-001457",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Complement activation; ischaemia trigger not stated"
+ },
+ {
+  "record_id": "FS-001470",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome atherogenic lipids only"
+ },
+ {
+  "record_id": "FS-001475",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Visfatin (NAMPT) cytokine-like adipokine after training"
+ },
+ {
+  "record_id": "FS-001503",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Asthma drug efficacy; no exercise context"
+ },
+ {
+  "record_id": "FS-001504",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome ventricular remodeling only"
+ },
+ {
+  "record_id": "FS-001521",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome EIB inhibition (lung function) only"
+ },
+ {
+  "record_id": "FS-001525",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome erectile dysfunction only"
+ },
+ {
+  "record_id": "FS-001527",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Case report; endurance-trained, lung affection possibly inflammatory"
+ },
+ {
+  "record_id": "FS-001533",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Lifestyle education may include activity; outcome unnamed"
+ },
+ {
+  "record_id": "FS-001546",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome endothelium-dependent dilation only"
+ },
+ {
+  "record_id": "FS-001553",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Doppler synovitis in RA after exercise; inflammatory activity"
+ },
+ {
+  "record_id": "FS-001562",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes heart rate recovery and renal function only"
+ },
+ {
+  "record_id": "FS-001594",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes heart rate recovery and mortality only"
+ },
+ {
+  "record_id": "FS-001600",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exercise and respiratory viral infections"
+ },
+ {
+  "record_id": "FS-002001",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome physical function only"
+ },
+ {
+  "record_id": "FS-002007",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Atorvastatin drug trial in SLE; no exercise context"
+ },
+ {
+  "record_id": "FS-002016",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "Design of a randomized controlled trial (protocol)"
+ },
+ {
+  "record_id": "FS-002020",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Anti-inflammatory effects of exercise; type not stated in title"
+ },
+ {
+  "record_id": "FS-002042",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcomes insulin action and glucose tolerance only"
+ },
+ {
+  "record_id": "FS-002043",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome hyponatremia only"
+ },
+ {
+  "record_id": "FS-002047",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Wheat-induced anaphylaxis IgE diagnostics; no exercise word"
+ },
+ {
+  "record_id": "FS-002052",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Outcome feeling states (mood) only"
+ },
+ {
+  "record_id": "FS-002057",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Skeletal muscle cells in culture only"
+ },
+ {
+  "record_id": "FS-002060",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Mycophenolate pharmacokinetics; no exercise context"
+ },
+ {
+  "record_id": "FS-002074",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Chemical inhalation toxicology; no exercise word"
+ }
+]

@@ -1,0 +1,602 @@
+[
+ {
+  "record_id": "FS-010041",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Acute exercise; unspecified serum anabolic/catabolic factors"
+ },
+ {
+  "record_id": "FS-010060",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "Title states synthesis of clinical trials and meta-analyses"
+ },
+ {
+  "record_id": "FS-010093",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Locomotor training after SCI; plasticity and kinematics only"
+ },
+ {
+  "record_id": "FS-010118",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Ethanol and post-exercise muscle recovery; recovery generic"
+ },
+ {
+  "record_id": "FS-010123",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Haptoglobin, oxidative stress, muscle atrophy; no exposure named"
+ },
+ {
+  "record_id": "FS-010130",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Meteorin-like immune-adipose interactions; no exposure named"
+ },
+ {
+  "record_id": "FS-010179",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Exercise; weight loss, glycaemia, liver mitochondria only"
+ },
+ {
+  "record_id": "FS-010185",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Exercise; left ventricular dysfunction and NHE-1 only"
+ },
+ {
+  "record_id": "FS-010198",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Endurance exercise; satellite cell proliferation only"
+ },
+ {
+  "record_id": "FS-011207",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI03",
+  "note": "Overweight children only"
+ },
+ {
+  "record_id": "FS-011208",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Skeletal muscle cell culture only"
+ },
+ {
+  "record_id": "FS-011214",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Dermatomyositis cohort; aerobic capacity only"
+ },
+ {
+  "record_id": "FS-011221",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Azithromycin drug trial; no exercise"
+ },
+ {
+  "record_id": "FS-011223",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Heart transplant cohort; cardiorespiratory function only"
+ },
+ {
+  "record_id": "FS-011230",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI03",
+  "note": "Healthy children and children with myopathy only"
+ },
+ {
+  "record_id": "FS-011236",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Montelukast drug effect; no exercise"
+ },
+ {
+  "record_id": "FS-011246",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Steroid treatment of asthma; no exercise"
+ },
+ {
+  "record_id": "FS-011247",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Paroxysmal dyskinesias; no exercise word"
+ },
+ {
+  "record_id": "FS-011248",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Fear-conditioning training, not exercise"
+ },
+ {
+  "record_id": "FS-011253",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "HIV cohort; aerobic capacity only"
+ },
+ {
+  "record_id": "FS-011266",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Cultured CD34+ cells only"
+ },
+ {
+  "record_id": "FS-011273",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI01",
+  "note": "Title states case report and literature review"
+ },
+ {
+  "record_id": "FS-011278",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI03",
+  "note": "Early childhood wheezing cohort"
+ },
+ {
+  "record_id": "FS-011280",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exhaled NO during EIB; asthma clinical cohort judged later"
+ },
+ {
+  "record_id": "FS-011300",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Airway cooling/desiccation model; no exercise word"
+ },
+ {
+  "record_id": "FS-011310",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Fitness and quality of life only"
+ },
+ {
+  "record_id": "FS-011318",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Gene polymorphism and airway responsiveness; no exercise"
+ },
+ {
+  "record_id": "FS-011323",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Animal model of intracranial pain"
+ },
+ {
+  "record_id": "FS-011332",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Emotional problems in asthma; no exercise"
+ },
+ {
+  "record_id": "FS-011334",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Opioid leukocytes in inflammatory pain; no exercise"
+ },
+ {
+  "record_id": "FS-011342",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exercise challenge; ECP and tryptase; clinical cohort"
+ },
+ {
+  "record_id": "FS-011345",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Juvenile arthritis immune activation; no exercise"
+ },
+ {
+  "record_id": "FS-011377",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI03",
+  "note": "Step-test screening in children only"
+ },
+ {
+  "record_id": "FS-011380",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Sports and asthma; no outcome or type stated"
+ },
+ {
+  "record_id": "FS-011383",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "EIA in elite athletes; no outcome named"
+ },
+ {
+  "record_id": "FS-011386",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Bronchial challenges vs asthma severity; no immune outcome"
+ },
+ {
+  "record_id": "FS-011389",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Exercise; airway responsiveness only"
+ },
+ {
+  "record_id": "FS-011392",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exhaled CO after exercise; oxidative/inflammatory marker"
+ },
+ {
+  "record_id": "FS-011400",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Immune responses to exercise; clinical cohort"
+ },
+ {
+  "record_id": "FS-011426",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Strenuous exercise; CK isoforms and troponin only"
+ },
+ {
+  "record_id": "FS-011454",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Cultured CD34+ progenitors only"
+ },
+ {
+  "record_id": "FS-011480",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Creatine; strength and power only"
+ },
+ {
+  "record_id": "FS-011506",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Horse laminitis case"
+ },
+ {
+  "record_id": "FS-011516",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Equine bronchoalveolar study"
+ },
+ {
+  "record_id": "FS-011517",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Mast cell activation markers; no exposure named"
+ },
+ {
+  "record_id": "FS-011526",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Heart transplant recipients; cardiorespiratory function only"
+ },
+ {
+  "record_id": "FS-011537",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Running shoes and plantar fasciitis; no immune outcome"
+ },
+ {
+  "record_id": "FS-011543",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Cultured CD34+ progenitors only"
+ },
+ {
+  "record_id": "FS-011577",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Muscle stretch injury model; muscle damage, organism unnamed"
+ },
+ {
+  "record_id": "FS-011586",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Athlete gastrointestinal health; no outcome or type stated"
+ },
+ {
+  "record_id": "FS-011595",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Thymocyte maturation before emigration; developmental topic, not exercise"
+ },
+ {
+  "record_id": "FS-011660",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exercise immunology guidelines/perspectives; review type not explicitly stated"
+ },
+ {
+  "record_id": "FS-011686",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Stress echo in LV hypertrophy; diastolic function only"
+ },
+ {
+  "record_id": "FS-011773",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Ibuprofen; muscle soreness and damage outcomes"
+ },
+ {
+  "record_id": "FS-011775",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI05",
+  "note": "Eccentric injury; muscle function and protein metabolism only"
+ },
+ {
+  "record_id": "FS-011791",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Contractions; structural muscle damage outcome"
+ },
+ {
+  "record_id": "FS-011796",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "mdx mouse muscle fibres only"
+ },
+ {
+  "record_id": "FS-012804",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "T-lymphocyte cell-cycle kinase regulation; in vitro topic"
+ },
+ {
+  "record_id": "FS-012810",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "BCL-2/p53 apoptosis mechanism; no exercise"
+ },
+ {
+  "record_id": "FS-012811",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Burkitt lymphoma cell lines"
+ },
+ {
+  "record_id": "FS-012816",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "T-cell hybridomas only"
+ },
+ {
+  "record_id": "FS-012817",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Homeoprotein in in vitro activated lymphocytes; no exercise"
+ },
+ {
+  "record_id": "FS-012819",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "NF-kB in liver regeneration; no exercise"
+ },
+ {
+  "record_id": "FS-012825",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Cytokines in liver regeneration; no exercise"
+ },
+ {
+  "record_id": "FS-012849",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "In vitro suppressor T-cell activity"
+ },
+ {
+  "record_id": "FS-012857",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Cloned CD4+ T cells"
+ },
+ {
+  "record_id": "FS-012862",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "B-lymphocyte cell-cycle polyamine transport; no exercise"
+ },
+ {
+  "record_id": "FS-012867",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Cytotoxic T-cell line"
+ },
+ {
+  "record_id": "FS-012877",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Retinoblastoma protein phosphorylation biochemistry; no exercise"
+ },
+ {
+  "record_id": "FS-012881",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "3T3-L1 adipocyte cell line"
+ },
+ {
+  "record_id": "FS-012890",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "T-cell cell-cycle kinase synthesis; no exercise"
+ },
+ {
+  "record_id": "FS-012894",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Interferon gene expression mechanism in monocytes; no exercise"
+ },
+ {
+  "record_id": "FS-012899",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Thymosin induction by proliferative stimulus; no exercise"
+ },
+ {
+  "record_id": "FS-012904",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Rb and p53 during T-cell cycle; no exercise"
+ },
+ {
+  "record_id": "FS-012909",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Dendritic epidermal T cells are murine-only; histochemistry method"
+ },
+ {
+  "record_id": "FS-012915",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "3T3-L1 preadipocyte cell line"
+ },
+ {
+  "record_id": "FS-012922",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "T-cell-mediated intestinal mucosal response; no exercise"
+ },
+ {
+  "record_id": "FS-012923",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Hematopoietic cell lines"
+ },
+ {
+  "record_id": "FS-012924",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Ageing and c-myc in activated T-cell cultures; no exercise"
+ },
+ {
+  "record_id": "FS-012927",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Nb2 T-lymphoma cells"
+ },
+ {
+  "record_id": "FS-012933",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "T-cell receptor gene structure; no exercise"
+ },
+ {
+  "record_id": "FS-012935",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Activated T cells and tumour cell lines"
+ },
+ {
+  "record_id": "FS-012938",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Transferrin receptor in B-cell activation; no exercise"
+ },
+ {
+  "record_id": "FS-012941",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "T-cell hybridoma"
+ },
+ {
+  "record_id": "FS-012946",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "In vitro memory T-cell activation"
+ },
+ {
+  "record_id": "FS-012948",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "In vitro LAK cell proliferation"
+ },
+ {
+  "record_id": "FS-012949",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Friend erythroleukemia cells"
+ },
+ {
+  "record_id": "FS-012962",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Molecular cloning of lymphocyte antigen; no exercise"
+ },
+ {
+  "record_id": "FS-012969",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Cloned cytotoxic T lymphocytes"
+ },
+ {
+  "record_id": "FS-012974",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "B-cell activation via surface antigens; no exercise"
+ },
+ {
+  "record_id": "FS-012984",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Kappa locus transcription in pre-B cells; no exercise"
+ },
+ {
+  "record_id": "FS-012988",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Human T-cell clones"
+ },
+ {
+  "record_id": "FS-012989",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "ADA during T-cell activation; no exercise"
+ },
+ {
+  "record_id": "FS-012994",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Lymphocyte hormone receptors over cell cycle; no exercise"
+ },
+ {
+  "record_id": "FS-012995",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "Suppressive B-cell factor; in vitro immunology, no exercise"
+ },
+ {
+  "record_id": "FS-012996",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "B-cell transformation morphology and lymphoma; no exercise"
+ },
+ {
+  "record_id": "FS-012997",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI04",
+  "note": "IL-2 receptor on activated granular lymphocytes; no exercise"
+ },
+ {
+  "record_id": "FS-013008",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Tetrahymena protozoan only"
+ },
+ {
+  "record_id": "FS-013009",
+  "disposition": "EXCLUDE_TITLE",
+  "reason_code": "TI02",
+  "note": "Estrous cycle implies non-human animals"
+ },
+ {
+  "record_id": "FS-013030",
+  "disposition": "ADVANCE_TO_ABSTRACT",
+  "reason_code": "",
+  "note": "Exercise-induced cardiac rehabilitation mechanisms; outcomes unspecified"
+ }
+]

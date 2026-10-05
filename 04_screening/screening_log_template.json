@@ -628,5 +628,38 @@
     "Title screening (TI, v3.1 PRE-005): EXCLUDE_TITLE requires exactly one title_stage_primary_reason_codes code; ADVANCE_TO_ABSTRACT and AWAITING_CLASSIFICATION require a null primary_reason. Only the closed-list reasons in fulltext_exclusion_codes.json title_stage_closed_list may exclude at TI; anything else is ADVANCE_TO_ABSTRACT.",
     "TI consensus is automatic (title_stage_rules.consensus_rule: any ADVANCE_TO_ABSTRACT wins; EXCLUDE_TITLE only when both reviewers chose it); conflicts are logged, not adjudicated.",
     "Stage 2 (TA) screens exactly the stage-1 retained set; a record without an obtainable abstract is screened on its title and available text with abstract_source = abstract_unavailable and is never excluded for that reason."
-  ]
+  ],
+  "stage1_ai_screening": {
+    "date": "2026-10-05/06",
+    "design": "two independent AI stand-ins (B inclusion-oriented, C closed-list strict; Sonnet) on all 15,750 deduplicated records; advance-wins merge (PRE-005); blind third read (Opus) of all 2,032 disagreements; sports-journal safeguard for TI04; human verification: blind 100-record pilot, 10% sample of agreed AI exclusions, 20% sample of third-read exclusions (reviewers B and C, Excel)",
+    "records": 15750,
+    "ai_B": {
+      "ADVANCE_TO_ABSTRACT": 8723,
+      "EXCLUDE_TITLE": 7027
+    },
+    "ai_C": {
+      "ADVANCE_TO_ABSTRACT": 7438,
+      "EXCLUDE_TITLE": 8312
+    },
+    "conflicts": 2032,
+    "third_read": 2037,
+    "ai_final": {
+      "ADVANCE_TO_ABSTRACT": 7606,
+      "EXCLUDE_TITLE": 8144
+    },
+    "journal_safeguard_overturned_TI04": 22,
+    "review_scope": {
+      "ADVANCE_TO_TA": 7542,
+      "AI_EXCLUDE_UNVERIFIED": 7130,
+      "CONFLICT_SAMPLE_VERIFY": 334,
+      "SAMPLE_VERIFY": 644,
+      "PILOT_BLIND": 100
+    },
+    "files": "04_screening/formal_2026-10-05_v0.9/ai_stage1/",
+    "workbook_sha256": {
+      "B": "cad8a9ca8c2dede3a3905fb1986fbf47576f5f2c20de003ca55a457166746a4c",
+      "C": "574f0c35e404da8b23f6cae382be589351ea36d6211586d50ce6ebcfcc0ae84e"
+    },
+    "status": "AI pass complete; human review pending (B, C); stage 2 AI pass running on the 7,606 advanced records plus the 841 third-read exclusions that already carried abstracts"
+  }
 }
