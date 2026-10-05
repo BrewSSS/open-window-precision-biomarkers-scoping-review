@@ -2,8 +2,9 @@
 """Deduplicate multi-database formal-search exports into one records_master for screening.
 
 Reads whatever export files are available for the formal five-database search (PubMed JSONL.gz,
-Web of Science "Full Record" RIS and/or FN-tagged plain text, Scopus Search-API JSONL.gz and/or
-CSV/RIS, Embase.com RIS/CSV, EBSCOhost/SPORTDiscus RIS) plus citation-chasing exports, and produces
+Web of Science "Full Record" RIS, FN-tagged plain text, and/or "Fast 5000" tab-delimited TXT, Scopus
+Search-API JSONL.gz and/or CSV/RIS/BibTeX, Embase.com RIS/CSV, EBSCOhost/SPORTDiscus RIS) plus
+citation-chasing exports, and produces
 one deduplicated records_master (screening_log_template.json field_schema: record_id, source_database,
 search_id, route, title, authors, year, journal, doi, pmid, abstract, dedup_group_id, dedup_status,
 retained_record_id -- scripts/build_workbooks.py MASTER_COLUMNS) plus a full audit trail of every
@@ -154,6 +155,16 @@ ASSUMPTIONS_FOR_D = [
     'the documented export folder/filename convention (e.g. 03_search/formal_runs/<date>/pubmed/'
     'PUBMED_EI_<date>.jsonl.gz) so this mapping stays reliable; anything unrecognised is left blank, '
     'never guessed silently.',
+    'WoS "Fast 5000" tab-delimited TXT (detected by a first line starting with "PT\\tAU" or '
+    'containing "\\tUT\\t") and Scopus BibTeX (detected by a line starting with "@ARTICLE{") were '
+    'added and verified against the real 2026-10-05 v0.9 export files: every WoS TSV data line '
+    'carries one extra, always-empty trailing tab-delimited field versus the 55-name header (dropped '
+    'silently, not a format error); the Scopus BibTeX EID (from the url field\'s "publications/<id>" '
+    'segment) is parsed but, like WoS\'s UT, not persisted to a dedicated output column -- '
+    'source_file+source_row in dedup_map.csv gives full provenance instead. 3 of 11,065 Scopus BibTeX '
+    'entries in that export carry a genuinely unbalanced brace inside the raw abstract text itself '
+    '(an encoding artifact); for those the abstract is truncated at the stray brace but every other '
+    'field in the entry still parses correctly.',
 ]
 
 
