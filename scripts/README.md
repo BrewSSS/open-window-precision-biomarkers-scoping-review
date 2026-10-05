@@ -103,3 +103,15 @@ v3.0 的参考文献 1–20 在 `protocol_EN_full.md` 中人工写定；`referen
 - `.playwright-mcp/`：32 个网页快照文件（含第三方邮箱）已在提交 5db147d 中从索引与磁盘移除，但仍保存在初始提交 4364808 的 git 历史中；推送整个历史即会公开它们。推送前须由团队决定改写历史（如 `git filter-repo --path .playwright-mcp --invert-paths`）或以不含该历史的新仓库推送。
 - 本机构建目录（`01_protocol/build*`）与 `.claude/` 已忽略；推送前用 `git ls-files | xargs grep -l -I -E '/(Users|home)/|<本机用户名>'` 复查。
 - 占位符：creators/著作权人未填写时不得打 tag。
+
+## 8. 正式检索执行（Formal search execution）— Scopus（run_formal_scopus.py）
+
+查询文本单一来源是 `03_search/paste_ready_v0.7/SCOPUS_EI.txt` / `SCOPUS_EO.txt`（逐字节读取；两份文件由检索策略 v0.7 §5 的 `R1_SCOPUS_EI = E AND I AND T` / `R2_SCOPUS_EO = E AND O AND T` 生成）。脚本从不读写 `search_log_template.json` 的正式字段，由 D 手动把运行结果填入。
+
+- API：`https://api.elsevier.com/content/search/scopus`，鉴权头 `X-ELS-APIKey`（读取环境变量 `SCOPUS_API_KEY`，否则读 `~/.config/scoping_review/secrets.env`，密钥本身永不打印/落盘）；`User-Agent: scoping-review-search/1.0`；请求中不含任何个人邮箱。可选 `--insttoken-env`（默认 `SCOPUS_INSTTOKEN`）在设置时附带 `X-ELS-Insttoken` 头。
+- `--dry-run`：每条 route 一次 `count=1` 请求（不带 `cursor`），只返回 `totalResults` 与配额头，不下载条目、不写 `03_search/formal_runs/`，除非给 `--out-file`。2026-10-05 的 dry-run 结果见 `03_search/formal_run_prep_2026-10-05/scopus_dryrun.json`：STANDARD 视图下 EI=29,437、EO=6,159。
+- `--view auto`（默认）：先探测 `COMPLETE`；本机/本网络返回 `401 AUTHORIZATION_ERROR`（**需要校园网 IP、VPN，或机构 `X-ELS-Insttoken`**才能用 `COMPLETE`），探测失败即打印醒目警告并回退 `STANDARD`——`STANDARD` 视图没有摘要字段（`dc:description`），回退后导出**不含摘要**。`--view COMPLETE`/`STANDARD` 强制指定，不探测、不回退。
+- **已知配额限制（2026-10-05 实测）**：`cursor` 参数本身需要独立于 `COMPLETE`/`STANDARD` 视图的另一项授权；本网络/本 key 不带 `cursor` 的请求成功，带 `cursor=*` 返回 `403 ENTITLEMENTS_ERROR "Use of the cursor parameter is restricted"`。正式导出（非 dry-run）仍按本任务要求使用 `cursor` 分页；若遇到该 403，脚本以清晰报错中止，不会静默改用 `start` 偏移分页。在校园网/VPN 或机构 token 到位后，连同 `cursor` 授权一并与 Elsevier 确认。
+- 正式导出：按 route 落盘 gzip JSONL（`<ROUTE>_<date>.jsonl.gz`，每行一条 Scopus entry 的全部返回字段）、`<ROUTE>_eids.txt` / `_dois.txt` / `_pmids.txt`（可提交的标识符列表）、`route_overlap.json`（EI∩EO by EID，仅文档用途，不是去重步骤）与 `run_manifest.json`（逐 route 的 UTC 时间、精确查询、`totalResults`、页数、写入条数、含摘要条数、所用 view、导出文件 SHA-256/大小）。遵守 `x-ratelimit-remaining`：剩余 < 100 时在下一页请求前停止并给出明确信息；429/5xx 退避重试；≤2 请求/秒。
+- `.gitignore`：`03_search/formal_runs/**` 下原始导出（`*.jsonl.gz`，以及 D 手工的 `<DB>_<route>_<date>.ris`/`.txt` 许可数据库导出）永不提交；仅 `run_manifest.json`、`route_overlap.json` 与 `*_eids.txt`/`*_dois.txt`/`*_pmids.txt` 这些具名的无摘要文件被显式解除忽略。
+- 用法：`python3 scripts/run_formal_scopus.py --dry-run --route both --label pilot`；正式运行示例：`python3 scripts/run_formal_scopus.py --route both --label formal --view auto --insttoken-env SCOPUS_INSTTOKEN`（等 `COMPLETE` 视图授权到位后再执行，本次任务只跑了 dry-run）。

@@ -42,9 +42,18 @@ __pycache__/
 # Charting-pilot full texts and supplements (publisher/PMC copies; hashes in 05_extraction/pilot_2026-10-05/fulltexts_manifest.json)
 05_extraction/pilot_2026-10-05/fulltexts/
 
-# Formal-search raw exports and metadata (PubMed/preprint abstracts, licensed-database .ris/.txt/.csv/.nbib/.xml
-# exports): never committed, any route, any dated run folder. The run manifest.json in the same folder IS
-# committed (counts + SHA-256 + query text only, no abstracts) via the negation below; see
-# scripts/README.md "Formal search execution" and scripts/run_formal_pubmed.py / run_preprint_search.py.
+# Formal-search raw exports and metadata (PubMed/preprint abstracts, Scopus entries, and D's manual
+# licensed-database exports named <DB>_<route>_<date>.ris/.txt per scripts/README.md "Formal search
+# execution"): never committed, any route, any dated run folder. Only the specific, named,
+# no-abstract committable files are un-ignored below (manifest/overlap JSON and small identifier-list
+# .txt files written by scripts/run_formal_pubmed.py / run_formal_scopus.py / run_preprint_search.py) --
+# NOT a blanket *.json/*.txt negation, because D's raw <DB>_<route>_<date>.txt exports live in the same
+# folder and must stay ignored. Raw exports are always *.jsonl.gz, *.ris, or *.txt under that naming
+# convention, so none of them match the explicit allow-list below.
 03_search/formal_runs/*/*/*
-!03_search/formal_runs/*/*/manifest*.json
+!03_search/formal_runs/*/*/manifest.json
+!03_search/formal_runs/*/*/run_manifest.json
+!03_search/formal_runs/*/*/route_overlap.json
+!03_search/formal_runs/*/*/*_eids.txt
+!03_search/formal_runs/*/*/*_dois.txt
+!03_search/formal_runs/*/*/*_pmids.txt
