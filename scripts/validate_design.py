@@ -38,7 +38,15 @@ check('All 61 legacy fields map to valid current columns',len(d['legacy_61_field
 check('Donor counts are explicit',all(k in t['tables']['sample_sets']['blank_record'] for k in ['n_donors','donor_count_basis','n_participants','n_biological_samples','n_cells','n_technical_replicates']))
 check('Candidate-selection and supplement provenance fields exist',all(any(key.startswith(prefix) for table in t['tables'].values() for key in table['blank_record']) for prefix in ['tested_universe','candidate_selection','supplement_']))
 pilot=json.loads((ROOT/'05_extraction/pilot_manifest.json').read_text());check('Ten purposefully selected calibration items, not inclusion results',pilot['n_items']==10 and len(pilot['items'])==10)
-log=json.loads((ROOT/'03_search/search_log_template.json').read_text());check('Formal search hits and dates are unpopulated',all(v.get('hit_count') is None and v.get('date_time_timezone') is None for v in log['searches']))
+log=json.loads((ROOT/'03_search/search_log_template.json').read_text())
+_settings_for_formal=json.loads((ROOT/'01_protocol/project_settings.json').read_text())
+_formal_stage=_settings_for_formal['stages'].get('formal_search')
+def _formal_entry_ok(v):
+ populated=v.get('hit_count') is not None or v.get('date_time_timezone') is not None
+ if not populated:return True  # unpopulated entries are always fine (most of the 16 searches, pre-run)
+ if _formal_stage=='pending':return False  # hits must never appear while the stage still says pending
+ return v.get('date_time_timezone') is not None and v.get('hit_count') is not None and v.get('export_checksum_sha256') is not None
+check('Formal search hits/dates, where populated, require formal_search stage != pending and a date_time + hit_count + export hash on every populated entry',all(_formal_entry_ok(v) for v in log['searches']))
 settings=json.loads((ROOT/'01_protocol/project_settings.json').read_text());version=settings['protocol_version'];reg=settings['registration']
 DOI=re.compile(r'^10\.5281/zenodo\.\d+$')
 release_keys=['release_tag','release_commit','concept_doi','version_doi']

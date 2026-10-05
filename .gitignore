@@ -57,3 +57,7 @@ __pycache__/
 !03_search/formal_runs/*/*/*_eids.txt
 !03_search/formal_runs/*/*/*_dois.txt
 !03_search/formal_runs/*/*/*_pmids.txt
+
+# Manual database exports by D (raw records with abstracts): never committed; manifests only
+03_search/full_exports_*/*
+!03_search/full_exports_*/*.json

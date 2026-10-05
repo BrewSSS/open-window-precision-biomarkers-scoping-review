@@ -40,7 +40,7 @@
 | 阶段 | 入口 | 当前状态 |
 |---|---|---|
 | 前期探索 | [重启报告](02_preliminary/restart_2026-10-02/restart_report.html)；[撞车复核2026-10-04](02_preliminary/collision_recheck_2026-10-04.md) | 公开网页探索、来源核验与收窄框架撞车复核已完成；不是正式纳入结果 |
-| 正式检索 | [检索说明](03_search/README.md) | 检索草案（按PRE-003改为E AND (I OR O) AND T，由D修订）、日志模板、PRESS清单和种子清单已建立；PubMed已解析验证，PRESS于2026-10-04附条件接受；授权平台待验证；未正式运行 |
+| 正式检索 | [检索说明](03_search/README.md) | 检索草案（按PRE-003改为E AND (I OR O) AND T，由D修订）、日志模板、PRESS清单和种子清单已建立；PubMed已解析验证，PRESS于2026-10-04附条件接受；**2026-10-05PubMed正式导出已完成**（Route EI与EO分别导出，含摘要；详见下方）；Web of Science、Scopus、Embase、SPORTDiscus仍待D登录执行，五库去重未完成 |
 | 筛选 | [筛选手册](04_screening/screening_manual.md) | v3规则、FT01–FT08与空模板完成；Excel筛选工作簿已由`scripts/build_workbooks.py`生成（`templates_xlsx/`）；50篇双人试筛待存档发布后执行 |
 | 提取 | [提取手册](05_extraction/extraction_manual.md) | v3关联数据字典与空模板完成；提取工作簿（母版及评审A/B各一份）已生成；10篇试提取待存档发布后执行 |
 | 评价 | [批判评价手册](05_extraction/critical_appraisal_manual.md) | 工具选择与评价模板完成，评价工作簿已生成；正式JBI表单归档及人工评价待执行 |
@@ -52,7 +52,7 @@
 
 角色已按代号分配：A负责人、PRESS复核与写作，B、C独立筛选，D检索、数据与仲裁。仍须补充：实际Embase平台、参考文献管理软件、资金/利益声明、机构伦理政策核实、GitHub owner与公开日期。执行顺序为平台/PRESS复核与工作簿生成、团队冻结与GitHub+Zenodo存档发布、人工校准（50篇试筛、10篇试提取）、视需要修订并再发布、正式检索、双人筛选、提取/评价、综合和投稿。准备阶段估计2–3个工作周，正式研究时长在试筛及试提取后据真实工作量估计。
 
-**当前没有正式检索命中数、纳入研究数、PRISMA结果、Release、DOI或任何注册库登记号。** 所有模板中的空值表示未执行，不能写成零。前期证据条目和pilot材料不得视为正式纳入研究。
+**PubMed正式检索导出已于2026-10-05完成**：Route EI（E AND I AND T）17,445条、Route EO（E AND O AND T）4,004条，均含摘要（分别99.2%、99.6%非空摘要），按策略§1要求分开导出，去重后唯一PMID 20,090条，与2026-10-04 pilot pool联集计数一致（无新增索引差异）；见`03_search/formal_runs/2026-10-05/pubmed/run_manifest.json`与`search_log_template.json`。**其余四个授权数据库（Web of Science、Scopus、Embase、SPORTDiscus）与跨库去重仍待D执行，纳入研究数、PRISMA结果、Release、DOI或任何注册库登记号目前仍不可用。** 所有模板中的空值表示未执行，不能写成零。前期证据条目和pilot材料不得视为正式纳入研究。
 
 ## 版本管理
 

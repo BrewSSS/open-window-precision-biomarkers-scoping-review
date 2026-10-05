@@ -65,7 +65,7 @@
     "archive_release_zenodo": "done_2026-10-05",
     "random_50_screening_pilot": "accepted_by_A_2026-10-05 (raw agreement 1.00, kappa 1.00; AI hint visible — limitation recorded; no AI hints in formal screening)",
     "purposeful_10_charting_pilot": "ai_assisted_extraction_done_2026-10-05 (9/10 reports; R62 pending D); comparison produced; human review and PRE-004 proposals pending",
-    "formal_search": "pending",
+    "formal_search": "in_progress_2026-10-05 (PubMed exported; WoS/Scopus/Embase/SPORTDiscus pending D)",
     "dual_screening": "pending",
     "dual_extraction": "pending",
     "critical_appraisal": "pending",
@@ -73,7 +73,9 @@
     "submission": "pending"
   },
   "flow_counts": null,
-  "actual_search_dates": null,
+  "actual_search_dates": {
+    "PubMed": "2026-10-05"
+  },
   "frontier_preprint_counts": null,
   "notes": [
     "Database access confirmed by user does not imply database searches were run.",
@@ -88,6 +90,7 @@
     "2026-10-05: team (A) froze v3.0 after PubMed validation and PRESS acceptance; licensed-platform syntax remains marked as pending D's login checks; v3.1 will follow only if those checks change concepts.",
     "2026-10-05: v3.0 released (tag v3.0, commit fea09ea); Zenodo version DOI 10.5281/zenodo.23147973, concept DOI 10.5281/zenodo.23147972. Next: 50-record screening pilot and 10-report charting pilot; D's licensed-platform syntax checks.",
     "2026-10-05 pilot TA: 50/50 agreement, 10 ADVANCE / 40 EXCLUDE_TA (FT02 21, FT01 7, FT03 6, FT04 3, FT07 3); conducted with visible AI hints; acceptance as calibration pending A.",
-    "2026-10-05: A accepted the TA pilot as calibration with the AI-hint limitation recorded; formal screening will show no AI recommendations. Next: 10-report charting pilot."
+    "2026-10-05: A accepted the TA pilot as calibration with the AI-hint limitation recorded; formal screening will show no AI recommendations. Next: 10-report charting pilot.",
+    "2026-10-05: first formal database run executed (PubMed, by an AI stand-in for D). Routes EI (E AND I AND T, 17,445 hits) and EO (E AND O AND T, 4,004 hits) exported separately per search_strategy_draft.txt §1/§3 (17,445 and 4,004 records respectively, 99.2% and 99.6% with a non-empty abstract); deduplicated union 20,090 PMIDs, identical to the 2026-10-04 pilot-pool union count (no new indexing). Exports (abstracts) are git-ignored under 03_search/formal_runs/2026-10-05/pubmed/; committable manifest.json, run_manifest.json and pubmed_pmids.txt are tracked. search_log_template.json PUBMED_EI/PUBMED_EO formal fields filled; the four licensed databases (WoS, Scopus, Embase, SPORTDiscus) remain null pending D. Dedup across all five databases and PRISMA counts are not yet available."
   ]
 }

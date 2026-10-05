@@ -70,6 +70,8 @@ TOOL = 'scoping-review-pilot'
 MIN_INTERVAL = 0.4          # seconds between requests (<= 3 per second)
 EFETCH_BATCH = 400          # PMIDs per efetch request
 ESEARCH_CAP = 9999          # PubMed esearch returns at most 10,000 UIDs per query
+POST_TIMEOUT = 25           # seconds per HTTP attempt (2026-10-05: lowered from 180; see EUtils.post note)
+POST_ATTEMPTS = 14          # per-request retries (2026-10-05: raised from 5; see EUtils.post note)
 SAMPLE_N = 50
 SAMPLE_PREFIX = 'P'
 
@@ -165,7 +167,15 @@ class EUtils:
     def post(self, endpoint: str, params: dict) -> bytes:
         params = dict(params, tool=TOOL)          # no e-mail, no API key
         data = urllib.parse.urlencode(params).encode()
-        for attempt in range(5):
+        # 2026-10-05 formal-run note (AI stand-in for D): this sandbox's egress to
+        # eutils.ncbi.nlm.nih.gov is intermittently unreachable ("No route to host" on ~70-80% of
+        # attempts during the formal PubMed run), and a failed connection stalls for the full
+        # urlopen timeout before raising. Successful requests return in <2s even for large (~400-UID)
+        # efetch batches. POST_TIMEOUT/POST_ATTEMPTS are therefore tuned short-timeout/many-retries
+        # (not the original long-timeout/few-retries) purely to fail fast and retry through the flaky
+        # path faster; this is an operational resilience change only, not a change to any query,
+        # field, rate limit (MIN_INTERVAL/EFETCH_BATCH untouched) or recorded result.
+        for attempt in range(POST_ATTEMPTS):
             wait = MIN_INTERVAL - (time.monotonic() - self.last)
             if wait > 0:
                 time.sleep(wait)
@@ -173,13 +183,13 @@ class EUtils:
             self.n_requests += 1
             req = urllib.request.Request(EUTILS + endpoint, data=data, headers={'User-Agent': USER_AGENT})
             try:
-                with urllib.request.urlopen(req, timeout=180) as r:
+                with urllib.request.urlopen(req, timeout=POST_TIMEOUT) as r:
                     return r.read()
             except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as e:
                 code = getattr(e, 'code', None)
                 if code is not None and code not in (429, 500, 502, 503, 504):
                     raise
-                time.sleep(2 * (attempt + 1))
+                time.sleep(min(2 * (attempt + 1), 10))
         raise SystemExit(f'{endpoint}: repeated failures')
 
     def esearch(self, term: str, retmax: int = 0, usehistory: bool = False) -> dict:

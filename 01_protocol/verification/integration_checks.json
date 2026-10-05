@@ -4,7 +4,7 @@
   "protocol_date": "2026-10-04",
   "settings_source": "01_protocol/project_settings.json",
   "json_files_checked": 12,
-  "markdown_files_checked": 21,
+  "markdown_files_checked": 23,
   "passed": 27,
   "skipped": 0,
   "warnings": [],
@@ -42,7 +42,7 @@
       "passed": true
     },
     {
-      "check": "Formal search hits and dates are unpopulated",
+      "check": "Formal search hits/dates, where populated, require formal_search stage != pending and a date_time + hit_count + export hash on every populated entry",
       "passed": true
     },
     {
