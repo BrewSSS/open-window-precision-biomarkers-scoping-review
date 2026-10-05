@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-10-05T13:52:21Z",
+  "formal_search": true,
+  "statement": "Formal multi-database identification counts (records as exported, before deduplication) and the post-deduplication unique total. Numbers only; this script performs no screening/eligibility classification.",
+  "records_identified_by_database": {
+    "PubMed/MEDLINE": 7846,
+    "Scopus": 11065,
+    "Web of Science Core Collection": 13242
+  },
+  "records_identified_total": 32153,
+  "duplicates_removed": 16403,
+  "records_after_deduplication": 15750
+}

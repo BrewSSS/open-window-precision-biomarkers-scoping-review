@@ -1,0 +1,173 @@
+{
+  "generated_at": "2026-10-05T13:52:21Z",
+  "script": "scripts/dedup_records.py v1.0.0",
+  "run": {
+    "inputs": [
+      "03_search/formal_runs/2026-10-05_v0.9/pubmed/PUBMED_EI_V09_2026-10-05.jsonl.gz",
+      "03_search/formal_runs/2026-10-05_v0.9/pubmed/PUBMED_EI_V09_pmids.txt",
+      "03_search/formal_runs/2026-10-05_v0.9/scopus/SCOPUS_EI_2026-10-05.bib",
+      "03_search/formal_runs/2026-10-05_v0.9/scopus/SCOPUS_EI_2026-10-05_dois.txt",
+      "03_search/formal_runs/2026-10-05_v0.9/scopus/SCOPUS_EI_2026-10-05_eids.txt",
+      "03_search/formal_runs/2026-10-05_v0.9/scopus/SCOPUS_EI_2026-10-05_pmids.txt",
+      "03_search/formal_runs/2026-10-05_v0.9/wos/WOS_EI_2026-10-05_dois.txt",
+      "03_search/formal_runs/2026-10-05_v0.9/wos/WOS_EI_2026-10-05_part1.txt",
+      "03_search/formal_runs/2026-10-05_v0.9/wos/WOS_EI_2026-10-05_part2.txt",
+      "03_search/formal_runs/2026-10-05_v0.9/wos/WOS_EI_2026-10-05_part3.txt",
+      "03_search/formal_runs/2026-10-05_v0.9/wos/WOS_EI_2026-10-05_pmids.txt",
+      "03_search/formal_runs/2026-10-05_v0.9/wos/WOS_EI_2026-10-05_uts.txt"
+    ],
+    "n_files": 12,
+    "file_stats": [
+      {
+        "file": "03_search/formal_runs/2026-10-05_v0.9/pubmed/PUBMED_EI_V09_2026-10-05.jsonl.gz",
+        "n_records": 7846,
+        "unparseable_lines": 0,
+        "lenient_recovered": 0,
+        "format": "json:jsonl",
+        "skipped": false
+      },
+      {
+        "file": "03_search/formal_runs/2026-10-05_v0.9/pubmed/PUBMED_EI_V09_pmids.txt",
+        "n_records": 0,
+        "unparseable_lines": 0,
+        "lenient_recovered": 0,
+        "format": "unrecognised_text",
+        "skipped": true
+      },
+      {
+        "file": "03_search/formal_runs/2026-10-05_v0.9/scopus/SCOPUS_EI_2026-10-05.bib",
+        "n_records": 11065,
+        "unparseable_lines": 0,
+        "lenient_recovered": 0,
+        "format": "scopus_bibtex",
+        "skipped": false
+      },
+      {
+        "file": "03_search/formal_runs/2026-10-05_v0.9/scopus/SCOPUS_EI_2026-10-05_dois.txt",
+        "n_records": 0,
+        "unparseable_lines": 0,
+        "lenient_recovered": 0,
+        "format": "unrecognised_text",
+        "skipped": true
+      },
+      {
+        "file": "03_search/formal_runs/2026-10-05_v0.9/scopus/SCOPUS_EI_2026-10-05_eids.txt",
+        "n_records": 0,
+        "unparseable_lines": 0,
+        "lenient_recovered": 0,
+        "format": "unrecognised_text",
+        "skipped": true
+      },
+      {
+        "file": "03_search/formal_runs/2026-10-05_v0.9/scopus/SCOPUS_EI_2026-10-05_pmids.txt",
+        "n_records": 0,
+        "unparseable_lines": 0,
+        "lenient_recovered": 0,
+        "format": "unrecognised_text",
+        "skipped": true
+      },
+      {
+        "file": "03_search/formal_runs/2026-10-05_v0.9/wos/WOS_EI_2026-10-05_dois.txt",
+        "n_records": 0,
+        "unparseable_lines": 0,
+        "lenient_recovered": 0,
+        "format": "unrecognised_text",
+        "skipped": true
+      },
+      {
+        "file": "03_search/formal_runs/2026-10-05_v0.9/wos/WOS_EI_2026-10-05_part1.txt",
+        "n_records": 5000,
+        "unparseable_lines": 0,
+        "lenient_recovered": 0,
+        "format": "wos_tsv",
+        "skipped": false
+      },
+      {
+        "file": "03_search/formal_runs/2026-10-05_v0.9/wos/WOS_EI_2026-10-05_part2.txt",
+        "n_records": 5000,
+        "unparseable_lines": 0,
+        "lenient_recovered": 0,
+        "format": "wos_tsv",
+        "skipped": false
+      },
+      {
+        "file": "03_search/formal_runs/2026-10-05_v0.9/wos/WOS_EI_2026-10-05_part3.txt",
+        "n_records": 3242,
+        "unparseable_lines": 0,
+        "lenient_recovered": 0,
+        "format": "wos_tsv",
+        "skipped": false
+      },
+      {
+        "file": "03_search/formal_runs/2026-10-05_v0.9/wos/WOS_EI_2026-10-05_pmids.txt",
+        "n_records": 0,
+        "unparseable_lines": 0,
+        "lenient_recovered": 0,
+        "format": "unrecognised_text",
+        "skipped": true
+      },
+      {
+        "file": "03_search/formal_runs/2026-10-05_v0.9/wos/WOS_EI_2026-10-05_uts.txt",
+        "n_records": 0,
+        "unparseable_lines": 0,
+        "lenient_recovered": 0,
+        "format": "unrecognised_text",
+        "skipped": true
+      }
+    ],
+    "fuzzy_threshold": 0.95,
+    "year_tolerance": 1,
+    "fuzzy_backend": "difflib.SequenceMatcher",
+    "formal_auto_detected": true,
+    "formal_flag_given": true
+  },
+  "raw_counts": {
+    "total_input_records": 32153,
+    "by_database": {
+      "PubMed/MEDLINE": 7846,
+      "Scopus": 11065,
+      "Web of Science Core Collection": 13242
+    },
+    "by_route": {
+      "E AND I AND T": 32153
+    }
+  },
+  "duplicates_removed": {
+    "by_rule": {
+      "doi": 10318,
+      "pmid": 5414,
+      "title_year_fuzzy": 671
+    },
+    "total_removed": 16403
+  },
+  "unique_total": 15750,
+  "with_without_abstract": {
+    "with_abstract": 15685,
+    "without_abstract": 65
+  },
+  "with_without_pmid": {
+    "with_pmid": 10686,
+    "without_pmid": 5064
+  },
+  "with_without_doi": {
+    "with_doi": 14261,
+    "without_doi": 1489
+  },
+  "flags": {
+    "possible_version_pairs": 0,
+    "examples": []
+  },
+  "performance": {
+    "fuzzy_buckets_skipped_over_cap": 0,
+    "bucket_cap": 2000
+  },
+  "assumptions_for_D": [
+    "RIS tag separator is treated as the literal substring \"XX  - \" (2 letters/digits + exactly 2 spaces + dash + space) ANYWHERE in the file, not only at line start, because real WoS RIS exports observed in 03_search/availability_export_test_2026-10-05/ glue consecutive tag-value pairs onto one physical line with no separator (e.g. \"...AustraliaPU  - W W F VERLAGSGESELLSCHAFT...\"). This recovers glued tags but risks mis-splitting an abstract/note that coincidentally contains that exact 6-character pattern; none were observed in the sample files. Please confirm this still holds for the full formal exports.",
+    "PMID recovery from RIS uses tag PM first, then AN/C2/C7/ID only when the (prefix-stripped) value is ALL DIGITS, 4-9 characters -- this is deliberately strict so that WoS's AN \"WOS:000...\" accession numbers are never mistaken for a PMID, while Scopus's undocumented use of C2 for the PubMed ID (confirmed in Scopus_EI_first10.ris / Scopus_EO_first10.ris, e.g. \"C2  - 42727861\") is still picked up. A final fallback scans N1/AB/N2 text for \"PMID[:\\s]+<digits>\".",
+    "WoS \"Full Record\" plain-text export (FN Clarivate.../ER) is detected by the file starting with a line beginning \"FN \"; no real sample of this format exists in the repo yet, so the parser (TI/AU/SO/PY/DI/PM/AB/UT, one 2-letter tag per line + 3-space continuations, AU/AF lines kept as separate authors) is built from the task brief and WoS documentation, not verified against a live export. Please confirm tag names and continuation indentation against a real export.",
+    "Scopus Search-API JSONL entries are recognised by the presence of any of eid / dc:title / prism:doi / dc:creator / prism:publicationName. dc:creator is mapped to a single-author list: the Scopus Search API (as opposed to Abstract Retrieval) by default returns only the first author in this field. If the formal Scopus export instead uses Abstract Retrieval responses with a full author array, please tell D/the generator so authors can be mapped from that structure instead.",
+    "Scopus/Embase CSV header names are matched case-insensitively against a small synonym list (Title/Authors/Year/\"Source title\"/DOI/\"PubMed ID\"/Abstract/EID and common variants). No real Scopus or Embase CSV export exists in the repo yet; please confirm the actual exported column names so the synonym list can be extended if needed.",
+    "Database/route are guessed primarily from the input file's path (directory + filename) using substring patterns (pubmed/wos/scopus/embase(com)/ovid/sportdiscus|ebsco, and EI/EO tokens for route), then from an in-file \"DB\" tag (RIS) when present, and are looked up against 03_search/search_log_template.json searches[] (by database+route) to fill search_id. Please keep the documented export folder/filename convention (e.g. 03_search/formal_runs/<date>/pubmed/PUBMED_EI_<date>.jsonl.gz) so this mapping stays reliable; anything unrecognised is left blank, never guessed silently.",
+    "WoS \"Fast 5000\" tab-delimited TXT (detected by a first line starting with \"PT\\tAU\" or containing \"\\tUT\\t\") and Scopus BibTeX (detected by a line starting with \"@ARTICLE{\") were added and verified against the real 2026-10-05 v0.9 export files: every WoS TSV data line carries one extra, always-empty trailing tab-delimited field versus the 55-name header (dropped silently, not a format error); the Scopus BibTeX EID (from the url field's \"publications/<id>\" segment) is parsed but, like WoS's UT, not persisted to a dedicated output column -- source_file+source_row in dedup_map.csv gives full provenance instead. 3 of 11,065 Scopus BibTeX entries in that export carry a genuinely unbalanced brace inside the raw abstract text itself (an encoding artifact); for those the abstract is truncated at the stray brace but every other field in the entry still parses correctly."
+  ]
+}

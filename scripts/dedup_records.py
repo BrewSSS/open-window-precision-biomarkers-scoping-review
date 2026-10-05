@@ -1270,6 +1270,54 @@ def selftest() -> int:
     )
     (tmp / 'WOS_plaintext_2026-10-05.txt').write_text(wos_txt, encoding='utf-8')
 
+    # ---- WoS "Fast 5000" tab-delimited TXT: one well-formed row (with the real export's extra
+    #      always-empty trailing tab field) + one short/truncated row for leniency testing ----
+    wos_tsv = (
+        'PT\tAU\tTI\tPY\tSO\tDI\tPM\tAB\tUT\tDT\r\n'
+        'J\tQuinn, R.\tWearable sensor monitoring of post-exercise lymphocyte subsets\t2025\t'
+        'Journal of Digital Immunology\t10.3000/hhh\t40000050\t'
+        'Wearable sensors tracked immune cell subsets after exercise.\tWOS:000777888999\tArticle\t\r\n'
+        'J\tShort, Row.\tTruncated tab row for leniency testing\t2025\tShort Journal\r\n'
+    )
+    (tmp / 'WOS_EI_2026-10-05_tsv.txt').write_text(wos_tsv, encoding='utf-8')
+
+    # ---- Scopus BibTeX: one entry with nested braces in the title + an abstract containing an
+    #      incidental 'name = {' fragment (must not be mis-parsed as a separate field), and one entry
+    #      whose raw abstract carries a genuinely unbalanced brace (encoding artifact seen in the real
+    #      2026-10-05 v0.9 export) -- fields before the abstract (title/doi) must still parse intact,
+    #      only the abstract tail is lost ----
+    scopus_bib = (
+        'Scopus\n'
+        'EXPORT DATE: 05 October 2026\n\n'
+        '@ARTICLE{Nested2026,\n'
+        '\tauthor = {Nested, Author A. and Example, B.},\n'
+        '\ttitle = {Effects of {COVID-19} recovery on neutrophil {subsets} after exercise},\n'
+        '\tyear = {2025},\n'
+        '\tjournal = {Journal of Nested Braces},\n'
+        '\tdoi = {10.4000/iii},\n'
+        '\turl = {https://www.scopus.com/pages/publications/999888777?origin=resultslist},\n'
+        '\tabstract = {This abstract intentionally contains a field-like fragment rate = {0.5} '
+        'inside it to test brace balancing.},\n'
+        '\tpmid = {40000060},\n'
+        '\ttype = {Article},\n'
+        '\tpublication_stage = {Final},\n'
+        '\tsource = {Scopus},\n'
+        '\tnote = {Cited by: 0},\n'
+        '}\n\n'
+        '@ARTICLE{Garbled2026,\n'
+        '\tauthor = {Garbled, Author C.},\n'
+        '\ttitle = {Garbled abstract brace artifact study},\n'
+        '\tyear = {2025},\n'
+        '\tjournal = {Journal of Artifacts},\n'
+        '\tdoi = {10.4000/jjj},\n'
+        '\turl = {https://www.scopus.com/pages/publications/999888778?origin=resultslist},\n'
+        '\tabstract = {Growth factor stray brace artifact ss}(continues after stray close brace).},\n'
+        '\tpmid = {40000061},\n'
+        '\ttype = {Article},\n'
+        '}\n'
+    )
+    (tmp / 'SCOPUS_EI_2026-10-05_bib.bib').write_text(scopus_bib, encoding='utf-8')
+
     out_dir = tmp / 'out'
     search_id_lookup = load_search_id_lookup()
     files = discover_files([tmp])
@@ -1363,6 +1411,48 @@ def selftest() -> int:
     # ratio() sanity (exercises both rapidfuzz and difflib code paths structurally)
     check('ratio() identical strings == 1.0', abs(ratio('abc def', 'abc def') - 1.0) < 1e-9)
     check('ratio() empty string == 0.0', ratio('', 'abc') == 0.0)
+
+    # ---- WoS tab-delimited TXT ----
+    wos_tsv_rec = next((m for m in out['master_rows'] if m['pmid'] == '40000050'), None)
+    check('WoS TSV record parsed', wos_tsv_rec is not None)
+    if wos_tsv_rec:
+        check('WoS TSV record database label correct',
+              wos_tsv_rec['source_database'] == 'Web of Science Core Collection')
+        check('WoS TSV record doi parsed (trailing empty tab field correctly dropped)',
+              wos_tsv_rec['doi'] == '10.3000/hhh')
+        check('WoS TSV record abstract parsed',
+              wos_tsv_rec['abstract'].startswith('Wearable sensors tracked'))
+    truncated_rec = next((m for m in out['master_rows']
+                          if m['title'] == 'Truncated tab row for leniency testing'), None)
+    check('WoS TSV short/truncated row leniently recovered, not dropped', truncated_rec is not None)
+    wos_tsv_stats = next((s for s in file_stats if s['file'].endswith('WOS_EI_2026-10-05_tsv.txt')), None)
+    check('WoS TSV file format recognised as wos_tsv',
+          wos_tsv_stats is not None and wos_tsv_stats['format'] == 'wos_tsv')
+    check('WoS TSV short row counted as lenient_recovered',
+          wos_tsv_stats is not None and wos_tsv_stats.get('lenient_recovered', 0) >= 1)
+
+    # ---- Scopus BibTeX ----
+    bib_nested = next((m for m in out['master_rows'] if m['pmid'] == '40000060'), None)
+    check('Scopus BibTeX record with nested braces parsed', bib_nested is not None)
+    if bib_nested:
+        check('Scopus BibTeX nested-brace title captured whole, not truncated at inner "}"',
+              bib_nested['title'] == 'Effects of {COVID-19} recovery on neutrophil {subsets} after exercise')
+        check('Scopus BibTeX database label correct', bib_nested['source_database'] == 'Scopus')
+        check('Scopus BibTeX doi parsed', bib_nested['doi'] == '10.4000/iii')
+        check('Scopus BibTeX incidental "name = {" fragment inside abstract not mis-parsed as a field',
+              'rate = {0.5}' in bib_nested['abstract'])
+    bib_garbled = next((m for m in out['master_rows'] if m['pmid'] == '40000061'), None)
+    check('Scopus BibTeX record with unbalanced abstract brace still parsed (not dropped)',
+          bib_garbled is not None)
+    if bib_garbled:
+        check('Scopus BibTeX garbled-abstract entry: title/doi before the bad brace are intact',
+              bib_garbled['title'] == 'Garbled abstract brace artifact study' and
+              bib_garbled['doi'] == '10.4000/jjj')
+        check('Scopus BibTeX garbled-abstract entry: abstract truncated exactly at the stray brace',
+              bib_garbled['abstract'] == 'Growth factor stray brace artifact ss')
+    bib_stats = next((s for s in file_stats if s['file'].endswith('SCOPUS_EI_2026-10-05_bib.bib')), None)
+    check('Scopus BibTeX file format recognised as scopus_bibtex',
+          bib_stats is not None and bib_stats['format'] == 'scopus_bibtex' and bib_stats['n_records'] == 2)
 
     passed = sum(1 for _, ok in checks if ok)
     print(f'dedup_records.py selftest: {passed}/{len(checks)} passed')

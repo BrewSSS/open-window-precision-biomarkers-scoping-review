@@ -66,3 +66,7 @@ __pycache__/
 03_search/search_checks_*/*.png
 03_search/search_checks_*/*.jpg
 !03_search/formal_runs/*/*/*_uts.txt
+
+# formal dedup outputs that carry abstracts (copyright text): never commit
+04_screening/formal_*/records_master.csv
+04_screening/formal_*/*abstract*
