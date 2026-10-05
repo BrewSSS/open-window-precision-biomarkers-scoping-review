@@ -1,0 +1,25 @@
+{
+  "description": "Frozen deduplicated pool for the v3.1 (PRE-005) 100-record title-screening pilot (stage 1). Pool = all records_master rows with blank dedup_status (RETAINED), from the deduplicated union of the formal database exports (PubMed, Web of Science Core Collection, Scopus; amendment PRE-006), generated 2026-10-05.",
+  "records_master_csv": {
+    "path": "04_screening/formal_2026-10-05_v0.9/records_master.csv",
+    "sha256": "2f71dc8916942af22a25b03c371c7f91614250a34041740178d24a544fa8e50e",
+    "row_count": 15750,
+    "retained_row_count_blank_dedup_status": 15750
+  },
+  "dedup_map_csv": {
+    "path": "04_screening/formal_2026-10-05_v0.9/dedup_map.csv",
+    "sha256": "1ca905d51e673a143875e5012309fe83f8c9af465c28e2e2ad5e69776fd15d28"
+  },
+  "dedup_summary_generated_at": "2026-10-05T13:52:21Z",
+  "dedup_summary_source": "04_screening/formal_2026-10-05_v0.9/dedup_summary.json",
+  "sampling_rule": {
+    "stage": "title screening (stage 1) pilot, protocol v3.1 amendment PRE-005",
+    "source": "04_screening/calibration_plan.md section 'Title pilot: 100 records (stage 1; v3.1, PRE-005)' and 01_protocol/execution_plan.md row 6.1a",
+    "rule": "random.Random(20261005).sample(sorted(unique_record_ids), 100); unique_record_ids = all record_id strings in records_master.csv with blank dedup_status, sorted lexicographically as strings",
+    "seed": 20261005,
+    "python_version_used": "3",
+    "sample_size": 100
+  },
+  "frozen_by": "data manager stand-in (team code D)",
+  "frozen_at": "2026-10-05"
+}

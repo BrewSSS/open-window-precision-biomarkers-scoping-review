@@ -1,0 +1,55 @@
+{
+  "generated_by": "scratch script /tmp/citation_inpool/recompute_inpool.py, executed by D role (AI agent)",
+  "inputs": {
+    "union_dedup_csv": "03_search/citation_chasing_round1_2026-10-05/union_dedup.csv",
+    "union_dedup_n_rows": 1938,
+    "pool_csv": "04_screening/formal_2026-10-05_v0.9/records_master.csv",
+    "pool_strategy_version": "v0.9",
+    "pool_n_unique_records": 15750
+  },
+  "matching_rule": "PMID exact (digits only) first; else normalised-DOI exact (lower-case, URL/\"doi:\" prefix stripped) second; else normalised-title + year within +/-1 with difflib.SequenceMatcher ratio >= 0.95 third (rapidfuzz not installed in this environment, so the difflib fallback that scripts/dedup_records.py itself uses when rapidfuzz is absent was used here too, for consistency). A fuzzy title match is suppressed whenever the two records carry differing non-empty PMIDs or DOIs (never match on title alone against conflicting identifiers).",
+  "totals_v0.9": {
+    "total_references": 1938,
+    "in_pool_by_rule": {
+      "pmid": 431,
+      "doi": 32,
+      "title_year": 0
+    },
+    "in_pool_total": 463,
+    "not_in_pool_total": 1475
+  },
+  "comparison_to_v0.7": {
+    "v0.7_in_pool_count": 528,
+    "v0.7_pool_description": "PubMed-only pool, 20,090 PMIDs, strategy v0.7, as recorded in union_dedup.csv's original in_pool column (yes/no_new/no_pmid)",
+    "v0.9_in_pool_count": 463,
+    "v0.9_pool_description": "three-database deduplicated pool (PubMed/MEDLINE, Scopus, Web of Science Core Collection), 15,750 unique records, strategy v0.9",
+    "delta_in_pool_v09_minus_v07": -65
+  },
+  "not_in_pool_breakdown": {
+    "by_year_band": {
+      "1980-1989": 6,
+      "1990-1999": 23,
+      "2000-2009": 102,
+      "2010-2019": 273,
+      "2020+": 1035,
+      "<1980": 1,
+      "unknown": 35
+    },
+    "by_review_editorial_book_like": {
+      "review/editorial/book-like": 313,
+      "other": 1162
+    },
+    "by_has_pmid_or_doi": {
+      "has_pmid_or_doi": 1449,
+      "no_pmid_no_doi": 26
+    }
+  },
+  "data_problems": [
+    "union_dedup.csv has 3 rows with journal literally set to the string 'PubMed' (pmids 30785868, 33041708, 33425264); for pmid 30785868 the year field (2026) also looks inconsistent with that PMID's issuance-era (~2018-2019), suggesting an upstream metadata-merge artifact for that one row. Not corrected here -- union_dedup.csv was not modified, per task instructions; flagged for D/A to check."
+  ],
+  "skipped_oversized_buckets_during_fuzzy_matching": 0,
+  "notes": [
+    "The review/editorial/book-like breakdown flags a reference if its journal field is empty OR its title contains a review/editorial/book-type keyword; it is a mechanical screen, not an eligibility judgement.",
+    "This script performs no eligibility screening; in_pool_v09 answers only whether the reference is already present in the v0.9 deduplicated formal-search pool."
+  ]
+}
