@@ -89,7 +89,7 @@
     "archive_release_zenodo": "done_2026-10-05",
     "random_50_screening_pilot": "accepted_by_A_2026-10-05 (raw agreement 1.00, kappa 1.00; AI hint visible — limitation recorded; no AI hints in formal screening)",
     "purposeful_10_charting_pilot": "ai_assisted_extraction_done_2026-10-05 (9/10 reports; R62 human extraction pending under v3.0 rules); accepted by A 2026-10-05 as calibration of rule clarity (not human inter-rater agreement)",
-    "formal_search": "pending_v0.9 (v0.7 PubMed export 2026-10-05 superseded; WoS/Scopus pending D after PRESS re-sign)",
+    "formal_search": "in_progress_2026-10-05_v0.9_provisional (PubMed v0.9 exported 7,846 with abstracts 99.5%; WoS and Scopus being exported by D with English/article limits; exports become formal if A's PRESS re-review leaves v0.9 unchanged; v3.1 release pending)",
     "dual_screening": "pending",
     "dual_extraction": "pending",
     "critical_appraisal": "pending",
@@ -107,7 +107,8 @@
   "flow_counts": null,
   "actual_search_dates": {
     "PubMed": "2026-10-05",
-    "note": "PubMed 2026-10-05 export used strategy v0.7 and is superseded by PRE-006 (kept as an artefact, not a PRISMA count); the formal v0.9 search dates are not yet set"
+    "note": "PubMed 2026-10-05 export used strategy v0.7 and is superseded by PRE-006 (kept as an artefact, not a PRISMA count); the formal v0.9 search dates are not yet set",
+    "PubMed_v0.9": "2026-10-05"
   },
   "frontier_preprint_counts": null,
   "notes": [

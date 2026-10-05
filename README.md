@@ -40,7 +40,7 @@
 | 阶段 | 入口 | 当前状态 |
 |---|---|---|
 | 前期探索 | [重启报告](02_preliminary/restart_2026-10-02/restart_report.html)；[撞车复核2026-10-04](02_preliminary/collision_recheck_2026-10-04.md) | 公开网页探索、来源核验与收窄框架撞车复核已完成；不是正式纳入结果 |
-| 正式检索 | [检索说明](03_search/README.md) | 策略v0.9（修订PRE-006：PubMed、WoS、Scopus+Google Scholar补充；单一路线E AND I AND T；检索阶段限制）由D修订中；PubMed v0.9已做诊断计数（7,846条），WoS/Scopus检索式待D种子测试；A须对v0.9重新做PRESS复核；**2026-10-05按v0.7完成的PubMed导出已被取代**（作为过程文件保留，不计入PRISMA）；正式检索在v3.1发布与PRESS重签之后开始 |
+| 正式检索 | [检索说明](03_search/README.md) | 策略v0.9（修订PRE-006：PubMed、WoS、Scopus+Google Scholar补充；单一路线E AND I AND T；检索阶段限制）由D修订中；**PubMed v0.9已于2026-10-05导出**（7,846条，99.5%含摘要，`03_search/formal_runs/2026-10-05_v0.9/pubmed/`；A指示先行导出，PRESS重签若不改检索式即为正式检索），WoS/Scopus检索式待D种子测试；A须对v0.9重新做PRESS复核；**2026-10-05按v0.7完成的PubMed导出已被取代**（作为过程文件保留，不计入PRISMA）；正式检索在v3.1发布与PRESS重签之后开始 |
 | 筛选 | [筛选手册](04_screening/screening_manual.md) | v3规则、FT01–FT08与空模板完成；Excel筛选工作簿已由`scripts/build_workbooks.py`生成（`templates_xlsx/`）；50篇双人试筛待存档发布后执行 |
 | 提取 | [提取手册](05_extraction/extraction_manual.md) | v3关联数据字典与空模板完成；提取工作簿（母版及评审A/B各一份）已生成；10篇试提取待存档发布后执行 |
 | 评价 | [批判评价手册](05_extraction/critical_appraisal_manual.md) | 工具选择与评价模板完成，评价工作簿已生成；正式JBI表单归档及人工评价待执行 |
