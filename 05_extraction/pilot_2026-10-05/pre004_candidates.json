@@ -1,0 +1,285 @@
+[
+  {
+    "id": "PRE-004-C01",
+    "field_or_rule": "measurements.row_unit; analysis_unit_rules.candidate_universe",
+    "proposed_change": "Row = one named analyte x one author-reported statistical test; omics: one assay_universe_summary row per analysis universe plus one named_immune_candidate row per candidate named in main text/main tables/figure legends; supplementary result tables summarised in the universe row (counts + locators); candidates prespecified in aims/methods always enumerated; set-level results as one reported_result_summary row per analysis (see PILOT_FINDINGS 4.1).",
+    "files": [
+      "05_extraction/data_dictionary.json",
+      "05_extraction/extraction_template.json",
+      "05_extraction/extraction_manual.md",
+      "06_synthesis/evidence_map_spec.json",
+      "01_protocol/protocol_EN_full.md#G",
+      "01_protocol/protocol_CN.md#G"
+    ],
+    "priority": "必须"
+  },
+  {
+    "id": "PRE-004-C02",
+    "field_or_rule": "measurements.record_type; candidate_selection_rule/basis/prespecification_status; result_status",
+    "proposed_change": "Define named_immune_candidate (single named analyte) vs reported_result_summary (set-level result); candidate_* apply to all non-universe rows incl. conventional targeted assays; prespecification refers to the named candidate, not the platform; add candidate_selection_rule 'statistically_selected_hits_from_untargeted_screen' and candidate_selection_basis 'results_statistical_selection'; result_status follows the author-reported test and threshold.",
+    "files": [
+      "05_extraction/data_dictionary.json",
+      "05_extraction/extraction_manual.md"
+    ],
+    "priority": "必须"
+  },
+  {
+    "id": "PRE-004-C03",
+    "field_or_rule": "sample_sets.row_unit; analysis_unit_rules.n_by_assay_time",
+    "proposed_change": "Row = cohort x group/arm x matrix x time point as sampled; platform recorded in assay_platform (multi-valued), split by platform only when platform-specific n is reported and differs; analysis subgroups split only when subgroup n and results are reported; control-arm time points get own rows (nonexercise_control, matched_control_time).",
+    "files": [
+      "05_extraction/data_dictionary.json",
+      "05_extraction/extraction_template.json",
+      "05_extraction/extraction_manual.md",
+      "06_synthesis/evidence_map_spec.json",
+      "01_protocol/protocol_EN_full.md#G",
+      "01_protocol/protocol_CN.md#G"
+    ],
+    "priority": "必须"
+  },
+  {
+    "id": "PRE-004-C04",
+    "field_or_rule": "precision_validation row unit; new column precision_validation.marker_family",
+    "proposed_change": "Default one set of 7 domain rows per report x cohort x marker_family; extra analyte-level rows only where analyte-specific domain evidence exists; add optional column marker_family; measurement_id single ID or null (no lists, no 'NA'); no PV rows for background reports.",
+    "files": [
+      "05_extraction/data_dictionary.json",
+      "05_extraction/extraction_template.json",
+      "05_extraction/extraction_manual.md",
+      "05_extraction/critical_appraisal_manual.md",
+      "06_synthesis/evidence_map_spec.json",
+      "01_protocol/protocol_EN_full.md#G",
+      "01_protocol/protocol_CN.md#G"
+    ],
+    "priority": "必须"
+  },
+  {
+    "id": "PRE-004-C05",
+    "field_or_rule": "time_bin boundary rule; time_from_exercise_end_value; time_unit",
+    "proposed_change": "Numeric value = earliest stated bound; full range kept in timepoint_as_reported; interval within one bin -> that bin; straddling interval -> later bin + flag TIME_BIN_STRADDLE; day-level timing -> nominal hours + DAY_LEVEL_TIMING; 'immediately' without number -> value NR, bin 0_to_lt30min + IMMEDIATE_NONNUMERIC (team decision); time_unit controlled min/h/d. Time-bin IDs, order and window positions unchanged.",
+    "files": [
+      "05_extraction/data_dictionary.json",
+      "05_extraction/extraction_manual.md",
+      "06_synthesis/evidence_map_spec.json",
+      "01_protocol/protocol_EN_full.md#G",
+      "01_protocol/protocol_CN.md#G"
+    ],
+    "priority": "必须"
+  },
+  {
+    "id": "PRE-004-C06",
+    "field_or_rule": "sample_sets.sample_role vocabulary and definitions",
+    "proposed_change": "Add 'periodic_training_monitoring' (unknown bout-to-sample interval -> time_bin UNCLEAR, no inference from figure axes) and 'resting_habitual_group'; define nonexercise_control (non-exercise condition/arm in same study) vs matched_control (separately recruited matched controls); concurrent control samples during exercise use matched_control_time.",
+    "files": [
+      "05_extraction/data_dictionary.json",
+      "05_extraction/extraction_manual.md",
+      "01_protocol/protocol_EN_full.md#G",
+      "01_protocol/protocol_CN.md#G"
+    ],
+    "priority": "必须"
+  },
+  {
+    "id": "PRE-004-C07",
+    "field_or_rule": "full-text disposition for background reports; vocabulary_crosswalks.scope_stream.from_screening_disposition",
+    "proposed_change": "Add disposition RETAIN_BACKGROUND mapping to scope_stream background; a primary FT code is still recorded so PRISMA exclusion counts are unchanged; background register kept separately.",
+    "files": [
+      "04_screening/screening_log_template.json",
+      "05_extraction/data_dictionary.json",
+      "05_extraction/extraction_manual.md",
+      "06_synthesis/evidence_map_spec.json",
+      "04_screening/screening_manual.md",
+      "01_protocol/protocol_EN_full.md#F",
+      "01_protocol/protocol_CN.md#F",
+      "01_protocol/protocol_EN_full.md#G",
+      "01_protocol/protocol_CN.md#G"
+    ],
+    "priority": "必须"
+  },
+  {
+    "id": "PRE-004-C08",
+    "field_or_rule": "charting depth for background reports",
+    "proposed_change": "Background reports: reports, study_families, cohorts, links, provenance complete; sample_sets one row per group x matrix (time_bin NA); measurements assay_universe rows only plus named rows cited in synthesis; no precision_validation rows; single extraction with second-person verification (rule change, team decision).",
+    "files": [
+      "05_extraction/extraction_manual.md",
+      "05_extraction/data_dictionary.json",
+      "05_extraction/critical_appraisal_manual.md",
+      "01_protocol/protocol_EN_full.md#G",
+      "01_protocol/protocol_CN.md#G"
+    ],
+    "priority": "必须"
+  },
+  {
+    "id": "PRE-004-C09",
+    "field_or_rule": "n_recruited, n_analyzed, count-field typing, donor_count_basis, n_cells",
+    "proposed_change": "Count fields integer or missing code only (explanations to notes); n_recruited = pre-exclusion enrolment for the cohort as defined in the report, alternatives listed in cohort_notes; n_analyzed = largest unique-participant n contributing to any immune-marker analysis in the link, other denominators in sample_sets; arithmetic back-calculation allowed with derived_n flag; donor_count_basis only for single-cell/sorted-cell assays with defined values; n_cells NA for non-cellular assays.",
+    "files": [
+      "05_extraction/data_dictionary.json",
+      "05_extraction/extraction_manual.md",
+      "01_protocol/protocol_EN_full.md#G",
+      "01_protocol/protocol_CN.md#G"
+    ],
+    "priority": "必须"
+  },
+  {
+    "id": "PRE-004-C10",
+    "field_or_rule": "measurements.marker_family vocabulary and assignment rule",
+    "proposed_change": "Add 'mucosal_antimicrobial_protein' (conventional class); named analytes mapping to a conventional family are classified by analyte regardless of platform; omics families for universe rows and omics features without a conventional family; platelet/stress genes 'other' with note; saliva flow rate is a normalisation covariate unless analysed as an outcome.",
+    "files": [
+      "05_extraction/data_dictionary.json",
+      "05_extraction/extraction_manual.md",
+      "06_synthesis/evidence_map_spec.json",
+      "01_protocol/protocol_EN_full.md#G",
+      "01_protocol/protocol_CN.md#G"
+    ],
+    "priority": "必须"
+  },
+  {
+    "id": "PRE-004-C11",
+    "field_or_rule": "missing-value decision tree and no-inference rule",
+    "proposed_change": "NA = not applicable by row type/design (prefilled where deterministic); NR = applicable but not reported; UNCLEAR = present but conflicting/insufficient; free-text fields carry bare codes, reasons in notes; no inference from platform conventions, typical practice or figure icons; adult-status inference per team decision.",
+    "files": [
+      "05_extraction/data_dictionary.json",
+      "05_extraction/extraction_manual.md",
+      "05_extraction/critical_appraisal_manual.md",
+      "01_protocol/protocol_EN_full.md#G",
+      "01_protocol/protocol_CN.md#G"
+    ],
+    "priority": "必须"
+  },
+  {
+    "id": "PRE-004-C12",
+    "field_or_rule": "screening fields in charting workbooks; AI governance",
+    "proposed_change": "Screening and consensus fields are copy-only from the locked screening workbook, null when no screening record exists; AI eligibility opinions only in pilot_notes; loader refuses to write screening/consensus cells.",
+    "files": [
+      "05_extraction/extraction_manual.md",
+      "05_extraction/data_dictionary.json",
+      "05_extraction/pilot_2026-10-05/PILOT_README.md",
+      "scripts/load_ai_extraction.py"
+    ],
+    "priority": "必须"
+  },
+  {
+    "id": "PRE-004-C13",
+    "field_or_rule": "ID conventions and comparison alignment",
+    "proposed_change": "Mandatory ID patterns (M-Rxx-NNN, SS-Rxx-NN, PV-Rxx-NNN; order of appearance; no custom prefixes); compare script adds content-key alignment and treats locators/notes as not scored.",
+    "files": [
+      "05_extraction/extraction_manual.md",
+      "05_extraction/pilot_2026-10-05/PILOT_README.md",
+      "scripts/compare_extraction.py"
+    ],
+    "priority": "建议"
+  },
+  {
+    "id": "PRE-004-C14",
+    "field_or_rule": "controlled lists for legacy free-text fields (matrix, exercise_mode, training_status, design, time_unit)",
+    "proposed_change": "Convert to controlled vocabularies consistent with the legacy definitions; details to notes/preanalytics. Field names unchanged.",
+    "files": [
+      "05_extraction/data_dictionary.json",
+      "05_extraction/extraction_manual.md",
+      "01_protocol/protocol_EN_full.md#G",
+      "01_protocol/protocol_CN.md#G"
+    ],
+    "priority": "建议"
+  },
+  {
+    "id": "PRE-004-C15",
+    "field_or_rule": "reports.author_window_interpretation coding rule",
+    "proposed_change": "Code the authors' own voice (introduction rationale they adopt, discussion, conclusions), exhaustive multi-value, one locator per value; redistribution_interpretation only when authors explicitly attribute their own observed change or non-change to cell redistribution/trafficking/mobilisation between compartments.",
+    "files": [
+      "05_extraction/data_dictionary.json",
+      "05_extraction/extraction_manual.md",
+      "01_protocol/protocol_EN_full.md#G",
+      "01_protocol/protocol_CN.md#G"
+    ],
+    "priority": "建议"
+  },
+  {
+    "id": "PRE-004-C16",
+    "field_or_rule": "reports.immune_link; measurements.omics_integration",
+    "proposed_change": "immune_link exhaustive multi-value; whole-blood transcriptome counts as immune_cell_omics, deconvolution estimates are not direct_immune_cell_or_count; omics_integration coded at the level of the row's analysis.",
+    "files": [
+      "05_extraction/data_dictionary.json",
+      "05_extraction/extraction_manual.md"
+    ],
+    "priority": "建议"
+  },
+  {
+    "id": "PRE-004-C17",
+    "field_or_rule": "preprint and version records; reports.reference_id",
+    "proposed_change": "Unretrieved related versions get bibliographic/version fields only; with a peer-reviewed version present: DUPLICATE_VERSION and scope_stream NA (not uncertain); no cohort links until verified; version rows use reference_id suffix (e.g. R01-V1); pilot workbooks reserve extra report rows.",
+    "files": [
+      "05_extraction/data_dictionary.json",
+      "05_extraction/extraction_manual.md",
+      "04_screening/screening_log_template.json",
+      "scripts/build_workbooks.py"
+    ],
+    "priority": "建议"
+  },
+  {
+    "id": "PRE-004-C18",
+    "field_or_rule": "reports.publication_status for short formats; version_date; version_label",
+    "proposed_change": "publication_status describes peer-review/version status only; article type (Did You Know?, Concept Paper, research letter, short communication) recorded in version_label; verify section is peer-reviewed else UNCLEAR; version_date = ISO 8601 online publication date of version consulted, else issue date, else accepted date with flag.",
+    "files": [
+      "05_extraction/data_dictionary.json",
+      "05_extraction/extraction_manual.md",
+      "01_protocol/protocol_EN_full.md#G",
+      "01_protocol/protocol_CN.md#G"
+    ],
+    "priority": "建议"
+  },
+  {
+    "id": "PRE-004-C19",
+    "field_or_rule": "figure-only values; measurements.figure_panel_locator",
+    "proposed_change": "Figure-only values: effect_value NR, effect_value_source NR, figure_panel_locator filled; result_direction from author text; digitisation only if the team decides, limited to prespecified immune candidates in Core A/B reports, using the predeclared two-reviewer procedure.",
+    "files": [
+      "05_extraction/data_dictionary.json",
+      "05_extraction/extraction_manual.md",
+      "01_protocol/protocol_EN_full.md#G",
+      "01_protocol/protocol_CN.md#G"
+    ],
+    "priority": "建议"
+  },
+  {
+    "id": "PRE-004-C20",
+    "field_or_rule": "conditional NA defaults in generated workbooks",
+    "proposed_change": "Generator prefills NA for digitisation fields (unless digitized_from_figure), marker_series_id (unless Support B), feature_universe_locator/supplement_sources on non-universe rows, n_cells/donor_count_basis on non-cellular assays; supplement_availability not_listed after checking vs not_checked only when not looked at. blank_record stays null.",
+    "files": [
+      "05_extraction/data_dictionary.json",
+      "05_extraction/extraction_manual.md",
+      "scripts/build_workbooks.py"
+    ],
+    "priority": "建议"
+  },
+  {
+    "id": "PRE-004-C21",
+    "field_or_rule": "measurements.result_direction association values",
+    "proposed_change": "Add positive_association, negative_association, no_detected_association; interaction effects coded mixed_or_inconsistent with note.",
+    "files": [
+      "05_extraction/data_dictionary.json",
+      "05_extraction/extraction_manual.md",
+      "06_synthesis/evidence_map_spec.json"
+    ],
+    "priority": "可选"
+  },
+  {
+    "id": "PRE-004-C22",
+    "field_or_rule": "new column measurements.n_in_contrast",
+    "proposed_change": "Add count field for unique participants in the specific contrast (per-marker denominator for Figure 2).",
+    "files": [
+      "05_extraction/data_dictionary.json",
+      "05_extraction/extraction_template.json",
+      "05_extraction/extraction_manual.md",
+      "06_synthesis/evidence_map_spec.json"
+    ],
+    "priority": "可选"
+  },
+  {
+    "id": "PRE-004-C23",
+    "field_or_rule": "study families, parent trials and shared-cohort checks",
+    "proposed_change": "One study_family per sub-study when participants, setting and design differ; pooled secondary analyses: cohort = analysed sample, parent trials in study_notes; mandatory shared-cohort check (same institution, overlapping recruitment, same protocol) recorded in cohort_notes.",
+    "files": [
+      "05_extraction/extraction_manual.md",
+      "05_extraction/data_dictionary.json"
+    ],
+    "priority": "可选"
+  }
+]
