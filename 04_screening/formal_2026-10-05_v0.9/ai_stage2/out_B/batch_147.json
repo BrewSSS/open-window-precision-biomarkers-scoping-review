@@ -1,0 +1,332 @@
+[
+ {
+  "record_id": "FS-007241",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Leukocyte morphology/counts after Yo-Yo test and preseason training"
+ },
+ {
+  "record_id": "FS-007244",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Astaxanthin RCT; CK/SOD/MDA/burnout only, no immune measure"
+ },
+ {
+  "record_id": "FS-007245",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse cardiac-remodeling model with macrophage depletion; animal-only"
+ },
+ {
+  "record_id": "FS-007247",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Breast cancer patients on neoadjuvant chemotherapy; clinical cohort"
+ },
+ {
+  "record_id": "FS-007248",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6/sCD14 after VO2peak and 45-min bouts; lean stratum separable"
+ },
+ {
+  "record_id": "FS-007249",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse I/R exosome study with BMDM in-vitro work; animal/in-vitro"
+ },
+ {
+  "record_id": "FS-007250",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Males with well-controlled type 2 diabetes; clinical metabolic cohort"
+ },
+ {
+  "record_id": "FS-007251",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6/CRP after EIMD protocol sampled 0-72h; MWD vs control"
+ },
+ {
+  "record_id": "FS-007252",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Muscle transcriptomics; immune/cytokine signaling only as pathway enrichment"
+ },
+ {
+  "record_id": "FS-007253",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "NLR/PLR/SII after HIIRE vs LIRE crossover in healthy men"
+ },
+ {
+  "record_id": "FS-007254",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Complement components pre/post/24h after treadmill exhaustion; women 21-26y"
+ },
+ {
+  "record_id": "FS-007255",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Rheumatoid arthritis plus hypertension patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-007256",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Human EIF samples plus mouse/in-vitro mechanism; inflammation reported"
+ },
+ {
+  "record_id": "FS-007258",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CC16/SP-D/CRP after high vs moderate treadmill; pre/1h/24h"
+ },
+ {
+  "record_id": "FS-007259",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Sweat CRP immunosensor paper; human exercise demonstration included"
+ },
+ {
+  "record_id": "FS-007260",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Human serum pre/post acute exercise; cytokines measured pre/post"
+ },
+ {
+  "record_id": "FS-007261",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Anti-RBD IgG/CXCL13 kinetics after 90-min post-vaccination bout"
+ },
+ {
+  "record_id": "FS-007262",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Bioinformatic reanalysis of public GEO datasets; computational-only"
+ },
+ {
+  "record_id": "FS-007263",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Octacosanol mechanism in mouse muscle/gut; animal-only"
+ },
+ {
+  "record_id": "FS-007265",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CRP/ESR after eccentric protocol sampled 0-72h; cooling vs control"
+ },
+ {
+  "record_id": "FS-007266",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cytokines pre/post/48h post-marathon; runners 38.4\u00b110.2 y"
+ },
+ {
+  "record_id": "FS-007267",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CTRP9/NOx/FMD only; no eligible immune measure"
+ },
+ {
+  "record_id": "FS-007268",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Salivary IgA pre/post/24h trail race; blueberry vs placebo"
+ },
+ {
+  "record_id": "FS-007271",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Leukocytes after repeated sprints; adult stratum separately reported"
+ },
+ {
+  "record_id": "FS-007275",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6/TNF after downhill run; healthy control stratum separable"
+ },
+ {
+  "record_id": "FS-007280",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6/TNF around graded/Wingate tests; probiotic vs placebo"
+ },
+ {
+  "record_id": "FS-007281",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Virologically suppressed HIV patients; clinical cross-sectional cohort"
+ },
+ {
+  "record_id": "FS-007283",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Leukocyte count after 60-min heat cycling; three-drink crossover"
+ },
+ {
+  "record_id": "FS-007284",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "I-FABP/sCD14/CRP pre/post 2-h run; CHO vs fat gut-training"
+ },
+ {
+  "record_id": "FS-007285",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Leukocyte/lymphocyte/granulocyte counts after 1-min sit-to-stand test"
+ },
+ {
+  "record_id": "FS-007287",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review of polyphenols, gut microbiota, exercise triad"
+ },
+ {
+  "record_id": "FS-007288",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "p62/LC3II in PBMCs and muscle pre/3h post cycling"
+ },
+ {
+  "record_id": "FS-007289",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Older men with type 2 diabetes; clinical cohort, supplement+training RCT"
+ },
+ {
+  "record_id": "FS-007290",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review of circulating cell-free mtDNA in athletes"
+ },
+ {
+  "record_id": "FS-007293",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Pancreatic cancer patients (PancFit) plus mouse model; clinical"
+ },
+ {
+  "record_id": "FS-007294",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Muscle redox proteomics; immune-function proteins post-hoc only"
+ },
+ {
+  "record_id": "FS-007295",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Wheel-running mice with METH/EcoHIV; animal-only"
+ },
+ {
+  "record_id": "FS-007297",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Unexplained dyspnoea/HFpEF patients; clinical haemodynamics cohort"
+ },
+ {
+  "record_id": "FS-007298",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "IL-6/TNF pre/post 4-week resistance training; healthy 50-65 y"
+ },
+ {
+  "record_id": "FS-007299",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Scrotal-pain physiotherapy case series; no exercise-immune design"
+ }
+]

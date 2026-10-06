@@ -1,0 +1,332 @@
+[
+ {
+  "record_id": "FS-007000",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Dehydration/weight-cutting exposure; kidney outcomes; no bout immune sampling"
+ },
+ {
+  "record_id": "FS-007001",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "WBC subsets and IL-6 immediately after anaerobic karate training"
+ },
+ {
+  "record_id": "FS-007002",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cytokines after Wingate; IPC vs sham randomized trial"
+ },
+ {
+  "record_id": "FS-007004",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CRP at ultra checkpoints; multistage Arctic race"
+ },
+ {
+  "record_id": "FS-007005",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mice only; hydrogen-rich water and treadmill endurance"
+ },
+ {
+  "record_id": "FS-007006",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "In vitro PBMC culture with ibrutinib; no exercise, no in-life human data"
+ },
+ {
+  "record_id": "FS-007007",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Murine metastasis model; human part is cancer-patient sera"
+ },
+ {
+  "record_id": "FS-007008",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Serum lipidomics after swimming; no immune objective or measure"
+ },
+ {
+  "record_id": "FS-007009",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "NK cells and kynurenines after CPET; healthy controls separable from HFrEF"
+ },
+ {
+  "record_id": "FS-007010",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Muscle biopsy proteomics/RNA-seq; only post-hoc inflammatory enrichment"
+ },
+ {
+  "record_id": "FS-007011",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CD8+ T-cell mobilization after HIIT; virus-reactive subsets"
+ },
+ {
+  "record_id": "FS-007012",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "hs-CRP after marathon; tart cherry vs placebo RCT"
+ },
+ {
+  "record_id": "FS-007013",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "GWAS/angiogenesis study; no bout-linked sampling; no immune measure"
+ },
+ {
+  "record_id": "FS-007014",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "HMB ingestion without exercise; muscle transcriptome, no bout"
+ },
+ {
+  "record_id": "FS-007015",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Serum IgA 24h after exercise challenge; IgY vs placebo RCT"
+ },
+ {
+  "record_id": "FS-007016",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-1beta/IL-6 exercise response; omega-3 vs placebo"
+ },
+ {
+  "record_id": "FS-007018",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Asthma and obesity cohorts; cytokines around CPET"
+ },
+ {
+  "record_id": "FS-007019",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Urinary immunoglobulins after marathon; resting comparator"
+ },
+ {
+  "record_id": "FS-007020",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "TNF-alpha/IL-10 mRNA in muscle after BFR exercise; NMN crossover"
+ },
+ {
+  "record_id": "FS-007021",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "cross_sectional_resting",
+  "note": "EIB cross-sectional; IL-5/IgE/eosinophils; challenge sampling unclear"
+ },
+ {
+  "record_id": "FS-007022",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Aged animal model transcriptomics; animal-only"
+ },
+ {
+  "record_id": "FS-007023",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6/CRP after downhill run; roller and stretching crossover"
+ },
+ {
+  "record_id": "FS-007024",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Prostanoids post-bout; NGT and T2D groups; monocyte COX-2"
+ },
+ {
+  "record_id": "FS-007025",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Five-week mask training; hematology pre/post intervention, no bout sampling"
+ },
+ {
+  "record_id": "FS-007026",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Burn-injury patients; 6-week training; TNF-alpha pre/post"
+ },
+ {
+  "record_id": "FS-007027",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Obesity cohort; NLRP3 and monocyte receptors pre/post HIIT"
+ },
+ {
+  "record_id": "FS-007028",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Serum IL-6 pre/post bout; serum applied to iPSC-derived cells"
+ },
+ {
+  "record_id": "FS-007029",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Muscle CRYAB/SMAD4 signaling after RE; no immune measure"
+ },
+ {
+  "record_id": "FS-007031",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Hypersensitivity pneumonitis patients; CPET physiology, no immune measure"
+ },
+ {
+  "record_id": "FS-007032",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CKD patients; muscle RNA-seq 24h post first bout"
+ },
+ {
+  "record_id": "FS-007033",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Lymphocyte subsets before/after Cooper test; reference-range study"
+ },
+ {
+  "record_id": "FS-007034",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Five-week HIIT with/without CWI; resting biopsies, no bout sampling"
+ },
+ {
+  "record_id": "FS-007035",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rat swimming serum on astrocyte cultures; animal/in-vitro only"
+ },
+ {
+  "record_id": "FS-007037",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Adiponectin after resistance bouts; borderline immune link, anti-inflammatory framing"
+ },
+ {
+  "record_id": "FS-007038",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Chemokine receptors on T/NK cells and monocytes after HIIT"
+ },
+ {
+  "record_id": "FS-007039",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Perspective on metformin, aging and sarcopenia"
+ },
+ {
+  "record_id": "FS-007040",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "C2C12 myotube in vitro contraction model; no human data"
+ },
+ {
+  "record_id": "FS-007041",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cytokines after sprint; 2x2 leucine-placebo factorial in overweight men"
+ },
+ {
+  "record_id": "FS-007042",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6 after maximal test; redox water vs standard water RCT"
+ },
+ {
+  "record_id": "FS-007043",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Resting serum proteomics; athlete-vs-control cross-section, background pattern"
+ }
+]

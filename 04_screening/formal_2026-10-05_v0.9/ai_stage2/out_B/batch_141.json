@@ -1,0 +1,342 @@
+[
+ {
+  "record_id": "FS-006945",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Soy pretzel vs wheat control crossover; IL-6 after resistance bout"
+ },
+ {
+  "record_id": "FS-006946",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Mentions immune response vaguely; acute rowing bout, immediate samples"
+ },
+ {
+  "record_id": "FS-006947",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CRP and CK after eccentric plyometrics; massage vs control RCT"
+ },
+ {
+  "record_id": "FS-006948",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Leukocyte subsets pre/post/30min after 2000-m rowing TT; elite rowers"
+ },
+ {
+  "record_id": "FS-006949",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Salivary immunoglobulins after resistance sessions; HI vs LI+BFR"
+ },
+ {
+  "record_id": "FS-006950",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Gestational diabetes pregnancy cohort; clinical population; 16-week cycling"
+ },
+ {
+  "record_id": "FS-006951",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Endometriosis patients; cross-sectional salivary CRP; habitual exercise only"
+ },
+ {
+  "record_id": "FS-006952",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6 and BDNF acute RT session response; RIR groups"
+ },
+ {
+  "record_id": "FS-006953",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "chronic_training_only",
+  "note": "Immune-cell EV subpopulations; STRRIDE training; bout relation unclear"
+ },
+ {
+  "record_id": "FS-006954",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Post-colorectal-cancer-surgery patients; early ambulation, not exercise exposure"
+ },
+ {
+  "record_id": "FS-006955",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "PBMC proteomics after HIIE/MICE; immune-cell omics"
+ },
+ {
+  "record_id": "FS-006957",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eHSP70, cytokines, WBC pre/post heavy resistance to 72h"
+ },
+ {
+  "record_id": "FS-006959",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Muscle metabolomics pre/post 10-w RT; no bout sample; no immune measure"
+ },
+ {
+  "record_id": "FS-006960",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Pentraxin-3/neopterin after marathon; cardiovascular framing"
+ },
+ {
+  "record_id": "FS-006961",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "TNF-alpha, osteokines after exhaustive run; whey vs water crossover"
+ },
+ {
+  "record_id": "FS-006963",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Metastatic NSCLC patients; feasibility outcomes; no immune measure"
+ },
+ {
+  "record_id": "FS-006965",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Anti-inflammatory oxylipins pre/during/post Arctic ultra"
+ },
+ {
+  "record_id": "FS-006966",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Irisin-osteoclast mechanistic study; human part unexercised cross-section"
+ },
+ {
+  "record_id": "FS-006967",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "3-year training RCT; yearly resting cytokines; no bout-linked sample"
+ },
+ {
+  "record_id": "FS-006968",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT05",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "NK cells harvested at rest/during cycling only; remainder in vitro/mice"
+ },
+ {
+  "record_id": "FS-006970",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "GrimAge pre/post 6-mo training; no bout-linked immune sample"
+ },
+ {
+  "record_id": "FS-006971",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mendelian randomization plus mouse models; no original human data"
+ },
+ {
+  "record_id": "FS-006972",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Database/web platform paper; no original human study"
+ },
+ {
+  "record_id": "FS-006974",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6/IL-15/FGF-21 after MICE, HIIE and RE bouts"
+ },
+ {
+  "record_id": "FS-006975",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CRP/fibrinogen after handgrip with and without BFR; elderly"
+ },
+ {
+  "record_id": "FS-006977",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "8 cytokines basal/2h/48h after step test to exhaustion"
+ },
+ {
+  "record_id": "FS-006978",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Leukocytes and cytokines after drop jumps; polyphenol vs control"
+ },
+ {
+  "record_id": "FS-006980",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT05"
+  ],
+  "study_type_hint": "other",
+  "note": "Long COVID patients; EV RNA at rest and peak CPET"
+ },
+ {
+  "record_id": "FS-006983",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "WBC/neutrophils pre/post WBVT sessions; acute and 12-week"
+ },
+ {
+  "record_id": "FS-006984",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Phagocyte burst after HIIT; mean-2SD below 18, no range/minimum"
+ },
+ {
+  "record_id": "FS-006985",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Wearable sweat CRP sensor development; no defined bout or population"
+ },
+ {
+  "record_id": "FS-006986",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Relapsing-remitting MS patients; serum indoles, no immune measure"
+ },
+ {
+  "record_id": "FS-006989",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Perspective/review article on hepatic sirtuin network"
+ },
+ {
+  "record_id": "FS-006990",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Single-arm supplement trial; resting CRP/CK pre-post, no bout sampling"
+ },
+ {
+  "record_id": "FS-006991",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "5-week hypoxia-training; erythroid hematology only, no immune measure"
+ },
+ {
+  "record_id": "FS-006994",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "cross_sectional_resting",
+  "note": "B-cell subsets at rest; HRV response to step test"
+ },
+ {
+  "record_id": "FS-006995",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Pregnant cohort; preeclampsia prediction tests; neutrophil-lymphocyte ratio"
+ },
+ {
+  "record_id": "FS-006996",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "CKD patients; 12-week home exercise; plasma cytokines"
+ },
+ {
+  "record_id": "FS-006997",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Stable CAD patients; cytokines after maximal test and HIIT"
+ },
+ {
+  "record_id": "FS-006998",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Post-MI cardiac rehabilitation patients; DBS metabolomics, CRP"
+ }
+]

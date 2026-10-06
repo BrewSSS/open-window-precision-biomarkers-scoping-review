@@ -1,0 +1,343 @@
+[
+ {
+  "record_id": "FS-004004",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "1h cycling; CHO-dose trials with placebo; neutrophils/cytokines post-exercise"
+ },
+ {
+  "record_id": "FS-004005",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Three cycling/arm-crank trials plus resting trial; sIgA and cortisol timed"
+ },
+ {
+  "record_id": "FS-004006",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Maximal cycling; T-cell thiol-redox flow cytometry pre/during/post"
+ },
+ {
+  "record_id": "FS-004007",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Obese vs normal-weight strata separable; HIIE; cfDNA/IL-6 pre/post/1h"
+ },
+ {
+  "record_id": "FS-004008",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Maximal cycling; T4/T8 subsets and Con-A suppressor function pre/post/2h"
+ },
+ {
+  "record_id": "FS-004009",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycling; NK-cytotoxicity assays with timed autologous serum; cytokines"
+ },
+ {
+  "record_id": "FS-004010",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Influenza-vaccine inflammation model; no exercise exposure sampled"
+ },
+ {
+  "record_id": "FS-004011",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Basketball athletes; miRNA panel post-acute and post-season; inflammation-linked"
+ },
+ {
+  "record_id": "FS-004012",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Prostate-cancer treatment cohort; stress hormones only"
+ },
+ {
+  "record_id": "FS-004013",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03",
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical commentary on OA exercise therapy; no original data"
+ },
+ {
+  "record_id": "FS-004014",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Adipose-tissue transcriptomics/methylation; no immune objective or measure"
+ },
+ {
+  "record_id": "FS-004015",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Postmenopausal women; Bruce test; sICAM/TNF-a pre/peak/recovery; strata separable"
+ },
+ {
+  "record_id": "FS-004016",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric contractions; pressure/morphology outcomes; no immune measure"
+ },
+ {
+  "record_id": "FS-004017",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Trained vs untrained; 2h exercise; lymphocyte subsets and PHA response to 72h"
+ },
+ {
+  "record_id": "FS-004018",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT06",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Post-race sampling only; no pre-race baseline; CWI contrast not exercise reference"
+ },
+ {
+  "record_id": "FS-004019",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Older healthy adults; pollutant exposures with intermittent exercise; filtered-air arm; sputum IL-6"
+ },
+ {
+  "record_id": "FS-004020",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy men; exhaustive cycling; sICAM-1 pre/post; adhesion-molecule link arguable"
+ },
+ {
+  "record_id": "FS-004021",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Cross-serology comparison; athlete/healthy strata separable; no bout"
+ },
+ {
+  "record_id": "FS-004022",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ARA vs placebo; resistance bout; leukocytes/PBMC mRNA/muscle chemokines timed"
+ },
+ {
+  "record_id": "FS-004023",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Infertile-patient RCT; 24-week training; seminal cytokines at rest"
+ },
+ {
+  "record_id": "FS-004024",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Heart-failure prognosis cohort; BDNF/CPET; no immune measure"
+ },
+ {
+  "record_id": "FS-004025",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "MS vs matched healthy controls separable; single bout; IL-10/TNF-alpha timed"
+ },
+ {
+  "record_id": "FS-004026",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "GWI vs healthy/CFS controls; graded challenge; immune-endocrine markers separable"
+ },
+ {
+  "record_id": "FS-004027",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T1D and matched controls separable; platelet aggregation/beta-TG only"
+ },
+ {
+  "record_id": "FS-004028",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T2DM patient cohort; n-3 vs placebo; hs-CRP/oxidative markers"
+ },
+ {
+  "record_id": "FS-004030",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03",
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Rationale-and-design protocol paper; acute heart-failure patients"
+ },
+ {
+  "record_id": "FS-004031",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy donors; 30-min cycling; adenovirus-specific T-cell mobilization/expansion"
+ },
+ {
+  "record_id": "FS-004032",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Maximal cycling; naloxone vs placebo; NK activity and subsets pre/post"
+ },
+ {
+  "record_id": "FS-004033",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T2DM patient cohort; aquatic/land training; IL-10/PBMC HDAC around sessions"
+ },
+ {
+  "record_id": "FS-004034",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise raises IL-6; gastric-emptying/glycemia outcomes; cytokine measured"
+ },
+ {
+  "record_id": "FS-004035",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Athletes; 40-min run; ubiquinol crossover; PBMC ROS/mitochondrial measures"
+ },
+ {
+  "record_id": "FS-004037",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Half-marathon; bilberry vs placebo; CRP/CK/DOMS baseline to 48h"
+ },
+ {
+  "record_id": "FS-004038",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Green tea trial; soreness/damage/oxidative markers only; no immune measure"
+ },
+ {
+  "record_id": "FS-004039",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Trained vs untrained; maximal exercise; PBMC PTX3/cytokine production ex vivo"
+ },
+ {
+  "record_id": "FS-004041",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T1D and controls; nisoldipine; platelet function only; no immune measure"
+ },
+ {
+  "record_id": "FS-004042",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy males; 20-min cycling; dendritic-cell subsets baseline/during/30min post"
+ },
+ {
+  "record_id": "FS-004043",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Oral-contraceptive vs menstrual women; heat cycling; immune counts/cytokines"
+ },
+ {
+  "record_id": "FS-004044",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy males; 2-mile run; WBC counts and O-GlcNAc modification in leukocytes"
+ },
+ {
+  "record_id": "FS-004045",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Connective-tissue-disease pulmonary-hemodynamics cohort; clinical; no immune design"
+ },
+ {
+  "record_id": "FS-004046",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Narrative review of gut microbiota, probiotics and sport"
+ }
+]

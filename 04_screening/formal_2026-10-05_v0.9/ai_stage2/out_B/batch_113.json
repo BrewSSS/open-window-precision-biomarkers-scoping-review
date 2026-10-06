@@ -1,0 +1,336 @@
+[
+ {
+  "record_id": "FS-005442",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Joint-replacement surgical cohort; accelerometry recovery linked to immune profiling"
+ },
+ {
+  "record_id": "FS-005443",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Purified B-lymphocyte mitogen stimulation; in-vitro only, no exercise"
+ },
+ {
+  "record_id": "FS-005444",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Prospective CRF-hypertension cohort; inflammation only as adjustment covariate"
+ },
+ {
+  "record_id": "FS-005445",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Total-hip-replacement osteoarthritis cohort; PRP/hemocoagulase perioperative markers"
+ },
+ {
+  "record_id": "FS-005446",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "60-km ultramarathon; IL-6/IL-8/TNF/CRP pre-post race"
+ },
+ {
+  "record_id": "FS-005448",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "HIV-infected sarcopenia cohort; 6-mo combined training; cytokines pre/post"
+ },
+ {
+  "record_id": "FS-005449",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Spondyloarthritis immunocompromised cohort; exercise before vaccine booster; IgG titers"
+ },
+ {
+  "record_id": "FS-005450",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ultramarathon pre/post; circulating miRNAs and hs-CRP measured"
+ },
+ {
+  "record_id": "FS-005452",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Sedentary adults; acute walking/resistance bouts; 16 exerkines incl. IL-6"
+ },
+ {
+  "record_id": "FS-005454",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon EHI vs finishers; NSE/NGAL/cystatin C; finisher comparator"
+ },
+ {
+  "record_id": "FS-005455",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Type 1 diabetes cohort; aerobic vs resistance training; CRP pre/post"
+ },
+ {
+  "record_id": "FS-005456",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Young vs older men, heat exercise; irisin; older stratum adult and separable"
+ },
+ {
+  "record_id": "FS-005458",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "90-min run; serum metabolomics FAHFA; IL-6 measured; weight-stratified runners"
+ },
+ {
+  "record_id": "FS-005459",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Hemodialysis cohort; 4-month intra-dialytic/home training; cytokines pre/post"
+ },
+ {
+  "record_id": "FS-005460",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "MitoQ vs placebo; 300 eccentric contractions; plasma IL-6 timed sampling"
+ },
+ {
+  "record_id": "FS-005462",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Chronic heart failure cohort; HIIT vs steady-state bout; IL-6 timed"
+ },
+ {
+  "record_id": "FS-005463",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Serum pre/post interval bout, men 50+; IL-6; in-vitro LoVo cell arm"
+ },
+ {
+  "record_id": "FS-005464",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T1D C-peptide groups + controls; 45-min walk; CD34+ progenitor mobilization"
+ },
+ {
+  "record_id": "FS-005465",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "XTERRA triathlon pre/0/16h; WBC, IgG/IgA, CRP, rheology"
+ },
+ {
+  "record_id": "FS-005466",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CBD vs placebo runs; IL-6/IL-1b/TNF/LPS timed sampling"
+ },
+ {
+  "record_id": "FS-005467",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rat acute-kidney-injury model; diet/exercise protocols; animal-only"
+ },
+ {
+  "record_id": "FS-005468",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Downhill run plus heat test; CK/NGAL/KIM-1; immune link arguable"
+ },
+ {
+  "record_id": "FS-005469",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Obese subjects; HIIE +/- melatonin; CRP/WBC/neutrophils; age mean-2SD=13.6<18"
+ },
+ {
+  "record_id": "FS-005470",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Obese adults; 12-wk MICT/HIIT; adipose biopsies pre/post, no bout sample"
+ },
+ {
+  "record_id": "FS-005471",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "chronic_training_only",
+  "note": "PCOS + controls; complement proteins; bout timing ambiguous, advance"
+ },
+ {
+  "record_id": "FS-005472",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycling GE/TT normoxia vs hypoxia; TNF-alpha, myeloperoxidase; athletes"
+ },
+ {
+  "record_id": "FS-005473",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "ApoE-knockout mice; Western diet and endurance exercise; animal-only"
+ },
+ {
+  "record_id": "FS-005475",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Elderly women; Nordic walking; NLRP3/TLR4, cytokines around sessions"
+ },
+ {
+  "record_id": "FS-005476",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Position paper on dietary supplements in sport; no original data"
+ },
+ {
+  "record_id": "FS-005477",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Blackcurrant vs placebo heat run; IL-6/IL-10/IL-1ra, sCD14 timed"
+ },
+ {
+  "record_id": "FS-005478",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Obese + lean sedentary; 7-day training; muscle EV miRNAs, no bout sample"
+ },
+ {
+  "record_id": "FS-005479",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Resistance rest-period comparison; leukocytes/cytokines; age mean-2SD=16.9<18"
+ },
+ {
+  "record_id": "FS-005481",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "RA + healthy volunteers; 30-min walk; cytokines pre/post; controls separable"
+ },
+ {
+  "record_id": "FS-005482",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Intermittent-claudication cohort; treadmill protocol; PBMC cytokines/RNA-seq"
+ },
+ {
+  "record_id": "FS-005483",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "HFpEF/HFrEF with matched controls; CPET echocardiography; hs-CRP resting only"
+ },
+ {
+  "record_id": "FS-005484",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIT 100 vs 110% MAV plus controls; IL-6/TNF around test and program"
+ },
+ {
+  "record_id": "FS-005485",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric protocol; IL-6 pre/0/48h; polygenic score analysis"
+ },
+ {
+  "record_id": "FS-005486",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Trunk eccentric protocol 34+/-6y; IL-6 post-bout vs concentric comparator"
+ },
+ {
+  "record_id": "FS-005487",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "HIV immune-nonresponder cohorts; CD4+ T-cell mitochondria; no exercise"
+ },
+ {
+  "record_id": "FS-005488",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Half-marathon; PBMC/serum miRNA pre-post; in-vitro myogenesis arm"
+ }
+]

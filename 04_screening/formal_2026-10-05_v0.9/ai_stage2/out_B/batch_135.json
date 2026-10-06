@@ -1,0 +1,332 @@
+[
+ {
+  "record_id": "FS-006579",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mice only; sulforaphane x exhaustive running; muscle cytokines measured in animals"
+ },
+ {
+  "record_id": "FS-006580",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Major depressive disorder patients on pharmacotherapy; 12-week program, CRP not bout-linked"
+ },
+ {
+  "record_id": "FS-006581",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Endurance athletes, 3-h heat run; placebo-controlled prebiotic; CRP, sCD14 serial"
+ },
+ {
+  "record_id": "FS-006582",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Trained men, repeated Wingate bouts; IL-6 measured; spinach vs control condition"
+ },
+ {
+  "record_id": "FS-006584",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Ages 25±5.6/25±4.5y: mean-2SD below 18, no stated range; 14-day training, leukocytes"
+ },
+ {
+  "record_id": "FS-006585",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Competition-prep fat loss; serum cytokines/chemokines; no bout-linked sampling described"
+ },
+ {
+  "record_id": "FS-006586",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy men, 60-min run; yoga vs rest crossover; NK activity, SIgA serial"
+ },
+ {
+  "record_id": "FS-006592",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Hepato-pancreato-biliary surgery patients; surgical stress, no exercise-bout sampling"
+ },
+ {
+  "record_id": "FS-006594",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Active men 18-25y; plyometric bout; monocyte subsets, TNF-a, MCP-1; PBMT placebo-controlled"
+ },
+ {
+  "record_id": "FS-006595",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 33±12y: mean-2SD below 18, no stated range; WB-EMS bout, serial cytokines"
+ },
+ {
+  "record_id": "FS-006596",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Muscle transcriptome, metabolic aim; inflammation/immunity only post-hoc pathway finding"
+ },
+ {
+  "record_id": "FS-006597",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Apple-allergy patients; exercise only an allergy cofactor; IgE diagnostics"
+ },
+ {
+  "record_id": "FS-006599",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Insulin binding to monocytes; insulin-sensitivity aim, no eligible immune measure"
+ },
+ {
+  "record_id": "FS-006603",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Capsaicin, DOMS/performance outcomes only; no immune measure"
+ },
+ {
+  "record_id": "FS-006604",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "GI cancer surgery patients; prehabilitation secretomics, clinical cohort"
+ },
+ {
+  "record_id": "FS-006605",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Stage-1 hypertension adults 51±5y; single RT session; CRP at 20-24h/72h"
+ },
+ {
+  "record_id": "FS-006607",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T2DM and healthy groups separable; IL-6, fractalkine pre/post 30-min treadmill"
+ },
+ {
+  "record_id": "FS-006609",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Amateur marathon; IL-6, neopterin with echocardiography stages; pre-race baseline"
+ },
+ {
+  "record_id": "FS-006611",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Systematic review and meta-analysis of tart cherry juice on EIMD"
+ },
+ {
+  "record_id": "FS-006612",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "EEG after soccer heading; no immune measure, inflammation only speculative"
+ },
+ {
+  "record_id": "FS-006613",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Ischaemic stroke patients; 7-day early mobilisation, markers not bout-linked"
+ },
+ {
+  "record_id": "FS-006614",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Heart-failure patients per title; empty abstract, population clearly clinical"
+ },
+ {
+  "record_id": "FS-006616",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "1-h cycling to RCP; serum cytokines and soluble receptors, trained vs untrained"
+ },
+ {
+  "record_id": "FS-006617",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CPET; cfDNA, DNase, MPO, calprotectin, cytokines; healthy controls separable"
+ },
+ {
+  "record_id": "FS-006618",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Post-myocardial-infarction rehabilitation cohort; 22-day hypoxic training"
+ },
+ {
+  "record_id": "FS-006619",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Corrigendum; not original research"
+ },
+ {
+  "record_id": "FS-006620",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Single maximal test; adiponectin isoforms only, no recognized immune mediator"
+ },
+ {
+  "record_id": "FS-006621",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Insulin-resistant adults plus mice; 6-week BW-HIIT; HMGB1, human cytokine panel"
+ },
+ {
+  "record_id": "FS-006622",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T2D/hypertension vs age-matched healthy men, separable; sCD14, LBP, IL-6, TNF"
+ },
+ {
+  "record_id": "FS-006623",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Heat vs temperate 1-h runs; leukocytes, cfDNA, LBP, endotoxin markers"
+ },
+ {
+  "record_id": "FS-006624",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Five strength-training sessions; IL-6, CRP; ischemic conditioning with control groups"
+ },
+ {
+  "record_id": "FS-006627",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2.25-h ride; pro-inflammatory oxylipins vs Prevotella; serial sampling"
+ },
+ {
+  "record_id": "FS-006628",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Single-case marathon 1985; white-cell counts serial with pre-race baseline"
+ },
+ {
+  "record_id": "FS-006629",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "8-week HIIT/combined training, 48h pre/post only; CTRP1/3 adipokines only"
+ },
+ {
+  "record_id": "FS-006632",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Female athletes, LHTL trial; post-exercise hepcidin, IL-6 at 0/3h"
+ },
+ {
+  "record_id": "FS-006635",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Dragon boat race; IL-6, IL-10, TNF; healthy women separable from survivors"
+ },
+ {
+  "record_id": "FS-006636",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Post-HIIT serum Metrnl applied in beta-cell in-vitro; exerkine, no immune measure"
+ },
+ {
+  "record_id": "FS-006637",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Muscle proteome; immune signaling only post-hoc IPA predictions, no immune measure"
+ },
+ {
+  "record_id": "FS-006638",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy controls 27±5y: mean-2SD 17<18, no stated range; AYA patient stratum clinical"
+ },
+ {
+  "record_id": "FS-006639",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "BCAA timing vs placebo around resistance bout; IL-6, CRP 30min-48h"
+ }
+]

@@ -1,0 +1,326 @@
+[
+ {
+  "record_id": "FS-006387",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle CaMKII blot methods; inflammatory wording only; no immune measure"
+ },
+ {
+  "record_id": "FS-006388",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "cardiac-patient rehabilitation cohort; CPET/echo outcomes"
+ },
+ {
+  "record_id": "FS-006389",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6 with exercise-mode contrast; obese cohort \u2014 health adjudication at FT"
+ },
+ {
+  "record_id": "FS-006390",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "overweight/obese healthy young adults; IL-6/CRP; activity conditions"
+ },
+ {
+  "record_id": "FS-006391",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "COPD exacerbation patients; clinical rehabilitation cohort"
+ },
+ {
+  "record_id": "FS-006392",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "leucocyte lipid-mediator genes after resistance bout; adults 18-35"
+ },
+ {
+  "record_id": "FS-006393",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "cancer patients and mouse tumor models; clinical population"
+ },
+ {
+  "record_id": "FS-006396",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "HDL/lipid outcomes only; no immune measure"
+ },
+ {
+  "record_id": "FS-006397",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "post-COVID condition patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-006399",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "ML prediction of post-exercise WBC; data provenance unclear"
+ },
+ {
+  "record_id": "FS-006400",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle MRI edema/fat fraction only; no immune measure"
+ },
+ {
+  "record_id": "FS-006401",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "WBC/IL-6/CRP after treadmill test; normotensive stratum separable"
+ },
+ {
+  "record_id": "FS-006403",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "almond vs control crossover; CRP after downhill run; healthy adults"
+ },
+ {
+  "record_id": "FS-006404",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "lymphoma/myeloma transplant patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-006405",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cytokines and SIgA around 20-km race; adult athletes"
+ },
+ {
+  "record_id": "FS-006406",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "bipolar/schizophrenia cohort; psychiatric clinical population"
+ },
+ {
+  "record_id": "FS-006407",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "obesity-treatment program cohort; clinical population"
+ },
+ {
+  "record_id": "FS-006408",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "obese cohort \u2014 health adjudication at FT; TGF-beta1; training snapshots"
+ },
+ {
+  "record_id": "FS-006410",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CD34+ progenitor mobilization after 60-min run; healthy adults"
+ },
+ {
+  "record_id": "FS-006411",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "decorin/myostatin myokines only; no immune measure"
+ },
+ {
+  "record_id": "FS-006412",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CBD vs placebo; IL-6/TNF/CD14 after treadmill in heat"
+ },
+ {
+  "record_id": "FS-006415",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cancer survivors; clinical cohort despite eligible myokine measures"
+ },
+ {
+  "record_id": "FS-006416",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "EV miRNA incl immune miR-146a/-155 after eccentric bout"
+ },
+ {
+  "record_id": "FS-006418",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "resistin/leptin after single strength session; immune link adjudicate at FT"
+ },
+ {
+  "record_id": "FS-006420",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "NK activity and lymphocyte subsets after incremental test to exhaustion"
+ },
+ {
+  "record_id": "FS-006421",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6/CK after eccentric bout; genotype subgroups"
+ },
+ {
+  "record_id": "FS-006423",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "long COVID patient cohort; clinical population"
+ },
+ {
+  "record_id": "FS-006424",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "carb vs placebo crossover; WBC/IL-6/CRP after 15-km run"
+ },
+ {
+  "record_id": "FS-006429",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "cardiac rehab patients; symptoms only; no immune measure"
+ },
+ {
+  "record_id": "FS-006430",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "urinary complement/Ig proteins around training course; elite skaters"
+ },
+ {
+  "record_id": "FS-006434",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "PTX3 with 12-week training pre/post; bout linkage unclear"
+ },
+ {
+  "record_id": "FS-006438",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "curcumin vs placebo; IL-6/TNF after plyometric bout"
+ },
+ {
+  "record_id": "FS-006439",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T1DM vs healthy controls; cf-DNA/NET marker after 3 bouts"
+ },
+ {
+  "record_id": "FS-006440",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cranberry vs placebo; innate-immunity proteomics after cycling bout"
+ },
+ {
+  "record_id": "FS-006441",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "myeloma patients; clinical cohort; NK/monocyte mobilization"
+ },
+ {
+  "record_id": "FS-006442",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ASC inflammasome specks around CPET; healthy athletes"
+ },
+ {
+  "record_id": "FS-006446",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mathematical modeling only; no human measurements"
+ },
+ {
+  "record_id": "FS-006447",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "performance outcomes only; no immune measure"
+ },
+ {
+  "record_id": "FS-006448",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "advanced heart failure patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-006450",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute-phase proteins pre/post competition samples; Olympic athletes"
+ }
+]

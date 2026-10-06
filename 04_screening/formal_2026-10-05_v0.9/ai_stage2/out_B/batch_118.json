@@ -1,0 +1,337 @@
+[
+ {
+  "record_id": "FS-005680",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Age 20.6+/-3.5y: mean-2SD=13.6<18, no stated range/minimum"
+ },
+ {
+  "record_id": "FS-005681",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "older adults n3-PUFA RCT; muscle/mitochondrial outcomes only, no immune measure"
+ },
+ {
+  "record_id": "FS-005682",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat plasma EVs, HUVEC assays, diabetic rats; animal/in-vitro only"
+ },
+ {
+  "record_id": "FS-005685",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "asthma outpatient cohort; accelerometry, VO2max; clinical population"
+ },
+ {
+  "record_id": "FS-005686",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "pain-drug trial after self-reported exercise pain; no monitored bout, baseline or bio-sampling"
+ },
+ {
+  "record_id": "FS-005687",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Arctic ultramarathon; serum glycocalyx elements, CRP at checkpoints vs start and controls"
+ },
+ {
+  "record_id": "FS-005688",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric damage protocol; 8 plasma cytokines pre/post to 72 h; ketone vs isocaloric placebo"
+ },
+ {
+  "record_id": "FS-005689",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2 h heat exercise; I-FABP, LBP, CLDN-3 pre/post; interval vs continuous"
+ },
+ {
+  "record_id": "FS-005690",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "cross_sectional_resting",
+  "note": "military adults 19-40y; leukocyte counts vs periodontitis; habitual training, no bout"
+ },
+ {
+  "record_id": "FS-005691",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon; cytokine panel pre/24h-before/immediately/24h/72h post; ages 30-55"
+ },
+ {
+  "record_id": "FS-005692",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "chronic_training_only",
+  "note": "prehypertensive adults 30-50y; resting IL-6/TNF-a/IL-10 across handgrip training; bout sampling unstated"
+ },
+ {
+  "record_id": "FS-005693",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "erratum notice; no data"
+ },
+ {
+  "record_id": "FS-005694",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "interval running in three cycle phases; hepcidin, ferritin, iron pre/0/3/24 h"
+ },
+ {
+  "record_id": "FS-005695",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "early-stage prostate cancer patients; NK cytotoxicity after bout; clinical cohort"
+ },
+ {
+  "record_id": "FS-005696",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "two-stage MTB race; CRP, CK, troponin, NT-proBNP 1 h post stages; pre-race baseline"
+ },
+ {
+  "record_id": "FS-005697",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "damage protocol; IL-6, sICAM-1 to 96 h; cryotherapy arms vs control"
+ },
+ {
+  "record_id": "FS-005699",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Wistar rat white adipose tissue redox study; animal-only"
+ },
+ {
+  "record_id": "FS-005700",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "65 vs 85% VO2max bouts; IL-6, IL-1b, TNF-a, SIRT pre/post/1 h; healthy males"
+ },
+ {
+  "record_id": "FS-005701",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "elite matches; salivary IgA and cortisol pre/30min/48h post; repeated bouts, age 26+/-4"
+ },
+ {
+  "record_id": "FS-005702",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "older-adult stratum (67.7+/-6y) separately reported; cytokines, eNO around bout+meal"
+ },
+ {
+  "record_id": "FS-005703",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "obesity with metabolic syndrome; clinical metabolic cohort; 6-month programs"
+ },
+ {
+  "record_id": "FS-005704",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle biopsy signaling (AKT/STAT) after exhaustive cycling; no immune measure"
+ },
+ {
+  "record_id": "FS-005705",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "hemodialysis patients; CKD clinical cohort; intradialytic training program"
+ },
+ {
+  "record_id": "FS-005706",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "ME/CFS patient cohort; post-exercise exosomal mtDNA; microglia assay"
+ },
+ {
+  "record_id": "FS-005707",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "trail run with ibuprofen vs placebo; TBARS, sulfhydryl, CK only; no immune measure"
+ },
+ {
+  "record_id": "FS-005708",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT05"
+  ],
+  "study_type_hint": "other",
+  "note": "PAD patient cohort; resting IL-6 only; post-exercise measures hemodynamic, no samples"
+ },
+ {
+  "record_id": "FS-005709",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "spinal cord injury cohort; leukocyte subsets after arm-crank bout; clinical population"
+ },
+ {
+  "record_id": "FS-005710",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "healthy Labrador Retrievers; collagen supplement and gait scores; animal-only"
+ },
+ {
+  "record_id": "FS-005712",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 24+/-1 stated as SEM only; SEM does not establish adulthood"
+ },
+ {
+  "record_id": "FS-005713",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "network pharmacology plus mouse swim model; no original human measurements"
+ },
+ {
+  "record_id": "FS-005714",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "refractory angina patients; cupping/nutrition; pain, QoL and exercise-test outcomes"
+ },
+ {
+  "record_id": "FS-005717",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "spinal cord injury cohort; cytokines around arm-crank bout; clinical population"
+ },
+ {
+  "record_id": "FS-005718",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "wheelchair rugby GXT; tendon ultrasound only; no immune measure"
+ },
+ {
+  "record_id": "FS-005719",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "healthy donors; cycling bout; NKT-like scRNA-seq and CIK cytotoxicity assays"
+ },
+ {
+  "record_id": "FS-005720",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "multiple sclerosis patients; 4-day free-living activity regimens; clinical cohort"
+ },
+ {
+  "record_id": "FS-005721",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "heat-exercise hydration trial; lactate and oxidative stress only; no immune measure"
+ },
+ {
+  "record_id": "FS-005722",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ultramarathon; IL-6, hepcidin, PBMC iron-gene expression pre/post/24 h"
+ },
+ {
+  "record_id": "FS-005723",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "localized prostate cancer patients; single bout before prostatectomy; clinical cohort"
+ },
+ {
+  "record_id": "FS-005724",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "active older adults 68+/-5y; acute bout vs seated rest; monocyte subsets, cognition"
+ },
+ {
+  "record_id": "FS-005725",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "systemic lupus erythematosus patients; 12-week training; ISG, CPET; clinical cohort"
+ }
+]

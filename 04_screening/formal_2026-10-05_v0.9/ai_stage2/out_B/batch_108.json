@@ -1,0 +1,356 @@
+[
+ {
+  "record_id": "FS-005228",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "CKD patients; psychological stress recall, not exercise; IL-6 monitored"
+ },
+ {
+  "record_id": "FS-005229",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "resting neutrophil function in atopic vs non-atopic runners; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-005230",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "squat bout, 24h biopsy; MPO/EPC immune link arguable; placebo crossover"
+ },
+ {
+  "record_id": "FS-005231",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "HIV patients; exercise stress echocardiography only, no post-exercise immune sampling"
+ },
+ {
+  "record_id": "FS-005232",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "91-km race, CRP pre/24h post; supplement use observational, response separable"
+ },
+ {
+  "record_id": "FS-005233",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "ACL-reconstruction patients; COMP is cartilage marker, no immune measure"
+ },
+ {
+  "record_id": "FS-005234",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "CPET prognostic for mortality; no post-exercise immune sampling; hsCRP baseline covariate"
+ },
+ {
+  "record_id": "FS-005235",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "metabolic syndrome patients, clinical metabolic cohort; PBMC measures otherwise eligible"
+ },
+ {
+  "record_id": "FS-005236",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "perspective/hypothesis article on COVID-19 rehabilitation; no original data"
+ },
+ {
+  "record_id": "FS-005237",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "eel larvae transcriptome; animal study"
+ },
+ {
+  "record_id": "FS-005238",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "40-day glutamine crossover; samples at period start/end only; CK/cortisol markers"
+ },
+ {
+  "record_id": "FS-005239",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "triathlon pre/finish/1-week; FMD, L-arginine, soluble adhesion molecules only"
+ },
+ {
+  "record_id": "FS-005240",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "hospitalized COVID-19 survivors; CPET outcomes, no post-exercise immune sampling"
+ },
+ {
+  "record_id": "FS-005241",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "cross-sectional training-group comparison; resting lymphocyte methylation, no bout sampling"
+ },
+ {
+  "record_id": "FS-005242",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "rheumatoid arthritis patients; 10-week HIIT pre/post, clinical cohort"
+ },
+ {
+  "record_id": "FS-005243",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "HIV inpatient peer-support program; no exercise, no immune measures"
+ },
+ {
+  "record_id": "FS-005244",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "match bout, -72/0/+72h sampling; CRP, IL-6, leukocytes; recovery crossover contrast"
+ },
+ {
+  "record_id": "FS-005245",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "computational microarray reanalysis of coronavirus-infected endothelial cells; no human exercise"
+ },
+ {
+  "record_id": "FS-005247",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Alzheimer patients plus mice; 3-month cycling pre/post miRNA; clinical cohort"
+ },
+ {
+  "record_id": "FS-005248",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "cross-sectional epicardial fat-fitness association; no immune measure, no bout sampling"
+ },
+ {
+  "record_id": "FS-005249",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "men 22+/-3, women 19+/-1 y: mean-2SD<18, no stated range; muscle cytokines"
+ },
+ {
+  "record_id": "FS-005250",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cooper test, post-exercise IL-6/IL-10; propolis vs placebo RCT"
+ },
+ {
+  "record_id": "FS-005251",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T1D patients but matched healthy controls separable, group-wise results; 45-min walk"
+ },
+ {
+  "record_id": "FS-005252",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2000-m rowing test, pre/1min/24h; cytokines, NK/Treg subsets; placebo arm"
+ },
+ {
+  "record_id": "FS-005253",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIE bout, pre/0/30/60min cytokines; juice vs water crossover contrast"
+ },
+ {
+  "record_id": "FS-005254",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "chronic heart failure patients; CPET-guided rehab, CRP only; clinical cohort"
+ },
+ {
+  "record_id": "FS-005255",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "high-intensity bout, baseline/post/30min IL-6/TNF-a/CRP; mistletoe vs control"
+ },
+ {
+  "record_id": "FS-005256",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "hemodialysis AVF vein histology; no exercise exposure, Ki67 not immune measure"
+ },
+ {
+  "record_id": "FS-005257",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "8-month training, periodic resting samples; adipsin/complement D; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-005258",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "walking bouts with cytokine sampling; knee OA cohort but separable 5-person control stratum"
+ },
+ {
+  "record_id": "FS-005259",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "cross-sectional fitness-protein association; no bout-linked immune sampling"
+ },
+ {
+  "record_id": "FS-005260",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "60-min bouts in three thermal conditions, pre/post/3h IL-6; within-subject contrasts"
+ },
+ {
+  "record_id": "FS-005261",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "BP/HRV/vascular outcomes only, no immune measure; HIV patients and healthy controls"
+ },
+ {
+  "record_id": "FS-005262",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Alzheimer patients plus APP/PS1 mice; SNHG14 lncRNA; clinical cohort"
+ },
+ {
+  "record_id": "FS-005263",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "single bout vs control crossover; inflammation stated, obesity cohort ambiguous health"
+ },
+ {
+  "record_id": "FS-005264",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon, sequential sampling to 8 days; neutrophils, G-CSF, IL-6, hsCRP"
+ },
+ {
+  "record_id": "FS-005265",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rhesus monkeys; seminal plasma infusion, prostaglandins; animal study"
+ },
+ {
+  "record_id": "FS-005266",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "multiple sclerosis patients; 6-month home training; clinical cohort"
+ },
+ {
+  "record_id": "FS-005267",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "multiple sclerosis women; 8-week training pre/post IL-6/CRP/IL-10; clinical cohort"
+ },
+ {
+  "record_id": "FS-005268",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "advanced pancreatic cancer patients; 12-week EMS training; clinical cohort"
+ }
+]

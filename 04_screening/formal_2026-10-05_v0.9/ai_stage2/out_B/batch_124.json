@@ -1,0 +1,371 @@
+[
+ {
+  "record_id": "FS-005959",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exercise-induced shoulder injury; CRP/IL-6/IL-10 at 48h; pain prediction"
+ },
+ {
+  "record_id": "FS-005962",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "HepG2 in-vitro cytotoxicity of plant extract; no human data, no exercise"
+ },
+ {
+  "record_id": "FS-005963",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT08"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "hemodialysis cohort; single-arm leucine+resistance training; resting PBMC phenotyping"
+ },
+ {
+  "record_id": "FS-005964",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "rat exhaustive treadmill; glutamine timing; animal-only"
+ },
+ {
+  "record_id": "FS-005965",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "heart failure cohort on anakinra; eosinophil counts vs drug, no bout sampling"
+ },
+ {
+  "record_id": "FS-005966",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "half marathon; salivary IgA/IgK/antimicrobial proteins at 2-4h; non-exercise controls"
+ },
+ {
+  "record_id": "FS-005967",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "heart failure telerehab RCT; prognosis prediction; hs-CRP, no bout sampling"
+ },
+ {
+  "record_id": "FS-005968",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "DOMS protocol; tape/sleeve groups vs control; IL-6 to 72h; ages 18-24"
+ },
+ {
+  "record_id": "FS-005969",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "asthma cohorts; resting epithelial brushings RNA-seq; ex vivo cell work"
+ },
+ {
+  "record_id": "FS-005970",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "post-marathon serum metabolomics; metabolic recovery aim, no immune markers"
+ },
+ {
+  "record_id": "FS-005971",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "random-forest prediction of post-exercise leukocytes; 200 people, pre/post WBC data"
+ },
+ {
+  "record_id": "FS-005972",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Fontan congenital heart disease cohort; CPET with pre/post cytokines"
+ },
+ {
+  "record_id": "FS-005973",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "banana root proteomics, fungal infection; plants, no human/exercise"
+ },
+ {
+  "record_id": "FS-005974",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "GDF15 myokine-glucose study; in vitro, mice, T2D humans; no immune measure"
+ },
+ {
+  "record_id": "FS-005975",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2-h run in heat; AA beverages vs water control; IgM, sCD14, cytokines to 2h"
+ },
+ {
+  "record_id": "FS-005976",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "resting cross-section, exercisers vs controls; selenoprotein P, leukocyte mtDNA, no bout"
+ },
+ {
+  "record_id": "FS-005977",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "endurance bout; vitamin D3 vs placebo; leukocyte subsets, TNF-alpha/IL-6 to 24h"
+ },
+ {
+  "record_id": "FS-005978",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "120-min cycling in heat; hydration crossover; leukocyte counts; 20.6+/-0.9y"
+ },
+ {
+  "record_id": "FS-005979",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "metabolic syndrome cohort; 12-wk training, resting IL-8/adiponectin, no bout"
+ },
+ {
+  "record_id": "FS-005980",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "knee OA cohort; thermography after 2-min movement; no immune measure"
+ },
+ {
+  "record_id": "FS-005981",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "bench-step EIMD; mussel powder vs placebo; inflammation biomarkers to 72h"
+ },
+ {
+  "record_id": "FS-005982",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "LPS endotoxemia challenge; cytokines and cognition; no exercise bout"
+ },
+ {
+  "record_id": "FS-005983",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "schizophrenia cohort; 12-wk HIIT/gaming; resting inflammatory markers, no bout"
+ },
+ {
+  "record_id": "FS-005984",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "ovarian cancer RCT; 6-mo exercise, resting biomarkers, no bout"
+ },
+ {
+  "record_id": "FS-005986",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "MS patients plus separable healthy controls; stairs/cycling bouts; lymphocyte subsets to 60min"
+ },
+ {
+  "record_id": "FS-005987",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "gastric cancer gastroscopy anesthesia study; TCM decoction; no exercise"
+ },
+ {
+  "record_id": "FS-005989",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "partially remitted depression cohort; activity bout; serum BDNF only, not immune"
+ },
+ {
+  "record_id": "FS-005990",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon/exercise cfDNA; methylation omics identifies neutrophil source; training effect"
+ },
+ {
+  "record_id": "FS-005991",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "elite football matches; turmeric vs control; CRP/CK post-match to 64h"
+ },
+ {
+  "record_id": "FS-005993",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "mice microglia depletion; antidepressant mechanisms; animal-only"
+ },
+ {
+  "record_id": "FS-005994",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "chronic heart failure rehab; VO2 and cardiac events, no immune measure"
+ },
+ {
+  "record_id": "FS-005995",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "HFrEF inpatient rehab; MECKI prognosis score; no immune measure"
+ },
+ {
+  "record_id": "FS-005996",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "COPD cohort; 12-wk aerobic training; blood transcriptomics, post-hoc immune enrichment"
+ },
+ {
+  "record_id": "FS-005997",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "maximal swim test; PBMC subsets and mitochondrial respiration; pre/post"
+ },
+ {
+  "record_id": "FS-005998",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "prostate cancer survivors plus healthy controls; 45-min cycling; T cells, perforin to 24h"
+ },
+ {
+  "record_id": "FS-005999",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Wingate bouts; fucoidan vs placebo; cytokines and leukocyte subsets to 60min"
+ },
+ {
+  "record_id": "FS-006000",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "salivary cytokines around stress-training exercise; resilience; bout nature unclear"
+ },
+ {
+  "record_id": "FS-006002",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "HFD mice and in-vitro cells; Sestrin2/Nrf2 inflammation; animal-only"
+ },
+ {
+  "record_id": "FS-006003",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIE vs MCE crossover; Treg PD-1, IL-6/IL-10; 29.7+/-4.3y"
+ },
+ {
+  "record_id": "FS-006007",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "circuit weight training; ubiquinol vs placebo; performance and muscle damage only"
+ }
+]

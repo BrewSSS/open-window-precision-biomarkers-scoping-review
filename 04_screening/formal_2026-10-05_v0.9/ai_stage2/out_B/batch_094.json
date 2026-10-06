@@ -1,0 +1,332 @@
+[
+ {
+  "record_id": "FS-004534",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "post-run uremic toxins and AKI biomarkers; no immune measure"
+ },
+ {
+  "record_id": "FS-004535",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIT hypoxia vs normoxia; cytokines and TGF-beta around post-training exercise test"
+ },
+ {
+  "record_id": "FS-004536",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "heart failure with preserved EF patients; CPET hemodynamics, no healthy stratum"
+ },
+ {
+  "record_id": "FS-004537",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "season start/mid snapshots; hsCRP and hepcidin; background-pattern candidate"
+ },
+ {
+  "record_id": "FS-004538",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "obese men only, sedentary vs active; PBMC BDNF and oxidative measures"
+ },
+ {
+  "record_id": "FS-004539",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "12-h nitrox dive; pulmonary function and FeNO, exposure is diving not exercise"
+ },
+ {
+  "record_id": "FS-004540",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "type 2 diabetes patients plus db/db mice; GRK2 cardiomyopathy biomarker"
+ },
+ {
+  "record_id": "FS-004542",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "half-marathon progenitor-cell expression and serum metabolomics; immune link borderline"
+ },
+ {
+  "record_id": "FS-004544",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "three exhaustive treadmill bouts; neutrophil ROS chemiluminescence and cfDNA pre/post"
+ },
+ {
+  "record_id": "FS-004545",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon; six cytokines pre/immediate/1d/3d with diet associations"
+ },
+ {
+  "record_id": "FS-004547",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "educational review of anaphylaxis mechanisms; no original study data"
+ },
+ {
+  "record_id": "FS-004548",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "PWS adults vs matched controls; IL-6 and myokines pre/post/30/60min, strata separable"
+ },
+ {
+  "record_id": "FS-004549",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Rg1 vs placebo cycling; muscle CD68+ cells and IL-6 mRNA in biopsies"
+ },
+ {
+  "record_id": "FS-004550",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse cerebral ischemia model, minocycline microglia study; animal only"
+ },
+ {
+  "record_id": "FS-004551",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mdx mouse wheel-running expression profiling; animal only"
+ },
+ {
+  "record_id": "FS-004552",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "burn-injured mice neurobehavioral model; animal only"
+ },
+ {
+  "record_id": "FS-004553",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "vitamin D3 trial resistance bout; IL-6 and CK baseline/immediate/1h"
+ },
+ {
+  "record_id": "FS-004554",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "heart failure patients; peak VO2 prediction model, CRP only as covariate"
+ },
+ {
+  "record_id": "FS-004555",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "bench press vs half-squat tests; IL-6, IL-10, TNF-alpha rest/15min/24h"
+ },
+ {
+  "record_id": "FS-004556",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon; six cytokines and damage markers with genotype associations"
+ },
+ {
+  "record_id": "FS-004557",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "post-MI stage B heart failure patients; rehab response, no immune measure"
+ },
+ {
+  "record_id": "FS-004558",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "BFR vs 30/75 percent 1RM session; leukocyte subsets pre/0/30min/24h"
+ },
+ {
+  "record_id": "FS-004561",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-week resistance training, pre/post serum only; no bout or bout-tied sampling"
+ },
+ {
+  "record_id": "FS-004562",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "butanediol vs placebo prolonged exercise; stimulated PBMC T-cell cytokine mRNA"
+ },
+ {
+  "record_id": "FS-004563",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "grape juice vs placebo exhaustion run; hsCRP and alpha-1 acid glycoprotein"
+ },
+ {
+  "record_id": "FS-004564",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "PCOS vs controls, 8-week programme; monocyte/lymphocyte HSP72; sampling-bout relation unclear"
+ },
+ {
+  "record_id": "FS-004565",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "transplant, CKD and healthy controls; 20-min walk; monocyte subsets by group"
+ },
+ {
+  "record_id": "FS-004566",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "worsening heart failure inpatients; suPAR prognosis and CPET correlation"
+ },
+ {
+  "record_id": "FS-004567",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "supplement crossover exhaustion in hypoxia; monocyte IL-1beta/TNF-alpha production"
+ },
+ {
+  "record_id": "FS-004568",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "seasonal fatigue-exercise tests at 0/3/6 months; leukocyte counts pre/post each"
+ },
+ {
+  "record_id": "FS-004569",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "8-week endurance training plus green tea; resting pre/post cytokines, no bout"
+ },
+ {
+  "record_id": "FS-004570",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIT and SIT with active vs passive recovery; leukocytes and inflammation indices"
+ },
+ {
+  "record_id": "FS-004571",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "mountain ultramarathon pre/post/24h; white blood cells and damage markers"
+ },
+ {
+  "record_id": "FS-004572",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "StatPearls reference article on laser eye surgery; irrelevant topic"
+ },
+ {
+  "record_id": "FS-004573",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "hypoxic vs normoxic 1h run; cytokines, MPO, sICAM-1, PBMC NFkappaB"
+ },
+ {
+  "record_id": "FS-004574",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "lifelong exercise cohorts; acute resistance challenge, muscle cytokine expression at 4h"
+ },
+ {
+  "record_id": "FS-004575",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "TWK10 probiotic 6 weeks; exercise challenges; systemic inflammation mentioned"
+ },
+ {
+  "record_id": "FS-004576",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "flavonoid vs placebo 75km TT; leukocyte counts, NLR, oxinflammation markers"
+ },
+ {
+  "record_id": "FS-004577",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "UCC118 vs placebo around strenuous run; GI permeability and inflammatory biomarkers"
+ },
+ {
+  "record_id": "FS-004578",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon; IL-6, leukocytes, neutrophils at finish line, 48h course"
+ }
+]

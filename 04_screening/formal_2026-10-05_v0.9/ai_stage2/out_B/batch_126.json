@@ -1,0 +1,328 @@
+[
+ {
+  "record_id": "FS-006061",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "VR stress drill with breathing; no exercise bout"
+ },
+ {
+  "record_id": "FS-006062",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "interstitial lung disease patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-006063",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "oxidative stress/BP/PWV only; no immune measure"
+ },
+ {
+  "record_id": "FS-006064",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "bilirubin, platelets, ESR only; no eligible immune measure"
+ },
+ {
+  "record_id": "FS-006065",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "sarcoma patients on doxorubicin; exercise tested only in mice"
+ },
+ {
+  "record_id": "FS-006069",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "lean vs obesity strata separable; sRAGE inflammation; acute AE"
+ },
+ {
+  "record_id": "FS-006071",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "autoimmune myopathy patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-006072",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "athletes; acute cycling; IL-10; EMF crossover with control"
+ },
+ {
+  "record_id": "FS-006073",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T1D plus healthy controls; control results separable; HIIE cytokines"
+ },
+ {
+  "record_id": "FS-006074",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "WBC/lymphocyte/platelet counts; rest baseline; post-cessation timing unclear"
+ },
+ {
+  "record_id": "FS-006075",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "HFpEF patient cohort; clinical population"
+ },
+ {
+  "record_id": "FS-006076",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "allergy patient cohort; exercise only as anaphylaxis cofactor"
+ },
+ {
+  "record_id": "FS-006077",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute GXT epinephrine challenge; lymphocyte apoptosis; 6-wk training"
+ },
+ {
+  "record_id": "FS-006078",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "older adults with obesity and impairment; weight-loss clinical cohort"
+ },
+ {
+  "record_id": "FS-006079",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon; CRP measured; pre-race baseline; 5-day follow-up"
+ },
+ {
+  "record_id": "FS-006081",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "multiple sclerosis patients; CPET characterization; no immune measure"
+ },
+ {
+  "record_id": "FS-006082",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "performance/soreness outcomes only; no immune measure"
+ },
+ {
+  "record_id": "FS-006084",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "osteoarthritis patients; analgesic prescription registry study"
+ },
+ {
+  "record_id": "FS-006087",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "single RT session; IL-6/IL-10/TNF-alpha; normoxia vs altitude"
+ },
+ {
+  "record_id": "FS-006089",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "healthy adults; acute bout; IL-8/MCP-1 pre-post"
+ },
+ {
+  "record_id": "FS-006091",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "chocolate RCT; zonulin/LPS; background training pattern, advance"
+ },
+ {
+  "record_id": "FS-006092",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cycling in heat; hydration crossover; NGAL borderline immune link"
+ },
+ {
+  "record_id": "FS-006093",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Balb-c mice with 4T1 tumors; no human data"
+ },
+ {
+  "record_id": "FS-006095",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "rheumatoid arthritis/hypertension women; blood pressure outcomes only"
+ },
+ {
+  "record_id": "FS-006097",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "strenuous treadmill test; T/NK subsets; pre-test baseline"
+ },
+ {
+  "record_id": "FS-006099",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric volume; inflammatory markers stated; baseline to 192 h"
+ },
+ {
+  "record_id": "FS-006100",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "entire cohort class II-III obesity; no healthy stratum"
+ },
+ {
+  "record_id": "FS-006101",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "axial spondylitis patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-006104",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "B16F10 melanoma mouse model; no human data"
+ },
+ {
+  "record_id": "FS-006106",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "trial protocol; participants will be recruited"
+ },
+ {
+  "record_id": "FS-006107",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "healthy women; acute bout; NK subsets and cytokines"
+ },
+ {
+  "record_id": "FS-006108",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "HFpEF patients; exercise proteomics; clinical cohort"
+ },
+ {
+  "record_id": "FS-006110",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cortisol, lactate, BIVA only; no immune measure"
+ },
+ {
+  "record_id": "FS-006111",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "three sprints; adipose venous IL-6; rest baseline"
+ },
+ {
+  "record_id": "FS-006114",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "combat matches; salivary SIgA and cortisol; cadets"
+ },
+ {
+  "record_id": "FS-006115",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "type 2 diabetes patients; stress echocardiography study"
+ },
+ {
+  "record_id": "FS-006117",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2000-m ergometer test; IL-6/gut markers; pre/post/1h"
+ },
+ {
+  "record_id": "FS-006119",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "concussion injury exposure, not an exercise bout"
+ },
+ {
+  "record_id": "FS-006121",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "EPO doping detection; hormone only, no immune measure"
+ },
+ {
+  "record_id": "FS-006122",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "PBMC autophagy after cycling plus heat; pre/post recovery"
+ }
+]

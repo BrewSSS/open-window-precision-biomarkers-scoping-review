@@ -1,0 +1,328 @@
+[
+ {
+  "record_id": "FS-005309",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "symptomatic suspected-CAD patients; stress-test bout, sCD14/LBP/LPS/TLR4; clinical cohort"
+ },
+ {
+  "record_id": "FS-005310",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "4-week basic training, resting pre/post cytokines/S100A8; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-005313",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age 25+/-4.8: mean-2SD=15.4<18, no stated range; CWI crossover, cytokines"
+ },
+ {
+  "record_id": "FS-005314",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse cardiomyocytes, Lyso-7 nanocapsules; animal/in-vitro study"
+ },
+ {
+  "record_id": "FS-005315",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "heart-failure patients; ceruloplasmin vs CPET classification; clinical cohort"
+ },
+ {
+  "record_id": "FS-005316",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon, pre/post IL-6/leukocytes; protein RCT with control group"
+ },
+ {
+  "record_id": "FS-005317",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "plyometric bout; CK/LDH, soreness, performance only; no immune measure"
+ },
+ {
+  "record_id": "FS-005318",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "age 21+/-2: mean-2SD=17<18; 8-week supplement, resting pre/post CRP only"
+ },
+ {
+  "record_id": "FS-005319",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "30-min run protocol pre/post intensified training; phagocytosis, gamma-delta T cells"
+ },
+ {
+  "record_id": "FS-005320",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "breast cancer survivors; acute bouts plus 16-week training, monocyte TLR/cytokines"
+ },
+ {
+  "record_id": "FS-005321",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "MDD women only, no healthy stratum; four intensity sessions, cytokines"
+ },
+ {
+  "record_id": "FS-005322",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "CPET prognostic for sudden cardiac death; no post-exercise immune sampling; hsCRP covariate"
+ },
+ {
+  "record_id": "FS-005323",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "DOMS model, range 18-53 stated; cfDNA as inflammatory marker; pain/ANS focus"
+ },
+ {
+  "record_id": "FS-005324",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "cancer survivors; cross-sectional fatigue correlates, TNF-alpha; clinical cohort"
+ },
+ {
+  "record_id": "FS-005325",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric bout plus WBV; pain/tightness outcomes only, no immune measure"
+ },
+ {
+  "record_id": "FS-005326",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review/perspective on IL-10 interpretation; no original data"
+ },
+ {
+  "record_id": "FS-005327",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric bout; EV count/size and CK only; no immune measure or objective"
+ },
+ {
+  "record_id": "FS-005328",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "shuttle-run bout, rest/post CK/CRP; nap vs no-nap crossover"
+ },
+ {
+  "record_id": "FS-005329",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "nasal lavage cells/antiviral activity rest vs 45/180min bouts; plus murine BAL"
+ },
+ {
+  "record_id": "FS-005330",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "cross-sectional training groups, resting leukocyte ROCK; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-005331",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon pre/post NMR metabolomics; energy-pathway metabolites only, no immune measure"
+ },
+ {
+  "record_id": "FS-005332",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute bout vs sitting control, MAIT cells; obese/lean strata; training arms"
+ },
+ {
+  "record_id": "FS-005333",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon, plasma/urine exosomal miRNA pre to 1-day; inflammation-related candidates"
+ },
+ {
+  "record_id": "FS-005334",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIE under filtered vs polluted air; IL-6/IL-10/TNF baseline/10min/1h"
+ },
+ {
+  "record_id": "FS-005335",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "25-km race walk, pre/post IL-6/WBC/hepcidin; diet phases, within-phase contrast"
+ },
+ {
+  "record_id": "FS-005336",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "half-marathon, MRI T2/IVIM with foam rolling; edema/perfusion imaging, no immune measure"
+ },
+ {
+  "record_id": "FS-005337",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "abstract empty; title only suggests acute exercise immune response post-COVID"
+ },
+ {
+  "record_id": "FS-005338",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "rheumatoid arthritis women; sitting/exercise/breaks crossover, IL-1beta/TNF; clinical cohort"
+ },
+ {
+  "record_id": "FS-005339",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age 24.09+/-3.39: mean-2SD=17.3<18, no stated range; Wingate vs TSST, cytokines"
+ },
+ {
+  "record_id": "FS-005340",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon, pre/finish IL-6/sIL-6R; training-load strata plus sedentary reference"
+ },
+ {
+  "record_id": "FS-005341",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon, baseline/post/48h; CRP plus cartilage markers; baselines present"
+ },
+ {
+  "record_id": "FS-005343",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "stable coronary-artery-disease patients (ORBITA); exercise-induced antibody changes; clinical"
+ },
+ {
+  "record_id": "FS-005344",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon, -24h to 72h sampling; leukogram, cytokines, myokines; adults 30-55"
+ },
+ {
+  "record_id": "FS-005345",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ultramarathon, pre/post sodium/CK only; no immune measure"
+ },
+ {
+  "record_id": "FS-005346",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "U-20 players; urine metabolomics for load; anti-inflammatory annotation only, no immune measure"
+ },
+ {
+  "record_id": "FS-005349",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse ovarian-cancer treadmill model; peritoneal cytokines; animal study"
+ },
+ {
+  "record_id": "FS-005350",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "HIV cohort; cross-sectional self-report survey; no exercise bout, CD4 covariate"
+ },
+ {
+  "record_id": "FS-005351",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric bout, plasma IL-6/TNF/CRP to 48h; cherry vs placebo crossover"
+ },
+ {
+  "record_id": "FS-005352",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "young-adult offspring metabolic follow-up; no exercise exposure; hsCRP covariate only"
+ },
+ {
+  "record_id": "FS-005353",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "breast cancer survivors but matched healthy controls separable with bout-response data"
+ }
+]

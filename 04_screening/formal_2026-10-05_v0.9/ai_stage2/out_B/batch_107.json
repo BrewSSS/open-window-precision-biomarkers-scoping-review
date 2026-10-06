@@ -1,0 +1,330 @@
+[
+ {
+  "record_id": "FS-005179",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Myoglobinuria vs haptoglobin polymorphism; muscle-damage chemistry, no immune measure"
+ },
+ {
+  "record_id": "FS-005182",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Sulforaphane crossover; IL-6 and CK around resistance bout"
+ },
+ {
+  "record_id": "FS-005183",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Low-intensity resistance program; fractalkine/CX3CL1 and multiplex cytokines pre/post"
+ },
+ {
+  "record_id": "FS-005185",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Gut-microbiota cross-section in runners vs controls; no bout or immune measure"
+ },
+ {
+  "record_id": "FS-005186",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cooling/compression exercise; CD34+, leukocyte differentials and cytokines to 24h"
+ },
+ {
+  "record_id": "FS-005187",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Hypertensive patients only; single bout; no healthy stratum"
+ },
+ {
+  "record_id": "FS-005188",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric bout biopsies to 120h; TNF-alpha/IL-8/IL-6 mRNA"
+ },
+ {
+  "record_id": "FS-005189",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Triathlon pre/post; LPS and anti-LPS IgG"
+ },
+ {
+  "record_id": "FS-005190",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Postmenopausal vs eumenorrheic women; eccentric bout; IL-6/TNF-alpha/CRP"
+ },
+ {
+  "record_id": "FS-005191",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Train-low beverage crossover; LPS-stimulated neutrophil function post-HIIE"
+ },
+ {
+  "record_id": "FS-005195",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "60-min cycling at three temperatures; IL-6 with myokines sampled to 3h"
+ },
+ {
+  "record_id": "FS-005196",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "108-km ultratrail pre/post; leukocyte count among damage markers"
+ },
+ {
+  "record_id": "FS-005197",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Bioinformatics reanalysis of public monocyte dataset; no original human measurements"
+ },
+ {
+  "record_id": "FS-005198",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Paralympic powerlifters; recovery methods; IL-2 sampled to 48h"
+ },
+ {
+  "record_id": "FS-005199",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Hypothesis essay on ACL injury mechanism; no original data"
+ },
+ {
+  "record_id": "FS-005200",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Rehydration trial; inflammation biomarkers measured but unnamed; verify"
+ },
+ {
+  "record_id": "FS-005201",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Season-end viral-reactivation case-control; immune-function framing; background pattern"
+ },
+ {
+  "record_id": "FS-005202",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Caffeine crossover; IL-6/IL-10 pre/post/1h around HIIE"
+ },
+ {
+  "record_id": "FS-005203",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "5-day tournament with recovery interventions; CRP/CK/IGF-1 across days"
+ },
+ {
+  "record_id": "FS-005204",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "COPD plus separable healthy controls; IL-1beta measured; timing unclear"
+ },
+ {
+  "record_id": "FS-005205",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Lemon-verbena RCT; IL-6/GPx/CK around exhaustive run"
+ },
+ {
+  "record_id": "FS-005206",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Neuromuscular fatigue/running economy after trail races; no immune measures"
+ },
+ {
+  "record_id": "FS-005207",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Astaxanthin plus 3-month training; endurance/fat-oxidation outcomes, no immune measure"
+ },
+ {
+  "record_id": "FS-005209",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Prior cycling then high-fat meal; vascular/immune-related miRNAs; link arguable"
+ },
+ {
+  "record_id": "FS-005210",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "HF patients plus separable controls; resting GDF-15/QoL; borderline immune link"
+ },
+ {
+  "record_id": "FS-005211",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Symposium proceedings; conference material, empty abstract"
+ },
+ {
+  "record_id": "FS-005212",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Clinical overview of exercise-induced anaphylaxis; narrative, not original study"
+ },
+ {
+  "record_id": "FS-005213",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Labrador retriever collagen-exercise trial; animal-only"
+ },
+ {
+  "record_id": "FS-005214",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "AxSpa exercise-capacity cross-section; CRP only inside disease score, no immune outcome"
+ },
+ {
+  "record_id": "FS-005215",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Transgenic-mouse milk IgA against cholera; animal/in-vitro only"
+ },
+ {
+  "record_id": "FS-005216",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Half-squat to 1RM; IL-6/IL-10/TNF-alpha rest/15min/24h"
+ },
+ {
+  "record_id": "FS-005217",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise-challenge PBMC RNA-seq; GWI plus separable healthy counterparts"
+ },
+ {
+  "record_id": "FS-005218",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "BCS plus separable healthy older women; MAIT-cell mobilization pre/post training"
+ },
+ {
+  "record_id": "FS-005219",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rat traumatic-brain-injury model with wheel running; animal-only"
+ },
+ {
+  "record_id": "FS-005220",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Capsiate RCT; cytokines around acute resistance test pre/post 6-wk training"
+ },
+ {
+  "record_id": "FS-005221",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Enthesis Doppler ultrasound before/after training; imaging proxy, no immune measure"
+ },
+ {
+  "record_id": "FS-005222",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Dive-related cytokine responses; whether dive constitutes exercise bout unclear"
+ },
+ {
+  "record_id": "FS-005223",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "EPO hormone only around ultramarathon; no immune measure"
+ },
+ {
+  "record_id": "FS-005226",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "36-week season serial WBC subsets vs cumulative match time; bout timing unclear"
+ },
+ {
+  "record_id": "FS-005227",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Sleep-fragmentation crossover; leukocyte trafficking and oxidative burst around cycling"
+ }
+]

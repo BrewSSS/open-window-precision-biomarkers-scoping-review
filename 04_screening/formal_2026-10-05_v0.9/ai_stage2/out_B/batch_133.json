@@ -1,0 +1,326 @@
+[
+ {
+  "record_id": "FS-006452",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "EIB patient cohort; spirometry/FeNO outcomes"
+ },
+ {
+  "record_id": "FS-006453",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "PBMC STAT3 signaling and cytokines after resistance bout; crossover"
+ },
+ {
+  "record_id": "FS-006454",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "transplant patients; medication adherence only"
+ },
+ {
+  "record_id": "FS-006455",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "single myositis case; clinical population"
+ },
+ {
+  "record_id": "FS-006458",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "colostrum vs placebo; SIgA/WBC around exercise tests"
+ },
+ {
+  "record_id": "FS-006459",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "PBMC NAD+ metabolomics after HIIT/MICT; immune-cell omics"
+ },
+ {
+  "record_id": "FS-006460",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat model only"
+ },
+ {
+  "record_id": "FS-006462",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "empty abstract; possibly commentary on IL-15 study"
+ },
+ {
+  "record_id": "FS-006463",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "breast cancer patient cohort; clinical population"
+ },
+ {
+  "record_id": "FS-006464",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "probiotics vs placebo; cytokines/LPS around marathon"
+ },
+ {
+  "record_id": "FS-006467",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "multiple sclerosis patients; clinical cohort; rehab program"
+ },
+ {
+  "record_id": "FS-006468",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cytokines pre/post 7-mile race in heat"
+ },
+ {
+  "record_id": "FS-006470",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "complement C1q/CDC after flat vs downhill runs; healthy males"
+ },
+ {
+  "record_id": "FS-006474",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "muscle metabolic study; inflammatory pathway in muscle only"
+ },
+ {
+  "record_id": "FS-006475",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "astaxanthin vs placebo; IL-1beta after exercise tests in firefighters"
+ },
+ {
+  "record_id": "FS-006477",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cytokines after barefoot vs shod running session"
+ },
+ {
+  "record_id": "FS-006479",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "RIPC vs sham; IL-6/IL-15/oncostatin M after Wingate"
+ },
+ {
+  "record_id": "FS-006481",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "leukocyte count after one-leg eccentric exercise; control leg"
+ },
+ {
+  "record_id": "FS-006482",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "supplement vs placebo; TNF-alpha/CK after rugby match"
+ },
+ {
+  "record_id": "FS-006484",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "PBMC autophagy/stress proteins after cycling; young vs older females"
+ },
+ {
+  "record_id": "FS-006485",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T-cell subsets 1-2 d after Ironman; flow cytometry"
+ },
+ {
+  "record_id": "FS-006489",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "blood cells and IL-3 after single bout in heat; control group"
+ },
+ {
+  "record_id": "FS-006491",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "PBMC/muscle TLR4 and cytokines after cycling; trained vs untrained"
+ },
+ {
+  "record_id": "FS-006492",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "neutrophil/lymphocyte counts after matched interval vs continuous runs"
+ },
+ {
+  "record_id": "FS-006493",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6/CRP after 330-km ultramarathon; hematology focus"
+ },
+ {
+  "record_id": "FS-006494",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "commentary on another study; not original research"
+ },
+ {
+  "record_id": "FS-006495",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "cancer patients on treatment; clinical cohort"
+ },
+ {
+  "record_id": "FS-006499",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "seasonal salivary SIgA/HHV monitoring; bout linkage at FT"
+ },
+ {
+  "record_id": "FS-006500",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "kynurenine metabolomics after intervals; RIPC vs sham; immune link at FT"
+ },
+ {
+  "record_id": "FS-006501",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "circulating miRNA 24h post-exercise; carbohydrate contrast; immune link at FT"
+ },
+ {
+  "record_id": "FS-006502",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6/TNF/CRP after eccentric bout with altitude exposure; controls"
+ },
+ {
+  "record_id": "FS-006504",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "IBS patient cohort; clinical population"
+ },
+ {
+  "record_id": "FS-006506",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CPET-induced miRNAs incl miR-146a; sedentary adults"
+ },
+ {
+  "record_id": "FS-006508",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle ultrastructure/CK-MB only; no immune measure"
+ },
+ {
+  "record_id": "FS-006509",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "WBC/cytokines after exercise at three pollution levels; crossover"
+ },
+ {
+  "record_id": "FS-006511",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "H2 vs placebo; IL-6/NO after high-intensity training days"
+ },
+ {
+  "record_id": "FS-006512",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6/IL-7 after cycling vs rest; obese males \u2014 health adjudication at FT"
+ },
+ {
+  "record_id": "FS-006513",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "AS patients vs controls; IL-6/IL-10 after exercise test; stratum separable"
+ },
+ {
+  "record_id": "FS-006515",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "allergy patients; diagnostic-test study; no exercise exposure"
+ },
+ {
+  "record_id": "FS-006517",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exercise-induced asthma patients; clinical cohort"
+ }
+]

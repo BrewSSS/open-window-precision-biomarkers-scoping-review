@@ -1,0 +1,332 @@
+[
+ {
+  "record_id": "FS-006760",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle RNA-seq disuse study; immune content post-hoc enrichment only"
+ },
+ {
+  "record_id": "FS-006762",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "downhill run; inflammation markers assessed; placebo-controlled"
+ },
+ {
+  "record_id": "FS-006763",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "EIMD protocol; IL-6 measured to 72h; placebo-controlled"
+ },
+ {
+  "record_id": "FS-006764",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "abstract empty; COPD case-control"
+ },
+ {
+  "record_id": "FS-006765",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "cross-sectional fitness-biomarker association; no bout or bout-linked sampling"
+ },
+ {
+  "record_id": "FS-006766",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT02",
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "osteoporosis clinical cohort; exercise experiments in mice"
+ },
+ {
+  "record_id": "FS-006768",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T-cell effector function after acute exercise; immune link clear"
+ },
+ {
+  "record_id": "FS-006771",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "FGF21/GDF15 metabolic stress markers only; no immune measure"
+ },
+ {
+  "record_id": "FS-006772",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "SIgA and antimicrobial peptides after cycling; baseline and post samples"
+ },
+ {
+  "record_id": "FS-006773",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cytokine responses to LPS/PMA pre/post acute bout"
+ },
+ {
+  "record_id": "FS-006774",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "6-mo CR+/-exercise resting pre/post; no bout or bout-linked sampling"
+ },
+ {
+  "record_id": "FS-006775",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "post-training CRP/NO at 6-72h; control group"
+ },
+ {
+  "record_id": "FS-006776",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "RT+/-polyphenols; acute-bout IL-10/IFN-g/TNF-a responses; placebo arm"
+ },
+ {
+  "record_id": "FS-006779",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "weekly downhill bouts; CRP measured; placebo-controlled"
+ },
+ {
+  "record_id": "FS-006781",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "severe asthma/COPD clinical cohorts; walk-test safety"
+ },
+ {
+  "record_id": "FS-006782",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "nanofiber drug delivery; denervated-muscle animal model"
+ },
+ {
+  "record_id": "FS-006783",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "systemic sclerosis patients; exercise-PH diagnostics"
+ },
+ {
+  "record_id": "FS-006785",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ages 16-36 stated; pooled results; minors included"
+ },
+ {
+  "record_id": "FS-006786",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Youth national rowers; ages not stated; adulthood unestablishable"
+ },
+ {
+  "record_id": "FS-006787",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "centenarians; acute exercise; inflammatory proteome"
+ },
+ {
+  "record_id": "FS-006788",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "post-training WBC/NLR/SII; cupping vs non-cupping control"
+ },
+ {
+  "record_id": "FS-006789",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "training-to-birth program; placental cytokines at delivery; no bout sampling"
+ },
+ {
+  "record_id": "FS-006790",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "cross-sectional resting biomarkers across activity groups; no bout sampling"
+ },
+ {
+  "record_id": "FS-006792",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "muscle spatial transcriptomics; mononuclear cell populations; immune link unclear"
+ },
+ {
+  "record_id": "FS-006794",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "graded test; PBMC subsets pre/post; healthy adults 19-29"
+ },
+ {
+  "record_id": "FS-006795",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "breast cancer survivors; clinical cohort"
+ },
+ {
+  "record_id": "FS-006796",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "ME/CFS patient cohort; disease population"
+ },
+ {
+  "record_id": "FS-006798",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Fontan circulation congenital heart disease cohort"
+ },
+ {
+  "record_id": "FS-006800",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "DOMS protocol; IL-6/TNF-a baseline+24h; control group"
+ },
+ {
+  "record_id": "FS-006802",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "swim bout; IL-6/CRP to 48h; sham control"
+ },
+ {
+  "record_id": "FS-006803",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "mean-2SD 17.8<18; no stated range or minimum"
+ },
+ {
+  "record_id": "FS-006805",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "MASH mouse model; BCAA mechanism; no humans"
+ },
+ {
+  "record_id": "FS-006808",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "ME/CFS patient cohort; epigenetics during exercise"
+ },
+ {
+  "record_id": "FS-006809",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "knee osteoarthritis patients; synovial rheology; no exercise exposure"
+ },
+ {
+  "record_id": "FS-006811",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-wk training; rested samples at weeks; no bout sampling"
+ },
+ {
+  "record_id": "FS-006814",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "H2 inhalation trial; WBC/CRP; bout timing unclear"
+ },
+ {
+  "record_id": "FS-006815",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "COPD+NAFLD patient cohort; 12-wk training"
+ },
+ {
+  "record_id": "FS-006817",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "sleep-deprivation mouse model; probiotic intervention; no humans"
+ },
+ {
+  "record_id": "FS-006818",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "official match; CRP to 48h; pre-match baseline"
+ },
+ {
+  "record_id": "FS-006820",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT02",
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "cardiac PGC-1a mouse work; human data clinical tissue"
+ }
+]

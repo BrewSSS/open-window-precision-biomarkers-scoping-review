@@ -1,0 +1,345 @@
+[
+ {
+  "record_id": "FS-005772",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Exercise training in mice only; human macrophages tested in vitro, no human exercise"
+ },
+ {
+  "record_id": "FS-005773",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Olympic athletes; CRP/MBL/SAA acute-phase immune proteins; bout timing unspecified"
+ },
+ {
+  "record_id": "FS-005774",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon; IL-6/TNF-alpha pre/post/90-min recovery in male runners"
+ },
+ {
+  "record_id": "FS-005775",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Heart-disease clinical cohort, cardiac rehab; only cardiac markers, no immune measure"
+ },
+ {
+  "record_id": "FS-005776",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Obese+normal-weight groups separable; CTRP9 immune relevance unclear, so advance"
+ },
+ {
+  "record_id": "FS-005777",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ultramarathon pre/post; neopterin is immune activation marker"
+ },
+ {
+  "record_id": "FS-005778",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Childhood-cancer survivor cohort; hs-CRP/p16 associations, no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-005780",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Rugby tournament whey trial; only CK/DOMS/performance, no immune measure"
+ },
+ {
+  "record_id": "FS-005781",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Anaphylaxis patient case series; tryptase diagnostics, no exercise exposure"
+ },
+ {
+  "record_id": "FS-005782",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Crossover RCT; IL-6/IL-10/TNF post-exercise; control arm separates exercise effect"
+ },
+ {
+  "record_id": "FS-005783",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Metastatic prostate cancer patients; acute HIIE myokines; clinical cohort"
+ },
+ {
+  "record_id": "FS-005784",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Postexercise EPO/glucose/ketones only; EPO is hormone, no immune measure"
+ },
+ {
+  "record_id": "FS-005786",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "10-week RCT adults 20-40; acute pre/post IL-6, IL-1ra, IL-4, IFN-gamma"
+ },
+ {
+  "record_id": "FS-005787",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Trial protocol, bipolar depression patients; planned IL-6/CRP outcomes"
+ },
+ {
+  "record_id": "FS-005788",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Salivary lactoferrin/alpha-amylase; caffeine vs placebo crossover; pre/during/end samples"
+ },
+ {
+  "record_id": "FS-005789",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Irisin (myokine hormone) and temperature only; healthy stratum separable; no immune measure"
+ },
+ {
+  "record_id": "FS-005790",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Pan-cancer TCGA/GTEX database mining; computational only, no original exercise data"
+ },
+ {
+  "record_id": "FS-005791",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Human cord cells tested in LPS-challenged mice; no exercise, no human data"
+ },
+ {
+  "record_id": "FS-005793",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Food-allergy patient records; IgE diagnostics, no exercise exposure"
+ },
+ {
+  "record_id": "FS-005794",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review/perspective on exercise and neuroinflammation; no original data"
+ },
+ {
+  "record_id": "FS-005796",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ultramarathon; salivary/blood cytokines, IgA, neopterin; baseline, post, recovery samples"
+ },
+ {
+  "record_id": "FS-005797",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "6-week Tribulus vs placebo RCT; CRP; Grace WOD session mentioned; advance"
+ },
+ {
+  "record_id": "FS-005798",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Resting IF1 (metabolic myokine) vs CPET capacity; no bout-linked sampling, no immune measure"
+ },
+ {
+  "record_id": "FS-005799",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review; sleep and musculoskeletal injury; no original data"
+ },
+ {
+  "record_id": "FS-005801",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Surgical aortic-aneurysm patients; postoperative CRP; no exercise exposure"
+ },
+ {
+  "record_id": "FS-005803",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "GDF15 (MIC-1 cytokine) before/during/after exercise; healthy strata separable"
+ },
+ {
+  "record_id": "FS-005805",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "CHD patients + matched controls; resting ROS/CRP/CPET capacity; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-005806",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise + CWI/sauna vs rest control; cytokines pre/immediate/20-min post"
+ },
+ {
+  "record_id": "FS-005807",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rat carrageenan DOMS model, triptolide; no human data"
+ },
+ {
+  "record_id": "FS-005808",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "HIV patients; exercise-echo prognosis; clinical cohort, no immune measure"
+ },
+ {
+  "record_id": "FS-005809",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse swimming bouts; muscle redox/mitochondrial genes; no human data"
+ },
+ {
+  "record_id": "FS-005810",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "1-month step-count intervention; vaccine IgG/IgM; bout sampling unclear"
+ },
+ {
+  "record_id": "FS-005811",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Coronary heart disease patients; 8-week training; CRP/galectin-3; clinical cohort"
+ },
+ {
+  "record_id": "FS-005812",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Procainamide metabolite cytotoxicity in cell lines/lymphocytes; no exercise, in vitro"
+ },
+ {
+  "record_id": "FS-005813",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rat downhill-run EIMD plus mouse macrophage cultures; no human data"
+ },
+ {
+  "record_id": "FS-005814",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Overweight/obese adults; GDF15 (MIC-1) acute exercise response with baseline"
+ },
+ {
+  "record_id": "FS-005815",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Krill oil vs placebo; IL-2/IL-6/TNF to 72 h post-bout; adults 20.4 y"
+ },
+ {
+  "record_id": "FS-005816",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "25+/-4.3 y gives 16.4<18; adulthood not established; v3.1 age rule"
+ },
+ {
+  "record_id": "FS-005817",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Peripheral artery disease patients; lipid metabolomics; no immune objective"
+ },
+ {
+  "record_id": "FS-005818",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Compression pants trial; proprioception/HR/lactate only; no immune measure"
+ }
+]
