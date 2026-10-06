@@ -1,0 +1,342 @@
+[
+ {
+  "record_id": "FS-006387",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "antibody-optimization methods paper; CaMKII isoforms in muscle; no immune measure"
+ },
+ {
+  "record_id": "FS-006388",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "cardiac patients, clinical cohort; rehab program; no immune measure"
+ },
+ {
+  "record_id": "FS-006389",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "obese college students; obesity metabolic cohort; IL-6 response otherwise eligible"
+ },
+ {
+  "record_id": "FS-006390",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "ages 23.4+-3.3; mean-2SD<18; no range/minimum; sitting-interruption exposure, IL-6/CRP"
+ },
+ {
+  "record_id": "FS-006391",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "COPD acute exacerbation, clinical cohort; rehabilitation program"
+ },
+ {
+  "record_id": "FS-006392",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "unaccustomed resistance bout; leukocyte PTGES2/ALOX15, lipid mediators; runners vs controls; ages 18-35"
+ },
+ {
+  "record_id": "FS-006393",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "cancer immunotherapy study; mouse plus correlational patient data; no healthy cohort"
+ },
+ {
+  "record_id": "FS-006396",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "15-day HIIT pre/post program; HDL/lipid outcomes only; no bout-tied sampling"
+ },
+ {
+  "record_id": "FS-006397",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "post-COVID condition cohort; 8-week program pre/post; no bout-tied immune sampling"
+ },
+ {
+  "record_id": "FS-006399",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ML prediction of post-exercise WBC; original human bout data with pre-exercise counts"
+ },
+ {
+  "record_id": "FS-006400",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "half-marathon MRI T2/fat fraction; imaging edema proxy only, no immune measure"
+ },
+ {
+  "record_id": "FS-006401",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "maximal treadmill test; hsCRP, SAA, WBC, IL-6; hypertensive vs normotensive strata separable"
+ },
+ {
+  "record_id": "FS-006403",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "almond vs pretzel crossover; downhill run; CRP measured; baselines; ages 37+-6"
+ },
+ {
+  "record_id": "FS-006404",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "lymphoma/myeloma transplant patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-006405",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ages 27+-9; mean-2SD<18; no range/minimum; race cytokines/SIgA otherwise eligible"
+ },
+ {
+  "record_id": "FS-006406",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "bipolar/schizophrenia clinical cohort; cytokine responses otherwise eligible"
+ },
+ {
+  "record_id": "FS-006407",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "class-III obesity clinical cohort in weight-reduction program; NLR/IL-6 otherwise eligible"
+ },
+ {
+  "record_id": "FS-006408",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "obese males, metabolic cohort; 12-week factorial; program-level pre/post sampling"
+ },
+ {
+  "record_id": "FS-006410",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "60-min run; CD34+ HSC counts over 24h; ages 48.2+-1.9; HSC immune-link borderline"
+ },
+ {
+  "record_id": "FS-006411",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "WBV bout; decorin/myostatin only; myokines without immune objective"
+ },
+ {
+  "record_id": "FS-006412",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age 25+-5; mean-2SD<18; no range/minimum; CBD/placebo bout, IL-6/CD14 otherwise eligible"
+ },
+ {
+  "record_id": "FS-006415",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cancer survivors; clinical cohort; HIIE myokine response otherwise eligible"
+ },
+ {
+  "record_id": "FS-006416",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "plyometric+downhill bout; EV miRNA incl immune miR-21/-146a/-155; baseline/2h/24h"
+ },
+ {
+  "record_id": "FS-006418",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "obese sedentary men, BMI 32.3; resistin/leptin response; obesity metabolic cohort"
+ },
+ {
+  "record_id": "FS-006420",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "classic NK-activity study; cycle test; pre/immediate/120min/20h; trained vs sedentary"
+ },
+ {
+  "record_id": "FS-006421",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age 22.2+-2.3; mean-2SD=17.6<18; no range/minimum; IL-6/CK otherwise eligible"
+ },
+ {
+  "record_id": "FS-006423",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "long COVID clinical cohort; training pilot; immunophenotype rest-to-peak otherwise eligible"
+ },
+ {
+  "record_id": "FS-006424",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "15 km run; supplement vs placebo crossover; WBC/neutrophils/IL-6/CRP; pre to 24h"
+ },
+ {
+  "record_id": "FS-006429",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "cardiac rehab cohort; symptom outcomes; no immune measure, no bout-tied sampling"
+ },
+ {
+  "record_id": "FS-006430",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "one training course pre/post urine proteomics; complement/immunoglobulins; elite skaters"
+ },
+ {
+  "record_id": "FS-006434",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "overweight+obese cohort, no separable healthy exercised stratum; 12-week pre/post PTX3"
+ },
+ {
+  "record_id": "FS-006438",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "curcuminoid vs placebo; plyometric bout; PBMC NRF2, IL-6, TNF-a; pre/post/1h/2h"
+ },
+ {
+  "record_id": "FS-006439",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "3 exhaustive bouts pre/post each; cf-DNA with NET framing; T1DM vs healthy controls separable"
+ },
+ {
+  "record_id": "FS-006440",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cranberry vs placebo crossover; 2.25h cycling; CBC, innate-immune proteomics, oxylipins; 0-24h"
+ },
+ {
+  "record_id": "FS-006441",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "smouldering myeloma clinical cohort; NK/ADCC otherwise eligible"
+ },
+ {
+  "record_id": "FS-006442",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CPET with pre/post blood; ASC specks (inflammasome) by flow cytometry; healthy athletes"
+ },
+ {
+  "record_id": "FS-006446",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mathematical ODE model only; no human data"
+ },
+ {
+  "record_id": "FS-006447",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HRW vs placebo; performance outcomes only; no immune measure"
+ },
+ {
+  "record_id": "FS-006448",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "advanced heart failure cohort; CPET proteomics; immune pathways post-hoc only"
+ },
+ {
+  "record_id": "FS-006450",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "pooled Olympic-athlete samples; acute-phase proteins; pre/post-exercise states; bout timing vague"
+ }
+]

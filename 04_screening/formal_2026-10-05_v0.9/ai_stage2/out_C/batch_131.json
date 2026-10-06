@@ -1,0 +1,338 @@
+[
+ {
+  "record_id": "FS-006340",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "computational GEO re-analysis; T2D clinical cohort; no original human measurements"
+ },
+ {
+  "record_id": "FS-006342",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "LEA/OEA crossover with rest baselines; PBMC ROS, inflammatory proteins, leukocyte mobilization; separable"
+ },
+ {
+  "record_id": "FS-006343",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "DII vs lipids/glucose; no immune measure; treadmill test for fitness only"
+ },
+ {
+  "record_id": "FS-006344",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "CPET clusters vs risk markers; CRP among subclinical phenotypes; sampling timing unclear"
+ },
+ {
+  "record_id": "FS-006345",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "study protocol (MYEX trial); planned cancer-patient cohort"
+ },
+ {
+  "record_id": "FS-006346",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ages 29.2+-7.6 and 26.8+-6.1; mean-2SD<18; no range/minimum stated"
+ },
+ {
+  "record_id": "FS-006348",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "two runs with control condition; IL-6 measured; water-immersion contrast; age unreported"
+ },
+ {
+  "record_id": "FS-006349",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "downhill run vs control run/rest; IL-6, CRP, MCP-1; ages 19-33"
+ },
+ {
+  "record_id": "FS-006350",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "breast cancer patients; disease cohort"
+ },
+ {
+  "record_id": "FS-006351",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "computational signature, CRISPR, mouse glioma model; no original human data"
+ },
+ {
+  "record_id": "FS-006352",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "resting cross-sectional ultrasound vs training load; CRP measured; background pattern, no bout"
+ },
+ {
+  "record_id": "FS-006353",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "BP vs LP to failure; IL-6, TNF-a, CRP; baseline/POST/POST-1"
+ },
+ {
+  "record_id": "FS-006354",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "obesity clinical cohort; IPAQ habitual activity, no bout-tied sampling"
+ },
+ {
+  "record_id": "FS-006355",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "8-week HIIT vs control; acute sessions mentioned; inflammatory markers/adiponectin; overweight adults"
+ },
+ {
+  "record_id": "FS-006356",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "single yoga bout; baseline plus four post timepoints; control arm; oxylipin inflammation mediators"
+ },
+ {
+  "record_id": "FS-006357",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "systemic sclerosis patients; 3-month training, no bout-tied sampling"
+ },
+ {
+  "record_id": "FS-006360",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2h15 controlled run; pre/post plasma IL-2, IL-6, TNFa"
+ },
+ {
+  "record_id": "FS-006361",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative book chapter review; no original data"
+ },
+ {
+  "record_id": "FS-006362",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "NSAID/placebo crossover; muscle signalling outcomes only, no immune measure"
+ },
+ {
+  "record_id": "FS-006363",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "body composition vs cerebral hemodynamics; no immune measure; ramp test for capacity"
+ },
+ {
+  "record_id": "FS-006365",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-week program; cytokines pre/post; CPET mentioned; bout-sampling relation unclear"
+ },
+ {
+  "record_id": "FS-006366",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ultramarathon pre/post uEV oxylipins; immune-regulating mediators; analytical platform paper"
+ },
+ {
+  "record_id": "FS-006367",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric squat; baseline/immediate/72h; IL-6, MCP-1, cytokines; young vs master"
+ },
+ {
+  "record_id": "FS-006368",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric bout plus recovery aerobic vs control; IL-1b, TNF-a, IL-10; ages 18-29"
+ },
+ {
+  "record_id": "FS-006369",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ages 20.6+-3.3 and 19.9+-1.0; mean-2SD<18; no range/minimum stated"
+ },
+ {
+  "record_id": "FS-006370",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "PEA vs placebo; muscle damage/catabolism outcomes; no immune measure"
+ },
+ {
+  "record_id": "FS-006371",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "multiple sclerosis patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-006372",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "primarily mouse study; human chronic-training GDF15 only; no bout-tied sampling"
+ },
+ {
+  "record_id": "FS-006373",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "beta-glucan vs placebo plus 90-min bout; innate immune mRNA PRE/POST/2H/4H"
+ },
+ {
+  "record_id": "FS-006374",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "30-day chocolate RCT pre/post; no bout-tied sampling; lipids/microbiota, no immune measure"
+ },
+ {
+  "record_id": "FS-006375",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat mammary carcinoma model; exercise-trained vs sedentary; no human data"
+ },
+ {
+  "record_id": "FS-006376",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ultramarathon; vitamin D vs placebo; hepcidin/neopterin; pre and post-race samples"
+ },
+ {
+  "record_id": "FS-006377",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "bioinformatics, docking, in vitro only; no original human measurements"
+ },
+ {
+  "record_id": "FS-006378",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cherry juice vs sports drink; performance/substrate/fatigue outcomes; no immune measure"
+ },
+ {
+  "record_id": "FS-006379",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse p38g-IL-15 pathway; human acute-exercise muscle p38g and blood IL-15; timing unclear"
+ },
+ {
+  "record_id": "FS-006380",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "COVID-19 recovery cohort; 8-week training pre/post IL-6; no bout-tied sampling"
+ },
+ {
+  "record_id": "FS-006381",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cycling intensity/duration crossover; salivary antimicrobial peptides; baseline/0/60 min"
+ },
+ {
+  "record_id": "FS-006382",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "metastatic cancer on chemotherapy; clinical cohort"
+ },
+ {
+  "record_id": "FS-006383",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "breast cancer survivors; 24-week program pre/post NKCA; no bout-tied sampling"
+ },
+ {
+  "record_id": "FS-006384",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "QSBYD vs placebo rehydration; exercise-heat bout; serum IL-1b; placebo contrast"
+ }
+]

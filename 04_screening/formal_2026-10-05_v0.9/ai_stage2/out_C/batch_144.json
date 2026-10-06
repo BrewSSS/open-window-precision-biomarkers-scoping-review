@@ -1,0 +1,334 @@
+[
+ {
+  "record_id": "FS-007088",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "post-match CRP/CK/I-FABP across control and TGB periods; bout-linked sampling"
+ },
+ {
+  "record_id": "FS-007090",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "donor age 40.8 (18.3) y: adulthood unestablished; HSC mobilization panels otherwise eligible"
+ },
+ {
+  "record_id": "FS-007091",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon, pre/post blood, leukocyte subsets; placebo-controlled"
+ },
+ {
+  "record_id": "FS-007092",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "abstract empty; title indicates cromolyn, exercise-asthma, serum IgE"
+ },
+ {
+  "record_id": "FS-007093",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Wingate bouts; rest, 30 min, 24 h IL-6 and vitamin D sampling"
+ },
+ {
+  "record_id": "FS-007094",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle biopsy transcriptomics; inflammatory pathways post hoc, no immune measure"
+ },
+ {
+  "record_id": "FS-007095",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "races with pre/post urine-fecal sampling; MCP-1, calprotectin; placebo arm"
+ },
+ {
+  "record_id": "FS-007096",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "single squat bout; pre/15/60-min lymphocyte subset flow cytometry"
+ },
+ {
+  "record_id": "FS-007097",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "two matches, pre/post blood; cytokines, monocytes, mtDNA"
+ },
+ {
+  "record_id": "FS-007098",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "maximal test, pre/post PBMC small-RNA sequencing; immune-cell omics"
+ },
+ {
+  "record_id": "FS-007099",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "runners 19.6 plus minus 2.3 y: mean-2SD 15.0; adulthood unresolved; salivary IL-6 bout data"
+ },
+ {
+  "record_id": "FS-007100",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "LS carriers; acute bout miRNA response; immune objective thin but not absent"
+ },
+ {
+  "record_id": "FS-007101",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "post-COVID cardiac follow-up cohort; CMR and CPET outcomes"
+ },
+ {
+  "record_id": "FS-007102",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "EPO, RBC, hemoglobin, hematocrit only; no immune measure; diving exposure"
+ },
+ {
+  "record_id": "FS-007103",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse mechanistic study; human arm confined to CAD patients"
+ },
+ {
+  "record_id": "FS-007104",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "placebo RCT; simulated match, baseline and post-intervention inflammatory sampling"
+ },
+ {
+  "record_id": "FS-007105",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "postmenopausal women with obesity as inclusion criterion; clinical cohort"
+ },
+ {
+  "record_id": "FS-007106",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT05",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CRP sampled pre-march only; EHI outcome, no post-march immune sample"
+ },
+ {
+  "record_id": "FS-007107",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT08",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "PM2.5 predicts hsCRP/IL-6 within exercise sessions; no exercise-free contrast"
+ },
+ {
+  "record_id": "FS-007108",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "anti-doping rEPO detection method study; no exercise exposure"
+ },
+ {
+  "record_id": "FS-007109",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "long COVID patient cohort; NIRS muscle oxygenation outcomes"
+ },
+ {
+  "record_id": "FS-007110",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "pancreatic cancer prehabilitation pilot; clinical cohort"
+ },
+ {
+  "record_id": "FS-007111",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "treadmill bout, pre/immediate/2 h samples; leukocytosis and PGE-MUM"
+ },
+ {
+  "record_id": "FS-007114",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "elite young female players aged 14.9 plus minus 0.8 y; adolescents"
+ },
+ {
+  "record_id": "FS-007115",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "HFpEF-CKD patient cohort; hemodynamic and outcome study"
+ },
+ {
+  "record_id": "FS-007117",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mathematical model of NK-tumor dynamics; computational only"
+ },
+ {
+  "record_id": "FS-007118",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ultramarathon pre/post blood and saliva; leukocytes, cytokines by distance"
+ },
+ {
+  "record_id": "FS-007119",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CK, LDH, antioxidant status, pain only; no immune measure"
+ },
+ {
+  "record_id": "FS-007120",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "remdesivir long-COVID feasibility protocol; future-tense design"
+ },
+ {
+  "record_id": "FS-007121",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "4-week HIT block, pre/post training samples; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-007122",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exhaustive step bout; rest and 2 h IL-6, IL-10, IL-1ra; E2 subgroups"
+ },
+ {
+  "record_id": "FS-007124",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "colonoscopy prevalence study; running history only, no bout monitored"
+ },
+ {
+  "record_id": "FS-007125",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "murine periprosthetic joint infection model; macrophage mechanisms; animal-only"
+ },
+ {
+  "record_id": "FS-007126",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "RCT protocol; HCT/CAR-T patient population"
+ },
+ {
+  "record_id": "FS-007127",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "perspective review of Lac-Phe; not original research"
+ },
+ {
+  "record_id": "FS-007128",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "22 healthy humans: HIIT bout, pre/post leukocyte flow cytometry"
+ },
+ {
+  "record_id": "FS-007129",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "placebo RCT; drop-jump bout; inflammation markers measured though unnamed"
+ },
+ {
+  "record_id": "FS-007130",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "supplement milestone sampling at rest; no exercise bout or bout-linked sample"
+ },
+ {
+  "record_id": "FS-007132",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "86.9 km championship run; pre/post serum-PBMC, IL-6, hepcidin, transcriptomics"
+ },
+ {
+  "record_id": "FS-007133",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HVRE in both hydration arms; PBMC pre/1h/3h; IL-6, CRP"
+ }
+]

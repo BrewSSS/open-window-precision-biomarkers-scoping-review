@@ -1,0 +1,342 @@
+[
+ {
+  "record_id": "FS-007300",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CWI/foam-rolling crossover, players 22.6+/-2.0y; CRP to 72 h post shuttles"
+ },
+ {
+  "record_id": "FS-007301",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Metastatic cancer patients on chemotherapy; CTL subsets around bouts"
+ },
+ {
+  "record_id": "FS-007303",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "10-week training pre/post; ALOX5 in leukocytes; no acute bout"
+ },
+ {
+  "record_id": "FS-007304",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Sulforaphane crossover, adults 25+/-1y; blood counts, CK, oxidative markers"
+ },
+ {
+  "record_id": "FS-007305",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "C2C12 cells and mouse swimming study; no human data"
+ },
+ {
+  "record_id": "FS-007306",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Heart failure clinical cohort; resting muscle biopsy flow cytometry"
+ },
+ {
+  "record_id": "FS-007307",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "4-month exercise RCT; resting CRP pre/post program only; no bout"
+ },
+ {
+  "record_id": "FS-007308",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "PEA crossover, muscle lipidomics incl. pro-resolving mediators; age unstated"
+ },
+ {
+  "record_id": "FS-007312",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse atherosclerosis EV-miRNA study; no human data"
+ },
+ {
+  "record_id": "FS-007313",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Cancer immunotherapy cohort; CPET capacity and fatigue questionnaires"
+ },
+ {
+  "record_id": "FS-007314",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Cross-sectional activity-microbiota in subthreshold depression; no bout or immune measure"
+ },
+ {
+  "record_id": "FS-007316",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Bariatric surgery cohort; 16-week training; weight and inflammation outcomes"
+ },
+ {
+  "record_id": "FS-007318",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Systematic review of exercise and food reward; no original data"
+ },
+ {
+  "record_id": "FS-007319",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "C2C12/CRISPR in-vitro transcription-factor study; no original human sampling"
+ },
+ {
+  "record_id": "FS-007320",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Dairy post-exercise crossover; cytokine panel to 24 h; 23+/-4y mean-2SD=15"
+ },
+ {
+  "record_id": "FS-007324",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Probiotic RCT, plyometric EIMD; CK/hs-CRP to 48 h; age unstated"
+ },
+ {
+  "record_id": "FS-007325",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "HBO/lycopene 4-wk; IL-6/TNF/CRP after high-intensity training; age unstated"
+ },
+ {
+  "record_id": "FS-007326",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Post-stroke spasticity clinical cohort; CPET capacity, resting CRP"
+ },
+ {
+  "record_id": "FS-007327",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Hypothesis/review article on caveolae signaling; no original data"
+ },
+ {
+  "record_id": "FS-007328",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Four Tai Chi sessions; oxylipins pre/post intervention only; no bout baseline"
+ },
+ {
+  "record_id": "FS-007329",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Cardiac imaging, TNF/galectin-3 at rest and post-training; age unstated"
+ },
+ {
+  "record_id": "FS-007330",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Abstract empty; title suggests overtraining/T-cell viewpoint"
+ },
+ {
+  "record_id": "FS-007331",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Breast cancer survivors; myokines around bouts; in-vitro cell assay"
+ },
+ {
+  "record_id": "FS-007332",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Heart failure cohort; blood DNA-methylation clocks, resting measures"
+ },
+ {
+  "record_id": "FS-007334",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HWI/CWI/hot-air after eccentric bout; IL-6/HSP72 72 h; age unstated"
+ },
+ {
+  "record_id": "FS-007336",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Arteriovenous IL-6/sIL-6R sampling during cycling, tocilizumab; age unstated"
+ },
+ {
+  "record_id": "FS-007337",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Vitamin D RCT, cytokines around 2xWAnT; 24.2+/-4.4y mean-2SD=15.5"
+ },
+ {
+  "record_id": "FS-007341",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rat MASLD aerobic-exercise study; no human data"
+ },
+ {
+  "record_id": "FS-007342",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Fasted vs fed sessions; IL-6/CK/LDH; 19.91+/-1.64y mean-2SD=16.6"
+ },
+ {
+  "record_id": "FS-007343",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ski mountaineering race; IL-6/TNF/sICAM/neopterin pre/post; mean-2SD=14.6"
+ },
+ {
+  "record_id": "FS-007344",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Event cooling strategy; post-race IL-6/cortisol; age unstated"
+ },
+ {
+  "record_id": "FS-007348",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "TSEP vs HIIT crossover; sIgA/sAA pre/30 min; adults 22.1+/-1.6"
+ },
+ {
+  "record_id": "FS-007351",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Cross-sectional EIH study; leukocyte telomere length at rest; no bout"
+ },
+ {
+  "record_id": "FS-007352",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Kombucha RCT, 12-wk running; neutrophils/lymphocytes, acute responses; adults 18-45"
+ },
+ {
+  "record_id": "FS-007354",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Asthma clinical cohort; airway biopsies, resting immunopathology"
+ },
+ {
+  "record_id": "FS-007355",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Colorectal cancer survivors; 12-wk aerobic training; NK/T-cell subsets"
+ },
+ {
+  "record_id": "FS-007356",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Spinal cord injury cohort; 12-wk adaptive exercise; IL-6 pre/post"
+ },
+ {
+  "record_id": "FS-007357",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-month exercise RCT, older adults; EAV/M-CSF pre/post; no bout"
+ },
+ {
+  "record_id": "FS-007359",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Tai Chi movement neuromuscular control; no exercise-immune sampling design"
+ },
+ {
+  "record_id": "FS-007360",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Chickpea hydrolysate 14-day pre/post LDH/CRP; no bout-tied sampling"
+ }
+]

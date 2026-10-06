@@ -1,0 +1,350 @@
+[
+ {
+  "record_id": "FS-005228",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "CKD patient cohort; stress recall not exercise"
+ },
+ {
+  "record_id": "FS-005229",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "resting neutrophil function, atopic vs non-atopic; background-pattern candidate"
+ },
+ {
+  "record_id": "FS-005230",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "squat bout; Rg1/placebo crossover; muscle MPO/EPC/senescence readouts"
+ },
+ {
+  "record_id": "FS-005231",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "HIV patient cohort; stress echocardiography"
+ },
+ {
+  "record_id": "FS-005232",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "91-km race; CRP pre/24h; omega-3 users vs non-users"
+ },
+ {
+  "record_id": "FS-005233",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ACL-reconstruction clinical cohort; COMP only"
+ },
+ {
+  "record_id": "FS-005234",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "prognostic CPET cohort; hsCRP; bout-sampling relation unknown"
+ },
+ {
+  "record_id": "FS-005235",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "metabolic-syndrome cohort; nitrate crossover; PBMC readouts"
+ },
+ {
+  "record_id": "FS-005236",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "COVID-19 isometric-training perspective; no original data"
+ },
+ {
+  "record_id": "FS-005237",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "eel larvae transcriptomics; animal-only"
+ },
+ {
+  "record_id": "FS-005238",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "supplementation periods; muscle-damage/hormone markers only; no bout sampling"
+ },
+ {
+  "record_id": "FS-005239",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "triathlon pre/finish/1-week; adhesion molecules plus FMD"
+ },
+ {
+  "record_id": "FS-005240",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "post-COVID clinical cohort; CPET outcomes"
+ },
+ {
+  "record_id": "FS-005241",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "training-group cross-section; lymphocyte methylation/Th17; background-pattern candidate"
+ },
+ {
+  "record_id": "FS-005242",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "rheumatoid arthritis cohort; HIIT snapshots"
+ },
+ {
+  "record_id": "FS-005243",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "HIV peer-support program; no exercise or immune outcomes"
+ },
+ {
+  "record_id": "FS-005244",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "post-match recovery; IL-6/CRP/leukocytes; recovery contrast"
+ },
+ {
+  "record_id": "FS-005245",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "in-silico endothelial dataset reanalysis; COVID; no exercise"
+ },
+ {
+  "record_id": "FS-005247",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Alzheimer cohort plus mouse model"
+ },
+ {
+  "record_id": "FS-005248",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "adipose/fitness cross-section; no immune measure"
+ },
+ {
+  "record_id": "FS-005249",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ages mean\u00b1SD only; mean-2SD 16 and 17"
+ },
+ {
+  "record_id": "FS-005250",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "propolis/placebo RCT; IL-6 after Cooper test"
+ },
+ {
+  "record_id": "FS-005251",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "type 1 diabetes cohort; controls comparator only"
+ },
+ {
+  "record_id": "FS-005252",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "astragalus/placebo; 2000 m test; NK/Treg/cytokines"
+ },
+ {
+  "record_id": "FS-005253",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ju\u00e7ara juice vs water crossover; HIIE cytokine time-course"
+ },
+ {
+  "record_id": "FS-005254",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "chronic heart failure cohort; rehab training only"
+ },
+ {
+  "record_id": "FS-005255",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "mistletoe vs control; bout cytokines; serial sampling"
+ },
+ {
+  "record_id": "FS-005256",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "hemodialysis fistula histology; no exercise exposure"
+ },
+ {
+  "record_id": "FS-005257",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "8-month training snapshots; adipsin/complement D; background-pattern candidate"
+ },
+ {
+  "record_id": "FS-005258",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "knee osteoarthritis cohort; golf-walk cytokines"
+ },
+ {
+  "record_id": "FS-005259",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "fitness-protein cross-section; IL-6/IL-1RA; background-pattern candidate"
+ },
+ {
+  "record_id": "FS-005260",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "heat-condition bouts; IL-6/hepcidin serial sampling"
+ },
+ {
+  "record_id": "FS-005261",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIV cohort; vascular/autonomic outcomes only"
+ },
+ {
+  "record_id": "FS-005262",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Alzheimer cohort plus mouse model; lncRNA"
+ },
+ {
+  "record_id": "FS-005263",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "obesity crossover bout; sRAGE; health status adjudicate full text"
+ },
+ {
+  "record_id": "FS-005264",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon; serial neutrophils, G-CSF, IL-6, cortisol"
+ },
+ {
+  "record_id": "FS-005265",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rhesus monkey seminal-plasma experiment; no human exercise"
+ },
+ {
+  "record_id": "FS-005266",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "multiple sclerosis cohort; gut bacteria/cytokines pre-post"
+ },
+ {
+  "record_id": "FS-005267",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "multiple sclerosis cohort; 8-week training cytokines pre-post"
+ },
+ {
+  "record_id": "FS-005268",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "pancreatic cancer cohort; trained-serum myokines"
+ }
+]

@@ -1,0 +1,326 @@
+[
+ {
+  "record_id": "FS-007134",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "swimmers aged 12-16 y; adolescent cohort"
+ },
+ {
+  "record_id": "FS-007136",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "WDEIA patient diagnostics; IgE and challenge tests, no exercise protocol"
+ },
+ {
+  "record_id": "FS-007137",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "cross-sectional CBD user survey; resting blood panel, no bout"
+ },
+ {
+  "record_id": "FS-007138",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HL/LL crossover bout; pre/immediate/1h CD4+ HSP27 and IL-10"
+ },
+ {
+  "record_id": "FS-007139",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat heat-shock experiments and in-vitro binding; animal-only"
+ },
+ {
+  "record_id": "FS-007140",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "cross-sectional activity groups; resting CBC, hs-CRP, SAA"
+ },
+ {
+  "record_id": "FS-007142",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "review chapter on pro-resolving lipid mediators; not original research"
+ },
+ {
+  "record_id": "FS-007143",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "multiday ultras and ocean rowing; immune biomarkers; sampling timing unspecified"
+ },
+ {
+  "record_id": "FS-007144",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "single treadmill bout; serial serum; whole-blood RNA-seq"
+ },
+ {
+  "record_id": "FS-007147",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIE under four conditions; WBC, lymphocytes, neutrophils sampled"
+ },
+ {
+  "record_id": "FS-007148",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "UK Biobank; fitness tertiles and resting inflammation; no bout"
+ },
+ {
+  "record_id": "FS-007149",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric bout; biopsies and blood to 72 h; inflammatory markers"
+ },
+ {
+  "record_id": "FS-007150",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IPC performance and recovery outcomes; no immune measure"
+ },
+ {
+  "record_id": "FS-007151",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "shoulder strength, proprioception, soreness; no immune measure"
+ },
+ {
+  "record_id": "FS-007152",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "60-day diet RCT; resting pre/post IL-6/TNF/CRP; no bout sample"
+ },
+ {
+  "record_id": "FS-007153",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "8-week training, pre/post sampling only; age mean-2SD 17.8"
+ },
+ {
+  "record_id": "FS-007154",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse/rat ischemia-reperfusion bioinformatics; no exercise or human measures"
+ },
+ {
+  "record_id": "FS-007155",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT05",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "pre-march stool and blood only; EHI outcome; no post-march sample"
+ },
+ {
+  "record_id": "FS-007156",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIT bout; baseline/pre/post/15-min IL-6 and ROS"
+ },
+ {
+  "record_id": "FS-007158",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "866 km race; baseline/during/finish samples; IL-6, neopterin"
+ },
+ {
+  "record_id": "FS-007160",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "training-block milestone blood draws; TNF-alpha/IL-6; no bout sample"
+ },
+ {
+  "record_id": "FS-007162",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "12-h ultra; PRE/MID/POST leukocytes, IgG, CRP, IL-6"
+ },
+ {
+  "record_id": "FS-007163",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIT modality crossover; baseline/post/1h/24h cytokines"
+ },
+ {
+  "record_id": "FS-007165",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "DHA versus control; eccentric bouts; cytokines to 48 h"
+ },
+ {
+  "record_id": "FS-007167",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "obese men BMI>30; clinical cohort; 2x2 factorial"
+ },
+ {
+  "record_id": "FS-007168",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon; START/FINISH/24h whole-blood transcriptomics"
+ },
+ {
+  "record_id": "FS-007169",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "murine SAH model with scRNA-seq and coculture; animal-only"
+ },
+ {
+  "record_id": "FS-007171",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "230-km ultra pre/post; WBC, IL-6, IL-10, CRP"
+ },
+ {
+  "record_id": "FS-007172",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "urinary 8-OHdG, MDA, protein carbonyls; no immune measure"
+ },
+ {
+  "record_id": "FS-007173",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIT bout; T0/T1/T2 NK cells, cILCs; healthy controls separable"
+ },
+ {
+  "record_id": "FS-007174",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "TDG ultra pre/post; neopterin, ROS, salivary miRNAs"
+ },
+ {
+  "record_id": "FS-007175",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIE bout; muscle cytokine array, plasma IL-6/TNF"
+ },
+ {
+  "record_id": "FS-007178",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "colostrum versus placebo; cycling bout; neutrophil function, SIgA"
+ },
+ {
+  "record_id": "FS-007179",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "ankylosing spondylitis patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-007180",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "interval test; pre/immediate/24h blood; IL-10, IL-15"
+ },
+ {
+  "record_id": "FS-007181",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "post-PE patient case series; iCPET hemodynamics"
+ },
+ {
+  "record_id": "FS-007182",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cycling bout; PBMC autophagy and IL-6 pre/post/6h; healthy stratum separable"
+ },
+ {
+  "record_id": "FS-007183",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "6-day ultra; pre/during/post blood; inflammatory markers"
+ },
+ {
+  "record_id": "FS-007184",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse NOX4 mechanism; human data lacks exercise exposure"
+ },
+ {
+  "record_id": "FS-007185",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "trail runners 33.9 plus minus 8.1 y: mean-2SD 17.7; adulthood unresolved; CRP post-race"
+ }
+]

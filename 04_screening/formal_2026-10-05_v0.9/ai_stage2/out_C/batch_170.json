@@ -1,0 +1,339 @@
+[
+ {
+  "record_id": "FS-008829",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Athlete food-intolerance IgG comparison; no exercise bout or bout-tied sampling"
+ },
+ {
+  "record_id": "FS-008830",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "SD rats and H9c2 cell assays; no human data"
+ },
+ {
+  "record_id": "FS-008833",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Airway-burn case report; clinical patient, no exercise bout"
+ },
+ {
+  "record_id": "FS-008834",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Futsal players 20.6+/-1.2 y; MI/HI 30-min bouts; IL-6 pre/post"
+ },
+ {
+  "record_id": "FS-008838",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "VO2max test bout; WBC count plus HSP genes pre/IA/2h"
+ },
+ {
+  "record_id": "FS-008841",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Three intensity bouts; leukocyte telomerase 24/48h with baseline"
+ },
+ {
+  "record_id": "FS-008844",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Medical Hypotheses proposal; no original data"
+ },
+ {
+  "record_id": "FS-008845",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT02"
+  ],
+  "study_type_hint": "other",
+  "note": "In-silico meta-analysis of public GWES datasets; no new human measurements"
+ },
+ {
+  "record_id": "FS-008849",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Serum metabolomics of metabolic recovery; no immune objective or candidates"
+ },
+ {
+  "record_id": "FS-008851",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical rhabdomyolysis diagnostics; patients, no exercise bout"
+ },
+ {
+  "record_id": "FS-008852",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse alcoholic-liver-disease model; IL-6 in liver tissue"
+ },
+ {
+  "record_id": "FS-008853",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Cultured dermal fibroblasts in vitro; supplement, no exercise"
+ },
+ {
+  "record_id": "FS-008855",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Coronary artery disease patients; 3-week training, resting markers"
+ },
+ {
+  "record_id": "FS-008857",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Review of exercise-induced myokines/miRNAs in cancer"
+ },
+ {
+  "record_id": "FS-008859",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mice on HFHC diet; HIIT/MIT treadmill, liver cytometry"
+ },
+ {
+  "record_id": "FS-008861",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Chronic stroke mice; BM-MNC transplantation plus training"
+ },
+ {
+  "record_id": "FS-008863",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Two-week training plus supplement pre/post; no identifiable bout or bout-tied sampling"
+ },
+ {
+  "record_id": "FS-008869",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Spinal cord injury rats plus cell cultures; drug nanoparticles"
+ },
+ {
+  "record_id": "FS-008870",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Twin case study; 100-km run; CRP and biopsies 4/52h post"
+ },
+ {
+  "record_id": "FS-008871",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Adult albino rats on antidepressants"
+ },
+ {
+  "record_id": "FS-008872",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "4-day walking event; neutrophil/monocyte function; healthy stratum separable"
+ },
+ {
+  "record_id": "FS-008874",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Amur minnow fish infected with Tetrahymena"
+ },
+ {
+  "record_id": "FS-008875",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Six weeks training plus probiotics pre/post; no identifiable bout or bout-tied sampling"
+ },
+ {
+  "record_id": "FS-008877",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric bout with placebo arms; lymphocytes/neutrophils days 1-4"
+ },
+ {
+  "record_id": "FS-008879",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric DOMS protocol; IL-6/PTX3 sampled 0-72h with baseline"
+ },
+ {
+  "record_id": "FS-008880",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Female mice, ergothioneine supplementation, treadmill"
+ },
+ {
+  "record_id": "FS-008881",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "GI permeability, I-FABP, microbial translocation only; no immune measure"
+ },
+ {
+  "record_id": "FS-008883",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Spinal cord injury patients; nanoscaffold treatment"
+ },
+ {
+  "record_id": "FS-008884",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Chagas cardiomyopathy patients; autoantibodies versus HRV/CPET"
+ },
+ {
+  "record_id": "FS-008886",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Asthma-model BALB/c mice, treadmill training"
+ },
+ {
+  "record_id": "FS-008887",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Amateur soccer players aged 14-18 y; adolescents, pooled"
+ },
+ {
+  "record_id": "FS-008891",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Powerlifting competition; pre/post salivary IgA; RWL contrast"
+ },
+ {
+  "record_id": "FS-008892",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "CK and LDH only after simulated soccer protocol"
+ },
+ {
+  "record_id": "FS-008893",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Cortisol, vigilance, lactate only; no immune measure"
+ },
+ {
+  "record_id": "FS-008895",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Parkinson's mice; running, microglia"
+ },
+ {
+  "record_id": "FS-008896",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rats, swimming, IL-6 and bacteremia"
+ },
+ {
+  "record_id": "FS-008897",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT06",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Single fasciitis case after drumming; no baseline or comparator"
+ },
+ {
+  "record_id": "FS-008898",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Letter to the editor on IBD, exercise, microbiome"
+ },
+ {
+  "record_id": "FS-008900",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Frostbite burn patients from cryotherapy; clinical, no bout"
+ },
+ {
+  "record_id": "FS-008903",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "TKD HIIT session; leukocyte subsets and NLR by gender"
+ }
+]

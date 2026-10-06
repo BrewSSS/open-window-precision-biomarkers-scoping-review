@@ -1,0 +1,336 @@
+[
+ {
+  "record_id": "FS-006008",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "three treadmill runs; WBC/PMN/CRP pre/post each bout"
+ },
+ {
+  "record_id": "FS-006009",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "rheumatoid arthritis clinical cohort; vascular outcomes, no immune measure"
+ },
+ {
+  "record_id": "FS-006010",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "ME/CFS patient cohort; healthy stratum results not separable"
+ },
+ {
+  "record_id": "FS-006013",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "graded cycling; leukocyte subsets, SARS-CoV-2 T-cells mobilized"
+ },
+ {
+  "record_id": "FS-006014",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "habitual-activity cross-section; monocytic TLR2; no identifiable bout"
+ },
+ {
+  "record_id": "FS-006015",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "heart failure cohort; anakinra on/off treatment analysis"
+ },
+ {
+  "record_id": "FS-006017",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "no exercise bout; in-vitro T-cell activation; convalescent athletes"
+ },
+ {
+  "record_id": "FS-006018",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "reanalysis of public post-exercise leukocyte transcriptomes; immune genes"
+ },
+ {
+  "record_id": "FS-006019",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute bout; postexercise NK cytotoxicity versus resting cells"
+ },
+ {
+  "record_id": "FS-006020",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "100 drop jumps; placebo-controlled; leukocyte/neutrophil counts"
+ },
+ {
+  "record_id": "FS-006022",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "strength bout; IL-1beta/IL-6/IL-8/IL-10 pre,post,24h"
+ },
+ {
+  "record_id": "FS-006024",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2.5h cycling; lymphocytes, neutrophil elastase; vitamin D strata"
+ },
+ {
+  "record_id": "FS-006025",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "thymocyte development biology; no exercise exposure"
+ },
+ {
+  "record_id": "FS-006026",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric bout; IL-6 and CK time course to day 5"
+ },
+ {
+  "record_id": "FS-006027",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "wheat-dependent exercise-induced anaphylaxis diagnostics; no exercise bout"
+ },
+ {
+  "record_id": "FS-006028",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "narrative database-search review of exercise-induced renal failure"
+ },
+ {
+  "record_id": "FS-006029",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "resistance bout; HWI vs passive; blood inflammatory markers"
+ },
+ {
+  "record_id": "FS-006030",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T1D plus healthy controls; TNF-alpha; control stratum separable"
+ },
+ {
+  "record_id": "FS-006032",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "carnosine tissue distribution; no immune measure or objective"
+ },
+ {
+  "record_id": "FS-006033",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "bed rest plus metformin; no exercise bout; muscle senescence"
+ },
+ {
+  "record_id": "FS-006034",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "90-min eccentric bout; oxylipins/SPM; placebo-controlled"
+ },
+ {
+  "record_id": "FS-006035",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "maslinic acid during training; bout-linked sampling unclear"
+ },
+ {
+  "record_id": "FS-006037",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "futsal match; inflammatory biomarkers to 144 h post"
+ },
+ {
+  "record_id": "FS-006040",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "anaerobic bout; vibrotherapy arms; IL-1beta/IL-6 1h,24h"
+ },
+ {
+  "record_id": "FS-006041",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-week HIIT pre/post resting measures; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-006043",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "rheumatoid arthritis cohort; bioimpedance hydration outcomes"
+ },
+ {
+  "record_id": "FS-006044",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "PCOS rats and ovarian granulosa cell culture only"
+ },
+ {
+  "record_id": "FS-006046",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "type 2 diabetes cohort; diet plus exercise trial arms"
+ },
+ {
+  "record_id": "FS-006047",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "swimming SIT; IL-6/IL-10/TNF; carbohydrate control arm"
+ },
+ {
+  "record_id": "FS-006048",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "obesity cohort but separable normal-weight stratum; IL-6"
+ },
+ {
+  "record_id": "FS-006049",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "HFpEF obesity patients; cross-sectional, no bout or immune measure"
+ },
+ {
+  "record_id": "FS-006050",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review appraising vaccine myocarditis evidence"
+ },
+ {
+  "record_id": "FS-006052",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "stroke rats; remote ischemic conditioning plus exercise"
+ },
+ {
+  "record_id": "FS-006053",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "80-min run; hepcidin, haptoglobin; placebo-controlled"
+ },
+ {
+  "record_id": "FS-006054",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "1-h task session; saliva IL-6; healthy controls separable"
+ },
+ {
+  "record_id": "FS-006055",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "downhill run; CRP to 72 h; crossover versus control"
+ },
+ {
+  "record_id": "FS-006056",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse LPS-AKI model; endothelial cell culture"
+ },
+ {
+  "record_id": "FS-006057",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "schizophrenia cohort; 20-week training, pre/post resting measures"
+ },
+ {
+  "record_id": "FS-006058",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "resistance bout versus control session; FeNO airway inflammation"
+ },
+ {
+  "record_id": "FS-006059",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "kayak HIIT; mean age 15.9 years, adolescent cohort"
+ }
+]

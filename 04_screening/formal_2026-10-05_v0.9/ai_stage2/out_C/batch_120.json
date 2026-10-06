@@ -1,0 +1,328 @@
+[
+ {
+  "record_id": "FS-005772",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse exercise training; human donor macrophages in vitro only"
+ },
+ {
+  "record_id": "FS-005773",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "sportomics field sampling in Olympians; acute-phase proteins; bout linkage unclear"
+ },
+ {
+  "record_id": "FS-005774",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon; IL-6/TNF-alpha pre, post, 90-min recovery; baseline present"
+ },
+ {
+  "record_id": "FS-005775",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "heart-disease cardiac-rehab cohort; no immune measure"
+ },
+ {
+  "record_id": "FS-005776",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CTRP9 adipokine and FMD only; not recognized immune measures"
+ },
+ {
+  "record_id": "FS-005777",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ultramarathon pre/post; neopterin immune-activation marker; inflammation stated"
+ },
+ {
+  "record_id": "FS-005778",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "childhood-cancer survivor cohort; cross-sectional CPET associations"
+ },
+ {
+  "record_id": "FS-005780",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "simulated rugby tournaments; placebo crossover; inflammation markers stated"
+ },
+ {
+  "record_id": "FS-005781",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "anaphylaxis patient records; clinical cohort"
+ },
+ {
+  "record_id": "FS-005782",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cycling bout; IL-6/IL-10/TNF-alpha; flavonoid crossover with pre/post"
+ },
+ {
+  "record_id": "FS-005783",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "metastatic castrate-resistant prostate cancer patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-005784",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "erythropoietin hormone and metabolites only; no immune measure"
+ },
+ {
+  "record_id": "FS-005786",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cycling vs stretching RCT; IL-6/IL-1ra/IL-4/IFN-gamma pre-post"
+ },
+ {
+  "record_id": "FS-005787",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "trial protocol; bipolar depression patients"
+ },
+ {
+  "record_id": "FS-005788",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cycling in heat; salivary lactoferrin/amylase; caffeine crossover"
+ },
+ {
+  "record_id": "FS-005789",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "irisin myokine only; healthy stratum separable; no immune measure"
+ },
+ {
+  "record_id": "FS-005790",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "pan-cancer TCGA bioinformatics; no original human exercise measurements"
+ },
+ {
+  "record_id": "FS-005791",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "HUCPVC cell therapy in mice; animal-only"
+ },
+ {
+  "record_id": "FS-005793",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "food-allergy patient records; clinical cohort"
+ },
+ {
+  "record_id": "FS-005794",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review of exercise, neuroinflammation and ageing"
+ },
+ {
+  "record_id": "FS-005796",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ultramarathon; salivary/blood cytokines, IgA, neopterin; serial sampling"
+ },
+ {
+  "record_id": "FS-005797",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "6-wk TT vs placebo; CRP/LDH resting snapshots T1-T3; no bout sampling"
+ },
+ {
+  "record_id": "FS-005798",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "resting IF1 myokine vs CPET capacity; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-005799",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review; sleep and musculoskeletal injury in military"
+ },
+ {
+  "record_id": "FS-005801",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "aneurysm-repair surgery patients; postoperative CRP"
+ },
+ {
+  "record_id": "FS-005803",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "GDF15 hepatokine only; metabolic regulator, no immune measure"
+ },
+ {
+  "record_id": "FS-005805",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "CHD patients plus controls; resting ROS/hs-CRP; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-005806",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "30-min bout; cytokine panel pre/post/recovery; adult swimmer stratum separable"
+ },
+ {
+  "record_id": "FS-005807",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "triptolide in carrageenan rat DOMS model; animal-only"
+ },
+ {
+  "record_id": "FS-005808",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "HIV patient cohort; exercise-induced pulmonary hypertension prognosis"
+ },
+ {
+  "record_id": "FS-005809",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse swimming bouts; muscle gene expression; animal-only"
+ },
+ {
+  "record_id": "FS-005810",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "1-month step-count intervention; IgG/IgM pre/post; no bout"
+ },
+ {
+  "record_id": "FS-005811",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "coronary heart disease patients; 8-wk training; CRP/galectin-3"
+ },
+ {
+  "record_id": "FS-005812",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "procainamide metabolite cytotoxicity in cell lines; in vitro only"
+ },
+ {
+  "record_id": "FS-005813",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat EIMD plus mouse macrophage co-culture; animal/in-vitro only"
+ },
+ {
+  "record_id": "FS-005814",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "overweight/obesity cohort, no separable healthy stratum; GDF15 metabolic"
+ },
+ {
+  "record_id": "FS-005815",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle-damaging bout; IL-2/IL-6/TNF-alpha to 72h; krill oil vs placebo"
+ },
+ {
+  "record_id": "FS-005816",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age 25+/-4.3y: mean-2SD=16.4<18, no stated range"
+ },
+ {
+  "record_id": "FS-005817",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "peripheral artery disease patients; supervised exercise therapy metabolomics"
+ },
+ {
+  "record_id": "FS-005818",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "proprioception/RPE/lactate only; no immune measure"
+ }
+]

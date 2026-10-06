@@ -1,0 +1,364 @@
+[
+ {
+  "record_id": "FS-005959",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age given only as 'pain-free adults'; no age data"
+ },
+ {
+  "record_id": "FS-005962",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "HepG2 cell-line cytotoxicity of plant extract; in vitro only"
+ },
+ {
+  "record_id": "FS-005963",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "hemodialysis patients; clinical cohort; 12-wk supplement+training snapshot"
+ },
+ {
+  "record_id": "FS-005964",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "rats, exhaustive treadmill, glutamine timing; animal-only"
+ },
+ {
+  "record_id": "FS-005965",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "heart-failure patients on anakinra; clinical cohort; drug-effect study"
+ },
+ {
+  "record_id": "FS-005966",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age given only as 'female university students'; no age data"
+ },
+ {
+  "record_id": "FS-005967",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "heart-failure patients; clinical cohort; prognosis prediction study"
+ },
+ {
+  "record_id": "FS-005968",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "DOMS protocol; IL-6 0-72 h; control group; ages 18-24"
+ },
+ {
+  "record_id": "FS-005969",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "asthmatic patients only; epithelial transcriptomics; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-005970",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "post-marathon NMR metabolomics; metabolic recovery focus, no immune objective"
+ },
+ {
+  "record_id": "FS-005971",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "ML model predicting post-exercise WBC from 200 people; bout details vague"
+ },
+ {
+  "record_id": "FS-005972",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Fontan congenital heart-disease patients; clinical cohort; CPET cytokines"
+ },
+ {
+  "record_id": "FS-005973",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "banana root proteomics, fungal resistance; non-human, no exercise"
+ },
+ {
+  "record_id": "FS-005974",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "EPS myotubes/mice; human arms are pre-/T2D cohorts; no bout sampling"
+ },
+ {
+  "record_id": "FS-005975",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2-h heat run; IgM/sCD14/cytokines pre/post/1-2 h; water-control trial"
+ },
+ {
+  "record_id": "FS-005976",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "habitual-exercise cross-section; selenoprotein P/leukocyte mtDNA; no bout"
+ },
+ {
+  "record_id": "FS-005977",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "strenuous bout; leukocyte subsets, CD4/CD8 ratio, IL-6/TNF to 24 h; placebo"
+ },
+ {
+  "record_id": "FS-005978",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "120-min heat cycling; leukocyte counts; hydration cross-over; age 20.6+/-0.9"
+ },
+ {
+  "record_id": "FS-005979",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "metabolic-syndrome men; clinical cohort; 12-wk training, resting sampling"
+ },
+ {
+  "record_id": "FS-005980",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "knee osteoarthritis patients; clinical cohort; thermography, no immune measure"
+ },
+ {
+  "record_id": "FS-005981",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age given only as 'untrained adult men'; no age data"
+ },
+ {
+  "record_id": "FS-005982",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "LPS endotoxemia challenge; no exercise exposure"
+ },
+ {
+  "record_id": "FS-005983",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "schizophrenia patients; clinical cohort; 12-wk training, resting sampling"
+ },
+ {
+  "record_id": "FS-005984",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "ovarian cancer patients; clinical cohort; 6-month intervention snapshot"
+ },
+ {
+  "record_id": "FS-005986",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "stair/cycling bouts; immune-cell counts/deformability; MS and controls separable"
+ },
+ {
+  "record_id": "FS-005987",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "gastric cancer patients; gastroscopy/anesthesia study; no exercise exposure"
+ },
+ {
+  "record_id": "FS-005989",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "remitted depression patients; clinical cohort; BDNF only, no immune measure"
+ },
+ {
+  "record_id": "FS-005990",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cfDNA methylation profiling; neutrophil source; marathon/standard bouts"
+ },
+ {
+  "record_id": "FS-005991",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "competitive matches; CRP/CK 0-64 h post; turmeric vs control"
+ },
+ {
+  "record_id": "FS-005993",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "mice, microglia depletion, antidepressants; animal-only"
+ },
+ {
+  "record_id": "FS-005994",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "heart-failure patients; cardiac rehab; no immune measures"
+ },
+ {
+  "record_id": "FS-005995",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "HFrEF patients; cardiac rehabilitation; MECKI prognostic score"
+ },
+ {
+  "record_id": "FS-005996",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "COPD patients; clinical cohort; 12-wk training, pre/post transcriptomics"
+ },
+ {
+  "record_id": "FS-005997",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age given only as 'collegiate swimmers'; no age data"
+ },
+ {
+  "record_id": "FS-005998",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute cycling; T-cell/UTC phenotyping; cancer and control strata separable"
+ },
+ {
+  "record_id": "FS-005999",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Wingate bouts; IL-6/IL-10, leukocyte differentials to 1 h; placebo crossover"
+ },
+ {
+  "record_id": "FS-006000",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "stress-inducing training exercise; 42 salivary cytokines; exposure nature vague"
+ },
+ {
+  "record_id": "FS-006002",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "SESN2/Nrf2 mice and in vitro; animal-only"
+ },
+ {
+  "record_id": "FS-006003",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "matched HIIE vs MCE; Treg PD-1, IL-6/IL-10; adults 29.7+/-4.3"
+ },
+ {
+  "record_id": "FS-006007",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ubiquinol RCT; muscle damage/performance outcomes only, no immune measure"
+ }
+]

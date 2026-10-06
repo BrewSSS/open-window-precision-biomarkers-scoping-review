@@ -7,7 +7,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "BrdU adaptive-response cytogenetics in stimulated lymphocytes; in-vitro"
+  "note": "Lymphocyte cultures; radiation; no exercise"
  },
  {
   "record_id": "FS-015510",
@@ -17,7 +17,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Gamma-irradiated lymphocyte DNA strand-break repair; in-vitro"
+  "note": "Irradiated lymphocytes; DNA repair; no exercise"
  },
  {
   "record_id": "FS-015511",
@@ -27,27 +27,25 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "M-CSF induced immediate early genes in cultured monocytes; in-vitro"
+  "note": "Monocyte cultures; M-CSF; no exercise"
  },
  {
   "record_id": "FS-015512",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT01",
-  "secondary_codes": [
-   "FT04"
-  ],
+  "secondary_codes": [],
   "study_type_hint": "other",
-  "note": "Narrative overview of tracheobronchial circulation; no exercise-immune study"
+  "note": "Review; airway vasculature"
  },
  {
   "record_id": "FS-015514",
   "disposition": "EXCLUDE_TA",
-  "primary_code": "FT04",
+  "primary_code": "FT02",
   "secondary_codes": [
-   "FT07"
+   "FT04"
   ],
   "study_type_hint": "other",
-  "note": "HMPAO radiotracer purity and urinary decomposition; no exercise"
+  "note": "Radiochemistry method; no exercise"
  },
  {
   "record_id": "FS-015524",
@@ -57,7 +55,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Cathepsin G downregulation in TPA-treated U937 cells; in-vitro"
+  "note": "U937 cells; cathepsin G; no exercise"
  },
  {
   "record_id": "FS-015528",
@@ -67,7 +65,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "O6-alkylguanine DNA-adduct assay development; in-vitro methods"
+  "note": "DNA adduct assay; no exercise"
  },
  {
   "record_id": "FS-015529",
@@ -77,7 +75,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "IL-2 transcription regulation in activated Th2 cells; in-vitro"
+  "note": "Th2 cells in vitro; no exercise"
  },
  {
   "record_id": "FS-015530",
@@ -87,7 +85,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Class II MHC transcription in murine macrophages; animal in-vitro"
+  "note": "Murine macrophages in vitro; no exercise"
  },
  {
   "record_id": "FS-015548",
@@ -97,7 +95,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Taxol/cytochalasin effects on spermiation; animal testis"
+  "note": "Testis/taxol; spermiation; no exercise"
  },
  {
   "record_id": "FS-015554",
@@ -107,7 +105,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "IFN-gamma induction of HLA-DR alpha in HeLa cells; in-vitro"
+  "note": "HeLa cells; HLA-DR; no exercise"
  },
  {
   "record_id": "FS-015559",
@@ -117,7 +115,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "c-fos antibody microinjection in fibroblasts; in-vitro"
+  "note": "Fibroblasts; fos antibodies; no exercise"
  },
  {
   "record_id": "FS-015567",
@@ -127,7 +125,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Con A/IL-2 stimulated rat thymocyte glycolysis; in-vitro"
+  "note": "Rat thymocytes in vitro; no exercise"
  },
  {
   "record_id": "FS-015573",
@@ -137,7 +135,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "PHA-stimulated lymphocyte PFK induction, young vs aged; in-vitro"
+  "note": "PHA-stimulated lymphocytes in vitro; no exercise"
  },
  {
   "record_id": "FS-015581",
@@ -147,17 +145,17 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Retinal nucleotidase cytochemistry in rats; animal"
+  "note": "Rat retina cytochemistry; no exercise"
  },
  {
   "record_id": "FS-015584",
   "disposition": "EXCLUDE_TA",
-  "primary_code": "FT04",
+  "primary_code": "FT02",
   "secondary_codes": [
-   "FT07"
+   "FT04"
   ],
   "study_type_hint": "other",
-  "note": "SDS-PAGE silver-stain method for urinary proteins; no exercise"
+  "note": "Electrophoresis method; no exercise"
  },
  {
   "record_id": "FS-015588",
@@ -167,7 +165,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Interferon block of fibroblast G0/S transition; in-vitro"
+  "note": "3T3 fibroblasts; interferon; no exercise"
  },
  {
   "record_id": "FS-015597",
@@ -177,7 +175,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Motility of mitogen/allogene-activated T cells; in-vitro"
+  "note": "Lymphocyte motility in vitro; no exercise"
  },
  {
   "record_id": "FS-015599",
@@ -187,7 +185,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "In-vitro fertilization gamete fusion microscopy; no exercise"
+  "note": "IVF gametes in vitro; no exercise"
  },
  {
   "record_id": "FS-015602",
@@ -197,7 +195,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "PHA/TPA induced IL-2 mRNA in tonsillar lymphocytes; in-vitro"
+  "note": "PHA/TPA lymphocytes in vitro; no exercise"
  },
  {
   "record_id": "FS-015608",
@@ -207,7 +205,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Growth-related mRNAs in lectin-activated lymphocytes; in-vitro"
+  "note": "PHA lymphocytes cDNA; no exercise"
  },
  {
   "record_id": "FS-015609",
@@ -217,18 +215,17 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Culture-generated macrophage cytostasis against tumor lines; in-vitro"
+  "note": "Macrophage cytostasis in vitro; no exercise"
  },
  {
   "record_id": "FS-015617",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT02",
   "secondary_codes": [
-   "FT03",
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Leukemic cell synchronization for chromosome banding; in-vitro methods"
+  "note": "Leukemic cell synchronization; no exercise"
  },
  {
   "record_id": "FS-015621",
@@ -238,7 +235,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "X-irradiated lymphocyte cultures, mitotic delay; in-vitro"
+  "note": "Irradiated lymphocyte cultures; no exercise"
  },
  {
   "record_id": "FS-015623",
@@ -248,7 +245,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "c-myc induction by mitogens in lymphocytes/fibroblasts; in-vitro"
+  "note": "c-myc induction in vitro; no exercise"
  },
  {
   "record_id": "FS-015629",
@@ -258,7 +255,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Activated macrophage cytostasis of Con A lymphoblasts; animal in-vitro"
+  "note": "Macrophage/lymphoblast coculture; no exercise"
  },
  {
   "record_id": "FS-015630",
@@ -268,7 +265,7 @@
    "FT07"
   ],
   "study_type_hint": "other",
-  "note": "Rapid LH radioimmunoassay for ovulation prediction; no exercise"
+  "note": "LH assay method; no exercise exposure"
  },
  {
   "record_id": "FS-015655",
@@ -278,7 +275,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Endoreduplication kinetics in PHA-stimulated cultures; in-vitro"
+  "note": "PHA tonsil lymphocytes; no exercise"
  },
  {
   "record_id": "FS-015665",
@@ -288,7 +285,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Nucleolar morphology in PHA-stimulated lymphocytes; in-vitro"
+  "note": "PHA lymphocyte nucleoli; no exercise"
  },
  {
   "record_id": "FS-015675",
@@ -298,7 +295,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Flow-cytometric RNA/DNA in stimulated lymphocytes; in-vitro"
+  "note": "PHA lymphocytes flow cytometry; no exercise"
  },
  {
   "record_id": "FS-015690",
@@ -308,7 +305,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Ouabain-sensitive glycolysis in PHA-treated lymphocytes; in-vitro"
+  "note": "PHA lymphocyte glycolysis; no exercise"
  },
  {
   "record_id": "FS-015698",
@@ -318,7 +315,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Frog rod outer-segment turnover versus temperature; animal"
+  "note": "Frog retina turnover; no exercise"
  },
  {
   "record_id": "FS-015699",
@@ -328,7 +325,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "CMV complement-fixing antigen characterization in cultures; in-vitro virology"
+  "note": "CMV antigen cell cultures; no exercise"
  },
  {
   "record_id": "FS-015702",
@@ -338,7 +335,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Frog visual pigment loss and rod shedding; animal"
+  "note": "Frog retina shedding; no exercise"
  },
  {
   "record_id": "FS-015714",
@@ -348,7 +345,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Karyometry/cytophotometry of PHA-transformed lymphocytes; in-vitro"
+  "note": "PHA lymphocyte cytophotometry; no exercise"
  },
  {
   "record_id": "FS-015718",
@@ -358,7 +355,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Thymidine-H3 chromosome replication autoradiography; in-vitro"
+  "note": "Leucocyte cultures autoradiography; no exercise"
  },
  {
   "record_id": "FS-015719",
@@ -368,7 +365,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "PHA-stimulated leucocyte nuclear protein synthesis; in-vitro"
+  "note": "Leucocytes in vitro protein synthesis; no exercise"
  },
  {
   "record_id": "FS-015734",
@@ -376,25 +373,24 @@
   "primary_code": "",
   "secondary_codes": [],
   "study_type_hint": "acute_bout_CoreA",
-  "note": "Exercise after labeled-granulocyte infusion; granulocytosis in normal males"
+  "note": "DFP-labeled granulocytes; exercise mobilization; normal males"
  },
  {
   "record_id": "FS-015737",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT02",
   "secondary_codes": [
-   "FT04",
    "FT07"
   ],
-  "study_type_hint": "other",
-  "note": "Guinea-pig motor activity effects on neuron soma; animal, no immune measure"
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Guinea pigs; neuron soma dimensions"
  },
  {
   "record_id": "FS-015740",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT04",
   "secondary_codes": [],
-  "study_type_hint": "cross_sectional_resting",
-  "note": "Diurnal cortisol rhythm, shift workers/blind; no exercise"
+  "study_type_hint": "other",
+  "note": "Diurnal cortisol/eosinophils; no exercise"
  }
 ]

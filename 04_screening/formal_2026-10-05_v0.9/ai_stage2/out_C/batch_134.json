@@ -1,0 +1,326 @@
+[
+ {
+  "record_id": "FS-006520",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Trial protocol, no results; future-tense aims"
+ },
+ {
+  "record_id": "FS-006521",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Cross-sectional performance vs food allergy; no exercise bout"
+ },
+ {
+  "record_id": "FS-006522",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Downhill bout, IL-6/CRP, placebo arm separates exercise"
+ },
+ {
+  "record_id": "FS-006523",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Idiopathic inflammatory myopathy patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-006524",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "8-wk training; biomarker sampling timing unstated"
+ },
+ {
+  "record_id": "FS-006525",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exhaustive bout, IFN-gamma/lymphocytes/CD4:8, placebo arm"
+ },
+ {
+  "record_id": "FS-006526",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Troponin/CK/myoglobin/creatinine only; no immune measure"
+ },
+ {
+  "record_id": "FS-006527",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Crossover diets both with bout; IL-6/TNF-a pre/post"
+ },
+ {
+  "record_id": "FS-006528",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Crohn's disease patients; clinical cohort, no immune measure"
+ },
+ {
+  "record_id": "FS-006530",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cfDNA post-bout kinetics; immune-homeostasis framing, adjudicate"
+ },
+ {
+  "record_id": "FS-006534",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cfDNA cell origins, cytokines, pre/post acute bouts weeks 0/12"
+ },
+ {
+  "record_id": "FS-006535",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Stress-test bout, CRP/cytokines/blood count, placebo arm"
+ },
+ {
+  "record_id": "FS-006536",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-wk RT, CRP/TNF-a, sample 48 h post final session"
+ },
+ {
+  "record_id": "FS-006537",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Tumor-bearing mice plus in-vitro tumor cells; no human"
+ },
+ {
+  "record_id": "FS-006539",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Half-marathon bout, PBMC scRNA-seq, pre/post samples"
+ },
+ {
+  "record_id": "FS-006542",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Resistant hypertension patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-006545",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "120-min bout, salivary IgA before/after"
+ },
+ {
+  "record_id": "FS-006546",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Multiple myeloma patients post treatment; clinical cohort"
+ },
+ {
+  "record_id": "FS-006547",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Competitive match, salivary IgA 48 h; baseline unclear"
+ },
+ {
+  "record_id": "FS-006548",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Training bout, IL-6/IL-10/TNF-a; crossover recovery arms"
+ },
+ {
+  "record_id": "FS-006550",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "1-h heat run, cytokines/LBP/sCD14, placebo crossover"
+ },
+ {
+  "record_id": "FS-006551",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T1DM plus separable healthy controls; cycle bout, EPC/cytokines"
+ },
+ {
+  "record_id": "FS-006552",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Oesophageal cancer patients on chemotherapy; clinical cohort"
+ },
+ {
+  "record_id": "FS-006554",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Muscle interstitial proteome post-bout; antimicrobial CAMP"
+ },
+ {
+  "record_id": "FS-006555",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "FSHD muscular dystrophy patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-006556",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mice with AAV knockouts; no human data"
+ },
+ {
+  "record_id": "FS-006559",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Pregnancy cohort; training snapshots, cytokines; timing unclear"
+ },
+ {
+  "record_id": "FS-006560",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycling vs passive heat, PBMC autophagy/IL-6, older adults"
+ },
+ {
+  "record_id": "FS-006562",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Downhill bouts, CRP/IL-6, placebo-controlled supplement"
+ },
+ {
+  "record_id": "FS-006563",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Mast-cell histamine signaling in muscle; bout details to verify"
+ },
+ {
+  "record_id": "FS-006565",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Biopsy 1 d post bout, pre/post training; WAT inflammation omics"
+ },
+ {
+  "record_id": "FS-006566",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "EV miRNA/proteomics; no named immune measure or immune aim"
+ },
+ {
+  "record_id": "FS-006567",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "105-km race, IL-6/IL-10/IL-1Ra pre/post"
+ },
+ {
+  "record_id": "FS-006569",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HI vs MI bout, T-cell proliferation, baseline plus post"
+ },
+ {
+  "record_id": "FS-006570",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Atherosclerosis strata with separable CACS=0 controls; cytokines"
+ },
+ {
+  "record_id": "FS-006573",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "50-km race, PBMC subsets/paracrine function, pre/post"
+ },
+ {
+  "record_id": "FS-006574",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Creatinine/rhabdomyolysis markers only; no immune measure"
+ },
+ {
+  "record_id": "FS-006575",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "10-km time trial, leukocyte counts, placebo crossover"
+ },
+ {
+  "record_id": "FS-006576",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Elderly COPD patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-006577",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Erratum; not original research"
+ }
+]

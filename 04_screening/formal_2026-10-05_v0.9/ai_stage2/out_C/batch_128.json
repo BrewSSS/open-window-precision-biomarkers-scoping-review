@@ -1,0 +1,339 @@
+[
+ {
+  "record_id": "FS-006178",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "lumbar spine pathology surgical cohort; clinical population; muscle omics no immune objective"
+ },
+ {
+  "record_id": "FS-006180",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ME/CFS patients + controls; healthy stratum separable; immune scRNA-seq post-exercise"
+ },
+ {
+  "record_id": "FS-006181",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "animal mechanistic study (murine FAPs/Musclin); no human data"
+ },
+ {
+  "record_id": "FS-006182",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT05",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "doping prevalence; urine at race start only; no post-cessation sample, no immune measure"
+ },
+ {
+  "record_id": "FS-006183",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T2D + overweight controls; GDF15/UPR markers only, no immune measure"
+ },
+ {
+  "record_id": "FS-006184",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "healthy men; sEV proteome pre/post bout; innate immune proteins/DAMPs identified"
+ },
+ {
+  "record_id": "FS-006185",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CFU-GM progenitors post-exercise; normal donors; baseline present"
+ },
+ {
+  "record_id": "FS-006186",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "fucoidan placebo crossover; salivary IgA/lysozyme/lactoferrin; acute exercise response"
+ },
+ {
+  "record_id": "FS-006187",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "older adults (83 y); cycling +/- IHHE; IL-6/CRP; control arm separable"
+ },
+ {
+  "record_id": "FS-006190",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cyclists; ozone + polyphenol vs placebo; IL-6/IL-10/TNF-alpha pre/post"
+ },
+ {
+  "record_id": "FS-006191",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "footballers supplement vs control periods; post-match CRP contrast exists"
+ },
+ {
+  "record_id": "FS-006192",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "almond crossover; CRP/CK after downhill run; overweight adults 35 y"
+ },
+ {
+  "record_id": "FS-006193",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "in-silico IL-6/GLP-1 model; no original human data"
+ },
+ {
+  "record_id": "FS-006194",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "renal hemodynamics study; NGAL as kidney-injury marker; no immune measure"
+ },
+ {
+  "record_id": "FS-006195",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "breath VOC metabolomics; no immune objective or eligible immune measure"
+ },
+ {
+  "record_id": "FS-006196",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03",
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "in-vitro IgE assays on wheat lines; allergic patients; no exercise bout"
+ },
+ {
+  "record_id": "FS-006197",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "bed rest countermeasure; resting pre/post PBMC respiration; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-006198",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "narrative review; neutrophils and breast cancer"
+ },
+ {
+  "record_id": "FS-006199",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "mean-2SD below 18 (5 y at 31+/-13); no stated range; WBC counts otherwise eligible"
+ },
+ {
+  "record_id": "FS-006200",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT05",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "propranolol chronotropy; leukocyte receptors pre-dose only; no post-exercise sample"
+ },
+ {
+  "record_id": "FS-006201",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "two 120-min games 3 d apart; lymphocyte/leukocyte counts; placebo crossover; adults 20 y"
+ },
+ {
+  "record_id": "FS-006202",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric bout; leukocytes/MCP-1 to 72 h; placebo crossover; healthy adults"
+ },
+ {
+  "record_id": "FS-006203",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "hemodialysis patients; cross-sectional phase angle; no bout immune sampling"
+ },
+ {
+  "record_id": "FS-006204",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "MGUS/SMM blood-cancer patients; training pre/post resting; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-006206",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mice swim training; atrial remodelling/macrophages; no human data"
+ },
+ {
+  "record_id": "FS-006209",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "boxers; supplement groups; salivary IgA/lactoferrin; pre/post training baseline"
+ },
+ {
+  "record_id": "FS-006211",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "pain sensitivity outcomes after eccentric damage; no immune measure"
+ },
+ {
+  "record_id": "FS-006212",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "sedentary female students; no age data; cfDNA/IL-6 post-bout otherwise eligible"
+ },
+ {
+  "record_id": "FS-006213",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "FODMAP diet crossover; sCD14/CRP pre/post run; pre-exercise baseline present"
+ },
+ {
+  "record_id": "FS-006214",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cfDNA around squat protocol; pre/mid/post draws; immune-response framing"
+ },
+ {
+  "record_id": "FS-006215",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age 26.9+/-5.5; mean-2SD 15.9 below 18; no stated range; EV miRNA immune pathways"
+ },
+ {
+  "record_id": "FS-006216",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "monocyte CCR2/macrophage CD86/CD206 post-bout; active vs low-active; serial samples"
+ },
+ {
+  "record_id": "FS-006217",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exercise before influenza vaccine; antibody titres; seated comparator; older adults"
+ },
+ {
+  "record_id": "FS-006218",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "serum proteome; complement C3/haptoglobin/IgM; follicular vs luteal bouts"
+ },
+ {
+  "record_id": "FS-006220",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "college-age 22.1+/-3.1; mean-2SD 15.9 below 18; WBC/CRP post-bout otherwise eligible"
+ },
+ {
+  "record_id": "FS-006222",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "neutrophil/PBMC antioxidant enzymes and MPO; basal baseline; run vs burpee bouts"
+ },
+ {
+  "record_id": "FS-006223",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "probiotic placebo crossover; immune parameters/cytokines; post-run blood"
+ },
+ {
+  "record_id": "FS-006228",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "food-allergic patients; resting specific IgE profiles; no exercise bout administered"
+ },
+ {
+  "record_id": "FS-006229",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ibuprofen vs placebo crossover; IL-6/sIL-6R/sgp130 pre/30 min/post"
+ },
+ {
+  "record_id": "FS-006230",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "NZBC vs placebo; PBMC TLR4/NF-kB/HSPs; run in heat; pre/post/1 h/4 h"
+ }
+]

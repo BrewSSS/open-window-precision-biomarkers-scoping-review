@@ -3,27 +3,25 @@
   "record_id": "FS-015026",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT01",
-  "secondary_codes": [
-   "FT04"
-  ],
+  "secondary_codes": [],
   "study_type_hint": "other",
-  "note": "Essay on science vs practice; no original exercise-immune data"
+  "note": "Lecture/commentary on science vs practice"
  },
  {
   "record_id": "FS-015048",
-  "disposition": "ADVANCE",
+  "disposition": "AWAITING_CLASSIFICATION",
   "primary_code": "",
   "secondary_codes": [],
   "study_type_hint": "acute_bout_CoreA",
-  "note": "Eccentric bout, neutrophil respiratory burst in humans; abstract empty"
+  "note": "Empty abstract; neutrophil burst after eccentric bout"
  },
  {
   "record_id": "FS-015049",
-  "disposition": "ADVANCE",
+  "disposition": "AWAITING_CLASSIFICATION",
   "primary_code": "",
   "secondary_codes": [],
   "study_type_hint": "acute_bout_CoreA",
-  "note": "Exercise-induced muscle damage, neutrophil function; title eligible, abstract empty"
+  "note": "Empty abstract; neutrophil function after muscle damage"
  },
  {
   "record_id": "FS-015076",
@@ -33,7 +31,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "CIITA isoforms in fibroblast/lymphocyte cell lines; in-vitro only"
+  "note": "Cell-line CIITA isoforms; in vitro; no exercise"
  },
  {
   "record_id": "FS-015090",
@@ -43,7 +41,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "HeLa mitosis myosin phosphorylation; in-vitro, no exercise"
+  "note": "HeLa cells; myosin phosphorylation; no exercise"
  },
  {
   "record_id": "FS-015091",
@@ -53,17 +51,15 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Mouse cerebellar granule-cell migration; animal/in-vitro"
+  "note": "Bdnf-/- mice; granule cell migration; no exercise"
  },
  {
   "record_id": "FS-015097",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT01",
-  "secondary_codes": [
-   "FT07"
-  ],
+  "secondary_codes": [],
   "study_type_hint": "other",
-  "note": "Narrative review of exercise hemorheology; no original immune data"
+  "note": "Review; exercise hemorheology triphasic"
  },
  {
   "record_id": "FS-015098",
@@ -73,7 +69,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "100-liter transient transfection antibody production; in-vitro"
+  "note": "Bioreactor transfection method; no exercise"
  },
  {
   "record_id": "FS-015100",
@@ -82,19 +78,16 @@
   "secondary_codes": [
    "FT07"
   ],
-  "study_type_hint": "other",
-  "note": "Rat muscle ceramide metabolism, glucose uptake; animal, no immune measure"
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Rat muscles; ceramide/glucose; no human data"
  },
  {
   "record_id": "FS-015107",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT01",
-  "secondary_codes": [
-   "FT03",
-   "FT04"
-  ],
+  "secondary_codes": [],
   "study_type_hint": "other",
-  "note": "Narrative review of urticarias; no exercise-immune study"
+  "note": "Review; urticaria variants"
  },
  {
   "record_id": "FS-015118",
@@ -104,28 +97,23 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Asthma patients, inhaled LTD4 challenge; clinical cohort, no exercise bout"
+  "note": "Asthmatic patients; LTD4 challenge, not exercise"
  },
  {
   "record_id": "FS-015135",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT01",
-  "secondary_codes": [
-   "FT02",
-   "FT04"
-  ],
+  "secondary_codes": [],
   "study_type_hint": "other",
-  "note": "Review of ATM DNA-damage signalling; no original human exercise data"
+  "note": "Review; ATM/DNA damage"
  },
  {
   "record_id": "FS-015144",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT01",
-  "secondary_codes": [
-   "FT07"
-  ],
+  "secondary_codes": [],
   "study_type_hint": "other",
-  "note": "Review, exercise oxidative stress/antioxidants; no original immune measures"
+  "note": "Explicit review; antioxidants/oxidative stress"
  },
  {
   "record_id": "FS-015147",
@@ -135,7 +123,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "U937 cell-line PKC activation/apoptosis; in-vitro only"
+  "note": "U937 cells in vitro; no exercise"
  },
  {
   "record_id": "FS-015152",
@@ -145,39 +133,31 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "oxLDL antibody EIA preparation methods; in-vitro, no exercise"
+  "note": "Assay method; oxLDL; no exercise"
  },
  {
   "record_id": "FS-015158",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT01",
-  "secondary_codes": [
-   "FT08"
-  ],
+  "secondary_codes": [],
   "study_type_hint": "other",
-  "note": "Narrative review, vitamins C/E and exercise; no original contrast"
+  "note": "Review; vitamins E/C and exercise"
  },
  {
   "record_id": "FS-015164",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT01",
-  "secondary_codes": [
-   "FT03",
-   "FT04"
-  ],
+  "secondary_codes": [],
   "study_type_hint": "other",
-  "note": "Review of mast cells/basophils in asthma; no exercise-immune study"
+  "note": "Review; mast cells/basophils"
  },
  {
   "record_id": "FS-015196",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT01",
-  "secondary_codes": [
-   "FT03",
-   "FT04"
-  ],
+  "secondary_codes": [],
   "study_type_hint": "other",
-  "note": "Review of inherited fatty-acid oxidation defects; clinical cohorts"
+  "note": "Review; fatty-acid metabolism defects"
  },
  {
   "record_id": "FS-015205",
@@ -187,7 +167,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Harlequin-FISH cytogenetics in cultured lymphocytes; in-vitro methods"
+  "note": "FISH method; lymphocyte cultures; no exercise"
  },
  {
   "record_id": "FS-015213",
@@ -197,17 +177,15 @@
    "FT07"
   ],
   "study_type_hint": "other",
-  "note": "Plasmapheresis plasma collection in donors; no exercise exposure"
+  "note": "Plasmapheresis method; no exercise exposure"
  },
  {
   "record_id": "FS-015214",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT01",
-  "secondary_codes": [
-   "FT04"
-  ],
+  "secondary_codes": [],
   "study_type_hint": "other",
-  "note": "Narrative review of nitric oxide biology; no original exercise-immune data"
+  "note": "Review; nitric oxide biology"
  },
  {
   "record_id": "FS-015254",
@@ -217,28 +195,25 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "PHA-stimulated lymphocyte pRb phosphorylation assays; in-vitro, no exercise"
+  "note": "PHA-stimulated lymphocytes in vitro; no exercise"
  },
  {
   "record_id": "FS-015262",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT01",
-  "secondary_codes": [
-   "FT02",
-   "FT07"
-  ],
+  "secondary_codes": [],
   "study_type_hint": "other",
-  "note": "Review, reproductive axis and negative energy balance; no immune measure"
+  "note": "Review; energy balance/reproduction"
  },
  {
   "record_id": "FS-015279",
   "disposition": "EXCLUDE_TA",
-  "primary_code": "FT04",
+  "primary_code": "FT02",
   "secondary_codes": [
-   "FT07"
+   "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Ion-chromatography sulphate assay validation; no exercise, no immune measure"
+  "note": "Chromatography method; no exercise"
  },
  {
   "record_id": "FS-015282",
@@ -248,7 +223,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Mitotic spindle kinase IAK1 in fibroblasts/yeast; in-vitro"
+  "note": "Fibroblast kinase; no exercise"
  },
  {
   "record_id": "FS-015322",
@@ -258,7 +233,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "prk kinase cloning in cell lines and tumor tissue; in-vitro"
+  "note": "prk kinase/cell lines; no exercise"
  },
  {
   "record_id": "FS-015328",
@@ -268,7 +243,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Rad51 nuclear foci in PHA-stimulated lymphocytes; in-vitro"
+  "note": "PHA-stimulated PBLs in vitro; no exercise"
  },
  {
   "record_id": "FS-015352",
@@ -276,7 +251,7 @@
   "primary_code": "FT04",
   "secondary_codes": [],
   "study_type_hint": "other",
-  "note": "Variance-components methods for leucocyte IFN receptor; no exercise"
+  "note": "Variance-component method; no exercise exposure"
  },
  {
   "record_id": "FS-015356",
@@ -286,7 +261,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Cysteamine inhibition of mitogen-activated PBL signalling; in-vitro"
+  "note": "Lymphocyte activation in vitro; no exercise"
  },
  {
   "record_id": "FS-015357",
@@ -296,7 +271,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Fc gamma RI promoter regulation in U937 cells; in-vitro"
+  "note": "U937 cells in vitro; no exercise"
  },
  {
   "record_id": "FS-015363",
@@ -306,7 +281,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "CDK6 regulation in mitogen-stimulated T lymphocytes; in-vitro"
+  "note": "T-cells in vitro; cdk6; no exercise"
  },
  {
   "record_id": "FS-015399",
@@ -316,7 +291,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "TCA3 gene regulation in mast cells, Fc epsilon RI; in-vitro"
+  "note": "Mast-cell cultures in vitro; no exercise"
  },
  {
   "record_id": "FS-015406",
@@ -326,7 +301,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "IFN-gamma induced cPLA2 in cultured cell lines; in-vitro"
+  "note": "Bronchial epithelial cells in vitro; no exercise"
  },
  {
   "record_id": "FS-015412",
@@ -336,18 +311,15 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Tyrosine phosphorylation in IL-2 driven T-lymphoblasts; in-vitro"
+  "note": "T-lymphoblasts in vitro; no exercise"
  },
  {
   "record_id": "FS-015418",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT01",
-  "secondary_codes": [
-   "FT02",
-   "FT04"
-  ],
+  "secondary_codes": [],
   "study_type_hint": "other",
-  "note": "Review of mutation/chromosome alteration mechanisms; no exercise-immune study"
+  "note": "Review; mutation mechanisms"
  },
  {
   "record_id": "FS-015439",
@@ -357,7 +329,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Fibroblast cell-density proliferation control, pRB; in-vitro"
+  "note": "Fibroblast cultures in vitro; no exercise"
  },
  {
   "record_id": "FS-015452",
@@ -367,7 +339,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Automated micronucleus assay after in-vitro irradiation; methods"
+  "note": "Micronucleus assay; irradiated cultures; no exercise"
  },
  {
   "record_id": "FS-015470",
@@ -377,7 +349,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "CSF-1 regulated S-phase genes in mouse macrophages; animal in-vitro"
+  "note": "Bone-marrow macrophages in vitro; no exercise"
  },
  {
   "record_id": "FS-015471",
@@ -387,16 +359,16 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Neural crest monoclonal antibodies in quail/chick embryos; animal in-vitro"
+  "note": "Neural crest cultures; no exercise"
  },
  {
   "record_id": "FS-015474",
   "disposition": "EXCLUDE_TA",
-  "primary_code": "FT02",
+  "primary_code": "FT04",
   "secondary_codes": [
-   "FT04"
+   "FT07"
   ],
   "study_type_hint": "other",
-  "note": "Electron microscopy of developing tooth cementum; no exercise or immune data"
+  "note": "Tooth cementum histology; no exercise"
  }
 ]

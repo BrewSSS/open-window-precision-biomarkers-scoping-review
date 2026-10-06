@@ -1,0 +1,340 @@
+[
+ {
+  "record_id": "FS-005538",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Four cycling trials; leukocyte/lymphocyte counts pre/immediate/1h"
+ },
+ {
+  "record_id": "FS-005539",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Resistance bouts, hypoxia-hyperoxia vs normoxia; IL-6/CK pre/0/24/48h"
+ },
+ {
+  "record_id": "FS-005540",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Author profile/interview piece; no research data"
+ },
+ {
+  "record_id": "FS-005542",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Seropositive RA patients; 10-wk HIIT resting T-cell metabolism, no bout sample"
+ },
+ {
+  "record_id": "FS-005543",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "COVID-vaccine safety in WDEIA patients and controls; no exercise bout"
+ },
+ {
+  "record_id": "FS-005544",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "PCOS patients only; 20-wk program, fasting hs-CRP pre/post program"
+ },
+ {
+  "record_id": "FS-005545",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 29.4+/-5.9, mean-2SD=17.6<18, no stated range; otherwise qualifying"
+ },
+ {
+  "record_id": "FS-005547",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "NSCLC cell-line irradiation study; no humans, no exercise"
+ },
+ {
+  "record_id": "FS-005549",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "HIV patients; CPET/ESE hemodynamics and CD4 counts, no exercise-immune design"
+ },
+ {
+  "record_id": "FS-005550",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age only 'physically active students'; cycling bouts, IL-6/TNF-alpha measured"
+ },
+ {
+  "record_id": "FS-005551",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 22+/-0.4 SEM only; SEM does not establish adult; otherwise qualifying"
+ },
+ {
+  "record_id": "FS-005552",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon; differential WBC, haptoglobin pre/post and 24h serial"
+ },
+ {
+  "record_id": "FS-005553",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Magnesium homeostasis; PBMC used for Mg content only, no immune measure"
+ },
+ {
+  "record_id": "FS-005554",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Post-COVID athletes' CPET/spirometry; no immune measures"
+ },
+ {
+  "record_id": "FS-005555",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Alzheimer's patients; monocyte single-cell/bulk RNA-seq, no healthy stratum"
+ },
+ {
+  "record_id": "FS-005557",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "15-min ergometer bout; microchannel rheology and WBC adhesion only, no immune measure"
+ },
+ {
+  "record_id": "FS-005558",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ages 24+/-4 and 28+/-10, mean-2SD<18 both groups; CRP/CK measured"
+ },
+ {
+  "record_id": "FS-005559",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Asthma-provider belief survey; no participant exercise exposure or immune measures"
+ },
+ {
+  "record_id": "FS-005562",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Colorectal cancer surgery cohort; CPET risk prediction, no exercise-immune design"
+ },
+ {
+  "record_id": "FS-005563",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Treated coronary-disease patients; step/walk fitness tests, no immune measure"
+ },
+ {
+  "record_id": "FS-005564",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Older adults; cardio and resistance bouts, T-cell subsets pre/post/1h"
+ },
+ {
+  "record_id": "FS-005565",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Chest-pain patients; dobutamine stress echo and hs-CRP, no exercise bout"
+ },
+ {
+  "record_id": "FS-005568",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rat myocardial-infarction model and HUVEC in vitro; no humans"
+ },
+ {
+  "record_id": "FS-005569",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Post-COVID isolation salivary study; no exercise bout, sIgA/AMPs measured"
+ },
+ {
+  "record_id": "FS-005570",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Moderate-to-severe asthma patients; 12-wk CLE vs HIIT, no healthy stratum"
+ },
+ {
+  "record_id": "FS-005571",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Basic combat training course; ORM/CRP pre/post course, no bout-tied sampling"
+ },
+ {
+  "record_id": "FS-005572",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Pancreatic cancer mouse models; human samples correlational only, no exercise protocol"
+ },
+ {
+  "record_id": "FS-005573",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise EV-eNAMPT/NAD-plus biology; no immune measure"
+ },
+ {
+  "record_id": "FS-005574",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 19.7+/-1.2, mean-2SD=17.3<18, no stated range; hepcidin/iron measured"
+ },
+ {
+  "record_id": "FS-005576",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon; ASC-speck inflammasome particles pre/immediate/24-58h, endothelial assays"
+ },
+ {
+  "record_id": "FS-005577",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Heat-test bouts pre/post acclimation; IL-6 and hepcidin measured"
+ },
+ {
+  "record_id": "FS-005578",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycling trials, NAC vs placebo; CRP and oxidative biomarkers, OC groups"
+ },
+ {
+  "record_id": "FS-005580",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "In vitro monocyte/THP1 trained-immunity; no exercise, no in-vivo humans"
+ },
+ {
+  "record_id": "FS-005581",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "15-year-old boy case report; strawberry-exercise allergy, no qualifying bout"
+ },
+ {
+  "record_id": "FS-005582",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Trial rationale-and-design protocol; decompensated heart-failure patients"
+ },
+ {
+  "record_id": "FS-005583",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "4-wk training plus sauna; hsCRP/CBC/sIgA pre/post program only, no bout"
+ },
+ {
+  "record_id": "FS-005584",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse exhaustive-swimming model and RAW264.7 cells; no humans"
+ },
+ {
+  "record_id": "FS-005585",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "EIMD transcriptomics; anti-inflammation framing only, no immune objective or candidates"
+ },
+ {
+  "record_id": "FS-005587",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Trail races; CRP/CK pre/post, elastography focus"
+ },
+ {
+  "record_id": "FS-005588",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rat offspring gestational-hypertension model; no human participants"
+ }
+]

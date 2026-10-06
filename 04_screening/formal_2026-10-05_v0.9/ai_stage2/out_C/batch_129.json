@@ -1,0 +1,335 @@
+[
+ {
+  "record_id": "FS-006232",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "young players, no age data; leukocytes/IL-6/CRP to 72 h; bouts plus control"
+ },
+ {
+  "record_id": "FS-006233",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "match transcriptomics; immune-system enrichment; pre/post/24 h; elite athletes"
+ },
+ {
+  "record_id": "FS-006234",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exercise +/- hot-water immersion crossover; IL-6; inactive middle-aged adults"
+ },
+ {
+  "record_id": "FS-006235",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "live-fire drill as physical bout; SIgA pre/post/30 min; exposure borderline"
+ },
+ {
+  "record_id": "FS-006236",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle transcriptomics; inflammatory pathways post-hoc only; no immune objective"
+ },
+ {
+  "record_id": "FS-006237",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-wk resistance RCT; resting IL-6/IGF-1 pre/post; no bout sampling"
+ },
+ {
+  "record_id": "FS-006239",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "AF vs healthy cyclists; proteomics pre/during/post bout; immune modulation proteins"
+ },
+ {
+  "record_id": "FS-006240",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIE; CD34+/Pax7+ muscle infiltration; placebo crossover; immune link borderline"
+ },
+ {
+  "record_id": "FS-006241",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CLL patients; NK mobilization/ADCC ex vivo; clinical cohort"
+ },
+ {
+  "record_id": "FS-006242",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon; sCRP/CK/LDH pre/post/48 h; recreational athletes"
+ },
+ {
+  "record_id": "FS-006243",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T2D + controls 50-74 y; sCD14/TNF-alpha/IL-6 after exercise-heat"
+ },
+ {
+  "record_id": "FS-006244",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "drop-jump damage protocol; hypoxia vs normoxia; CRP/CK to 72 h; women 18-35"
+ },
+ {
+  "record_id": "FS-006246",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "8-wk circuit training; resting hs-CRP pre/post only; no bout sampling"
+ },
+ {
+  "record_id": "FS-006247",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "serum miRNAs after strength/sprint sessions; inflammation-associated panel; serial samples"
+ },
+ {
+  "record_id": "FS-006248",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "ALL patients during induction; IL-15 pre/post training; clinical cohort"
+ },
+ {
+  "record_id": "FS-006249",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "PDAC patients on neoadjuvant therapy; plasma omics pre/post programme"
+ },
+ {
+  "record_id": "FS-006250",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "plasma proteomics/metabolomics at altitude running; immune proteins; timing vague"
+ },
+ {
+  "record_id": "FS-006251",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "NAFLD patients; TRPV4/CYP2E1 only; training pre/post; no immune measure"
+ },
+ {
+  "record_id": "FS-006252",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ultra-trail glycaemia/CPK/LDH; no immune measure"
+ },
+ {
+  "record_id": "FS-006253",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "T1D patients; postprandial walking; meal-anchored sampling; clinical cohort"
+ },
+ {
+  "record_id": "FS-006254",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "sarcoidosis patients; CPET/spirometry staging; no bout immune sampling"
+ },
+ {
+  "record_id": "FS-006255",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "4.8-h cycling; CRP plus coagulation panel; pre/post/24/48 h"
+ },
+ {
+  "record_id": "FS-006256",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "6-day training block; resting pre/post cytokines/immune ratios; no bout sample"
+ },
+ {
+  "record_id": "FS-006257",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "PCC patients + separable controls; 3 exercise trials; inflammatory markers"
+ },
+ {
+  "record_id": "FS-006258",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "garlic crossover; glycogen/mitochondrial transcripts only; no immune measure"
+ },
+ {
+  "record_id": "FS-006259",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "pooled heat-stress trials; sCD14/SIR-profile cytokines pre/post; core temperature"
+ },
+ {
+  "record_id": "FS-006260",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "public microarray reanalysis; innate immune signatures post-RE; provenance/timing unclear"
+ },
+ {
+  "record_id": "FS-006262",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "collagen RCT; drop-jump bouts with hsCRP/CK to 48 h; placebo contrast"
+ },
+ {
+  "record_id": "FS-006263",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exercise-mobilized gamma-delta T cells; healthy donors; 20-min graded bout"
+ },
+ {
+  "record_id": "FS-006264",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "bipolar disorder inpatients; PBMC respiration/CPET; clinical cohort"
+ },
+ {
+  "record_id": "FS-006266",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-wk resistance RCT; resting IL-6/IGF-1 pre/post; no bout sampling"
+ },
+ {
+  "record_id": "FS-006267",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse exercise plus in-vitro neutrophil assays; no human in-vivo data"
+ },
+ {
+  "record_id": "FS-006268",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "cross-sectional PA/inflammation associations; single resting draw; no bout"
+ },
+ {
+  "record_id": "FS-006272",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "young males, no age data; s-IgA intensity/duration crossover; baseline+post"
+ },
+ {
+  "record_id": "FS-006273",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIT bout + 16-wk RCT; IL-6/adiponectin acute response; overweight women"
+ },
+ {
+  "record_id": "FS-006274",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "computational signalling network model from published studies; no new human data"
+ },
+ {
+  "record_id": "FS-006275",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "two identical bouts; IL-6/8/10/15 pre to 24 h; individualized regulation"
+ },
+ {
+  "record_id": "FS-006279",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-wk walking; IBS + separable non-IBS; cf-mtDNA/cytokines resting pre/post"
+ },
+ {
+  "record_id": "FS-006280",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "MS + controls; NK/lymphocyte redistribution after ergometer bout; strata separable"
+ },
+ {
+  "record_id": "FS-006281",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HRW crossover; CK/soreness/performance only; no immune measure"
+ }
+]

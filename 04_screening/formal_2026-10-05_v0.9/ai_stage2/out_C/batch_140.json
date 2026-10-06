@@ -1,0 +1,335 @@
+[
+ {
+  "record_id": "FS-006883",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "pregnant cohort; CPET/HIIT urine proteome with neutrophil degranulation hits; maternal ages unstated"
+ },
+ {
+  "record_id": "FS-006885",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "salivary IL-6/TNF/ROS pre/post repeated dive sessions; diver ages unstated"
+ },
+ {
+  "record_id": "FS-006887",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "post-downhill MRI muscle inflammation unspecified; participant ages unstated"
+ },
+ {
+  "record_id": "FS-006888",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CTRP3/9, FSTL1 after cycling vs control; ages unstated; mediator status arguable"
+ },
+ {
+  "record_id": "FS-006889",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ME/CFS + separable sedentary controls; immune proteomics around 2 CPETs; ages unstated"
+ },
+ {
+  "record_id": "FS-006891",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6 blockade vs placebo around 2h exercise; 25.2\u00b13y; IL-1RA/IL-10 measured"
+ },
+ {
+  "record_id": "FS-006893",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle RNA-seq around bout; innate-immunity/inflammation terms post-hoc enrichment only"
+ },
+ {
+  "record_id": "FS-006894",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "heat acclimation; NGAL/creatinine kidney biomarkers; adult ages unstated"
+ },
+ {
+  "record_id": "FS-006895",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "pre/post-COVID CPET performance only; no immune measure or sampling"
+ },
+ {
+  "record_id": "FS-006896",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "mechanical-loading models; human tissue only from OA patients; no human bout"
+ },
+ {
+  "record_id": "FS-006897",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cfDNA around supervised HIIT bouts and PET; athlete ages unstated"
+ },
+ {
+  "record_id": "FS-006899",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HRV with IL-6/IL-1/TNF panel after step test to exertion; ages unstated"
+ },
+ {
+  "record_id": "FS-006900",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "correction/erratum notice, not original research"
+ },
+ {
+  "record_id": "FS-006902",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "JoVE methods protocol article; no original study data"
+ },
+ {
+  "record_id": "FS-006907",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "U-20 squad; adulthood not established; urinary metabolomics lacks immune objective"
+ },
+ {
+  "record_id": "FS-006909",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "habitual-activity cross-section, salivary IL-6; background pattern; ages unstated"
+ },
+ {
+  "record_id": "FS-006910",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "hs-CRP after game days by menstrual phase; athlete ages unstated"
+ },
+ {
+  "record_id": "FS-006914",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "MPO+ myeloid cells in muscle biopsies; mean-2SD 16.4 below 18, no range"
+ },
+ {
+  "record_id": "FS-006917",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "chronic low back pain clinical cohort; sucrose-beverage analysis; no exercise bout"
+ },
+ {
+  "record_id": "FS-006918",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "type 2 diabetes cohort; 4-week program resting SII; no identifiable bout"
+ },
+ {
+  "record_id": "FS-006919",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "repeated sprints; CRP measured with 48h pre-baseline; ages unstated"
+ },
+ {
+  "record_id": "FS-006921",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT05",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eicosanoids sampled at rest and peak exercise only; no post-cessation sample"
+ },
+ {
+  "record_id": "FS-006922",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "COPD cohort only; endothelial EVs; no separable healthy stratum"
+ },
+ {
+  "record_id": "FS-006923",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Graves' patients + separable controls; IL-6/IL-15/TNF post-HIIE; ages unstated"
+ },
+ {
+  "record_id": "FS-006925",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "LCN2 after acute HIIE and 4-wk HIIT RCT; 45-84y; baseline and 0-3h samples"
+ },
+ {
+  "record_id": "FS-006927",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "probiotic RCT with placebo arm; cytokines/LPS pre-post marathon; ages unstated"
+ },
+ {
+  "record_id": "FS-006928",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "pre/post cycling serum with IL-6 applied to cells; adult ages unstated"
+ },
+ {
+  "record_id": "FS-006929",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "leukocyte subsets post-exhaustive cycling vs control; mean-2SD 17.05 below 18"
+ },
+ {
+  "record_id": "FS-006930",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6/CRP measured around cycling bout; 22\u00b11y; crossover with baselines"
+ },
+ {
+  "record_id": "FS-006931",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "axSpA + separable controls; IL-6/BMP-7 post-HIIT; ages unstated"
+ },
+ {
+  "record_id": "FS-006932",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "C57BL/6 mouse atrial-fibrillation exercise model; no human data"
+ },
+ {
+  "record_id": "FS-006933",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "mouse macrophage mechanism; human monocytes active-vs-sedentary cross-section; ages unstated"
+ },
+ {
+  "record_id": "FS-006934",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "POMC-sEV endocrine study; leukocyte-marker EVs; adult ages unstated"
+ },
+ {
+  "record_id": "FS-006935",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cfnDNA/cfmtDNA with MIP-1a/IP-10 after downhill run; mean-2SD 13.5 below 18"
+ },
+ {
+  "record_id": "FS-006936",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "mouse trained-immunity mechanism; human data retrospective MI-patient outcomes only"
+ },
+ {
+  "record_id": "FS-006938",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T-cell/PBMC bioenergetics rest, post, 2h after 2h cycling; 21\u00b11y"
+ },
+ {
+  "record_id": "FS-006940",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "training pre/post blood methylome with immune-cell analysis; ages 34/59.8\u00b14.7; no bout (background)"
+ },
+ {
+  "record_id": "FS-006941",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "COPD rehabilitation cohort; 12-wk training blood RNA-seq; clinical population"
+ },
+ {
+  "record_id": "FS-006942",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "salivary HHV-6/7 and serum IL-6 after CE vs IE bouts; ages unstated"
+ },
+ {
+  "record_id": "FS-006944",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "youth soccer players; stated under-18 cohort"
+ }
+]

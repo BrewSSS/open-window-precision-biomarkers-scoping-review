@@ -1,0 +1,340 @@
+[
+ {
+  "record_id": "FS-005489",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "CARDIA fitness cohort; pericardial fat outcome, inflammation covariate only"
+ },
+ {
+  "record_id": "FS-005490",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Soccer match recovery; TBARS/SOD/CK/LDH only, no immune measure"
+ },
+ {
+  "record_id": "FS-005491",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-wk HIIT/MICT; resting T-cell phenotyping pre/post only, no bout"
+ },
+ {
+  "record_id": "FS-005492",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "IBD plus separable non-IBD; 3-day walks, daily cytokines and breath VOCs"
+ },
+ {
+  "record_id": "FS-005494",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "164-km cycling, ibuprofen vs placebo; cytokines and leukocytes pre/post"
+ },
+ {
+  "record_id": "FS-005495",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Theoretical malaria framework; no original human data"
+ },
+ {
+  "record_id": "FS-005496",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Perspective article on golf for cancer survivors; no original data"
+ },
+ {
+  "record_id": "FS-005497",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rat OA model plus in vitro chondrocytes; no human participants"
+ },
+ {
+  "record_id": "FS-005498",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Perspective article, cancer patients; no original data"
+ },
+ {
+  "record_id": "FS-005499",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Resting plasma proteomics athletes vs controls; habitual cross-section, no bout"
+ },
+ {
+  "record_id": "FS-005500",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ultramarathon; NGAL/redox/renal markers only, no immune measure"
+ },
+ {
+  "record_id": "FS-005501",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Men 15-21 y pooled; T-cell phospho-flow, no separable adult stratum"
+ },
+ {
+  "record_id": "FS-005502",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "30-min treadmill bout; urinary PGE2/PGF2alpha, borderline immune-mediator framing"
+ },
+ {
+  "record_id": "FS-005504",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "24 cryostimulation sessions only; no exercise bout, leukocytes measured"
+ },
+ {
+  "record_id": "FS-005505",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Wheat-dependent exercise-induced anaphylaxis patients; in vitro basophil activation"
+ },
+ {
+  "record_id": "FS-005506",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 22.5+/-2.3, mean-2SD=17.9<18, no stated range; otherwise qualifying"
+ },
+ {
+  "record_id": "FS-005507",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cold time-trial with/without HME; plasma/urine cytokines and CC16 pre/post"
+ },
+ {
+  "record_id": "FS-005508",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Three consecutive games; CRP baseline/24/48/72h, cross-bout monitoring"
+ },
+ {
+  "record_id": "FS-005510",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Yo-yo exhaustive test, spirulina vs placebo; MPO/CRP pre/immediate/24h"
+ },
+ {
+  "record_id": "FS-005511",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "UTMB ultramarathon; cardiac and inflammatory biomarkers pre/immediate/7d"
+ },
+ {
+  "record_id": "FS-005512",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIE bout; TNF-alpha/IL-6/IL-10/IL-17 pre/post/1h, cycle phases"
+ },
+ {
+  "record_id": "FS-005513",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "50-km TT, TRAP vs filtered air; IL-6/CRP/IL-10/ICAM-1 pre/post"
+ },
+ {
+  "record_id": "FS-005514",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Expert review of exercise and upper-airway IgA; no original data"
+ },
+ {
+  "record_id": "FS-005516",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Running protocols heat/thermoneutral; IgM/IgA/IgG and EndoCAb pre/post"
+ },
+ {
+  "record_id": "FS-005517",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Incremental treadmill; IL-6, hepcidin, lactoferrin pre/immediate/3h"
+ },
+ {
+  "record_id": "FS-005518",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Exertional heatstroke ICU cohort; retrospective immune-cell counts, no bout protocol"
+ },
+ {
+  "record_id": "FS-005520",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Abstract field empty; cannot assess any dimension"
+ },
+ {
+  "record_id": "FS-005521",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "10-km hot race; WBC/hematocrit pre/post; bare mean age, adult athletes"
+ },
+ {
+  "record_id": "FS-005522",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycle bout; monocyte CCR2/ERK1/2 and macrophage markers PRE/POST/2H"
+ },
+ {
+  "record_id": "FS-005523",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Asthmatic subjects; exercise challenge, neutrophil chemotactic activity, no healthy stratum"
+ },
+ {
+  "record_id": "FS-005524",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review, T-cell/macrophage immunometabolism; no original data"
+ },
+ {
+  "record_id": "FS-005525",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Kidney transplant recipients on immunosuppression; clinical cohort"
+ },
+ {
+  "record_id": "FS-005527",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Running bout, curcumin crossover; leukocytes and cytokines pre/post/1h"
+ },
+ {
+  "record_id": "FS-005528",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "1-h skating bout at altitude; whole-blood RNA-seq, neutrophil signatures"
+ },
+ {
+  "record_id": "FS-005529",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Resistance bout, salbutamol vs placebo; leg IL-6 release, muscle TNF mRNA"
+ },
+ {
+  "record_id": "FS-005530",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Decompensated heart-failure patients; anakinra trial, RPE/dyspnea outcomes"
+ },
+ {
+  "record_id": "FS-005532",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Blood-transfusion doping study; hepcidin/ERFE iron biomarkers, transfusion-tied sampling"
+ },
+ {
+  "record_id": "FS-005533",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Fitness cohort; hsCRP vs sudden cardiac death, no bout-tied sampling"
+ },
+ {
+  "record_id": "FS-005534",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ultramarathon; fecal microbiota/butyrate only, no immune measure"
+ },
+ {
+  "record_id": "FS-005537",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Hamster rhG-CSF granulopoiesis experiment; no human participants"
+ }
+]

@@ -1,0 +1,336 @@
+[
+ {
+  "record_id": "FS-006452",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "EIB patient cohort; salbutamol/ozone crossover; spirometry and FeNO"
+ },
+ {
+  "record_id": "FS-006453",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "RE vs sedentary control crossover; plasma IL-6/IL-10/IL-1RA; PBMC STAT3/SOCS3; age 23.5+-2.7"
+ },
+ {
+  "record_id": "FS-006454",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "renal transplant recipients; adherence outcomes; no immune measure, no bout-tied sampling"
+ },
+ {
+  "record_id": "FS-006455",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "single inclusion-body-myositis case report; clinical disease; no bout-tied immune sampling"
+ },
+ {
+  "record_id": "FS-006458",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age 31.1+-10.2; mean-2SD<18; no range/minimum; colostrum crossover, SIgA/WBC otherwise eligible"
+ },
+ {
+  "record_id": "FS-006459",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute HIIT/MICT; PBMC NAD+ metabolism (immune-cell omics); crossover plus longitudinal; ages unreported"
+ },
+ {
+  "record_id": "FS-006460",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat exercise-injury model; CBD mechanism; no human data"
+ },
+ {
+  "record_id": "FS-006462",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "empty abstract; title suggests IL-15/training commentary"
+ },
+ {
+  "record_id": "FS-006463",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "breast cancer patients; clinical cohort; 12-week WB-EMS pre/post serum"
+ },
+ {
+  "record_id": "FS-006464",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "probiotic vs placebo; marathon; cytokines and LPS; pre/post blood"
+ },
+ {
+  "record_id": "FS-006467",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "multiple sclerosis clinical cohort; 3-week program pre/post kynurenines, neopterin, NLR"
+ },
+ {
+  "record_id": "FS-006468",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "7-mile race; pre/post IL-6, IL-8, IL-10; core temperature; recreational runners"
+ },
+ {
+  "record_id": "FS-006470",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "flat vs downhill running; serum C1q, CDC assays, CRP; samples to 4 days; ages 28+-5"
+ },
+ {
+  "record_id": "FS-006474",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age median [IQR]; IQR does not substitute per v3.1 rule; bout study otherwise plausible"
+ },
+ {
+  "record_id": "FS-006475",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "astaxanthin vs placebo crossover; IL-1b response to exercise test/fireground; ages 34.5+-7.4"
+ },
+ {
+  "record_id": "FS-006477",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "barefoot vs shod running session; pre/post cytokines; biomechanics cohort"
+ },
+ {
+  "record_id": "FS-006479",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age 19.98+-1.17; mean-2SD=17.6<18; no range/minimum; RIPC/WAnT exerkines otherwise eligible"
+ },
+ {
+  "record_id": "FS-006481",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "one-leg eccentric exercise, contralateral control; leukocyte counts pre/24/48/72h; 1986 classic"
+ },
+ {
+  "record_id": "FS-006482",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "supplement vs placebo crossover; rugby match; TNF-a measured (null); CK/LDH; collegiate players"
+ },
+ {
+  "record_id": "FS-006484",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "young 23+-3 age-ambiguous but older 69+-3 stratum separable; PBMC autophagy; temperate/heat bouts"
+ },
+ {
+  "record_id": "FS-006485",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ironman 70.3; T-cell subsets pre/+1d/+2d; flow cytometry"
+ },
+ {
+  "record_id": "FS-006489",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "30-min treadmill in heat, intensity groups incl. quiet control; WBC subsets, IL-3, EPO"
+ },
+ {
+  "record_id": "FS-006491",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "1h cycling at RCP; PBMC/muscle TLR4, NF-kB; IL-6/TNF-a/IL-1b; trained vs untrained"
+ },
+ {
+  "record_id": "FS-006492",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "matched interval vs continuous runs; neutrophils, lymphocytes, NLR, SII; pre/immediate/1h"
+ },
+ {
+  "record_id": "FS-006493",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "330-km mountain ultramarathon; pre/post IL-6, CRP; blood volume; hemolysis/erythropoiesis markers"
+ },
+ {
+  "record_id": "FS-006494",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "commentary on another study (Luo et al.); no original data"
+ },
+ {
+  "record_id": "FS-006495",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "cancer patients on chemotherapy; clinical cohort; immune-cell counts otherwise eligible"
+ },
+ {
+  "record_id": "FS-006499",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "monthly salivary HHV-6/7 and SIgA across season; no bout-tied sampling; periodic-monitoring background pattern"
+ },
+ {
+  "record_id": "FS-006500",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "RIPC vs sham; 20x400m intervals; kynurenines/TRP; pre/immediate/6h/24h"
+ },
+ {
+  "record_id": "FS-006501",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age 22+-4; mean-2SD<18; no range/minimum; c-miRNA 24h post-depletion, diet contrast"
+ },
+ {
+  "record_id": "FS-006502",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric exercise vs no-exercise control before altitude exposure; IL-6, TNF-a, CRP; T0/T1/T2"
+ },
+ {
+  "record_id": "FS-006504",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "IBS patients, clinical cohort; 12-week walking program pre/post zonulin"
+ },
+ {
+  "record_id": "FS-006506",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CPET bouts pre/post 4-month intervention; capillary miRNAs incl. inflammation-linked miR-146a/miR-30a"
+ },
+ {
+  "record_id": "FS-006508",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "post-marathon muscle electron microscopy and CK-MB; no immune measure"
+ },
+ {
+  "record_id": "FS-006509",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "90-min moderate exercise across air-pollution levels; WBC subsets, IL-1b/6/10, TNF-a, CRP"
+ },
+ {
+  "record_id": "FS-006511",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "H2 gas vs placebo crossover; IL-6 lower after training days; NO bioavailability; rugby players"
+ },
+ {
+  "record_id": "FS-006512",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "males with obesity, BMI 35.3; metabolic disease cohort; IL-6/IL-7 otherwise eligible"
+ },
+ {
+  "record_id": "FS-006513",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "symptom-limited exercise test; IL-10, IL-6, protein carbonyls; AS patients vs healthy controls separable"
+ },
+ {
+  "record_id": "FS-006515",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "retrospective diagnostic-test review in food-allergy patients; no exercise bout"
+ },
+ {
+  "record_id": "FS-006517",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exercise-induced asthma patients, clinical cohort; neutrophil chemotactic activity otherwise eligible"
+ }
+]

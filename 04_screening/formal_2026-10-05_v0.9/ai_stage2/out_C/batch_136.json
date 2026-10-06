@@ -1,0 +1,324 @@
+[
+ {
+  "record_id": "FS-006640",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "10-day field operation; no identifiable bout; skin microbiome only"
+ },
+ {
+  "record_id": "FS-006641",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "NMES stimulation session, not an exercise bout"
+ },
+ {
+  "record_id": "FS-006643",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "40-m dive bout; DAMPs/TLR4/RAGE, pre/post/1h"
+ },
+ {
+  "record_id": "FS-006644",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Post-Covid cancer patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-006645",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Multiple sclerosis patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-006646",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Axial spondyloarthropathy patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-006647",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Post-PCI coronary patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-006651",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise bouts plus adrenergic drugs, NK/T-cell mobilization, placebo crossover"
+ },
+ {
+  "record_id": "FS-006652",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Maximal cycle test, WBC/PBMC bioenergetics, pre/post/1h"
+ },
+ {
+  "record_id": "FS-006654",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Serum from breast-cancer patients on chemotherapy; clinical cohort"
+ },
+ {
+  "record_id": "FS-006657",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Stress-test bouts; IL-18/IL-1Ra/IL-6, NLRP3; separable controls"
+ },
+ {
+  "record_id": "FS-006658",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Commentary/editorial"
+ },
+ {
+  "record_id": "FS-006659",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Wingate plus Bruce bouts; adiponectin/SPARC; immune link to verify"
+ },
+ {
+  "record_id": "FS-006661",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "T. cruzi-infected mice; no human data"
+ },
+ {
+  "record_id": "FS-006662",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "1-h cycle bout; serum CXCL9/cytokine arrays pre/post"
+ },
+ {
+  "record_id": "FS-006664",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 31+-11; mean-2SD below 18, adulthood unestablished"
+ },
+ {
+  "record_id": "FS-006665",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ME/CFS patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-006666",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HRW trial, IL-10/CK around intensive test, placebo arm"
+ },
+ {
+  "record_id": "FS-006670",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mice swimming protocol; no human data"
+ },
+ {
+  "record_id": "FS-006671",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "1-h heat cycle, IL-1RA/IFN-gamma, prior-Covid vs controls"
+ },
+ {
+  "record_id": "FS-006672",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 21.6+-3.0; mean-2SD 15.6 below 18, unestablished"
+ },
+ {
+  "record_id": "FS-006673",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "COPD patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-006676",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Blast-locked sampling; no exercise bout with immune measures"
+ },
+ {
+  "record_id": "FS-006677",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Rheumatoid arthritis patients on biologics; clinical cohort"
+ },
+ {
+  "record_id": "FS-006679",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2-h sessions, salivary IgA/lysozyme, polluted vs clean days"
+ },
+ {
+  "record_id": "FS-006681",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CPET bout; EV complement proteins; separable sedentary controls"
+ },
+ {
+  "record_id": "FS-006682",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Younger group 24.8+-3.9; mean-2SD 17.0 below 18"
+ },
+ {
+  "record_id": "FS-006684",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Half-marathon, immune-response mRNA panels, placebo-controlled MSM"
+ },
+ {
+  "record_id": "FS-006685",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Two-athlete simulated matches; inflammatory/hematological markers, 7 timepoints"
+ },
+ {
+  "record_id": "FS-006687",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Salivary thiocyanate pre/post bouts; mucosal-defense measure, adjudicate"
+ },
+ {
+  "record_id": "FS-006688",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse models and in-vitro; human EVs as reagent only"
+ },
+ {
+  "record_id": "FS-006689",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Post-infarction rats; no human data"
+ },
+ {
+  "record_id": "FS-006691",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Resting periodic samples during year of marathons; no bout-tied sampling"
+ },
+ {
+  "record_id": "FS-006693",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Recurrent pregnancy loss patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-006694",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "40-min downhill bout, IL-6/CK, placebo gel parallel groups"
+ },
+ {
+  "record_id": "FS-006696",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exhaustive step bout; monocyte TLR4/NF-kB/TNF, pre/post"
+ },
+ {
+  "record_id": "FS-006697",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "3x30s HIIT, CD8+ T-cell function/cytotoxicity, pre/post"
+ },
+ {
+  "record_id": "FS-006698",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Heat tolerance test; sCD14/inflammation; EHI plus separable controls"
+ },
+ {
+  "record_id": "FS-006699",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "330-km race; pre/mid/post/72h; inflammatory biomarkers mentioned"
+ },
+ {
+  "record_id": "FS-006700",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Three bout types; inflammatory markers in aim, timing reported"
+ }
+]
