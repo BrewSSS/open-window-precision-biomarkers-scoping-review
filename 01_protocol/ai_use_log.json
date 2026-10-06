@@ -299,6 +299,22 @@
     "PRESS re-review (A)",
     "screening, extraction, appraisal, synthesis"
    ]
+  },
+  {
+   "date": "2026-10-06",
+   "tool": "ZCode desktop CLI (GLM, bigmodel-api provider), continuing the coordination role of the interrupted Claude Code session of 2026-10-04/05",
+   "coordinator_model": "glm-5.3",
+   "delegated_models": [
+    "glm-5.3-flash subagents: stage-2 title/abstract stand-in screening, sides B and C, 5 batches (~200 records) per agent, 10 agents per wave, per-batch JSON outputs written to disk immediately (recovery of the 2026-10-05/06 run that was interrupted at 80/213 B-side and 76/213 C-side batches)",
+    "glm-5.3-flash subagents: blind third read of stage-2 B/C conflicts"
+   ],
+   "tasks": [
+    "Rescue of the interrupted stage-2 screening outputs from /tmp into 04_screening/formal_2026-10-05_v0.9/ai_stage2/ with per-wave git archiving (A instruction: every subagent persists each completed batch to disk immediately)",
+    "Completion of the remaining stage-2 batches (B side 133, C side 137 of 213)",
+    "Stage-2 merge, conflict third read, reviewer workbooks (ta_review_B/C) and summary",
+    "Retrospective registration of amendment PRE-007 at A's instruction (design adopted by A on 2026-10-05)"
+   ],
+   "human_verification": "A instructed the recovery session; B and C verify all AI advances, conflicts, awaiting-classification records and the seeded 10% exclusion sample in their workbooks"
   }
  ],
  "future_entry_fields": [

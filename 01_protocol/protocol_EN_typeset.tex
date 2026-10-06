@@ -103,7 +103,13 @@ to PubMed, Web of Science Core Collection and Scopus with a Google
 Scholar supplement, adds search-stage limits and adopts the single-route
 strategy v0.9 (E, L). The PubMed export of 5 October 2026 under strategy
 v0.7 is superseded. The formal database searches were run on 5 October
-2026 (PubMed, Web of Science Core Collection, Scopus); screening,
+2026 (PubMed, Web of Science Core Collection, Scopus). Amendment PRE-007
+(6 October 2026, registered retrospectively for the design A adopted on
+5 October 2026) introduces AI-stand-in first-pass screening with
+mandatory human verification: stage-1 title screening of all 15,750
+deduplicated records was executed on 5--6 October 2026 (7,606 advanced)
+and stage-2 title/abstract screening of the retained pool is in
+progress. Human verification of the AI passes, full-text screening,
 extraction and synthesis have not started, and no formal included study
 or result exists.\\
 \textbf{Target journal:} \emph{Frontiers in Immunology}, under the
@@ -746,30 +752,47 @@ available at protocol preparation.
 calibration}\label{f.-selection-and-calibration}
 
 Screening has two record-level stages before full text (amendment
-PRE-005). At stage 1, two human reviewers independently screen the
-titles of \textbf{all} deduplicated records, seeing only the title,
-source, year, document type and identifiers. A record may be excluded at
-this stage only for a reason on a closed list that is evident from the
-title or document type: review, editorial, protocol or conference
-abstract (mapped to FT01); animal-only or in-vitro-only study (FT02); a
-cohort clearly under 18 years (FT03); no evident exercise or
-physical-activity context (FT04); or no evident immune, inflammatory or
-omics content (FT07). Every other record advances, including any record
-whose title is silent on a criterion. Consensus at stage 1 is automatic:
-a record advances if either reviewer advances it and is excluded only
-when both exclude it; conflicts are logged, not adjudicated. Abstracts
-are then completed for the retained records, taken in order from
-database exports that already contain them, from PubMed by PMID (or by
-DOI converted to a PMID), from the source database's full record and,
-failing these, by manual retrieval; a record without an obtainable
-abstract is screened on its title and other available text, flagged as
-such, and never excluded for that reason. At stage 2, two reviewers
-independently screen the titles and abstracts of \textbf{all} retained
-records under the version 3 rules, and they later screen \textbf{all}
-sought full texts. At title/abstract stage, missing timing or
-methodological detail normally proceeds to full text rather than being
-guessed. AI does not make automatic exclusions, replace either reviewer
-or show reviewers any hint at any stage. The split was adopted when the
+PRE-005). At stage 1, two screeners independently screen the titles of
+\textbf{all} deduplicated records, seeing only the title, source, year,
+document type and identifiers. A record may be excluded at this stage
+only for a reason on a closed list that is evident from the title or
+document type: review, editorial, protocol or conference abstract
+(mapped to FT01); animal-only or in-vitro-only study (FT02); a cohort
+clearly under 18 years (FT03); no evident exercise or physical-activity
+context (FT04); or no evident immune, inflammatory or omics content
+(FT07). Every other record advances, including any record whose title is
+silent on a criterion. Consensus at stage 1 is automatic: a record
+advances if either reviewer advances it and is excluded only when both
+exclude it; conflicts are logged, not adjudicated. Abstracts are then
+completed for the retained records, taken in order from database exports
+that already contain them, from PubMed by PMID (or by DOI converted to a
+PMID), from the source database's full record and, failing these, by
+manual retrieval; a record without an obtainable abstract is screened on
+its title and other available text, flagged as such, and never excluded
+for that reason. At stage 2, two screeners independently screen the
+titles and abstracts of \textbf{all} retained records under the version
+3 rules, and the human reviewers later screen \textbf{all} sought full
+texts. At title/abstract stage, missing timing or methodological detail
+normally proceeds to full text rather than being guessed. Under
+amendment PRE-007 (6 October 2026), the two independent first-pass
+screeners at stages 1 and 2 are AI stand-ins with different prompt
+orientations (inclusion-oriented, defaulting to advance; and
+closed-list-strict), each reading every record individually, and every
+record on which they disagree receives a blind third AI read recorded
+separately. The stand-in passes are subject to mandatory human
+verification: reviewers B and C independently confirm every AI-advanced
+record, every conflict left without a third read and every
+awaiting-classification record, and screen a seeded 10\% random sample
+of agreed AI exclusions with the AI columns hidden (seed 20261005); the
+human decisions are the decisions of record, and an advance found inside
+the sample triggers re-screening of that record type. Agreed AI
+exclusions outside the sample are listed and reported separately in the
+PRISMA-ScR flow as AI exclusions with 10\% sample verification. A
+100-record random title-pilot sample (seed 20261005) is issued to B and
+C as a blind calibration set with the AI columns hidden, and the
+AI-versus-human comparison on that sample is reported as the stand-in
+reliability check. The manuscript discloses the design and the models in
+Methods and Acknowledgments. The split was adopted when the
 five-database volume under strategy v0.7 was estimated at 60,000--90,000
 records, and in response to uneven off-campus access to abstracts
 through database interfaces; title screening is about three to four
@@ -1298,13 +1321,37 @@ the 200-record T-free sample remain valid calibration, and
 citation-chasing flags for records already in the pool are recomputed
 against the v0.9 pool. No formal records had been screened.
 
+Amendment PRE-007 (6 October 2026, decision by A of 5 October 2026,
+registered retrospectively) replaces the v3.1 rule that AI makes no
+automatic exclusions, replaces no reviewer and shows no hints with
+AI-stand-in first-pass screening and mandatory human verification (F):
+two AI stand-ins with different prompt orientations screen every record
+of a stage, every disagreement receives a blind third AI read, and
+reviewers B and C independently verify all AI advances, all conflicts
+without a third read, all awaiting-classification records and a seeded
+10\% sample of agreed AI exclusions with AI columns hidden; agreed
+exclusions outside the sample are reported separately in the PRISMA-ScR
+flow. The reason is feasibility at the actual deduplicated volume
+(15,750 records; roughly 44 hours per person for dual human title
+screening alone), with recall protected by the advance-wins merge, the
+closed exclusion lists, third reads of every disagreement and the
+mandatory human verification. Stage-1 title screening was executed under
+this design on 5--6 October 2026 (15,750 records screened by both
+passes, 2,032 disagreements third-read, 7,606 advanced, 8,144 excluded
+with logged codes;
+\texttt{04\_screening/formal\_2026-10-05\_v0.9/ai\_stage1/}), and
+stage-2 title/abstract screening of the 8,447-record retained pool
+(7,606 advances plus 841 stage-1 conflict records retained for stage 2
+under PRE-005) is in progress. PRE-007 is to be bundled into the next
+archived release.
+
 Still pending are named administrative declarations, the Google Scholar
 search strings (the supplement is deferred until after deduplication and
 title screening), the reduced human charting calibration on the revised
-rules, the 100-record title pilot and the 25-record title/abstract
-re-calibration, archived appraisal forms and local software
-configuration. Subsequent formal searches, screening, extraction and
-synthesis are distinct execution stages and have not been performed.
+rules, the human 100-record blind title pilot and the 25-record
+title/abstract re-calibration, archived appraisal forms and local
+software configuration. Subsequent extraction and synthesis are distinct
+execution stages and have not been performed.
 
 \subsection{References}\label{references}
 
