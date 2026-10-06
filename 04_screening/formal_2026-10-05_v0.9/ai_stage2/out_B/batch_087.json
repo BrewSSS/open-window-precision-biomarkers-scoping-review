@@ -1,0 +1,328 @@
+[
+ {
+  "record_id": "FS-004225",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Anaphylaxis clinic cohort; disease population; exercise only anaphylaxis cofactor"
+ },
+ {
+  "record_id": "FS-004226",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon; salivary IgA, lysozyme, chemokines day before and 48 h post"
+ },
+ {
+  "record_id": "FS-004227",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Wheat-line genomics/immunoblot; patient sera as reagent; no human exercise data"
+ },
+ {
+  "record_id": "FS-004228",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Pericarditis patients, ECG exercise test; clinical cohort, no immune measure"
+ },
+ {
+  "record_id": "FS-004229",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIT vs continuous bout; IL-6, IL-10, TNF at 24/48 h; overweight men"
+ },
+ {
+  "record_id": "FS-004230",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Half-marathon cytokine time course 4/24 h; methods paper, original human data"
+ },
+ {
+  "record_id": "FS-004231",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Half-marathon; multiplex mRNA, lncRNA, cytokine receptors 4/24 h"
+ },
+ {
+  "record_id": "FS-004232",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Repeated sprints hypoxia vs normoxia; cytokines pre, post, 3 h"
+ },
+ {
+  "record_id": "FS-004233",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Total knee arthroplasty patients; analgesia trial; clinical cohort"
+ },
+ {
+  "record_id": "FS-004234",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Knee-extension bout; cacao vs dextrose arm; blood inflammation indices"
+ },
+ {
+  "record_id": "FS-004235",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Glutamine vs placebo; simulated firefighting bouts; inflammation markers pre/post/4 h"
+ },
+ {
+  "record_id": "FS-004236",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Training RCT; leucocyte telomerase/telomeres; single-bout response in CD14+/CD34+ cells"
+ },
+ {
+  "record_id": "FS-004237",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Wingate bout; IL-15 cytokine in muscle/blood; antioxidant vs placebo"
+ },
+ {
+  "record_id": "FS-004238",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Type 2 diabetes cohort; known metabolic disease"
+ },
+ {
+  "record_id": "FS-004239",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Acute GXT; NK-cell KIR methylation/expression; healthy women 50-60 y"
+ },
+ {
+  "record_id": "FS-004240",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Laparotomy patients; tVNS gastric EMG; clinical cohort, no exercise-immune exposure"
+ },
+ {
+  "record_id": "FS-004241",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Multiple sclerosis patients; physiological outcomes only; clinical population"
+ },
+ {
+  "record_id": "FS-004242",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Triathlon supplement trial; free radicals, hemolysis markers; no immune measure"
+ },
+ {
+  "record_id": "FS-004243",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cross-country season; SIgA pre/post VO2max test plus seasonal points; controls"
+ },
+ {
+  "record_id": "FS-004244",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycling in diesel exhaust vs filtered air; FeNO airway inflammation; borderline immune link"
+ },
+ {
+  "record_id": "FS-004245",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Postpartum allostatic-load cohort; hsCRP biomarker but no exercise exposure"
+ },
+ {
+  "record_id": "FS-004246",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 23\u00b13 y gives 17<18; awaiting per age rule; IL-15 myokines after HIIT/RT"
+ },
+ {
+  "record_id": "FS-004247",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ADMA, arginine analogues, muscle O2 delivery; no immune measure"
+ },
+ {
+  "record_id": "FS-004248",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cholinesterase, troponin, hemodynamics during stress test; no immune measure"
+ },
+ {
+  "record_id": "FS-004249",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric bout; curcumin vs placebo, timing arms; plasma IL-8 to 7 d"
+ },
+ {
+  "record_id": "FS-004250",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon; CRP 1-3 d post-race versus pre-race baseline; runners"
+ },
+ {
+  "record_id": "FS-004251",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Paratriathlete camp; salivary IgA, cortisol series; bout-sampling relation unclear"
+ },
+ {
+  "record_id": "FS-004252",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Heat-acclimation sessions; IL-6, TNF pre/post sessions 1, 5, 10"
+ },
+ {
+  "record_id": "FS-004253",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Methods-book review chapter on cfDNA and exercise; no original data"
+ },
+ {
+  "record_id": "FS-004254",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "CABG surgery patients; cardiac-rehabilitation cohort"
+ },
+ {
+  "record_id": "FS-004256",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Rheumatoid arthritis and prediabetes cohorts; clinical populations"
+ },
+ {
+  "record_id": "FS-004257",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon serum sodium with NSAID use; no immune measure"
+ },
+ {
+  "record_id": "FS-004258",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "21-km run; IL-6, CK; protein preloads with pre-exercise baselines"
+ },
+ {
+  "record_id": "FS-004259",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "STEMI patients; post-infarction CPET prognosis; clinical cohort"
+ },
+ {
+  "record_id": "FS-004260",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "EPO trial; microvascular flow, hematocrit; no immune measure"
+ },
+ {
+  "record_id": "FS-004261",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-week single-set RT; resting lipids/CRP pre-post only; no bout sampling"
+ },
+ {
+  "record_id": "FS-004262",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Abdominally obese cohort = obesity clinical cohort; IL-6 blockade metabolic RCT"
+ },
+ {
+  "record_id": "FS-004263",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "WDEIA patient cohort; gluten challenges; exercise only a cofactor"
+ },
+ {
+  "record_id": "FS-004264",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "4-h heat exercise; soft drink vs water; NGAL as AKI marker, borderline immune link"
+ },
+ {
+  "record_id": "FS-004265",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "3-day race; CRP, CK-MB, cardiac function; CHO vs CHO+protein arms"
+ }
+]

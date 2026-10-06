@@ -1,0 +1,336 @@
+[
+ {
+  "record_id": "FS-004352",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "walking +/- compression stockings; only limb volume and exertion outcomes, no immune measure"
+ },
+ {
+  "record_id": "FS-004353",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "computational endocrine-immune model; ME/CFS clinical cohort; no new original human data"
+ },
+ {
+  "record_id": "FS-004354",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cherry vs placebo cycling; nitrate, oxygenation, performance only, no immune measure"
+ },
+ {
+  "record_id": "FS-004355",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "volitional hyperpnea; FEV1/airway resistance only, no immune measure"
+ },
+ {
+  "record_id": "FS-004356",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "shake/food vs control after 10km run; inflammation markers named, control arm present"
+ },
+ {
+  "record_id": "FS-004357",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "TKD bouts pre/end/24h; inflammatory state and hematology mentioned; healthy elite athletes"
+ },
+ {
+  "record_id": "FS-004359",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "mild MS plus healthy controls; group-wise cytokines; healthy stratum separable"
+ },
+ {
+  "record_id": "FS-004360",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "SSC bout; IL-10 and inflammatory responses with baseline and 48h sample"
+ },
+ {
+  "record_id": "FS-004361",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "three LIST bouts five days; IL-6/CRP with CWI control arm"
+ },
+ {
+  "record_id": "FS-004362",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ECP vs placebo after conditioning; IL-1ra and salivary IgA with rest baseline"
+ },
+ {
+  "record_id": "FS-004363",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "gluten absorption cofactors; gliadin, zonulin, microbiota only, no immune measure"
+ },
+ {
+  "record_id": "FS-004364",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon pre/post; white blood cell count among corrected blood components"
+ },
+ {
+  "record_id": "FS-004365",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "resting hs-CRP/blood count across EBPR groups; background-pattern candidate, no post-exercise sample"
+ },
+ {
+  "record_id": "FS-004366",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Alzheimer patients only; 16-week training, no acute bout, no healthy stratum"
+ },
+ {
+  "record_id": "FS-004367",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "probiotic vs placebo marathon; cytokines and sCD14 pre/post race"
+ },
+ {
+  "record_id": "FS-004368",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "live-fire simulation bout; IL-6, fibrinogen, cortisol pre/post to 24h"
+ },
+ {
+  "record_id": "FS-004369",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review of exercise-induced myokines; no original data"
+ },
+ {
+  "record_id": "FS-004370",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "pQCT/ultrasound swelling after resistance exercise; no immune measure"
+ },
+ {
+  "record_id": "FS-004372",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "healthy young men; NLRP3, IL-1beta, IL-18 after acute and chronic aerobic exercise"
+ },
+ {
+  "record_id": "FS-004373",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "meal cross-over before exercise test; adipokines framed as immune, adipsin complement"
+ },
+ {
+  "record_id": "FS-004374",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIE serum proteomics pre/5min/1h; immune-system proteoforms identified"
+ },
+ {
+  "record_id": "FS-004375",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "in-silico phytochemical pharmacokinetic model; no original human or exercise data"
+ },
+ {
+  "record_id": "FS-004376",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "PCOS plus healthy controls, single bout; plasma/muscle cytokines, strata separable"
+ },
+ {
+  "record_id": "FS-004377",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "midwife stress-management workshops and questionnaires; no exercise, no immune measure"
+ },
+ {
+  "record_id": "FS-004378",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "in-vitro OPC/BMSC co-culture under oxygen-glucose deprivation; no human data"
+ },
+ {
+  "record_id": "FS-004379",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-week training, resting pre/post measures only; no acute bout or bout-tied sampling"
+ },
+ {
+  "record_id": "FS-004381",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-week training, resting pre/post clamp and biopsies; no acute bout sampling"
+ },
+ {
+  "record_id": "FS-004382",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "adult wheat-allergy patient cohort, oral challenges; no exercise exposure"
+ },
+ {
+  "record_id": "FS-004383",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "curcumin vs placebo around muscle-damaging protocol; TNF-alpha pre/post to 48h"
+ },
+ {
+  "record_id": "FS-004385",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "ketone ester overreaching study; no immune measure named, abstract truncated"
+ },
+ {
+  "record_id": "FS-004386",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon pre/post to 144h; CRP among recovery biomarkers in 86 runners"
+ },
+ {
+  "record_id": "FS-004387",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "cardiac amyloidosis patients, CPET prognosis study; not healthy cohort"
+ },
+ {
+  "record_id": "FS-004388",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "parabolic-flight gravitational stress with cytokines; exposure is not exercise"
+ },
+ {
+  "record_id": "FS-004389",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "AM vs PM runs vs rested control; IL-6 and hepcidin pre/0/3h"
+ },
+ {
+  "record_id": "FS-004390",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "five exercise-heat bouts during acclimatisation; pre/post IL-6 same participants"
+ },
+ {
+  "record_id": "FS-004391",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HICT units sampled pre/1h/24h; IL-15 and TNF-alpha measured"
+ },
+ {
+  "record_id": "FS-004392",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "NK-cell genome-wide methylation before/after step test; immune-cell omics"
+ },
+ {
+  "record_id": "FS-004393",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "cross-group resting PBMC immune status plus HBO challenge; background-pattern candidate"
+ },
+ {
+  "record_id": "FS-004394",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "children with juvenile idiopathic arthritis vs child controls; oxidation outcomes only"
+ },
+ {
+  "record_id": "FS-004395",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "in-vitro monocyte trained-immunity experiment with aldosterone; no human exercise data"
+ }
+]
