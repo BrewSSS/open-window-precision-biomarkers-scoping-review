@@ -1,0 +1,338 @@
+[
+ {
+  "record_id": "FS-007655",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "breast cancer patients, G-CSF chemotherapy support; no exercise"
+ },
+ {
+  "record_id": "FS-007656",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "competition swim; subsets, cytokines, NKCA, proliferative response, serial"
+ },
+ {
+  "record_id": "FS-007657",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "troponin-I assay in trauma/muscle-disease patients; skeletal-muscle marker"
+ },
+ {
+  "record_id": "FS-007658",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "placebo/DEX/HCO crossover run; lymphocyte subsets pre/post"
+ },
+ {
+  "record_id": "FS-007659",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "ESRD patients, rHuEPO anaemia correction; 31P-MRS muscle only"
+ },
+ {
+  "record_id": "FS-007660",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "three prolonged bouts; mononuclear cell mobilisation, IL-1/IL-2"
+ },
+ {
+  "record_id": "FS-007662",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "treadmill run, glucocorticoid crossover; plasma IL-6 kinetics"
+ },
+ {
+  "record_id": "FS-007664",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "two eccentric bouts 3wk apart; CD64/CD11b/CD18 serial to 96h"
+ },
+ {
+  "record_id": "FS-007665",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cycling after eccentric/concentric bouts; leukocyte counts, delayed leucocytosis"
+ },
+ {
+  "record_id": "FS-007666",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "survival training; EPO, iron, haptoglobin panel, O2-transport aim"
+ },
+ {
+  "record_id": "FS-007667",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "resistance protocols vs non-exercise control; leukocyte counts, cortisol"
+ },
+ {
+  "record_id": "FS-007668",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric bout; IL-1/IL-2/IL-6/TNF/CRP serial to 5 days"
+ },
+ {
+  "record_id": "FS-007669",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "thermal clamp \u00b1 cycling; WBC/subsets, cortisol, growth hormone"
+ },
+ {
+  "record_id": "FS-007670",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "NO2+exercise; normal/asthmatic/COPD strata separable, sputum cells"
+ },
+ {
+  "record_id": "FS-007671",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Ki-67 antibody characterisation in cell lines; in-vitro only"
+ },
+ {
+  "record_id": "FS-007672",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "ozone+exercise; DTPA clearance and FEV1 only, no immune measure"
+ },
+ {
+  "record_id": "FS-007673",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "maximal exercise; neutrophil ROS pathways, NBT, chemiluminescence"
+ },
+ {
+  "record_id": "FS-007674",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "heat \u00b1 two cycling bouts; CD16/CD56 counts, cytolytic activity"
+ },
+ {
+  "record_id": "FS-007675",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "flavopiridol cytotoxicity in tumour cell lines; in-vitro only"
+ },
+ {
+  "record_id": "FS-007676",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "incremental cycling vs control; subsets, eosinophils, catecholamines, recovery"
+ },
+ {
+  "record_id": "FS-007677",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "incremental cycling vs control; NK counts and NKCA, gender comparison"
+ },
+ {
+  "record_id": "FS-007678",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "heat \u00d7 two cycling bouts; granulocyte/monocyte/lymphocyte counts serial"
+ },
+ {
+  "record_id": "FS-007679",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "platelet count and beta-thromboglobulin only; not immune measures"
+ },
+ {
+  "record_id": "FS-007680",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "preexercise meals; insulin, amino acids, performance; no immune measure"
+ },
+ {
+  "record_id": "FS-007681",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "peripheral arterial disease patients on indobufen; clinical cohort"
+ },
+ {
+  "record_id": "FS-007682",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "12-week training plus acute bouts pre/post; proliferation, IL-2, IL-2R"
+ },
+ {
+  "record_id": "FS-007683",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "IFN-gamma therapy in nude mice with implanted tumours; animal-only"
+ },
+ {
+  "record_id": "FS-007684",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "research-centre program description, planned projects only, ill veterans"
+ },
+ {
+  "record_id": "FS-007685",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "stretch reflex EMG, CK, myoglobin after SSC exercise; no immune measure"
+ },
+ {
+  "record_id": "FS-007686",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "exposure is repeated cold-water immersion, not an exercise bout"
+ },
+ {
+  "record_id": "FS-007687",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "lymphocyte beta-receptor density/affinity post-exercise; immune relevance unclear"
+ },
+ {
+  "record_id": "FS-007688",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "pacemaker patients, sensor rate-response testing; no immune measure"
+ },
+ {
+  "record_id": "FS-007689",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "aldosterone effect on muscle phosphocreatine recovery; no immune measure"
+ },
+ {
+  "record_id": "FS-007690",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "triathlon; NK/LAK activity, proliferation, glutamine, serial samples"
+ },
+ {
+  "record_id": "FS-007691",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "99mTc-leukocyte images in muscle after eccentric exercise, serial"
+ },
+ {
+  "record_id": "FS-007692",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "moderate exercise; neutrophil H2O2, complement receptor, elastase, GH"
+ },
+ {
+  "record_id": "FS-007693",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "exercise-induced anaphylaxis patient series; food-IgE workup, no sampling"
+ },
+ {
+  "record_id": "FS-007694",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "lymphocyte glucocorticoid receptor density after exercise \u00b1 phosphocreatine"
+ },
+ {
+  "record_id": "FS-007695",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "running/cycling bouts; neutrophil oxidative burst, chemiluminescence"
+ },
+ {
+  "record_id": "FS-007696",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "incremental cycling vs control; proliferation, IL-1, IFN-gamma, IL-4"
+ }
+]

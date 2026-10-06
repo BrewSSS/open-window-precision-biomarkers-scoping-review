@@ -1,0 +1,342 @@
+[
+ {
+  "record_id": "FS-007609",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "only erythropoietin hormone measured; no immune measure, hematologic aim"
+ },
+ {
+  "record_id": "FS-007611",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "murine/human cell-line mitotic kinase study; in-vitro only"
+ },
+ {
+  "record_id": "FS-007612",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "dialysis patients on EPO therapy; clinical cardiac endpoints"
+ },
+ {
+  "record_id": "FS-007613",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "dispersed nasal polyp cells incubated in vitro; no exercise bout"
+ },
+ {
+  "record_id": "FS-007614",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "glioblastoma cell-line hyperthermia; in-vitro only"
+ },
+ {
+  "record_id": "FS-007615",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "ozone+intermittent exercise challenge; sputum neutrophils; asthma strata separable"
+ },
+ {
+  "record_id": "FS-007616",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "120-min run; leukocyte subsets, Ig production, NKCA serial sampling"
+ },
+ {
+  "record_id": "FS-007617",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "graded exercise; lymphocyte corticosteroid sensitivity via LPS-induced IL-6"
+ },
+ {
+  "record_id": "FS-007619",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2.5h run vs sedentary controls; NKCA, NK counts, pre/post plus recovery"
+ },
+ {
+  "record_id": "FS-007621",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "6-h run; plasma IL-6/IL-1ra and ex vivo cytokine production"
+ },
+ {
+  "record_id": "FS-007622",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "solvent vapor during light exercise; nasal lavage inflammatory markers unspecified"
+ },
+ {
+  "record_id": "FS-007623",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ankylosing spondylitis patients; clinical cohort, though bout and subsets present"
+ },
+ {
+  "record_id": "FS-007624",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "mice; IL-1 myeloprotection against radiation/5-FU, animal-only"
+ },
+ {
+  "record_id": "FS-007625",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "chronic renal failure patients on rHuEPO; muscle bioenergetics only"
+ },
+ {
+  "record_id": "FS-007626",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "ozone vs air during exercise; BAL neutrophils, IL-8, GM-CSF 18h after"
+ },
+ {
+  "record_id": "FS-007627",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "CD34+ cell culture and retroviral transduction; in-vitro only"
+ },
+ {
+  "record_id": "FS-007628",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "ozone+heavy exercise; BAL PMNs, C3a, macrophage phagocytosis at 1h/18h"
+ },
+ {
+  "record_id": "FS-007629",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "angina and myocardial infarction patients; clinical ischemia cohorts"
+ },
+ {
+  "record_id": "FS-007630",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "asthmatic cohort but healthy bronchoscopy comparator stratum separable"
+ },
+ {
+  "record_id": "FS-007631",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "myocarditis/dilated cardiomyopathy patients; immunomodulator treatment trial"
+ },
+ {
+  "record_id": "FS-007632",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "ozone+moderate exercise; alveolar macrophage LPS-stimulated IL-1beta at 0/4/18h"
+ },
+ {
+  "record_id": "FS-007633",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "post-myocardial-infarction rehabilitation; clinical cohort, no immune measure"
+ },
+ {
+  "record_id": "FS-007634",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "19 mild asthmatics only; no healthy stratum; granulocyte Mac-1 measured"
+ },
+ {
+  "record_id": "FS-007635",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon pre/post white blood cell count among risk factors; healthy runners"
+ },
+ {
+  "record_id": "FS-007636",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "80-km walk; skin biopsies with C3c/IgM deposition, case-series eligible"
+ },
+ {
+  "record_id": "FS-007637",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "frail elderly, 3-month training, NK activity; no serious disease stated"
+ },
+ {
+  "record_id": "FS-007639",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "7 daily bouts, men 20-24y; neutrophil count, chemotaxis, chemiluminescence"
+ },
+ {
+  "record_id": "FS-007640",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exercise-test PMN count, Fc receptors, adherence; patient diagnosis unstated"
+ },
+ {
+  "record_id": "FS-007641",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "IgE measured, exercise bronchospasm test; non-atopic stratum separable"
+ },
+ {
+  "record_id": "FS-007642",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "six repeated rowing bouts; subsets, NK activity, IL-6, serial samples"
+ },
+ {
+  "record_id": "FS-007644",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon; nasal lavage PMNs and chemotactic activity, pre/post race"
+ },
+ {
+  "record_id": "FS-007645",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "6-min all-out row; NK/LAK activity, subsets, recovery samples"
+ },
+ {
+  "record_id": "FS-007646",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "10-week overload training; lymphocyte subsets sampled after training blocks"
+ },
+ {
+  "record_id": "FS-007647",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric isokinetic bout; PMN elastase, MPO, serial samples to 48h"
+ },
+ {
+  "record_id": "FS-007649",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "submaximal cycling; neutrophil phagocytosis, trained vs sedentary controls"
+ },
+ {
+  "record_id": "FS-007650",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "muscle XO/IGF-I immunoreactivity, CK; no immune measure or objective"
+ },
+ {
+  "record_id": "FS-007651",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [
+   "FT05"
+  ],
+  "study_type_hint": "other",
+  "note": "glutamine drink then infection questionnaires; no immune measure sampled"
+ },
+ {
+  "record_id": "FS-007652",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "asthmatic patients, allergen/exercise challenges; sputum ECP measured"
+ },
+ {
+  "record_id": "FS-007653",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "retinal leukocyte velocity/density after cycling; hemodynamic focus, doubt"
+ },
+ {
+  "record_id": "FS-007654",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "resistance exercise vs rest; lymphocyte subsets, 45-min regeneration"
+ }
+]

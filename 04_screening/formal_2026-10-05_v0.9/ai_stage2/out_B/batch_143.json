@@ -1,0 +1,359 @@
+[
+ {
+  "record_id": "FS-007044",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Isolated airways and mast-cell cultures; mannitol surrogate, no exercise bout"
+ },
+ {
+  "record_id": "FS-007045",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Network pharmacology plus unspecified EIMD model; no human data"
+ },
+ {
+  "record_id": "FS-007046",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Protocol paper; youth 13-24 with cerebral palsy and obesity"
+ },
+ {
+  "record_id": "FS-007047",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Mouse exercise/injury models; Piezo1 mechanism, no human data"
+ },
+ {
+  "record_id": "FS-007048",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT05",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Lymphocytes sampled at rest/during cycling only; ex vivo and mouse work"
+ },
+ {
+  "record_id": "FS-007050",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Baseline lymphocyte subsets; HRV response to exercise test"
+ },
+ {
+  "record_id": "FS-007051",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Multimorbidity cohort; 12-week programme; resting cytokines pre/post"
+ },
+ {
+  "record_id": "FS-007052",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "In vitro micronucleus assay on lymphocytes; mutagens, no exercise"
+ },
+ {
+  "record_id": "FS-007053",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "16-week metformin/training; pre/post resting and clamp measures only"
+ },
+ {
+  "record_id": "FS-007054",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy arm separable from T2D; cytokines around exercise trials"
+ },
+ {
+  "record_id": "FS-007055",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Stroke survivors; rehabilitation pre/post; apelin"
+ },
+ {
+  "record_id": "FS-007056",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Calprotectin/PTX3 and WBC before/after 2-h cycling in athletes"
+ },
+ {
+  "record_id": "FS-007057",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6/TNF after strength sessions; gliclazide vs placebo crossover"
+ },
+ {
+  "record_id": "FS-007058",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Methemoglobin and NO2 during iNO; no eligible immune measure"
+ },
+ {
+  "record_id": "FS-007059",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Breast-cancer survivors; vascular and sympathetic outcomes"
+ },
+ {
+  "record_id": "FS-007061",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "PBMCs phenotyped after cycling bout; TIGIT blockade ex vivo"
+ },
+ {
+  "record_id": "FS-007062",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Neurological disease case report; no exercise exposure"
+ },
+ {
+  "record_id": "FS-007063",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "16-week training; resting myokines pre/post, no bout sample"
+ },
+ {
+  "record_id": "FS-007064",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6/CK to 72h after damaging bout; vitamin K2 vs placebo"
+ },
+ {
+  "record_id": "FS-007065",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Musculoskeletal disease cohort; questionnaires, no immune measure"
+ },
+ {
+  "record_id": "FS-007066",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Asthma cohort; rehabilitation and vitamin D; no immune measure"
+ },
+ {
+  "record_id": "FS-007067",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Prolactin hormone only after cycling; no immune measure"
+ },
+ {
+  "record_id": "FS-007068",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "PCOS cohort; 12-wk HIIT; muscle transcriptomics, post-hoc inflammation only"
+ },
+ {
+  "record_id": "FS-007069",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Plasma metabolomics only; no stated immune objective or measure"
+ },
+ {
+  "record_id": "FS-007070",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Wheat-dependent exercise-induced anaphylaxis case series; allergy patients"
+ },
+ {
+  "record_id": "FS-007071",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "iNOS and redox around fitness test; inflammatory biomarker framing"
+ },
+ {
+  "record_id": "FS-007072",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "WBC/CRP and CK around matches across Ramadan; bout timing partly unclear"
+ },
+ {
+  "record_id": "FS-007073",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Bed-rest countermeasure; title cytokines; bout-sampling relation unstated"
+ },
+ {
+  "record_id": "FS-007074",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Supplement market characterisation survey; no human participants"
+ },
+ {
+  "record_id": "FS-007075",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Thoroughbred racehorses; acute-phase proteins; animal-only"
+ },
+ {
+  "record_id": "FS-007076",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Active IBD patients; 12-week exercise; quality-of-life primary"
+ },
+ {
+  "record_id": "FS-007078",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Breast-cancer survivors; 12-week training; resting CRP/IL-6/IL-10"
+ },
+ {
+  "record_id": "FS-007079",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Non-MCI healthy stratum separable; cytokines around 6-min walk"
+ },
+ {
+  "record_id": "FS-007080",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "HFpEF patients; muscle energetics MRS; hs-CRP as covariate"
+ },
+ {
+  "record_id": "FS-007082",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6/TNF after high-intensity sessions; blackcurrant vs placebo"
+ },
+ {
+  "record_id": "FS-007083",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "CTD-PAH patients; CPET prognosis; no immune measure"
+ },
+ {
+  "record_id": "FS-007084",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6/sCD14 around heat exercise; fava protein vs placebo crossover"
+ },
+ {
+  "record_id": "FS-007085",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6 after 60-min cycling; healthy males and females"
+ },
+ {
+  "record_id": "FS-007086",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Sputum neutrophils after ozone with intermittent exercise; clean-air control"
+ },
+ {
+  "record_id": "FS-007087",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6/TNF to 96h post eccentric bout; melatonin vs placebo"
+ }
+]

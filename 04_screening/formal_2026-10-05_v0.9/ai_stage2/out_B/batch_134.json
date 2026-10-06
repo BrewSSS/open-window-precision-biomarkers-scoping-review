@@ -1,0 +1,326 @@
+[
+ {
+  "record_id": "FS-006520",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "protocol-style abstract; PBMC flow-cytometry immune profiling; confirm at FT"
+ },
+ {
+  "record_id": "FS-006521",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "fitness tests vs food-allergy antibodies; no exercise bout"
+ },
+ {
+  "record_id": "FS-006522",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "protein vs placebo; IL-6/CRP after downhill run"
+ },
+ {
+  "record_id": "FS-006523",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "inflammatory myopathy patients; training snapshot; myomiRs"
+ },
+ {
+  "record_id": "FS-006524",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "TNF-alpha measured; 8-wk training; bout linkage at FT"
+ },
+ {
+  "record_id": "FS-006525",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "maca vs placebo; PBMC IFN-gamma, CD4/CD8 after exercise"
+ },
+ {
+  "record_id": "FS-006526",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon troponin/CK-MB/creatinine only; no immune measure"
+ },
+ {
+  "record_id": "FS-006527",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ketosis diet crossover; IL-6/TNF after isotonic exercise"
+ },
+ {
+  "record_id": "FS-006528",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "quiescent Crohn's patients; perfusion/PCr outcomes"
+ },
+ {
+  "record_id": "FS-006530",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cfDNA kinetics after treadmill; immune-link adjudication at FT"
+ },
+ {
+  "record_id": "FS-006534",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cfDNA cell origins neutrophil/DC/macrophage plus 90 cytokines"
+ },
+ {
+  "record_id": "FS-006535",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "curcumin vs placebo; CRP/IL-6/TNF/IL-1beta in runners"
+ },
+ {
+  "record_id": "FS-006536",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "obese cohort adjudicated at FT; CRP/TNF; 48h post final session"
+ },
+ {
+  "record_id": "FS-006537",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "tumor-bearing mice; chemerin/GM-CSF; animal-only"
+ },
+ {
+  "record_id": "FS-006539",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "PBMC scRNA-seq before/after half-marathon"
+ },
+ {
+  "record_id": "FS-006542",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "resistant hypertension patients; clinical cohort; BP outcomes"
+ },
+ {
+  "record_id": "FS-006545",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "salivary s-IgA pre/post 120-min exercise session"
+ },
+ {
+  "record_id": "FS-006546",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "myeloma patients post-treatment; clinical cohort"
+ },
+ {
+  "record_id": "FS-006547",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "salivary IgA and antioxidants 48h post-match"
+ },
+ {
+  "record_id": "FS-006548",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cold-water immersion vs passive; IL-6/IL-10/TNF post-training"
+ },
+ {
+  "record_id": "FS-006550",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ibuprofen vs placebo; cytokines/LBP/sCD14 after heat running"
+ },
+ {
+  "record_id": "FS-006551",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T1DM vs healthy strata separable; EPC/TNF/IL-6 post-cycling"
+ },
+ {
+  "record_id": "FS-006552",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "oesophageal cancer prehabilitation during chemotherapy"
+ },
+ {
+  "record_id": "FS-006554",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "interstitial proteome; immune-derived proteins; CAMP/LL-37"
+ },
+ {
+  "record_id": "FS-006555",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "FSHD dystrophy patients; muscle histology outcomes"
+ },
+ {
+  "record_id": "FS-006556",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "MASLD mouse model; Nrg4/cGAS-STING; animal-only"
+ },
+ {
+  "record_id": "FS-006559",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "pregnancy cohort eligibility at FT; cytokines/CRP measured"
+ },
+ {
+  "record_id": "FS-006560",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exercise vs passive heat; PBMC autophagy and IL-6"
+ },
+ {
+  "record_id": "FS-006562",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Boswellia vs placebo; CRP/IL-6 after repeated downhill runs"
+ },
+ {
+  "record_id": "FS-006563",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle single-cell; mast-cell histamine; H1/H2 blockade in humans"
+ },
+ {
+  "record_id": "FS-006565",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "adipose-tissue omics; general inflammation transcripts, no immune measure"
+ },
+ {
+  "record_id": "FS-006566",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "EV omics without immune objective or named immune candidates"
+ },
+ {
+  "record_id": "FS-006567",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6/IL-10/IL-1Ra pre/post 105-km ultra-trail race"
+ },
+ {
+  "record_id": "FS-006569",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T-cell proliferation assay after HI vs MI exercise"
+ },
+ {
+  "record_id": "FS-006570",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cytokines/adhesion molecules around exhaustive cycling; CACS strata separable"
+ },
+ {
+  "record_id": "FS-006573",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "PBMC subsets/paracrine function after 50-km trail race"
+ },
+ {
+  "record_id": "FS-006574",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "polymorphisms; AKI/creatinine outcomes; no immune measure"
+ },
+ {
+  "record_id": "FS-006575",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "juice vs placebo; leukocyte counts after 10-km time trial"
+ },
+ {
+  "record_id": "FS-006576",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "elderly COPD patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-006577",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "erratum notice; not original research"
+ }
+]

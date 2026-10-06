@@ -1,0 +1,332 @@
+[
+ {
+  "record_id": "FS-007431",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cardiac patients in ischemia stress testing; clinical cohort, not generally healthy"
+ },
+ {
+  "record_id": "FS-007432",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon biopsies; leukocyte/phagocytic infiltrate plausibly immune-related"
+ },
+ {
+  "record_id": "FS-007433",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "race pre/post salivary IgA and B lymphocytes in skiers"
+ },
+ {
+  "record_id": "FS-007434",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "insulin binding to monocytes is metabolic receptor measure, not immune"
+ },
+ {
+  "record_id": "FS-007437",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "insulin binding/clamp metabolic measures only; monocytes as receptor model"
+ },
+ {
+  "record_id": "FS-007440",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "pre/post mini-marathon leukocyte counts, adults 23-47 y"
+ },
+ {
+  "record_id": "FS-007441",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "post-treadmill neutrophil chemotactic factor; healthy controls separable"
+ },
+ {
+  "record_id": "FS-007442",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "sarcoidosis Kco lung-function response only; no immune measure"
+ },
+ {
+  "record_id": "FS-007443",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute bouts before/after 6-week training; lymphocyte subsets, transformation"
+ },
+ {
+  "record_id": "FS-007444",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "asthmatic children stated; single adult, no separable adult stratum"
+ },
+ {
+  "record_id": "FS-007445",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "post-ultramarathon leukocyte differentials; >72h samples still eligible"
+ },
+ {
+  "record_id": "FS-007446",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "platelet aggregation, PF-4, fibrinolysis only; hemostasis not immune"
+ },
+ {
+  "record_id": "FS-007447",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "chronic active hepatitis patients on immunosuppressives; liver enzymes only"
+ },
+ {
+  "record_id": "FS-007449",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "post-race leukocyte rise within metabolic panel; female athletes"
+ },
+ {
+  "record_id": "FS-007450",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon pre/immediate/4-24h; neutrophil leucocytosis differential"
+ },
+ {
+  "record_id": "FS-007451",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "post-ergometer lymphocyte subsets and mitogen responses; cortisol covariate"
+ },
+ {
+  "record_id": "FS-007452",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "abstract empty; title only shows PF-4 ischemia patients"
+ },
+ {
+  "record_id": "FS-007453",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "8-mile run; immunoglobulins, complement, K-lymphocytes, 24h sample"
+ },
+ {
+  "record_id": "FS-007454",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "resting immune profile in runners; possible RETAIN_BACKGROUND pattern, advance"
+ },
+ {
+  "record_id": "FS-007455",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "RBC/hemoglobin pseudoanemia only; no immune measure"
+ },
+ {
+  "record_id": "FS-007457",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "six anaphylactoid-symptom patients only; no separable healthy stratum"
+ },
+ {
+  "record_id": "FS-007458",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "coronary-artery disease patients; clinical ischemia cohort"
+ },
+ {
+  "record_id": "FS-007459",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "asthmatics only; hyperventilation/antigen challenges, no exercise bout"
+ },
+ {
+  "record_id": "FS-007461",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "run leukocytosis; granulocyte beta-glucuronidase response, trained vs untrained"
+ },
+ {
+  "record_id": "FS-007462",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "pre/immediate/24h post-swim; marked leukocytosis among metabolic panel"
+ },
+ {
+  "record_id": "FS-007465",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "17 asthmatic individuals only; arterial histamine, no healthy stratum"
+ },
+ {
+  "record_id": "FS-007466",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CRP/acute-phase glycoproteins after runs; before/after 9-week training"
+ },
+ {
+  "record_id": "FS-007467",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "5-min post-exercise CD4/CD8 and Ig across training phases"
+ },
+ {
+  "record_id": "FS-007469",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review of DOMS inflammatory response"
+ },
+ {
+  "record_id": "FS-007471",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "schistosomiasis-infected triathletes; diagnostic serology, not exercise immunology"
+ },
+ {
+  "record_id": "FS-007472",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CFS cohort but healthy controls separable; cytokines pre/post walk"
+ },
+ {
+  "record_id": "FS-007474",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "MPO as PMN-activation marker after eccentric run; healthy adults"
+ },
+ {
+  "record_id": "FS-007475",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "allergic asthma patients only; basophil histamine release, no healthy stratum"
+ },
+ {
+  "record_id": "FS-007479",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "7-month swim season; serum/salivary Ig, NK cells, post-session IgA"
+ },
+ {
+  "record_id": "FS-007480",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "post-eccentric CRP, complement C3c/C4, haptoglobin to 9 days"
+ },
+ {
+  "record_id": "FS-007481",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "resistance squat bout; leukocytosis, NKCA, Con A proliferation"
+ },
+ {
+  "record_id": "FS-007482",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "resting runner-vs-control immune comparison; background pattern, advance"
+ },
+ {
+  "record_id": "FS-007483",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "single acute-renal-failure patient case; urinalysis/biopsy only"
+ },
+ {
+  "record_id": "FS-007484",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "stable angina patients; neutrophil superoxide/chemotaxis after ergometry"
+ },
+ {
+  "record_id": "FS-007485",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "post-marathon CK-MB/troponin/antimyosin imaging; cardiac injury markers only"
+ }
+]
