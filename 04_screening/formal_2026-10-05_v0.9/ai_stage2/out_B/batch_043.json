@@ -1,0 +1,330 @@
+[
+ {
+  "record_id": "FS-002244",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Acute exercise plus vaccination RCT, antibody response, control comparator"
+ },
+ {
+  "record_id": "FS-002245",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Older men, BFR resistance bout, IL-6 pre/30/60/120min"
+ },
+ {
+  "record_id": "FS-002246",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Heart failure patients, cross-sectional visfatin vs controls, no bout"
+ },
+ {
+  "record_id": "FS-002247",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Trial protocol paper (future tense), hypertensive CKD patients"
+ },
+ {
+  "record_id": "FS-002248",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Gulf War Illness/CFS patients, diagnostic classifier, healthy stratum not separable"
+ },
+ {
+  "record_id": "FS-002249",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Multiple sclerosis patients, clinical cohort, no healthy comparator"
+ },
+ {
+  "record_id": "FS-002250",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ozone chamber plus intermittent exercise, alveolar macrophage mRNA 18h post"
+ },
+ {
+  "record_id": "FS-002251",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Hypertensive patients on ARB/CCB, treadmill test, hsCRP/WBC/IL-6/TNFa; borderline population"
+ },
+ {
+  "record_id": "FS-002252",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Grape supplement, generic 'inflammation' outcome, no named immune marker"
+ },
+ {
+  "record_id": "FS-002253",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Intermittent claudication patients, peripheral arterial disease cohort"
+ },
+ {
+  "record_id": "FS-002254",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review on exercise/nutrition and sarcopenia mechanisms"
+ },
+ {
+  "record_id": "FS-002255",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ultramarathon, NGAL (neutrophil-derived antimicrobial protein) pre-post; borderline usage"
+ },
+ {
+  "record_id": "FS-002256",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Chronic ischemic heart disease/post-MI patients, clinical cohort"
+ },
+ {
+  "record_id": "FS-002257",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Stable angina patients, cardiac disease cohort, results not separable"
+ },
+ {
+  "record_id": "FS-002258",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "CK and glutamine only, no immune mediator measured"
+ },
+ {
+  "record_id": "FS-002259",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon, cytokines plus neutrophil/lymphocyte function pre-post"
+ },
+ {
+  "record_id": "FS-002260",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Gastrectomy cancer surgery patients, perioperative not exercise exposure"
+ },
+ {
+  "record_id": "FS-002261",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Exercise-induced asthma patients, drug trial, clinical cohort"
+ },
+ {
+  "record_id": "FS-002262",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "90-min run, IL-4/IL-6/IL-10/TNFa/leukocyte differential pre-post"
+ },
+ {
+  "record_id": "FS-002263",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "In vitro IgE diagnostic assay on prior WDEIA sera, no exercise bout here"
+ },
+ {
+  "record_id": "FS-002264",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon proteomics, cytokines/inflammatory proteins identified, pre-finish-7h"
+ },
+ {
+  "record_id": "FS-002265",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Elite swimmers, NK cells across season, t4 48h post-competition; borderline timing"
+ },
+ {
+  "record_id": "FS-002266",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Half-marathon vs marathon, IL-6/TNFa/MMP-9 pre-15min-28h"
+ },
+ {
+  "record_id": "FS-002267",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Treadmill exercise vs control group, PBMC glutamine synthetase mRNA"
+ },
+ {
+  "record_id": "FS-002268",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Probiotic vs placebo, acute cycling bout, TNF-a/IL-6 pre-post"
+ },
+ {
+  "record_id": "FS-002269",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Team-sport circuit, recovery modalities, IL-6/CRP pre-3h-24h"
+ },
+ {
+  "record_id": "FS-002270",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Heart failure (HFREF) patients, clinical cohort"
+ },
+ {
+  "record_id": "FS-002271",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Hypoxia plus cycling time trial, monocytes pre-0-2-24h"
+ },
+ {
+  "record_id": "FS-002272",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "MSM supplement, antioxidant/homocysteine only, no immune mediator"
+ },
+ {
+  "record_id": "FS-002273",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Acute cycling, CD8+ T-cell cytokine expression pre-post-1h"
+ },
+ {
+  "record_id": "FS-002274",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Coronary artery disease patients, clinical cohort"
+ },
+ {
+  "record_id": "FS-002275",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy adults 18-30y, acute and chronic exercise, IL-6/TNFa"
+ },
+ {
+  "record_id": "FS-002276",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Radiolabelled granulocyte migration technique, exercise effect noted; methods-focused borderline"
+ },
+ {
+  "record_id": "FS-002277",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Incremental exercise, CD4/CD8/CD19 apoptosis and migration markers"
+ },
+ {
+  "record_id": "FS-002278",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ceramide/NFkB/anabolic signaling in muscle, no immune mediator"
+ },
+ {
+  "record_id": "FS-002279",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Monocyte subsets/TNF, treadmill exercise, prehypertension strata"
+ },
+ {
+  "record_id": "FS-002281",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Single hs-CRP measurement vs metabolic syndrome, no pre/post bout sampling"
+ },
+ {
+  "record_id": "FS-002282",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Vascular/angiogenic gene pathways, not immune-focused"
+ },
+ {
+  "record_id": "FS-002283",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Elite swimmers, flavonoid juice, explicit immune function measured, pre-post"
+ },
+ {
+  "record_id": "FS-002284",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Four exercise modalities, IL-6/hepcidin pre-post-3h"
+ }
+]

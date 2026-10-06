@@ -1,0 +1,328 @@
+[
+ {
+  "record_id": "FS-001739",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Only troponin/CMR cardiac outcomes, no immune marker"
+ },
+ {
+  "record_id": "FS-001740",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Exercising swimmer cohort age 14-23, no separable adult results"
+ },
+ {
+  "record_id": "FS-001742",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ironman race, TNFa/IL-6/IL-10/IL-1ra pre/post"
+ },
+ {
+  "record_id": "FS-001744",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ultramarathon swim, leukocyte/neutrophil/monocyte pre/post"
+ },
+ {
+  "record_id": "FS-001745",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Trapezius myalgia patients only, no immune marker"
+ },
+ {
+  "record_id": "FS-001747",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Only antioxidant capacity/DNA damage, no immune measure"
+ },
+ {
+  "record_id": "FS-001748",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Myopathy patient case series, diagnostic pathology report"
+ },
+ {
+  "record_id": "FS-001749",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Treadmill run, CD8 T-cell subsets baseline-60min post"
+ },
+ {
+  "record_id": "FS-001750",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "10-year resting WBC reference ranges by sport, no bout"
+ },
+ {
+  "record_id": "FS-001751",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "3 exercise types, PTX3/CRP/IL-6/MPO pre-post"
+ },
+ {
+  "record_id": "FS-001752",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIV case-control; separable HIV-negative healthy arm, CD4/CD8/WBC"
+ },
+ {
+  "record_id": "FS-001755",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Basketball season, sIgA/lactoferrin repeated vs recovery baseline"
+ },
+ {
+  "record_id": "FS-001756",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric exercise, arterial stiffness and CRP pre/post"
+ },
+ {
+  "record_id": "FS-001757",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Only platelet activation/B-TG measured, not immune marker"
+ },
+ {
+  "record_id": "FS-001758",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "4-day cycling competition, IL-1b/IL-6/TNFa pre/post"
+ },
+ {
+  "record_id": "FS-001759",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "COPD vs separable age-matched healthy controls, muscle/PBMC cytokine genes"
+ },
+ {
+  "record_id": "FS-001760",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "All participants knee osteoarthritis, NSAID vs placebo only"
+ },
+ {
+  "record_id": "FS-001761",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Retrospective WDEIA allergy patient diagnostic cohort"
+ },
+ {
+  "record_id": "FS-001763",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "8-week walking programme, pre/post snapshot no acute bout"
+ },
+ {
+  "record_id": "FS-001764",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Abdominal aortic aneurysm patients, no healthy stratum, chronic 1yr"
+ },
+ {
+  "record_id": "FS-001765",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "All three arms HIV-infected men, no healthy comparator"
+ },
+ {
+  "record_id": "FS-001767",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CRE session, lymphocyte ABCA1 mRNA and WBC counts pre/post"
+ },
+ {
+  "record_id": "FS-001768",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Diet crossover, single resting draw per diet, no bout pre/post"
+ },
+ {
+  "record_id": "FS-001769",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "45-min walk vs rest comparator, NK/T-cell subsets 24h"
+ },
+ {
+  "record_id": "FS-001770",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Only protein synthesis/growth-factor gene expression, no immune marker"
+ },
+ {
+  "record_id": "FS-001772",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Lean/obese/T2DM; separable lean stratum, muscle IL-6/MCP-1"
+ },
+ {
+  "record_id": "FS-001773",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "60km time trial, monocyte TLR2/TLR4/HLA-DR pre-1h post"
+ },
+ {
+  "record_id": "FS-001774",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Heavy exercise, cfDNA/hs-CRP timecourse to 24h"
+ },
+ {
+  "record_id": "FS-001775",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Only heart-rate-recovery outcome, no immune marker"
+ },
+ {
+  "record_id": "FS-001776",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Monthly resting samples over 12mo, no bout-tied timing"
+ },
+ {
+  "record_id": "FS-001777",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rhIL-6 pharmacologic infusion, no exercise bout performed"
+ },
+ {
+  "record_id": "FS-001779",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CRP only a baseline correlate of BP, not exercise-response outcome"
+ },
+ {
+  "record_id": "FS-001780",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Explicit narrative review of resistance training and cytokines"
+ },
+ {
+  "record_id": "FS-001781",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Allogeneic HSCT transplant patients, no healthy stratum"
+ },
+ {
+  "record_id": "FS-001782",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Genotoxicity/micronuclei biomarkers only, not immune function"
+ },
+ {
+  "record_id": "FS-001783",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "All participants have coronary artery disease, no healthy stratum"
+ },
+ {
+  "record_id": "FS-001784",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Post-PCI stable angina patients only, no healthy stratum"
+ },
+ {
+  "record_id": "FS-001785",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Free radical/DNA damage/antioxidants only, not immune marker"
+ },
+ {
+  "record_id": "FS-001786",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exhaustive run, CD8 T-cell senescence phenotype/telomere pre-1h post"
+ },
+ {
+  "record_id": "FS-001787",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Hybrid review plus original EIMD data, sIL-6R to 72h"
+ }
+]

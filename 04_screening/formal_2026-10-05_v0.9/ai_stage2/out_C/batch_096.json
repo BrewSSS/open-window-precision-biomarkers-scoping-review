@@ -1,0 +1,334 @@
+[
+ {
+  "record_id": "FS-004625",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Multiple sclerosis patients, clinical cohort"
+ },
+ {
+  "record_id": "FS-004626",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cardiovascular/muscle biomarkers only, no immune measure"
+ },
+ {
+  "record_id": "FS-004627",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Vaccination timing vs training; immune response measured"
+ },
+ {
+  "record_id": "FS-004628",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Genetic polymorphism frequency, no exercise bout sampling"
+ },
+ {
+  "record_id": "FS-004629",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Camels, doping assay, not human"
+ },
+ {
+  "record_id": "FS-004631",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rat implant infection model, animal only"
+ },
+ {
+  "record_id": "FS-004632",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse/cell model insulin resistance, animal only"
+ },
+ {
+  "record_id": "FS-004633",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Coronary heart disease patients, clinical cohort"
+ },
+ {
+  "record_id": "FS-004634",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ultramarathon case report, WBC/neutrophils/CRP timepoints"
+ },
+ {
+  "record_id": "FS-004635",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Single-bout IL-6 and bone markers rest vs postexercise"
+ },
+ {
+  "record_id": "FS-004636",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "28-week program, no identifiable acute bout sampling"
+ },
+ {
+  "record_id": "FS-004637",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Metabolite/amino-acid markers only, no immune measure"
+ },
+ {
+  "record_id": "FS-004638",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Swine influenza surveillance, no human exercise exposure"
+ },
+ {
+  "record_id": "FS-004640",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Hypobaric hypoxia, cytokine mRNA before/after exercise"
+ },
+ {
+  "record_id": "FS-004641",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse exhaustive exercise model, animal only"
+ },
+ {
+  "record_id": "FS-004642",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Knee osteoarthritis patients, clinical cohort"
+ },
+ {
+  "record_id": "FS-004643",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Training-camp hepcidin monitoring, unclear bout-sample link"
+ },
+ {
+  "record_id": "FS-004644",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "TCR-gammadelta T-cell mobilization after acute exercise"
+ },
+ {
+  "record_id": "FS-004645",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Placebo-controlled cytokines across two exercise tests"
+ },
+ {
+  "record_id": "FS-004646",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Genetic association study, no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-004647",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Parkinson's disease patients, clinical cohort"
+ },
+ {
+  "record_id": "FS-004648",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Weekly WBC/CD4/CD8 monitoring across training program"
+ },
+ {
+  "record_id": "FS-004649",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse knockout study, animal only"
+ },
+ {
+  "record_id": "FS-004650",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT08"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Regular training plus supplement, no acute bout described"
+ },
+ {
+  "record_id": "FS-004651",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "First-episode schizophrenia patients, clinical cohort"
+ },
+ {
+  "record_id": "FS-004652",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Irisin/adropin/cholesterol only, no immune measure"
+ },
+ {
+  "record_id": "FS-004653",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric exercise, TNF-a/IL-6/IL-10 pre-post patch"
+ },
+ {
+  "record_id": "FS-004654",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse myopathy model, animal only"
+ },
+ {
+  "record_id": "FS-004655",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Acute boxing bout, salivary CRP, PTSD vs control"
+ },
+ {
+  "record_id": "FS-004656",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Severely inflamed inpatients, no exercise bout"
+ },
+ {
+  "record_id": "FS-004659",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Single bout cf-mtDNA, leukocytes before/during/after"
+ },
+ {
+  "record_id": "FS-004660",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "DOMS sensory/pain thresholds only, no immune measure"
+ },
+ {
+  "record_id": "FS-004661",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rat and cell-line experiments, animal/in vitro only"
+ },
+ {
+  "record_id": "FS-004662",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Allergy cohort comparison, no exercise bout sampling"
+ },
+ {
+  "record_id": "FS-004664",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Resistance vs endurance bout, hepcidin/IL-6 timecourse"
+ },
+ {
+  "record_id": "FS-004665",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Placebo-controlled leg-press bout, TNF-a timecourse"
+ },
+ {
+  "record_id": "FS-004666",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "CRP/CK sampled week1 vs week8 sessions, HIFT program"
+ },
+ {
+  "record_id": "FS-004667",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Myoglobin/ALT/pain only, no immune measure"
+ },
+ {
+  "record_id": "FS-004668",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "CAD/pulmonary disease rehab patients, clinical cohort"
+ },
+ {
+  "record_id": "FS-004669",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Hypobaric hypoxia acute exercise, CPCs/endothelial cells"
+ }
+]

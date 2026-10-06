@@ -1,0 +1,326 @@
+[
+ {
+  "record_id": "FS-002455",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "myokine narrative commentary/review, not focused original trial"
+ },
+ {
+  "record_id": "FS-002456",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "PEA/SEA lipid pain mediators only, not core immune measure"
+ },
+ {
+  "record_id": "FS-002457",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat wheel-running microarray, animal-only study"
+ },
+ {
+  "record_id": "FS-002458",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "crossover sprint tests, 3 beverages, CRP pre/post each"
+ },
+ {
+  "record_id": "FS-002459",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric bout, NAC vs placebo, CRP/cytokines to 8d"
+ },
+ {
+  "record_id": "FS-002460",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "training bout, CHO+PRO vs CHO, neutrophil count pre/post"
+ },
+ {
+  "record_id": "FS-002461",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "SIT vs CET bout, inflammatory markers pre/24/48h"
+ },
+ {
+  "record_id": "FS-002462",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "sarcoidosis vs separable healthy stratum, cytokines, 2 bouts"
+ },
+ {
+  "record_id": "FS-002463",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "breast cancer patients, clinical cohort, 12-wk program"
+ },
+ {
+  "record_id": "FS-002464",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "device therapy (waves/hyperthermia), no exercise, no immune marker"
+ },
+ {
+  "record_id": "FS-002465",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "post-surgical ACL recovery biomarkers, not an exercise bout"
+ },
+ {
+  "record_id": "FS-002466",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric bout, cryotherapy vs control, IL-6/CRP"
+ },
+ {
+  "record_id": "FS-002467",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-wk band program pre/post, no acute-bout sampling"
+ },
+ {
+  "record_id": "FS-002468",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "BDNF only, neurotrophin not core immune mediator"
+ },
+ {
+  "record_id": "FS-002469",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exercise vs non-exercise arm, APAP vs placebo, tendon IL-6"
+ },
+ {
+  "record_id": "FS-002470",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "3 trail races, CS vs control, IL-6/CK to 48h"
+ },
+ {
+  "record_id": "FS-002471",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "brief stair exercise, NK cell counts and function pre/post"
+ },
+ {
+  "record_id": "FS-002472",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "crossover eccentric trials, shiitake vs placebo, IL-6/10/1b"
+ },
+ {
+  "record_id": "FS-002473",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "polymyositis patients, clinical disease cohort, no immune marker"
+ },
+ {
+  "record_id": "FS-002474",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "glucose/insulin/GLP-1 only, no immune measure"
+ },
+ {
+  "record_id": "FS-002475",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "8-wk weight-control program pre/post, no acute-bout sampling"
+ },
+ {
+  "record_id": "FS-002476",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CK/redox/respiratory-quotient only, no immune marker"
+ },
+ {
+  "record_id": "FS-002477",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "hypertensive men, clinical cohort, CRP as baseline classifier only"
+ },
+ {
+  "record_id": "FS-002479",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "altitude exposure study on immunity, not exercise-bout design"
+ },
+ {
+  "record_id": "FS-002480",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "stem-cell-transplant patients, clinical cohort"
+ },
+ {
+  "record_id": "FS-002481",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "theme-issue review on infectious disease elimination"
+ },
+ {
+  "record_id": "FS-002482",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "CAD patients, clinical cohort, lipid profile only"
+ },
+ {
+  "record_id": "FS-002483",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "GWI/CFS vs separable healthy stratum, extensive cytokine panel"
+ },
+ {
+  "record_id": "FS-002484",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mechanically ventilated ICU patients, clinical cohort"
+ },
+ {
+  "record_id": "FS-002485",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "asthma patients only, no healthy stratum, clinical cohort"
+ },
+ {
+  "record_id": "FS-002486",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse/hepatocyte cell-line MIF mechanism study, not human exercise data"
+ },
+ {
+  "record_id": "FS-002487",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "60-day bed rest with exercise countermeasure, no acute-bout sampling"
+ },
+ {
+  "record_id": "FS-002488",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "crossover EIMD vs CON run 2wk apart, IL-6 tracked"
+ },
+ {
+  "record_id": "FS-002489",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "single case report, diagnostic allergy testing, no bout-timed sampling"
+ },
+ {
+  "record_id": "FS-002490",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "type 2 diabetic men, clinical cohort, 12-wk program"
+ },
+ {
+  "record_id": "FS-002491",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "coffee plant pathology genomics, not human research"
+ },
+ {
+  "record_id": "FS-002493",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "RT vs endurance vs control, IL6/IL8/TNFa gene expression"
+ },
+ {
+  "record_id": "FS-002494",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "330km ultra-marathon, CRP pre/post vs control group"
+ },
+ {
+  "record_id": "FS-002495",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "oxidative stress/antioxidant enzymes and EPO only, no immune marker"
+ },
+ {
+  "record_id": "FS-002496",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "resistance session, leukocytes/monocytes/neutrophils, IL-6/TNFa"
+ }
+]

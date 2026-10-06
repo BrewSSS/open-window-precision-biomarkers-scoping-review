@@ -1,0 +1,330 @@
+[
+ {
+  "record_id": "FS-001273",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Case review of post-pancreatoduodenectomy/biliary surgery patients; clinical cohort, no immune measure."
+ },
+ {
+  "record_id": "FS-001274",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Adventure race mood/illness/injury via questionnaires only; no immune biomarker measured."
+ },
+ {
+  "record_id": "FS-001275",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "246-km race, pre/post/48h, IL-6, CRP, TNF-alpha, procalcitonin measured."
+ },
+ {
+  "record_id": "FS-001276",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Caffeine vs placebo, time-trial cycling, neutrophil oxidative burst measured."
+ },
+ {
+  "record_id": "FS-001277",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Three cycling intensity trials, pre/post/1h, salivary IgA and lysozyme."
+ },
+ {
+  "record_id": "FS-001278",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Multi-day cycling, crossover protein vs control, cytokines and cortisol measured."
+ },
+ {
+  "record_id": "FS-001279",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Acute cycling bout, pre/post, salivary IgA, serum cytokines, monocyte CD36."
+ },
+ {
+  "record_id": "FS-001280",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Quercetin vs placebo, 3-day cycling bouts, pre/post CRP measured."
+ },
+ {
+  "record_id": "FS-001283",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Two eccentric exercise bouts 4wk apart, muscle biopsies, MCP1/IL1R1 inflammatory genes."
+ },
+ {
+  "record_id": "FS-001284",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "3.5-day combat course, pre/post, CRP and arterial elasticity, pilot n=7."
+ },
+ {
+  "record_id": "FS-001285",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mathematical/computational model of exhaled nitric oxide, not original human exercise research."
+ },
+ {
+  "record_id": "FS-001288",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycle exercise to exhaustion, pre/post/1h, leukocyte counts and NK cell function."
+ },
+ {
+  "record_id": "FS-001290",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Endurance exercise to exhaustion, before/0/5/30/60min, leucocyte/lymphocyte subpopulations."
+ },
+ {
+  "record_id": "FS-001291",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Elderly, two eccentric bouts 8wk apart, PBMC NF-kappaB and IL-6/iNOS/COX-2 expression."
+ },
+ {
+  "record_id": "FS-001292",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Maximal cycling, pre/post, prostacyclin correlated with VO2max; IL-6/TNF-alpha also measured."
+ },
+ {
+  "record_id": "FS-001293",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "MS patients and matched healthy controls, acute cycling bouts, IL-6/TNF/IFN-gamma pre-post."
+ },
+ {
+  "record_id": "FS-001294",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Type1 diabetics and age-matched healthy controls, Bruce protocol, lymphocyte subgroups."
+ },
+ {
+  "record_id": "FS-001297",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Hypothyroid patients; resting endothelial/OPG/CRP assessment, no exercise-bout sampling design."
+ },
+ {
+  "record_id": "FS-001298",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "All participants have Type 2 diabetes; resting hsCRP vs fitness, no acute-bout sampling."
+ },
+ {
+  "record_id": "FS-001299",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Vitamin C vs placebo, 30-min exercise, pre/post/2h/24h leukocytes and IL-6."
+ },
+ {
+  "record_id": "FS-001300",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Habitual fitness vs resting CRP, cross-sectional and 1-year follow-up, no acute bout sampled."
+ },
+ {
+  "record_id": "FS-001301",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Resting lung function and cytokines compared across sports disciplines, no acute-bout design."
+ },
+ {
+  "record_id": "FS-001302",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Soccer match, pre/30min/24/48/72h, blood leukocyte counts measured."
+ },
+ {
+  "record_id": "FS-001304",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "21-km road race, before/after, leukocytes, endotoxin, and cytokines measured."
+ },
+ {
+  "record_id": "FS-001305",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Preloaded run plus performance run, three meal trials, leukocytes/T-cells/IL-6/IL-10."
+ },
+ {
+  "record_id": "FS-001306",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Moderate exercise vs rest, 7-day follow-up, neutrophils/lymphocytes/monocytes/cytokines/CRP."
+ },
+ {
+  "record_id": "FS-001308",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Downhill run, placebo vs methylprednisolone, PMN elastase and myeloperoxidase measured."
+ },
+ {
+  "record_id": "FS-001309",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycling bout, PBMC before/after, monocyte CCR2 expression and cortisol link."
+ },
+ {
+  "record_id": "FS-001310",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Sickle cell trait carriers vs controls, repeated maximal bouts, cytokines/adhesion molecules."
+ },
+ {
+  "record_id": "FS-001311",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Elite rowers vs sedentary, acute graded exercise test, salivary lactoferrin/lysozyme pre-post."
+ },
+ {
+  "record_id": "FS-001312",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "PCOS women, endocrine disease cohort; 3-month chronic training, no acute bout."
+ },
+ {
+  "record_id": "FS-001314",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Chronic heart failure patients; clinical disease cohort receiving yoga/medical therapy."
+ },
+ {
+  "record_id": "FS-001315",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Half-marathon, placebo-controlled throat spray, pre/post IL-6/IL-8/IL-10/MPO."
+ },
+ {
+  "record_id": "FS-001316",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Population cohort follow-up of exercise capacity and mortality; resting CRP covariate only."
+ },
+ {
+  "record_id": "FS-001317",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Simulated team sport exercise, water immersion recovery, inflammatory markers pre to 48h."
+ },
+ {
+  "record_id": "FS-001318",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ironman triathlon, 2 days before to 19 days after, leukocytes, IL-6, IL-10, hs-CRP."
+ },
+ {
+  "record_id": "FS-001319",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Acute resistance exercise, CHO vs placebo, baseline/immediate/90min leukocyte subsets."
+ },
+ {
+  "record_id": "FS-001320",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Half-marathon, antioxidant drink vs placebo, pre/post/3h lymphocyte oxidative/apoptosis markers."
+ },
+ {
+  "record_id": "FS-001322",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Eucapnic voluntary hyperventilation challenge is not a physical exercise bout."
+ },
+ {
+  "record_id": "FS-001323",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycling in cold vs control, pre/30/60min/post, IL-6 and soluble receptors measured."
+ }
+]

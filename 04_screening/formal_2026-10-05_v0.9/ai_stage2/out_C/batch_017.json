@@ -1,0 +1,324 @@
+[
+ {
+  "record_id": "FS-000948",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "intermittent vs continuous exercise, salivary IgA, multiple timepoints"
+ },
+ {
+  "record_id": "FS-000949",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "90min cycling pre/post, salivary IgA, nucleotide vs placebo"
+ },
+ {
+  "record_id": "FS-000950",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cycling vs rest trial, lymphocyte subsets CD19/CD8/CD3, baseline/1h/3h"
+ },
+ {
+  "record_id": "FS-000951",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "160km race, pre/post salivary IgA secretion, URTI follow-up"
+ },
+ {
+  "record_id": "FS-000952",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "myogenic gene expression only, no immune measure"
+ },
+ {
+  "record_id": "FS-000953",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "baseline plus 4h/18h after identified race stages, IL-6/TNFR, AM3 vs placebo"
+ },
+ {
+  "record_id": "FS-000954",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "resting blood draw by habitual activity status, cytokines/hsCRP/TLR4"
+ },
+ {
+  "record_id": "FS-000955",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "bicycle ergometry pre/post, lymphocytosis and lymphocyte cyclic nucleotides"
+ },
+ {
+  "record_id": "FS-000956",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "mononuclear cell metabolic enzymes only, not recognized immune measure"
+ },
+ {
+  "record_id": "FS-000959",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "case series of patients with exercise-induced vasculitis, disease cohort"
+ },
+ {
+  "record_id": "FS-000960",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2h strenuous exercise, IL-6/TNF-alpha blood and CSF, CHO vs placebo"
+ },
+ {
+  "record_id": "FS-000961",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "90min cycling, neutrophil oxidative burst, caffeine vs placebo"
+ },
+ {
+  "record_id": "FS-000962",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "32km trail race, pre/0/4/24h post, IL-6 and CRP, CHO groups"
+ },
+ {
+  "record_id": "FS-000963",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "NHANES survey, resting CRP vs fitness, no exercise bout sampling"
+ },
+ {
+  "record_id": "FS-000965",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "resting serum resistin/chemokines, athletes vs sedentary groups, no bout"
+ },
+ {
+  "record_id": "FS-000966",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2.5h cycling, IL-6/neutrophil responses, vitamin C vs placebo"
+ },
+ {
+  "record_id": "FS-000971",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "20min treadmill pre/post, PBMC-endothelial adhesion, fit vs less-fit"
+ },
+ {
+  "record_id": "FS-000972",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "daily races, salivary IgA fasting/pre/post each day, same athletes"
+ },
+ {
+  "record_id": "FS-000973",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "CRP/WBC vs exaggerated BP during maximal test, sample timing unclear"
+ },
+ {
+  "record_id": "FS-000974",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "lymphocyte apoptosis/oxidative markers, not a recognized immune measure"
+ },
+ {
+  "record_id": "FS-000976",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "in-vitro mast cell line/tissue receptor study, no exercise, no human subjects"
+ },
+ {
+  "record_id": "FS-000978",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle/liver damage enzymes only, no immune measure"
+ },
+ {
+  "record_id": "FS-000979",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "NSAID gel trial for tenosynovitis, no immune measure"
+ },
+ {
+  "record_id": "FS-000980",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "strength/pain/soreness only, no immune measure"
+ },
+ {
+  "record_id": "FS-000982",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "14km run, plasma Hsp72 as danger-signal/inflammatory marker, patients vs controls"
+ },
+ {
+  "record_id": "FS-000983",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Vuelta stages T0/T1/T2, immunoglobulins IgE/IgA/IgG/IgM, ECP"
+ },
+ {
+  "record_id": "FS-000984",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "asthmatic patients only, clinical cohort"
+ },
+ {
+  "record_id": "FS-000985",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "max/submax cycling vs rest control, IL-6, young men and women"
+ },
+ {
+  "record_id": "FS-000986",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "repeated heat-exercise days, extracellular Hsp72 as immune danger signal"
+ },
+ {
+  "record_id": "FS-000987",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "two 30-min bouts same day, WBC counts, LPS-stimulated cytokines IL-8"
+ },
+ {
+  "record_id": "FS-000988",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "triathlon vs 100km run, pre/post/24h/7d, IL-6/IL-8/IL-10/IL-1ra"
+ },
+ {
+  "record_id": "FS-000989",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle proteolysis mRNA panel, TNF-alpha incidental, no immune objective"
+ },
+ {
+  "record_id": "FS-000990",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "12-week training periods t1-t4, CRP, bout-to-sample timing unclear"
+ },
+ {
+  "record_id": "FS-000992",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "treadmill exercise, healthy volunteer stratum separable, IL-6/CRP/D-dimer"
+ },
+ {
+  "record_id": "FS-000994",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "adipose visfatin mRNA, adipokine not recognized immune mediator"
+ },
+ {
+  "record_id": "FS-000995",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "same judoists, neutrophil function before/after two training-linked bouts"
+ },
+ {
+  "record_id": "FS-000996",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "ischemic heart disease patients, clinical cohort, no immune measure"
+ },
+ {
+  "record_id": "FS-000997",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "1h cycling, NK cell count/activity, PRE/POST/2H/4H, CHO vs placebo"
+ },
+ {
+  "record_id": "FS-000998",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cardiac/stroke biomarker panel, no recognized immune measure"
+ },
+ {
+  "record_id": "FS-000999",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "neutrophil microbicidal killing assay, Hsp72/norepinephrine mediators"
+ }
+]

@@ -1,0 +1,330 @@
+[
+  {
+    "record_id": "FS-002712",
+    "disposition": "AWAITING_CLASSIFICATION",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Age given only as mean+-SEM 24.2+-1.7y; SEM does not substitute"
+  },
+  {
+    "record_id": "FS-002713",
+    "disposition": "AWAITING_CLASSIFICATION",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Mean age 24+-5y; mean-2SD<18, no range stated"
+  },
+  {
+    "record_id": "FS-002714",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT07",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Urine protein/creatinine/leucocytes as renal markers, not immune"
+  },
+  {
+    "record_id": "FS-002715",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Leukocytosis/T-cell proliferation before/after adventure sprint race"
+  },
+  {
+    "record_id": "FS-002716",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [
+      "FT04"
+    ],
+    "study_type_hint": "other",
+    "note": "Allergic conjunctivitis clinical patients; no exercise bout performed"
+  },
+  {
+    "record_id": "FS-002717",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "hs-CRP and BP response to step test; sampling timing unclear"
+  },
+  {
+    "record_id": "FS-002718",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT01",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Special-issue editorial introduction, not original research"
+  },
+  {
+    "record_id": "FS-002719",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Lung cancer patients on chemotherapy, clinical cohort"
+  },
+  {
+    "record_id": "FS-002720",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [
+      "FT04"
+    ],
+    "study_type_hint": "other",
+    "note": "Coronary artery disease patients, clinical cohort"
+  },
+  {
+    "record_id": "FS-002721",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "TNF-a after LPS/exercise bout, control vs LPS trial comparator"
+  },
+  {
+    "record_id": "FS-002722",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Predialysis chronic kidney disease patients, clinical cohort"
+  },
+  {
+    "record_id": "FS-002723",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Complement C3/Ig/cytokines/neutrophil before-after-18h ballet class"
+  },
+  {
+    "record_id": "FS-002724",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Type 1 diabetes patients, clinical cohort"
+  },
+  {
+    "record_id": "FS-002725",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT07",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Oxidative-stress/vascular markers only, no immune measure"
+  },
+  {
+    "record_id": "FS-002726",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT07",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Arterial stiffness/soreness only, no immune marker reported"
+  },
+  {
+    "record_id": "FS-002728",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "CRP pre/post/24/48/72h marathon, compression vs sham"
+  },
+  {
+    "record_id": "FS-002729",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "hs-CRP before/5min/20h after exercise test, suspected-CAD cohort"
+  },
+  {
+    "record_id": "FS-002730",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Rheumatoid arthritis patients, clinical cohort"
+  },
+  {
+    "record_id": "FS-002731",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT07",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Hsp72 stress protein in PBMCs, not a recognized immune mediator"
+  },
+  {
+    "record_id": "FS-002732",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [
+      "FT04"
+    ],
+    "study_type_hint": "other",
+    "note": "NHANES sample aged 6+ with no separable adult stratum; no bout"
+  },
+  {
+    "record_id": "FS-002733",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Breast cancer survivors, disease-treatment clinical cohort"
+  },
+  {
+    "record_id": "FS-002734",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [],
+    "study_type_hint": "cross_sectional_resting",
+    "note": "Cross-sectional habitual-training-load vs serum CC16/IgG, no acute bout"
+  },
+  {
+    "record_id": "FS-002735",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Breast cancer survivors, disease-treatment clinical cohort"
+  },
+  {
+    "record_id": "FS-002736",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Salivary IgA/lysozyme/lactoferrin pre/post/1.5h after ultramarathon"
+  },
+  {
+    "record_id": "FS-002737",
+    "disposition": "AWAITING_CLASSIFICATION",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Mean age 25.5+-4.5y; mean-2SD<18, no range stated"
+  },
+  {
+    "record_id": "FS-002738",
+    "disposition": "AWAITING_CLASSIFICATION",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "'Youth National Team' ice hockey players, age unstated"
+  },
+  {
+    "record_id": "FS-002739",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Telomeric genes/miRNA in white blood cells, pre/post/60min run, mean age 24.1y passes"
+  },
+  {
+    "record_id": "FS-002740",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [
+      "FT04"
+    ],
+    "study_type_hint": "other",
+    "note": "Wheat-allergy patients, assay validation; no exercise bout"
+  },
+  {
+    "record_id": "FS-002741",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Diabetes mellitus patients, clinical cohort"
+  },
+  {
+    "record_id": "FS-002742",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Cytokine panel pre/post/1.5h/21h after 75km cycling, age 38y"
+  },
+  {
+    "record_id": "FS-002743",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Salivary IgA/CRP before/after ultra-marathon and open-water race"
+  },
+  {
+    "record_id": "FS-002744",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "MIF cytokine among growth factors, 3 exercise protocols pre-180min"
+  },
+  {
+    "record_id": "FS-002745",
+    "disposition": "AWAITING_CLASSIFICATION",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Population described only as 'adults', no age data given"
+  },
+  {
+    "record_id": "FS-002746",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "CKD stage 3 patients with diabetes/hypertension, clinical cohort"
+  },
+  {
+    "record_id": "FS-002747",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT07",
+    "secondary_codes": [],
+    "study_type_hint": "chronic_training_only",
+    "note": "Vascular/BP outcomes only reported here, no immune marker"
+  },
+  {
+    "record_id": "FS-002748",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Type 1 diabetes patients, clinical cohort"
+  },
+  {
+    "record_id": "FS-002749",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT07",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Lymphocyte beta2-adrenoceptor density, not an immune marker"
+  },
+  {
+    "record_id": "FS-002750",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "IL-6 measured before/after single training session, rugby players"
+  },
+  {
+    "record_id": "FS-002751",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "IL-6/IL-10/TNF-a rest and 3min after repeated hopping bouts"
+  },
+  {
+    "record_id": "FS-002752",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Leukocyte/IL-6 pre/post long-distance run, carbohydrate trials"
+  }
+]

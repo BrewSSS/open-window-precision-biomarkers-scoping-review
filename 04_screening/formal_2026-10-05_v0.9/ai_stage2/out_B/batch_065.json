@@ -1,0 +1,332 @@
+[
+  {
+    "record_id": "FS-003182",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Solid-tumor cancer patients, GM-CSF, no exercise, clinical cohort"
+  },
+  {
+    "record_id": "FS-003183",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT07",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "BMD patients, sodium nitrate, vascular/muscle oxygenation, no immune measure"
+  },
+  {
+    "record_id": "FS-003184",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Runners, 2 exhaustive runs, muscle/plasma IL-6/IL-8/MCP-1"
+  },
+  {
+    "record_id": "FS-003185",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [
+      "FT04",
+      "FT07"
+    ],
+    "study_type_hint": "other",
+    "note": "Hypertensive patients, cardiac/vascular markers, no immune measure"
+  },
+  {
+    "record_id": "FS-003186",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [],
+    "study_type_hint": "chronic_training_only",
+    "note": "6-day HIIT microcycle, CRP pre/post block, not single-bout design"
+  },
+  {
+    "record_id": "FS-003187",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Healthy men, max cycling, sVCAM-1/sICAM-1 rest vs exhaustion"
+  },
+  {
+    "record_id": "FS-003188",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Transgenic wheat IgE reactivity testing, no exercise bout performed"
+  },
+  {
+    "record_id": "FS-003189",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Treadmill exercise, IL-1Ra vs placebo, IL-6/CRP/MCP-1 pre/post"
+  },
+  {
+    "record_id": "FS-003190",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Judoists, 12-wk training, all-out bout rest/post/30min, IgA/IgG/IgM"
+  },
+  {
+    "record_id": "FS-003191",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "repeated_bouts_SupportB",
+    "note": "Athletes/non-athletes, ECC/CON bouts 5 days apart, TNFa/hsCRP"
+  },
+  {
+    "record_id": "FS-003192",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "repeated_bouts_SupportB",
+    "note": "Weightlifters, 3 sessions time-of-day, CRP rest/3min/48h"
+  },
+  {
+    "record_id": "FS-003193",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [
+      "FT04"
+    ],
+    "study_type_hint": "chronic_training_only",
+    "note": "CAD patients only, 12-wk training, EPC/angiogenic T cells, no healthy stratum"
+  },
+  {
+    "record_id": "FS-003194",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Children with sickle cell anaemia, stated pediatric, not separable adult stratum"
+  },
+  {
+    "record_id": "FS-003195",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Single exercise bout, muscle IL-6/IL-8 mRNA expression plus in vitro model"
+  },
+  {
+    "record_id": "FS-003196",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Young/old healthy, NK cell activity pre/post max ergometry"
+  },
+  {
+    "record_id": "FS-003197",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Marathon, statin vs control, p-selectin pre/finish/24h"
+  },
+  {
+    "record_id": "FS-003198",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [
+      "FT04",
+      "FT07"
+    ],
+    "study_type_hint": "other",
+    "note": "Dilated cardiomyopathy diagnostic workup, exercise test used only diagnostically"
+  },
+  {
+    "record_id": "FS-003199",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "T2D vs at-risk CON, 8-wk HIIT, pentraxin-3/IL-1ra; population borderline"
+  },
+  {
+    "record_id": "FS-003200",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Neuromuscular electrical stimulation, explicit alternative to active exercise"
+  },
+  {
+    "record_id": "FS-003202",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "CKD vs healthy subjects, acute+chronic exercise, inflammation-linked miRNA"
+  },
+  {
+    "record_id": "FS-003203",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Lean/overweight men, 2 interval intensities, leukocytes/IL-6/8/10 pre/post/30min"
+  },
+  {
+    "record_id": "FS-003204",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Acute cycling, CD34+/CD3+/CD14+ PBMC subsets and microparticles"
+  },
+  {
+    "record_id": "FS-003206",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Tear/saliva SIgA, 2h run substudy plus dehydration substudy"
+  },
+  {
+    "record_id": "FS-003207",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT07",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Mountain ultra-marathon, muscle contractile/edema, no immune measure"
+  },
+  {
+    "record_id": "FS-003208",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Heavy squat sessions, alcohol vs water, LPS-stimulated cytokines pre/3h/5h"
+  },
+  {
+    "record_id": "FS-003209",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Endurance exercise, protein-leucine vs CON, muscle leukocyte/IL-1/IL-6 transcriptome"
+  },
+  {
+    "record_id": "FS-003210",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "repeated_bouts_SupportB",
+    "note": "5-stage ultra-marathon, daily pre-stage leukocyte/monocyte/lymphocyte counts"
+  },
+  {
+    "record_id": "FS-003211",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "repeated_bouts_SupportB",
+    "note": "Judo athletes, 2 training weeks, chocolate milk vs water, salivary SIgA"
+  },
+  {
+    "record_id": "FS-003212",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Cycling plus electrical stim vs cycling alone, IL-6 pre/post/15/30/60min"
+  },
+  {
+    "record_id": "FS-003216",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Eccentric drop jumps, beetroot juice vs placebo, IL-6/IL-8/TNFa"
+  },
+  {
+    "record_id": "FS-003217",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "330km mountain ultra-marathon, plasma/urine IL-6 pre/middle/post"
+  },
+  {
+    "record_id": "FS-003218",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT02",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "db/db and db/m mice, whole body vibration, animal only"
+  },
+  {
+    "record_id": "FS-003219",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [
+      "FT04"
+    ],
+    "study_type_hint": "other",
+    "note": "Chronic systolic HF patients, CRP vs CPET correlation, clinical cohort"
+  },
+  {
+    "record_id": "FS-003221",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Soccer players age 17-20 pooled, includes minors, no separable adult stratum"
+  },
+  {
+    "record_id": "FS-003222",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Wrestling tournament, 5 matches, IL-6/CK/LDH before/after 5th match"
+  },
+  {
+    "record_id": "FS-003223",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Rowers, 2h scull, WBC/hsCRP/12-cytokine panel pre/post"
+  },
+  {
+    "record_id": "FS-003224",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "repeated_bouts_SupportB",
+    "note": "3-stage ultraendurance triathlon, CRP/cortisol before/after each stage"
+  },
+  {
+    "record_id": "FS-003225",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "75km cycling, banana/pear/water, leukocytes/IL-10 pre/post/1.5h/21h"
+  },
+  {
+    "record_id": "FS-003226",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "chronic_training_only",
+    "note": "Intermittent claudication patients only, 12-wk SET, cytokines, no healthy stratum"
+  },
+  {
+    "record_id": "FS-003227",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Marine martial arts training, lymphocyte/neutrophil subsets, cytokines baseline to 1h"
+  }
+]

@@ -1,0 +1,326 @@
+[
+ {
+  "record_id": "FS-004181",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Acute resistance exercise, CRP/inflammation, baseline+72h post"
+ },
+ {
+  "record_id": "FS-004183",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Rugby match, TNF-a/IL-6, pre/post to 72h, CWI vs control"
+ },
+ {
+  "record_id": "FS-004185",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIT sessions, panel includes MCP-1 chemokine, pre/post"
+ },
+ {
+  "record_id": "FS-004186",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Acute cycling bouts, TNF-a/IL-6/IL-10 cytokines by intensity"
+ },
+ {
+  "record_id": "FS-004187",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy sedentary control stratum separable from ME/CFS; complement C4a"
+ },
+ {
+  "record_id": "FS-004188",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Sprague-Dawley rat treadmill model, not human"
+ },
+ {
+  "record_id": "FS-004189",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 19.9+-1.4y, mean-2SD=17.1, no stated range/minimum"
+ },
+ {
+  "record_id": "FS-004190",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Passive hot water immersion only, no exercise bout tested"
+ },
+ {
+  "record_id": "FS-004191",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "6-week training pre/post only, no acute-bout sampling"
+ },
+ {
+  "record_id": "FS-004193",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon sST2/cTnI pre/post; sST2 linked to IL-33 immune axis"
+ },
+ {
+  "record_id": "FS-004194",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "CAD patient cohort, diagnostic IL-6 study, no exercise"
+ },
+ {
+  "record_id": "FS-004195",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Explicit age range 17-24, no separable adult stratum, pooled"
+ },
+ {
+  "record_id": "FS-004196",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIE futsal players, lymphocyte/platelet purinergic function"
+ },
+ {
+  "record_id": "FS-004197",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "217km ultramarathon, CRP inflammatory response, pre/during/post"
+ },
+ {
+  "record_id": "FS-004198",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Type 2 diabetes patients only, no healthy stratum"
+ },
+ {
+  "record_id": "FS-004199",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "HFpEF patient drug trial (anakinra), no healthy stratum"
+ },
+ {
+  "record_id": "FS-004200",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 20.5+-1.5y, mean-2SD=17.5, no stated range/minimum"
+ },
+ {
+  "record_id": "FS-004201",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [
+   "FT08"
+  ],
+  "study_type_hint": "other",
+  "note": "Iron/ferritin/CK only; no cytokine, cell or complement measure"
+ },
+ {
+  "record_id": "FS-004202",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Acute exercise heat, lymphocyte DNA damage measured directly"
+ },
+ {
+  "record_id": "FS-004203",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Single HIIT bout, IL-6 inflammatory marker up to 4h post"
+ },
+ {
+  "record_id": "FS-004204",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ACTN3/CK/myoglobin/NFATc1 mRNA only, no immune mediator"
+ },
+ {
+  "record_id": "FS-004205",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Race-walk bouts, postexercise IL-6/hepcidin by diet group"
+ },
+ {
+  "record_id": "FS-004206",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Terbutaline drug protocol; exercise only cited as prior background"
+ },
+ {
+  "record_id": "FS-004207",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "35km trail run, serum IL-6/IL-15 pre/post"
+ },
+ {
+  "record_id": "FS-004208",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-wk training RCT, resting LPS-stimulated markers only, no acute bout"
+ },
+ {
+  "record_id": "FS-004209",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cfDNA/methylation only, not a recognized immune mediator/cell measure"
+ },
+ {
+  "record_id": "FS-004210",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Neutrophil subsets across 7-day cycling tour, baseline/day4/day7"
+ },
+ {
+  "record_id": "FS-004211",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "PAR2 vasodilation/sweating, no immune marker"
+ },
+ {
+  "record_id": "FS-004212",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "URTI symptom survey only, no immune marker measured"
+ },
+ {
+  "record_id": "FS-004214",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Metastatic melanoma patients on immunotherapy, supportive-care pilot"
+ },
+ {
+  "record_id": "FS-004215",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIRT session, urinary IL-18 among kidney-injury biomarkers"
+ },
+ {
+  "record_id": "FS-004216",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Time-trial cycling, NK cell cytotoxicity/counts, carb vs water arms"
+ },
+ {
+  "record_id": "FS-004217",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric exercise, PBMC redox function pre/post, borderline immune-function link"
+ },
+ {
+  "record_id": "FS-004218",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Post-caesarean analgesia trial, no exercise exposure at all"
+ },
+ {
+  "record_id": "FS-004219",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Vitamin D + simulated soccer match, CRP/IL-6 pre/post"
+ },
+ {
+  "record_id": "FS-004220",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 18.3+-1.6y, mean-2SD=15.1, no stated range/minimum"
+ },
+ {
+  "record_id": "FS-004221",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rheumatoid arthritis patient cohort, clinical disease population"
+ },
+ {
+  "record_id": "FS-004222",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-1b gene SNP genotyping only, no immune marker levels measured"
+ },
+ {
+  "record_id": "FS-004223",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Explicit age range 16-21, results pooled, no adult stratum"
+ },
+ {
+  "record_id": "FS-004224",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Habitual-activity tercile cross-section, single resting draw"
+ }
+]

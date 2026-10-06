@@ -1,0 +1,328 @@
+[
+ {
+  "record_id": "FS-003048",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "45-min run, pre/post/1h, salivary AMPs LL-37/HNP1-3/lactoferrin/lysozyme"
+ },
+ {
+  "record_id": "FS-003049",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Erythropoiesis/hemolysis markers only, no immune measure"
+ },
+ {
+  "record_id": "FS-003050",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Type 1 diabetes clinical cohort, glycemic/hormone outcomes only"
+ },
+ {
+  "record_id": "FS-003051",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT05",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "IL-15 sampled at rest/during cycling only, no post-cessation timepoint stated"
+ },
+ {
+  "record_id": "FS-003052",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Crossover eccentric exercise, placebo-controlled, IL-6/TNF-a multi-timepoint"
+ },
+ {
+  "record_id": "FS-003053",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Low back pain patients, exercise intervention, inflammatory cytokines; timing unclear, borderline"
+ },
+ {
+  "record_id": "FS-003057",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Adults with asthma, clinical cohort, no healthy stratum"
+ },
+ {
+  "record_id": "FS-003059",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "24h ultramarathon, pre/post, endotoxin and cytokines, control group"
+ },
+ {
+  "record_id": "FS-003060",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Wheelchair athletes, pre/post-exercise at baseline and after FO supplementation, neutrophil function"
+ },
+ {
+  "record_id": "FS-003061",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse HFD cardiac model, animal only"
+ },
+ {
+  "record_id": "FS-003062",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Muscle-derived EV miRNA study, no stated immune objective"
+ },
+ {
+  "record_id": "FS-003063",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Phototherapy plus training program, pre/post program only, no acute bout"
+ },
+ {
+  "record_id": "FS-003064",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "12-year cross-sectional survey, chronic training effects, no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-003065",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "sCOMP and Doppler joint inflammation, not recognized immune mediators"
+ },
+ {
+  "record_id": "FS-003066",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "100km run, serial timepoints to 24h, CRP among liver/muscle markers"
+ },
+ {
+  "record_id": "FS-003067",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "IBD clinical cohort, fitness test only, no immune sampling around bout"
+ },
+ {
+  "record_id": "FS-003069",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon, placebo-controlled, SIgA/IgG/CRP pre-post"
+ },
+ {
+  "record_id": "FS-003071",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Crossover placebo cycling bout, neutrophil count and CK multi-timepoint"
+ },
+ {
+  "record_id": "FS-003072",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "3h exhaustive run, baseline through 21h recovery, leukocyte/lymphocyte subsets"
+ },
+ {
+  "record_id": "FS-003073",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Races of varying distance, pre/post/24h/72h, inflammatory miRNA signature"
+ },
+ {
+  "record_id": "FS-003074",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Acute bout vs sedentary after high-fat meal, sputum neutrophils/eNO"
+ },
+ {
+  "record_id": "FS-003075",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Chemerin only, adipokine not recognized immune mediator"
+ },
+ {
+  "record_id": "FS-003076",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "24-week diet vs exercise weight loss, pre/post program only"
+ },
+ {
+  "record_id": "FS-003077",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Bone turnover markers (ALP/OPG/NTx/RANKL) only, no immune measure"
+ },
+ {
+  "record_id": "FS-003078",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "LVAD heart-failure patients, clinical cohort"
+ },
+ {
+  "record_id": "FS-003079",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Type 1 diabetes clinical cohort, insulin therapy trial"
+ },
+ {
+  "record_id": "FS-003081",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "GH/SOCS/CISH signaling only, not recognized immune mediators"
+ },
+ {
+  "record_id": "FS-003083",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Adult men stratum separable from prepubertal boys, neutrophil count pre/post"
+ },
+ {
+  "record_id": "FS-003084",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "PBMC antioxidant enzymes only, no immune cell/cytokine measure"
+ },
+ {
+  "record_id": "FS-003085",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Trained vs control cross-sectional T-cell comparison, no bout-linked timing"
+ },
+ {
+  "record_id": "FS-003086",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [
+   "FT08"
+  ],
+  "study_type_hint": "other",
+  "note": "Light exercise during SO2 chamber exposure, BAL immune cells; exercise ancillary, borderline"
+ },
+ {
+  "record_id": "FS-003087",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T1D vs separable healthy-control arm, 45-min run, TNF-a and progenitor cells"
+ },
+ {
+  "record_id": "FS-003088",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Obese adolescents under 18, no adult stratum"
+ },
+ {
+  "record_id": "FS-003089",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Nitric oxide and metabolic markers only, no immune measure"
+ },
+ {
+  "record_id": "FS-003090",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Human in-vivo arm of mixed in-vitro/human study, G-CSF cytokine post eccentric exercise"
+ },
+ {
+  "record_id": "FS-003091",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Pain thresholds/blood flow only, no immune marker"
+ },
+ {
+  "record_id": "FS-003092",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Endurance events, pre/post, panel of cytokines via flow cytometry"
+ },
+ {
+  "record_id": "FS-003093",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon pre/post, hs-CRP among cardiac markers"
+ },
+ {
+  "record_id": "FS-003094",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Combined exercise training program, pre/post only, no acute bout"
+ },
+ {
+  "record_id": "FS-003095",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "6-week aerobic exercise program, pre/post only, no acute bout"
+ }
+]

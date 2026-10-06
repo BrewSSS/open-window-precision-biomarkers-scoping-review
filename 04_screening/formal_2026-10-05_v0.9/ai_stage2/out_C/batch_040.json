@@ -1,0 +1,328 @@
+[
+ {
+  "record_id": "FS-002116",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Pre-cooling intermittent-sprint heat trial; unspecified inflammation markers pre/post exercise"
+ },
+ {
+  "record_id": "FS-002117",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Treadmill exercise; monocyte subsets and monocyte-platelet aggregates before, 15min, 1h post"
+ },
+ {
+  "record_id": "FS-002118",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Soccer match; neutrophil/lymphocyte function, IgG/IgA, complement C3 before/after"
+ },
+ {
+  "record_id": "FS-002119",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Univentricular heart (TCPC) patients; cardiac biomarker only, no immune marker"
+ },
+ {
+  "record_id": "FS-002120",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Digital replantation blood-flow angiography study; no exercise exposure"
+ },
+ {
+  "record_id": "FS-002121",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Bruce protocol treadmill; hs-CRP and WBC pre/post in obese vs normal-weight men"
+ },
+ {
+  "record_id": "FS-002122",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Wingate test during Ramadan; IL-12 before, immediate, 60-min post"
+ },
+ {
+  "record_id": "FS-002123",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Brief heavy exercise; PBMC microRNA (inflammation-related) before/immediately after"
+ },
+ {
+  "record_id": "FS-002124",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Hemodialysis patients; 3-month chronic cycle program, CRP/IL-6 unaffected"
+ },
+ {
+  "record_id": "FS-002125",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Repeated Wingate bouts; lymphocyte subset counts, apoptosis, migration marker pre/post/EPOC"
+ },
+ {
+  "record_id": "FS-002126",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycling vs modified rugby in Indigenous Australians; TNF/IL-1b/IL-6/CRP pre to 240min post"
+ },
+ {
+  "record_id": "FS-002127",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Brisk walk vs rest before vaccination; IgM/IgG antibody titres, walk vs rest comparator"
+ },
+ {
+  "record_id": "FS-002128",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Type 2 diabetes cohort (IDES); chronic 12-month program, hs-CRP one of many risk factors"
+ },
+ {
+  "record_id": "FS-002129",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Caffeine vs placebo; antigen-stimulated CD4/CD8/NK activation after cycling, pre/post/1h"
+ },
+ {
+  "record_id": "FS-002130",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Judoists; neutrophil counts/ROS/phagocytosis around acute practice, pre- and post-3-month training"
+ },
+ {
+  "record_id": "FS-002131",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Swim sessions with recovery modalities; IL-6 pre, post, 30-min post"
+ },
+ {
+  "record_id": "FS-002132",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Intermittent moderate exercise protocol; leukocytes, CRP, MCP-1, IL-6 across 4-hour session"
+ },
+ {
+  "record_id": "FS-002133",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Acute exercise session repeated before/after 12-week training; hsCRP pre and 24h post"
+ },
+ {
+  "record_id": "FS-002134",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Triathlete training-cycle study; resistin/visfatin/insulin only, no immune mediator"
+ },
+ {
+  "record_id": "FS-002135",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Repeated cycling bouts around hypoxic acclimation; monocyte HSP72/HSP32, borderline immune-cell marker"
+ },
+ {
+  "record_id": "FS-002136",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Running bouts in heat/cold; leukocyte/neutrophil/basophil counts pre/post, explicit immune response"
+ },
+ {
+  "record_id": "FS-002137",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Seasonal cough reflex sensitivity in athletes; physiological tests only, no immune marker reported"
+ },
+ {
+  "record_id": "FS-002139",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "COPD and healthy controls; quadriceps neutrophils/macrophages, both groups' results reported separately"
+ },
+ {
+  "record_id": "FS-002140",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric exercise bouts before/after training; PBMC TLR4/TNF-alpha signaling pathway"
+ },
+ {
+  "record_id": "FS-002141",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Asthmatic patient cohort; immunoglobulins/allergy mediators, no healthy stratum"
+ },
+ {
+  "record_id": "FS-002142",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Watercress supplement; PBMC DNA damage/lipid peroxidation only, not immune function/mediator"
+ },
+ {
+  "record_id": "FS-002144",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Intermittent heat exercise; explicit immune marker IL-6 across repeated bouts"
+ },
+ {
+  "record_id": "FS-002145",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Muscle proteomics after eccentric run; found no inflammation, only structural Z-band proteins"
+ },
+ {
+  "record_id": "FS-002146",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse colitis model of Salmonella-neutrophil interaction; animal study"
+ },
+ {
+  "record_id": "FS-002147",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Suspected WDEIA allergy patients; diagnostic microarray assay comparison, no exercise bout performed"
+ },
+ {
+  "record_id": "FS-002148",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "COPD patients only; airway/systemic cytokines, no healthy comparator group"
+ },
+ {
+  "record_id": "FS-002149",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Coronary heart disease rehab patients; chronic 6-week program, hs-CRP unaffected"
+ },
+ {
+  "record_id": "FS-002150",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Premeal cycling vs rest; monocyte CD18/CD11a surface expression postprandial"
+ },
+ {
+  "record_id": "FS-002151",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Hydrogen-rich water; lactate, oxidative markers and CK only, no immune measure"
+ },
+ {
+  "record_id": "FS-002152",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Anemic heart failure patients; myeloperoxidase/IL-6 findings specific to HF subgroups"
+ },
+ {
+  "record_id": "FS-002153",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Elite rugby players; OPG/RANK/RANKL described as osteoimmunologic markers, before/after training"
+ },
+ {
+  "record_id": "FS-002154",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycling time trial after normal vs high-intensity training week; CD8+ T-cell subsets pre/during/post"
+ },
+ {
+  "record_id": "FS-002155",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Lung cancer patients on targeted therapy; chronic 8-week training, hs-CRP one of many outcomes"
+ },
+ {
+  "record_id": "FS-002156",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CD16+ monocyte transcriptome at rest vs after exercise mobilization from marginal pool"
+ },
+ {
+  "record_id": "FS-002157",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Ultraendurance run; PBMC DNA damage and oxidative markers only, no immune mediator"
+ }
+]

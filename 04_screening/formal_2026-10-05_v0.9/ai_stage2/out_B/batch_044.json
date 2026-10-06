@@ -1,0 +1,333 @@
+[
+ {
+  "record_id": "FS-002285",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Hashimoto thyroiditis patients, autoimmune clinical cohort, chronic 6-month only"
+ },
+ {
+  "record_id": "FS-002286",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-week training program, before/after only, no acute-bout sample"
+ },
+ {
+  "record_id": "FS-002287",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Health technology evidence review of knee replacement"
+ },
+ {
+  "record_id": "FS-002288",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Evidence-based HTA review of insulin pumps"
+ },
+ {
+  "record_id": "FS-002289",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "In vitro mast-cell elicitation assay, no exercise performed"
+ },
+ {
+  "record_id": "FS-002290",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review chapter on bovine colostrum and immunity"
+ },
+ {
+  "record_id": "FS-002291",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative/clinical review of coronary microcirculation disorders"
+ },
+ {
+  "record_id": "FS-002292",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Interval running, hyperoxic vs normoxic recovery, IL-6 pre-post-1h"
+ },
+ {
+  "record_id": "FS-002293",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Resistance vs aerobic vs control, lymphocyte/monocyte counts pre-post-1h"
+ },
+ {
+  "record_id": "FS-002294",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Interval cycling, CHO/bicarbonate crossover, monocyte/lymphocyte HSP"
+ },
+ {
+  "record_id": "FS-002295",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Case report, ischemic colitis, no immune marker measured"
+ },
+ {
+  "record_id": "FS-002296",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "HIV seropositive patients, clinical/infected cohort"
+ },
+ {
+  "record_id": "FS-002297",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "24h ultraendurance, CD3/CD8/CD68 muscle infiltration, IL-6/IL-8/CRP"
+ },
+ {
+  "record_id": "FS-002298",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Retrospective allergy diagnostic testing, no exercise challenge in study"
+ },
+ {
+  "record_id": "FS-002299",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "30-min exercise, leukocyte gene expression pre-immediate-90min"
+ },
+ {
+  "record_id": "FS-002300",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-week program, CRP at baseline/T2/T3 only, no acute-bout sample"
+ },
+ {
+  "record_id": "FS-002301",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Swim team, salivary IgA pre-post four training sessions across season"
+ },
+ {
+  "record_id": "FS-002302",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Knee arthroplasty surgical patients, post-surgical recovery not exercise"
+ },
+ {
+  "record_id": "FS-002303",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Systemic sclerosis patients, autoimmune clinical cohort"
+ },
+ {
+  "record_id": "FS-002304",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Leg immobilization vs control leg, IL-6/TNFa during 45-min exercise; timing borderline"
+ },
+ {
+  "record_id": "FS-002305",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Allergic rhinitis patients plus healthy controls, nasal IL-2/IL-4; controls separable"
+ },
+ {
+  "record_id": "FS-002306",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycling bout, MMP-9/elastase/NGAL neutrophil markers, arteriovenous"
+ },
+ {
+  "record_id": "FS-002307",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Peripheral vascular disease patients, clinical cohort, results not separable"
+ },
+ {
+  "record_id": "FS-002308",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Leptin/adiponectin adipokines only, no recognized immune mediator"
+ },
+ {
+  "record_id": "FS-002309",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rat sciatic nerve crush model, animal study"
+ },
+ {
+  "record_id": "FS-002310",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Hospitalized elderly recovering from illness, clinical cohort, no exercise bout"
+ },
+ {
+  "record_id": "FS-002311",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Vocal fold exercise, not whole-body physical exercise bout; borderline scope"
+ },
+ {
+  "record_id": "FS-002313",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "90-min run plus eccentric phase, alpha-lipoic acid vs placebo, IL-6/IL-10/TNFa"
+ },
+ {
+  "record_id": "FS-002314",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Wingate sprints, IL-6 among muscle signalling measures, pre-post"
+ },
+ {
+  "record_id": "FS-002315",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Heat exercise plus water immersion, IL-6 kinetics"
+ },
+ {
+  "record_id": "FS-002316",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric exercise, sex differences, TNFa/IL1b measured"
+ },
+ {
+  "record_id": "FS-002317",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 24+/-4y, mean-2SD=16<18, no stated range"
+ },
+ {
+  "record_id": "FS-002318",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "HIV-infected patients, pharmacokinetic drug study, no exercise"
+ },
+ {
+  "record_id": "FS-002319",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Ischemic heart disease patients, self-reported tolerance, no exercise challenge"
+ },
+ {
+  "record_id": "FS-002320",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Psoriasis patients, autoimmune clinical cohort, no immune marker"
+ },
+ {
+  "record_id": "FS-002321",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "GWI/CFS patients plus healthy veterans, GXT, PBMC microarray/cytokines; controls separable"
+ },
+ {
+  "record_id": "FS-002322",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Percutaneous sensitization diagnostic testing, no exercise challenge in study"
+ },
+ {
+  "record_id": "FS-002323",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "PRP injection study, exercise explicitly prohibited before testing"
+ },
+ {
+  "record_id": "FS-002324",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Ischemic heart disease patients, clinical cohort"
+ },
+ {
+  "record_id": "FS-002325",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Intense exercise bout, PBMC MnSOD omics, genotype groups, pre-1h"
+ }
+]

@@ -1,0 +1,328 @@
+[
+ {
+  "record_id": "FS-002497",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "circulating IFN-g, SSC muscle-damage bout, control leg comparator, pre/post/days"
+ },
+ {
+  "record_id": "FS-002498",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6/IL-10/hepcidin, triple Wingate bout, trained vs untrained, pre/post/1h/24h/5d"
+ },
+ {
+  "record_id": "FS-002499",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT06",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "biopsies only pre/post AA-infusion at 24h+ post-exercise; no pre-exercise baseline or comparator"
+ },
+ {
+  "record_id": "FS-002500",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "obese metabolic-syndrome patients only, no healthy stratum, 12-week chronic program"
+ },
+ {
+  "record_id": "FS-002501",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "plasma CCL2 chemokine, cryotherapy vs control, 40-min run, baseline to 24h post"
+ },
+ {
+  "record_id": "FS-002502",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT06",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "sweat collected only post-exercise, no pre-exercise baseline; in-vitro keratinocyte mechanism focus"
+ },
+ {
+  "record_id": "FS-002503",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "strength/soreness/circumference only; no cytokine or other immune marker actually measured"
+ },
+ {
+  "record_id": "FS-002504",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T-cell subset redeployment, CMV/HSV serostatus, 30-min cycling bout, pre/post/1h"
+ },
+ {
+  "record_id": "FS-002505",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "WDEIA allergic patients only, retrospective clinical series, no pre/post bout sampling design"
+ },
+ {
+  "record_id": "FS-002507",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "plasma IL-6, IMT vs placebo, cycling/hyperpnea bout, pre/post 6wk intervention"
+ },
+ {
+  "record_id": "FS-002508",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "lymphocyte PRDX-2 immune-cell protein, single multi-day ultra race, pre/post/d1/7/28"
+ },
+ {
+  "record_id": "FS-002509",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative/workshop review on training and immune function, no original data"
+ },
+ {
+  "record_id": "FS-002510",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CRP/IL-6/leukocytes/hepcidin, 100km run, during/post/14h recovery"
+ },
+ {
+  "record_id": "FS-002511",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "salivary IgA/lysozyme/amylase, multistage 5-stage ultramarathon, pre/post each stage"
+ },
+ {
+  "record_id": "FS-002512",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "circulating TNF-a and monocyte TNFR1, HMB-FA/CWI vs placebo, resistance bout pre/IP/30P/24P/48P"
+ },
+ {
+  "record_id": "FS-002514",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CRP/IL-6/antibody titers, acute exercise before influenza vaccination, older adults, control group"
+ },
+ {
+  "record_id": "FS-002515",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "salivary IgA, beta-glucan vs placebo, 50-min cycling bout, pre/immediate/2h post"
+ },
+ {
+  "record_id": "FS-002516",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "NAFLD obese patients only, no healthy stratum; fetuin-A not an immune marker"
+ },
+ {
+  "record_id": "FS-002517",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "leukocytes/phagocytosis/oxidative burst/cytokines, CMV serostatus, 75km TT bout, pre/post/1h"
+ },
+ {
+  "record_id": "FS-002518",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "MIF immune mediator among hormone panel, Wingate interval bout, pre/0/30/60/180min"
+ },
+ {
+  "record_id": "FS-002519",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "leptin/adiponectin/resistin/visfatin adipokines only, not recognized immune mediators"
+ },
+ {
+  "record_id": "FS-002520",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "2 FDEIA case reports, therapeutic desensitization using IFN-gamma, no healthy stratum"
+ },
+ {
+  "record_id": "FS-002521",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "leukocyte telomere length, ultra-runners vs controls, single resting comparison not bout-based"
+ },
+ {
+  "record_id": "FS-002522",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "peripheral arterial occlusive disease patients only, no healthy stratum"
+ },
+ {
+  "record_id": "FS-002523",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "resting CRP correlated with treadmill test variables, cross-sectional, no post-exercise sampling"
+ },
+ {
+  "record_id": "FS-002524",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-1b/IL-6/TNF-a/CRP, topical Arnica vs placebo, eccentric bout, 7 timepoints over 5 days"
+ },
+ {
+  "record_id": "FS-002525",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "NF-kB DNA-binding only, no cytokine/leukocyte/Ig measure reported"
+ },
+ {
+  "record_id": "FS-002526",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "gamma-delta T-cell counts, age/viral serology, single cycling bout, pre/post"
+ },
+ {
+  "record_id": "FS-002527",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "facial skin blood flow/blushing only, no immune marker measured"
+ },
+ {
+  "record_id": "FS-002528",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "EMG muscle activation timing only, no immune marker"
+ },
+ {
+  "record_id": "FS-002529",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "chronic heart failure patients only, no healthy stratum, 40-session chronic program"
+ },
+ {
+  "record_id": "FS-002530",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "HWP-WDEIA allergic patients only, serological epitope mapping, no healthy stratum"
+ },
+ {
+  "record_id": "FS-002531",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "scuba diving blood transcriptome, no physical exercise bout; diving/pressure exposure only"
+ },
+ {
+  "record_id": "FS-002532",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CRP and cytokines measured, polyphenol vs placebo, 3-day running block as bout, pre/post"
+ },
+ {
+  "record_id": "FS-002533",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "monocyte-platelet aggregates and P-selectin only, not a recognized immune marker"
+ },
+ {
+  "record_id": "FS-002534",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "LPS-stimulated whole-blood cytokines, half-marathon, pre/30min/3h/24h"
+ },
+ {
+  "record_id": "FS-002535",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "plasma/urinary cytokine panel, duathlon race, pre/immediate/1.5h/3h"
+ },
+ {
+  "record_id": "FS-002536",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "serum/nasal-mucosa cytokines, marathon, immediate and 72h post"
+ },
+ {
+  "record_id": "FS-002537",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "active vs sedentary resting comparison of neutrophil function/antibody levels, not bout-based"
+ },
+ {
+  "record_id": "FS-002538",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "extensive leukocyte/cytokine/complement/MPO panel, calf-raise eccentric bout, pre to 96h post"
+ }
+]

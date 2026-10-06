@@ -1,0 +1,328 @@
+[
+ {
+  "record_id": "FS-002203",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "borderline: PM/DM autoimmune muscle disease patients, healthy stratum not separable"
+ },
+ {
+  "record_id": "FS-002204",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "interval training, myoglobin/CK/haptoglobin/CRP pre-post-24h"
+ },
+ {
+  "record_id": "FS-002205",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "lab IgE structural assay, no exercise bout performed"
+ },
+ {
+  "record_id": "FS-002206",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "one-legged exercise, IL-6 microdialysis, exercised vs rest leg"
+ },
+ {
+  "record_id": "FS-002207",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "only I-FABP intestinal injury marker, no immune measure"
+ },
+ {
+  "record_id": "FS-002208",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric exercise, sTNF-R1/IL-6/CRP, overweight vs normal men"
+ },
+ {
+  "record_id": "FS-002209",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "borderline: habitual-activity cross-section, background-pattern per v3.1 FT04 carve-out"
+ },
+ {
+  "record_id": "FS-002210",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "squat-jump bout, pre-post lymphocyte proliferation suppression"
+ },
+ {
+  "record_id": "FS-002211",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "sublingual nucleotides vs placebo, salivary/serum IgA, NK cells"
+ },
+ {
+  "record_id": "FS-002212",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "chronic heart failure patients, clinical cardiac cohort"
+ },
+ {
+  "record_id": "FS-002213",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "quercetin vs placebo, eccentric exercise, IL-6/CRP pre-post 5d"
+ },
+ {
+  "record_id": "FS-002214",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "diagnostic IgE assay in WDEIA patients, no exercise challenge"
+ },
+ {
+  "record_id": "FS-002215",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CRP response to 3 exercise intensities, pre-post"
+ },
+ {
+  "record_id": "FS-002216",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "recombinant protein IgE diagnostic study, no exercise challenge"
+ },
+ {
+  "record_id": "FS-002217",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "twin co-twin exercise bout, IL-6/IL-18 baseline-post-meal"
+ },
+ {
+  "record_id": "FS-002218",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "editorial commentary on another ultramarathon study"
+ },
+ {
+  "record_id": "FS-002219",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "project/protocol description article, refers out for results"
+ },
+ {
+  "record_id": "FS-002220",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "soccer match, %lymphocytes/%neutrophils 24h-pre to 18h-post"
+ },
+ {
+  "record_id": "FS-002221",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "topical cooling, eccentric exercise, IL-8/IL-10/IL-1b measured"
+ },
+ {
+  "record_id": "FS-002222",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "rugby match, alcohol vs control after, CRP pre-post-16h"
+ },
+ {
+  "record_id": "FS-002223",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exhaled H2O2 only, oxidative/airway marker not immune"
+ },
+ {
+  "record_id": "FS-002224",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "adult IBD/colorectal-disease surgical patients, clinical cohort"
+ },
+ {
+  "record_id": "FS-002225",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "sand vs grass training, haptoglobin/CRP pre-post-24h"
+ },
+ {
+  "record_id": "FS-002226",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse colon-cancer model, human part only SPARC myokine, no immune marker"
+ },
+ {
+  "record_id": "FS-002228",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "borderline: resting baseline MPO cross-section, background-pattern per v3.1 FT04 carve-out"
+ },
+ {
+  "record_id": "FS-002229",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "multiple exercise bouts, neutrophil apoptosis/G-CSF pre-post"
+ },
+ {
+  "record_id": "FS-002230",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "type 2 diabetes mellitus patients, clinical cohort"
+ },
+ {
+  "record_id": "FS-002231",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "salivary adipokines/cortisol/insulin only, no immune marker"
+ },
+ {
+  "record_id": "FS-002232",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "sarcoidosis autoimmune-disease patients, clinical cohort"
+ },
+ {
+  "record_id": "FS-002233",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "12wk RT with nested acute RE bout, IL-6/CRP/TNF pre-24h post"
+ },
+ {
+  "record_id": "FS-002234",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "duathlon, IL-17/IL-23/MPO pre-post-1.5h-3h"
+ },
+ {
+  "record_id": "FS-002235",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "soy supplement, acute field-test bout, IL-6/IL-10/CRP/blood counts"
+ },
+ {
+  "record_id": "FS-002236",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "borderline: transplant recipients vs separable healthy-control immune-gene results"
+ },
+ {
+  "record_id": "FS-002237",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "short triathlon, WBC count pre-post each leg"
+ },
+ {
+  "record_id": "FS-002238",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "fish oil vs placebo, cycling bout, PBMC IL-2/NK activity"
+ },
+ {
+  "record_id": "FS-002239",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cycling to exhaustion, neutrophil NET formation pre-post"
+ },
+ {
+  "record_id": "FS-002240",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "elderly, resistance exercise, MCP-1/MIP-1b/IL-6 mRNA pre-post"
+ },
+ {
+  "record_id": "FS-002241",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cyclists, PBMC TGF-b gene expression pre-post-15min"
+ },
+ {
+  "record_id": "FS-002242",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "borderline: resting sputum athlete-status comparison, background-pattern per v3.1 FT04 carve-out"
+ },
+ {
+  "record_id": "FS-002243",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exercise/hypoxia conditions, IL-6/IL-8 at rest-0-180min"
+ }
+]

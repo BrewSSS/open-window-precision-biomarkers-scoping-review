@@ -1,0 +1,328 @@
+[
+ {
+  "record_id": "FS-001542",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric exercise, CD68+/CD16+ inflammatory cell counts, NSAID-leg vs control-leg"
+ },
+ {
+  "record_id": "FS-001543",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "PBMC NF-kB/COX-2 activation, graded exercise intensities, rest vs post"
+ },
+ {
+  "record_id": "FS-001545",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Triathlon, lymphocyte proliferation capacity and apoptosis, rest vs post-competition"
+ },
+ {
+  "record_id": "FS-001546",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "6-month training only, CRP pre/post, no acute-bout sample; disease cohort present"
+ },
+ {
+  "record_id": "FS-001547",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Hypertensive overweight/MetS patients, sequential chronic training only"
+ },
+ {
+  "record_id": "FS-001549",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Rugby game, T lymphocytes/NK/neutrophil degranulation/IL-6/CRP, camp entry baseline to 38h"
+ },
+ {
+  "record_id": "FS-001550",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "LIST vs soccer match, blood leukocytes/lymphocytes, pre/30min/24-72h"
+ },
+ {
+  "record_id": "FS-001551",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Two soccer games 72h apart, leukocytes and cytokine panel, same players"
+ },
+ {
+  "record_id": "FS-001552",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Two exercise bouts, PBMC cytokine (TNF/IL-1beta/IL-10) production, pre/post"
+ },
+ {
+  "record_id": "FS-001553",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rheumatoid arthritis patients, clinical disease cohort"
+ },
+ {
+  "record_id": "FS-001554",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Only lymphocyte apoptotic index measured, not a recognized immune function"
+ },
+ {
+  "record_id": "FS-001555",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Heat exercise, LPS/cytokines/anti-LPS antibodies, pre/post training comparison"
+ },
+ {
+  "record_id": "FS-001556",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Downhill run, muscle IL-6/IL-8/TNF-alpha/IL-1beta mRNA, baseline/3h/24h"
+ },
+ {
+  "record_id": "FS-001557",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Shuttle-running bout, systemic inflammation/damage indices, CHO vs CHO-PRO"
+ },
+ {
+  "record_id": "FS-001558",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Hypertrophic cardiomyopathy patients, basal biomarkers only, clinical cohort"
+ },
+ {
+  "record_id": "FS-001559",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Post-exercise Hsp72 stimulates neutrophil phagocytic/fungicidal capacity via TLR-2"
+ },
+ {
+  "record_id": "FS-001560",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Only lung function and exhaled NO measured, no recognized immune mediator"
+ },
+ {
+  "record_id": "FS-001561",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Intermittent claudication patients, clinical vascular-disease cohort"
+ },
+ {
+  "record_id": "FS-001562",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "IgA nephropathy/CKD patients, clinical renal-disease cohort"
+ },
+ {
+  "record_id": "FS-001566",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "4h cycling, leukocytes/IL-6 plus progenitor cells, 16 timepoints to 24h"
+ },
+ {
+  "record_id": "FS-001567",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Only opioid peptides/pain/MRI measured, no immune marker"
+ },
+ {
+  "record_id": "FS-001568",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse influenza-infection model, animal study"
+ },
+ {
+  "record_id": "FS-001569",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise+/-hypoxia, lymphocyte subset (CD28/CD57/CD62L) mobilization and apoptosis"
+ },
+ {
+  "record_id": "FS-001571",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric exercise timing before influenza vaccine, antibody/IFN-gamma response"
+ },
+ {
+  "record_id": "FS-001572",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Prolonged run, leukocyte trafficking/neutrophil degranulation/sIgA, feeding-timing arms"
+ },
+ {
+  "record_id": "FS-001574",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-wk training only, CRP genotype vs LV mass, no acute-bout immune sampling"
+ },
+ {
+  "record_id": "FS-001575",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Taekwondo athletes, salivary IgA/lactoferrin across training-competition-recovery timepoints"
+ },
+ {
+  "record_id": "FS-001577",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Oxidative-stress/leukocyte 8-OHdG markers only, no recognized immune mediator"
+ },
+ {
+  "record_id": "FS-001579",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon, IL-6/CRP, cherry juice vs placebo, before/after race"
+ },
+ {
+  "record_id": "FS-001580",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-wk tai chi training only, complement proteomics pre/post program, no acute bout"
+ },
+ {
+  "record_id": "FS-001582",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Coronary artery disease patients, platelet reactivity, clinical cardiac cohort"
+ },
+ {
+  "record_id": "FS-001584",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Resistance-loading bout, muscle NF-kB/HSP70/IL-6-STAT3 signaling, young vs older"
+ },
+ {
+  "record_id": "FS-001587",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rheumatoid inflamed-joint patients, clinical disease cohort"
+ },
+ {
+  "record_id": "FS-001588",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "3-day heavy exertion, cytokines/leukocytes/CRP/sIgA, n-3 PUFA vs placebo"
+ },
+ {
+  "record_id": "FS-001589",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Speed-skating race, salivary SIgA across precompetition to postcompetition days"
+ },
+ {
+  "record_id": "FS-001590",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Food-dependent exercise-induced anaphylaxis patients, clinical allergic cohort"
+ },
+ {
+  "record_id": "FS-001592",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Resistance training elderly women, IL-6/IL-1beta/TNF-alpha LPS-stimulated, pre/post training acute test"
+ },
+ {
+  "record_id": "FS-001593",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "IL-6/5-HTT/MAO-A genotype vs race performance, no measured immune response"
+ },
+ {
+  "record_id": "FS-001594",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Chronic heart-failure patients, HRR mortality prediction, clinical cohort"
+ },
+ {
+  "record_id": "FS-001595",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "4h bout, leukocyte gene-expression clusters (neutrophil/NK/T-cell), before/4/8/24h"
+ }
+]

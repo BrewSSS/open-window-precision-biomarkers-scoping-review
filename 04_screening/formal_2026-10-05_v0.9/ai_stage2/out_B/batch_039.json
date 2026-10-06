@@ -1,0 +1,330 @@
+[
+ {
+  "record_id": "FS-002071",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Repeated acute/chronic exercise paradigms; neutrophil chemotaxis/phagocytosis measured"
+ },
+ {
+  "record_id": "FS-002072",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cold-water swim race; WBC/neutrophil/lymphocyte/monocyte counts measured pre/post"
+ },
+ {
+  "record_id": "FS-002074",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Chemical-inhalation toxicokinetics study; exercise incidental to standardize uptake"
+ },
+ {
+  "record_id": "FS-002075",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Seven marathons in 7 days; PBMC gene/protein expression measured post-event"
+ },
+ {
+  "record_id": "FS-002076",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Rugby simulation with alcohol vs control; WBC count measured across 48h"
+ },
+ {
+  "record_id": "FS-002077",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "6-month Ironman preparation; T-cell subsets sampled repeatedly plus post-race"
+ },
+ {
+  "record_id": "FS-002079",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Standardized exercise bouts across 8-week training; monocyte gene expression measured"
+ },
+ {
+  "record_id": "FS-002080",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Animal model (ZDF rats) of diabetes; not an original human study"
+ },
+ {
+  "record_id": "FS-002081",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse model (mdx/wild-type); not an original human study"
+ },
+ {
+  "record_id": "FS-002082",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-week training snapshot in overweight/obese adults; CRP/TNF-a/IL-6 measured"
+ },
+ {
+  "record_id": "FS-002083",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Post-myocardial-infarction patients; clinical cardiovascular cohort"
+ },
+ {
+  "record_id": "FS-002084",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Single resistance bout; muscle NF-kB, MCP-1/IL-6/IL-8 measured vs nonexercise control"
+ },
+ {
+  "record_id": "FS-002085",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Acute cycling before/after 12-week training with vitamin C/E vs placebo; IL-6 measured"
+ },
+ {
+  "record_id": "FS-002086",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CFS/MS patients plus separable healthy-control group; immune gene expression post-exercise"
+ },
+ {
+  "record_id": "FS-002087",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT05",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Football players; IgA sampled only during continuous exercise, no post-cessation sample"
+ },
+ {
+  "record_id": "FS-002088",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Acute exhaustion bouts at start/end of 8-week preseason training; salivary IgA measured"
+ },
+ {
+  "record_id": "FS-002090",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Short-term aerobic exercise vs nonexercising controls; complement (C3a/C4a) measured"
+ },
+ {
+  "record_id": "FS-002091",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Elderly osteoarthritis patients; acute and chronic exercise; IL-6/TNF-a/sTNFR measured"
+ },
+ {
+  "record_id": "FS-002092",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "NO2 inhalation toxicology study; exercise used only to standardize ventilation"
+ },
+ {
+  "record_id": "FS-002093",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "6-month training snapshot in Amerindian women; TNF-a/IL-6 measured"
+ },
+ {
+  "record_id": "FS-002094",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review of pulmonary-function tests for COPD phenotyping"
+ },
+ {
+  "record_id": "FS-002095",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Muscle-damaging exercise with milk volumes vs placebo; IL-6 measured across 72h"
+ },
+ {
+  "record_id": "FS-002096",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric exercise in young vs postmenopausal women; IL-6/IL-10/TNF-a measured"
+ },
+ {
+  "record_id": "FS-002097",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Pharmacology review of lymphocyte potassium-channel immunosuppression drug targets"
+ },
+ {
+  "record_id": "FS-002098",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Review of disease eponyms (Wegener granulomatosis); unrelated to exercise"
+ },
+ {
+  "record_id": "FS-002099",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Both cohorts have spinal cord injury; no able-bodied healthy comparator stratum"
+ },
+ {
+  "record_id": "FS-002100",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "100-km ultramarathon; CRP measured across race in hypertensive vs normal runners"
+ },
+ {
+  "record_id": "FS-002101",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review of cold-air airway effects across human/animal studies"
+ },
+ {
+  "record_id": "FS-002102",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Acute heavy resistance exercise; granulocyte estradiol-receptor expression measured by sex"
+ },
+ {
+  "record_id": "FS-002103",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Interval running in two menstrual-cycle phases, same runners; IL-6 measured pre/post"
+ },
+ {
+  "record_id": "FS-002104",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Plasma metabolomics of fitness; only metabolites/fatty acids, no immune marker"
+ },
+ {
+  "record_id": "FS-002105",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "EPA vs placebo across single and repeated resistance bouts; IL-6 measured"
+ },
+ {
+  "record_id": "FS-002106",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Seasonal monitoring in handball players; lymphocyte HSP70 measured 3 times over season"
+ },
+ {
+  "record_id": "FS-002108",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise-damaged muscle with massage vs no-treatment; TNF-a/IL-6 measured in biopsies"
+ },
+ {
+  "record_id": "FS-002109",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Asthmatics vs healthy controls; exhaled-breath temperature/FEV1 only, no immune marker"
+ },
+ {
+  "record_id": "FS-002110",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Repetitive SCUBA dives; neutrophil activation markers measured before/after dives"
+ },
+ {
+  "record_id": "FS-002111",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "17-week half-marathon training snapshot; CRP/IL-6 measured at 4 timepoints"
+ },
+ {
+  "record_id": "FS-002112",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review combining human/mouse Alzheimer's data on exercise anti-inflammation"
+ },
+ {
+  "record_id": "FS-002113",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "56-km ultramarathon; CRP among serum markers measured across multi-day recovery"
+ },
+ {
+  "record_id": "FS-002115",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Two treadmill runs of different duration; IL-6 and hepcidin measured pre/post"
+ }
+]

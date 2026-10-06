@@ -1,0 +1,330 @@
+[
+ {
+  "record_id": "FS-004442",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "COPD patients, clinical cohort, muscle mRNA after NMES/resistance bout"
+ },
+ {
+  "record_id": "FS-004443",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Primarily mouse model; human subset is cross-sectional, no exercise bout"
+ },
+ {
+  "record_id": "FS-004444",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy men, Th1/Th2 cytokines, hypoxic vs normoxic 1-h exercise bout"
+ },
+ {
+  "record_id": "FS-004446",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Older adults, walk vs rest postprandial, inflammatory markers unspecified"
+ },
+ {
+  "record_id": "FS-004447",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-wk HIIT, p66Shc methylation in mononuclear cells, no acute-bout sample"
+ },
+ {
+  "record_id": "FS-004448",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Coronary artery disease patients, fibrinolytic (not immune) markers"
+ },
+ {
+  "record_id": "FS-004449",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Retrospective food-allergy patient cohort, no exercise bout sampling"
+ },
+ {
+  "record_id": "FS-004450",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ultra-marathoners, IL-6/hs-CRP before/after race, ACE genotype moderator"
+ },
+ {
+  "record_id": "FS-004451",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon runners, probiotic placebo-controlled, SIgA/cytokines post-race"
+ },
+ {
+  "record_id": "FS-004452",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse treadmill model, gastrocnemius IL-6/CK, not human"
+ },
+ {
+  "record_id": "FS-004453",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Curcumin/eccentric exercise, endothelial FMD only, no immune marker"
+ },
+ {
+  "record_id": "FS-004454",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "24h ultramarathon runners, leukocytes/CRP among cardiac biomarkers"
+ },
+ {
+  "record_id": "FS-004455",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Muscle cell signalling and bone turnover, no immune marker"
+ },
+ {
+  "record_id": "FS-004456",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cashew apple juice placebo trial, leukocyte counts after HIIT"
+ },
+ {
+  "record_id": "FS-004458",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Older women, T-cell senescence, 6-wk training, sampled 24-48h post-last-session"
+ },
+ {
+  "record_id": "FS-004459",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Recent coronary event patients, clinical cardiac rehab cohort"
+ },
+ {
+  "record_id": "FS-004460",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "People living with HIV, active infection cohort, no immune marker"
+ },
+ {
+  "record_id": "FS-004461",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Bioimpedance body-composition proxy, no eligible immune measure"
+ },
+ {
+  "record_id": "FS-004462",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Breast cancer patients, clinical cohort, HIIT inflammation/HSP70"
+ },
+ {
+  "record_id": "FS-004463",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Breast cancer patients under adjuvant therapy, NK cell transcriptome"
+ },
+ {
+  "record_id": "FS-004464",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Resistance-trained men, food bar vs CHO, inflammatory markers unspecified"
+ },
+ {
+  "record_id": "FS-004467",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "In-vitro pancreatic cancer cell line study, not human exercise research"
+ },
+ {
+  "record_id": "FS-004468",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Elite orienteers, cytokine panel before/after race, baseline present"
+ },
+ {
+  "record_id": "FS-004469",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Xenon gas inhalation, EPO/hematology only, no immune marker or exercise bout"
+ },
+ {
+  "record_id": "FS-004470",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Hesperidin cyclists, antioxidant/performance only, no immune marker"
+ },
+ {
+  "record_id": "FS-004471",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "In-vitro mutagen-treated lymphocyte cultures, no exercise exposure"
+ },
+ {
+  "record_id": "FS-004472",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Type 2 diabetes patients, clinical metabolic disease cohort"
+ },
+ {
+  "record_id": "FS-004473",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Sprinters, IL-6/IL-1ra after repeated sprints, hypoxia vs normoxia"
+ },
+ {
+  "record_id": "FS-004474",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review summarizing whole-body cryotherapy literature"
+ },
+ {
+  "record_id": "FS-004475",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Spinal cord injury and multiple sclerosis patients, clinical cohort"
+ },
+ {
+  "record_id": "FS-004476",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy older adults, IL-6/TNF-a after eccentric vs concentric cycling"
+ },
+ {
+  "record_id": "FS-004477",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Hepatokines (FGF21/follistatin/LECT2), metabolic not immune mediators"
+ },
+ {
+  "record_id": "FS-004479",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "10-day heat acclimation, immune profile stated, sampled days 1 and 10"
+ },
+ {
+  "record_id": "FS-004480",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Sleep deprivation crossover, cytokine panel after eccentric exercise"
+ },
+ {
+  "record_id": "FS-004481",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Young men, IL-6 after prior HIIT bout before prolonged sitting"
+ },
+ {
+  "record_id": "FS-004483",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review of thyroid axis, prolactin and exercise"
+ },
+ {
+  "record_id": "FS-004484",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Athletes, leukocyte subpopulations after repeated jumping, acupressure trial"
+ },
+ {
+  "record_id": "FS-004485",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Overweight men, IL-6 and insulin after timed HIIE/SSE sessions"
+ },
+ {
+  "record_id": "FS-004486",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Soccer players age 18-31, T-cell subsets/cytokines, two tested periods"
+ },
+ {
+  "record_id": "FS-004487",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Treadmill running hypoxia vs normoxia, cytokines pre to 4h post"
+ }
+]

@@ -1,0 +1,322 @@
+[
+ {
+  "record_id": "FS-001884",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Chronic heart failure patients only; no healthy comparator stratum."
+ },
+ {
+  "record_id": "FS-001885",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Precooling trial; inflammatory and muscle-damage markers around sprint exercise."
+ },
+ {
+  "record_id": "FS-001886",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Maximal exercise tests; PMN/platelet microparticles and IL-6 post-exercise/2h recovery."
+ },
+ {
+  "record_id": "FS-001887",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "12-wk resistance training; muscle IL-6/PDGF-BB response pre/post each test bout."
+ },
+ {
+  "record_id": "FS-001892",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Omega-3 vs placebo; IL-6, TNF-alpha measured pre/post eccentric exercise."
+ },
+ {
+  "record_id": "FS-001894",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Contact hypersensitivity T-cell response; exercise vs control before antigen exposure."
+ },
+ {
+  "record_id": "FS-001895",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Mountain ultra-marathon; CRP and muscle damage markers pre/post/multi-day recovery."
+ },
+ {
+  "record_id": "FS-001896",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Estradiol vs placebo; muscle neutrophil/macrophage infiltration after eccentric exercise."
+ },
+ {
+  "record_id": "FS-001897",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-wk conditioning; only platelet function/aggregation, not an eligible immune measure."
+ },
+ {
+  "record_id": "FS-001898",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Listeria monocytogenes soil-fitness study; bacterial/environmental, not human research."
+ },
+ {
+  "record_id": "FS-001900",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Obese/lean athletes; 10-wk training, DDAH mRNA in PBMC (immune-cell omics), no acute-bout timing."
+ },
+ {
+  "record_id": "FS-001901",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Intensive vs moderate resistance test; lymphocyte apoptosis, IL-6, CRP 3h post."
+ },
+ {
+  "record_id": "FS-001903",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "UV keratitis epidemiology among mountaineers; no exercise-exposure/immune sampling design."
+ },
+ {
+  "record_id": "FS-001904",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Standardized endurance test; T/B lymphocyte subsets before/after, repeated 2.5wk later."
+ },
+ {
+  "record_id": "FS-001905",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "5-day repeated submaximal exercise; T-lymphocyte/NK subsets pre/post each of 3 days."
+ },
+ {
+  "record_id": "FS-001906",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "JoVE methodology/protocol video for blood sampling technique; not a cohort study."
+ },
+ {
+  "record_id": "FS-001907",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Muscle-lengthening contractions; IL-6/STAT3 signalling measured pre/1/3/24h post."
+ },
+ {
+  "record_id": "FS-001909",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "5km race; IL-2, TNF-alpha, lymphocyte subsets pre/post/2h/24h vs controls."
+ },
+ {
+  "record_id": "FS-001911",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Whole-body exercise; arteriovenous IL-6 release from arm vs leg muscle."
+ },
+ {
+  "record_id": "FS-001912",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Level and downhill runs; leukocyte apoptosis pre/post/2h/24h/48h."
+ },
+ {
+  "record_id": "FS-001913",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Aerobic vs anaerobic exercise; only oxidative DNA/lipid damage markers, no immune measure."
+ },
+ {
+  "record_id": "FS-001914",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise intensity levels; leukocyte/neutrophil counts, CD4/CD8, NK subsets pre/post."
+ },
+ {
+  "record_id": "FS-001915",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "EPA intake; IL-6, CRP, acute phase proteins pre/post/1h exercise, repeated after EPA."
+ },
+ {
+  "record_id": "FS-001916",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Hypertensive patients only; no healthy comparator, only platelet function."
+ },
+ {
+  "record_id": "FS-001918",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Resistance exercise; PBMC leukocyte counts and immune-pathway transcriptional changes."
+ },
+ {
+  "record_id": "FS-001919",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "T1DM patients vs healthy controls; only platelet/thrombin markers, not eligible immune measure."
+ },
+ {
+  "record_id": "FS-001920",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Four exercise intensities/durations; T and NK lymphocyte subsets pre/post, fitness groups."
+ },
+ {
+  "record_id": "FS-001921",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Aerobic/eccentric exercise; only Hsp72/ATP, not a recognized immune mediator."
+ },
+ {
+  "record_id": "FS-001922",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon; IL-6, IL-10, TNF-alpha, hs-CRP measured pre/0/24/72h post-race."
+ },
+ {
+  "record_id": "FS-001923",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Cross-sectional insulin sensitivity/fat study; no pre/post-exercise immune sampling."
+ },
+ {
+  "record_id": "FS-001924",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Post-exercise eHsp72; neutrophil chemotaxis/phagocytosis function via adrenoreceptors."
+ },
+ {
+  "record_id": "FS-001925",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Coronary artery disease patients only; VEGF/EPO not core immune mediators either."
+ },
+ {
+  "record_id": "FS-001926",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Ankylosing spondylitis patients only; no immune biomarker, no healthy stratum."
+ },
+ {
+  "record_id": "FS-001927",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Dark chocolate crossover; IL-6, leukocytosis, neutrophilia around prolonged exercise."
+ },
+ {
+  "record_id": "FS-001929",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "11-wk probiotic trial in cyclists; serum cytokines, no acute-bout timing specified."
+ },
+ {
+  "record_id": "FS-001930",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "PAH patients; resting sTWEAK correlated with exercise capacity, no pre/post bout sampling."
+ },
+ {
+  "record_id": "FS-001931",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Carbohydrate cognitive-awareness trial; lymphocyte count/apoptosis rest vs post-exercise."
+ },
+ {
+  "record_id": "FS-001932",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Runners; leukogram and CRP after races, before/after pequi-oil supplementation."
+ },
+ {
+  "record_id": "FS-001933",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Ultramarathon postrace survey of symptoms; no immune biomarker measured."
+ },
+ {
+  "record_id": "FS-001934",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Obese men; IL-6 after resistance vs aerobic exercise vs rest, 24h glucose tolerance."
+ }
+]

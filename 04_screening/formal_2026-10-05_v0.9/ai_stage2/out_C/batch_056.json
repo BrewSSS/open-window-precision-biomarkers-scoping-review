@@ -1,0 +1,328 @@
+[
+ {
+  "record_id": "FS-002795",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "only oxidative/PGE2 markers; no cytokine/immune mediator"
+ },
+ {
+  "record_id": "FS-002796",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "hsCRP, IL6, TNFa post eccentric DOMS; placebo crossover"
+ },
+ {
+  "record_id": "FS-002797",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "hsCRP measured; healthy control stratum separable from MS"
+ },
+ {
+  "record_id": "FS-002798",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "leukocytes, stimulated cytokines pre/post 120min cycling"
+ },
+ {
+  "record_id": "FS-002799",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "MCP-1/IL-8/IL-6 muscle expression after resistance bout"
+ },
+ {
+  "record_id": "FS-002800",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "salivary IgA/lysozyme/lactoferrin pre/post 45-min run"
+ },
+ {
+  "record_id": "FS-002801",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-17A/IL-23/selectins after eccentric calf-raise exercise"
+ },
+ {
+  "record_id": "FS-002802",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "AATD/COPD disease cohorts dominant; healthy-control exercise result not separable"
+ },
+ {
+  "record_id": "FS-002803",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "age 23.1+/-6.2y, mean-2SD=10.7 <18, no stated range/minimum"
+ },
+ {
+  "record_id": "FS-002804",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-8 after eccentric downhill run; placebo-controlled curcumin arm"
+ },
+ {
+  "record_id": "FS-002805",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "laryngoscopy/stridor case series; no immune measure"
+ },
+ {
+  "record_id": "FS-002806",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CR3/CCL4 monocyte markers after resistance exercise"
+ },
+ {
+  "record_id": "FS-002807",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6/hepcidin pre/post/3h hypoxic interval exercise"
+ },
+ {
+  "record_id": "FS-002808",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "macrophage phagocytic/enzymatic activity after exhaustive run"
+ },
+ {
+  "record_id": "FS-002809",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "inflammation from vaccination; only habitual activity, no bout"
+ },
+ {
+  "record_id": "FS-002810",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-10/IL-1b after eccentric bout, cryostimulation recovery arm"
+ },
+ {
+  "record_id": "FS-002811",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6/IL-1Ra after resistance exercise, compression garment arm"
+ },
+ {
+  "record_id": "FS-002812",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "neutrophil gene expression pre/post/3h scuba dive (acute exercise)"
+ },
+ {
+  "record_id": "FS-002813",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse model study, not human"
+ },
+ {
+  "record_id": "FS-002814",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "GWAS using ABI as diagnostic criterion, no exercise-immune design"
+ },
+ {
+  "record_id": "FS-002815",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6/CRP pre/post 90-min shuttle run, NMES vs GCS"
+ },
+ {
+  "record_id": "FS-002816",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "monocyte/lymphocyte counts; 1-wk activity change; healthy stratum separable"
+ },
+ {
+  "record_id": "FS-002817",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "only performance tests (grip/jump/speed), no immune measure"
+ },
+ {
+  "record_id": "FS-002818",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6/IL-1Ra/CRP after eccentric bout, DHA vs placebo"
+ },
+ {
+  "record_id": "FS-002819",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6 pre/post/1h/24h after intermittent sprint, supplement arms"
+ },
+ {
+  "record_id": "FS-002820",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "leukocyte counts rise after cycling stage; pre/post/3h"
+ },
+ {
+  "record_id": "FS-002821",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age 21.7+/-6.4y, mean-2SD=8.9 <18, no stated range/minimum"
+ },
+ {
+  "record_id": "FS-002822",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6/IL-10/TNFa/sTNFR acute bout; healthy-control stratum separable from SLE"
+ },
+ {
+  "record_id": "FS-002824",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "lymphocyte subsets/cytokines across season; bout-sample timing unclear, advance"
+ },
+ {
+  "record_id": "FS-002825",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "colorectal/surgical patient cohorts; no healthy stratum, no bout design"
+ },
+ {
+  "record_id": "FS-002826",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "TNFa/PBMC HSP70 pre/post/2h/4h after treadmill runs, glutamine vs placebo"
+ },
+ {
+  "record_id": "FS-002827",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "pro/anti-inflammatory cytokines after 90-min heat exercise, colostrum vs placebo"
+ },
+ {
+  "record_id": "FS-002828",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "only vasodilation/FMD measured, no immune marker"
+ },
+ {
+  "record_id": "FS-002829",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "type 2 diabetes outpatient cohort, basal biomarker only, no healthy stratum"
+ },
+ {
+  "record_id": "FS-002830",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6/IL-8/MPO pre/post/2h/24h/48h after sprint protocol, CWI arms"
+ },
+ {
+  "record_id": "FS-002831",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "serum antiviral/antibacterial function after 3-day running block"
+ },
+ {
+  "record_id": "FS-002832",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "plasma IL-6 measured pre/post HIIT vs moderate exercise"
+ },
+ {
+  "record_id": "FS-002833",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "HFpEF heart-failure patient cohort, no healthy comparator"
+ },
+ {
+  "record_id": "FS-002834",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "radiation biodosimetry intercomparison 'exercise', not physical exercise"
+ },
+ {
+  "record_id": "FS-002835",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IFN-gamma after single moderate/strenuous bouts vs baseline, age 18-25 stated"
+ }
+]

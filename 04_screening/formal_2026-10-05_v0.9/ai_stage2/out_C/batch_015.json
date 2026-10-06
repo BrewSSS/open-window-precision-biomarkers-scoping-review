@@ -1,0 +1,332 @@
+[
+ {
+  "record_id": "FS-000841",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Arteriosclerosis obliterans patients only, no healthy stratum"
+ },
+ {
+  "record_id": "FS-000842",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Allergen cloning/recombinant-protein characterization, no exercise bout performed"
+ },
+ {
+  "record_id": "FS-000844",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Aerobic/Wingate bouts vs sedentary comparator, Ig/complement multi-timepoint"
+ },
+ {
+  "record_id": "FS-000845",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "6-week training pre/24h-post only, ECM/angiogenic genes, no immune measure"
+ },
+ {
+  "record_id": "FS-000847",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "30-min cycling, melatonin vs own pre-melatonin baseline, monocyte/lymphocyte/cytokines"
+ },
+ {
+  "record_id": "FS-000848",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Three exercise trials, anti-inflammatory cytokines before/immediately/1h"
+ },
+ {
+  "record_id": "FS-000849",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric bout, PAF/leukocytes/complement C3/CRP across 96h"
+ },
+ {
+  "record_id": "FS-000851",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Asthmatic subjects only (EIB+ vs EIB-), no non-asthmatic healthy stratum"
+ },
+ {
+  "record_id": "FS-000852",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Cross-sectional CRP/MCP-1 vs chronotropic response, no pre/post exercise sampling"
+ },
+ {
+  "record_id": "FS-000853",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "NHANES cross-sectional homocysteine-fitness correlation, no immune measure/no bout sampling"
+ },
+ {
+  "record_id": "FS-000854",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Two 30-min bouts 3h apart, leukocyte/lymphocyte/neutrophil counts over 6h"
+ },
+ {
+  "record_id": "FS-000855",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "8-min intense bout, leukocyte count during/after by intensity group"
+ },
+ {
+  "record_id": "FS-000857",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Altitude ascent/exercise, microvascular measures plus WBC count correlate"
+ },
+ {
+  "record_id": "FS-000858",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Two 90-min cycling bouts same day, CHO vs placebo, salivary IgA"
+ },
+ {
+  "record_id": "FS-000860",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Two 90-min cycling bouts, CHO vs placebo 2nd bout, leukocyte/neutrophil/IL-6"
+ },
+ {
+  "record_id": "FS-000861",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Multiple exercise bouts/intensities, soluble HSP72 as immune-signalling marker, pre/post multi-timepoint"
+ },
+ {
+  "record_id": "FS-000862",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2h cycling normoxia/hypoxia, leukocyte/neutrophil counts rest vs exercise"
+ },
+ {
+  "record_id": "FS-000863",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Heavy cycling at altitude, BALF inflammatory cells/mediators 2h/26h post"
+ },
+ {
+  "record_id": "FS-000866",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Conscripts referred for respiratory symptoms, exercise challenge, FENO atopic vs nonatopic; population borderline"
+ },
+ {
+  "record_id": "FS-000867",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT05"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "8-week training, only pre-exercise resting samples compared, no post-exercise sample"
+ },
+ {
+  "record_id": "FS-000870",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Three exercise intensities, monocyte Mac-1/LFA-1/L-selectin before/after"
+ },
+ {
+  "record_id": "FS-000871",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Older women, acute bout before/after 10wk resistance training, NKCA/leukocytes"
+ },
+ {
+  "record_id": "FS-000872",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "90-min cycling, estradiol vs placebo crossover, IL-6/neutrophils/sICAM-1"
+ },
+ {
+  "record_id": "FS-000873",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "300 max eccentric actions, leukocytes/cytokines/complement over 7 days"
+ },
+ {
+  "record_id": "FS-000874",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Claudicants (PAD patients) only, no healthy stratum"
+ },
+ {
+  "record_id": "FS-000875",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Cross-sectional WBC vs fitness tertile/metabolic syndrome, no bout sampling"
+ },
+ {
+  "record_id": "FS-000877",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Mountain cycling stage, neutrophil myeloperoxidase and antioxidant enzymes basal vs 3h"
+ },
+ {
+  "record_id": "FS-000878",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "SaO2/VO2/ventilation only, no immune measure"
+ },
+ {
+  "record_id": "FS-000879",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Two downhill runs, high/low CHO diet, leukocyte count among DOMS/ROS markers"
+ },
+ {
+  "record_id": "FS-000880",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "13-18 day altitude training block, periodic resting leukocyte count only"
+ },
+ {
+  "record_id": "FS-000882",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Submax bout, platelet-neutrophil aggregates rest/post/30min, time-of-day"
+ },
+ {
+  "record_id": "FS-000883",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2h cycling HOT vs CONTROL, neutrophil degranulation pre/post/2h"
+ },
+ {
+  "record_id": "FS-000884",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "230km race, IL-18/IL-18BP pre-race/post/24h"
+ },
+ {
+  "record_id": "FS-000885",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Daily 1h running bouts x6 days, H-CHO vs self-selected diet, salivary IgA"
+ },
+ {
+  "record_id": "FS-000886",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2.5h cycling, VitC/CHO/placebo arms, leukocyte/neutrophil counts and degranulation"
+ },
+ {
+  "record_id": "FS-000887",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise bout, antioxidant vs placebo, mononuclear cell DNA damage before/1h after"
+ },
+ {
+  "record_id": "FS-000888",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Stable CAD patients only, cross-sectional CRP-fitness correlation, no healthy stratum"
+ },
+ {
+  "record_id": "FS-000889",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Muscle adaptation genes (PGC-1a/PDK-4/VEGF/myostatin) only, no immune measure"
+ },
+ {
+  "record_id": "FS-000890",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "IgE epitope-mapping serology using patient sera, no exercise bout performed"
+ },
+ {
+  "record_id": "FS-000892",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2h heat-tolerance walking test, lymphocyte HSP70/72/90 and NF-kB before/during/1h after"
+ }
+]

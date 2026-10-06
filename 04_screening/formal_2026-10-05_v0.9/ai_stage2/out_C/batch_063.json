@@ -1,0 +1,328 @@
+[
+ {
+  "record_id": "FS-003096",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Interval running crossover, pre/post/3h/5h, IL-6 and hepcidin"
+ },
+ {
+  "record_id": "FS-003097",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Primarily mouse arteriogenesis model; human finding is incidental chronic-training note"
+ },
+ {
+  "record_id": "FS-003098",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "30-min acute bout, PBMC GRK2 expression, plasma IL-6 measured"
+ },
+ {
+  "record_id": "FS-003099",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon, baseline through 70h Holter, IL-6 pre/post race"
+ },
+ {
+  "record_id": "FS-003100",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Clinical case series of wheat-allergy/anaphylaxis patients, no comparator design"
+ },
+ {
+  "record_id": "FS-003101",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "COPD patients, clinical disease cohort"
+ },
+ {
+  "record_id": "FS-003102",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Hot water immersion explicitly as alternative to exercise, no exercise bout"
+ },
+ {
+  "record_id": "FS-003103",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Multiple sclerosis patients, clinical cohort, no healthy stratum"
+ },
+ {
+  "record_id": "FS-003104",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "HIV-infected patients, active infection population"
+ },
+ {
+  "record_id": "FS-003105",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Satellite cell/myogenic markers only, not immune measures"
+ },
+ {
+  "record_id": "FS-003106",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Intermittent claudication patients, clinical PAD cohort, no healthy stratum"
+ },
+ {
+  "record_id": "FS-003108",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Military exercise, leukocytes/CRP post-exercise; explicit baseline unclear, borderline"
+ },
+ {
+  "record_id": "FS-003109",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ceramide/sphingolipid and NF-kB inference only, no recognized immune marker"
+ },
+ {
+  "record_id": "FS-003110",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Placebo-controlled 15km run, IL-10/IL-6/IL-12p40 plasma and BMNC pre/post"
+ },
+ {
+  "record_id": "FS-003111",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Radiologist MRI-scoring training exercise, not physical exercise"
+ },
+ {
+  "record_id": "FS-003112",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Obese vs normal-weight acute bout, IL-6/TNF-a measured alongside FGF21"
+ },
+ {
+  "record_id": "FS-003113",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Football match, before/during/after, salivary IgA"
+ },
+ {
+  "record_id": "FS-003114",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "VM patients plus control subjects, exercise training cytokines; acute vs chronic timing unclear"
+ },
+ {
+  "record_id": "FS-003115",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "NHANES cross-sectional fitness-telomere association, no acute bout sampling"
+ },
+ {
+  "record_id": "FS-003116",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Repeated Bruce-test bouts across 12-wk ginger trial, IL-1b/IL-6/TNF-a pre/post"
+ },
+ {
+  "record_id": "FS-003117",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Placebo-controlled 3000m run, IL-6/TNF-a/CRP pre/post acute and 14-day supplementation"
+ },
+ {
+  "record_id": "FS-003118",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "120-min exercise with resting-control comparison, in vivo immune/leucocyte trafficking"
+ },
+ {
+  "record_id": "FS-003119",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Resting IL-6 correlated with CPET parameters, no pre/post-exercise immune sampling"
+ },
+ {
+  "record_id": "FS-003120",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse TBI exercise-preconditioning model, animal only"
+ },
+ {
+  "record_id": "FS-003121",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Samples taken in preexercise resting condition only, no acute-bout bracketing"
+ },
+ {
+  "record_id": "FS-003122",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Iron/hematology and CK markers only, no immune measure"
+ },
+ {
+  "record_id": "FS-003124",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Arm-crank bout, rest/immediate/1h/2h, IL-6/IL-10/IL-1ra"
+ },
+ {
+  "record_id": "FS-003125",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Placebo arm isolates exercise-challenge neutrophil mobilization and function"
+ },
+ {
+  "record_id": "FS-003126",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "In vitro ovarian cancer spheroid model, no human exercise component"
+ },
+ {
+  "record_id": "FS-003127",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Trained vs sedentary cross-sectional comparison, no acute bout sampling"
+ },
+ {
+  "record_id": "FS-003128",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "5000m race, before/after, salivary SIgA and lactoferrin"
+ },
+ {
+  "record_id": "FS-003129",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Leptospirosis outbreak investigation, active infection population"
+ },
+ {
+  "record_id": "FS-003130",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "HIV-infected population, autonomic/fitness measures only, no immune marker"
+ },
+ {
+  "record_id": "FS-003131",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Predominantly in-vitro mechanistic assay but includes human pre/post-exercise IL-6 sera; borderline"
+ },
+ {
+  "record_id": "FS-003132",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-week home program, baseline vs 12wk only, no acute bout"
+ },
+ {
+  "record_id": "FS-003133",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Separable healthy-smoker arm, exercise challenge pre/post, IL-6/CRP/MPO"
+ },
+ {
+  "record_id": "FS-003134",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Acute WBV session pre/post at wk1/wk8, CRP among blood panel"
+ },
+ {
+  "record_id": "FS-003135",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Hepcidin/IL-6 response in athletes during supplementation; abstract brief, borderline"
+ },
+ {
+  "record_id": "FS-003136",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Three runs, PRE/POST/2h/24h/48h, leukocyte apoptosis"
+ },
+ {
+  "record_id": "FS-003137",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIV patients plus separable healthy-control arm, maximal bicycle test, CD4/CD8 subsets"
+ }
+]

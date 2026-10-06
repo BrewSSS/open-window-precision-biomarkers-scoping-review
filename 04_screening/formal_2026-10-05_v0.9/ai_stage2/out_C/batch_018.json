@@ -1,0 +1,324 @@
+[
+ {
+  "record_id": "FS-001000",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "platelet activation/count/aggregation only, not an immune measure"
+ },
+ {
+  "record_id": "FS-001001",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "soluble VCAM-1/ICAM-1 only, not a recognized immune mediator"
+ },
+ {
+  "record_id": "FS-001002",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "renal clearance of IgG as permeability probe, not an immune outcome"
+ },
+ {
+  "record_id": "FS-001003",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "monthly resting samples, trained vs untrained, CD4+ lymphocyte calcium"
+ },
+ {
+  "record_id": "FS-001004",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "graded exercise test, lymphocyte beta-adrenoceptor/cAMP function, drug arms"
+ },
+ {
+  "record_id": "FS-001006",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "CRP among labs, healthy control stratum, immune-sample timing unclear"
+ },
+ {
+  "record_id": "FS-001007",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "two downhill runs 14d apart, immunoglobulin isotypes serially sampled"
+ },
+ {
+  "record_id": "FS-001008",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon, NF-kB activation in peripheral blood lymphocytes"
+ },
+ {
+  "record_id": "FS-001009",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ultramarathon vs rest day, vitamin E/C supplementation, inflammation assessed"
+ },
+ {
+  "record_id": "FS-001010",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative discussion piece, no concrete study sample or design"
+ },
+ {
+  "record_id": "FS-001011",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "coronary heart disease patients, clinical cohort"
+ },
+ {
+  "record_id": "FS-001014",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2.5h run, PRE/IPE/3PE, lymphocyte count reduction plus apoptosis assay"
+ },
+ {
+  "record_id": "FS-001015",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "half-marathon, before/after/48h, neutrophil count correlated with MDA"
+ },
+ {
+  "record_id": "FS-001016",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon/treadmill tests, WBC count and CRP alongside S100A8/A9"
+ },
+ {
+  "record_id": "FS-001018",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "healthy stratum separable from COPD patients, CRP/leukocytes/cytokines pre-post"
+ },
+ {
+  "record_id": "FS-001021",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2h cycling, leukocyte subsets/NKCA/proliferation, CHO vs placebo"
+ },
+ {
+  "record_id": "FS-001022",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle damage markers (CK, LDH, strength) only, no immune measure"
+ },
+ {
+  "record_id": "FS-001023",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2h cycling, leukocyte cytokine mRNA (IL-6/8/10/1Ra), CHO vs placebo"
+ },
+ {
+  "record_id": "FS-001024",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exhaustive/moderate treadmill tests, WBC gene expression profiles"
+ },
+ {
+  "record_id": "FS-001026",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "concentric vs eccentric bouts, lymphocyte subsets/CRP/IL-6 serially"
+ },
+ {
+  "record_id": "FS-001028",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exhaustive treadmill vs rest, NK cell count and granulysin to 24h"
+ },
+ {
+  "record_id": "FS-001029",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "hemodialysis patients, clinical cohort"
+ },
+ {
+  "record_id": "FS-001032",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle/endothelial CXCR2 expression, angiogenesis focus not immune"
+ },
+ {
+  "record_id": "FS-001033",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ironman race, pre/30min/14-20h post, panel of cytokines and HSP70"
+ },
+ {
+  "record_id": "FS-001034",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "two consecutive rugby sevens matches, same players, neutrophil function"
+ },
+ {
+  "record_id": "FS-001039",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon, before/after, myeloperoxidase as neutrophil-derived mediator"
+ },
+ {
+  "record_id": "FS-001040",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "fasting IL-6/CRP vs leisure activity score, resting cross-sectional"
+ },
+ {
+  "record_id": "FS-001042",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon, before/30min/24h, RBC complement regulatory proteins CD55/CD59"
+ },
+ {
+  "record_id": "FS-001043",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-month exercise vs calorie restriction, no acute-bout sampling"
+ },
+ {
+  "record_id": "FS-001044",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "serial time trials, T-cell subsets/IgG2/TNF receptor, colostrum vs placebo"
+ },
+ {
+  "record_id": "FS-001045",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat stroke model and in-vitro HUVEC, no human exercise subjects"
+ },
+ {
+  "record_id": "FS-001046",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "1h rowing, leukocyte/NK/lymphocyte subsets and PBMC cytokine production"
+ },
+ {
+  "record_id": "FS-001047",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "melanoma risk case-control, immunosuppression discussed not measured"
+ },
+ {
+  "record_id": "FS-001048",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "post-MI cardiac rehab patients, clinical cohort, no immune measure"
+ },
+ {
+  "record_id": "FS-001050",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "older type 2 diabetic patients, clinical cohort"
+ },
+ {
+  "record_id": "FS-001051",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "serum adhesion molecule concentrations only, not a recognized immune mediator"
+ },
+ {
+  "record_id": "FS-001052",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "adiponectin oligomers, adipokine not a recognized immune mediator"
+ },
+ {
+  "record_id": "FS-001053",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [
+   "FT05"
+  ],
+  "study_type_hint": "other",
+  "note": "large CV cohort, vague unspecified inflammatory covariate, HRR focus"
+ },
+ {
+  "record_id": "FS-001055",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "motocross race, before/0h/1h, blood neutrophil and lymphocyte counts"
+ },
+ {
+  "record_id": "FS-001056",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exhaustive exercise, leukocyte CD11b activation, thrombin-inhibitor arms"
+ }
+]

@@ -1,0 +1,329 @@
+[
+  {
+    "record_id": "FS-003138",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [],
+    "study_type_hint": "chronic_training_only",
+    "note": "Older sarcopenic men, 4-mo resistance training plus dairy, no acute bout"
+  },
+  {
+    "record_id": "FS-003139",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "120min run, CHO vs placebo feeding, IL-6 and bone markers"
+  },
+  {
+    "record_id": "FS-003141",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Post-MI patients, IL-6 to mental/physical stress, clinical cohort"
+  },
+  {
+    "record_id": "FS-003142",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Exhaustive heat cycling, monocyte Hsp72 pre/exhaustion/24h; borderline immune link"
+  },
+  {
+    "record_id": "FS-003144",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Yoga vs non-yoga, moderate/strenuous exercise, TNFa/IL-6 before/after"
+  },
+  {
+    "record_id": "FS-003146",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Heavy resistance exercise, nucleotide vs placebo, MPO/leukocytes to 72h"
+  },
+  {
+    "record_id": "FS-003147",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [
+      "FT07"
+    ],
+    "study_type_hint": "cross_sectional_resting",
+    "note": "LV structure vs telomere length, exercise test used only for screening"
+  },
+  {
+    "record_id": "FS-003148",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "CKD patients, intradialytic exercise, cytokines, clinical cohort"
+  },
+  {
+    "record_id": "FS-003149",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Healthy men, acute resistance exercise, IL-6/IL-10 pre/24h post"
+  },
+  {
+    "record_id": "FS-003150",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "2.5h run, TNF/neopterin/soluble IL-2R pre to 2 days post"
+  },
+  {
+    "record_id": "FS-003151",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Grape juice, runners, hsCRP/AGP baseline and 48h; acute vs chronic unclear"
+  },
+  {
+    "record_id": "FS-003152",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Downhill run, avenanthramide supplement, TNFa/neutrophil burst/IL-6"
+  },
+  {
+    "record_id": "FS-003153",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT07",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Naproxen, resistance training, PGF2a metabolite only, no immune measure"
+  },
+  {
+    "record_id": "FS-003154",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Roflumilast asthma trials, allergen challenge, not exercise-sampling design"
+  },
+  {
+    "record_id": "FS-003155",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [],
+    "study_type_hint": "chronic_training_only",
+    "note": "Kefir, 15-wk endurance training, CRP pre/post program only"
+  },
+  {
+    "record_id": "FS-003156",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Oral contraceptive users, acute cycling, salivary SIgA before/post/1h"
+  },
+  {
+    "record_id": "FS-003157",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "CHI3L1 myokine after acute exercise, human studies; immune-link borderline"
+  },
+  {
+    "record_id": "FS-003158",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [],
+    "study_type_hint": "chronic_training_only",
+    "note": "Tai Chi 8-wk program, cytokines pre/post/2mo, no acute bout"
+  },
+  {
+    "record_id": "FS-003159",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [
+      "FT04"
+    ],
+    "study_type_hint": "chronic_training_only",
+    "note": "T2DM patients, 12-wk combined training, IL-18/IL-33, clinical cohort"
+  },
+  {
+    "record_id": "FS-003160",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Obese vs normal weight, acute exercise, IL-6 plus CHI3L1/ITLN-1"
+  },
+  {
+    "record_id": "FS-003161",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT07",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "PAD vs non-PAD, treadmill test, stem/progenitor cells not immune measure"
+  },
+  {
+    "record_id": "FS-003162",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Heat vs cool exercise/passive, leukocytes/IL-6 pre/post/1h"
+  },
+  {
+    "record_id": "FS-003163",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [
+      "FT04",
+      "FT07"
+    ],
+    "study_type_hint": "other",
+    "note": "Single clinical case report, coronary thrombosis, no immune sampling"
+  },
+  {
+    "record_id": "FS-003164",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Exhaustive endurance/resistance exercise, CD4:CD8 ratio rest/0/30min"
+  },
+  {
+    "record_id": "FS-003165",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Wheat allergen immunoreactivity testing, no exercise bout performed"
+  },
+  {
+    "record_id": "FS-003166",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Glycogen depletion plus interval run, CHO diet, IL-6/hepcidin"
+  },
+  {
+    "record_id": "FS-003167",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Loaded battle marches, nitrate vs placebo, TNF/IL-6/HO-1 pre/post"
+  },
+  {
+    "record_id": "FS-003169",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Marathon, serum free light chains/IgG/IgA before/immediately after"
+  },
+  {
+    "record_id": "FS-003170",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT07",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Self-reported infectious episodes survey, no immune biomarker measured"
+  },
+  {
+    "record_id": "FS-003171",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Morning vs evening exercise, IL-6 pre/post/2h"
+  },
+  {
+    "record_id": "FS-003172",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT07",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "FDEIA provocation/diagnostic tests, no immune marker measured"
+  },
+  {
+    "record_id": "FS-003173",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "repeated_bouts_SupportB",
+    "note": "Three football games in 1 week, leukocytes/IL-1b/IL-6/CRP, EXP vs CON"
+  },
+  {
+    "record_id": "FS-003174",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [],
+    "study_type_hint": "chronic_training_only",
+    "note": "Obese women, LLLT plus 16-wk training, ICAM-1/leptin, no acute bout"
+  },
+  {
+    "record_id": "FS-003175",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT01",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Narrative review on anti-inflammatory dietary interventions"
+  },
+  {
+    "record_id": "FS-003176",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Krill oil vs placebo, acute exercise, NK cytotoxicity/PBMC cytokines"
+  },
+  {
+    "record_id": "FS-003177",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "RA vs healthy controls, knee-extensor exercise, TNFa gene expression, CRP/IL-6"
+  },
+  {
+    "record_id": "FS-003178",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "chronic_training_only",
+    "note": "Post-MI rehabilitation program, WBC/blood count, clinical cohort"
+  },
+  {
+    "record_id": "FS-003179",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT01",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Hypothesis/opinion paper on intestinal permeability, no original data"
+  },
+  {
+    "record_id": "FS-003180",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT07",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Estrogen and CK/CK-MB muscle damage markers, no immune measure"
+  },
+  {
+    "record_id": "FS-003181",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Alkalosis, repeated sprint plus cycling, monocyte HSP72; borderline immune link"
+  }
+]

@@ -1,0 +1,326 @@
+[
+  {
+    "record_id": "FS-003324",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Eccentric bout, curcumin vs placebo, CK/cytokines pre/1-4 days"
+  },
+  {
+    "record_id": "FS-003325",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [],
+    "study_type_hint": "chronic_training_only",
+    "note": "12-week resistance training, baseline vs 12-week serum cytokines only"
+  },
+  {
+    "record_id": "FS-003327",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT07",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Muscle transcriptome/histamine study, inflammation one of many pathways, no stated immune objective"
+  },
+  {
+    "record_id": "FS-003328",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Hypoxic exercise, vitamin E vs none, IL-6/TNF-a/IL-1ra/IL-10 pre/post/1h"
+  },
+  {
+    "record_id": "FS-003329",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Resistance bout, ibuprofen vs placebo, muscle neutrophil/macrophage markers"
+  },
+  {
+    "record_id": "FS-003330",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Marathon distances, lymphocyte DNA damage pre/post/day3, borderline immune link"
+  },
+  {
+    "record_id": "FS-003331",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Asthma/COPD patient cohorts, clinical respiratory population"
+  },
+  {
+    "record_id": "FS-003333",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [],
+    "study_type_hint": "chronic_training_only",
+    "note": "Twin case-control, 12-week training pre/post, no acute-bout sampling"
+  },
+  {
+    "record_id": "FS-003335",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "HIIT session, healthy men, lymphocyte proliferation/redox pre/post/30min"
+  },
+  {
+    "record_id": "FS-003336",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [
+      "FT04"
+    ],
+    "study_type_hint": "chronic_training_only",
+    "note": "Cancer survivors, clinical cohort, 13-week training pre/post only"
+  },
+  {
+    "record_id": "FS-003337",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Young/older men, acute bout, PBMC Nrf2/SOD1/HMOX protein and gene expression"
+  },
+  {
+    "record_id": "FS-003338",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Transplant recipients plus separable healthy-subject stratum, cycling race cytokines"
+  },
+  {
+    "record_id": "FS-003340",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Trained athletes, exhaustive bout, neopterin immune-activation marker rest/post"
+  },
+  {
+    "record_id": "FS-003342",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Hypoxia vs normoxia cycling, CD4:CD8/cytokines/salivary IgA/lysozyme pre/post/2h"
+  },
+  {
+    "record_id": "FS-003343",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Acute decompensated heart failure patients, clinical cohort"
+  },
+  {
+    "record_id": "FS-003344",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Soccer players, DHA supplement, PBMC cytokine/TLR4 basal and 2h post exercise"
+  },
+  {
+    "record_id": "FS-003345",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Eccentric exercise low/normal glycogen, IL-6 up to 48h"
+  },
+  {
+    "record_id": "FS-003346",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Obese vs normal-mass, maximal exercise bout, pentraxin-3, metabolic-health ambiguity flagged"
+  },
+  {
+    "record_id": "FS-003348",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Futsal players, two bouts, IFN-g/IL-4 24h before and 24/48h after"
+  },
+  {
+    "record_id": "FS-003349",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Rheumatoid arthritis patients, clinical autoimmune cohort, cross-sectional"
+  },
+  {
+    "record_id": "FS-003350",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Eccentric exercise intensity crossover, IL-6/CK pre/24-96h"
+  },
+  {
+    "record_id": "FS-003351",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Marathon race, TNF-a/IL-6/hsCRP pre/immediately/24h post"
+  },
+  {
+    "record_id": "FS-003352",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Post-myocardial-infarction cardiac rehab patients, clinical cohort"
+  },
+  {
+    "record_id": "FS-003353",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Soccer players, single bout two intensities, IL-1b/TNF-a/hsCRP/IL-6 baseline/post/rest"
+  },
+  {
+    "record_id": "FS-003354",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Healthy volunteers, bicycle bout, T/NK/B-cell and monocyte subsets pre/during/2h/24h"
+  },
+  {
+    "record_id": "FS-003355",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "CMV/EBV seropositive donors, single exercise bout, PBMC viral-specific T-cells pre/post"
+  },
+  {
+    "record_id": "FS-003357",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Smokers/nonsmokers, treadmill runs, lymphocyte apoptosis pre/post/1h"
+  },
+  {
+    "record_id": "FS-003358",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "HIT vs continuous exercise, T-cell/Treg/progenitor subsets pre/post/3h/24h"
+  },
+  {
+    "record_id": "FS-003359",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Eccentric exercise heat vs no-heat, IL-1b/6/10 measured, healthy volunteers"
+  },
+  {
+    "record_id": "FS-003360",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "2-day ultramarathon, WBC/IL-6/CRP before/during/after race"
+  },
+  {
+    "record_id": "FS-003361",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Simulated soccer game, CHO timing, IL-6 and muscle markers pre/post"
+  },
+  {
+    "record_id": "FS-003362",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Past knee-injury vs matched healthy controls, running bout, IL-1b pre/post"
+  },
+  {
+    "record_id": "FS-003363",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [
+      "FT04"
+    ],
+    "study_type_hint": "other",
+    "note": "BPPV vertigo patients undergoing repositioning maneuver, clinical cohort not exercise"
+  },
+  {
+    "record_id": "FS-003364",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Healthy men, exercise plus NPPV, lymphocyte/monocyte counts and BDNF pre/post"
+  },
+  {
+    "record_id": "FS-003365",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Single-bout ET vs HIIT, IL-1b/6/10/MCP-1/CRP pre/30min/2days"
+  },
+  {
+    "record_id": "FS-003367",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Runners vs sedentary, exhaustive race tests, IL-6/TNF-a pre/post"
+  },
+  {
+    "record_id": "FS-003369",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Marathon runners vs sedentary controls, complement C3/C4 and Ig during graded test/recovery"
+  },
+  {
+    "record_id": "FS-003371",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Trained vs untrained, acute bout, multiplex plasma cytokine panel pre/post/3h"
+  },
+  {
+    "record_id": "FS-003373",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Marathon/half-marathon/ranger training, IL-6/IL-10/IL-8/TNFa before/during/after"
+  },
+  {
+    "record_id": "FS-003375",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Eccentric exercise, herb supplement vs placebo, CRP/IL-6 pre/24h"
+  }
+]

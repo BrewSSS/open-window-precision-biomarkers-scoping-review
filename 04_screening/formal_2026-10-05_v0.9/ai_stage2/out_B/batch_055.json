@@ -1,0 +1,326 @@
+[
+ {
+  "record_id": "FS-002753",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "vitamin C vs placebo, IL-6/IL-10 in plasma and mononuclear cells pre/post run"
+ },
+ {
+  "record_id": "FS-002754",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "3 consecutive eccentric bouts, IL-6/IL-1b/IL-10 before/after each"
+ },
+ {
+  "record_id": "FS-002755",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CD4+/CD8+ T cell apoptosis/migration after resistance protocols"
+ },
+ {
+  "record_id": "FS-002756",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "hypertensive exercise response phenotype, CRP correlated with aortic stiffness"
+ },
+ {
+  "record_id": "FS-002757",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle MAPK/p70S6K signaling only, not an immune measure"
+ },
+ {
+  "record_id": "FS-002758",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "neutrophil extracellular traps/myeloperoxidase, rest vs post-exercise"
+ },
+ {
+  "record_id": "FS-002760",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "chronic systolic heart failure patients, clinical cohort"
+ },
+ {
+  "record_id": "FS-002761",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "fructose+PA, TNF-a/IL-6/CRP measured around 14-day PA intervention"
+ },
+ {
+  "record_id": "FS-002762",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "incretin/glucose hormones only, no immune measure"
+ },
+ {
+  "record_id": "FS-002763",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "endothelial progenitor/angiogenic cells, not immune cells"
+ },
+ {
+  "record_id": "FS-002764",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon, PBMC Th1/Th2 gene expression pre/one week post"
+ },
+ {
+  "record_id": "FS-002765",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "acute renal failure patient case series, clinical cohort, no immune measure"
+ },
+ {
+  "record_id": "FS-002766",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "type 1 diabetes patients, clinical cohort, IL-6/TNF-a"
+ },
+ {
+  "record_id": "FS-002767",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "multi-stage cycling, TNFa/IL6/IL2/IFNg before/after stages"
+ },
+ {
+  "record_id": "FS-002768",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "kayakers WBC+training cycle, morphological blood parameters (CBC) across days"
+ },
+ {
+  "record_id": "FS-002769",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exercise hematuria/urine sediment, no immune measure"
+ },
+ {
+  "record_id": "FS-002770",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "EMG and creatine kinase only, no immune measure"
+ },
+ {
+  "record_id": "FS-002771",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IGF-1 receptor (CD221) on leukocyte subsets, serial post-resistance-exercise"
+ },
+ {
+  "record_id": "FS-002772",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "PBMC inflammation-gene microarray pre/post/15min recovery, cyclists"
+ },
+ {
+  "record_id": "FS-002773",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cell-free DNA kinetics methods paper, no immune marker measured"
+ },
+ {
+  "record_id": "FS-002774",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "CAD patients, clinical cohort, emotional excitement not exercise bout"
+ },
+ {
+  "record_id": "FS-002775",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "cystic fibrosis patients, clinical cohort, exercise capacity determinants"
+ },
+ {
+  "record_id": "FS-002776",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "24h ultra-marathon, salivary IgA/lysozyme before/immediately after"
+ },
+ {
+  "record_id": "FS-002777",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse model study, animal-only"
+ },
+ {
+  "record_id": "FS-002778",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "spinal cord injury athletes, wheelchair marathon, IL-6/TNF-a serial"
+ },
+ {
+  "record_id": "FS-002779",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "low back pain patients, CD4+ T subsets/cytokines pre/post exercise sessions"
+ },
+ {
+  "record_id": "FS-002780",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "obese adults, RANTES/CCR5/TNF-a/IL-6 pre/post 3-month program"
+ },
+ {
+  "record_id": "FS-002781",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "heat acclimation, hs-CRP before/after endurance capacity test"
+ },
+ {
+  "record_id": "FS-002782",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "antibody pharmacokinetics trial, no exercise bout"
+ },
+ {
+  "record_id": "FS-002783",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cycling before diving, neutrophil markers CD18/CD41 serial sampling"
+ },
+ {
+  "record_id": "FS-002784",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "skaters, cold vs thermoneutral, leukocyte/neutrophil/lymphocyte subsets pre/post"
+ },
+ {
+  "record_id": "FS-002785",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ethnicity comparison, TNF-a/IL-6 pre/post 30min run"
+ },
+ {
+  "record_id": "FS-002786",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "international consensus guideline document, not original research"
+ },
+ {
+  "record_id": "FS-002787",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Traumeel vs placebo, WBC/lymphocyte activation/cytokines post-cycling"
+ },
+ {
+  "record_id": "FS-002788",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT08",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "ozone exposure dosimetry study, exercise inseparable from ozone, no exercise-alone contrast"
+ },
+ {
+  "record_id": "FS-002789",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "recovery modalities, IL-6/TNF-a after exhaustive time trial"
+ },
+ {
+  "record_id": "FS-002790",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "young/older males, IL-6 pre/post heat cycling bouts"
+ },
+ {
+  "record_id": "FS-002792",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "NK cell CXCR4 expression/migration before/after 90min exercise"
+ },
+ {
+  "record_id": "FS-002793",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "chemerin adipokine/cardiometabolic focus, not an immune measure"
+ },
+ {
+  "record_id": "FS-002794",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "DHA soccer players, PBMC TNFa/IL6/IL8 after LPS stimulation post-exercise"
+ }
+]

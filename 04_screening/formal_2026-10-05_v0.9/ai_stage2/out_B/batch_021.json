@@ -1,0 +1,332 @@
+[
+ {
+  "record_id": "FS-001173",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "exposure is mental stress task, not exercise bout"
+ },
+ {
+  "record_id": "FS-001175",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute cycling bout, caffeine/CHO factorial w/ PLA/PLA arm"
+ },
+ {
+  "record_id": "FS-001176",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "quercetin vs placebo, 3 repeated exercise sessions, immune assays"
+ },
+ {
+  "record_id": "FS-001177",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute exercise-hyperthermia bout, leukocytes/cytokines vs control"
+ },
+ {
+  "record_id": "FS-001178",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute RE/run bout, muscle cytokine mRNA time course"
+ },
+ {
+  "record_id": "FS-001179",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT05",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "only pre-exercise anticipatory sampling; HO-1 not eligible immune marker"
+ },
+ {
+  "record_id": "FS-001180",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HO-1 stress protein not a recognized immune mediator"
+ },
+ {
+  "record_id": "FS-001182",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "prolonged exercise, neutrophil trafficking/degranulation, cytokines"
+ },
+ {
+  "record_id": "FS-001183",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-wk training, resting pre/post markers, no acute bout"
+ },
+ {
+  "record_id": "FS-001184",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute eccentric bout, antioxidant vs placebo factorial, CRP/CK"
+ },
+ {
+  "record_id": "FS-001186",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "half-ironman competition, creatine vs CHO control, cytokines"
+ },
+ {
+  "record_id": "FS-001187",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "review of EPO doping-test methodology, not original exercise study"
+ },
+ {
+  "record_id": "FS-001188",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-wk resistance training pre/post, no acute bout sampling"
+ },
+ {
+  "record_id": "FS-001189",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "fish-oil supplementation, swimmers, exercise-induced PGE2 mentioned"
+ },
+ {
+  "record_id": "FS-001191",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "chronic heart failure patients, clinical cohort"
+ },
+ {
+  "record_id": "FS-001192",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "active/passive hyperthermia bout, leukocytosis, HSP70 in PBMCs"
+ },
+ {
+  "record_id": "FS-001193",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "patients with suspected coronary artery disease, clinical cohort"
+ },
+ {
+  "record_id": "FS-001194",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "post-MI coronary heart disease patients on statins, clinical cohort"
+ },
+ {
+  "record_id": "FS-001195",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute walking bout, post-menopausal women, CRP/fibrinogen"
+ },
+ {
+  "record_id": "FS-001196",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute exercise intensities, platelet-leukocyte conjugates measured"
+ },
+ {
+  "record_id": "FS-001197",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute treadmill bout, CD8/NK flow cytometry methodology"
+ },
+ {
+  "record_id": "FS-001200",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute cycling trials, temperature, leukocytes and cytokines"
+ },
+ {
+  "record_id": "FS-001201",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "endothelin-1 in asthma EIB, not a recognized immune mediator"
+ },
+ {
+  "record_id": "FS-001202",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute exercise+meal, CRP measured, healthy males"
+ },
+ {
+  "record_id": "FS-001206",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute exercise, adiponectin, IL-6/TNF mRNA, overweight/lean"
+ },
+ {
+  "record_id": "FS-001207",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute treadmill tests, cytokine panel, healthy vs illness-prone"
+ },
+ {
+  "record_id": "FS-001208",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute treadmill bouts, lymphocyte apoptosis/CD markers"
+ },
+ {
+  "record_id": "FS-001209",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute resistive bout vs rest control, LPS-stimulated cytokines"
+ },
+ {
+  "record_id": "FS-001210",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute resistance exercise, CHO/PRO forms, control group, immunity markers"
+ },
+ {
+  "record_id": "FS-001211",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute aerobic bout, neutrophil gene expression (immune-cell omics)"
+ },
+ {
+  "record_id": "FS-001212",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "allergen/IgE assay of sport bands, no exercise-immune bout design"
+ },
+ {
+  "record_id": "FS-001213",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "asthmatic patients on ICS therapy, clinical cohort; angiopoietins non-immune"
+ },
+ {
+  "record_id": "FS-001215",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute resistance bout, NF-kB activity in PBMCs measured"
+ },
+ {
+  "record_id": "FS-001216",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute resistance+creatine vs placebo, IL-6 mRNA in muscle"
+ },
+ {
+  "record_id": "FS-001218",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ASA vs placebo, only running performance time measured, no immune marker"
+ },
+ {
+  "record_id": "FS-001219",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "soccer match, neutrophil counts/ROS, lymphocyte oxidative markers"
+ },
+ {
+  "record_id": "FS-001220",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute exercise, stem cell migration, serum cytokine panel"
+ },
+ {
+  "record_id": "FS-001221",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "steroid-naive asthmatic patients only, no healthy stratum"
+ },
+ {
+  "record_id": "FS-001222",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "significant genes are growth/remodeling factors, no immune mediator reported"
+ },
+ {
+  "record_id": "FS-001223",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute resistance exercise, creatine vs placebo, CRP measured"
+ }
+]

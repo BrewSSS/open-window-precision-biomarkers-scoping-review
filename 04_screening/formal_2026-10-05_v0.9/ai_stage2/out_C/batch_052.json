@@ -1,0 +1,336 @@
+[
+  {
+    "record_id": "FS-002621",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "CD11b/CD36 leukocyte markers, sprint bout vs control, 48h monitor"
+  },
+  {
+    "record_id": "FS-002622",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "ICU patients with SIRS/sepsis/ICUAW, clinical cohort"
+  },
+  {
+    "record_id": "FS-002623",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "WBC/CRP/lactoferrin after triathlon, baseline to 48h"
+  },
+  {
+    "record_id": "FS-002624",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT07",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Myostatin/estradiol only, no immune marker measured"
+  },
+  {
+    "record_id": "FS-002626",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Inflammation-related miR-21/155 stated objective, marathon"
+  },
+  {
+    "record_id": "FS-002627",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "IL-6/hepcidin post-run, OCP phase crossover"
+  },
+  {
+    "record_id": "FS-002628",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "TNF-a/IL-6/CRP after cycling bout, ethnicity comparator"
+  },
+  {
+    "record_id": "FS-002629",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "In vitro basophil/mast cell osmotic activation, no exercise"
+  },
+  {
+    "record_id": "FS-002630",
+    "disposition": "AWAITING_CLASSIFICATION",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Mean age 21+-6y; mean-2SD<18, no range stated"
+  },
+  {
+    "record_id": "FS-002631",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "TNFa-Murf1-MAFbx inflammatory signalling after single bout"
+  },
+  {
+    "record_id": "FS-002632",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "IL-10/IL-13 after muscle-damaging exercise, vitamin D groups"
+  },
+  {
+    "record_id": "FS-002634",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [
+      "FT07"
+    ],
+    "study_type_hint": "other",
+    "note": "Retrospective health survey, no bout-linked immune sampling"
+  },
+  {
+    "record_id": "FS-002635",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Monocyte gene/miRNA expression, interval cycling bout, age 22-30"
+  },
+  {
+    "record_id": "FS-002636",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Muscle cytokines after bout pre/post 12wk training, young/elderly"
+  },
+  {
+    "record_id": "FS-002637",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [
+      "FT07"
+    ],
+    "study_type_hint": "other",
+    "note": "Myasthenia gravis patients, clinical cohort"
+  },
+  {
+    "record_id": "FS-002638",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Inflammation-related miR-146a stated, marathon, rest/post/24h"
+  },
+  {
+    "record_id": "FS-002639",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [
+      "FT03"
+    ],
+    "study_type_hint": "chronic_training_only",
+    "note": "2-month chronic training, no acute bout; OSA comparator"
+  },
+  {
+    "record_id": "FS-002640",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [
+      "FT07"
+    ],
+    "study_type_hint": "cross_sectional_resting",
+    "note": "Cross-sectional age/VO2max vs lymphocyte DNA damage, no bout"
+  },
+  {
+    "record_id": "FS-002641",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "repeated_bouts_SupportB",
+    "note": "Salivary IgA across repeated LI/HI sessions, same players"
+  },
+  {
+    "record_id": "FS-002642",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT07",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Exhaled nitric oxide only, not a core immune mediator"
+  },
+  {
+    "record_id": "FS-002643",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "IL-6/TNF-a/hsCRP after wheelchair marathon, SCI athletes"
+  },
+  {
+    "record_id": "FS-002644",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "CRP/leptin pre-ET vs 24/72h after final training session"
+  },
+  {
+    "record_id": "FS-002645",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Breast cancer survivors, clinical cohort"
+  },
+  {
+    "record_id": "FS-002646",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [
+      "FT07"
+    ],
+    "study_type_hint": "other",
+    "note": "Chronic heart failure patients, clinical cohort"
+  },
+  {
+    "record_id": "FS-002647",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Exercise vs control before vaccine-induced inflammation, older adults"
+  },
+  {
+    "record_id": "FS-002648",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [
+      "FT07"
+    ],
+    "study_type_hint": "cross_sectional_resting",
+    "note": "Resting irisin/telomere correlation, no exercise bout performed"
+  },
+  {
+    "record_id": "FS-002649",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "IL-6/TNF-a after heat cycling bouts, young vs older men"
+  },
+  {
+    "record_id": "FS-002650",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Cytokine mRNA in muscle after RE/AE/CE bout, middle-aged men"
+  },
+  {
+    "record_id": "FS-002651",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Leukocytes/CRP/cytokines after basketball match, 6-day microcycle"
+  },
+  {
+    "record_id": "FS-002652",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "CRP/procalcitonin after maximal exercise test, trained vs sedentary"
+  },
+  {
+    "record_id": "FS-002653",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "IL-6/hepcidin after interval running, hypoxic vs normoxic recovery"
+  },
+  {
+    "record_id": "FS-002654",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "IL-6/IL-1b after cycling bout, cryotherapy vs control exercise"
+  },
+  {
+    "record_id": "FS-002655",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Allergy-clinic patients undergoing diagnostic EIB testing"
+  },
+  {
+    "record_id": "FS-002656",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Salivary SIgA/lactoferrin after TKD training, tea vs water"
+  },
+  {
+    "record_id": "FS-002657",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Leucocytes after endurance run, mineral water vs placebo"
+  },
+  {
+    "record_id": "FS-002658",
+    "disposition": "AWAITING_CLASSIFICATION",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Mean age 22.2+-2.5y; mean-2SD<18, no range stated"
+  },
+  {
+    "record_id": "FS-002659",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT07",
+    "secondary_codes": [],
+    "study_type_hint": "repeated_bouts_SupportB",
+    "note": "Lymphocyte beta-adrenoceptor density, autonomic not immune marker"
+  },
+  {
+    "record_id": "FS-002660",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "hs-CRP measured; pre/post supplementation timing unclear"
+  },
+  {
+    "record_id": "FS-002661",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [
+      "FT07"
+    ],
+    "study_type_hint": "other",
+    "note": "Cold-exposure irisin/FGF21 study, no exercise bout performed"
+  },
+  {
+    "record_id": "FS-002662",
+    "disposition": "AWAITING_CLASSIFICATION",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Mean age 22.4+-3.2y; mean-2SD<18, no range stated"
+  }
+]

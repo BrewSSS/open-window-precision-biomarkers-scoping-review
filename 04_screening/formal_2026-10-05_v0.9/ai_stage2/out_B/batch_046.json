@@ -1,0 +1,328 @@
+[
+ {
+  "record_id": "FS-002372",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute cycle bout, pre/post WBC/T/B/NK counts"
+ },
+ {
+  "record_id": "FS-002373",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "half-marathon, placebo-controlled, neutrophil redox/gene markers"
+ },
+ {
+  "record_id": "FS-002374",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "repeated eccentric sessions, WBC/lymphocyte/CRP/neutrophils tracked"
+ },
+ {
+  "record_id": "FS-002375",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Fstl1 myokine only, no immune mediator/cell measure"
+ },
+ {
+  "record_id": "FS-002376",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute bout, Treg cells and IL-10 measured"
+ },
+ {
+  "record_id": "FS-002378",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "multi-day race, inflammatory markers before/after"
+ },
+ {
+  "record_id": "FS-002379",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ultramarathon; separable non-HBV healthy stratum, IL-6/CRP"
+ },
+ {
+  "record_id": "FS-002380",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon runners, hs-CRP and cardiac markers pre/post"
+ },
+ {
+  "record_id": "FS-002381",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "sprint exercise heat, vague 'inflammation' marker collected"
+ },
+ {
+  "record_id": "FS-002382",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "neutrophil phagocytosis/chemotaxis via post-exercise NA/eHsp72"
+ },
+ {
+  "record_id": "FS-002383",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exhaustive run, TNF-a/IL-1b/IL-6/IL-1ra kinetics"
+ },
+ {
+  "record_id": "FS-002384",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute bout, salivary IgA/TGF-b/IL-5 over 24h"
+ },
+ {
+  "record_id": "FS-002385",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "diabetic neuropathy/PAD cohort central focus, clinical disease"
+ },
+ {
+  "record_id": "FS-002386",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HSP70/27 muscle stress proteins only, no immune mediator"
+ },
+ {
+  "record_id": "FS-002387",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exercise trial, postprandial IL-6 and sICAM-1 measured"
+ },
+ {
+  "record_id": "FS-002388",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "kayak sprint, IL-6 and CK pre/15min post"
+ },
+ {
+  "record_id": "FS-002389",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "baseline/after-training/recovery only, no acute bout sample"
+ },
+ {
+  "record_id": "FS-002390",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "oxidative stress/EMG only, no immune marker"
+ },
+ {
+  "record_id": "FS-002391",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "SCI vs separable non-SCI healthy stratum, IL-6/IL-10/TNF-a"
+ },
+ {
+  "record_id": "FS-002392",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "two LIST bouts, CRP/IL-6/CK tracked to 72h"
+ },
+ {
+  "record_id": "FS-002393",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "3-day judo sessions, cytokines tracked post and 12h"
+ },
+ {
+  "record_id": "FS-002394",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "single resistance bout, hs-CRP pre/post vs control"
+ },
+ {
+  "record_id": "FS-002396",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "abstract empty, title only, cannot judge dimensions"
+ },
+ {
+  "record_id": "FS-002397",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "football match, suPAR inflammatory marker, placebo arm"
+ },
+ {
+  "record_id": "FS-002398",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cycling, salivary lysozyme/amylase/sIgA antimicrobial proteins"
+ },
+ {
+  "record_id": "FS-002399",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "genotyping case-control, no exercise-bout sampling design"
+ },
+ {
+  "record_id": "FS-002400",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "copeptin/GDF15/proADM cardiovascular stress markers only"
+ },
+ {
+  "record_id": "FS-002401",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "NIRS microcirculation only, no immune marker measured"
+ },
+ {
+  "record_id": "FS-002402",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "resistance exercise, CHO vs placebo, sIgA/IL-2/IL-5"
+ },
+ {
+  "record_id": "FS-002403",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT08",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "PM exposure study, exercise constant/inseparable co-factor"
+ },
+ {
+  "record_id": "FS-002405",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon, myeloperoxidase neutrophil activation marker pre/post"
+ },
+ {
+  "record_id": "FS-002406",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "sperm antibody study, no exercise exposure at all"
+ },
+ {
+  "record_id": "FS-002407",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "hyponatremia/CK only, no immune marker"
+ },
+ {
+  "record_id": "FS-002408",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon, T-cell subsets and IFNg/IL4/IL10 cytokines"
+ },
+ {
+  "record_id": "FS-002409",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "local PGE2/isoprostane eicosanoids only, not core immune mediator"
+ },
+ {
+  "record_id": "FS-002410",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathoners, NK cell subsets and NK activity tracked"
+ },
+ {
+  "record_id": "FS-002411",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "angina/CAD patients, EPC/platelet vascular markers not immune"
+ },
+ {
+  "record_id": "FS-002412",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "heart failure patients on carvedilol, clinical cohort"
+ },
+ {
+  "record_id": "FS-002413",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute bout, obese/non-obese, IL-6/TNF-a pre to 48h post"
+ },
+ {
+  "record_id": "FS-002414",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "EIMD crossover, IL-6 pre-heat-stress, CK, soreness"
+ }
+]

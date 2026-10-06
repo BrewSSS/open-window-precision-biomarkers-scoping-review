@@ -1,0 +1,324 @@
+[
+ {
+  "record_id": "FS-000210",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Biathlon; neutrophil phagocytosis/bactericidal activity, vitamin C arm"
+ },
+ {
+  "record_id": "FS-000211",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "90km ultramarathon; leukocytes, MPO, CRP, IL-6, TNF, vitamin C arm"
+ },
+ {
+  "record_id": "FS-000212",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Three Wingate bouts; salivary S-IgA pre/post in females"
+ },
+ {
+  "record_id": "FS-000213",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycle test to fatigue; salivary sIgA pre/post/30min, relaxation arm"
+ },
+ {
+  "record_id": "FS-000214",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Single vs repeated anaerobic bouts; neutrophils, IL-6/8, CRP"
+ },
+ {
+  "record_id": "FS-000215",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Chronic heart failure patients only, no healthy stratum"
+ },
+ {
+  "record_id": "FS-000219",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric exercise; labelled neutrophils and IL-6 pre to 9 days"
+ },
+ {
+  "record_id": "FS-000220",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon; plasma IL-8, MIP-1alpha/beta chemokines pre to 4h"
+ },
+ {
+  "record_id": "FS-000221",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "EMG and lactate only; no immune cell or mediator measured"
+ },
+ {
+  "record_id": "FS-000222",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Lymphocyte DNA damage assay only, not an immune function measure"
+ },
+ {
+  "record_id": "FS-000223",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Downhill run; IL-6/IL-1ra, CD4/CD8/NK cells, antioxidant vitamin arm"
+ },
+ {
+  "record_id": "FS-000224",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycling to fatigue; LPS-stimulated neutrophil elastase, CHO arm"
+ },
+ {
+  "record_id": "FS-000225",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Leukocyte HSP72 expression only; no recognized immune mediator"
+ },
+ {
+  "record_id": "FS-000226",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Uphill running; lymphocyte/neutrophil/monocyte counts, recovery arms"
+ },
+ {
+  "record_id": "FS-000227",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Same skiers tested in-season/off-season; leukocyte subsets, IL-6"
+ },
+ {
+  "record_id": "FS-000229",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "60-min cycling/running; muscle and plasma IL-6, CHO arm"
+ },
+ {
+  "record_id": "FS-000231",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exhausting exercise; neutrophil superoxide production, pre/post training"
+ },
+ {
+  "record_id": "FS-000232",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Mitochondrial myopathy patients only, no healthy comparator"
+ },
+ {
+  "record_id": "FS-000235",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Resistance exercise; leukocyte subsets/lymphocyte proliferation, CHO arm"
+ },
+ {
+  "record_id": "FS-000236",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "7 days of exercise exposures; monocyte IL-1b/6/TNF-a, cold exposure"
+ },
+ {
+  "record_id": "FS-000237",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon; IL-10/IL-1ra/IL-6/IL-8 pre to 1.5h, CHO/gender/age"
+ },
+ {
+  "record_id": "FS-000238",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "One vs two same-day bouts; leukocyte/CD4/CD8/CD56/CD69 compared"
+ },
+ {
+  "record_id": "FS-000239",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Max ergometer row; neutrophil oxidative burst, N-acetylcysteine arm"
+ },
+ {
+  "record_id": "FS-000242",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Two eccentric bouts 4wk apart; neutrophil/E-selectin, control condition"
+ },
+ {
+  "record_id": "FS-000243",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Strength test; NK cell counts pre/post, elderly vs young, pre/post training"
+ },
+ {
+  "record_id": "FS-000244",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "VEGF/bFGF/TGF-b1 only; not recognized immune mediators"
+ },
+ {
+  "record_id": "FS-000245",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2-h cycling; salivary IgA pre to 22h, glutamine/protein arm"
+ },
+ {
+  "record_id": "FS-000246",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Strength/soreness/MRI injury only; no immune marker measured"
+ },
+ {
+  "record_id": "FS-000247",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Chronic heart failure patients only, no healthy comparator"
+ },
+ {
+  "record_id": "FS-000249",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2.5h treadmill running; plasma IL-6/lymphocyte/neutrophil, epinephrine arm"
+ },
+ {
+  "record_id": "FS-000250",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise tasks; sputum TNF-alpha measured alongside pneumoproteins"
+ },
+ {
+  "record_id": "FS-000251",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon; sputum PMN counts, L-selectin/CD11b expression, nonasthmatic"
+ },
+ {
+  "record_id": "FS-000254",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exhaustive treadmill test; granulocyte oxidative burst/phagocytosis pre/post"
+ },
+ {
+  "record_id": "FS-000255",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Triathlon; platelet-leukocyte aggregates, P-selectin pre/post to 2h"
+ },
+ {
+  "record_id": "FS-000258",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Graded bicycle exercise; NK activity, CD3/4/8/16/56, post-menopausal women"
+ },
+ {
+  "record_id": "FS-000261",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Supine bicycle exercise; T/NK lymphocyte IL-2/IFN-gamma, blockade arm"
+ },
+ {
+  "record_id": "FS-000262",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2-h cycling, 2 occasions; NK/lymphocyte subsets, glutamine arm"
+ },
+ {
+  "record_id": "FS-000264",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Trends in Immunology review-only journal; empty abstract, likely commentary"
+ },
+ {
+  "record_id": "FS-000265",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Resistance exercise; lymphocyte proliferation pre/post, strength groups"
+ },
+ {
+  "record_id": "FS-000266",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise test; histamine/basophil counts, asthmatics vs separable controls"
+ }
+]

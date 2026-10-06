@@ -1,0 +1,332 @@
+[
+ {
+  "record_id": "FS-000386",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Two bouts 3h/6h apart vs rest; neutrophilia, lymphocytopenia, lymphocyte activation measured"
+ },
+ {
+  "record_id": "FS-000387",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise vs nonexercise session; prolactin-receptor on B lymphocytes measured pre/post"
+ },
+ {
+  "record_id": "FS-000388",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Wingate bout; WBC counts, granulocyte activation measured over 24h post-exercise"
+ },
+ {
+  "record_id": "FS-000389",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Resting immune status sampled 36-44h post-exercise across training phases; borderline known-timing B"
+ },
+ {
+  "record_id": "FS-000390",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric bout, CCB vs placebo crossover; macrophage infiltration, neutrophil counts measured"
+ },
+ {
+  "record_id": "FS-000393",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "One vs two bouts 3h/6h apart vs rest; PMN count and respiratory burst measured"
+ },
+ {
+  "record_id": "FS-000394",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "4-min all-out cycle test; CD94/CD56 NK lymphocyte markers measured pre/post"
+ },
+ {
+  "record_id": "FS-000395",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Chronic heart failure/CAD patient cohort; 4-month chronic training, no acute bout"
+ },
+ {
+  "record_id": "FS-000397",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "COPD patients plus healthy controls both exercised; chart separable healthy stratum, phagocyte oxidant burst"
+ },
+ {
+  "record_id": "FS-000398",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "DOMS/CK/force only; no immune cell or mediator measured"
+ },
+ {
+  "record_id": "FS-000399",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Hemodialysis/ESRD patient cohort; no immune measures, chronic training only"
+ },
+ {
+  "record_id": "FS-000402",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Maximal exercise test, CHF patients plus separable age-matched healthy controls; IL-6, TNF-alpha measured"
+ },
+ {
+  "record_id": "FS-000403",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycling under heat/hydration conditions; neutrophil, lymphocyte, NK function measured pre/post/24h"
+ },
+ {
+  "record_id": "FS-000404",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon; WBC differential (neutrophilia, monocytosis, lymphopenia) measured before/4h/24h"
+ },
+ {
+  "record_id": "FS-000405",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Treadmill bouts of differing intensity/duration; total leukocyte count measured pre/post/30min"
+ },
+ {
+  "record_id": "FS-000407",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Unstable angina patient cohort; exercise test used only prognostically"
+ },
+ {
+  "record_id": "FS-000408",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT05",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6 release measured only during exercise at increasing intensities, no post-cessation sample"
+ },
+ {
+  "record_id": "FS-000409",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric exercise (STEP vs ECC) vs rest control; neutrophil/monocyte phagocytosis measured over 72h"
+ },
+ {
+  "record_id": "FS-000410",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Muscle MAPK/AMPK signalling only; no immune cell or mediator measured"
+ },
+ {
+  "record_id": "FS-000411",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "3h run, CHO vs placebo both exercised; plasma cytokines and muscle cytokine mRNA measured"
+ },
+ {
+  "record_id": "FS-000412",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Wheat-dependent exercise-induced anaphylaxis patient cohort; no exercise-bout pre/post sampling described"
+ },
+ {
+  "record_id": "FS-000416",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Repeated-day cycling bouts; leucocyte mtDNA deletion tracked over days post-exercise"
+ },
+ {
+  "record_id": "FS-000417",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CECS patients vs controls, eccentric exercise; only force/pain outcomes, no immune measure"
+ },
+ {
+  "record_id": "FS-000418",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise vs rest session, lactating women; breast milk IgA, lactoferrin, lysozyme measured"
+ },
+ {
+  "record_id": "FS-000419",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Interval training altitude vs sea level crossover; IL-6, IL-8, neutrophil/monocyte counts measured"
+ },
+ {
+  "record_id": "FS-000420",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon; cytokines, neutrophil/monocyte activation (MPO, LTF) measured before/after"
+ },
+ {
+  "record_id": "FS-000421",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycling bouts before/after antioxidant course, own pre-antioxidant trial as baseline; cytokines measured"
+ },
+ {
+  "record_id": "FS-000424",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Two eccentric bouts 3 weeks apart, same subjects; IL-6 mRNA/protein measured each bout"
+ },
+ {
+  "record_id": "FS-000425",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Standardized rowing test repeated 19 times over 12 months; immunoglobulin, acute-phase proteins measured"
+ },
+ {
+  "record_id": "FS-000428",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Heliox diving exposure, not an exercise bout; complement, Ig, CRP measured"
+ },
+ {
+  "record_id": "FS-000429",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2h cycling, glutamine/protein vs placebo crossover; plasma IL-6 measured"
+ },
+ {
+  "record_id": "FS-000430",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "60-min treadmill bout; T-lymphocyte mitogen response and cell death measured pre/during/post"
+ },
+ {
+  "record_id": "FS-000431",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "10-week training, IL-6 genotype vs bone outcome; no acute-bout immune marker sampled"
+ },
+ {
+  "record_id": "FS-000432",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ultramarathon, vitamin C vs placebo both raced; salivary IgA measured pre/during/post"
+ },
+ {
+  "record_id": "FS-000434",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Duathlon before/after taper training, antioxidant vs placebo; CD4+ cell count measured"
+ },
+ {
+  "record_id": "FS-000435",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "60-min treadmill vs resting control session; T-lymphocyte CD69 activation measured"
+ },
+ {
+  "record_id": "FS-000437",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Wingate tests pre/post 8-wk ginseng vs placebo, both exercised; salivary IgA measured"
+ },
+ {
+  "record_id": "FS-000438",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "90-min shuttle run, vitamin C given after cessation vs placebo; plasma IL-6 measured"
+ },
+ {
+  "record_id": "FS-000439",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "30km run; serum opsonic activity, immunoglobulin and complement measured pre/post"
+ },
+ {
+  "record_id": "FS-000441",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "120-min cycling, glucose vs placebo both exercised; muscle/plasma IL-6 measured"
+ }
+]

@@ -1,0 +1,324 @@
+[
+ {
+  "record_id": "FS-001060",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "graded max bicycle test, complement fragments C3a/C4a, multiple timepoints"
+ },
+ {
+  "record_id": "FS-001061",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "IL-6/CRP/WBC vs VO2max, cross-sectional, no acute-bout sampling"
+ },
+ {
+  "record_id": "FS-001062",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "30min cycle bout at baseline and 8wk, CRP/IL-6, antioxidant vs placebo"
+ },
+ {
+  "record_id": "FS-001063",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon, eosinophils/ECP/IgE, probiotic vs placebo"
+ },
+ {
+  "record_id": "FS-001064",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "running+cycling, TNF-alpha/IL-10 rest and 30min recovery, NSAID vs placebo"
+ },
+ {
+  "record_id": "FS-001065",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle STAT3 signaling for hypertrophy, no immune objective"
+ },
+ {
+  "record_id": "FS-001066",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "200km run, before/midway/after, Hs-CRP/IL-6/TNF"
+ },
+ {
+  "record_id": "FS-001067",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "single vs double same-day soccer bouts, salivary IgA before/after each"
+ },
+ {
+  "record_id": "FS-001068",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon, neutrophil leucocytosis/CRP/IL-1 activity to 48h"
+ },
+ {
+  "record_id": "FS-001073",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "ranger course, leukocyte ROS and CD62L/CD11b before/during/recovery"
+ },
+ {
+  "record_id": "FS-001074",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "myostatin/activin mRNA, muscle growth signaling not immune"
+ },
+ {
+  "record_id": "FS-001075",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "erythrocyte hemolysis/membrane markers only, no immune measure"
+ },
+ {
+  "record_id": "FS-001076",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-week training pre/post only, lean/obese/T2DM groups, no acute bout"
+ },
+ {
+  "record_id": "FS-001078",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "muscle-wasted COPD patients only, clinical cohort"
+ },
+ {
+  "record_id": "FS-001079",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "rest/post-exercise/2h/10h, plasma IL-18, obese vs non-obese"
+ },
+ {
+  "record_id": "FS-001080",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "asthmatic patients only, clinical cohort, no healthy stratum"
+ },
+ {
+  "record_id": "FS-001081",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "large cross-sectional cohort, CRP/WBC vs heart rate recovery, resting"
+ },
+ {
+  "record_id": "FS-001082",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "soluble selectins/ICAM/VCAM/troponin only, not recognized immune mediators"
+ },
+ {
+  "record_id": "FS-001083",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "intermittent claudication patients, clinical cohort"
+ },
+ {
+  "record_id": "FS-001084",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "platelet receptor expression/reactivity only, not an immune measure"
+ },
+ {
+  "record_id": "FS-001085",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Bruce treadmill protocol, plasma GM-CSF measured before/after"
+ },
+ {
+  "record_id": "FS-001086",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "cycling to exhaustion on two occasions, IL-6 plasma and muscle mRNA"
+ },
+ {
+  "record_id": "FS-001087",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "intermittent claudication patients, no immune measure, clinical cohort"
+ },
+ {
+  "record_id": "FS-001088",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "endothelial mediators tracked post-exercise; ECP/IgE only baseline correlates"
+ },
+ {
+  "record_id": "FS-001089",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "lymphocyte apoptotic index only, not a recognized immune measure"
+ },
+ {
+  "record_id": "FS-001091",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2min max test pre/post supplementation, salivary IgA, nucleotide vs placebo"
+ },
+ {
+  "record_id": "FS-001092",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "continuous vs intermittent cycling, leukocyte subsets/cytokines/NKCA"
+ },
+ {
+  "record_id": "FS-001093",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "treadmill to exhaustion, T-lymphocyte senescence markers KLRG1/CD57"
+ },
+ {
+  "record_id": "FS-001095",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "treadmill TT after fluid/energy restriction, salivary IgA rest and post"
+ },
+ {
+  "record_id": "FS-001097",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "able-bodied comparator stratum separable from SCI, NK cell activity"
+ },
+ {
+  "record_id": "FS-001098",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exhaled breath condensate pH only, no immune measure"
+ },
+ {
+  "record_id": "FS-001100",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "endothelial progenitor cells defined by excluding immune lineage markers"
+ },
+ {
+  "record_id": "FS-001102",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "asthmatic patients only, clinical cohort"
+ },
+ {
+  "record_id": "FS-001103",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2.5h cycling, IL-6/neutrophil count and function, antioxidant vs placebo"
+ },
+ {
+  "record_id": "FS-001104",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "two eccentric bouts 6wk apart, NF-kB activation in PBMC"
+ },
+ {
+  "record_id": "FS-001108",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "exercise protocol repeated pre/post 4wk, salivary IgA, Echinacea vs placebo"
+ },
+ {
+  "record_id": "FS-001109",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "asthmatic patients only, clinical cohort"
+ },
+ {
+  "record_id": "FS-001110",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle satellite cells (NCAM/FA1), not an immune measure"
+ },
+ {
+  "record_id": "FS-001111",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review/case discussion of exertional rhabdomyolysis"
+ },
+ {
+  "record_id": "FS-001112",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review of marathon and immune function literature"
+ }
+]

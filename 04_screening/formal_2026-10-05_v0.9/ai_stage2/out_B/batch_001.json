@@ -1,0 +1,326 @@
+[
+ {
+  "record_id": "FS-000001",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Acute eccentric bout, IL-6 measured before/after training"
+ },
+ {
+  "record_id": "FS-000002",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ultramarathon; WBC/lymphocyte/neutrophil counts before and during race"
+ },
+ {
+  "record_id": "FS-000005",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Triathlon; TNF-alpha, PMN activation, anti-LPS IgG/IgM post-race"
+ },
+ {
+  "record_id": "FS-000007",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Spinal cord injured (paraplegic/quadriplegic) clinical population"
+ },
+ {
+  "record_id": "FS-000010",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Incremental max exercise; leukocyte CD11b/L-selectin pre/post"
+ },
+ {
+  "record_id": "FS-000011",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Peritendinous PGE2/TXB2 metabolism, not a recognized immune measure"
+ },
+ {
+  "record_id": "FS-000013",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "High-intensity intermittent exercise; salivary IgA/alpha-amylase pre/post"
+ },
+ {
+  "record_id": "FS-000018",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Leukocyte DNA oxidative-damage/repair marker, not immune function"
+ },
+ {
+  "record_id": "FS-000020",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CD11b/CD18 granulocyte expression after treadmill test/marathon"
+ },
+ {
+  "record_id": "FS-000021",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric exercise, ibuprofen vs placebo, neutrophil O2 production"
+ },
+ {
+  "record_id": "FS-000022",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise intensity/duration; neutrophil degranulation, oxidative burst"
+ },
+ {
+  "record_id": "FS-000025",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIV-infected patients, active infection, clinical cohort"
+ },
+ {
+  "record_id": "FS-000027",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "In-vitro muscle cytosol caspase biochemistry, no exercise-sampling design"
+ },
+ {
+  "record_id": "FS-000028",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Basophil histamine release during incremental exercise, young/older athletes"
+ },
+ {
+  "record_id": "FS-000032",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CFS patients vs healthy sedentary controls; immune cells/IFN-gamma, controls separable"
+ },
+ {
+  "record_id": "FS-000033",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Acute 60-min challenge pre/post 12-wk training; leukocyte subsets, NK activity"
+ },
+ {
+  "record_id": "FS-000034",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2-h cycling bout; NK cell count/activity, indomethacin vs placebo"
+ },
+ {
+  "record_id": "FS-000035",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon GI permeability/occult bleeding, no immune-cell or mediator measure"
+ },
+ {
+  "record_id": "FS-000036",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Wheat-dependent exercise anaphylaxis patients; allergen IgE characterization"
+ },
+ {
+  "record_id": "FS-000038",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Smokers; exhausting exercise; WBC count pre/post, vitamin E"
+ },
+ {
+  "record_id": "FS-000039",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "VEGF is angiogenic growth factor, not a recognized immune mediator"
+ },
+ {
+  "record_id": "FS-000040",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Treadmill exhaustion test; CD62L T-lymphocyte redistribution, beta-blockade"
+ },
+ {
+  "record_id": "FS-000041",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rat model, not human research"
+ },
+ {
+  "record_id": "FS-000042",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Claudicants vs matched controls; neutrophil/monocyte CD11b pre/post; borderline disease pop"
+ },
+ {
+  "record_id": "FS-000044",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Elderly women resistance training; immune cell subsets, NCMC pre/post bout"
+ },
+ {
+  "record_id": "FS-000045",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon; plant sterol vs placebo; WBC/lymphocyte subsets, IL-6"
+ },
+ {
+  "record_id": "FS-000046",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Young vs old; acute maximal exercise; leukocyte subsets, T-cell mitogenesis"
+ },
+ {
+  "record_id": "FS-000047",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Crohn's patients in remission vs healthy controls; neutrophil chemiluminescence; borderline"
+ },
+ {
+  "record_id": "FS-000050",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exhaustive treadmill pre/post training; beta-adrenergic receptor on lymphocytes"
+ },
+ {
+  "record_id": "FS-000052",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "18km run; WBC count pre/post in heat/humidity"
+ },
+ {
+  "record_id": "FS-000053",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "HIV-infected symptomatic patients, active infection, clinical cohort"
+ },
+ {
+  "record_id": "FS-000056",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Triathletes; 2.5h exercise; NKCA, IL-1beta, carbohydrate vs placebo"
+ },
+ {
+  "record_id": "FS-000059",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Elite swimmers tapering; WBC differential over 2wk, bout timing unclear"
+ },
+ {
+  "record_id": "FS-000060",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric exercise; leukocyte subsets and glutamine pre/post to 9 days"
+ },
+ {
+  "record_id": "FS-000062",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "6-wk Cadet Basic Training block pre/post; no acute bout sampling"
+ },
+ {
+  "record_id": "FS-000067",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "40-min exercise with/without hyperthermia; lymphocyte subset redistribution"
+ },
+ {
+  "record_id": "FS-000068",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Bradykinin is a kinin mediator, not a recognized immune mediator"
+ },
+ {
+  "record_id": "FS-000069",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Recreational scuba diving is not an exercise bout; decompression exposure"
+ },
+ {
+  "record_id": "FS-000072",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "1-month summer training camp pre/post; no single acute bout sampling"
+ },
+ {
+  "record_id": "FS-000073",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exhaustive exercise with/without aspirin; platelet-leukocyte CD11b activation"
+ }
+]

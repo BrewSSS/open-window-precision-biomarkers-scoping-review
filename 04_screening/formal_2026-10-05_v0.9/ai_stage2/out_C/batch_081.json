@@ -1,0 +1,330 @@
+[
+ {
+  "record_id": "FS-003959",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Master athletes acute cycle test to exhaustion; T-cell subsets pre/10min/1h"
+ },
+ {
+  "record_id": "FS-003960",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Milk vs CHO after sprint/jump bout; CRP/CK pre to 72h, baseline present"
+ },
+ {
+  "record_id": "FS-003961",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Young/old lengthening-contraction bout; biopsies pre/3/24/72h; MCP-1, NF-kB"
+ },
+ {
+  "record_id": "FS-003962",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Rowers 2000m test pre/post spirulina; Treg/NK/CTL pre, 1min, 24h"
+ },
+ {
+  "record_id": "FS-003963",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-wk HIBWT/COMT postmenopausal women; only baseline/end resting markers"
+ },
+ {
+  "record_id": "FS-003964",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Obese women only, no healthy stratum; obesity treatment cohort"
+ },
+ {
+  "record_id": "FS-003965",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Retrospective wheat-allergy/anaphylaxis patient cohort, no healthy stratum"
+ },
+ {
+  "record_id": "FS-003966",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Oxygen-pulse mortality cohort; CRP only an adjustment covariate"
+ },
+ {
+  "record_id": "FS-003968",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Stable angina patients given ticlopidine; clinical cardiac cohort"
+ },
+ {
+  "record_id": "FS-003969",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "CRT heart-failure patients; BNP/CRP not exercise-linked sampling"
+ },
+ {
+  "record_id": "FS-003970",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Hypertensive HFpEF vs hypertensive controls; both clinical cohorts"
+ },
+ {
+  "record_id": "FS-003971",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Fibromyalgia vs healthy women, acute vibration; sTNFR pre/post, strata separable"
+ },
+ {
+  "record_id": "FS-003972",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "MESA cost-utilization registry; exercise test only a utilization statistic"
+ },
+ {
+  "record_id": "FS-003974",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T1D+healthy exercise/hypoxia; only angiogenic/hematologic/glycemic measures"
+ },
+ {
+  "record_id": "FS-003975",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Clinical review on diagnosing exercise-induced asthma/bronchospasm"
+ },
+ {
+  "record_id": "FS-003976",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "WDEIA allergy patients; oral food challenge; clinical allergic cohort"
+ },
+ {
+  "record_id": "FS-003977",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Subjects aged 6-45 suspected EIA; no separable adult stratum"
+ },
+ {
+  "record_id": "FS-003978",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Chronic coronary artery disease patients; treadmill/pacing stress test"
+ },
+ {
+  "record_id": "FS-003979",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy males, eccentric bout, stretching recovery; CK/CRP pre to 72h"
+ },
+ {
+  "record_id": "FS-003980",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Heart-failure post-PCI patients; chronic training; NT-proBNP/hsCRP"
+ },
+ {
+  "record_id": "FS-003981",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Normal subjects, exercise-to-exhaustion; t-PA/C1-inhibitor complement complexes"
+ },
+ {
+  "record_id": "FS-003982",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Obese men only, no healthy comparator; obesity clinical cohort"
+ },
+ {
+  "record_id": "FS-003983",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Parkinson patients get aquatic therapy; healthy group not exercised"
+ },
+ {
+  "record_id": "FS-003985",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy men/women, single resistance bout; IL-6/IL-10/TNF-a pre to 24h"
+ },
+ {
+  "record_id": "FS-003986",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy young males, high/low-intensity bouts vs control; leukocyte counts"
+ },
+ {
+  "record_id": "FS-003988",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Recreational athletes, 90-min running heat/cool; salivary lysozyme"
+ },
+ {
+  "record_id": "FS-003989",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Muscle transcriptome after AE/RE; cytokine activity only a GO pathway term"
+ },
+ {
+  "record_id": "FS-003990",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Advanced heart-failure patients on Levosimendan; clinical cohort"
+ },
+ {
+  "record_id": "FS-003991",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "PAOD patients; platelet markers during bicycle exercise; clinical cohort"
+ },
+ {
+  "record_id": "FS-003992",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Resistance-exercise sets; WBC/RBC counts pre/post/25min recovery"
+ },
+ {
+  "record_id": "FS-003993",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Elite swimmers nasal substance P/uric acid; not core immune mediators"
+ },
+ {
+  "record_id": "FS-003994",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cyclists, banana/sugar/water time trials; leukocytes/IL-6/IL-10/IL-1ra"
+ },
+ {
+  "record_id": "FS-003995",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-wk time-restricted feeding; blood counts resting, not bout-linked"
+ },
+ {
+  "record_id": "FS-003997",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Obese patients in obesity-treatment program; disease-treatment cohort"
+ },
+ {
+  "record_id": "FS-003998",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Stable angina/CAD patients; platelet activation during ischemia"
+ },
+ {
+  "record_id": "FS-003999",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Unstable CAD patients; platelet reactivity; clinical cohort"
+ },
+ {
+  "record_id": "FS-004000",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Women with migraine; chronic 12-wk exercise program; clinical cohort"
+ },
+ {
+  "record_id": "FS-004001",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Futsal competitive match; T-lymphocyte activation/apoptosis, immediate sample"
+ },
+ {
+  "record_id": "FS-004002",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy older adults, acute bout protocols; IL-6/TNF-a/IL-10 rest to 90min"
+ },
+ {
+  "record_id": "FS-004003",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Soccer match fatigue; only myoglobin/CK markers, no immune mediator"
+ }
+]

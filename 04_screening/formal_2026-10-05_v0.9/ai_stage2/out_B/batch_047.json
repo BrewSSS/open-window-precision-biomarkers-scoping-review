@@ -1,0 +1,326 @@
+[
+ {
+  "record_id": "FS-002415",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "step-test HR vs resting HOMA-IR/CRP, no post-exercise immune sample"
+ },
+ {
+  "record_id": "FS-002416",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "FENO diagnostic test performance, no post-exercise sampling design"
+ },
+ {
+  "record_id": "FS-002417",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT08",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "cycling held constant, route/pollution exposure is studied variable"
+ },
+ {
+  "record_id": "FS-002418",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exhaustion test, placebo-controlled, lymphocytes/PHA-LP/SIgA"
+ },
+ {
+  "record_id": "FS-002419",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "heart failure patients, cross-sectional IL-1b, clinical cohort"
+ },
+ {
+  "record_id": "FS-002420",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "single fasted resting hepcidin sample, no acute-bout sampling"
+ },
+ {
+  "record_id": "FS-002421",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "neutrophil transcriptome after bout, baseline to 96h"
+ },
+ {
+  "record_id": "FS-002422",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "single resistance bout, EMW vs placebo, hsCRP/CK to 96h"
+ },
+ {
+  "record_id": "FS-002423",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "tendon IL-6/IL-10 mRNA after loading, region comparator"
+ },
+ {
+  "record_id": "FS-002424",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "obese women, supplement+walking bout, TNF-a/IL-6 pre/post"
+ },
+ {
+  "record_id": "FS-002425",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute bout, control vs exercise leg, IFN-g/IL-4 to 72h"
+ },
+ {
+  "record_id": "FS-002426",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "combined training bout, N/L ratio and cytokines to 72h"
+ },
+ {
+  "record_id": "FS-002427",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "baseline/6wk/12wk stretching program, no acute-bout sampling"
+ },
+ {
+  "record_id": "FS-002428",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric bout, biopsy inflammatory-cell infiltration vs control"
+ },
+ {
+  "record_id": "FS-002429",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "asthma phenotyping/epithelial biology, no exercise-bout sampling"
+ },
+ {
+  "record_id": "FS-002430",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "elderly women, SIgA pre vs 15min post exercise session"
+ },
+ {
+  "record_id": "FS-002431",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "crossover WBV vs NoV, IL-1b/IL-6/IL-10 to 24h"
+ },
+ {
+  "record_id": "FS-002432",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "inflammation induced by flu vaccine, not by exercise"
+ },
+ {
+  "record_id": "FS-002433",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "clinically confirmed NAFLD patients, clinical cohort"
+ },
+ {
+  "record_id": "FS-002434",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "single walking bout, obese women, WBC leukocytosis pre/post"
+ },
+ {
+  "record_id": "FS-002435",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "6-day cycling, crossover feeding, neutrophil function/cytokines"
+ },
+ {
+  "record_id": "FS-002436",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "hypertensive patients, clinical cohort, no healthy stratum"
+ },
+ {
+  "record_id": "FS-002437",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "platelet/coagulation markers only, no immune measure"
+ },
+ {
+  "record_id": "FS-002438",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric bout, placebo-controlled, IL-1/IL-6/TNF-a/CRP to 96h"
+ },
+ {
+  "record_id": "FS-002439",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "10-day stage race, WBC and hematology pre/mid/end"
+ },
+ {
+  "record_id": "FS-002440",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute 3h cycling sub-study, IL-15 before/after/recovery"
+ },
+ {
+  "record_id": "FS-002441",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "PAH clinic case series, all patients diseased, no exercise-immune design"
+ },
+ {
+  "record_id": "FS-002442",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "soccer match, CRP tracked 72h pre to 72h post"
+ },
+ {
+  "record_id": "FS-002443",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "saturation dive exposure, no exercise, EPO/erythropoiesis only"
+ },
+ {
+  "record_id": "FS-002444",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "15-day training program pre/post, no acute-bout sampling"
+ },
+ {
+  "record_id": "FS-002445",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "6-week RT program pre/post, no acute-bout sampling"
+ },
+ {
+  "record_id": "FS-002446",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "type 2 diabetic patients, clinical cohort, 12-wk lifestyle intervention"
+ },
+ {
+  "record_id": "FS-002447",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "2 resistance sessions 7d apart, placebo-controlled, CRP/CK"
+ },
+ {
+  "record_id": "FS-002448",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute cycling, CD8+ T-cell subsets and IFN-g responses"
+ },
+ {
+  "record_id": "FS-002449",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ultramarathon checkpoints, leukocytes and CRP tracked"
+ },
+ {
+  "record_id": "FS-002450",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "in-vitro HTLV-1 cell-line study, no human exercise measurement"
+ },
+ {
+  "record_id": "FS-002451",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "heart failure patients, clinical cohort, no healthy stratum"
+ },
+ {
+  "record_id": "FS-002452",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT08",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "exercise co-administered with ozone exposure, not isolable"
+ },
+ {
+  "record_id": "FS-002453",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "6-month AEXT pre/post only, no acute-bout sampling"
+ },
+ {
+  "record_id": "FS-002454",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "heart failure patients, clinical cohort, chronic program"
+ }
+]

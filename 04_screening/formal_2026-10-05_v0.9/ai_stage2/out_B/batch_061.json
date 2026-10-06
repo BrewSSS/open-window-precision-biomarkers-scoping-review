@@ -1,0 +1,337 @@
+[
+  {
+    "record_id": "FS-003006",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [
+      "FT04",
+      "FT07"
+    ],
+    "study_type_hint": "chronic_training_only",
+    "note": "T2DM clinical cohort; healthy group only baseline comparator"
+  },
+  {
+    "record_id": "FS-003007",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT02",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Rat liver oxidative stress study, animal only"
+  },
+  {
+    "record_id": "FS-003008",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Marathon, young/masters, WBC/neutrophil counts pre-54h post"
+  },
+  {
+    "record_id": "FS-003009",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [
+      "FT07"
+    ],
+    "study_type_hint": "chronic_training_only",
+    "note": "6-wk training pre/post only, no acute bout sampling"
+  },
+  {
+    "record_id": "FS-003010",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [
+      "FT04"
+    ],
+    "study_type_hint": "cross_sectional_resting",
+    "note": "NHANES mixed ages 12-49 pooled, not separable adult stratum"
+  },
+  {
+    "record_id": "FS-003011",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Cycling trial, cherry vs placebo, cytokines/CRP to 72h"
+  },
+  {
+    "record_id": "FS-003012",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Eccentric exercise, curcumin vs placebo crossover, IL-6"
+  },
+  {
+    "record_id": "FS-003013",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "COPD patients, clinical cohort, exercise capacity test"
+  },
+  {
+    "record_id": "FS-003014",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Treadmill protocol, vitamin C, neutrophil MPO, rest/post"
+  },
+  {
+    "record_id": "FS-003015",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Postprandial meal study, no exercise exposure at all"
+  },
+  {
+    "record_id": "FS-003016",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [
+      "FT07"
+    ],
+    "study_type_hint": "other",
+    "note": "Survey of supplement habits, no exercise bout or immune measure"
+  },
+  {
+    "record_id": "FS-003017",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [
+      "FT07"
+    ],
+    "study_type_hint": "chronic_training_only",
+    "note": "20-wk caloric restriction/exercise, adiponectin, no acute bout"
+  },
+  {
+    "record_id": "FS-003018",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Acute bouts in SLE and healthy controls, cytokines, separable HC"
+  },
+  {
+    "record_id": "FS-003019",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Duathlon, triathletes, cytokines/neutrophil pre to 3h post"
+  },
+  {
+    "record_id": "FS-003020",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Normoxic/hypoxic exercise, rest vs immediately post, IL-6/MPO"
+  },
+  {
+    "record_id": "FS-003021",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Single bout exercise, T-cell expansion, rest vs post"
+  },
+  {
+    "record_id": "FS-003022",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Multi-stage ultra-marathon, cytokines/endotoxin pre/post stages"
+  },
+  {
+    "record_id": "FS-003024",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "PAOD patients vs matched controls, leukocyte counts, exercise-ischemia"
+  },
+  {
+    "record_id": "FS-003025",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Obese women, acute weightlifting bout, TNF-a/CRP, CRT training"
+  },
+  {
+    "record_id": "FS-003026",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Eccentric exercise, diathermy pretreat, IL-6/TNF-a muscle+blood"
+  },
+  {
+    "record_id": "FS-003027",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [
+      "FT04"
+    ],
+    "study_type_hint": "chronic_training_only",
+    "note": "Breast cancer patients, 12-mo training, no healthy stratum"
+  },
+  {
+    "record_id": "FS-003028",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Acute resistance exercise, men/women, IL-6/IL-10, pre/post/30min"
+  },
+  {
+    "record_id": "FS-003029",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [
+      "FT07"
+    ],
+    "study_type_hint": "other",
+    "note": "Pupillometry/dysautonomia in swimmers, no exercise bout sampling"
+  },
+  {
+    "record_id": "FS-003030",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "repeated_bouts_SupportB",
+    "note": "Rugby players, 5 games, salivary IgA/neopterin pre/post/36h"
+  },
+  {
+    "record_id": "FS-003031",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT07",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Muscle proteome acute exercise, no immune marker measured"
+  },
+  {
+    "record_id": "FS-003032",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "RA patients and healthy controls, Galectin-3, exercise bout samples"
+  },
+  {
+    "record_id": "FS-003033",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Ozone exposure with intermittent exercise, CRP/IL-6/IL-8; borderline"
+  },
+  {
+    "record_id": "FS-003034",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT03",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Stable CAD patients, treadmill test, IL-6/CRP, clinical cohort"
+  },
+  {
+    "record_id": "FS-003035",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT07",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Vitamin D/omega-3, EIB athletes, spirometry only, no immune measure"
+  },
+  {
+    "record_id": "FS-003036",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Half marathon, breast cancer aftercare vs healthy controls, immune cells"
+  },
+  {
+    "record_id": "FS-003038",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Acute intermittent exercise, NK cells, cancer survivors vs healthy"
+  },
+  {
+    "record_id": "FS-003039",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT01",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Narrative review on air quality and bronchoconstriction"
+  },
+  {
+    "record_id": "FS-003040",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT04",
+    "secondary_codes": [],
+    "study_type_hint": "cross_sectional_resting",
+    "note": "Cohort study, baseline fitness/CRP predicting hypertension, no post-exercise sampling"
+  },
+  {
+    "record_id": "FS-003041",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "NGAL study, healthy controls before/after exercise, IL-6/8/10"
+  },
+  {
+    "record_id": "FS-003042",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "2h cycling, hydration status, salivary SIgA/lactoferrin/lysozyme"
+  },
+  {
+    "record_id": "FS-003043",
+    "disposition": "AWAITING_CLASSIFICATION",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Abstract field empty, title only"
+  },
+  {
+    "record_id": "FS-003044",
+    "disposition": "EXCLUDE_TA",
+    "primary_code": "FT02",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "In silico simulation model, not original human measurements"
+  },
+  {
+    "record_id": "FS-003045",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "other",
+    "note": "Exercise-induced IL-15 and skin aging, human+mouse, timing unclear"
+  },
+  {
+    "record_id": "FS-003046",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Three exercise bouts, untrained males, IL-6/IL-10 pre/end/30min"
+  },
+  {
+    "record_id": "FS-003047",
+    "disposition": "ADVANCE",
+    "primary_code": "",
+    "secondary_codes": [],
+    "study_type_hint": "acute_bout_CoreA",
+    "note": "Soccer players, supplement vs placebo, leukocytes/IL-6 pre/post/24h"
+  }
+]

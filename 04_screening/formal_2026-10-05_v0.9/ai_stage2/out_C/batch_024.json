@@ -1,0 +1,332 @@
+[
+ {
+  "record_id": "FS-001324",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Weekly saliva samples with known 38h post-exercise timing over 50 weeks, s-IgA and URI."
+ },
+ {
+  "record_id": "FS-001325",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "8-week walking program pre/post only; no acute bout, PPARgamma not an immune mediator."
+ },
+ {
+  "record_id": "FS-001327",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "FeNO and pneumoproteins (SP-A/B, CC16, KL-6) are not recognized immune mediators."
+ },
+ {
+  "record_id": "FS-001328",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Beta-glucan vs placebo, 3-day cycling, NKCA/PMN-RBA/cytokines pre to 14h post."
+ },
+ {
+  "record_id": "FS-001329",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "1h cycling, hourly samples to 4h, lymphocyte counts and apoptosis markers."
+ },
+ {
+  "record_id": "FS-001330",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Half-Ironman, rest vs after competition, neutrophil apoptosis markers measured."
+ },
+ {
+  "record_id": "FS-001331",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative discussion of cardiac troponin after exercise, no original study methods."
+ },
+ {
+  "record_id": "FS-001332",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycling with meal/CHO manipulation, pre/post/1h, IL-6/IL-8/IL-10/IL-1ra measured."
+ },
+ {
+  "record_id": "FS-001333",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "All participants have PCOS; resting inflammatory markers vs fitness, no acute bout."
+ },
+ {
+  "record_id": "FS-001334",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Exercise withdrawal study tracks absence of exercise, not response to a monitored bout."
+ },
+ {
+  "record_id": "FS-001335",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse model of OVA-induced asthma and exercise; not human research."
+ },
+ {
+  "record_id": "FS-001337",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ultra-marathon, before/immediate/2h/24h, apoptotic gene expression in mononuclear cells."
+ },
+ {
+  "record_id": "FS-001338",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review of stress test prognostic value in heart failure, no original data."
+ },
+ {
+  "record_id": "FS-001339",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Rowers, 2h rowing at three training timepoints, pre/post/post30, TNF-alpha measured."
+ },
+ {
+  "record_id": "FS-001342",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "CAD patients in 7-week rehab program; clinical cohort, no acute-bout sampling."
+ },
+ {
+  "record_id": "FS-001343",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Treadmill run, pre/24h post, neutrophil chemotaxis and adhesion molecules measured."
+ },
+ {
+  "record_id": "FS-001345",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ironman triathlon, 2 days before to 19 days after, genomic instability in lymphocytes."
+ },
+ {
+  "record_id": "FS-001347",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycling bouts normoxic/hypoxic, pre to 24h post, IL-1 and TNF-alpha measured."
+ },
+ {
+  "record_id": "FS-001348",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Asthmatics and healthy volunteers, exercise challenge, sCD40L/sP-selectin baseline/30min/24h."
+ },
+ {
+  "record_id": "FS-001349",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Asthmatics and healthy volunteers, exercise challenge, RANTES/beta-thromboglobulin at 30min."
+ },
+ {
+  "record_id": "FS-001350",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Dyslipidemic patients, 12-month Tai Chi program; clinical cohort, no acute bout."
+ },
+ {
+  "record_id": "FS-001351",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ultra-endurance exercise vs control day, serial sampling, sCD40L immune mediator measured."
+ },
+ {
+  "record_id": "FS-001352",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Resistance exercise young vs old, muscle biopsies rest/2h post, IL-6 mRNA measured."
+ },
+ {
+  "record_id": "FS-001353",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon, advanced-age runners, pre/post, WBC count and progenitor cells measured."
+ },
+ {
+  "record_id": "FS-001354",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL6/TNFA genotype correlated with CK response; no immune mediator level measured as outcome."
+ },
+ {
+  "record_id": "FS-001356",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "All participants have Type 2 diabetes; resting fitness-inflammation correlation, no acute bout."
+ },
+ {
+  "record_id": "FS-001357",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Weight lifting session, pre to 84h post, WBC count measured."
+ },
+ {
+  "record_id": "FS-001359",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "21-km run with meal manipulation, pre/post/60min, IL-6 and IL-2 measured."
+ },
+ {
+  "record_id": "FS-001360",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Population cohort follow-up of exercise capacity and stroke; resting CRP covariate only."
+ },
+ {
+  "record_id": "FS-001362",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Isokinetic exercise, pre/1/24/48/72h, CRP and CK measured."
+ },
+ {
+  "record_id": "FS-001364",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Methods comparison for IL-6 assay, before/after 90min cycling bout."
+ },
+ {
+  "record_id": "FS-001367",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Soccer game vs control group, pre to 6 days post, leukocytes, CRP, cytokines measured."
+ },
+ {
+  "record_id": "FS-001368",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Downhill run, vibration therapy vs control, pre/post/24/120h, IL-6 and leukocyte subsets."
+ },
+ {
+  "record_id": "FS-001369",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HGF and satellite cell growth-factor response only; no immune mediator measured."
+ },
+ {
+  "record_id": "FS-001370",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "17-day training block, SIgA measured at start and 4h after final bout before competition."
+ },
+ {
+  "record_id": "FS-001371",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Salivary free-radical scavenging activity is not a recognized immune mediator."
+ },
+ {
+  "record_id": "FS-001372",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Repeated rest/post-exercise sputum sampling across training season, IL-8 and cell counts."
+ },
+ {
+  "record_id": "FS-001373",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise at high temperature vs control, pre/post, HSP72 expression in lymphocytes."
+ },
+ {
+  "record_id": "FS-001374",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycling bout, sedentary women, pre/immediate/24h, neutrophil chemotaxis measured."
+ },
+ {
+  "record_id": "FS-001375",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycling vs epinephrine infusion comparator, basal/during/2h, NK cell activity measured."
+ }
+]

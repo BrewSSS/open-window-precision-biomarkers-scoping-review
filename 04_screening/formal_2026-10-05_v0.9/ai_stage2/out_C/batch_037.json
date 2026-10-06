@@ -1,0 +1,328 @@
+[
+ {
+  "record_id": "FS-001986",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-week training, blood only before/after program, no acute-bout sample"
+ },
+ {
+  "record_id": "FS-001987",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Circulating inflammation-related miRNAs after acute exhaustive cycling, pre/post training"
+ },
+ {
+  "record_id": "FS-001989",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "16-week RT/ET/CT program; TNF/IL-6/CRP before/after only, no acute bout"
+ },
+ {
+  "record_id": "FS-001990",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CD34+/- PBMC NO/superoxide before and after 30-min acute exercise bout"
+ },
+ {
+  "record_id": "FS-001991",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review of asthma diagnosis/treatment in elite athletes"
+ },
+ {
+  "record_id": "FS-001992",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT05",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Fasting hsCRP correlated with heart-rate recovery; CRP not sampled post-exercise"
+ },
+ {
+  "record_id": "FS-001993",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CRP measured immediately after race; genetic polymorphism study (duplicate of FS-001942)"
+ },
+ {
+  "record_id": "FS-001994",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "WBC gene expression before/after treadmill test to exhaustion vs moderate test"
+ },
+ {
+  "record_id": "FS-001996",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CHO/CHO+PRO vs placebo, neutrophil degranulation after prolonged running, pre/post"
+ },
+ {
+  "record_id": "FS-001997",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Muscle transcriptome study; immunity/defense only one of several enriched gene categories"
+ },
+ {
+  "record_id": "FS-001998",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Lymphocyte subset/receptor changes after exercise; healthy vs CHF results reported separately"
+ },
+ {
+  "record_id": "FS-001999",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Essential hypertension patients only; no separable healthy-stratum results"
+ },
+ {
+  "record_id": "FS-002001",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "24-week weight-loss+exercise program; functional outcomes only, no acute bout/immune marker"
+ },
+ {
+  "record_id": "FS-002002",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Downhill running bout, neutrophil/CK response by age and vitamin E, 12-day follow-up"
+ },
+ {
+  "record_id": "FS-002003",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Lymphocyte beta2-adrenoceptor density/cAMP study; receptor pharmacology, not immune function"
+ },
+ {
+  "record_id": "FS-002004",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Lymphocyte beta2-adrenoceptor vs catecholamines; receptor pharmacology, not immune function"
+ },
+ {
+  "record_id": "FS-002005",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-week training + detraining; adiponectin only, pre/post program, no acute bout"
+ },
+ {
+  "record_id": "FS-002006",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review of dietary exercise and metabolic syndrome mechanisms"
+ },
+ {
+  "record_id": "FS-002007",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Systemic lupus erythematosus patients; statin drug trial, not exercise-immune study"
+ },
+ {
+  "record_id": "FS-002008",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Female soccer match; leukocyte differential pre-match to 18h post-match"
+ },
+ {
+  "record_id": "FS-002009",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Monocyte/macrophage phagocytosis, acute exercise response assessed pre/post training programmes"
+ },
+ {
+  "record_id": "FS-002010",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycling bout, neutrophil activation (myeloperoxidase) with placebo vs propranolol"
+ },
+ {
+  "record_id": "FS-002011",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "2-month exercise program; periodic blood draws at weeks 0/2/4/8, no acute bout"
+ },
+ {
+  "record_id": "FS-002012",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Isokinetic training session cytokines (IL-2/6/15, TNF) tracked to 7 days post"
+ },
+ {
+  "record_id": "FS-002013",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Arm-crank exercise IL-6/TNF/hsCRP; SCI and able-bodied results reported separately"
+ },
+ {
+  "record_id": "FS-002014",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Lymphocyte HSP70/apoptosis across 11 days heat-exercise acclimation, pre/post each session; borderline immune link"
+ },
+ {
+  "record_id": "FS-002015",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Post-acute-coronary-syndrome rehab patients only; no immune marker"
+ },
+ {
+  "record_id": "FS-002016",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Trial protocol/design paper; testicular cancer chemotherapy patients"
+ },
+ {
+  "record_id": "FS-002017",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "KCNQ1 channelopathy genetics/splicing study; no exercise exposure of interest"
+ },
+ {
+  "record_id": "FS-002018",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Flavonoid/vitC/n-3 supplement; only oxidative-stress markers, no immune measure"
+ },
+ {
+  "record_id": "FS-002019",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Quercetin supplement vs placebo; 9 cytokines, CRP, phagocytosis around 2-hr runs"
+ },
+ {
+  "record_id": "FS-002020",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Nature Reviews Immunology narrative review of exercise anti-inflammatory mechanisms"
+ },
+ {
+  "record_id": "FS-002021",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT06",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Lean vs obese proteomics; single post-exercise draw used to standardize, no pre-bout baseline"
+ },
+ {
+  "record_id": "FS-002022",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Muscle signaling/NAC infusion; IL-6/MCP-1 incidental among many non-immune genes"
+ },
+ {
+  "record_id": "FS-002023",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Trail run then cryotherapy vs passive recovery; IL-1/6/10, TNF, CRP, WBC to 96h"
+ },
+ {
+  "record_id": "FS-002024",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Single resistance session; adiponectin/RBP4/CRP pre and 4h post, trained vs untrained"
+ },
+ {
+  "record_id": "FS-002025",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Breast cancer patients only; 6-month chronic exercise, leukocyte DNA methylation"
+ },
+ {
+  "record_id": "FS-002026",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ACTN3 genotype, eccentric training bout, IL-6/CK/cortisol pre to 4h post"
+ },
+ {
+  "record_id": "FS-002027",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Coronary artery disease patients; chronic rehab RCT, cytokine content not detailed"
+ },
+ {
+  "record_id": "FS-002028",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "24-h ultra-marathon; IL-6/hsCRP/leukocytes from 3h pre-race to race finish"
+ }
+]
