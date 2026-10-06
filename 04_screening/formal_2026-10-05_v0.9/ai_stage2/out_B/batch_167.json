@@ -1,0 +1,348 @@
+[
+ {
+  "record_id": "FS-008617",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "plantar fasciitis patients; taping/PT; pain and function outcomes only"
+ },
+ {
+  "record_id": "FS-008618",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cerebral small vessel disease patients; handgrip/rIPC; inflammatory proteomics"
+ },
+ {
+  "record_id": "FS-008620",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "C57BL/6 mice; dihydromyricetin; intestinal IEL phenotype"
+ },
+ {
+  "record_id": "FS-008621",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "thiopurine-treated cohorts incl leukemia; drug toxicity; no exercise"
+ },
+ {
+  "record_id": "FS-008623",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "25(5)y; mean-2SD=15<18; PBMC NRF2 after drop jumps"
+ },
+ {
+  "record_id": "FS-008624",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review on activity, immunity and COVID-19"
+ },
+ {
+  "record_id": "FS-008625",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "wheat-line breeding; gliadin genes; no human research"
+ },
+ {
+  "record_id": "FS-008627",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "depressed inpatients; single bout/mind-body; cytokines pre-post"
+ },
+ {
+  "record_id": "FS-008632",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "LTP food-allergy case report; anaphylaxis after meal; no bout sampling"
+ },
+ {
+  "record_id": "FS-008634",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "boxers plus active men; Wingate; IL-10/IL-15/TNF pre-im-60min-24h"
+ },
+ {
+  "record_id": "FS-008638",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "stated obese adolescents, university students; TNF-a/adiponectin"
+ },
+ {
+  "record_id": "FS-008640",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "T2DM patients; cognition/depression; BDNF/irisin, no immune measure"
+ },
+ {
+  "record_id": "FS-008641",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "women with HIV on ART; single resistance session; TNF/IL-6"
+ },
+ {
+  "record_id": "FS-008642",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "rats; ANTU pulmonary edema; cryptotanshinone; swim test"
+ },
+ {
+  "record_id": "FS-008643",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "review of Tako-tsubo cardiomyopathy reversibility"
+ },
+ {
+  "record_id": "FS-008644",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "FM cohort but 9 healthy controls separable; IL-6/IL-8/IL-10 bout response"
+ },
+ {
+  "record_id": "FS-008645",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mice; oncostatin M; muscle macrophage crosstalk after aerobic bout"
+ },
+ {
+  "record_id": "FS-008648",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "female mice; hepatic mitochondrial proteomics after treadmill bout"
+ },
+ {
+  "record_id": "FS-008649",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "beta-thalassemia major patients; diagnostic treadmill test; hs-CRP"
+ },
+ {
+  "record_id": "FS-008651",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "pain/ROM outcomes only; cytokines cited, not measured"
+ },
+ {
+  "record_id": "FS-008653",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Swiss mice; LPS depression model; blueberry extract"
+ },
+ {
+  "record_id": "FS-008654",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "survey of COVID-19 recovery vs activity; no bout sampling or assay"
+ },
+ {
+  "record_id": "FS-008655",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Drosophila and STING knockout mice; exercise autophagy"
+ },
+ {
+  "record_id": "FS-008659",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "diabetic Wistar rats; irisin; micro-CT bone"
+ },
+ {
+  "record_id": "FS-008660",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "human plasma OPN exercisers vs sedentary, background pattern; murine KO arm"
+ },
+ {
+  "record_id": "FS-008661",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "rats; elastase/LPS emphysema; HFpEF mechanism"
+ },
+ {
+  "record_id": "FS-008662",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "bovine labrum explants; transcriptome and loading"
+ },
+ {
+  "record_id": "FS-008664",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "sponge holobiont meta-transcriptomics; no humans, no exercise"
+ },
+ {
+  "record_id": "FS-008665",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "house sparrows; vaccination and metabolic rate"
+ },
+ {
+  "record_id": "FS-008666",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "C57BL/6 mice; mtDNA innate immune signaling after bouts"
+ },
+ {
+  "record_id": "FS-008668",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review on D-dimer levels across conditions"
+ },
+ {
+  "record_id": "FS-008669",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "AKI case report; renal hypouricemia; no immune measure"
+ },
+ {
+  "record_id": "FS-008670",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "largemouth bass; angling stress; leukocytes in fish"
+ },
+ {
+  "record_id": "FS-008671",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "stated youth badminton athletes; season phases; cytokine test response"
+ },
+ {
+  "record_id": "FS-008672",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "asthma case report; open-water swimming; symptom reports only"
+ },
+ {
+  "record_id": "FS-008674",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "MI mice plus hepatocyte culture; FNDC5/irisin pathway"
+ },
+ {
+  "record_id": "FS-008676",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "48 rats; exhaustive swimming; curcumin whey muscle histology"
+ },
+ {
+  "record_id": "FS-008677",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "degenerative aortic valve patients; echo exercise test; control immune results not separable"
+ },
+ {
+  "record_id": "FS-008678",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "young players 14.5+/-0.6y; U14/U15 stated minors"
+ },
+ {
+  "record_id": "FS-008679",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Korean rockfish; surgical staples; swimming speed"
+ }
+]

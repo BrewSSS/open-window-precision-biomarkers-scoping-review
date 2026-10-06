@@ -1,0 +1,326 @@
+[
+ {
+  "record_id": "FS-007697",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "60-min cycle; cortisol responders vs non-responders, subsets to 6h"
+ },
+ {
+  "record_id": "FS-007698",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "splenectomised vs controls; subsets, sIL-2R, neopterin; strata separable"
+ },
+ {
+  "record_id": "FS-007699",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rheumatoid arthritis patients; renin and rheumatoid factor"
+ },
+ {
+  "record_id": "FS-007700",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "irradiated T-lymphocytes in vitro with radioprotector; no exercise"
+ },
+ {
+  "record_id": "FS-007701",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon; cytokines, C5a, CRP, neopterin, glutamine vs placebo"
+ },
+ {
+  "record_id": "FS-007702",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "clinical injury audit of ultramarathon; no immune measures"
+ },
+ {
+  "record_id": "FS-007703",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric bouts; plasma IL-6, muscle XO, leucocyte infiltration"
+ },
+ {
+  "record_id": "FS-007704",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "dilated cardiomyopathy patients; autoantibody follow-up"
+ },
+ {
+  "record_id": "FS-007705",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "lymphocyte beta-AR surface/intracellular after cycling; immune relevance unclear"
+ },
+ {
+  "record_id": "FS-007706",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "doping-control blood sampling; hormones/haematology only"
+ },
+ {
+  "record_id": "FS-007707",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "80/40% cycling vs seated control in women; NKCA, CD56, serial"
+ },
+ {
+  "record_id": "FS-007708",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "glutathione redox and TBARS only after run; no immune measure"
+ },
+ {
+  "record_id": "FS-007709",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "15x1-min intervals; T-cell mitogen function, subset composition"
+ },
+ {
+  "record_id": "FS-007710",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "micronucleus genotoxicity assay in lymphocytes; no immune measure/objective"
+ },
+ {
+  "record_id": "FS-007711",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "cryptogenic fibrosing alveolitis patients; CT-lung function staging"
+ },
+ {
+  "record_id": "FS-007712",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "level/downhill runs; CRP and ferritin serial alongside Lp(a), CK"
+ },
+ {
+  "record_id": "FS-007713",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "morning/evening exercise in women; lymphocyte subsets, recovery samples"
+ },
+ {
+  "record_id": "FS-007714",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "7-min race simulation; BAL leukocytes, LTB4, IL-8 vs sedentary controls"
+ },
+ {
+  "record_id": "FS-007715",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "naproxen trial; strength, MRI, soreness only; no immune measure"
+ },
+ {
+  "record_id": "FS-007716",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "intermittent claudication patients; PMN nitric-oxide deactivation"
+ },
+ {
+  "record_id": "FS-007717",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric vs concentric cycling; IL-6, CK, lymphocyte subsets"
+ },
+ {
+  "record_id": "FS-007718",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "beryllium disease/sensitised cohorts exercised; healthy comparators resting only"
+ },
+ {
+  "record_id": "FS-007719",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CK/LDH and collagen-breakdown markers; no immune measure"
+ },
+ {
+  "record_id": "FS-007721",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "carbohydrate vs placebo run; IL-6, IL-1ra, cortisol serial"
+ },
+ {
+  "record_id": "FS-007722",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "dietary fat periods; proliferation, subsets, NK, IL-2, cytokines pre/post"
+ },
+ {
+  "record_id": "FS-007723",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exhaustive test; serum/urine cytokines, sIL-2R, stimulated cultures"
+ },
+ {
+  "record_id": "FS-007724",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "thromboxane B2 and beta-thromboglobulin methods; platelet, not immune"
+ },
+ {
+  "record_id": "FS-007725",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "platelet aggregability/secretion in angina and controls; not immune"
+ },
+ {
+  "record_id": "FS-007726",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CFS vs activity-matched controls; step exertion, PBMC IL-1; strata separable"
+ },
+ {
+  "record_id": "FS-007727",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "lymphocyte beta-AR mRNA by RT-PCR post-exercise; immune relevance unclear"
+ },
+ {
+  "record_id": "FS-007728",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "LTB4-antagonist drug trial with skin challenge; no exercise exposure"
+ },
+ {
+  "record_id": "FS-007729",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HLA genotyping versus VO2max; no immune measure or response"
+ },
+ {
+  "record_id": "FS-007730",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon; MPO, C5a, TNF-alpha, IL-6, endotoxin, serial samples"
+ },
+ {
+  "record_id": "FS-007731",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "triathlon; neopterin and leukocyte counts with redox measures"
+ },
+ {
+  "record_id": "FS-007732",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "peripheral arterial occlusive disease patients; treadmill preconditioning"
+ },
+ {
+  "record_id": "FS-007733",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "chronic beryllium disease patients; HRCT reliability study"
+ },
+ {
+  "record_id": "FS-007734",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "carbohydrate vs placebo run; granulocyte/monocyte counts, phagocytosis, burst"
+ },
+ {
+  "record_id": "FS-007735",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "8-OHdG DNA-damage and redox markers; no immune measure or objective"
+ },
+ {
+  "record_id": "FS-007736",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "systemic sclerosis fibrosing alveolitis patients; lung-function staging"
+ },
+ {
+  "record_id": "FS-007737",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "splenectomised vs matched controls; subsets, NK lysis; strata separable"
+ }
+]

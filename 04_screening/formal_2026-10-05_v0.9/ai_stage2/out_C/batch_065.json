@@ -1,0 +1,336 @@
+[
+ {
+  "record_id": "FS-003182",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Solid-tumor patients; GM-CSF drug kinetics; no exercise"
+ },
+ {
+  "record_id": "FS-003183",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Becker muscular dystrophy patients; clinical; vascular outcomes"
+ },
+ {
+  "record_id": "FS-003184",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exhaustive run; muscle and plasma IL-6/IL-8/MCP-1 pre/post"
+ },
+ {
+  "record_id": "FS-003185",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Hypertensive heart-disease patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-003186",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "6-day HIIT block; pre/post/72 h resting markers; no bout-tied sampling"
+ },
+ {
+  "record_id": "FS-003187",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Incremental cycling to exhaustion; sVCAM-1/sICAM-1 rest vs end-exercise"
+ },
+ {
+  "record_id": "FS-003188",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Transgenic wheat allergen immunoblot; exercise only in disease name"
+ },
+ {
+  "record_id": "FS-003189",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Anakinra vs placebo crossover; exercise IL-6/CRP/MCP-1"
+ },
+ {
+  "record_id": "FS-003190",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "12-wk judo training; IgA/IgG/IgM at rest, post all-out test, recovery"
+ },
+ {
+  "record_id": "FS-003191",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ECC vs CON bouts; IL-15/TNF/hs-CRP pre/post; athletes vs non-athletes"
+ },
+ {
+  "record_id": "FS-003192",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Weightlifting sessions at three times of day; CRP/oxidative pre/3min/48h"
+ },
+ {
+  "record_id": "FS-003193",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Coronary artery disease patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-003194",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Children with sickle cell anaemia; no separable adult stratum"
+ },
+ {
+  "record_id": "FS-003195",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 24.0+/-4.5: mean-2SD=15.0<18; no range/minimum stated"
+ },
+ {
+  "record_id": "FS-003196",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Maximal cycling; NK activity and Leu11a+ cells pre/post; old vs young"
+ },
+ {
+  "record_id": "FS-003197",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon; statin users vs controls; p-selectin pre/finish/24 h"
+ },
+ {
+  "record_id": "FS-003198",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Dilated cardiomyopathy patients; diagnostic work-up study"
+ },
+ {
+  "record_id": "FS-003199",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "T2D patients plus matched controls, separable; 8-wk HIIT pre/post"
+ },
+ {
+  "record_id": "FS-003200",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "NMES-induced contractions; IL-6/IL-1/TNF pre/post to 2 h"
+ },
+ {
+  "record_id": "FS-003202",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CKD plus matched healthy controls, separable; miRNA panel incl. inflammatory miRNAs"
+ },
+ {
+  "record_id": "FS-003203",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Interval intensities; leukocytes, IL-8/IL-10 pre/immediate/30 min"
+ },
+ {
+  "record_id": "FS-003204",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "600-kcal cycling; CAC/PBMC subsets and microparticles pre/post"
+ },
+ {
+  "record_id": "FS-003206",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2-h run and heat-stress bouts; tear/saliva SIgA responses"
+ },
+ {
+  "record_id": "FS-003207",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Contractile function and hydration outcomes only; no immune measure"
+ },
+ {
+  "record_id": "FS-003208",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Squat bouts; alcohol vs water; LPS-stimulated cytokines pre/3h/5h"
+ },
+ {
+  "record_id": "FS-003209",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "100-min cycling; protein-leucine crossover; muscle inflammatory/leukocyte transcriptome"
+ },
+ {
+  "record_id": "FS-003210",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "5-day ultra; daily pre-stage leukocyte counts across identified stages"
+ },
+ {
+  "record_id": "FS-003211",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "5-day judo training; chocolate milk vs water; salivary SIgA bout timing unclear"
+ },
+ {
+  "record_id": "FS-003212",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Hybrid EMS-cycling vs cycling; IL-6/GH pre/post to 60 min"
+ },
+ {
+  "record_id": "FS-003216",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Drop jumps; beetroot doses vs placebo; IL-6/IL-8/TNF to 72 h"
+ },
+ {
+  "record_id": "FS-003217",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "330-km mountain ultramarathon; IL-6/neopterin pre/mid/post"
+ },
+ {
+  "record_id": "FS-003218",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "db/db mouse whole-body-vibration study; animal-only"
+ },
+ {
+  "record_id": "FS-003219",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Chronic systolic heart failure patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-003221",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Players aged 17-20 pooled; under-18 included, no separable adult stratum"
+ },
+ {
+  "record_id": "FS-003222",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 24.09+/-6.2: mean-2SD=11.7<18; no range/minimum stated"
+ },
+ {
+  "record_id": "FS-003223",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 19.0+/-2.9: mean-2SD=13.2<18; no range/minimum stated"
+ },
+ {
+  "record_id": "FS-003224",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "3-day Ultraman; CRP/CK before/after each stage; hormones"
+ },
+ {
+  "record_id": "FS-003225",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "75-km cycling; fruit vs water crossover; IL-10/leukocytes, metabolomics"
+ },
+ {
+  "record_id": "FS-003226",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Intermittent claudication patients; clinical vascular cohort"
+ },
+ {
+  "record_id": "FS-003227",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Martial-arts session; leukocyte subsets, cytokines baseline/IP/R15-R60"
+ }
+]

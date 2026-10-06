@@ -1,0 +1,343 @@
+[
+ {
+  "record_id": "FS-004047",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Heat cycling event; NGAL antimicrobial/renal biomarker; borderline immune link"
+ },
+ {
+  "record_id": "FS-004048",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2h heat run; cytokines pre/post; sex comparison"
+ },
+ {
+  "record_id": "FS-004049",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Resting TNF-alpha vs exercise haemodynamics; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-004050",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIT/MOD bouts older adults; inflammatory/haematological markers unspecified"
+ },
+ {
+  "record_id": "FS-004052",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Coronary heart disease cohort; clinical population"
+ },
+ {
+  "record_id": "FS-004053",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Three high-intensity bouts; leukocytes, hepcidin baseline/3h post"
+ },
+ {
+  "record_id": "FS-004054",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Krill-oil training trial; no bout-linked immune sampling; CBC safety only"
+ },
+ {
+  "record_id": "FS-004055",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIE/CME bouts; IL-6 and soluble receptors to 25h"
+ },
+ {
+  "record_id": "FS-004056",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Haemodialysis vs healthy; lymphocyte beta2-receptor/cAMP; borderline immune link"
+ },
+ {
+  "record_id": "FS-004057",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "10km TT twice (AM/PM); WBC, IL-6, CC16, HSP70"
+ },
+ {
+  "record_id": "FS-004059",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Breast-cancer survivor cohort; clinical population; diet+exercise combined"
+ },
+ {
+  "record_id": "FS-004060",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CHO vs fat meal; cytokines around resistance bout; baselines"
+ },
+ {
+  "record_id": "FS-004061",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIE/MICE/rest sessions; cytokines and IgA pre/post"
+ },
+ {
+  "record_id": "FS-004062",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Stable angina erenumab drug trial; clinical population"
+ },
+ {
+  "record_id": "FS-004063",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Relapsing-remitting MS cohort; clinical population"
+ },
+ {
+  "record_id": "FS-004064",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "30min cycle; minute-by-minute lymphocyte/monocyte egress kinetics"
+ },
+ {
+  "record_id": "FS-004065",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise-hypohydration; uNGAL/KIM1 renal; borderline immune link"
+ },
+ {
+  "record_id": "FS-004066",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "DOMS/compression; perfusion, stiffness, CK only; no immune measure"
+ },
+ {
+  "record_id": "FS-004067",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Cryostimulation sessions; no exercise bout-linked sampling"
+ },
+ {
+  "record_id": "FS-004069",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "NSAID-consumption questionnaire; no bout-linked immune sampling"
+ },
+ {
+  "record_id": "FS-004070",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Training-camp/competition phase saliva; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-004072",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse stroke model; no human data"
+ },
+ {
+  "record_id": "FS-004073",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "SIT sessions with caffeine/placebo; IL-6/IL-10/TNF-alpha to 48h"
+ },
+ {
+  "record_id": "FS-004074",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mean age 16.4 y without range/SD; adulthood unestablished per v3.1 age rule"
+ },
+ {
+  "record_id": "FS-004075",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T2D vs glucose-tolerant controls separable; IL-6/myokines around bout"
+ },
+ {
+  "record_id": "FS-004077",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Coronary heart disease case series; clinical population"
+ },
+ {
+  "record_id": "FS-004078",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "30min cycle; angiogenic T-cell subsets pre/post/1h; ages explicit"
+ },
+ {
+  "record_id": "FS-004079",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ang-(1-7) vs placebo; cytokines and CK after eccentric bout"
+ },
+ {
+  "record_id": "FS-004080",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exhaustive run; beta-receptor density on mononuclear cells; borderline immune link"
+ },
+ {
+  "record_id": "FS-004081",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Pre-race medication questionnaire; no bout-linked immune sampling"
+ },
+ {
+  "record_id": "FS-004082",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Isoprenaline infusion study; no exercise bout-linked immune sampling"
+ },
+ {
+  "record_id": "FS-004083",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Weekly saliva during CWI trial; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-004084",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Resistance-bout biopsies; macrophage/leukocyte infiltration in muscle"
+ },
+ {
+  "record_id": "FS-004085",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CTRP1/9 metabolic adipokines; no immune objective or measure"
+ },
+ {
+  "record_id": "FS-004087",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Food-anaphylaxis clinical cohort; mixed ages"
+ },
+ {
+  "record_id": "FS-004088",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Colorectal cancer surgery cohort; clinical population"
+ },
+ {
+  "record_id": "FS-004089",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "20km TTs; leukocytes, neutrophils, IL-6; fatigue condition"
+ },
+ {
+  "record_id": "FS-004090",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "One-year training; strength/genotypes; no bout-linked immune sampling"
+ },
+ {
+  "record_id": "FS-004091",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Pain thresholds during ultras; no immune measure"
+ },
+ {
+  "record_id": "FS-004092",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Cross-sectional obese groups; no bout-linked immune sampling"
+ }
+]

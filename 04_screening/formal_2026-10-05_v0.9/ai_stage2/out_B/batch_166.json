@@ -1,0 +1,352 @@
+[
+ {
+  "record_id": "FS-008519",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "abstract empty; case-report title only; cannot judge"
+ },
+ {
+  "record_id": "FS-008525",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "allergic rhinitis patient cohort; FeNO/symptom outcomes"
+ },
+ {
+  "record_id": "FS-008526",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "difficult-treatment asthma case report; CPET-CLE diagnosis, no immune measure"
+ },
+ {
+  "record_id": "FS-008529",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "COVID-19 pneumonia patients; 8-week program pre/post, no bout sampling"
+ },
+ {
+  "record_id": "FS-008531",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "trained men 27.8+/-1.9y; resistance bout heat vs normal; LPS cytokine production"
+ },
+ {
+  "record_id": "FS-008535",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "WDEIA allergy patients; diagnostic provocation; blood only pre-test"
+ },
+ {
+  "record_id": "FS-008539",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "animal model of chronic exercise stress; Brassica rapa; no humans"
+ },
+ {
+  "record_id": "FS-008540",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "women 60-65 with metabolic syndrome; 6-week program pre/post"
+ },
+ {
+  "record_id": "FS-008546",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review of iron deficiency prevention in athletes"
+ },
+ {
+  "record_id": "FS-008548",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "C57BL/6J mice; sulforaphane; exhaustive swimming liver injury"
+ },
+ {
+  "record_id": "FS-008549",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "shift workers 38+/-8y; HIIT/MICT bouts; IL-1Ra/TNF/IL-6 post 0-60min"
+ },
+ {
+  "record_id": "FS-008551",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "beta-cell function, insulin, lipids during high-fat meal; no immune measure"
+ },
+ {
+  "record_id": "FS-008552",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "bioinformatics; rat exercise RNA-seq plus GEO datasets; no original human data"
+ },
+ {
+  "record_id": "FS-008553",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "20 healthy men age unreported; curcumin vs placebo; IL-10 post-exercise"
+ },
+ {
+  "record_id": "FS-008558",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "C57BL/6J mice; creatine diet; downhill running inflammation genes"
+ },
+ {
+  "record_id": "FS-008559",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "older women 66.7y; 8-week program; blood only pre and 48h post-program"
+ },
+ {
+  "record_id": "FS-008561",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "clinical case report; exertional compartment syndrome after deadlift; no immune measure"
+ },
+ {
+  "record_id": "FS-008562",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Syrian hamsters with chronic Chagas cardiomyopathy; infected animal model"
+ },
+ {
+  "record_id": "FS-008565",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "48 SD rats; eccentric treadmill bout; muscle HMGB1/autophagy"
+ },
+ {
+  "record_id": "FS-008569",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "18 rats; Shuyu decoction; cytokines and T-cell subsets in animals"
+ },
+ {
+  "record_id": "FS-008571",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Nature Reviews Immunology Perspective; review of exercise and anticancer immunity"
+ },
+ {
+  "record_id": "FS-008573",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "DEN-induced HCC mice + HepG2 culture; lipidomics"
+ },
+ {
+  "record_id": "FS-008574",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "rats; CLP sepsis model; exercise training survival"
+ },
+ {
+  "record_id": "FS-008576",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "obese women cohort; 'adolescent' label vs ages 21.27+/-1.31"
+ },
+ {
+  "record_id": "FS-008578",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "stated youth male judo athletes; WBC subsets after concurrent sessions"
+ },
+ {
+  "record_id": "FS-008580",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "healthy men 20-30y; curcumin vs placebo; serum NF-kB post-exercise"
+ },
+ {
+  "record_id": "FS-008582",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "4T1 tumor-bearing mice; HIIT plus nanochemotherapy"
+ },
+ {
+  "record_id": "FS-008583",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "obese women BMI 27-33 cohort definition; TNF-a single bout"
+ },
+ {
+  "record_id": "FS-008584",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "abstract empty; Nature Immunology commentary-style title unresolved"
+ },
+ {
+  "record_id": "FS-008587",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative overview article on asthma and sport; no original data"
+ },
+ {
+  "record_id": "FS-008589",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "US youth 6-19 NHANES; sedentary time vs asthma; no bout or immune assay"
+ },
+ {
+  "record_id": "FS-008599",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "rats; methotrexate lung injury; continuous training pre/post"
+ },
+ {
+  "record_id": "FS-008603",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "haemodialysis patients; 10-week home program; physical function only"
+ },
+ {
+  "record_id": "FS-008605",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "in-silico docking study only; no original human or animal measurements"
+ },
+ {
+  "record_id": "FS-008607",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "rats; traumatic brain injury; treadmill timing protocols"
+ },
+ {
+  "record_id": "FS-008608",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "LECT2 chemotaxin; bout vs resting control; healthy stratum separable"
+ },
+ {
+  "record_id": "FS-008609",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "overweight men 40-60y; single HIIT; IL-6/CRP kinetics with control group"
+ },
+ {
+  "record_id": "FS-008614",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "review of IL-15, exercise, immunotherapy and cancer outcomes"
+ },
+ {
+  "record_id": "FS-008615",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "40 rats; muscle injury model; microscopy observation"
+ },
+ {
+  "record_id": "FS-008616",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "blue swimming crab transcriptome; WSSV response; non-human"
+ }
+]

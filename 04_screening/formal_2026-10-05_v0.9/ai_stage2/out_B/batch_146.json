@@ -1,0 +1,334 @@
+[
+ {
+  "record_id": "FS-007186",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIE with/without IL-6R blockade; immune-cell mobilization; control condition"
+ },
+ {
+  "record_id": "FS-007187",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cancer patients pre-transplant; clinical cohort, no healthy stratum"
+ },
+ {
+  "record_id": "FS-007188",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "40/171-km races pre/post; IL-6, RBC omics, hematology"
+ },
+ {
+  "record_id": "FS-007189",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Anaphylaxis EV proteomics, resting samples; no exercise bout"
+ },
+ {
+  "record_id": "FS-007190",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Cancer survivors + caregiver controls; 10-wk RT, pre/post omics, no bout"
+ },
+ {
+  "record_id": "FS-007191",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Swimmers aged 16-24y pooled; <18 included, adult stratum not separable"
+ },
+ {
+  "record_id": "FS-007192",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "2-wk training, blood pre/post only; metabolomics, no bout-tied sampling"
+ },
+ {
+  "record_id": "FS-007193",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-wk aerobic program, pre/post IL-6/TNF; cognitive strata, no bout"
+ },
+ {
+  "record_id": "FS-007194",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIE crossover ice-slurry; inflammatory biomarkers over 48h recovery"
+ },
+ {
+  "record_id": "FS-007195",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Rheumatoid arthritis patients on biologics; VAT-mass outcome, no healthy stratum"
+ },
+ {
+  "record_id": "FS-007196",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Post-COVID outpatient cohort; symptoms/PFT/CPET, visit-based biomarkers"
+ },
+ {
+  "record_id": "FS-007197",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Type 2 diabetes cohort; no separable healthy stratum; training plus acute trial"
+ },
+ {
+  "record_id": "FS-007198",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Hot vs cool bout crossover; IL-6, TNFa, hepcidin, LPS post"
+ },
+ {
+  "record_id": "FS-007199",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exertional-heat trials pre/post/2h IL-8, sCD14; placebo-controlled"
+ },
+ {
+  "record_id": "FS-007200",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "EIH runners; 8-wk BFR pre/post hs-CRP only, no bout sample"
+ },
+ {
+  "record_id": "FS-007201",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Abstract empty; cfDNA/neutrophil title only"
+ },
+ {
+  "record_id": "FS-007202",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Alzheimer patients plus mice; human arm grip strength only"
+ },
+ {
+  "record_id": "FS-007203",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "T2DM cross-sectional; resting IL-6, activity questionnaire, no bout"
+ },
+ {
+  "record_id": "FS-007205",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Wingate pre/immediate/3h/24h IL-6/IL-10/IL-15; player group 20.0+/-0.96"
+ },
+ {
+  "record_id": "FS-007207",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Standardised match pre/post/24/48h IL-6, hsCRP"
+ },
+ {
+  "record_id": "FS-007209",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Half-marathon pre/within-30-min CRP, cardiac markers; healthy runners"
+ },
+ {
+  "record_id": "FS-007210",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2-h heat run pre/post IL-6, IL-10, IL-1ra with symptoms"
+ },
+ {
+  "record_id": "FS-007211",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Water polo training and competition; salivary IgA, cortisol pre/post"
+ },
+ {
+  "record_id": "FS-007212",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Four female rowers pre/post 46-day race; inflammatory markers"
+ },
+ {
+  "record_id": "FS-007213",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "SCI wheelchair rugby; breath H2O2/nitrite only, no immune measure"
+ },
+ {
+  "record_id": "FS-007214",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Circuit vs traditional resistance; sclerostin, IL-6 pre/IP/30min"
+ },
+ {
+  "record_id": "FS-007215",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Post-MI rehab plus separable healthy controls; 12-wk HIIT, visit CRP, no bout"
+ },
+ {
+  "record_id": "FS-007217",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "FODMAP crossover before 2-h run; CRP, sCD14, I-FABP pre/post"
+ },
+ {
+  "record_id": "FS-007218",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "IBS patients; single-arm 12-wk program, pre/post only"
+ },
+ {
+  "record_id": "FS-007225",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon hemostasis panel plus platelets; no eligible immune measure"
+ },
+ {
+  "record_id": "FS-007228",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Irisin mechanism in mice and macrophages in vitro; no human data"
+ },
+ {
+  "record_id": "FS-007229",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Appetite/metabolic hormones after HIIE; no eligible immune measure"
+ },
+ {
+  "record_id": "FS-007232",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "CRF-cognition cross-sectional; resting IL-6 mediation, no bout sampling"
+ },
+ {
+  "record_id": "FS-007234",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rhabdomyolysis case report; CK/renal markers only, no immune measure"
+ },
+ {
+  "record_id": "FS-007235",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "All-out and 3-h cycling; cfDNA kinetics to 24h, sex differences"
+ },
+ {
+  "record_id": "FS-007236",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Young/older muscle multiomics pre/post bout; transcriptional immune response"
+ },
+ {
+  "record_id": "FS-007237",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Plyometric bout with NSAID/placebo crossover; muscle RNA-seq immune networks"
+ },
+ {
+  "record_id": "FS-007238",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "10-wk program pre/post FGF21/adiponectin; no bout, no immune measure"
+ },
+ {
+  "record_id": "FS-007239",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Viewpoint/hypothesis piece; no original data"
+ },
+ {
+  "record_id": "FS-007240",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Author correction to review chapter; not core evidence"
+ }
+]

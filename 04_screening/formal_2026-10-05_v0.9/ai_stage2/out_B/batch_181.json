@@ -1,0 +1,326 @@
+[
+ {
+  "record_id": "FS-009633",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "probiotic vs control; repeated 24h post-run IgA, CD4"
+ },
+ {
+  "record_id": "FS-009634",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "10-km race; pre/post/24h leukocytes, CRP, IL-6"
+ },
+ {
+  "record_id": "FS-009639",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "fenugreek vs placebo; eccentric bout; cytokines, leukocytes"
+ },
+ {
+  "record_id": "FS-009640",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "postmenopausal; 8-wk CRT+supplement factorial; TNF-alpha; no bout sample"
+ },
+ {
+  "record_id": "FS-009641",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "assay reproducibility study; no exercise exposure"
+ },
+ {
+  "record_id": "FS-009643",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rats; swim stress and pain, not exercise"
+ },
+ {
+  "record_id": "FS-009644",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review; immunomodulators for recovery"
+ },
+ {
+  "record_id": "FS-009645",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "4 consecutive walking days; daily pre/post cytokines; older adults"
+ },
+ {
+  "record_id": "FS-009647",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "swimmers 14-16 y; adolescent cohort"
+ },
+ {
+  "record_id": "FS-009648",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "FDEIA case report; clinical cohort, no sampling design"
+ },
+ {
+  "record_id": "FS-009656",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cadets/U19 about 16-18 y; adolescent players"
+ },
+ {
+  "record_id": "FS-009663",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "9-wk HIIT/PIST vs control; pre-post CRP/TNF; no bout sample"
+ },
+ {
+  "record_id": "FS-009665",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "triathlon; rest/post/3-6d; lymphocyte DNA damage"
+ },
+ {
+  "record_id": "FS-009670",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "UUPS case; no bout-linked sampling; redox measures only"
+ },
+ {
+  "record_id": "FS-009671",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rats and C2C12 myotubes; CXCL12"
+ },
+ {
+  "record_id": "FS-009673",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat cartilage transcriptomics; exercise"
+ },
+ {
+  "record_id": "FS-009678",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rhabdomyolysis case; clinical patient, active infection"
+ },
+ {
+  "record_id": "FS-009685",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "abstract empty"
+ },
+ {
+  "record_id": "FS-009686",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "urticaria vs controls; heart-rate recovery only, no immune measure"
+ },
+ {
+  "record_id": "FS-009687",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "habitual PA vs IL-6/CRP; resting cross-section, older men"
+ },
+ {
+  "record_id": "FS-009689",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "rugby sessions; CHO vs placebo; salivary IgA"
+ },
+ {
+  "record_id": "FS-009691",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rats; swimming; lymph node lymphocytes"
+ },
+ {
+  "record_id": "FS-009693",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rats; cerium oxide nanozyme; muscle endurance"
+ },
+ {
+  "record_id": "FS-009696",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "type 1 diabetic athlete; single clinical case"
+ },
+ {
+  "record_id": "FS-009699",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "CoQ10 vs none; 8-wk training; leukocyte counts pre/post"
+ },
+ {
+  "record_id": "FS-009703",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "review of HSP response to exercise"
+ },
+ {
+  "record_id": "FS-009704",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cycling and sauna arms; pre/post IL-6/IL-10 mRNA; adults"
+ },
+ {
+  "record_id": "FS-009705",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "postmenopausal; 8-wk CRT+supplement factorial; TNF-alpha; no bout sample"
+ },
+ {
+  "record_id": "FS-009708",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "swimmers 15-16.5 y; adolescent cohort"
+ },
+ {
+  "record_id": "FS-009709",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "review of myokine regulation"
+ },
+ {
+  "record_id": "FS-009713",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "gymnastics session vs SAT program; salivary IgA"
+ },
+ {
+  "record_id": "FS-009715",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric bout; HGI/LGI/placebo cross-over; plasma IL-6"
+ },
+ {
+  "record_id": "FS-009716",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "single HIIE bout; PBMC HDAC, cytokines; overweight-obese"
+ },
+ {
+  "record_id": "FS-009717",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative fatigue paper; no original exercise-immune data"
+ },
+ {
+  "record_id": "FS-009724",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "24-h run case; blood/urine with leukocyturia; borderline immune link"
+ },
+ {
+  "record_id": "FS-009726",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "hospital patients; clinical cohort, condition unspecified"
+ },
+ {
+  "record_id": "FS-009730",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mice; IL-6 MKO; treadmill PDH"
+ },
+ {
+  "record_id": "FS-009732",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "sepak takraw vs resting trial; IL-6, CK"
+ },
+ {
+  "record_id": "FS-009735",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "review of exercise-induced hormesis"
+ },
+ {
+  "record_id": "FS-009741",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exercise in hypoxia vs normoxia; plasma endotoxin; borderline immune link"
+ }
+]

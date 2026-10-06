@@ -1,0 +1,332 @@
+[
+ {
+  "record_id": "FS-004488",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "para-athletes simulated fight; CK/LDH only, no immune measure"
+ },
+ {
+  "record_id": "FS-004489",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "3-day competition; IL-10/IL-1b, CRP, IgA 0-72h"
+ },
+ {
+  "record_id": "FS-004490",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIV/AIDS cohort on antiretrovirals; clinical population"
+ },
+ {
+  "record_id": "FS-004491",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "hyperbaric pressure exposure; no exercise bout; IL-1b measured"
+ },
+ {
+  "record_id": "FS-004493",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "literature review of genetic markers; no original data"
+ },
+ {
+  "record_id": "FS-004494",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "active tuberculosis patients; clinical/infected cohort"
+ },
+ {
+  "record_id": "FS-004495",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "half-marathon \u00b1aronia; platelet-leukocyte aggregates; immune link borderline"
+ },
+ {
+  "record_id": "FS-004496",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "resistance bout vs rest; CD4 activation (CD69/CD25)"
+ },
+ {
+  "record_id": "FS-004497",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "typhoid vaccine inflammation challenge; no exercise bout"
+ },
+ {
+  "record_id": "FS-004498",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ultramarathon renal biomarkers (NGAL, KIM-1); no immune measure"
+ },
+ {
+  "record_id": "FS-004499",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "ozone chambers with intermittent exercise; exercise-ozone separability unclear"
+ },
+ {
+  "record_id": "FS-004500",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "nifedipine/platelet aggregation; no immune measure"
+ },
+ {
+  "record_id": "FS-004501",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "salivary FLC/IgA diurnal variability; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-004502",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "chronic spinal cord injury cohort; RDW, no immune measure"
+ },
+ {
+  "record_id": "FS-004503",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "obese vs lean; PBMC apoptosis/autophagy post-test"
+ },
+ {
+  "record_id": "FS-004504",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "glutamine vs placebo TT; IL-6/TNF-a, endotoxin"
+ },
+ {
+  "record_id": "FS-004505",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "infertile men cohort; retracted article; clinical population"
+ },
+ {
+  "record_id": "FS-004507",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "b-glucan vs placebo around marathon; URTI symptoms, immune measure unclear"
+ },
+ {
+  "record_id": "FS-004509",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "single 60% VO2max bout; EV phenotyping incl. CD14 monocyte EVs"
+ },
+ {
+  "record_id": "FS-004510",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "coronary artery disease patients; coagulation/platelet outcomes"
+ },
+ {
+  "record_id": "FS-004511",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "two eccentric bouts 2-wk apart; muscle IL-6/IL-1b mRNA"
+ },
+ {
+  "record_id": "FS-004512",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "constrictive pericarditis surgical cohort; clinical population"
+ },
+ {
+  "record_id": "FS-004513",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "INT vs CONT 12 sessions; EV subsets incl. CD45, pre/post only"
+ },
+ {
+  "record_id": "FS-004514",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "cross-sectional fitness strata; CRP/cytokines resting; no bout"
+ },
+ {
+  "record_id": "FS-004516",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "TCJ vs placebo around LIST; CRP/CK serial"
+ },
+ {
+  "record_id": "FS-004518",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon/ultratrail; hsCRP with cardiac biomarkers T0-T2"
+ },
+ {
+  "record_id": "FS-004519",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "magnesium vs placebo downhill TT; IL-6/sIL-6R"
+ },
+ {
+  "record_id": "FS-004520",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "sleep-low CHO blocks; IL-6, hepcidin, SIgA around sessions"
+ },
+ {
+  "record_id": "FS-004521",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "MRI cartilage outcomes after marathon; no immune measure"
+ },
+ {
+  "record_id": "FS-004522",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "allergen profiling of patient sera; clinical allergy cohorts"
+ },
+ {
+  "record_id": "FS-004523",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "resveratrol vs placebo ECRE; CRP/IL-6 24-48h"
+ },
+ {
+  "record_id": "FS-004524",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "factorial exercise x tocilizumab; IL-6-focused; pre/post only"
+ },
+ {
+  "record_id": "FS-004525",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "sitting \u00b1 hourly microbouts; salivary IL-8"
+ },
+ {
+  "record_id": "FS-004526",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "chickpea-Fusarium transcriptomics; plant study"
+ },
+ {
+  "record_id": "FS-004527",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "colorectal cancer resection patients; perioperative EPA trial"
+ },
+ {
+  "record_id": "FS-004528",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "pregnant vs non-pregnant walking; IL-6/IL-15/fractalkine; strata separable"
+ },
+ {
+  "record_id": "FS-004529",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "FODMAP crossover; 2-h heat run; cytokines, endotoxin"
+ },
+ {
+  "record_id": "FS-004530",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "cell-culture IL-6 JAK-STAT study; no in-vivo exercise"
+ },
+ {
+  "record_id": "FS-004531",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "ESA injection/blood withdrawal; exercise only a confounder check"
+ },
+ {
+  "record_id": "FS-004532",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "EHS-history vs controls; 2-h heat tests; interleukin gene expression"
+ }
+]

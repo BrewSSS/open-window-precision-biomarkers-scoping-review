@@ -1,0 +1,339 @@
+[
+ {
+  "record_id": "FS-005132",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "NGAL/KIM-1 post heat acclimation; immune relevance unclear"
+ },
+ {
+  "record_id": "FS-005134",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "supplement-use questionnaire; no exposure or sampling"
+ },
+ {
+  "record_id": "FS-005135",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "redox/soreness only; no immune measure"
+ },
+ {
+  "record_id": "FS-005137",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "MS + separable controls; IL-6; age unstated"
+ },
+ {
+  "record_id": "FS-005138",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "trail vs ultra cytokines; age unstated"
+ },
+ {
+  "record_id": "FS-005139",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "obstructive sleep apnea patients"
+ },
+ {
+  "record_id": "FS-005140",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T-cell VDR flow cytometry; age groups 18-75"
+ },
+ {
+  "record_id": "FS-005143",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "imaging/treatment paper; injured patients"
+ },
+ {
+  "record_id": "FS-005145",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "14-wk chair exercise; resting pre/post only"
+ },
+ {
+  "record_id": "FS-005146",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "amphetamine-addiction patients"
+ },
+ {
+  "record_id": "FS-005147",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CK/LDH/haptoglobin only; no immune measure"
+ },
+ {
+  "record_id": "FS-005148",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "concussion head-impact biobank; no exercise bout"
+ },
+ {
+  "record_id": "FS-005149",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "resveratrol crossover; IL-6/TNF; age unstated"
+ },
+ {
+  "record_id": "FS-005150",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review"
+ },
+ {
+  "record_id": "FS-005151",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ibuprofen factorial; IL-6; ages 60-75"
+ },
+ {
+  "record_id": "FS-005152",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "COVID transmission cohort; infected participants"
+ },
+ {
+  "record_id": "FS-005154",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "5-day training block; IgA pre/post protocol only"
+ },
+ {
+  "record_id": "FS-005155",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat prediabetes model"
+ },
+ {
+  "record_id": "FS-005156",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "post-ultra arterial function; CRP; age unstated"
+ },
+ {
+  "record_id": "FS-005157",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "older adults; CRP; ages not stated"
+ },
+ {
+  "record_id": "FS-005158",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "trace elements only; no immune measure"
+ },
+ {
+  "record_id": "FS-005159",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "cystic fibrosis; 60% children"
+ },
+ {
+  "record_id": "FS-005160",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "dendritic-cell subsets; n=3; age unstated"
+ },
+ {
+  "record_id": "FS-005161",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "altitude RT; cytokines; age unstated"
+ },
+ {
+  "record_id": "FS-005162",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "vitamin D RCT; IL-6/IL-10; age unstated"
+ },
+ {
+  "record_id": "FS-005163",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "probiotic RCT; monocyte cytokines; age unstated"
+ },
+ {
+  "record_id": "FS-005164",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "enduro race; NK/T subsets; age 24.3\u00b12.4 adult"
+ },
+ {
+  "record_id": "FS-005165",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "3-day hypoxia training; hsCRP; age unstated"
+ },
+ {
+  "record_id": "FS-005166",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "inflammatory markers unspecified; age unstated"
+ },
+ {
+  "record_id": "FS-005167",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "NK activity pre/during/2h/24h; age unstated"
+ },
+ {
+  "record_id": "FS-005168",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cfDNA stress markers; no immune objective"
+ },
+ {
+  "record_id": "FS-005169",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "BFRRE; muscle macrophage/neutrophil counts; age 24\u00b12"
+ },
+ {
+  "record_id": "FS-005170",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "influenza-vaccine stimulus; no exercise exposure"
+ },
+ {
+  "record_id": "FS-005171",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Alzheimer's disease patients"
+ },
+ {
+  "record_id": "FS-005172",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "hospital CPET patients; resting associations"
+ },
+ {
+  "record_id": "FS-005173",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mice HSV-2 model"
+ },
+ {
+  "record_id": "FS-005174",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Parkinson's disease patients"
+ },
+ {
+  "record_id": "FS-005175",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "master athletes; T-cell clock genes; ages unstated"
+ },
+ {
+  "record_id": "FS-005176",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "monocyte migration; walking bout; adult ages"
+ },
+ {
+  "record_id": "FS-005178",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "breast-cancer patients; 24-month follow-up"
+ }
+]

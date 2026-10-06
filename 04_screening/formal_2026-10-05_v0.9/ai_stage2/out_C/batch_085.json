@@ -1,0 +1,352 @@
+[
+ {
+  "record_id": "FS-004137",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "52 cytokines before/after HTS session; healthy men"
+ },
+ {
+  "record_id": "FS-004138",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "4-day repeated walking; cytokines <30 min post daily; lean vs obese"
+ },
+ {
+  "record_id": "FS-004139",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "beta-blocker crossover; NK/CD8/monocyte mobilization; placebo trial clean"
+ },
+ {
+  "record_id": "FS-004140",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "green tea vs placebo; muscle damage/oxidative/neuromuscular only"
+ },
+ {
+  "record_id": "FS-004142",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T1DM plus separable healthy controls; cytokines around two bout types"
+ },
+ {
+  "record_id": "FS-004143",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ultramarathon; hs-CRP pre/24/72/120 h; EIH vs normal BP runners"
+ },
+ {
+  "record_id": "FS-004144",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "blueberry vs unsupplemented period; IL-6/CRP following exercise"
+ },
+ {
+  "record_id": "FS-004145",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "prolonged field exercise event; TNF-alpha/IL-6 pre/during/post; ages pass rule"
+ },
+ {
+  "record_id": "FS-004146",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "rHuEPO trial; HCT/HGB and performance; no bout-tied immune sampling"
+ },
+ {
+  "record_id": "FS-004147",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "sensitivity profiling; IL-6/MMP-9/hsCRP to 96 h; control week"
+ },
+ {
+  "record_id": "FS-004148",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "2-week reduced-activity intervention; no exercise bout"
+ },
+ {
+  "record_id": "FS-004149",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle transcriptome pre/24 h post bout; immune terms post-hoc only"
+ },
+ {
+  "record_id": "FS-004150",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "heart failure drug trial; clinical cohort"
+ },
+ {
+  "record_id": "FS-004151",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "durum wheat allergen; allergic patient cohort"
+ },
+ {
+  "record_id": "FS-004152",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "3 consecutive bouts vs rest; DBS proteomics; innate immune candidates; ages pass"
+ },
+ {
+  "record_id": "FS-004153",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "statins in diastolic dysfunction patients"
+ },
+ {
+  "record_id": "FS-004154",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "s-IgA pre/post three identified race-walk tests; CHO diet groups"
+ },
+ {
+  "record_id": "FS-004156",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "post-arthroplasty analgesia chart review; surgical cohort"
+ },
+ {
+  "record_id": "FS-004157",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03",
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "nedocromil drug-development narrative review"
+ },
+ {
+  "record_id": "FS-004158",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "2-week Pilates pre/post resting; NK cytotoxicity; no bout-tied sampling"
+ },
+ {
+  "record_id": "FS-004159",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "taurine in astrocyte/neuron co-culture; in vitro"
+ },
+ {
+  "record_id": "FS-004160",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "engineered myofiber sheets; in vitro platform, no participants"
+ },
+ {
+  "record_id": "FS-004161",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "DBT vs placebo, 13-km run; hepcidin/iron pre/post to 72 h"
+ },
+ {
+  "record_id": "FS-004162",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "BFR vs load-controlled bouts; IL-6/IL-15/decorin pre-post"
+ },
+ {
+  "record_id": "FS-004163",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "NSAID-consumption questionnaire at races; no immune sampling"
+ },
+ {
+  "record_id": "FS-004164",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "inflammation-related ci-miRNAs post 30-min bout; obese vs normal-weight"
+ },
+ {
+  "record_id": "FS-004165",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Metrnl/IL-4 across water-temperature bouts; overweight women, ages pass"
+ },
+ {
+  "record_id": "FS-004166",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "downhill run; neutrophil dynamics/function, IL-6; H2 vs placebo bath"
+ },
+ {
+  "record_id": "FS-004168",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "8-week aerobic program pre/post ELISA; no bout-tied sampling"
+ },
+ {
+  "record_id": "FS-004169",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "HIV cohort CPX performance; no bout-tied immune sampling"
+ },
+ {
+  "record_id": "FS-004170",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIV/AIDS women; BP outcomes only; no healthy stratum"
+ },
+ {
+  "record_id": "FS-004171",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "curcumin crossover; PBMC TLR4/NF-kB post-run to 4 h"
+ },
+ {
+  "record_id": "FS-004172",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "fire-exercise days; WBC subsets and IL-6, day start vs end; ages pass"
+ },
+ {
+  "record_id": "FS-004173",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "elderly hypertensive patients; gut microbiome and CPX"
+ },
+ {
+  "record_id": "FS-004174",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ages 27+/-5.7 and 30.5+/-8.0, mean-2SD<18; leukocytes/CRP to 72 h"
+ },
+ {
+  "record_id": "FS-004175",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "nutrition/NSAID questionnaire across race distances; no immune sampling"
+ },
+ {
+  "record_id": "FS-004176",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "fish-oil crossover; PBMC cytokine production, T-cell subsets post-bout"
+ },
+ {
+  "record_id": "FS-004177",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "hemodialysis patients; intradialytic exercise, microparticles"
+ },
+ {
+  "record_id": "FS-004179",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "weekly sIgA vs training load, 34 weeks; no bout-tied sampling"
+ },
+ {
+  "record_id": "FS-004180",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "1987; lymphocyte beta2-adrenoceptor response to cycling; normotensives separable"
+ }
+]

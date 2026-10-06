@@ -1,0 +1,334 @@
+[
+ {
+  "record_id": "FS-004004",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CHO vs placebo trials; neutrophils and cytokines after 1h cycling"
+ },
+ {
+  "record_id": "FS-004005",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Three bouts; sIgA and cortisol pre/post to 4h; resting trial"
+ },
+ {
+  "record_id": "FS-004006",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Maximal test; T-cell subset thiol redox pre/during/post"
+ },
+ {
+  "record_id": "FS-004007",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIE bout; cfDNA and IL-6 pre/post/1h; obese vs normal-weight"
+ },
+ {
+  "record_id": "FS-004008",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Maximal cycle effort; T subsets and Con A suppressor function"
+ },
+ {
+  "record_id": "FS-004009",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "30min cycle; NK cytotoxicity with autologous sera pre/post/1h"
+ },
+ {
+  "record_id": "FS-004010",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Vaccine-induced inflammation model; no bout-linked immune sampling"
+ },
+ {
+  "record_id": "FS-004011",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Acute exhaustive bout; circulating miRNAs incl. inflammation panel"
+ },
+ {
+  "record_id": "FS-004012",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cortisol/catecholamines only; no immune measure; controls separable"
+ },
+ {
+  "record_id": "FS-004013",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical synopsis on OA exercise therapy; no original data"
+ },
+ {
+  "record_id": "FS-004014",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Adipose transcriptomics/methylation; no immune objective"
+ },
+ {
+  "record_id": "FS-004015",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Bruce test; sICAM/sVCAM/TNF-alpha; normolipidemic stratum separable"
+ },
+ {
+  "record_id": "FS-004016",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Muscle morphology and pressure; no eligible immune measure"
+ },
+ {
+  "record_id": "FS-004017",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2h bout at 60% VO2max; subsets and PHA response to 72h"
+ },
+ {
+  "record_id": "FS-004018",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ironman; CRP/IL-6 to 40h; CWI vs no-intervention control"
+ },
+ {
+  "record_id": "FS-004019",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Pollutant exposure with intermittent exercise; filtered-air control; sputum IL-6"
+ },
+ {
+  "record_id": "FS-004020",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Single exhaustive cycle bout; sICAM-1 pre/post; borderline immune link"
+ },
+ {
+  "record_id": "FS-004021",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Cross-sectional autoantibody serology; no exercise-linked sampling"
+ },
+ {
+  "record_id": "FS-004022",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ARA vs placebo; resistance bout; leukocytes, PBMC/muscle cytokine mRNA"
+ },
+ {
+  "record_id": "FS-004023",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Infertile patient cohort; clinical population, no separable stratum"
+ },
+ {
+  "record_id": "FS-004024",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Heart-failure prognosis cohort; BDNF only"
+ },
+ {
+  "record_id": "FS-004025",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "MS vs healthy controls separable; cytokines/adipokines around single bout"
+ },
+ {
+  "record_id": "FS-004026",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Graded exercise challenge; endocrine/immune marker panels; controls separable"
+ },
+ {
+  "record_id": "FS-004027",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Maximal cycle; platelet function/beta-thromboglobulin; non-diabetic controls separable"
+ },
+ {
+  "record_id": "FS-004028",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Type 2 diabetes cohort; no separable healthy stratum"
+ },
+ {
+  "record_id": "FS-004030",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Rationale-and-study-design protocol; no results"
+ },
+ {
+  "record_id": "FS-004031",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "30min cycle; adenovirus-specific T-cell mobilisation and ex vivo function"
+ },
+ {
+  "record_id": "FS-004032",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Maximal test with naloxone/placebo; NK activity and subsets"
+ },
+ {
+  "record_id": "FS-004033",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Type 2 diabetes cohort; no separable healthy stratum"
+ },
+ {
+  "record_id": "FS-004034",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "IL-6 infusion/glycaemia experiments; bout-linked sampling unclear, advance"
+ },
+ {
+  "record_id": "FS-004035",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ubiquinol trial; oxidative stress and muscle-damage measures only"
+ },
+ {
+  "record_id": "FS-004037",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Half marathon; CRP/CK to 48h; placebo-controlled"
+ },
+ {
+  "record_id": "FS-004038",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Green tea trial; soreness, muscle damage, oxidative markers only"
+ },
+ {
+  "record_id": "FS-004039",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Maximal exercise; PTX3 and PBMC cytokine production ex vivo"
+ },
+ {
+  "record_id": "FS-004041",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Nisoldipine; exercise platelet response; non-diabetic controls separable"
+ },
+ {
+  "record_id": "FS-004042",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "20min cycle; dendritic-cell subsets baseline/during/30min post"
+ },
+ {
+  "record_id": "FS-004043",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Heat/temperate cycling; cytokines, immune counts pre/post"
+ },
+ {
+  "record_id": "FS-004044",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2-mile run; O-GlcNAc and counts in white blood cells"
+ },
+ {
+  "record_id": "FS-004045",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Connective-tissue disease catheterisation cohort; clinical population"
+ },
+ {
+  "record_id": "FS-004046",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review of gut microbiota, probiotics and sport"
+ }
+]

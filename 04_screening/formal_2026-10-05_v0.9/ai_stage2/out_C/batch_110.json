@@ -1,0 +1,335 @@
+[
+ {
+  "record_id": "FS-005309",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "suspected CAD patient cohort; no separable healthy stratum"
+ },
+ {
+  "record_id": "FS-005310",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "4-week training pre/post snapshot only; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-005313",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "design eligible but age 25+/-4.8 gives 15.4; adult unresolved"
+ },
+ {
+  "record_id": "FS-005314",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "mouse cardiomyocytes and in vitro drug study only"
+ },
+ {
+  "record_id": "FS-005315",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "HFrEF cohort; cross-sectional CPET correlations, no exercise immune sampling"
+ },
+ {
+  "record_id": "FS-005316",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon IL-6 and WBC eligible; adult age not established"
+ },
+ {
+  "record_id": "FS-005317",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CK/LDH muscle damage only; no immune measure"
+ },
+ {
+  "record_id": "FS-005318",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "curcumin trial; habitual activity only, no bout sampling"
+ },
+ {
+  "record_id": "FS-005319",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "phagocytosis, gd T cells eligible; participant age unreported"
+ },
+ {
+  "record_id": "FS-005320",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "breast cancer survivors; clinical cohort, no healthy stratum"
+ },
+ {
+  "record_id": "FS-005321",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "MDD patient cohort, not generally healthy"
+ },
+ {
+  "record_id": "FS-005322",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT05",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "prognostic CPET cohort; no post-exercise sample; CRP covariate only"
+ },
+ {
+  "record_id": "FS-005323",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric DOMS; cfDNA 20-60 min; SGB vs sham; age 18-53"
+ },
+ {
+  "record_id": "FS-005324",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "cancer survivors; cross-sectional fatigue correlates"
+ },
+ {
+  "record_id": "FS-005325",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT05",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "pain/tightness outcomes only; no biological sample, no immune measure"
+ },
+ {
+  "record_id": "FS-005326",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review interpreting IL-10 responses to exercise"
+ },
+ {
+  "record_id": "FS-005327",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "extracellular vesicles/CK muscle damage; no immune objective"
+ },
+ {
+  "record_id": "FS-005328",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "shuttle-test CRP design eligible; participant age unreported"
+ },
+ {
+  "record_id": "FS-005329",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "nasal lavage leukocytes, antiviral activity; age unreported"
+ },
+ {
+  "record_id": "FS-005330",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "resting leukocyte ROCK across training-level groups; no bout"
+ },
+ {
+  "record_id": "FS-005331",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon NMR metabolomics of energy metabolites; no immune objective"
+ },
+ {
+  "record_id": "FS-005332",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "MAIT cells; acute bout with sitting control; obese vs lean"
+ },
+ {
+  "record_id": "FS-005333",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon exosomal miRNA incl inflammation-related; age unreported"
+ },
+ {
+  "record_id": "FS-005334",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIE cytokines, FA vs TRAP eligible; age unreported"
+ },
+ {
+  "record_id": "FS-005335",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "25-km walk IL-6, WBC; diet arms with control; age unreported"
+ },
+ {
+  "record_id": "FS-005336",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT05",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "post-run MRI T2/perfusion only; no biological sample or immune measure"
+ },
+ {
+  "record_id": "FS-005337",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "abstract empty; title only"
+ },
+ {
+  "record_id": "FS-005338",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rheumatoid arthritis patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-005339",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Wingate vs TSST cytokines eligible; mean-2SD is 17.3"
+ },
+ {
+  "record_id": "FS-005340",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon IL-6/sIL-6R pre/post; age unreported"
+ },
+ {
+  "record_id": "FS-005341",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon CRP, cartilage markers; age unreported"
+ },
+ {
+  "record_id": "FS-005343",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "stable CAD patients (ORBITA); clinical cohort"
+ },
+ {
+  "record_id": "FS-005344",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon cytokines, leukogram; ages 30-55; serial samples"
+ },
+ {
+  "record_id": "FS-005345",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "hyponatremia and CK outcomes; no immune measure"
+ },
+ {
+  "record_id": "FS-005346",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "U-20 players; adult status not established; urine metabolomics"
+ },
+ {
+  "record_id": "FS-005349",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse ovarian cancer treadmill model; no human data"
+ },
+ {
+  "record_id": "FS-005350",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "PLWH cross-sectional survey; clinical cohort, no bout"
+ },
+ {
+  "record_id": "FS-005351",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric bout, cherry vs placebo, IL-6/CRP; age unreported"
+ },
+ {
+  "record_id": "FS-005352",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "fetal hypoxia/OGTT cohort; no exercise bout; hsCRP descriptive only"
+ },
+ {
+  "record_id": "FS-005353",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "BCS cohort but separable healthy control arm, neutrophil function"
+ }
+]

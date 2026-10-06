@@ -1,0 +1,330 @@
+[
+ {
+  "record_id": "FS-010950",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "BDNF/AMPK fat-oxidation study; no immune measure or objective"
+ },
+ {
+  "record_id": "FS-010951",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Guillain-Barre rehabilitation case report; clinical patient"
+ },
+ {
+  "record_id": "FS-010953",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Iliac-artery occlusion case report; clinical vascular pathology"
+ },
+ {
+  "record_id": "FS-010954",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Type-2 diabetes cohorts; clinical metabolic-disease population"
+ },
+ {
+  "record_id": "FS-010963",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Only troponins/NT-proBNP; autoimmune link speculative, not measured"
+ },
+ {
+  "record_id": "FS-010968",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Fifteen boys, eight girls; under-18 cohort"
+ },
+ {
+  "record_id": "FS-010969",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Half-marathon; neutrophil TAP/MPO/chemiluminescence; placebo-controlled supplementation"
+ },
+ {
+  "record_id": "FS-010970",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative overview; protein intake; no original data"
+ },
+ {
+  "record_id": "FS-010976",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Review of mucosal-immunity markers, salivary IgA"
+ },
+ {
+  "record_id": "FS-010986",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Ice-pack application only; no exercise exposure; temperature outcomes"
+ },
+ {
+  "record_id": "FS-010987",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 21.5, s 1.8; mean-2SD=17.9<18; v3.1 age rule"
+ },
+ {
+  "record_id": "FS-010998",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "C57BL/6N mice; IgG clearance, wheel running; animal-only"
+ },
+ {
+  "record_id": "FS-010999",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "50-km ski race; CRP plus damage markers; serial samples to 144h"
+ },
+ {
+  "record_id": "FS-011000",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Consensus-conference review; hyponatraemia management"
+ },
+ {
+  "record_id": "FS-011001",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "FDEIA anaphylaxis case; basophil histamine; clinical patient"
+ },
+ {
+  "record_id": "FS-011003",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rats; carrageenan/eccentric-exercise hyperalgesia; animal-only"
+ },
+ {
+  "record_id": "FS-011005",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Prolonged cycling; neutrophil burst, IL-6; vitamin-C/placebo crossover"
+ },
+ {
+  "record_id": "FS-011007",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "14 km race; lymphocyte HSP72 pre/post/2d"
+ },
+ {
+  "record_id": "FS-011009",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 21, s 4; mean-2SD=13<18; v3.1 age rule"
+ },
+ {
+  "record_id": "FS-011010",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rats; opioid cardioprotection; animal-only"
+ },
+ {
+  "record_id": "FS-011013",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Intermittent protocol; white-cell subsets pre/post; placebo-controlled caffeine"
+ },
+ {
+  "record_id": "FS-011019",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "One-hour run; IL-8 and neutrophils pre/immediate/post; trained vs sedentary"
+ },
+ {
+  "record_id": "FS-011021",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rats; neutrophil apoptosis, glutamine; animal-only"
+ },
+ {
+  "record_id": "FS-011023",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Heart-failure patients; carvedilol treatment; clinical cohort"
+ },
+ {
+  "record_id": "FS-011024",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mice; curcumin, downhill running, cytokines; animal-only"
+ },
+ {
+  "record_id": "FS-011026",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Only FEV1 bronchial-challenge diagnostics; no immune measure"
+ },
+ {
+  "record_id": "FS-011031",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Hypothesis review; COPD training; no original data"
+ },
+ {
+  "record_id": "FS-011032",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Incremental cycle test; plasma IL-6/TNF-a pre/post"
+ },
+ {
+  "record_id": "FS-011033",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Downhill marathon; neopterin, leukocytes, CRP serial samples"
+ },
+ {
+  "record_id": "FS-011038",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Asthmatic and healthy strata separable; adenosine mediator status unclear"
+ },
+ {
+  "record_id": "FS-011045",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "One-hour run; IL-1beta gene/protein at three intervals; trained vs sedentary"
+ },
+ {
+  "record_id": "FS-011049",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Dermatomyositis case report; clinical autoimmune patient"
+ },
+ {
+  "record_id": "FS-011050",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Narrative review; adhesion molecules in peripheral arterial disease"
+ },
+ {
+  "record_id": "FS-011052",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "HIV-infected diabetic cohort; questionnaire; clinical"
+ },
+ {
+  "record_id": "FS-011054",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Phonophoresis treatment only; no exercise exposure; cortisol outcome"
+ },
+ {
+  "record_id": "FS-011056",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "C57BL/6 mice; lymphocyte apoptosis, NAC; animal-only"
+ },
+ {
+  "record_id": "FS-011063",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycling 30 min; intracellular cytokines in leukocyte subsets; 18-30 y"
+ },
+ {
+  "record_id": "FS-011064",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Wingate tests; salivary IgA secretion pre/post; URTI follow-up"
+ },
+ {
+  "record_id": "FS-011065",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Sepsis from appendicitis; case report; clinical patient"
+ },
+ {
+  "record_id": "FS-011069",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "BALB/c mice; splenocyte proliferation, ROS; animal-only"
+ }
+]

@@ -1,0 +1,350 @@
+[
+ {
+  "record_id": "FS-008399",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat + in-vitro heatstroke rhabdomyolysis model; no human data"
+ },
+ {
+  "record_id": "FS-008400",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "PD mouse model; treadmill training; no human participants"
+ },
+ {
+  "record_id": "FS-008402",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "healthy adults 23.2+/-3.5y; mean-2SD=16.2<18; age rule awaits"
+ },
+ {
+  "record_id": "FS-008403",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Lewis lung cancer mice; epinephrine/CD8 mechanism"
+ },
+ {
+  "record_id": "FS-008413",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "coronary artery disease patients; 6-month rehab, no acute-bout sampling"
+ },
+ {
+  "record_id": "FS-008418",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "males 25+/-7y; mean-2SD=11<18; adult status unconfirmed"
+ },
+ {
+  "record_id": "FS-008421",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "u17 women's soccer competition; stated under-18 cohort"
+ },
+ {
+  "record_id": "FS-008423",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "obese women BMI>31 clinical cohort; 6-week pre/post, no bout samples"
+ },
+ {
+  "record_id": "FS-008429",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "fibromyalgia patients; outcomes pain/QoL/cholesterol, no immune measure"
+ },
+ {
+  "record_id": "FS-008430",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "healthy women 18-22; single bout; CD4/CD8, phagocytosis; AA vs control arms"
+ },
+ {
+  "record_id": "FS-008431",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "men 20-35y; four cycling protocols; leukocyte/NK kinetics to 24h"
+ },
+ {
+  "record_id": "FS-008436",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "climbers 27-37y; treadmill bout; IL-6/TNF; saffron arms baselined"
+ },
+ {
+  "record_id": "FS-008439",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "U20 players 19.0+/-1.0y; mean-2SD=17.0<18; age rule awaits"
+ },
+ {
+  "record_id": "FS-008441",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "20 healthy men, age unreported; curcumin vs placebo; IL-6/CRP"
+ },
+ {
+  "record_id": "FS-008442",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "single-runner case; ultra race; CRP inflammation; small design to appraise"
+ },
+ {
+  "record_id": "FS-008447",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "ApoE-deficient mice + endothelial cells; atherosclerosis model"
+ },
+ {
+  "record_id": "FS-008450",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "clinical AGE case report; no exercise bout, no immune measure"
+ },
+ {
+  "record_id": "FS-008453",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "diabetic cardiomyopathy rats; I/R protocol; no humans"
+ },
+ {
+  "record_id": "FS-008457",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "U20 players; no ages reported; adult stratum unconfirmed"
+ },
+ {
+  "record_id": "FS-008458",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "doxorubicin cardiotoxicity mice + in vitro B-cell experiments"
+ },
+ {
+  "record_id": "FS-008461",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "pro players mean 19.2y no SD; TSAFT90; leukocytes/CRP pre-0h-24h"
+ },
+ {
+  "record_id": "FS-008468",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "phase II cardiac rehab patients; walk distance vs mortality, no immune measure"
+ },
+ {
+  "record_id": "FS-008469",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "24h ultramarathon; pre-race leukocyte subsets; post-race sampling unclear, advance"
+ },
+ {
+  "record_id": "FS-008470",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "serum before/after 12-week HIIT only; no acute-bout sample; NETosis assay"
+ },
+ {
+  "record_id": "FS-008476",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "u17 women's soccer competition; stated under-18 cohort"
+ },
+ {
+  "record_id": "FS-008477",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "tumor-bearing mice; exercise training; splenectomy PF4 mechanism"
+ },
+ {
+  "record_id": "FS-008484",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Ldlr/Scd1 knockout mice + in silico; aortic endothelium"
+ },
+ {
+  "record_id": "FS-008485",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "multiple tumor-bearing mouse models; exercise and PF4"
+ },
+ {
+  "record_id": "FS-008486",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "systematic review with meta-analysis of URTI post-marathon; PROSPERO registered"
+ },
+ {
+  "record_id": "FS-008489",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "subjects aged 15-17 years; stated adolescent cohort"
+ },
+ {
+  "record_id": "FS-008498",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "males 17-26y mixed range; WBC pre/post exercise; mixed with adults advances"
+ },
+ {
+  "record_id": "FS-008500",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "judokas 20.7+/-2.0y; mean-2SD=16.7<18; age rule awaits"
+ },
+ {
+  "record_id": "FS-008504",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "healthy men 18-22y; two treadmill conditions; CRP/TNF/IL-8 timing full"
+ },
+ {
+  "record_id": "FS-008505",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "firefighters pre/post 45-min bout; saliva cytokines, antimicrobial peptides, multi-omics"
+ },
+ {
+  "record_id": "FS-008510",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "gout patients GWAS; lifestyle questionnaires; no bout, no immune assay"
+ },
+ {
+  "record_id": "FS-008511",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "25(6)y mean-2SD=13<18; drop/squat jumps; immune markers otherwise eligible"
+ },
+ {
+  "record_id": "FS-008512",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "sprinters 18-20y plus controls; hemogram/neutrophils at load and recovery"
+ },
+ {
+  "record_id": "FS-008513",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "athletes, age unreported; graded treadmill test; IL-12 pre/post"
+ },
+ {
+  "record_id": "FS-008514",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse forced-swimming fatigue model + network pharmacology; no humans"
+ },
+ {
+  "record_id": "FS-008518",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mice; monkfish peptide; spleen lymphocyte/NK assays in animals"
+ }
+]

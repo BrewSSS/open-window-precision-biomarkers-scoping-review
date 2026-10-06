@@ -1,0 +1,329 @@
+[
+ {
+  "record_id": "FS-004851",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "COPD clinical cohort; immune measures but diseased population"
+ },
+ {
+  "record_id": "FS-004853",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "single endurance bout; MALAT1 lncRNA in PBMCs"
+ },
+ {
+  "record_id": "FS-004858",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "graded bout; cytokines pre/post/15-min recovery"
+ },
+ {
+  "record_id": "FS-004860",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cycling bout; placebo arm separates blockade; VSTs"
+ },
+ {
+  "record_id": "FS-004861",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "COPD training trial; no identifiable bout"
+ },
+ {
+  "record_id": "FS-004862",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "stroke survivors; clinical cohort"
+ },
+ {
+  "record_id": "FS-004863",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric bout; water control; immune marker unspecified"
+ },
+ {
+  "record_id": "FS-004864",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "breath-hold apnea; qualifying-bout status unclear"
+ },
+ {
+  "record_id": "FS-004865",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "resistance bout; muscle macrophages/cytokines; adults"
+ },
+ {
+  "record_id": "FS-004866",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6 given as intervention; only bone markers measured"
+ },
+ {
+  "record_id": "FS-004867",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ultramarathon races; inflammatory factors pre/post"
+ },
+ {
+  "record_id": "FS-004868",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "resistance bout; placebo arm; IL-6/IL-1b mRNA"
+ },
+ {
+  "record_id": "FS-004869",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "4x4-min bouts; lymphocyte DNA damage; placebo-controlled"
+ },
+ {
+  "record_id": "FS-004870",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "soccer simulation; leukocyte subsets 0/24 h; age 23(2)"
+ },
+ {
+  "record_id": "FS-004871",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT08"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "type 2 diabetes cohort; diet+exercise inseparable"
+ },
+ {
+  "record_id": "FS-004873",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "breast cancer survivors; no acute-bout sampling"
+ },
+ {
+  "record_id": "FS-004875",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "treadmill bout + time trial; inflammatory markers; baseline"
+ },
+ {
+  "record_id": "FS-004876",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "session sampling 0/30/60 min; LPS-stimulated cytokines"
+ },
+ {
+  "record_id": "FS-004878",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute bouts by intensity; monocyte cultures/cytometry"
+ },
+ {
+  "record_id": "FS-004879",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "60-min bout vs no-exercise; adipose macrophage/T cells"
+ },
+ {
+  "record_id": "FS-004880",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "repetitive lifting task; IL-6/IL-8 0-24 h"
+ },
+ {
+  "record_id": "FS-004882",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute cycling trial 7 timepoints; PBMC Nrf2"
+ },
+ {
+  "record_id": "FS-004885",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "PCr resynthesis and mitochondrial markers only"
+ },
+ {
+  "record_id": "FS-004886",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "sprint/jump bouts; leukocyte subsets, MCP-1, hsCRP"
+ },
+ {
+  "record_id": "FS-004887",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "multiple sclerosis cohort; clinical population"
+ },
+ {
+  "record_id": "FS-004888",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "21-km run; NGAL immune-derived; cardiac/renal focus"
+ },
+ {
+  "record_id": "FS-004889",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "3 consecutive walking days; neutrophil phenotypes"
+ },
+ {
+  "record_id": "FS-004890",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "10-km race; IL-6/IL-10/IL-1b; PBMC DNMT"
+ },
+ {
+  "record_id": "FS-004891",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "resting hematology vs VO2max; no bout"
+ },
+ {
+  "record_id": "FS-004892",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon; cooling vs control; hsCRP, CK"
+ },
+ {
+  "record_id": "FS-004893",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ultramarathon; suPAR and CRP pre/post-race"
+ },
+ {
+  "record_id": "FS-004894",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "4-month training; resting adipose measures, no bout"
+ },
+ {
+  "record_id": "FS-004895",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exercise challenge; IL-13/TARC/leukotrienes; controls separable"
+ },
+ {
+  "record_id": "FS-004896",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ultramarathon; CRP, CK pre/post/24 h"
+ },
+ {
+  "record_id": "FS-004897",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "type 1 diabetes cohort; clinical population"
+ },
+ {
+  "record_id": "FS-004898",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "60-min treadmill; caffeine vs placebo; cytokines"
+ },
+ {
+  "record_id": "FS-004900",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "resting hypoxia intervention; training not bout-tied"
+ },
+ {
+  "record_id": "FS-004901",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "injury survey; no immune biomarker sampling"
+ },
+ {
+  "record_id": "FS-004902",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "75-km cycling; flavonoid vs placebo; inflammasome cytokines"
+ },
+ {
+  "record_id": "FS-004903",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "dance class bout; lymphocyte activation, CD62L"
+ }
+]

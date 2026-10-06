@@ -1,0 +1,336 @@
+[
+ {
+  "record_id": "FS-009549",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "combat simulation bout; baseline+63h post samples; CRP measured"
+ },
+ {
+  "record_id": "FS-009550",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "adult rats, stroke model; no human data"
+ },
+ {
+  "record_id": "FS-009551",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "U-21 junior players; adulthood not established, stratum unclear"
+ },
+ {
+  "record_id": "FS-009554",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "160-km rowing; pre/post CRP, IL-6, TNF-alpha"
+ },
+ {
+  "record_id": "FS-009555",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat xenon-liposome antidepressant study"
+ },
+ {
+  "record_id": "FS-009556",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "banana supplementation trial; exercise test; IL-23; timing unclear"
+ },
+ {
+  "record_id": "FS-009557",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat sequential stress; PVN IL-1beta"
+ },
+ {
+  "record_id": "FS-009560",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rabbitfish parasite infection; non-human"
+ },
+ {
+  "record_id": "FS-009561",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse muscle IL-6 knockout treadmill study"
+ },
+ {
+  "record_id": "FS-009562",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "food anaphylaxis case reports; clinical cohort, no exercise"
+ },
+ {
+  "record_id": "FS-009563",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "glutamine vs placebo; acute resistance bout; leukocyte subsets"
+ },
+ {
+  "record_id": "FS-009564",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "older adults with/without T2DM; acute strength; whole-blood miRNA"
+ },
+ {
+  "record_id": "FS-009565",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse serum/muscle cytokine profiling"
+ },
+ {
+  "record_id": "FS-009566",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Wingate; pre/post WBC, neutrophils, lymphocytes"
+ },
+ {
+  "record_id": "FS-009569",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mice and splenocytes; anti-fatigue dipeptides"
+ },
+ {
+  "record_id": "FS-009570",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "type 1 diabetes athletes; no healthy stratum"
+ },
+ {
+  "record_id": "FS-009571",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "sickle cell disease mice; neutrophils"
+ },
+ {
+  "record_id": "FS-009572",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "murine myocarditis STAT3 model"
+ },
+ {
+  "record_id": "FS-009573",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "RCT protocol description; no results"
+ },
+ {
+  "record_id": "FS-009575",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rats; high-fat diet, exercise, adipose inflammation"
+ },
+ {
+  "record_id": "FS-009579",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "post-CABG clinical cohort; 8-week rehab, no bout sampling"
+ },
+ {
+  "record_id": "FS-009580",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "rheumatoid arthritis cohort; no healthy stratum"
+ },
+ {
+  "record_id": "FS-009582",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle NF-kB only; protein-synthesis objective, no immune measure"
+ },
+ {
+  "record_id": "FS-009583",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mice; cigarette smoke COPD model"
+ },
+ {
+  "record_id": "FS-009585",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "rats; epilepsy/agomelatine; no exercise exposure"
+ },
+ {
+  "record_id": "FS-009590",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "ITB surgery outcomes; clinical cohort, no immune measure"
+ },
+ {
+  "record_id": "FS-009591",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "wheat gliadin proteomics; no human exercise data"
+ },
+ {
+  "record_id": "FS-009592",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rats; fermented milk supplement; intestinal microbiota"
+ },
+ {
+  "record_id": "FS-009593",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "leg-press intensity groups; baseline and 24-72h CRP"
+ },
+ {
+  "record_id": "FS-009594",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mice; capillarisin; muscle MAPK/NF-kB"
+ },
+ {
+  "record_id": "FS-009596",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "type 2 diabetes cohort; training snapshots, no healthy stratum"
+ },
+ {
+  "record_id": "FS-009598",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "elite youth players 15.8 y; stated under-18 cohort"
+ },
+ {
+  "record_id": "FS-009602",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review of DOMS pathogenesis"
+ },
+ {
+  "record_id": "FS-009605",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "clinical review of exercise-induced bronchoconstriction"
+ },
+ {
+  "record_id": "FS-009606",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mice/myotubes; gp130 mitochondrial quality control"
+ },
+ {
+  "record_id": "FS-009614",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mice and cultured cells; myonectin ischemia-reperfusion"
+ },
+ {
+  "record_id": "FS-009615",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "training-volume increase; leukogram; bout sampling timing unclear"
+ },
+ {
+  "record_id": "FS-009621",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rats; macadamia oil; muscle cytokines"
+ },
+ {
+  "record_id": "FS-009622",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "carbohydrate vs placebo; training session; salivary IgA"
+ },
+ {
+  "record_id": "FS-009630",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mice; Kupffer cell phagocytosis, endotoxin"
+ }
+]

@@ -1,0 +1,31 @@
+[
+ {
+  "record_id": "FS-015748",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Rat pituitary-testis cytology after gonadectomy; animal, no exercise"
+ },
+ {
+  "record_id": "FS-015749",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Gymnastic bout, leucocyte/lymphocyte rise in healthy students; repeated bouts"
+ },
+ {
+  "record_id": "FS-015750",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Animal diaphragm lymphatic absorption experiments; no human immune data"
+ }
+]

@@ -1,0 +1,332 @@
+[
+ {
+  "record_id": "FS-005073",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "murine/in-vitro muscle; no human data"
+ },
+ {
+  "record_id": "FS-005074",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "mean-2SD below 18 (17.6); monocyte TNFR/TNF"
+ },
+ {
+  "record_id": "FS-005075",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "food-allergy OIT patients; chart review"
+ },
+ {
+  "record_id": "FS-005076",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "beverage crossover; neutrophil function; age unstated"
+ },
+ {
+  "record_id": "FS-005079",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "BFR vs control; WBC/CD34 counts; ages 20-39"
+ },
+ {
+  "record_id": "FS-005080",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "post-myocardial infarction patients"
+ },
+ {
+  "record_id": "FS-005083",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "purinergic enzymes + TNF/IL-8; age unstated"
+ },
+ {
+  "record_id": "FS-005085",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "CRP heritability analysis; no exercise exposure"
+ },
+ {
+  "record_id": "FS-005086",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon histamine/tryptase; age unstated"
+ },
+ {
+  "record_id": "FS-005087",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T1DM + separable controls; cfDNA/NETs; age unstated"
+ },
+ {
+  "record_id": "FS-005088",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "judo + cryostimulation; IL-15; age unstated"
+ },
+ {
+  "record_id": "FS-005089",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "mean-2SD below 18 (16); cytokine response"
+ },
+ {
+  "record_id": "FS-005090",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "obese + lean groups; PTX3; age unstated"
+ },
+ {
+  "record_id": "FS-005092",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "fish-oil placebo RCT; IL-6; age unstated"
+ },
+ {
+  "record_id": "FS-005095",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle PGE2/COX only; no immune measure"
+ },
+ {
+  "record_id": "FS-005096",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIT bouts; WBC/lymphocytes; age 24.3\u00b11.4 adult"
+ },
+ {
+  "record_id": "FS-005098",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "platelets/coagulation/fibrinolysis; no immune measure"
+ },
+ {
+  "record_id": "FS-005099",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cortisol/soreness only; no immune measure"
+ },
+ {
+  "record_id": "FS-005100",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "vascular stiffness only; no immune measure"
+ },
+ {
+  "record_id": "FS-005101",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "COPD patients"
+ },
+ {
+  "record_id": "FS-005102",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "bioinformatics datasets; no original human data"
+ },
+ {
+  "record_id": "FS-005104",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "fitness-SCD cohort; no bout sampling"
+ },
+ {
+  "record_id": "FS-005105",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CK/LDH/soreness only; no immune measure"
+ },
+ {
+  "record_id": "FS-005107",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle NF-kB/IL1R signaling; no immune-cell measure"
+ },
+ {
+  "record_id": "FS-005108",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "vaccine/cytokine x exercise crossover; age unstated"
+ },
+ {
+  "record_id": "FS-005109",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "sprinters 17-28; pooled biopsies; no adult stratum"
+ },
+ {
+  "record_id": "FS-005111",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "COPD patients; iloprost trial"
+ },
+ {
+  "record_id": "FS-005112",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CKD dialysis patients"
+ },
+ {
+  "record_id": "FS-005115",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "postmenopausal breast-cancer cohort"
+ },
+ {
+  "record_id": "FS-005117",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "7-wk training pre/post; no bout sampling"
+ },
+ {
+  "record_id": "FS-005118",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "post-marathon endotoxin/IgG; age unstated"
+ },
+ {
+  "record_id": "FS-005119",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "air quality vs performance; no immune sampling"
+ },
+ {
+  "record_id": "FS-005122",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "altitude/hypoxia treadmill; WBC; age unstated"
+ },
+ {
+  "record_id": "FS-005123",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "mean-2SD below 18 (17.0); CRP during march"
+ },
+ {
+  "record_id": "FS-005125",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "heat/menstrual phases; IL-6/hepcidin; age 37\u00b17"
+ },
+ {
+  "record_id": "FS-005126",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "CAD and T2D patients"
+ },
+ {
+  "record_id": "FS-005128",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "hesperidin RCT; MCP-1; age unstated"
+ },
+ {
+  "record_id": "FS-005129",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "NET markers after three bouts; age unstated"
+ },
+ {
+  "record_id": "FS-005130",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "resting cross-sectional training groups; no bout"
+ },
+ {
+  "record_id": "FS-005131",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "rat swim-training model"
+ }
+]

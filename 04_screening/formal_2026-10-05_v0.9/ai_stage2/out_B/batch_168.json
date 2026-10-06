@@ -1,0 +1,328 @@
+[
+ {
+  "record_id": "FS-008682",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "obese high-breast-cancer-risk cohort; 12-wk training pre/post only"
+ },
+ {
+  "record_id": "FS-008685",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "treadmill test pre/immediate/1h; MPO neutrophil enzyme; healthy middle-aged men"
+ },
+ {
+  "record_id": "FS-008687",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat osteoarthritis model and chondrocyte cultures; no human data"
+ },
+ {
+  "record_id": "FS-008688",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "cold plasma food decontamination; bacteria in vitro only"
+ },
+ {
+  "record_id": "FS-008689",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "rheumatoid arthritis clinical cohort; accelerometry only, no immune sampling"
+ },
+ {
+  "record_id": "FS-008690",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cohort defined by obesity; acute strength bout otherwise eligible"
+ },
+ {
+  "record_id": "FS-008693",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "single myelodysplastic-syndrome patient case report; clinical population"
+ },
+ {
+  "record_id": "FS-008694",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "skin humidity sensor engineering; no immune measure"
+ },
+ {
+  "record_id": "FS-008695",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "systematic review of carbohydrate nutrition"
+ },
+ {
+  "record_id": "FS-008696",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "8-year-old boy; food-dependent exercise-induced anaphylaxis case report"
+ },
+ {
+  "record_id": "FS-008698",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "players mean 17.54±0.78 y, adult not established; leukocytes measured"
+ },
+ {
+  "record_id": "FS-008699",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "swimmers 11-25 y pooled; posture outcomes, no immune measure"
+ },
+ {
+  "record_id": "FS-008701",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "IL-6 knockout mice and C2C12 myotubes only"
+ },
+ {
+  "record_id": "FS-008702",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute and chronic running effects on leukocyte subsets; elite adults"
+ },
+ {
+  "record_id": "FS-008703",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat forced-swim stress and formalin pain model"
+ },
+ {
+  "record_id": "FS-008704",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "cancer patients on checkpoint inhibitors; clinical cohort"
+ },
+ {
+  "record_id": "FS-008706",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "composite lymphoma case report; malignant clinical population"
+ },
+ {
+  "record_id": "FS-008707",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat osteoarthritis model plus human chondrocytes in vitro"
+ },
+ {
+  "record_id": "FS-008712",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "fasting samples before/after summer training only; no bout-tied sampling"
+ },
+ {
+  "record_id": "FS-008714",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "obesity-defined cohort; 12-wk HIIT pre/post, no bout sample"
+ },
+ {
+  "record_id": "FS-008716",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "EIMD protocol; placebo-controlled; IL-6/IL-10/TNF-alpha to 96h"
+ },
+ {
+  "record_id": "FS-008717",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "ectopic thoracic meningioma case report; clinical population"
+ },
+ {
+  "record_id": "FS-008719",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "essential oil tested in rats and rat brain tissue"
+ },
+ {
+  "record_id": "FS-008721",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "CD-1 mice with TLR7 agonist model; no human data"
+ },
+ {
+  "record_id": "FS-008722",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "altitude training; Bruce test with rest and immediate post-exercise CBC/WBC"
+ },
+ {
+  "record_id": "FS-008723",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Lac-Phe feeding/obesity metabolite; murine mechanistic; no immune objective"
+ },
+ {
+  "record_id": "FS-008724",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Alzheimer patients and AD mice; clinical population"
+ },
+ {
+  "record_id": "FS-008725",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative microbiota/physical-loading review; no original data or methods"
+ },
+ {
+  "record_id": "FS-008727",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "kidney transplant recipients; immunosuppressed clinical cohort"
+ },
+ {
+  "record_id": "FS-008728",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "C2C12 cells and mice heat exposure; no human data"
+ },
+ {
+  "record_id": "FS-008729",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "systematic review of cold therapy in sports"
+ },
+ {
+  "record_id": "FS-008732",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "single EMS session with pre/post IL-6; non-obese older adults"
+ },
+ {
+  "record_id": "FS-008733",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "swimming crab heat-shock proteins; invertebrate in vitro"
+ },
+ {
+  "record_id": "FS-008736",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cohort recruited as obese women; cytokines otherwise eligible"
+ },
+ {
+  "record_id": "FS-008737",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "hypobaric hypoxia with two exercise bouts; cytokines and LBP pre/post"
+ },
+ {
+  "record_id": "FS-008738",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "IL-6/TNF-alpha vs performance prediction; sampling-to-exercise relation unclear"
+ },
+ {
+  "record_id": "FS-008739",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat acute kidney injury with diet regimens; no human data"
+ },
+ {
+  "record_id": "FS-008740",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "orienteering race; adolescent/adult strata reported separately; leukocytes"
+ },
+ {
+  "record_id": "FS-008741",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative myokine overview; no original data"
+ },
+ {
+  "record_id": "FS-008742",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "athletes mean age 15.3±1.3 y; stated adolescent cohort"
+ }
+]

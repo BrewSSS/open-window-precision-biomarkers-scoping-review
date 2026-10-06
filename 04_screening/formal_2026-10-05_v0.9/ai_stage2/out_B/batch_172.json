@@ -1,0 +1,326 @@
+[
+ {
+  "record_id": "FS-008980",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review; postbiotics, microbiome and immunity"
+ },
+ {
+  "record_id": "FS-008981",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Metabolic-syndrome patients; clinical metabolic cohort, PBMC mitochondria"
+ },
+ {
+  "record_id": "FS-008982",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT02"
+  ],
+  "study_type_hint": "other",
+  "note": "Research protocol; rat experiment, no human data"
+ },
+ {
+  "record_id": "FS-008983",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Cardiac sarcoidosis case report; clinical patient"
+ },
+ {
+  "record_id": "FS-008984",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Work-group report; EIB diagnosis/management review"
+ },
+ {
+  "record_id": "FS-008985",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Systematic review; omega-3 and DOMS"
+ },
+ {
+  "record_id": "FS-008988",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mice LPS depression model, dexamethasone; animal-only"
+ },
+ {
+  "record_id": "FS-008992",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Measles complication case; infected 17-year-old"
+ },
+ {
+  "record_id": "FS-008994",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Half-marathon; IL-6/TNFa/CX3CL1 pre, post, 24h"
+ },
+ {
+  "record_id": "FS-008995",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "14-month-old developmental-delay case report; pediatric"
+ },
+ {
+  "record_id": "FS-008998",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "COPD pulmonary rehabilitation; oxidative-stress markers only"
+ },
+ {
+  "record_id": "FS-009001",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Sedentary time vs CRP/cytokines; resting cross-section, background pattern"
+ },
+ {
+  "record_id": "FS-009004",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Prolonged cycling; cTnI/MDA focus, neutrophil count reported"
+ },
+ {
+  "record_id": "FS-009009",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Diet-induced-obesity mice, EIMD immunoproteasome; animal-only"
+ },
+ {
+  "record_id": "FS-009011",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Weight-loaded swimming rats, ginseng; animal-only"
+ },
+ {
+  "record_id": "FS-009012",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "DOMS via TLR4/IL-6/TNF pathways in mice; animal-only"
+ },
+ {
+  "record_id": "FS-009014",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Downhill-running rats, orange peel IL-1RA; animal-only"
+ },
+ {
+  "record_id": "FS-009015",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Exhaustive-treadmill rats, hydrogen gas; animal-only"
+ },
+ {
+  "record_id": "FS-009016",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Feline CBC method comparison; animal-only"
+ },
+ {
+  "record_id": "FS-009024",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Obese knee-osteoarthritis patients; clinical cohort, single bout"
+ },
+ {
+  "record_id": "FS-009025",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Chamomile/ibuprofen RCT; CK, AST, ALT only"
+ },
+ {
+  "record_id": "FS-009026",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Commentary on interval training during COVID isolation"
+ },
+ {
+  "record_id": "FS-009028",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Creatine kinase by ACTN3 genotype; no immune measure"
+ },
+ {
+  "record_id": "FS-009029",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Obese mice, aerobic training plus oak extract; animal-only"
+ },
+ {
+  "record_id": "FS-009032",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "CUMS mice, running, gut-brain axis; animal-only"
+ },
+ {
+  "record_id": "FS-009034",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mice pre-operative exercise, Kupffer cells; animal-only"
+ },
+ {
+  "record_id": "FS-009035",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Sprint vs endurance session; Foxp3+ Tregs, cytokines pre/post"
+ },
+ {
+  "record_id": "FS-009037",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Critically ill ventilated ICU patients; passive cycling, IL-8/IL-10"
+ },
+ {
+  "record_id": "FS-009038",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative COVID running guidance; open-window discussion, no data"
+ },
+ {
+  "record_id": "FS-009039",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Tumor growth in mice, CD8 T cells; human metabolite data only"
+ },
+ {
+  "record_id": "FS-009040",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Master athletes resting comparison; IL-18/TGF-beta, background pattern"
+ },
+ {
+  "record_id": "FS-009042",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Cancer patients on anthracycline; clinical cohort, feasibility study"
+ },
+ {
+  "record_id": "FS-009044",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 26.9+/-4.7y, mean-2SD=17.5<18, no stated range; CRP measured"
+ },
+ {
+  "record_id": "FS-009046",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Oat beta-glucan vs placebo; myeloperoxidase after leg-extension stress"
+ },
+ {
+  "record_id": "FS-009050",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIV-infected patients case study; clinical infected cohort"
+ },
+ {
+  "record_id": "FS-009053",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Futsal recovery modes; CK/lactate/perception only, no immune measure"
+ },
+ {
+  "record_id": "FS-009055",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "SLE/HFpEF case report; belimumab treatment"
+ },
+ {
+  "record_id": "FS-009056",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "5xFAD Alzheimer mice, wheel running; animal-only"
+ },
+ {
+  "record_id": "FS-009057",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mice endurance training, satellite cells; animal-only"
+ },
+ {
+  "record_id": "FS-009058",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "UUO mice, kidney fibrosis, irisin crosstalk; animal-only"
+ }
+]

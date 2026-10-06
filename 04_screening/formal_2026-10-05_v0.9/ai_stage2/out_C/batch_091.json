@@ -1,0 +1,334 @@
+[
+ {
+  "record_id": "FS-004396",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "haemophilia A patient cohort; 6-wk training pre/post, no bout"
+ },
+ {
+  "record_id": "FS-004397",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT08"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "weight-loss+training; 3 fasting snapshots, no bout-linked sampling; diet confounded"
+ },
+ {
+  "record_id": "FS-004398",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "myositis patient biopsies/in-vitro; no monitored exercise exposure"
+ },
+ {
+  "record_id": "FS-004399",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age 22.4\u00b14.1 y: mean-2SD=14.2<18; adulthood not established"
+ },
+ {
+  "record_id": "FS-004400",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative NSAID/sports-injury piece; no original data"
+ },
+ {
+  "record_id": "FS-004401",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "copeptin endocrine outcome only; IL-1 blocked, not measured"
+ },
+ {
+  "record_id": "FS-004402",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "range 17-21 y pooled; no separable adult stratum"
+ },
+ {
+  "record_id": "FS-004403",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "n=3 elite karate; exhaustive test + championship; eligible bout design"
+ },
+ {
+  "record_id": "FS-004404",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "HIIT\u00b1CWI; CAC/CEC at sessions 1 and 13; immune-link uncertain"
+ },
+ {
+  "record_id": "FS-004405",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "hot vs temperate cycling; cytokines/endotoxin pre/post"
+ },
+ {
+  "record_id": "FS-004406",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon enzymes; CRP measured (null) - eligible immune measure"
+ },
+ {
+  "record_id": "FS-004407",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "menstrual-phase crossover 90-min run; IL-6 at IP/24/72h"
+ },
+ {
+  "record_id": "FS-004410",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle function/soreness outcomes only; no immune measure"
+ },
+ {
+  "record_id": "FS-004411",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "altitude field monitoring; no exercise bout; EPO/VEGF not immune"
+ },
+ {
+  "record_id": "FS-004413",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "FATmax vs AT 45-min bouts; IL-15 among myokine panel"
+ },
+ {
+  "record_id": "FS-004414",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "incremental test; EVs from leukocytes/platelets/endothelium; immediate post sample"
+ },
+ {
+  "record_id": "FS-004415",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "blackcurrant extract pre-row, placebo-controlled; neutrophil phagocytosis/CR3"
+ },
+ {
+  "record_id": "FS-004416",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "ex-vivo human bronchi organ baths; mannitol challenge, no exercise"
+ },
+ {
+  "record_id": "FS-004417",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon; leukocyte iron-gene mRNA + CRP, 4 timepoints"
+ },
+ {
+  "record_id": "FS-004418",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "prediabetes vs controls; PBMC autophagy; immune link borderline; strata separable"
+ },
+ {
+  "record_id": "FS-004419",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "salivary NO after 60-min ride vs rest; innate/antimicrobial role unclear"
+ },
+ {
+  "record_id": "FS-004420",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "endothelial c-miRNAs, vascular objective; no immune measure"
+ },
+ {
+  "record_id": "FS-004421",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "heat-loss physiology (CVC/sweat); no immune measure"
+ },
+ {
+  "record_id": "FS-004422",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "squat bout \u00b1CWI; IL-6/TNF-a 5-60 min post"
+ },
+ {
+  "record_id": "FS-004423",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age 32\u00b112 y: mean-2SD=8<18; adulthood not established"
+ },
+ {
+  "record_id": "FS-004425",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT08",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "smoking+cycling combined protocol; no smoke-free/exercise-only contrast"
+ },
+ {
+  "record_id": "FS-004426",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "three-study series; treadmill bout with tear AMP pre/post"
+ },
+ {
+  "record_id": "FS-004427",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "100-km race; cytokine mRNA pre/12h; vitamin-D arms separable"
+ },
+ {
+  "record_id": "FS-004428",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "HIV clinical cohort; myokines/habitual activity, no immune endpoint"
+ },
+ {
+  "record_id": "FS-004429",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "resting CRF strata + 1-wk HIIT snapshot; bout timing unclear"
+ },
+ {
+  "record_id": "FS-004430",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon hematology/iron by ACTN3; immune measure unclear"
+ },
+ {
+  "record_id": "FS-004431",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age 28\u00b18 y: mean-2SD=12<18; IL-6 measured"
+ },
+ {
+  "record_id": "FS-004432",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ages 22.6\u00b12.7/22.3\u00b12.4: mean-2SD<18 both groups"
+ },
+ {
+  "record_id": "FS-004433",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exhaustive bout; lymphocyte DNA breaks/PARP; immune-cell measure borderline"
+ },
+ {
+  "record_id": "FS-004434",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "resistance bout; muscle lipidomics of eicosanoids/SPMs, inflammatory objective"
+ },
+ {
+  "record_id": "FS-004436",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "WDEIA patient case series; allergic clinical cohort, anaphylaxis events"
+ },
+ {
+  "record_id": "FS-004437",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age 21.6\u00b13.4 y: mean-2SD=14.8<18; IgA measured"
+ },
+ {
+  "record_id": "FS-004438",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "step-reduction inactivity intervention; metabolomics; no bout, no immune measure"
+ },
+ {
+  "record_id": "FS-004439",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "plyometric bout \u00b1HMB-FA; WBC count with placebo control"
+ },
+ {
+  "record_id": "FS-004441",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exhaled breath temperature after CPET; no immune measure"
+ }
+]

@@ -1,0 +1,331 @@
+[
+ {
+  "record_id": "FS-008103",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "breath hydrogen only, no immune measure"
+ },
+ {
+  "record_id": "FS-008107",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "post-CABG clinical cohort, no immune measure"
+ },
+ {
+  "record_id": "FS-008110",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "placebo-controlled eccentric bout; HMGB1 mediator; adults 18-21"
+ },
+ {
+  "record_id": "FS-008111",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "porcine cartilage explants in vitro only"
+ },
+ {
+  "record_id": "FS-008112",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "healthy controls separable; IL-6/TNF-alpha; single HIIT pre/post"
+ },
+ {
+  "record_id": "FS-008113",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review of ISM1 adipokine, no original data"
+ },
+ {
+  "record_id": "FS-008114",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "comprehensive review, plant polysaccharides"
+ },
+ {
+  "record_id": "FS-008118",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "abstract empty; title suggests acute IgA study"
+ },
+ {
+  "record_id": "FS-008121",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "C57BL/6J mice, T2DM model, no humans"
+ },
+ {
+  "record_id": "FS-008127",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "placebo RCT; HMGB1 alarmin; students age unstated, advance"
+ },
+ {
+  "record_id": "FS-008129",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "SIRT1/EPC/NO vascular measures, no immune measure"
+ },
+ {
+  "record_id": "FS-008130",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "type-1 diabetes clinical cohort"
+ },
+ {
+  "record_id": "FS-008132",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "single-athlete case; lymphocyte subsets after identified championships"
+ },
+ {
+  "record_id": "FS-008133",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "abstract empty; title names cytokines after exercise"
+ },
+ {
+  "record_id": "FS-008134",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "TNF-alpha after bout; placebo arm; healthy men 20-25"
+ },
+ {
+  "record_id": "FS-008139",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "abstract empty; NK cytotoxicity in title"
+ },
+ {
+  "record_id": "FS-008142",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "breast-cancer patients post-chemoradiation"
+ },
+ {
+  "record_id": "FS-008145",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "review of ageing muscle-bone factors"
+ },
+ {
+  "record_id": "FS-008155",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "youth-team age ambiguous not stated <18; IL-6 measured"
+ },
+ {
+  "record_id": "FS-008156",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CRP immune measure; placebo arm; HIT sessions pre/post"
+ },
+ {
+  "record_id": "FS-008157",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "IL-6/TNF-alpha/WBC; placebo arm; pre/post training sampling"
+ },
+ {
+  "record_id": "FS-008159",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "MPTP Parkinson mice; microglia; no humans"
+ },
+ {
+  "record_id": "FS-008164",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "TCM anti-fatigue animal model, network pharmacology"
+ },
+ {
+  "record_id": "FS-008169",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mice adipose tissue macrophages, no humans"
+ },
+ {
+  "record_id": "FS-008170",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle damage/soreness only, no immune measure"
+ },
+ {
+  "record_id": "FS-008171",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "stroke mice Treg IL-10, no humans"
+ },
+ {
+  "record_id": "FS-008172",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6 after matches; immersion vs control; pre-match baseline"
+ },
+ {
+  "record_id": "FS-008175",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ultramarathon case; NGAL ambiguous immune link, doubt advances"
+ },
+ {
+  "record_id": "FS-008176",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat chronic fatigue model, astaxanthin"
+ },
+ {
+  "record_id": "FS-008178",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "dose-ranging placebo RCT; TNF-alpha/IL-6; adults 22.3y"
+ },
+ {
+  "record_id": "FS-008179",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CRP after basketball game; professionals vs recreational"
+ },
+ {
+  "record_id": "FS-008181",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "recurrent pericarditis patient case report"
+ },
+ {
+  "record_id": "FS-008182",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Wistar rats ubiquinol overuse model"
+ },
+ {
+  "record_id": "FS-008183",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "experimental animal cardiac remodeling, spirulina"
+ },
+ {
+  "record_id": "FS-008184",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age 27.7+/-6.3 fails mean-2SD adult rule; cytokines before/after match"
+ },
+ {
+  "record_id": "FS-008193",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6 after bout; passive-recovery control; ages 18-24"
+ },
+ {
+  "record_id": "FS-008194",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "lymphedema mouse model, no humans"
+ },
+ {
+  "record_id": "FS-008195",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "BALB/c mice swimming myokines"
+ },
+ {
+  "record_id": "FS-008196",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review, ginsenoside Rg1 framework"
+ },
+ {
+  "record_id": "FS-008197",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse renal macrophages, no humans"
+ }
+]

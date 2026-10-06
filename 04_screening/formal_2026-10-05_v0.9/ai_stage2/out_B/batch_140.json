@@ -1,0 +1,337 @@
+[
+ {
+  "record_id": "FS-006883",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CPET bout; urine proteome; neutrophil degranulation pathways"
+ },
+ {
+  "record_id": "FS-006885",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "repeated dives; salivary IL-6/TNF-a pre/post sessions"
+ },
+ {
+  "record_id": "FS-006887",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "downhill run; inflammation assessed, measure unspecified"
+ },
+ {
+  "record_id": "FS-006888",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cycling vs rest; CTRP3/CTRP9/FSTL1 cytokines"
+ },
+ {
+  "record_id": "FS-006889",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ME/CFS cases; separable healthy control stratum"
+ },
+ {
+  "record_id": "FS-006891",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "tocilizumab placebo RCT; IL-6/IL-1RA/IL-10 recovery"
+ },
+ {
+  "record_id": "FS-006893",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle RNA-seq; post-hoc innate-immunity enrichment only"
+ },
+ {
+  "record_id": "FS-006894",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "NGAL/creatinine kidney markers only; no immune objective"
+ },
+ {
+  "record_id": "FS-006895",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "post-COVID infection cohort; CPET only, no immune measure"
+ },
+ {
+  "record_id": "FS-006896",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "in vitro/in vivo loading models; OA cartilage explants"
+ },
+ {
+  "record_id": "FS-006897",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cfDNA as stress marker only; no immune measure/objective"
+ },
+ {
+  "record_id": "FS-006899",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "step test; multiplex cytokines rest/2h/48h"
+ },
+ {
+  "record_id": "FS-006900",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "correction notice, not original research"
+ },
+ {
+  "record_id": "FS-006902",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "methods protocol paper, no original data"
+ },
+ {
+  "record_id": "FS-006907",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "U-20 players; ages unstated; adulthood unestablishable"
+ },
+ {
+  "record_id": "FS-006909",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "habitual-activity groups; resting IL-6; no bout sampling"
+ },
+ {
+  "record_id": "FS-006910",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "hs-CRP game-day -1/+1/+2/+3 across cycle"
+ },
+ {
+  "record_id": "FS-006914",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "MPO+ phagocyte infiltration; placebo crossover biopsies"
+ },
+ {
+  "record_id": "FS-006917",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "chronic low back pain cohort; sucrose challenge, no exercise"
+ },
+ {
+  "record_id": "FS-006918",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "type 2 diabetes cohort; 4-wk program resting SII"
+ },
+ {
+  "record_id": "FS-006919",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "repeated sprints; CRP to 48h"
+ },
+ {
+  "record_id": "FS-006921",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CPET; eicosanoid lipid mediators, immune relevance stated"
+ },
+ {
+  "record_id": "FS-006922",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "COPD patient cohort; endothelial EVs"
+ },
+ {
+  "record_id": "FS-006923",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Graves' patients; separable healthy control stratum"
+ },
+ {
+  "record_id": "FS-006925",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "LCN2 as cardiometabolic outcome only; no immune objective"
+ },
+ {
+  "record_id": "FS-006927",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon; IL-1b/TNF-a/IL-6/LPS pre/post; placebo arm"
+ },
+ {
+  "record_id": "FS-006928",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "serum proteomics; IL-6/IL-6R; cancer-cell in vitro adjunct"
+ },
+ {
+  "record_id": "FS-006929",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exhaustive cycling vs control; leukocytes/NLR to 48h"
+ },
+ {
+  "record_id": "FS-006930",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cycling test; CRP/IL-6 measured"
+ },
+ {
+  "record_id": "FS-006931",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "axSpA; separable matched healthy controls; HIIT bout"
+ },
+ {
+  "record_id": "FS-006932",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse AF model; no human data"
+ },
+ {
+  "record_id": "FS-006933",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT02"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "mouse mechanistic study; human part active-vs-sedentary monocytes, no bout"
+ },
+ {
+  "record_id": "FS-006934",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "POMC-sEV endocrine objective; no immune measure"
+ },
+ {
+  "record_id": "FS-006935",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "downhill run; cfDNA plus chemokines MIP-1a/IP-10"
+ },
+ {
+  "record_id": "FS-006936",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "mouse trained-immunity study; human part AMI outcomes, no immune measure"
+ },
+ {
+  "record_id": "FS-006938",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2-h cycling; T-cell/PBMC bioenergetics, flow cytometry"
+ },
+ {
+  "record_id": "FS-006940",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "immune methylation pre/post training only; no bout sampling"
+ },
+ {
+  "record_id": "FS-006941",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "COPD patient cohort; 12-wk intervention"
+ },
+ {
+  "record_id": "FS-006942",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CE/IE trials; salivary HHV-6 and serum IL-6"
+ },
+ {
+  "record_id": "FS-006944",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "youth soccer players stated; <18 cohort"
+ }
+]

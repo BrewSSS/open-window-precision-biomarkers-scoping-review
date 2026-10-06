@@ -1,0 +1,339 @@
+[
+ {
+  "record_id": "FS-003915",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "In-brief clinical review of cryotherapy; no exercise exposure or immune measure"
+ },
+ {
+  "record_id": "FS-003916",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Review of measles eradication programmes; no exercise, no immune measure"
+ },
+ {
+  "record_id": "FS-003917",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Human obese women arm; NK cells immediately after HIIT bout"
+ },
+ {
+  "record_id": "FS-003918",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Cross-sectional questionnaire; no bout-linked immune sampling"
+ },
+ {
+  "record_id": "FS-003919",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Placebo crossover; NLR after exhaustive cycling; adults"
+ },
+ {
+  "record_id": "FS-003920",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Two SIE bouts same men; IL-6/IL-10/TNF-alpha to 48h"
+ },
+ {
+  "record_id": "FS-003921",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy athletes and asthmatics separable; periostin around treadmill challenge"
+ },
+ {
+  "record_id": "FS-003922",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "EV proteomics after cycling; no immune objective or measure"
+ },
+ {
+  "record_id": "FS-003924",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Zebrafish-only exercise study"
+ },
+ {
+  "record_id": "FS-003925",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Type 2 diabetic outpatient cohort"
+ },
+ {
+  "record_id": "FS-003926",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Dive bout; PBMC antioxidant/SIRT measures; immune link arguable"
+ },
+ {
+  "record_id": "FS-003927",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Two disabled rowers; exhaustive rowing test; lymphocyte subsets"
+ },
+ {
+  "record_id": "FS-003928",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "COHb/heme oxygenase only; IL-682 is instrument name"
+ },
+ {
+  "record_id": "FS-003929",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "8-week training; resting pre/post snapshot; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-003930",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "GH/IGF-1 pathway only; endocrine not immune objective"
+ },
+ {
+  "record_id": "FS-003931",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "503 km cycling case; inflammatory response/haematology plausibly immune"
+ },
+ {
+  "record_id": "FS-003933",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Nitrate ingestion at rest; no exercise bout in main design"
+ },
+ {
+  "record_id": "FS-003934",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cfDNA after sprints/game; immune relevance arguable, advance"
+ },
+ {
+  "record_id": "FS-003935",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Heat-stress 2h runs; IL-6 family cytokines pre/post/1h"
+ },
+ {
+  "record_id": "FS-003936",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rat CCl4 liver-injury metabolomics; no human data"
+ },
+ {
+  "record_id": "FS-003937",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse osteoarthritis injury model; no human data"
+ },
+ {
+  "record_id": "FS-003938",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Seasonal resting comparison in skaters; no bout-linked immune sampling"
+ },
+ {
+  "record_id": "FS-003939",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Hospitalised COPD exacerbation cohort; clinical population"
+ },
+ {
+  "record_id": "FS-003940",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Hypoxic training; performance, EPO, hematocrit only; no immune measure"
+ },
+ {
+  "record_id": "FS-003941",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "GDF15 metabolic factor; no immune objective or measure"
+ },
+ {
+  "record_id": "FS-003942",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Workplace PA programme; resting baseline/8wk/15mo snapshots; no bout sampling"
+ },
+ {
+  "record_id": "FS-003943",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Heat acclimation bouts; IL-6/CRP pre/post across identified sessions"
+ },
+ {
+  "record_id": "FS-003945",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2h warm/temperate runs; cytokines and endotoxin pre/post"
+ },
+ {
+  "record_id": "FS-003946",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Obese hypertensive men; placebo crossover; cytokines around resistance bout"
+ },
+ {
+  "record_id": "FS-003947",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ME/CFS vs sedentary controls separable; cytokines pre/18h post CPET"
+ },
+ {
+  "record_id": "FS-003948",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "TT before/after intensified training; salivary FLC, immunoglobulins"
+ },
+ {
+  "record_id": "FS-003949",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ZnO vs filtered-air control; cycling bout; neutrophils, inflammatory markers"
+ },
+ {
+  "record_id": "FS-003950",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Diagnostic-concept essay on atherosclerosis; no original data"
+ },
+ {
+  "record_id": "FS-003951",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon hot vs temperate; immune activation, haematology; day-before baseline"
+ },
+ {
+  "record_id": "FS-003952",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise challenge; PF4/beta-TG chemokines; non-asthmatic volunteers separable"
+ },
+ {
+  "record_id": "FS-003954",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Suspected-CAD angiography cohort; no separable healthy stratum"
+ },
+ {
+  "record_id": "FS-003955",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy men; whole-body exercise/resistive breathing; lymphocyte subsets"
+ },
+ {
+  "record_id": "FS-003956",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Trail race ibuprofen vs control; haematological outcomes unspecified, advance"
+ },
+ {
+  "record_id": "FS-003957",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Spontaneously hypertensive rats; renal fibrosis; no human data"
+ },
+ {
+  "record_id": "FS-003958",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Running bouts vs rested control; DPCP cutaneous in-vivo immune response"
+ }
+]

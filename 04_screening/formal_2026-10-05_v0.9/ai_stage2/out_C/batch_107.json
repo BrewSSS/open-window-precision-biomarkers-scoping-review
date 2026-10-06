@@ -1,0 +1,326 @@
+[
+ {
+  "record_id": "FS-005179",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "myoglobin/CK/haptoglobin only; no eligible immune measure"
+ },
+ {
+  "record_id": "FS-005182",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "sulforaphane/placebo crossover; IL-6 time-course around bout"
+ },
+ {
+  "record_id": "FS-005183",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "low-intensity bout; cytokine multiplex plus serum miRNA pre-post"
+ },
+ {
+  "record_id": "FS-005185",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "runner-control stool cross-section; no bout; microbiota not immune measure"
+ },
+ {
+  "record_id": "FS-005186",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "sprint session; WBC subsets, CD34+, cytokine panel, serial sampling"
+ },
+ {
+  "record_id": "FS-005187",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "hypertension-only clinical cohort; bout with Ig/WBC measures"
+ },
+ {
+  "record_id": "FS-005188",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric bout; muscle TNF-alpha/IL-6/IL-8 expression time-course"
+ },
+ {
+  "record_id": "FS-005189",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "triathlon pre/post; plasma LPS and anti-LPS IgG"
+ },
+ {
+  "record_id": "FS-005190",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "post- vs premenopausal women; eccentric bout; IL-6/TNF-alpha/CRP"
+ },
+ {
+  "record_id": "FS-005191",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIT bout; nutrition crossover keeps pre-bout baseline; neutrophil function"
+ },
+ {
+  "record_id": "FS-005195",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-6 myokine across temperature-condition bouts; serial samples"
+ },
+ {
+  "record_id": "FS-005196",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ultramarathon pre/post; leukocyte counts"
+ },
+ {
+  "record_id": "FS-005197",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "in-silico GEO monocyte reanalysis; no original human data"
+ },
+ {
+  "record_id": "FS-005198",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Paralympic lifters; strength bouts; IL-2; recovery contrasts"
+ },
+ {
+  "record_id": "FS-005199",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "hypothesis/theory paper; no original data"
+ },
+ {
+  "record_id": "FS-005200",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "rehydration vs control after exhaustion; inflammation biomarkers"
+ },
+ {
+  "record_id": "FS-005201",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "season-end viral load/IgG cross-section; background-pattern candidate"
+ },
+ {
+  "record_id": "FS-005202",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "caffeine/placebo crossover HIIT; IL-6/IL-10 pre-post"
+ },
+ {
+  "record_id": "FS-005203",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "5-day tournament daily matches; CRP/CK; recovery contrast"
+ },
+ {
+  "record_id": "FS-005204",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "COPD patient cohort; healthy group is comparator only"
+ },
+ {
+  "record_id": "FS-005205",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "placebo-controlled supplement; exhaustive bout; IL-6/CK serial"
+ },
+ {
+  "record_id": "FS-005206",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "neuromuscular fatigue and running economy only; no immune measure"
+ },
+ {
+  "record_id": "FS-005207",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "astaxanthin training; endurance/fat-oxidation outcomes only, no immune measure"
+ },
+ {
+  "record_id": "FS-005209",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "pre-bout cycling then meal challenge; circulating miRs, immune candidates plausible"
+ },
+ {
+  "record_id": "FS-005210",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "heart-failure patient cohort; controls comparator only"
+ },
+ {
+  "record_id": "FS-005211",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "symposium proceedings; abstract empty; non-core source"
+ },
+ {
+  "record_id": "FS-005212",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "clinical overview of exercise-induced anaphylaxis; patient cases"
+ },
+ {
+  "record_id": "FS-005213",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "dog exercise regimen; animal-only"
+ },
+ {
+  "record_id": "FS-005214",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "axial spondyloarthritis clinical cohort"
+ },
+ {
+  "record_id": "FS-005215",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "transgenic mouse cholera model; no human exercise data"
+ },
+ {
+  "record_id": "FS-005216",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "half-squat bout; IL-6/IL-10/TNF-alpha, sex comparison"
+ },
+ {
+  "record_id": "FS-005217",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "GWI vs healthy; exercise challenge; PBMC RNA-seq time-course"
+ },
+ {
+  "record_id": "FS-005218",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cancer survivors vs healthy older women; MAIT mobilization; separable stratum"
+ },
+ {
+  "record_id": "FS-005219",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat traumatic brain injury model; animal-only"
+ },
+ {
+  "record_id": "FS-005220",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "capsiate/placebo; acute session cytokines pre-post training"
+ },
+ {
+  "record_id": "FS-005221",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "enthesitis ultrasound scores only; no immune-cell or mediator measure"
+ },
+ {
+  "record_id": "FS-005222",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "dive exposure; cytokine panel pre/2h post; exposure judged full text"
+ },
+ {
+  "record_id": "FS-005223",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "EPO hormone only; no immune measure"
+ },
+ {
+  "record_id": "FS-005226",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "season-long leukocyte subsets vs cumulative match time"
+ },
+ {
+  "record_id": "FS-005227",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "sleep-fragmentation crossover; bout with leukocyte counts/oxidative burst"
+ }
+]
