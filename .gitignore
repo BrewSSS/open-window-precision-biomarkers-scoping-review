@@ -70,3 +70,6 @@ __pycache__/
 # formal dedup outputs that carry abstracts (copyright text): never commit
 04_screening/formal_*/records_master.csv
 04_screening/formal_*/*abstract*
+
+# Stage-2 reviewer workbooks contain publisher abstracts (like records_master): never commit
+04_screening/formal_*/ai_stage2/*.xlsx
