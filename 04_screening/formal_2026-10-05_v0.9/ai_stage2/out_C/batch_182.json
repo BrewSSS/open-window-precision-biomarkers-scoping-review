@@ -1,0 +1,336 @@
+[
+ {
+  "record_id": "FS-009742",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "RA patient case report; no exercise bout immune sampling"
+ },
+ {
+  "record_id": "FS-009743",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle transcriptome aim; cytokines incidental, no immune objective"
+ },
+ {
+  "record_id": "FS-009749",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "acute RT session; IL-6; pre/immediate/1h samples"
+ },
+ {
+  "record_id": "FS-009757",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "PE clinical case report; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-009760",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "U-20 players mean 17.75 y; no separable adult stratum"
+ },
+ {
+  "record_id": "FS-009766",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "treadmill bouts with placebo control; CD8 apoptosis/migration"
+ },
+ {
+  "record_id": "FS-009770",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "allergy patient cohort; exercise only anaphylaxis trigger"
+ },
+ {
+  "record_id": "FS-009771",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat study; spinal IL-1beta/TNF; no humans"
+ },
+ {
+  "record_id": "FS-009773",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "graded bouts; IFN-gamma; baseline; adults 18-35"
+ },
+ {
+  "record_id": "FS-009780",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "stated review of time-of-day biochemical markers"
+ },
+ {
+  "record_id": "FS-009781",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "match bout; pre/post WBC/neutrophils; dietary association"
+ },
+ {
+  "record_id": "FS-009787",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "rat thymus doxorubicin study; no humans"
+ },
+ {
+  "record_id": "FS-009792",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "MSM trial; soreness/oxidative stress only, no immune measure"
+ },
+ {
+  "record_id": "FS-009793",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "mouse asthma model; BALF cytokines; no humans"
+ },
+ {
+  "record_id": "FS-009795",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "fermented beverage trial; metabolic markers only"
+ },
+ {
+  "record_id": "FS-009800",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "rat mammary tumor model; no humans"
+ },
+ {
+  "record_id": "FS-009803",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "stated review of equine nutraceuticals"
+ },
+ {
+  "record_id": "FS-009805",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "6-week training; WBC/platelets; bout structure unclear"
+ },
+ {
+  "record_id": "FS-009806",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Mars-500 training; T-cell immunity; bout timing unclear"
+ },
+ {
+  "record_id": "FS-009807",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "heart failure cohort; VO2peak associations only"
+ },
+ {
+  "record_id": "FS-009808",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age 23.6/29.5 with large SD; mean-2SD<18, adulthood unestablished"
+ },
+ {
+  "record_id": "FS-009812",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exhaustive strength bout; IL-6/IL-10 pre/post; ACE strata"
+ },
+ {
+  "record_id": "FS-009815",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "saffron vs implied control; acute RE bout; TNF-alpha"
+ },
+ {
+  "record_id": "FS-009817",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Wingate bouts pre/post training; IL-6; time-of-day"
+ },
+ {
+  "record_id": "FS-009819",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat spleen load-exercise study; no humans"
+ },
+ {
+  "record_id": "FS-009820",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon pre/1-2h/48h; ST2 inflammation marker; adults"
+ },
+ {
+  "record_id": "FS-009822",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review of splenic responses to exercise"
+ },
+ {
+  "record_id": "FS-009823",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "running vs playing bouts; differential leukocyte counts"
+ },
+ {
+  "record_id": "FS-009830",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "YYIRT across sleep conditions; us-CRP pre/3min post"
+ },
+ {
+  "record_id": "FS-009831",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "stated review; sickle cell oxidative stress"
+ },
+ {
+  "record_id": "FS-009834",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "children 11-13 y stated; pre/post training saliva only"
+ },
+ {
+  "record_id": "FS-009835",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "empty abstract; title suggests commentary on CWI"
+ },
+ {
+  "record_id": "FS-009836",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "mouse neutrophil-depletion study; no humans"
+ },
+ {
+  "record_id": "FS-009839",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "LLLT placebo dose arms; eccentric bout; IL-6 to 96h"
+ },
+ {
+  "record_id": "FS-009841",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat pup nerve injury microglia study; no humans"
+ },
+ {
+  "record_id": "FS-009842",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "rat cryolesion/LLLT study; no humans"
+ },
+ {
+  "record_id": "FS-009845",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "severe OSAS patient cohort; capacity tests only"
+ },
+ {
+  "record_id": "FS-009846",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "stated review; exercise and neuropathic pain"
+ },
+ {
+  "record_id": "FS-009849",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat chronic contractile activity UPR study; no humans"
+ },
+ {
+  "record_id": "FS-009851",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "non-remitted MDD cohort; 12-week augmentation, no bout"
+ }
+]

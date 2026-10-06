@@ -1,0 +1,294 @@
+[
+ {
+  "record_id": "FS-011564",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "FASEB Journal meeting abstract; full results table embedded"
+ },
+ {
+  "record_id": "FS-011580",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "university students, no age reported; v3.1 age rule"
+ },
+ {
+  "record_id": "FS-011594",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "resting pre/post 12-wk training; 8-OHdG not immune"
+ },
+ {
+  "record_id": "FS-011709",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "NIRS joint-flow methods study; no bout, no immune measure"
+ },
+ {
+  "record_id": "FS-011738",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "comet DNA damage in leukocytes is genotoxicity, not immune"
+ },
+ {
+  "record_id": "FS-011826",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "FASEB meeting-abstract format; grant note; data table"
+ },
+ {
+  "record_id": "FS-012004",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "autopsy case reports; runners with coronary disease"
+ },
+ {
+  "record_id": "FS-012289",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "8-wk training RCT; resting pre/post labs only"
+ },
+ {
+  "record_id": "FS-012335",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "8-wk training; resting pre/post blood, no bout sample"
+ },
+ {
+  "record_id": "FS-012439",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT05",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "blood only 15 min pre-treadmill; no post-cessation sample"
+ },
+ {
+  "record_id": "FS-012594",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "gymnasts described as children; under-18 stated"
+ },
+ {
+  "record_id": "FS-012624",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "spinal cord injury athletes are a clinical cohort"
+ },
+ {
+  "record_id": "FS-012630",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT02"
+  ],
+  "study_type_hint": "other",
+  "note": "equine review article; horse condition only"
+ },
+ {
+  "record_id": "FS-012652",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "review with own maximal-exercise cytokine data component"
+ },
+ {
+  "record_id": "FS-012657",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "chronic coronary disease patients are the primary cohorts"
+ },
+ {
+  "record_id": "FS-013050",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "25.0+/-6.3 y; mean-2SD=12.4; age rule"
+ },
+ {
+  "record_id": "FS-013117",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "supplement narrative; no identifiable bout or immune measure"
+ },
+ {
+  "record_id": "FS-013152",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "'adolescent' label contradicts reported adult age 21.27"
+ },
+ {
+  "record_id": "FS-013154",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "adipokines framed as cytokines; immune link unresolved"
+ },
+ {
+  "record_id": "FS-013253",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "CRP resting pre/post 8-wk training only; no bout sample"
+ },
+ {
+  "record_id": "FS-013289",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "resting CBC across sport specialties; no bout"
+ },
+ {
+  "record_id": "FS-013361",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "resting IL6/IL10 expression in instructors; no bout"
+ },
+ {
+  "record_id": "FS-013442",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "EIB diagnostic clinical cohort; no immune measure"
+ },
+ {
+  "record_id": "FS-013481",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "leukocyte mtDNA deletions = damage assay, not immune"
+ },
+ {
+  "record_id": "FS-013496",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "cross-sectional telomere length; no bout; not immune"
+ },
+ {
+  "record_id": "FS-013502",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "empty abstract; book chapter suspected"
+ },
+ {
+  "record_id": "FS-013527",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-wk program, resting pre/post labs; MetS ambiguous"
+ },
+ {
+  "record_id": "FS-013867",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "empty abstract; title only"
+ },
+ {
+  "record_id": "FS-014551",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "leukocyte Hsp mRNA induction; plausibly immune-cell measure"
+ },
+ {
+  "record_id": "FS-014886",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "cancer chemotherapy cohort; in vitro chemo/heat-shock"
+ },
+ {
+  "record_id": "FS-014920",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "adiponectin biovariability study; no exercise exposure"
+ },
+ {
+  "record_id": "FS-015048",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "empty abstract; title suggests neutrophil function"
+ },
+ {
+  "record_id": "FS-015049",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "empty abstract; title suggests neutrophil function"
+ },
+ {
+  "record_id": "FS-015279",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "sulphate assay methods paper; no exercise, no immune"
+ }
+]

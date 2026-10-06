@@ -1,0 +1,41 @@
+[
+ {
+  "record_id": "FS-007269",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "older males 68 [64-73]; exercise-heat test pre/post samples; LPS-binding protein"
+ },
+ {
+  "record_id": "FS-010474",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "porcine endothelial in vitro shear study; exercise only as context"
+ },
+ {
+  "record_id": "FS-012761",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "in vitro NK3.3 cell line redox study; no human exercise exposure"
+ },
+ {
+  "record_id": "FS-013497",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "bovine tendon fascicles loaded ex vivo; no human data"
+ }
+]

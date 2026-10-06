@@ -1,0 +1,336 @@
+[
+ {
+  "record_id": "FS-008200",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Sensors monitor lactate/HR/metabolic markers only; no immune measure"
+ },
+ {
+  "record_id": "FS-008204",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review of activity and iron pharmacokinetics in pregnancy"
+ },
+ {
+  "record_id": "FS-008208",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Children 9.6+/-1.0 y walking study; stated minors"
+ },
+ {
+  "record_id": "FS-008209",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Review of nutrigenomics in exercise science"
+ },
+ {
+  "record_id": "FS-008210",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse excessive-exercise MCT4 cognition model; animal-only"
+ },
+ {
+  "record_id": "FS-008212",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Wistar rat vitamin E dose exercise model; animal-only"
+ },
+ {
+  "record_id": "FS-008213",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Shuttle test; WBC/neutrophils/lymphocytes 0-72h; pre-bout baseline"
+ },
+ {
+  "record_id": "FS-008215",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "DOMS and CK outcomes only; no immune measure"
+ },
+ {
+  "record_id": "FS-008217",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric bout; IL-6 T0/T1/24h; placebo-controlled"
+ },
+ {
+  "record_id": "FS-008222",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Aged mouse liver beta-hydroxybutyrate exercise model; animal-only"
+ },
+ {
+  "record_id": "FS-008224",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Review of peripheral-central crosstalk in Parkinson disease"
+ },
+ {
+  "record_id": "FS-008227",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "SIgA per match/session; age 23.07+/-6.76, mean-2SD<18"
+ },
+ {
+  "record_id": "FS-008228",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "N=1 swimmer; SIgA weekly with URTI; bout links recoverable"
+ },
+ {
+  "record_id": "FS-008229",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Review of nutritional recovery strategies in soccer"
+ },
+ {
+  "record_id": "FS-008231",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Breast-cancer chemotherapy cohort; feasibility outcomes only"
+ },
+ {
+  "record_id": "FS-008235",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Females 19.8+/-2.6, mean-2SD 14.6<18; adulthood unestablished"
+ },
+ {
+  "record_id": "FS-008243",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Adults 60-70; leukocyte subsets/cytokines; 24h post-final-session"
+ },
+ {
+  "record_id": "FS-008244",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse doxorubicin cardiomyopathy swimming model; animal-only"
+ },
+ {
+  "record_id": "FS-008249",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Kidney function markers only; no immune measure"
+ },
+ {
+  "record_id": "FS-008250",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Shoulder instability patient case; taping; no immune outcome"
+ },
+ {
+  "record_id": "FS-008251",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rat Alzheimer ocular exercise model; animal-only"
+ },
+ {
+  "record_id": "FS-008257",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Review/hypothesis paper on vitamin B6 as exercise mimetic"
+ },
+ {
+  "record_id": "FS-008258",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Squat/leg-press bout; TNF-alpha 24/48h; curcumin vs placebo"
+ },
+ {
+  "record_id": "FS-008259",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Female players age 16.55 y stated; adolescent cohort"
+ },
+ {
+  "record_id": "FS-008260",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Endometriosis patient cohort; pain/QoL outcomes, no immune measure"
+ },
+ {
+  "record_id": "FS-008261",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "3-km run; leukocyte/CRP/fibrinogen pre-post; null result eligible"
+ },
+ {
+  "record_id": "FS-008262",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Hypothesis/review on sex differences in muscle stem cells"
+ },
+ {
+  "record_id": "FS-008263",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Urticaria patient case after altitude chamber; no exercise bout"
+ },
+ {
+  "record_id": "FS-008264",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Children 6-18 y, obese/asthmatic groups; stated minors"
+ },
+ {
+  "record_id": "FS-008266",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Review of ventricular arrhythmias and athletic remodeling"
+ },
+ {
+  "record_id": "FS-008267",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "IL-10 pre/24h-post exercise sessions; three training groups"
+ },
+ {
+  "record_id": "FS-008268",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Women 54+/-3; CRP/ICAM-1; 48h post-final-session vs control"
+ },
+ {
+  "record_id": "FS-008270",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "N=1 season; immunological markers monthly; bout timing unclear"
+ },
+ {
+  "record_id": "FS-008272",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Pancreatitis case after 32-km run; no immune measure"
+ },
+ {
+  "record_id": "FS-008273",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rat underwater-exercise hyperbaric oxygen model; animal-only"
+ },
+ {
+  "record_id": "FS-008275",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycling to exhaustion; IL-4/IL-10/TGF-beta pre/post/1h; crossover"
+ },
+ {
+  "record_id": "FS-008276",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Sets/reps performance outcomes only; no immune measure"
+ },
+ {
+  "record_id": "FS-008277",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Rhabdomyolysis/AKI patient case; urinary proteome not immune-focused"
+ },
+ {
+  "record_id": "FS-008279",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "'Youth' judo athletes, age unstated; lymphocyte response otherwise eligible"
+ },
+ {
+  "record_id": "FS-008282",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rat doxorubicin diaphragm exercise-preconditioning model; animal-only"
+ }
+]

@@ -1,0 +1,330 @@
+[
+ {
+  "record_id": "FS-011709",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "NIRS methodology study; joint blood flow, no exercise bout"
+ },
+ {
+  "record_id": "FS-011712",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "C57BL/6 mice; splenocyte responses to exercise, animal-only"
+ },
+ {
+  "record_id": "FS-011713",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Volunteers' aerobic/anaerobic bouts; WBC count and adhesiveness"
+ },
+ {
+  "record_id": "FS-011714",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Angina pectoris patients; treadmill test, clinical cohort"
+ },
+ {
+  "record_id": "FS-011717",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Long-Evans rats; lymphocyte/muscle Hsp72, animal-only"
+ },
+ {
+  "record_id": "FS-011721",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Maximal bout; IgG/IgA/IgM, CD3/CD19 pre/post/recovery"
+ },
+ {
+  "record_id": "FS-011722",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Explicit review; exercise/training immune changes schema"
+ },
+ {
+  "record_id": "FS-011724",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Explicit review; neutrophil functions and exercise"
+ },
+ {
+  "record_id": "FS-011729",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mice; airway phagocytes after lung damage, animal-only"
+ },
+ {
+  "record_id": "FS-011734",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review; NK cell mechanisms of action"
+ },
+ {
+  "record_id": "FS-011735",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Mild atopic asthma patients; exercise challenge, clinical cohort"
+ },
+ {
+  "record_id": "FS-011736",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Peritoneal macrophage phagocytosis; rodent corticosterone model"
+ },
+ {
+  "record_id": "FS-011738",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "WBC DNA damage (comet) and MDA only; no immune measure"
+ },
+ {
+  "record_id": "FS-011741",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Graded cycling; salivary IgA pre/post; sighted/impaired strata separable"
+ },
+ {
+  "record_id": "FS-011745",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rats; LPS challenge/TNF response, animal-only"
+ },
+ {
+  "record_id": "FS-011749",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Review; exercise as model of inflammation/sepsis"
+ },
+ {
+  "record_id": "FS-011750",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Asthmatic children; exercise challenge, stated minors"
+ },
+ {
+  "record_id": "FS-011753",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Explicit review; acute phase response and aging"
+ },
+ {
+  "record_id": "FS-011756",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Asthmatic children and child controls; stated minors"
+ },
+ {
+  "record_id": "FS-011759",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "C3H/HeN mice; macrophage cytotoxicity, animal-only"
+ },
+ {
+  "record_id": "FS-011764",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Retrospective interviews of AAS users; no bout, no immune measure"
+ },
+ {
+  "record_id": "FS-011765",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mice; tumor/macrophage exercise study, animal-only"
+ },
+ {
+  "record_id": "FS-011773",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ibuprofen trial; soreness/CK/torque/EMG only, no immune measure"
+ },
+ {
+  "record_id": "FS-011777",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mice; splenic NK activity, ethanol model, animal-only"
+ },
+ {
+  "record_id": "FS-011780",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review/hypothesis; vitamin C, neutrophils, URTI"
+ },
+ {
+  "record_id": "FS-011781",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Essay/review; psychoneuroendocrine immunology, study design"
+ },
+ {
+  "record_id": "FS-011782",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Explicit review; injury and chronic inflammatory lesions"
+ },
+ {
+  "record_id": "FS-011789",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review; immunity in athletes and URTI"
+ },
+ {
+  "record_id": "FS-011791",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Wistar rats; in situ muscle damage model, animal-only"
+ },
+ {
+  "record_id": "FS-011800",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Explicit review; asthma, exercise, immune mechanisms"
+ },
+ {
+  "record_id": "FS-011803",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Single urticarial vasculitis patient; clinical case report"
+ },
+ {
+  "record_id": "FS-011807",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy 43-y case; serial subsets/cytokines, maximal-test responses"
+ },
+ {
+  "record_id": "FS-011811",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Wistar rats; adenylyl cyclase signaling, animal-only"
+ },
+ {
+  "record_id": "FS-011813",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review; exercise, aging, immune function"
+ },
+ {
+  "record_id": "FS-011816",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Peripheral arterial disease patients; claudication exercise, clinical cohort"
+ },
+ {
+  "record_id": "FS-011826",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "FASEB J 1996 meeting abstract; conference abstract, not core source"
+ },
+ {
+  "record_id": "FS-011833",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "High-school teenage athletes; stated under-18 cohort"
+ },
+ {
+  "record_id": "FS-011838",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical review; exercise-induced asthma evaluation"
+ },
+ {
+  "record_id": "FS-011841",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "20-min intensive bout; hemorheology panel includes leukocyte count"
+ },
+ {
+  "record_id": "FS-011842",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Horses; 160-km endurance ride haematology, animal-only"
+ }
+]

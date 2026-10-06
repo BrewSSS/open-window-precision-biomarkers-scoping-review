@@ -1,0 +1,328 @@
+[
+ {
+  "record_id": "FS-005207",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "3-month training plus supplement; performance and fat-oxidation outcomes; no immune measure"
+ },
+ {
+  "record_id": "FS-005210",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "heart-failure patients are target cohort; healthy controls' immune-exercise data not separable"
+ },
+ {
+  "record_id": "FS-005214",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "axial spondyloarthritis clinical cohort; exercise-capacity and CV-risk outcomes"
+ },
+ {
+  "record_id": "FS-005229",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "resting neutrophil function in atopic vs non-atopic runners; background-pattern candidate"
+ },
+ {
+  "record_id": "FS-005234",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "prognostic cohort; CPET bout; hsCRP covariate; post-exercise sample timing unstated"
+ },
+ {
+  "record_id": "FS-005239",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "triathlon pre/finish/1-week samples; endothelial adhesion molecules; doubtful immune link"
+ },
+ {
+  "record_id": "FS-005241",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "habitual exercise groups, resting lymphocyte methylation and CD4 subsets; background-pattern candidate"
+ },
+ {
+  "record_id": "FS-005251",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "45-min walk, rest and post samples; T1D plus separable controls; progenitor-cell counts"
+ },
+ {
+  "record_id": "FS-005257",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "8-month training, periodic resting samples; adipsin is complement factor D; background-pattern candidate"
+ },
+ {
+  "record_id": "FS-005258",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "knee-OA cohort with small separable control stratum; golf round with cytokine sampling"
+ },
+ {
+  "record_id": "FS-005259",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "cross-sectional fitness vs resting plasma proteins incl. IL-6; background-pattern candidate"
+ },
+ {
+  "record_id": "FS-005261",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "men living with HIV; BP/HRV outcomes only; no immune measure"
+ },
+ {
+  "record_id": "FS-005279",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "cross-sectional myostatin vs hsCRP/fatness in postpartum women; GDM subgroup mixed"
+ },
+ {
+  "record_id": "FS-005281",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "obesity cohort, health status ambiguous; adipose RNA-seq with stated inflammation gene-set aims"
+ },
+ {
+  "record_id": "FS-005284",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mixed mouse/human, human part separable; kynurenine metabolites around aerobic bout; timing unclear"
+ },
+ {
+  "record_id": "FS-005303",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "'junior international' athletes; age not stated; adulthood not established"
+ },
+ {
+  "record_id": "FS-005316",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "protein RCT with control arm; marathon pre/post IL-6 and leukocytes"
+ },
+ {
+  "record_id": "FS-005319",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "30-min run bouts pre/post intensified training; phagocytosis, gamma-delta T-cells measured"
+ },
+ {
+  "record_id": "FS-005322",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "prognostic cohort; CPET bout; hsCRP covariate; post-exercise sample timing unstated"
+ },
+ {
+  "record_id": "FS-005325",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "DOMS pain/tightness outcomes only; no biosampling or immune measure"
+ },
+ {
+  "record_id": "FS-005328",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "shuttle-run bouts with rest baseline; CRP measured; nap crossover"
+ },
+ {
+  "record_id": "FS-005329",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "human nasal-lavage leukocytes/antiviral activity after 45/180-min bouts; mouse part separable"
+ },
+ {
+  "record_id": "FS-005333",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exosomal miRNA stress-biomarker discovery; inflammation miRNAs post-hoc, no immune objective"
+ },
+ {
+  "record_id": "FS-005334",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIE with FA/TRAP conditions; cytokines at baseline/10min/1h post"
+ },
+ {
+  "record_id": "FS-005335",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "diet arms with control group; 25-km walk pre/post IL-6, WBC"
+ },
+ {
+  "record_id": "FS-005336",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "MRI T2/IVIM edema-perfusion after half-marathon; no immune measure"
+ },
+ {
+  "record_id": "FS-005340",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon pre/post IL-6 and sIL-6R; in vitro part additional"
+ },
+ {
+  "record_id": "FS-005341",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon baseline/post/48h; CRP and cartilage turnover biomarkers"
+ },
+ {
+  "record_id": "FS-005346",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "U-20 players; adulthood not established; metabolomics lacks immune objective"
+ },
+ {
+  "record_id": "FS-005351",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric trial with placebo crossover; IL-6, TNF-alpha, CRP measured"
+ },
+ {
+  "record_id": "FS-005359",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "quercetin crossover around EIMD protocol; IL-6, CK, samples to 7 days"
+ },
+ {
+  "record_id": "FS-005365",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "probiotic crossover around half-marathon; muscle-damage/oxidative outcomes; no immune measure"
+ },
+ {
+  "record_id": "FS-005366",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "high-school and collegiate players; concussion injury not exercise bout; adult stratum not separable"
+ },
+ {
+  "record_id": "FS-005367",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "5-day program; PBMC redox/NFkB and plasma cytokines after first bout"
+ },
+ {
+  "record_id": "FS-005368",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "HIIT plus/minus cryotherapy pre/post; adipokines/myokines only; doubtful immune link; obese cohort"
+ },
+ {
+  "record_id": "FS-005369",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "training genomics/transcriptomics for insulin sensitivity; chemokine pathway post-hoc only"
+ },
+ {
+  "record_id": "FS-005370",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "LIFU vs sham after high-intensity protocol; TNF-alpha, IL-6 measured"
+ },
+ {
+  "record_id": "FS-005372",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "two mountain ultras, pre/post blood; inflammation markers stated but unnamed"
+ },
+ {
+  "record_id": "FS-005375",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "heritability study of urinary 8-isoprostane; no exercise exposure"
+ },
+ {
+  "record_id": "FS-005376",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "SCI plus separable able-bodied controls; maximal test with leukocyte subsets"
+ }
+]

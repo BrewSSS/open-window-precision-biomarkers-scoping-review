@@ -1,0 +1,334 @@
+[
+ {
+  "record_id": "FS-008651",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Curcumin vs placebo EIMD; only pain/ROM outcomes, no immune measure"
+ },
+ {
+  "record_id": "FS-008660",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Resting plasma OPN comparison RE vs SC; no bout; murine model"
+ },
+ {
+  "record_id": "FS-008671",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Youth badminton athletes stated adolescent; no separable adult stratum"
+ },
+ {
+  "record_id": "FS-008677",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Degenerative aortic valve disease patients; clinical cardiac cohort"
+ },
+ {
+  "record_id": "FS-008694",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Skin-humidity sensor paper; incidental sweating demo, no study bout"
+ },
+ {
+  "record_id": "FS-008714",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-wk HIIT pre/post training samples only; no bout-tied sampling"
+ },
+ {
+  "record_id": "FS-008716",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Quercetin vs placebo EIMD; cytokines 24-96 h; age unstated"
+ },
+ {
+  "record_id": "FS-008722",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Altitude training; CBC incl. WBC at rest and post-exercise test"
+ },
+ {
+  "record_id": "FS-008737",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "6 h hypoxia with two exercise bouts; cytokines pre/post"
+ },
+ {
+  "record_id": "FS-008738",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "IL-6/TNF-alpha vs fitness prediction; biomarker sampling timing unclear"
+ },
+ {
+  "record_id": "FS-008747",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "90-d bed-rest campaign report; immune-endocrine assessed; bout unclear"
+ },
+ {
+  "record_id": "FS-008751",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Spirulina vs placebo crossover; IL-6; sampling-to-session relation unclear"
+ },
+ {
+  "record_id": "FS-008758",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Resistance exercise plus CWI; WBC/neutrophils to 48 h"
+ },
+ {
+  "record_id": "FS-008759",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exhaustive aerobics; hs-CRP/cortisol post-exercise; rat arm secondary"
+ },
+ {
+  "record_id": "FS-008767",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Martial-arts fitness study; cardiopulmonary outcomes only, no immune measure"
+ },
+ {
+  "record_id": "FS-008768",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Stretching bout two intensities; CRP/IL-6/IL-10 post and 24 h"
+ },
+ {
+  "record_id": "FS-008771",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Serum pre/post 30-min exercise; CD4+ T-cell metabolism ex vivo"
+ },
+ {
+  "record_id": "FS-008782",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Acute aerobic exercise; salivary IL-6/cortisol; control group"
+ },
+ {
+  "record_id": "FS-008791",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Single resistance bout; four recovery protocols; IL-6/TNF-alpha"
+ },
+ {
+  "record_id": "FS-008803",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Beta-alanine vs placebo; 10 km run; IL-6/TNF-alpha"
+ },
+ {
+  "record_id": "FS-008828",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2 h silat session; IL-6 pre/post; 'boys and girls' age ambiguous"
+ },
+ {
+  "record_id": "FS-008863",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Wheat-germ supplement with control; 'immunological indices' vague"
+ },
+ {
+  "record_id": "FS-008875",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Probiotics plus 6-wk training; leukocyte counts; design vague"
+ },
+ {
+  "record_id": "FS-008897",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT06",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Single fasciitis case after drumming; no baseline or comparator"
+ },
+ {
+  "record_id": "FS-008978",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "8-wk resistance training pre/post samples only; no bout-tied sampling"
+ },
+ {
+  "record_id": "FS-009001",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Accelerometer sedentary time vs cytokines; resting cross-sectional"
+ },
+ {
+  "record_id": "FS-009004",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Long-distance cycling; neutrophil count marginal immune content"
+ },
+ {
+  "record_id": "FS-009040",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Master athletes resting renal markers incl. IL-18; no bout"
+ },
+ {
+  "record_id": "FS-009044",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "8-min competition; CRP with damage biomarkers pre/post"
+ },
+ {
+  "record_id": "FS-009110",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Pregnancy; 12-wk pilates pre/post only; no bout-tied sampling"
+ },
+ {
+  "record_id": "FS-009120",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Breast-cancer screening programme; no exercise exposure, no immune measure"
+ },
+ {
+  "record_id": "FS-009128",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Combat fitness test; IL-6/IL-10 pre/post"
+ },
+ {
+  "record_id": "FS-009133",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "520-d confinement; serial resting samples; exercise only background regimen"
+ },
+ {
+  "record_id": "FS-009146",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Early pregnancy; accelerometer PA vs cytokines; resting cross-sectional"
+ },
+ {
+  "record_id": "FS-009161",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "60-min run ages 18-35; lymphocyte DNA damage; immune link arguable"
+ },
+ {
+  "record_id": "FS-009174",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Glycyrrhizic acid x training factorial; pre/post 8-wk samples only"
+ },
+ {
+  "record_id": "FS-009231",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Post-first-session sampling; 'inflammatory response' aim, markers unspecified"
+ },
+ {
+  "record_id": "FS-009296",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Multiple sclerosis patients; clinical disease cohort"
+ },
+ {
+  "record_id": "FS-009304",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Ankle-sprain hydrotherapy case report; clinical single case"
+ },
+ {
+  "record_id": "FS-009311",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Osteitis pubis injection case report; clinical single case"
+ }
+]

@@ -1,0 +1,328 @@
+[
+ {
+  "record_id": "FS-010495",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Diabetes prediction cohort; activity only covariate, no bout"
+ },
+ {
+  "record_id": "FS-010497",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Hypothesis/narrative piece; eHSP70 fatigue signalling"
+ },
+ {
+  "record_id": "FS-010498",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "80 inflammatory analytes pre/post rides days 1 and 5"
+ },
+ {
+  "record_id": "FS-010499",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mice; treadmill training mitochondria"
+ },
+ {
+  "record_id": "FS-010500",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "T/B cells pre/immediate/24h aerobic and anaerobic bouts"
+ },
+ {
+  "record_id": "FS-010510",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Placebo vs phytoestrogen; lymphocyte enzymes post swim"
+ },
+ {
+  "record_id": "FS-010512",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Trial design/rationale paper; no results"
+ },
+ {
+  "record_id": "FS-010514",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Junior kayakers mean 16.8y; season resting monitoring"
+ },
+ {
+  "record_id": "FS-010516",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Case; hourly mile walks 42d; CRP trajectory"
+ },
+ {
+  "record_id": "FS-010519",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "C2C12 myotubes in vitro; IL-6 signalling"
+ },
+ {
+  "record_id": "FS-010524",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "ARF hospitalized runners; clinical case series"
+ },
+ {
+  "record_id": "FS-010531",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Spontaneously hypertensive rats; cardiac apoptosis"
+ },
+ {
+  "record_id": "FS-010532",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Review; exercise-induced anaphylaxis update"
+ },
+ {
+  "record_id": "FS-010535",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Male vs female players; IL-6/IL-15 around circuit bout"
+ },
+ {
+  "record_id": "FS-010540",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Adolescent athletes stated 16.7y; taekwondo bouts"
+ },
+ {
+  "record_id": "FS-010542",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Two resistance bout designs; CK/Mb/CRP pre/3d post"
+ },
+ {
+  "record_id": "FS-010551",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Csf1r-GFP mice; hippocampal microglia"
+ },
+ {
+  "record_id": "FS-010552",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Homocysteine/antioxidants/muscle-injury markers only"
+ },
+ {
+  "record_id": "FS-010555",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rats; adipose growth factors"
+ },
+ {
+  "record_id": "FS-010557",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rats; erythrocyte membrane fatty acids"
+ },
+ {
+  "record_id": "FS-010558",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Statin-treated patient case; disease-treatment cohort"
+ },
+ {
+  "record_id": "FS-010562",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mice incl IL-6 knockouts; CXCL-1"
+ },
+ {
+  "record_id": "FS-010564",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cytokine arrays pre/post one-hour Tai Chi session"
+ },
+ {
+  "record_id": "FS-010565",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review; EIMD and hypertrophy"
+ },
+ {
+  "record_id": "FS-010568",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Review; acute exercise and influenza vaccination"
+ },
+ {
+  "record_id": "FS-010571",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "C2C12 EPS plus mice; JNK-IL-6 mechanism"
+ },
+ {
+  "record_id": "FS-010575",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Guinea pigs; ovalbumin lung inflammation"
+ },
+ {
+  "record_id": "FS-010576",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Abstract empty; basophil activation title only"
+ },
+ {
+  "record_id": "FS-010579",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mice; trimethyltin hippocampal injury"
+ },
+ {
+  "record_id": "FS-010581",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rats; hepcidin/IL-6 after exhaustive running"
+ },
+ {
+  "record_id": "FS-010582",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mutant mice; BCL2 autophagy"
+ },
+ {
+  "record_id": "FS-010585",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Sleep-quality outcomes only; no immune measure"
+ },
+ {
+  "record_id": "FS-010586",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Wistar rats; laser and COX isoforms"
+ },
+ {
+  "record_id": "FS-010587",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Asthma patients; seasonal bronchoprovocation"
+ },
+ {
+  "record_id": "FS-010590",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Clinical review; ankle sprain management"
+ },
+ {
+  "record_id": "FS-010594",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mice; NNMT-MNA after swimming"
+ },
+ {
+  "record_id": "FS-010596",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CHO vs placebo crossover; leukocytes pre/post sessions"
+ },
+ {
+  "record_id": "FS-010597",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "17-year-old anaphylaxis case report"
+ },
+ {
+  "record_id": "FS-010598",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rats; endotoxemia and HSP72"
+ },
+ {
+  "record_id": "FS-010599",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Complement/CIC after two downhill bouts, hourly to 144h"
+ }
+]

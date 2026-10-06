@@ -1,0 +1,335 @@
+[
+ {
+  "record_id": "FS-003533",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Fish-oil placebo RCT, adults 70 plus/minus 4.5; 18-week resistance training; unnamed inflammatory markers pre/post"
+ },
+ {
+  "record_id": "FS-003545",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Herb versus placebo eccentric training; unspecified inflammatory biomarkers; age descriptor only, so advance"
+ },
+ {
+  "record_id": "FS-003555",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "End-stage renal disease patients; vascular and exercise-capacity outcomes; no immune measures"
+ },
+ {
+  "record_id": "FS-003570",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Twelve-week Curves training; postprandial endotoxin pre/post; overweight general-population women; background candidate"
+ },
+ {
+  "record_id": "FS-003578",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Repeated heat-acclimation sessions; leukocyte Hsp72 mRNA pre/post; exposure is heat stress, needs full text"
+ },
+ {
+  "record_id": "FS-003595",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "PCOS versus BMI-matched controls, separable; single bout; muscle array includes IL-6, IL-8, TLR4"
+ },
+ {
+  "record_id": "FS-003618",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Twelve-week training; adipose-tissue macrophage mRNA and TLR signalling; background-pattern candidate"
+ },
+ {
+  "record_id": "FS-003633",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Nordic walking plus vitamin D, adults 67 plus/minus 8; HMGB1 and IL-6 pre/post; baseline present"
+ },
+ {
+  "record_id": "FS-003643",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Eight-week walking with control group; hepcidin and IL-6 pre/post; background pattern"
+ },
+ {
+  "record_id": "FS-003658",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CAD patients with calcium-score-zero controls, separable; serial YKL-40 around maximal test"
+ },
+ {
+  "record_id": "FS-003660",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Fitness-fatty-liver cohort association; CRP only as adjustment covariate; no bout-linked immune measure"
+ },
+ {
+  "record_id": "FS-003662",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Military training with supplement arms and unsupplemented control; cytokines pre/post; interpretable contrasts"
+ },
+ {
+  "record_id": "FS-003671",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Two-week HIIT; unnamed inflammatory profile pre/post; overweight/obese men; background candidate"
+ },
+ {
+  "record_id": "FS-003676",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Neutrophil beta2-receptor coupling with pre/post-exercise plasma; borderline immune-cell measure, advance"
+ },
+ {
+  "record_id": "FS-003677",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Twenty-four-week combined training; hs-CRP, IL-6, MCP-1, TNF-alpha pre/post; background pattern"
+ },
+ {
+  "record_id": "FS-003693",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Interval walking with milk-supplement arms, adults 66 plus/minus 5; NFKB methylation in blood"
+ },
+ {
+  "record_id": "FS-003697",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ergometer bout; lymphocyte beta-adrenoceptor density pre/post, with and without propranolol"
+ },
+ {
+  "record_id": "FS-003706",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycling bout; lymphocyte beta2-receptor density and cAMP in hypertensives versus separable controls"
+ },
+ {
+  "record_id": "FS-003712",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Thirty-minute cycling; PBMC hTERT/TRF2 responses pre/post, young 22 plus/minus 2 versus older"
+ },
+ {
+  "record_id": "FS-003717",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Monocyte insulin-receptor binding; metabolic measure on immune cells, no immune objective"
+ },
+ {
+  "record_id": "FS-003720",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Infertile men RCT; seminal IL-6/TNF-alpha across 24-week training; clinical disease-treatment cohort"
+ },
+ {
+  "record_id": "FS-003723",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Prediabetes cohort 45-75 y; GlycA inflammation pre/post six-month exercise; metabolic ambiguity not exclusion"
+ },
+ {
+  "record_id": "FS-003756",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Repeated hot downhill running; leukocyte and muscle Hsp mRNA at 0-48h; preconditioning design"
+ },
+ {
+  "record_id": "FS-003759",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Cohort: baseline leukocyte count and CRP with fitness versus cancer mortality; background-pattern candidate"
+ },
+ {
+  "record_id": "FS-003761",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Chamber air-dive hyperbaric exposure, no exercise bout; PBMC apoptotic gene expression"
+ },
+ {
+  "record_id": "FS-003773",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Heart-rate-recovery quartiles versus neutrophil-lymphocyte ratio and hsCRP; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-003782",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric bout with placebo crossover; muscle proteasome/NF-kB/HSP70 only; no immune measure"
+ },
+ {
+  "record_id": "FS-003794",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Half-marathon serum proteomics and MSC gene expression; immune-response proteins modulated; objective unclear"
+ },
+ {
+  "record_id": "FS-003797",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Strength-training cfDNA kinetics framed as aseptic-inflammation marker; bout-linked repeated sampling"
+ },
+ {
+  "record_id": "FS-003805",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Resting IL-15/IL-15Ralpha across habitual-activity groups; separable healthy strata; background candidate"
+ },
+ {
+  "record_id": "FS-003825",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Acute interval versus continuous cycling; circulating angiogenic-cell colony forming; borderline immune measure"
+ },
+ {
+  "record_id": "FS-003859",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Cross-sectional TLR4/TLR6 inflammation-gene methylation versus fitness and weight; background candidate"
+ },
+ {
+  "record_id": "FS-003869",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Hospitalized exertional-rhabdomyolysis recruits; questionnaire risk study; clinical population"
+ },
+ {
+  "record_id": "FS-003881",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "HIV-positive adults; cardiovascular outcomes; clinical infected cohort; no eligible immune measure in controls"
+ },
+ {
+  "record_id": "FS-003882",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Obese sedentary adults, exercise versus control RCT; MPO and adhesion molecules pre/post; background candidate"
+ },
+ {
+  "record_id": "FS-003895",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Elite triathletes; urinary eicosanoids across training with placebo juice; background-pattern monitoring"
+ },
+ {
+  "record_id": "FS-003897",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Ozone crossover with intermittent exercise; sputum neutrophils and cytokines; filtered-air arm as contrast"
+ },
+ {
+  "record_id": "FS-003901",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Half-marathon; cardiac biomarkers plus AAT/galectin-3 at 0-48h; borderline immune mediators, advance"
+ },
+ {
+  "record_id": "FS-003903",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Resistance bout; EPC mobilization with SDF-1alpha chemokine; baseline and 0-24h sampling"
+ },
+ {
+  "record_id": "FS-003913",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Interval walking with tofu versus placebo; NFKB2 methylation in whole blood; background pattern"
+ }
+]

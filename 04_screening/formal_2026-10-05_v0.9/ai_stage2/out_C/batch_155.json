@@ -156,10 +156,12 @@
  {
   "record_id": "FS-007716",
   "disposition": "EXCLUDE_TA",
-  "primary_code": "FT03",
-  "secondary_codes": [],
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT03"
+  ],
   "study_type_hint": "other",
-  "note": "Peripheral occlusive disease patients; clinical cohort"
+  "note": "Claudicants only exercised; healthy controls rest-only, no exercised stratum"
  },
  {
   "record_id": "FS-007717",
@@ -172,10 +174,12 @@
  {
   "record_id": "FS-007718",
   "disposition": "EXCLUDE_TA",
-  "primary_code": "FT03",
-  "secondary_codes": [],
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT03"
+  ],
   "study_type_hint": "other",
-  "note": "Chronic beryllium disease patients; clinical occupational cohort"
+  "note": "Exercise testing only in patients for severity; normals rest-only neopterin"
  },
  {
   "record_id": "FS-007719",
@@ -259,11 +263,11 @@
  },
  {
   "record_id": "FS-007730",
-  "disposition": "ADVANCE",
+  "disposition": "AWAITING_CLASSIFICATION",
   "primary_code": "",
   "secondary_codes": [],
   "study_type_hint": "acute_bout_CoreA",
-  "note": "MPO, C5a, TNF, IL-6 and endotoxin around marathon race"
+  "note": "Age reported as mean 41+/-2 SEM only; SEM does not substitute"
  },
  {
   "record_id": "FS-007731",

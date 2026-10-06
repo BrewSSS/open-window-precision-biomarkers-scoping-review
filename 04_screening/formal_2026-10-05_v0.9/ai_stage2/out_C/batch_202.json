@@ -1,0 +1,340 @@
+[
+ {
+  "record_id": "FS-012281",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Hypertension patients; 3-month training, no bout-tied sampling"
+ },
+ {
+  "record_id": "FS-012283",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Explicit review of COPD rehabilitation therapies"
+ },
+ {
+  "record_id": "FS-012287",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Coronary artery disease patients; 8-week training snapshot"
+ },
+ {
+  "record_id": "FS-012289",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Healthy overweight postmenopausal women; pre/post training only, no bout"
+ },
+ {
+  "record_id": "FS-012298",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Players 18-24 vs sedentary; resistance bout, basal/post/2h IL-6, IL-8, TNF"
+ },
+ {
+  "record_id": "FS-012309",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Elite athletes; GXT pre/post training, lymphocyte subsets, recovery samples"
+ },
+ {
+  "record_id": "FS-012310",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Age 22.4+/-2.38; mean-2SD 17.6<18, adulthood unestablished"
+ },
+ {
+  "record_id": "FS-012328",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Commentary on three paediatric exercise studies"
+ },
+ {
+  "record_id": "FS-012331",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Book chapter reviewing melatonin supplementation studies"
+ },
+ {
+  "record_id": "FS-012332",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Review of cardiac non-cardiomyocyte cells and remodeling"
+ },
+ {
+  "record_id": "FS-012333",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "HIV clinical stage II patients; diseased cohort"
+ },
+ {
+  "record_id": "FS-012335",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Healthy men 63.4+/-2.1; pre/post 8-week training resting IL-6 only"
+ },
+ {
+  "record_id": "FS-012336",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "CAD patients; HRV/HRR outcomes, no immune measure"
+ },
+ {
+  "record_id": "FS-012341",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Martial-arts students 16-18 y; no immune measure"
+ },
+ {
+  "record_id": "FS-012343",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Circuit bout; WBC differentials; double-blind placebo arm separates jujube"
+ },
+ {
+  "record_id": "FS-012349",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Protein carbonyls only; oxidative damage, no immune measure"
+ },
+ {
+  "record_id": "FS-012354",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Healthy men; IL-17 PBMC cultures; last-session sampling timing ambiguous"
+ },
+ {
+  "record_id": "FS-012373",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ages 18-25; moderate/strenuous bouts, post-bout TNF-alpha, IFN-gamma"
+ },
+ {
+  "record_id": "FS-012382",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon; WBC/CRP 18-32h post; placebo arm separates resveratrol"
+ },
+ {
+  "record_id": "FS-012395",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exhaustive treadmill; leukocytes; placebo arm separates caffeine"
+ },
+ {
+  "record_id": "FS-012399",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric bout; WBC subsets pre/immediate/2h/24h; control group"
+ },
+ {
+  "record_id": "FS-012402",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review of exercise in inflammatory conditions"
+ },
+ {
+  "record_id": "FS-012406",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Review of exercise-induced bronchoconstriction mechanisms in asthma"
+ },
+ {
+  "record_id": "FS-012416",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Circuit bout vs no-exercise control; WBC, platelets pre/post"
+ },
+ {
+  "record_id": "FS-012421",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rats; taurine plus treadmill running"
+ },
+ {
+  "record_id": "FS-012439",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT05"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Biomarkers only 15 min pre-test; trained/untrained resting comparison"
+ },
+ {
+  "record_id": "FS-012442",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Sprint bouts; CRP, IL-6; water-only trial separates glutamine dipeptide"
+ },
+ {
+  "record_id": "FS-012447",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Review of lymphocyte oxidative-stress measurement issues"
+ },
+ {
+  "record_id": "FS-012453",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "60-min bout vs resting session; salivary IgA, cytokines"
+ },
+ {
+  "record_id": "FS-012461",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 21.0+/-1.5; consecutive bout, own control, IgA pre/post/3h"
+ },
+ {
+  "record_id": "FS-012469",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT02"
+  ],
+  "study_type_hint": "other",
+  "note": "Review; original observations murine only"
+ },
+ {
+  "record_id": "FS-012484",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Three resistance bouts, PRE/POST/30min; serum IgA"
+ },
+ {
+  "record_id": "FS-012487",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Book-chapter review of HSP expression and elderly training"
+ },
+ {
+  "record_id": "FS-012488",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Book-chapter review of soluble Hsp72 and exercise"
+ },
+ {
+  "record_id": "FS-012491",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Current Opinion review of glutamine metabolism"
+ },
+ {
+  "record_id": "FS-012539",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Claudicants plus 8 healthy controls; control stratum separable, IL-6/IL-1beta"
+ },
+ {
+  "record_id": "FS-012548",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review of fatigue, nutrition and illness in athletes"
+ },
+ {
+  "record_id": "FS-012550",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Systematic review of neutrophil infiltration studies"
+ },
+ {
+  "record_id": "FS-012554",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Book chapter review of exercise-immunity clinical studies"
+ },
+ {
+  "record_id": "FS-012557",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Purpose-of-review article on elite athlete immunity"
+ }
+]

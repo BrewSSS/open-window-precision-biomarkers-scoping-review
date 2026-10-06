@@ -1,0 +1,355 @@
+[
+ {
+  "record_id": "FS-004146",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rHuEpo trial; only Hgb/HCT/performance reported, no immune measure"
+ },
+ {
+  "record_id": "FS-004163",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "NSAID-consumption questionnaires only; no samples, no immune measures"
+ },
+ {
+  "record_id": "FS-004169",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "HIV/AIDS clinical cohort; cardiopulmonary outcomes only"
+ },
+ {
+  "record_id": "FS-004174",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age 27.0+/-5.7 and 30.5+/-8.0: mean-2SD<18; otherwise eligible race pre/post leukocytes/CRP"
+ },
+ {
+  "record_id": "FS-004175",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "race nutrition/hydration/NSAID questionnaires; no immune measures"
+ },
+ {
+  "record_id": "FS-004179",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "ages unreported (v3.1 age rule); weekly sIgA monitoring, no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-004191",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "ages unreported (v3.1 age rule); 6-week training pre/post, CRP/VAP-1"
+ },
+ {
+  "record_id": "FS-004193",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon pre/finish sST2 (IL-33 decoy receptor); age 45+/-8 establishes adults"
+ },
+ {
+  "record_id": "FS-004208",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "ages unreported ('young adults' descriptor; v3.1 rule); training RCT, LPS-inducible TNF/IL-6"
+ },
+ {
+  "record_id": "FS-004217",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ages unreported (v3.1 age rule); PBMC redox assays after eccentric bout"
+ },
+ {
+  "record_id": "FS-004224",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "older-adult habitual-activity cross-section; leukocytes/IL-6/TLR2; background at full text"
+ },
+ {
+  "record_id": "FS-004236",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "ages unreported (v3.1 age rule); training RCT, telomerase/telomere in leukocyte subsets"
+ },
+ {
+  "record_id": "FS-004244",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ages unreported (v3.1 age rule); cycling in diesel exhaust, FeNO/HRV/norepinephrine"
+ },
+ {
+  "record_id": "FS-004251",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "ages unreported (v3.1 age rule); intensified-training camp saliva sIgA, not bout-linked"
+ },
+ {
+  "record_id": "FS-004256",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "rheumatoid arthritis and prediabetes clinical cohorts; HIIT pre/post design"
+ },
+ {
+  "record_id": "FS-004262",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "abdominally obese cohort; tocilizumab RCT reports metabolic outcomes only, no immune measure"
+ },
+ {
+  "record_id": "FS-004269",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "travel monitoring around Ironman; sIgA/cortisol not bout-linked; age 48+/-14 adult"
+ },
+ {
+  "record_id": "FS-004271",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "abdominal-obesity cohort; resting CRP/baPWV; treadmill test only grades fitness"
+ },
+ {
+  "record_id": "FS-004272",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age 40+/-12: mean-2SD=16<18; otherwise eligible 24-h race, hsCRP pre/post"
+ },
+ {
+  "record_id": "FS-004288",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age reported as mean+/-SEM only; adulthood not establishable (v3.1 rule); TANG/TEM sampled"
+ },
+ {
+  "record_id": "FS-004316",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "type-2 diabetes cohort on aspirin; platelet aggregation around treadmill test"
+ },
+ {
+  "record_id": "FS-004317",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "ages unreported (v3.1 age rule); trained-vs-untrained resting lymphocyte apoptosis"
+ },
+ {
+  "record_id": "FS-004326",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "spinal cord injury cohort; IL-6/catecholamines after wheelchair half-marathon"
+ },
+ {
+  "record_id": "FS-004331",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "overweight/obese cohort; adipose inflammatory-pathway expression only, no direct immune measure"
+ },
+ {
+  "record_id": "FS-004334",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "obesity cohort (BMI 35.3); GDF15/fat-mass outcomes; training pre/post sampling only"
+ },
+ {
+  "record_id": "FS-004339",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "asthma/EIB screening-and-management report; no immune measures"
+ },
+ {
+  "record_id": "FS-004345",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ages unreported (v3.1 rule); ME/CFS with separable healthy controls, post-CPET RNA-seq"
+ },
+ {
+  "record_id": "FS-004350",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ages unreported (v3.1 rule); FAOD patients vs controls, 14 cytokines; control exercise unclear"
+ },
+ {
+  "record_id": "FS-004361",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "age 19+/-2: mean-2SD=15<18; otherwise eligible three bouts, IL-6/CRP, CWI arms"
+ },
+ {
+  "record_id": "FS-004365",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "healthy adults 35-65; resting CRP; exercise test only classifies BP response"
+ },
+ {
+  "record_id": "FS-004373",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age 25+/-5: mean-2SD=15<18; otherwise eligible meal-by-exercise crossover, adipokines"
+ },
+ {
+  "record_id": "FS-004374",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ages unreported (v3.1 age rule); HIIE serum proteomics with immune-protein candidates"
+ },
+ {
+  "record_id": "FS-004391",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age 38+/-12: mean-2SD=14<18; otherwise eligible bout-linked IL-15/TNF-alpha sampling"
+ },
+ {
+  "record_id": "FS-004393",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "ages unreported (v3.1 age rule); diver/athlete PBMC immune status, hyperoxia challenge"
+ },
+ {
+  "record_id": "FS-004397",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "weight-loss intervention; WBC/IgG glycome/leukocyte transcriptome; age 27.5+/-4.0 adult; no bout sampling"
+ },
+ {
+  "record_id": "FS-004399",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age 22.4+/-4.1: mean-2SD<18; otherwise eligible walk-by-meal crossover, lymphocyte DNA damage"
+ },
+ {
+  "record_id": "FS-004401",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "copeptin/AVP endocrine outcome; IL-1 only drug-targeted, no immune measure"
+ },
+ {
+  "record_id": "FS-004404",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "ages unreported (v3.1 age rule); HIIT+/-CWI sessions 1 and 13, CAC/CEC pre/post"
+ },
+ {
+  "record_id": "FS-004416",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "ex vivo human bronchi organ baths; mannitol mast-cell mechanism, no in-vivo exercise"
+ },
+ {
+  "record_id": "FS-004419",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "healthy men 23.8+/-1.4; 60-min bout vs rested controls; salivary NO mucosal immunity"
+ }
+]

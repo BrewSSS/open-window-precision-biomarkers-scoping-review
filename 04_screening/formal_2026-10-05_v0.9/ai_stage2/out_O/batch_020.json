@@ -1,0 +1,328 @@
+[
+ {
+  "record_id": "FS-006864",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ages 26 plus/minus 7 and 33 plus/minus 8; mean-2SD below 18"
+ },
+ {
+  "record_id": "FS-006868",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Posture crossover cycling; IL-6/BDNF pre/post/30/60min"
+ },
+ {
+  "record_id": "FS-006870",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "16-week training plus metformin; resting clamp measures; no bout"
+ },
+ {
+  "record_id": "FS-006878",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT05",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Platelet/PF4 sampled only during last 2 min; no post-cessation sample"
+ },
+ {
+  "record_id": "FS-006882",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise-initiated fast vs fast-only; IL-6/TNFalpha/MCP-1"
+ },
+ {
+  "record_id": "FS-006883",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Pregnancy CPET/HIIT; urine proteome; neutrophil degranulation signals"
+ },
+ {
+  "record_id": "FS-006885",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Repeated breath-hold dives; salivary IL-6/TNFalpha per session"
+ },
+ {
+  "record_id": "FS-006887",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Downhill run plus 48h MRI; inflammation measure unspecified"
+ },
+ {
+  "record_id": "FS-006888",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CTRP3/9, FSTL1 after intensity-controlled cycling; borderline immune"
+ },
+ {
+  "record_id": "FS-006889",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ME/CFS cohort; separable sedentary controls; CPET plasma proteomics"
+ },
+ {
+  "record_id": "FS-006894",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Creatinine and NGAL kidney biomarkers only; no immune measure"
+ },
+ {
+  "record_id": "FS-006895",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Post-COVID clinical cohort; CPET performance only"
+ },
+ {
+  "record_id": "FS-006896",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "In vitro/in vivo loading models; OA cartilage; no human exercise"
+ },
+ {
+  "record_id": "FS-006897",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cell-free DNA stress marker only; no immune measure"
+ },
+ {
+  "record_id": "FS-006899",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Step test; multiplex cytokines pre/post/2h/48h; HRV covariate"
+ },
+ {
+  "record_id": "FS-006909",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Cross-sectional activity groups; salivary IL-6; background path"
+ },
+ {
+  "record_id": "FS-006910",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "hs-CRP after game days; repeated bouts; cycle-phase moderator"
+ },
+ {
+  "record_id": "FS-006914",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 22 plus/minus 2.8; mean-2SD=16.4"
+ },
+ {
+  "record_id": "FS-006919",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Repeated sprints; CRP/CK; thermography; pre/post sampling"
+ },
+ {
+  "record_id": "FS-006921",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eicosanoid lipidomics rest vs CPET peak; immune-mediator framing"
+ },
+ {
+  "record_id": "FS-006923",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Graves patients plus separable healthy controls; Wingate bouts; cytokines"
+ },
+ {
+  "record_id": "FS-006925",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Lipocalin-2 metabolic biomarker; no immune measure or objective"
+ },
+ {
+  "record_id": "FS-006927",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Probiotic vs placebo around marathon; cytokines/LPS sampled"
+ },
+ {
+  "record_id": "FS-006928",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Post-exercise serum on cancer cells; serum IL-6/IL-6R measured"
+ },
+ {
+  "record_id": "FS-006929",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 25.75 plus/minus 4.35; mean-2SD=17.05"
+ },
+ {
+  "record_id": "FS-006931",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "axSpA plus separable healthy controls; single HIIT; cytokines"
+ },
+ {
+  "record_id": "FS-006933",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Mouse macrophage lactylation study; human cross-sectional corroboration"
+ },
+ {
+  "record_id": "FS-006934",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "POMC-sEV endocrine transport; no immune measure or objective"
+ },
+ {
+  "record_id": "FS-006935",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 27.1 plus/minus 6.8; mean-2SD=13.5"
+ },
+ {
+  "record_id": "FS-006936",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Mouse trained-immunity study; retrospective MI outcomes only"
+ },
+ {
+  "record_id": "FS-006940",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Pre/post-training methylation; public-data reanalysis; no bout"
+ },
+ {
+  "record_id": "FS-006942",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Continuous vs interval cycling; salivary HHV-6 and IL-6"
+ },
+ {
+  "record_id": "FS-006946",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Rowing bout; urinary metabolomics; immune response claim unspecified"
+ },
+ {
+  "record_id": "FS-006949",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HI vs LI+BFR sessions; salivary immunoglobulin isoforms"
+ },
+ {
+  "record_id": "FS-006950",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "GDM plus normal pregnancy; delivery-time sampling only; no bout"
+ },
+ {
+  "record_id": "FS-006952",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "RT session pre/post at weeks 1 and 7; IL-6 measured"
+ },
+ {
+  "record_id": "FS-006953",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Training-induced plasma EV changes; resting samples; no bout"
+ },
+ {
+  "record_id": "FS-006955",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "PBMC proteomics 1h post HIIE/MICE; immune-cell omics"
+ },
+ {
+  "record_id": "FS-006957",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 24 plus/minus 5; mean-2SD=14"
+ },
+ {
+  "record_id": "FS-006960",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon; pentraxin-3/neopterin immune mediators; pre/post samples"
+ }
+]

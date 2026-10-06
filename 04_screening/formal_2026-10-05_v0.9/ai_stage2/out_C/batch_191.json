@@ -1,0 +1,331 @@
+[
+ {
+  "record_id": "FS-010720",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "placebo factorial separates training effect; immune-function blood markers PRE/POST; bout timing unstated"
+ },
+ {
+  "record_id": "FS-010723",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "72 rats; downhill running and ischemia/reperfusion; IL-6 measured in rats"
+ },
+ {
+  "record_id": "FS-010724",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Thoroughbred horses; immunotherapy for exercise-induced pulmonary hemorrhage"
+ },
+ {
+  "record_id": "FS-010733",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat calcaneal tendon; MMP-2 after jumping/running"
+ },
+ {
+  "record_id": "FS-010738",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "rowers RCT; 2000-m test bouts; TNF-alpha pre/1min/24h; placebo arm separates effect"
+ },
+ {
+  "record_id": "FS-010739",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "obese individuals as clinical cohort; no healthy stratum; HSP70 in leukocytes"
+ },
+ {
+  "record_id": "FS-010740",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "karate training session; salivary IgA pre/post; rinse applied only post-exercise"
+ },
+ {
+  "record_id": "FS-010742",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "caffeine vs placebo crossover; resistance bout; leukocyte subsets after cessation"
+ },
+ {
+  "record_id": "FS-010746",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "clinical case report; active pneumonia; no immune assay"
+ },
+ {
+  "record_id": "FS-010749",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mice; beta-glucan/sucrose feeding; HSV-1 challenge"
+ },
+ {
+  "record_id": "FS-010751",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "kickboxing match; salivary IgA and cortisol pre/post"
+ },
+ {
+  "record_id": "FS-010755",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "older adults NSAID study; gait kinematics and muscle-injury indices only; no immune measure"
+ },
+ {
+  "record_id": "FS-010756",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "annual training-cycle monitoring in young ski racers; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-010758",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mice; fatigue task and carrageenan hyperalgesia"
+ },
+ {
+  "record_id": "FS-010759",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "adhesion molecule-lung function association; physical activity only a covariate; no bout"
+ },
+ {
+  "record_id": "FS-010760",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rats; melatonin against cardiac inflammatory mediators"
+ },
+ {
+  "record_id": "FS-010763",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "marathon as mild-inflammation model; leukocytes/IL-6 pre/immediate/10-day post"
+ },
+ {
+  "record_id": "FS-010766",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "feline lumbar ligaments; cyclic loading cytokine expression"
+ },
+ {
+  "record_id": "FS-010768",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mice; adenosine A3 agonist; eccentric exercise CK"
+ },
+ {
+  "record_id": "FS-010769",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rats; exercise preconditioning in stroke; leukocyte infiltration"
+ },
+ {
+  "record_id": "FS-010771",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "vitamin C doses vs placebo; 30-min bout; leukocytes/neutrophils/IL-6 to 24h post"
+ },
+ {
+  "record_id": "FS-010772",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review/proposal on low-grade inflammation and regular exercise"
+ },
+ {
+  "record_id": "FS-010775",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "asthmatic athletes; clinical cohort; spirometry/drug challenge only; no immune outcome"
+ },
+ {
+  "record_id": "FS-010779",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "healthy men 40-59y; 9-min Bruce test; IL-6/sIL-6R pre/immediate post"
+ },
+ {
+  "record_id": "FS-010787",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mice; brain macrophage depletion; IL-1beta after downhill running"
+ },
+ {
+  "record_id": "FS-010788",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "BALB/c mice; swimming training; LPS acute lung injury"
+ },
+ {
+  "record_id": "FS-010789",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "five potholers; lymphocyte subsets at controls, in cave, 24h post-exploration"
+ },
+ {
+  "record_id": "FS-010790",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "single master athlete; 51 marathons; 4-day bloods include CRP/fibrinogen"
+ },
+ {
+  "record_id": "FS-010791",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "two anaphylaxis patients; provocation testing; clinical cohort"
+ },
+ {
+  "record_id": "FS-010792",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rats; hepatic IL-6 signaling during exhaustive running"
+ },
+ {
+  "record_id": "FS-010793",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Churg-Strauss case report; clinical patient; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-010795",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "systematic review; exercise and URTI risk; 30 eligible studies"
+ },
+ {
+  "record_id": "FS-010808",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "red ginseng RCT; CK and lactate only; no immune measure"
+ },
+ {
+  "record_id": "FS-010810",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "men 23.6+/-2y; cool/warm water cycling; TNF-alpha and cortisol pre/post"
+ },
+ {
+  "record_id": "FS-010811",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mice; tissue lymphocyte apoptosis; NAC and Fas pathways"
+ },
+ {
+  "record_id": "FS-010814",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "five hospitalized rhabdomyolysis/hyponatremia cases; clinical cohort; renal/CK markers only"
+ },
+ {
+  "record_id": "FS-010820",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "healthy males; acute plus 4-week cycling; leukocyte subsets pre/immediate/2h post"
+ },
+ {
+  "record_id": "FS-010825",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review; outdoor sports, UV exposure and skin cancer"
+ },
+ {
+  "record_id": "FS-010827",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cyclists; four 40-km time trials; granulysin/NK pre-post; training-load contrast"
+ },
+ {
+  "record_id": "FS-010829",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Division I college football players; age unstated; IL-6 around Wingate otherwise eligible"
+ }
+]

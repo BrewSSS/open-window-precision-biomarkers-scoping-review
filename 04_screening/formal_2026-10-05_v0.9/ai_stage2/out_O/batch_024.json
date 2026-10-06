@@ -1,0 +1,330 @@
+[
+ {
+  "record_id": "FS-007751",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ozone chamber with intermittent exercise; BAL PMNs 6h post; filtered-air comparator"
+ },
+ {
+  "record_id": "FS-007753",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "other",
+  "note": "CHF patients + 20 controls; TNF/sTNFR immune; exercise-test sampling timing unclear"
+ },
+ {
+  "record_id": "FS-007754",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "troponin I assay development; myocardial injury marker only, no immune measure"
+ },
+ {
+  "record_id": "FS-007758",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ozone + moderate exercise; BAL neutrophils/adhesion molecules 18h; healthy subjects"
+ },
+ {
+  "record_id": "FS-007759",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "other",
+  "note": "ozone chamber, intermittent exercise; smokers vs nonsmokers; nasal lavage cells"
+ },
+ {
+  "record_id": "FS-007760",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "farmer's lung patients; hay antigen challenge + CPET; no exercise exposure or immune measure"
+ },
+ {
+  "record_id": "FS-007767",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "other",
+  "note": "ozone vs air with exercise, own control; BAL cell apoptosis/HNE adducts 6h"
+ },
+ {
+  "record_id": "FS-007770",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "other",
+  "note": "MTBE chamber with 50W light work; nasal lavage cells/inflammatory markers; graded levels"
+ },
+ {
+  "record_id": "FS-007783",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "plasma glutamine only; metabolic substrate, immune link motivational only"
+ },
+ {
+  "record_id": "FS-007800",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "other",
+  "note": "ozone vs air, standardised exercise; BAL IL-8/T-cell subsets 6h; healthy adults"
+ },
+ {
+  "record_id": "FS-007803",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "submaximal cycle pre/15-60min; LTC4 leukotriene plus platelet markers; ages 23-26"
+ },
+ {
+  "record_id": "FS-007805",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "other",
+  "note": "single vs 4-day ozone exposure arms with exercise; BAL inflammation 20h"
+ },
+ {
+  "record_id": "FS-007809",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "treadmill to exhaustion; lymphocyte apoptosis TUNEL pre/immediate/24/48h"
+ },
+ {
+  "record_id": "FS-007810",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "renal microproteinuria clearances (albumin/IgG tracers); diabetic/obese cohort; not immune"
+ },
+ {
+  "record_id": "FS-007817",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "calpain-3 antibody characterisation on dystrophy muscle; no exercise exposure"
+ },
+ {
+  "record_id": "FS-007834",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "other",
+  "note": "CFS + controls; monocyte/lymphocyte IL-6 production pre/post exercise-induced fatigue"
+ },
+ {
+  "record_id": "FS-007839",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "other",
+  "note": "ETBE chamber with light exercise; nasal lavage cells/inflammatory markers"
+ },
+ {
+  "record_id": "FS-007928",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "chronic_training_only",
+  "note": "ages 34+/-9 and 26+/-5: mean-2SD=16<18, no ranges; age rule unresolved"
+ },
+ {
+  "record_id": "FS-007929",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT02"
+  ],
+  "study_type_hint": "other",
+  "note": "review/commentary proposing equine EIPH model for DAH; no original human data"
+ },
+ {
+  "record_id": "FS-008003",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "pregnancy training RCT; TNF-alpha/IL-10 at trimester timepoints; no bout-tied sample"
+ },
+ {
+  "record_id": "FS-008004",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse CIPN model plus public datasets; exosome mechanism; no original human data"
+ },
+ {
+  "record_id": "FS-008058",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "obese women cohort, no healthy stratum; 4-wk training; TNF/IL-6 pre-post"
+ },
+ {
+  "record_id": "FS-008129",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "8-wk training pre/post; PBMC SIRT1/EPC measures; no bout-tied sampling"
+ },
+ {
+  "record_id": "FS-008155",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "youth national rowers; age unstated, adulthood unestablished; otherwise eligible IL-6"
+ },
+ {
+  "record_id": "FS-008279",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "youth judo athletes; age range unstated; otherwise eligible acute sessions, leukocytes"
+ },
+ {
+  "record_id": "FS-008283",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "bench-step EIMD protocol; HMGB1 alarmin + MDA 0/24/48h; selenium vs placebo"
+ },
+ {
+  "record_id": "FS-008322",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "asthma-diagnostic biomarker study (IgE, FeNO, eosinophils); no exercise exposure"
+ },
+ {
+  "record_id": "FS-008326",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "brain single-cell plus BV2 cell line; no original human exercise data"
+ },
+ {
+  "record_id": "FS-008329",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric leg-press EIMD; IL-6; yacon capsule vs placebo double-blind"
+ },
+ {
+  "record_id": "FS-008349",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "review-type narrative on supplements; no original study design or participants"
+ },
+ {
+  "record_id": "FS-008383",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "heat acclimation sessions/HSTs; 'haematological monitoring' unnamed - confirm immune at FT"
+ },
+ {
+  "record_id": "FS-008421",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "u17 players - stated under-18 cohort; IL-6 otherwise eligible"
+ },
+ {
+  "record_id": "FS-008450",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "single clinical gas-embolism case after underwater egress training; no exercise exposure"
+ },
+ {
+  "record_id": "FS-008461",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "mean age 19.2 only, no SD/range; adulthood unestablished; otherwise eligible immune panel"
+ },
+ {
+  "record_id": "FS-008469",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT05",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "pre-race biomarkers predicting race performance; no post-cessation immune sample"
+ },
+ {
+  "record_id": "FS-008476",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "u17 players - stated under-18 cohort; duplicate of FS-008421"
+ },
+ {
+  "record_id": "FS-008498",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ages 17-26 pooled, includes under-18, no separable adult stratum"
+ },
+ {
+  "record_id": "FS-008559",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "8-wk training/omega-3 factorial; cytokines pre/post 48h after last session; no bout sample"
+ },
+ {
+  "record_id": "FS-008578",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "youth judo athletes; age unstated, adulthood unestablished; otherwise eligible WBC subsets"
+ },
+ {
+  "record_id": "FS-008634",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": "",
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Wingate test; IL-10/IL-15/TNF pre/immediate/60min/24h; boxing adaptation focus"
+ }
+]

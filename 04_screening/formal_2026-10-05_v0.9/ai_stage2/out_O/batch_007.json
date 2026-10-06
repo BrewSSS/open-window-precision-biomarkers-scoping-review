@@ -1,0 +1,360 @@
+[
+ {
+  "record_id": "FS-003100",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Wheat-allergy/WDEIA patient case series; exercise only anaphylaxis cofactor; clinical cohort"
+ },
+ {
+  "record_id": "FS-003115",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Cross-sectional fitness-leukocyte telomere association; no bout-linked sampling; telomere not eligible immune measure"
+ },
+ {
+  "record_id": "FS-003119",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Pulmonary arterial hypertension patients; IL-6 measured at rest; no exercise bout"
+ },
+ {
+  "record_id": "FS-003142",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exhaustive hot cycling; monocyte Hsp72 pre/exhaustion/24h; age unstated, not exclusion"
+ },
+ {
+  "record_id": "FS-003154",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Asthma patients in drug-mechanism trials; no qualifying exercise bout with immune sampling"
+ },
+ {
+  "record_id": "FS-003157",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CHI3L1 inflammatory myokine rises after acute exercise; healthy humans; in vitro components secondary"
+ },
+ {
+  "record_id": "FS-003162",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 22 plus/minus 3: mean-2SD=16<18, no range or minimum; otherwise qualifying four-condition bout design"
+ },
+ {
+  "record_id": "FS-003165",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "WDEIA patient sera; einkorn wheat immunoreactivity; clinical allergy cohort, no bout sampling"
+ },
+ {
+  "record_id": "FS-003172",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Children/adolescents with FDEIA undergoing diagnostic provocation tests; clinical cohort"
+ },
+ {
+  "record_id": "FS-003176",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 25.8 plus/minus 5.3: mean-2SD=15.2<18, no range; otherwise placebo-controlled NK/cytokine study"
+ },
+ {
+  "record_id": "FS-003177",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "RA patients with matched healthy controls, separable stratum; exercise plus protein arms; resting cytokines"
+ },
+ {
+  "record_id": "FS-003181",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 25.0 plus/minus 6.5: mean-2SD=12<18; bicarbonate/placebo monocyte HSP72 across two bouts"
+ },
+ {
+  "record_id": "FS-003183",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Becker muscular dystrophy patients; nitrate therapy, vascular outcomes; no immune sampling"
+ },
+ {
+  "record_id": "FS-003195",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 24.0 plus/minus 4.5: mean-2SD=15<18, no range; myokine mRNA single bout otherwise fine"
+ },
+ {
+  "record_id": "FS-003200",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "NMES-induced contractions; cytokines pre/post to 2h; exposure modality needs full-text judgment"
+ },
+ {
+  "record_id": "FS-003222",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 24.09 plus/minus 6.20: mean-2SD=11.7<18; five tournament matches, IL-6 sampling"
+ },
+ {
+  "record_id": "FS-003223",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 19.0 plus/minus 2.9: mean-2SD=13.2<18; two-hour scull cytokine response otherwise fine"
+ },
+ {
+  "record_id": "FS-003239",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Athletes 24 plus/minus 4: mean-2SD=16<18; resting cytokines, no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-003246",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Coronary artery disease patients; 16-week interval training; resting hs-CRP pre/post only"
+ },
+ {
+  "record_id": "FS-003248",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Post-exercise plasma on PBMC DNMT ex vivo; IL-6 pathway; age unstated, not exclusion"
+ },
+ {
+  "record_id": "FS-003257",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Elderly fitness-metabolic-syndrome cross-section with CRP; background-pattern candidate, not clear FT03"
+ },
+ {
+  "record_id": "FS-003264",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Muscle sphingolipidomics for insulin resistance; inflammation only post-hoc correlation; no immune objective"
+ },
+ {
+  "record_id": "FS-003279",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Post-ACL-reconstruction patients; eight-week rehabilitation RCT; no acute-bout immune sampling"
+ },
+ {
+  "record_id": "FS-003281",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Obese pregnant women; resting CRP comparison; bout sampled only for lipid metabolism"
+ },
+ {
+  "record_id": "FS-003298",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Resting platelet function across fitness groups, training snapshot; no bout; platelets not eligible immune measure"
+ },
+ {
+  "record_id": "FS-003303",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Elite cyclists' training camp; protein versus isocaloric carbohydrate; immune-function markers; interpretable contrast"
+ },
+ {
+  "record_id": "FS-003330",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Race distances; lymphocyte DNA damage pre/post/day-3; borderline immune-cell measure, baseline present"
+ },
+ {
+  "record_id": "FS-003363",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "BPPV patients; canalith repositioning manoeuvres are not exercise bouts; cytokines around treatment"
+ },
+ {
+  "record_id": "FS-003394",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Asthmatic men; seasonal bronchoconstriction outcomes only; no immune measures"
+ },
+ {
+  "record_id": "FS-003431",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Rheumatic-disease patients; exercise-test safety outcomes; no bout-linked immune sampling"
+ },
+ {
+  "record_id": "FS-003440",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CKD and kidney-transplant patients, immunosuppressed; muscle NFAT response; clinical cohort"
+ },
+ {
+  "record_id": "FS-003443",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Prebiotic crossover RCT; eucapnic voluntary hyperpnoea is not exercise; airway TNF-alpha and chemokines"
+ },
+ {
+  "record_id": "FS-003455",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "ACL surgical-timing cohort; patient-reported and stability outcomes; no immune measures"
+ },
+ {
+  "record_id": "FS-003460",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ultra-marathon shear-wave elastography; blood biomarkers unnamed; immune link unjudgeable, so advance"
+ },
+ {
+  "record_id": "FS-003461",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "ME/CFS patients; PBMC CD26 at rest only; post-exercise measures non-immune"
+ },
+ {
+  "record_id": "FS-003462",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Intramuscular NF-kB signalling after resistance exercise; no immune cells or mediators"
+ },
+ {
+  "record_id": "FS-003469",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Cardiometabolic-syndrome men; coronary calcification outcomes; no immune measures or bout"
+ },
+ {
+  "record_id": "FS-003485",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Obese women during five-day dietary restriction; exercise-day cytokine contrasts; clinical obesity cohort"
+ },
+ {
+  "record_id": "FS-003487",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Cyclists aged 17-26 pooled by treatment; sixteen-week training plus honey; no separable adult stratum"
+ },
+ {
+  "record_id": "FS-003511",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Twelve-week SIT/ET in sedentary middle-aged men; resting pre/post inflammation; background-pattern candidate"
+ }
+]

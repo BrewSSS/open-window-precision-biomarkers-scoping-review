@@ -1,0 +1,336 @@
+[
+ {
+  "record_id": "FS-002761",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Fructose-diet crossover; steps/day activity contrast; sampling tied to test meal."
+ },
+ {
+  "record_id": "FS-002762",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Fructose crossover; GLP-1/GIP/insulin only; no bout, no immune measure."
+ },
+ {
+  "record_id": "FS-002763",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Scuba dives; EPC/CAC measures; no exercise bout."
+ },
+ {
+  "record_id": "FS-002768",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Age mean-2SD 17.5 <18, no range; kayakers; WBC redox markers."
+ },
+ {
+  "record_id": "FS-002779",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Acute low-back-pain patients; T-cell/cytokines; healthy controls baseline only."
+ },
+ {
+  "record_id": "FS-002780",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Lean and obese exercisers; RANTES/CCR5 pre/post programme; no bout-tied sampling."
+ },
+ {
+  "record_id": "FS-002788",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age unreported; ozone exposure with intermittent exercise; lavage IL-8."
+ },
+ {
+  "record_id": "FS-002793",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Obese older adults BMI 34.5; resting chemerin pre-post training."
+ },
+ {
+  "record_id": "FS-002795",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age unreported; DHA placebo; PGE2 post-exercise in footballers."
+ },
+ {
+  "record_id": "FS-002802",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "COPD cohorts but healthy controls separable; cytokines around knee-extensor bout."
+ },
+ {
+  "record_id": "FS-002803",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age mean-2SD 10.7 <18, no range; seminal cytokines post-sessions."
+ },
+ {
+  "record_id": "FS-002821",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age mean-2SD 8.9 <18, no range; leukocyte adrenergic genes."
+ },
+ {
+  "record_id": "FS-002867",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "WDEIA patient gluten-challenge diagnostics; no bout-tied immune sampling."
+ },
+ {
+  "record_id": "FS-002872",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Injury-treatment trial; plasma viscosity/ROM; no bout-tied immune sampling."
+ },
+ {
+  "record_id": "FS-002884",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Adults 20-22; polyphenol arms with unsupplemented control; neutrophil/lymphocyte redox."
+ },
+ {
+  "record_id": "FS-002890",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age mean-2SD 14 <18, no range; monocyte HSP72 heat/hypoxia bouts."
+ },
+ {
+  "record_id": "FS-002891",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age unreported; hypoxic bout; ICAM/VCAM/nitrosative markers."
+ },
+ {
+  "record_id": "FS-002892",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age unreported; ibuprofen placebo; muscle NF-kB post-bout."
+ },
+ {
+  "record_id": "FS-002899",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age unreported; neutrophil microparticles/thrombin; training arms with control."
+ },
+ {
+  "record_id": "FS-002902",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age unreported; monocyte AMPK/PPARgamma; vitamin C/E contrast."
+ },
+ {
+  "record_id": "FS-002910",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age unreported; lymphocyte beta-receptor density bout response."
+ },
+ {
+  "record_id": "FS-002917",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age unreported; CHF patients plus controls; lymphocyte receptors/cAMP around bout."
+ },
+ {
+  "record_id": "FS-002927",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Elderly 70-75 y; trained versus controls; PBMC Hsp/apoptosis around graded test."
+ },
+ {
+  "record_id": "FS-002931",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age mean-2SD 15.8 <18, no range; HIIE/MICE; blood counts/viscosity."
+ },
+ {
+  "record_id": "FS-002933",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Compensated heart-failure cohort; resting neutrophil/lymphocyte ratio; no bout sampling."
+ },
+ {
+  "record_id": "FS-002943",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age mean-2SD 17 <18 both groups; muscle TWEAK-Fn14 post-bout."
+ },
+ {
+  "record_id": "FS-002945",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age mean-2SD 16 <18, no range; PBMC TRX/PRDX redox proteins."
+ },
+ {
+  "record_id": "FS-002961",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy and MetS adults separable; EPCs around cycling versus rest sessions."
+ },
+ {
+  "record_id": "FS-002966",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Borderline hypertensive patients on nadolol; lymphocyte receptors around exercise."
+ },
+ {
+  "record_id": "FS-002967",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age unreported; marathon; lymphocyte/platelet adrenoceptor densities."
+ },
+ {
+  "record_id": "FS-002988",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age mean-2SD 16.0/13.7 <18; leukocyte Hsp transcripts bout responses."
+ },
+ {
+  "record_id": "FS-002998",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age mean-2SD 15.1 <18, no range; serum IL-17 post-Wingate."
+ },
+ {
+  "record_id": "FS-003005",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Angiography patients (obstructive/no-CAD); gene-expression score around stress test."
+ },
+ {
+  "record_id": "FS-003026",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age mean-2SD 12.2 <18, no range; diathermy pretreatment; muscle IL-6/TNF."
+ },
+ {
+  "record_id": "FS-003042",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age mean-2SD 15 <18, no range; salivary SIgA/lactoferrin/lysozyme."
+ },
+ {
+  "record_id": "FS-003046",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age mean-2SD 16 <18; HIIE versus steady state; IL-6/IL-10/lymphocytes."
+ },
+ {
+  "record_id": "FS-003057",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Asthma patient cohort; eNO/cytokines around exercise versus rest session."
+ },
+ {
+  "record_id": "FS-003063",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT08"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Obese women BMI 30-40; training plus LLLT/sham; no exercise-free arm."
+ },
+ {
+  "record_id": "FS-003084",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Apnea diving exposures; PBMC redox; no exercise bout."
+ },
+ {
+  "record_id": "FS-003097",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT02"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Mouse arteriogenesis study; human 6-month training resting MNC iNOS only."
+ }
+]

@@ -1,0 +1,32 @@
+[
+ {
+  "record_id": "FS-015748",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "rat pituitary cytology after gonadectomy; no humans, exercise, or immune measure"
+ },
+ {
+  "record_id": "FS-015749",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "severe gymnastic bouts; leukocyte/lymphocyte counts vs rest; repeat bout shown"
+ },
+ {
+  "record_id": "FS-015750",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "animal lymphatic absorption experiments; no human data, bout, or immune measure"
+ }
+]

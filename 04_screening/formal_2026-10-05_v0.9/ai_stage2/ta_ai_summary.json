@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-10-06T12:57:49Z",
+  "stage2_records": 9277,
+  "merged": 8447,
+  "missing_an_ai_pass": 830,
+  "ai_B": {
+    "ADVANCE": 4164,
+    "EXCLUDE_TA": 4120,
+    "AWAITING_CLASSIFICATION": 163
+  },
+  "ai_C": {
+    "ADVANCE": 3635,
+    "EXCLUDE_TA": 4306,
+    "AWAITING_CLASSIFICATION": 506
+  },
+  "ai_merged": {
+    "ADVANCE": 4334,
+    "EXCLUDE_TA": 3927,
+    "AWAITING_CLASSIFICATION": 186
+  },
+  "ai_conflicts": 1114,
+  "third_read": 1114,
+  "ai_final": {
+    "ADVANCE": 3951,
+    "EXCLUDE_TA": 4166,
+    "AWAITING_CLASSIFICATION": 330
+  },
+  "ai_final_codes": {
+    "FT03": 1463,
+    "FT07": 696,
+    "FT04": 514,
+    "FT02": 826,
+    "FT01": 649,
+    "FT05": 16,
+    "FT06": 2
+  },
+  "review_scope": {
+    "FULLTEXT_CANDIDATE": 3951,
+    "AI_EXCLUDE_UNVERIFIED": 3793,
+    "SAMPLE_VERIFY": 373,
+    "AWAITING": 330
+  },
+  "sample_frac": 0.1,
+  "seed": 20261005,
+  "workbook_B_sha256": "6cb4bdb12120f0b97b03b38bb9690cc2fa0994bc4adc4f4020ad0d06f2d3a3bb",
+  "workbook_C_sha256": "ecaa6b8d45b360da00e5d840a064180a545de83b365f878412abdfd98b6b1abc"
+}

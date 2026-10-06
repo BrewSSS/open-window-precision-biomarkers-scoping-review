@@ -1,0 +1,332 @@
+[
+ {
+  "record_id": "FS-009982",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "rat bone repair/LPS study; no humans"
+ },
+ {
+  "record_id": "FS-009988",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "stated review of HCMV and exercise immunity"
+ },
+ {
+  "record_id": "FS-009990",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "half-ironman; IL-6/IL-10/CRP at season points"
+ },
+ {
+  "record_id": "FS-009992",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "cryotherapy trial; CK/LDH/soreness only, no immune measure"
+ },
+ {
+  "record_id": "FS-009994",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat NK-cell tribulus study; no humans"
+ },
+ {
+  "record_id": "FS-010002",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "orienteering camp RCT; saliva drawn but analytes unstated"
+ },
+ {
+  "record_id": "FS-010004",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "stated review of pro-resolving lipid mediators"
+ },
+ {
+  "record_id": "FS-010006",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "mouse reverse cholesterol transport study"
+ },
+ {
+  "record_id": "FS-010012",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "rodent overtraining liver signaling study"
+ },
+ {
+  "record_id": "FS-010014",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "rat Momordica/WBC immune organ study; no humans"
+ },
+ {
+  "record_id": "FS-010015",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review of NK cells, exercise, CMV"
+ },
+ {
+  "record_id": "FS-010017",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "systematic review of fatigue biomarkers, 91 papers"
+ },
+ {
+  "record_id": "FS-010021",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "eosinophilic esophagitis case series; no exposure"
+ },
+ {
+  "record_id": "FS-010023",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "equine tendon in vitro cyclic loading study"
+ },
+ {
+  "record_id": "FS-010025",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "infective endocarditis case report; active infection"
+ },
+ {
+  "record_id": "FS-010030",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative evidence review of cherry/blueberry juice"
+ },
+ {
+  "record_id": "FS-010032",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Crohn's patient cohort; accelerometry and CRP"
+ },
+ {
+  "record_id": "FS-010037",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "heat strain/strength outcomes only; no immune measure"
+ },
+ {
+  "record_id": "FS-010038",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "10/30-min cycle bouts; CD31+ lymphocytes pre/10min post"
+ },
+ {
+  "record_id": "FS-010041",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "run to anaerobic threshold; IL-6/hormones, basal/24h"
+ },
+ {
+  "record_id": "FS-010043",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CoQ10 vs placebo; downhill run; inflammation objective"
+ },
+ {
+  "record_id": "FS-010044",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "mouse intravital neutrophil recruitment study"
+ },
+ {
+  "record_id": "FS-010045",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "MS patient cohort; 8-week combined training"
+ },
+ {
+  "record_id": "FS-010047",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat MI microglia/astrocyte study; no humans"
+ },
+ {
+  "record_id": "FS-010049",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "90-min sprint test, three arms; IL-6 and leukocytes"
+ },
+ {
+  "record_id": "FS-010052",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "age 23.95+/-3.5; mean-2SD<18; otherwise eligible"
+ },
+ {
+  "record_id": "FS-010053",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "empty abstract; title names post-exercise immune response"
+ },
+ {
+  "record_id": "FS-010055",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "aerobic/anaerobic sessions; WBC/lymphocytes to 90min"
+ },
+ {
+  "record_id": "FS-010056",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "twins aged 11-18 stated; fitness cross-section"
+ },
+ {
+  "record_id": "FS-010058",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "rat melatonin muscle cytokine study; no humans"
+ },
+ {
+  "record_id": "FS-010059",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "stated review of asthma care in athletes"
+ },
+ {
+  "record_id": "FS-010061",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "clinically obese cohort; 12-week programme, no bout"
+ },
+ {
+  "record_id": "FS-010062",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "mouse pneumococcal infection training study"
+ },
+ {
+  "record_id": "FS-010064",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "mouse Parkinson 6-OHDA training study"
+ },
+ {
+  "record_id": "FS-010065",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "tumor-bearing mouse cachexia exercise study"
+ },
+ {
+  "record_id": "FS-010070",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "review of miRNAs in exercise immunology"
+ },
+ {
+  "record_id": "FS-010071",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse restraint stress/swimming barrier study"
+ },
+ {
+  "record_id": "FS-010074",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "jiu-jitsu fights; salivary IgA/cortisol rest vs post"
+ },
+ {
+  "record_id": "FS-010075",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "consensus statement on oral health in elite sport"
+ },
+ {
+  "record_id": "FS-010076",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "whey vs placebo crossover; 60-min run; IL-6/CK"
+ }
+]

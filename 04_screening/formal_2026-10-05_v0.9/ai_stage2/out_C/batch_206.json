@@ -1,0 +1,379 @@
+[
+ {
+  "record_id": "FS-013486",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinics review of EIB mechanisms; no original human data"
+ },
+ {
+  "record_id": "FS-013487",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Review article on EIB pathogenesis, no original data"
+ },
+ {
+  "record_id": "FS-013489",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Omega-3 RCT placebo; CRP pre/24h post resistance bout"
+ },
+ {
+  "record_id": "FS-013491",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Literature review of EIB pathophysiology"
+ },
+ {
+  "record_id": "FS-013492",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Narrative review, exercise and vaccine responses"
+ },
+ {
+  "record_id": "FS-013496",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Resting cross-sectional fitness comparison; no bout; telomere only"
+ },
+ {
+  "record_id": "FS-013502",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Book chapter, review of nutrition interventions; no abstract"
+ },
+ {
+  "record_id": "FS-013503",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Overview review of sports nutrition"
+ },
+ {
+  "record_id": "FS-013505",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Narrative review; athlete airway injury, URTI, immunodepression"
+ },
+ {
+  "record_id": "FS-013509",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Circuit RE bouts; leukocytes, IgG, cortisol day1 vs day4"
+ },
+ {
+  "record_id": "FS-013517",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "HIV-infected patients; CD4 lab variability; no exercise"
+ },
+ {
+  "record_id": "FS-013518",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Vitamin C vs placebo; leukocytes, IL-6, CRP post-bout"
+ },
+ {
+  "record_id": "FS-013524",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Literature-based review of DOMS; pain focus"
+ },
+ {
+  "record_id": "FS-013527",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-week program, resting pre/post CRP; no bout sample"
+ },
+ {
+  "record_id": "FS-013534",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Book chapter review; gut barrier, probiotics"
+ },
+ {
+  "record_id": "FS-013537",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "30-min submaximal bout; IL-6/TNF-a pre-post, obese vs lean"
+ },
+ {
+  "record_id": "FS-013538",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CHO vs placebo crossover; leukocyte subsets around judo sessions"
+ },
+ {
+  "record_id": "FS-013547",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Narrative review; pediatric athletes airway inflammation"
+ },
+ {
+  "record_id": "FS-013562",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Karate sessions pre/post; immunoglobulin, lipids, circadian"
+ },
+ {
+  "record_id": "FS-013563",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Book chapter review; cytokines, EPCs, CVD framing"
+ },
+ {
+  "record_id": "FS-013567",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Review of EIB inflammation and ICS therapy"
+ },
+ {
+  "record_id": "FS-013573",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Single athlete, 51 marathons; CRP/fibrinogen sampled every 4 days"
+ },
+ {
+  "record_id": "FS-013577",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Review of RCT evidence, inflammation and weight loss"
+ },
+ {
+  "record_id": "FS-013581",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Alzheimer patients; PHA-stimulated lymphocytes; no exercise"
+ },
+ {
+  "record_id": "FS-013585",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Narrative review of quercetin supplementation in athletes"
+ },
+ {
+  "record_id": "FS-013586",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Book chapter review; CFS patients exercise responses"
+ },
+ {
+  "record_id": "FS-013587",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Stated review; anti-inflammatory effects of exercise"
+ },
+ {
+  "record_id": "FS-013588",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Labeled Review; nutrition for injury recovery"
+ },
+ {
+  "record_id": "FS-013592",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Duathlon, diet crossover; IL-6 and LBP post-bout"
+ },
+ {
+  "record_id": "FS-013593",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Book chapter review; Hsp72, NE, neutrophil function"
+ },
+ {
+  "record_id": "FS-013594",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Chapter reviewing Western States 160-km immune studies"
+ },
+ {
+  "record_id": "FS-013595",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Book chapter review; muscle Hsp72 and antioxidants"
+ },
+ {
+  "record_id": "FS-013606",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cave exploration bout; lymphocyte subsets pre/post, n=5"
+ },
+ {
+  "record_id": "FS-013612",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Counterpoint rebuttal editorial; no data"
+ },
+ {
+  "record_id": "FS-013615",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Counterpoint editorial; no data"
+ },
+ {
+  "record_id": "FS-013618",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Book chapter review; food factors and exercise"
+ },
+ {
+  "record_id": "FS-013619",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Purpose-of-review article on exercise-induced asthma"
+ },
+ {
+  "record_id": "FS-013622",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Narrative review of glutamine supplementation studies"
+ },
+ {
+  "record_id": "FS-013626",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Vitamin C vs placebo; leukocytes, IL-6 post-bout sampling"
+ },
+ {
+  "record_id": "FS-013627",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03",
+   "FT02"
+  ],
+  "study_type_hint": "other",
+  "note": "Review of exercise in ALS; rodent and human"
+ }
+]

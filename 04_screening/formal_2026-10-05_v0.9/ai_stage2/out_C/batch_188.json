@@ -1,0 +1,348 @@
+[
+ {
+  "record_id": "FS-010410",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Placebo crossover; CBC leukocytes pre/post eccentric bout"
+ },
+ {
+  "record_id": "FS-010411",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Resting CRP pre/post 14-wk training, no bout"
+ },
+ {
+  "record_id": "FS-010416",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Children 6-19y NHANES; habitual activity cross-section"
+ },
+ {
+  "record_id": "FS-010421",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "HIV/AIDS clinical cohort; training pre/post CD4"
+ },
+ {
+  "record_id": "FS-010424",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Exercised rats and C2C12 myoblasts; animal-only"
+ },
+ {
+  "record_id": "FS-010426",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Heat-wrap timing groups with no-heat control; granulocytes"
+ },
+ {
+  "record_id": "FS-010427",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Systematic review; COPD population"
+ },
+ {
+  "record_id": "FS-010428",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Yoga vs non-yoga comparators; TNF-a pre/post bout"
+ },
+ {
+  "record_id": "FS-010429",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review of resistance-exercise immune responses"
+ },
+ {
+  "record_id": "FS-010435",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Review; leucocytes/cytokines in muscle damage"
+ },
+ {
+  "record_id": "FS-010436",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mice; plasma cytokines after exhaustive swim"
+ },
+ {
+  "record_id": "FS-010437",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Brief review; T1/T2 balance"
+ },
+ {
+  "record_id": "FS-010440",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Obese BMI>=30 cohort; sICAM-1 training snapshot"
+ },
+ {
+  "record_id": "FS-010442",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Type 2 diabetes cohort; no immune measure"
+ },
+ {
+  "record_id": "FS-010443",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Ages 17-24 pooled; rehab survey, no immune measure"
+ },
+ {
+  "record_id": "FS-010447",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Breast cancer survivors; clinical cohort"
+ },
+ {
+  "record_id": "FS-010449",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Pre-supplement trial gives exercise contrast; IL-6"
+ },
+ {
+  "record_id": "FS-010451",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Salivary IgA pre/mid/post soccer match"
+ },
+ {
+  "record_id": "FS-010452",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Students 12-14y; pulmonary function only"
+ },
+ {
+  "record_id": "FS-010453",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Zucker rats; IL-6/CRP/corticosterone"
+ },
+ {
+  "record_id": "FS-010457",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Lymphocyte apoptosis PRE/POST cycle ergometer bout"
+ },
+ {
+  "record_id": "FS-010460",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Neutrophil function pre/post ULE; VC vs control"
+ },
+ {
+  "record_id": "FS-010462",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Placebo RCT; cytokines post downhill run"
+ },
+ {
+  "record_id": "FS-010463",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Cystic fibrosis adolescents; clinical cohort"
+ },
+ {
+  "record_id": "FS-010465",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Season sampling 36h post-exercise; bout identity unclear"
+ },
+ {
+  "record_id": "FS-010466",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Heart failure cohort; troponin/CPK-MB only"
+ },
+ {
+  "record_id": "FS-010469",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rats; stroke model microglia"
+ },
+ {
+  "record_id": "FS-010470",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rats; myocardial NF-kB"
+ },
+ {
+  "record_id": "FS-010473",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "NAC vs control; IL-2 pre/post treadmill bout"
+ },
+ {
+  "record_id": "FS-010475",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rats; neuroinflammation/memory"
+ },
+ {
+  "record_id": "FS-010476",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Athletes vs sedentary; cytokines around 1h run"
+ },
+ {
+  "record_id": "FS-010480",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Endothelial FMD only; no immune measure"
+ },
+ {
+  "record_id": "FS-010482",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Crossover incl water trial; IL-6/CRP pre/post sprints"
+ },
+ {
+  "record_id": "FS-010483",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Hemodialysis patients; clinical cohort"
+ },
+ {
+  "record_id": "FS-010484",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ibuprofen vs control; cytokines post 1500m"
+ },
+ {
+  "record_id": "FS-010488",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Players aged 15.5y; recovery interventions"
+ },
+ {
+  "record_id": "FS-010489",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Sarcoidosis patients; CPET/CT comparison"
+ },
+ {
+  "record_id": "FS-010491",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Gene expression in lymphocytes pre/post run"
+ },
+ {
+  "record_id": "FS-010492",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Triathlon race; leukocytes pre/stages/1h post"
+ },
+ {
+  "record_id": "FS-010493",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "a2-macroglobulin/NO/ions only; not immune mediators"
+ }
+]

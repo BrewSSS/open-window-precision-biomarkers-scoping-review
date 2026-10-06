@@ -1,0 +1,337 @@
+[
+ {
+  "record_id": "FS-000059",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Taper monitoring; WBC/differential resting; 100-m test swims; bout-immune timing unclear"
+ },
+ {
+  "record_id": "FS-000125",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03",
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "In-vitro surfactant assays; RSV-infected mice; asthmatic lavage; no exercise bout"
+ },
+ {
+  "record_id": "FS-000180",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "5-h one-legged knee extensor; IL-6 measured; post-cessation timing unstated"
+ },
+ {
+  "record_id": "FS-000225",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Two runs 1 wk apart; leukocyte HSP72 flow cytometry; 0/24/48 h samples"
+ },
+ {
+  "record_id": "FS-000255",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Triathlon; platelet-leukocyte aggregates, CD62p; baseline and 0.5-2 h post"
+ },
+ {
+  "record_id": "FS-000264",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Trends in Immunology review article; no original data; title shows review"
+ },
+ {
+  "record_id": "FS-000286",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "180-min knee extensor trials; IL-6 mRNA/plasma; healthy males; baseline present"
+ },
+ {
+  "record_id": "FS-000327",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "CHF patients NYHA II-III; clinical cohort; 12-wk training only"
+ },
+ {
+  "record_id": "FS-000336",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Claudicants plus controls; controls' post-exercise neutrophil data separable"
+ },
+ {
+  "record_id": "FS-000488",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Acupuncture vs control during competition; salivary SIgA; mean ages borderline"
+ },
+ {
+  "record_id": "FS-000495",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "1-h uphill run; TGF-beta1 cytokine in microdialysate/plasma; rest baseline"
+ },
+ {
+  "record_id": "FS-000575",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Post-race S100B vs baseline; called cytokine; immune relevance uncertain"
+ },
+ {
+  "record_id": "FS-000580",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Players aged 16-19 pooled; no separable adult stratum results"
+ },
+ {
+  "record_id": "FS-000621",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Glutamine vs placebo; nasal/salivary IgA; rest samples during 9-d interval training"
+ },
+ {
+  "record_id": "FS-000631",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Seasonal CMI Multitest at rest, 3 timepoints; no bout-linked sampling; background"
+ },
+ {
+  "record_id": "FS-000651",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Resting CRP/lipids, runners vs sedentary controls; no bout; background cross-section"
+ },
+ {
+  "record_id": "FS-000656",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Asthma-diagnosis survey in airmen; clinical allergy cohort; no immune outcome"
+ },
+ {
+  "record_id": "FS-000671",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "rhIL-6 vs placebo before 10-km trial; cytokine challenge; immune measures unclear"
+ },
+ {
+  "record_id": "FS-000676",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "5-day camp; resting pre/post leukocyte subsets; no bout-linked sample; background"
+ },
+ {
+  "record_id": "FS-000677",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "In-vitro biomaterial flow chamber; PMN adhesion; no exercise, no in-vivo human data"
+ },
+ {
+  "record_id": "FS-000694",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Resting lymphocyte subsets/Ig across training-intensity groups; no bout sample"
+ },
+ {
+  "record_id": "FS-000695",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Baseline markers incl WBC in runners vs check-up group; no bout"
+ },
+ {
+  "record_id": "FS-000703",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "AM3 vs placebo; CK/myoglobin outcomes reported; immune measures unclear"
+ },
+ {
+  "record_id": "FS-000709",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Apnea-diving stress; neutrophil MPO/iNOS/GSH; vitamin C vs placebo"
+ },
+ {
+  "record_id": "FS-000765",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "16-wk training; resting CRP/adiponectin; no bout sample; background"
+ },
+ {
+  "record_id": "FS-000783",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Half marathon; lymphocyte/neutrophil vitamin E; placebo arm; pre/0/3 h"
+ },
+ {
+  "record_id": "FS-000795",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Overload training; immune markers sampled pre-test on days 1/6/11/16"
+ },
+ {
+  "record_id": "FS-000798",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "10-mo exercise vs control; influenza antibody/IFN-gamma; no bout sampling"
+ },
+ {
+  "record_id": "FS-000800",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Athletes' BHR/eosinophilic airway inflammation; no bout-linked immune sampling"
+ },
+ {
+  "record_id": "FS-000845",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Muscle ECM gene profiling after 6-wk training; no immune objective"
+ },
+ {
+  "record_id": "FS-000866",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Conscripts referred for asthmatic symptoms; clinical cohort; diagnostic challenges"
+ },
+ {
+  "record_id": "FS-000867",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "8-wk cycle training; pre-session leukocyte subsets only; no post-bout sample"
+ },
+ {
+  "record_id": "FS-000880",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Altitude LHTL camps; leukocyte count pre/post; no bout sample; background"
+ },
+ {
+  "record_id": "FS-000898",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Obese elderly training; resting TNF-alpha/adiponectin; metabolic status adjudicate"
+ },
+ {
+  "record_id": "FS-000915",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "IgE immunoblots on two allergy-patient sera; in-vitro assays; no exercise"
+ },
+ {
+  "record_id": "FS-000928",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Apnea diving; lymphocyte SOD/iNOS/nitrite; vitamin C crossover"
+ },
+ {
+  "record_id": "FS-000974",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Maximal test; lymphocyte apoptosis/Hsp70/redox; training-level groups"
+ },
+ {
+  "record_id": "FS-000982",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Post-14km-run plasma Hsp72; heat-illness cases vs finishing controls"
+ },
+ {
+  "record_id": "FS-000986",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Two consecutive exercise-heat bouts; eHsp72 pre/0/22 h; danger-signal framing"
+ },
+ {
+  "record_id": "FS-000976",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Mast-cell lines and skin MC in vitro; c-Kit turnover; no exercise"
+ }
+]

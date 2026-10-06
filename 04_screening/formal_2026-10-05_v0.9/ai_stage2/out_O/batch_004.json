@@ -1,0 +1,347 @@
+[
+ {
+  "record_id": "FS-002091",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Knee osteoarthritis clinical cohort; cytokines around acute bout otherwise eligible."
+ },
+ {
+  "record_id": "FS-002093",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Six-month training; resting TNF/IL-6 pre-post only; no bout-tied sampling."
+ },
+ {
+  "record_id": "FS-002102",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age mean-2SD 17.0/15.0 <18, no range; granulocyte receptor bout study."
+ },
+ {
+  "record_id": "FS-002106",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Players 12-24 y stated, pooled results; seasonal lymphocyte HSP70, no bout ties."
+ },
+ {
+  "record_id": "FS-002111",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "17-week training; fasting CRP/IL-6 at four resting timepoints; no bout sample."
+ },
+ {
+  "record_id": "FS-002152",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Heart failure/anemia clinical cohorts; healthy counterparts' results not separably reported."
+ },
+ {
+  "record_id": "FS-002176",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age mean-2SD 16.5 <18, no range; CD34+ progenitors post-bout."
+ },
+ {
+  "record_id": "FS-002178",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT02"
+  ],
+  "study_type_hint": "other",
+  "note": "Bacterial astaxanthin methods chapter; no human exercise data."
+ },
+ {
+  "record_id": "FS-002188",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age unreported; ultramarathon hemolysis/haptoglobin; no exclusion established."
+ },
+ {
+  "record_id": "FS-002190",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-week resistance training; resting monocyte receptors/CRP pre-post; no bout sampling."
+ },
+ {
+  "record_id": "FS-002203",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Polymyositis/dermatomyositis patients on immunosuppression; LTB4 post-exercise microdialysis."
+ },
+ {
+  "record_id": "FS-002209",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Spinal cord injury cohort; fasting resting CRP/leptin by activity history."
+ },
+ {
+  "record_id": "FS-002228",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Resting MPO in runners versus controls; no bout-tied sampling."
+ },
+ {
+  "record_id": "FS-002232",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Sarcoidosis patients but healthy controls separately reported; IL-6/TNF treadmill responses."
+ },
+ {
+  "record_id": "FS-002242",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Cross-sectional sputum comparison, athletes versus controls; no bout-tied sampling."
+ },
+ {
+  "record_id": "FS-002248",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age unreported; GWI versus controls; graded challenge immune markers."
+ },
+ {
+  "record_id": "FS-002252",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age unreported ('young adults'); placebo-controlled grape arm; eccentric bout sampling."
+ },
+ {
+  "record_id": "FS-002255",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age unreported; ultramarathon NGAL/creatinine; no exclusion established."
+ },
+ {
+  "record_id": "FS-002261",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise-induced asthma patient drug trial; platelet aggregation only, no immune measure."
+ },
+ {
+  "record_id": "FS-002264",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age unreported; marathon serum proteomics, cytokine candidates; no exclusion established."
+ },
+ {
+  "record_id": "FS-002272",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "MSM doses; glutathione/TEAC/homocysteine only; no eligible immune measure."
+ },
+ {
+  "record_id": "FS-002281",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Bruce test for heart-rate reserve only; resting hs-CRP; no bout-tied sampling."
+ },
+ {
+  "record_id": "FS-002286",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-week urban/rural training; resting leukocyte counts pre-post; no bout sampling."
+ },
+ {
+  "record_id": "FS-002295",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Single ischemic colitis case; no immune sampling; clinical population."
+ },
+ {
+  "record_id": "FS-002300",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT08"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Exercise plus nutrition program; resting CRP pre-post; no bout; arms inseparable."
+ },
+ {
+  "record_id": "FS-002306",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age unreported; MMP-9/neutrophil markers reported during exercise only."
+ },
+ {
+  "record_id": "FS-002307",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Peripheral vascular disease patients; leucocyte measures during ischaemic exercise."
+ },
+ {
+  "record_id": "FS-002317",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age mean-2SD 16 <18, no range; sprint NGAL otherwise qualifying."
+ },
+ {
+  "record_id": "FS-002326",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Drug versus placebo arms; cytokine mRNA 72 h post-bout; older adults."
+ },
+ {
+  "record_id": "FS-002354",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "HIV-1 cohort; skin antigen dendritic-cell tests; no exercise exposure."
+ },
+ {
+  "record_id": "FS-002358",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Overweight/obese weight-loss cohort; adipose gene expression; no bout, no immune measure."
+ },
+ {
+  "record_id": "FS-002366",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Cross-sectional resting telomere lengths, runners versus controls; no bout-tied sampling."
+ },
+ {
+  "record_id": "FS-002399",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Anaphylaxis patient genotyping; clinical cohort; no exercise sampling or immune measure."
+ },
+ {
+  "record_id": "FS-002403",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Age given only as 'adult volunteers'; PM-exposure sessions, CRP measured."
+ },
+ {
+  "record_id": "FS-002417",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Age mean-2SD 17 <18, no range; commuting sputum indices."
+ },
+ {
+  "record_id": "FS-002452",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age unreported; ozone-plus-exercise lavage PMN counts."
+ },
+ {
+  "record_id": "FS-002475",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Obese college-student weight-control cohort; resting OPN/leptin pre-post."
+ },
+ {
+  "record_id": "FS-002499",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age unreported; amino-acid infusion after bout; cytokine mRNA."
+ },
+ {
+  "record_id": "FS-002502",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age unreported; sweat cytokines post-exercise plus in-vitro components."
+ },
+ {
+  "record_id": "FS-002505",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Wheat-dependent anaphylaxis patient series; IgE/basophil tests; no bout-tied sampling."
+ }
+]

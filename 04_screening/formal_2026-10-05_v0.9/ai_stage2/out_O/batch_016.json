@@ -1,0 +1,335 @@
+[
+ {
+  "record_id": "FS-005610",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "NHANES habitual-activity cross-section; resting CRP/WBC; no bout or bout-linked sampling"
+ },
+ {
+  "record_id": "FS-005620",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Muscle NF-kB/redox signalling at exhaustion; no immune cells or mediators measured"
+ },
+ {
+  "record_id": "FS-005630",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Probiotic vs placebo with 1-h treadmill challenge; cytokines measured; contrast interpretable"
+ },
+ {
+  "record_id": "FS-005634",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 37.0\u00b113.3: mean\u22122SD<18, adulthood unestablished; otherwise downhill run with IL-6"
+ },
+ {
+  "record_id": "FS-005650",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "No abstract; PhD Academy Award item; elevated-CVD-risk population and source type unjudgeable"
+ },
+ {
+  "record_id": "FS-005652",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Preclinical vascular-ageing report; human part only habitual irisin associations; no bout"
+ },
+ {
+  "record_id": "FS-005686",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Analgesic RCT for exercise-induced pain; no bout sampling; pain scales only"
+ },
+ {
+  "record_id": "FS-005689",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "2-h heat exercise, pre/post LBP (innate LPS-binding); immune link arguable so advance"
+ },
+ {
+  "record_id": "FS-005708",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "PAD cohort but separable healthy controls; IL-6 reported; advance for control stratum"
+ },
+ {
+  "record_id": "FS-005724",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT05",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Monocytes sampled baseline only; post-bout measures are cognitive; no post-cessation sample"
+ },
+ {
+  "record_id": "FS-005726",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT08"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Obese men with hypogonadism/insulin resistance; diet+exercise weight-loss treatment; no bout"
+ },
+ {
+  "record_id": "FS-005729",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Junior national-team swimmers: youth cohort, no adult stratum; NK/NKT design otherwise eligible"
+ },
+ {
+  "record_id": "FS-005731",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Abstract missing; title suggests diabetic cohort; dimensions unjudgeable at TA"
+ },
+ {
+  "record_id": "FS-005735",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Serum metabolomics; inflammatory signaling only a post-hoc signature; no stated immune objective"
+ },
+ {
+  "record_id": "FS-005740",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "CFS/FM patient case-control cohort; resting cytokines/genetics; no exercise bout sampled"
+ },
+ {
+  "record_id": "FS-005741",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 30\u00b19: mean\u22122SD=12<18, awaiting per v3.1; otherwise obesity cohort, 92-cytokine bout panel"
+ },
+ {
+  "record_id": "FS-005743",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Training plus vitamin C; blood only baseline and 24h post-period; no bout"
+ },
+ {
+  "record_id": "FS-005757",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "First-responder stress-training exercise with salivary cytokines pre/post/recovery; bout nature unclear"
+ },
+ {
+  "record_id": "FS-005766",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Kynurenine/tryptophan metabolomics around ultramarathon; immune modulation only background"
+ },
+ {
+  "record_id": "FS-005776",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CTRP9 and FMD vascular-metabolic outcomes; CTRP9 not a recognized immune mediator"
+ },
+ {
+  "record_id": "FS-005780",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Recovery-drink crossover; only CK, soreness, performance reported; CK is not an immune measure"
+ },
+ {
+  "record_id": "FS-005797",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "6-week Tribulus trial; CRP/LDH/TAS at days 0/21/42; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-005803",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "GDF15 metabolic hepatokine; post-exercise sampling present but no immune measure"
+ },
+ {
+  "record_id": "FS-005810",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "One-month step-count intervention; IgG/IgM pre/post intervention only; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-005814",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "GDF15 and appetite outcomes; adults 20-45; no eligible immune measure"
+ },
+ {
+  "record_id": "FS-005834",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Osteopontin is cytokine-like inflammatory marker; HIIE/CME bouts with timed sampling"
+ },
+ {
+  "record_id": "FS-005873",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Muscle senescence (p16, gamma-H2AX); cell infiltration unspecified; no immune measure or objective"
+ },
+ {
+  "record_id": "FS-005875",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Inflammatory and metabolic proteomics in prediabetes; bout-linked sampling unclear so advance"
+ },
+ {
+  "record_id": "FS-005881",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "tRNA-profiling methods paper, cell lines and tumour tissue; no exercise, no immune objective"
+ },
+ {
+  "record_id": "FS-005889",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "102-plex panel with inflammation-related biomarkers; single 60-min bout; immune measures not itemised"
+ },
+ {
+  "record_id": "FS-005909",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Prebiotic vs synbiotic without placebo, but pre/post bout SIgA and cytokines in each arm"
+ },
+ {
+  "record_id": "FS-005912",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-week Tabata RCT; resting CRP and metabolic outcomes pre/post only; no bout sampling"
+ },
+ {
+  "record_id": "FS-005913",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Follicular leukocyte atlas from IVF patients; clinical fertility cohort; no exercise"
+ },
+ {
+  "record_id": "FS-005915",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 24\u00b14: mean\u22122SD=16<18, awaiting per v3.1; otherwise salt crossover with MCP-1"
+ },
+ {
+  "record_id": "FS-005922",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 25.2\u00b137 garbled (likely typo); adulthood unverifiable; otherwise WBC-plus-exercise cytokine crossover"
+ },
+ {
+  "record_id": "FS-005946",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "hs-CRP eligible immune measure; 30-min bout after sleep deficiency with pre-bout levels"
+ },
+ {
+  "record_id": "FS-005951",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise leukocytosis under beta-blockade; hypertensive patients plus controls; check strata at full text"
+ },
+ {
+  "record_id": "FS-005959",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise-induced muscle injury; CRP/IL-6/IL-10 at 48h; baseline/comparator not stated so advance"
+ },
+ {
+  "record_id": "FS-005966",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Salivary IgA/antimicrobial proteins 1h pre to 4h post half-marathon; non-exercise controls"
+ },
+ {
+  "record_id": "FS-005981",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Adult men, mussel-powder placebo crossover; inflammation biomarkers around eccentric bout to 72h"
+ }
+]
