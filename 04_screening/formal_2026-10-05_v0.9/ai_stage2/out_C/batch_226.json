@@ -1,0 +1,365 @@
+[
+ {
+  "record_id": "FS-011230",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "children incl. JDM cohort; VO2-work slope only, no immune measure"
+ },
+ {
+  "record_id": "FS-011236",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT08"
+  ],
+  "study_type_hint": "other",
+  "note": "allergic children; montelukast drug intervention, cytokines not exercise-linked"
+ },
+ {
+  "record_id": "FS-011246",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT08"
+  ],
+  "study_type_hint": "other",
+  "note": "childhood asthma; steroid treatment, exhaled NO, no exercise exposure"
+ },
+ {
+  "record_id": "FS-011247",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "childhood dyskinesia case series; no immune measure"
+ },
+ {
+  "record_id": "FS-011248",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat fear-conditioning peptide study; animal-only"
+ },
+ {
+  "record_id": "FS-011253",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "HIV-infected adolescents; aerobic capacity outcome, no immune measure"
+ },
+ {
+  "record_id": "FS-011266",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "in-vitro cord blood CD34+ culture; no human in-vivo data"
+ },
+ {
+  "record_id": "FS-011273",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "16-year-old case report; spinal infarction, no immune measure"
+ },
+ {
+  "record_id": "FS-011278",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "wheezing children asthma follow-up; exercise challenge only diagnostic"
+ },
+ {
+  "record_id": "FS-011300",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "canine airway cooling model; animal-only"
+ },
+ {
+  "record_id": "FS-011310",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07",
+   "FT08"
+  ],
+  "study_type_hint": "other",
+  "note": "renal transplant recipients; steroid withdrawal, fitness/QoL outcomes only"
+ },
+ {
+  "record_id": "FS-011318",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "asthmatic children; CC16 genotype, exercise challenge diagnostic only"
+ },
+ {
+  "record_id": "FS-011323",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat trigeminal pain model; animal-only"
+ },
+ {
+  "record_id": "FS-011332",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "children 7-9 with asthma; behavioural outcomes, no immune measure"
+ },
+ {
+  "record_id": "FS-011334",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "rat paw inflammation opioid leukocytes; animal-only"
+ },
+ {
+  "record_id": "FS-011345",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "juvenile chronic arthritis; oxLDL antibodies, no exercise exposure"
+ },
+ {
+  "record_id": "FS-011377",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "children step-test for EIA diagnosis; FEV1 only, no immune measure"
+ },
+ {
+  "record_id": "FS-011386",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "children with asthma; bronchial challenge tests, FEV1 only"
+ },
+ {
+  "record_id": "FS-011389",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "children with primary ciliary dyskinesia; lung function only"
+ },
+ {
+  "record_id": "FS-011426",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ironman triathletes; neutrophil/eosinophil counts pre, post, 48h"
+ },
+ {
+  "record_id": "FS-011454",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "ex-vivo CD34+ transduction culture; in-vitro only"
+ },
+ {
+  "record_id": "FS-011480",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "creatine vs placebo; strength/power outcomes only, no immune measure"
+ },
+ {
+  "record_id": "FS-011506",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "racehorse laminitis case; animal-only"
+ },
+ {
+  "record_id": "FS-011516",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "horse BAL cytology after blood inoculation; animal-only"
+ },
+ {
+  "record_id": "FS-011526",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "young heart transplant recipients 5-15y; cardiorespiratory outcomes only"
+ },
+ {
+  "record_id": "FS-011537",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "plantar fasciitis case; shoe construction, no bout with sampling"
+ },
+ {
+  "record_id": "FS-011543",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "CD34+ progenitor TGFbeta cell-cycle cultures; in-vitro only"
+ },
+ {
+  "record_id": "FS-011595",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse thymocyte expansion; animal-only"
+ },
+ {
+  "record_id": "FS-011686",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative overview of diastolic function; no original data reported"
+ },
+ {
+  "record_id": "FS-011775",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse eccentric-injury muscle; animal-only"
+ },
+ {
+  "record_id": "FS-011796",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "normal and mdx mouse muscle after running; animal-only"
+ },
+ {
+  "record_id": "FS-011917",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "CME guideline for exercise testing in children with heart disease"
+ },
+ {
+  "record_id": "FS-012048",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "murine ascites tumour cell kinetics; animal-only"
+ },
+ {
+  "record_id": "FS-012111",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "80-y lymphoma patient; rituximab Takotsubo case, no exercise"
+ },
+ {
+  "record_id": "FS-012122",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "gastric cancer cell lines and xenograft; in-vitro/animal only"
+ },
+ {
+  "record_id": "FS-012129",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "bladder lymphoma case report; no exercise exposure"
+ },
+ {
+  "record_id": "FS-012191",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "C. difficile toxin on enteric glial cell cultures; in-vitro only"
+ },
+ {
+  "record_id": "FS-012209",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "BALB/c mice acute liver failure model; animal-only"
+ },
+ {
+  "record_id": "FS-012227",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "SCLC patient on haemodialysis; chemotherapy case report"
+ },
+ {
+  "record_id": "FS-012282",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "KSHV replication in endothelial cell cultures; in-vitro only"
+ }
+]

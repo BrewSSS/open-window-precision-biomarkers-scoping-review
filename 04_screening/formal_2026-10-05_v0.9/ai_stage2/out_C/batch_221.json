@@ -1,0 +1,356 @@
+[
+ {
+  "record_id": "FS-006615",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "mandibular fracture patients with infection; pain/QoL outcomes; clinical"
+ },
+ {
+  "record_id": "FS-006625",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "elite soccer matches; skin temperature and CK only; no immune measure"
+ },
+ {
+  "record_id": "FS-006626",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT05"
+  ],
+  "study_type_hint": "other",
+  "note": "microvascular angina patients; TCM pill RCT; clinical cohort"
+ },
+ {
+  "record_id": "FS-006630",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "healthy/overweight women; netrin-4 cytokine after acute exercise; borderline immune link"
+ },
+ {
+  "record_id": "FS-006650",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "device and study-design paper; heart failure population; no results"
+ },
+ {
+  "record_id": "FS-006660",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "EIMD bout; IL-6/TNF-alpha to 72h; placebo-controlled; ages unreported"
+ },
+ {
+  "record_id": "FS-006674",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Thoroughbred racehorses; laser therapy thermography; animal-only"
+ },
+ {
+  "record_id": "FS-006683",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mice housing conditions; LPS challenge and cytokines; animal-only"
+ },
+ {
+  "record_id": "FS-006690",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT02"
+  ],
+  "study_type_hint": "other",
+  "note": "corrigendum to mouse krill-oil study; not core source"
+ },
+ {
+  "record_id": "FS-006695",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "female adolescents 15-19y pooled; no separable adult stratum"
+ },
+ {
+  "record_id": "FS-006704",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "post-myocardial infarction registry; LDL-C and adherence; clinical"
+ },
+ {
+  "record_id": "FS-006705",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "machine-learning simulation; heart-disease prediction; no original human measurements"
+ },
+ {
+  "record_id": "FS-006714",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "incremental test under hypoxia/heat; TNF-alpha/IL-6 postexercise"
+ },
+ {
+  "record_id": "FS-006716",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Atlantic salmon STING; infection transcriptomics; animal/in-vitro only"
+ },
+ {
+  "record_id": "FS-006720",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "dyslipidemia lifestyle/amla study; resting lipid panels; no bout sampling"
+ },
+ {
+  "record_id": "FS-006725",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "ovariectomized mice; irisin sEVs osteoporosis; animal-only"
+ },
+ {
+  "record_id": "FS-006728",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "women 28+/-7 y; mean-2SD<18; adulthood unestablished per v3.1 rule"
+ },
+ {
+  "record_id": "FS-006730",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "cesarean section patients; postoperative pain RCT; no immune outcomes"
+ },
+ {
+  "record_id": "FS-006731",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "healthy adults; EPO/aldosterone after cycling; hormones only"
+ },
+ {
+  "record_id": "FS-006733",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT05"
+  ],
+  "study_type_hint": "other",
+  "note": "long-COVID pulmonary clinic patients; ACE2-like abzymes; clinical"
+ },
+ {
+  "record_id": "FS-006735",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "cardiac rehabilitation patients; METs vs training volume; clinical"
+ },
+ {
+  "record_id": "FS-006747",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "cancer cachexia rehabilitation cohort; walk-test vs grip strength; clinical"
+ },
+ {
+  "record_id": "FS-006757",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "asthmatic patients; bronchial reactivity to prostaglandins; clinical"
+ },
+ {
+  "record_id": "FS-006758",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIIT bouts; EPO/aldosterone/hemoglobin only; no immune measure"
+ },
+ {
+  "record_id": "FS-006761",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric bouts; soreness, enzymes, glycogen; no immune measure"
+ },
+ {
+  "record_id": "FS-006769",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "PGRN knockout mice; LPS cytokine response; animal-only"
+ },
+ {
+  "record_id": "FS-006777",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "obesity cohorts; adipose immune cells after weight loss; clinical"
+ },
+ {
+  "record_id": "FS-006778",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "DOMS induction; IL-6/CK to 72h; recovery arms with control"
+ },
+ {
+  "record_id": "FS-006780",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "sleep-restriction crossover; walking bout; CRP measured; exercise contrast present"
+ },
+ {
+  "record_id": "FS-006791",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "AAV9 gene therapy; mice and rats; animal-only"
+ },
+ {
+  "record_id": "FS-006793",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "women with T2D; ultrasound plus 8-week cycling; clinical cohort"
+ },
+ {
+  "record_id": "FS-006799",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "heart failure patients; anakinra trial; hsCRP and VO2peak"
+ },
+ {
+  "record_id": "FS-006801",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "COVID-era healthcare survey; no exercise exposure, no immune measures"
+ },
+ {
+  "record_id": "FS-006806",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "xenogeneic leukemia mice; wheel running GvHD; animal-only"
+ },
+ {
+  "record_id": "FS-006807",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "racehorses; tracheal wash versus BALF cytology; animal-only"
+ },
+ {
+  "record_id": "FS-006810",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "60-km time trial; betaine vs placebo; CBC/NLR post-exercise"
+ },
+ {
+  "record_id": "FS-006812",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "NSAID-use survey; no biological sampling"
+ },
+ {
+  "record_id": "FS-006816",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Nordic-exercise DOMS; taping/cupping; pain outcomes only, no immune measure"
+ },
+ {
+  "record_id": "FS-006819",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ozone chamber with intermittent exercise; IL-6/CRP/SAA; clean-air control"
+ },
+ {
+  "record_id": "FS-006824",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "sST2 ELISA comparability; archived sera; no bout-linked sampling"
+ }
+]

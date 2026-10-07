@@ -1,0 +1,374 @@
+[
+ {
+  "record_id": "FS-003768",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "beta-blocker lymphocyte receptor pharmacology; no immune outcome"
+ },
+ {
+  "record_id": "FS-003774",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Behcet syndrome surgical cohort; exercise-induced dyspnea only a symptom"
+ },
+ {
+  "record_id": "FS-003784",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "cardiac syndrome X patients; resting monocyte-HDL ratio, treadmill diagnostic"
+ },
+ {
+  "record_id": "FS-003789",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "lymphocyte adrenoceptor density after exercise; drug pharmacology, no immune measure"
+ },
+ {
+  "record_id": "FS-003790",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "eccentric bout, supplement arms incl CHO control; CRP and CK to 72h"
+ },
+ {
+  "record_id": "FS-003792",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "cardiac rehabilitation RCT in patients; exercise capacity outcome only"
+ },
+ {
+  "record_id": "FS-003795",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT08"
+  ],
+  "study_type_hint": "other",
+  "note": "COPD cachexia nutrition RCT; exercise-induced fatigue a symptom score"
+ },
+ {
+  "record_id": "FS-004133",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "stem cell transplant patients; strength and VO2 outcomes only"
+ },
+ {
+  "record_id": "FS-004812",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "mitogen-stimulated PBMC cultures; in-vitro only"
+ },
+ {
+  "record_id": "FS-004817",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "heart failure patients; invasive hemodynamic exercise testing"
+ },
+ {
+  "record_id": "FS-004821",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "exercise-induced asthma patients aged 10-45 pooled; FEV1/exhaled NO only"
+ },
+ {
+  "record_id": "FS-004831",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "study design/protocol paper, 10-year marathon follow-up"
+ },
+ {
+  "record_id": "FS-004833",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "ACPA/RA subjects; CPET diagnostic, surfactant protein D biomarker"
+ },
+ {
+  "record_id": "FS-004843",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "EPO microdose doping detection; no exercise bout, no immune measure"
+ },
+ {
+  "record_id": "FS-004852",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "community sleep-disordered breathing cohort; CPET fitness measure only, no bout"
+ },
+ {
+  "record_id": "FS-004855",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "moderate-to-severe asthma patients; training vs breathing exercises RCT"
+ },
+ {
+  "record_id": "FS-004859",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "testosterone/muscle anabolism; IL-6R gene expression only, no immune measure"
+ },
+ {
+  "record_id": "FS-004883",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "in-vitro endothelial cell infection study"
+ },
+ {
+  "record_id": "FS-004884",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "thermography, torque and soreness only; no immune measure"
+ },
+ {
+  "record_id": "FS-004899",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "heart failure patients; sacubitril-valsartan effect on CRP"
+ },
+ {
+  "record_id": "FS-004910",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "arthritis patients resilience survey; no exercise exposure"
+ },
+ {
+  "record_id": "FS-004912",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "stranded dolphins necropsy; animal-only"
+ },
+ {
+  "record_id": "FS-004913",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "glutamine GI tolerance study; no exercise bout, no immune measure"
+ },
+ {
+  "record_id": "FS-004914",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "ZnO vs filtered-air cycling sessions; neutrophils/monocytes to 72h"
+ },
+ {
+  "record_id": "FS-004915",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "muscle PGE2/COX pharmacology; no immune-cell measure"
+ },
+ {
+  "record_id": "FS-004919",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "food allergy case series; exercise only a reaction cofactor"
+ },
+ {
+  "record_id": "FS-004923",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "heart transplant patients; electrogram voltage during work"
+ },
+ {
+  "record_id": "FS-004925",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "ulcerative colitis pain trial; relaxation training, no exercise"
+ },
+ {
+  "record_id": "FS-004938",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "study design paper; sickle cell children/young adults"
+ },
+ {
+  "record_id": "FS-004940",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "rat burn model and cell line; animal/in-vitro only"
+ },
+ {
+  "record_id": "FS-004943",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "literature review of curcumin and DOMS"
+ },
+ {
+  "record_id": "FS-004946",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 39+/-13: mean-2SD<18, no range; insulin sensitivity ambiguous"
+ },
+ {
+  "record_id": "FS-004952",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "COPD patients; neutrophil microvesicles, no exercise exposure"
+ },
+ {
+  "record_id": "FS-004956",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "asthmatics aged 17-39 pooled; neutrophil chemotactic activity measured"
+ },
+ {
+  "record_id": "FS-004958",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "banana-Fusarium transcriptomics; plant study"
+ },
+ {
+  "record_id": "FS-004962",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review, anaphylaxis cofactors"
+ },
+ {
+  "record_id": "FS-004966",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "15-week stretching training; resting outcomes only, no bout sampling"
+ },
+ {
+  "record_id": "FS-004971",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "PM2.5 vs filtered-air crossover with light exercise; SAA/CRP/neutrophils"
+ },
+ {
+  "record_id": "FS-004979",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "cryotherapy affect ratings; no exercise exposure"
+ },
+ {
+  "record_id": "FS-004980",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "narrative clinical overview of summation anaphylaxis; no original data"
+ }
+]

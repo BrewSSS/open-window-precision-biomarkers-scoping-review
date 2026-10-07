@@ -1,0 +1,386 @@
+[
+ {
+  "record_id": "FS-004994",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "knee osteoarthritis surgical cohort; prehabilitation training, no immune measure"
+ },
+ {
+  "record_id": "FS-004998",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "heart failure patients; resting muscle biopsies and biomarkers, no bout"
+ },
+ {
+  "record_id": "FS-005007",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "research-agenda commentary on PCOS outcomes; no original data"
+ },
+ {
+  "record_id": "FS-005017",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "single cancer-patient case report; bleomycin toxicity treatment"
+ },
+ {
+  "record_id": "FS-005040",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "single-patient cardiac arrhythmia case report"
+ },
+ {
+  "record_id": "FS-005041",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "EPO microdose detection windows; no exercise bout, no immune measure"
+ },
+ {
+  "record_id": "FS-005048",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CK and ESR only; ESR not an eligible immune measure"
+ },
+ {
+  "record_id": "FS-005056",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "diabetes/prediabetes cohorts; CPET diagnostic, no exercise exposure"
+ },
+ {
+  "record_id": "FS-005061",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "IL-10 stromal cells in mice/dogs; animal-only"
+ },
+ {
+  "record_id": "FS-005067",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "racehorse training blood count; animal-only"
+ },
+ {
+  "record_id": "FS-005070",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review, oxidative stress and obesity"
+ },
+ {
+  "record_id": "FS-005081",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "wheat allergy patients; exercise only in WDEIA label"
+ },
+ {
+  "record_id": "FS-005091",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "serum EPO, a hormone, only outcome; no immune measure"
+ },
+ {
+  "record_id": "FS-005094",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "veterinary students education study; no exercise exposure"
+ },
+ {
+  "record_id": "FS-005103",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "COPD patients; CPET and stress echocardiography, inflammatory markers incidental"
+ },
+ {
+  "record_id": "FS-005113",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "clinical review of anaphylaxis; cited mast-cell biopsy observations"
+ },
+ {
+  "record_id": "FS-005114",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "COVID-19 survivor follow-up cohort; CPET diagnostic only"
+ },
+ {
+  "record_id": "FS-005120",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "maternal separation and LPS challenge in mice; animal-only"
+ },
+ {
+  "record_id": "FS-005121",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "TK6 lymphoblastoid cell-line toxicogenomics; in-vitro only"
+ },
+ {
+  "record_id": "FS-005124",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "bone marrow progenitor cultures with deferoxamine; in-vitro only"
+ },
+ {
+  "record_id": "FS-005136",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "isoproterenol rat heart-failure model; animal-only"
+ },
+ {
+  "record_id": "FS-005141",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "anaphylaxis registry patients; exercise only a cofactor"
+ },
+ {
+  "record_id": "FS-005144",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT05",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "resting hsCRP sampled before CPET; no post-cessation sample"
+ },
+ {
+  "record_id": "FS-005153",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "bronchiectasis patients; cytokines with CPET capacity tests only"
+ },
+ {
+  "record_id": "FS-005180",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "spinal cord injury antibody in non-human primates; animal-only"
+ },
+ {
+  "record_id": "FS-005181",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "mosquito immune priming transcriptomics; animal-only"
+ },
+ {
+  "record_id": "FS-005192",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "rheumatoid arthritis patients; education intervention on CVD knowledge"
+ },
+ {
+  "record_id": "FS-005822",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "long COVID patients; HRV and resting labs, no exercise exposure"
+ },
+ {
+  "record_id": "FS-006001",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "asthmatic subjects; bronchospasm outcomes only, no immune measure"
+ },
+ {
+  "record_id": "FS-006004",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "childhood cancer survivors; arterial stiffness during exercise test only"
+ },
+ {
+  "record_id": "FS-006051",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "medical education oral board case; no original research"
+ },
+ {
+  "record_id": "FS-006066",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Listeria invasion of cultured HEp-2 cells; in-vitro only"
+ },
+ {
+  "record_id": "FS-006105",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "ketone body effects on cultured iPS microglia; in-vitro only"
+ },
+ {
+  "record_id": "FS-006152",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "heart transplant recipients; EndoPAT and CPET correlations only"
+ },
+ {
+  "record_id": "FS-006285",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "bibliometric analysis of wheat-allergy literature"
+ },
+ {
+  "record_id": "FS-006332",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "expert roundtable perspective on blueberries; no original data"
+ },
+ {
+  "record_id": "FS-006358",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review of IgE food allergy manifestations"
+ },
+ {
+  "record_id": "FS-006417",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT08"
+  ],
+  "study_type_hint": "other",
+  "note": "type 2 diabetes patients; diet plus exercise vs standard care"
+ },
+ {
+  "record_id": "FS-006426",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "hybridoma bioreactor monoclonal antibody production; in-vitro only"
+ },
+ {
+  "record_id": "FS-006431",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "soreness/performance outcomes only; no immune measure"
+ }
+]
