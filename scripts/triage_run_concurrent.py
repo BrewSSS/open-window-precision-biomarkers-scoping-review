@@ -195,10 +195,18 @@ def main():
         return 0
 
     existing, old = T.load_existing_results(out_dir, batchname)
+    existing = {rid: r for rid, r in existing.items() if r.get("parsed") is not None and not (r.get("validation_errors") or [])}
     results = list(existing.values()); done = set(existing); lock = threading.Lock(); since = [0]
     todo = [r for r in rows if r["record_id"] not in done]
     L(f"start: {len(todo)} to do, {len(done)} already done, concurrency={args.concurrency}")
     t0 = time.time(); n429 = 0
+    import signal, os as _os
+    def _on_signal(signum, frame):
+        with lock:
+            T.write_run_file(out_dir / f"checkpoint_{batchname}.json", meta, results)
+            L(f"signal {signum}: checkpoint written with {len(results)} records; exiting")
+        _os._exit(3)
+    signal.signal(signal.SIGTERM, _on_signal); signal.signal(signal.SIGINT, _on_signal)
     with ThreadPoolExecutor(max_workers=args.concurrency) as ex:
         futs = {ex.submit(one_call, args, api_key, system_prompt, user_template, schema, r): r["record_id"] for r in todo}
         for fut in as_completed(futs):

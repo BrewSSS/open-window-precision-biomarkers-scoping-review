@@ -1,0 +1,77 @@
+{
+  "generated_utc": "2026-10-07T16:04:46Z",
+  "model_a": {
+    "label": "glm_flash_nothink",
+    "out_dir": "/tmp/triage/pilot_out_glm_flash",
+    "n_valid_records": 200
+  },
+  "model_b": {
+    "label": "glm_flash_think",
+    "out_dir": "/tmp/triage/pilot_out_glm_flash_think",
+    "n_valid_records": 200
+  },
+  "n_union_records": 200,
+  "n_both_valid": 200,
+  "n_missing_or_invalid_one_side": 0,
+  "layer_counts": {
+    "X": 21,
+    "D": 50,
+    "M": 95,
+    "V": 34
+  },
+  "sample_verify": {
+    "M_total": 95,
+    "M_sampled": 10,
+    "X_total": 21,
+    "X_sampled": 2,
+    "seed": 20261005,
+    "fraction": 0.1
+  },
+  "per_element_agreement_present_absent_unclear_collapse": {
+    "E1_exercise_exposure": {
+      "n": 200,
+      "raw_agreement_pct": 99.5,
+      "cohen_kappa": 0.9603
+    },
+    "E2_post_exercise_sampling": {
+      "n": 200,
+      "raw_agreement_pct": 97.0,
+      "cohen_kappa": 0.7864
+    },
+    "E3_immune_marker": {
+      "n": 200,
+      "raw_agreement_pct": 99.5,
+      "cohen_kappa": 0.6644
+    },
+    "E4_population": {
+      "n": 200,
+      "raw_agreement_pct": 94.5,
+      "cohen_kappa": 0.8397
+    },
+    "E5_validation_readiness_element": {
+      "n": 200,
+      "raw_agreement_pct": 78.0,
+      "cohen_kappa": 0.5097
+    }
+  },
+  "E5_subtype_counts": {
+    "glm_flash_nothink": {
+      "repeated_monitoring": 35,
+      "metric_validation": 12,
+      "outcome_linkage": 18,
+      "omics_discovery": 6
+    },
+    "glm_flash_think": {
+      "repeated_monitoring": 53,
+      "metric_validation": 9,
+      "outcome_linkage": 14,
+      "omics_discovery": 3
+    },
+    "both_agree_present": {
+      "repeated_monitoring": 24,
+      "metric_validation": 8,
+      "outcome_linkage": 12,
+      "omics_discovery": 3
+    }
+  }
+}

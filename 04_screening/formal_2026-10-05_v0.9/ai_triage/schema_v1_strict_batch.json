@@ -1,0 +1,177 @@
+{
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "results"
+ ],
+ "properties": {
+  "results": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "record_id",
+     "E1_exercise_exposure",
+     "E2_post_exercise_sampling",
+     "E3_immune_marker",
+     "E4_population",
+     "E5_validation_readiness_element",
+     "study_type_hint",
+     "note"
+    ],
+    "properties": {
+     "record_id": {
+      "type": "string",
+      "pattern": "^FS-[0-9]{6}$"
+     },
+     "E1_exercise_exposure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "value",
+       "quote"
+      ],
+      "properties": {
+       "value": {
+        "type": "string",
+        "enum": [
+         "core_A",
+         "support_B",
+         "chronic_training_only",
+         "habitual_or_resting_cross_sectional",
+         "none_or_non_exercise",
+         "unclear"
+        ]
+       },
+       "quote": {
+        "type": "string"
+       }
+      }
+     },
+     "E2_post_exercise_sampling": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "value",
+       "quote"
+      ],
+      "properties": {
+       "value": {
+        "type": "string",
+        "enum": [
+         "present",
+         "absent",
+         "unclear"
+        ]
+       },
+       "quote": {
+        "type": "string"
+       }
+      }
+     },
+     "E3_immune_marker": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "value",
+       "marker_families",
+       "quote"
+      ],
+      "properties": {
+       "value": {
+        "type": "string",
+        "enum": [
+         "present",
+         "absent",
+         "unclear"
+        ]
+       },
+       "marker_families": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "quote": {
+        "type": "string"
+       }
+      }
+     },
+     "E4_population": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "value",
+       "quote"
+      ],
+      "properties": {
+       "value": {
+        "type": "string",
+        "enum": [
+         "adults_stated",
+         "young_adult_age_unclear",
+         "includes_under_18",
+         "clinical_or_infected_cohort",
+         "animal_or_in_vitro",
+         "unclear"
+        ]
+       },
+       "quote": {
+        "type": "string"
+       }
+      }
+     },
+     "E5_validation_readiness_element": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+       "value",
+       "subtypes",
+       "quote"
+      ],
+      "properties": {
+       "value": {
+        "type": "string",
+        "enum": [
+         "present",
+         "absent",
+         "unclear"
+        ]
+       },
+       "subtypes": {
+        "type": "array",
+        "items": {
+         "type": "string",
+         "enum": [
+          "metric_validation",
+          "outcome_linkage",
+          "omics_discovery",
+          "repeated_monitoring"
+         ]
+        }
+       },
+       "quote": {
+        "type": "string"
+       }
+      }
+     },
+     "study_type_hint": {
+      "type": "string",
+      "enum": [
+       "RCT",
+       "crossover",
+       "cohort",
+       "case-control",
+       "cross-sectional",
+       "other"
+      ]
+     },
+     "note": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ }
+}
