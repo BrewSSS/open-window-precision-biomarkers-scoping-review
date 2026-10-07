@@ -246,3 +246,17 @@ family only — V/M/X/U, no second-model D layer yet) and `full_4298_glm_flash_e
 quote fields, no abstract text). Raw per-record output backed up to
 `_local_runs/full_glm_flash_nothink_all_advance.json` (git-ignored; see `MANIFEST.json`
 for sha256).
+
+## Full GPT-6 Luna pass (added 2026-10-08)
+
+- Runner: `scripts/triage_codex_run.py` (batches of 5 records per `codex exec --json` call via
+  `scripts/codex_stream_call.py`, ThreadPoolExecutor, resumable per-batch checkpoint files under
+  `{out_dir}/batches/`). Model `gpt-6-luna`, effort `max`, concurrency 16, 860 batches over the
+  full 4,298 `ai_final == ADVANCE` population. 0 failed batches; after one `--resume` pass,
+  1/4,298 records (FS-010112) has a single schema-invalid field (an over-length `quote` string;
+  the Codex batch schema does not enforce `maxLength`, unlike `schema_v1.json`).
+- Full-pass summary: `full_4298_gpt6_luna_summary.md` (element distribution, single-family
+  V/M/X/U layer sizing, timing/token totals). No GLM-vs-GPT two-family comparison was run on the
+  full set (reserved for the coordinator together with the GLM thinking-vs-nonthinking review).
+- Raw per-record output backed up to `_local_runs/gpt6_luna_full_4298.json` (git-ignored; see
+  `MANIFEST.json` for sha256).
