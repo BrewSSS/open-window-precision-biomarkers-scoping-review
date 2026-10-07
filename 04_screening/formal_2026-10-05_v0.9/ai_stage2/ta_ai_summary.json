@@ -1,47 +1,54 @@
 {
-  "generated_at": "2026-10-07T07:25:10Z",
+  "generated_at": "2026-10-07T13:06:14Z",
   "stage2_records": 9277,
   "merged": 9277,
   "missing_an_ai_pass": 0,
   "ai_B": {
-    "ADVANCE": 4223,
-    "EXCLUDE_TA": 4886,
-    "AWAITING_CLASSIFICATION": 168
+    "ADVANCE": 4249,
+    "EXCLUDE_TA": 4900,
+    "AWAITING_CLASSIFICATION": 128
   },
   "ai_C": {
-    "ADVANCE": 3692,
-    "EXCLUDE_TA": 5076,
-    "AWAITING_CLASSIFICATION": 509
+    "ADVANCE": 3716,
+    "EXCLUDE_TA": 5095,
+    "AWAITING_CLASSIFICATION": 466
   },
   "ai_merged": {
-    "ADVANCE": 4404,
-    "EXCLUDE_TA": 4683,
-    "AWAITING_CLASSIFICATION": 190
+    "ADVANCE": 4430,
+    "EXCLUDE_TA": 4699,
+    "AWAITING_CLASSIFICATION": 148
   },
-  "ai_conflicts": 1154,
-  "third_read": 1154,
+  "ai_conflicts": 1152,
+  "third_read": 1152,
   "ai_final": {
-    "ADVANCE": 4011,
-    "EXCLUDE_TA": 4931,
-    "AWAITING_CLASSIFICATION": 335
+    "ADVANCE": 4326,
+    "EXCLUDE_TA": 4949,
+    "AWAITING_CLASSIFICATION": 2
   },
   "ai_final_codes": {
-    "FT03": 1668,
+    "FT03": 1682,
     "FT07": 742,
-    "FT04": 555,
+    "FT04": 556,
     "FT02": 1237,
-    "FT01": 709,
+    "FT01": 712,
     "FT05": 18,
     "FT06": 2
   },
   "review_scope": {
-    "FULLTEXT_CANDIDATE": 4011,
-    "AI_EXCLUDE_UNVERIFIED": 4484,
-    "SAMPLE_VERIFY": 447,
-    "AWAITING": 335
+    "FULLTEXT_CANDIDATE": 4326,
+    "AI_EXCLUDE_UNVERIFIED": 4483,
+    "SAMPLE_VERIFY": 466,
+    "AWAITING": 2
   },
   "sample_frac": 0.1,
   "seed": 20261005,
-  "workbook_B_sha256": "ea8c7d3f9dd529e73b674434ae630254cdc87910f5d2df06e658d7c6c952b91a",
-  "workbook_C_sha256": "a682d313cf9cfe1e6f8aa209bc6f432ad1fdbd7d53656b5f0696b1f4fda5d0a3"
+  "adjustments": {
+    "": 8942,
+    "RESCREENED_BATCH_235_TITLE_ONLY": 45,
+    "RESCREENED_BATCH_235": 1,
+    "AGE_RULE_DEFERRED_TO_FULLTEXT": 287,
+    "ABSTRACT_MISSING": 2
+  },
+  "workbook_B_sha256": "f0e6422bff5b421947b1f1ac880a9f201c0b3789fc006234fa31fc82cd70d103",
+  "workbook_C_sha256": "d8093c0c71dec5993e06b89051bc94ff65a3556096276c2b53259b1db85e616f"
 }

@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/scoping-review/ai_triage/schema_v1.json",
+  "title": "AI validation-readiness triage — structured-element output (v1)",
+  "description": "One object per screened record. Two model families each produce one of these objects per record_id; no eligibility/advance-exclude decision is included. Element values are structured-element extractions, not screening dispositions.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "E1_exercise_exposure",
+    "E2_post_exercise_sampling",
+    "E3_immune_marker",
+    "E4_population",
+    "E5_validation_readiness_element",
+    "study_type_hint",
+    "note"
+  ],
+  "$defs": {
+    "quote": {
+      "type": "string",
+      "maxLength": 220,
+      "description": "Verbatim substring copied from the supplied title/abstract, <=25 words, or \"\" if the value is absent/unclear and no supporting text exists. Never paraphrase. Never include text that is not in the supplied title/abstract."
+    },
+    "element_core": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "quote"],
+      "properties": {
+        "value": { "type": "string" },
+        "quote": { "$ref": "#/$defs/quote" }
+      }
+    }
+  },
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "description": "Echo of the input record_id exactly as supplied (e.g. FS-000123).",
+      "pattern": "^FS-[0-9]{6}$"
+    },
+    "E1_exercise_exposure": {
+      "allOf": [{ "$ref": "#/$defs/element_core" }],
+      "properties": {
+        "value": {
+          "enum": [
+            "core_A",
+            "support_B",
+            "chronic_training_only",
+            "habitual_or_resting_cross_sectional",
+            "none_or_non_exercise",
+            "unclear"
+          ]
+        },
+        "quote": { "$ref": "#/$defs/quote" }
+      },
+      "description": "core_A = identifiable single exercise bout (any intensity/mode). support_B = repeated identified bouts in the same people. chronic_training_only = a training programme with no bout-linked sampling. habitual_or_resting_cross_sectional = habitual-activity or resting cross-sectional comparison. none_or_non_exercise = no exercise exposure, or a non-exercise exposure (drug/diet/disease/sleep/etc). unclear = abstract does not let this be judged."
+    },
+    "E2_post_exercise_sampling": {
+      "allOf": [{ "$ref": "#/$defs/element_core" }],
+      "properties": {
+        "value": { "enum": ["present", "absent", "unclear"] },
+        "quote": { "$ref": "#/$defs/quote" }
+      },
+      "description": "present = at least one biosample taken after cessation of an identified bout, at any time point including 'immediately after' and including samples only at/after 1 week. absent = only pre-exercise/during-exercise samples, or only resting samples with no bout-linked post-cessation draw. unclear = cannot be judged from the abstract."
+    },
+    "E3_immune_marker": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "marker_families", "quote"],
+      "properties": {
+        "value": { "enum": ["present", "absent", "unclear"] },
+        "marker_families": {
+          "type": "array",
+          "items": { "type": "string", "maxLength": 60 },
+          "description": "Named immune/inflammatory/immune-relevant-omics marker families mentioned (e.g. 'leukocyte subsets', 'NK cells', 'cytokines', 'sIgA', 'CRP', 'immunoglobulins', 'complement', 'proteomics', 'transcriptomics'). Empty array if value is absent or unclear.",
+          "default": []
+        },
+        "quote": { "$ref": "#/$defs/quote" }
+      },
+      "description": "A named immune, inflammatory, or immune-relevant omics marker measured in a human biosample."
+    },
+    "E4_population": {
+      "allOf": [{ "$ref": "#/$defs/element_core" }],
+      "properties": {
+        "value": {
+          "enum": [
+            "adults_stated",
+            "young_adult_age_unclear",
+            "includes_under_18",
+            "clinical_or_infected_cohort",
+            "animal_or_in_vitro",
+            "unclear"
+          ]
+        },
+        "quote": { "$ref": "#/$defs/quote" }
+      },
+      "description": "Report only what the abstract states; do NOT apply the mean-2SD age rule yourself. adults_stated = explicit adult age range/minimum, or clearly adult descriptor with numeric support. young_adult_age_unclear = only mean+/-SD or vague 'young/students/athletes' given, no explicit range/minimum. includes_under_18 = abstract states participants <18y were included. clinical_or_infected_cohort = abstract states a disease/active-infection cohort. animal_or_in_vitro = non-human. unclear = cannot be judged."
+    },
+    "E5_validation_readiness_element": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "subtypes", "quote"],
+      "properties": {
+        "value": { "enum": ["present", "absent", "unclear"] },
+        "subtypes": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "metric_validation",
+              "outcome_linkage",
+              "omics_discovery",
+              "repeated_monitoring"
+            ]
+          },
+          "uniqueItems": true,
+          "default": [],
+          "description": "May be empty. metric_validation = reliability/reproducibility/intra-or-inter-individual variability/CV/reference intervals/thresholds-cutoffs/diagnostic-or-predictive performance/minimal detectable change. outcome_linkage = marker linked to infection/URTI/URS/illness/overtraining-overreaching/performance decrement. omics_discovery = proteomics/metabolomics/transcriptomics/miRNA/epigenomics/single-cell/EV-exosome profiling. repeated_monitoring = same marker tracked across >=2 bouts/competitions or a season in the same individuals."
+        },
+        "quote": { "$ref": "#/$defs/quote" }
+      }
+    },
+    "study_type_hint": {
+      "enum": ["RCT", "crossover", "cohort", "case-control", "cross-sectional", "other"]
+    },
+    "note": {
+      "type": "string",
+      "maxLength": 260,
+      "description": "<=30 words, free text, no personal data, no e-mail."
+    }
+  }
+}

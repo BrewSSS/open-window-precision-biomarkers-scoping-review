@@ -12,6 +12,16 @@ Inputs
   --sample-frac F          share of agreed AI exclusions drawn for human verification (default 0.10)
   --seed N                 default 20261005
   --out-dir DIR
+  --age-rule-defer         default off. When on, implements the 2026-10-07 coordinator decision that the v3.1 age
+                           rule (mean - 2*SD < 18 y, or age not stated) is deferred from abstract stage to full
+                           text: any record whose ai_final would be AWAITING_CLASSIFICATION and whose master
+                           abstract is non-empty (stripped, >0 chars) is promoted to ai_final = ADVANCE (ai_final_code
+                           cleared), review_scope follows (becomes FULLTEXT_CANDIDATE). A new column `adjustment`
+                           records why: "AGE_RULE_DEFERRED_TO_FULLTEXT" when any of ai_B_note/ai_C_note/ai_opus_note
+                           matches the age-rule regex (?i)age|2 sd|2 sd (unicode middle dot)|adult|18, else
+                           "AWAITING_WITH_ABSTRACT_PROMOTED"; records that stay AWAITING because the abstract is
+                           empty get "ABSTRACT_MISSING"; all other records get "". Adjustment counts are added to
+                           the summary JSON under "adjustments". Same seed, same sample, otherwise unchanged.
 
 Merge rule: ai_merged = ADVANCE if either pass advanced; else AWAITING if either pass is AWAITING; else EXCLUDE_TA.
 ai_conflict = dispositions differ, or both exclude with different primary codes.
@@ -37,6 +47,8 @@ DISP = ["ADVANCE", "EXCLUDE_TA", "RETAIN_BACKGROUND", "AWAITING_CLASSIFICATION"]
 CODES = ["FT01", "FT02", "FT03", "FT04", "FT05", "FT06", "FT07", "FT08"]
 
 
+RESCREENED = {}  # record_id -> list of later batch files that superseded an earlier decision
+
 def load_ai(d):
     out = {}
     if not d:
@@ -47,7 +59,9 @@ def load_ai(d):
         for o in json.load(open(f, encoding="utf-8")):
             rid = o["record_id"]
             if rid in out:
-                raise SystemExit(f"duplicate {rid} in {d}")
+                # a later batch file re-screens the record (e.g. batch_235 after abstract completion): it supersedes
+                # the earlier decision; the earlier file is left untouched in the archive
+                RESCREENED.setdefault(rid, []).append(os.path.basename(f))
             sc = o.get("secondary_codes") or []
             out[rid] = {"disposition": (o.get("disposition") or "").strip(), "code": (o.get("primary_code") or "").strip()[:4],
                         "secondary": ";".join(sc) if isinstance(sc, list) else str(sc), "hint": (o.get("study_type_hint") or "").strip(),
@@ -61,6 +75,7 @@ def main():
     ap.add_argument("--master", required=True); ap.add_argument("--stage1", required=True)
     ap.add_argument("--sample-frac", type=float, default=0.10); ap.add_argument("--seed", type=int, default=20261005)
     ap.add_argument("--out-dir", required=True); ap.add_argument("--allow-partial", action="store_true")
+    ap.add_argument("--age-rule-defer", action="store_true")
     a = ap.parse_args(); os.makedirs(a.out_dir, exist_ok=True)
     master = {r["record_id"]: r for r in csv.DictReader(open(a.master, encoding="utf-8"))}
     s1 = [r for r in csv.DictReader(open(a.stage1, encoding="utf-8")) if (r.get("ai_final") or r.get("ai_merged")) == "ADVANCE_TO_ABSTRACT" or r.get("ai_conflict") == "TRUE"]
@@ -86,7 +101,7 @@ def main():
         o = O.get(rid) if conflict else None
         final = o["disposition"] if o else merged
         fcode = o["code"] if o else code
-        rows.append(OrderedDict([
+        row_items = [
             ("record_id", rid), ("title", m["title"]), ("journal", m["journal"]), ("year", m["year"]), ("pmid", m["pmid"]), ("doi", m["doi"]),
             ("source_database", m["source_database"]), ("has_abstract", "TRUE" if (m.get("abstract") or "").strip() else "FALSE"),
             ("stage1_final", r.get("ai_final") or r.get("ai_merged")), ("stage1_conflict", r.get("ai_conflict", "")),
@@ -94,15 +109,37 @@ def main():
             ("ai_C_disposition", cd), ("ai_C_code", c["code"] if c else ""), ("ai_C_hint", c["hint"] if c else ""), ("ai_C_note", c["note"] if c else ""),
             ("ai_merged", merged), ("ai_merged_code", code), ("ai_conflict", "TRUE" if conflict else "FALSE"),
             ("ai_opus_disposition", o["disposition"] if o else ""), ("ai_opus_code", o["code"] if o else ""), ("ai_opus_note", o["note"] if o else ""),
-            ("ai_final", final), ("ai_final_code", fcode), ("review_scope", ""),
-        ]))
+            ("ai_final", final), ("ai_final_code", fcode),
+        ]
+        if a.age_rule_defer:
+            row_items.append(("adjustment", ""))
+        row_items.append(("review_scope", ""))
+        rows.append(OrderedDict(row_items))
+    for x in rows:
+        if x["record_id"] in RESCREENED:
+            abstract = (master[x["record_id"]].get("abstract") or "").strip()
+            x["adjustment"] = ("RESCREENED_%s" % RESCREENED[x["record_id"]][-1].replace(".json", "").upper()) + ("" if abstract else "_TITLE_ONLY")
+    if RESCREENED:
+        print(f"re-screened records superseded by later batch files: {len(RESCREENED)}")
+    if a.age_rule_defer:
+        age_re = re.compile(r"(?i)age|2\s*sd|2·sd|adult|18")
+        for x in rows:
+            if x["ai_final"] != "AWAITING_CLASSIFICATION":
+                continue
+            abstract = (master[x["record_id"]].get("abstract") or "").strip()
+            if not abstract:
+                x["adjustment"] = "ABSTRACT_MISSING"
+                continue
+            notes = " ".join([x.get("ai_B_note", ""), x.get("ai_C_note", ""), x.get("ai_opus_note", "")])
+            x["adjustment"] = "AGE_RULE_DEFERRED_TO_FULLTEXT" if age_re.search(notes) else "AWAITING_WITH_ABSTRACT_PROMOTED"
+            x["ai_final"] = "ADVANCE"; x["ai_final_code"] = ""
     excl = sorted(x["record_id"] for x in rows if x["ai_final"] == "EXCLUDE_TA" and x["ai_conflict"] == "FALSE")
     rng = random.Random(a.seed); k = int(round(len(excl) * a.sample_frac)); sample = set(rng.sample(excl, k)) if k else set()
     for x in rows:
         if x["ai_final"] == "ADVANCE": x["review_scope"] = "FULLTEXT_CANDIDATE"
         elif x["ai_conflict"] == "TRUE" and not x["ai_opus_disposition"]: x["review_scope"] = "CONFLICT"
         elif x["ai_final"] == "AWAITING_CLASSIFICATION": x["review_scope"] = "AWAITING"
-        elif x["record_id"] in sample: x["review_scope"] = "SAMPLE_VERIFY"
+        elif x["record_id"] in sample or x["adjustment"].endswith("_TITLE_ONLY"): x["review_scope"] = "SAMPLE_VERIFY"  # title-only re-screened exclusions: always verified
         else: x["review_scope"] = "AI_EXCLUDE_UNVERIFIED"
     out_csv = os.path.join(a.out_dir, "ta_ai_merged.csv")
     with open(out_csv, "w", encoding="utf-8", newline="") as f:
@@ -113,6 +150,8 @@ def main():
                "ai_conflicts": sum(x["ai_conflict"] == "TRUE" for x in rows), "third_read": sum(1 for x in rows if x["ai_opus_disposition"]),
                "ai_final": dict(Counter(x["ai_final"] for x in rows)), "ai_final_codes": dict(Counter(x["ai_final_code"] for x in rows if x["ai_final_code"])),
                "review_scope": dict(Counter(x["review_scope"] for x in rows)), "sample_frac": a.sample_frac, "seed": a.seed}
+    if a.age_rule_defer:
+        summary["adjustments"] = dict(Counter(x["adjustment"] for x in rows))
     grey = PatternFill("solid", fgColor="EEEEEE"); bold = Font(bold=True)
     for rev in ("B", "C"):
         wb = Workbook(); ws = wb.active; ws.title = "README"

@@ -1,0 +1,12 @@
+{
+  "seed": 20261007,
+  "algorithm": "random.Random(20261007).sample(sorted(record_ids), 200)",
+  "source_file": "04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_ai_merged.csv",
+  "source_file_sha256": "0327af1e0e89063498eaa73c40acf974912c3250d3e23b224f3edd4ac4874700",
+  "universe_filter": "ai_final == 'ADVANCE'",
+  "n_universe": 4298,
+  "n_sampled": 200,
+  "generated_utc": "2026-10-07T10:48:55Z",
+  "output_ids_file": "04_screening/formal_2026-10-05_v0.9/ai_triage/pilot_200_ids.txt",
+  "output_csv_file": "/tmp/triage/pilot_200.csv (git-ignored, outside repo; contains abstract text)"
+}

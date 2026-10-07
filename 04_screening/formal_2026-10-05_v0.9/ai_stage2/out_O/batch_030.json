@@ -1,0 +1,60 @@
+[
+ {
+  "record_id": "FS-002994",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Abstract missing; title suggests EIMD with anti-inflammatory (immune) modeling; no clear exclusion from title."
+ },
+ {
+  "record_id": "FS-003900",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "No abstract; 1975 title suggests commentary, but report type and content unverifiable"
+ },
+ {
+  "record_id": "FS-007330",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Empty abstract; title suggests commentary but review status not established; advance"
+ },
+ {
+  "record_id": "FS-007404",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "No abstract; title suggests possible proceedings and EIA cohort; clinical status and source type unresolved"
+ },
+ {
+  "record_id": "FS-009835",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Title indicates a review/commentary on CWI mechanisms; no original human study data."
+ },
+ {
+  "record_id": "FS-010576",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Diagnostic study in anaphylaxis patients; clinical cohort, no eligible healthy exercise-bout population"
+ },
+ {
+  "record_id": "FS-011944",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Abstract missing; title suggests post-exercise neutrophil function in humans; verify publication type (Federation Proceedings)."
+ }
+]

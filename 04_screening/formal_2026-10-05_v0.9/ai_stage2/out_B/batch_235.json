@@ -1,0 +1,399 @@
+[
+ {
+  "record_id": "FS-000158",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Clinical coronary artery disease patients; CRP resting cross-sectional, no exercise bout or immune response focus"
+ },
+ {
+  "record_id": "FS-000181",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Myocardial ischaemia cohort implies clinical cardiac patients, not generally healthy adults."
+ },
+ {
+  "record_id": "FS-000377",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "HIV prevention education training programme; no exercise bout, no immune measures"
+ },
+ {
+  "record_id": "FS-001813",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Title indicates clinical metabolic-disease cohorts; proteinuria not an eligible immune measure."
+ },
+ {
+  "record_id": "FS-002396",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Title indicates a review of controversies; not original research"
+ },
+ {
+  "record_id": "FS-002994",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Empty abstract; title suggests modeling of cryotherapy/EIMD; cannot judge population, exposure, or immune link."
+ },
+ {
+  "record_id": "FS-003043",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT08"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical anaphylaxis patient cohort; aspirin co-intervention likely inseparable. Abstract empty; title establishes population."
+ },
+ {
+  "record_id": "FS-003900",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Empty abstract; title alone does not establish any exclusion criterion."
+ },
+ {
+  "record_id": "FS-005337",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Abstract missing; title suggests acute exercise with immune outcomes; population status unclear, resolve at full text."
+ },
+ {
+  "record_id": "FS-005520",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Clinical anaphylaxis case in pediatric journal; not generally healthy adult cohort"
+ },
+ {
+  "record_id": "FS-005650",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Abstract missing; title suggests acute bout with inflammatory markers; 'PhD Academy Award' may be a profile piece"
+ },
+ {
+  "record_id": "FS-005731",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Title states type I diabetics; clinical disease cohort excluded"
+ },
+ {
+  "record_id": "FS-006462",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Empty abstract; title suggests acute exercise with IL-15 immune measure; advance"
+ },
+ {
+  "record_id": "FS-006614",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Title clearly states patients with heart failure; clinical cohort excluded"
+ },
+ {
+  "record_id": "FS-006764",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "COPD patient cohort; clinical population outside generally healthy target"
+ },
+ {
+  "record_id": "FS-006871",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Empty abstract; title suggests immune protein responses to acute exercise, plausibly eligible"
+ },
+ {
+  "record_id": "FS-007092",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT08"
+  ],
+  "study_type_hint": "other",
+  "note": "Exercise-induced asthma patient cohort; drug pre-treatment, exercise effect not separable."
+ },
+ {
+  "record_id": "FS-007201",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Abstract missing; title suggests exercise cfDNA/neutrophil immune link, plausibly eligible."
+ },
+ {
+  "record_id": "FS-007330",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Abstract missing; hypothesis-framed title does not clearly establish review status; route to full text"
+ },
+ {
+  "record_id": "FS-007367",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Exercise-induced asthma population; clinical cohort, not generally healthy adults (title-only, abstract missing)"
+ },
+ {
+  "record_id": "FS-007404",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Empty abstract; title compatible (neutrophil chemotactic factor, exercise); asthma population needs full-text check."
+ },
+ {
+  "record_id": "FS-007452",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Abstract missing; PF4 is an immune mediator; patient health status unclear from title"
+ },
+ {
+  "record_id": "FS-007775",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise test with leukocyte measures; mixed normals/angioplasty cohort needs full text adjudication"
+ },
+ {
+  "record_id": "FS-008118",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Acute exercise with salivary IgA/antimicrobial peptides; abstract missing but title compatible"
+ },
+ {
+  "record_id": "FS-008133",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Empty abstract; title suggests post-exercise cytokines in trained/untrained humans, peer-reviewed"
+ },
+ {
+  "record_id": "FS-008139",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Empty abstract; title suggests acute exercise with NK cytotoxicity plus supplement arm; separability unclear"
+ },
+ {
+  "record_id": "FS-008519",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Clinical case report of pathological lymphedema, not generally healthy cohort"
+ },
+ {
+  "record_id": "FS-008584",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Empty abstract; title suggests exercise-immune topic but source type/eligibility unclear"
+ },
+ {
+  "record_id": "FS-009685",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT01"
+  ],
+  "study_type_hint": "other",
+  "note": "Pediatric case report of vasculitis; clinical population, not core original study."
+ },
+ {
+  "record_id": "FS-009835",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review of CWI mechanisms; title indicates review, not original research"
+ },
+ {
+  "record_id": "FS-009886",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Abstract empty; title suggests athletes, acute bout, inflammation biomarkers; journal may be conference supplement"
+ },
+ {
+  "record_id": "FS-010053",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Empty abstract; title suggests acute bout, immune response, supplement — separability unclear, advance"
+ },
+ {
+  "record_id": "FS-010094",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Abstract missing; title indicates acute bout with immune marker; supplement may be separable"
+ },
+ {
+  "record_id": "FS-010576",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Empty abstract; title suggests allergy diagnostics in vitro, exercise role unclear"
+ },
+ {
+  "record_id": "FS-011224",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Abstract missing; title implies marathon bout, neutrophil (immune) measures; advance"
+ },
+ {
+  "record_id": "FS-011357",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Acute exercise, lymphocyte immune measure; abstract missing, title compatible"
+ },
+ {
+  "record_id": "FS-011669",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Clinical cohort with lymphoproliferative disease (LGL leukemia), not generally healthy adults"
+ },
+ {
+  "record_id": "FS-011900",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Abstract missing; title suggests acute exercise with immune outcome; advance"
+ },
+ {
+  "record_id": "FS-011944",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Empty abstract; title suggests human neutrophil immune function after exercise; abstract-missing rule"
+ },
+ {
+  "record_id": "FS-011962",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Abstract missing; title suggests acute exercise immune response in athletes, plausibly eligible"
+ },
+ {
+  "record_id": "FS-011982",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Abstract missing; title compatible (post-exercise CRP, an immune mediator)."
+ },
+ {
+  "record_id": "FS-012006",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Abstract missing; title suggests IL-1 immune measure after exercise; journal may be conference but unresolved."
+ },
+ {
+  "record_id": "FS-012067",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Abstract missing; title suggests post-exercise monocyte insulin binding; health status and immune link unclear"
+ },
+ {
+  "record_id": "FS-012651",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Title indicates WBC activation (immune) measured during and after exercise; abstract missing, no exclusion evident."
+ },
+ {
+  "record_id": "FS-013502",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Book chapter on nutritional interventions; not peer-reviewed original research; review-type source"
+ },
+ {
+  "record_id": "FS-013867",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Empty abstract; title suggests exercise-immune topic but source type and design unclear"
+ },
+ {
+  "record_id": "FS-015048",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Abstract missing; title suggests acute eccentric bout with neutrophil function in humans; no exclusion evident."
+ },
+ {
+  "record_id": "FS-015049",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Abstract missing; title suggests acute bout with neutrophil function, plausibly eligible."
+ }
+]

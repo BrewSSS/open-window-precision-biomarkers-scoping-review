@@ -73,3 +73,17 @@ __pycache__/
 
 # Stage-2 reviewer workbooks contain publisher abstracts (like records_master): never commit
 04_screening/formal_*/ai_stage2/*.xlsx
+
+# AI validation-readiness triage (scripts/triage_run.py, triage_compare.py): run outputs
+# (checkpoints, batch result JSON, run.log, compare out-dirs) may contain model-echoed
+# abstract fragments or raw API responses and must never be committed; real run outputs
+# belong outside the repo under /tmp/triage/. Only the deliverable prompt/schema/pilot-
+# manifest files are tracked from ai_triage/ (deny-all-then-allow, as for formal_runs above).
+04_screening/formal_*/ai_triage/*
+!04_screening/formal_*/ai_triage/prompt_v1.md
+!04_screening/formal_*/ai_triage/schema_v1.json
+!04_screening/formal_*/ai_triage/pilot_200_ids.txt
+!04_screening/formal_*/ai_triage/pilot_200_manifest.json
+!04_screening/formal_*/ai_triage/README.md
+!04_screening/formal_*/ai_triage/glm_concurrency_probe_2026-10-07.md
+!04_screening/formal_*/ai_triage/pilot_200_glm_flash_summary.md
