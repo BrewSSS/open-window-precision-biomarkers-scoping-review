@@ -1,0 +1,360 @@
+[
+ {
+  "record_id": "FS-000019",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Condom-skills race programme; no exercise bout"
+ },
+ {
+  "record_id": "FS-000037",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Haemodialysis end-stage renal failure cohort"
+ },
+ {
+  "record_id": "FS-000078",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Asthma patient immunoglobulin survey; no exercise bout"
+ },
+ {
+  "record_id": "FS-000131",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon with pre/post cytokine panel; healthy runners"
+ },
+ {
+  "record_id": "FS-000170",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "In-vitro bronchial epithelial cell cultures only"
+ },
+ {
+  "record_id": "FS-000173",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "In-vitro epithelial cell signalling study only"
+ },
+ {
+  "record_id": "FS-000207",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIV wasting clinical cohort; protein kinetics only"
+ },
+ {
+  "record_id": "FS-000218",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Train-the-trainer course evaluation; no exercise bout"
+ },
+ {
+  "record_id": "FS-000228",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Asthma skin-test cohort; exercise status recorded only"
+ },
+ {
+  "record_id": "FS-000241",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Asthma cohort incl. children; FEV1 drug outcomes"
+ },
+ {
+  "record_id": "FS-000376",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Asthma patients; drug protection against EIB"
+ },
+ {
+  "record_id": "FS-000377",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "AIDS-prevention training newsletter item; no exercise bout"
+ },
+ {
+  "record_id": "FS-000379",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Birth-attendant training programme description; no exercise bout"
+ },
+ {
+  "record_id": "FS-000440",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycle bout; lymphocyte HSP/antioxidants; vitamin-C contrast"
+ },
+ {
+  "record_id": "FS-000473",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "HIV cohort; cardiac output and oxygen extraction"
+ },
+ {
+  "record_id": "FS-000490",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise challenge; TNF-alpha/IL-1beta/leukotrienes; placebo crossover"
+ },
+ {
+  "record_id": "FS-000518",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Anaemic haemodialysis patients; haemodynamic outcomes only"
+ },
+ {
+  "record_id": "FS-000550",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "NOD/SCID mouse transplantation model; animal-only"
+ },
+ {
+  "record_id": "FS-000560",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "HIV cohort; oxygen on-kinetics outcomes only"
+ },
+ {
+  "record_id": "FS-000744",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "ANCA vasculitis clinical cohort; lung-function outcomes"
+ },
+ {
+  "record_id": "FS-000772",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Asthma drug-treatment guideline article; not original research"
+ },
+ {
+  "record_id": "FS-000850",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Trial design/safety paper; STEMI cell-therapy cohort"
+ },
+ {
+  "record_id": "FS-000981",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Resting hypoxic exposure; EPO/erythropoiesis outcomes"
+ },
+ {
+  "record_id": "FS-001059",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Congestive heart failure patients; EPO treatment trial"
+ },
+ {
+  "record_id": "FS-001272",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Hypoxia-with-exercise bout; EPO end point only"
+ },
+ {
+  "record_id": "FS-001307",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Narrative review of childhood asthma therapy"
+ },
+ {
+  "record_id": "FS-001503",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Drug-class review; not original research"
+ },
+ {
+  "record_id": "FS-001614",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Post-surgical pleurodesis case series; clinical cohort"
+ },
+ {
+  "record_id": "FS-001623",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Asthma (EIB) clinical cohort; airway genomics"
+ },
+ {
+  "record_id": "FS-001643",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric bout; IL-1beta 23 h post; pre-bout baseline"
+ },
+ {
+  "record_id": "FS-001651",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Flight/immobilisation contrasts; no exercise bout"
+ },
+ {
+  "record_id": "FS-001657",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "In-vitro cultured neutrophil experiments only"
+ },
+ {
+  "record_id": "FS-001663",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Resting hypoxia exposure; no exercise bout"
+ },
+ {
+  "record_id": "FS-001679",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "NAC antioxidant/haematology end points; no immune measure"
+ },
+ {
+  "record_id": "FS-001691",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Postprandial haematology; no exercise exposure"
+ },
+ {
+  "record_id": "FS-001692",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Ozone inhalation protocol; no exercise bout"
+ },
+ {
+  "record_id": "FS-001700",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric bout; plasma PGE2; placebo-controlled design"
+ },
+ {
+  "record_id": "FS-001701",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Urinary EPO doping analysis; no immune measure"
+ },
+ {
+  "record_id": "FS-001710",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Pain/satisfaction end points only; no immune measure"
+ },
+ {
+  "record_id": "FS-001726",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Intermittent exercise within ozone/LPS challenge; sputum cytokines"
+ }
+]

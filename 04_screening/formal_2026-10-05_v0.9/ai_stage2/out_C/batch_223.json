@@ -1,0 +1,353 @@
+[
+ {
+  "record_id": "FS-007410",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Hodgkin radiotherapy cohort; clinical, no immune measure"
+ },
+ {
+  "record_id": "FS-007460",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "human lymphoblastoid cell line only; in vitro"
+ },
+ {
+  "record_id": "FS-007470",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT02",
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "nursing review; animal models, no bout"
+ },
+ {
+  "record_id": "FS-007503",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "cultured mammary epithelial cells; in vitro"
+ },
+ {
+  "record_id": "FS-007564",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "cultured mesangial cells; in vitro"
+ },
+ {
+  "record_id": "FS-007582",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "melanoma/MRC5 cell lines; in vitro"
+ },
+ {
+  "record_id": "FS-008008",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "weight-loss exposure, no bout; no immune measure"
+ },
+ {
+  "record_id": "FS-008116",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "egg albumen metabolomics; not human research"
+ },
+ {
+  "record_id": "FS-008153",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "hippocampal synapses in mice; animal-only"
+ },
+ {
+  "record_id": "FS-008177",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "DOMS pain RCT; VAS only, no immune measure"
+ },
+ {
+  "record_id": "FS-008189",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "narrative review of irisin/ER stress"
+ },
+ {
+  "record_id": "FS-008202",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "muscle PGC-1alpha in aged mice; animal-only"
+ },
+ {
+  "record_id": "FS-008205",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "catfish drug toxicology; animal-only"
+ },
+ {
+  "record_id": "FS-008211",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT02"
+  ],
+  "study_type_hint": "other",
+  "note": "mechanisms review of animal models"
+ },
+ {
+  "record_id": "FS-008221",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "psychological outcomes only; no immune measure"
+ },
+ {
+  "record_id": "FS-008223",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "morphine/LPS sickness in mice; animal-only"
+ },
+ {
+  "record_id": "FS-008225",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "lactate biosensor; in vitro plus mice"
+ },
+ {
+  "record_id": "FS-008234",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "cotton blight resistance GWAS; not human"
+ },
+ {
+  "record_id": "FS-008239",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "pain reflex EMG entropy; no immune measure"
+ },
+ {
+  "record_id": "FS-008242",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "postbiotic in dogs; animal-only"
+ },
+ {
+  "record_id": "FS-008247",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "CUMS/infection model in mice; animal-only"
+ },
+ {
+  "record_id": "FS-008255",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "vitamin D in aged mice; animal-only"
+ },
+ {
+  "record_id": "FS-008256",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "EIMD pain/ROM only; no immune measure"
+ },
+ {
+  "record_id": "FS-008274",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "kidney cells and rats; in vitro/animal"
+ },
+ {
+  "record_id": "FS-008280",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "obese clinical cohort; no immune measure"
+ },
+ {
+  "record_id": "FS-008290",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "pyomyositis case; infection, no immune measure"
+ },
+ {
+  "record_id": "FS-008314",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "knee OA patients; clinical cohort, no immune measure"
+ },
+ {
+  "record_id": "FS-008316",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "PDX in diabetic rats; animal-only"
+ },
+ {
+  "record_id": "FS-008334",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "fish muscle transcriptome; animal-only"
+ },
+ {
+  "record_id": "FS-008338",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Vibrio genome in fish; animal-only"
+ },
+ {
+  "record_id": "FS-008340",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Jingfang granule in CFS mice; animal-only"
+ },
+ {
+  "record_id": "FS-008343",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "McArdle disease case; clinical, 17-year-old"
+ },
+ {
+  "record_id": "FS-008344",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "anaphylaxis case report; clinical, no bout"
+ },
+ {
+  "record_id": "FS-008353",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "forensic autopsy case; clinical, no bout"
+ },
+ {
+  "record_id": "FS-008356",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "repeated LPS microglia in mice; animal-only"
+ },
+ {
+  "record_id": "FS-008364",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "drug delivery gel; in vitro/animal"
+ },
+ {
+  "record_id": "FS-008366",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "polo ponies; animal-only"
+ },
+ {
+  "record_id": "FS-008367",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "irisin in glaucoma mice; animal-only"
+ },
+ {
+  "record_id": "FS-008370",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "bioinformatics and myoblasts; no human data"
+ },
+ {
+  "record_id": "FS-008377",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "mouse intestinal organoids; in vitro"
+ }
+]

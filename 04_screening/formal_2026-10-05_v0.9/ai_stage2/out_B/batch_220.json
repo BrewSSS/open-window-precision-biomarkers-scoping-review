@@ -1,0 +1,390 @@
+[
+ {
+  "record_id": "FS-006435",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Spinach-oomycete plant transcriptomics; no human participants"
+ },
+ {
+  "record_id": "FS-006443",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Placebo-controlled supplement trial; athletes; separable exercise-challenge immune cell and cytokine responses"
+ },
+ {
+  "record_id": "FS-006444",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Asthmatic patients; bronchospasm/FEV1 outcomes; clinical cohort"
+ },
+ {
+  "record_id": "FS-006445",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "IBD patient cohort; fitness-test validity; no exercise-immune question"
+ },
+ {
+  "record_id": "FS-006451",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Breast cancer chemotherapy cohort; no exercise exposure"
+ },
+ {
+  "record_id": "FS-006456",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Trial design-and-rationale protocol; post-COVID cardiac patients"
+ },
+ {
+  "record_id": "FS-006469",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "POTS/HYCH patient cohort; autonomic testing; no bout-linked immune sampling"
+ },
+ {
+  "record_id": "FS-006473",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT08"
+  ],
+  "study_type_hint": "other",
+  "note": "Coronary heart disease patients; TCM drug RCT; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-006476",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Rheumatoid arthritis cohort; interstitial lung screening; no exercise exposure"
+ },
+ {
+  "record_id": "FS-006478",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Fabry disease cohort; CPET capacity outcomes; clinical population"
+ },
+ {
+  "record_id": "FS-006487",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Peritoneal dialysis patients; PAH risk prediction; clinical cohort"
+ },
+ {
+  "record_id": "FS-006490",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT03",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Post-mortem schizophrenia brain transcriptomics; no exercise exposure"
+ },
+ {
+  "record_id": "FS-006496",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative clinical review of differential diagnosis; no original data"
+ },
+ {
+  "record_id": "FS-006497",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Single relapsing polychondritis case; PET imaging diagnosis; clinical patient"
+ },
+ {
+  "record_id": "FS-006503",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Silicosis patients; whole lung lavage treatment study; clinical cohort"
+ },
+ {
+  "record_id": "FS-006507",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Surgical bone tissue proteomics; injured patients; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-006510",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "High tibial osteotomy surgical patients; perioperative CRP/IL-6; no exercise exposure"
+ },
+ {
+  "record_id": "FS-006514",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Heart failure drug safety trial; clinical cohort; no immune-exercise data"
+ },
+ {
+  "record_id": "FS-006518",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Uncontrolled asthma patients; body composition and capacity; clinical cohort"
+ },
+ {
+  "record_id": "FS-006519",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review of calcium blockers in asthma; no original data"
+ },
+ {
+  "record_id": "FS-006529",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "24-wk training resting pre/post blood only; no bout-linked sampling"
+ },
+ {
+  "record_id": "FS-006531",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "ML heart-rate prediction; mixed cardiovascular-disease cohort; CRP only as predictor"
+ },
+ {
+  "record_id": "FS-006532",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "COPD pulmonary rehabilitation cohort; clinical population; no immune outcomes"
+ },
+ {
+  "record_id": "FS-006541",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "HIV patients aged 50+; step-test validity; clinical cohort"
+ },
+ {
+  "record_id": "FS-006543",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "In-vitro vaginal epithelial cell cytokine study; no human data"
+ },
+ {
+  "record_id": "FS-006544",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Older adults; T2D-stratified inflammatory phenotyping; separable strata; cross-sectional background"
+ },
+ {
+  "record_id": "FS-006553",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 28 plus/minus 8 y; mean minus 2SD below 18; adulthood unestablished"
+ },
+ {
+  "record_id": "FS-006561",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Anti-MDA5 dermatomyositis patients; ulcer treatment; clinical cohort"
+ },
+ {
+  "record_id": "FS-006564",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Interstitial cystitis/migraine patients; symptom correlations; clinical cohort"
+ },
+ {
+  "record_id": "FS-006572",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Post-COVID myocardial involvement cohort; cytokines; clinical population"
+ },
+ {
+  "record_id": "FS-006578",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Post-COVID syndrome cohort; echocardiography and CPET; no immune sampling"
+ },
+ {
+  "record_id": "FS-006583",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Cancer cachexia mechanisms; animal models; no eligible human exercise data"
+ },
+ {
+  "record_id": "FS-006587",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Arabian race stallions; equine supplementation study; animal-only"
+ },
+ {
+  "record_id": "FS-006589",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review of myoadenylate deaminase deficiency; no original data"
+ },
+ {
+  "record_id": "FS-006590",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Fluid-restriction-only trial; explicitly no exercise bout"
+ },
+ {
+  "record_id": "FS-006593",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Adult congenital heart disease patients; vitamin D and capacity; clinical cohort"
+ },
+ {
+  "record_id": "FS-006598",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "COPD pulmonary hypertension prognosis; clinical cohort; no immune-exercise data"
+ },
+ {
+  "record_id": "FS-006600",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Neonatal ICU nurse training; newborn population; no exercise exposure"
+ },
+ {
+  "record_id": "FS-006602",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Male fatigued mice; probiotic-protein study; animal-only"
+ },
+ {
+  "record_id": "FS-006606",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Heart failure patients; dried-blood-spot oxylipin profiling; clinical cohort"
+ }
+]

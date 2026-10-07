@@ -1,0 +1,362 @@
+[
+ {
+  "record_id": "FS-002164",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Step-reduction plus overfeeding; no exercise bout"
+ },
+ {
+  "record_id": "FS-003201",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Obese cohort; cold exposure; no exercise bout"
+ },
+ {
+  "record_id": "FS-003205",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rat Parkinson model; animal-only study"
+ },
+ {
+  "record_id": "FS-003214",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Anaphylaxis guideline update; not original research"
+ },
+ {
+  "record_id": "FS-003215",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Listeria strain competition; in-vitro microbiology only"
+ },
+ {
+  "record_id": "FS-003234",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse tendon models; animal-only study"
+ },
+ {
+  "record_id": "FS-003240",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Claudication patients; antiplatelet drug trial"
+ },
+ {
+  "record_id": "FS-003247",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Toothbrushing-technique trial; no exercise exposure"
+ },
+ {
+  "record_id": "FS-003254",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Trek/exercise sampling; IL-6/IL-17a at altitude"
+ },
+ {
+  "record_id": "FS-003255",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cortisol/CK/antioxidant outcomes; no immune measure"
+ },
+ {
+  "record_id": "FS-003259",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Lupus cohort; cardiac MRI outcomes"
+ },
+ {
+  "record_id": "FS-003262",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "COPD cohort; walk-distance decline predictors"
+ },
+ {
+  "record_id": "FS-003268",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Obese asthma cohorts; dyspnoea-perception focus"
+ },
+ {
+  "record_id": "FS-003269",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Pneumatic compression intervention; no exercise bout"
+ },
+ {
+  "record_id": "FS-003274",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Al2O3 chamber with 30-min bike; sputum IL-8"
+ },
+ {
+  "record_id": "FS-003283",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Single clinical case report; diseased patient"
+ },
+ {
+  "record_id": "FS-003285",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Literature review; stress hormone cascade synthesis"
+ },
+ {
+  "record_id": "FS-003295",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Friedreich ataxia cohort; epoetin drug trial"
+ },
+ {
+  "record_id": "FS-003304",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Rodent lab plus surgical patients; cardiac focus"
+ },
+ {
+  "record_id": "FS-003326",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Wheat-allergy patient series; clinical audit"
+ },
+ {
+  "record_id": "FS-003334",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Cold-water immersion in training camp; urinary neopterin"
+ },
+ {
+  "record_id": "FS-003339",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Post-ICU patients; recovery inflammation"
+ },
+ {
+  "record_id": "FS-003341",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Drug PK/PD trial; no exercise exposure"
+ },
+ {
+  "record_id": "FS-003347",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Allergic rhinitis patients; acupuncture RCT"
+ },
+ {
+  "record_id": "FS-003368",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Atopic asthmatics; allergen-challenge ibuprofen trial"
+ },
+ {
+  "record_id": "FS-003370",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Half-marathon; inflammatory markers; placebo-controlled"
+ },
+ {
+  "record_id": "FS-003372",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Pregnant lean/obese; 30-min bout; CRP measured"
+ },
+ {
+  "record_id": "FS-003380",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Unstable coronary disease patients; acute-phase proteins"
+ },
+ {
+  "record_id": "FS-003390",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Peripheral artery disease patients; heat therapy"
+ },
+ {
+  "record_id": "FS-003395",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Ischaemia patients; MIF around stress tests"
+ },
+ {
+  "record_id": "FS-003404",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Doping-detection protocol; drug dosing, no exercise"
+ },
+ {
+  "record_id": "FS-003410",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Ultra-marathon pre/post; adipokines; controls comparator"
+ },
+ {
+  "record_id": "FS-003422",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Downhill/level runs; IL-6/CRP; garment contrast"
+ },
+ {
+  "record_id": "FS-003439",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Ozone/air crossover; sputum cytokines; separable non-obese"
+ },
+ {
+  "record_id": "FS-003446",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "PAD patients plus healthy controls; post-exercise WBC"
+ },
+ {
+  "record_id": "FS-003454",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Two sprint tests; hs-CRP; beetroot-placebo RCT"
+ },
+ {
+  "record_id": "FS-003458",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Serotonin/cognition end points; no immune measure"
+ },
+ {
+  "record_id": "FS-003466",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Asthma/COPD patients; PEFR outcomes only"
+ },
+ {
+  "record_id": "FS-003467",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Lung-transplant recipients; functional outcomes"
+ },
+ {
+  "record_id": "FS-003476",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Acute stroke patients; spleen/WBC correlates"
+ }
+]

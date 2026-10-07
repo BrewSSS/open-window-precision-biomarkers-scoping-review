@@ -1,0 +1,337 @@
+[
+ {
+  "record_id": "FS-007410",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Hodgkin disease radiotherapy patients; lung function only, no immune measure"
+ },
+ {
+  "record_id": "FS-007460",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Lymphoblastoid cell line melphalan study; in-vitro only"
+ },
+ {
+  "record_id": "FS-007470",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT02"
+  ],
+  "study_type_hint": "other",
+  "note": "Nursing narrative overview of animal bed-rest muscle studies"
+ },
+ {
+  "record_id": "FS-007503",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mammary epithelial cell culture cell-cycle study; in-vitro"
+ },
+ {
+  "record_id": "FS-007564",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Cultured mesangial cells TGF-beta fibronectin; in-vitro"
+ },
+ {
+  "record_id": "FS-007582",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Melanoma and normal cell cultures; in-vitro cytotoxicity"
+ },
+ {
+  "record_id": "FS-008008",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Weight-loss monitoring to weigh-in; no bout, no immune outcome"
+ },
+ {
+  "record_id": "FS-008116",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Egg albumen metabolomics; no human participants"
+ },
+ {
+  "record_id": "FS-008153",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Adult mouse neural stem cells, MERTK; animal study"
+ },
+ {
+  "record_id": "FS-008177",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy athletes DOMS trial; pain VAS only, no immune measure"
+ },
+ {
+  "record_id": "FS-008189",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Comprehensive review of irisin and ER stress"
+ },
+ {
+  "record_id": "FS-008202",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Skeletal muscle PGC-1alpha overexpression in aged mice"
+ },
+ {
+  "record_id": "FS-008205",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Levetiracetam toxicology in African catfish; fish study"
+ },
+ {
+  "record_id": "FS-008211",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT02"
+  ],
+  "study_type_hint": "other",
+  "note": "Review of animal models of exercise against cardiac injury"
+ },
+ {
+  "record_id": "FS-008221",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Percussive therapy trial; affect/enjoyment only, no immune measure"
+ },
+ {
+  "record_id": "FS-008223",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mice morphine exposure and LPS sickness; animal study"
+ },
+ {
+  "record_id": "FS-008225",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Wearable lactate sensor; mice and in-vitro device development"
+ },
+ {
+  "record_id": "FS-008234",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Cotton bacterial blight resistance genetics; plant study"
+ },
+ {
+  "record_id": "FS-008239",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy adults EMG complexity around inflammation; no immune measure"
+ },
+ {
+  "record_id": "FS-008242",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Postbiotic trial in adult Labrador dogs; animal study"
+ },
+ {
+  "record_id": "FS-008247",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "CUMS mice with Klebsiella infection; animal study"
+ },
+ {
+  "record_id": "FS-008255",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Vitamin D and apelin in aged mice; animal study"
+ },
+ {
+  "record_id": "FS-008256",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Rhodiola EIMD trial; pain VAS and ROM only, no immune measure"
+ },
+ {
+  "record_id": "FS-008274",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Asparagus fraction against cisplatin AKI; rats and cells"
+ },
+ {
+  "record_id": "FS-008280",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT03",
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Obese males cross-sectional; epicardial fat and VO2max, no immune measure"
+ },
+ {
+  "record_id": "FS-008290",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Subscapularis pyomyositis case report; infected clinical patient"
+ },
+ {
+  "record_id": "FS-008314",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Knee osteoarthritis patients; walking-speed rehabilitation RCT"
+ },
+ {
+  "record_id": "FS-008316",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Protectin DX in streptozotocin diabetic rats; animal study"
+ },
+ {
+  "record_id": "FS-008334",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Juvenile fish muscle transcriptome after training; fish study"
+ },
+ {
+  "record_id": "FS-008338",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Vibrio genome in diseased fish; aquaculture pathogen study"
+ },
+ {
+  "record_id": "FS-008340",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Jingfang Granule in chronic fatigue mouse model; animal study"
+ },
+ {
+  "record_id": "FS-008343",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "McArdle disease case report; 17-year-old clinical patient"
+ },
+ {
+  "record_id": "FS-008344",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Oral mite anaphylaxis case report; clinical allergy patient"
+ },
+ {
+  "record_id": "FS-008353",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Chemsex forensic autopsy case report; not exercise-immune research"
+ },
+ {
+  "record_id": "FS-008356",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Repeated LPS in adult mice microglia; animal study"
+ },
+ {
+  "record_id": "FS-008364",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Paroxetine nasal nano-carrier; in-vitro and rat delivery study"
+ },
+ {
+  "record_id": "FS-008366",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Polo pony hematology and HRV during matches; horse study"
+ },
+ {
+  "record_id": "FS-008367",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Irisin in mouse glaucoma and LPS microglia models; animal study"
+ },
+ {
+  "record_id": "FS-008370",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Bioinformatic and cell-line analysis; authors state no human trials"
+ },
+ {
+  "record_id": "FS-008377",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse intestinal organoids; in-vitro irisin study"
+ }
+]
