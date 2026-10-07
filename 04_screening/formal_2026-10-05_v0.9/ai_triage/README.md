@@ -218,3 +218,31 @@ table to stdout.
 - Concurrency: `glm_concurrency_probe_2026-10-07.md`. No rejections up to 12 simultaneous requests; first `1302 Rate limit reached for requests` rejections at 16 (3/16) and 24 (10/24), i.e. about 13–14 accepted in flight. Production runs use `--concurrency 12`; the stage-2 ZCode logs of 2026-10-06 (2,098 Flash requests, 307 concurrency rejections, max 9 successful in flight) are consistent with a limit in this range.
 - Stage-2 stand-in prompts for single-record API runs (batch 235 re-screen): `../ai_stage2/ta_standin_prompt_B.md`, `ta_standin_prompt_C.md`, `ta_standin_schema.json`; outputs are converted with `scripts/ta_standin_to_batch.py` into the `out_B/out_C` batch format consumed by `scripts/ta_ai_merge.py`.
 - Key handling: the key lives only in `~/.config/scoping_review/secrets.env` (`BIGMODEL_API_KEY`); never in the repository or in logs.
+
+## Within-family consistency check (2026-10-07)
+
+`triage_compare.py` run across the 200-record pilot, `glm-5.3-flash` thinking-disabled vs
+thinking-enabled (same model, same records — not a second model family). Outputs:
+`pilot_200_glm_thinking_vs_nothinking/triage_merged.csv` + `triage_summary.json`, and the
+human-facing report `pilot_200_glm_consistency.md` (per-element agreement/kappa, E5
+present/absent agreement, V/D/M/X layer table, E5 subtype counts, and the 44 records where
+E5 differs between the two runs). Headline: E1–E4 raw agreement 94.5–99.5% (kappa
+0.664–0.960); E5 raw agreement 78.0% (kappa 0.510), or 79.6%/0.531 restricted to
+present/absent only (excludes 4 records where either run said `unclear`). A real
+cross-family (second model) run is still pending for the final two-model D layer.
+
+## Full GLM-Flash pass (2026-10-07)
+
+`scripts/triage_run_concurrent.py` run over all 4,298 stage-2 `ai_final == ADVANCE`
+records (`/tmp/triage/all_advance.csv`), thinking disabled, concurrency 12, prompt v1.1 /
+schema v1. First pass: 4298/4298 in 6528.1 s, http429=809, 28 records invalid after 9
+retries (rate-limit exhaustion, not schema/content failures). Re-run (same command,
+auto-resume) retried only those 28 and finished in 47.1 s with 0 invalid remaining.
+Combined: wall ≈6575.2 s (~109.6 min), http429 total 826, final invalid=0.
+
+Deliverables: `full_4298_glm_flash_summary.md` (header + element/layer counts, single-
+family only — V/M/X/U, no second-model D layer yet) and `full_4298_glm_flash_elements.csv`
+(record_id, E1–E5 values, E5 subtypes, study_type_hint, single-family layer, note — no
+quote fields, no abstract text). Raw per-record output backed up to
+`_local_runs/full_glm_flash_nothink_all_advance.json` (git-ignored; see `MANIFEST.json`
+for sha256).
