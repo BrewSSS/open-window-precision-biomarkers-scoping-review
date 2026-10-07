@@ -1,0 +1,349 @@
+[
+ {
+  "record_id": "FS-006827",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Comprehensive narrative review of Nav1.6 channel; no original data"
+ },
+ {
+  "record_id": "FS-006832",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "DOMS pain outcomes only; no immune measure assessed"
+ },
+ {
+  "record_id": "FS-006834",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Soreness, torque and CK outcomes; no immune measure"
+ },
+ {
+  "record_id": "FS-006845",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse meniscus secretome study; animal and in-vitro only"
+ },
+ {
+  "record_id": "FS-006846",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "12-week training resting pre/post only; no bout-linked immune sampling"
+ },
+ {
+  "record_id": "FS-006851",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Common bean anthracnose transcriptomics; plant-only"
+ },
+ {
+  "record_id": "FS-006857",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Allergy clinic cohort; IgE sensitization profiling; clinical population"
+ },
+ {
+  "record_id": "FS-006858",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Repeated exercise bouts; serotonin/vasopressin; neutrophil ratios reported"
+ },
+ {
+  "record_id": "FS-006861",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Controlled wood-smoke exposure with intermittent exercise; sputum cytokines and macrophages"
+ },
+ {
+  "record_id": "FS-006865",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Muscle-fatigue induction RCT with control group; IL-6 to 72h"
+ },
+ {
+  "record_id": "FS-006867",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Ischemic heart failure patients; PBMC mitochondrial function; clinical cohort"
+ },
+ {
+  "record_id": "FS-006869",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Lipedema patients; online survey; clinical cohort"
+ },
+ {
+  "record_id": "FS-006877",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon supplementation RCT; blood markers unspecified; immune link unclear"
+ },
+ {
+  "record_id": "FS-006886",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Placebo-controlled fish oil trial; damage protocol; TNF-alpha measured"
+ },
+ {
+  "record_id": "FS-006890",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Severe obesity bariatric surgery cohort; exercise hormone responses; clinical population"
+ },
+ {
+  "record_id": "FS-006892",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Post pulmonary embolism COVID patients; follow-up function tests; clinical cohort"
+ },
+ {
+  "record_id": "FS-006898",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Long-COVID patients; autoantibody and immune-receptor profiling; clinical cohort"
+ },
+ {
+  "record_id": "FS-006905",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Platelet concentrate storage-quality study; blood donors; no exercise exposure"
+ },
+ {
+  "record_id": "FS-006912",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Inflammatory myositis patients; IVIG treatment cohort; clinical population"
+ },
+ {
+  "record_id": "FS-006913",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Idiopathic inflammatory myopathy patients; HIIT trial; clinical cohort"
+ },
+ {
+  "record_id": "FS-006915",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Mean age 21.3 y without SD or range; adulthood unestablished"
+ },
+ {
+  "record_id": "FS-006916",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "LPS endotoxemia challenge; no exercise exposure"
+ },
+ {
+  "record_id": "FS-006924",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Rat subarachnoid hemorrhage neuroinflammation model; animal-only"
+ },
+ {
+  "record_id": "FS-006926",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon cardiac function and troponin; no immune measure"
+ },
+ {
+  "record_id": "FS-006937",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Anabolic hormones and myokines only; no eligible immune measure"
+ },
+ {
+  "record_id": "FS-006939",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Chilean Army mules load-carrying study; animal-only"
+ },
+ {
+  "record_id": "FS-006962",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Adult food-allergy clinic cohort; IgE diagnostics; clinical population"
+ },
+ {
+  "record_id": "FS-006964",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Heart failure patients; NIRS at rest and CPET; clinical cohort"
+ },
+ {
+  "record_id": "FS-006969",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Children with cow's milk allergy; oral immunotherapy; pediatric cohort"
+ },
+ {
+  "record_id": "FS-006973",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "HIV and control groups; psychological outcomes only; no immune measures"
+ },
+ {
+  "record_id": "FS-006976",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Long-COVID/ME-CFS autonomic phenotyping; no bout-linked immune sampling"
+ },
+ {
+  "record_id": "FS-006982",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse grip-strength EIMD model; animal-only"
+ },
+ {
+  "record_id": "FS-006992",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Sit-to-stand bout; cell counts, NLR/SII/SIRI, trace elements"
+ },
+ {
+  "record_id": "FS-006999",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Mice and panic-disorder patients; CO2 challenge; no exercise exposure"
+ },
+ {
+  "record_id": "FS-007233",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "HT-29 colon cancer cell-line irisin study; in-vitro only"
+ },
+ {
+  "record_id": "FS-007257",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Mitochondria-cognition cohort; ESR/metabolic mediators; no eligible immune measure"
+ },
+ {
+  "record_id": "FS-007310",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "ATDC5 cell-line osteoarthritis sestrin1 study; in-vitro only"
+ },
+ {
+  "record_id": "FS-007338",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Autoimmune pulmonary alveolar proteinosis drug trial; clinical population; abstract empty"
+ },
+ {
+  "record_id": "FS-007358",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review of irisin in male reproduction; no original data"
+ },
+ {
+  "record_id": "FS-007397",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Review of asthma inflammation mechanisms; no original exercise-immune data"
+ }
+]

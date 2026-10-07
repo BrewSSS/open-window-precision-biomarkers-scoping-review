@@ -5,25 +5,28 @@
   "primary_code": "",
   "secondary_codes": [],
   "study_type_hint": "acute_bout_CoreA",
-  "note": "Probiotic RCT with placebo; IL-6 pre to 72h post bout"
+  "note": "probiotic RCT placebo crossover; IL-6 pre to 72h post-bout"
  },
  {
   "record_id": "FS-003507",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT03",
   "secondary_codes": [
-   "FT04"
+   "FT04",
+   "FT07"
   ],
-  "study_type_hint": "cross_sectional_resting",
-  "note": "Psoriasis clinical cohort; no exercise exposure"
+  "study_type_hint": "other",
+  "note": "psoriasis clinical cohort; cardiac scintigraphy screening, no exercise exposure"
  },
  {
   "record_id": "FS-003510",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT03",
-  "secondary_codes": [],
+  "secondary_codes": [
+   "FT07"
+  ],
   "study_type_hint": "other",
-  "note": "Type 1 diabetes cohort; antibodies vs nephropathy"
+  "note": "type 1 diabetics; anti-insulin antibodies, exercise test only diagnostic"
  },
  {
   "record_id": "FS-003516",
@@ -33,7 +36,7 @@
    "FT04"
   ],
   "study_type_hint": "cross_sectional_resting",
-  "note": "Myocardial bridging patients; resting labs"
+  "note": "myocardial bridging patients vs controls; resting NLR, no exercise"
  },
  {
   "record_id": "FS-003520",
@@ -43,7 +46,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "In-vitro biodosimetry intercomparison; no exercise"
+  "note": "biodosimetry intercomparison; in-vitro irradiated lymphocytes, no exercise"
  },
  {
   "record_id": "FS-003527",
@@ -51,18 +54,15 @@
   "primary_code": "FT07",
   "secondary_codes": [],
   "study_type_hint": "acute_bout_CoreA",
-  "note": "Lung function and exhaled NO only; no immune measure"
+  "note": "lung function and exhaled NO only; no eligible immune measure"
  },
  {
   "record_id": "FS-003539",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT01",
-  "secondary_codes": [
-   "FT03",
-   "FT02"
-  ],
+  "secondary_codes": [],
   "study_type_hint": "other",
-  "note": "Conference abstract compendium; ICU/sepsis"
+  "note": "conference symposium abstract collection"
  },
  {
   "record_id": "FS-003550",
@@ -70,7 +70,7 @@
   "primary_code": "",
   "secondary_codes": [],
   "study_type_hint": "acute_bout_CoreA",
-  "note": "Healthy subgroup treadmill session; PBMC NOS2; strata separable"
+  "note": "PAD trials but separable healthy stratum; PBMC NOS2 after treadmill"
  },
  {
   "record_id": "FS-003554",
@@ -78,7 +78,7 @@
   "primary_code": "FT07",
   "secondary_codes": [],
   "study_type_hint": "acute_bout_CoreA",
-  "note": "Pain and force outcomes only; no immune measure"
+  "note": "DOMS pain/force outcomes only; no immune measure"
  },
  {
   "record_id": "FS-003564",
@@ -86,7 +86,7 @@
   "primary_code": "FT01",
   "secondary_codes": [],
   "study_type_hint": "other",
-  "note": "Review of performance-enhancing drugs"
+  "note": "narrative review, performance-enhancing drugs"
  },
  {
   "record_id": "FS-003566",
@@ -95,8 +95,8 @@
   "secondary_codes": [
    "FT04"
   ],
-  "study_type_hint": "cross_sectional_resting",
-  "note": "Antiphospholipid syndrome patients"
+  "study_type_hint": "other",
+  "note": "antiphospholipid syndrome patients; cardiac imaging, no exercise exposure"
  },
  {
   "record_id": "FS-003573",
@@ -104,17 +104,17 @@
   "primary_code": "",
   "secondary_codes": [],
   "study_type_hint": "acute_bout_CoreA",
-  "note": "Healthy controls separable; leukocyte rheology pre/post ergometer"
+  "note": "angina patients plus matched controls; leukocyte rheology post-ergometer"
  },
  {
   "record_id": "FS-003574",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT02",
   "secondary_codes": [
-   "FT07"
+   "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Rat bone/ibuprofen study"
+  "note": "rat bone/ibuprofen study; animal-only"
  },
  {
   "record_id": "FS-003584",
@@ -124,17 +124,17 @@
    "FT07"
   ],
   "study_type_hint": "other",
-  "note": "Questionnaire only; no biological sampling"
+  "note": "medication questionnaire only; no post-race samples"
  },
  {
   "record_id": "FS-003585",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT03",
   "secondary_codes": [
-   "FT07"
+   "FT08"
   ],
-  "study_type_hint": "acute_bout_CoreA",
-  "note": "Heart failure patients; taurine"
+  "study_type_hint": "other",
+  "note": "heart failure patients; taurine supplementation RCT"
  },
  {
   "record_id": "FS-003589",
@@ -144,35 +144,36 @@
    "FT04"
   ],
   "study_type_hint": "cross_sectional_resting",
-  "note": "COPD patients; acute phase reactants"
+  "note": "COPD case-control; acute phase reactants, CPET only diagnostic"
  },
  {
   "record_id": "FS-003603",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT03",
   "secondary_codes": [
-   "FT04"
+   "FT04",
+   "FT07"
   ],
-  "study_type_hint": "cross_sectional_resting",
-  "note": "PAD patients; uric acid and ischemia"
+  "study_type_hint": "other",
+  "note": "PAD patients; uric acid and leg ischemia"
  },
  {
   "record_id": "FS-003606",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT07",
-  "secondary_codes": [
-   "FT04"
-  ],
-  "study_type_hint": "other",
-  "note": "EPO dosing hematology; no immune measure"
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "rHuEPO haematology/ABP; no immune measure"
  },
  {
   "record_id": "FS-003609",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT03",
-  "secondary_codes": [],
+  "secondary_codes": [
+   "FT05"
+  ],
   "study_type_hint": "acute_bout_CoreA",
-  "note": "IPF patients; oxygen intervention"
+  "note": "IPF patients; oxygen vs air, cytokines during exercise"
  },
  {
   "record_id": "FS-003610",
@@ -180,17 +181,18 @@
   "primary_code": "FT03",
   "secondary_codes": [],
   "study_type_hint": "acute_bout_CoreA",
-  "note": "Coronary artery disease patients; trimetazidine"
+  "note": "coronary artery disease patients; trimetazidine effect on IL-2/IL-8"
  },
  {
   "record_id": "FS-003621",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT03",
   "secondary_codes": [
-   "FT04"
+   "FT04",
+   "FT07"
   ],
   "study_type_hint": "other",
-  "note": "Stable angina prognostic cohort"
+  "note": "coronary disease prognostic cohort; CRP baseline only, no exercise exposure"
  },
  {
   "record_id": "FS-003628",
@@ -200,7 +202,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Asthma/allergy genetics; no bout sampling"
+  "note": "asthma pathogenesis cohort; exercise-induced asthma only a phenotype label"
  },
  {
   "record_id": "FS-003630",
@@ -208,7 +210,7 @@
   "primary_code": "",
   "secondary_codes": [],
   "study_type_hint": "acute_bout_CoreA",
-  "note": "Ultra-triathlon; post-race IL-10, TNF-a, CRP"
+  "note": "post-ultratriathlon cytokines with EEG/fMRI; baseline unclear, full text"
  },
  {
   "record_id": "FS-003639",
@@ -218,17 +220,15 @@
    "FT03"
   ],
   "study_type_hint": "other",
-  "note": "Trial design/protocol paper; cancer patients"
+  "note": "trial protocol paper; cancer patients"
  },
  {
   "record_id": "FS-003641",
-  "disposition": "EXCLUDE_TA",
-  "primary_code": "FT03",
-  "secondary_codes": [
-   "FT04"
-  ],
-  "study_type_hint": "cross_sectional_resting",
-  "note": "HIV cohorts; handgrip diagnostic only"
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "HIV study but separable healthy stratum; IL-6, handgrip vasoreactivity"
  },
  {
   "record_id": "FS-003651",
@@ -236,7 +236,7 @@
   "primary_code": "FT07",
   "secondary_codes": [],
   "study_type_hint": "acute_bout_CoreA",
-  "note": "Muscle protein/mitochondrial outcomes; no immune measure"
+  "note": "muscle protein/mitochondrial outcomes only; no immune measure"
  },
  {
   "record_id": "FS-003655",
@@ -244,7 +244,7 @@
   "primary_code": "",
   "secondary_codes": [],
   "study_type_hint": "acute_bout_CoreA",
-  "note": "NMES bout; IL-6, IL-8, G-CSF pre/post; women 21-30"
+  "note": "NMES bout; IL-6, IL-8, G-CSF pre/post by hormonal state"
  },
  {
   "record_id": "FS-003680",
@@ -252,7 +252,7 @@
   "primary_code": "FT07",
   "secondary_codes": [],
   "study_type_hint": "acute_bout_CoreA",
-  "note": "Hormones and metabolites only"
+  "note": "diving/swimming bouts; hormones and catecholamines only"
  },
  {
   "record_id": "FS-003685",
@@ -260,15 +260,18 @@
   "primary_code": "",
   "secondary_codes": [],
   "study_type_hint": "acute_bout_CoreA",
-  "note": "Ultra-marathon; hs-CRP sampled pre/during/24h"
+  "note": "200 km race; hs-CRP and CK pre/during/24h post"
  },
  {
   "record_id": "FS-003696",
-  "disposition": "ADVANCE",
-  "primary_code": "",
-  "secondary_codes": [],
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT08"
+  ],
   "study_type_hint": "acute_bout_CoreA",
-  "note": "Allopurinol+exercise rheology; neutrophil in vitro; population unclear"
+  "note": "POAD patients; allopurinol, haemorheology, in-vitro neutrophils"
  },
  {
   "record_id": "FS-003705",
@@ -276,15 +279,15 @@
   "primary_code": "",
   "secondary_codes": [],
   "study_type_hint": "acute_bout_CoreA",
-  "note": "Compression garment trials; IL-6 post-exercise; control garment"
+  "note": "120-min run, garment-pressure arms; IL-6 pre/during/post"
  },
  {
   "record_id": "FS-003729",
   "disposition": "EXCLUDE_TA",
   "primary_code": "FT07",
   "secondary_codes": [],
-  "study_type_hint": "other",
-  "note": "EPO performance trial; no immune measure"
+  "study_type_hint": "chronic_training_only",
+  "note": "EPO performance trial; haematology only, no immune measure"
  },
  {
   "record_id": "FS-003736",
@@ -292,7 +295,7 @@
   "primary_code": "FT07",
   "secondary_codes": [],
   "study_type_hint": "acute_bout_CoreA",
-  "note": "Soreness/torque outcomes; no immune measure"
+  "note": "muscle function/soreness outcomes only; no immune measure"
  },
  {
   "record_id": "FS-003740",
@@ -302,15 +305,15 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Allergy patients; allergen characterization"
+  "note": "food allergy patients; exercise only a reaction cofactor"
  },
  {
   "record_id": "FS-003742",
-  "disposition": "ADVANCE",
-  "primary_code": "",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
   "secondary_codes": [],
   "study_type_hint": "other",
-  "note": "Lymphocyte beta-receptor pharmacodynamics; ambiguous immune link"
+  "note": "beta-blocker receptor pharmacology on lymphocytes; no immune outcome"
  },
  {
   "record_id": "FS-003747",
@@ -320,7 +323,7 @@
    "FT07"
   ],
   "study_type_hint": "other",
-  "note": "Aspirin at rest; no exercise bout"
+  "note": "aspirin-only trial, resting muscle biopsies; no exercise bout"
  },
  {
   "record_id": "FS-003748",
@@ -330,7 +333,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Primary immunodeficiency care survey"
+  "note": "immunodeficiency patient survey; no exercise exposure"
  },
  {
   "record_id": "FS-003750",
@@ -338,7 +341,7 @@
   "primary_code": "",
   "secondary_codes": [],
   "study_type_hint": "acute_bout_CoreA",
-  "note": "Placebo-controlled; hs-CRP to 72h post drop jumps"
+  "note": "drop-jump EIMD; CRP/CK to 72h, placebo-controlled supplements"
  },
  {
   "record_id": "FS-003760",
@@ -348,7 +351,7 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Wheat breeding study; no human data"
+  "note": "durum wheat breeding study; not human research"
  },
  {
   "record_id": "FS-003765",
@@ -358,6 +361,6 @@
    "FT04"
   ],
   "study_type_hint": "other",
-  "note": "Chemotherapy patients; administration survey"
+  "note": "chemotherapy patient preference survey; no exercise exposure"
  }
 ]
