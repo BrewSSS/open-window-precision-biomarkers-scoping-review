@@ -38,9 +38,11 @@ dict shape before handing files to the unmodified loader.
 from __future__ import annotations
 
 import argparse
+import collections
 import csv
 import hashlib
 import json
+import re
 import subprocess
 import sys
 import tempfile
@@ -181,16 +183,51 @@ def cmd_write_schema(args):
 # ---------------------------------------------------------------------------------------------
 # Report metadata (bibliographic context for the user message; from the pilot's own CSV)
 # ---------------------------------------------------------------------------------------------
-def load_report_meta() -> dict:
-    rows = list(csv.DictReader(PILOT_REPORTS_CSV.open(encoding="utf-8")))
-    return {r["reference_id"]: r for r in rows}
+def load_report_meta(csv_path: Path | None = None) -> dict:
+    """csv_path defaults to the pilot's pilot_reports.csv (key column "reference_id"); pass e.g.
+    records_master.csv (key column "record_id") for the formal-screening metadata source -- both
+    expose the same title/journal/year/doi/pmid columns build_user_row() reads."""
+    path = csv_path or PILOT_REPORTS_CSV
+    rows = list(csv.DictReader(path.open(encoding="utf-8")))
+    key_field = "record_id" if rows and "record_id" in rows[0] else "reference_id"
+    return {r[key_field]: r for r in rows}
 
 
-def build_user_row(ref: str, meta: dict, fulltext: str) -> dict:
+def build_user_row(ref: str, meta: dict, fulltext: str, bg_refs=None) -> dict:
+    bg = BACKGROUND_REFS if bg_refs is None else bg_refs
     m = meta.get(ref, {})
-    flags = f"doi={m.get('doi', 'NR')}; pmid={m.get('pmid', 'NR')}; background_report={'yes' if ref in BACKGROUND_REFS else 'no'}"
+    flags = f"doi={m.get('doi', 'NR')}; pmid={m.get('pmid', 'NR')}; background_report={'yes' if ref in bg else 'no'}"
     return {"record_id": ref, "title": m.get("title", ""), "journal": flags, "year": m.get("year", ""),
             "abstract": fulltext}
+
+
+# ---------------------------------------------------------------------------------------------
+# Optional input trimming (same logic as scripts/claude_headless_run.py trim_text(), duplicated
+# rather than imported: claude_headless_run.py imports this module, so importing it back here
+# would be circular).
+# ---------------------------------------------------------------------------------------------
+def trim_text(txt: str, max_chars: int):
+    lines = txt.splitlines(); n = len(lines)
+    # drop the reference list if it starts in the last 45% of the document
+    for i, l in enumerate(lines):
+        if i > n * 0.55 and re.match(r"^\s*(references|reference list|bibliography|literature cited)\s*\.?$", l.strip(), re.I):
+            lines = lines[:i]; break
+    # drop acknowledgement / funding / conflict-of-interest paragraphs (short sections after the body)
+    out, skip = [], False
+    for l in lines:
+        if re.match(r"^\s*(acknowledg(e)?ments?|funding|conflicts? of interest|competing interests|declaration of interest|author contributions|data availability)\b", l.strip(), re.I):
+            skip = True; continue
+        if skip and (re.match(r"^\[\[page \d+\]\]", l) or re.match(r"^\s*(results|discussion|methods|conclusion|table|figure)\b", l.strip(), re.I)):
+            skip = False
+        if not skip: out.append(l)
+    # drop running headers (identical non-empty lines repeated >= 5 times, excluding page markers)
+    cnt = collections.Counter(l.strip() for l in out if l.strip() and not l.startswith("[[page"))
+    out = [l for l in out if not (l.strip() and cnt[l.strip()] >= 5 and len(l.strip()) < 120)]
+    txt2 = "\n".join(out)
+    truncated = False
+    if len(txt2) > max_chars:
+        txt2 = txt2[:max_chars] + "\n[[TEXT TRUNCATED BY RUNNER AT %d CHARACTERS]]" % max_chars; truncated = True
+    return txt2, truncated
 
 
 # ---------------------------------------------------------------------------------------------
@@ -269,12 +306,34 @@ def cmd_run(args):
     system_prompt, user_template = T.parse_prompt_file(PROMPT_PATH)
     prompt_sha = hashlib.sha256(PROMPT_PATH.read_bytes()).hexdigest()
     schema_sha = hashlib.sha256(SCHEMA_PATH.read_bytes()).hexdigest()
-    meta = load_report_meta()
+    text_dir = Path(args.text_dir) if getattr(args, "text_dir", None) else TEXT_DIR
+    meta_csv_path = Path(args.meta_csv) if getattr(args, "meta_csv", None) else None
+    manifest_path = Path(args.manifest_out) if getattr(args, "manifest_out", None) else MANIFEST_PATH
+    if getattr(args, "background_ref_ids", None) is not None:
+        bg_refs = {x for x in args.background_ref_ids.split(",") if x}
+    else:
+        bg_refs = BACKGROUND_REFS
+    disposition_map = {}
+    if getattr(args, "disposition_csv", None):
+        disposition_map = {r["record_id"]: r["disposition"]
+                            for r in csv.DictReader(Path(args.disposition_csv).open(encoding="utf-8"))}
+    do_trim = bool(getattr(args, "trim", False))
+    max_input_chars = getattr(args, "max_input_chars", 60000)
+    meta = load_report_meta(meta_csv_path)
 
-    refs = args.record_id or sorted(p.stem for p in TEXT_DIR.glob("*.txt"))
+    refs = args.record_id or sorted(p.stem for p in text_dir.glob("*.txt"))
     if not refs:
-        sys.exit(f"no report text found in {TEXT_DIR}; run extract_pdf_text.py first")
-    rows = {ref: build_user_row(ref, meta, (TEXT_DIR / f"{ref}.txt").read_text(encoding="utf-8")) for ref in refs}
+        sys.exit(f"no report text found in {text_dir}; run extract_pdf_text.py first")
+    rows, trim_info = {}, {}
+    for ref in refs:
+        raw = (text_dir / f"{ref}.txt").read_text(encoding="utf-8")
+        if do_trim:
+            txt2, truncated = trim_text(raw, max_input_chars)
+        else:
+            txt2, truncated = raw, False
+        trim_info[ref] = {"trimmed": do_trim, "truncated": truncated,
+                           "pre_screen_disposition": disposition_map.get(ref)}
+        rows[ref] = build_user_row(ref, meta, txt2, bg_refs=bg_refs)
 
     manifest_entries = []
     tmp_dir = Path(tempfile.mkdtemp(prefix="extract_run_sol_"))
@@ -289,6 +348,14 @@ def cmd_run(args):
                     "listed error. Do not add commentary.")
 
     def run_one_sol(ref):
+        out_path = RUNS_DIR / sol_family / f"{ref}.json"
+        if getattr(args, "resume", False) and out_path.exists():
+            try:
+                prior = json.loads(out_path.read_text(encoding="utf-8"))
+            except (json.JSONDecodeError, OSError):
+                prior = None
+            if prior and prior.get("valid"):
+                return prior
         row = rows[ref]
         prompt1 = sol_prompt_text(system_prompt, user_template, row)
         res = call_sol(ref, prompt1, args.sol_model, args.sol_effort, args.sol_timeout, tmp_dir)
@@ -320,11 +387,15 @@ def cmd_run(args):
                 out = fut.result()
                 print(f"  sol {out['record_id']}: valid={out['valid']} attempts={out['attempts']} "
                       f"t={out['t_completed_s']}s err={str(out['error'])[:120]}", flush=True)
+                ti = trim_info.get(out["record_id"], {})
                 manifest_entries.append({"record_id": out["record_id"], "family": sol_family, "model": out["model"],
                                            "effort_or_thinking": out["effort"], "prompt_sha256": prompt_sha,
                                            "schema_sha256": schema_sha, "tokens": out.get("usage"),
                                            "seconds": out.get("t_completed_s"), "attempts": out["attempts"],
-                                           "valid": out["valid"]})
+                                           "valid": out["valid"],
+                                           "pre_screen_disposition": ti.get("pre_screen_disposition"),
+                                           "trimmed": ti.get("trimmed", False), "truncated": ti.get("truncated", False),
+                                           "timestamp": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())})
 
     # ---- GLM: one batch call, one CSV row per report ----
     if args.skip_glm:
@@ -354,15 +425,17 @@ def cmd_run(args):
                                        "attempts": out["attempts"], "valid": valid})
 
     existing = []
-    if MANIFEST_PATH.exists():
-        existing = json.loads(MANIFEST_PATH.read_text(encoding="utf-8")).get("entries", [])
+    if manifest_path.exists():
+        existing = json.loads(manifest_path.read_text(encoding="utf-8")).get("entries", [])
     done_keys = {(e["record_id"], e["family"]) for e in manifest_entries}
     keep = [e for e in existing if (e["record_id"], e["family"]) not in done_keys]
     manifest = {"generated_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
                 "generator": "scripts/extract_run.py", "prompt_sha256": prompt_sha, "schema_sha256": schema_sha,
                 "entries": keep + manifest_entries}
-    MANIFEST_PATH.write_text(json.dumps(manifest, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(json.dumps({"written_manifest": str(MANIFEST_PATH.relative_to(ROOT)), "n_entries": len(manifest["entries"])},
+    manifest_path.parent.mkdir(parents=True, exist_ok=True)
+    manifest_path.write_text(json.dumps(manifest, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    rel = manifest_path.relative_to(ROOT) if manifest_path.is_relative_to(ROOT) else manifest_path
+    print(json.dumps({"written_manifest": str(rel), "n_entries": len(manifest["entries"])},
                       ensure_ascii=False))
 
 
@@ -490,6 +563,22 @@ def main(argv=None):
     r.add_argument("--sol-family", default="sol", help="output subdir under runs/ and manifest family tag "
                    "(use e.g. sol_xhigh for a second Sol pass at a different effort so it does not "
                    "overwrite runs/sol/)")
+    r.add_argument("--text-dir", default=None, help="directory of <record_id>.txt full texts; "
+                   "default = 05_extraction/ai_extraction/text (pilot)")
+    r.add_argument("--meta-csv", default=None, help="bibliographic metadata CSV (title/journal/year/doi/pmid), "
+                   "keyed by a record_id or reference_id column; default = pilot_reports.csv")
+    r.add_argument("--background-ref-ids", default=None, help="comma-separated record ids flagged "
+                   "background_report=yes in the metadata line; omit for the pilot default (R01,R42), "
+                   "pass an empty string for none")
+    r.add_argument("--trim", action="store_true", help="drop reference lists/acknowledgements/running "
+                   "headers and cap input length before sending (see trim_text()); default off")
+    r.add_argument("--max-input-chars", type=int, default=60000, help="cap applied only when --trim is set")
+    r.add_argument("--manifest-out", default=None, help="path to the run manifest to read/append/write; "
+                   "default = run_manifest.json (pilot)")
+    r.add_argument("--disposition-csv", default=None, help="optional CSV with columns record_id,disposition "
+                   "used to stamp pre_screen_disposition on each manifest entry")
+    r.add_argument("--resume", action="store_true", help="skip calling Sol for a --record-id whose "
+                   "runs/<sol-family>/<id>.json already exists and is valid; default off (always rerun)")
     r.add_argument("--skip-sol", action="store_true")
     r.add_argument("--skip-glm", action="store_true")
     r.add_argument("--glm-base-url", default="https://api.z.ai/api/anthropic")
