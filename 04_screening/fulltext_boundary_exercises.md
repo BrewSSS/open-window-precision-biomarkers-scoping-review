@@ -70,3 +70,9 @@
 FT04 vs Core A: X01, X02, X03, X12 · FT05 and the >72 h rule: X04, X05, X06 · FT06: X07, X02 · FT07: X09 · FT08: X10 · Age rule: X03, X10, X11, X12, X06 · RETAIN_BACKGROUND: X02, X03 · Support B vs crossover: X08, X03 · E5 at full text: X13, X14, X03 · Duplicates and versions: X15, X09.
 
 Held full texts contain no sample taken only after 72 h, so X05 tests that rule through a 48-h case and the rule text. Questions left open for D: X03 (figure timeline as reported timing), X11 (handling a cohort-level AWAITING inside an included report), X14 (R12 E5).
+
+## Decisions by D (2026-10-08)
+
+- **X03:** the figure's day axis counts as reported timing. If the age question is resolved as adult, the WBC, CD4+ and CD8+ series (same 15 men, 4 identified training weeks, W0 baseline, samples about 48 h after the Friday session) qualify as Support B; the chart notes "timing from figure axis". The key for X03 stands.
+- **X11:** the report is INCLUDE_A; Study 2 stays AWAITING_CLASSIFICATION at cohort level and is not charted until its age is resolved; D tracks the cohort. The key stands.
+- **X14:** R46 is charted under independent validation as internal model checking, not metric validation; R12's omics_discovery is decided after checking the results tables for immune-relevant candidates (the immune link itself is unaffected). The key stands.
