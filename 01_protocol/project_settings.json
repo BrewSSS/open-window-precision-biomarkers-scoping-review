@@ -1,7 +1,7 @@
 {
   "protocol_version": "3.1",
   "protocol_date": "2026-10-05",
-  "status": "v3.1_amendments_PRE-004_PRE-005_PRE-006_applied_release_pending",
+  "status": "v3.1_archived; PRE-007_PRE-008_adopted; v3.2_release_pending",
   "confirmed_resources": {
     "databases": [
       "PubMed",
@@ -79,7 +79,8 @@
         "protocol_version": "3.0"
       }
     ],
-    "current_release_note": "release_tag/release_commit/concept_doi/version_doi/id/url/submitted_at describe the release of the CURRENT protocol_version (3.1) and stay null until the v3.1 GitHub Release is archived by Zenodo; then fill all of them together (release_tag v3.1, concept_doi 10.5281/zenodo.23147972, id = version_doi). The v3.0 release is kept in previous_releases."
+    "current_release_note": "release_tag/release_commit/concept_doi/version_doi/id/url/submitted_at describe the release of the CURRENT protocol_version (3.1) and stay null until the v3.1 GitHub Release is archived by Zenodo; then fill all of them together (release_tag v3.1, concept_doi 10.5281/zenodo.23147972, id = version_doi). The v3.0 release is kept in previous_releases.",
+    "next_release": "v3.2 pending: bundles PRE-007 and PRE-008; release fields above stay at v3.1 until the v3.2 Zenodo DOI exists"
   },
   "stages": {
     "platform_validation": "pubmed_v0.9_diagnostics_done_2026-10-05; WoS/Scopus v0.9 seed tests pending D",
@@ -90,7 +91,7 @@
     "random_50_screening_pilot": "accepted_by_A_2026-10-05 (raw agreement 1.00, kappa 1.00; AI hint visible — limitation recorded; no AI hints in formal screening)",
     "purposeful_10_charting_pilot": "ai_assisted_extraction_done_2026-10-05 (9/10 reports; R62 human extraction pending under v3.0 rules); accepted by A 2026-10-05 as calibration of rule clarity (not human inter-rater agreement)",
     "formal_search": "completed_2026-10-05_v0.9 (PubMed 7,846; Web of Science 13,242; Scopus 11,065; all with abstracts; PRESS re-review of v0.9 accepted by A on 2026-10-05; D's seed test passed; Google Scholar supplement deferred until after deduplication and title screening; deduplication in progress)",
-    "dual_screening": "pending",
+    "dual_screening": "AI first pass complete (PRE-007): stage 1 2026-10-05/06 (15,750 screened, 7,606 advanced); stage 2 2026-10-07 (9,277 screened, 4,326 ADVANCE, 4,949 EXCLUDE_TA, 2 AWAITING); validation-readiness triage complete 2026-10-08 for 4,298 advances (PRE-008: V 577, M 3,020, X 697, U 4; 28 batch-235 advances pending triage, D); human verification by B and C pending",
     "dual_extraction": "pending",
     "critical_appraisal": "pending",
     "synthesis": "pending",
@@ -103,7 +104,10 @@
     "title_screening_pilot_100": "pending (100 records from the deduplicated formal union, seed 20261005; raw agreement >= 0.80 on the binary TI disposition before formal stage 1)",
     "abstract_completion": "pending (after stage 1)",
     "TA_recalibration_25_v3_1": "pending (25 records from the stage-1 retained set, seed 20261003; before formal stage 2)",
-    "press_rereview_v0_9": "accepted_2026-10-05 (A, no changes; PRESS_review_checklist.md 'v0.9 re-review')"
+    "press_rereview_v0_9": "accepted_2026-10-05 (A, no changes; PRESS_review_checklist.md 'v0.9 re-review')",
+    "amendment_PRE-007": "adopted_2026-10-05 (A; registered retrospectively 2026-10-06): AI-stand-in first pass at stages 1 and 2 with blind third reads and mandatory human verification; stage-2 verification scope replaced by PRE-008; to be released in v3.2",
+    "amendment_PRE-008": "adopted_2026-10-08 (A; six editorial choices, recommended options): validation-readiness triage of stage-2 advances (GLM-5.3-Flash + GPT-6 Luna first pass, prompt v1.1; GPT-6 Sol adjudication, prompt v1.2); only the V layer goes to full text; M charted from abstracts; X = AI exclusions with 10% sample; to be released in v3.2",
+    "protocol_v3_2_release": "pending (A: tag v3.2, GitHub Release, Zenodo version DOI under concept DOI 10.5281/zenodo.23147972, write-back; D: integration check) — before human verification and full-text screening"
   },
   "flow_counts": null,
   "actual_search_dates": {

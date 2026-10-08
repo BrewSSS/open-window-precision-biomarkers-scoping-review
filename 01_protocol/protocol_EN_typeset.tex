@@ -108,10 +108,16 @@ v0.7 is superseded. The formal database searches were run on 5 October
 5 October 2026) introduces AI-stand-in first-pass screening with
 mandatory human verification: stage-1 title screening of all 15,750
 deduplicated records was executed on 5--6 October 2026 (7,606 advanced)
-and stage-2 title/abstract screening of the retained pool is in
-progress. Human verification of the AI passes, full-text screening,
-extraction and synthesis have not started, and no formal included study
-or result exists.\\
+and stage-2 title/abstract screening of 9,277 retained records was
+completed on 7 October 2026 (4,326 advanced). Amendment PRE-008 (8
+October 2026) triages the stage-2 advances by AI element extraction with
+an adjudicating read and layered human verification: only the
+validation-readiness layer proceeds to full text, and the evidence-map
+layer is charted from abstracts (C, F, I). PRE-007 and PRE-008 will be
+released together as version 3.2 before human verification and full-text
+screening start. Human verification of the AI passes, full-text
+screening, extraction and synthesis have not started, and no formal
+included study or result exists.\\
 \textbf{Target journal:} \emph{Frontiers in Immunology}, under the
 Systematic Review article type, which includes scoping reviews;
 specialty section to be selected. Submission will include the PRISMA-ScR
@@ -368,6 +374,25 @@ machine learning or a group mean difference alone does not establish
 personalized usefulness. Individualization or clinical validation is
 \textbf{not required for inclusion}; absence of such reporting is itself
 a mapping finding.
+
+The \textbf{validation-readiness element} (amendment PRE-008) is the
+abstract-level signal used to triage stage-2 advances; it is a triage
+device, not an eligibility criterion or a precision-domain judgment. It
+is present when the title or abstract shows at least one of four
+sub-types. \emph{Metric validation}: a reported reliability,
+reproducibility or within- or between-person variability statistic, a
+reference interval, a derived or tested threshold, or a diagnostic or
+predictive performance measure; a remark that responses varied is not
+enough. \emph{Outcome linkage}: an infection, upper-respiratory,
+illness, overtraining or performance outcome that was measured in the
+study and analysed against the marker; background framing, hypotheses or
+discussion do not count. \emph{Omics discovery}: proteomic, metabolomic,
+transcriptomic, miRNA, epigenomic, single-cell or extracellular-vesicle
+profiling of immune-relevant candidates. \emph{Repeated monitoring}: the
+same marker tracked in the same people across three or more identified
+bouts, or across a season, training block or multi-week period with a
+monitoring purpose; crossover or randomised comparisons of exercise
+conditions do not count, although they can qualify as Support B.
 
 A \textbf{response} is an observed post-exercise measurement or
 contrast. A \textbf{recovery trajectory} requires longitudinal
@@ -772,27 +797,27 @@ its title and other available text, flagged as such, and never excluded
 for that reason. At stage 2, two screeners independently screen the
 titles and abstracts of \textbf{all} retained records under the version
 3 rules, and the human reviewers later screen \textbf{all} sought full
-texts. At title/abstract stage, missing timing or methodological detail
-normally proceeds to full text rather than being guessed. Under
-amendment PRE-007 (6 October 2026), the two independent first-pass
-screeners at stages 1 and 2 are AI stand-ins with different prompt
-orientations (inclusion-oriented, defaulting to advance; and
-closed-list-strict), each reading every record individually, and every
-record on which they disagree receives a blind third AI read recorded
-separately. The stand-in passes are subject to mandatory human
-verification: reviewers B and C independently confirm every AI-advanced
-record, every conflict left without a third read and every
-awaiting-classification record, and screen a seeded 10\% random sample
-of agreed AI exclusions with the AI columns hidden (seed 20261005); the
-human decisions are the decisions of record, and an advance found inside
-the sample triggers re-screening of that record type. Agreed AI
-exclusions outside the sample are listed and reported separately in the
-PRISMA-ScR flow as AI exclusions with 10\% sample verification. A
-100-record random title-pilot sample (seed 20261005) is issued to B and
-C as a blind calibration set with the AI columns hidden, and the
-AI-versus-human comparison on that sample is reported as the stand-in
-reliability check. The manuscript discloses the design and the models in
-Methods and Acknowledgments. The split was adopted when the
+texts (under PRE-008, the confirmed validation layer). At title/abstract
+stage, missing timing or methodological detail normally proceeds to full
+text rather than being guessed. Under amendment PRE-007 (6 October
+2026), the two independent first-pass screeners at stages 1 and 2 are AI
+stand-ins with different prompt orientations (inclusion-oriented,
+defaulting to advance; and closed-list-strict), each reading every
+record individually, and every record on which they disagree receives a
+blind third AI read recorded separately. The stand-in passes are subject
+to mandatory human verification: reviewers B and C independently confirm
+every AI-advanced record, every conflict left without a third read and
+every awaiting-classification record, and screen a seeded 10\% random
+sample of agreed AI exclusions with the AI columns hidden (seed
+20261005); the human decisions are the decisions of record, and an
+advance found inside the sample triggers re-screening of that record
+type. Agreed AI exclusions outside the sample are listed and reported
+separately in the PRISMA-ScR flow as AI exclusions with 10\% sample
+verification. A 100-record random title-pilot sample (seed 20261005) is
+issued to B and C as a blind calibration set with the AI columns hidden,
+and the AI-versus-human comparison on that sample is reported as the
+stand-in reliability check. The manuscript discloses the design and the
+models in Methods and Acknowledgments. The split was adopted when the
 five-database volume under strategy v0.7 was estimated at 60,000--90,000
 records, and in response to uneven off-campus access to abstracts
 through database interfaces; title screening is about three to four
@@ -800,6 +825,24 @@ times faster, and recall is protected by the narrow closed list and the
 advance-wins rule. Amendment PRE-006 later reduced the projected unique
 volume to roughly 9,000--13,000 records (E); the two stages are
 retained.
+
+Under amendment PRE-008, the stage-2 AI advances are triaged before
+human verification. Two model families independently extract five
+abstract-level elements with verbatim quotes: exercise exposure (E1),
+post-exercise sampling (E2), immune marker (E3), population (E4) and the
+validation-readiness element (E5; C). Family disagreements, and records
+whose E5 rested only on repeated monitoring, receive a blind
+adjudicating read under the stricter E5 definition. The final elements
+place each record in one layer: X (a core element absent: no exercise
+exposure, post-exercise sample or immune marker, or a population under
+18, clinical or non-human), V (core present, E5 present), M (core
+present, E5 absent) or U (E5 unclear). B and C independently confirm E5
+and E4 for every V record with the AI quotes visible, decide every U
+record, and verify seeded 10\% samples of M and X (seed 20261005) and of
+adjudicated records (seed 20261008); D resolves disagreements. Only
+confirmed V records proceed to full text and extraction; M is charted
+from abstract-level elements only; X is reported as AI exclusions with
+sample verification. Stage-1 verification under PRE-007 is unchanged.
 
 After the v3.0 protocol has been archived (J) and before formal
 screening, a saved random procedure selects 50 records from a frozen
@@ -851,9 +894,10 @@ appears as a separate line in the flow diagram and places the report in
 a background register outside every original-study denominator. The
 actual flow will reconcile identification, duplicates, title screening
 (with stage-1 exclusions by closed-list reason), title/abstract
-screening, sought/retrieved reports, exclusions and included
-reports/cohorts, with the frontier register separate. Counts remain
-unavailable, not zero, until work is performed.
+screening, validation-readiness triage (PRE-008; X, M and V layers),
+sought/retrieved reports, exclusions and included reports/cohorts, with
+the frontier register separate. Counts remain unavailable, not zero,
+until work is performed.
 
 \subsection{G. Data charting}\label{g.-data-charting}
 
@@ -1082,6 +1126,20 @@ Three primary evidence maps are planned:
   explicitly labelled gaps.
 \end{enumerate}
 
+Under amendment PRE-008 the evidence base has two layers. The validation
+layer (V) holds the records confirmed by B and C as carrying a
+validation-readiness element (C); only these are screened at full text
+and extracted, and only they populate maps 2 and 3 and the main tables.
+The map layer (M) holds records with every core element but no
+validation-readiness element; they are charted from the abstract-level
+elements (exercise exposure, sampling, marker families, population,
+study type) without full text and are reported as a separately labelled
+abstract-level landscape, never merged with full-text denominators. In
+the PRISMA-ScR flow a validation-readiness triage box follows
+title/abstract screening and splits the AI advances into X (AI
+exclusions with 10\% sample verification, by missing core element), M (a
+separate box, not sought at full text) and V (sought for full text).
+
 The PRISMA-ScR flow is an additional process figure. It reports counts
 for each screening stage, with a separate box for title screening whose
 exclusions are given by closed-list reason and its FT code (F). Main
@@ -1163,11 +1221,14 @@ PRE-006. Tool names, versions, models, sources, dates, tasks,
 prompt/output references and human verification are logged in
 \texttt{01\_protocol/ai\_use\_log.json}, and the manuscript will
 disclose tool name, version, model and source in both Methods and
-Acknowledgments {[}14{]}. AI is not an author, human independent
-reviewer or adjudicator. Named humans remain responsible for
-eligibility, data, appraisal, citations and conclusions. No AI-produced
-citation or numerical claim is accepted without source verification.
-Final disclosure follows the then-current journal and institutional
+Acknowledgments {[}14{]}. Under PRE-007 and PRE-008, AI stand-ins, third
+reads and the adjudicating triage read (5--8 October 2026; logged in the
+same file) produce recommendations that humans verify as specified in F;
+AI is not an author, human independent reviewer or the human
+adjudicator. Named humans remain responsible for eligibility, data,
+appraisal, citations and conclusions. No AI-produced citation or
+numerical claim is accepted without source verification. Final
+disclosure follows the then-current journal and institutional
 requirements.
 
 \subsection{K. Roles and execution
@@ -1207,6 +1268,17 @@ effort will be estimated after the 50-record screening pilot, the
 yields and per-record effort. A provisional budget should distinguish
 two-person screening/extraction from single-person work and allow
 adjudication and update searches.
+
+Execution order after the stage-2 AI pass (PRE-007, PRE-008): (1) D
+triages the 28 stage-2 advances added by the batch-235 re-screen with
+the same models and prompts; (2) A releases version 3.2 (tag, GitHub
+Release, Zenodo version DOI) after D's integration check; (3) B and C
+complete human verification (V confirmation, U decisions, the M, X and
+adjudication samples, the stage-1 and stage-2 exclusion samples and the
+100-record blind title pilot), with D adjudicating; (4) A and D retrieve
+full texts of confirmed V records through \texttt{fulltext\_requests/};
+(5) B and C screen V full texts and extract, while M is charted from
+abstract-level elements; (6) synthesis.
 
 The local execution plan and archive release record specify stage gates
 and deliverables. Formal stages remain pending until the required human
@@ -1345,13 +1417,32 @@ stage-2 title/abstract screening of the 8,447-record retained pool
 under PRE-005) is in progress. PRE-007 is to be bundled into the next
 archived release.
 
-Still pending are named administrative declarations, the Google Scholar
-search strings (the supplement is deferred until after deduplication and
-title screening), the reduced human charting calibration on the revised
-rules, the human 100-record blind title pilot and the 25-record
-title/abstract re-calibration, archived appraisal forms and local
-software configuration. Subsequent extraction and synthesis are distinct
-execution stages and have not been performed.
+Version 3.2 (pending release) bundles PRE-007 and amendment PRE-008 (8
+October 2026, decision by A), ``Validation-readiness triage of stage-2
+advances with AI element extraction, GPT-6 Sol adjudication and layered
+human verification'' (C, F, I). Stage-2 screening was completed on 7
+October 2026: 9,277 records (the 8,447-record pool plus 830 stage-1
+conflict records missed by an intermediate build) were screened, 4,326
+advanced, 4,949 were excluded and 2 await classification. The 4,298
+advances present when the triage was built were read by GLM-5.3-Flash
+(thinking off) and GPT-6 Luna (reasoning effort max) under prompt v1.1;
+1,991 records were adjudicated by GPT-6 Sol (reasoning effort medium)
+under prompt v1.2, which tightened E5 after a spot check found crossover
+designs counted as repeated monitoring and background framing counted as
+outcome linkage. Final layers: V 577, M 3,020, X 697, U 4. Only V
+proceeds to full text. Methods will report the models, prompt versions
+and agreement statistics; the post-hoc narrowing of the full-text scope
+is a limitation. Version 3.2 is released before human verification and
+full-text screening start.
+
+Still pending are the version 3.2 release, named administrative
+declarations, the Google Scholar search strings (the supplement is
+deferred until after deduplication and title screening), the reduced
+human charting calibration on the revised rules, the human 100-record
+blind title pilot and the 25-record title/abstract re-calibration,
+archived appraisal forms and local software configuration. Subsequent
+extraction and synthesis are distinct execution stages and have not been
+performed.
 
 \subsection{References}\label{references}
 

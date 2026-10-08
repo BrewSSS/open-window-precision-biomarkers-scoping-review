@@ -1,6 +1,6 @@
 # Screening manual
 
-**Protocol:** v3.1 (amendments PRE-004, PRE-005 and PRE-006), 2026-10-05 · **Status:** prospective working rules; the 50-record title/abstract pilot was accepted as calibration on 2026-10-05; the 100-record title pilot and the 25-record title/abstract re-calibration are pending; formal screening has not been performed. Binding decisions: `01_protocol/v3_design_contract.txt` and `01_protocol/amendments.json` (PRE-004: age rule and the RETAIN_BACKGROUND disposition; PRE-005: two-stage screening, section 3A'; PRE-006: database set and search-stage limits, step 6).
+**Protocol:** v3.1 (amendments PRE-004, PRE-005 and PRE-006), 2026-10-05 · **Status:** prospective working rules; the 50-record title/abstract pilot was accepted as calibration on 2026-10-05; the 100-record title pilot and the 25-record title/abstract re-calibration are pending; formal stages 1 and 2 were run as AI first passes under PRE-007 (human verification pending), and stage-2 advances are triaged under PRE-008 (3B'); only the confirmed validation layer goes to full text. Binding decisions: `01_protocol/v3_design_contract.txt` and `01_protocol/amendments.json` (PRE-004: age rule and the RETAIN_BACKGROUND disposition; PRE-005: two-stage screening, section 3A'; PRE-006: database set and search-stage limits, step 6).
 
 ## 1. Purpose and units
 
@@ -108,6 +108,22 @@ Reasons at title/abstract reuse the full-text codes. There are no separate TA re
 When uncertain, advance or await classification; do not exclude by assumption. Full-text criteria that cannot be assessed in an abstract are not grounds for title/abstract exclusion. Exercise intensity, the absence of the phrase "open window" and sampling later than 72 h are never TA exclusion grounds. Both reviewers use the same manual. Each records decisions only in their own sheet of their own workbook (`screen_TA_reviewer_A` or `_B`) and does not see the other reviewer's decisions before locking. After both have locked, the data manager records the SHA-256 of each locked workbook in `screening_log_template.json` (`workbook_workflow.locks`; `calibration.reviewer_workbook_sha256` for the pilot) and commits the hashes to git before merging. Agreement, conflicts and kappa then come from `scripts/merge_screening.py merge --stage TA --population merged_TI.csv` (the population check confirms that every stage-1 retained record was screened) or the workbook's `merge_TA` sheet. Records marked abstract_unavailable follow the same rules; the missing abstract is not an exclusion reason.
 
 **Re-calibration under v3.1.** The 50-record pilot of 2026-10-05 was run under v3.0 codes. Because v3.1 changes the screening codes, a reduced round precedes formal stage 2: 25 records from the stage-1 retained set after abstract completion, drawn with seed 20261003 (round 2 under the repeat-seed rule of `calibration_plan.md`), screened without AI hints and judged by the same pass rule (raw agreement ≥ 80% on the binary disposition and every conceptual disagreement resolved). Record it in `calibration.recalibration_v3_1` and merge with `--calibration-ids <ids> --planned-size 25`.
+
+### B'. Validation-readiness triage (PRE-008)
+
+Applies to the stage-2 AI advances before human verification and full text. Two model families extract five elements from each abstract with verbatim quotes (E1 exercise exposure, E2 post-exercise sampling, E3 immune marker, E4 population, E5 validation-readiness element); disagreements and repeated-monitoring-only calls are re-read by an adjudicating model. The models make no eligibility decision. Files: `formal_2026-10-05_v0.9/ai_triage/` (`final_triage_4298.csv`, `final_triage_summary.md`).
+
+E5 rule (prompt v1.2; protocol C). Present only if at least one applies: **metric validation** (a reported ICC, CV, typical error, reference interval, threshold or diagnostic/predictive performance; "responses varied" is not enough); **outcome linkage** (an infection, URTI, illness, overtraining or performance outcome measured in the study and analysed against the marker; background framing or discussion is not enough); **omics discovery** (immune-relevant proteomic, metabolomic, transcriptomic, miRNA, epigenomic, single-cell or EV profiling); **repeated monitoring** (same marker, same people, three or more identified bouts or a season/training block with a monitoring purpose; a crossover or randomised comparison of conditions is not monitoring).
+
+| Layer | Meaning | What B and C do (independently; D resolves disagreements) |
+|---|---|---|
+| V | all core elements present, E5 present | Every record: confirm E5 and E4 against the abstract, AI quotes visible. Confirmed records go to full text (3C), where E1–E3 are judged. A rejected E5 moves the record to M; a failed E4 moves it to X |
+| U | E5 unclear | Every record: decide V, M or X |
+| M | core present, E5 absent | Seeded 10% sample (seed 20261005), judged blind (AI columns hidden, M and X rows mixed): is E5 truly absent? The rest is charted from abstract elements only, no full text |
+| X | a core element absent (no exercise, no post-exercise sample, no immune marker, or under 18, clinical or non-human) | Same blind sample: is the core element truly absent? The rest are AI exclusions at title/abstract, reported as such |
+| adjudication sample | 10% of model-adjudicated records (seed 20261008), any layer | Check all five elements; this estimates the adjudicator's error rate |
+
+A V record found in the M sample, or a record with all core elements found in the X sample, triggers a re-check of that pattern across the layer. Human decisions are the decisions of record; AI layers are recommendations. Stage-1 verification under PRE-007 is unchanged.
 
 ### C. Retrieve and screen full text (independent, all retrieved candidates)
 

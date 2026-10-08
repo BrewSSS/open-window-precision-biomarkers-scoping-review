@@ -153,6 +153,11 @@
       "ADVANCE": [
         "none: title/abstract-only disposition, not a final scope"
       ]
+    },
+    "triage_layers_PRE-008": {
+      "V_validation_layer": "Stage-2 advances with all core elements and a validation-readiness element (protocol C), confirmed by B and C; the only records screened at full text and extracted; populate figures 2-3 and the main tables (A/B strata assigned at full text).",
+      "M_map_layer": "Stage-2 advances with all core elements but no validation-readiness element; charted from abstract-level elements only (exercise exposure, sampling, marker families, population, study type); reported as a separately labelled abstract-level landscape; never merged with full-text denominators.",
+      "X_ai_exclusion": "A core element absent at abstract level; AI exclusion at title/abstract with a seeded 10% human sample; shown in the flow, not mapped."
     }
   },
   "precision_domains": [
@@ -470,11 +475,13 @@
           "Stage 1 title screening: records screened; records excluded (EXCLUDE_TITLE), reported by closed-list code TI01-TI05 with its FT code",
           "Abstract completion (process note, not an exclusion box): stage-1 retained records by abstract source; abstract_unavailable shown, not excluded",
           "Stage 2 title/abstract screening: records screened; records excluded (EXCLUDE_TA) by FT code; frontier preprints routed to the separate register",
+          "Validation-readiness triage (PRE-008): AI-advanced records triaged; X = AI exclusions with 10% sample verification, by missing core element; M = evidence-map layer charted from title/abstract elements (separate box, not sought at full text); V = validation layer after human confirmation, sought for full text; U decided by humans",
           "Retrieval: reports sought; reports not retrieved",
           "Full-text assessment: reports assessed; EXCLUDE_FT by primary FT code; RETAIN_BACKGROUND as its own line; awaiting classification/translation",
           "Included: reports and unique cohorts (A, B, A and B), with the frontier register separate"
         ],
-        "count_rule": "Counts are reported per stage only when that stage is complete (scripts/merge_screening.py prisma); otherwise blank and marked not yet performed, never zero."
+        "count_rule": "Counts are reported per stage only when that stage is complete (scripts/merge_screening.py prisma); otherwise blank and marked not yet performed, never zero.",
+        "amendment_PRE-008": "PRE-008 (v3.2): a validation-readiness triage box follows stage-2 title/abstract screening"
       }
     },
     "tables": [
