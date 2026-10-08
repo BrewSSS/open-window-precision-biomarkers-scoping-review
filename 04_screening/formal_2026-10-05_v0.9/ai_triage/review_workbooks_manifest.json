@@ -13,7 +13,7 @@
   },
   "workbooks": {
     "ta_triage_review_B.xlsx": {
-      "sha256": "058642ec6cb810cda67367465d25004bf1fdf708b3beb817e69e2536e703933f",
+      "sha256": "5d8813400b87d68a3384dd0f02d4bc8c603ca14b2108d253b3256a93c5f9ba29",
       "sheet_row_counts": {
         "V_confirm": 555,
         "U_decide": 3,
@@ -49,6 +49,64 @@
       "MX_b235": 0,
       "ADJ_b235": 28,
       "total": 28
+    }
+  },
+  "prefill": {
+    "B": {
+      "model": "GPT-6 Sol",
+      "runner": "scripts/triage_codex_run.py",
+      "codex_auth": "ChatGPT subscription (CODEX_HOME=~/.codex-triage, isolated)",
+      "efforts": {
+        "title_sheets": "medium",
+        "abstract_sheets": "high"
+      },
+      "records_per_call": 5,
+      "concurrency": 16,
+      "prompts": {
+        "ai_stage1/ti_prefill_prompt.md": {
+          "sha256": "c8eb0fc325a54858891b67d23323c1e296b61fd136efb216d7446c530bad9d0b"
+        },
+        "ai_triage/verify_prefill_prompt.md": {
+          "sha256": "c325b3ab9c99c978cd966e3adb0181264b423023a760277f0b5efb2b001a6358"
+        }
+      },
+      "schemas": {
+        "ai_stage1/ti_prefill_schema_item.json": {
+          "sha256": "94f7f9d05755fa791ee5d530f474097fe1b8e696f1bffcc32bb6ab91d10bd846"
+        },
+        "ai_triage/verify_prefill_schema_item.json": {
+          "sha256": "22283e4838f47a013fc3fadd073fcc36ee57d4d32a1a053bccb24e650126cef7"
+        },
+        "note": "codex --output-schema used a locally-derived batch wrapper of these item schemas (/tmp/triage/prefill_B2/ti_schema_batch.json, verify_schema_batch.json; not committed) because the repo's committed *_schema_batch.json files use workbook column names (your_*/B_*) that disagree with the item schemas' field names and would have made triage_codex_run.py's post-hoc validation mark every record invalid and break --resume; write-back mapped field names to the your_*/B_* workbook columns itself."
+      },
+      "workbooks": {
+        "ai_stage1/ti_review_B.xlsx": {
+          "sha256": "e906c099f1c0edf0296cc0c1209b517e99175f312432fc14c45a2f9ef5d332e4",
+          "sheet_row_counts": {
+            "pilot_100_blind": 100,
+            "sample_verify": 978,
+            "total": 1078
+          }
+        },
+        "ai_triage/ta_triage_review_B.xlsx": {
+          "sha256": "5d8813400b87d68a3384dd0f02d4bc8c603ca14b2108d253b3256a93c5f9ba29",
+          "sheet_row_counts": {
+            "V_confirm": 555,
+            "U_decide": 3,
+            "MX_sample": 357,
+            "ADJ_sample": 199,
+            "ADJ_b235": 28,
+            "total": 1142
+          }
+        }
+      },
+      "run_stats": {
+        "total_records": 2220,
+        "n_batches": 446,
+        "failed_batches": 0,
+        "invalid_or_missing_records": 0
+      },
+      "generated_at_utc": "2026-10-08T05:56:00Z"
     }
   }
 }
