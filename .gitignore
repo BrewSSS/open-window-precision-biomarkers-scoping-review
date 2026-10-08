@@ -47,6 +47,17 @@ __pycache__/
 # Charting-pilot full texts and supplements (publisher/PMC copies; hashes in 05_extraction/pilot_2026-10-05/fulltexts_manifest.json)
 05_extraction/pilot_2026-10-05/fulltexts/
 
+# PRE-009 AI-assisted extraction pilot comparison (scripts/extract_pdf_text.py, extract_run.py,
+# extract_pilot_eval.py): page-marked full text, raw per-family run JSON/manifests-in-progress,
+# loader-adapter JSON and generated reviewer workbooks all carry full-text content or long raw
+# model output and are never committed; only the model-neutral prompt, the generated strict
+# schema, the committable run_manifest.json and the pilot_comparison_*.md report are tracked.
+05_extraction/ai_extraction/text/
+05_extraction/ai_extraction/runs/
+05_extraction/ai_extraction/workbooks/
+05_extraction/ai_extraction/ai_extraction_json/
+05_extraction/ai_extraction/compare_*/
+
 # Formal-search raw exports and metadata (PubMed/preprint abstracts, Scopus entries, and D's manual
 # licensed-database exports named <DB>_<route>_<date>.ris/.txt per scripts/README.md "Formal search
 # execution"): never committed, any route, any dated run folder. Only the specific, named,

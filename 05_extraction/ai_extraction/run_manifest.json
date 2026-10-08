@@ -1,0 +1,254 @@
+{
+ "generated_at_utc": "2026-10-08T11:05:43Z",
+ "generator": "scripts/extract_run.py (manifest reconstructed after the GLM batch subprocess was killed mid-run on 2026-10-08, which made cmd_run's sys.exit skip its own manifest write; rebuilt directly from runs/<family>/<record_id>.json, same entry shape)",
+ "prompt_sha256": "8cf63231ad782f77a44aea76669207645532cae6ed5aa22e12dcb4a876eee59c",
+ "schema_sha256": "4a593307cd1bd4789072153fc29ed4881850eb2d7f71fedc0fd462568d505b77",
+ "entries": [
+  {
+   "record_id": "R42",
+   "family": "sol_xhigh",
+   "model": "gpt-6-sol",
+   "effort_or_thinking": "xhigh",
+   "prompt_sha256": "8cf63231ad782f77a44aea76669207645532cae6ed5aa22e12dcb4a876eee59c",
+   "schema_sha256": "4a593307cd1bd4789072153fc29ed4881850eb2d7f71fedc0fd462568d505b77",
+   "tokens": {
+    "input_tokens": 39515,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 16677,
+    "reasoning_output_tokens": 3988
+   },
+   "seconds": 180.8,
+   "attempts": 1,
+   "valid": true
+  },
+  {
+   "record_id": "R61",
+   "family": "sol_xhigh",
+   "model": "gpt-6-sol",
+   "effort_or_thinking": "xhigh",
+   "prompt_sha256": "8cf63231ad782f77a44aea76669207645532cae6ed5aa22e12dcb4a876eee59c",
+   "schema_sha256": "4a593307cd1bd4789072153fc29ed4881850eb2d7f71fedc0fd462568d505b77",
+   "tokens": {
+    "input_tokens": 34407,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 42928,
+    "reasoning_output_tokens": 6377
+   },
+   "seconds": 529.3,
+   "attempts": 1,
+   "valid": true
+  },
+  {
+   "record_id": "R12",
+   "family": "sol_xhigh",
+   "model": "gpt-6-sol",
+   "effort_or_thinking": "xhigh",
+   "prompt_sha256": "8cf63231ad782f77a44aea76669207645532cae6ed5aa22e12dcb4a876eee59c",
+   "schema_sha256": "4a593307cd1bd4789072153fc29ed4881850eb2d7f71fedc0fd462568d505b77",
+   "tokens": {
+    "input_tokens": 120021,
+    "cached_input_tokens": 79488,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 58609,
+    "reasoning_output_tokens": 3763
+   },
+   "seconds": 543.3,
+   "attempts": 1,
+   "valid": true
+  },
+  {
+   "record_id": "R01",
+   "family": "sol",
+   "model": "gpt-6-sol",
+   "effort_or_thinking": "high",
+   "prompt_sha256": "8cf63231ad782f77a44aea76669207645532cae6ed5aa22e12dcb4a876eee59c",
+   "schema_sha256": "4a593307cd1bd4789072153fc29ed4881850eb2d7f71fedc0fd462568d505b77",
+   "tokens": {
+    "input_tokens": 38633,
+    "cached_input_tokens": 16256,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 11660,
+    "reasoning_output_tokens": 3810
+   },
+   "seconds": 186.3,
+   "attempts": 1,
+   "valid": true
+  },
+  {
+   "record_id": "R03",
+   "family": "sol",
+   "model": "gpt-6-sol",
+   "effort_or_thinking": "high",
+   "prompt_sha256": "8cf63231ad782f77a44aea76669207645532cae6ed5aa22e12dcb4a876eee59c",
+   "schema_sha256": "4a593307cd1bd4789072153fc29ed4881850eb2d7f71fedc0fd462568d505b77",
+   "tokens": {
+    "input_tokens": 29275,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 40249,
+    "reasoning_output_tokens": 2300
+   },
+   "seconds": 492.3,
+   "attempts": 1,
+   "valid": true
+  },
+  {
+   "record_id": "R12",
+   "family": "sol",
+   "model": "gpt-6-sol",
+   "effort_or_thinking": "high",
+   "prompt_sha256": "8cf63231ad782f77a44aea76669207645532cae6ed5aa22e12dcb4a876eee59c",
+   "schema_sha256": "4a593307cd1bd4789072153fc29ed4881850eb2d7f71fedc0fd462568d505b77",
+   "tokens": {
+    "input_tokens": 37703,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 44719,
+    "reasoning_output_tokens": 3195
+   },
+   "seconds": 467.6,
+   "attempts": 1,
+   "valid": true
+  },
+  {
+   "record_id": "R19",
+   "family": "sol",
+   "model": "gpt-6-sol",
+   "effort_or_thinking": "high",
+   "prompt_sha256": "8cf63231ad782f77a44aea76669207645532cae6ed5aa22e12dcb4a876eee59c",
+   "schema_sha256": "4a593307cd1bd4789072153fc29ed4881850eb2d7f71fedc0fd462568d505b77",
+   "tokens": {
+    "input_tokens": 67293,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 34385,
+    "reasoning_output_tokens": 3673
+   },
+   "seconds": 361.8,
+   "attempts": 1,
+   "valid": true
+  },
+  {
+   "record_id": "R42",
+   "family": "sol",
+   "model": "gpt-6-sol",
+   "effort_or_thinking": "high",
+   "prompt_sha256": "8cf63231ad782f77a44aea76669207645532cae6ed5aa22e12dcb4a876eee59c",
+   "schema_sha256": "4a593307cd1bd4789072153fc29ed4881850eb2d7f71fedc0fd462568d505b77",
+   "tokens": {
+    "input_tokens": 38511,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 14792,
+    "reasoning_output_tokens": 4638
+   },
+   "seconds": 178.7,
+   "attempts": 1,
+   "valid": true
+  },
+  {
+   "record_id": "R46",
+   "family": "sol",
+   "model": "gpt-6-sol",
+   "effort_or_thinking": "high",
+   "prompt_sha256": "8cf63231ad782f77a44aea76669207645532cae6ed5aa22e12dcb4a876eee59c",
+   "schema_sha256": "4a593307cd1bd4789072153fc29ed4881850eb2d7f71fedc0fd462568d505b77",
+   "tokens": {
+    "input_tokens": 23833,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 26630,
+    "reasoning_output_tokens": 2556
+   },
+   "seconds": 366.0,
+   "attempts": 1,
+   "valid": true
+  },
+  {
+   "record_id": "R56",
+   "family": "sol",
+   "model": "gpt-6-sol",
+   "effort_or_thinking": "high",
+   "prompt_sha256": "8cf63231ad782f77a44aea76669207645532cae6ed5aa22e12dcb4a876eee59c",
+   "schema_sha256": "4a593307cd1bd4789072153fc29ed4881850eb2d7f71fedc0fd462568d505b77",
+   "tokens": {
+    "input_tokens": 36121,
+    "cached_input_tokens": 16256,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 39081,
+    "reasoning_output_tokens": 2756
+   },
+   "seconds": 386.4,
+   "attempts": 1,
+   "valid": true
+  },
+  {
+   "record_id": "R59",
+   "family": "sol",
+   "model": "gpt-6-sol",
+   "effort_or_thinking": "high",
+   "prompt_sha256": "8cf63231ad782f77a44aea76669207645532cae6ed5aa22e12dcb4a876eee59c",
+   "schema_sha256": "4a593307cd1bd4789072153fc29ed4881850eb2d7f71fedc0fd462568d505b77",
+   "tokens": {
+    "input_tokens": 30184,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 35738,
+    "reasoning_output_tokens": 2626
+   },
+   "seconds": 341.6,
+   "attempts": 1,
+   "valid": true
+  },
+  {
+   "record_id": "R61",
+   "family": "sol",
+   "model": "gpt-6-sol",
+   "effort_or_thinking": "high",
+   "prompt_sha256": "8cf63231ad782f77a44aea76669207645532cae6ed5aa22e12dcb4a876eee59c",
+   "schema_sha256": "4a593307cd1bd4789072153fc29ed4881850eb2d7f71fedc0fd462568d505b77",
+   "tokens": {
+    "input_tokens": 33403,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 46509,
+    "reasoning_output_tokens": 4849
+   },
+   "seconds": 594.4,
+   "attempts": 1,
+   "valid": true
+  },
+  {
+   "record_id": "R62",
+   "family": "sol",
+   "model": "gpt-6-sol",
+   "effort_or_thinking": "high",
+   "prompt_sha256": "8cf63231ad782f77a44aea76669207645532cae6ed5aa22e12dcb4a876eee59c",
+   "schema_sha256": "4a593307cd1bd4789072153fc29ed4881850eb2d7f71fedc0fd462568d505b77",
+   "tokens": {
+    "input_tokens": 195409,
+    "cached_input_tokens": 159488,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 19280,
+    "reasoning_output_tokens": 5975
+   },
+   "seconds": 310.1,
+   "attempts": 1,
+   "valid": true
+  },
+  {
+   "record_id": "R12",
+   "family": "glm",
+   "model": "glm-5.3",
+   "effort_or_thinking": "enabled",
+   "prompt_sha256": "8cf63231ad782f77a44aea76669207645532cae6ed5aa22e12dcb4a876eee59c",
+   "schema_sha256": "4a593307cd1bd4789072153fc29ed4881850eb2d7f71fedc0fd462568d505b77",
+   "tokens": null,
+   "seconds": null,
+   "attempts": 7,
+   "valid": false
+  }
+ ]
+}
