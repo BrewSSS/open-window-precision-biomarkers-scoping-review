@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/scoping-review/ai_stage1/ti_prefill_schema_item.json",
+  "title": "Title-screening pre-fill — per-record output (v1, 2026-10-08, PRE-008 choice 8)",
+  "description": "One record's pre-fill of your_disposition / your_code / your_comment for ti_review_B.xlsx / ti_review_C.xlsx (pilot_100_blind, sample_verify sheets). Validated by scripts/triage_run.py / triage_run_concurrent.py against this schema.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["record_id", "disposition", "code", "comment"],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "description": "Echo of the input record_id exactly as supplied (e.g. FS-000123).",
+      "pattern": "^FS-[0-9]{6}$"
+    },
+    "disposition": {
+      "type": "string",
+      "enum": ["ADVANCE_TO_ABSTRACT", "EXCLUDE_TITLE", "AWAITING_CLASSIFICATION"]
+    },
+    "code": {
+      "type": "string",
+      "enum": ["TI01", "TI02", "TI03", "TI04", "TI05", ""],
+      "description": "Required non-empty (one of TI01-TI05) if and only if disposition is EXCLUDE_TITLE; otherwise must be the empty string."
+    },
+    "comment": {
+      "type": "string",
+      "maxLength": 120,
+      "description": "<=15 words. May be empty string when disposition is ADVANCE_TO_ABSTRACT."
+    }
+  }
+}

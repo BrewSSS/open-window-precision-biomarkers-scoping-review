@@ -1,0 +1,50 @@
+{
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "results"
+ ],
+ "properties": {
+  "results": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "record_id",
+     "your_disposition",
+     "your_code",
+     "your_comment"
+    ],
+    "properties": {
+     "record_id": {
+      "type": "string",
+      "pattern": "^FS-[0-9]{6}$"
+     },
+     "your_disposition": {
+      "type": "string",
+      "enum": [
+       "ADVANCE_TO_ABSTRACT",
+       "EXCLUDE_TITLE",
+       "AWAITING_CLASSIFICATION"
+      ]
+     },
+     "your_code": {
+      "type": "string",
+      "enum": [
+       "",
+       "TI01",
+       "TI02",
+       "TI03",
+       "TI04",
+       "TI05"
+      ]
+     },
+     "your_comment": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ }
+}

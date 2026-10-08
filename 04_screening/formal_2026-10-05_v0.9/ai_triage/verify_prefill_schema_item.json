@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/scoping-review/ai_triage/verify_prefill_schema_item.json",
+  "title": "Validation-readiness triage pre-fill — per-record output (v1, 2026-10-08, PRE-008 choice 8)",
+  "description": "One record's independent pre-fill of C_E5 / C_E5_subtypes / C_E4 / C_core_absent / C_comment (and B_* equivalents) for ta_triage_review_B.xlsx / ta_triage_review_C.xlsx (V_confirm, U_decide, MX_sample, ADJ_sample, ADJ_b235 sheets). Validated by scripts/triage_run.py / triage_run_concurrent.py against this schema.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["record_id", "E1", "E2", "E3", "E4", "E5", "core_absent", "comment"],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "description": "Echo of the input record_id exactly as supplied (e.g. FS-000123).",
+      "pattern": "^FS-[0-9]{6}$"
+    },
+    "E1": {
+      "type": "string",
+      "enum": [
+        "core_A",
+        "support_B",
+        "chronic_training_only",
+        "habitual_or_resting_cross_sectional",
+        "none_or_non_exercise",
+        "unclear"
+      ]
+    },
+    "E2": { "type": "string", "enum": ["present", "absent", "unclear"] },
+    "E3": { "type": "string", "enum": ["present", "absent", "unclear"] },
+    "E4": {
+      "type": "string",
+      "enum": [
+        "adults_stated",
+        "young_adult_age_unclear",
+        "includes_under_18",
+        "clinical_or_infected_cohort",
+        "animal_or_in_vitro",
+        "unclear"
+      ]
+    },
+    "E5": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "subtypes"],
+      "properties": {
+        "value": { "type": "string", "enum": ["present", "absent", "unclear"] },
+        "subtypes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["metric_validation", "outcome_linkage", "omics_discovery", "repeated_monitoring"]
+          },
+          "description": "Empty array if value is absent or unclear."
+        }
+      }
+    },
+    "core_absent": {
+      "type": "string",
+      "enum": ["none", "E1_no_exercise", "E2_no_post_sample", "E3_no_immune_marker", "E4_population"],
+      "description": "The first core element clearly absent in the order E1, E2, E3, E4; 'none' if none is clearly absent (unclear does not count as clearly absent)."
+    },
+    "comment": {
+      "type": "string",
+      "maxLength": 120,
+      "description": "<=15 words. May be empty string."
+    }
+  }
+}

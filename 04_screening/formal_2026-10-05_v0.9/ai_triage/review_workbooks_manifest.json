@@ -1,123 +1,230 @@
 {
- "generated_at_utc": "2026-10-08T04:17:00Z",
- "source_csv": "04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_4298.csv",
- "source_csv_sha256": "eafa484dab9c527ed9ecf73f04cfaeb941ef37840dc57891ac197bec973c79c3",
- "mx_sample_shuffle_seed": 20261005,
- "adj_sample_shuffle_seed": 20261008,
- "sheet_row_counts": {
-  "V_confirm": 555,
-  "U_decide": 3,
-  "MX_sample": 357,
-  "ADJ_sample": 199,
-  "total": 1114
- },
- "workbooks": {
-  "ta_triage_review_B.xlsx": {
-   "sha256": "5d8813400b87d68a3384dd0f02d4bc8c603ca14b2108d253b3256a93c5f9ba29",
-   "sheet_row_counts": {
-    "V_confirm": 555,
-    "U_decide": 3,
-    "MX_sample": 357,
-    "ADJ_sample": 199,
-    "V_confirm_b235": 0,
-    "MX_b235": 0,
-    "ADJ_b235": 28,
-    "total": 1142
-   }
-  },
-  "ta_triage_review_C.xlsx": {
-   "sha256": "8e079d8bb43694744de565996ece11007295887dbece8951cd5adc589afd9f26",
-   "sheet_row_counts": {
-    "V_confirm": 555,
-    "U_decide": 3,
-    "MX_sample": 357,
-    "ADJ_sample": 199,
-    "V_confirm_b235": 0,
-    "MX_b235": 0,
-    "ADJ_b235": 28,
-    "total": 1142
-   }
-  }
- },
- "batch235_supplement": {
-  "added_at_utc": "2026-10-08T05:00:00Z",
-  "source_csv": "04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_batch235_supplement.csv",
-  "source_csv_sha256": "46e32dcb4b3e27a2f3071da863aeb3a0f0eae7f89a62155635c0d4afeb78b5c6",
-  "note": "28 records (stage-2 batch-235 re-screen ADVANCE additions) appended as new sheets V_confirm_b235/MX_b235/ADJ_b235 to both workbooks, plus 28 rows appended to the hidden _index sheet. All 28 are adjudicated (human_scope=ADJUDICATION_SAMPLE_VERIFY for every one, per coordinator instruction for this small supplement, not a 10% draw), so only ADJ_b235 carries data rows (28); V_confirm_b235 and MX_b235 are header-only for structural consistency. No shuffle seed used for ADJ_b235 (sorted by record_id; the batch is a single homogeneous group with nothing else to blind against).",
+  "generated_at_utc": "2026-10-08T04:17:00Z",
+  "source_csv": "04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_4298.csv",
+  "source_csv_sha256": "eafa484dab9c527ed9ecf73f04cfaeb941ef37840dc57891ac197bec973c79c3",
+  "mx_sample_shuffle_seed": 20261005,
+  "adj_sample_shuffle_seed": 20261008,
   "sheet_row_counts": {
-   "V_confirm_b235": 0,
-   "MX_b235": 0,
-   "ADJ_b235": 28,
-   "total": 28
-  }
- },
- "prefill": {
-  "B": {
-   "model": "GPT-6 Sol",
-   "runner": "scripts/triage_codex_run.py",
-   "codex_auth": "ChatGPT subscription (CODEX_HOME=~/.codex-triage, isolated)",
-   "efforts": {
-    "title_sheets": "medium",
-    "abstract_sheets": "high"
-   },
-   "records_per_call": 5,
-   "concurrency": 16,
-   "prompts": {
-    "ai_stage1/ti_prefill_prompt.md": {
-     "sha256": "c8eb0fc325a54858891b67d23323c1e296b61fd136efb216d7446c530bad9d0b"
+    "V_confirm": 555,
+    "U_decide": 3,
+    "MX_sample": 357,
+    "ADJ_sample": 199,
+    "total": 1114
+  },
+  "workbooks": {
+    "ta_triage_review_B.xlsx": {
+      "sha256": "5d8813400b87d68a3384dd0f02d4bc8c603ca14b2108d253b3256a93c5f9ba29",
+      "sheet_row_counts": {
+        "V_confirm": 555,
+        "U_decide": 3,
+        "MX_sample": 357,
+        "ADJ_sample": 199,
+        "V_confirm_b235": 0,
+        "MX_b235": 0,
+        "ADJ_b235": 28,
+        "total": 1142
+      }
     },
-    "ai_triage/verify_prefill_prompt.md": {
-     "sha256": "c325b3ab9c99c978cd966e3adb0181264b423023a760277f0b5efb2b001a6358"
+    "ta_triage_review_C.xlsx": {
+      "sha256": "8e079d8bb43694744de565996ece11007295887dbece8951cd5adc589afd9f26",
+      "sheet_row_counts": {
+        "V_confirm": 555,
+        "U_decide": 3,
+        "MX_sample": 357,
+        "ADJ_sample": 199,
+        "V_confirm_b235": 0,
+        "MX_b235": 0,
+        "ADJ_b235": 28,
+        "total": 1142
+      }
     }
-   },
-   "schemas": {
-    "ai_stage1/ti_prefill_schema_item.json": {
-     "sha256": "94f7f9d05755fa791ee5d530f474097fe1b8e696f1bffcc32bb6ab91d10bd846"
-    },
-    "ai_triage/verify_prefill_schema_item.json": {
-     "sha256": "22283e4838f47a013fc3fadd073fcc36ee57d4d32a1a053bccb24e650126cef7"
-    },
-    "note": "codex --output-schema used a locally-derived batch wrapper of these item schemas (/tmp/triage/prefill_B2/ti_schema_batch.json, verify_schema_batch.json; not committed) because the repo's committed *_schema_batch.json files use workbook column names (your_*/B_*) that disagree with the item schemas' field names and would have made triage_codex_run.py's post-hoc validation mark every record invalid and break --resume; write-back mapped field names to the your_*/B_* workbook columns itself."
-   },
-   "workbooks": {
-    "ai_stage1/ti_review_B.xlsx": {
-     "sha256": "e906c099f1c0edf0296cc0c1209b517e99175f312432fc14c45a2f9ef5d332e4",
-     "sheet_row_counts": {
-      "pilot_100_blind": 100,
-      "sample_verify": 978,
-      "total": 1078
-     }
-    },
-    "ai_triage/ta_triage_review_B.xlsx": {
-     "sha256": "5d8813400b87d68a3384dd0f02d4bc8c603ca14b2108d253b3256a93c5f9ba29",
-     "sheet_row_counts": {
-      "V_confirm": 555,
-      "U_decide": 3,
-      "MX_sample": 357,
-      "ADJ_sample": 199,
+  },
+  "batch235_supplement": {
+    "added_at_utc": "2026-10-08T05:00:00Z",
+    "source_csv": "04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_batch235_supplement.csv",
+    "source_csv_sha256": "46e32dcb4b3e27a2f3071da863aeb3a0f0eae7f89a62155635c0d4afeb78b5c6",
+    "note": "28 records (stage-2 batch-235 re-screen ADVANCE additions) appended as new sheets V_confirm_b235/MX_b235/ADJ_b235 to both workbooks, plus 28 rows appended to the hidden _index sheet. All 28 are adjudicated (human_scope=ADJUDICATION_SAMPLE_VERIFY for every one, per coordinator instruction for this small supplement, not a 10% draw), so only ADJ_b235 carries data rows (28); V_confirm_b235 and MX_b235 are header-only for structural consistency. No shuffle seed used for ADJ_b235 (sorted by record_id; the batch is a single homogeneous group with nothing else to blind against).",
+    "sheet_row_counts": {
+      "V_confirm_b235": 0,
+      "MX_b235": 0,
       "ADJ_b235": 28,
-      "total": 1142
-     }
+      "total": 28
     }
-   },
-   "run_stats": {
-    "total_records": 2220,
-    "n_batches": 446,
-    "failed_batches": 0,
-    "invalid_or_missing_records": 0
-   },
-   "generated_at_utc": "2026-10-08T05:56:00Z"
+  },
+  "prefill": {
+    "B": {
+      "model": "GPT-6 Sol",
+      "runner": "scripts/triage_codex_run.py",
+      "codex_auth": "ChatGPT subscription (CODEX_HOME=~/.codex-triage, isolated)",
+      "efforts": {
+        "title_sheets": "medium",
+        "abstract_sheets": "high"
+      },
+      "records_per_call": 5,
+      "concurrency": 16,
+      "prompts": {
+        "ai_stage1/ti_prefill_prompt.md": {
+          "sha256": "c8eb0fc325a54858891b67d23323c1e296b61fd136efb216d7446c530bad9d0b"
+        },
+        "ai_triage/verify_prefill_prompt.md": {
+          "sha256": "c325b3ab9c99c978cd966e3adb0181264b423023a760277f0b5efb2b001a6358"
+        }
+      },
+      "schemas": {
+        "ai_stage1/ti_prefill_schema_item.json": {
+          "sha256": "94f7f9d05755fa791ee5d530f474097fe1b8e696f1bffcc32bb6ab91d10bd846"
+        },
+        "ai_triage/verify_prefill_schema_item.json": {
+          "sha256": "22283e4838f47a013fc3fadd073fcc36ee57d4d32a1a053bccb24e650126cef7"
+        },
+        "note": "codex --output-schema used a locally-derived batch wrapper of these item schemas (/tmp/triage/prefill_B2/ti_schema_batch.json, verify_schema_batch.json; not committed) because the repo's committed *_schema_batch.json files use workbook column names (your_*/B_*) that disagree with the item schemas' field names and would have made triage_codex_run.py's post-hoc validation mark every record invalid and break --resume; write-back mapped field names to the your_*/B_* workbook columns itself."
+      },
+      "workbooks": {
+        "ai_stage1/ti_review_B.xlsx": {
+          "sha256": "e906c099f1c0edf0296cc0c1209b517e99175f312432fc14c45a2f9ef5d332e4",
+          "sheet_row_counts": {
+            "pilot_100_blind": 100,
+            "sample_verify": 978,
+            "total": 1078
+          }
+        },
+        "ai_triage/ta_triage_review_B.xlsx": {
+          "sha256": "5d8813400b87d68a3384dd0f02d4bc8c603ca14b2108d253b3256a93c5f9ba29",
+          "sheet_row_counts": {
+            "V_confirm": 555,
+            "U_decide": 3,
+            "MX_sample": 357,
+            "ADJ_sample": 199,
+            "ADJ_b235": 28,
+            "total": 1142
+          }
+        }
+      },
+      "run_stats": {
+        "total_records": 2220,
+        "n_batches": 446,
+        "failed_batches": 0,
+        "invalid_or_missing_records": 0
+      },
+      "generated_at_utc": "2026-10-08T05:56:00Z"
+    },
+    "C": {
+      "model": "GLM-5.3 thinking on",
+      "runner": "scripts/triage_run_concurrent.py",
+      "provider": "anthropic",
+      "base_url": "https://api.z.ai/api/anthropic",
+      "thinking": "enabled",
+      "max_tokens": 8000,
+      "records_per_call": 1,
+      "concurrency": "12 (lowered to 8 after repeated code-1302 rate-limit rejections)",
+      "prompts": {
+        "ai_stage1/ti_prefill_prompt.md": {
+          "sha256": "c8eb0fc325a54858891b67d23323c1e296b61fd136efb216d7446c530bad9d0b"
+        },
+        "ai_triage/verify_prefill_prompt.md": {
+          "sha256": "c325b3ab9c99c978cd966e3adb0181264b423023a760277f0b5efb2b001a6358"
+        }
+      },
+      "schemas": {
+        "ai_stage1/ti_prefill_schema_item.json": {
+          "sha256": "94f7f9d05755fa791ee5d530f474097fe1b8e696f1bffcc32bb6ab91d10bd846"
+        },
+        "ai_triage/verify_prefill_schema_item.json": {
+          "sha256": "22283e4838f47a013fc3fadd073fcc36ee57d4d32a1a053bccb24e650126cef7"
+        }
+      },
+      "workbooks": {
+        "ai_stage1/ti_review_C.xlsx": {
+          "sha256": "ca0a30f88ae1d9a7b21b357d196133820aae18f8bc19f31ea0aad09d59e0409f",
+          "sheet_row_counts": {
+            "pilot_100_blind": 100,
+            "sample_verify": 978,
+            "total": 1078
+          }
+        },
+        "ai_triage/ta_triage_review_C.xlsx": {
+          "sha256": "dc03344c26b4dd71cc3f1336447eca41974c891f531e37f2cd781abc07d83f15",
+          "sheet_row_counts": {
+            "V_confirm": 555,
+            "U_decide": 3,
+            "MX_sample": 357,
+            "ADJ_sample": 199,
+            "ADJ_b235": 28,
+            "total": 1142
+          }
+        }
+      },
+      "run_stats": {
+        "total_records": 2220,
+        "valid_records": 2220,
+        "http429_total": 16
+      },
+      "provider_split_per_sheet": {
+        "V_confirm": {
+          "bigmodel coding plan": 545,
+          "Bailian": 10
+        },
+        "U_decide": {
+          "bigmodel coding plan": 3
+        },
+        "MX_sample": {
+          "bigmodel coding plan": 222,
+          "Bailian": 135
+        },
+        "ADJ_sample": {
+          "Bailian": 193,
+          "bigmodel coding plan": 6
+        },
+        "ADJ_b235": {
+          "bigmodel coding plan": 28
+        },
+        "pilot_100_blind": {
+          "bigmodel coding plan": 100
+        },
+        "sample_verify": {
+          "bigmodel coding plan": 975,
+          "Bailian": 3
+        }
+      },
+      "provider_split_method": "Per-record attribution derived from a before/after-Bailian valid-record-id-set diff (snapshot taken immediately before run_bailian.sh started, ~2026-10-08 08:28 UTC), cross-checked against this session's explicit record_id lists for work done on the bigmodel Coding Plan after the 17:50 local quota reset (ADJ_sample's final 6 records, all 28 of ADJ_b235, and MX_sample's FS-004513 retry). The run JSON itself has no per-record timestamp, only a batch-level started_utc/finished_utc.",
+      "note": "PRE-008 choice 8: C-side your_*/C_* columns pre-filled by an AI stand-in (independent read; AI_* grey columns NOT supplied to the pre-fill model) before reviewer C verifies/overrides every record. Full values logged per workbook in a hidden _prefill sheet (now including a provider column and, for the batch-236 addendum rows, a note column).",
+      "generated_at_utc": "2026-10-08T10:18:21Z"
+    }
+  },
+  "locks": {
+    "B": {
+      "date": "2026-10-08",
+      "signed_on_paper": true,
+      "overrides": 0,
+      "note": "B reviewed every pre-filled record and accepted all values unchanged; locked files equal the pre-fill output (sha256 unchanged)",
+      "ti_review_B.xlsx": "e906c099f1c0edf0296cc0c1209b517e99175f312432fc14c45a2f9ef5d332e4",
+      "ta_triage_review_B.xlsx": "5d8813400b87d68a3384dd0f02d4bc8c603ca14b2108d253b3256a93c5f9ba29",
+      "pending_addendum": "8 batch-236 rows in ADJ_b235 to be updated with the newly found abstracts and re-pre-filled; B to review those 8 only",
+      "post_lock_addendum_sha256": "d5e76de7b8f0aa3f8d4746df8ecd5b791ae1a6ff667a0926e7fb1d91460dd742"
+    }
+  },
+  "addendum_batch236": {
+    "added_at_utc": "2026-10-08T10:18:46Z",
+    "scope": "8 records in sheet ADJ_b235 of both ta_triage_review_B.xlsx and ta_triage_review_C.xlsx originally carried no abstract (title-only, per the batch-235 re-screen supplement). Abstracts for these 8 were subsequently located and are filled in from 04_screening/formal_2026-10-05_v0.9/records_master.csv.",
+    "record_ids": [
+      "FS-008118",
+      "FS-008133",
+      "FS-008139",
+      "FS-009886",
+      "FS-010053",
+      "FS-010094",
+      "FS-011224",
+      "FS-011357"
+    ],
+    "B": {
+      "note": "B_E5/B_E5_subtypes/B_E4/B_core_absent/B_comment re-pre-filled via scripts/triage_codex_run.py (model GPT-6 Sol, effort high, 1 batch of 8, 0 failed/invalid). 40 rows appended to the hidden _prefill sheet with note='addendum batch-236'. The 5 B_* cells per row highlighted light-yellow (ARGB FFFFF59D). Applied before C-side (B's workbook was already locked).",
+      "pre_addendum_sha256": "5d8813400b87d68a3384dd0f02d4bc8c603ca14b2108d253b3256a93c5f9ba29",
+      "post_addendum_sha256": "d5e76de7b8f0aa3f8d4746df8ecd5b791ae1a6ff667a0926e7fb1d91460dd742"
+    },
+    "C": {
+      "note": "C_E5/C_E5_subtypes/C_E4/C_core_absent/C_comment re-pre-filled via scripts/triage_run_concurrent.py (model GLM-5.3 thinking on, bigmodel Coding Plan, 1 batch of 8, 0 failed/invalid). 40 rows appended to the hidden _prefill sheet with note='addendum batch-236' (same sheet that already carries the base pre-fill's provider column). The 5 C_* cells per row highlighted light-yellow (ARGB FFFFF59D).",
+      "pre_addendum_sha256": "d087ee0498e8b8194523cc35c9a8f9f39e050ac67e0ffd77226af5c9480b924d",
+      "post_addendum_sha256": "dc03344c26b4dd71cc3f1336447eca41974c891f531e37f2cd781abc07d83f15"
+    }
   }
- },
- "locks": {
-  "B": {
-   "date": "2026-10-08",
-   "signed_on_paper": true,
-   "overrides": 0,
-   "note": "B reviewed every pre-filled record and accepted all values unchanged; locked files equal the pre-fill output (sha256 unchanged)",
-   "ti_review_B.xlsx": "e906c099f1c0edf0296cc0c1209b517e99175f312432fc14c45a2f9ef5d332e4",
-   "ta_triage_review_B.xlsx": "5d8813400b87d68a3384dd0f02d4bc8c603ca14b2108d253b3256a93c5f9ba29",
-   "pending_addendum": "8 batch-236 rows in ADJ_b235 to be updated with the newly found abstracts and re-pre-filled; B to review those 8 only"
-  }
- }
 }
