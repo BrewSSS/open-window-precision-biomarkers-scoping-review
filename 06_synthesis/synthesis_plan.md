@@ -58,7 +58,7 @@ Each cell of the per-marker validation-readiness map carries one canonical extra
 
 ## Direction, null, and inconsistency handling
 
-Include all eligible directions and null findings. Chart effect estimates and uncertainty where available, then classify each observation with `result_direction` (increase, decrease, no_detected_difference, mixed_or_inconsistent, NR/NA/UNCLEAR); these labels describe what the report says, not evidence certainty. A non-significant p-value is not evidence of no change or return to baseline. Preserve marker-, time-, exercise-mode-, intensity- and subgroup-specific differences. Do not select only significant omics features or favorable models for the narrative map. If multiple analyses of the same cohort disagree, retain each report/analysis, link them, and explain the discrepancy rather than counting a replication.
+Include all eligible directions and null findings. Chart effect estimates and uncertainty where available, then classify each observation with `result_direction` (increase, decrease, no_detected_difference, mixed_or_inconsistent; for tested associations positive_association, negative_association, no_detected_association (PRE-004 C21, adopted 2026-10-08); NR/NA/UNCLEAR); these labels describe what the report says, not evidence certainty. A non-significant p-value is not evidence of no change or return to baseline. Preserve marker-, time-, exercise-mode-, intensity- and subgroup-specific differences. Do not select only significant omics features or favorable models for the narrative map. If multiple analyses of the same cohort disagree, retain each report/analysis, link them, and explain the discrepancy rather than counting a replication.
 
 ## Time and endpoint mapping
 

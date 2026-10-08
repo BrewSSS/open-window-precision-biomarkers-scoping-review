@@ -1,15 +1,15 @@
 {
   "metadata": {
     "schema_version": "3.1",
-    "version_label": "3.1 (amendment PRE-004) - 5 October 2026",
+    "version_label": "3.1 (amendment PRE-004) with the 2026-10-08 update (PRE-004 C21, C23 shared-cohort check; triage provenance fields; PRE-009) - release v3.3 pending",
     "status": "empty template; no included studies or extraction records (v3.1, amendment PRE-004)",
     "created_date": "2026-10-02",
-    "updated_date": "2026-10-05",
+    "updated_date": "2026-10-08",
     "dictionary": "data_dictionary.json",
     "source_contract": "01_protocol/v3_design_contract.txt",
     "note": "blank_record null means not yet entered; after source review use NR/NA/UNCLEAR. blank_record structures are identical, field for field and in order, to data_dictionary.json relational_model.table_specs (checked by script).",
     "legacy_source_field_count": 61,
-    "field_count_note": "The 61 legacy source fields are retained and mapped (no legacy table or column renamed); the operational schema adds relational, donor-count, assay-universe, candidate-selection, supplement-traceability, digitization and, in v3, open-window organising-construct fields (marker family, window position, exposure as reported, adult-stratum separability, author window interpretation). v3.1 (PRE-004) appends one optional column, precision_validation.marker_family, at the end of that table; no column is renamed or removed.",
+    "field_count_note": "The 61 legacy source fields are retained and mapped (no legacy table or column renamed); the operational schema adds relational, donor-count, assay-universe, candidate-selection, supplement-traceability, digitization and, in v3, open-window organising-construct fields (marker family, window position, exposure as reported, adult-stratum separability, author window interpretation). v3.1 (PRE-004) appends one optional column, precision_validation.marker_family, at the end of that table; no column is renamed or removed. The 2026-10-08 update appends two copy-only columns at the end of reports (v_layer_validation_subtypes_from_triage, validation_element_confirmed).",
     "organising_construct": "The exercise-induced immune \"open window\" is an organising construct only: it defines the post-exercise period after an identifiable bout (organising window 0-72 h after cessation, 72 h inclusive), the sampling time points and the marker families to be charted. The review does not test or adjudicate whether an open window exists; original authors' interpretations are charted descriptively (author_window_interpretation) and never affect eligibility or weighting.",
     "validation_readiness_map_definition": "Validation-readiness map: a per-marker, domain-by-domain descriptive profile across the seven precision domains; not a score, ranking, grade or development ladder.",
     "excel_workbooks": "Generated from this template and data_dictionary.json by scripts/build_workbooks.py (--only extraction; --reviewer A/B for per-reviewer files); CSV exports versioned in git."
@@ -88,7 +88,9 @@
         "reviewer_notes": null,
         "author_stated_use": null,
         "author_window_interpretation": [],
-        "author_window_interpretation_locator": []
+        "author_window_interpretation_locator": [],
+        "v_layer_validation_subtypes_from_triage": [],
+        "validation_element_confirmed": null
       }
     },
     "cohorts": {
@@ -358,7 +360,7 @@
     "precision_validation.measurement_id is a single measurement ID or null; precision_validation.marker_family, when filled, matches the marker_family of the measurements it summarises."
   ],
   "guardrails": [
-    "No decisions or extracted scientific values are prefilled.",
+    "No decisions or extracted scientific values are prefilled in the empty template; under PRE-009 AI stand-in values are loaded into reviewer workbooks only, and every cell is confirmed or overwritten by B or C.",
     "No aggregate precision score, readiness score or ranking; domain rows feed only the validation-readiness map (see the validation-readiness map definition in this file; contract 8.3e).",
     "Participant n, biological samples, cells and technical replicates remain separate.",
     "Immune candidates named in the main text, main tables or figure legends, and candidates prespecified in the original aims/methods, are recorded regardless of significance; supplementary result tables are summarised by counts and locators in the assay-universe row; unreported feature rows are not invented.",
@@ -370,6 +372,7 @@
     "Author open-window interpretation is a descriptive tag; it never affects eligibility or weighting.",
     "Background reports are charted at reduced depth (bibliographic, design, population, platforms, n), with no per-marker results and no precision_validation rows; one extractor plus one checker.",
     "Screening and consensus fields are copied from the locked screening records only; no eligibility opinion is written into them.",
-    "Count fields hold integers or bare missing codes; explanations go to notes."
+    "Count fields hold integers or bare missing codes; explanations go to notes.",
+    "Triage provenance (reports.v_layer_validation_subtypes_from_triage) and the full-text field validation_element_confirmed are copy-only; a V report with validation_element_confirmed = no is kept, charted and flagged, not excluded (2026-10-08)."
   ]
 }

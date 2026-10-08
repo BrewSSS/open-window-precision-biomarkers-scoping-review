@@ -5,18 +5,18 @@
   "settings_source": "project_settings.json",
   "tex_status": "local_pdf_compilation_confirmed",
   "files": {
-    "protocol_EN_full.md": "2f1fb79c4067813ef1f308237277afbd0c8034594b9274dd8ce7fa0e0a2940f9",
-    "protocol_CN.md": "afd119ddee554f51b18b66d4ca44a4e16e50081f59c9ee9a2efcce26a8c6c5ef",
-    "protocol_EN_typeset.md": "2f1fb79c4067813ef1f308237277afbd0c8034594b9274dd8ce7fa0e0a2940f9",
-    "protocol_EN_typeset.tex": "5333784e21cbd183b43820d52bf80cb53448147660f0950b989772ad3dc3e726",
-    "protocol_CN.html": "74a766e31809d05cab896508554ad840557a826b0ad2d35a1a1e4d6a723c48aa",
-    "protocol_EN_full.html": "ac7441aaa15622f9f3931bdbd57cf43dfffe076f3162dfb79dc55689bbf49179",
+    "protocol_EN_full.md": "2606ee068020bc888f45565112fc3baea879321311bb1c810aff76cdd21b7a53",
+    "protocol_CN.md": "e83d69b38e869f6884bcfce471fe7c540f8bbdf4088035082fd5472bf68fb0d5",
+    "protocol_EN_typeset.md": "2606ee068020bc888f45565112fc3baea879321311bb1c810aff76cdd21b7a53",
+    "protocol_EN_typeset.tex": "4e38483a87e30ee4a342281f8da94defa67dc3e4389ede6db0758268bc828031",
+    "protocol_CN.html": "6ee2b3d114c82c41d16af2173b5fa723a3875569a91dcde996cb6f0f67986593",
+    "protocol_EN_full.html": "e221e0301d873a5d5edd730180d1e7604c7c305dc3049eed4f7a9687bdb77b0c",
     "execution_plan.html": "0f73a5a482dd2444126f7f33ee565efa2a145e619155337827840be819789391"
   },
   "pdf_export": {
     "compiler": "pdfTeX via latex-paper-en compile.py and latexmk",
     "path": "protocol_EN_typeset.pdf",
-    "sha256": "9cd2d09d49f72e535efa89ced018217fa9f8f7dc9fd425515a3565a0e69f4bac",
+    "sha256": "8e220751126cb6e00baa99e793eca4348d1014ae1dbb19303223bd4785fcba76",
     "log": "build_v3/protocol_EN_typeset.log",
     "protocol_version": "3.2"
   }

@@ -49,7 +49,16 @@ Behaviour
   consensus_screening_decision, primary_fulltext_exclusion_reason and the deprecated exclusion_reason
   are copy-only from the locked screening workbook. The loader REFUSES to write them: a non-empty JSON
   value is logged (load_report "refused_fields"; pilot_notes issue_type=other) and the cell is left
-  untouched.
+  untouched. The two triage-provenance columns added on 2026-10-08 (reports.v_layer_validation_subtypes_from_triage,
+  reports.validation_element_confirmed) are copy-only in the same way and refused too.
+- Version rows (PRE-004 C17): a reports row whose report_id is not pre-filled but starts with the report's
+  report_id or reference_id plus "-" (e.g. R01-PREPRINT) is written into the next unused reserved version row
+  of that report (PILOT-R01-V1, ...); the JSON id is mapped to the reserved id in every later row of the same
+  report, and the mapping is logged (load_report "version_rows_assigned").
+- Conditional NA (PRE-004 C20): after a row is written, empty cells that build_workbooks.conditional_na()
+  marks as not applicable (digitization fields unless digitized_from_figure; marker_series_id when the report
+  has no Support B stream; universe locator/supplement sources on non-universe rows; n_cells/donor_count_basis
+  for cell-free matrices) are set to NA and counted (load_report "na_prefilled").
 - Workbook structure: openpyxl keeps data validations/sheet & workbook protection/number formats
   for cells it does not touch. Cells it *does* write (new rows, or previously-untouched columns
   of the pre-filled reports/extraction_provenance rows) get the EXACT style build_workbooks.py's
@@ -69,6 +78,7 @@ from __future__ import annotations
 import argparse
 import datetime as _dt
 import json
+import re
 import shutil
 import sys
 import tempfile
@@ -101,11 +111,13 @@ LOCKED_FIELDS = {
 # PRE-004 C12: screening/consensus cells are copy-only from the locked screening records; never written here.
 REFUSED_FIELDS = {
     'reports': ['screening_decision_reviewer_A', 'screening_decision_reviewer_B', 'consensus_screening_decision',
-                'primary_fulltext_exclusion_reason', 'exclusion_reason'],
+                'primary_fulltext_exclusion_reason', 'exclusion_reason',
+                # 2026-10-08: triage provenance and full-text validation-element confirmation, copy-only
+                'v_layer_validation_subtypes_from_triage', 'validation_element_confirmed'],
 }
 CONFIDENCE_VALUES = {'high', 'medium', 'low'}
 LOAD_REPORT_NAME = 'load_report.json'
-SCRIPT_VERSION = '1.1.0'
+SCRIPT_VERSION = '1.2.0'
 
 
 # ---------------------------------------------------------------------------------------------
@@ -194,6 +206,7 @@ def readme_row_index(rd) -> dict:
 def new_report_summary() -> dict:
     return {
         'rows_per_table': {}, 'conflicts': [], 'violations': [], 'unknown_fields': [], 'refused_fields': [],
+        'version_rows_assigned': [], 'na_prefilled': 0, '_alias': {}, '_support_b': None, '_reference_id': '',
         'unknown_tables': [], 'errors': [], 'warnings': [],
         'minutes_spent': None, 'unresolved_questions_written': False, 'eligibility_opinion_logged': False,
     }
@@ -227,6 +240,9 @@ def process_table_row(wb, schema: dict, counters: dict, table: str, row: dict, r
         rep_summary['errors'].append(f'{table}: row is not an object ({type(row).__name__})')
         return
     flat = flatten_row(row)
+    alias = rep_summary['_alias']
+    if flat.get('report_id') in alias:
+        flat['report_id'] = alias[flat['report_id']]
     locators = row.get('_locators')
     confidence = row.get('_confidence')
     if confidence is not None and confidence not in CONFIDENCE_VALUES:
@@ -239,6 +255,20 @@ def process_table_row(wb, schema: dict, counters: dict, table: str, row: dict, r
     if table in LOCKED_FIELDS:
         rid = flat.get('report_id') or report_id
         r = find_row_by_key(ws, schema[table]['col']['report_id'], rid)
+        ref = rep_summary['_reference_id']
+        if (r is None and table == 'reports' and rid != report_id
+                and any(x and str(rid).startswith(x + '-') for x in (report_id, ref))):
+            used = counters.setdefault('_version_rows_used', set())
+            col_id = schema[table]['col']['report_id']
+            for rr in range(2, ws.max_row + 1):
+                v = norm(ws.cell(row=rr, column=col_id).value)
+                if re.fullmatch(re.escape(report_id) + r'-V\d+', v) and v not in used:
+                    used.add(v)
+                    alias[rid] = v
+                    rep_summary['version_rows_assigned'].append({'json_report_id': rid, 'row_report_id': v, 'row': rr})
+                    flat["report_id"], r = v, rr
+                    flat.pop('reference_id', None)   # the reserved row keeps its locked <ref>-V<n>
+                    break
         if r is None:
             rep_summary['errors'].append(f'{table}: no pre-filled row for report_id={rid!r} '
                                           '(report not in this pilot workbook, or not yet built)')
@@ -303,6 +333,12 @@ def process_table_row(wb, schema: dict, counters: dict, table: str, row: dict, r
                                    f"AI-reported locator for '{f}' (confidence={confidence or 'NR'})",
                                    cell_text(loc))
 
+    na = bw.conditional_na(table, {f: norm(ws.cell(row=r, column=schema[table]['col'][f]).value)
+                                   for f in schema[table]['order']}, rep_summary['_support_b'])
+    for f in na:
+        cell = ws.cell(row=r, column=schema[table]['col'][f], value='NA')
+        style_cell(cell, schema[table]['fields'][f]['is_count'])
+    rep_summary['na_prefilled'] += len(na)
     rep_summary['rows_per_table'][table] = rep_summary['rows_per_table'].get(table, 0) + 1
 
 
@@ -327,6 +363,14 @@ def process_report_file(wb, schema: dict, counters: dict, path: Path, reviewer: 
     if not isinstance(tables_data, dict):
         rep_summary['errors'].append(f'{path.name}: "tables" is not an object')
         tables_data = {}
+    rep_summary['_reference_id'] = reference_id
+    streams = set()
+    for t, key in (('reports', 'scope_stream'), ('report_cohort_links', 'scope_streams')):
+        for rw in (tables_data.get(t) or []):
+            v = rw.get(key) if isinstance(rw, dict) else None
+            streams |= set(v if isinstance(v, list) else [x.strip() for x in str(v or '').split(';')])
+    streams.discard('')
+    rep_summary['_support_b'] = ('B_support_repeated_bouts' in streams) if streams else None
     for table, rows in tables_data.items():
         if not isinstance(rows, list):
             rep_summary['errors'].append(f'{table}: "rows" is not a list')
@@ -368,6 +412,8 @@ def process_report_file(wb, schema: dict, counters: dict, path: Path, reviewer: 
                            f'reports judgement cell): scope_stream={scope!r}; rationale={rationale!r}')
         rep_summary['eligibility_opinion_logged'] = True
 
+    for k in ('_alias', '_support_b', '_reference_id'):
+        rep_summary.pop(k, None)
     return reference_id, rep_summary
 
 
@@ -404,6 +450,8 @@ def run_load(json_dir: Path, workbook_path: Path, reviewer: str, dry_run: bool, 
         'violations': sum(len(r['violations']) for r in reports.values()),
         'unknown_fields': sum(len(r['unknown_fields']) for r in reports.values()),
         'refused_fields': sum(len(r['refused_fields']) for r in reports.values()),
+        'version_rows_assigned': sum(len(r['version_rows_assigned']) for r in reports.values()),
+        'na_prefilled': sum(r['na_prefilled'] for r in reports.values()),
         'unknown_tables': sorted({t for r in reports.values() for t in r['unknown_tables']}),
         'errors': sum(len(r['errors']) for r in reports.values()),
     }
@@ -445,6 +493,7 @@ def print_summary(summary: dict):
         print('workbook warnings:', '; '.join(summary['warnings']))
     print(f"totals: conflicts={t['conflicts']} violations={t['violations']} "
           f"unknown_fields={t['unknown_fields']} refused_fields={t['refused_fields']} "
+          f"version_rows_assigned={t['version_rows_assigned']} na_prefilled={t['na_prefilled']} "
           f"unknown_tables={t['unknown_tables']} errors={t['errors']}")
     print(f"load_report written to {summary['load_report_path']}")
 
@@ -489,7 +538,8 @@ def selftest() -> int:
                     'screening_decision_reviewer_A': 'INCLUDE_A',  # PRE-004 C12: must be refused
                     '_locators': {'publication_status': "p.1: 'published online'"},
                     '_confidence': 'high',
-                }],
+                }, {'report_id': 'R99-PREPRINT', 'reference_id': 'R99-PREPRINT',   # PRE-004 C17 version stub
+                    'publication_status': 'preprint'}],
                 'study_families': [{'study_id': 'S-R99-1', 'study_label': 'Synthetic study',
                                      'design': 'randomized_crossover'}],
                 'cohorts': [{'cohort_id': 'C-R99-1', 'study_id': 'S-R99-1', 'cohort_label': 'Synthetic cohort',
@@ -509,6 +559,7 @@ def selftest() -> int:
                     'cohort_id': 'C-R99-1', 'sample_set_ids': ['SS-R99-01'],
                     'analyte_id': {'original_label': 'IL-6', 'standard_name': 'interleukin-6'},
                     'biological_level': 'protein', 'effect_measure': 'mean_difference', 'effect_value': '2.3',
+                    'effect_value_source': 'reported_main_text_or_table', 'record_type': 'named_immune_candidate',
                 }],
                 'precision_validation': [{
                     'precision_record_id': 'PV-R99-001', 'report_id': report_id, 'study_id': 'S-R99-1',
@@ -543,6 +594,10 @@ def selftest() -> int:
               summary['totals']['violations'] >= 1)
         check('unknown field detected (unknown_future_field)',
               summary['totals']['unknown_fields'] >= 1)
+        check('version stub R99-PREPRINT written into reserved row PILOT-R99-V1 (PRE-004 C17)',
+              [x['row_report_id'] for x in summary['reports']['R99']['version_rows_assigned']] == ['PILOT-R99-V1'])
+        check('conditional NA prefilled on the measurement row: 8 digitization + marker_series_id + 2 universe '
+              'fields (PRE-004 C20)', summary['totals']['na_prefilled'] == 11)
         report_path = json_dir / LOAD_REPORT_NAME
         check('load_report.json written to --json-dir', report_path.exists())
         json.loads(report_path.read_text())  # must be valid JSON

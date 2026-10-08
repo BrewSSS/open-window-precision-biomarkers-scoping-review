@@ -15,9 +15,14 @@ Usage:
 
 What is compared
 - Rows are aligned per table by primary key (extraction_provenance: by report_id, because the pilot provenance_id
-  carries the reviewer label). --align auto (default) falls back to (report_id, n-th row of that report in sheet
-  order) when the two files share fewer than half of their primary keys, i.e. when the reviewers numbered their rows
-  differently; the method used is reported per table. Rows found in one file only are listed, not scored.
+  carries the reviewer label). With --align auto (default), tables with a content key (CONTENT_KEYS, PRE-004 C13:
+  sample_sets by matrix and time bin; measurements by record type and analyte label; precision_validation by
+  marker family and domain) are always matched on report_id + normalised content key + occurrence, because row IDs
+  are numbered by each reviewer in order of appearance and equal IDs need not mean the same row; rows left over are
+  paired by (report_id, n-th leftover row). Other tables use the primary key and fall back to (report_id, n-th row
+  of that report in sheet order) when the files share fewer than half of their keys. The method used is reported per table. Rows found in one file only are listed, not scored.
+  Unused reserved version rows of the reports sheet (report_id ...-V<n> with nothing entered; PRE-004 C17) are
+  dropped before alignment.
 - Every cell of a matched row that is non-empty in at least one file is scored: agree / disagree / only_<A> /
   only_<B>. Values are compared after trimming and collapsing white space; counts as integers; multi-valued ("; ")
   columns as sets. Free text is compared exactly and is reported separately (value_kind = free_text), because
@@ -25,7 +30,8 @@ What is compared
 - Reviewer-slot columns (..._A / ..._B, e.g. screening_decision_reviewer_A/_B, extractor_a_b.extractor_A/_B,
   digitizer_A/_B) are paired across files: file A's slot --slot-a column against file B's slot --slot-b column
   (pilot: B uses slot A, C uses slot B). Values typed into the other slot are listed as slot warnings.
-- Not scored (listed in the summary): columns that differ by design (provenance_id, extractor_a_b.extractor_A/_B,
+- Not scored (listed in the summary; PRE-004 C13): every locator column (name contains "locator") and every notes
+  column (name ends in "notes"); read them, do not count them. Also columns that differ by design (provenance_id, extractor_a_b.extractor_A/_B,
   recorded_at, digitizer_A/_B) and, when both inputs are pilot workbooks, the bibliographic reports columns that
   build_workbooks.py --populate-reports pre-filled (identical by construction). Agreement is also given for coded + count cells only (coded_and_counts_only), the judgement
   fields that can agree exactly; identifiers (row keys) and free text are reported but should be read.
@@ -59,6 +65,19 @@ NOT_SCORED = {('extraction_provenance', 'provenance_id'), ('extraction_provenanc
               ('extraction_provenance', 'extractor_a_b.extractor_B'), ('extraction_provenance', 'recorded_at'),
               ('measurements', 'digitizer_A'), ('measurements', 'digitizer_B')}
 EXTRA_SHEETS = (bw.PILOT_NOTES_SHEET,)
+# PRE-004 C13: content keys for alignment when reviewers numbered rows differently (values normalised: lower case,
+# alphanumerics only); duplicates of a key are told apart by order of occurrence within the report.
+CONTENT_KEYS = {
+    'sample_sets': ['matrix', 'time_bin'],
+    'measurements': ['record_type', 'analyte_id.original_label|analyte_id.standard_name'],
+    'precision_validation': ['marker_family', 'precision_domain'],
+}
+RESERVED_VERSION_RE = re.compile(r'-V\d+$')
+
+
+def unscored_column(field: str) -> bool:
+    """PRE-004 C13: locator and notes columns are read, not scored."""
+    return 'locator' in field or field.endswith('notes')
 README_CSV = 'readme_minutes.csv'
 # Field families: legacy_61_fields module where the column maps to a legacy field (via build_workbooks); otherwise
 # this documented map for the operational fields added after the legacy 61 (unlisted -> "other").
@@ -267,7 +286,15 @@ def norm_value(v: str, meta: dict) -> str:
     return v
 
 
-def align(rows_a, rows_b, key: str, mode: str):
+def content_key(row: dict, fields) -> str:
+    parts = []
+    for f in fields:
+        v = next((row.get(x, '') for x in f.split('|') if row.get(x, '')), '')
+        parts.append(re.sub(r'[^0-9a-z]+', '', v.lower()))
+    return '|'.join(parts)
+
+
+def align(rows_a, rows_b, key: str, mode: str, table: str = ''):
     """Return (pairs, only_a, only_b, method, duplicates)."""
     def keyed(rows, k):
         d, dup = {}, []
@@ -287,12 +314,32 @@ def align(rows_a, rows_b, key: str, mode: str):
             d[f'{rid}#{seen[rid]}'] = r
         return d, []
 
+    def by_content(rows):
+        seen, d = Counter(), {}
+        for r in rows:
+            ck = r.get('report_id', '') + '|' + content_key(r, CONTENT_KEYS[table])
+            seen[ck] += 1
+            d[f'{ck}#{seen[ck]}'] = r
+        return d
+
     method = 'key:' + key
     da, dupa = keyed(rows_a, key)
     db, dupb = keyed(rows_b, key)
-    if mode == 'ordinal' or (mode == 'auto' and key != 'report_id' and rows_a and rows_b
-                             and 'report_id' in rows_a[0]
-                             and len(set(da) & set(db)) < 0.5 * min(len(da), len(db))):
+    low_overlap = (key != 'report_id' and rows_a and rows_b and 'report_id' in rows_a[0]
+                   and len(set(da) & set(db)) < 0.5 * min(len(da), len(db)))
+    if table in CONTENT_KEYS and mode in ('auto', 'content'):
+        ca, cb = by_content(rows_a), by_content(rows_b)
+        common = [k for k in ca if k in cb]
+        pairs = [(k, ca[k], cb[k]) for k in common]
+        la, lb = ordinal([r for k, r in ca.items() if k not in cb]), ordinal([r for k, r in cb.items() if k not in ca])
+        la, lb = la[0], lb[0]
+        extra = [('~' + k, la[k], lb[k]) for k in la if k in lb]
+        only_a = [('~' + k, la[k]) for k in la if k not in lb]
+        only_b = [('~' + k, lb[k]) for k in lb if k not in la]
+        return (pairs + extra, only_a, only_b,
+                f'content:{"+".join(CONTENT_KEYS[table])} ({len(pairs)} by content, {len(extra)} leftover by ordinal)',
+                [])
+    if mode == 'ordinal' or (mode in ('auto', 'content') and low_overlap):
         da, dupa = ordinal(rows_a)
         db, dupb = ordinal(rows_b)
         method = 'ordinal:report_id#n'
@@ -338,8 +385,14 @@ def compare(a: dict, b: dict, schema: dict, la: str, lb: str, slot_a: str, slot_
         skip |= {('reports', c) for c in bw.PILOT_REPORT_PREFILL}
     for t, S in schema['tables'].items():
         rows_a, rows_b = a['tables'].get(t, []), b['tables'].get(t, [])
+        if t == 'reports':      # PRE-004 C17: unused reserved version rows carry only their locked keys
+            def used(r):
+                return not RESERVED_VERSION_RE.search(r.get('report_id', '')) or any(
+                    v for k, v in r.items() if k not in ('report_id', 'reference_id'))
+            rows_a, rows_b = [r for r in rows_a if used(r)], [r for r in rows_b if used(r)]
+        skip |= {(t, f) for f in S['fields'] if unscored_column(f)}
         key = ALIGN_BY_REPORT.get(t, S['pk'])
-        pairs, only_a, only_b, method, dups = align(rows_a, rows_b, key, mode)
+        pairs, only_a, only_b, method, dups = align(rows_a, rows_b, key, mode, t)
         rids = sorted({r.get('report_id', '') for r in rows_a + rows_b} - {''}) if 'report_id' in S['fields'] else []
         for rid in rids:
             coverage.append({'table': t, 'report_id': rid,
@@ -638,14 +691,16 @@ def selftest() -> int:
         check('wrong-slot entry reported as slot warning',
               any(w['column'] == 'screening_decision_reviewer_A' and w['reviewer'] == 'C' for w in s['slot_warnings']))
         check('multi-valued field compared as a set', not any(d['field'] == 'immune_link' for d in dis))
-        check('one-sided cell listed as only_B', any(d['field'] == 'reviewer_notes' and d['category'] == 'only_B' for d in dis))
+        check('notes and locator columns not scored (PRE-004 C13)',
+              'reports.reviewer_notes' in s['not_scored_columns'] and 'sample_sets.source_locator' in s['not_scored_columns']
+              and not any(d['field'] == 'reviewer_notes' for d in dis))
         coh = T['cohorts']
         check('cohorts: count 12 vs "12" agrees; age_range disagrees',
               coh['agree'] == 2 and coh['disagree'] == 1 and any(d['field'] == 'age_range' and d['value_B'] == '20-30'
                                                                   and d['value_C'] == '21-30' for d in dis))
         check('sample_sets: one row only in B', T['sample_sets']['rows_only_B'] == 1 and T['sample_sets']['rows_matched'] == 1)
-        check('measurements: different IDs -> ordinal alignment, 1 agree + 1 disagree on marker_family',
-              T['measurements']['align'].startswith('ordinal') and T['measurements']['agree'] >= 1
+        check('measurements: different IDs -> content alignment (PRE-004 C13), 1 agree + 1 disagree on marker_family',
+              T['measurements']['align'].startswith('content') and T['measurements']['agree'] >= 1
               and any(d['field'] == 'marker_family' and d['category'] == 'disagree' for d in dis))
         check('provenance aligned by report_id; reviewer-identity columns not scored',
               T['extraction_provenance']['align'] == 'key:report_id' and T['extraction_provenance']['rows_matched'] == 2
@@ -685,7 +740,7 @@ def main(argv=None):
     c.add_argument('--slot-a', default='A', choices=['A', 'B'], help='slot columns used by --a (default A)')
     c.add_argument('--slot-b', default='B', choices=['A', 'B'], help='slot columns used by --b (default B)')
     c.add_argument('--no-slot-pairing', action='store_true', help='compare *_A with *_A and *_B with *_B')
-    c.add_argument('--align', choices=['auto', 'key', 'ordinal'], default='auto')
+    c.add_argument('--align', choices=['auto', 'key', 'content', 'ordinal'], default='auto')
     c.add_argument('--out-dir', type=Path, required=True)
     e = sub.add_parser('export', help='write one CSV per table (+ pilot_notes, README minutes) for git')
     e.add_argument('--in', dest='inp', type=Path, required=True)

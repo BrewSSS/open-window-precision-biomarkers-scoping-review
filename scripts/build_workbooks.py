@@ -29,6 +29,10 @@ Usage:
         # charting pilot: one reviewer's extraction workbook; only the bibliographic/identifier cells of `reports`
         # and the provenance_id/report_id keys of `extraction_provenance` are filled (locked); every judgement
         # field is empty; adds a pilot_notes sheet and per-report minutes/question cells in README.
+        # PRE-004 C17: after the report rows, RESERVED_VERSION_ROWS reserved version rows per report
+        # (report_id PILOT-<ref>-V<n>, reference_id <ref>-V<n>; keys locked, rest empty) for version stubs.
+        # PRE-004 C20: conditional_na() lists the not-applicable cells of a generated (loaded) row; it is
+        # applied by scripts/load_ai_extraction.py to empty cells only.
 Options --rows (formula rows in the screening workbook, default 5000; with --populate, the record count) and --out-dir.
 After building, every workbook is reloaded and checked (sheet names, headers, data
 validations, protection flags, empty data rows); use --no-verify to skip.
@@ -57,7 +61,7 @@ except ImportError:  # pragma: no cover
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUT = ROOT / 'templates_xlsx'
-SCRIPT_VERSION = '1.3.0'
+SCRIPT_VERSION = '1.4.0'
 MAX_ROW = 1048576
 MULTI_SEP = '; '                      # Excel-mechanics: separator for multi-valued cells
 BOOLEAN_VALUES = ['TRUE', 'FALSE']    # Excel-mechanics default for JSON booleans
@@ -1363,7 +1367,8 @@ def build_extraction(src, out_path: Path, reviewer: str | None = None, registry=
     ws_codes = wb.create_sheet('codes')
     codes = Codes(wb, ws_codes)
     if pilot:
-        codes.add(PILOT_RID_LIST, [r['report_id'] for r in pilot['reports']], 'pilot report_id (--populate-reports CSV)',
+        codes.add(PILOT_RID_LIST, [r['report_id'] for r in pilot['reports'] + pilot['version_rows']],
+                  'pilot report_id (--populate-reports CSV; reserved version rows, PRE-004 C17)',
                   note='Charting pilot only: the report_id values pre-filled in the reports sheet.')
     ids_neq = ','.join(f'"{c}"' for c in mcodes)
     headers = {}
@@ -1915,6 +1920,41 @@ PILOT_ISSUE_TYPES = ['definition_ambiguous', 'manual_unclear_or_conflicting', 'v
 PILOT_MINUTES_HEADER = 'minutes (input)'
 PILOT_QUESTIONS_HEADER = 'unresolved_questions (input)'
 PILOT_DATE_LABEL = 'date finished (input, YYYY-MM-DD)'
+# PRE-004 C17: reserved version rows per report (version stubs, extraction_manual.md "report"; R01-V1, R01-V2).
+RESERVED_VERSION_ROWS = 2
+PILOT_VERSION_REF = '{reference_id}-V{n}'
+
+# PRE-004 C20: conditional NA for generated rows. Each rule: (table, condition on the row, fields set to NA when
+# empty). Applied only to empty cells of rows written by a script (load_ai_extraction.py); blank_record stays null.
+CELL_FREE_MATRICES = {'plasma', 'serum', 'saliva', 'urine', 'sweat', 'extracellular_vesicles', 'other_cell_free_biofluid'}
+DIGITIZATION_FIELDS = ['digitization_predeclared_method', 'digitization_software_version', 'digitizer_A_value',
+                       'digitizer_B_value', 'digitizer_A', 'digitizer_B', 'digitization_reconciled_value',
+                       'digitization_check']
+
+
+def conditional_na(table: str, row: dict, support_b: bool | None = None) -> dict:
+    """Return {field: 'NA'} for cells of `row` (flat dict) that are empty and not applicable (PRE-004 C20).
+    A rule fires only when its condition field is filled; support_b None = unknown (marker_series_id rule skipped)."""
+    def empty(f):
+        v = row.get(f)
+        return v is None or (isinstance(v, (list, str)) and not (v.strip() if isinstance(v, str) else v))
+
+    def val(f):
+        v = row.get(f)
+        return v.strip() if isinstance(v, str) else v
+    out = {}
+    if table == 'measurements':
+        src = val('effect_value_source')
+        if src and src != 'digitized_from_figure':
+            out.update({f: 'NA' for f in DIGITIZATION_FIELDS})
+        if support_b is False:
+            out['marker_series_id'] = 'NA'
+        if val('record_type') in ('named_immune_candidate', 'reported_result_summary'):
+            out.update({'feature_universe_locator': 'NA', 'supplement_sources': 'NA'})
+    elif table == 'sample_sets':
+        if val('matrix') in CELL_FREE_MATRICES or val('cell_context') == 'NA':
+            out.update({'n_cells': 'NA', 'donor_count_basis': 'NA'})
+    return {f: v for f, v in out.items() if f in row and empty(f)}
 
 
 def load_pilot_reports(csv_path: Path, label: str) -> dict:
@@ -1939,12 +1979,18 @@ def load_pilot_reports(csv_path: Path, label: str) -> dict:
     ids = [r['report_id'] for r in reports]
     if len(set(ids)) != len(ids):
         raise SystemExit(f'{csv_path}: reference_id must be unique')
+    version_rows = []
+    for r in reports:
+        for n in range(1, RESERVED_VERSION_ROWS + 1):
+            ref = PILOT_VERSION_REF.format(reference_id=r['reference_id'], n=n)
+            version_rows.append({'report_id': PILOT_REPORT_ID.format(reference_id=ref), 'reference_id': ref,
+                                 'version_of': r['report_id']})
     try:
         shown = str(csv_path.relative_to(ROOT))
     except ValueError:
         shown = csv_path.name
-    return {'label': label, 'slot': PILOT_SLOT[label], 'reports': reports, 'csv': shown,
-            'csv_sha256': hashlib.sha256(raw).hexdigest()}
+    return {'label': label, 'slot': PILOT_SLOT[label], 'reports': reports, 'version_rows': version_rows,
+            'csv': shown, 'csv_sha256': hashlib.sha256(raw).hexdigest()}
 
 
 def check_pilot_report_columns(tables):
@@ -2019,6 +2065,8 @@ def extraction_pilot_readme(pilot: dict, sections: list):
         ('5. 疑问', '每个含义不清、手册未覆盖、下拉缺值或原文无法提取的字段，在 pilot_notes 记一行（report_id、table、field、'
                    'row_key、issue_type、question、source_locator）；每篇报告的概括写在下表 unresolved_questions。'),
         ('6. 计时', '每篇报告分别计时（打开全文到该报告所有行填完，含补充材料），分钟数填在下表 minutes 列。'),
+        ('6b. 版本行', f'reports 末尾为每篇报告预留 {RESERVED_VERSION_ROWS} 行版本存根（report_id PILOT-<ref>-V1…，'
+                      'reference_id <ref>-V1…，已锁定；PRE-004 C17）。版本存根只填书目与版本字段；不用的预留行留空。'),
         ('7. 返回', '保存为 .xlsx，保留文件名，不改 sheet 名，关闭后发给 D。发送后不再修改；D 记录 SHA-256 并提交 git，'
                    '之后才比对（scripts/compare_extraction.py）。'),
         ('source file', f'{pilot["csv"]} (sha256={pilot["csv_sha256"][:16]}…)'),
@@ -2052,6 +2100,12 @@ def apply_extraction_pilot(wb, sheets, tables, pilot: dict):
                     continue
                 c = ws.cell(row=r, column=col[k], value=str(v))
                 c.number_format, c.protection, c.alignment = '@', LOCKED, WRAP
+    ws = sheets['reports']
+    col = {m['field']: i + 1 for i, m in enumerate(tables['reports']['fields'])}
+    for r, rec in enumerate(pilot['version_rows'], start=len(pilot['reports']) + 2):
+        for k in ('report_id', 'reference_id'):
+            c = ws.cell(row=r, column=col[k], value=rec[k])
+            c.number_format, c.protection, c.alignment = '@', LOCKED, WRAP
     rd = wb['README']
     rd.column_dimensions['C'].width = 16
     rd.column_dimensions['D'].width = 70
@@ -2090,6 +2144,7 @@ def extraction_pilot_spec(spec: dict, pilot: dict, wb, tables) -> dict:
     cells = [f'B{a[PILOT_DATE_LABEL]}'] + [f'{x}{a[r["report_id"]]}' for r in pilot['reports'] for x in ('C', 'D')]
     spec['unlocked_cells'] = dict(spec['unlocked_cells'], README=cells)
     spec['pilot'] = {'label': pilot['label'], 'slot': pilot['slot'], 'reports': pilot['reports'],
+                     'version_rows': pilot['version_rows'],
                      'fields': {t: [m['field'] for m in tables[t]['fields']] for t in ('reports', 'extraction_provenance')}}
     return spec
 
@@ -2108,12 +2163,13 @@ def verify_extraction_pilot(path: Path, spec: dict) -> list:
                       ('extraction_provenance', ['provenance_id', 'report_id'])):
         ws = wb[t]
         fields = P['fields'][t]
-        if ws.max_row != len(P['reports']) + 1:
-            errs.append(f'{t}: {ws.max_row - 1} data rows, expected {len(P["reports"])}')
-        for r, rec in enumerate(P['reports'], start=2):
+        recs = P['reports'] + (P['version_rows'] if t == 'reports' else [])
+        if ws.max_row != len(recs) + 1:
+            errs.append(f'{t}: {ws.max_row - 1} data rows, expected {len(recs)}')
+        for r, rec in enumerate(recs, start=2):
             for j, f in enumerate(fields, start=1):
                 c = ws.cell(row=r, column=j)
-                want = rec[f] if f in filled else None
+                want = rec.get(f) if f in filled else None
                 if (c.value or None) != (want or None):
                     errs.append(f'{t} row {r} {f}: {c.value!r} != expected {want!r}')
                 if f in filled and want and c.protection.locked is not True:

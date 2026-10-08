@@ -1,5 +1,16 @@
 # 版本变更记录
 
+## PRE-009 与 PRE-004 实施更新 — 2026-10-08（已采纳；待随v3.3发布）
+
+A于2026-10-08采纳提取就绪检查（`05_extraction/extraction_readiness_2026-10-08.md`）的全部推荐选项。
+
+- **PRE-009 AI辅助提取+人工核验：** 两个不同模型家族的AI替身各自把每篇经确认的V层报告提取为逐报告JSON；D载入B、C工作簿；B、C以覆写模式逐格核验（同PRE-008 choice 8），隐藏预填副本记录覆写率；两人最终值的分歧交D裁决。取代G.1“两人独立提取”；理由为工作量（约580篇V报告）；方法部分如实报告并列为局限。
+- **PRE-004更新：** 采纳C21（`result_direction`新增positive_association / negative_association / no_detected_association）；C23只采纳共享队列核查（记入`cohort_notes`）；C22仍推迟；缩减人工提取校准并入最先5篇V报告。
+- **分层来源字段：** `reports`末尾追加只照录列`v_layer_validation_subtypes_from_triage`（来自分层`final_E5_subtypes`，提取时不重判）与`validation_element_confirmed`（照录全文筛选同名字段，冲突时以其为准）；全文判定no的V报告保留、完整提取、标记并在流程图与证据图计数，不排除。
+- **全文校准：** `04_screening/fulltext_boundary_exercises.md`为全文筛选前的必需校准，其三个未决问题已于2026-10-08提交D（记入PRE-008实施说明）。
+- **脚本：** `compare_extraction.py`内容键对齐、定位/备注列不计分（C13）；`build_workbooks.py`每报告预留版本行（C17）与条件NA规则`conditional_na()`（C20），由`load_ai_extraction.py`载入时应用；载入器拒写两个只照录列。
+- **文件：** `01_protocol/amendments.json`（PRE-009；PRE-004 `implementation_update_2026-10-08`；PRE-008实施说明）、方案EN/CN（状态行，F、G.1、G.2、J、K、L节）、`project_settings.json`、数据字典与模板、提取手册、`06_synthesis/evidence_map_spec.json`与`synthesis_plan.md`（方向词表同步）。
+
 ## 3.2 — 2026-10-08（合并修订PRE-007与PRE-008；已于2026-10-08存档，version DOI 10.5281/zenodo.23229246，concept DOI 10.5281/zenodo.23147972）
 
 本版合并两项此前已各自采纳、暂记为独立条目的修订，正式发布为v3.2：修订PRE-007（AI替身初筛+强制人工验证，2026-10-05决定、2026-10-06追溯登记；第1、2阶段初筛已执行完毕）与修订PRE-008（第2阶段进入记录的验证就绪分层：AI要素提取、GPT-6 Sol裁决与分层人工验证，2026-10-08决定，含choice 7——25条stage-2再校准并入前25条V层记录）。方案EN/CN状态行、C/F/I/J/K/L节同步为3.2版；人工验证、全文筛选、提取与综合均未开始。详见下方PRE-007、PRE-008条目及`01_protocol/amendments.json`、`01_protocol/review_packet_2026-10-08.md`。

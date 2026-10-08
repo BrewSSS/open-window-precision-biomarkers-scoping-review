@@ -2,9 +2,9 @@
   "metadata": {
     "title": "V3 extraction relational data dictionary",
     "version": "3.1",
-    "version_label": "3.1 (amendment PRE-004) - 5 October 2026",
-    "date": "2026-10-05",
-    "status": "v3.1 (amendment PRE-004, 01_protocol/amendments.json): row units, controlled vocabularies, denominators, time-bin boundary rules, background charting depth and figure-only handling revised after the 10-report AI-assisted charting pilot (accepted as calibration by A, 2026-10-05); no formal records extracted",
+    "version_label": "3.1 (amendment PRE-004) with the 2026-10-08 update (PRE-004 C21, C23 shared-cohort check; triage provenance fields; PRE-009) - release v3.3 pending",
+    "date": "2026-10-08",
+    "status": "v3.1 (amendment PRE-004, 01_protocol/amendments.json): row units, controlled vocabularies, denominators, time-bin boundary rules, background charting depth and figure-only handling revised after the 10-report AI-assisted charting pilot (accepted as calibration by A, 2026-10-05); no formal records extracted; 2026-10-08 update: C21 association values for result_direction, C23 shared-cohort check only (C22 deferred), copy-only reports.v_layer_validation_subtypes_from_triage and reports.validation_element_confirmed (appended at the end of reports), AI-assisted extraction with human verification (PRE-009)",
     "source_contract": "01_protocol/v3_design_contract.txt",
     "source": "02_preliminary/restart_2026-10-02/data_dictionary.json",
     "legacy_source_field_count": 61,
@@ -63,7 +63,9 @@
           "reviewer_notes": null,
           "author_stated_use": null,
           "author_window_interpretation": [],
-          "author_window_interpretation_locator": []
+          "author_window_interpretation_locator": [],
+          "v_layer_validation_subtypes_from_triage": [],
+          "validation_element_confirmed": null
         }
       },
       "cohorts": {
@@ -336,7 +338,8 @@
       "Row IDs are mandatory patterns numbered in order of appearance in the report: measurements M-<ref>-NNN, sample_sets SS-<ref>-NN, precision_validation PV-<ref>-NNN (three/two digits, zero-padded; <ref> = reports.reference_id, e.g. R59); cohort, study and link IDs follow C-<ref>-NN, S-<ref>-NN and L-<ref>-NN. No custom prefixes or analyte codes inside IDs (PRE-004).",
       "precision_validation: default one set of seven domain rows per report × cohort × marker_family (precision_validation.marker_family); analyte-level rows only where analyte-specific domain evidence exists; measurement_id is one measurement ID or null, never a list or the string \"NA\" (PRE-004).",
       "Background reports (scope_stream = background; screening disposition RETAIN_BACKGROUND) are charted at reduced depth: bibliographic, design, population, assay platforms and n only (reports, study_families, cohorts, report_cohort_links, extraction_provenance; sample_sets one row per cohort × group × matrix with time_bin NA; measurements assay_universe_summary rows describing platforms only, result fields NA); no named-candidate or per-marker result rows and no precision_validation rows; one extractor plus one checker (PRE-004).",
-      "Screening and consensus fields in charting workbooks (reports.screening_decision_reviewer_A/B, consensus_screening_decision, primary_fulltext_exclusion_reason) are copied verbatim from the locked screening workbook / merge output and stay null when no screening record exists; extractors and AI tools never enter eligibility opinions in them (PRE-004)."
+      "Screening and consensus fields in charting workbooks (reports.screening_decision_reviewer_A/B, consensus_screening_decision, primary_fulltext_exclusion_reason) are copied verbatim from the locked screening workbook / merge output and stay null when no screening record exists; extractors and AI tools never enter eligibility opinions in them (PRE-004).",
+      "Shared-cohort check (PRE-004 C23, partial): cohorts sharing institution, recruitment period and protocol/registry are checked and recorded in cohort_notes before being counted as independent."
     ]
   },
   "controlled_vocabulary": {
@@ -676,6 +679,9 @@
       "decrease",
       "no_detected_difference",
       "mixed_or_inconsistent",
+      "positive_association",
+      "negative_association",
+      "no_detected_association",
       "NR",
       "NA",
       "UNCLEAR"
@@ -740,6 +746,19 @@
       "NR",
       "NA",
       "UNCLEAR"
+    ],
+    "v_layer_validation_subtypes_from_triage": [
+      "metric_validation",
+      "outcome_linkage",
+      "omics_discovery",
+      "repeated_monitoring",
+      "NA"
+    ],
+    "validation_element_confirmed": [
+      "yes",
+      "no",
+      "unclear",
+      "NA"
     ]
   },
   "time_bin_rules": {
@@ -1601,7 +1620,9 @@
     "background_reports": "Reports with scope_stream background (RETAIN_BACKGROUND): chart bibliographic data, design, population, assay platforms and n only; no per-marker results, no named_immune_candidate or reported_result_summary rows, no precision_validation rows; one extractor and one checker (second-person verification), not two independent extractions.",
     "version_records": "One reports row per version. A related version that was not retrieved, or one superseded by a retrieved peer-reviewed version, gets bibliographic and version fields only, reference_id with a suffix (R01-V1), consensus_screening_decision copied from screening (normally DUPLICATE_VERSION) and scope_stream NA; it is linked to the study family/cohort only after the version relationship is verified. FRONTIER_PREPRINT applies only when no peer-reviewed version exists at the final update.",
     "author_window_interpretation": "Code the authors' own voice: the introduction rationale the authors adopt for this study, the discussion and the conclusions; frameworks merely cited as background are not coded. Multi-valued and exhaustive; one locator per value in author_window_interpretation_locator, written \"value: locator\". explicit_open_window_term requires the words \"open window\" (or an explicit equivalent the authors attribute to that concept); redistribution_interpretation only when the authors attribute their own observed change, or absence of change, to cell redistribution, trafficking, mobilisation or homing between compartments; the word \"mobilization\" alone describing a count increase is not enough. no_window_interpretation when the authors interpret their immune results without any of these; NR when no interpretation of immune results is given.",
-    "screening_fields": "Screening and consensus fields are copy-only from the locked screening workbook / merge output, null when no screening record exists; AI tools record eligibility opinions only in pilot or review notes, never in reports.* screening fields."
+    "screening_fields": "Screening and consensus fields are copy-only from the locked screening workbook / merge output, null when no screening record exists; AI tools record eligibility opinions only in pilot or review notes, never in reports.* screening fields.",
+    "shared_cohort_check": "(PRE-004 C23, partly adopted 2026-10-08) Before a cohort is counted as independent, check every other charted cohort for the same institution, an overlapping recruitment period and the same protocol or registry ID; record the check and its result in cohorts.cohort_notes (e.g. \"shared-cohort check: possible overlap with C-R12-01, same lab and protocol\"); a likely shared cohort is linked through report_cohort_links to the same cohort_id after D confirms it. The study-family split and pooled-secondary-analysis rules of C23 remain deferred.",
+    "ai_assisted_extraction": "(PRE-009, 2026-10-08) V-layer reports are extracted by two AI stand-ins of different model families into the per-report JSON form; D loads one into each reviewer workbook; B and C confirm or overwrite every cell against the source (override mode); a hidden pre-fill copy gives override rates; D adjudicates B-C differences. Screening/consensus and triage-provenance fields are copy-only and never written by a stand-in."
   },
   "legacy_mapping_notes": {
     "doi_pmid": "Split to reports.doi and reports.pmid.",
@@ -1672,7 +1693,9 @@
     "study_families.study_label": "Short human-readable study/trial label (e.g. acronym or programme name); not an identifier.",
     "study_families.registry_ids": "Trial or study registry identifiers as reported (e.g. NCT, ISRCTN, ChiCTR, DRKS numbers), \"; \"-separated; NR if none is reported.",
     "study_families.study_notes": "Free-text notes on the study family (linked protocols, sub-studies, programme history) with locators.",
-    "precision_validation.marker_family": "Marker family (controlled_vocabulary.marker_family) of the domain-row set: one set of seven domain rows per report × cohort × marker family; optional (v3.1, PRE-004), appended as the last column; null on rows created before v3.1."
+    "precision_validation.marker_family": "Marker family (controlled_vocabulary.marker_family) of the domain-row set: one set of seven domain rows per report × cohort × marker family; optional (v3.1, PRE-004), appended as the last column; null on rows created before v3.1.",
+    "reports.v_layer_validation_subtypes_from_triage": "Triage provenance (copy-only; A 2026-10-08): which v1.2 validation-element sub-type(s) put the report into the V layer (controlled_vocabulary_definitions.v_layer_validation_subtypes_from_triage). Copied from the triage, never written by an AI stand-in or re-judged by the extractor; full-text contradiction is recorded in validation_element_confirmed.",
+    "reports.validation_element_confirmed": "Copy-only cross-reference (A 2026-10-08) to the full-text screening field validation_element_confirmed (controlled_vocabulary_definitions.validation_element_confirmed); governs over v_layer_validation_subtypes_from_triage when they disagree. no = kept and charted fully, flagged and counted, not excluded."
   },
   "immune_link_definition": "For biofluid omics, an immune objective/candidate must be identifiable in original study aims or methods; preregistration is not required. Post-hoc immune pathway enrichment alone is context, not sufficient main-map immune linkage. Cortisol, creatine kinase, lactate or HRV alone do not satisfy immune linkage; they are charted as covariates in otherwise eligible studies (contract 8.3b). v3.1 (PRE-004): reports.immune_link is multi-valued and exhaustive (every applicable category); whole-blood or PBMC transcriptomes count as immune_cell_omics; deconvolution estimates of cell proportions are not direct_immune_cell_or_count; measurements.omics_integration is coded at the level of the analysis the row reports (single_omics for a single-platform analysis even in a multi-omics study; not_omics for a targeted assay).",
   "note_flags": {
@@ -1729,6 +1752,9 @@
     "training_status": "As labelled by the authors (untrained_or_sedentary, recreationally_active, trained, elite_or_professional); mixed_training_status when the cohort combines statuses; no inference from performance values.",
     "design": "Study design as reported and checked against the methods: randomized_parallel; randomized_crossover; nonrandomized_controlled; nonrandomized_crossover; single_group_pre_post; prospective_cohort; cross_sectional; case_series_or_case_report; other.",
     "time_unit": "min, h or d only, paired with a numeric time_from_exercise_end_value.",
-    "publication_status": "Describes peer-review and version status only. Short formats (short communication, research letter, brief report, \"Did You Know?\", concept paper, rapid communication) that report original data are coded by their review status (normally peer_reviewed_version_of_record or peer_reviewed_online_first) and the article type is written in version_label; check that the section is peer reviewed (journal policy for that article type), otherwise UNCLEAR. editorial_or_commentary only for items without original data."
+    "publication_status": "Describes peer-review and version status only. Short formats (short communication, research letter, brief report, \"Did You Know?\", concept paper, rapid communication) that report original data are coded by their review status (normally peer_reviewed_version_of_record or peer_reviewed_online_first) and the article type is written in version_label; check that the section is peer reviewed (journal policy for that article type), otherwise UNCLEAR. editorial_or_commentary only for items without original data.",
+    "result_direction": "(PRE-004 C21, adopted 2026-10-08) increase / decrease / no_detected_difference describe a change or group difference; positive_association / negative_association / no_detected_association describe a tested association of the marker with an outcome or another marker (correlation, regression, model coefficient), following the author-reported test and threshold; interaction effects stay mixed_or_inconsistent with a note.",
+    "v_layer_validation_subtypes_from_triage": "Copy-only (2026-10-08): the v1.2 validation-readiness element sub-type(s) that placed the report in the V layer, copied by D from the PRE-008 triage (04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_4298.csv, column final_E5_subtypes; human-confirmed V records). Not re-judged at extraction. NA for version stubs and reports not reached through the V layer.",
+    "validation_element_confirmed": "Copy-only (2026-10-08): consensus of the full-text screening field validation_element_confirmed (reviewer columns your_validation_element_confirmed, merged by scripts/merge_fulltext_screening.py): yes / no / unclear. Where the full text contradicts the triage sub-types, this field governs. A report with no is kept, charted fully and flagged; it is counted in the flow and in the map, not excluded for that reason. NA for version stubs."
   }
 }

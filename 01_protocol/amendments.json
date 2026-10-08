@@ -101,7 +101,16 @@
       "release_update": "v3.1: new GitHub Release (tag v3.1) and Zenodo version DOI under concept DOI 10.5281/zenodo.23147972, before the formal search (contract §4); version DOI recorded in project_settings.json after archiving",
       "tool_follow_up": "Not rule changes and not needed for v3.1 validity: compare_extraction.py content-key alignment and unscored locator/notes columns (C13); build_workbooks.py reserved version rows in pilot workbooks (C17) and conditional NA prefill in generated rows (C20). Implemented in v3.1: load_ai_extraction.py refuses to write screening/consensus fields (C12)",
       "changes_document": "../CHANGELOG.md (3.1); 05_extraction/pre004_staging/APPLY_NOTES.md",
-      "implementation_date": "2026-10-05"
+      "implementation_date": "2026-10-05",
+      "implementation_update_2026-10-08": {
+        "decision_by": "A, 2026-10-08 (extraction readiness check, recommended options)",
+        "C21": "adopted: measurements.result_direction gains positive_association, negative_association, no_detected_association for marker-outcome or marker-marker association tests (needed for outcome_linkage reports); interaction effects stay mixed_or_inconsistent with a note",
+        "C23": "partly adopted: only the mandatory shared-cohort check (same institution, overlapping recruitment period, same protocol or registry ID) recorded in cohorts.cohort_notes before a cohort is counted as independent; the study-family split and pooled-secondary-analysis rules stay deferred",
+        "C22": "still deferred (no measurements.n_in_contrast column)",
+        "calibration_round": "the reduced human charting calibration round (reassessment_needed) is folded into the first 5 V-layer reports extracted (one per validation sub-type plus one background report), as PRE-008 choice 7 did for the stage-2 re-calibration",
+        "tool_follow_up": "C13 (content-key alignment; locator and notes columns not scored) and C17/C20 (reserved version rows; conditional NA prefill of loaded rows) implemented in scripts/compare_extraction.py, scripts/build_workbooks.py and scripts/load_ai_extraction.py before formal extraction",
+        "release_update": "bundled into release v3.3 with PRE-009"
+      }
     },
     {
       "amendment_id": "PRE-005",
@@ -257,7 +266,29 @@
       "release_update": "Working protocol text updated 2026-10-08 (EN/CN sections C, F, I, J, K, L and status line; CHANGELOG; screening manual 3B'; synthesis plan and evidence-map spec). Bundled with PRE-007 into protocol release v3.2 (GitHub tag, GitHub Release, Zenodo version DOI under concept DOI 10.5281/zenodo.23147972), to be published before human verification and full-text screening start",
       "changes_document": "../CHANGELOG.md",
       "implementation_date": "2026-10-08",
-      "implementation_status": "AI triage complete for 4,298 records (first pass both families 2026-10-07/08; GPT-6 Sol adjudication of 1,991 records 2026-10-08; final layers in ai_triage/final_triage_summary.json); triage of the 28 batch-235 advances, v3.2 release, human verification and full-text retrieval pending; 2026-10-08: reviewer workbooks pre-filled by stand-ins (choice 8), human override phase started."
+      "implementation_status": "AI triage complete for 4,298 records (first pass both families 2026-10-07/08; GPT-6 Sol adjudication of 1,991 records 2026-10-08; final layers in ai_triage/final_triage_summary.json); triage of the 28 batch-235 advances, v3.2 release, human verification and full-text retrieval pending; 2026-10-08: reviewer workbooks pre-filled by stand-ins (choice 8), human override phase started.",
+      "implementation_note_2026-10-08_fulltext_calibration": "The full-text boundary exercises (04_screening/fulltext_boundary_exercises.md) are the required calibration before full-text screening; their three open questions were put to D on 2026-10-08. A V-layer report whose validation element is not confirmed at full text (validation_element_confirmed = no) is kept, charted fully and flagged; the count is reported in the flow and in the map, and the report is not excluded for that reason (A, 2026-10-08)."
+    },
+    {
+      "amendment_id": "PRE-009",
+      "title": "AI-assisted extraction with human verification",
+      "date": "2026-10-08",
+      "old_rule": "Protocol v3.2 section G.1: \"Two humans independently extract eligibility, timing, sample sizes, effects/uncertainty, precision domains, functional/clinical outcomes, validation and appraisal ... Discrepancies are resolved against source passages, with adjudication where necessary.\"",
+      "new_rule": "(1) Two AI stand-ins from different model families each extract every confirmed V-layer report (full text and supplements) into the per-report JSON form of extraction_template.json, with source locators and confidence, without screening or consensus fields and without seeing each other's output (one enumerating orientation, one rule-literal orientation, prompts built from the extraction manual and data dictionary). (2) D checks identifiers, vocabulary and keys and loads one stand-in's output into B's workbook and the other's into C's workbook (scripts/load_ai_extraction.py; load reports kept). (3) B and C review the pre-filled extraction against the source in override mode, as PRE-008 choice 8: every cell is confirmed or overwritten and rows are added or deleted where the source requires; unchanged cells are the reviewer's value of record. (4) A hidden copy of the pre-fill is kept in each workbook, and the override rate per reviewer, table and field is reported. (5) D hashes and commits the returned workbooks, compares B and C final values (scripts/compare_extraction.py) and adjudicates disagreements against source passages. (6) Background reports: one stand-in plus one human checker, at the reduced depth of G.1. (7) The first 5 V-layer reports extracted serve as the reduced human charting calibration round (PRE-004). (8) Methods report the design as AI-assisted extraction with human verification, with agreement between the two reviewers' final values and the override rates; that extraction was not independent from scratch is listed as a limitation; AI use is recorded in extraction_provenance.ai_assistance.",
+      "reason": "Workload: about 580 V-layer reports would need two complete independent human extractions under the PRE-004 row units, beyond what B and C can do; the charting pilot showed that AI stand-ins can produce complete row-level extractions, and override-mode review keeps a human decision on every cell.",
+      "work_stage": "after the PRE-008 triage and v3.2 release, during human verification of the triage and before full-text screening and any formal extraction",
+      "information_already_known": "Triage layer counts (V 577, M 3,020, X 697, U 4) and the 10-report charting pilot findings; no full text of a V report had been screened or extracted, so no extraction result is known.",
+      "decision_by": "A (2026-10-08; recommended option of the extraction readiness check, 05_extraction/extraction_readiness_2026-10-08.md)",
+      "reassessment_needed": "None for screening. The reduced human calibration round of PRE-004 is folded into the first 5 V-layer reports extracted; if it shows a systematic rule problem, the affected rule is amended before the remaining reports.",
+      "affected_records": "none formal; all V-layer reports to be extracted. Affects protocol EN/CN sections G.1, K, L and status line; 05_extraction/data_dictionary.json, extraction_template.json, extraction_manual.md; scripts/build_workbooks.py, load_ai_extraction.py, compare_extraction.py",
+      "release_update": "Working text updated 2026-10-08; bundled with the PRE-004 implementation update into release v3.3 (GitHub tag and Zenodo version DOI under concept DOI 10.5281/zenodo.23147972), published before formal extraction starts",
+      "related_decisions_2026-10-08": [
+        "New copy-only charting field reports.v_layer_validation_subtypes_from_triage: the v1.2 validation-element sub-type(s) that placed the report in V, copied from the triage (final_triage_4298.csv, final_E5_subtypes); not re-judged at extraction; where the full text contradicts it, the full-text screening field validation_element_confirmed governs (copied into reports.validation_element_confirmed).",
+        "A V-layer report with validation_element_confirmed = no is kept, charted fully and flagged; its count is reported in the flow and in the map; it is not excluded for that reason."
+      ],
+      "changes_document": "../CHANGELOG.md",
+      "implementation_date": "2026-10-08",
+      "implementation_status": "adopted; protocol text, dictionary, template, manual and scripts updated 2026-10-08; release v3.3 pending; no extraction run"
     }
   ],
   "future_amendment_fields": [
