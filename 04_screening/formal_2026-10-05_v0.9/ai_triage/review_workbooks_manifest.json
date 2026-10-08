@@ -211,6 +211,12 @@
     "override_detail": "FS-009886: E5 absent -> present (outcome_linkage); all other 7 rows accepted unchanged",
     "other_sheets": "byte-identical in content to the locked version"
    }
+  },
+  "C_interim": {
+   "date": "2026-10-08",
+   "ti_review_C.xlsx_sha256": "49125ee64bea3517ac7d6ea34da989a4d4aa6f8a66faf790f867d315923a783d",
+   "ta_triage_review_C.xlsx_sha256": "3d55a6c6578a9a7f7c7a7f8863aae50eb381ff7db4eaf72b2463c557b3c159fe",
+   "state": "title workbook complete (1,078 rows); triage workbook: V_confirm rows 1-25 reviewed (calibration), rows 26+ and other sheets still pre-fill"
   }
  },
  "addendum_batch236": {
@@ -235,6 +241,38 @@
    "note": "C_E5/C_E5_subtypes/C_E4/C_core_absent/C_comment re-pre-filled via scripts/triage_run_concurrent.py (model GLM-5.3 thinking on, bigmodel Coding Plan, 1 batch of 8, 0 failed/invalid). 40 rows appended to the hidden _prefill sheet with note='addendum batch-236' (same sheet that already carries the base pre-fill's provider column). The 5 C_* cells per row highlighted light-yellow (ARGB FFFFF59D).",
    "pre_addendum_sha256": "d087ee0498e8b8194523cc35c9a8f9f39e050ac67e0ffd77226af5c9480b924d",
    "post_addendum_sha256": "dc03344c26b4dd71cc3f1336447eca41974c891f531e37f2cd781abc07d83f15"
+  }
+ },
+ "calibration": {
+  "stage2_recalibration_first25_V": {
+   "date": "2026-10-08",
+   "binary_E5_agreement": 0.88,
+   "kappa": 0.737,
+   "E4_agreement": 0.88,
+   "pass_rule": ">= 0.80",
+   "result": "PASS",
+   "C_continues_from_record": 26,
+   "C_overrides_of_prefill_in_first25": 4,
+   "B_present_first25": 15,
+   "C_present_first25": 18
+  },
+  "stage1_title_pilot_100": {
+   "date": "2026-10-08",
+   "binary_agreement_B_vs_C": 0.95,
+   "kappa": 0.899,
+   "B_advance": 54,
+   "C_advance": 57,
+   "C_overrides_of_prefill": 4,
+   "note": "both sides pre-filled (PRE-008 choice 8): B by GPT-6 Sol, C by GLM-5.3 thinking; B accepted all pre-fills, C overrode 4"
+  },
+  "stage1_exclusion_sample_978": {
+   "date": "2026-10-08",
+   "binary_agreement_B_vs_C": 0.888,
+   "kappa": 0.342,
+   "B_advance": 47,
+   "C_advance": 133,
+   "disagreements_csv": "ai_stage1/stage1_human_disagreements_for_D.csv",
+   "consequence": "PRE-007: an ADVANCE found inside the sample triggers re-screening of that record type; D adjudicates the disagreements first, then A/D decide the re-screening scope by TI code"
   }
  }
 }

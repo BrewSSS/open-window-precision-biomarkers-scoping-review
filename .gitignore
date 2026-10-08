@@ -163,3 +163,5 @@ fulltext_requests/abstract_lookup_*/*
 # columns only, no full-text content (PDFs live under /fulltexts/, ignored above).
 !04_screening/formal_*/fulltext/fulltext_fetch_manifest.csv
 !04_screening/formal_*/fulltext/fulltext_fetch_summary.md
+
+!04_screening/formal_*/fulltext/oa_classification_*.md
