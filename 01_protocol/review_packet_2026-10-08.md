@@ -4,6 +4,8 @@ One document for the team. Each item names who signs, what to read, the recommen
 
 Where things stand: the stage-2 AI pass is complete (9,277 screened; 4,326 ADVANCE, 4,949 EXCLUDE_TA, 2 AWAITING). The 4,298 advances present when the triage was built have been triaged into V 577, M 3,020, X 697 and U 4 (`04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_summary.md`). No human verification and no full-text work has started.
 
+**Sign-off (2026-10-08):** all eight items reviewed by A, B, C and D and signed on paper; every recommended option adopted, including the proposed fold of the 25-record stage-2 re-calibration into the first 25 V-layer records (now PRE-008 editorial choice 7). Execution starts 2026-10-08.
+
 ## 1. PRE-008 text — A
 
 Read: `01_protocol/amendments.json` (record PRE-008); protocol EN sections C (validation-readiness element), F (PRE-008 paragraph), I (two layers), K (execution order), L (v3.2); CHANGELOG entry.
