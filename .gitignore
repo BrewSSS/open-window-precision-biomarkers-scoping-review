@@ -139,3 +139,7 @@ fulltext_requests/abstract_lookup_*/*
 !04_screening/formal_*/fulltext/ft_conflicts_for_D.csv
 !04_screening/formal_*/fulltext/ft_merge_summary.json
 !04_screening/formal_*/fulltext/ft_merge_summary.md
+# D's identifier-completion reports (PubMed DOI/PMID lookups): record_id/title/year/journal/identifiers
+# only, no abstracts.
+!04_screening/formal_*/fulltext/identifier_completion_*.csv
+!04_screening/formal_*/fulltext/identifier_completion_*.md

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T06:19:44+00:00",
+  "generated_at": "2026-10-08T06:39:03+00:00",
   "script": "scripts/build_fulltext_workbooks.py",
   "input": {
     "path": "04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_4298.csv",
@@ -16,7 +16,7 @@
       "not_yet_sought": 577
     },
     "missing_doi": 41,
-    "missing_pmid": 59
+    "missing_pmid": 58
   },
   "columns": [
     "record_id",
@@ -71,11 +71,11 @@
   "workbooks": {
     "B": {
       "path": "04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_B.xlsx",
-      "sha256_blank": "f330935a1793295a153c5bea7065830355e277f8de1504ecee08138261640ced"
+      "sha256_blank": "50161b501bf98e8ee536752337599557aae5d340a85bf4762cc5b983b3a7dcb9"
     },
     "C": {
       "path": "04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_C.xlsx",
-      "sha256_blank": "713783f5502d288745b9763982409ba074742d3a641acf934139495bbc74f9ed"
+      "sha256_blank": "031f056d6452eb2f61d087fac0804180a729547eb522ab479228f0d4330b6c77"
     }
   },
   "locks": {
