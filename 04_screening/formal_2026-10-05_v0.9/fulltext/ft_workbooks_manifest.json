@@ -76,7 +76,8 @@
     },
     "C": {
       "path": "04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_C.xlsx",
-      "sha256_blank": "d311d57f9f44e98a05133fe1b8ef892822af4b46b48b7025ce3de4af14c777dc"
+      "sha256_blank": "d311d57f9f44e98a05133fe1b8ef892822af4b46b48b7025ce3de4af14c777dc",
+      "sha256_after_prefill": "2036593b091f488ca2f9a6b4a0a5c37999b7cf20d4169f40042cac77bb2b4c2a"
     }
   },
   "locks": {
@@ -114,5 +115,37 @@
       "no": 18
     },
     "note": "Reviewer B's your_* columns were pre-filled from GPT-6 Sol's full-text read; unchanged cells after B's review are B's decision of record. The hidden _prefill sheet in ft_screen_B.xlsx holds the original AI values for the override-rate check. ft_screen_C.xlsx (GLM-5.3, reviewer C) is untouched by this script."
+  },
+  "prefill_C": {
+    "generated_at": "2026-10-08T14:47:23+00:00",
+    "script": "scripts/ft_prefill_to_workbook.py",
+    "model": "Claude Sonnet (headless, effort medium)",
+    "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+    "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+    "n_retrieved_oa": 141,
+    "n_valid_runs": 141,
+    "n_written": 141,
+    "n_runs_without_matching_row": 0,
+    "n_flagged_for_a": 0,
+    "disposition_counts": {
+      "INCLUDE_B": 7,
+      "INCLUDE_A_AND_B": 22,
+      "INCLUDE_A": 67,
+      "AWAITING_CLASSIFICATION": 28,
+      "RETAIN_BACKGROUND": 5,
+      "EXCLUDE": 12
+    },
+    "age_rule_check_counts": {
+      "adults_confirmed": 106,
+      "mean_minus_2SD_below_18_unresolved": 33,
+      "under_18_included": 1,
+      "not_applicable": 1
+    },
+    "validation_element_confirmed_counts": {
+      "yes": 90,
+      "no": 49,
+      "unclear": 2
+    },
+    "note": "Reviewer C's your_* columns were pre-filled from Claude Sonnet (headless, effort medium)'s full-text read; unchanged cells after C's review are C's decision of record. The hidden _prefill sheet in ft_screen_C.xlsx holds the original AI values for the override-rate check. ft_screen_B.xlsx (reviewer B) is untouched by this script."
   }
 }

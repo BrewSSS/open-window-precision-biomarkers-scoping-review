@@ -1,33 +1,41 @@
 #!/usr/bin/env python3
-"""PRE-010 full-text screening AI pre-fill, step 2: load GPT-6 Sol's validated runs
-(scripts/ft_prefill_run.py output, fulltext/ai_prefill/runs/sol/<record_id>.json) into reviewer
-B's full-text workbook (fulltext/ft_screen_B.xlsx).
+"""PRE-010 full-text screening AI pre-fill, step 2: load a validated AI stand-in's runs
+(fulltext/ai_prefill/runs/<family>/<record_id>.json) into a reviewer's full-text workbook
+(fulltext/ft_screen_<reviewer>.xlsx).
 
-For every record with status retrieved_oa in fulltext_fetch_manifest.csv AND a *valid* Sol run:
+Default (no args): reviewer B, family sol (GPT-6 Sol, scripts/ft_prefill_run.py output) — this is
+the original, unchanged behaviour. Pass --reviewer C --family claude_sonnet to load Claude Sonnet's
+headless-CLI runs (scripts/claude_ft_prefill_run.py output) into reviewer C's workbook instead.
+
+For every record with status retrieved_oa in fulltext_fetch_manifest.csv AND a *valid* run in the
+selected family:
   - fixes the stale retrieval_status/pdf_path columns to "retrieved" / "fulltexts/V/<id>.pdf"
     (the workbook was built before the OA fetch, so both were blank/"not_yet_sought");
   - writes your_disposition, your_primary_code, your_secondary_notes, your_age_rule_check,
-    your_validation_element_confirmed from Sol's parsed JSON;
+    your_validation_element_confirmed from the parsed JSON;
   - writes your_comment as a composite of every evidence quote+page, the validation subtypes,
-    cohort_notes, confidence and note, so B can check the passage without opening the raw run;
+    cohort_notes, confidence and note, so the reviewer can check the passage without opening the
+    raw run;
   - appends one row per written "your_" column to a new hidden `_prefill` sheet (record_id,
     column, value, model, prompt_sha, timestamp), so the override rate per reviewer/field
     (PRE-010) can be computed later by diffing `_prefill` against the reviewer's final `screen`
     values.
 
-Rows with no PDF, or whose Sol run is missing/invalid, are left completely untouched (including
+Rows with no PDF, or whose run is missing/invalid, are left completely untouched (including
 retrieval_status/pdf_path): they still read not_yet_sought and stay blank, exactly as D's own
 retrieval-log process (build_fulltext_workbooks.py --retrieval-log) would leave an unretrieved
-record. ft_screen_C.xlsx (C's family, GLM-5.3, pending) is never opened by this script.
+record. The other reviewer's workbook is never opened by a given invocation.
 
-Updates fulltext/ft_workbooks_manifest.json in place: refreshes workbooks.B's hash under a new
-"sha256_after_prefill" key (sha256_blank is left as the historical blank-build hash) and adds a
-top-level "prefill" block (model, prompt/schema sha, counts, timestamp).
+Updates fulltext/ft_workbooks_manifest.json in place: refreshes the selected workbook's hash under
+a new "sha256_after_prefill" key (sha256_blank is left as the historical blank-build hash) and adds
+a "prefill" (reviewer B) or "prefill_C" (reviewer C) block (model, prompt/schema sha, counts,
+timestamp).
 
-Usage: python3 scripts/ft_prefill_to_workbook.py
+Usage: python3 scripts/ft_prefill_to_workbook.py [--reviewer B|C] [--family sol|claude_sonnet]
 """
 from __future__ import annotations
 
+import argparse
 import csv
 import datetime as dt
 import hashlib
@@ -44,10 +52,30 @@ ROOT = Path(__file__).resolve().parents[1]
 FULLTEXT_DIR = ROOT / "04_screening/formal_2026-10-05_v0.9/fulltext"
 FETCH_MANIFEST = FULLTEXT_DIR / "fulltext_fetch_manifest.csv"
 AI_PREFILL_DIR = FULLTEXT_DIR / "ai_prefill"
-RUNS_DIR = AI_PREFILL_DIR / "runs/sol"
 RUN_MANIFEST_PATH = AI_PREFILL_DIR / "run_manifest.json"
-WORKBOOK_B = FULLTEXT_DIR / "ft_screen_B.xlsx"
 WORKBOOKS_MANIFEST = FULLTEXT_DIR / "ft_workbooks_manifest.json"
+
+# Per-reviewer/family configuration. "B"/"sol" is the original, default behaviour.
+REVIEWER_CONFIG = {
+    "B": {
+        "family": "sol",
+        "workbook": FULLTEXT_DIR / "ft_screen_B.xlsx",
+        "manifest_key": "B",
+        "manifest_block": "prefill",
+        "model_fallback": "gpt-6-sol",
+        "model_label": None,  # use run_manifest.json's "model" field as-is
+        "other_note": "ft_screen_C.xlsx (reviewer C) is untouched by this script.",
+    },
+    "C": {
+        "family": "claude_sonnet",
+        "workbook": FULLTEXT_DIR / "ft_screen_C.xlsx",
+        "manifest_key": "C",
+        "manifest_block": "prefill_C",
+        "model_fallback": "claude-sonnet",
+        "model_label": "Claude Sonnet (headless, effort medium)",
+        "other_note": "ft_screen_B.xlsx (reviewer B) is untouched by this script.",
+    },
+}
 
 # One row per "your_" decision column written, matching the workbook's screen-sheet headers.
 DECISION_COLUMNS = ["your_disposition", "your_primary_code", "your_secondary_notes",
@@ -71,10 +99,10 @@ def retrieved_ids() -> set[str]:
     return {r["record_id"] for r in rows if r.get("status") == "retrieved_oa"}
 
 
-def load_valid_runs(ids: set[str]) -> dict[str, dict]:
+def load_valid_runs(ids: set[str], runs_dir: Path) -> dict[str, dict]:
     out = {}
     for rid in sorted(ids):
-        p = RUNS_DIR / f"{rid}.json"
+        p = runs_dir / f"{rid}.json"
         if not p.is_file():
             continue
         try:
@@ -124,19 +152,31 @@ def row_values(parsed: dict) -> dict[str, str]:
 
 
 def main() -> int:
-    if not WORKBOOK_B.is_file():
-        sys.exit(f"missing {WORKBOOK_B}; run scripts/build_fulltext_workbooks.py first")
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--reviewer", choices=sorted(REVIEWER_CONFIG), default="B")
+    ap.add_argument("--family", default=None, help="overrides the reviewer's default family (runs/<family>/)")
+    a = ap.parse_args()
+    cfg = REVIEWER_CONFIG[a.reviewer]
+    family = a.family or cfg["family"]
+    workbook = cfg["workbook"]
+    runs_dir = AI_PREFILL_DIR / "runs" / family
+
+    if not workbook.is_file():
+        sys.exit(f"missing {workbook}; run scripts/build_fulltext_workbooks.py first")
     ids = retrieved_ids()
-    runs = load_valid_runs(ids)
+    runs = load_valid_runs(ids, runs_dir)
     if not runs:
-        sys.exit("no valid Sol runs found under " + str(RUNS_DIR))
+        sys.exit(f"no valid {family} runs found under " + str(runs_dir))
 
     run_manifest = json.loads(RUN_MANIFEST_PATH.read_text(encoding="utf-8")) if RUN_MANIFEST_PATH.exists() else {}
-    prompt_sha = run_manifest.get("prompt_sha256", "")
-    model = run_manifest.get("model", "gpt-6-sol")
+    # Prompt/schema are shared across families (same ft_screen_prompt_v1.md / ft_screen_schema_v1.json);
+    # hash them directly rather than depend on the (sol-only) top-level fields of run_manifest.json.
+    prompt_sha = sha256(AI_PREFILL_DIR / "ft_screen_prompt_v1.md")
+    schema_sha = sha256(AI_PREFILL_DIR / "ft_screen_schema_v1.json")
+    model = cfg["model_label"] or run_manifest.get("model", cfg["model_fallback"])
     timestamp = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
 
-    wb = load_workbook(WORKBOOK_B)
+    wb = load_workbook(workbook)
     ws = wb["screen"]
     header = {c.value: c.column_letter for c in ws[1]}
     col_idx = {c.value: c.column for c in ws[1]}
@@ -180,23 +220,23 @@ def main() -> int:
         cell.fill = PatternFill("solid", fgColor="DDDDDD")
     ps.sheet_state = "hidden"
 
-    wb.save(WORKBOOK_B)
-    new_hash = sha256(WORKBOOK_B)
+    wb.save(workbook)
+    new_hash = sha256(workbook)
 
     manifest = json.loads(WORKBOOKS_MANIFEST.read_text(encoding="utf-8")) if WORKBOOKS_MANIFEST.exists() else {}
-    manifest.setdefault("workbooks", {}).setdefault("B", {})["sha256_after_prefill"] = new_hash
-    manifest["prefill"] = {
+    manifest.setdefault("workbooks", {}).setdefault(cfg["manifest_key"], {})["sha256_after_prefill"] = new_hash
+    manifest[cfg["manifest_block"]] = {
         "generated_at": timestamp, "script": "scripts/ft_prefill_to_workbook.py",
         "model": model, "prompt_sha256": prompt_sha,
-        "schema_sha256": run_manifest.get("schema_sha256", ""),
+        "schema_sha256": schema_sha,
         "n_retrieved_oa": len(ids), "n_valid_runs": len(runs), "n_written": n_written,
         "n_runs_without_matching_row": n_no_row, "n_flagged_for_a": flagged_for_a,
         "disposition_counts": dict(disposition_counts), "age_rule_check_counts": dict(age_counts),
         "validation_element_confirmed_counts": dict(validation_counts),
-        "note": "Reviewer B's your_* columns were pre-filled from GPT-6 Sol's full-text read; "
-                "unchanged cells after B's review are B's decision of record. The hidden _prefill "
-                "sheet in ft_screen_B.xlsx holds the original AI values for the override-rate "
-                "check. ft_screen_C.xlsx (GLM-5.3, reviewer C) is untouched by this script.",
+        "note": f"Reviewer {a.reviewer}'s your_* columns were pre-filled from {model}'s full-text "
+                f"read; unchanged cells after {a.reviewer}'s review are {a.reviewer}'s decision of "
+                f"record. The hidden _prefill sheet in {workbook.name} holds the original AI values "
+                f"for the override-rate check. {cfg['other_note']}",
     }
     WORKBOOKS_MANIFEST.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
