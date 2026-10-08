@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23147973.svg)](https://doi.org/10.5281/zenodo.23147973)
 
-**当前版本：v3.2（合并修订PRE-007与PRE-008，2026-10-08发布；Zenodo DOI待回写）｜上一存档版本：v3.1（2026-10-05存档，version DOI 10.5281/zenodo.23163768；concept DOI 10.5281/zenodo.23147972）**
+**当前版本：v3.2（合并修订PRE-007与PRE-008，2026-10-08存档，version DOI 10.5281/zenodo.23229246）｜上一存档版本：v3.1（2026-10-05存档，version DOI 10.5281/zenodo.23163768；concept DOI 10.5281/zenodo.23147972）**
 
 最后整合核对：2026-10-04（v3英文源稿、中文稿、03–06附件、治理文件、构建链与验证器已对齐；排版版/PDF/构建清单已按v3重新生成，`scripts/validate_design.py`全部27项通过、0项跳过）。
 
@@ -52,7 +52,7 @@
 
 角色已按代号分配：A负责人、PRESS复核与写作，B、C独立筛选，D检索、数据与仲裁。仍须补充：参考文献管理软件、资金/利益声明、机构伦理政策核实、GitHub owner与公开日期。执行顺序为平台/PRESS复核与工作簿生成、团队冻结与GitHub+Zenodo存档发布、人工校准（50篇试筛、10篇试提取）、视需要修订并再发布、正式检索、双人筛选、提取/评价、综合和投稿。准备阶段估计2–3个工作周，正式研究时长在试筛及试提取后据真实工作量估计。
 
-**2026-10-05按策略v0.7完成的PubMed导出已被修订PRE-006取代**：当时Route EI（E AND I AND T）17,445条、Route EO（E AND O AND T）4,004条，去重后唯一PMID 20,090条（见`03_search/formal_runs/2026-10-05/pubmed/run_manifest.json`）；该导出与D的WoS EO第1批作为过程文件保留，不计入PRISMA。v0.9的三库正式检索已于2026-10-05完成（PubMed 7,846、Web of Science 13,242、Scopus 11,065，均含摘要；Google Scholar补充推迟到去重与题名初筛之后），A于2026-10-05重新复核并接受v0.9。**纳入研究数、PRISMA结果或任何注册库登记号目前仍不可用；v3.2（合并PRE-007、PRE-008）已于2026-10-08发布，Zenodo version DOI待回写。** 所有模板中的空值表示未执行，不能写成零。前期证据条目和pilot材料不得视为正式纳入研究。
+**2026-10-05按策略v0.7完成的PubMed导出已被修订PRE-006取代**：当时Route EI（E AND I AND T）17,445条、Route EO（E AND O AND T）4,004条，去重后唯一PMID 20,090条（见`03_search/formal_runs/2026-10-05/pubmed/run_manifest.json`）；该导出与D的WoS EO第1批作为过程文件保留，不计入PRISMA。v0.9的三库正式检索已于2026-10-05完成（PubMed 7,846、Web of Science 13,242、Scopus 11,065，均含摘要；Google Scholar补充推迟到去重与题名初筛之后），A于2026-10-05重新复核并接受v0.9。**纳入研究数、PRISMA结果或任何注册库登记号目前仍不可用；v3.2（合并PRE-007、PRE-008）已于2026-10-08存档（version DOI 10.5281/zenodo.23229246）。** 所有模板中的空值表示未执行，不能写成零。前期证据条目和pilot材料不得视为正式纳入研究。
 
 ## 版本管理
 

@@ -1,7 +1,7 @@
 {
   "protocol_version": "3.2",
   "protocol_date": "2026-10-08",
-  "status": "v3.2_pending_release (bundles PRE-007, PRE-008); v3.1_archived",
+  "status": "v3.2_archived (bundles PRE-007, PRE-008; version DOI 10.5281/zenodo.23229246); v3.1_in_previous_releases",
   "confirmed_resources": {
     "databases": [
       "PubMed",
@@ -56,15 +56,15 @@
   },
   "registration": {
     "service": "GitHub repository + Zenodo release archive (DOI); team decision 2026-10-04 replacing OSF Registries",
-    "status": "v3.1 archived 2026-10-05 (version DOI 10.5281/zenodo.23163768; concept DOI 10.5281/zenodo.23147972); v3.0 and v3.1 kept in previous_releases; v3.2 (PRE-007, PRE-008) release pending",
-    "id": null,
-    "url": null,
-    "submitted_at": null,
+    "status": "v3.2 archived 2026-10-08 (version DOI 10.5281/zenodo.23229246; concept DOI 10.5281/zenodo.23147972); v3.0 and v3.1 kept in previous_releases (10.5281/zenodo.23147973, 10.5281/zenodo.23163768)",
+    "id": "10.5281/zenodo.23229246",
+    "url": "https://doi.org/10.5281/zenodo.23229246",
+    "submitted_at": "2026-10-08T05:05:28Z",
     "timing_rule": "archive frozen v3.0 after team freeze and before the 50-record screening pilot and 10-report charting pilot; formal database search only after the archived release exists (PubMed, Web of Science, Scopus + Google Scholar supplement under PRE-006); re-release (v3.1, new version DOI, same concept DOI) with justification if pilots change rules",
-    "release_tag": null,
-    "release_commit": null,
-    "concept_doi": null,
-    "version_doi": null,
+    "release_tag": "v3.2",
+    "release_commit": "ce5a7e2256a3f9329e21861e0d1ceac017c69e02",
+    "concept_doi": "10.5281/zenodo.23147972",
+    "version_doi": "10.5281/zenodo.23229246",
     "repository_url": "https://github.com/BrewSSS/open-window-precision-biomarkers-scoping-review",
     "license": "CC BY 4.0 (documents); MIT (scripts)",
     "concept_doi_series": "10.5281/zenodo.23147972",
@@ -88,7 +88,7 @@
         "protocol_version": "3.1"
       }
     ],
-    "current_release_note": "release_tag/release_commit/concept_doi/version_doi/id/url/submitted_at describe the release of the CURRENT protocol_version (3.2) and stay null until the v3.2 GitHub Release is archived by Zenodo; then fill all of them together (release_tag v3.2, concept_doi 10.5281/zenodo.23147972, id = version_doi). The v3.0 and v3.1 releases are kept in previous_releases."
+    "current_release_note": "release_tag/release_commit/concept_doi/version_doi/id/url/submitted_at describe the release of the CURRENT protocol_version (3.2), archived by Zenodo on 2026-10-08. The v3.0 and v3.1 releases are kept in previous_releases."
   },
   "stages": {
     "platform_validation": "pubmed_v0.9_diagnostics_done_2026-10-05; WoS/Scopus v0.9 seed tests pending D",
@@ -115,7 +115,7 @@
     "press_rereview_v0_9": "accepted_2026-10-05 (A, no changes; PRESS_review_checklist.md 'v0.9 re-review')",
     "amendment_PRE-007": "adopted_2026-10-05 (A; registered retrospectively 2026-10-06): AI-stand-in first pass at stages 1 and 2 with blind third reads and mandatory human verification; stage-2 verification scope replaced by PRE-008; to be released in v3.2",
     "amendment_PRE-008": "adopted_2026-10-08 (A; six editorial choices, recommended options): text approved by A, 2026-10-08 (paper sign-off by A, B, C, D; all six editorial choices = recommended options; choice 7 added: 25-record stage-2 re-calibration folded into the first 25 V-layer records)",
-    "protocol_v3_2_release": "in_progress 2026-10-08 (D: pre-release edits, rebuild and validator pass before tagging; A: tag v3.2, GitHub Release, Zenodo version DOI under concept DOI 10.5281/zenodo.23147972, write-back)",
+    "protocol_v3_2_release": "done_2026-10-08 (GitHub Release v3.2 at commit ce5a7e2; Zenodo version DOI 10.5281/zenodo.23229246)",
     "review_packet_2026-10-08": "signed_2026-10-08 (all members; all recommended options adopted for items 1-8; execution started 2026-10-08)"
   },
   "flow_counts": null,

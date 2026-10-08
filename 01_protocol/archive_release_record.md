@@ -90,3 +90,17 @@ JBI范围综述；PRISMA-ScR报告；PRISMA-S检索报告；按设计适配的�
 | Zenodo 创建时间 | 2026-10-05T13:46:34Z |
 | 内容 | 修订PRE-004（提取规则）、PRE-005（两阶段筛选）、PRE-006（数据库组合PubMed/WoS/Scopus+Google Scholar补充、检索阶段限制含英文与期刊论文、策略v0.9）；A于2026-10-05重新复核并接受v0.9的PRESS；三库正式检索于2026-10-05完成（原始导出不在存档内，仅清单与标识符列表） |
 | 发布方式 | 协调AI按A的决定（2026-10-05）打tag并创建GitHub Release，Zenodo自动归档；DOI在发布后的提交里写回 |
+
+
+## v3.2 存档记录（2026-10-08）
+
+| 项目 | 值 |
+|---|---|
+| Release tag | v3.2 |
+| Release commit | ce5a7e2256a3f9329e21861e0d1ceac017c69e02 |
+| GitHub Release | https://github.com/BrewSSS/open-window-precision-biomarkers-scoping-review/releases/tag/v3.2 |
+| Zenodo version DOI | 10.5281/zenodo.23229246（https://doi.org/10.5281/zenodo.23229246） |
+| Concept DOI | 10.5281/zenodo.23147972（与v3.0/v3.1相同） |
+| Zenodo 创建时间 | 2026-10-08T05:05:28Z |
+| 内容 | 合并修订PRE-007（第1、2阶段AI替身初筛+强制人工验证）与修订PRE-008（第2阶段进入记录的验证就绪分层：AI要素提取、GPT-6 Sol裁决与分层人工验证；含choice 7——25条stage-2再校准并入前25条V层记录）；在人工验证与全文筛选开始之前发布；无PRISMA结果或纳入研究 |
+| 发布方式 | 协调AI按团队2026-10-08签署的审查清单（review_packet_2026-10-08.md item 2）打tag并创建GitHub Release，Zenodo自动归档；DOI在发布后的提交里写回 |

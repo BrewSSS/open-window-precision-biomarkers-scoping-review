@@ -8,6 +8,10 @@ type: dataset
 title: "Precision biomarkers of the exercise-induced immune “open window”: a scoping review of the validation readiness of conventional and omics candidates"
 version: "3.2"
 date-released: "2026-10-08"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23229246"
+    description: "Zenodo version DOI of protocol v3.2 (concept DOI 10.5281/zenodo.23147972; v3.1 = 10.5281/zenodo.23163768; v3.0 = 10.5281/zenodo.23147973)"
 license: CC-BY-4.0
 authors:
   - name: "A"
