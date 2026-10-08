@@ -108,6 +108,10 @@ __pycache__/
 !04_screening/formal_*/ai_triage/final_triage_4298.csv
 !04_screening/formal_*/ai_triage/final_triage_summary.json
 !04_screening/formal_*/ai_triage/final_triage_summary.md
+# Batch-235 supplement (28 ADVANCE records added after the 4,298 population was fixed);
+# same no-abstract-column shape as final_triage_4298.csv, safe to track.
+!04_screening/formal_*/ai_triage/final_triage_batch235_supplement.csv
+!04_screening/formal_*/ai_triage/final_triage_batch235_supplement.md
 # Human-verification reviewer workbooks (ta_triage_review_B/C.xlsx) contain abstracts and
 # stay git-ignored by the deny-all rule above; only the manifest + instructions + merge
 # outputs are tracked.

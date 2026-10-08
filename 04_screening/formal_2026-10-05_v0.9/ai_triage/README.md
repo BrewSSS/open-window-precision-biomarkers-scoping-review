@@ -308,3 +308,20 @@ D-> and V-rm-> outcome tables, Sol-vs-first-pass E5 agreement), and
 `final_triage_summary.md` (human-readable version plus Sol run stats). Sanity-checked:
 4,298 rows, all record_ids unique, final-layer counts sum to 4,298 (M 3,020; X 697; V 577;
 U 4).
+
+## Batch-235 supplement (2026-10-08)
+
+The stage-2 batch-235 re-screen added 28 `ai_final == ADVANCE` records after the 4,298
+triage population was fixed (`ta_ai_merged.csv` now has 4,326 ADVANCE total). These 28
+were run through the identical pipeline (prompt v1.1, GLM-5.3-Flash thinking disabled +
+GPT-6 Luna effort max first pass, `triage_compare.py`, GPT-6 Sol v1.2 adjudication,
+`triage_finalize.py` logic) and written to a separate file,
+**`final_triage_batch235_supplement.csv`** (same columns; `final_triage_4298.csv` itself
+is untouched). All 28 records are title-only (no abstract), which drove heavy first-pass
+disagreement: all 28 landed in layer D and were adjudicated by Sol; final layers are V 0,
+M 0, X 4, U 24. Because this is a small supplement rather than the full population, every
+adjudicated record (all 28) gets `human_scope = ADJUDICATION_SAMPLE_VERIFY` instead of the
+10% adjudication-sample draw used for the main 1,991-record adjudication set, and the
+main run's M/X 10%-sample rule is superseded here (no M records; the 4 X records are
+already covered by the adjudication override). See
+`final_triage_batch235_supplement.md` for full run stats.

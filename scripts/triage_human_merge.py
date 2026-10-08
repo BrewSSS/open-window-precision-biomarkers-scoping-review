@@ -43,7 +43,14 @@ from collections import Counter, defaultdict
 
 from openpyxl import load_workbook
 
-CONTENT_SHEETS = ["V_confirm", "U_decide", "MX_sample", "ADJ_sample"]
+CONTENT_SHEETS = [
+    "V_confirm", "U_decide", "MX_sample", "ADJ_sample",
+    # Batch-235 supplement sheets (28 extra ADVANCE records picked up after the 4,298
+    # population was fixed; same per-sheet layout as their namesakes above). Read only if
+    # present in a given workbook -- see the "if sheet_name not in wb.sheetnames: continue"
+    # guard in read_workbook() and the equivalent guard added to selftest() below.
+    "V_confirm_b235", "MX_b235", "ADJ_b235",
+]
 CORE_ABSENT_NONE = {"", "none", None}
 
 
@@ -331,8 +338,12 @@ def selftest():
         dst = os.path.join(tmp_dir, os.path.basename(src))
         shutil.copy(src, dst)
         wb = load_workbook(dst)
+        n_rows_this_wb = 0
         for sheet_name in CONTENT_SHEETS:
+            if sheet_name not in wb.sheetnames:
+                continue
             ws = wb[sheet_name]
+            n_rows_this_wb += ws.max_row - 1
             header = [c.value for c in ws[1]]
             e5_col = find_col(header, "_E5") + 1
             e4_col = find_col(header, "_E4") + 1
@@ -349,7 +360,9 @@ def selftest():
                 ws.cell(row=r, column=cm_col, value="" if rng.random() < 0.8 else "selftest comment")
         wb.save(dst)
         filled_paths[code] = dst
-        print(f"selftest: filled synthetic copy -> {dst}", file=sys.stderr)
+        expected_total = n_rows_this_wb
+        print(f"selftest: filled synthetic copy -> {dst} ({n_rows_this_wb} rows across content sheets)",
+              file=sys.stderr)
 
     rows, disagreements, summary = merge(filled_paths.get("B"), filled_paths.get("C"))
     ok = True
@@ -361,8 +374,12 @@ def selftest():
             ok = False
         print(f"[{status}] {label}", file=sys.stderr)
 
-    check("merged rows == 1114 (555+3+357+199)", summary["n_records_merged"] == 1114)
-    check("every record has both raters in selftest", summary["n_with_both_raters"] == 1114)
+    # Row count is computed from the actual sheets present (555+3+357+199 = 1114 on the
+    # original 4 sheets; +28 once the batch-235 ADJ_b235 sheet is appended), not hardcoded,
+    # so this check keeps passing as supplement sheets are added.
+    check(f"merged rows == {expected_total} (sum of content-sheet rows)",
+          summary["n_records_merged"] == expected_total)
+    check("every record has both raters in selftest", summary["n_with_both_raters"] == expected_total)
     for sheet, a in summary["per_sheet_agreement"].items():
         k5 = a["your_E5"]["kappa"]
         if k5 is not None:

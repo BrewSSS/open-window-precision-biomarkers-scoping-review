@@ -13,24 +13,42 @@
   },
   "workbooks": {
     "ta_triage_review_B.xlsx": {
-      "sha256": "6d24ecf0a4bd374f64244ed2d3709f5fd496ec47bf741d55abed58307f16f168",
+      "sha256": "058642ec6cb810cda67367465d25004bf1fdf708b3beb817e69e2536e703933f",
       "sheet_row_counts": {
         "V_confirm": 555,
         "U_decide": 3,
         "MX_sample": 357,
         "ADJ_sample": 199,
-        "total": 1114
+        "V_confirm_b235": 0,
+        "MX_b235": 0,
+        "ADJ_b235": 28,
+        "total": 1142
       }
     },
     "ta_triage_review_C.xlsx": {
-      "sha256": "a93f1ac65bd706710ac72dd99523824b7d1beed940373b61340f985e1c71ca2a",
+      "sha256": "8e079d8bb43694744de565996ece11007295887dbece8951cd5adc589afd9f26",
       "sheet_row_counts": {
         "V_confirm": 555,
         "U_decide": 3,
         "MX_sample": 357,
         "ADJ_sample": 199,
-        "total": 1114
+        "V_confirm_b235": 0,
+        "MX_b235": 0,
+        "ADJ_b235": 28,
+        "total": 1142
       }
+    }
+  },
+  "batch235_supplement": {
+    "added_at_utc": "2026-10-08T05:00:00Z",
+    "source_csv": "04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_batch235_supplement.csv",
+    "source_csv_sha256": "46e32dcb4b3e27a2f3071da863aeb3a0f0eae7f89a62155635c0d4afeb78b5c6",
+    "note": "28 records (stage-2 batch-235 re-screen ADVANCE additions) appended as new sheets V_confirm_b235/MX_b235/ADJ_b235 to both workbooks, plus 28 rows appended to the hidden _index sheet. All 28 are adjudicated (human_scope=ADJUDICATION_SAMPLE_VERIFY for every one, per coordinator instruction for this small supplement, not a 10% draw), so only ADJ_b235 carries data rows (28); V_confirm_b235 and MX_b235 are header-only for structural consistency. No shuffle seed used for ADJ_b235 (sorted by record_id; the batch is a single homogeneous group with nothing else to blind against).",
+    "sheet_row_counts": {
+      "V_confirm_b235": 0,
+      "MX_b235": 0,
+      "ADJ_b235": 28,
+      "total": 28
     }
   }
 }
