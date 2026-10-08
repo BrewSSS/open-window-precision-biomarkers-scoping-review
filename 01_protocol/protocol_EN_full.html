@@ -106,11 +106,13 @@ layer is charted from abstracts (C, F, I). PRE-007 and PRE-008 are
 released together as version 3.2, before human verification and
 full-text screening start. Amendment PRE-009 (8 October 2026) replaces
 independent dual human extraction with AI-assisted extraction and human
-verification (G.1); it is adopted and will be released as version 3.3,
-with an implementation update of PRE-004, before formal extraction
-starts. Human verification of the AI passes, full-text screening,
-extraction and synthesis have not started, and no formal included study
-or result exists.<br />
+verification (G.1), and amendment PRE-010 (8 October 2026) replaces dual
+independent human full-text screening with AI pre-filled full-text
+screening and human override (F); both are adopted and will be released
+as version 3.3, with an implementation update of PRE-004, before
+full-text screening starts. Human verification of the AI passes,
+full-text screening, extraction and synthesis have not started, and no
+formal included study or result exists.<br />
 <strong>Target journal:</strong> <em>Frontiers in Immunology</em>, under
 the Systematic Review article type, which includes scoping reviews;
 specialty section to be selected. Submission will include the PRISMA-ScR
@@ -753,11 +755,12 @@ such, and never excluded for that reason. At stage 2, two screeners
 independently screen the titles and abstracts of <strong>all</strong>
 retained records under the version 3 rules, and the human reviewers
 later screen <strong>all</strong> sought full texts (under PRE-008, the
-confirmed validation layer). At title/abstract stage, missing timing or
-methodological detail normally proceeds to full text rather than being
-guessed. Under amendment PRE-007 (6 October 2026), the two independent
-first-pass screeners at stages 1 and 2 are AI stand-ins with different
-prompt orientations (inclusion-oriented, defaulting to advance; and
+confirmed validation layer; under PRE-010, in override mode on AI
+pre-fills). At title/abstract stage, missing timing or methodological
+detail normally proceeds to full text rather than being guessed. Under
+amendment PRE-007 (6 October 2026), the two independent first-pass
+screeners at stages 1 and 2 are AI stand-ins with different prompt
+orientations (inclusion-oriented, defaulting to advance; and
 closed-list-strict), each reading every record individually, and every
 record on which they disagree receives a blind third AI read recorded
 separately. The stand-in passes are subject to mandatory human
@@ -804,6 +807,23 @@ the required calibration. At full text, B and C also record whether the
 validation-readiness element is confirmed; a V report whose element is
 not confirmed is kept and charted fully, flagged, and counted in the
 flow and in the map, not excluded for that reason.</p>
+<p>Under amendment PRE-010 (8 October 2026), full-text screening of the
+confirmed V layer uses AI pre-fill with human override. Two AI stand-ins
+from different model families (GPT-6 Sol, reasoning effort high;
+GLM-5.3, thinking on) each read every retrieved full text and fill the
+full-text fields independently: disposition under the fixed FT01–FT08
+hierarchy, age-rule check and validation-element confirmation (v1.2
+definitions), with page-referenced supporting passages and quotes of at
+most 25 words. B’s workbook carries the GPT-6 Sol read and C’s the
+GLM-5.3 read; the other family’s read stays hidden. B and C read every
+full text and overwrite what they disagree with; unchanged cells are
+their decisions of record, and a hidden pre-fill copy gives each
+reviewer’s override rate. Disagreements between their final values are
+discussed and, if unresolved, adjudicated by D. B and C each pass the 15
+full-text boundary exercises (at least 12 of 15) before the override
+phase. Reports not retrieved stay NOT_RETRIEVED and are never excluded.
+Methods report the design, models, prompt version and override rates;
+that screening was not independent from scratch is a limitation.</p>
 <p>After the v3.0 protocol has been archived (J) and before formal
 screening, a saved random procedure selects 50 records from a frozen
 deduplicated draft-search pool; the pool is generated after the archive
@@ -1160,10 +1180,11 @@ disclose tool name, version, model and source in both Methods and
 Acknowledgments [14]. Under PRE-007 and PRE-008, AI stand-ins, third
 reads and the adjudicating triage read (5–8 October 2026; logged in the
 same file) produce recommendations that humans verify as specified in F;
-Under PRE-009, AI stand-ins pre-fill the extraction that B and C verify
-cell by cell (G.1). AI is not an author, human independent reviewer or
-the human adjudicator. Named humans remain responsible for eligibility,
-data, appraisal, citations and conclusions. No AI-produced citation or
+under PRE-009 and PRE-010, AI stand-ins pre-fill the extraction (G.1)
+and the full-text screening fields (F), which B and C verify cell by
+cell. AI is not an author, human independent reviewer or the human
+adjudicator. Named humans remain responsible for eligibility, data,
+appraisal, citations and conclusions. No AI-produced citation or
 numerical claim is accepted without source verification. Final
 disclosure follows the then-current journal and institutional
 requirements.</p>
@@ -1209,12 +1230,12 @@ complete human verification (V confirmation, U decisions, the M, X and
 adjudication samples, the stage-1 and stage-2 exclusion samples and the
 100-record blind title pilot), with D adjudicating; (4) A and D retrieve
 full texts of confirmed V records through
-<code>fulltext_requests/</code>; (5) B and C complete the full-text
-boundary exercises and screen V full texts; A releases version 3.3
-(PRE-009 and the PRE-004 update); AI stand-ins pre-fill the extraction
-and B and C verify it (G.1), the first five V reports serving as the
-charting calibration, while M is charted from abstract-level elements;
-(6) synthesis.</p>
+<code>fulltext_requests/</code>; (5) A releases version 3.3 (PRE-009,
+PRE-010 and the PRE-004 update); B and C pass the full-text boundary
+exercises and screen V full texts in override mode on AI pre-fills (F);
+AI stand-ins pre-fill the extraction and B and C verify it (G.1), the
+first five V reports serving as the charting calibration, while M is
+charted from abstract-level elements; (6) synthesis.</p>
 <p>The local execution plan and archive release record specify stage
 gates and deliverables. Formal stages remain pending until the required
 human work is completed; completing this document does not certify PRESS
@@ -1374,9 +1395,22 @@ the per-contrast denominator stays deferred, and the reduced charting
 calibration is folded into the first five V reports. Two copy-only
 fields record the triage validation sub-types and the full-text
 confirmation of the validation element; an unconfirmed V report is kept,
-charted and counted, not excluded. PRE-009 is released as version 3.3
-before formal extraction starts. No V report had been screened at full
-text or extracted when it was adopted.</p>
+charted and counted, not excluded. PRE-009 is released in version 3.3
+(below). No V report had been screened at full text or extracted when it
+was adopted.</p>
+<p>Version 3.3 (pending; to be released before full-text screening
+starts) bundles PRE-009, the PRE-004 implementation update and amendment
+PRE-010 (8 October 2026, decision by A), “AI pre-filled full-text
+screening with human override” (F). PRE-010 replaces dual independent
+human full-text screening of the 578 V-layer reports because of
+workload: GPT-6 Sol (reasoning effort high) pre-fills B’s full-text
+workbook and GLM-5.3 (thinking on) pre-fills C’s, each from its own
+reading of the full text; B and C read every report and overwrite what
+they disagree with, override rates are reported, and D adjudicates
+unresolved disagreements. The 15 full-text boundary exercises (pass rule
+12 of 15) precede the override phase, and not-retrieved reports are
+never excluded. The PRISMA-ScR flow keeps its structure. No full-text
+decision existed when PRE-010 was adopted.</p>
 <p>Still pending are named administrative declarations, the Google
 Scholar search strings (the supplement is deferred until after
 deduplication and title screening), the reduced human charting
