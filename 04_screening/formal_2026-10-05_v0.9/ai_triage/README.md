@@ -260,3 +260,51 @@ for sha256).
   full set (reserved for the coordinator together with the GLM thinking-vs-nonthinking review).
 - Raw per-record output backed up to `_local_runs/gpt6_luna_full_4298.json` (git-ignored; see
   `MANIFEST.json` for sha256).
+
+## Final layering (2026-10-08)
+
+Two-family comparison (GLM-5.3-Flash vs GPT-6 Luna) over all 4,298 records:
+`full_4298_glm_vs_gpt6/triage_merged.csv` + `triage_summary.json`. Records went to
+adjudication when (a) the two families disagreed enough to land in layer D, or (b) a
+record landed in layer V (E5 present, no core element absent) solely because one family's
+E5 subtype list was exactly `["repeated_monitoring"]` under the old, looser rule (a known
+crossover-design false-positive pattern) — 1,532 + 459 = 1,991 records total.
+
+**Adjudicator**: GPT-6 Sol (Codex CLI), prompt v1.2 (`prompt_e5_adjudication_v1_2.md`,
+stricter E5 rules, same E1–E5 schema), effort medium, `scripts/triage_codex_run.py`,
+batches of 5, concurrency 8–16. First full pass: 1,991/1,991 records, 399 batches, 0
+failed batches, 5 records invalid on schema `maxLength=220` (an over-length verbatim
+quote, not an E1–E5 value problem). Resolved to 0 invalid via five incremental `--resume`
+passes (no per-batch files deleted — `batch_file_is_fully_valid()` already treats a batch
+holding a validation-error record as not-yet-valid and re-runs it). Consolidated output
+backed up to `_local_runs/adjud_gpt6_sol_v1_2_full_1991.json` (git-ignored; sha256 in
+`MANIFEST.json`).
+
+**Final-value rule** (`scripts/triage_finalize.py`): adjudicated records take Sol's
+E1–E5 (`source = "gpt6-sol v1.2"`); every other record takes GPT-6 Luna's first-pass
+E1–E5 (`source = "first-pass agreed"`, since by construction of layers M/V/X, Luna agreed
+with GLM on E5 presence/absence and on every core-absent flag for non-adjudicated
+records).
+
+**Final layer** (recomputed from the final E1–E5, independent of the first-pass two-family
+layer): `X` if any core element is absent (E1 `none_or_non_exercise`; E2 `absent`; E3
+`absent`; E4 in `includes_under_18`/`clinical_or_infected_cohort`/`animal_or_in_vitro`);
+else `V` if E5 present; `M` if E5 absent; `U` if E5 unclear or the record has no valid
+final parsed object.
+
+**Human scope**: `V` -> `HUMAN_CONFIRM_ALL`; `U` -> `HUMAN_DECIDE`; `M` and `X` -> a 10%
+seeded sample within each layer (`random.Random(20261005).sample(sorted(ids), k)`) ->
+`HUMAN_SAMPLE_VERIFY`, the rest `AI_ONLY`; additionally a 10% seeded sample of the
+adjudicated records (`random.Random(20261008)`, same sampling method) is tagged
+`ADJUDICATION_SAMPLE_VERIFY`, overriding whatever layer-based scope applied, so a human can
+independently estimate Sol's error rate across a representative cross-section of D and
+V-repeated_monitoring outcomes.
+
+Deliverables: `final_triage_4298.csv` (record_id, title, journal, year, final E1–E5,
+E5 subtypes, E3 marker families, study_type_hint, final_layer, human_scope, source,
+first_pass_layer, glm_E5, gpt_luna_E5, adjudicated yes/no, a <=25-word E5 quote, note — no
+abstract text), `final_triage_summary.json` (counts per final layer/human scope/E5 subtype,
+D-> and V-rm-> outcome tables, Sol-vs-first-pass E5 agreement), and
+`final_triage_summary.md` (human-readable version plus Sol run stats). Sanity-checked:
+4,298 rows, all record_ids unique, final-layer counts sum to 4,298 (M 3,020; X 697; V 577;
+U 4).

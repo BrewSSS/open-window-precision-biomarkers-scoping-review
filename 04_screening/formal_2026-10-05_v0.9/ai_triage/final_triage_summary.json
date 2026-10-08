@@ -1,0 +1,60 @@
+{
+  "n_records": 4298,
+  "n_adjudicated": 1991,
+  "n_adjudicated_D": 1532,
+  "n_adjudicated_V_rm": 459,
+  "n_adjudication_missing_or_invalid": 0,
+  "adjudication_missing_ids": [],
+  "final_layer_counts": {
+    "M": 3020,
+    "X": 697,
+    "V": 577,
+    "U": 4
+  },
+  "human_scope_counts": {
+    "AI_ONLY": 3184,
+    "HUMAN_SAMPLE_VERIFY": 357,
+    "ADJUDICATION_SAMPLE_VERIFY": 199,
+    "HUMAN_CONFIRM_ALL": 555,
+    "HUMAN_DECIDE": 3
+  },
+  "sample_verify": {
+    "M_total": 3020,
+    "M_sampled": 302,
+    "X_total": 697,
+    "X_sampled": 70,
+    "seed": 20261005,
+    "fraction": 0.1
+  },
+  "adjudication_sample_verify": {
+    "adjudicated_total": 1991,
+    "adjudicated_sampled": 199,
+    "seed": 20261008,
+    "fraction": 0.1
+  },
+  "adjudication_outcomes": {
+    "D_resolved_to": {
+      "M": 1093,
+      "V": 88,
+      "X": 348,
+      "U": 3
+    },
+    "V_rm_resolved_to": {
+      "M": 337,
+      "V": 113,
+      "X": 8,
+      "U": 1
+    }
+  },
+  "final_E5_subtype_counts": {
+    "repeated_monitoring": 293,
+    "outcome_linkage": 196,
+    "metric_validation": 150,
+    "omics_discovery": 214
+  },
+  "sol_agreement_with_first_pass_on_E5": {
+    "n_adjudicated_with_sol_value": 1991,
+    "sol_agrees_glm_pct": 67.96,
+    "sol_agrees_luna_pct": 29.13
+  }
+}
