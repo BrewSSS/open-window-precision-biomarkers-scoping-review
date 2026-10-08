@@ -1,6 +1,11 @@
 # macOS
 .DS_Store
 
+# V-layer full-text pre-fetch (scripts/fetch_fulltexts_oa.py): publisher/PMC PDFs and the
+# resumable fetch ledger are never committed; only the manifest/summary under
+# 04_screening/formal_*/fulltext/ and fulltext_requests/fulltext_requests.csv are tracked.
+/fulltexts/
+
 # LaTeX build artefacts (regenerable from source via scripts/build_protocol.py)
 *.aux
 *.log
@@ -143,3 +148,7 @@ fulltext_requests/abstract_lookup_*/*
 # only, no abstracts.
 !04_screening/formal_*/fulltext/identifier_completion_*.csv
 !04_screening/formal_*/fulltext/identifier_completion_*.md
+# D's V-layer OA pre-fetch outputs (scripts/fetch_fulltexts_oa.py): status/source/hash/note
+# columns only, no full-text content (PDFs live under /fulltexts/, ignored above).
+!04_screening/formal_*/fulltext/fulltext_fetch_manifest.csv
+!04_screening/formal_*/fulltext/fulltext_fetch_summary.md

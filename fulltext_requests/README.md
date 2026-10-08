@@ -35,3 +35,7 @@
 
 `abstract_requests.csv` 中的 `abstract` 列已清空（9 条已入库记录改为占位文字 `(stored in records_master.csv)`，其余保持空白），含正文的完整版另存为 `abstract_lookup_2026-10-08/abstract_requests_with_abstracts.csv`，不入库。
 `abstract_lookup_2026-10-08/` 整个目录已加入 `.gitignore`（仅保留 `MANIFEST.json`，记录文件名/大小/sha256，不含正文），用 `git check-ignore -v` 及 `git add -n` 验证只有 `MANIFEST.json` 会被跟踪。
+
+## 全文开放获取预取（D 角色，2026-10-08）
+
+V 层 578 篇记录已跑 `scripts/fetch_fulltexts_oa.py` 尝试开放获取（Europe PMC / OpenAlex / Crossref，见 `fulltext_fetch_summary.md`）；成功 141 篇存至 `fulltexts/V/`（不入库），其余 437 篇（含 WoS UT / Scopus EID 等线索）已以 `stage=fulltext_V`、`status=requested` 追加到上表，等待机构下载。
