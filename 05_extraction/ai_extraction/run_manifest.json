@@ -369,6 +369,139 @@
    "seconds": 312.7,
    "attempts": 7,
    "valid": false
+  },
+  {
+   "record_id": "R01",
+   "family": "claude_sonnet",
+   "model": "sonnet",
+   "effort_or_thinking": "medium",
+   "prompt_sha256": "8cf63231ad782f77a44aea76669207645532cae6ed5aa22e12dcb4a876eee59c",
+   "schema_sha256": "4a593307cd1bd4789072153fc29ed4881850eb2d7f71fedc0fd462568d505b77",
+   "tokens": {
+    "input_tokens": 4,
+    "cached_input_tokens": 25416,
+    "cache_write_input_tokens": 37860,
+    "output_tokens": 23556,
+    "reasoning_output_tokens": 2409
+   },
+   "seconds": 184.1,
+   "attempts": 1,
+   "valid": true,
+   "cost_usd": 0.39209120000000003
+  },
+  {
+   "record_id": "R03",
+   "family": "claude_sonnet",
+   "model": "sonnet",
+   "effort_or_thinking": "medium",
+   "prompt_sha256": "8cf63231ad782f77a44aea76669207645532cae6ed5aa22e12dcb4a876eee59c",
+   "schema_sha256": "4a593307cd1bd4789072153fc29ed4881850eb2d7f71fedc0fd462568d505b77",
+   "tokens": {
+    "input_tokens": 4,
+    "cached_input_tokens": 25915,
+    "cache_write_input_tokens": 86599,
+    "output_tokens": 106632,
+    "reasoning_output_tokens": 14316
+   },
+   "seconds": 782.9,
+   "attempts": 1,
+   "valid": true,
+   "cost_usd": 1.417907
+  },
+  {
+   "record_id": "R42",
+   "family": "claude_sonnet",
+   "model": "sonnet",
+   "effort_or_thinking": "medium",
+   "prompt_sha256": "8cf63231ad782f77a44aea76669207645532cae6ed5aa22e12dcb4a876eee59c",
+   "schema_sha256": "4a593307cd1bd4789072153fc29ed4881850eb2d7f71fedc0fd462568d505b77",
+   "tokens": {
+    "input_tokens": 4,
+    "cached_input_tokens": 46413,
+    "cache_write_input_tokens": 45818,
+    "output_tokens": 46978,
+    "reasoning_output_tokens": 7494
+   },
+   "seconds": 371.8,
+   "attempts": 1,
+   "valid": true,
+   "cost_usd": 0.6623426000000001
+  },
+  {
+   "record_id": "R46",
+   "family": "claude_sonnet",
+   "model": "sonnet",
+   "effort_or_thinking": "medium",
+   "prompt_sha256": "8cf63231ad782f77a44aea76669207645532cae6ed5aa22e12dcb4a876eee59c",
+   "schema_sha256": "4a593307cd1bd4789072153fc29ed4881850eb2d7f71fedc0fd462568d505b77",
+   "tokens": {
+    "input_tokens": 4,
+    "cached_input_tokens": 32087,
+    "cache_write_input_tokens": 44985,
+    "output_tokens": 70485,
+    "reasoning_output_tokens": 11061
+   },
+   "seconds": 534.4,
+   "attempts": 1,
+   "valid": true,
+   "cost_usd": 0.8912154000000001
+  },
+  {
+   "record_id": "R56",
+   "family": "claude_sonnet",
+   "model": "sonnet",
+   "effort_or_thinking": "medium",
+   "prompt_sha256": "8cf63231ad782f77a44aea76669207645532cae6ed5aa22e12dcb4a876eee59c",
+   "schema_sha256": "4a593307cd1bd4789072153fc29ed4881850eb2d7f71fedc0fd462568d505b77",
+   "tokens": {
+    "input_tokens": 6,
+    "cached_input_tokens": 113667,
+    "cache_write_input_tokens": 75679,
+    "output_tokens": 79460,
+    "reasoning_output_tokens": 5471
+   },
+   "seconds": 605.6,
+   "attempts": 1,
+   "valid": true,
+   "cost_usd": 1.1200614
+  },
+  {
+   "record_id": "R59",
+   "family": "claude_sonnet",
+   "model": "sonnet",
+   "effort_or_thinking": "medium",
+   "prompt_sha256": "8cf63231ad782f77a44aea76669207645532cae6ed5aa22e12dcb4a876eee59c",
+   "schema_sha256": "4a593307cd1bd4789072153fc29ed4881850eb2d7f71fedc0fd462568d505b77",
+   "tokens": {
+    "input_tokens": 6,
+    "cached_input_tokens": 102720,
+    "cache_write_input_tokens": 83649,
+    "output_tokens": 103603,
+    "reasoning_output_tokens": 5981
+   },
+   "seconds": 746.2,
+   "attempts": 1,
+   "valid": true,
+   "cost_usd": 1.3911820000000001
+  },
+  {
+   "record_id": "R62",
+   "family": "claude_sonnet",
+   "model": "sonnet",
+   "effort_or_thinking": "medium",
+   "prompt_sha256": "8cf63231ad782f77a44aea76669207645532cae6ed5aa22e12dcb4a876eee59c",
+   "schema_sha256": "4a593307cd1bd4789072153fc29ed4881850eb2d7f71fedc0fd462568d505b77",
+   "tokens": {
+    "input_tokens": 4,
+    "cached_input_tokens": 47450,
+    "cache_write_input_tokens": 77511,
+    "output_tokens": 104896,
+    "reasoning_output_tokens": 9711
+   },
+   "seconds": 750.1,
+   "attempts": 1,
+   "valid": true,
+   "cost_usd": 1.3685019999999999
   }
  ]
 }
