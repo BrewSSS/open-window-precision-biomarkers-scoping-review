@@ -1,0 +1,36 @@
+{
+  "generated_at_utc": "2026-10-08T04:17:00Z",
+  "source_csv": "04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_4298.csv",
+  "source_csv_sha256": "eafa484dab9c527ed9ecf73f04cfaeb941ef37840dc57891ac197bec973c79c3",
+  "mx_sample_shuffle_seed": 20261005,
+  "adj_sample_shuffle_seed": 20261008,
+  "sheet_row_counts": {
+    "V_confirm": 555,
+    "U_decide": 3,
+    "MX_sample": 357,
+    "ADJ_sample": 199,
+    "total": 1114
+  },
+  "workbooks": {
+    "ta_triage_review_B.xlsx": {
+      "sha256": "6d24ecf0a4bd374f64244ed2d3709f5fd496ec47bf741d55abed58307f16f168",
+      "sheet_row_counts": {
+        "V_confirm": 555,
+        "U_decide": 3,
+        "MX_sample": 357,
+        "ADJ_sample": 199,
+        "total": 1114
+      }
+    },
+    "ta_triage_review_C.xlsx": {
+      "sha256": "a93f1ac65bd706710ac72dd99523824b7d1beed940373b61340f985e1c71ca2a",
+      "sheet_row_counts": {
+        "V_confirm": 555,
+        "U_decide": 3,
+        "MX_sample": 357,
+        "ADJ_sample": 199,
+        "total": 1114
+      }
+    }
+  }
+}
