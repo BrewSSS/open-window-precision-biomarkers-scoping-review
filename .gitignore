@@ -112,6 +112,9 @@ __pycache__/
 # same no-abstract-column shape as final_triage_4298.csv, safe to track.
 !04_screening/formal_*/ai_triage/final_triage_batch235_supplement.csv
 !04_screening/formal_*/ai_triage/final_triage_batch235_supplement.md
+# Batch-236 supplement (8 ADVANCE records after A's abstract lookup, 2026-10-08); same shape.
+!04_screening/formal_*/ai_triage/final_triage_batch236_supplement.csv
+!04_screening/formal_*/ai_triage/final_triage_batch236_supplement.md
 # Human-verification reviewer workbooks (ta_triage_review_B/C.xlsx) contain abstracts and
 # stay git-ignored by the deny-all rule above; only the manifest + instructions + merge
 # outputs are tracked.
@@ -120,3 +123,9 @@ __pycache__/
 !04_screening/formal_*/ai_triage/human_verification_merged.csv
 !04_screening/formal_*/ai_triage/human_verification_summary.json
 !04_screening/formal_*/ai_triage/human_verification_summary.md
+
+# A's abstract-lookup working folders (api metadata, batch inputs/results, lookup JSON, any
+# downloaded full texts): contain publisher abstract/full-text content and must never be
+# committed, any dated run. Only a sha256 manifest (names/sizes/hashes, no content) is tracked.
+fulltext_requests/abstract_lookup_*/*
+!fulltext_requests/abstract_lookup_*/MANIFEST.json

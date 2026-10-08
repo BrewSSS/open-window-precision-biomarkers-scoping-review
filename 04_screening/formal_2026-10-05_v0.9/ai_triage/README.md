@@ -325,3 +325,24 @@ adjudicated record (all 28) gets `human_scope = ADJUDICATION_SAMPLE_VERIFY` inst
 main run's M/X 10%-sample rule is superseded here (no M records; the 4 X records are
 already covered by the adjudication override). See
 `final_triage_batch235_supplement.md` for full run stats.
+
+## Batch-236 supplement (2026-10-08)
+
+A's 2026-10-08 abstract lookup (`fulltext_requests/abstract_requests.csv`) gave 9 blocking
+records a verified abstract; the stage-2 batch-236 re-screen (`../ai_stage2/README.md`)
+resolved 8 of them to `ai_final == ADVANCE` (1, FS-013502, resolved to EXCLUDE_TA/FT01 and
+never enters this triage). These 8 ran through the identical pipeline (prompt v1.1,
+GLM-5.3-Flash thinking disabled + GPT-6 Luna effort max first pass, `triage_compare.py`,
+GPT-6 Sol v1.2 adjudication, same finalize logic as `triage_finalize.py`) and were written
+to **`final_triage_batch236_supplement.csv`** (same columns; `final_triage_4298.csv` and
+`final_triage_batch235_supplement.csv` are both untouched). Unlike batch 235, all 8 had a
+real abstract, so first-pass agreement was near-perfect (0 D-layer records; layers V=3,
+M=5). 2 of the 3 V records were adjudicated under the V-repeated_monitoring trigger
+(FS-008118, FS-008139) and both flipped to final layer M under Sol's stricter E5 rule;
+final layers are V 1, M 7, X 0, U 0. Per coordinator instruction, the 2 adjudicated
+records get `human_scope = ADJUDICATION_SAMPLE_VERIFY`, the 1 remaining V record gets
+`HUMAN_CONFIRM_ALL`, and all 5 remaining M records get `HUMAN_SAMPLE_VERIFY` (not a 10%
+draw, since this is a small supplement). See `final_triage_batch236_supplement.md` for
+full run stats; the 8 rows to add to the stage-2 review workbooks are staged at
+`/tmp/triage/abs2/workbook_rows_to_add.csv` (coordinator applies after the two concurrent
+pre-fill agents finish — no `.xlsx`/manifest/reviewer-instructions file was opened).

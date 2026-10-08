@@ -1,25 +1,25 @@
 {
-  "generated_at": "2026-10-07T13:06:14Z",
+  "generated_at": "2026-10-08T05:44:58Z",
   "stage2_records": 9277,
   "merged": 9277,
   "missing_an_ai_pass": 0,
   "ai_B": {
-    "ADVANCE": 4249,
+    "ADVANCE": 4245,
     "EXCLUDE_TA": 4900,
-    "AWAITING_CLASSIFICATION": 128
+    "AWAITING_CLASSIFICATION": 132
   },
   "ai_C": {
-    "ADVANCE": 3716,
-    "EXCLUDE_TA": 5095,
-    "AWAITING_CLASSIFICATION": 466
+    "ADVANCE": 3711,
+    "EXCLUDE_TA": 5096,
+    "AWAITING_CLASSIFICATION": 470
   },
   "ai_merged": {
-    "ADVANCE": 4430,
+    "ADVANCE": 4426,
     "EXCLUDE_TA": 4699,
-    "AWAITING_CLASSIFICATION": 148
+    "AWAITING_CLASSIFICATION": 152
   },
-  "ai_conflicts": 1152,
-  "third_read": 1152,
+  "ai_conflicts": 1153,
+  "third_read": 1153,
   "ai_final": {
     "ADVANCE": 4326,
     "EXCLUDE_TA": 4949,
@@ -36,19 +36,20 @@
   },
   "review_scope": {
     "FULLTEXT_CANDIDATE": 4326,
-    "AI_EXCLUDE_UNVERIFIED": 4483,
-    "SAMPLE_VERIFY": 466,
+    "AI_EXCLUDE_UNVERIFIED": 4484,
+    "SAMPLE_VERIFY": 465,
     "AWAITING": 2
   },
   "sample_frac": 0.1,
   "seed": 20261005,
   "adjustments": {
     "": 8942,
-    "RESCREENED_BATCH_235_TITLE_ONLY": 45,
+    "RESCREENED_BATCH_235_TITLE_ONLY": 36,
     "RESCREENED_BATCH_235": 1,
-    "AGE_RULE_DEFERRED_TO_FULLTEXT": 287,
-    "ABSTRACT_MISSING": 2
+    "AGE_RULE_DEFERRED_TO_FULLTEXT": 291,
+    "ABSTRACT_MISSING": 2,
+    "RESCREENED_BATCH_236": 5
   },
-  "workbook_B_sha256": "f0e6422bff5b421947b1f1ac880a9f201c0b3789fc006234fa31fc82cd70d103",
-  "workbook_C_sha256": "d8093c0c71dec5993e06b89051bc94ff65a3556096276c2b53259b1db85e616f"
+  "workbook_B_sha256": "044c7888b0abd396ed4fb66315f8baf195cd13b06adfb4fb0550cbc4d0ba3c78",
+  "workbook_C_sha256": "fd4f96d9ff0c44749a13dc7bf2ccb8ebc362cd030c53a852411147b799fe4f53"
 }
