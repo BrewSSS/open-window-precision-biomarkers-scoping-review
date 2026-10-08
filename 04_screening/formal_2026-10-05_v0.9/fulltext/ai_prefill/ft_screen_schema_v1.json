@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/scoping-review/fulltext/ai_prefill/ft_screen_schema_v1.json",
+  "title": "Full-text screening pre-fill — structured output (v1, PRE-010, strict/flat form for codex --output-schema)",
+  "description": "No $ref/$defs/maxLength (codex strict-schema requirement); additionalProperties:false on every object; every property listed in required. scripts/ft_prefill_run.py validates the returned JSON against this schema with one repair retry.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "disposition",
+    "primary_code",
+    "secondary_notes",
+    "age_rule_check",
+    "age_evidence",
+    "validation_element_confirmed",
+    "validation_subtypes",
+    "validation_evidence",
+    "exposure_evidence",
+    "immune_marker_evidence",
+    "comparator_evidence",
+    "cohort_notes",
+    "confidence",
+    "note"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "pattern": "^FS-[0-9]{6}$",
+      "description": "Echo of the input record_id exactly as supplied."
+    },
+    "disposition": {
+      "type": "string",
+      "enum": [
+        "INCLUDE_A",
+        "INCLUDE_B",
+        "INCLUDE_A_AND_B",
+        "RETAIN_BACKGROUND",
+        "EXCLUDE",
+        "AWAITING_CLASSIFICATION",
+        "NOT_RETRIEVED",
+        "DUPLICATE_REPORT"
+      ]
+    },
+    "primary_code": {
+      "type": "string",
+      "enum": [
+        "",
+        "FT01_SOURCE_TYPE_NOT_CORE",
+        "FT02_NOT_ORIGINAL_HUMAN_RESEARCH",
+        "FT03_POPULATION_NOT_ELIGIBLE",
+        "FT04_NO_QUALIFYING_EXERCISE_EXPOSURE",
+        "FT05_NO_POST_CESSATION_SAMPLE",
+        "FT06_NO_BASELINE_OR_SUITABLE_COMPARATOR",
+        "FT07_NO_ELIGIBLE_IMMUNE_LINK",
+        "FT08_MIXED_INTERVENTION_NOT_SEPARABLE"
+      ],
+      "description": "Non-empty only when disposition is EXCLUDE; the first established reason in hierarchy order. \"\" otherwise."
+    },
+    "secondary_notes": {
+      "type": "string",
+      "description": "<=40 words. Other failed dimensions; the RETAIN_BACKGROUND failed dimension (normally FT04); or, for DUPLICATE_REPORT, the retained record_id."
+    },
+    "age_rule_check": {
+      "type": "string",
+      "enum": [
+        "adults_confirmed",
+        "mean_minus_2SD_below_18_unresolved",
+        "under_18_included",
+        "not_applicable"
+      ]
+    },
+    "age_evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["quote", "page"],
+      "properties": {
+        "quote": { "type": "string", "description": "<=25-word verbatim quote supporting age_rule_check, or \"\"." },
+        "page": { "type": "string", "description": "Page number as a string from the nearest preceding [[page N]] marker, or \"\"." }
+      }
+    },
+    "validation_element_confirmed": {
+      "type": "string",
+      "enum": ["yes", "no", "unclear"]
+    },
+    "validation_subtypes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "metric_validation",
+          "outcome_linkage",
+          "omics_discovery",
+          "repeated_monitoring"
+        ]
+      },
+      "description": "Every applicable subtype under the v1.2 strict definitions; empty if validation_element_confirmed is no/unclear."
+    },
+    "validation_evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["quote", "page"],
+      "properties": {
+        "quote": { "type": "string", "description": "<=25-word verbatim quote supporting validation_element_confirmed, or \"\"." },
+        "page": { "type": "string", "description": "Page number as a string, or \"\"." }
+      }
+    },
+    "exposure_evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["quote", "page"],
+      "properties": {
+        "quote": { "type": "string", "description": "<=25-word verbatim quote: the identifiable bout(s) and sample-to-bout relation, or \"\"." },
+        "page": { "type": "string" }
+      }
+    },
+    "immune_marker_evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["quote", "page"],
+      "properties": {
+        "quote": { "type": "string", "description": "<=25-word verbatim quote naming the immune measure(s), or \"\"." },
+        "page": { "type": "string" }
+      }
+    },
+    "comparator_evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["quote", "page"],
+      "properties": {
+        "quote": { "type": "string", "description": "<=25-word verbatim quote: the pre-bout baseline or comparator, or \"\"." },
+        "page": { "type": "string" }
+      }
+    },
+    "cohort_notes": {
+      "type": "string",
+      "description": "<=40 words. Multiple cohorts/sub-studies, age strata needing separate resolution, or duplicate/linked reports noticed in this text."
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"]
+    },
+    "note": {
+      "type": "string",
+      "description": "<=30 words, free text, no personal data, no e-mail."
+    }
+  }
+}

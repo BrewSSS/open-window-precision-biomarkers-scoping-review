@@ -1,0 +1,2690 @@
+{
+ "generated_at_utc": "2026-10-08T13:23:31+00:00",
+ "generator": "scripts/ft_prefill_run.py",
+ "model": "gpt-6-sol",
+ "effort": "high",
+ "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+ "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+ "n_records": 141,
+ "entries": [
+  {
+   "record_id": "FS-001493",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 59.0,
+   "tokens": {
+    "input_tokens": 23303,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 3008,
+    "reasoning_output_tokens": 2749
+   },
+   "valid": true,
+   "text_chars": 30155,
+   "pages": 28,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-002122",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 35.0,
+   "tokens": {
+    "input_tokens": 22926,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1267,
+    "reasoning_output_tokens": 1034
+   },
+   "valid": true,
+   "text_chars": 34753,
+   "pages": 7,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-002626",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 35.1,
+   "tokens": {
+    "input_tokens": 27229,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 740,
+    "reasoning_output_tokens": 516
+   },
+   "valid": true,
+   "text_chars": 52081,
+   "pages": 7,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-002162",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 43.1,
+   "tokens": {
+    "input_tokens": 20310,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1453,
+    "reasoning_output_tokens": 1173
+   },
+   "valid": true,
+   "text_chars": 23931,
+   "pages": 3,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-002175",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 50.1,
+   "tokens": {
+    "input_tokens": 27340,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1602,
+    "reasoning_output_tokens": 1285
+   },
+   "valid": true,
+   "text_chars": 54121,
+   "pages": 7,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-002039",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 51.0,
+   "tokens": {
+    "input_tokens": 29707,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1470,
+    "reasoning_output_tokens": 1178
+   },
+   "valid": true,
+   "text_chars": 68609,
+   "pages": 10,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-002264",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 56.1,
+   "tokens": {
+    "input_tokens": 26566,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1566,
+    "reasoning_output_tokens": 1340
+   },
+   "valid": true,
+   "text_chars": 58225,
+   "pages": 9,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-002532",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 61.4,
+   "tokens": {
+    "input_tokens": 32168,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1863,
+    "reasoning_output_tokens": 1571
+   },
+   "valid": true,
+   "text_chars": 74759,
+   "pages": 11,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-002772",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 37.1,
+   "tokens": {
+    "input_tokens": 22641,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1256,
+    "reasoning_output_tokens": 993
+   },
+   "valid": true,
+   "text_chars": 26589,
+   "pages": 9,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-002739",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 73.0,
+   "tokens": {
+    "input_tokens": 35786,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2691,
+    "reasoning_output_tokens": 2386
+   },
+   "valid": true,
+   "text_chars": 89718,
+   "pages": 13,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-002911",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 40.8,
+   "tokens": {
+    "input_tokens": 31344,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1132,
+    "reasoning_output_tokens": 800
+   },
+   "valid": true,
+   "text_chars": 73670,
+   "pages": 12,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-002905",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 64.1,
+   "tokens": {
+    "input_tokens": 24438,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2276,
+    "reasoning_output_tokens": 2070
+   },
+   "valid": true,
+   "text_chars": 43824,
+   "pages": 6,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-002928",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 54.4,
+   "tokens": {
+    "input_tokens": 21588,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1714,
+    "reasoning_output_tokens": 1405
+   },
+   "valid": true,
+   "text_chars": 27552,
+   "pages": 10,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-003169",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 52.3,
+   "tokens": {
+    "input_tokens": 24092,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1457,
+    "reasoning_output_tokens": 1206
+   },
+   "valid": true,
+   "text_chars": 47766,
+   "pages": 7,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-003190",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 53.7,
+   "tokens": {
+    "input_tokens": 26163,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1862,
+    "reasoning_output_tokens": 1552
+   },
+   "valid": true,
+   "text_chars": 53905,
+   "pages": 8,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-003303",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 42.7,
+   "tokens": {
+    "input_tokens": 29416,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1338,
+    "reasoning_output_tokens": 1023
+   },
+   "valid": true,
+   "text_chars": 72575,
+   "pages": 11,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-003206",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 52.2,
+   "tokens": {
+    "input_tokens": 30038,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1754,
+    "reasoning_output_tokens": 1334
+   },
+   "valid": true,
+   "text_chars": 63856,
+   "pages": 33,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-003116",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 74.8,
+   "tokens": {
+    "input_tokens": 24322,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2877,
+    "reasoning_output_tokens": 2588
+   },
+   "valid": true,
+   "text_chars": 42183,
+   "pages": 7,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-003371",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 52.2,
+   "tokens": {
+    "input_tokens": 34473,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1815,
+    "reasoning_output_tokens": 1552
+   },
+   "valid": true,
+   "text_chars": 81300,
+   "pages": 11,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-003464",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 43.2,
+   "tokens": {
+    "input_tokens": 20761,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1346,
+    "reasoning_output_tokens": 1034
+   },
+   "valid": true,
+   "text_chars": 25151,
+   "pages": 4,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-003445",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 52.4,
+   "tokens": {
+    "input_tokens": 26859,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 835,
+    "reasoning_output_tokens": 516
+   },
+   "valid": true,
+   "text_chars": 62995,
+   "pages": 9,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-003540",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 37.4,
+   "tokens": {
+    "input_tokens": 35167,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1374,
+    "reasoning_output_tokens": 1034
+   },
+   "valid": true,
+   "text_chars": 96892,
+   "pages": 15,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-003525",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 50.2,
+   "tokens": {
+    "input_tokens": 29349,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1467,
+    "reasoning_output_tokens": 1157
+   },
+   "valid": true,
+   "text_chars": 65744,
+   "pages": 11,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-003426",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 68.7,
+   "tokens": {
+    "input_tokens": 28776,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2272,
+    "reasoning_output_tokens": 1992
+   },
+   "valid": true,
+   "text_chars": 67290,
+   "pages": 10,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-003434",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 70.7,
+   "tokens": {
+    "input_tokens": 32543,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2337,
+    "reasoning_output_tokens": 2040
+   },
+   "valid": true,
+   "text_chars": 78174,
+   "pages": 14,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-003683",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 42.6,
+   "tokens": {
+    "input_tokens": 26081,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1755,
+    "reasoning_output_tokens": 1481
+   },
+   "valid": true,
+   "text_chars": 45943,
+   "pages": 10,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-003625",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 56.9,
+   "tokens": {
+    "input_tokens": 34656,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2471,
+    "reasoning_output_tokens": 2132
+   },
+   "valid": true,
+   "text_chars": 80276,
+   "pages": 15,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-003695",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 51.6,
+   "tokens": {
+    "input_tokens": 32169,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1712,
+    "reasoning_output_tokens": 1386
+   },
+   "valid": true,
+   "text_chars": 76285,
+   "pages": 13,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-003753",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 44.7,
+   "tokens": {
+    "input_tokens": 28517,
+    "cached_input_tokens": 12416,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 815,
+    "reasoning_output_tokens": 516
+   },
+   "valid": true,
+   "text_chars": 62696,
+   "pages": 9,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-003698",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 51.3,
+   "tokens": {
+    "input_tokens": 32441,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1802,
+    "reasoning_output_tokens": 1552
+   },
+   "valid": true,
+   "text_chars": 91541,
+   "pages": 17,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-003744",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 58.4,
+   "tokens": {
+    "input_tokens": 25034,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1092,
+    "reasoning_output_tokens": 872
+   },
+   "valid": true,
+   "text_chars": 46256,
+   "pages": 7,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-003778",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 53.6,
+   "tokens": {
+    "input_tokens": 25412,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1109,
+    "reasoning_output_tokens": 842
+   },
+   "valid": true,
+   "text_chars": 60525,
+   "pages": 8,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-003828",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 49.1,
+   "tokens": {
+    "input_tokens": 41260,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1128,
+    "reasoning_output_tokens": 887
+   },
+   "valid": true,
+   "text_chars": 149047,
+   "pages": 26,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-003844",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 56.2,
+   "tokens": {
+    "input_tokens": 36574,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1680,
+    "reasoning_output_tokens": 1354
+   },
+   "valid": true,
+   "text_chars": 89627,
+   "pages": 12,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-004110",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 29.7,
+   "tokens": {
+    "input_tokens": 24796,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1104,
+    "reasoning_output_tokens": 864
+   },
+   "valid": true,
+   "text_chars": 45596,
+   "pages": 6,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-003938",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 73.9,
+   "tokens": {
+    "input_tokens": 26241,
+    "cached_input_tokens": 12416,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2426,
+    "reasoning_output_tokens": 2070
+   },
+   "valid": true,
+   "text_chars": 58496,
+   "pages": 9,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-004011",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 46.1,
+   "tokens": {
+    "input_tokens": 29400,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1935,
+    "reasoning_output_tokens": 1656
+   },
+   "valid": true,
+   "text_chars": 65603,
+   "pages": 11,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-004136",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 42.6,
+   "tokens": {
+    "input_tokens": 27884,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2085,
+    "reasoning_output_tokens": 1804
+   },
+   "valid": true,
+   "text_chars": 54093,
+   "pages": 9,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-004226",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 29.9,
+   "tokens": {
+    "input_tokens": 26104,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 664,
+    "reasoning_output_tokens": 420
+   },
+   "valid": true,
+   "text_chars": 56676,
+   "pages": 11,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-004210",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 47.7,
+   "tokens": {
+    "input_tokens": 37732,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1359,
+    "reasoning_output_tokens": 1066
+   },
+   "valid": true,
+   "text_chars": 121551,
+   "pages": 23,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-003951",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 63.6,
+   "tokens": {
+    "input_tokens": 33416,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2338,
+    "reasoning_output_tokens": 2070
+   },
+   "valid": true,
+   "text_chars": 76348,
+   "pages": 11,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-004152",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 53.2,
+   "tokens": {
+    "input_tokens": 33686,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2518,
+    "reasoning_output_tokens": 2209
+   },
+   "valid": true,
+   "text_chars": 115524,
+   "pages": 17,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-004250",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 19.6,
+   "tokens": {
+    "input_tokens": 23858,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 767,
+    "reasoning_output_tokens": 515
+   },
+   "valid": true,
+   "text_chars": 44267,
+   "pages": 8,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-004243",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 54.3,
+   "tokens": {
+    "input_tokens": 26449,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2084,
+    "reasoning_output_tokens": 1745
+   },
+   "valid": true,
+   "text_chars": 57012,
+   "pages": 7,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-004252",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 40.3,
+   "tokens": {
+    "input_tokens": 39682,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1306,
+    "reasoning_output_tokens": 1034
+   },
+   "valid": true,
+   "text_chars": 110743,
+   "pages": 17,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-004246",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 47.1,
+   "tokens": {
+    "input_tokens": 32110,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1566,
+    "reasoning_output_tokens": 1252
+   },
+   "valid": true,
+   "text_chars": 114501,
+   "pages": 13,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-004308",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 39.2,
+   "tokens": {
+    "input_tokens": 31478,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1194,
+    "reasoning_output_tokens": 908
+   },
+   "valid": true,
+   "text_chars": 76080,
+   "pages": 11,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-004434",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 41.1,
+   "tokens": {
+    "input_tokens": 31995,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1202,
+    "reasoning_output_tokens": 921
+   },
+   "valid": true,
+   "text_chars": 76685,
+   "pages": 13,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-004336",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 54.8,
+   "tokens": {
+    "input_tokens": 30935,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1981,
+    "reasoning_output_tokens": 1707
+   },
+   "valid": true,
+   "text_chars": 72418,
+   "pages": 11,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-004414",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 53.4,
+   "tokens": {
+    "input_tokens": 35451,
+    "cached_input_tokens": 12416,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1827,
+    "reasoning_output_tokens": 1502
+   },
+   "valid": true,
+   "text_chars": 97036,
+   "pages": 19,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-004544",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 43.1,
+   "tokens": {
+    "input_tokens": 33639,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1314,
+    "reasoning_output_tokens": 1034
+   },
+   "valid": true,
+   "text_chars": 85306,
+   "pages": 11,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-004385",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 68.6,
+   "tokens": {
+    "input_tokens": 41992,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2688,
+    "reasoning_output_tokens": 2364
+   },
+   "valid": true,
+   "text_chars": 150288,
+   "pages": 19,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-004786",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 29.1,
+   "tokens": {
+    "input_tokens": 31199,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 822,
+    "reasoning_output_tokens": 516
+   },
+   "valid": true,
+   "text_chars": 73776,
+   "pages": 12,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-004586",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 45.3,
+   "tokens": {
+    "input_tokens": 24504,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1608,
+    "reasoning_output_tokens": 1348
+   },
+   "valid": true,
+   "text_chars": 43065,
+   "pages": 7,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-004712",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 46.2,
+   "tokens": {
+    "input_tokens": 25854,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1129,
+    "reasoning_output_tokens": 866
+   },
+   "valid": true,
+   "text_chars": 47637,
+   "pages": 10,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-004648",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 56.1,
+   "tokens": {
+    "input_tokens": 34432,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2035,
+    "reasoning_output_tokens": 1661
+   },
+   "valid": true,
+   "text_chars": 85582,
+   "pages": 13,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-004886",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 34.5,
+   "tokens": {
+    "input_tokens": 27942,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1666,
+    "reasoning_output_tokens": 1392
+   },
+   "valid": true,
+   "text_chars": 60511,
+   "pages": 10,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-004826",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 47.6,
+   "tokens": {
+    "input_tokens": 29273,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2352,
+    "reasoning_output_tokens": 2070
+   },
+   "valid": true,
+   "text_chars": 67482,
+   "pages": 11,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005165",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 35.6,
+   "tokens": {
+    "input_tokens": 27571,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1326,
+    "reasoning_output_tokens": 1034
+   },
+   "valid": true,
+   "text_chars": 57589,
+   "pages": 8,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005168",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 37.6,
+   "tokens": {
+    "input_tokens": 27987,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1073,
+    "reasoning_output_tokens": 764
+   },
+   "valid": true,
+   "text_chars": 85066,
+   "pages": 10,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005045",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 45.4,
+   "tokens": {
+    "input_tokens": 33041,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2042,
+    "reasoning_output_tokens": 1691
+   },
+   "valid": true,
+   "text_chars": 88191,
+   "pages": 13,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005384",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 30.9,
+   "tokens": {
+    "input_tokens": 25949,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1266,
+    "reasoning_output_tokens": 1000
+   },
+   "valid": true,
+   "text_chars": 47800,
+   "pages": 7,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005385",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 32.2,
+   "tokens": {
+    "input_tokens": 30039,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 888,
+    "reasoning_output_tokens": 516
+   },
+   "valid": true,
+   "text_chars": 64032,
+   "pages": 11,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005226",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 48.7,
+   "tokens": {
+    "input_tokens": 27515,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1951,
+    "reasoning_output_tokens": 1552
+   },
+   "valid": true,
+   "text_chars": 62988,
+   "pages": 10,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005259",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 56.5,
+   "tokens": {
+    "input_tokens": 32168,
+    "cached_input_tokens": 12416,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1757,
+    "reasoning_output_tokens": 1509
+   },
+   "valid": true,
+   "text_chars": 72946,
+   "pages": 10,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005424",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 34.5,
+   "tokens": {
+    "input_tokens": 26929,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1166,
+    "reasoning_output_tokens": 889
+   },
+   "valid": true,
+   "text_chars": 65387,
+   "pages": 14,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005465",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 37.1,
+   "tokens": {
+    "input_tokens": 33198,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 732,
+    "reasoning_output_tokens": 487
+   },
+   "valid": true,
+   "text_chars": 89592,
+   "pages": 11,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005450",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 47.9,
+   "tokens": {
+    "input_tokens": 37500,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1880,
+    "reasoning_output_tokens": 1552
+   },
+   "valid": true,
+   "text_chars": 101905,
+   "pages": 13,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005458",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 44.7,
+   "tokens": {
+    "input_tokens": 35224,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1407,
+    "reasoning_output_tokens": 1126
+   },
+   "valid": true,
+   "text_chars": 103353,
+   "pages": 18,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005605",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 36.2,
+   "tokens": {
+    "input_tokens": 32270,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1062,
+    "reasoning_output_tokens": 735
+   },
+   "valid": true,
+   "text_chars": 76852,
+   "pages": 13,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005719",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 32.9,
+   "tokens": {
+    "input_tokens": 31217,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 915,
+    "reasoning_output_tokens": 685
+   },
+   "valid": true,
+   "text_chars": 71727,
+   "pages": 14,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005488",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 55.2,
+   "tokens": {
+    "input_tokens": 25944,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1577,
+    "reasoning_output_tokens": 1330
+   },
+   "valid": true,
+   "text_chars": 49054,
+   "pages": 10,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005624",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 52.2,
+   "tokens": {
+    "input_tokens": 34436,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1853,
+    "reasoning_output_tokens": 1573
+   },
+   "valid": true,
+   "text_chars": 79824,
+   "pages": 15,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005516",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 70.0,
+   "tokens": {
+    "input_tokens": 31157,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2539,
+    "reasoning_output_tokens": 2257
+   },
+   "valid": true,
+   "text_chars": 74961,
+   "pages": 10,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005914",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 34.8,
+   "tokens": {
+    "input_tokens": 29906,
+    "cached_input_tokens": 12672,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 761,
+    "reasoning_output_tokens": 516
+   },
+   "valid": true,
+   "text_chars": 65006,
+   "pages": 10,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005773",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 56.8,
+   "tokens": {
+    "input_tokens": 29940,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1780,
+    "reasoning_output_tokens": 1533
+   },
+   "valid": true,
+   "text_chars": 98452,
+   "pages": 12,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005905",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 52.7,
+   "tokens": {
+    "input_tokens": 45503,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1665,
+    "reasoning_output_tokens": 1363
+   },
+   "valid": true,
+   "text_chars": 141019,
+   "pages": 22,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005727",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 65.0,
+   "tokens": {
+    "input_tokens": 31794,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1895,
+    "reasoning_output_tokens": 1646
+   },
+   "valid": true,
+   "text_chars": 68341,
+   "pages": 11,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005739",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 67.7,
+   "tokens": {
+    "input_tokens": 30902,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2047,
+    "reasoning_output_tokens": 1741
+   },
+   "valid": true,
+   "text_chars": 70509,
+   "pages": 10,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005931",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 51.7,
+   "tokens": {
+    "input_tokens": 29803,
+    "cached_input_tokens": 12416,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2190,
+    "reasoning_output_tokens": 1900
+   },
+   "valid": true,
+   "text_chars": 68312,
+   "pages": 11,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005939",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 50.3,
+   "tokens": {
+    "input_tokens": 35019,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1617,
+    "reasoning_output_tokens": 1347
+   },
+   "valid": true,
+   "text_chars": 87465,
+   "pages": 14,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005971",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 31.8,
+   "tokens": {
+    "input_tokens": 28534,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 785,
+    "reasoning_output_tokens": 516
+   },
+   "valid": true,
+   "text_chars": 74701,
+   "pages": 10,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005966",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 44.5,
+   "tokens": {
+    "input_tokens": 33850,
+    "cached_input_tokens": 12416,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1028,
+    "reasoning_output_tokens": 742
+   },
+   "valid": true,
+   "text_chars": 114731,
+   "pages": 20,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005950",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 56.8,
+   "tokens": {
+    "input_tokens": 32876,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1735,
+    "reasoning_output_tokens": 1450
+   },
+   "valid": true,
+   "text_chars": 79291,
+   "pages": 18,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-005991",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 45.8,
+   "tokens": {
+    "input_tokens": 25565,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1601,
+    "reasoning_output_tokens": 1288
+   },
+   "valid": true,
+   "text_chars": 49421,
+   "pages": 7,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006018",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 52.3,
+   "tokens": {
+    "input_tokens": 25480,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1826,
+    "reasoning_output_tokens": 1515
+   },
+   "valid": true,
+   "text_chars": 52294,
+   "pages": 11,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006034",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 44.7,
+   "tokens": {
+    "input_tokens": 31404,
+    "cached_input_tokens": 12416,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1496,
+    "reasoning_output_tokens": 1253
+   },
+   "valid": true,
+   "text_chars": 80914,
+   "pages": 12,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006024",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 52.7,
+   "tokens": {
+    "input_tokens": 33420,
+    "cached_input_tokens": 12416,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1814,
+    "reasoning_output_tokens": 1490
+   },
+   "valid": true,
+   "text_chars": 85690,
+   "pages": 14,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006144",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 40.8,
+   "tokens": {
+    "input_tokens": 30586,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1072,
+    "reasoning_output_tokens": 777
+   },
+   "valid": true,
+   "text_chars": 68343,
+   "pages": 13,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006218",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 39.6,
+   "tokens": {
+    "input_tokens": 31734,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1532,
+    "reasoning_output_tokens": 1232
+   },
+   "valid": true,
+   "text_chars": 90174,
+   "pages": 15,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006242",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 37.6,
+   "tokens": {
+    "input_tokens": 31304,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1241,
+    "reasoning_output_tokens": 979
+   },
+   "valid": true,
+   "text_chars": 73555,
+   "pages": 10,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006250",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 33.1,
+   "tokens": {
+    "input_tokens": 41820,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1189,
+    "reasoning_output_tokens": 943
+   },
+   "valid": true,
+   "text_chars": 200048,
+   "pages": 29,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006263",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 28.2,
+   "tokens": {
+    "input_tokens": 36468,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 743,
+    "reasoning_output_tokens": 418
+   },
+   "valid": true,
+   "text_chars": 92818,
+   "pages": 15,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006233",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 65.1,
+   "tokens": {
+    "input_tokens": 30149,
+    "cached_input_tokens": 12416,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 3213,
+    "reasoning_output_tokens": 2948
+   },
+   "valid": true,
+   "text_chars": 89797,
+   "pages": 20,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006275",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 52.9,
+   "tokens": {
+    "input_tokens": 32871,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2137,
+    "reasoning_output_tokens": 1832
+   },
+   "valid": true,
+   "text_chars": 104177,
+   "pages": 12,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006321",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 47.8,
+   "tokens": {
+    "input_tokens": 31864,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1608,
+    "reasoning_output_tokens": 1303
+   },
+   "valid": true,
+   "text_chars": 79840,
+   "pages": 12,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006399",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 38.4,
+   "tokens": {
+    "input_tokens": 29460,
+    "cached_input_tokens": 12416,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1370,
+    "reasoning_output_tokens": 1034
+   },
+   "valid": true,
+   "text_chars": 75812,
+   "pages": 10,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006416",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 38.2,
+   "tokens": {
+    "input_tokens": 37894,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1869,
+    "reasoning_output_tokens": 1570
+   },
+   "valid": true,
+   "text_chars": 90469,
+   "pages": 15,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006342",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 49.4,
+   "tokens": {
+    "input_tokens": 32320,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1648,
+    "reasoning_output_tokens": 1399
+   },
+   "valid": true,
+   "text_chars": 75581,
+   "pages": 10,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006319",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 60.8,
+   "tokens": {
+    "input_tokens": 34125,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2410,
+    "reasoning_output_tokens": 2098
+   },
+   "valid": true,
+   "text_chars": 90941,
+   "pages": 13,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006356",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 50.5,
+   "tokens": {
+    "input_tokens": 21168,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2115,
+    "reasoning_output_tokens": 1867
+   },
+   "valid": true,
+   "text_chars": 25612,
+   "pages": 5,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006430",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 31.9,
+   "tokens": {
+    "input_tokens": 34878,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1305,
+    "reasoning_output_tokens": 1034
+   },
+   "valid": true,
+   "text_chars": 85943,
+   "pages": 18,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006450",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 33.4,
+   "tokens": {
+    "input_tokens": 38282,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1176,
+    "reasoning_output_tokens": 890
+   },
+   "valid": true,
+   "text_chars": 103711,
+   "pages": 21,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006534",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 32.0,
+   "tokens": {
+    "input_tokens": 38907,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 850,
+    "reasoning_output_tokens": 516
+   },
+   "valid": true,
+   "text_chars": 155972,
+   "pages": 12,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006539",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 37.8,
+   "tokens": {
+    "input_tokens": 29330,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1394,
+    "reasoning_output_tokens": 1034
+   },
+   "valid": true,
+   "text_chars": 66219,
+   "pages": 11,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006684",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 40.7,
+   "tokens": {
+    "input_tokens": 29006,
+    "cached_input_tokens": 12416,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 808,
+    "reasoning_output_tokens": 565
+   },
+   "valid": true,
+   "text_chars": 63303,
+   "pages": 15,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006440",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 69.3,
+   "tokens": {
+    "input_tokens": 41529,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 3179,
+    "reasoning_output_tokens": 2904
+   },
+   "valid": true,
+   "text_chars": 147377,
+   "pages": 20,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006554",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 58.0,
+   "tokens": {
+    "input_tokens": 36946,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2232,
+    "reasoning_output_tokens": 1934
+   },
+   "valid": true,
+   "text_chars": 101119,
+   "pages": 13,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006567",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 56.4,
+   "tokens": {
+    "input_tokens": 30124,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1606,
+    "reasoning_output_tokens": 1351
+   },
+   "valid": true,
+   "text_chars": 70079,
+   "pages": 14,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006687",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 37.5,
+   "tokens": {
+    "input_tokens": 31891,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 947,
+    "reasoning_output_tokens": 685
+   },
+   "valid": true,
+   "text_chars": 76009,
+   "pages": 15,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006697",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 39.4,
+   "tokens": {
+    "input_tokens": 34460,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1242,
+    "reasoning_output_tokens": 967
+   },
+   "valid": true,
+   "text_chars": 149383,
+   "pages": 14,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006506",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 73.9,
+   "tokens": {
+    "input_tokens": 38318,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2811,
+    "reasoning_output_tokens": 2581
+   },
+   "valid": true,
+   "text_chars": 130400,
+   "pages": 23,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006749",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 33.3,
+   "tokens": {
+    "input_tokens": 37844,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 889,
+    "reasoning_output_tokens": 614
+   },
+   "valid": true,
+   "text_chars": 99044,
+   "pages": 16,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006754",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 37.7,
+   "tokens": {
+    "input_tokens": 31896,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 939,
+    "reasoning_output_tokens": 653
+   },
+   "valid": true,
+   "text_chars": 101591,
+   "pages": 14,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006751",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 38.7,
+   "tokens": {
+    "input_tokens": 30964,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 765,
+    "reasoning_output_tokens": 516
+   },
+   "valid": true,
+   "text_chars": 84665,
+   "pages": 12,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006787",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 45.8,
+   "tokens": {
+    "input_tokens": 20359,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1249,
+    "reasoning_output_tokens": 1034
+   },
+   "valid": true,
+   "text_chars": 19396,
+   "pages": 5,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006810",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 38.2,
+   "tokens": {
+    "input_tokens": 31484,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1509,
+    "reasoning_output_tokens": 1166
+   },
+   "valid": true,
+   "text_chars": 75360,
+   "pages": 20,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006699",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 71.1,
+   "tokens": {
+    "input_tokens": 31336,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2769,
+    "reasoning_output_tokens": 2548
+   },
+   "valid": true,
+   "text_chars": 76778,
+   "pages": 14,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006843",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 47.3,
+   "tokens": {
+    "input_tokens": 35609,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1294,
+    "reasoning_output_tokens": 1001
+   },
+   "valid": true,
+   "text_chars": 200028,
+   "pages": 25,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006928",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 31.0,
+   "tokens": {
+    "input_tokens": 27383,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 733,
+    "reasoning_output_tokens": 418
+   },
+   "valid": true,
+   "text_chars": 62015,
+   "pages": 9,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006779",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 72.6,
+   "tokens": {
+    "input_tokens": 39429,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 3374,
+    "reasoning_output_tokens": 3106
+   },
+   "valid": true,
+   "text_chars": 135993,
+   "pages": 18,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006935",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 49.1,
+   "tokens": {
+    "input_tokens": 29528,
+    "cached_input_tokens": 12672,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1574,
+    "reasoning_output_tokens": 1290
+   },
+   "valid": true,
+   "text_chars": 65210,
+   "pages": 10,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006883",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 62.9,
+   "tokens": {
+    "input_tokens": 42604,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2357,
+    "reasoning_output_tokens": 2070
+   },
+   "valid": true,
+   "text_chars": 134931,
+   "pages": 19,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006955",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 47.9,
+   "tokens": {
+    "input_tokens": 38834,
+    "cached_input_tokens": 12416,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 855,
+    "reasoning_output_tokens": 516
+   },
+   "valid": true,
+   "text_chars": 109948,
+   "pages": 16,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-007011",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 49.8,
+   "tokens": {
+    "input_tokens": 32211,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1484,
+    "reasoning_output_tokens": 1203
+   },
+   "valid": true,
+   "text_chars": 77050,
+   "pages": 12,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-006942",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 63.2,
+   "tokens": {
+    "input_tokens": 27285,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2346,
+    "reasoning_output_tokens": 2070
+   },
+   "valid": true,
+   "text_chars": 49762,
+   "pages": 10,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-007098",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 42.5,
+   "tokens": {
+    "input_tokens": 36308,
+    "cached_input_tokens": 12416,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 983,
+    "reasoning_output_tokens": 702
+   },
+   "valid": true,
+   "text_chars": 107712,
+   "pages": 13,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-007088",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 50.9,
+   "tokens": {
+    "input_tokens": 26896,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1600,
+    "reasoning_output_tokens": 1372
+   },
+   "valid": true,
+   "text_chars": 63617,
+   "pages": 8,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-007174",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 32.3,
+   "tokens": {
+    "input_tokens": 26395,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1045,
+    "reasoning_output_tokens": 777
+   },
+   "valid": true,
+   "text_chars": 44786,
+   "pages": 9,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-007021",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 72.5,
+   "tokens": {
+    "input_tokens": 34862,
+    "cached_input_tokens": 12416,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2399,
+    "reasoning_output_tokens": 2070
+   },
+   "valid": true,
+   "text_chars": 114792,
+   "pages": 16,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-007168",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 45.3,
+   "tokens": {
+    "input_tokens": 33813,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1595,
+    "reasoning_output_tokens": 1333
+   },
+   "valid": true,
+   "text_chars": 84096,
+   "pages": 15,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-007237",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 43.9,
+   "tokens": {
+    "input_tokens": 27405,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1781,
+    "reasoning_output_tokens": 1524
+   },
+   "valid": true,
+   "text_chars": 58355,
+   "pages": 12,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-008213",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 38.1,
+   "tokens": {
+    "input_tokens": 33599,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 750,
+    "reasoning_output_tokens": 503
+   },
+   "valid": true,
+   "text_chars": 78777,
+   "pages": 14,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-008505",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 42.1,
+   "tokens": {
+    "input_tokens": 40463,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 919,
+    "reasoning_output_tokens": 674
+   },
+   "valid": true,
+   "text_chars": 115267,
+   "pages": 21,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-007328",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 59.4,
+   "tokens": {
+    "input_tokens": 33141,
+    "cached_input_tokens": 12416,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1535,
+    "reasoning_output_tokens": 1269
+   },
+   "valid": true,
+   "text_chars": 85870,
+   "pages": 11,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-007256",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 76.2,
+   "tokens": {
+    "input_tokens": 45789,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2375,
+    "reasoning_output_tokens": 2070
+   },
+   "valid": true,
+   "text_chars": 138817,
+   "pages": 21,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-009465",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 53.9,
+   "tokens": {
+    "input_tokens": 26745,
+    "cached_input_tokens": 12416,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2158,
+    "reasoning_output_tokens": 1863
+   },
+   "valid": true,
+   "text_chars": 57640,
+   "pages": 9,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-007930",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 79.4,
+   "tokens": {
+    "input_tokens": 31188,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 3083,
+    "reasoning_output_tokens": 2857
+   },
+   "valid": true,
+   "text_chars": 74745,
+   "pages": 13,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-010204",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 96.7,
+   "tokens": {
+    "input_tokens": 28270,
+    "cached_input_tokens": 12416,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 4453,
+    "reasoning_output_tokens": 4142
+   },
+   "valid": true,
+   "text_chars": 63360,
+   "pages": 9,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-007132",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 38.2,
+   "tokens": {
+    "input_tokens": 30811,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1863,
+    "reasoning_output_tokens": 1552
+   },
+   "valid": true,
+   "text_chars": 84473,
+   "pages": 11,
+   "flagged_for_a": false
+  },
+  {
+   "record_id": "FS-007261",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+   "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+   "seconds": 42.3,
+   "tokens": {
+    "input_tokens": 45667,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1652,
+    "reasoning_output_tokens": 1413
+   },
+   "valid": true,
+   "text_chars": 142443,
+   "pages": 18,
+   "flagged_for_a": false
+  }
+ ]
+}

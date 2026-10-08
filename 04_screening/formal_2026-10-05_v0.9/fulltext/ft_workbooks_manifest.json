@@ -71,7 +71,8 @@
   "workbooks": {
     "B": {
       "path": "04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_B.xlsx",
-      "sha256_blank": "95649336fbb78a68d2cf5faad82b9ea4ceca08cfaf50d5906bc91310c5a5ede7"
+      "sha256_blank": "95649336fbb78a68d2cf5faad82b9ea4ceca08cfaf50d5906bc91310c5a5ede7",
+      "sha256_after_prefill": "e82f610cd41d1f51836fadd01a5a6e33b544aba4beab5aca6458efb0a9926dac"
     },
     "C": {
       "path": "04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_C.xlsx",
@@ -82,5 +83,36 @@
     "B": null,
     "C": null
   },
-  "note": "Workbooks are git-ignored (titles only, but reviewer comments may quote full texts). D records the SHA-256 of each locked workbook under 'locks' and commits it before merging."
+  "note": "Workbooks are git-ignored (titles only, but reviewer comments may quote full texts). D records the SHA-256 of each locked workbook under 'locks' and commits it before merging.",
+  "prefill": {
+    "generated_at": "2026-10-08T13:24:59+00:00",
+    "script": "scripts/ft_prefill_to_workbook.py",
+    "model": "gpt-6-sol",
+    "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
+    "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
+    "n_retrieved_oa": 141,
+    "n_valid_runs": 141,
+    "n_written": 141,
+    "n_runs_without_matching_row": 0,
+    "n_flagged_for_a": 0,
+    "disposition_counts": {
+      "AWAITING_CLASSIFICATION": 45,
+      "INCLUDE_A_AND_B": 35,
+      "EXCLUDE": 7,
+      "INCLUDE_A": 48,
+      "RETAIN_BACKGROUND": 4,
+      "INCLUDE_B": 2
+    },
+    "age_rule_check_counts": {
+      "mean_minus_2SD_below_18_unresolved": 40,
+      "adults_confirmed": 95,
+      "not_applicable": 5,
+      "under_18_included": 1
+    },
+    "validation_element_confirmed_counts": {
+      "yes": 123,
+      "no": 18
+    },
+    "note": "Reviewer B's your_* columns were pre-filled from GPT-6 Sol's full-text read; unchanged cells after B's review are B's decision of record. The hidden _prefill sheet in ft_screen_B.xlsx holds the original AI values for the override-rate check. ft_screen_C.xlsx (GLM-5.3, reviewer C) is untouched by this script."
+  }
 }
