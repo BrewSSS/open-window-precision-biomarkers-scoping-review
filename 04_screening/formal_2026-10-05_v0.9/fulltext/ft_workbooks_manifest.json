@@ -1,0 +1,86 @@
+{
+  "generated_at": "2026-10-08T06:19:44+00:00",
+  "script": "scripts/build_fulltext_workbooks.py",
+  "input": {
+    "path": "04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_4298.csv",
+    "sha256": "eafa484dab9c527ed9ecf73f04cfaeb941ef37840dc57891ac197bec973c79c3",
+    "filters": [
+      "final_layer=V"
+    ]
+  },
+  "retrieval_log": null,
+  "n_records": 577,
+  "record_ids_sha256": "021d216e16628474f488e747a2e5f043c977d2c89622ed7af6816036501f7170",
+  "counts": {
+    "retrieval_status": {
+      "not_yet_sought": 577
+    },
+    "missing_doi": 41,
+    "missing_pmid": 59
+  },
+  "columns": [
+    "record_id",
+    "title",
+    "journal",
+    "year",
+    "doi",
+    "pmid",
+    "retrieval_status",
+    "pdf_path",
+    "abstract_E5_subtypes",
+    "your_disposition",
+    "your_primary_code",
+    "your_secondary_notes",
+    "your_age_rule_check",
+    "your_validation_element_confirmed",
+    "your_comment"
+  ],
+  "dropdowns": {
+    "your_disposition": [
+      "INCLUDE_A",
+      "INCLUDE_B",
+      "INCLUDE_A_AND_B",
+      "RETAIN_BACKGROUND",
+      "EXCLUDE",
+      "AWAITING_CLASSIFICATION",
+      "NOT_RETRIEVED",
+      "DUPLICATE_REPORT"
+    ],
+    "your_primary_code": [
+      "FT01_SOURCE_TYPE_NOT_CORE",
+      "FT02_NOT_ORIGINAL_HUMAN_RESEARCH",
+      "FT03_POPULATION_NOT_ELIGIBLE",
+      "FT04_NO_QUALIFYING_EXERCISE_EXPOSURE",
+      "FT05_NO_POST_CESSATION_SAMPLE",
+      "FT06_NO_BASELINE_OR_SUITABLE_COMPARATOR",
+      "FT07_NO_ELIGIBLE_IMMUNE_LINK",
+      "FT08_MIXED_INTERVENTION_NOT_SEPARABLE"
+    ],
+    "your_age_rule_check": [
+      "adults_confirmed",
+      "mean_minus_2SD_below_18_unresolved",
+      "under_18_included",
+      "not_applicable"
+    ],
+    "your_validation_element_confirmed": [
+      "yes",
+      "no",
+      "unclear"
+    ]
+  },
+  "workbooks": {
+    "B": {
+      "path": "04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_B.xlsx",
+      "sha256_blank": "f330935a1793295a153c5bea7065830355e277f8de1504ecee08138261640ced"
+    },
+    "C": {
+      "path": "04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_C.xlsx",
+      "sha256_blank": "713783f5502d288745b9763982409ba074742d3a641acf934139495bbc74f9ed"
+    }
+  },
+  "locks": {
+    "B": null,
+    "C": null
+  },
+  "note": "Workbooks are git-ignored (titles only, but reviewer comments may quote full texts). D records the SHA-256 of each locked workbook under 'locks' and commits it before merging."
+}

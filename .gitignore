@@ -129,3 +129,13 @@ __pycache__/
 # committed, any dated run. Only a sha256 manifest (names/sizes/hashes, no content) is tracked.
 fulltext_requests/abstract_lookup_*/*
 !fulltext_requests/abstract_lookup_*/MANIFEST.json
+
+# Full-text screening workbooks (scripts/build_fulltext_workbooks.py): reviewer comments may quote full texts,
+# and PDFs/supplements are publisher content. Deny all, then allow the manifest and the merge outputs
+# (scripts/merge_fulltext_screening.py; titles, codes and counts only).
+04_screening/formal_*/fulltext/*
+!04_screening/formal_*/fulltext/ft_workbooks_manifest.json
+!04_screening/formal_*/fulltext/ft_merged.csv
+!04_screening/formal_*/fulltext/ft_conflicts_for_D.csv
+!04_screening/formal_*/fulltext/ft_merge_summary.json
+!04_screening/formal_*/fulltext/ft_merge_summary.md

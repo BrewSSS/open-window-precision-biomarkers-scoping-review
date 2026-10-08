@@ -538,6 +538,37 @@
       }
     ]
   },
+  "abstract_level_map_layer_PRE-008": {
+    "amendment": "PRE-008 decision 1",
+    "status": "abstract-level chart built 2026-10-08 from AI triage elements; human verification of the M/X samples pending (re-run with --human-merged after merge)",
+    "unit": "record (report) in final layer M; no cohort linkage, no full text",
+    "files": {
+      "chart": "06_synthesis/map_layer_abstract_level.csv",
+      "summary": "06_synthesis/map_layer_summary.md",
+      "builder": "scripts/build_map_layer.py"
+    },
+    "fields": [
+      "record_id",
+      "title",
+      "journal",
+      "year",
+      "decade",
+      "E1_exposure_class",
+      "E2_sampling",
+      "E3_marker_terms",
+      "E3_marker_families",
+      "study_type_hint",
+      "E4_population_class",
+      "E5_validation_element",
+      "source",
+      "triage_file",
+      "human_scope",
+      "human_verified"
+    ],
+    "provenance": "E1-E5 from ai_triage/final_triage_4298.csv and the batch-235/236 supplements (later supplement supersedes); source = first-pass agreed (two model families) or adjudicated (prompt v1.2); E3_marker_families keyword-mapped from the free-text E3 terms to the marker_family vocabulary of data_dictionary.json (display aid, not a charting decision); human_verified from the PRE-008 human samples once merged",
+    "use": "separately labelled supplementary landscape: marker families x exposure class x decade, study-type and population mix",
+    "limitation": "AI-read titles/abstracts only; 10% seeded human sample; no timing bins, effects, cohorts or precision domains; never merged with full-text denominators or the validation-readiness maps; no abstracts or quotes stored"
+  },
   "synthesis_rules": [
     "Count independent cohorts primarily and reports separately; assay records, analytes, platforms, cells, timepoints, and repeated samples are not independent evidence.",
     "A and B are separate non-exclusive views; B requires the same immune-related marker in the same individuals after at least two identifiable bouts, with a recoverable sample-to-bout relation and an interpretable baseline/comparator; report overlap and use unique cohort union for any overall total.",
