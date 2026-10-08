@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T06:54:46+00:00",
+  "generated_at": "2026-10-08T07:16:28+00:00",
   "script": "scripts/build_fulltext_workbooks.py",
   "input": {
     "path": "04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_4298.csv",
@@ -71,11 +71,11 @@
   "workbooks": {
     "B": {
       "path": "04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_B.xlsx",
-      "sha256_blank": "8c6b4c16bd074f6aab5c14f10868e297aecd54fa4ec13610dd8f8cf9030b7804"
+      "sha256_blank": "95649336fbb78a68d2cf5faad82b9ea4ceca08cfaf50d5906bc91310c5a5ede7"
     },
     "C": {
       "path": "04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_C.xlsx",
-      "sha256_blank": "07249165e3a1114aa8e2a0f9724a5fac30fa105b748962bcc3538f45742307cb"
+      "sha256_blank": "d311d57f9f44e98a05133fe1b8ef892822af4b46b48b7025ce3de4af14c777dc"
     }
   },
   "locks": {
