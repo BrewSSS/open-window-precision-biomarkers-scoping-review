@@ -264,6 +264,64 @@ def compare_rows(ra: dict, rb: dict) -> tuple[int, int]:
     return agree, disagree
 
 
+def report_rowcounts(parsed: dict) -> dict:
+    return {t: len(rows) for t, rows in (parsed.get("tables") or {}).items()}
+
+
+def cmd_cross(args):
+    """PRE-009 2026-10-09: generalises cmd_xhigh to any two runs/<family> dirs (not just
+    sol/sol_xhigh). --family-a is the reference (e.g. "sol"); --family-b is the candidate
+    (e.g. "glm_nothink"). Gives per-report validity/completeness (row counts per table,
+    candidate vs reference) always; when both sides are valid for a report, also gives
+    content-key row alignment (row_align_key, same keys as compare_extraction.py's PRE-004
+    C13), row recall/precision with the reference as denominator/numerator base
+    (labelled "A as reference, not ground truth"), and cell agreement on matched rows."""
+    refs = args.record_id or sorted(p.stem for p in (RUNS_DIR / args.family_a).glob("*.json")
+                                     if p.parent == RUNS_DIR / args.family_a)
+    reports = {}
+    n_both_valid = 0
+    for ref in refs:
+        pa, pb = RUNS_DIR / args.family_a / f"{ref}.json", RUNS_DIR / args.family_b / f"{ref}.json"
+        ra = json.loads(pa.read_text(encoding="utf-8")) if pa.exists() else {}
+        rb = json.loads(pb.read_text(encoding="utf-8")) if pb.exists() else {}
+        entry = {"a_valid": ra.get("valid", False), "b_valid": rb.get("valid", False),
+                 "a_seconds": ra.get("t_completed_s"), "b_seconds": rb.get("seconds") or rb.get("t_completed_s"),
+                 "a_attempts": ra.get("attempts"), "b_attempts": rb.get("attempts"),
+                 "a_tokens": ra.get("usage"), "b_tokens": rb.get("usage"),
+                 "b_error_first": (rb.get("validation_errors") or [None])[0] if rb else "no run file"}
+        if ra.get("valid") and ra.get("parsed"):
+            entry["a_rows_per_table"] = report_rowcounts(ra["parsed"])
+        if rb.get("valid") and rb.get("parsed"):
+            entry["b_rows_per_table"] = report_rowcounts(rb["parsed"])
+        if ra.get("valid") and ra.get("parsed") and rb.get("valid") and rb.get("parsed"):
+            n_both_valid += 1
+            pA, pB = ra["parsed"]["tables"], rb["parsed"]["tables"]
+            tables = {}
+            for table in sorted(set(pA) | set(pB)):
+                rows_a, rows_b = pA.get(table, []), pB.get(table, [])
+                idx_a = {row_align_key(table, r): r for r in rows_a}
+                idx_b = {row_align_key(table, r): r for r in rows_b}
+                matched = set(idx_a) & set(idx_b)
+                agree = disagree = 0
+                cell_examples = []
+                for k in matched:
+                    a, d = compare_rows(idx_a[k], idx_b[k])
+                    agree += a
+                    disagree += d
+                tables[table] = {"n_rows_a": len(rows_a), "n_rows_b": len(rows_b), "n_rows_matched": len(matched),
+                                  "row_recall_vs_a": round(len(matched) / len(rows_a), 3) if rows_a else None,
+                                  "row_precision_vs_a": round(len(matched) / len(rows_b), 3) if rows_b else None,
+                                  "cell_agreement": round(agree / (agree + disagree), 3) if (agree + disagree) else None}
+            entry["tables"] = tables
+        reports[ref] = entry
+    out = {"family_a": args.family_a, "family_b": args.family_b, "a_as_reference_not_ground_truth": True,
+           "n_reports": len(refs), "n_both_valid": n_both_valid, "reports": reports}
+    _write(args, out, f"cross[{args.family_a} vs {args.family_b}]: {n_both_valid}/{len(refs)} reports valid "
+           f"on both sides; {args.family_a} valid={sum(1 for r in reports.values() if r['a_valid'])}/{len(refs)}, "
+           f"{args.family_b} valid={sum(1 for r in reports.values() if r['b_valid'])}/{len(refs)}")
+    return out
+
+
 def cmd_xhigh(args):
     reports = {}
     for ref in args.record_id:
@@ -323,6 +381,14 @@ def main(argv=None):
     x.add_argument("--record-id", action="append", required=True)
     x.add_argument("--out", default="")
 
+    c = sub.add_parser("cross", help="generic validity/completeness/row-recall-precision/cell-agreement "
+                        "between any two runs/<family> dirs; --family-a is the reference")
+    c.add_argument("--family-a", required=True)
+    c.add_argument("--family-b", required=True)
+    c.add_argument("--record-id", action="append", default=[], help="repeatable; default = every "
+                    "runs/<family-a>/*.json")
+    c.add_argument("--out", default="")
+
     args = ap.parse_args(argv)
     if args.cmd == "provenance":
         cmd_provenance(args)
@@ -330,6 +396,8 @@ def main(argv=None):
         cmd_numeric(args)
     elif args.cmd == "xhigh":
         cmd_xhigh(args)
+    elif args.cmd == "cross":
+        cmd_cross(args)
     return 0
 
 

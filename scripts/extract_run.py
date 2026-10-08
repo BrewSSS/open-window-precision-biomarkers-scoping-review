@@ -330,8 +330,11 @@ def cmd_run(args):
     if args.skip_glm:
         print("GLM: skipped (--skip-glm)", flush=True)
     else:
-        print(f"GLM: {len(refs)} reports, concurrency={args.glm_concurrency}", flush=True)
-        glm_out_dir = RUNS_DIR / FAMILY_C / "_batch"
+        glm_family = args.glm_family
+        print(f"GLM: {len(refs)} reports, concurrency={args.glm_concurrency}, family={glm_family}, "
+              f"thinking={args.glm_thinking}", flush=True)
+        (RUNS_DIR / glm_family).mkdir(parents=True, exist_ok=True)
+        glm_out_dir = RUNS_DIR / glm_family / "_batch"
         glm_result = call_glm_batch(list(rows.values()), glm_out_dir, args)
         if "results" not in glm_result:
             sys.exit(f"GLM batch call failed: {glm_result.get('error')}")
@@ -339,12 +342,12 @@ def cmd_run(args):
             ref = r["record_id"]
             errs = validate(r.get("parsed"), schema)
             valid = not errs and r.get("parsed") is not None
-            out = {"record_id": ref, "family": FAMILY_C, "model": r.get("model_returned", args.glm_model),
+            out = {"record_id": ref, "family": glm_family, "model": r.get("model_returned", args.glm_model),
                    "attempts": r.get("attempts"), "valid": valid, "validation_errors": errs,
                    "raw_response_present": r.get("raw_response") is not None, "parsed": r.get("parsed")}
-            (RUNS_DIR / FAMILY_C / f"{ref}.json").write_text(json.dumps(out, indent=1, ensure_ascii=False), encoding="utf-8")
+            (RUNS_DIR / glm_family / f"{ref}.json").write_text(json.dumps(out, indent=1, ensure_ascii=False), encoding="utf-8")
             print(f"  glm {ref}: valid={valid} attempts={out['attempts']}", flush=True)
-            manifest_entries.append({"record_id": ref, "family": FAMILY_C, "model": out["model"],
+            manifest_entries.append({"record_id": ref, "family": glm_family, "model": out["model"],
                                        "effort_or_thinking": args.glm_thinking, "prompt_sha256": prompt_sha,
                                        "schema_sha256": schema_sha, "tokens": None,
                                        "seconds": round(glm_result["wall_s"] / max(len(refs), 1), 1),
@@ -410,9 +413,15 @@ FAMILY_TO_REVIEWER = {FAMILY_B: ("B", "B (Sol via Codex, gpt-6-sol, effort=high;
 
 def cmd_build_loader_json(args):
     counts = {}
-    for family, (reviewer, role) in FAMILY_TO_REVIEWER.items():
+    c_family = getattr(args, "c_family", FAMILY_C) or FAMILY_C
+    c_role = getattr(args, "c_role", None) or (FAMILY_TO_REVIEWER[FAMILY_C][1] if c_family == FAMILY_C
+                                                else f"C (GLM-5.3 via bigmodel/z.ai, family={c_family}; PRE-009 stand-in)")
+    family_to_reviewer = {FAMILY_B: FAMILY_TO_REVIEWER[FAMILY_B], c_family: ("C", c_role)}
+    for family, (reviewer, role) in family_to_reviewer.items():
         out_dir = LOADER_JSON_DIR / reviewer
         out_dir.mkdir(parents=True, exist_ok=True)
+        for stale in out_dir.glob("*.json"):  # fresh regen each call: never mix a prior family's rows in
+            stale.unlink()
         n = 0
         for p in sorted((RUNS_DIR / family).glob("*.json")):
             if p.parent != RUNS_DIR / family:  # skip _batch/ subdir contents picked up by glob
@@ -492,8 +501,14 @@ def main(argv=None):
     r.add_argument("--glm-max-retries", type=int, default=6)
     r.add_argument("--glm-backoff-base", type=float, default=10.0)
     r.add_argument("--glm-thinking", default="enabled", choices=["default", "enabled", "disabled"])
+    r.add_argument("--glm-family", default=FAMILY_C, help="output subdir under runs/ and manifest family tag "
+                   "(use e.g. glm_nothink for a thinking-disabled pass so it does not overwrite runs/glm/)")
 
-    sub.add_parser("build-loader-json")
+    bl = sub.add_parser("build-loader-json")
+    bl.add_argument("--c-family", default=FAMILY_C, help="runs/<family> subdir to load as reviewer C "
+                     "(e.g. glm_nothink)")
+    bl.add_argument("--c-role", default=None, help="reviewer_role label stamped into the C loader JSON; "
+                     "default describes the --c-family GLM config")
     sub.add_parser("load")
     sub.add_parser("compare")
 
@@ -508,7 +523,8 @@ def main(argv=None):
                       ("--glm-concurrency", {"type": int, "default": 3}), ("--glm-timeout", {"type": float, "default": 600}),
                       ("--glm-max-tokens", {"type": int, "default": 16000}),
                       ("--glm-max-retries", {"type": int, "default": 6}), ("--glm-backoff-base", {"type": float, "default": 10.0}),
-                      ("--glm-thinking", {"default": "enabled", "choices": ["default", "enabled", "disabled"]})):
+                      ("--glm-thinking", {"default": "enabled", "choices": ["default", "enabled", "disabled"]}),
+                      ("--glm-family", {"default": FAMILY_C})):
         a.add_argument(dest, **kw)
 
     args = ap.parse_args(argv)
