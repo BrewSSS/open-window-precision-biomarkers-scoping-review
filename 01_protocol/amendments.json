@@ -244,6 +244,12 @@
           "topic": "Stage-2 re-calibration (PRE-005)",
           "adopted_option": "The 25-record title/abstract re-calibration required by PRE-005 before formal stage 2 is folded into the first 25 V-layer records of the triage human verification: B and C screen them independently against the v3.1 stage-2 rules and the v1.2 validation element before continuing; raw agreement >= 80% on the binary E5 disposition is the pass rule (seed not needed: the first 25 V records in record_id order). Rationale: stage-2 decisions were made by AI stand-ins under PRE-007, so the human stage-2 task is now V confirmation; a separate 25-record exercise would duplicate it.",
           "decided_by": "A, 2026-10-08 (team review packet sign-off)"
+        },
+        {
+          "choice": 8,
+          "topic": "Human verification mode (replaces PRE-007 item 7 blind calibration and the blind sample sheets)",
+          "adopted_option": "Reviewers B and C review AI-pre-filled workbooks instead of blind sheets: a stand-in model fills each reviewer's decision columns (B side: GPT-6 Luna, reasoning effort max; C side: GLM-5.3, thinking on; both independent of the first-pass and adjudication models' columns, which are hidden or not supplied), and B and C read every record and overwrite any value they disagree with; unchanged cells are the reviewer's decision of record. A hidden _prefill sheet keeps the pre-filled values so the override rate per reviewer and per sheet is reported. Consequence: the 100-record title pilot and the 10% samples are no longer blind human reads; the reported reliability statistics become (i) agreement between the two reviewers' final decisions and (ii) each reviewer's override rate of the pre-fill, disclosed as such in Methods and listed as a limitation.",
+          "decided_by": "A, 2026-10-08"
         }
       ],
       "reassessment_needed": "The 28 batch-235 stage-2 advances must be triaged with the same models and prompts before human verification (D). The stage-2 human verification scope changes from all 4,326 advances to the layered scope. Human sample results for M, X and the adjudicated records are reported as the triage reliability check; a systematic misclassification pattern found there is re-checked across its layer. FT01-FT08, TI codes and stage-1 verification are unchanged.",
@@ -251,7 +257,7 @@
       "release_update": "Working protocol text updated 2026-10-08 (EN/CN sections C, F, I, J, K, L and status line; CHANGELOG; screening manual 3B'; synthesis plan and evidence-map spec). Bundled with PRE-007 into protocol release v3.2 (GitHub tag, GitHub Release, Zenodo version DOI under concept DOI 10.5281/zenodo.23147972), to be published before human verification and full-text screening start",
       "changes_document": "../CHANGELOG.md",
       "implementation_date": "2026-10-08",
-      "implementation_status": "AI triage complete for 4,298 records (first pass both families 2026-10-07/08; GPT-6 Sol adjudication of 1,991 records 2026-10-08; final layers in ai_triage/final_triage_summary.json); triage of the 28 batch-235 advances, v3.2 release, human verification and full-text retrieval pending"
+      "implementation_status": "AI triage complete for 4,298 records (first pass both families 2026-10-07/08; GPT-6 Sol adjudication of 1,991 records 2026-10-08; final layers in ai_triage/final_triage_summary.json); triage of the 28 batch-235 advances, v3.2 release, human verification and full-text retrieval pending; 2026-10-08: reviewer workbooks pre-filled by stand-ins (choice 8), human override phase started."
     }
   ],
   "future_amendment_fields": [
