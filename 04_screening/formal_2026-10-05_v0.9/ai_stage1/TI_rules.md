@@ -30,3 +30,15 @@ Common traps (decide carefully):
 10. Titles naming only markers or cells with no exposure word: ADVANCE.
 11. If the title is in a language you cannot read or is truncated/garbled: ADVANCE.
 When two codes apply, choose the first in the order TI01, TI02, TI03, TI04, TI05.
+
+---
+
+## Clarification v1.1 (2026-10-09; from D's adjudication of the 177 B/C disagreements in the exclusion sample; adopted by A for the PRE-007 re-screening of TI04/TI05 exclusions)
+
+These clarifications restate how the closed list is read. They add no new exclusion ground and narrow TI04 and TI05 to what the title itself states.
+
+- **TI04 applies only when the title states a non-exercise exposure or intervention AS THE STUDY EXPOSURE** (drug, supplement-only, diet-only, vaccine, surgery, sleep, heat or cold alone, psychological stress alone, occupational agent, a disease course or treatment named as the thing studied over time), **or uses "training", "race", "competition", "exercise", "fitness" in a clearly non-physical sense** (skills training, safer-sex education, "training camp" as a metaphor, software/model training, "immune training" of cells or vaccines). **A title that names only a disease, a clinical cohort, disease features, markers, cells, organs, tissues or methods, with no exposure word at all, is NOT TI04: advance.** Example: "Skin tests and clinical features of asthma" names no exposure → ADVANCE. "Effect of 4 weeks of sleep restriction on cytokines" names a non-exercise exposure → TI04.
+- **TI05 applies only when every outcome the title names is explicitly non-immune** (performance, strength, power, VO2max, lactate, glycogen, hormones, HRV, bone, cognition, mood, body composition, pain or soreness SCORES/RATINGS stated as such). **"Recovery", "fatigue recovery", "muscle pain", "soreness", "DOMS" without "score/rating", "blood rheology", "traits", "determinants", "response(s)", "risk factors", "markers", or a truncated or garbled title leave an immune outcome possible: advance.**
+- **TI02 requires the title to name only non-human organisms, plants, microbes or cell lines.** A human disease named together with its pathogen (e.g. "HIV infection in patients") is not TI02. Fungal, bacterial, plant or animal-only studies are TI02 even when the exposure is heat or stress (TI02 precedes TI04).
+- **TI01 requires the exported document type or the title to state the review/protocol/editorial/conference type.** "Report to a research committee" is not evidence of a review.
+- Code order unchanged: TI01 > TI02 > TI03 > TI04 > TI05. Default remains ADVANCE whenever none of the above is evident from the title.
