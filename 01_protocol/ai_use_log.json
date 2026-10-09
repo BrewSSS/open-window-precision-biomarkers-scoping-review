@@ -1,734 +1,766 @@
 {
-  "status": "actual_design_assistance_logged_human_verification_pending",
-  "records": [
+ "status": "actual_design_assistance_logged_human_verification_pending",
+ "records": [
+  {
+   "date": "2026-10-02",
+   "tool": "Codex desktop",
+   "coordinator_model": "GPT-6 family; exact runtime identifier not independently exported",
+   "delegated_model": "gpt-6-luna",
+   "delegated_roles": [
+    "traditional immunology/screening",
+    "transcriptomics/extraction",
+    "proteomics/search",
+    "metabolomics/synthesis",
+    "epigenomics/appraisal",
+    "novelty/Chinese protocol"
+   ],
+   "tasks": [
+    "public-source reconnaissance",
+    "citation metadata checking",
+    "project audit",
+    "protocol and implementation drafting",
+    "cross-file consistency review"
+   ],
+   "prompt_source": "Current project conversation; earlier web reconnaissance recorded in restart packet",
+   "output_sources": [
+    "protocol_EN_full.md",
+    "protocol_CN.md",
+    "../03_search",
+    "../04_screening",
+    "../05_extraction",
+    "../06_synthesis"
+   ],
+   "human_verification_status": "Required before execution/registration; not yet recorded",
+   "human_verifier": null,
+   "not_performed": [
+    "automatic exclusion",
+    "independent human screening",
+    "formal extraction",
+    "formal critical appraisal",
+    "external registration",
+    "author messaging"
+   ],
+   "tool_version": "not recorded at the time; not recoverable from the session logs",
+   "provider_source": "OpenAI Codex desktop application",
+   "model": "coordinator GPT-6 family (exact identifier not exported); delegated gpt-6-luna"
+  },
+  {
+   "date": "2026-10-03",
+   "tool": "Codex desktop",
+   "delegated_model": "gpt-6.1-sol",
+   "delegated_agents_started": 6,
+   "tasks": [
+    "focused bilingual protocol review",
+    "search strategy consistency",
+    "screening implementation",
+    "extraction schema consistency",
+    "appraisal consistency",
+    "synthesis consistency"
+   ],
+   "status": "Some edits and findings were saved before usage-limit errors; coordinator inspected resulting files. Sol tasks stopped and necessary search completion returned to the existing Luna agent on user instruction.",
+   "human_verification_status": "Named research team review remains pending",
+   "human_verifier": null,
+   "formal_review_decisions_made": false,
+   "tool_version": "not recorded at the time; not recoverable from the session logs",
+   "provider_source": "OpenAI Codex desktop application",
+   "model": "delegated gpt-6.1-sol; coordinator identifier not recorded"
+  },
+  {
+   "date": "2026-10-04",
+   "tool": "Claude Code (Anthropic) desktop CLI",
+   "coordinator_model": "claude-fable-5-1",
+   "delegated_models": [
+    "claude-fable-5-1 (published-review collision check; registry collision check)",
+    "claude-opus-5-5 (registry policy check)"
+   ],
+   "tasks": [
+    "read and summarise Codex 2026-10-02/03 session logs for the team",
+    "collision re-check of the narrowed open-window precision-biomarker framing against published reviews and registries",
+    "verification of PROSPERO/OSF/INPLASY/JBI/Frontiers/MDPI registration policies",
+    "local git repository initialisation (no remote, no push)",
+    "recording team decisions (venue not restricted; GitHub+Zenodo archive; Excel-based screening/extraction)"
+   ],
+   "output_sources": [
+    "../02_preliminary/collision_recheck_2026-10-04.md",
+    "project_settings.json",
+    "../.gitignore"
+   ],
+   "human_verification_status": "Deferred: team (A) decided 2026-10-04 that verification of newly added references happens once at the manuscript stage, not now",
+   "human_verifier": null,
+   "not_performed": [
+    "formal database search",
+    "screening decisions",
+    "extraction",
+    "registration submission",
+    "public push or release"
+   ],
+   "tool_version": "not recorded (team decision 2026-10-04: not needed at protocol stage)",
+   "provider_source": "Anthropic; Claude Code CLI with models served by the Anthropic API",
+   "model": "coordinator claude-fable-5-1; delegated claude-fable-5-1 and claude-opus-5-5"
+  },
+  {
+   "date": "2026-10-04",
+   "tool": "Claude Code (Anthropic) desktop CLI",
+   "tool_version": "not recorded (team decision 2026-10-04: not needed at protocol stage)",
+   "coordinator_model": "claude-fable-5-1",
+   "delegated_models": [
+    "claude-fable-5-1 (first protocol-editor agent; edited the files listed below and was interrupted by an API usage limit before reporting)",
+    "claude-opus-5-5 (takeover protocol-editor agent; audited rows E1-E47 and B3 against the contract, completed the remaining edits and re-verified references 15-20 and the Frontiers/GitHub-Zenodo pages)",
+    "claude-opus-5-5 (build-chain/validator agent; scripts, validator, workbook generator, flowchart, references library, LICENSE and Zenodo metadata)",
+    "claude-opus-5-5 (final consistency reviewer; cross-file audit with small fixes and build re-run)"
+   ],
+   "model": "claude-fable-5-1 (coordinator and first delegated editor); claude-opus-5-5 (takeover delegated editor, build-chain/validator agent and final consistency reviewer)",
+   "provider_source": "Anthropic; Claude Code CLI with models served by the Anthropic API",
+   "tasks": [
+    "v3.0 revision of protocol_EN_full.md implementing v3_design_contract.txt and change-map rows E1-E47 (verification/v3_change_map_2026-10-04.md, section B1)",
+    "governance files per change-map section B3: registration_draft.md renamed archive_release_record.md and rewritten; execution_plan.md; README.md; CHANGELOG.md; amendments.json; project_settings.json; ai_use_log.json; three root entry stubs; verification/official_sources.json and verification/README.md",
+    "PubMed E-utilities (esummary/efetch) verification of new references 15-20 and of the Peake 2017 abstract sentence quoted in section A",
+    "live access check (HTTP 200 and text match) of the Frontiers AI policy, Frontiers Systematic Review article-type, PROSPERO registration-guidance, OSF Generalized Systematic Review template and JBI 10.2.2 pages recorded in official_sources.json",
+    "takeover audit 2026-10-04 (claude-opus-5-5): row-by-row check of E1-E47 and B3; Introduction positioning names the open-window debate holders and adjacent reviews; PubMed efetch and Crossref re-check of references 15-20; Frontiers PRISMA and GitHub-Zenodo pages re-accessed",
+    "05_extraction/06_synthesis v3 edit (data dictionary fields and vocabularies, template sync, evidence-map spec, synthesis plan, manuscript blueprint) by delegated model claude-opus-5-5; 03_search/04_screening v3 edit by claude-opus-5-5; CN protocol alignment by claude-opus-5-5",
+    "build chain and validator by delegated model claude-opus-5-5: version/date read from project_settings.json; build_v2 -> build_v3; TeX header and PDF rebuild; validate_design.py extended to 27 checks; build_workbooks.py reads stage/dedup/bibliographic fields from the JSON templates and regenerates the Excel workbooks; create_flowchart.py -> figures/research_design_v3.svg; references.bib entries 15-20 and references/crossref_metadata_v3.json; LICENSE (CC BY 4.0), scripts/LICENSE (MIT), .zenodo.json and CITATION.cff with creator placeholders",
+    "final cross-file consistency pass by claude-opus-5-5 (2026-10-04): EN<->CN equivalence spot-check of sections A, B, D, F, I and J (Chinese corrected, English untouched); CN references 27 (BEST Resource) and 28 (Frontiers article types/author guidelines/policies) added and cited; Trybulski et al. 2026 (PMID 42278474) verified by PubMed esummary/efetch; terminology sweep; title/version/stage/domain/map-name/licence consistency across governance files, appendices, .zenodo.json, CITATION.cff and the flowchart; README, CHANGELOG and status records updated; build chain and validator re-run"
+   ],
+   "prompt_source": "Coordinator work order in the 2026-10-04 Claude Code session (change map B1/B3 plus contract section 8 default rulings)",
+   "output_sources": [
+    "protocol_EN_full.md",
+    "archive_release_record.md",
+    "execution_plan.md",
+    "../README.md",
+    "../CHANGELOG.md",
+    "amendments.json",
+    "project_settings.json",
+    "ai_use_log.json",
+    "../scoping_review_protocol.md",
+    "../scoping_review_protocol_EN.md",
+    "../scoping_review_protocol_CN.md",
+    "verification/official_sources.json",
+    "verification/README.md",
+    "../scripts/",
+    "../figures/research_design_v3.svg",
+    "../references/references.bib",
+    "../references/crossref_metadata_v3.json",
+    "../LICENSE",
+    "../scripts/LICENSE",
+    "../.zenodo.json",
+    "../CITATION.cff",
+    "../templates_xlsx/",
+    "protocol_CN.md",
+    "../03_search/",
+    "../04_screening/",
+    "../05_extraction/",
+    "../06_synthesis/"
+   ],
+   "citations_added_pending_human_verification": [
     {
-      "date": "2026-10-02",
-      "tool": "Codex desktop",
-      "coordinator_model": "GPT-6 family; exact runtime identifier not independently exported",
-      "delegated_model": "gpt-6-luna",
-      "delegated_roles": [
-        "traditional immunology/screening",
-        "transcriptomics/extraction",
-        "proteomics/search",
-        "metabolomics/synthesis",
-        "epigenomics/appraisal",
-        "novelty/Chinese protocol"
-      ],
-      "tasks": [
-        "public-source reconnaissance",
-        "citation metadata checking",
-        "project audit",
-        "protocol and implementation drafting",
-        "cross-file consistency review"
-      ],
-      "prompt_source": "Current project conversation; earlier web reconnaissance recorded in restart packet",
-      "output_sources": [
-        "protocol_EN_full.md",
-        "protocol_CN.md",
-        "../03_search",
-        "../04_screening",
-        "../05_extraction",
-        "../06_synthesis"
-      ],
-      "human_verification_status": "Required before execution/registration; not yet recorded",
-      "human_verifier": null,
-      "not_performed": [
-        "automatic exclusion",
-        "independent human screening",
-        "formal extraction",
-        "formal critical appraisal",
-        "external registration",
-        "author messaging"
-      ],
-      "tool_version": "not recorded at the time; not recoverable from the session logs",
-      "provider_source": "OpenAI Codex desktop application",
-      "model": "coordinator GPT-6 family (exact identifier not exported); delegated gpt-6-luna"
+     "ref": 15,
+     "citation": "Peake JM, Neubauer O, Walsh NP, Simpson RJ. J Appl Physiol 2017;122(5):1077-1087",
+     "pmid": "27909225",
+     "doi": "10.1152/japplphysiol.00622.2016",
+     "quoted_sentence_verified_from_efetch_abstract": "However, except for salivary IgA, clear and consistent markers of this immunodepression remain elusive.",
+     "status": "verified by AI 2026-10-04; human verification pending"
     },
     {
-      "date": "2026-10-03",
-      "tool": "Codex desktop",
-      "delegated_model": "gpt-6.1-sol",
-      "delegated_agents_started": 6,
-      "tasks": [
-        "focused bilingual protocol review",
-        "search strategy consistency",
-        "screening implementation",
-        "extraction schema consistency",
-        "appraisal consistency",
-        "synthesis consistency"
-      ],
-      "status": "Some edits and findings were saved before usage-limit errors; coordinator inspected resulting files. Sol tasks stopped and necessary search completion returned to the existing Luna agent on user instruction.",
-      "human_verification_status": "Named research team review remains pending",
-      "human_verifier": null,
-      "formal_review_decisions_made": false,
-      "tool_version": "not recorded at the time; not recoverable from the session logs",
-      "provider_source": "OpenAI Codex desktop application",
-      "model": "delegated gpt-6.1-sol; coordinator identifier not recorded"
+     "ref": 16,
+     "citation": "Simpson RJ, Campbell JP, Gleeson M, et al. Exerc Immunol Rev 2020;26:8-22",
+     "pmid": "32139352",
+     "doi": null,
+     "status": "verified by AI 2026-10-04 (no DOI in PubMed record); human verification pending"
     },
     {
-      "date": "2026-10-04",
-      "tool": "Claude Code (Anthropic) desktop CLI",
-      "coordinator_model": "claude-fable-5-1",
-      "delegated_models": [
-        "claude-fable-5-1 (published-review collision check; registry collision check)",
-        "claude-opus-5-5 (registry policy check)"
-      ],
-      "tasks": [
-        "read and summarise Codex 2026-10-02/03 session logs for the team",
-        "collision re-check of the narrowed open-window precision-biomarker framing against published reviews and registries",
-        "verification of PROSPERO/OSF/INPLASY/JBI/Frontiers/MDPI registration policies",
-        "local git repository initialisation (no remote, no push)",
-        "recording team decisions (venue not restricted; GitHub+Zenodo archive; Excel-based screening/extraction)"
-      ],
-      "output_sources": [
-        "../02_preliminary/collision_recheck_2026-10-04.md",
-        "project_settings.json",
-        "../.gitignore"
-      ],
-      "human_verification_status": "Deferred: team (A) decided 2026-10-04 that verification of newly added references happens once at the manuscript stage, not now",
-      "human_verifier": null,
-      "not_performed": [
-        "formal database search",
-        "screening decisions",
-        "extraction",
-        "registration submission",
-        "public push or release"
-      ],
-      "tool_version": "not recorded (team decision 2026-10-04: not needed at protocol stage)",
-      "provider_source": "Anthropic; Claude Code CLI with models served by the Anthropic API",
-      "model": "coordinator claude-fable-5-1; delegated claude-fable-5-1 and claude-opus-5-5"
+     "ref": 17,
+     "citation": "Xie E, He Y, Cao T, Li C, Wang Z. Front Immunol 2026;17:1822561",
+     "pmid": "42183211",
+     "doi": "10.3389/fimmu.2026.1822561",
+     "status": "verified by AI 2026-10-04; human verification pending"
     },
     {
-      "date": "2026-10-04",
-      "tool": "Claude Code (Anthropic) desktop CLI",
-      "tool_version": "not recorded (team decision 2026-10-04: not needed at protocol stage)",
-      "coordinator_model": "claude-fable-5-1",
-      "delegated_models": [
-        "claude-fable-5-1 (first protocol-editor agent; edited the files listed below and was interrupted by an API usage limit before reporting)",
-        "claude-opus-5-5 (takeover protocol-editor agent; audited rows E1-E47 and B3 against the contract, completed the remaining edits and re-verified references 15-20 and the Frontiers/GitHub-Zenodo pages)",
-        "claude-opus-5-5 (build-chain/validator agent; scripts, validator, workbook generator, flowchart, references library, LICENSE and Zenodo metadata)",
-        "claude-opus-5-5 (final consistency reviewer; cross-file audit with small fixes and build re-run)"
-      ],
-      "model": "claude-fable-5-1 (coordinator and first delegated editor); claude-opus-5-5 (takeover delegated editor, build-chain/validator agent and final consistency reviewer)",
-      "provider_source": "Anthropic; Claude Code CLI with models served by the Anthropic API",
-      "tasks": [
-        "v3.0 revision of protocol_EN_full.md implementing v3_design_contract.txt and change-map rows E1-E47 (verification/v3_change_map_2026-10-04.md, section B1)",
-        "governance files per change-map section B3: registration_draft.md renamed archive_release_record.md and rewritten; execution_plan.md; README.md; CHANGELOG.md; amendments.json; project_settings.json; ai_use_log.json; three root entry stubs; verification/official_sources.json and verification/README.md",
-        "PubMed E-utilities (esummary/efetch) verification of new references 15-20 and of the Peake 2017 abstract sentence quoted in section A",
-        "live access check (HTTP 200 and text match) of the Frontiers AI policy, Frontiers Systematic Review article-type, PROSPERO registration-guidance, OSF Generalized Systematic Review template and JBI 10.2.2 pages recorded in official_sources.json",
-        "takeover audit 2026-10-04 (claude-opus-5-5): row-by-row check of E1-E47 and B3; Introduction positioning names the open-window debate holders and adjacent reviews; PubMed efetch and Crossref re-check of references 15-20; Frontiers PRISMA and GitHub-Zenodo pages re-accessed",
-        "05_extraction/06_synthesis v3 edit (data dictionary fields and vocabularies, template sync, evidence-map spec, synthesis plan, manuscript blueprint) by delegated model claude-opus-5-5; 03_search/04_screening v3 edit by claude-opus-5-5; CN protocol alignment by claude-opus-5-5",
-        "build chain and validator by delegated model claude-opus-5-5: version/date read from project_settings.json; build_v2 -> build_v3; TeX header and PDF rebuild; validate_design.py extended to 27 checks; build_workbooks.py reads stage/dedup/bibliographic fields from the JSON templates and regenerates the Excel workbooks; create_flowchart.py -> figures/research_design_v3.svg; references.bib entries 15-20 and references/crossref_metadata_v3.json; LICENSE (CC BY 4.0), scripts/LICENSE (MIT), .zenodo.json and CITATION.cff with creator placeholders",
-        "final cross-file consistency pass by claude-opus-5-5 (2026-10-04): EN<->CN equivalence spot-check of sections A, B, D, F, I and J (Chinese corrected, English untouched); CN references 27 (BEST Resource) and 28 (Frontiers article types/author guidelines/policies) added and cited; Trybulski et al. 2026 (PMID 42278474) verified by PubMed esummary/efetch; terminology sweep; title/version/stage/domain/map-name/licence consistency across governance files, appendices, .zenodo.json, CITATION.cff and the flowchart; README, CHANGELOG and status records updated; build chain and validator re-run"
-      ],
-      "prompt_source": "Coordinator work order in the 2026-10-04 Claude Code session (change map B1/B3 plus contract section 8 default rulings)",
-      "output_sources": [
-        "protocol_EN_full.md",
-        "archive_release_record.md",
-        "execution_plan.md",
-        "../README.md",
-        "../CHANGELOG.md",
-        "amendments.json",
-        "project_settings.json",
-        "ai_use_log.json",
-        "../scoping_review_protocol.md",
-        "../scoping_review_protocol_EN.md",
-        "../scoping_review_protocol_CN.md",
-        "verification/official_sources.json",
-        "verification/README.md",
-        "../scripts/",
-        "../figures/research_design_v3.svg",
-        "../references/references.bib",
-        "../references/crossref_metadata_v3.json",
-        "../LICENSE",
-        "../scripts/LICENSE",
-        "../.zenodo.json",
-        "../CITATION.cff",
-        "../templates_xlsx/",
-        "protocol_CN.md",
-        "../03_search/",
-        "../04_screening/",
-        "../05_extraction/",
-        "../06_synthesis/"
-      ],
-      "citations_added_pending_human_verification": [
-        {
-          "ref": 15,
-          "citation": "Peake JM, Neubauer O, Walsh NP, Simpson RJ. J Appl Physiol 2017;122(5):1077-1087",
-          "pmid": "27909225",
-          "doi": "10.1152/japplphysiol.00622.2016",
-          "quoted_sentence_verified_from_efetch_abstract": "However, except for salivary IgA, clear and consistent markers of this immunodepression remain elusive.",
-          "status": "verified by AI 2026-10-04; human verification pending"
-        },
-        {
-          "ref": 16,
-          "citation": "Simpson RJ, Campbell JP, Gleeson M, et al. Exerc Immunol Rev 2020;26:8-22",
-          "pmid": "32139352",
-          "doi": null,
-          "status": "verified by AI 2026-10-04 (no DOI in PubMed record); human verification pending"
-        },
-        {
-          "ref": 17,
-          "citation": "Xie E, He Y, Cao T, Li C, Wang Z. Front Immunol 2026;17:1822561",
-          "pmid": "42183211",
-          "doi": "10.3389/fimmu.2026.1822561",
-          "status": "verified by AI 2026-10-04; human verification pending"
-        },
-        {
-          "ref": 18,
-          "citation": "Shi X, Hu L, Nieman DC, Li F, Chen P, Shi H, Shi Y. Front Immunol 2025;16:1617261",
-          "pmid": "40777031",
-          "doi": "10.3389/fimmu.2025.1617261",
-          "status": "verified by AI 2026-10-04; human verification pending"
-        },
-        {
-          "ref": 19,
-          "citation": "Reitzner SM, Brodin P. Scand J Med Sci Sports 2026;36(3):e70258",
-          "pmid": "41842715",
-          "doi": "10.1111/sms.70258",
-          "status": "verified by AI 2026-10-04; human verification pending"
-        },
-        {
-          "ref": 20,
-          "citation": "Mănescu DC, Voinea A, Plastoi CD, et al. Int J Mol Sci 2026;27(8):3601",
-          "pmid": "42074239",
-          "doi": "10.3390/ijms27083601",
-          "status": "verified by AI 2026-10-04 (article number 3601 from PII; esummary pages field empty); human verification pending"
-        },
-        {
-          "ref": "manuscript blueprint / search strategy only (not a protocol reference)",
-          "citation": "Trybulski R, Bjelica D, Çitozi R, Kisilewicz A, Smoter M, Urban J. Acute Cytokine Responses to High-Intensity Intermittent Exercise in Humans: A Systematic Review. Int J Mol Sci 2026;27(11):4950",
-          "pmid": "42278474",
-          "doi": "10.3390/ijms27114950",
-          "quoted_phrase_verified_from_efetch_abstract": "Sampling was mapped to prespecified recovery windows.",
-          "status": "verified by AI 2026-10-04 (article number 4950 from PII; esummary pages field empty); human verification pending. Note: the review is itself registered on OSF (osf.io/wspr6) and is an adjacent review for the team's positioning check"
-        }
-      ],
-      "human_verification_status": "Deferred: team (A) decided 2026-10-04 that verification of newly added references happens once at the manuscript stage, not now",
-      "human_verifier": null,
-      "formal_review_decisions_made": false,
-      "not_performed": [
-        "update_protocol_references.py --write (dry-run only; see scripts/README.md section 4)",
-        "formal database search",
-        "screening decisions",
-        "extraction",
-        "critical appraisal",
-        "registration/archive submission",
-        "public push or release"
-      ]
+     "ref": 18,
+     "citation": "Shi X, Hu L, Nieman DC, Li F, Chen P, Shi H, Shi Y. Front Immunol 2025;16:1617261",
+     "pmid": "40777031",
+     "doi": "10.3389/fimmu.2025.1617261",
+     "status": "verified by AI 2026-10-04; human verification pending"
     },
     {
-      "date": "2026-10-05",
-      "tool": "Claude Code (Anthropic) desktop CLI",
-      "coordinator_model": "claude-fable-5-1",
-      "delegated_models": [
-        "claude-opus-5-5 (pilot pool build)"
-      ],
-      "tasks": [
-        "PubMed v0.7 draft pool (20,090) and 50-record sample (seed 20261002)",
-        "50-record title/abstract pilot conducted through the coordinator's AskUserQuestion interface: each record shown with a key-facts summary and an AI-generated recommended option; reviewer B answered all 50 first with C away from the screen, then C answered all 50; humans made every decision; coordinator transcribed decisions into the locked workbooks and ran scripts/merge_screening.py"
-      ],
-      "output_sources": [
-        "../04_screening/pilot_2026-10-05/pilot_TA_decisions_2026-10-05.csv",
-        "../04_screening/pilot_2026-10-05/merge_TA_2026-10-05/agreement_TA.json",
-        "../04_screening/screening_log_template.json (calibration)"
-      ],
-      "human_verification_status": "Decisions are human (B, C). Limitation recorded: a visible AI hint for every record makes the 50/50 agreement (kappa 1.0) an over-estimate of unaided inter-reviewer agreement; A decides whether a hint-free second sample is required.",
-      "not_performed": [
-        "automatic exclusion",
-        "formal search",
-        "formal screening",
-        "extraction"
-      ]
+     "ref": 19,
+     "citation": "Reitzner SM, Brodin P. Scand J Med Sci Sports 2026;36(3):e70258",
+     "pmid": "41842715",
+     "doi": "10.1111/sms.70258",
+     "status": "verified by AI 2026-10-04; human verification pending"
     },
     {
-      "date": "2026-10-05",
-      "tool": "Claude Code (Anthropic) desktop CLI",
-      "coordinator_model": "claude-fable-5-1",
-      "delegated_models": [
-        "claude-opus-5-5 (pilot materials, identifiers, OA full-text retrieval)",
-        "claude-sonnet-5 (10 parallel extraction stand-ins: 5 for reviewer B, 5 for reviewer C, 2 reports each; loader script)"
-      ],
-      "tasks": [
-        "10-report charting pilot: AI stand-ins for reviewers B and C extracted 9 open-access reports independently (no access to each other's output) into per-report JSON with page/section locators; scripts/load_ai_extraction.py loaded them into the two reviewer workbooks; scripts/compare_extraction.py produced field-by-field agreement, disagreements, empty-by-both and minutes/questions files",
-        "R62 (institutional access) not extracted"
-      ],
-      "output_sources": [
-        "../05_extraction/pilot_2026-10-05/ai_extraction/",
-        "../05_extraction/pilot_2026-10-05/compare_2026-10-05/",
-        "../05_extraction/pilot_2026-10-05/pilot_extraction_B.xlsx",
-        "../05_extraction/pilot_2026-10-05/pilot_extraction_C.xlsx"
-      ],
-      "human_verification_status": "Pending: B, C and D review the disagreement list and unresolved questions; pilot values are AI-suggested charting for calibration of the dictionary/manual, not formal extraction results",
-      "incident": "Two C-side files (R01, R03) were written with tables wrapped as {records:[...]}; normalised by the coordinator before loading (originals kept in load_report notes); agents shared /tmp scratch space — future prompts will assign per-agent scratch directories",
-      "not_performed": [
-        "formal extraction",
-        "critical appraisal",
-        "synthesis"
-      ]
+     "ref": 20,
+     "citation": "Mănescu DC, Voinea A, Plastoi CD, et al. Int J Mol Sci 2026;27(8):3601",
+     "pmid": "42074239",
+     "doi": "10.3390/ijms27083601",
+     "status": "verified by AI 2026-10-04 (article number 3601 from PII; esummary pages field empty); human verification pending"
     },
     {
-      "date": "2026-10-05",
-      "tool": "Claude Code (Anthropic) desktop CLI",
-      "coordinator_model": "claude-fable-5-1",
-      "delegated_models": [
-        "claude-opus-5-5 (search-strategy scale review and benchmark of 23 published reviews; 51-seed expansion; strategy v0.9 text and PubMed paste-ready files; amendment PRE-006 drafting and protocol/contract/settings edits)",
-        "claude-sonnet-5 (PubMed v0.7 formal export of 2026-10-05, now superseded; merge of post-staging drift and application of the v3.1 staging set)"
-      ],
-      "tasks": [
-        "Benchmark of identified/screened/included counts in 23 published exercise-immunology reviews and noise decomposition of the v0.7 PubMed pool (03_search/strategy_review_2026-10-05.md; v0.8 recommendation)",
-        "Coordinator-run PubMed diagnostics for strategy v0.9 (nine noise conditions, T-phrase removal, Package B, single route): counts, seed recall and 20-title removed-record samples (03_search/strategy_tightening_2026-10-05.md); E-utilities requests carried only tool=scoping-review-search and a project User-Agent, no e-mail or API key",
-        "Translation of v0.9 into WoS and Scopus paste-ready files with primary (TI/AB/AK; TITLE-ABS+AUTHKEY) and fallback field forms, document-type limits and DOI seed-test lines (03_search/paste_ready_v0.9/)",
-        "Drafting of amendment PRE-006 (database set PubMed + WoS + Scopus + Google Scholar supplement; search-stage limits; strategy v0.9) and its application to protocol EN/CN, design contract §10, amendments.json, project_settings.json, CHANGELOG and README; PDF rebuilt; validator 27/27",
-        "Application of the staged v3.1 set (PRE-004, PRE-005) after merging the two live files that had drifted since staging"
-      ],
-      "output_sources": [
-        "../03_search/strategy_review_2026-10-05.md",
-        "../03_search/seed_expansion_2026-10-05.md",
-        "../03_search/strategy_tightening_2026-10-05.md",
-        "../03_search/paste_ready_v0.9/",
-        "../03_search/search_strategy_draft.txt (v0.9-draft)",
-        "../01_protocol/amendments.json (PRE-006)",
-        "../01_protocol/v3_design_contract.txt (§10)"
-      ],
-      "human_decisions": "A decided the four v0.9 questions on 2026-10-05 (nine-condition noise package; T-phrase removal plus Package B; single route with immune anchor; WoS/Scopus field narrowing conditional on D's seed test) and the database set; D runs the WoS/Scopus searches and seed tests on the web interfaces",
-      "human_verification_status": "Pending: A re-reviews v0.9 under PRESS (the v0.7 sign-off is void); D records platform counts and seed-test results; all PubMed counts in the diagnostics are diagnostic, not formal searches",
-      "incident": "None in this session; the earlier Crossref incident (a personal e-mail placed in a request header by a sub-agent) remains the standing reason for the no-e-mail rule in every sub-agent prompt",
-      "not_performed": [
-        "formal search exports under v0.9",
-        "PRESS re-review (A)",
-        "screening, extraction, appraisal, synthesis"
-      ]
-    },
-    {
-      "date": "2026-10-06",
-      "tool": "ZCode desktop CLI (GLM, bigmodel-api provider), continuing the coordination role of the interrupted Claude Code session of 2026-10-04/05",
-      "coordinator_model": "glm-5.3",
-      "delegated_models": [
-        "glm-5.3-flash subagents: stage-2 title/abstract stand-in screening, sides B and C, 5 batches (~200 records) per agent, 10 agents per wave, per-batch JSON outputs written to disk immediately (recovery of the 2026-10-05/06 run that was interrupted at 80/213 B-side and 76/213 C-side batches)",
-        "glm-5.3-flash subagents: blind third read of stage-2 B/C conflicts"
-      ],
-      "tasks": [
-        "Rescue of the interrupted stage-2 screening outputs from /tmp into 04_screening/formal_2026-10-05_v0.9/ai_stage2/ with per-wave git archiving (A instruction: every subagent persists each completed batch to disk immediately)",
-        "Completion of the remaining stage-2 batches (B side 133, C side 137 of 213)",
-        "Stage-2 merge, conflict third read, reviewer workbooks (ta_review_B/C) and summary",
-        "Retrospective registration of amendment PRE-007 at A's instruction (design adopted by A on 2026-10-05)"
-      ],
-      "human_verification": "A instructed the recovery session; B and C verify all AI advances, conflicts, awaiting-classification records and the seeded 10% exclusion sample in their workbooks"
-    },
-    {
-      "date": "2026-10-07",
-      "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_run_concurrent.py against the provider's HTTP API (key from the local secrets file, never logged)",
-      "coordinator_model": "claude-fable-5-1",
-      "model": "glm-5.3-flash (bigmodel-api provider)",
-      "model_settings": "thinking disabled; one record per request; max tokens 4000",
-      "task": "PRE-008 validation-readiness triage, first pass, family 1: structured-element extraction (E1-E5 with verbatim quotes, study-type hint, note; no eligibility decision) for every stage-2 ADVANCE record (preceded by the 200-record pilot and a thinking-on vs thinking-off consistency check on the same pilot)",
-      "prompt_reference": {
-        "file": "../04_screening/formal_2026-10-05_v0.9/ai_triage/prompt_v1.md",
-        "version": "v1.1",
-        "sha256": "f8eb8e4460463e6444a2cf4ed42dfbd06477cb2a8846e13bd024a35b9566464a"
-      },
-      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_triage/schema_v1.json",
-      "records": 4298,
-      "concurrency": 12,
-      "run_summary": "4,298/4,298 valid after one retry pass (28 rate-limit failures recovered); ~110 min wall",
-      "output_sources": [
-        "../04_screening/formal_2026-10-05_v0.9/ai_triage/full_4298_glm_flash_summary.md",
-        "../04_screening/formal_2026-10-05_v0.9/ai_triage/full_4298_glm_flash_elements.csv",
-        "../04_screening/formal_2026-10-05_v0.9/ai_triage/pilot_200_glm_consistency.md",
-        "raw output: ai_triage/_local_runs/full_glm_flash_nothink_all_advance.json (git-ignored; sha256 in _local_runs/MANIFEST.json)"
-      ],
-      "human_verification_status": "Not a decision of record. First-pass elements feed the layer assignment only; human verification by B and C (all V, all U, seeded 10% of M and X, seeded 10% of adjudicated records) is pending (PRE-008)"
-    },
-    {
-      "date": "2026-10-07/08",
-      "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 5 records per call",
-      "coordinator_model": "claude-fable-5-1",
-      "model": "gpt-6-luna",
-      "model_settings": "reasoning effort max; 5 records per call (860 batches)",
-      "task": "PRE-008 validation-readiness triage, first pass, family 2: the same structured-element extraction over the same records (preceded by the 200-record two-family pilot); two-family comparison and layer assignment with scripts/triage_compare.py",
-      "prompt_reference": {
-        "file": "../04_screening/formal_2026-10-05_v0.9/ai_triage/prompt_v1.md",
-        "version": "v1.1",
-        "sha256": "f8eb8e4460463e6444a2cf4ed42dfbd06477cb2a8846e13bd024a35b9566464a"
-      },
-      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_triage/schema_v1.json (item schema; Codex batch wrapper schema_v1_strict_batch.json)",
-      "records": 4298,
-      "concurrency": 16,
-      "run_summary": "0 failed batches; 4,297/4,298 schema-valid (one over-length quote); ~1 h 42 min wall. Two-family agreement (n=4,297): E1-E4 raw 92.4-97.2%, kappa 0.48-0.78; E5 raw 70.3%, kappa 0.40",
-      "output_sources": [
-        "../04_screening/formal_2026-10-05_v0.9/ai_triage/full_4298_gpt6_luna_summary.md",
-        "../04_screening/formal_2026-10-05_v0.9/ai_triage/pilot_200_two_family_summary.md",
-        "../04_screening/formal_2026-10-05_v0.9/ai_triage/full_4298_glm_vs_gpt6/triage_summary.json",
-        "raw output: ai_triage/_local_runs/gpt6_luna_full_4298.json (git-ignored; sha256 in _local_runs/MANIFEST.json)"
-      ],
-      "human_verification_status": "Not a decision of record. First-pass elements feed the layer assignment only; human verification by B and C (all V, all U, seeded 10% of M and X, seeded 10% of adjudicated records) is pending (PRE-008)"
-    },
-    {
-      "date": "2026-10-08",
-      "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 5 records per call; final layering by scripts/triage_finalize.py",
-      "coordinator_model": "claude-fable-5-1",
-      "model": "gpt-6-sol",
-      "model_settings": "reasoning effort medium; 5 records per call (399 batches); blind to the first-pass outputs",
-      "task": "PRE-008 adjudicating read under the stricter E5 definition for the 1,532 two-family disagreements (layer D) and the 459 records in layer V only through repeated_monitoring; final elements and layers V/M/X/U with seeded human scopes",
-      "prompt_reference": {
-        "file": "../04_screening/formal_2026-10-05_v0.9/ai_triage/prompt_e5_adjudication_v1_2.md",
-        "version": "v1.2",
-        "sha256": "34233f28a2fcc3d719b304732d229356d77397b6bfcf0968a30efa329b7133af"
-      },
-      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_triage/schema_v1.json (item schema; Codex batch wrapper schema_v1_strict_batch.json)",
-      "records": 1991,
-      "concurrency": "16 (main pass); 8 (five resume passes)",
-      "run_summary": "1,991/1,991 valid, 0 failed batches (5 over-length quotes cleared by resume passes). Final layers (n=4,298): V 577, M 3,020, X 697, U 4. Sol agreement with first pass on E5 presence: GLM 67.96%, Luna 29.13%",
-      "output_sources": [
-        "../04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_4298.csv",
-        "../04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_summary.json",
-        "../04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_summary.md",
-        "raw output: ai_triage/_local_runs/adjud_gpt6_sol_v1_2_full_1991.json (git-ignored; sha256 933a1859d7bc2f08ad1ea17e69b430625c789fcfe7813b16a49926599a4e4584)"
-      ],
-      "human_verification_status": "Pending: B and C verify a seeded 10% sample of adjudicated records (199; seed 20261008) alongside the V, U, M and X scopes; D adjudicates. AI layers are recommendations, not decisions of record",
-      "not_performed": [
-        "human verification",
-        "triage of the 28 batch-235 advances",
-        "full-text retrieval, screening and extraction"
-      ]
-    },
-    {
-      "date": "2026-10-09",
-      "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 25 records per call",
-      "coordinator_model": "claude-sonnet-5",
-      "model": "gpt-6-sol",
-      "model_settings": "reasoning effort medium; 25 records per call (138 batches); run twice, see run_summary",
-      "task": "PRE-007 rule-4 re-screening of TI04/TI05 stage-1 AI exclusions under TI_rules v1.1; single inclusion-oriented stand-in (B-side family); run 1 superseded by run 2 after a prompt-fidelity correction",
-      "prompt_reference": {
-        "run_1_superseded": {
-          "file": "../04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/rescreen_prompt_v1_1_run1_superseded.md",
-          "version": "v1.1 + non-rules-faithful 'Worked examples for TI05' addendum",
-          "sha256": "67231c68f1225dbfd6f04d967f32b2a628a51d1a6c687da9463aefaf97ad254d"
-        },
-        "run_2_of_record": {
-          "file": "../04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/rescreen_prompt_v1_1.md",
-          "version": "v1.1 bullets verbatim, rules-faithful, no addendum",
-          "sha256": "fc0af17f6a552131d7c045756fd02ae4ac051c0eca488718ac3db65a8e4b1ad9"
-        }
-      },
-      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_stage1/ti_prefill_schema_item.json (item schema; locally-derived Codex batch wrapper rescreen_schema_batch_strict.json, field names unchanged, same for both runs)",
-      "records": 3439,
-      "concurrency": 16,
-      "run_summary": "Run 1 (superseded): prompt added a TI05-outcome-list-is-closed addendum; 0 failed batches, 3,439/3,439 valid; ~3 min wall; token usage input 2,499,173 / output 208,309 / reasoning 104,814; 1,143/3,439 (33.2%) re-advanced (TI04 25.7%, TI05 63.2% -- judged over-inclusive against D's 177-record human-adjudicated sample: TI04 27%, TI05 21%). Run 2 (of record): addendum deleted, prompt is the v1.1 bullets verbatim; 0 failed batches, 3,439/3,439 valid (one transient network reconnect on batch_0011, resolved on attempt 2); ~3 min 14 s wall; token usage input 2,456,562 / output 223,528 / reasoning 118,091; 919/3,439 (26.7%) re-advanced (TI04 24.8%, TI05 34.4%), much closer to the human benchmark.",
-      "output_sources": [
-        "../04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/rescreen_result_sol.csv (run 2, run of record)",
-        "../04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/rescreen_summary_2026-10-09.md (both runs documented)",
-        "../04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/run_manifest.json (run 2 plus superseded_runs entry for run 1)",
-        "raw output run 1: ai_triage/_local_runs/rescreen_sol_2026-10-09/run1_superseded/rescreen_input.json (git-ignored)",
-        "raw output run 2: ai_triage/_local_runs/rescreen_sol_2026-10-09/run2/rescreen_input.json (git-ignored)"
-      ],
-      "human_verification_status": "Not a decision of record. The 919 re-advanced records (run 2) go through normal abstract-stage human/AI screening like any other advanced title; the 2,520 retained exclusions are not re-adjudicated by this pass",
-      "not_performed": [
-        "human verification of this re-screen's dispositions",
-        "abstract-stage screening of the 919 re-advanced records"
-      ]
-    },
-    {
-      "date": "2026-10-09",
-      "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 5 records per call",
-      "coordinator_model": "claude-sonnet-5",
-      "model": "gpt-6-sol",
-      "model_settings": "reasoning effort medium; 5 records per call, concurrency 16; one run plus one --resume pass per batch CSV",
-      "task": "Stage-2 TITLE/ABSTRACT screening, side B (inclusion-oriented stand-in), of the 1,061 records that (re-)entered stage 2 on 2026-10-09 (142 human-advanced sample/pilot records + 919 PRE-007 TI_rules v1.1 title re-advances), run as batches 237-242",
-      "prompt_reference": {
-        "file": "../04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_prompt_B_codex_batch.md",
-        "version": "ta_standin_prompt_B.md system prompt and TA rules verbatim; only the single-record-input sentence rewritten for the runner's several-records-per-call batch format",
-        "sha256": "c094a8bbb583f7e6025a7c68de35ab45d3d077830c07ddb3b2c1fef997d5d8fb"
-      },
-      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_schema.json (item schema; locally-derived Codex batch wrapper ta_standin_schema_batch_strict.json, sha256 3ee5a568cce786e4402c775b169b7688b2a8ae7c76018f5e23dd988b42385bb0, field names/enums unchanged, allOf conditional verified post hoc instead)",
-      "records": 1061,
-      "concurrency": 16,
-      "run_summary": "Smoke test (20 records, concurrency 2): 4/4 sub-batches succeeded, 0 invalid, 0 AWAITING. Full run: 6 batch CSVs (200/200/200/200/200/61), 253 sub-batches total, 0 failed batches, 0 invalid/missing records on the first pass (confirmed by a --resume pass per batch, 0 reruns needed); wall time (batch_237 start to batch_242 finish) ~3 min 53 s; token usage input 4,657,942 / output 129,540 / reasoning 70,313. Result: 115 ADVANCE / 946 EXCLUDE_TA / 0 AWAITING_CLASSIFICATION (EXCLUDE_TA codes: FT01 142, FT02 238, FT03 379, FT04 108, FT05 6, FT07 73). The AI stand-in was not informed these records had any stage-1 re-screen history.",
-      "output_sources": [
-        "../04_screening/formal_2026-10-05_v0.9/ai_stage2/out_B/batch_237.json .. batch_242.json (converted via scripts/ta_standin_to_batch.py)",
-        "../04_screening/formal_2026-10-05_v0.9/ai_stage2/batches_237_242_B_manifest.json (full counts, per-batch usage, hashes, deviations)",
-        "../04_screening/formal_2026-10-05_v0.9/ai_stage2/README.md, section 'Batches 237-242, side B (2026-10-09)'",
-        "raw per-batch run output: ai_triage/_local_runs/stage2_B_sol_batches_237_242/out_B_sol/batch_237/ .. batch_242/ (consolidated batch_NNN.json plus per-sub-batch files; git-ignored)"
-      ],
-      "human_verification_status": "Not yet performed. Side C (second independent read) and third-read adjudication for any B/C conflicts are scheduled next, on another backend; scripts/ta_ai_merge.py was intentionally not run for this batch set.",
-      "not_performed": [
-        "side C screening of these 1,061 records",
-        "third-read adjudication / merge (scripts/ta_ai_merge.py)",
-        "human verification of these 115 ADVANCE / 946 EXCLUDE_TA dispositions"
-      ]
-    },
-    {
-      "date": "2026-10-09",
-      "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 5 records per call (after an earlier Claude Sonnet headless-CLI attempt was superseded, see below)",
-      "coordinator_model": "claude-sonnet-5",
-      "model": "gpt-6-sol",
-      "model_settings": "reasoning effort high; 5 records per call, concurrency 16; one run plus one --resume pass per batch CSV",
-      "task": "Stage-2 TITLE/ABSTRACT screening, side C (closed-list strict stand-in), of the same 1,061 records that (re-)entered stage 2 on 2026-10-09 (batches 237-242) already screened by side B",
-      "superseded_attempt": {
-        "tool": "Claude Code (Anthropic) desktop CLI, running the new scripts/claude_ta_standin_run.py directly against the documented headless `claude -p` CLI, 1 record per call",
-        "model": "claude-sonnet (headless subscription)",
-        "model_settings": "effort medium; concurrency 6",
-        "outcome": "10-record smoke test passed (10/10 valid); full run killed by the coordinator after 143/1,061 records (too slow, ETA ~2.5h, competing with other concurrent Claude sessions). Not used for any decision; checkpoints archived outside the repo for the record only."
-      },
-      "prompt_reference": {
-        "file": "../04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_prompt_C_codex_batch.md",
-        "version": "ta_standin_prompt_C.md system prompt and TA rules verbatim; only the single-record-input sentence rewritten for the runner's several-records-per-call batch format (identical replacement wording already used for ta_standin_prompt_B_codex_batch.md)",
-        "sha256": "771f66b9b8cc260875bf53df7d195c037677e3f542354f9299d14ea36415efe8"
-      },
-      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_schema.json (item schema; reused Codex batch wrapper ta_standin_schema_batch_strict.json unmodified from side B, sha256 3ee5a568cce786e4402c775b169b7688b2a8ae7c76018f5e23dd988b42385bb0)",
-      "records": 1061,
-      "concurrency": 16,
-      "run_summary": "6 batch CSVs (200/200/200/200/200/61), 213 sub-batches total, 0 failed batches, 0 invalid/missing records on the first pass, confirmed by a --resume pass (0 reruns needed); token usage input 4,624,660 / output 199,953 / reasoning 140,322. Result: 112 ADVANCE / 948 EXCLUDE_TA / 1 AWAITING_CLASSIFICATION (genuine model output, not a placeholder); EXCLUDE_TA codes FT01 144, FT02 244, FT03 378, FT04 95, FT05 14, FT06 2, FT07 71.",
-      "output_sources": [
-        "../04_screening/formal_2026-10-05_v0.9/ai_stage2/out_C/batch_237.json .. batch_242.json (converted via scripts/ta_standin_to_batch.py)",
-        "../04_screening/formal_2026-10-05_v0.9/ai_stage2/batches_237_242_C_manifest.json (full counts, per-batch usage, hashes, deviations, superseded-attempt record)",
-        "../04_screening/formal_2026-10-05_v0.9/ai_stage2/README.md, section 'Batches 237-242, side C (2026-10-09)'"
-      ],
-      "human_verification_status": "Not yet performed. Blind third-read adjudication of B/C conflicts is scheduled next, followed by merge and validation-readiness triage of new advances.",
-      "not_performed": [
-        "third-read adjudication / merge (scripts/ta_ai_merge.py)",
-        "human verification of these 112 ADVANCE / 948 EXCLUDE_TA / 1 AWAITING_CLASSIFICATION dispositions"
-      ]
-    },
-    {
-      "date": "2026-10-09",
-      "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 5 records per call",
-      "coordinator_model": "claude-sonnet-5",
-      "model": "gpt-6-sol",
-      "model_settings": "reasoning effort high; 5 records per call, concurrency 16; one run plus one --resume pass",
-      "task": "Blind third read (adjudication) of the 65 B/C conflicts among the 1,061-record PRE-007 stage-2 re-entrant pool (batches 237-242)",
-      "prompt_reference": {
-        "file": "../04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_prompt_O_codex_batch.md",
-        "version": "ta_standin_prompt_O.md system prompt and TA rules verbatim; only the single-record-input sentence rewritten for the batch format",
-        "sha256_in_manifest": "see batch_032_O_manifest.json"
-      },
-      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_schema.json (item schema; reused Codex batch wrapper ta_standin_schema_batch_strict.json unmodified)",
-      "records": 65,
-      "concurrency": 16,
-      "run_summary": "13 sub-batches, 0 failed, 0 invalid/missing after resume; token usage input 285,571 / output 22,711 / reasoning 18,981. Result: 14 ADVANCE / 50 EXCLUDE_TA / 1 AWAITING_CLASSIFICATION; EXCLUDE_TA codes FT04 14, FT02 10, FT03 10, FT07 8, FT05 7, FT01 1. 0 primary_code/disposition conditional violations.",
-      "output_sources": [
-        "../04_screening/formal_2026-10-05_v0.9/ai_stage2/out_O/batch_032.json (converted via scripts/ta_standin_to_batch.py --omit-invalid)",
-        "../04_screening/formal_2026-10-05_v0.9/ai_stage2/batch_032_O_manifest.json",
-        "../04_screening/formal_2026-10-05_v0.9/ai_stage2/README.md, section 'Batch 032, third reads for batches 237-242 (2026-10-09)'"
-      ],
-      "human_verification_status": "Not yet performed. Merge (scripts/ta_ai_merge.py) and validation-readiness triage of new advances are next.",
-      "not_performed": [
-        "merge (scripts/ta_ai_merge.py)",
-        "human verification of these dispositions"
-      ]
-    },
-    {
-      "date": "2026-10-09",
-      "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 5 records per call",
-      "coordinator_model": "claude-sonnet-5",
-      "model": "gpt-6-sol",
-      "model_settings": "reasoning effort medium; 5 records per call, concurrency 16; one run plus one --resume pass",
-      "task": "Validation-readiness (E1-E5) triage of the 120 new review_scope=FULLTEXT_CANDIDATE records among the 1,061 PRE-007 stage-2 re-entrants (batches 237-242), to derive final layers (V/M/X/U) and human review scope for the new advances",
-      "prompt_reference": {
-        "file": "../04_screening/formal_2026-10-05_v0.9/ai_triage/prompt_e5_adjudication_v1_2.md",
-        "version": "v1.2, unchanged, used verbatim (same prompt as the stricter E5 adjudication pass used for batch-236's supplement)"
-      },
-      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_triage/schema_v1.json (item); ../04_screening/formal_2026-10-05_v0.9/ai_triage/schema_v1_strict_batch.json (batch wrapper), both unmodified",
-      "records": 120,
-      "concurrency": 16,
-      "run_summary": "24 sub-batches, 0 failed, 0 invalid/missing after resume. Layers derived directly from this single Sol pass (no two-family first pass for this small supplement, per coordinator instruction) using the unmodified layer rule of scripts/triage_finalize.py, via new script scripts/triage_finalize_rescreen_supplement.py. Final layers: V=5, M=61, X=54, U=0. Human scope: HUMAN_CONFIRM_ALL=5 (all V), HUMAN_SAMPLE_VERIFY=115 (all M+X, not a 10% draw -- small-supplement convention, same as final_triage_batch236_supplement.md).",
-      "output_sources": [
-        "../04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_rescreen_supplement.csv",
-        "../04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_rescreen_supplement.md",
-        "raw run output archived (git-ignored, abstracts present): ai_triage/_local_runs/rescreen_stage2_triage_2026-10-09/"
-      ],
-      "human_verification_status": "Not yet performed. HUMAN_CONFIRM_ALL and HUMAN_SAMPLE_VERIFY records await human review per the workbook workflow.",
-      "not_performed": [
-        "human verification of these 120 layer assignments",
-        "a second model family's first-pass read (this supplement used a single Sol pass only, by design)"
-      ]
-    },
-    {
-      "date": "2026-10-09",
-      "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 5 records per call",
-      "coordinator_model": "claude-sonnet-5",
-      "model": "gpt-6-sol",
-      "model_settings": "reasoning effort high; 5 records per call, concurrency 12; one run per side (first attempt on each side used the runner's default --schema-item, an older E1-E5 schema that does not match this task's fields, and was discarded/rerun with the correct item schema; final runs: 0 failed batches / 0 invalid records)",
-      "task": "AI pre-fill of reviewer B's and C's own your_disposition/your_primary_code/your_comment columns on the stage-2 exclusion-sample verification workbooks (ta_review_B.xlsx/ta_review_C.xlsx: sample_verify 519 rows blind 10% sample of agreed AI exclusions + awaiting 2 rows), per PRE-007 rule 4 / PRE-008 choice 8 so B and C verify/override instead of starting from blank cells",
-      "prompt_reference": {
-        "file": "../04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_prompt_{B,C}_codex_batch.md",
-        "version": "as committed, with a locally-patched age-rule clause (see deviations in ta_review_prefill_manifest.json: committed prompts still carried the pre-PRE-011 age rule; patched copies used for the run were not committed, sha256 of the as-used text recorded in the manifest)"
-      },
-      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_schema_batch_strict.json (batch); per-item schema derived from it, not committed (see manifest)",
-      "records": 1042,
-      "concurrency": 12,
-      "run_summary": "521 records x 2 sides (B, C) = 1,042 record-decisions; 105 batches/side, 0 failed, 0 invalid/missing after the schema-item fix. B: 26 ADVANCE / 495 EXCLUDE_TA. C: 26 ADVANCE / 495 EXCLUDE_TA. Pre-fill-vs-pre-fill agreement (B vs C, not a human reliability statistic): 97.7% raw, kappa 0.757. Written back with a hidden _prefill audit log and light-yellow cell highlighting per the ai_triage/README_review_workbooks.md precedent; two disclosure lines added to each workbook's README sheet.",
-      "output_sources": [
-        "04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_review_B.xlsx (git-ignored, not committed)",
-        "04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_review_C.xlsx (git-ignored, not committed)",
-        "04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_review_prefill_manifest.json",
-        "raw run output archived (git-ignored, abstracts/model-echoed quotes present): ai_triage/_local_runs/ta_sample_prefill_2026-10-09/"
-      ],
-      "human_verification_status": "Not yet performed. B and C still need to read every abstract in sample_verify + awaiting and override any pre-filled value they disagree with; their final values are the decisions of record. scripts/ta_human_merge.py (B vs C agreement/kappa, override rate vs the _prefill log, PRE-007 rule-4 confirmed-ADVANCE-per-AI-code trigger table with Wilson 95% CIs) was run once on the freshly pre-filled, not-yet-human-edited workbooks only to prove the pipeline works (override rate 0/521 both sides, as expected); that output is suffixed _provisional and git-ignored, not a reportable result.",
-      "not_performed": [
-        "human verification of any of the 1,042 pre-filled record-decisions",
-        "reconciliation of ta_standin_prompt_{B,C}_codex_batch.md's committed age-rule text with PRE-011 (worked around locally for this run only; see deviations in ta_review_prefill_manifest.json)"
-      ]
-    },
-    {
-      "date": "2026-10-09",
-      "tool": "Claude Code (Anthropic) desktop CLI, running scripts/extract_run.py through the Codex CLI (OpenAI, codex_stream_call.py)",
-      "coordinator_model": "claude-sonnet-5",
-      "model": "gpt-6-sol",
-      "model_settings": "reasoning effort high; one process per report; concurrency 4 (reduced to 1-2 on retries, Codex shared with another agent's run at the time)",
-      "task": "PRE-009 extraction prompt/schema v1.1 (D): rewrote extract_prompt_v1.md/extract_schema_v1.json to fix evidence_state misuse (NR underuse, not_demonstrated-for-unreported, evidence_present contradicted by its own note, independent-validation inconsistency), vocabulary drift in dictionary-controlled fields (matrix, exercise_mode, design, training_status, clinical_endpoint), analyte raw/canonical split and numeric time fields, flagged in 06_synthesis/prototype_2026-10-09/prototype_report.md (c)/(d) and T8_extraction_quality.csv off the 130-report formal pre-fill; piloted the fix on the same 10 reports as pilot_comparison_2026-10-08.md (not the 130) ahead of the ~300-report rollout.",
-      "prompt_reference": {
-        "file": "../05_extraction/ai_extraction/extract_prompt_v1_1.md",
-        "version": "v1.1, 2026-10-09",
-        "sha256": "d94cc6708f87b037142a664522a0eb3d587330a618fbce9f51d37b0e977474c5"
-      },
-      "schema_reference": {
-        "file": "../05_extraction/ai_extraction/extract_schema_v1_1.json",
-        "version": "v1.1, 2026-10-09",
-        "sha256": "040ea9d504c446ffebb6d24ca9afe9935717c9f7937ab339be350788bb689703"
-      },
-      "records": 10,
-      "concurrency": "4 (first pass), 1-2 (retries)",
-      "run_summary": "10/10 reports schema-valid after retries (4 reports needed 1 retry each for transient Codex capacity/network errors; 1 report, R19, validated first try but with 0 measurements/0 precision_validation rows and a self-flagged incomplete-extraction note, retried to 7/7 rows, still short of v1's 20/7 on that report -- see pilot_comparison_v1_1_2026-10-09.md Limitations). vs the existing v1 runs/sol/ output on the same 10 reports: precision_validation NR share 2.1%->35.1%; evidence_present rows whose own note negates the state 47.7%->2.4%; feasibility evidence_present negated 60.0%->0.0%; independent-validation evidence_present inconsistent with validation_split 100%->0 such rows; off-vocabulary rate on matrix/exercise_mode/training_status/design/clinical_endpoint 80-100%->0.0% (schema-enforced enums); not_demonstrated rows that read like unreported fell 40.3%->25.5% (reduced, not eliminated); wall time and output/reasoning token cost per report essentially unchanged; provenance (quote-on-page) 0.991->0.987 fuzzy, unchanged within noise.",
-      "output_sources": [
-        "../05_extraction/ai_extraction/runs/sol_v1_1_pilot/*.json (git-ignored raw output, 10 files)",
-        "../05_extraction/ai_extraction/run_manifest.json (10 new entries, family sol_v1_1_pilot)",
-        "../05_extraction/ai_extraction/pilot_comparison_v1_1_2026-10-09.md (full before/after table and recommendation)"
-      ],
-      "human_verification_status": "Not yet performed; this is a prompt/schema engineering pilot, not a formal extraction. Recommendation in pilot_comparison_v1_1_2026-10-09.md: adopt v1.1 for the ~300-report rollout; do not re-run the 130.",
-      "not_performed": [
-        "formal extraction of the ~300-report rollout under v1.1",
-        "re-extraction of the 130 under v1.1 (explicitly out of scope for this task)",
-        "human verification of the 10-report pilot outputs themselves"
-      ]
-    },
-    {
-      "date": "2026-10-09",
-      "tool": "Claude Code (Anthropic) desktop CLI, running scripts/ft_prefill_run.py through the Codex CLI (OpenAI, codex_stream_call.py)",
-      "coordinator_model": "claude-sonnet-5",
-      "model": "gpt-6-sol",
-      "model_settings": "reasoning effort high; one codex exec per record; concurrency 8; one resume pass (1/67 records needed it, a mid-stream network disconnect)",
-      "task": "PRE-010/PRE-011 full-text AI pre-fill, batch 2 (D): 67 reports with status retrieved_manual in fulltext_fetch_manifest.csv (A's manually downloaded OA PDFs; batch grew from 64 to 67 mid-run when 3 more PDFs were registered). Used new prompt ai_prefill/ft_screen_prompt_v1_1.md (v1 with only the age_rule_check paragraph replaced by amendment PRE-011) so the age rule applied at generation time rather than needing a later deterministic re-derivation pass.",
-      "prompt_reference": {
-        "file": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_screen_prompt_v1_1.md",
-        "version": "v1.1, 2026-10-09 (PRE-010 + PRE-011)",
-        "sha256": "see ai_prefill/run_manifest.json entries with family=sol, prompt_version=v1_1"
-      },
-      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_screen_schema_v1.json (unchanged; age_rule_check enum values kept, meaning of mean_minus_2SD_below_18_unresolved relabelled by the prompt, not the schema)",
-      "records": 67,
-      "concurrency": 8,
-      "run_summary": "67/67 valid (63/64 first try on the original 64, 1 resumed after a network disconnect; the 3 late additions 3/3 first try). Disposition: INCLUDE_A 35, INCLUDE_A_AND_B 22, EXCLUDE 6, AWAITING_CLASSIFICATION 3, INCLUDE_B 1. age_rule_check: adults_confirmed 61, mean_minus_2SD_below_18_unresolved 3, not_applicable 2, under_18_included 1. One record, FS-000504 (locally OCR'd by A from a scanned PDF), had no [[page N]] markers; patched with one synthetic [[page 1]] marker before running so the scanned-text heuristic did not wrongly skip it (original text saved in fulltext/_backup_prefill_batch2_2026-10-09/, git-ignored).",
-      "output_sources": [
-        "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/runs/sol/*.json (git-ignored, 67 of 216 files)",
-        "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/run_manifest.json (67 new entries, family=sol, prompt_version=v1_1)",
-        "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_prefill_summary_2026-10-09.md (Batch 2 section)",
-        "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_B.xlsx (git-ignored; written via scripts/ft_prefill_to_workbook.py --reviewer B --family sol)"
-      ],
-      "human_verification_status": "Not yet performed. B still needs to read every one of these 67 full texts and override any pre-filled value disagreed with; final values are B's decision of record.",
-      "not_performed": [
-        "human verification of any of these 67 pre-filled record-decisions",
-        "re-running the PRE-011 deterministic rule script (scripts/apply_pre011_to_ft_prefill.py) on this batch: not needed, PRE-011 was applied at generation time via prompt v1.1"
-      ]
-    },
-    {
-      "date": "2026-10-09",
-      "tool": "Claude Code (Anthropic) desktop CLI, running scripts/claude_ft_prefill_run.py through Claude Code's own documented headless CLI (`claude -p`, team subscription)",
-      "coordinator_model": "claude-sonnet-5",
-      "model": "claude-sonnet (headless)",
-      "model_settings": "reasoning effort medium; concurrency 3 (raised from the prior batch's 2 per this task's brief); --trim; one pass only, 0 resume needed",
-      "task": "PRE-010/PRE-011 full-text AI pre-fill, batch 2 (D), C side: same 67 retrieved_manual reports as the Sol run above, same prompt (ft_screen_prompt_v1_1.md, PRE-011) and schema. Wall time (~833 s / 13.9 min for all 67) was tracked against this task's 25-minute stop-and-substitute threshold; the Sol-effort-medium fallback (pre-approved by A for when Claude is unavailable/unstable) was not triggered.",
-      "prompt_reference": {
-        "file": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_screen_prompt_v1_1.md",
-        "version": "v1.1, 2026-10-09 (PRE-010 + PRE-011)",
-        "sha256": "see ai_prefill/run_manifest.json entries with family=claude_sonnet, prompt_version=v1_1, model=claude-sonnet, record_id in this batch"
-      },
-      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_screen_schema_v1.json (unchanged)",
-      "records": 67,
-      "concurrency": 3,
-      "run_summary": "67/67 valid, 0 invalid, 0 rate/usage-limit pauses, 0 schema-repair retries. Disposition: INCLUDE_A 42, INCLUDE_A_AND_B 10, EXCLUDE 6, AWAITING_CLASSIFICATION 3, INCLUDE_B 6. Agreement with the Sol side on the same 67 records (pre-fill vs pre-fill, not a human reliability statistic): exact disposition match 46/67 (68.7%), binary include-vs-not match 59/67 (88.1%). Cost (CLI-reported) $6.25 for the batch.",
-      "output_sources": [
-        "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/runs/claude_sonnet/*.json (git-ignored, 67 of 216 files)",
-        "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/run_manifest.json (67 new entries merged in, family=claude_sonnet, prompt_version=v1_1)",
-        "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_prefill_summary_2026-10-09.md (Batch 2 section)",
-        "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_C.xlsx (git-ignored; written via scripts/ft_prefill_to_workbook.py --reviewer C --family claude_sonnet)"
-      ],
-      "human_verification_status": "Not yet performed. C still needs to read every one of these 67 full texts and override any pre-filled value disagreed with; final values are C's decision of record.",
-      "not_performed": [
-        "human verification of any of these 67 pre-filled record-decisions",
-        "the pre-approved Sol-effort-medium C-side fallback (not triggered; Claude finished within the 25-minute budget)"
-      ]
-    },
-    {
-      "date": "2026-10-09",
-      "tool": "Claude Code (Anthropic) desktop CLI, acting as the AI stand-in for reviewer B, running scripts/ft_override_run.py through the Codex CLI (OpenAI, codex_stream_call.py)",
-      "coordinator_model": "claude-sonnet-5",
-      "model": "gpt-6-sol",
-      "model_settings": "reasoning effort high; one codex exec per record; concurrency 8; 0 resume passes needed (190/190 valid on first call)",
-      "task": "PRE-010 full-text screening OVERRIDE pass, reviewer B: an INDEPENDENT re-read of the full text of all 190 records already carrying a pre-filled your_disposition in ft_screen_B.xlsx. Each record was given the full text plus a clearly labelled first-pass pre-fill block and asked to decide every field itself, then flag agree/override per field (your_disposition, your_primary_code, your_age_rule_check, your_validation_element_confirmed, your_secondary_notes, your_comment) with a page-cited quote. New prompt ai_prefill/ft_override_prompt_v1.md and extended schema ai_prefill/ft_override_schema_v1.json (built for this task). This is an AI stand-in substitution for the human override step amendment PRE-010 actually requires (\"B reads every full text and overwrites what they disagree with\"); it is not that human review.",
-      "prompt_reference": {
-        "file": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_prompt_v1.md",
-        "version": "v1, 2026-10-09",
-        "sha256": "see ai_prefill/ft_override_run_manifest.json entries"
-      },
-      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_schema_v1.json",
-      "records": 190,
-      "concurrency": 8,
-      "run_summary": "190/190 valid, 0 invalid, 0 schema-repair retries. Wall time ~700s (11.7 min); 6,216,524 input + 305,831 output tokens (codex-reported usage). Disposition after override: INCLUDE_A 103, INCLUDE_A_AND_B 54, INCLUDE_B 4, RETAIN_BACKGROUND 3, EXCLUDE 17, AWAITING_CLASSIFICATION 9 (before: INCLUDE_A 86, INCLUDE_A_AND_B 66, INCLUDE_B 3, RETAIN_BACKGROUND 5, EXCLUDE 14, AWAITING_CLASSIFICATION 16). Field override rates (of 190): disposition 14.7%, primary_code 1.6%, age_rule_check 4.7%, validation_element_confirmed 11.6%, secondary_notes 55.3%, comment 32.1% (228/1,140 = 20.0% of all field writes). 28 disposition flips; the 10 most consequential (include<->not-include or AWAITING<->decision) are documented with quotes in ai_prefill/ft_override_B_summary_2026-10-09.md. One field (FS-003434 secondary_notes, cleared to empty) carries an override flag with no quote, since there is no text evidence for an absence; logged as a deviation rather than forced. FS-000504 (OCR-scanned PDF) was screened normally; the model flagged the OCR table distortion in its own note field.",
-      "output_sources": [
-        "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/runs/override_sol/*.json (git-ignored, 190 files, quote the full text)",
-        "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_run_manifest.json (190 entries)",
-        "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_B_summary_2026-10-09.md",
-        "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_B.xlsx (git-ignored; written via scripts/ft_override_apply_to_workbook.py; backup at fulltext/_backup_override_B_2026-10-09/, git-ignored; hidden _override_B sheet logs every one of the 1,140 field writes)",
-        "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_workbooks_manifest.json (override_B block: counts, prompt/schema sha256, workbook sha256 after write)"
-      ],
-      "human_verification_status": "Not yet performed. This entire pass -- both the original pre-fill and this override -- is AI-generated. A human reviewer B still needs to read every one of these 190 full texts and overwrite any field disagreed with; final values are B's decision of record, not this AI stand-in's.",
-      "not_performed": [
-        "human verification of any of these 190 override-pass record-decisions",
-        "the equivalent override pass on reviewer C's workbook (ft_screen_C.xlsx), performed separately and concurrently by a different process; never opened by this task"
-      ]
-    },
-    {
-      "date": "2026-10-09",
-      "tool": "Claude Code (Anthropic) desktop CLI, acting as the AI stand-in for reviewer C, running scripts/ft_override_run_claude.py through Claude Code's own documented headless CLI (`claude -p`, team subscription)",
-      "coordinator_model": "claude-sonnet-5",
-      "model": "claude-sonnet (headless)",
-      "model_settings": "reasoning effort high; concurrency 3; --trim --max-input-chars 60000; 1 schema-repair retry needed (FS-007132), 0 rate/usage-limit pauses",
-      "task": "PRE-010 full-text screening OVERRIDE pass, reviewer C: an INDEPENDENT re-read of the full text of all 190 records already carrying a pre-filled your_disposition in ft_screen_C.xlsx (the claude_sonnet-family PRE-010/PRE-011 pre-fill). Each record was given the full text plus a clearly labelled first-pass pre-fill block (with the brief's named failure modes: over-use of AWAITING_CLASSIFICATION, A/B stream confusion, validation confirmed on background framing) and asked to decide every field itself, then flag agree/override per field (your_disposition, your_primary_code, your_age_rule_check, your_validation_element_confirmed, your_secondary_notes, your_comment) with a page-cited quote. New prompt ai_prefill/ft_override_prompt_C_v1.md and schema ai_prefill/ft_override_schema_C_v1.json (built for this task, independent of reviewer B's equivalently-named files). This is an AI stand-in substitution for the human override step amendment PRE-010 actually requires (\"C reads every full text and overwrites what they disagree with\"); it is not that human review.",
-      "prompt_reference": {
-        "file": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_prompt_C_v1.md",
-        "version": "v1, 2026-10-09",
-        "sha256": "123c6ba171284292dcb53c3cbdfcc5d1e2b95443901ec1db48d3014334714173"
-      },
-      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_schema_C_v1.json",
-      "records": 190,
-      "concurrency": 3,
-      "run_summary": "190/190 valid, 0 invalid, 1 schema-repair retry. Wall time 2,764.7 s (46.1 min; ~1 min over this task's 45-min stop-and-substitute threshold, not switched to the Sol fallback -- see ft_override_C_summary_2026-10-09.md). Usage (CLI-reported, summed): 598 input + 744,003 output + 3,685,005 cache-read + 3,538,688 cache-creation tokens; cost $22.33. Disposition after override: INCLUDE_A 100, INCLUDE_A_AND_B 48, INCLUDE_B 6, RETAIN_BACKGROUND 6, EXCLUDE 19, AWAITING_CLASSIFICATION 11 (before: INCLUDE_A 105, INCLUDE_A_AND_B 35, INCLUDE_B 13, RETAIN_BACKGROUND 5, EXCLUDE 18, AWAITING_CLASSIFICATION 14). Field override rates (of 190, script-computed against the pre-fill snapshot, not the model's self-report): disposition 16.3%, primary_code 2.6%, age_rule_check 17.4%, validation_element_confirmed 13.7%, secondary_notes 55.8%, comment 100% (the last is a structural artifact of rebuilding the comment field in a different composite format every time, not a disagreement signal -- see summary). 31 disposition flips; the 10 most consequential (include<->exclude or AWAITING<->decision) are documented with quotes in ai_prefill/ft_override_C_summary_2026-10-09.md. FS-000504 (local OCR of a scanned article) was read through the OCR noise and agreed with the pre-fill on every substantive field.",
-      "output_sources": [
-        "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/runs/override_claude_sonnet/*.json (git-ignored, 190 files, quote the full text)",
-        "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/runs/override_prefill_snapshot_C.json (git-ignored; pre-fill snapshot taken before any write)",
-        "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_C_summary_2026-10-09.md",
-        "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_C.xlsx (git-ignored; written via scripts/ft_override_writeback_C.py; backup at fulltext/_backup_override_C_2026-10-09/, git-ignored; hidden _override_C sheet logs every one of the 1,140 field writes)",
-        "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_workbooks_manifest.json (override_C block: counts, prompt/schema sha256, workbook sha256 before/after)"
-      ],
-      "human_verification_status": "Not yet performed. This entire pass -- both the original pre-fill and this override -- is AI-generated. A human reviewer C still needs to read every one of these 190 full texts and overwrite any field disagreed with; final values are C's decision of record, not this AI stand-in's.",
-      "not_performed": [
-        "human verification of any of these 190 override-pass record-decisions",
-        "the equivalent override pass on reviewer B's workbook (ft_screen_B.xlsx), performed separately and concurrently by a different process (commit e7479b1); never opened by this task"
-      ]
+     "ref": "manuscript blueprint / search strategy only (not a protocol reference)",
+     "citation": "Trybulski R, Bjelica D, Çitozi R, Kisilewicz A, Smoter M, Urban J. Acute Cytokine Responses to High-Intensity Intermittent Exercise in Humans: A Systematic Review. Int J Mol Sci 2026;27(11):4950",
+     "pmid": "42278474",
+     "doi": "10.3390/ijms27114950",
+     "quoted_phrase_verified_from_efetch_abstract": "Sampling was mapped to prespecified recovery windows.",
+     "status": "verified by AI 2026-10-04 (article number 4950 from PII; esummary pages field empty); human verification pending. Note: the review is itself registered on OSF (osf.io/wspr6) and is an adjacent review for the team's positioning check"
     }
-  ],
-  "future_entry_fields": [
-    "date",
-    "tool",
-    "tool_version",
-    "model",
-    "provider_source",
-    "task",
-    "prompt_reference",
-    "output_reference",
-    "human_verifier",
-    "verification_method",
-    "decision_on_output"
-  ]
+   ],
+   "human_verification_status": "Deferred: team (A) decided 2026-10-04 that verification of newly added references happens once at the manuscript stage, not now",
+   "human_verifier": null,
+   "formal_review_decisions_made": false,
+   "not_performed": [
+    "update_protocol_references.py --write (dry-run only; see scripts/README.md section 4)",
+    "formal database search",
+    "screening decisions",
+    "extraction",
+    "critical appraisal",
+    "registration/archive submission",
+    "public push or release"
+   ]
+  },
+  {
+   "date": "2026-10-05",
+   "tool": "Claude Code (Anthropic) desktop CLI",
+   "coordinator_model": "claude-fable-5-1",
+   "delegated_models": [
+    "claude-opus-5-5 (pilot pool build)"
+   ],
+   "tasks": [
+    "PubMed v0.7 draft pool (20,090) and 50-record sample (seed 20261002)",
+    "50-record title/abstract pilot conducted through the coordinator's AskUserQuestion interface: each record shown with a key-facts summary and an AI-generated recommended option; reviewer B answered all 50 first with C away from the screen, then C answered all 50; humans made every decision; coordinator transcribed decisions into the locked workbooks and ran scripts/merge_screening.py"
+   ],
+   "output_sources": [
+    "../04_screening/pilot_2026-10-05/pilot_TA_decisions_2026-10-05.csv",
+    "../04_screening/pilot_2026-10-05/merge_TA_2026-10-05/agreement_TA.json",
+    "../04_screening/screening_log_template.json (calibration)"
+   ],
+   "human_verification_status": "Decisions are human (B, C). Limitation recorded: a visible AI hint for every record makes the 50/50 agreement (kappa 1.0) an over-estimate of unaided inter-reviewer agreement; A decides whether a hint-free second sample is required.",
+   "not_performed": [
+    "automatic exclusion",
+    "formal search",
+    "formal screening",
+    "extraction"
+   ]
+  },
+  {
+   "date": "2026-10-05",
+   "tool": "Claude Code (Anthropic) desktop CLI",
+   "coordinator_model": "claude-fable-5-1",
+   "delegated_models": [
+    "claude-opus-5-5 (pilot materials, identifiers, OA full-text retrieval)",
+    "claude-sonnet-5 (10 parallel extraction stand-ins: 5 for reviewer B, 5 for reviewer C, 2 reports each; loader script)"
+   ],
+   "tasks": [
+    "10-report charting pilot: AI stand-ins for reviewers B and C extracted 9 open-access reports independently (no access to each other's output) into per-report JSON with page/section locators; scripts/load_ai_extraction.py loaded them into the two reviewer workbooks; scripts/compare_extraction.py produced field-by-field agreement, disagreements, empty-by-both and minutes/questions files",
+    "R62 (institutional access) not extracted"
+   ],
+   "output_sources": [
+    "../05_extraction/pilot_2026-10-05/ai_extraction/",
+    "../05_extraction/pilot_2026-10-05/compare_2026-10-05/",
+    "../05_extraction/pilot_2026-10-05/pilot_extraction_B.xlsx",
+    "../05_extraction/pilot_2026-10-05/pilot_extraction_C.xlsx"
+   ],
+   "human_verification_status": "Pending: B, C and D review the disagreement list and unresolved questions; pilot values are AI-suggested charting for calibration of the dictionary/manual, not formal extraction results",
+   "incident": "Two C-side files (R01, R03) were written with tables wrapped as {records:[...]}; normalised by the coordinator before loading (originals kept in load_report notes); agents shared /tmp scratch space — future prompts will assign per-agent scratch directories",
+   "not_performed": [
+    "formal extraction",
+    "critical appraisal",
+    "synthesis"
+   ]
+  },
+  {
+   "date": "2026-10-05",
+   "tool": "Claude Code (Anthropic) desktop CLI",
+   "coordinator_model": "claude-fable-5-1",
+   "delegated_models": [
+    "claude-opus-5-5 (search-strategy scale review and benchmark of 23 published reviews; 51-seed expansion; strategy v0.9 text and PubMed paste-ready files; amendment PRE-006 drafting and protocol/contract/settings edits)",
+    "claude-sonnet-5 (PubMed v0.7 formal export of 2026-10-05, now superseded; merge of post-staging drift and application of the v3.1 staging set)"
+   ],
+   "tasks": [
+    "Benchmark of identified/screened/included counts in 23 published exercise-immunology reviews and noise decomposition of the v0.7 PubMed pool (03_search/strategy_review_2026-10-05.md; v0.8 recommendation)",
+    "Coordinator-run PubMed diagnostics for strategy v0.9 (nine noise conditions, T-phrase removal, Package B, single route): counts, seed recall and 20-title removed-record samples (03_search/strategy_tightening_2026-10-05.md); E-utilities requests carried only tool=scoping-review-search and a project User-Agent, no e-mail or API key",
+    "Translation of v0.9 into WoS and Scopus paste-ready files with primary (TI/AB/AK; TITLE-ABS+AUTHKEY) and fallback field forms, document-type limits and DOI seed-test lines (03_search/paste_ready_v0.9/)",
+    "Drafting of amendment PRE-006 (database set PubMed + WoS + Scopus + Google Scholar supplement; search-stage limits; strategy v0.9) and its application to protocol EN/CN, design contract §10, amendments.json, project_settings.json, CHANGELOG and README; PDF rebuilt; validator 27/27",
+    "Application of the staged v3.1 set (PRE-004, PRE-005) after merging the two live files that had drifted since staging"
+   ],
+   "output_sources": [
+    "../03_search/strategy_review_2026-10-05.md",
+    "../03_search/seed_expansion_2026-10-05.md",
+    "../03_search/strategy_tightening_2026-10-05.md",
+    "../03_search/paste_ready_v0.9/",
+    "../03_search/search_strategy_draft.txt (v0.9-draft)",
+    "../01_protocol/amendments.json (PRE-006)",
+    "../01_protocol/v3_design_contract.txt (§10)"
+   ],
+   "human_decisions": "A decided the four v0.9 questions on 2026-10-05 (nine-condition noise package; T-phrase removal plus Package B; single route with immune anchor; WoS/Scopus field narrowing conditional on D's seed test) and the database set; D runs the WoS/Scopus searches and seed tests on the web interfaces",
+   "human_verification_status": "Pending: A re-reviews v0.9 under PRESS (the v0.7 sign-off is void); D records platform counts and seed-test results; all PubMed counts in the diagnostics are diagnostic, not formal searches",
+   "incident": "None in this session; the earlier Crossref incident (a personal e-mail placed in a request header by a sub-agent) remains the standing reason for the no-e-mail rule in every sub-agent prompt",
+   "not_performed": [
+    "formal search exports under v0.9",
+    "PRESS re-review (A)",
+    "screening, extraction, appraisal, synthesis"
+   ]
+  },
+  {
+   "date": "2026-10-06",
+   "tool": "ZCode desktop CLI (GLM, bigmodel-api provider), continuing the coordination role of the interrupted Claude Code session of 2026-10-04/05",
+   "coordinator_model": "glm-5.3",
+   "delegated_models": [
+    "glm-5.3-flash subagents: stage-2 title/abstract stand-in screening, sides B and C, 5 batches (~200 records) per agent, 10 agents per wave, per-batch JSON outputs written to disk immediately (recovery of the 2026-10-05/06 run that was interrupted at 80/213 B-side and 76/213 C-side batches)",
+    "glm-5.3-flash subagents: blind third read of stage-2 B/C conflicts"
+   ],
+   "tasks": [
+    "Rescue of the interrupted stage-2 screening outputs from /tmp into 04_screening/formal_2026-10-05_v0.9/ai_stage2/ with per-wave git archiving (A instruction: every subagent persists each completed batch to disk immediately)",
+    "Completion of the remaining stage-2 batches (B side 133, C side 137 of 213)",
+    "Stage-2 merge, conflict third read, reviewer workbooks (ta_review_B/C) and summary",
+    "Retrospective registration of amendment PRE-007 at A's instruction (design adopted by A on 2026-10-05)"
+   ],
+   "human_verification": "A instructed the recovery session; B and C verify all AI advances, conflicts, awaiting-classification records and the seeded 10% exclusion sample in their workbooks"
+  },
+  {
+   "date": "2026-10-07",
+   "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_run_concurrent.py against the provider's HTTP API (key from the local secrets file, never logged)",
+   "coordinator_model": "claude-fable-5-1",
+   "model": "glm-5.3-flash (bigmodel-api provider)",
+   "model_settings": "thinking disabled; one record per request; max tokens 4000",
+   "task": "PRE-008 validation-readiness triage, first pass, family 1: structured-element extraction (E1-E5 with verbatim quotes, study-type hint, note; no eligibility decision) for every stage-2 ADVANCE record (preceded by the 200-record pilot and a thinking-on vs thinking-off consistency check on the same pilot)",
+   "prompt_reference": {
+    "file": "../04_screening/formal_2026-10-05_v0.9/ai_triage/prompt_v1.md",
+    "version": "v1.1",
+    "sha256": "f8eb8e4460463e6444a2cf4ed42dfbd06477cb2a8846e13bd024a35b9566464a"
+   },
+   "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_triage/schema_v1.json",
+   "records": 4298,
+   "concurrency": 12,
+   "run_summary": "4,298/4,298 valid after one retry pass (28 rate-limit failures recovered); ~110 min wall",
+   "output_sources": [
+    "../04_screening/formal_2026-10-05_v0.9/ai_triage/full_4298_glm_flash_summary.md",
+    "../04_screening/formal_2026-10-05_v0.9/ai_triage/full_4298_glm_flash_elements.csv",
+    "../04_screening/formal_2026-10-05_v0.9/ai_triage/pilot_200_glm_consistency.md",
+    "raw output: ai_triage/_local_runs/full_glm_flash_nothink_all_advance.json (git-ignored; sha256 in _local_runs/MANIFEST.json)"
+   ],
+   "human_verification_status": "Not a decision of record. First-pass elements feed the layer assignment only; human verification by B and C (all V, all U, seeded 10% of M and X, seeded 10% of adjudicated records) is pending (PRE-008)"
+  },
+  {
+   "date": "2026-10-07/08",
+   "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 5 records per call",
+   "coordinator_model": "claude-fable-5-1",
+   "model": "gpt-6-luna",
+   "model_settings": "reasoning effort max; 5 records per call (860 batches)",
+   "task": "PRE-008 validation-readiness triage, first pass, family 2: the same structured-element extraction over the same records (preceded by the 200-record two-family pilot); two-family comparison and layer assignment with scripts/triage_compare.py",
+   "prompt_reference": {
+    "file": "../04_screening/formal_2026-10-05_v0.9/ai_triage/prompt_v1.md",
+    "version": "v1.1",
+    "sha256": "f8eb8e4460463e6444a2cf4ed42dfbd06477cb2a8846e13bd024a35b9566464a"
+   },
+   "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_triage/schema_v1.json (item schema; Codex batch wrapper schema_v1_strict_batch.json)",
+   "records": 4298,
+   "concurrency": 16,
+   "run_summary": "0 failed batches; 4,297/4,298 schema-valid (one over-length quote); ~1 h 42 min wall. Two-family agreement (n=4,297): E1-E4 raw 92.4-97.2%, kappa 0.48-0.78; E5 raw 70.3%, kappa 0.40",
+   "output_sources": [
+    "../04_screening/formal_2026-10-05_v0.9/ai_triage/full_4298_gpt6_luna_summary.md",
+    "../04_screening/formal_2026-10-05_v0.9/ai_triage/pilot_200_two_family_summary.md",
+    "../04_screening/formal_2026-10-05_v0.9/ai_triage/full_4298_glm_vs_gpt6/triage_summary.json",
+    "raw output: ai_triage/_local_runs/gpt6_luna_full_4298.json (git-ignored; sha256 in _local_runs/MANIFEST.json)"
+   ],
+   "human_verification_status": "Not a decision of record. First-pass elements feed the layer assignment only; human verification by B and C (all V, all U, seeded 10% of M and X, seeded 10% of adjudicated records) is pending (PRE-008)"
+  },
+  {
+   "date": "2026-10-08",
+   "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 5 records per call; final layering by scripts/triage_finalize.py",
+   "coordinator_model": "claude-fable-5-1",
+   "model": "gpt-6-sol",
+   "model_settings": "reasoning effort medium; 5 records per call (399 batches); blind to the first-pass outputs",
+   "task": "PRE-008 adjudicating read under the stricter E5 definition for the 1,532 two-family disagreements (layer D) and the 459 records in layer V only through repeated_monitoring; final elements and layers V/M/X/U with seeded human scopes",
+   "prompt_reference": {
+    "file": "../04_screening/formal_2026-10-05_v0.9/ai_triage/prompt_e5_adjudication_v1_2.md",
+    "version": "v1.2",
+    "sha256": "34233f28a2fcc3d719b304732d229356d77397b6bfcf0968a30efa329b7133af"
+   },
+   "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_triage/schema_v1.json (item schema; Codex batch wrapper schema_v1_strict_batch.json)",
+   "records": 1991,
+   "concurrency": "16 (main pass); 8 (five resume passes)",
+   "run_summary": "1,991/1,991 valid, 0 failed batches (5 over-length quotes cleared by resume passes). Final layers (n=4,298): V 577, M 3,020, X 697, U 4. Sol agreement with first pass on E5 presence: GLM 67.96%, Luna 29.13%",
+   "output_sources": [
+    "../04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_4298.csv",
+    "../04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_summary.json",
+    "../04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_summary.md",
+    "raw output: ai_triage/_local_runs/adjud_gpt6_sol_v1_2_full_1991.json (git-ignored; sha256 933a1859d7bc2f08ad1ea17e69b430625c789fcfe7813b16a49926599a4e4584)"
+   ],
+   "human_verification_status": "Pending: B and C verify a seeded 10% sample of adjudicated records (199; seed 20261008) alongside the V, U, M and X scopes; D adjudicates. AI layers are recommendations, not decisions of record",
+   "not_performed": [
+    "human verification",
+    "triage of the 28 batch-235 advances",
+    "full-text retrieval, screening and extraction"
+   ]
+  },
+  {
+   "date": "2026-10-09",
+   "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 25 records per call",
+   "coordinator_model": "claude-sonnet-5",
+   "model": "gpt-6-sol",
+   "model_settings": "reasoning effort medium; 25 records per call (138 batches); run twice, see run_summary",
+   "task": "PRE-007 rule-4 re-screening of TI04/TI05 stage-1 AI exclusions under TI_rules v1.1; single inclusion-oriented stand-in (B-side family); run 1 superseded by run 2 after a prompt-fidelity correction",
+   "prompt_reference": {
+    "run_1_superseded": {
+     "file": "../04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/rescreen_prompt_v1_1_run1_superseded.md",
+     "version": "v1.1 + non-rules-faithful 'Worked examples for TI05' addendum",
+     "sha256": "67231c68f1225dbfd6f04d967f32b2a628a51d1a6c687da9463aefaf97ad254d"
+    },
+    "run_2_of_record": {
+     "file": "../04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/rescreen_prompt_v1_1.md",
+     "version": "v1.1 bullets verbatim, rules-faithful, no addendum",
+     "sha256": "fc0af17f6a552131d7c045756fd02ae4ac051c0eca488718ac3db65a8e4b1ad9"
+    }
+   },
+   "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_stage1/ti_prefill_schema_item.json (item schema; locally-derived Codex batch wrapper rescreen_schema_batch_strict.json, field names unchanged, same for both runs)",
+   "records": 3439,
+   "concurrency": 16,
+   "run_summary": "Run 1 (superseded): prompt added a TI05-outcome-list-is-closed addendum; 0 failed batches, 3,439/3,439 valid; ~3 min wall; token usage input 2,499,173 / output 208,309 / reasoning 104,814; 1,143/3,439 (33.2%) re-advanced (TI04 25.7%, TI05 63.2% -- judged over-inclusive against D's 177-record human-adjudicated sample: TI04 27%, TI05 21%). Run 2 (of record): addendum deleted, prompt is the v1.1 bullets verbatim; 0 failed batches, 3,439/3,439 valid (one transient network reconnect on batch_0011, resolved on attempt 2); ~3 min 14 s wall; token usage input 2,456,562 / output 223,528 / reasoning 118,091; 919/3,439 (26.7%) re-advanced (TI04 24.8%, TI05 34.4%), much closer to the human benchmark.",
+   "output_sources": [
+    "../04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/rescreen_result_sol.csv (run 2, run of record)",
+    "../04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/rescreen_summary_2026-10-09.md (both runs documented)",
+    "../04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/run_manifest.json (run 2 plus superseded_runs entry for run 1)",
+    "raw output run 1: ai_triage/_local_runs/rescreen_sol_2026-10-09/run1_superseded/rescreen_input.json (git-ignored)",
+    "raw output run 2: ai_triage/_local_runs/rescreen_sol_2026-10-09/run2/rescreen_input.json (git-ignored)"
+   ],
+   "human_verification_status": "Not a decision of record. The 919 re-advanced records (run 2) go through normal abstract-stage human/AI screening like any other advanced title; the 2,520 retained exclusions are not re-adjudicated by this pass",
+   "not_performed": [
+    "human verification of this re-screen's dispositions",
+    "abstract-stage screening of the 919 re-advanced records"
+   ]
+  },
+  {
+   "date": "2026-10-09",
+   "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 5 records per call",
+   "coordinator_model": "claude-sonnet-5",
+   "model": "gpt-6-sol",
+   "model_settings": "reasoning effort medium; 5 records per call, concurrency 16; one run plus one --resume pass per batch CSV",
+   "task": "Stage-2 TITLE/ABSTRACT screening, side B (inclusion-oriented stand-in), of the 1,061 records that (re-)entered stage 2 on 2026-10-09 (142 human-advanced sample/pilot records + 919 PRE-007 TI_rules v1.1 title re-advances), run as batches 237-242",
+   "prompt_reference": {
+    "file": "../04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_prompt_B_codex_batch.md",
+    "version": "ta_standin_prompt_B.md system prompt and TA rules verbatim; only the single-record-input sentence rewritten for the runner's several-records-per-call batch format",
+    "sha256": "c094a8bbb583f7e6025a7c68de35ab45d3d077830c07ddb3b2c1fef997d5d8fb"
+   },
+   "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_schema.json (item schema; locally-derived Codex batch wrapper ta_standin_schema_batch_strict.json, sha256 3ee5a568cce786e4402c775b169b7688b2a8ae7c76018f5e23dd988b42385bb0, field names/enums unchanged, allOf conditional verified post hoc instead)",
+   "records": 1061,
+   "concurrency": 16,
+   "run_summary": "Smoke test (20 records, concurrency 2): 4/4 sub-batches succeeded, 0 invalid, 0 AWAITING. Full run: 6 batch CSVs (200/200/200/200/200/61), 253 sub-batches total, 0 failed batches, 0 invalid/missing records on the first pass (confirmed by a --resume pass per batch, 0 reruns needed); wall time (batch_237 start to batch_242 finish) ~3 min 53 s; token usage input 4,657,942 / output 129,540 / reasoning 70,313. Result: 115 ADVANCE / 946 EXCLUDE_TA / 0 AWAITING_CLASSIFICATION (EXCLUDE_TA codes: FT01 142, FT02 238, FT03 379, FT04 108, FT05 6, FT07 73). The AI stand-in was not informed these records had any stage-1 re-screen history.",
+   "output_sources": [
+    "../04_screening/formal_2026-10-05_v0.9/ai_stage2/out_B/batch_237.json .. batch_242.json (converted via scripts/ta_standin_to_batch.py)",
+    "../04_screening/formal_2026-10-05_v0.9/ai_stage2/batches_237_242_B_manifest.json (full counts, per-batch usage, hashes, deviations)",
+    "../04_screening/formal_2026-10-05_v0.9/ai_stage2/README.md, section 'Batches 237-242, side B (2026-10-09)'",
+    "raw per-batch run output: ai_triage/_local_runs/stage2_B_sol_batches_237_242/out_B_sol/batch_237/ .. batch_242/ (consolidated batch_NNN.json plus per-sub-batch files; git-ignored)"
+   ],
+   "human_verification_status": "Not yet performed. Side C (second independent read) and third-read adjudication for any B/C conflicts are scheduled next, on another backend; scripts/ta_ai_merge.py was intentionally not run for this batch set.",
+   "not_performed": [
+    "side C screening of these 1,061 records",
+    "third-read adjudication / merge (scripts/ta_ai_merge.py)",
+    "human verification of these 115 ADVANCE / 946 EXCLUDE_TA dispositions"
+   ]
+  },
+  {
+   "date": "2026-10-09",
+   "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 5 records per call (after an earlier Claude Sonnet headless-CLI attempt was superseded, see below)",
+   "coordinator_model": "claude-sonnet-5",
+   "model": "gpt-6-sol",
+   "model_settings": "reasoning effort high; 5 records per call, concurrency 16; one run plus one --resume pass per batch CSV",
+   "task": "Stage-2 TITLE/ABSTRACT screening, side C (closed-list strict stand-in), of the same 1,061 records that (re-)entered stage 2 on 2026-10-09 (batches 237-242) already screened by side B",
+   "superseded_attempt": {
+    "tool": "Claude Code (Anthropic) desktop CLI, running the new scripts/claude_ta_standin_run.py directly against the documented headless `claude -p` CLI, 1 record per call",
+    "model": "claude-sonnet (headless subscription)",
+    "model_settings": "effort medium; concurrency 6",
+    "outcome": "10-record smoke test passed (10/10 valid); full run killed by the coordinator after 143/1,061 records (too slow, ETA ~2.5h, competing with other concurrent Claude sessions). Not used for any decision; checkpoints archived outside the repo for the record only."
+   },
+   "prompt_reference": {
+    "file": "../04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_prompt_C_codex_batch.md",
+    "version": "ta_standin_prompt_C.md system prompt and TA rules verbatim; only the single-record-input sentence rewritten for the runner's several-records-per-call batch format (identical replacement wording already used for ta_standin_prompt_B_codex_batch.md)",
+    "sha256": "771f66b9b8cc260875bf53df7d195c037677e3f542354f9299d14ea36415efe8"
+   },
+   "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_schema.json (item schema; reused Codex batch wrapper ta_standin_schema_batch_strict.json unmodified from side B, sha256 3ee5a568cce786e4402c775b169b7688b2a8ae7c76018f5e23dd988b42385bb0)",
+   "records": 1061,
+   "concurrency": 16,
+   "run_summary": "6 batch CSVs (200/200/200/200/200/61), 213 sub-batches total, 0 failed batches, 0 invalid/missing records on the first pass, confirmed by a --resume pass (0 reruns needed); token usage input 4,624,660 / output 199,953 / reasoning 140,322. Result: 112 ADVANCE / 948 EXCLUDE_TA / 1 AWAITING_CLASSIFICATION (genuine model output, not a placeholder); EXCLUDE_TA codes FT01 144, FT02 244, FT03 378, FT04 95, FT05 14, FT06 2, FT07 71.",
+   "output_sources": [
+    "../04_screening/formal_2026-10-05_v0.9/ai_stage2/out_C/batch_237.json .. batch_242.json (converted via scripts/ta_standin_to_batch.py)",
+    "../04_screening/formal_2026-10-05_v0.9/ai_stage2/batches_237_242_C_manifest.json (full counts, per-batch usage, hashes, deviations, superseded-attempt record)",
+    "../04_screening/formal_2026-10-05_v0.9/ai_stage2/README.md, section 'Batches 237-242, side C (2026-10-09)'"
+   ],
+   "human_verification_status": "Not yet performed. Blind third-read adjudication of B/C conflicts is scheduled next, followed by merge and validation-readiness triage of new advances.",
+   "not_performed": [
+    "third-read adjudication / merge (scripts/ta_ai_merge.py)",
+    "human verification of these 112 ADVANCE / 948 EXCLUDE_TA / 1 AWAITING_CLASSIFICATION dispositions"
+   ]
+  },
+  {
+   "date": "2026-10-09",
+   "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 5 records per call",
+   "coordinator_model": "claude-sonnet-5",
+   "model": "gpt-6-sol",
+   "model_settings": "reasoning effort high; 5 records per call, concurrency 16; one run plus one --resume pass",
+   "task": "Blind third read (adjudication) of the 65 B/C conflicts among the 1,061-record PRE-007 stage-2 re-entrant pool (batches 237-242)",
+   "prompt_reference": {
+    "file": "../04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_prompt_O_codex_batch.md",
+    "version": "ta_standin_prompt_O.md system prompt and TA rules verbatim; only the single-record-input sentence rewritten for the batch format",
+    "sha256_in_manifest": "see batch_032_O_manifest.json"
+   },
+   "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_schema.json (item schema; reused Codex batch wrapper ta_standin_schema_batch_strict.json unmodified)",
+   "records": 65,
+   "concurrency": 16,
+   "run_summary": "13 sub-batches, 0 failed, 0 invalid/missing after resume; token usage input 285,571 / output 22,711 / reasoning 18,981. Result: 14 ADVANCE / 50 EXCLUDE_TA / 1 AWAITING_CLASSIFICATION; EXCLUDE_TA codes FT04 14, FT02 10, FT03 10, FT07 8, FT05 7, FT01 1. 0 primary_code/disposition conditional violations.",
+   "output_sources": [
+    "../04_screening/formal_2026-10-05_v0.9/ai_stage2/out_O/batch_032.json (converted via scripts/ta_standin_to_batch.py --omit-invalid)",
+    "../04_screening/formal_2026-10-05_v0.9/ai_stage2/batch_032_O_manifest.json",
+    "../04_screening/formal_2026-10-05_v0.9/ai_stage2/README.md, section 'Batch 032, third reads for batches 237-242 (2026-10-09)'"
+   ],
+   "human_verification_status": "Not yet performed. Merge (scripts/ta_ai_merge.py) and validation-readiness triage of new advances are next.",
+   "not_performed": [
+    "merge (scripts/ta_ai_merge.py)",
+    "human verification of these dispositions"
+   ]
+  },
+  {
+   "date": "2026-10-09",
+   "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 5 records per call",
+   "coordinator_model": "claude-sonnet-5",
+   "model": "gpt-6-sol",
+   "model_settings": "reasoning effort medium; 5 records per call, concurrency 16; one run plus one --resume pass",
+   "task": "Validation-readiness (E1-E5) triage of the 120 new review_scope=FULLTEXT_CANDIDATE records among the 1,061 PRE-007 stage-2 re-entrants (batches 237-242), to derive final layers (V/M/X/U) and human review scope for the new advances",
+   "prompt_reference": {
+    "file": "../04_screening/formal_2026-10-05_v0.9/ai_triage/prompt_e5_adjudication_v1_2.md",
+    "version": "v1.2, unchanged, used verbatim (same prompt as the stricter E5 adjudication pass used for batch-236's supplement)"
+   },
+   "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_triage/schema_v1.json (item); ../04_screening/formal_2026-10-05_v0.9/ai_triage/schema_v1_strict_batch.json (batch wrapper), both unmodified",
+   "records": 120,
+   "concurrency": 16,
+   "run_summary": "24 sub-batches, 0 failed, 0 invalid/missing after resume. Layers derived directly from this single Sol pass (no two-family first pass for this small supplement, per coordinator instruction) using the unmodified layer rule of scripts/triage_finalize.py, via new script scripts/triage_finalize_rescreen_supplement.py. Final layers: V=5, M=61, X=54, U=0. Human scope: HUMAN_CONFIRM_ALL=5 (all V), HUMAN_SAMPLE_VERIFY=115 (all M+X, not a 10% draw -- small-supplement convention, same as final_triage_batch236_supplement.md).",
+   "output_sources": [
+    "../04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_rescreen_supplement.csv",
+    "../04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_rescreen_supplement.md",
+    "raw run output archived (git-ignored, abstracts present): ai_triage/_local_runs/rescreen_stage2_triage_2026-10-09/"
+   ],
+   "human_verification_status": "Not yet performed. HUMAN_CONFIRM_ALL and HUMAN_SAMPLE_VERIFY records await human review per the workbook workflow.",
+   "not_performed": [
+    "human verification of these 120 layer assignments",
+    "a second model family's first-pass read (this supplement used a single Sol pass only, by design)"
+   ]
+  },
+  {
+   "date": "2026-10-09",
+   "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 5 records per call",
+   "coordinator_model": "claude-sonnet-5",
+   "model": "gpt-6-sol",
+   "model_settings": "reasoning effort high; 5 records per call, concurrency 12; one run per side (first attempt on each side used the runner's default --schema-item, an older E1-E5 schema that does not match this task's fields, and was discarded/rerun with the correct item schema; final runs: 0 failed batches / 0 invalid records)",
+   "task": "AI pre-fill of reviewer B's and C's own your_disposition/your_primary_code/your_comment columns on the stage-2 exclusion-sample verification workbooks (ta_review_B.xlsx/ta_review_C.xlsx: sample_verify 519 rows blind 10% sample of agreed AI exclusions + awaiting 2 rows), per PRE-007 rule 4 / PRE-008 choice 8 so B and C verify/override instead of starting from blank cells",
+   "prompt_reference": {
+    "file": "../04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_prompt_{B,C}_codex_batch.md",
+    "version": "as committed, with a locally-patched age-rule clause (see deviations in ta_review_prefill_manifest.json: committed prompts still carried the pre-PRE-011 age rule; patched copies used for the run were not committed, sha256 of the as-used text recorded in the manifest)"
+   },
+   "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_schema_batch_strict.json (batch); per-item schema derived from it, not committed (see manifest)",
+   "records": 1042,
+   "concurrency": 12,
+   "run_summary": "521 records x 2 sides (B, C) = 1,042 record-decisions; 105 batches/side, 0 failed, 0 invalid/missing after the schema-item fix. B: 26 ADVANCE / 495 EXCLUDE_TA. C: 26 ADVANCE / 495 EXCLUDE_TA. Pre-fill-vs-pre-fill agreement (B vs C, not a human reliability statistic): 97.7% raw, kappa 0.757. Written back with a hidden _prefill audit log and light-yellow cell highlighting per the ai_triage/README_review_workbooks.md precedent; two disclosure lines added to each workbook's README sheet.",
+   "output_sources": [
+    "04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_review_B.xlsx (git-ignored, not committed)",
+    "04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_review_C.xlsx (git-ignored, not committed)",
+    "04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_review_prefill_manifest.json",
+    "raw run output archived (git-ignored, abstracts/model-echoed quotes present): ai_triage/_local_runs/ta_sample_prefill_2026-10-09/"
+   ],
+   "human_verification_status": "Not yet performed. B and C still need to read every abstract in sample_verify + awaiting and override any pre-filled value they disagree with; their final values are the decisions of record. scripts/ta_human_merge.py (B vs C agreement/kappa, override rate vs the _prefill log, PRE-007 rule-4 confirmed-ADVANCE-per-AI-code trigger table with Wilson 95% CIs) was run once on the freshly pre-filled, not-yet-human-edited workbooks only to prove the pipeline works (override rate 0/521 both sides, as expected); that output is suffixed _provisional and git-ignored, not a reportable result.",
+   "not_performed": [
+    "human verification of any of the 1,042 pre-filled record-decisions",
+    "reconciliation of ta_standin_prompt_{B,C}_codex_batch.md's committed age-rule text with PRE-011 (worked around locally for this run only; see deviations in ta_review_prefill_manifest.json)"
+   ]
+  },
+  {
+   "date": "2026-10-09",
+   "tool": "Claude Code (Anthropic) desktop CLI, running scripts/extract_run.py through the Codex CLI (OpenAI, codex_stream_call.py)",
+   "coordinator_model": "claude-sonnet-5",
+   "model": "gpt-6-sol",
+   "model_settings": "reasoning effort high; one process per report; concurrency 4 (reduced to 1-2 on retries, Codex shared with another agent's run at the time)",
+   "task": "PRE-009 extraction prompt/schema v1.1 (D): rewrote extract_prompt_v1.md/extract_schema_v1.json to fix evidence_state misuse (NR underuse, not_demonstrated-for-unreported, evidence_present contradicted by its own note, independent-validation inconsistency), vocabulary drift in dictionary-controlled fields (matrix, exercise_mode, design, training_status, clinical_endpoint), analyte raw/canonical split and numeric time fields, flagged in 06_synthesis/prototype_2026-10-09/prototype_report.md (c)/(d) and T8_extraction_quality.csv off the 130-report formal pre-fill; piloted the fix on the same 10 reports as pilot_comparison_2026-10-08.md (not the 130) ahead of the ~300-report rollout.",
+   "prompt_reference": {
+    "file": "../05_extraction/ai_extraction/extract_prompt_v1_1.md",
+    "version": "v1.1, 2026-10-09",
+    "sha256": "d94cc6708f87b037142a664522a0eb3d587330a618fbce9f51d37b0e977474c5"
+   },
+   "schema_reference": {
+    "file": "../05_extraction/ai_extraction/extract_schema_v1_1.json",
+    "version": "v1.1, 2026-10-09",
+    "sha256": "040ea9d504c446ffebb6d24ca9afe9935717c9f7937ab339be350788bb689703"
+   },
+   "records": 10,
+   "concurrency": "4 (first pass), 1-2 (retries)",
+   "run_summary": "10/10 reports schema-valid after retries (4 reports needed 1 retry each for transient Codex capacity/network errors; 1 report, R19, validated first try but with 0 measurements/0 precision_validation rows and a self-flagged incomplete-extraction note, retried to 7/7 rows, still short of v1's 20/7 on that report -- see pilot_comparison_v1_1_2026-10-09.md Limitations). vs the existing v1 runs/sol/ output on the same 10 reports: precision_validation NR share 2.1%->35.1%; evidence_present rows whose own note negates the state 47.7%->2.4%; feasibility evidence_present negated 60.0%->0.0%; independent-validation evidence_present inconsistent with validation_split 100%->0 such rows; off-vocabulary rate on matrix/exercise_mode/training_status/design/clinical_endpoint 80-100%->0.0% (schema-enforced enums); not_demonstrated rows that read like unreported fell 40.3%->25.5% (reduced, not eliminated); wall time and output/reasoning token cost per report essentially unchanged; provenance (quote-on-page) 0.991->0.987 fuzzy, unchanged within noise.",
+   "output_sources": [
+    "../05_extraction/ai_extraction/runs/sol_v1_1_pilot/*.json (git-ignored raw output, 10 files)",
+    "../05_extraction/ai_extraction/run_manifest.json (10 new entries, family sol_v1_1_pilot)",
+    "../05_extraction/ai_extraction/pilot_comparison_v1_1_2026-10-09.md (full before/after table and recommendation)"
+   ],
+   "human_verification_status": "Not yet performed; this is a prompt/schema engineering pilot, not a formal extraction. Recommendation in pilot_comparison_v1_1_2026-10-09.md: adopt v1.1 for the ~300-report rollout; do not re-run the 130.",
+   "not_performed": [
+    "formal extraction of the ~300-report rollout under v1.1",
+    "re-extraction of the 130 under v1.1 (explicitly out of scope for this task)",
+    "human verification of the 10-report pilot outputs themselves"
+   ]
+  },
+  {
+   "date": "2026-10-09",
+   "tool": "Claude Code (Anthropic) desktop CLI, running scripts/ft_prefill_run.py through the Codex CLI (OpenAI, codex_stream_call.py)",
+   "coordinator_model": "claude-sonnet-5",
+   "model": "gpt-6-sol",
+   "model_settings": "reasoning effort high; one codex exec per record; concurrency 8; one resume pass (1/67 records needed it, a mid-stream network disconnect)",
+   "task": "PRE-010/PRE-011 full-text AI pre-fill, batch 2 (D): 67 reports with status retrieved_manual in fulltext_fetch_manifest.csv (A's manually downloaded OA PDFs; batch grew from 64 to 67 mid-run when 3 more PDFs were registered). Used new prompt ai_prefill/ft_screen_prompt_v1_1.md (v1 with only the age_rule_check paragraph replaced by amendment PRE-011) so the age rule applied at generation time rather than needing a later deterministic re-derivation pass.",
+   "prompt_reference": {
+    "file": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_screen_prompt_v1_1.md",
+    "version": "v1.1, 2026-10-09 (PRE-010 + PRE-011)",
+    "sha256": "see ai_prefill/run_manifest.json entries with family=sol, prompt_version=v1_1"
+   },
+   "schema_reference": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_screen_schema_v1.json (unchanged; age_rule_check enum values kept, meaning of mean_minus_2SD_below_18_unresolved relabelled by the prompt, not the schema)",
+   "records": 67,
+   "concurrency": 8,
+   "run_summary": "67/67 valid (63/64 first try on the original 64, 1 resumed after a network disconnect; the 3 late additions 3/3 first try). Disposition: INCLUDE_A 35, INCLUDE_A_AND_B 22, EXCLUDE 6, AWAITING_CLASSIFICATION 3, INCLUDE_B 1. age_rule_check: adults_confirmed 61, mean_minus_2SD_below_18_unresolved 3, not_applicable 2, under_18_included 1. One record, FS-000504 (locally OCR'd by A from a scanned PDF), had no [[page N]] markers; patched with one synthetic [[page 1]] marker before running so the scanned-text heuristic did not wrongly skip it (original text saved in fulltext/_backup_prefill_batch2_2026-10-09/, git-ignored).",
+   "output_sources": [
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/runs/sol/*.json (git-ignored, 67 of 216 files)",
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/run_manifest.json (67 new entries, family=sol, prompt_version=v1_1)",
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_prefill_summary_2026-10-09.md (Batch 2 section)",
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_B.xlsx (git-ignored; written via scripts/ft_prefill_to_workbook.py --reviewer B --family sol)"
+   ],
+   "human_verification_status": "Not yet performed. B still needs to read every one of these 67 full texts and override any pre-filled value disagreed with; final values are B's decision of record.",
+   "not_performed": [
+    "human verification of any of these 67 pre-filled record-decisions",
+    "re-running the PRE-011 deterministic rule script (scripts/apply_pre011_to_ft_prefill.py) on this batch: not needed, PRE-011 was applied at generation time via prompt v1.1"
+   ]
+  },
+  {
+   "date": "2026-10-09",
+   "tool": "Claude Code (Anthropic) desktop CLI, running scripts/claude_ft_prefill_run.py through Claude Code's own documented headless CLI (`claude -p`, team subscription)",
+   "coordinator_model": "claude-sonnet-5",
+   "model": "claude-sonnet (headless)",
+   "model_settings": "reasoning effort medium; concurrency 3 (raised from the prior batch's 2 per this task's brief); --trim; one pass only, 0 resume needed",
+   "task": "PRE-010/PRE-011 full-text AI pre-fill, batch 2 (D), C side: same 67 retrieved_manual reports as the Sol run above, same prompt (ft_screen_prompt_v1_1.md, PRE-011) and schema. Wall time (~833 s / 13.9 min for all 67) was tracked against this task's 25-minute stop-and-substitute threshold; the Sol-effort-medium fallback (pre-approved by A for when Claude is unavailable/unstable) was not triggered.",
+   "prompt_reference": {
+    "file": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_screen_prompt_v1_1.md",
+    "version": "v1.1, 2026-10-09 (PRE-010 + PRE-011)",
+    "sha256": "see ai_prefill/run_manifest.json entries with family=claude_sonnet, prompt_version=v1_1, model=claude-sonnet, record_id in this batch"
+   },
+   "schema_reference": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_screen_schema_v1.json (unchanged)",
+   "records": 67,
+   "concurrency": 3,
+   "run_summary": "67/67 valid, 0 invalid, 0 rate/usage-limit pauses, 0 schema-repair retries. Disposition: INCLUDE_A 42, INCLUDE_A_AND_B 10, EXCLUDE 6, AWAITING_CLASSIFICATION 3, INCLUDE_B 6. Agreement with the Sol side on the same 67 records (pre-fill vs pre-fill, not a human reliability statistic): exact disposition match 46/67 (68.7%), binary include-vs-not match 59/67 (88.1%). Cost (CLI-reported) $6.25 for the batch.",
+   "output_sources": [
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/runs/claude_sonnet/*.json (git-ignored, 67 of 216 files)",
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/run_manifest.json (67 new entries merged in, family=claude_sonnet, prompt_version=v1_1)",
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_prefill_summary_2026-10-09.md (Batch 2 section)",
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_C.xlsx (git-ignored; written via scripts/ft_prefill_to_workbook.py --reviewer C --family claude_sonnet)"
+   ],
+   "human_verification_status": "Not yet performed. C still needs to read every one of these 67 full texts and override any pre-filled value disagreed with; final values are C's decision of record.",
+   "not_performed": [
+    "human verification of any of these 67 pre-filled record-decisions",
+    "the pre-approved Sol-effort-medium C-side fallback (not triggered; Claude finished within the 25-minute budget)"
+   ]
+  },
+  {
+   "date": "2026-10-09",
+   "tool": "Claude Code (Anthropic) desktop CLI, acting as the AI stand-in for reviewer B, running scripts/ft_override_run.py through the Codex CLI (OpenAI, codex_stream_call.py)",
+   "coordinator_model": "claude-sonnet-5",
+   "model": "gpt-6-sol",
+   "model_settings": "reasoning effort high; one codex exec per record; concurrency 8; 0 resume passes needed (190/190 valid on first call)",
+   "task": "PRE-010 full-text screening OVERRIDE pass, reviewer B: an INDEPENDENT re-read of the full text of all 190 records already carrying a pre-filled your_disposition in ft_screen_B.xlsx. Each record was given the full text plus a clearly labelled first-pass pre-fill block and asked to decide every field itself, then flag agree/override per field (your_disposition, your_primary_code, your_age_rule_check, your_validation_element_confirmed, your_secondary_notes, your_comment) with a page-cited quote. New prompt ai_prefill/ft_override_prompt_v1.md and extended schema ai_prefill/ft_override_schema_v1.json (built for this task). This is an AI stand-in substitution for the human override step amendment PRE-010 actually requires (\"B reads every full text and overwrites what they disagree with\"); it is not that human review.",
+   "prompt_reference": {
+    "file": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_prompt_v1.md",
+    "version": "v1, 2026-10-09",
+    "sha256": "see ai_prefill/ft_override_run_manifest.json entries"
+   },
+   "schema_reference": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_schema_v1.json",
+   "records": 190,
+   "concurrency": 8,
+   "run_summary": "190/190 valid, 0 invalid, 0 schema-repair retries. Wall time ~700s (11.7 min); 6,216,524 input + 305,831 output tokens (codex-reported usage). Disposition after override: INCLUDE_A 103, INCLUDE_A_AND_B 54, INCLUDE_B 4, RETAIN_BACKGROUND 3, EXCLUDE 17, AWAITING_CLASSIFICATION 9 (before: INCLUDE_A 86, INCLUDE_A_AND_B 66, INCLUDE_B 3, RETAIN_BACKGROUND 5, EXCLUDE 14, AWAITING_CLASSIFICATION 16). Field override rates (of 190): disposition 14.7%, primary_code 1.6%, age_rule_check 4.7%, validation_element_confirmed 11.6%, secondary_notes 55.3%, comment 32.1% (228/1,140 = 20.0% of all field writes). 28 disposition flips; the 10 most consequential (include<->not-include or AWAITING<->decision) are documented with quotes in ai_prefill/ft_override_B_summary_2026-10-09.md. One field (FS-003434 secondary_notes, cleared to empty) carries an override flag with no quote, since there is no text evidence for an absence; logged as a deviation rather than forced. FS-000504 (OCR-scanned PDF) was screened normally; the model flagged the OCR table distortion in its own note field.",
+   "output_sources": [
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/runs/override_sol/*.json (git-ignored, 190 files, quote the full text)",
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_run_manifest.json (190 entries)",
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_B_summary_2026-10-09.md",
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_B.xlsx (git-ignored; written via scripts/ft_override_apply_to_workbook.py; backup at fulltext/_backup_override_B_2026-10-09/, git-ignored; hidden _override_B sheet logs every one of the 1,140 field writes)",
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_workbooks_manifest.json (override_B block: counts, prompt/schema sha256, workbook sha256 after write)"
+   ],
+   "human_verification_status": "Not yet performed. This entire pass -- both the original pre-fill and this override -- is AI-generated. A human reviewer B still needs to read every one of these 190 full texts and overwrite any field disagreed with; final values are B's decision of record, not this AI stand-in's.",
+   "not_performed": [
+    "human verification of any of these 190 override-pass record-decisions",
+    "the equivalent override pass on reviewer C's workbook (ft_screen_C.xlsx), performed separately and concurrently by a different process; never opened by this task"
+   ]
+  },
+  {
+   "date": "2026-10-09",
+   "tool": "Claude Code (Anthropic) desktop CLI, acting as the AI stand-in for reviewer C, running scripts/ft_override_run_claude.py through Claude Code's own documented headless CLI (`claude -p`, team subscription)",
+   "coordinator_model": "claude-sonnet-5",
+   "model": "claude-sonnet (headless)",
+   "model_settings": "reasoning effort high; concurrency 3; --trim --max-input-chars 60000; 1 schema-repair retry needed (FS-007132), 0 rate/usage-limit pauses",
+   "task": "PRE-010 full-text screening OVERRIDE pass, reviewer C: an INDEPENDENT re-read of the full text of all 190 records already carrying a pre-filled your_disposition in ft_screen_C.xlsx (the claude_sonnet-family PRE-010/PRE-011 pre-fill). Each record was given the full text plus a clearly labelled first-pass pre-fill block (with the brief's named failure modes: over-use of AWAITING_CLASSIFICATION, A/B stream confusion, validation confirmed on background framing) and asked to decide every field itself, then flag agree/override per field (your_disposition, your_primary_code, your_age_rule_check, your_validation_element_confirmed, your_secondary_notes, your_comment) with a page-cited quote. New prompt ai_prefill/ft_override_prompt_C_v1.md and schema ai_prefill/ft_override_schema_C_v1.json (built for this task, independent of reviewer B's equivalently-named files). This is an AI stand-in substitution for the human override step amendment PRE-010 actually requires (\"C reads every full text and overwrites what they disagree with\"); it is not that human review.",
+   "prompt_reference": {
+    "file": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_prompt_C_v1.md",
+    "version": "v1, 2026-10-09",
+    "sha256": "123c6ba171284292dcb53c3cbdfcc5d1e2b95443901ec1db48d3014334714173"
+   },
+   "schema_reference": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_schema_C_v1.json",
+   "records": 190,
+   "concurrency": 3,
+   "run_summary": "190/190 valid, 0 invalid, 1 schema-repair retry. Wall time 2,764.7 s (46.1 min; ~1 min over this task's 45-min stop-and-substitute threshold, not switched to the Sol fallback -- see ft_override_C_summary_2026-10-09.md). Usage (CLI-reported, summed): 598 input + 744,003 output + 3,685,005 cache-read + 3,538,688 cache-creation tokens; cost $22.33. Disposition after override: INCLUDE_A 100, INCLUDE_A_AND_B 48, INCLUDE_B 6, RETAIN_BACKGROUND 6, EXCLUDE 19, AWAITING_CLASSIFICATION 11 (before: INCLUDE_A 105, INCLUDE_A_AND_B 35, INCLUDE_B 13, RETAIN_BACKGROUND 5, EXCLUDE 18, AWAITING_CLASSIFICATION 14). Field override rates (of 190, script-computed against the pre-fill snapshot, not the model's self-report): disposition 16.3%, primary_code 2.6%, age_rule_check 17.4%, validation_element_confirmed 13.7%, secondary_notes 55.8%, comment 100% (the last is a structural artifact of rebuilding the comment field in a different composite format every time, not a disagreement signal -- see summary). 31 disposition flips; the 10 most consequential (include<->exclude or AWAITING<->decision) are documented with quotes in ai_prefill/ft_override_C_summary_2026-10-09.md. FS-000504 (local OCR of a scanned article) was read through the OCR noise and agreed with the pre-fill on every substantive field.",
+   "output_sources": [
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/runs/override_claude_sonnet/*.json (git-ignored, 190 files, quote the full text)",
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/runs/override_prefill_snapshot_C.json (git-ignored; pre-fill snapshot taken before any write)",
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_C_summary_2026-10-09.md",
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_C.xlsx (git-ignored; written via scripts/ft_override_writeback_C.py; backup at fulltext/_backup_override_C_2026-10-09/, git-ignored; hidden _override_C sheet logs every one of the 1,140 field writes)",
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_workbooks_manifest.json (override_C block: counts, prompt/schema sha256, workbook sha256 before/after)"
+   ],
+   "human_verification_status": "Not yet performed. This entire pass -- both the original pre-fill and this override -- is AI-generated. A human reviewer C still needs to read every one of these 190 full texts and overwrite any field disagreed with; final values are C's decision of record, not this AI stand-in's.",
+   "not_performed": [
+    "human verification of any of these 190 override-pass record-decisions",
+    "the equivalent override pass on reviewer B's workbook (ft_screen_B.xlsx), performed separately and concurrently by a different process (commit e7479b1); never opened by this task"
+   ]
+  },
+  {
+   "date": "2026-10-09",
+   "tool": "Codex CLI (OpenAI), via scripts/ft_adjudicate_run.py, acting as the AI stand-in for ADJUDICATOR D",
+   "coordinator_model": "claude-sonnet-5",
+   "model": "gpt-6-sol",
+   "model_settings": "reasoning effort high; concurrency 6; 0 schema-repair retries needed in the full 39-record run (1 single-record smoke test exercised the retry path separately); 0 errors",
+   "task": "PRE-010 full-text screening ADJUDICATION pass: resolved the 39 disagreements left between reviewers B and C (GPT-6 Sol / Claude Sonnet override passes, commit a669cd8) on the 190 retrieved V-layer reports screened so far. For each of the 39 conflict rows in ft_conflicts_for_D.xlsx (adjudicate sheet), D read the full text independently a third time, given B's and C's final disposition/code/comment plus each side's own page-cited quotes (from their override-pass runs) in clearly labelled, separated blocks, and decided final_disposition, final_primary_code (EXCLUDE only), decisive_evidence (page-cited quote), which_reviewer_matched (B/C/neither), n_bouts_sampled, baseline_comparator_present and D_note, forbidden from deciding by majority or reviewer confidence. New prompt ai_prefill/ft_adjudication_prompt_v1.md and schema ai_prefill/ft_adjudication_schema_v1.json. This is an AI stand-in substitution for the human adjudication step amendment PRE-010 actually requires; it is not that human review.",
+   "prompt_reference": {
+    "file": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_adjudication_prompt_v1.md",
+    "version": "v1, 2026-10-09",
+    "sha256": "17135f0f4dfccdb559a6b011c855878e7fe0822cabe70ef12c2fdb40d92e1373"
+   },
+   "schema_reference": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_adjudication_schema_v1.json",
+   "schema_sha256": "6f89fdc8fc0c4fd7c7eaa3bd70b1ff2c56cfb02cb0a446897eb77993497aea01",
+   "records": 39,
+   "concurrency": 6,
+   "run_summary": "39/39 valid, 0 invalid, 0 schema-repair retries in the full run. Wall time 136.9 s. Usage (codex-reported, summed): 1,220,341 input + 38,853 output tokens (32,437 reasoning). Final disposition of the 39: INCLUDE_A 19, INCLUDE_A_AND_B 8, INCLUDE_B 2, RETAIN_BACKGROUND 2, EXCLUDE 5 (FT08 x4, FT03 x1), AWAITING_CLASSIFICATION 3. D matched reviewer B on disposition in 32/39 (82%), C in 7/39 (18%), neither in 0/39. 0 rule violations (code non-empty iff EXCLUDE, every row has a decisive quote, every AWAITING names one missing fact). The 10 most consequential decisions (7 EXCLUDE<->INCLUDE reversals, 1 INCLUDE_B<->RETAIN_BACKGROUND, 2 EXCLUDE calls upheld against an opposing INCLUDE) and one rule-clause ambiguity flagged for the remaining 287 reports (PRE-011's adult descriptor vs an explicitly reported mean age <20y with no range) are documented with quotes in fulltext/ft_adjudication_D_summary_2026-10-09.md. Final merged PRISMA counts for the now-fully-resolved 190-record batch (151 agreed + 39 D-resolved): 161 included reports (157 stream A, 54 stream B), 16 excluded, 8 awaiting, 5 retained as background, 0 not retrieved.",
+   "output_sources": [
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/runs/adjudicate_sol/*.json (git-ignored, 39 files, quote the full text)",
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_adjudication_run_manifest.json",
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_adjudication_D_summary_2026-10-09.md",
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_conflicts_for_D.xlsx (git-ignored; written via scripts/ft_adjudicate_apply_to_workbook.py; backup at fulltext/_backup_adjud_D_2026-10-09/, git-ignored; hidden _adjud_D sheet logs all 39 decisions)",
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_conflicts_for_D.csv (regenerated titles-only, then re-regenerated by scripts/merge_fulltext_screening.py as the merge's own conflict-list output)",
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_merged.csv, ft_merge_summary.json, ft_merge_summary.md (scripts/merge_fulltext_screening.py --resolutions ft_conflicts_for_D.csv)",
+    "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_workbooks_manifest.json (adjudication block: counts, prompt/schema sha256, conflicts-workbook sha256 before/after)"
+   ],
+   "human_verification_status": "Not yet performed. This entire adjudication pass is AI-generated. A human adjudicator (D) still needs to read every one of these 39 full texts and confirm or overwrite each decision; final values are D's decision of record, not this AI stand-in's.",
+   "not_performed": [
+    "human verification of any of these 39 adjudication decisions",
+    "adjudication of conflicts among the remaining 287 V-layer reports not yet pre-filled/overridden by B and C"
+   ]
+  }
+ ],
+ "future_entry_fields": [
+  "date",
+  "tool",
+  "tool_version",
+  "model",
+  "provider_source",
+  "task",
+  "prompt_reference",
+  "output_reference",
+  "human_verifier",
+  "verification_method",
+  "decision_on_output"
+ ]
 }

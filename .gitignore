@@ -215,3 +215,14 @@ fulltext_requests/abstract_lookup_*/*
 # PRE-011 (2026-10-09) age-rule override sidecars (record_id -> old/new disposition + short
 # evidence snippet only; no abstracts or full-text quotes; runs/ itself stays ignored above).
 !04_screening/formal_*/fulltext/ai_prefill/pre011_overrides_*.json
+# D's ADJUDICATION pass on the 39 B/C full-text conflicts (scripts/ft_adjudicate_run.py,
+# scripts/ft_adjudicate_apply_to_workbook.py, 2026-10-09): prompt, schema and committable run
+# manifest (no full-text quotes) are tracked; the raw per-record runs
+# (ai_prefill/runs/adjudicate_sol/*.json, quote the full text) stay ignored by the
+# "ai_prefill/*" deny-all above. The filled ft_conflicts_for_D.xlsx workbook stays ignored by the
+# "fulltext/*" deny-all; only the regenerated titles-only ft_conflicts_for_D.csv (already
+# allow-listed above) and this summary are tracked.
+!04_screening/formal_*/fulltext/ai_prefill/ft_adjudication_prompt_v1.md
+!04_screening/formal_*/fulltext/ai_prefill/ft_adjudication_schema_v1.json
+!04_screening/formal_*/fulltext/ai_prefill/ft_adjudication_run_manifest.json
+!04_screening/formal_*/fulltext/ft_adjudication_D_summary_*.md

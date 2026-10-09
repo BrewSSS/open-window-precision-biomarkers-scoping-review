@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/scoping-review/fulltext/ai_prefill/ft_adjudication_schema_v1.json",
+  "title": "Full-text screening ADJUDICATION — structured output (v1, D's resolution of the 39 B/C conflicts)",
+  "description": "No $ref/$defs/maxLength (codex strict-schema requirement); additionalProperties:false on every object; every property listed in required. scripts/ft_adjudicate_run.py validates the returned JSON against this schema with one repair retry. Adjudicator D: independent third read of the full text, deciding a conflict between reviewers B and C.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "final_disposition",
+    "final_primary_code",
+    "decisive_evidence",
+    "which_reviewer_matched",
+    "n_bouts_sampled",
+    "baseline_comparator_present",
+    "D_note",
+    "confidence",
+    "note"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "pattern": "^FS-[0-9]{6}$",
+      "description": "Echo of the input record_id exactly as supplied."
+    },
+    "final_disposition": {
+      "type": "string",
+      "enum": [
+        "INCLUDE_A",
+        "INCLUDE_B",
+        "INCLUDE_A_AND_B",
+        "RETAIN_BACKGROUND",
+        "EXCLUDE",
+        "AWAITING_CLASSIFICATION",
+        "NOT_RETRIEVED",
+        "DUPLICATE_REPORT"
+      ],
+      "description": "D's own independent disposition, decided from the full text against the binding rules, not by majority or reviewer confidence."
+    },
+    "final_primary_code": {
+      "type": "string",
+      "enum": [
+        "",
+        "FT01_SOURCE_TYPE_NOT_CORE",
+        "FT02_NOT_ORIGINAL_HUMAN_RESEARCH",
+        "FT03_POPULATION_NOT_ELIGIBLE",
+        "FT04_NO_QUALIFYING_EXERCISE_EXPOSURE",
+        "FT05_NO_POST_CESSATION_SAMPLE",
+        "FT06_NO_BASELINE_OR_SUITABLE_COMPARATOR",
+        "FT07_NO_ELIGIBLE_IMMUNE_LINK",
+        "FT08_MIXED_INTERVENTION_NOT_SEPARABLE"
+      ],
+      "description": "Non-empty if and only if final_disposition is EXCLUDE; the first established reason in hierarchy order. \"\" otherwise."
+    },
+    "decisive_evidence": {
+      "type": "string",
+      "description": "Format: p.N: \"<=25-word verbatim quote\" -- the single most decisive passage behind final_disposition, or \"\" only for NOT_RETRIEVED with unreadable text."
+    },
+    "which_reviewer_matched": {
+      "type": "string",
+      "enum": ["B", "C", "neither"],
+      "description": "Whether D's own independent final_disposition matches B's final disposition, C's final disposition, or neither (decided only after D's own answer is reached)."
+    },
+    "n_bouts_sampled": {
+      "type": "string",
+      "description": "For final_disposition INCLUDE_A/INCLUDE_B/INCLUDE_A_AND_B: the number of distinct, identifiable exercise bouts the eligible cohort was sampled around (e.g. \"1\", \"2\", \"4\"), with a short qualifier if useful (e.g. \"3 (weekly races)\"). \"not_applicable\" for every other disposition."
+    },
+    "baseline_comparator_present": {
+      "type": "string",
+      "enum": ["yes", "no", "not_applicable"],
+      "description": "For final_disposition INCLUDE_A/INCLUDE_B/INCLUDE_A_AND_B: whether a pre-bout baseline or suitable non-exercise comparator exists for the included stream(s). \"not_applicable\" for every other disposition."
+    },
+    "D_note": {
+      "type": "string",
+      "description": "<=35 words. States which rule clause decides the case (FT code, PRE-011 branch, Core A vs Support B test, RETAIN_BACKGROUND failed dimension, or the missing fact for AWAITING_CLASSIFICATION)."
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"],
+      "description": "D's own certainty in final_disposition."
+    },
+    "note": {
+      "type": "string",
+      "description": "<=30 words, free text, no personal data, no e-mail. Anything else useful for the human adjudicator checking this work (e.g. OCR noise, cohort linkage, translation concern, a rule clause that felt ambiguous)."
+    }
+  }
+}

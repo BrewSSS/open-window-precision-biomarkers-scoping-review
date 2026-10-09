@@ -3,7 +3,7 @@
 Records 477; complete pairs 190; rule problems B 287, C 287.
 Disposition agreement 152/190 (kappa 0.6826); with FT code 151/190; FT code when both exclude 11/12.
 Age-rule check 173/190; validation element 152/190.
-Conflicts for D: 326 (resolved 0).
+Conflicts for D: 326 (resolved 39).
 
 | Disposition | agreed | final |
 |---|---|---|
