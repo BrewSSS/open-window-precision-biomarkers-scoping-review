@@ -1,7 +1,7 @@
 {
   "protocol_version": "3.2",
   "protocol_date": "2026-10-08",
-  "status": "v3.2_archived (bundles PRE-007, PRE-008; version DOI 10.5281/zenodo.23229246); v3.1_in_previous_releases",
+  "status": "v3.2_archived (bundles PRE-007, PRE-008; version DOI 10.5281/zenodo.23229246); v3.1_in_previous_releases; PRE-009_PRE-010_PRE-011_adopted_plus_PRE-004_implementation_update; protocol_v3_3_DRAFT_prepared_2026-10-09_pending_team_signoff_and_release",
   "confirmed_resources": {
     "databases": [
       "PubMed",
@@ -88,7 +88,8 @@
         "protocol_version": "3.1"
       }
     ],
-    "current_release_note": "release_tag/release_commit/concept_doi/version_doi/id/url/submitted_at describe the release of the CURRENT protocol_version (3.2), archived by Zenodo on 2026-10-08. The v3.0 and v3.1 releases are kept in previous_releases."
+    "current_release_note": "release_tag/release_commit/concept_doi/version_doi/id/url/submitted_at describe the release of the CURRENT protocol_version (3.2), archived by Zenodo on 2026-10-08. The v3.0 and v3.1 releases are kept in previous_releases.",
+    "next_release": "v3.3 pending: bundles PRE-009, PRE-010, PRE-011 and the PRE-004 implementation update; DRAFT protocol text prepared 2026-10-09, pending team sign-off; release fields above stay at v3.2 until the v3.3 Zenodo DOI exists"
   },
   "stages": {
     "platform_validation": "pubmed_v0.9_diagnostics_done_2026-10-05; WoS/Scopus v0.9 seed tests pending D",
@@ -99,7 +100,7 @@
     "random_50_screening_pilot": "accepted_by_A_2026-10-05 (raw agreement 1.00, kappa 1.00; AI hint visible — limitation recorded; no AI hints in formal screening)",
     "purposeful_10_charting_pilot": "ai_assisted_extraction_done_2026-10-05 (9/10 reports; R62 human extraction pending under v3.0 rules); accepted by A 2026-10-05 as calibration of rule clarity (not human inter-rater agreement)",
     "formal_search": "completed_2026-10-05_v0.9 (PubMed 7,846; Web of Science 13,242; Scopus 11,065; all with abstracts; PRESS re-review of v0.9 accepted by A on 2026-10-05; D's seed test passed; Google Scholar supplement deferred until after deduplication and title screening; deduplication in progress)",
-    "dual_screening": "AI first pass complete (PRE-007): stage 1 2026-10-05/06 (15,750 screened, 7,606 advanced); stage 2 2026-10-07 (9,277 screened, 4,326 ADVANCE, 4,949 EXCLUDE_TA, 2 AWAITING); validation-readiness triage complete 2026-10-08 for 4,298 advances (PRE-008: V 577, M 3,020, X 697, U 4; 28 batch-235 advances pending triage, D); human verification by B and C pending",
+    "dual_screening": "AI first pass complete (PRE-007): stage 1 2026-10-05/06 (15,750 screened, 7,606 advanced); stage 2 2026-10-07 (9,277 screened, 4,326 ADVANCE, 4,949 EXCLUDE_TA, 2 AWAITING); validation-readiness triage complete 2026-10-08/09 for the 4,298 advances plus the 28 batch-235 and 8 batch-236 additions (PRE-008: first pass V 577, M 3,020, X 697, U 4); PRE-007 rule-4 re-screen of the unsampled 3,439 TI04/TI05 stage-1 exclusions under TI_rules v1.1 (2026-10-09) re-advanced 919 titles (142 human sample/pilot advances + 919 = 1,061 new stage-2 entrants; 8,667 advance / 7,083 exclude at stage 1); stage-2 screening and triage of the resulting 120 new advances gave V 5, M 61, X 54, U 0 (2026-10-09); human verification of the full triage scope complete 2026-10-09 (1,142 records; final layers V 438, M 624, X 43, U 37; see 04_screening/formal_2026-10-05_v0.9/ai_triage/confirmed_V_summary_2026-10-09.json)",
     "dual_extraction": "pending; design changed by PRE-009 (AI-assisted extraction with human verification: two AI stand-ins pre-fill, B and C verify in override mode, D adjudicates); starts after release v3.3",
     "critical_appraisal": "pending",
     "synthesis": "pending",
@@ -117,11 +118,13 @@
     "amendment_PRE-008": "adopted_2026-10-08 (A; six editorial choices, recommended options): text approved by A, 2026-10-08 (paper sign-off by A, B, C, D; all six editorial choices = recommended options; choice 7 added: 25-record stage-2 re-calibration folded into the first 25 V-layer records)",
     "protocol_v3_2_release": "done_2026-10-08 (GitHub Release v3.2 at commit ce5a7e2; Zenodo version DOI 10.5281/zenodo.23229246)",
     "review_packet_2026-10-08": "signed_2026-10-08 (all members; all recommended options adopted for items 1-8; execution started 2026-10-08)",
-    "human_verification_triage": "B locked 2026-10-08 (paper sign-off, 0 overrides of the GPT-6 Sol pre-fill; sha256 in ai_triage/review_workbooks_manifest.json); C pre-fill in progress; batch-236 8-row addendum pending for both",
-    "amendment_PRE-009": "adopted_2026-10-08 (A): AI-assisted extraction with human verification; triage-provenance copy-only fields; unconfirmed V reports kept and flagged; to be released in v3.3 before formal extraction",
+    "human_verification_triage": "complete 2026-10-09: B locked 2026-10-08 (paper sign-off, 0 overrides of the GPT-6 Sol pre-fill, plus 1 of 8 addendum-row overrides) with the batch-236 addendum; C locked 2026-10-09; D merged (scripts/triage_human_merge.py) and adjudicated 303 B/C disagreements (182 layer-relevant); final layers for the 1,142 reviewed records: V 438, M 624, X 43, U 37 (of the 577 AI V records: 413 V, 152 M, 12 U); sha256 in ai_triage/review_workbooks_manifest.json",
+    "amendment_PRE-009": "adopted_2026-10-08 (A): AI-assisted extraction with human verification; triage-provenance copy-only fields; unconfirmed V reports kept and flagged; to be released in v3.3 before formal extraction; v3.3 DRAFT text prepared 2026-10-09, pending team sign-off and release",
     "extraction_prep": "2026-10-08: dictionary/template/manual updated (C21, C23 partial, v_layer_validation_subtypes_from_triage, validation_element_confirmed); compare_extraction.py C13, build_workbooks.py C17/C20, loader guards; self-tests on the 10 pilot JSONs passed (/tmp, not committed); full-text boundary exercises = required pre-full-text calibration (3 open questions with D)",
-    "protocol_v3_3_release": "pending (bundles PRE-009, PRE-010 and the PRE-004 implementation update; before full-text screening starts)",
-    "amendment_PRE-010": "adopted_2026-10-08 (A): AI pre-filled full-text screening with human override (GPT-6 Sol pre-fills B, GLM-5.3 pre-fills C; B and C override; D adjudicates); 15 boundary exercises (pass 12/15) before the override phase; pipeline to be built; to be released in v3.3 before full-text screening"
+    "protocol_v3_3_release": "pending (DRAFT text prepared 2026-10-09, pending team sign-off; bundles PRE-009, PRE-010, PRE-011 and the PRE-004 implementation update; before full-text screening starts)",
+    "amendment_PRE-010": "adopted_2026-10-08 (A): AI pre-filled full-text screening with human override (GPT-6 Sol pre-fills B, GLM-5.3 pre-fills C; B and C override; D adjudicates); 15 boundary exercises (pass 12/15) before the override phase; pipeline to be built; to be released in v3.3 before full-text screening; v3.3 DRAFT text prepared 2026-10-09, pending team sign-off and release",
+    "fulltext_screening": "ready: working full-text scope re-based on the confirmed triage result to 477 records (438 confirmed V + 37 unclear + 2 genuinely new PRE-007 rescreen records; 04_screening/formal_2026-10-05_v0.9/fulltext/scope_rescope_2026-10-09.md); GPT-6 Sol AI pre-fill run on the 141 retrieved-OA records (ft_prefill_summary_2026-10-09.md), GLM-5.3 side pending; B and C must still pass the 15 full-text boundary exercises (>=12/15) before the override phase; no full-text decision made; starts after the v3.3 release (PRE-010, PRE-011)",
+    "amendment_PRE-011": "adopted_2026-10-09 (A; team-approved recommended option): operational adult age rule at full text (explicit range/minimum >=18 y, OR mean age >=20 y / described as adults, students, athletes, workers etc. with no participants under 18 y stated — flagged age_range_not_reported); mean-minus-2SD computation dropped (was holding 39/130, 30%, AI-pre-filled full-text reports AWAITING for age alone); to be released in v3.3"
   },
   "flow_counts": null,
   "actual_search_dates": {

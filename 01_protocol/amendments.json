@@ -109,7 +109,8 @@
         "C22": "still deferred (no measurements.n_in_contrast column)",
         "calibration_round": "the reduced human charting calibration round (reassessment_needed) is folded into the first 5 V-layer reports extracted (one per validation sub-type plus one background report), as PRE-008 choice 7 did for the stage-2 re-calibration",
         "tool_follow_up": "C13 (content-key alignment; locator and notes columns not scored) and C17/C20 (reserved version rows; conditional NA prefill of loaded rows) implemented in scripts/compare_extraction.py, scripts/build_workbooks.py and scripts/load_ai_extraction.py before formal extraction",
-        "release_update": "bundled into release v3.3 with PRE-009"
+        "release_update": "bundled into release v3.3 with PRE-009",
+        "implementation_status": "pending; v3.3 DRAFT text prepared 2026-10-09, pending team sign-off and release"
       }
     },
     {
@@ -281,14 +282,14 @@
       "decision_by": "A (2026-10-08; recommended option of the extraction readiness check, 05_extraction/extraction_readiness_2026-10-08.md)",
       "reassessment_needed": "None for screening. The reduced human calibration round of PRE-004 is folded into the first 5 V-layer reports extracted; if it shows a systematic rule problem, the affected rule is amended before the remaining reports.",
       "affected_records": "none formal; all V-layer reports to be extracted. Affects protocol EN/CN sections G.1, K, L and status line; 05_extraction/data_dictionary.json, extraction_template.json, extraction_manual.md; scripts/build_workbooks.py, load_ai_extraction.py, compare_extraction.py",
-      "release_update": "Working text updated 2026-10-08; bundled with the PRE-004 implementation update into release v3.3 (GitHub tag and Zenodo version DOI under concept DOI 10.5281/zenodo.23147972), published before formal extraction starts",
+      "release_update": "Working text updated 2026-10-08; DRAFT text for release v3.3 (bundling PRE-010, PRE-011 and the PRE-004 implementation update, under concept DOI 10.5281/zenodo.23147972) prepared 2026-10-09, pending team sign-off and release, before formal extraction starts",
       "related_decisions_2026-10-08": [
         "New copy-only charting field reports.v_layer_validation_subtypes_from_triage: the v1.2 validation-element sub-type(s) that placed the report in V, copied from the triage (final_triage_4298.csv, final_E5_subtypes); not re-judged at extraction; where the full text contradicts it, the full-text screening field validation_element_confirmed governs (copied into reports.validation_element_confirmed).",
         "A V-layer report with validation_element_confirmed = no is kept, charted fully and flagged; its count is reported in the flow and in the map; it is not excluded for that reason."
       ],
       "changes_document": "../CHANGELOG.md",
       "implementation_date": "2026-10-08",
-      "implementation_status": "adopted; protocol text, dictionary, template, manual and scripts updated 2026-10-08; release v3.3 pending; no extraction run"
+      "implementation_status": "adopted; protocol text, dictionary, template, manual and scripts updated 2026-10-08; v3.3 DRAFT text prepared 2026-10-09, pending team sign-off and release; no extraction run"
     },
     {
       "amendment_id": "PRE-010",
@@ -302,10 +303,10 @@
       "decision_by": "A (2026-10-08)",
       "reassessment_needed": "none",
       "affected_records": "none decided; all V-layer reports sent to full text (578). Affects protocol EN/CN sections F, J, K, L and status line; 04_screening/screening_manual.md 3C; 04_screening/calibration_plan.md 'Full-text stage'; the full-text workbook builder (scripts/build_fulltext_workbooks.py: pre-fill and hidden pre-fill copy, to be built)",
-      "release_update": "Working text updated 2026-10-08; bundled with PRE-009 and the PRE-004 implementation update into release v3.3 (GitHub tag and Zenodo version DOI under concept DOI 10.5281/zenodo.23147972), published before full-text screening starts",
+      "release_update": "Working text updated 2026-10-08; DRAFT text for release v3.3 (bundling PRE-009, PRE-011 and the PRE-004 implementation update, under concept DOI 10.5281/zenodo.23147972) prepared 2026-10-09, pending team sign-off and release, before full-text screening starts",
       "changes_document": "../CHANGELOG.md",
       "implementation_date": "2026-10-08",
-      "implementation_status": "pending: protocol text, screening manual and calibration plan updated 2026-10-08; pipeline to be built (full-text prompt and version, stand-in runs, pre-filled B/C workbooks with hidden pre-fill copy, override-rate report); boundary exercises and release v3.3 pending; no full-text decision made"
+      "implementation_status": "pending: protocol text, screening manual and calibration plan updated 2026-10-08; v3.3 DRAFT text prepared 2026-10-09, pending team sign-off and release; pipeline to be built (full-text prompt and version, stand-in runs, pre-filled B/C workbooks with hidden pre-fill copy, override-rate report); boundary exercises pending; no full-text decision made"
     },
     {
       "amendment_id": "PRE-011",
@@ -314,15 +315,15 @@
       "old_rule": "Protocol v3.x age rule: a cohort is adult when an explicit range or minimum age >= 18 y is given; when only mean +/- SD is reported, mean - 2 SD must be >= 18 y, otherwise the report is AWAITING_CLASSIFICATION until a range or a linked report resolves it.",
       "new_rule": "A cohort counts as adult and the report is screened/charted as INCLUDE when (i) the report gives an explicit range/minimum >= 18 y, OR (ii) the reported mean age is >= 20 y (any SD) or participants are described as adults, university students, athletes, workers or similar, AND the report nowhere states that participants under 18 y took part. Such cohorts are flagged age_range_not_reported in the extraction (E4 = young_adult_age_unclear retained as a descriptive label). A report stays AWAITING_CLASSIFICATION only when it states participants under 18 y without a separable adult stratum (then FT03), or the mean age is < 20 y with no range, or age is not reported at all. The mean - 2 SD computation is no longer applied.",
       "reason": "Feasibility and recall: under the mean - 2 SD rule 39 of the first 130 AI-pre-filled full-text reports (30 %) were held AWAITING for age alone, almost all healthy adult cohorts (students, athletes) whose SD is wide; the rule excluded no cohort in which minors were actually reported. A decided on 2026-10-09 (team-approved recommended option) to adopt the operational rule above; the limitation (age range not reported in a share of cohorts) is charted and reported.",
-      "work_stage": "",
-      "information_already_known": "",
-      "decision_by": "",
-      "reassessment_needed": "",
-      "affected_records": "",
-      "release_update": "",
-      "changes_document": "",
-      "implementation_date": "",
-      "implementation_status": ""
+      "work_stage": "after the PRE-008 triage, PRE-009 and PRE-010 adoption, during the AI pre-fill of the first batch of V-layer full texts, before the override phase and before any full-text screening decision exists",
+      "information_already_known": "the age-rule distribution of the first 130 AI-pre-filled full-text reports (39, 30%, held AWAITING for age alone under the mean-minus-2-SD rule); no full-text decision had been made by B or C",
+      "decision_by": "A (2026-10-09; team-approved recommended option)",
+      "reassessment_needed": "none; applies to every full-text age-rule check from adoption onward, including the 141 records already AI pre-filled under the former rule, which are re-checked under the new rule before the override phase",
+      "affected_records": "none decided; applies to all 477 records in the working full-text scope. Affects protocol EN/CN sections D.1, F, K, L; 04_screening/fulltext_boundary_exercises.md examples that illustrate the mean-minus-2-SD rule are superseded references, not re-scored",
+      "release_update": "Working text updated 2026-10-09; bundled with PRE-009, PRE-010 and the PRE-004 implementation update into release v3.3 (GitHub tag and Zenodo version DOI under concept DOI 10.5281/zenodo.23147972), published before full-text screening starts",
+      "changes_document": "../CHANGELOG.md",
+      "implementation_date": "2026-10-09",
+      "implementation_status": "adopted; protocol text (D.1, F, K, L) updated 2026-10-09; v3.3 DRAFT text prepared, pending team sign-off and release; age_range_not_reported flag to be added to the full-text workbook builder before the override phase"
     }
   ],
   "future_amendment_fields": [
