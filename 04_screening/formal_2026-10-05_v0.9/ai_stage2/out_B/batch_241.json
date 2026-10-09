@@ -1,0 +1,1983 @@
+[
+ {
+  "record_id": "FS-012656",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Cell-line and ex vivo stimulation study; no exercise exposure."
+ },
+ {
+  "record_id": "FS-012667",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Circadian blood sampling without an exercise bout."
+ },
+ {
+  "record_id": "FS-012698",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Minipig study without exercise exposure."
+ },
+ {
+  "record_id": "FS-012713",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical case of systemic sclerosis and lymphoma; no exercise or measured immune response."
+ },
+ {
+  "record_id": "FS-012718",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Cancer patient cohort; progenitor collections followed chemotherapy rather than exercise."
+ },
+ {
+  "record_id": "FS-012731",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "HIV latency experiments use a cultured cell clone; no exercise exposure."
+ },
+ {
+  "record_id": "FS-012745",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "In vitro lymphoma cell-line study of cell-cycle arrest; no exercise exposure."
+ },
+ {
+  "record_id": "FS-012759",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Human tissue and cell analyses assess proliferation without exercise or an eligible immune outcome."
+ },
+ {
+  "record_id": "FS-012760",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Repeated circadian sampling measures drug-metabolizing enzyme activity without exercise."
+ },
+ {
+  "record_id": "FS-012765",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "IL-5 transcription is studied through in vitro stimulation of T cells, without exercise."
+ },
+ {
+  "record_id": "FS-012775",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Ex vivo LPS stimulation of human blood; no exercise exposure."
+ },
+ {
+  "record_id": "FS-012778",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Parasite and host-cell experiments; no human exercise study."
+ },
+ {
+  "record_id": "FS-012786",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "In vitro HIV experiments examine viral infectivity, without exercise or an eligible immune outcome."
+ },
+ {
+  "record_id": "FS-012787",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "In vitro T-cell infection experiments; no exercise exposure."
+ },
+ {
+  "record_id": "FS-012790",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "WEHI cell-culture apoptosis experiments; no human exercise study."
+ },
+ {
+  "record_id": "FS-012797",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Narrative overview of diabetic atherosclerosis; no exercise exposure."
+ },
+ {
+  "record_id": "FS-012804",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Human T cells stimulated in vitro; no exercise exposure."
+ },
+ {
+  "record_id": "FS-012810",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "T-cell lymphoma line experiment; no original human participant measurements or exercise."
+ },
+ {
+  "record_id": "FS-012817",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Human lymphocytes activated with phytohemagglutinin; no exercise exposure."
+ },
+ {
+  "record_id": "FS-012819",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Animal hepatectomy and hepatocyte cell-line experiments; no human exercise study."
+ },
+ {
+  "record_id": "FS-012820",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "PRL stimulation of a rat T lymphoma cell line; no exercise exposure."
+ },
+ {
+  "record_id": "FS-012825",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Liver regeneration studied in animals after surgery; no exercise exposure."
+ },
+ {
+  "record_id": "FS-012829",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Cell-line experiments on DNA damage and apoptosis; no exercise exposure."
+ },
+ {
+  "record_id": "FS-012862",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Isolated B-cell stimulation experiments; no exercise exposure."
+ },
+ {
+  "record_id": "FS-012866",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Fibroblast and fibrosarcoma cell experiments; no exercise exposure."
+ },
+ {
+  "record_id": "FS-012877",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "In vitro T-cell cell-cycle study; no exercise exposure or eligible immune outcome."
+ },
+ {
+  "record_id": "FS-012888",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "In vitro monocyte infection study with no exercise exposure."
+ },
+ {
+  "record_id": "FS-012890",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "In vitro T-cell cell-cycle study; no exercise exposure or eligible immune outcome."
+ },
+ {
+  "record_id": "FS-012893",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Leukocytes from immunocompromised viremic patients; no exercise exposure."
+ },
+ {
+  "record_id": "FS-012894",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "In vitro PBMC stimulation study with no exercise exposure."
+ },
+ {
+  "record_id": "FS-012899",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Rat thymocytes were stimulated in vitro; no exercise exposure."
+ },
+ {
+  "record_id": "FS-012904",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Isolated human T cells were stimulated in vitro; no exercise exposure."
+ },
+ {
+  "record_id": "FS-012924",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Human donor T cells were studied after mitogen stimulation, with no exercise exposure."
+ },
+ {
+  "record_id": "FS-012933",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Murine cell lines were studied without human participants or exercise."
+ },
+ {
+  "record_id": "FS-012938",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Mouse B cells were stimulated in vitro; no human exercise exposure."
+ },
+ {
+  "record_id": "FS-012945",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Macrophage culture supernatants studied without original human exercise measurements."
+ },
+ {
+  "record_id": "FS-012951",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Laboratory study of EBV infection in B cells; no exercise exposure."
+ },
+ {
+  "record_id": "FS-012962",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Gene cloning and cell-line experiments; no original human exercise measurements."
+ },
+ {
+  "record_id": "FS-012963",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Purified T cells stimulated in culture; no human exercise exposure."
+ },
+ {
+  "record_id": "FS-012974",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Isolated B cells stimulated with antibodies in vitro; no exercise exposure."
+ },
+ {
+  "record_id": "FS-012977",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "In vitro stimulation of human T lymphocytes; no exercise exposure."
+ },
+ {
+  "record_id": "FS-012984",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Murine pre-B cell experiment using LPS stimulation; no exercise exposure."
+ },
+ {
+  "record_id": "FS-012989",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Rat splenic T-cell culture experiment; no exercise exposure."
+ },
+ {
+  "record_id": "FS-012994",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "In vitro stimulation of isolated human T lymphocytes; no exercise exposure."
+ },
+ {
+  "record_id": "FS-012995",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Murine B-cell culture experiment; no exercise exposure."
+ },
+ {
+  "record_id": "FS-012996",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Mouse transformation and human spleen morphology were studied without exercise."
+ },
+ {
+  "record_id": "FS-012997",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Human blood cells were studied only in culture, without exercise."
+ },
+ {
+  "record_id": "FS-013014",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Single patient with leukemia; no exercise exposure."
+ },
+ {
+  "record_id": "FS-013018",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Clinical case of myoglobinuric myopathy."
+ },
+ {
+  "record_id": "FS-013025",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Murine infection models only; no exercise exposure."
+ },
+ {
+  "record_id": "FS-013040",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Infertility treatment cohort; no exercise exposure."
+ },
+ {
+  "record_id": "FS-013042",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Clinical overview of wheat-related disorders, not an original study."
+ },
+ {
+  "record_id": "FS-013044",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Literature review synthesizing 82 studies."
+ },
+ {
+  "record_id": "FS-013055",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Explicit integrative theoretical review."
+ },
+ {
+  "record_id": "FS-013065",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Explicit review of exercise-induced irisin in autism."
+ },
+ {
+  "record_id": "FS-013066",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical kidney disease case report with no exercise exposure."
+ },
+ {
+  "record_id": "FS-013068",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Patient with multiple myeloma and active infection; no exercise exposure."
+ },
+ {
+  "record_id": "FS-013114",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Cell culture and mouse experiments; no original human measurements or exercise exposure."
+ },
+ {
+  "record_id": "FS-013131",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical renal-risk cohort studied after contrast administration, with no exercise exposure."
+ },
+ {
+  "record_id": "FS-013137",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review of glutamate, insulin signaling, and exercise."
+ },
+ {
+  "record_id": "FS-013180",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Food allergy survey has no exercise exposure or eligible immune measurement."
+ },
+ {
+  "record_id": "FS-013185",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Patient has active spinal tuberculosis; no exercise study."
+ },
+ {
+  "record_id": "FS-013191",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "ICU patients have sepsis; no exercise exposure."
+ },
+ {
+  "record_id": "FS-013263",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Mouse-only study of eight weeks of wheel access."
+ },
+ {
+  "record_id": "FS-013265",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Liver resection patients; postoperative sampling is unrelated to exercise."
+ },
+ {
+  "record_id": "FS-013274",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Osteoarthritis patient cohort; biomarkers measured without an exercise bout."
+ },
+ {
+  "record_id": "FS-013275",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Experiments use murine macrophages and a mouse peritonitis model."
+ },
+ {
+  "record_id": "FS-013306",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Cytokines measured during fertility treatment with no exercise exposure."
+ },
+ {
+  "record_id": "FS-013320",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Cell experiments examine DNA damage signaling without exercise or an immune measure."
+ },
+ {
+  "record_id": "FS-013346",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Background overview of exercise-induced bronchoconstriction, without original study data."
+ },
+ {
+  "record_id": "FS-013349",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Computational sperm interactome study with no human exercise measurements."
+ },
+ {
+  "record_id": "FS-013366",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Experiments use infected cell lines, with no exercise exposure."
+ },
+ {
+  "record_id": "FS-013368",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Kidney transplant patients form a clinical cohort; no exercise exposure is studied."
+ },
+ {
+  "record_id": "FS-013380",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Bacterial and bacteriophage experiments provide no original human exercise data."
+ },
+ {
+  "record_id": "FS-013389",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Ex vivo cord blood cell stimulation study with no exercise exposure."
+ },
+ {
+  "record_id": "FS-013410",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Mouse hepatectomy experiment; no exercise exposure."
+ },
+ {
+  "record_id": "FS-013418",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Review of wheat allergy diagnosis and management."
+ },
+ {
+  "record_id": "FS-013427",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Kidney transplant recipients; no exercise exposure."
+ },
+ {
+  "record_id": "FS-013442",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Voluntary hyperpnea challenges measured lung function, with no exercise bout or immune measure."
+ },
+ {
+  "record_id": "FS-013495",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Cystic fibrosis patient cells and controls studied after LPS stimulation; no exercise exposure."
+ },
+ {
+  "record_id": "FS-013517",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "HIV-infected participants; laboratory CD4 reliability study with no exercise exposure."
+ },
+ {
+  "record_id": "FS-013520",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Patients with severe aortic stenosis underwent valve implantation, not exercise."
+ },
+ {
+  "record_id": "FS-013522",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Cell-culture apoptosis experiment with no human participants or exercise exposure."
+ },
+ {
+  "record_id": "FS-013529",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Adenovirus-infected cells studied in vitro; no exercise exposure."
+ },
+ {
+  "record_id": "FS-013540",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Hip-surgery patient cohort with no exercise exposure."
+ },
+ {
+  "record_id": "FS-013546",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Rat and mouse kidney study; no exercise exposure."
+ },
+ {
+  "record_id": "FS-013553",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Cross-sectional baseline vaginal cytokines; no exercise exposure."
+ },
+ {
+  "record_id": "FS-013560",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Cell biology assays without original human exercise or immune measurements."
+ },
+ {
+  "record_id": "FS-013586",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Narrative synthesis of exercise responses in chronic fatigue syndrome patients."
+ },
+ {
+  "record_id": "FS-013602",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03",
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Review of leptin deficiency and treatment in clinical populations; no qualifying exercise study."
+ },
+ {
+  "record_id": "FS-013611",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Article summarizes research on leptin; no original study reported."
+ },
+ {
+  "record_id": "FS-013617",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Descriptive overview of oral mite anaphylaxis; no original study reported."
+ },
+ {
+  "record_id": "FS-013630",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "IL-6 was measured in rats after surgery, with no exercise exposure."
+ },
+ {
+  "record_id": "FS-013652",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Assisted conception study has no exercise exposure or eligible immune measure."
+ },
+ {
+  "record_id": "FS-013671",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative summary of exercise-related tissue adaptation; no original study reported."
+ },
+ {
+  "record_id": "FS-013676",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "In vitro bacterial expression in infected cells; no exercise or eligible immune outcome."
+ },
+ {
+  "record_id": "FS-013681",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Mouse tissue technique study uses LPS treatment, not exercise."
+ },
+ {
+  "record_id": "FS-013686",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Mouse oocytes and embryos; no exercise or immune measure."
+ },
+ {
+  "record_id": "FS-013698",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Mouse coronary occlusion study; no exercise exposure."
+ },
+ {
+  "record_id": "FS-013705",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Patient and separable healthy control lymphocytes assessed for chromosome division, without exercise or immune outcome."
+ },
+ {
+  "record_id": "FS-013715",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Endotoxin infusion study with no exercise exposure."
+ },
+ {
+  "record_id": "FS-013717",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "TCDD exposure and thymocyte proliferation; no exercise exposure."
+ },
+ {
+  "record_id": "FS-013718",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Overview of implantation research with no exercise exposure."
+ },
+ {
+  "record_id": "FS-013725",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Rat spinal cord injury study; no exercise or eligible immune-focused analysis."
+ },
+ {
+  "record_id": "FS-013759",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Porcine and mouse tissue preparations tested without human participants or exercise."
+ },
+ {
+  "record_id": "FS-013762",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Gastric carcinoma cell-line and tumor-specimen assays; no exercise exposure."
+ },
+ {
+  "record_id": "FS-013763",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "In vitro lymphocyte stimulation with PHA; no exercise exposure."
+ },
+ {
+  "record_id": "FS-013772",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Severe acute pancreatitis patients; no exercise exposure."
+ },
+ {
+  "record_id": "FS-013780",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Lung cancer cell-line experiments; no exercise exposure."
+ },
+ {
+  "record_id": "FS-013823",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "In vitro lymphocyte culture study; no exercise exposure."
+ },
+ {
+  "record_id": "FS-013837",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Neonatal rat ganglia and Schwann cells; no exercise exposure."
+ },
+ {
+  "record_id": "FS-013856",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "In vitro stimulation of donor lymphocytes; no exercise exposure."
+ },
+ {
+  "record_id": "FS-013895",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative discussion of fat fuels and immune effects, without original study data."
+ },
+ {
+  "record_id": "FS-013908",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "IVF embryo culture measurements have no exercise exposure."
+ },
+ {
+  "record_id": "FS-013916",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Isolated human cells infected with HSV in vitro; no exercise exposure."
+ },
+ {
+  "record_id": "FS-013941",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Murine cell-line experiment with no exercise exposure."
+ },
+ {
+  "record_id": "FS-013943",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Serum immune-complex assay study with no exercise exposure."
+ },
+ {
+  "record_id": "FS-013953",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "In-vitro lymphocyte stimulation study with no exercise exposure."
+ },
+ {
+  "record_id": "FS-013964",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Menstrual-cycle monitoring without exercise; leukocyte enzyme assessed as an ovulation marker."
+ },
+ {
+  "record_id": "FS-013965",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "In-vitro leukocyte genotoxicity experiment without exercise or an eligible immune outcome."
+ },
+ {
+  "record_id": "FS-013968",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Rat lymphocyte experiments; no exercise exposure."
+ },
+ {
+  "record_id": "FS-013974",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical drug hypersensitivity testing; no exercise exposure."
+ },
+ {
+  "record_id": "FS-013975",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Cultured spleen cells studied without an exercise exposure."
+ },
+ {
+  "record_id": "FS-013977",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Viral antigen development studied in HeLa cells."
+ },
+ {
+  "record_id": "FS-013978",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Virus antigen synthesis studied in infected cell cultures."
+ },
+ {
+  "record_id": "FS-013996",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Narrative review of measles care; no exercise exposure or eligible immune measurement."
+ },
+ {
+  "record_id": "FS-014002",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Autopsy study of traumatic brain injury; no exercise exposure or eligible immune measure."
+ },
+ {
+  "record_id": "FS-014017",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Mouse stroke model and in vitro experiments; no human exercise exposure."
+ },
+ {
+  "record_id": "FS-014018",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Experiments use lymphoma cell lines; no human exercise exposure."
+ },
+ {
+  "record_id": "FS-014032",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Mouse lung injury experiments; no human exercise exposure."
+ },
+ {
+  "record_id": "FS-014049",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Metastatic breast cancer case report; no exercise exposure."
+ },
+ {
+  "record_id": "FS-014054",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Monocytes compared between pneumonia patients and controls; no exercise exposure."
+ },
+ {
+  "record_id": "FS-014058",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Reanalysis of database stroke transcriptomics; no original human measurements or exercise exposure."
+ },
+ {
+  "record_id": "FS-014070",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Cell culture experiment only; no exercise exposure."
+ },
+ {
+  "record_id": "FS-014084",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical treatment overview without original exercise research."
+ },
+ {
+  "record_id": "FS-014123",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Mouse CCl4 liver-injury experiment; no exercise exposure."
+ },
+ {
+  "record_id": "FS-014135",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical case of advanced gastric cancer; no exercise exposure."
+ },
+ {
+  "record_id": "FS-014143",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Cell-culture sensor experiment; no exercise exposure."
+ },
+ {
+  "record_id": "FS-014159",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Motor neuron cell-line experiment; no exercise bout."
+ },
+ {
+  "record_id": "FS-014171",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "In vitro fungal proteomics after neutrophil interaction; no exercise exposure."
+ },
+ {
+  "record_id": "FS-014179",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Participants have active COVID-19; no exercise exposure or eligible immune measure."
+ },
+ {
+  "record_id": "FS-014193",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "AKI patient cohort studied after surgery, with no exercise exposure."
+ },
+ {
+  "record_id": "FS-014194",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Cell culture and downloaded datasets; no original human measurements, exercise exposure, or eligible immune measure."
+ },
+ {
+  "record_id": "FS-014220",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical case of active tuberculosis and ARDS; no exercise exposure or eligible immune measure."
+ },
+ {
+  "record_id": "FS-014223",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Prison vaccination and infection statistics lack exercise exposure and an eligible immune measure."
+ },
+ {
+  "record_id": "FS-014227",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Patients with metastatic prostate cancer received radioligand therapy; no exercise bout or eligible immune measure."
+ },
+ {
+  "record_id": "FS-014242",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Experiments used cultured microglial cells and no exercise exposure."
+ },
+ {
+  "record_id": "FS-014246",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Perinatal mouse study of cardiac fibroblasts without exercise or eligible immune outcomes."
+ },
+ {
+  "record_id": "FS-014247",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Abstract explicitly identifies this article as a review."
+ },
+ {
+  "record_id": "FS-014248",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Prognostic study of septic ICU patients with no exercise exposure."
+ },
+ {
+  "record_id": "FS-014257",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Encephalitis and neurological disease cohorts; no exercise exposure."
+ },
+ {
+  "record_id": "FS-014265",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Explicitly identified as a review."
+ },
+ {
+  "record_id": "FS-014278",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Human participants are critical care patients; no exercise exposure."
+ },
+ {
+  "record_id": "FS-014283",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Infected cell lines only; no human participants or exercise."
+ },
+ {
+  "record_id": "FS-014287",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Granulosa-cell experiments provide no original human participant measurements or exercise exposure."
+ },
+ {
+  "record_id": "FS-014298",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "FDA perspective on montelukast labeling; no exercise or eligible immune measure."
+ },
+ {
+  "record_id": "FS-014310",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Patients investigated for anaplasmosis; no exercise exposure."
+ },
+ {
+  "record_id": "FS-014321",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Neoplasm treatment patients undergoing apheresis; no exercise exposure."
+ },
+ {
+  "record_id": "FS-014329",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Subarachnoid hemorrhage patients; no exercise exposure or eligible immune analysis."
+ },
+ {
+  "record_id": "FS-014335",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT02"
+  ],
+  "study_type_hint": "other",
+  "note": "Perspective article synthesizing prior fibromyalgia research."
+ },
+ {
+  "record_id": "FS-014338",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03",
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Computational analysis of influenza infection data; no exercise exposure."
+ },
+ {
+  "record_id": "FS-014376",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Cross-sectional cohort of patients with diagnosed asthma; exercise appears only as a symptom trigger."
+ },
+ {
+  "record_id": "FS-014396",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03",
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "In-vitro experiments on bronchial cells from asthma and COPD patients; no exercise exposure."
+ },
+ {
+  "record_id": "FS-014400",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Synchronized cell-culture chromosome study with no exercise or immune measure."
+ },
+ {
+  "record_id": "FS-014401",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Mouse kidney-injury experiments with no exercise exposure or eligible immune measure."
+ },
+ {
+  "record_id": "FS-014439",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Comparative menstruation study includes human tissue but no exercise exposure."
+ },
+ {
+  "record_id": "FS-014463",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Clinical case of severe rhabdomyolysis and diagnosed G6PD deficiency."
+ },
+ {
+  "record_id": "FS-014488",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Resistin sampled 48 hours after the last exercise session; exercise response may be assessable."
+ },
+ {
+  "record_id": "FS-014502",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Clinical overview of asthma testing, with no original study reported."
+ },
+ {
+  "record_id": "FS-014513",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Book chapter updating evidence on supplements for exercise-induced soreness."
+ },
+ {
+  "record_id": "FS-014516",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03",
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Drug overview concerning asthma patients; no original exercise study."
+ },
+ {
+  "record_id": "FS-014523",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Colitis experiments were conducted in mice, with no exercise exposure."
+ },
+ {
+  "record_id": "FS-014525",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Renal artery stenosis patients underwent stenting; no exercise exposure or eligible immune measure."
+ },
+ {
+  "record_id": "FS-014527",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Drug-delivery experiments used cells and mice, with no exercise or eligible immune measure."
+ },
+ {
+  "record_id": "FS-014542",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Rat shock-stress experiments measured neuroinflammation; no human participants or exercise bout."
+ },
+ {
+  "record_id": "FS-014555",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Macrophage experiments and a murine model; no human exercise study."
+ },
+ {
+  "record_id": "FS-014556",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Cell imaging and sorting experiments without human participants or exercise."
+ },
+ {
+  "record_id": "FS-014566",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Narrative discussion of asthma management, without original exercise data."
+ },
+ {
+  "record_id": "FS-014574",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Urine metabolomics assay validation with no exercise exposure or immune objective."
+ },
+ {
+  "record_id": "FS-014577",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Fetal membrane inflammation study with no exercise exposure."
+ },
+ {
+  "record_id": "FS-014590",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical angioedema cohort; no exercise bout or eligible immune measure."
+ },
+ {
+  "record_id": "FS-014596",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Cancer patients receiving chemotherapy; DNA adduct study without exercise or eligible immune measures."
+ },
+ {
+  "record_id": "FS-014597",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Questionnaires concern children aged 6–12; no exercise bout or eligible immune measure."
+ },
+ {
+  "record_id": "FS-014612",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Ankylosing spondylitis patient; exercise appears only as symptom relief."
+ },
+ {
+  "record_id": "FS-014615",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Rat hepatocyte cell-line experiment without human participants or exercise."
+ },
+ {
+  "record_id": "FS-014617",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Drug assay validation describes no exercise exposure or eligible immune measure."
+ },
+ {
+  "record_id": "FS-014624",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "HIV-infected transplant recipients; drug pharmacokinetics without exercise or eligible immune measures."
+ },
+ {
+  "record_id": "FS-014625",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Human reproductive development study has no exercise exposure."
+ },
+ {
+  "record_id": "FS-014635",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Wheat-line and in vitro T-cell experiments; no exercise exposure."
+ },
+ {
+  "record_id": "FS-014637",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Explicit review of stroke inflammation with no exercise exposure."
+ },
+ {
+  "record_id": "FS-014659",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Mouse kidney cells studied ex vivo; no exercise exposure or eligible immune measure."
+ },
+ {
+  "record_id": "FS-014664",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Original tear-sampling study examines waking-day variation, with no exercise exposure or eligible immune measure."
+ },
+ {
+  "record_id": "FS-014665",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Human material comes from cancer; study has no exercise exposure or eligible immune measure."
+ },
+ {
+  "record_id": "FS-014676",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Mouse liver-regeneration experiment follows partial hepatectomy, with no exercise exposure."
+ },
+ {
+  "record_id": "FS-014701",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical case involves cirrhosis and multiple cancers; no exercise exposure or eligible immune measure."
+ },
+ {
+  "record_id": "FS-014702",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Murine injury model and myogenic cell experiments; no exercise exposure or eligible immune analysis."
+ },
+ {
+  "record_id": "FS-014739",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Head-and-neck cancer patients underwent radiotherapy; lymphocyte assay assessed DNA repair, not immune function."
+ },
+ {
+  "record_id": "FS-014740",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Overview of VEGF and exercise drawing on mouse knockout findings."
+ },
+ {
+  "record_id": "FS-014744",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Mouse Chlamydia infection model with no exercise exposure."
+ },
+ {
+  "record_id": "FS-014753",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Bovine luteal response to prostaglandin; no exercise or immune-focused analysis."
+ }
+]

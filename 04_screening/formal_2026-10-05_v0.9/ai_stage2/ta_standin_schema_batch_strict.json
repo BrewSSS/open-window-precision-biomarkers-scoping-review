@@ -1,0 +1,81 @@
+{
+ "type": "object",
+ "additionalProperties": false,
+ "required": [
+  "results"
+ ],
+ "properties": {
+  "results": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+     "record_id",
+     "disposition",
+     "primary_code",
+     "secondary_codes",
+     "study_type_hint",
+     "note"
+    ],
+    "properties": {
+     "record_id": {
+      "type": "string",
+      "pattern": "^FS-[0-9]{6}$"
+     },
+     "disposition": {
+      "type": "string",
+      "enum": [
+       "ADVANCE",
+       "EXCLUDE_TA",
+       "AWAITING_CLASSIFICATION"
+      ]
+     },
+     "primary_code": {
+      "type": "string",
+      "enum": [
+       "",
+       "FT01",
+       "FT02",
+       "FT03",
+       "FT04",
+       "FT05",
+       "FT06",
+       "FT07",
+       "FT08"
+      ]
+     },
+     "secondary_codes": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "enum": [
+        "FT01",
+        "FT02",
+        "FT03",
+        "FT04",
+        "FT05",
+        "FT06",
+        "FT07",
+        "FT08"
+       ]
+      }
+     },
+     "study_type_hint": {
+      "type": "string",
+      "enum": [
+       "acute_bout_CoreA",
+       "repeated_bouts_SupportB",
+       "chronic_training_only",
+       "cross_sectional_resting",
+       "other"
+      ]
+     },
+     "note": {
+      "type": "string"
+     }
+    }
+   }
+  }
+ }
+}

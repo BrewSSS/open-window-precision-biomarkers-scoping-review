@@ -428,6 +428,35 @@
         "human verification of this re-screen's dispositions",
         "abstract-stage screening of the 919 re-advanced records"
       ]
+    },
+    {
+      "date": "2026-10-09",
+      "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 5 records per call",
+      "coordinator_model": "claude-sonnet-5",
+      "model": "gpt-6-sol",
+      "model_settings": "reasoning effort medium; 5 records per call, concurrency 16; one run plus one --resume pass per batch CSV",
+      "task": "Stage-2 TITLE/ABSTRACT screening, side B (inclusion-oriented stand-in), of the 1,061 records that (re-)entered stage 2 on 2026-10-09 (142 human-advanced sample/pilot records + 919 PRE-007 TI_rules v1.1 title re-advances), run as batches 237-242",
+      "prompt_reference": {
+        "file": "../04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_prompt_B_codex_batch.md",
+        "version": "ta_standin_prompt_B.md system prompt and TA rules verbatim; only the single-record-input sentence rewritten for the runner's several-records-per-call batch format",
+        "sha256": "c094a8bbb583f7e6025a7c68de35ab45d3d077830c07ddb3b2c1fef997d5d8fb"
+      },
+      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_schema.json (item schema; locally-derived Codex batch wrapper ta_standin_schema_batch_strict.json, sha256 3ee5a568cce786e4402c775b169b7688b2a8ae7c76018f5e23dd988b42385bb0, field names/enums unchanged, allOf conditional verified post hoc instead)",
+      "records": 1061,
+      "concurrency": 16,
+      "run_summary": "Smoke test (20 records, concurrency 2): 4/4 sub-batches succeeded, 0 invalid, 0 AWAITING. Full run: 6 batch CSVs (200/200/200/200/200/61), 253 sub-batches total, 0 failed batches, 0 invalid/missing records on the first pass (confirmed by a --resume pass per batch, 0 reruns needed); wall time (batch_237 start to batch_242 finish) ~3 min 53 s; token usage input 4,657,942 / output 129,540 / reasoning 70,313. Result: 115 ADVANCE / 946 EXCLUDE_TA / 0 AWAITING_CLASSIFICATION (EXCLUDE_TA codes: FT01 142, FT02 238, FT03 379, FT04 108, FT05 6, FT07 73). The AI stand-in was not informed these records had any stage-1 re-screen history.",
+      "output_sources": [
+        "../04_screening/formal_2026-10-05_v0.9/ai_stage2/out_B/batch_237.json .. batch_242.json (converted via scripts/ta_standin_to_batch.py)",
+        "../04_screening/formal_2026-10-05_v0.9/ai_stage2/batches_237_242_B_manifest.json (full counts, per-batch usage, hashes, deviations)",
+        "../04_screening/formal_2026-10-05_v0.9/ai_stage2/README.md, section 'Batches 237-242, side B (2026-10-09)'",
+        "raw per-batch run output: ai_triage/_local_runs/stage2_B_sol_batches_237_242/out_B_sol/batch_237/ .. batch_242/ (consolidated batch_NNN.json plus per-sub-batch files; git-ignored)"
+      ],
+      "human_verification_status": "Not yet performed. Side C (second independent read) and third-read adjudication for any B/C conflicts are scheduled next, on another backend; scripts/ta_ai_merge.py was intentionally not run for this batch set.",
+      "not_performed": [
+        "side C screening of these 1,061 records",
+        "third-read adjudication / merge (scripts/ta_ai_merge.py)",
+        "human verification of these 115 ADVANCE / 946 EXCLUDE_TA dispositions"
+      ]
     }
   ],
   "future_entry_fields": [

@@ -1,0 +1,329 @@
+{
+  "task": "Stage-2 TITLE/ABSTRACT AI stand-in screening, side B, on the 1,061 PRE-007 stage-1 re-entrants (batches 237-242)",
+  "input_population": {
+    "description": "1,061 records that (re-)entered stage 2 on 2026-10-09: 142 human-advanced sample/pilot records (71e472e) + 919 records re-advanced by the PRE-007 TI_rules v1.1 title re-screen (e67666a), listed in 04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/stage2_new_entrants.csv (no abstracts in that committed listing). The AI stand-in screener was not told these records had been re-screened or were previously excluded at stage 1; it screened them as ordinary stage-2 title/abstract records.",
+    "n_records": 1061,
+    "input_csv_local_path": "/tmp/ta_screen2/stage2_new_entrants_with_abstracts.csv (contains abstracts; outside repo, git-ignored, never committed)",
+    "input_csv_sha256": "0c24daa2e9bd4ca59249e9961f9ed8294c4a8af8bbd202ea5eb0bf9596c67475"
+  },
+  "side": "B",
+  "model": "gpt-6-sol",
+  "effort": "medium",
+  "records_per_call": 5,
+  "concurrency": 16,
+  "provider": "codex (ChatGPT-subscription auth, isolated CODEX_HOME=~/.codex-triage)",
+  "runner": "scripts/triage_codex_run.py (unmodified)",
+  "batches": [
+    "batch_237",
+    "batch_238",
+    "batch_239",
+    "batch_240",
+    "batch_241",
+    "batch_242"
+  ],
+  "n_batches": 6,
+  "n_sub_batches_total": 213,
+  "n_records_total": 1061,
+  "prompt_file": "04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_prompt_B_codex_batch.md",
+  "prompt_sha256": "c094a8bbb583f7e6025a7c68de35ab45d3d077830c07ddb3b2c1fef997d5d8fb",
+  "prompt_note": "ta_standin_prompt_B.md system prompt and TA rules verbatim, unchanged; only the one sentence describing single-record-per-request input was rewritten for the runner's several-records-per-call batch format and the {\"results\": [...]} output wrapper (see diff recorded as a deviation below). Same orientation-B rules used for batches 1-236.",
+  "schema_batch_file": "04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_schema_batch_strict.json",
+  "schema_batch_sha256": "3ee5a568cce786e4402c775b169b7688b2a8ae7c76018f5e23dd988b42385bb0",
+  "schema_batch_note": "Locally-derived strict batch wrapper of ta_standin_schema.json: results[] array of the per-record item; $schema/$id/title/description/maxLength/allOf stripped, field names and enums unchanged, record_id given an FS-###### pattern, per the batch-schema convention used for batches 76-236 and the PRE-007 title re-screen (2026-10-09).",
+  "schema_item_file": "04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_schema.json",
+  "schema_item_sha256": "c381bca4a7539283c3568098552ea738fa3bdfd7415e6c45844054958c41a410",
+  "smoke_test": {
+    "n_records": 20,
+    "records_per_call": 5,
+    "concurrency": 2,
+    "result": "4/4 sub-batches succeeded on attempt 1; 20/20 valid; 0 validation_errors; primary_code non-empty iff EXCLUDE_TA on all 20; secondary_codes all lists; all notes <=20 words; 0 AWAITING_CLASSIFICATION (orientation-B default-ADVANCE behaved as expected; no age-only AWAITING observed)",
+    "usage": {
+      "input_tokens": 91456,
+      "reasoning_output_tokens": 1767,
+      "output_tokens": 2883
+    }
+  },
+  "started_utc": "2026-10-09T05:18:29Z",
+  "finished_utc": "2026-10-09T05:22:22Z",
+  "wall_seconds_full_run": 233.0,
+  "resume_pass": {
+    "run_utc": "2026-10-09T05:23:27Z-05:23:29Z",
+    "batches_already_valid": 213,
+    "sub_batches_rerun": 0,
+    "note": "All 253 sub-batches (5 per call, last partial) were already valid after the first pass; the --resume pass confirmed this with 0 reruns for every one of the 6 batch CSVs."
+  },
+  "failed_batches_any_batch": [],
+  "n_invalid_or_missing_records_after_resume": 0,
+  "awaiting_placeholders_written_by_converter": 0,
+  "total_usage": {
+    "input_tokens": 4657942,
+    "reasoning_output_tokens": 70313,
+    "output_tokens": 129540
+  },
+  "counts": {
+    "disposition": {
+      "ADVANCE": 115,
+      "EXCLUDE_TA": 946,
+      "AWAITING_CLASSIFICATION": 0
+    },
+    "exclude_by_primary_code": {
+      "FT03": 379,
+      "FT07": 73,
+      "FT04": 108,
+      "FT01": 142,
+      "FT02": 238,
+      "FT05": 6
+    },
+    "study_type_hint": {
+      "other": 735,
+      "acute_bout_CoreA": 195,
+      "cross_sectional_resting": 84,
+      "chronic_training_only": 42,
+      "repeated_bouts_SupportB": 5
+    }
+  },
+  "per_batch": [
+    {
+      "batch": "batch_237",
+      "n_records": 200,
+      "n_sub_batches": 40,
+      "failed_sub_batches": [],
+      "n_invalid_or_missing_records_before_resume": 0,
+      "resume_pass_batches_rerun": 0,
+      "started_utc": "2026-10-09T05:18:29Z",
+      "finished_utc": "2026-10-09T05:19:11Z",
+      "wall_seconds": null,
+      "total_usage": {
+        "input_tokens": 874081,
+        "reasoning_output_tokens": 16530,
+        "output_tokens": 27967
+      },
+      "dispositions": {
+        "EXCLUDE_TA": 157,
+        "ADVANCE": 43
+      },
+      "exclude_primary_code": {
+        "FT03": 87,
+        "FT07": 22,
+        "FT04": 31,
+        "FT01": 8,
+        "FT02": 7,
+        "FT05": 2
+      },
+      "study_type_hint": {
+        "other": 93,
+        "acute_bout_CoreA": 65,
+        "cross_sectional_resting": 35,
+        "chronic_training_only": 6,
+        "repeated_bouts_SupportB": 1
+      },
+      "input_batch_csv_local_sha256": "49b81f5d8003c7f119f83d735d7983fffee44b328d9b7d24929ed50f5aff23fc",
+      "consolidated_run_json_local_path": "ai_triage/_local_runs/stage2_B_sol_batches_237_242/out_B_sol/batch_237/batch_237.json (git-ignored)",
+      "consolidated_run_json_sha256": "b6d9b6221c92ea687eba655566bd502ef01bd08fa83fe0a3ec619a347f97c138",
+      "out_b_file": "04_screening/formal_2026-10-05_v0.9/ai_stage2/out_B/batch_237.json",
+      "out_b_sha256": "e52d8786650cdeeaadd8301331286e4687427729fe050956203f72f9d77b3aae"
+    },
+    {
+      "batch": "batch_238",
+      "n_records": 200,
+      "n_sub_batches": 40,
+      "failed_sub_batches": [],
+      "n_invalid_or_missing_records_before_resume": 0,
+      "resume_pass_batches_rerun": 0,
+      "started_utc": "2026-10-09T05:19:42Z",
+      "finished_utc": "2026-10-09T05:20:22Z",
+      "wall_seconds": null,
+      "total_usage": {
+        "input_tokens": 886087,
+        "reasoning_output_tokens": 14289,
+        "output_tokens": 25703
+      },
+      "dispositions": {
+        "EXCLUDE_TA": 159,
+        "ADVANCE": 41
+      },
+      "exclude_primary_code": {
+        "FT07": 21,
+        "FT03": 87,
+        "FT05": 2,
+        "FT04": 21,
+        "FT02": 13,
+        "FT01": 15
+      },
+      "study_type_hint": {
+        "acute_bout_CoreA": 54,
+        "other": 104,
+        "cross_sectional_resting": 25,
+        "chronic_training_only": 14,
+        "repeated_bouts_SupportB": 3
+      },
+      "input_batch_csv_local_sha256": "f23ca0542dd83350868e5fcbfa536233b25ffbe341bd9be674660b9907bba967",
+      "consolidated_run_json_local_path": "ai_triage/_local_runs/stage2_B_sol_batches_237_242/out_B_sol/batch_238/batch_238.json (git-ignored)",
+      "consolidated_run_json_sha256": "b0c914764891510e0273981442ba40c6f8b7926b46e3b85237f1df2c6e491b05",
+      "out_b_file": "04_screening/formal_2026-10-05_v0.9/ai_stage2/out_B/batch_238.json",
+      "out_b_sha256": "54b130813a9a39ebcfba74a6d2a435de9838396491a6771326c4931d7c7d0a23"
+    },
+    {
+      "batch": "batch_239",
+      "n_records": 200,
+      "n_sub_batches": 40,
+      "failed_sub_batches": [],
+      "n_invalid_or_missing_records_before_resume": 0,
+      "resume_pass_batches_rerun": 0,
+      "started_utc": "2026-10-09T05:20:22Z",
+      "finished_utc": "2026-10-09T05:21:00Z",
+      "wall_seconds": null,
+      "total_usage": {
+        "input_tokens": 867387,
+        "reasoning_output_tokens": 13031,
+        "output_tokens": 24136
+      },
+      "dispositions": {
+        "EXCLUDE_TA": 177,
+        "ADVANCE": 23
+      },
+      "exclude_primary_code": {
+        "FT01": 37,
+        "FT03": 71,
+        "FT02": 40,
+        "FT07": 19,
+        "FT04": 9,
+        "FT05": 1
+      },
+      "study_type_hint": {
+        "other": 122,
+        "acute_bout_CoreA": 51,
+        "chronic_training_only": 17,
+        "cross_sectional_resting": 9,
+        "repeated_bouts_SupportB": 1
+      },
+      "input_batch_csv_local_sha256": "122251df76af7358c4910f3aa64267ed51e4075504f39fb4bac3c08adb3df23f",
+      "consolidated_run_json_local_path": "ai_triage/_local_runs/stage2_B_sol_batches_237_242/out_B_sol/batch_239/batch_239.json (git-ignored)",
+      "consolidated_run_json_sha256": "fb6860697a5941155d41ca004a787cb337bb1e6e7b00ae8241ee1e8ba29ec8ad",
+      "out_b_file": "04_screening/formal_2026-10-05_v0.9/ai_stage2/out_B/batch_239.json",
+      "out_b_sha256": "e9b82dd1b8c43d0eccdfbabf015bcd0b9f91d6dbbddf70bac61d8f8baf2df3ac"
+    },
+    {
+      "batch": "batch_240",
+      "n_records": 200,
+      "n_sub_batches": 40,
+      "failed_sub_batches": [],
+      "n_invalid_or_missing_records_before_resume": 0,
+      "resume_pass_batches_rerun": 0,
+      "started_utc": "2026-10-09T05:21:00Z",
+      "finished_utc": "2026-10-09T05:21:35Z",
+      "wall_seconds": null,
+      "total_usage": {
+        "input_tokens": 870567,
+        "reasoning_output_tokens": 12545,
+        "output_tokens": 23463
+      },
+      "dispositions": {
+        "EXCLUDE_TA": 194,
+        "ADVANCE": 6
+      },
+      "exclude_primary_code": {
+        "FT02": 47,
+        "FT03": 74,
+        "FT07": 11,
+        "FT04": 15,
+        "FT01": 46,
+        "FT05": 1
+      },
+      "study_type_hint": {
+        "other": 165,
+        "acute_bout_CoreA": 24,
+        "cross_sectional_resting": 8,
+        "chronic_training_only": 3
+      },
+      "input_batch_csv_local_sha256": "6a9b6802a3a63845548c7350eeb78bc3539bf2be58fb7a96ec6f5bb667a25224",
+      "consolidated_run_json_local_path": "ai_triage/_local_runs/stage2_B_sol_batches_237_242/out_B_sol/batch_240/batch_240.json (git-ignored)",
+      "consolidated_run_json_sha256": "116c2a8a8d052709b9dfb4444cf4cd22d139d602f10efa4631348ffa5e9cb666",
+      "out_b_file": "04_screening/formal_2026-10-05_v0.9/ai_stage2/out_B/batch_240.json",
+      "out_b_sha256": "09af5cbbd01da985b65002682e40c6d7f0f51190ada0bd618174f250e32c0304"
+    },
+    {
+      "batch": "batch_241",
+      "n_records": 200,
+      "n_sub_batches": 40,
+      "failed_sub_batches": [],
+      "n_invalid_or_missing_records_before_resume": 0,
+      "resume_pass_batches_rerun": 0,
+      "started_utc": "2026-10-09T05:21:35Z",
+      "finished_utc": "2026-10-09T05:22:09Z",
+      "wall_seconds": null,
+      "total_usage": {
+        "input_tokens": 875118,
+        "reasoning_output_tokens": 10798,
+        "output_tokens": 21787
+      },
+      "dispositions": {
+        "EXCLUDE_TA": 199,
+        "ADVANCE": 1
+      },
+      "exclude_primary_code": {
+        "FT02": 102,
+        "FT04": 25,
+        "FT03": 45,
+        "FT01": 27
+      },
+      "study_type_hint": {
+        "other": 192,
+        "chronic_training_only": 2,
+        "cross_sectional_resting": 6
+      },
+      "input_batch_csv_local_sha256": "a14bef6124c05b31d606659ba13bc6427d9a5a0e0192ca1a43c1a42ac29b0896",
+      "consolidated_run_json_local_path": "ai_triage/_local_runs/stage2_B_sol_batches_237_242/out_B_sol/batch_241/batch_241.json (git-ignored)",
+      "consolidated_run_json_sha256": "0c2be40274c650c7fadfcf96502ef7460e781b9969b565caf94041e661133baf",
+      "out_b_file": "04_screening/formal_2026-10-05_v0.9/ai_stage2/out_B/batch_241.json",
+      "out_b_sha256": "406d755c9056ad7b8070979ec85fddc6ee901f06b683ee4284a0f22da028f5f6"
+    },
+    {
+      "batch": "batch_242",
+      "n_records": 61,
+      "n_sub_batches": 13,
+      "failed_sub_batches": [],
+      "n_invalid_or_missing_records_before_resume": 0,
+      "resume_pass_batches_rerun": 0,
+      "started_utc": "2026-10-09T05:22:09Z",
+      "finished_utc": "2026-10-09T05:22:22Z",
+      "wall_seconds": null,
+      "total_usage": {
+        "input_tokens": 284702,
+        "reasoning_output_tokens": 3120,
+        "output_tokens": 6484
+      },
+      "dispositions": {
+        "EXCLUDE_TA": 60,
+        "ADVANCE": 1
+      },
+      "exclude_primary_code": {
+        "FT01": 9,
+        "FT03": 15,
+        "FT02": 29,
+        "FT04": 7
+      },
+      "study_type_hint": {
+        "other": 59,
+        "cross_sectional_resting": 1,
+        "acute_bout_CoreA": 1
+      },
+      "input_batch_csv_local_sha256": "6aaabc80c21b9c0d11d3d27922e5f0cb4326d694c008c432bb1ed9774943af8b",
+      "consolidated_run_json_local_path": "ai_triage/_local_runs/stage2_B_sol_batches_237_242/out_B_sol/batch_242/batch_242.json (git-ignored)",
+      "consolidated_run_json_sha256": "7e0619e00fb609a945b84d434a751f94c7da603fd705d4f9f3972cabf2120990",
+      "out_b_file": "04_screening/formal_2026-10-05_v0.9/ai_stage2/out_B/batch_242.json",
+      "out_b_sha256": "317361912df402e2582c5470c720e7ef780e3bcfdd4eb2314a5fc892312cd23b"
+    }
+  ],
+  "deviations": [
+    "Prompt adaptation: changed exactly the one sentence in ta_standin_prompt_B.md describing single-record input, to describe the runner's batch format (several records per call, labelled '=== RECORD i of N ===', replying with one {\"results\": [...]} object); all rule text, orientation-B wording, exclusion codes and practical guidance left byte-identical.",
+    "Schema adaptation: built ta_standin_schema_batch_strict.json locally (results[] wrapper of ta_standin_schema.json) because Codex's structured-output mode requires a strict schema and does not reliably support the item schema's allOf/if-then-else conditional or $schema/maxLength keywords; the conditional (primary_code non-empty iff EXCLUDE_TA) was instead verified post hoc on all 1,061 converted records (0 violations) rather than enforced by the API schema. This follows the same approach already used for batches 76-236 and the 2026-10-09 PRE-007 title re-screen.",
+    "No AWAITING_CLASSIFICATION records and no invalid/missing records occurred in this run, so scripts/ta_standin_to_batch.py never had to write an AWAITING placeholder; this is a run outcome, not a rule change.",
+    "The abstract-level age rule was not specially re-emphasized beyond what is already in the committed ta_standin_prompt_B.md orientation-B text (default ADVANCE, missing details are never exclusion grounds); no age-only AWAITING_CLASSIFICATION cases were observed in the smoke test or full run, consistent with the 2026-10-07 README adjustment deferring the age rule to full text."
+  ],
+  "human_verification_status": "Not yet performed for these 1,061 records. Side C (second independent read) and the third-read adjudication pass are scheduled on another backend per the project workflow; this manifest covers side B only.",
+  "not_performed": [
+    "side C screening of these 1,061 records",
+    "third-read adjudication / merge (scripts/ta_ai_merge.py was intentionally not run)"
+  ]
+}
