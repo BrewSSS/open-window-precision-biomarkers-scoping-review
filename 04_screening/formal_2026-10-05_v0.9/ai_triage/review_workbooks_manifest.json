@@ -438,6 +438,47 @@
    },
    "note": "script counted 299 (E5/E4 only); 4 further rows differ only on core_absent and are included in the D file"
   },
-  "status": "awaiting D adjudication; confirmed V list = consensus V + D-adjudicated V, built after D returns the file"
+  "status": "COMPLETE: confirmed V list built 2026-10-09",
+  "D_adjudication": {
+   "date": "2026-10-09",
+   "rows": 303,
+   "filled_by": "D (human, no AI pre-fill; an AI pre-fill run was aborted before write-back when D returned the file first)",
+   "workbook_sha256_filled": "8e3b714552624f10940e9473146a34347e85a9d7218bff6a9543c6bf604c7a02",
+   "backup": "_local_runs/adjud_D_human_2026-10-09/",
+   "D_layer_on_LAYER_rows": {
+    "V": 86,
+    "M": 74,
+    "X": 8,
+    "U": 14
+   },
+   "sides_with": {
+    "C": 105,
+    "B": 71,
+    "neither": 6
+   },
+   "changed_same_layer_rows": {
+    "X->M": 1,
+    "X->V": 1
+   }
+  },
+  "final": {
+   "file": "human_verification_final.csv",
+   "final_layers_1142": {
+    "V": 438,
+    "M": 624,
+    "X": 43,
+    "U": 37
+   },
+   "ai_V_577": {
+    "V": 413,
+    "M": 152,
+    "U": 12
+   },
+   "confirmed_V": 438,
+   "U_unclear_to_fulltext": 37,
+   "confirmed_list": "confirmed_V_list_2026-10-09.csv",
+   "summary": "confirmed_V_summary_2026-10-09.json",
+   "rule": "U (E5 unclear from the abstract, incl. 20 title-only batch-235 records) is retained for full-text retrieval and decided at full text; never excluded on the abstract"
+  }
  }
 }
