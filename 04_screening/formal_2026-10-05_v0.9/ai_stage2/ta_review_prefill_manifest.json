@@ -1,0 +1,96 @@
+{
+  "task": "Stage-2 exclusion-sample verification workbook pre-fill (ta_review_B.xlsx / ta_review_C.xlsx: sample_verify 519 rows + awaiting 2 rows)",
+  "date": "2026-10-09",
+  "rule_basis": "PRE-007 rule 4; PRE-008 choice 8 pattern",
+  "model": "gpt-6-sol",
+  "effort": "high",
+  "backend": "scripts/triage_codex_run.py (Codex CLI, ChatGPT-subscription auth), batches of 5 records/call, concurrency 12",
+  "record_counts": {
+    "sample_verify": 519,
+    "awaiting": 2,
+    "total_per_side": 521
+  },
+  "sides": {
+    "B": {
+      "prompt_file_committed": "ta_standin_prompt_B_codex_batch.md",
+      "prompt_file_used_patched": "/tmp/ta_sample/prompt_B_patched.md (age clause patched to PRE-011; not committed)",
+      "prompt_sha256_as_used": "9a500294fd9656e799264a8d81af94385e084b6c85bfe8cafb1b751700839426",
+      "schema_batch": "ta_standin_schema_batch_strict.json",
+      "schema_item_used": "/tmp/ta_sample/schema_item.json (derived from ta_standin_schema_batch_strict.json properties.results.items; runner's default --schema-item is the older E1-E5 schema and does not apply here)",
+      "n_records": 521,
+      "n_batches": 105,
+      "failed_batches": 0,
+      "invalid_or_missing_records": 0,
+      "started_utc": "2026-10-09T07:06:09Z",
+      "finished_utc": "2026-10-09T07:08:53Z",
+      "wall_seconds_approx": 164,
+      "token_usage": {"input_tokens": 2274319, "reasoning_output_tokens": 52416, "output_tokens": 81416},
+      "disposition_counts": {"EXCLUDE_TA": 495, "ADVANCE": 26},
+      "primary_code_counts": {"FT03": 180, "FT02": 126, "FT01": 82, "FT07": 61, "FT04": 43, "FT05": 3},
+      "workbook_sha256_after_writeback": "c0f7effb6fb029e9f075aea4956ee0d7c213847d8c91ec610a8c311220e24373",
+      "first_attempt_note": "first run used the runner default --schema-item (old E1-E5 item schema); all 521 records flagged invalid on validator mismatch (not a model quality issue); rerun with the correct --schema-item fixed it, 0 invalid"
+    },
+    "C": {
+      "prompt_file_committed": "ta_standin_prompt_C_codex_batch.md",
+      "prompt_file_used_patched": "/tmp/ta_sample/prompt_C_patched.md (age clause patched to PRE-011; not committed)",
+      "prompt_sha256_as_used": "0c6e5b779c57dabac28ff1254aeb093997d66a5d56f7a96ab52aa3593a1e70f2",
+      "schema_batch": "ta_standin_schema_batch_strict.json",
+      "schema_item_used": "/tmp/ta_sample/schema_item.json (same as B side)",
+      "n_records": 521,
+      "n_batches": 105,
+      "failed_batches": 0,
+      "invalid_or_missing_records": 0,
+      "started_utc": "2026-10-09T07:09:30Z",
+      "finished_utc": "2026-10-09T07:12:23Z",
+      "wall_seconds_approx": 173,
+      "token_usage": {"input_tokens": 2278460, "reasoning_output_tokens": 59215, "output_tokens": 88251},
+      "disposition_counts": {"EXCLUDE_TA": 495, "ADVANCE": 26},
+      "primary_code_counts": null,
+      "workbook_sha256_after_writeback": "332198827885352235e23c88f59b38463c3bc8641228ce48d59ab94aab021e8e"
+    }
+  },
+  "prefill_agreement_B_vs_C": {
+    "note": "agreement between the two independent AI stand-in passes themselves, not a reviewer reliability statistic; reported as a baseline only. Final reliability must come from scripts/ta_human_merge.py after B and C have read and overridden their own workbooks.",
+    "n": 521,
+    "disposition_raw_agreement": 0.9769673704414588,
+    "disposition_cohen_kappa": 0.7571095571095575,
+    "agree_count": 509
+  },
+  "deviations": [
+    {
+      "id": "DEV-1-schema-item-mismatch",
+      "description": "scripts/triage_codex_run.py --schema-item defaults to the older ai_triage E1-E5 item schema, which is not the schema this task's disposition/primary_code/secondary_codes/study_type_hint/note records conform to. The first run on both sides (before this entry's fix) therefore reported invalid_or_missing_records=521 for every batch even though the model output itself (inspected on raw batch files) matched ta_standin_schema_batch_strict.json correctly.",
+      "resolution": "Extracted the per-item schema from ta_standin_schema_batch_strict.json (its properties.results.items object) to /tmp/ta_sample/schema_item.json (not committed) and passed it explicitly via --schema-item on the rerun. Both sides then completed with 0 failed batches / 0 invalid records. The runner script itself was not modified."
+    },
+    {
+      "id": "DEV-2-age-rule-stale-in-committed-prompts",
+      "description": "ta_standin_prompt_B_codex_batch.md and ta_standin_prompt_C_codex_batch.md (committed 2026-10-09 13:27:29+08:00, commit before a288f85) still state the pre-PRE-011 age rule (v3.1/PRE-004: mean-2SD >= 18y or explicit range, else AWAITING_CLASSIFICATION, never FT03 for unstated age) in four places (population/health paragraph, FT03 bullet, and two boundary-case table rows). PRE-011 (committed 2026-10-09 14:22:23+08:00, same day, by A) drops the mean-2SD rule and defers the adult-age determination to full text; this task's own instructions state the same rule ('deferred to full text at this stage; never AWAITING/FT03 for unstated age alone') as already being in the prompts, which on inspection it was not.",
+      "resolution": "Used locally patched copies of both prompts for the actual codex calls (/tmp/ta_sample/prompt_{B,C}_patched.md, not committed, sha256 recorded above), rewriting only the four age-rule passages to the PRE-011 rule (age never grounds for AWAITING_CLASSIFICATION or FT03 at this TA stage; FT03 on age applies only when the abstract explicitly states <18y participation with no separable adult stratum). The repo's committed prompt files were left untouched; A/whoever maintains the prompt source should reconcile them with PRE-011 for future batches (B's/C's earlier batches 1-242 and O's batch_032 may also need this reconciliation, out of scope here)."
+    }
+  ],
+  "writeback": {
+    "columns_filled": ["your_disposition", "your_primary_code", "your_comment"],
+    "comment_source": "note field, truncated to 200 chars",
+    "sheets_touched": ["sample_verify", "awaiting"],
+    "sheets_not_touched": ["README (2 disclosure lines appended only)", "fulltext_candidates", "conflicts", "ai_excluded_unverified"],
+    "awaiting_sheet_your_columns": "already present (your_disposition/your_primary_code/your_comment, same 3 trailing columns as fulltext_candidates/conflicts); no columns needed to be added",
+    "hidden_prefill_sheet_added": true,
+    "hidden_prefill_sheet_row_count_per_workbook": 1564,
+    "highlight_argb": "FFFFF59D",
+    "dropdowns_and_column_widths": "preserved unchanged (verified post-write)"
+  },
+  "selftest_and_dry_run": {
+    "selftest": "python3 scripts/ta_human_merge.py --selftest -> PASSED (18/18 checks)",
+    "provisional_run_on_prefilled_not_yet_human_edited_workbooks": {
+      "command": "python3 scripts/ta_human_merge.py --wb-b ta_review_B.xlsx --wb-c ta_review_C.xlsx --out-dir ai_stage2 --out-suffix _provisional",
+      "outputs_gitignored_not_committed": [
+        "ta_human_verification_merged_provisional.csv",
+        "ta_human_verification_summary_provisional.json",
+        "ta_human_verification_summary_provisional.md"
+      ],
+      "override_rate_B": 0.0,
+      "override_rate_C": 0.0,
+      "note": "override rate 0 is expected and correct: no human has edited either workbook yet. This run only proves the merge pipeline works end to end; it is not a reliability result."
+    }
+  }
+}

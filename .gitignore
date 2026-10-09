@@ -89,6 +89,12 @@ __pycache__/
 
 # Stage-2 reviewer workbooks contain publisher abstracts (like records_master): never commit
 04_screening/formal_*/ai_stage2/*.xlsx
+# Pre-fill backup copies of the same workbooks (scripts/ta_ai_merge.py regenerates the
+# originals; backups are a safety net only, contain abstracts, never commit)
+04_screening/formal_*/ai_stage2/_backup_prefill_*/
+# Provisional self-test/dry-run outputs of scripts/ta_human_merge.py (run before reviewers
+# have actually overridden the pre-fill; labelled provisional in the filename)
+04_screening/formal_*/ai_stage2/*_provisional*
 
 # AI validation-readiness triage (scripts/triage_run.py, triage_compare.py): run outputs
 # (checkpoints, batch result JSON, run.log, compare out-dirs) may contain model-echoed
@@ -173,6 +179,12 @@ fulltext_requests/abstract_lookup_*/*
 !04_screening/formal_*/fulltext/fulltext_fetch_summary.md
 
 !04_screening/formal_*/fulltext/oa_classification_*.md
+
+# D's full-text scope re-base (2026-10-09): join/diff report and the no-abstract working-scope
+# input csv (record_id/title/journal/year/doi/pmid/E5 subtypes only, same shape as the already
+# committed ai_triage/confirmed_V_list_*.csv).
+!04_screening/formal_*/fulltext/scope_rescope_*.md
+!04_screening/formal_*/fulltext/ft_scope_*.csv
 
 # PRE-010 AI full-text pre-fill (scripts/ft_prefill_run.py, ft_prefill_to_workbook.py): extracted
 # PDF text (V_text/) and raw per-record model runs (ai_prefill/runs/) may quote the full text and

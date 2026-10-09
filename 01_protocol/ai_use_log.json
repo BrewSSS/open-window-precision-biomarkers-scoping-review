@@ -543,6 +543,33 @@
         "human verification of these 120 layer assignments",
         "a second model family's first-pass read (this supplement used a single Sol pass only, by design)"
       ]
+    },
+    {
+      "date": "2026-10-09",
+      "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 5 records per call",
+      "coordinator_model": "claude-sonnet-5",
+      "model": "gpt-6-sol",
+      "model_settings": "reasoning effort high; 5 records per call, concurrency 12; one run per side (first attempt on each side used the runner's default --schema-item, an older E1-E5 schema that does not match this task's fields, and was discarded/rerun with the correct item schema; final runs: 0 failed batches / 0 invalid records)",
+      "task": "AI pre-fill of reviewer B's and C's own your_disposition/your_primary_code/your_comment columns on the stage-2 exclusion-sample verification workbooks (ta_review_B.xlsx/ta_review_C.xlsx: sample_verify 519 rows blind 10% sample of agreed AI exclusions + awaiting 2 rows), per PRE-007 rule 4 / PRE-008 choice 8 so B and C verify/override instead of starting from blank cells",
+      "prompt_reference": {
+        "file": "../04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_prompt_{B,C}_codex_batch.md",
+        "version": "as committed, with a locally-patched age-rule clause (see deviations in ta_review_prefill_manifest.json: committed prompts still carried the pre-PRE-011 age rule; patched copies used for the run were not committed, sha256 of the as-used text recorded in the manifest)"
+      },
+      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_schema_batch_strict.json (batch); per-item schema derived from it, not committed (see manifest)",
+      "records": 1042,
+      "concurrency": 12,
+      "run_summary": "521 records x 2 sides (B, C) = 1,042 record-decisions; 105 batches/side, 0 failed, 0 invalid/missing after the schema-item fix. B: 26 ADVANCE / 495 EXCLUDE_TA. C: 26 ADVANCE / 495 EXCLUDE_TA. Pre-fill-vs-pre-fill agreement (B vs C, not a human reliability statistic): 97.7% raw, kappa 0.757. Written back with a hidden _prefill audit log and light-yellow cell highlighting per the ai_triage/README_review_workbooks.md precedent; two disclosure lines added to each workbook's README sheet.",
+      "output_sources": [
+        "04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_review_B.xlsx (git-ignored, not committed)",
+        "04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_review_C.xlsx (git-ignored, not committed)",
+        "04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_review_prefill_manifest.json",
+        "raw run output archived (git-ignored, abstracts/model-echoed quotes present): ai_triage/_local_runs/ta_sample_prefill_2026-10-09/"
+      ],
+      "human_verification_status": "Not yet performed. B and C still need to read every abstract in sample_verify + awaiting and override any pre-filled value they disagree with; their final values are the decisions of record. scripts/ta_human_merge.py (B vs C agreement/kappa, override rate vs the _prefill log, PRE-007 rule-4 confirmed-ADVANCE-per-AI-code trigger table with Wilson 95% CIs) was run once on the freshly pre-filled, not-yet-human-edited workbooks only to prove the pipeline works (override rate 0/521 both sides, as expected); that output is suffixed _provisional and git-ignored, not a reportable result.",
+      "not_performed": [
+        "human verification of any of the 1,042 pre-filled record-decisions",
+        "reconciliation of ta_standin_prompt_{B,C}_codex_batch.md's committed age-rule text with PRE-011 (worked around locally for this run only; see deviations in ta_review_prefill_manifest.json)"
+      ]
     }
   ],
   "future_entry_fields": [

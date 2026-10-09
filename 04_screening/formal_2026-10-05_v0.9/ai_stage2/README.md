@@ -97,3 +97,42 @@ Reviewer workbooks `ta_review_B.xlsx`/`ta_review_C.xlsx` were regenerated (git-i
 ### Validation-readiness triage of the 120 new advances (2026-10-09)
 
 The 120 `review_scope = FULLTEXT_CANDIDATE` records from the merge above went through the E1-E5 validation-readiness triage (single GPT-6 Sol pass, effort medium, `prompt_e5_adjudication_v1_2.md`; layer rule reused unmodified from `scripts/triage_finalize.py` via new script `scripts/triage_finalize_rescreen_supplement.py`). Final layers: **V=5 / M=61 / X=54 / U=0**; human scope HUMAN_CONFIRM_ALL=5, HUMAN_SAMPLE_VERIFY=115 (every M/X record, small-supplement convention, not a 10% draw). Output: `../ai_triage/final_triage_rescreen_supplement.csv`/`.md`. See that file for full counts, E5 subtype distribution and example V titles.
+
+### Exclusion-sample verification workbooks pre-filled (2026-10-09)
+
+Before B and C read them, each reviewer's own `your_disposition`/`your_primary_code`/`your_comment`
+columns on `sample_verify` (519 rows, blind 10% sample of agreed AI exclusions) and `awaiting`
+(2 rows) in `ta_review_B.xlsx`/`ta_review_C.xlsx` were pre-filled by an AI stand-in so reviewers
+verify/override instead of starting from blank cells (PRE-007 rule 4, PRE-008 choice 8 pattern).
+**GPT-6 Sol**, effort **high**, via `scripts/triage_codex_run.py` (unmodified runner), batches of
+5 records, concurrency 12, one `--resume` pass per side (first attempt used the runner's default
+`--schema-item`, which is the older E1-E5 item schema and does not match this task's
+disposition/primary_code fields, so it flagged all 521 records invalid on validator mismatch, not
+model-quality grounds; fixed by deriving the correct item schema from
+`ta_standin_schema_batch_strict.json` and passing it explicitly via `--schema-item`; the rerun was
+0 failed batches / 0 invalid on both sides). Prompts: `ta_standin_prompt_B_codex_batch.md` (B,
+inclusion-oriented) / `ta_standin_prompt_C_codex_batch.md` (C, closed-list strict); schema
+`ta_standin_schema_batch_strict.json`. Deviation: both committed prompt files still carried the
+pre-PRE-011 age rule (mean-2SD -> AWAITING_CLASSIFICATION on ambiguous age), one commit older than
+`PRE-011` (`a288f85`, same day), which drops that rule and defers age entirely to full text; patched
+copies with the age clauses rewritten to the PRE-011 rule (age never grounds for
+AWAITING_CLASSIFICATION or FT03 at this stage, only a stated <18 y cohort with no separable adult
+stratum) were used for the actual run, kept outside the repo (`/tmp/ta_sample/prompt_{B,C}_patched.md`);
+the repo's committed prompt files were not modified by this task. 521 records each side, 0
+primary_code/disposition conditional violations. B: 26 ADVANCE / 495 EXCLUDE_TA among the 521
+AI-agreed-exclusion sample records (FT03 180, FT02 126, FT01 82, FT07 61, FT04 43, FT05 3). C: 26
+ADVANCE / 495 EXCLUDE_TA. Pre-fill agreement between the two independent AI passes (not yet
+human-reviewed): disposition raw agreement 97.7% (509/521), Cohen's kappa 0.757. Every pre-filled
+value is logged, per workbook, in a new hidden `_prefill` sheet (`sheet, record_id, column, value,
+model, effort, prompt_sha, timestamp`), so D can compute each reviewer's override rate once the
+files come back; the 3 reviewer cells per row are highlighted light-yellow (ARGB `FFFFF59D`). Two
+README lines were added to each workbook's own README sheet disclosing the pre-fill and the
+disposition rule. `scripts/ta_human_merge.py` (B vs C agreement/kappa, override rate vs
+`_prefill`, PRE-007 rule-4 confirmed-ADVANCE-per-AI-code trigger table with Wilson 95% CIs,
+disagreement list) was run once on the freshly pre-filled, not-yet-human-edited workbooks to prove
+it works end to end (override rate 0/521 both sides, as expected before any human review); that
+output is suffixed `_provisional` and git-ignored, not a reportable result. Full counts, token
+usage, wall time and sha256 of both workbooks after write-back are in
+`ta_review_prefill_manifest.json`. Run artefacts (batch request/response logs, no raw abstracts
+beyond short model-echoed quotes) are archived under `../ai_triage/_local_runs/ta_sample_prefill_2026-10-09/`
+(git-ignored).
