@@ -130,3 +130,8 @@ simply part of C's one delivered file. Full before/after sha256 for both workboo
 exact 8 record IDs are in `review_workbooks_manifest.json` -> `addendum_batch236`. A safety
 copy of each workbook from immediately before the addendum was applied is kept locally (not
 committed, not under `ai_triage/`).
+
+
+## Human verification result (2026-10-09)
+
+Both workbooks locked (B 2026-10-08 with the batch-236 addendum, C 2026-10-09; sha256 in `review_workbooks_manifest.json` -> `locks`). Merge by `scripts/triage_human_merge.py` -> `human_verification_merged.csv` (no abstracts), `human_verification_summary.{json,md}`. B vs C agreement on E5: V_confirm 83.8 % (kappa 0.64), MX_sample 96.4 % (0.63), ADJ_sample 88.9 % (0.54), ADJ_b235 96.4 % (0.92). Of the 555 AI V-layer records both reviewers confirmed E5 present in 335, both judged it absent in 129 (these move to the abstract-level map layer M), 90 are disagreements. AI layer error on the blind samples: M 3/401 (0.7 %), X 14/48 (29 %, almost all X->M, i.e. between the two non-full-text layers), V 3/17. Override rates of each reviewer against their own pre-fill are in the manifest (B: 0 then 1 of 8 addendum rows; C: E5 19.5 % on V_confirm, 5-14 % on the blind sheets). All 303 B/C disagreements (182 layer-relevant, 120 E4-label-only, 1 E5-label-only) are in `triage_adjudication_D.xlsx` (abstracts; git-ignored) / `triage_adjudication_D.csv` (titles only; committed) for D; the confirmed V list is built from consensus V plus D's adjudications once the file returns.

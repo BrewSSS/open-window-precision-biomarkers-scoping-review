@@ -360,5 +360,84 @@
     "rescreen_scope_decision": "PENDING (A)"
    }
   }
+ },
+ "human_verification_merge": {
+  "date": "2026-10-09",
+  "inputs": {
+   "B": "7fdfafc58ba2aaf5bca0ae7f3b7bc8b197b432cf5eb92ce32c1dec97b11e159a",
+   "C": "9de3401a6125a5558bf74a8690abb4499e34ca8f23022b0bf295200a10697812"
+  },
+  "outputs": [
+   "human_verification_merged.csv",
+   "human_verification_summary.json",
+   "human_verification_summary.md"
+  ],
+  "agreement": {
+   "V_confirm": {
+    "E5_raw": 0.838,
+    "E5_kappa": 0.638,
+    "E4_raw": 0.91,
+    "E4_kappa": 0.749
+   },
+   "MX_sample": {
+    "E5_raw": 0.964,
+    "E5_kappa": 0.632,
+    "E4_raw": 0.854,
+    "E4_kappa": 0.71
+   },
+   "ADJ_sample": {
+    "E5_raw": 0.889,
+    "E5_kappa": 0.535,
+    "E4_raw": 0.834,
+    "E4_kappa": 0.63
+   },
+   "ADJ_b235": {
+    "E5_raw": 0.964,
+    "E5_kappa": 0.915,
+    "E4_raw": 0.857,
+    "E4_kappa": 0.742
+   }
+  },
+  "consensus_layers_all_sheets": {
+   "V": 351,
+   "M": 549,
+   "X": 37,
+   "U": 23,
+   "DISAGREE": 182
+  },
+  "V_confirm_555": {
+   "consensus_V": 335,
+   "consensus_M": 129,
+   "consensus_U": 1,
+   "DISAGREE": 90
+  },
+  "ai_layer_error_blind_samples": {
+   "M": "3/401 (0.7%, CI 0.3-2.2%); 1 of the 3 placed in V by both reviewers",
+   "V": "3/17 (17.6%)",
+   "X": "14/48 (29.2%, CI 18-43%); 13 -> M, 1 -> V"
+  },
+  "disagreements_for_D": {
+   "file_xlsx_gitignored": "triage_adjudication_D.xlsx",
+   "file_csv_titles_only": "triage_adjudication_D.csv",
+   "rows": 303,
+   "layer_relevant": 182,
+   "E4_only": 120,
+   "E5_label_only": 1,
+   "layer_pairs_B_C": {
+    "M-V": 75,
+    "M-X": 41,
+    "V-M": 22,
+    "M-U": 15,
+    "X-M": 11,
+    "V-X": 8,
+    "U-V": 4,
+    "X-U": 2,
+    "X-V": 2,
+    "V-U": 1,
+    "U-M": 1
+   },
+   "note": "script counted 299 (E5/E4 only); 4 further rows differ only on core_absent and are included in the D file"
+  },
+  "status": "awaiting D adjudication; confirmed V list = consensus V + D-adjudicated V, built after D returns the file"
  }
 }
