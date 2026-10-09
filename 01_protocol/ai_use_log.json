@@ -517,6 +517,32 @@
         "merge (scripts/ta_ai_merge.py)",
         "human verification of these dispositions"
       ]
+    },
+    {
+      "date": "2026-10-09",
+      "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 5 records per call",
+      "coordinator_model": "claude-sonnet-5",
+      "model": "gpt-6-sol",
+      "model_settings": "reasoning effort medium; 5 records per call, concurrency 16; one run plus one --resume pass",
+      "task": "Validation-readiness (E1-E5) triage of the 120 new review_scope=FULLTEXT_CANDIDATE records among the 1,061 PRE-007 stage-2 re-entrants (batches 237-242), to derive final layers (V/M/X/U) and human review scope for the new advances",
+      "prompt_reference": {
+        "file": "../04_screening/formal_2026-10-05_v0.9/ai_triage/prompt_e5_adjudication_v1_2.md",
+        "version": "v1.2, unchanged, used verbatim (same prompt as the stricter E5 adjudication pass used for batch-236's supplement)"
+      },
+      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_triage/schema_v1.json (item); ../04_screening/formal_2026-10-05_v0.9/ai_triage/schema_v1_strict_batch.json (batch wrapper), both unmodified",
+      "records": 120,
+      "concurrency": 16,
+      "run_summary": "24 sub-batches, 0 failed, 0 invalid/missing after resume. Layers derived directly from this single Sol pass (no two-family first pass for this small supplement, per coordinator instruction) using the unmodified layer rule of scripts/triage_finalize.py, via new script scripts/triage_finalize_rescreen_supplement.py. Final layers: V=5, M=61, X=54, U=0. Human scope: HUMAN_CONFIRM_ALL=5 (all V), HUMAN_SAMPLE_VERIFY=115 (all M+X, not a 10% draw -- small-supplement convention, same as final_triage_batch236_supplement.md).",
+      "output_sources": [
+        "../04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_rescreen_supplement.csv",
+        "../04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_rescreen_supplement.md",
+        "raw run output archived (git-ignored, abstracts present): ai_triage/_local_runs/rescreen_stage2_triage_2026-10-09/"
+      ],
+      "human_verification_status": "Not yet performed. HUMAN_CONFIRM_ALL and HUMAN_SAMPLE_VERIFY records await human review per the workbook workflow.",
+      "not_performed": [
+        "human verification of these 120 layer assignments",
+        "a second model family's first-pass read (this supplement used a single Sol pass only, by design)"
+      ]
     }
   ],
   "future_entry_fields": [

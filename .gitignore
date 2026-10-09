@@ -131,6 +131,10 @@ __pycache__/
 # Batch-236 supplement (8 ADVANCE records after A's abstract lookup, 2026-10-08); same shape.
 !04_screening/formal_*/ai_triage/final_triage_batch236_supplement.csv
 !04_screening/formal_*/ai_triage/final_triage_batch236_supplement.md
+# Rescreen supplement (120 new ADVANCE records among the 1,061 PRE-007 stage-2 re-entrants,
+# batches 237-242, 2026-10-09); same no-abstract-column shape.
+!04_screening/formal_*/ai_triage/final_triage_rescreen_supplement.csv
+!04_screening/formal_*/ai_triage/final_triage_rescreen_supplement.md
 # Human-verification reviewer workbooks (ta_triage_review_B/C.xlsx) contain abstracts and
 # stay git-ignored by the deny-all rule above; only the manifest + instructions + merge
 # outputs are tracked.
