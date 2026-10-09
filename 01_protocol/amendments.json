@@ -306,6 +306,23 @@
       "changes_document": "../CHANGELOG.md",
       "implementation_date": "2026-10-08",
       "implementation_status": "pending: protocol text, screening manual and calibration plan updated 2026-10-08; pipeline to be built (full-text prompt and version, stand-in runs, pre-filled B/C workbooks with hidden pre-fill copy, override-rate report); boundary exercises and release v3.3 pending; no full-text decision made"
+    },
+    {
+      "amendment_id": "PRE-011",
+      "title": "Operational age rule at full text (adults): mean age >= 20 y with no mention of participants under 18 counts as an adult cohort",
+      "date": "2026-10-09",
+      "old_rule": "Protocol v3.x age rule: a cohort is adult when an explicit range or minimum age >= 18 y is given; when only mean +/- SD is reported, mean - 2 SD must be >= 18 y, otherwise the report is AWAITING_CLASSIFICATION until a range or a linked report resolves it.",
+      "new_rule": "A cohort counts as adult and the report is screened/charted as INCLUDE when (i) the report gives an explicit range/minimum >= 18 y, OR (ii) the reported mean age is >= 20 y (any SD) or participants are described as adults, university students, athletes, workers or similar, AND the report nowhere states that participants under 18 y took part. Such cohorts are flagged age_range_not_reported in the extraction (E4 = young_adult_age_unclear retained as a descriptive label). A report stays AWAITING_CLASSIFICATION only when it states participants under 18 y without a separable adult stratum (then FT03), or the mean age is < 20 y with no range, or age is not reported at all. The mean - 2 SD computation is no longer applied.",
+      "reason": "Feasibility and recall: under the mean - 2 SD rule 39 of the first 130 AI-pre-filled full-text reports (30 %) were held AWAITING for age alone, almost all healthy adult cohorts (students, athletes) whose SD is wide; the rule excluded no cohort in which minors were actually reported. A decided on 2026-10-09 (team-approved recommended option) to adopt the operational rule above; the limitation (age range not reported in a share of cohorts) is charted and reported.",
+      "work_stage": "",
+      "information_already_known": "",
+      "decision_by": "",
+      "reassessment_needed": "",
+      "affected_records": "",
+      "release_update": "",
+      "changes_document": "",
+      "implementation_date": "",
+      "implementation_status": ""
     }
   ],
   "future_amendment_fields": [
