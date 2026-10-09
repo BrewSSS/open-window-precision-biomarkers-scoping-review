@@ -1,0 +1,134 @@
+{
+ "rows": [
+  {
+   "manifest": "05_extraction/ai_extraction/formal_prefill_manifest.json",
+   "mtime": "2026-10-08T23:54",
+   "input": 17337403,
+   "output": 4552407,
+   "reasoning": 0,
+   "billable": 21889810,
+   "method": "summed per-record",
+   "side": "GPT"
+  },
+  {
+   "manifest": "04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/run_manifest.json",
+   "mtime": "2026-10-09T13:10",
+   "input": 4955735,
+   "output": 654742,
+   "reasoning": 0,
+   "billable": 5610477,
+   "method": "summed per-record",
+   "side": "GPT"
+  },
+  {
+   "manifest": "04_screening/formal_2026-10-05_v0.9/ai_stage2/batches_237_242_B_manifest.json",
+   "mtime": "2026-10-09T13:25",
+   "input": 9407340,
+   "output": 404356,
+   "reasoning": 0,
+   "billable": 9811696,
+   "method": "summed per-record",
+   "side": "GPT"
+  },
+  {
+   "manifest": "04_screening/formal_2026-10-05_v0.9/ai_stage2/batches_237_242_C_manifest.json",
+   "mtime": "2026-10-09T14:40",
+   "input": 9249320,
+   "output": 680550,
+   "reasoning": 0,
+   "billable": 9929870,
+   "method": "summed per-record",
+   "side": "GPT"
+  },
+  {
+   "manifest": "04_screening/formal_2026-10-05_v0.9/ai_stage2/batch_032_O_manifest.json",
+   "mtime": "2026-10-09T14:43",
+   "input": 285571,
+   "output": 41692,
+   "reasoning": 0,
+   "billable": 327263,
+   "method": "summed per-record",
+   "side": "GPT"
+  },
+  {
+   "manifest": "04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_review_prefill_manifest.json",
+   "mtime": "2026-10-09T15:14",
+   "input": 4552779,
+   "output": 281298,
+   "reasoning": 0,
+   "billable": 4834077,
+   "method": "summed per-record",
+   "side": "GPT"
+  },
+  {
+   "manifest": "05_extraction/ai_extraction/run_manifest.json",
+   "mtime": "2026-10-09T15:51",
+   "input": 3475896,
+   "output": 1419533,
+   "reasoning": 0,
+   "billable": 4895429,
+   "method": "summed per-record",
+   "side": "GPT"
+  },
+  {
+   "manifest": "04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/run_manifest.json",
+   "mtime": "2026-10-09T17:08",
+   "input": 17400270,
+   "output": 1251172,
+   "reasoning": 0,
+   "billable": 18651442,
+   "method": "summed per-record",
+   "side": "GPT"
+  },
+  {
+   "manifest": "04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_run_manifest.json",
+   "mtime": "2026-10-09T19:44",
+   "input": 8498124,
+   "output": 549348,
+   "reasoning": 0,
+   "billable": 9047472,
+   "method": "summed per-record",
+   "side": "GPT"
+  },
+  {
+   "manifest": "04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_adjudication_run_manifest.json",
+   "mtime": "2026-10-09T20:42",
+   "input": 1550453,
+   "output": 71290,
+   "reasoning": 0,
+   "billable": 1621743,
+   "method": "summed per-record",
+   "side": "GPT"
+  },
+  {
+   "manifest": "05_extraction/ai_extraction/formal_v1_1_manifest.json",
+   "mtime": "2026-10-09T21:12",
+   "input": 108949,
+   "output": 71190,
+   "reasoning": 0,
+   "billable": 180139,
+   "method": "summed per-record",
+   "side": "GPT"
+  }
+ ],
+ "total_billable": 86799418,
+ "calibration": [
+  [
+   "2026-10-09T01:00",
+   57.0,
+   "before the first formal extraction run"
+  ],
+  [
+   "2026-10-09T03:30",
+   48.0,
+   "after ~8.85M tokens of extraction"
+  ],
+  [
+   "2026-10-09T21:20",
+   4.0,
+   "after the full screening/override/adjudication day"
+  ]
+ ],
+ "tokens_per_percent": 1050000,
+ "generated": "2026-10-09T21:17:11"
+}
