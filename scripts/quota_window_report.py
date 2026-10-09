@@ -38,7 +38,8 @@ def main():
             g = lambda k: int(float(r.get(k) or 0))
             totals["input"] += g("input_tokens"); totals["cached_input"] += g("cached_input_tokens")
             totals["output"] += g("output_tokens"); totals["reasoning"] += g("reasoning_tokens")
-            totals["n"] += 1
+            if g("input_tokens") or g("output_tokens"):
+                totals["n"] += 1   # only calls that actually consumed quota
             rows.append(r)
     billable = totals["input"] + totals["output"]
     print(f"window start:      {w['start_local']}  at {w['start_remaining_percent']:.0f} % remaining")
@@ -47,7 +48,9 @@ def main():
     print(f"output tokens:     {totals['output']:,}   (of which reasoning {totals['reasoning']:,})")
     print(f"billable in window:{billable:,}")
     if totals["n"]:
-        print(f"per record:        {billable/totals['n']:,.0f} billable tokens")
+        print(f"records with usage:{totals['n']}")
+        print(f"per record:        {billable/totals['n']:,.0f} billable tokens"
+              f"  ({(billable+totals['cached_input'])/totals['n']:,.0f} incl. cached input)")
     out = {"window": w, "totals": totals, "billable": billable}
     if a.now is not None:
         used = w["start_remaining_percent"] - a.now
