@@ -490,6 +490,33 @@
         "third-read adjudication / merge (scripts/ta_ai_merge.py)",
         "human verification of these 112 ADVANCE / 948 EXCLUDE_TA / 1 AWAITING_CLASSIFICATION dispositions"
       ]
+    },
+    {
+      "date": "2026-10-09",
+      "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 5 records per call",
+      "coordinator_model": "claude-sonnet-5",
+      "model": "gpt-6-sol",
+      "model_settings": "reasoning effort high; 5 records per call, concurrency 16; one run plus one --resume pass",
+      "task": "Blind third read (adjudication) of the 65 B/C conflicts among the 1,061-record PRE-007 stage-2 re-entrant pool (batches 237-242)",
+      "prompt_reference": {
+        "file": "../04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_prompt_O_codex_batch.md",
+        "version": "ta_standin_prompt_O.md system prompt and TA rules verbatim; only the single-record-input sentence rewritten for the batch format",
+        "sha256_in_manifest": "see batch_032_O_manifest.json"
+      },
+      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_schema.json (item schema; reused Codex batch wrapper ta_standin_schema_batch_strict.json unmodified)",
+      "records": 65,
+      "concurrency": 16,
+      "run_summary": "13 sub-batches, 0 failed, 0 invalid/missing after resume; token usage input 285,571 / output 22,711 / reasoning 18,981. Result: 14 ADVANCE / 50 EXCLUDE_TA / 1 AWAITING_CLASSIFICATION; EXCLUDE_TA codes FT04 14, FT02 10, FT03 10, FT07 8, FT05 7, FT01 1. 0 primary_code/disposition conditional violations.",
+      "output_sources": [
+        "../04_screening/formal_2026-10-05_v0.9/ai_stage2/out_O/batch_032.json (converted via scripts/ta_standin_to_batch.py --omit-invalid)",
+        "../04_screening/formal_2026-10-05_v0.9/ai_stage2/batch_032_O_manifest.json",
+        "../04_screening/formal_2026-10-05_v0.9/ai_stage2/README.md, section 'Batch 032, third reads for batches 237-242 (2026-10-09)'"
+      ],
+      "human_verification_status": "Not yet performed. Merge (scripts/ta_ai_merge.py) and validation-readiness triage of new advances are next.",
+      "not_performed": [
+        "merge (scripts/ta_ai_merge.py)",
+        "human verification of these dispositions"
+      ]
     }
   ],
   "future_entry_fields": [

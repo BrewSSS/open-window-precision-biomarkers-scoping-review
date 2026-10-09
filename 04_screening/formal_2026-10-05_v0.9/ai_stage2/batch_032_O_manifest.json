@@ -1,0 +1,73 @@
+{
+  "task": "Blind third read (adjudication) of the 65 B/C conflicts among the 1,061 PRE-007 stage-2 re-entrants (batches 237-242)",
+  "conflict_definition": "Copied from scripts/ta_ai_merge.py (not modified): conflict = (B disposition != C disposition) OR (both EXCLUDE_TA with different primary_code). Computed directly from out_B/out_C for batches 237-242 via the new scripts/ta_stage2_rescreen_conflicts.py (this record population is not yet in ta_ai_merged.csv, so ta_conflict_batches.py, which reads that file, could not be used unmodified).",
+  "n_source_records": 1061,
+  "n_conflicts": 65,
+  "source_batches": {
+    "237": 23,
+    "238": 15,
+    "239": 8,
+    "240": 8,
+    "241": 8,
+    "242": 3
+  },
+  "out_o_batch": "batch_032",
+  "out_o_numbering_note": "Continues the existing out_O sequence (batch_030 = batch-235 third reads, batch_031 = batch-236 third read); next free number confirmed as 032 before writing.",
+  "model": "gpt-6-sol",
+  "effort": "high",
+  "records_per_call": 5,
+  "concurrency": 16,
+  "provider": "codex (ChatGPT-subscription auth, isolated CODEX_HOME=~/.codex-triage)",
+  "runner": "scripts/triage_codex_run.py (unmodified)",
+  "prompt_file": "04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_prompt_O_codex_batch.md",
+  "prompt_sha256": "91f83cfd64ad9a218d4682f37bdbd91fdb4583124b471eec18391aac927c4074",
+  "prompt_note": "ta_standin_prompt_O.md system prompt and TA rules verbatim; only the single-record-input sentence rewritten for the batch format, using the identical replacement wording already used for ta_standin_prompt_B_codex_batch.md/ta_standin_prompt_C_codex_batch.md. The third reader is blind: the conflict CSV carries only record_id/title/journal/year/abstract, no AI-side columns.",
+  "schema_batch_file": "04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_schema_batch_strict.json",
+  "schema_batch_sha256": "3ee5a568cce786e4402c775b169b7688b2a8ae7c76018f5e23dd988b42385bb0",
+  "schema_item_file": "04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_schema.json",
+  "schema_item_sha256": "c381bca4a7539283c3568098552ea738fa3bdfd7415e6c45844054958c41a410",
+  "n_sub_batches": 13,
+  "failed_sub_batches": [],
+  "resume_pass": {
+    "batches_already_valid": 13,
+    "sub_batches_rerun": 0
+  },
+  "n_invalid_or_missing_records_after_resume": 0,
+  "awaiting_placeholders_written_by_converter": 0,
+  "converter_mode": "--omit-invalid (third-read convention; no record would be silently dropped here since 0 were invalid)",
+  "total_usage": {
+    "input_tokens": 285571,
+    "reasoning_output_tokens": 18981,
+    "output_tokens": 22711
+  },
+  "counts": {
+    "disposition": {
+      "ADVANCE": 14,
+      "EXCLUDE_TA": 50,
+      "AWAITING_CLASSIFICATION": 1
+    },
+    "exclude_by_primary_code": {
+      "FT04": 14,
+      "FT07": 8,
+      "FT05": 7,
+      "FT02": 10,
+      "FT03": 10,
+      "FT01": 1
+    },
+    "study_type_hint": {
+      "acute_bout_CoreA": 9,
+      "cross_sectional_resting": 12,
+      "other": 39,
+      "chronic_training_only": 4,
+      "repeated_bouts_SupportB": 1
+    }
+  },
+  "conditional_violations_primary_code_vs_disposition": [],
+  "input_conflict_csv_local_path": "/tmp/ta_screen2/conflicts/batch_032.csv (record_id,title,journal,year,abstract; outside repo, git-ignored)",
+  "out_o_sha256": "46de7c28ee805d35fbbb0c632e632908dcfdb1ca6996c45f6b6b5c4c452c1714",
+  "deviations": [
+    "Conflicts were computed directly from out_B/out_C for these 6 batches (scripts/ta_stage2_rescreen_conflicts.py, new script, not a modification of ta_ai_merge.py or ta_conflict_batches.py) because this population is not yet in ta_ai_merged.csv; the conflict formula is copied verbatim from ta_ai_merge.py.",
+    "Effort HIGH used (per coordinator instruction for this re-do), matching side C; side B used medium."
+  ],
+  "human_verification_status": "Not yet performed. Merge (stage 3) and validation-readiness triage of new advances (stage 4) are next."
+}
