@@ -1,0 +1,113 @@
+record_id,route,url,host,http_status,outcome,note
+FS-001324,landing,https://dspace.lboro.ac.uk/2134/10614,dspace.lboro.ac.uk,202,blocked_captcha_or_waf,waf_challenge:challenge
+FS-001787,landing,https://doi.org/10.22029/eir.2010.1651,doi.org,200,candidate_found,https://journals.ub.uni-giessen.de/eir/article/view/1651/1916
+FS-001787,resolved_pdf,https://journals.ub.uni-giessen.de/eir/article/view/1651/1916,journals.ub.uni-giessen.de,200,retrieved,text_len=55135 doi_in_text=False title_hits=8/8
+FS-002536,landing,http://repositorio.unifesp.br/handle/11600/43635,repositorio.unifesp.br,200,no_pdf_link_found,
+FS-002569,landing,https://www.ncbi.nlm.nih.gov/pmc/articles/3974503,www.ncbi.nlm.nih.gov,200,blocked_captcha_or_waf,body_marker:captcha
+FS-002589,landing,https://thekeep.eiu.edu/kss_fac/35,thekeep.eiu.edu,200,candidate_found,https://thekeep.eiu.edu/cgi/viewcontent.cgi?article=1034&context=kss_fac
+FS-002589,resolved_pdf,https://thekeep.eiu.edu/cgi/viewcontent.cgi?article=1034&context=kss_fac,thekeep.eiu.edu,200,retrieved,text_len=46130 doi_in_text=False title_hits=10/10
+FS-003210,landing,http://repositorio.unicamp.br/jspui/handle/REPOSIP/329563,repositorio.unicamp.br,404,no_pdf_link_found,
+FS-003290,landing,https://doi.org/10.22029/eir.2016.1707,doi.org,200,candidate_found,https://journals.ub.uni-giessen.de/eir/article/view/1707/1972
+FS-003290,resolved_pdf,https://journals.ub.uni-giessen.de/eir/article/view/1707/1972,journals.ub.uni-giessen.de,200,retrieved,text_len=64241 doi_in_text=False title_hits=8/8
+FS-003468,landing,https://figshare.com/articles/journal_contribution/Short-term_reliability_of_inflammatory_mediators_and_response_to_exercise_in_the_heat/22186714,figshare.com,202,blocked_captcha_or_waf,waf_challenge:challenge
+FS-003800,landing,https://www.ncbi.nlm.nih.gov/pmc/articles/5814647,www.ncbi.nlm.nih.gov,200,blocked_captcha_or_waf,body_marker:captcha
+FS-004179,landing,https://dspace.lboro.ac.uk/2134/34846,dspace.lboro.ac.uk,,skipped_blocked_host,host=dspace.lboro.ac.uk
+FS-004724,direct_pdf,http://cmsj.cams.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=3029,cmsj.cams.cn,404,not_pdf,ctype=text/html bytes=3062
+FS-004724,landing,https://doi.org/10.24920/003552,doi.org,200,no_pdf_link_found,
+FS-004989,landing,https://www.ncbi.nlm.nih.gov/pmc/articles/8260377,www.ncbi.nlm.nih.gov,200,blocked_captcha_or_waf,body_marker:captcha
+FS-005118,landing,https://pubmed.ncbi.nlm.nih.gov/3375945/,pubmed.ncbi.nlm.nih.gov,203,no_pdf_link_found,
+FS-005118,idconv,https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?ids=3375945&format=json,www.ncbi.nlm.nih.gov,200,no_pmcid,
+FS-007033,landing,https://doi.org/10.1016/j.imbio.2026.153170,doi.org,200,no_pdf_link_found,
+FS-007479,landing,https://www.ncbi.nlm.nih.gov/pmc/articles/1553334,www.ncbi.nlm.nih.gov,200,candidate_found,https://pmc.ncbi.nlm.nih.gov/articles/PMC1553334/pdf/clinexpimmunol00217-0214.pdf
+FS-007479,resolved_pdf,https://pmc.ncbi.nlm.nih.gov/articles/PMC1553334/pdf/clinexpimmunol00217-0214.pdf,pmc.ncbi.nlm.nih.gov,200,blocked_captcha_or_waf,body_marker:captcha
+FS-007953,landing,https://doi.org/10.4103/bbrj.bbrj_72_26,doi.org,200,candidate_found,https://www.ovid.com/jnls/bbrj/pdf/10.4103/bbrj.bbrj_72_26~machine-learning-based-classification-of-exercise-status
+FS-007953,resolved_pdf,https://www.ovid.com/jnls/bbrj/pdf/10.4103/bbrj.bbrj_72_26~machine-learning-based-classification-of-exercise-status,www.ovid.com,200,not_pdf,ctype=text/html; charset=utf-8 bytes=415925
+FS-009361,landing,https://doi.org/10.16926/par.2019.07.11,doi.org,200,candidate_found,http://dlibra.bg.ajd.czest.pl:8080/dlibra/info?forceRequestHandlerId=true&mimetype=application/pdf&sec=false&handler=pdf_browser&content_url=/Content/5503/11_Nosek_Balko_Adamiec_Partlova_Chytry_Changes_od_cardiac.pdf
+FS-009361,resolved_pdf,http://dlibra.bg.ajd.czest.pl:8080/dlibra/info?forceRequestHandlerId=true&mimetype=application/pdf&sec=false&handler=pdf_browser&content_url=/Content/5503/11_Nosek_Balko_Adamiec_Partlova_Chytry_Changes_od_cardiac.pdf,dlibra.bg.ajd.czest.pl:8080,200,not_pdf,ctype=text/html;charset=utf-8 bytes=12095
+FS-010763,direct_pdf,https://www.degruyter.com/document/doi/10.1515/jlm.2010.005/pdf,www.degruyter.com,202,blocked_captcha_or_waf,waf_challenge:challenge
+FS-010763,landing,https://doi.org/10.1515/jlm.2010.005,doi.org,202,blocked_captcha_or_waf,waf_challenge:challenge
+FS-011007,landing,https://figshare.com/articles/journal_contribution/Lymphocyte_HSP72_following_exercise_in_hyperthermic_runners_the_effect_of_temperature/22886273,figshare.com,202,blocked_captcha_or_waf,waf_challenge:challenge
+FS-011033,landing,https://doi.org/10.1515/pteridines.2006.17.4.121,doi.org,202,blocked_captcha_or_waf,waf_challenge:challenge
+FS-000645,landing,https://escholarship.org/uc/item/4b7136mv,escholarship.org,403,blocked_captcha_or_waf,http_403
+FS-000901,landing,https://doi.org/10.22029/eir.2005.1617,doi.org,200,candidate_found,https://journals.ub.uni-giessen.de/eir/article/view/1617/1882
+FS-000901,resolved_pdf,https://journals.ub.uni-giessen.de/eir/article/view/1617/1882,journals.ub.uni-giessen.de,200,retrieved,text_len=29022 doi_in_text=False title_hits=8/8
+FS-001211,landing,https://escholarship.org/uc/item/2vs4f8fz,escholarship.org,,skipped_blocked_host,host=escholarship.org
+FS-001584,landing,https://www.ncbi.nlm.nih.gov/pmc/articles/2825766,www.ncbi.nlm.nih.gov,200,candidate_found,https://pmc.ncbi.nlm.nih.gov:443/articles/instance/2825766/bin/tableS1.pdf
+FS-001584,resolved_pdf,https://pmc.ncbi.nlm.nih.gov:443/articles/instance/2825766/bin/tableS1.pdf,pmc.ncbi.nlm.nih.gov:443,200,blocked_captcha_or_waf,body_marker:captcha
+FS-001635,landing,https://www.ncbi.nlm.nih.gov/pmc/articles/2904199,www.ncbi.nlm.nih.gov,,skipped_blocked_host,host=www.ncbi.nlm.nih.gov
+FS-001918,landing,https://www.ncbi.nlm.nih.gov/pmc/articles/4358769,www.ncbi.nlm.nih.gov,,skipped_blocked_host,host=www.ncbi.nlm.nih.gov
+FS-001987,landing,https://www.ncbi.nlm.nih.gov/pmc/articles/3179997,www.ncbi.nlm.nih.gov,,skipped_blocked_host,host=www.ncbi.nlm.nih.gov
+FS-002032,landing,https://www.ncbi.nlm.nih.gov/pmc/articles/4065239,www.ncbi.nlm.nih.gov,,skipped_blocked_host,host=www.ncbi.nlm.nih.gov
+FS-002059,landing,https://www.ncbi.nlm.nih.gov/pmc/articles/3289427,www.ncbi.nlm.nih.gov,,skipped_blocked_host,host=www.ncbi.nlm.nih.gov
+FS-002346,landing,https://www.ncbi.nlm.nih.gov/pmc/articles/3615590,www.ncbi.nlm.nih.gov,,skipped_blocked_host,host=www.ncbi.nlm.nih.gov
+FS-002554,landing,https://www.ncbi.nlm.nih.gov/pmc/articles/3882565,www.ncbi.nlm.nih.gov,,skipped_blocked_host,host=www.ncbi.nlm.nih.gov
+FS-002638,landing,https://www.ncbi.nlm.nih.gov/pmc/articles/3949215,www.ncbi.nlm.nih.gov,,skipped_blocked_host,host=www.ncbi.nlm.nih.gov
+FS-002669,landing,https://cris.maastrichtuniversity.nl/en/publications/81665948-25db-4b4d-8c9c-2ce4df71ad8c,cris.maastrichtuniversity.nl,200,candidate_found,https://cris.maastrichtuniversity.nl/files/73169537/schrauwen_2014_identification_of_human_exercise_induced.pdf
+FS-002669,resolved_pdf,https://cris.maastrichtuniversity.nl/files/73169537/schrauwen_2014_identification_of_human_exercise_induced.pdf,cris.maastrichtuniversity.nl,403,blocked_captcha_or_waf,http_403
+FS-002878,direct_pdf,http://www.biolifesas.org/jbrha/abstractsjbrha28-3.pdf,www.biolifesas.org,conn_err:<urlopen error [Errno 61] Connection refused>,download_failed,conn_err:<urlopen error [Errno 61] Connection refused>
+FS-002878,landing,http://nrl.northumbria.ac.uk/id/eprint/17753/,nrl.northumbria.ac.uk,"conn_err:<urlopen error [Errno 8] nodename nor servname provided, or not known>",lookup_failed,"conn_err:<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+FS-003073,landing,http://hdl.handle.net/10651/34131,hdl.handle.net,conn_err:<urlopen error timed out>,lookup_failed,conn_err:<urlopen error timed out>
+FS-003838,direct_pdf,http://www.advances.umed.wroc.pl/pdf/2017/26/6/999.pdf,www.advances.umed.wroc.pl,"conn_err:<urlopen error [Errno 8] nodename nor servname provided, or not known>",download_failed,"conn_err:<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+FS-003838,landing,https://doi.org/10.17219/acem/63031,doi.org,200,candidate_found,https://advances.umw.edu.pl/pdf/2017/26/6/999.pdf
+FS-003838,resolved_pdf,https://advances.umw.edu.pl/pdf/2017/26/6/999.pdf,advances.umw.edu.pl,200,retrieved,text_len=32273 doi_in_text=True title_hits=11/11
+FS-004509,landing,http://hdl.handle.net/2434/679447,hdl.handle.net,403,blocked_captcha_or_waf,http_403
+FS-004513,landing,https://www.ncbi.nlm.nih.gov/pmc/articles/7024030,www.ncbi.nlm.nih.gov,,skipped_blocked_host,host=www.ncbi.nlm.nih.gov
+FS-005334,landing,https://doi.org/10.1016/j.scitotenv.2021.151094,doi.org,200,no_pdf_link_found,
+FS-005434,landing,https://www.ncbi.nlm.nih.gov/pmc/articles/9314457,www.ncbi.nlm.nih.gov,,skipped_blocked_host,host=www.ncbi.nlm.nih.gov
+FS-006154,landing,https://doi.org/10.1249/mss.0000000000003363,doi.org,200,candidate_found,https://www.ovid.com/jnls/acsm-msse/pdf/10.1249/mss.0000000000003363~exercise-induced-cell-free-dna-correlates-with-energy
+FS-006154,resolved_pdf,https://www.ovid.com/jnls/acsm-msse/pdf/10.1249/mss.0000000000003363~exercise-induced-cell-free-dna-correlates-with-energy,www.ovid.com,200,not_pdf,ctype=text/html; charset=utf-8 bytes=426914
+FS-006563,landing,https://doi.org/10.1016/j.cmet.2024.12.011,doi.org,200,no_pdf_link_found,
+FS-006651,direct_pdf,https://pmc.ncbi.nlm.nih.gov/articles/PMC13034990/pdf/nihms-2148994.pdf,pmc.ncbi.nlm.nih.gov,,skipped_blocked_host,host=pmc.ncbi.nlm.nih.gov
+FS-006651,landing,https://pmc.ncbi.nlm.nih.gov/articles/PMC13034990/,pmc.ncbi.nlm.nih.gov,,skipped_blocked_host,host=pmc.ncbi.nlm.nih.gov
+FS-006734,landing,https://doi.org/10.1152/ajpendo.00169.2025,doi.org,403,blocked_captcha_or_waf,http_403
+FS-006861,landing,https://pmc.ncbi.nlm.nih.gov/articles/PMC12844565/,pmc.ncbi.nlm.nih.gov,,skipped_blocked_host,host=pmc.ncbi.nlm.nih.gov
+FS-006965,direct_pdf,https://pmc.ncbi.nlm.nih.gov/articles/PMC12958460/pdf/nihms-2140477.pdf,pmc.ncbi.nlm.nih.gov,,skipped_blocked_host,host=pmc.ncbi.nlm.nih.gov
+FS-006965,landing,https://pubmed.ncbi.nlm.nih.gov/41525801/,pubmed.ncbi.nlm.nih.gov,,skipped_blocked_host,host=pubmed.ncbi.nlm.nih.gov
+FS-006965,idconv,https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?ids=41525801&format=json,www.ncbi.nlm.nih.gov,200,candidate_found,PMC12958460
+FS-006965,pmc_resolved,https://pmc.ncbi.nlm.nih.gov/articles/PMC12958460/,pmc.ncbi.nlm.nih.gov,,skipped_blocked_host,host=pmc.ncbi.nlm.nih.gov
+FS-007100,landing,https://doi.org/10.21203/rs.3.rs-7432623/v1,doi.org,200,candidate_found,https://www.researchsquare.com/article/rs-7432623/latest.pdf
+FS-007100,resolved_pdf,https://www.researchsquare.com/article/rs-7432623/latest.pdf,www.researchsquare.com,200,retrieved,text_len=57883 doi_in_text=False title_hits=10/10
+FS-007188,landing,https://doi.org/10.1016/j.brci.2026.100055,doi.org,200,no_pdf_link_found,
+FS-007236,landing,https://doi.org/10.21203/rs.3.rs-6074097/v1,doi.org,200,candidate_found,https://www.researchsquare.com/article/rs-6074097/latest.pdf
+FS-007236,resolved_pdf,https://www.researchsquare.com/article/rs-6074097/latest.pdf,www.researchsquare.com,200,retrieved,text_len=51064 doi_in_text=True title_hits=10/10
+FS-000681,landing,https://doi.org/10.1016/s1440-2440(04)80015-x,doi.org,200,no_pdf_link_found,
+FS-000731,landing,https://doi.org/10.22029/eir.2004.1608,doi.org,200,candidate_found,https://journals.ub.uni-giessen.de/eir/article/view/1608/1873
+FS-000731,resolved_pdf,https://journals.ub.uni-giessen.de/eir/article/view/1608/1873,journals.ub.uni-giessen.de,200,retrieved,text_len=50420 doi_in_text=False title_hits=6/6
+FS-000912,landing,https://www.ncbi.nlm.nih.gov/pmc/articles/2492037,www.ncbi.nlm.nih.gov,,skipped_blocked_host,host=www.ncbi.nlm.nih.gov
+FS-000972,landing,https://hal.science/hal-03061834,hal.science,200,no_pdf_link_found,
+FS-001044,landing,https://figshare.com/articles/journal_contribution/Effects_of_bovine_colostrum_supplementation_on_immune_variables_in_highly_trained_cyclists/22862243,figshare.com,,skipped_blocked_host,host=figshare.com
+FS-001505,landing,http://hdl.handle.net/10447/39526,hdl.handle.net,403,blocked_captcha_or_waf,http_403
+FS-002511,landing,https://pureportal.coventry.ac.uk/en/publications/9be92eb8-5bfc-4f29-af31-28ef42ad3e72,pureportal.coventry.ac.uk,200,no_pdf_link_found,
+FS-002573,landing,https://www.ncbi.nlm.nih.gov/pmc/articles/3761487,www.ncbi.nlm.nih.gov,,skipped_blocked_host,host=www.ncbi.nlm.nih.gov
+FS-002578,landing,https://www.ncbi.nlm.nih.gov/pmc/articles/3761545,www.ncbi.nlm.nih.gov,,skipped_blocked_host,host=www.ncbi.nlm.nih.gov
+FS-002841,landing,https://digitalcommons.uri.edu/kinesiology_facpubs/98,digitalcommons.uri.edu,200,no_pdf_link_found,
+FS-003022,landing,https://doi.org/10.22029/eir.2015.1699,doi.org,200,candidate_found,https://journals.ub.uni-giessen.de/eir/article/view/1699/1964
+FS-003022,resolved_pdf,https://journals.ub.uni-giessen.de/eir/article/view/1699/1964,journals.ub.uni-giessen.de,200,retrieved,text_len=77984 doi_in_text=False title_hits=11/11
+FS-003783,landing,https://doi.org/10.14715/cmb/2017.63.7.13,doi.org,200,candidate_found,https://cellmolbiol.org/index.php/CMB/article/download/1350/941
+FS-003783,resolved_pdf,https://cellmolbiol.org/index.php/CMB/article/download/1350/941,cellmolbiol.org,200,retrieved,text_len=43748 doi_in_text=True title_hits=8/8
+FS-003943,direct_pdf,http://eprints.bournemouth.ac.uk/30230/13/CytokineJan2018acceptedCostelloFigure2.pdf,eprints.bournemouth.ac.uk,200,failed_verification,text_too_short:12
+FS-003943,landing_is_pdf,http://eprints.bournemouth.ac.uk/30230/11/AcuteandChronicEffectsofHeatExposure_AcceptedCytokine18.1.18.pdf,eprints.bournemouth.ac.uk,200,retrieved,text_len=39880 doi_in_text=False title_hits=9/9
+FS-005508,landing,https://doi.org/10.1016/j.jtherbio.2022.103188,doi.org,200,no_pdf_link_found,
+FS-006114,landing,https://doi.org/10.1016/j.psyneuen.2023.106656,doi.org,200,no_pdf_link_found,
+FS-007097,landing,https://doi.org/10.1016/j.jsams.2026.03.024,doi.org,200,no_pdf_link_found,
+FS-007259,landing,https://pmc.ncbi.nlm.nih.gov/articles/PMC13495878/,pmc.ncbi.nlm.nih.gov,,skipped_blocked_host,host=pmc.ncbi.nlm.nih.gov
+FS-007992,direct_pdf,https://uaj.uac.gov.ua/index.php/uaj/article/download/850/718,uaj.uac.gov.ua,404,not_pdf,ctype= bytes=1071
+FS-007992,landing,https://doi.org/10.33275/1727-7485.1.2026.762,doi.org,200,candidate_found,https://uaj.uac.gov.ua/index.php/uaj/article/download/850/721
+FS-007992,resolved_pdf,https://uaj.uac.gov.ua/index.php/uaj/article/download/850/721,uaj.uac.gov.ua,200,retrieved,text_len=56222 doi_in_text=True title_hits=9/9
+FS-008227,landing,https://doi.org/10.3390/app14124968,doi.org,403,blocked_captcha_or_waf,http_403
+FS-009547,direct_pdf,http://hdl.handle.net/11449/171413,hdl.handle.net,200,not_pdf,ctype=text/html; charset=utf-8 bytes=685131
+FS-009547,landing,http://hdl.handle.net/11449/171413,hdl.handle.net,200,candidate_found,https://repositorio.unesp.br/bitstreams/8296b5f6-5dc9-442a-b1d2-10bf2702b276/download
+FS-009547,resolved_pdf,https://repositorio.unesp.br/bitstreams/8296b5f6-5dc9-442a-b1d2-10bf2702b276/download,repositorio.unesp.br,200,retrieved,text_len=46032 doi_in_text=True title_hits=8/8
+FS-009633,landing,https://openresearchlibrary.org/viewer/4b9c8991-43b0-47f6-8e4f-4518ace87506,openresearchlibrary.org,200,no_pdf_link_found,
+FS-010114,direct_pdf,https://figshare.com/articles/journal_contribution/Changes_in_na_ve_and_memory_T-cells_in_elite_swimmers_during_a_winter_training_season/9629546,figshare.com,,skipped_blocked_host,host=figshare.com
+FS-010114,landing,https://figshare.com/articles/journal_contribution/Changes_in_na_ve_and_memory_T-cells_in_elite_swimmers_during_a_winter_training_season/9629546,figshare.com,,skipped_blocked_host,host=figshare.com
+FS-010165,landing,https://hirosaki.repo.nii.ac.jp/records/3792,hirosaki.repo.nii.ac.jp,200,candidate_found,https://hirosaki.repo.nii.ac.jp/record/3792/files/HirosakiMedJ_65%281%29_1.pdf
+FS-010165,resolved_pdf,https://hirosaki.repo.nii.ac.jp/record/3792/files/HirosakiMedJ_65%281%29_1.pdf,hirosaki.repo.nii.ac.jp,200,retrieved,text_len=40422 doi_in_text=False title_hits=9/9
+FS-010649,landing,https://hdl.handle.net/10612/19195,hdl.handle.net,200,candidate_found,http://localhost:4000/bitstreams/67565d06-561d-4423-9c4b-f5b49d18e24a/download
+FS-010649,resolved_pdf,http://localhost:4000/bitstreams/67565d06-561d-4423-9c4b-f5b49d18e24a/download,localhost:4000,conn_err:<urlopen error [Errno 61] Connection refused>,download_failed,conn_err:<urlopen error [Errno 61] Connection refused>
+FS-010740,landing,https://doaj.org/article/610940cc85e14b1cafd2a2b920086fa8,doaj.org,403,blocked_captcha_or_waf,http_403
+FS-010827,landing,https://doi.org/10.22029/eir.2007.1633,doi.org,200,candidate_found,https://journals.ub.uni-giessen.de/eir/article/view/1633/1898
+FS-010827,resolved_pdf,https://journals.ub.uni-giessen.de/eir/article/view/1633/1898,journals.ub.uni-giessen.de,200,retrieved,text_len=35552 doi_in_text=False title_hits=7/7
+FS-011944,direct_pdf,https://epublications.marquette.edu/nursing_fac/248,epublications.marquette.edu,200,not_pdf,ctype=text/html; charset=UTF-8 bytes=31093
+FS-011944,landing,https://epublications.marquette.edu/nursing_fac/248,epublications.marquette.edu,200,candidate_found,https://epublications.marquette.edu/cgi/viewcontent.cgi?article=1248&context=nursing_fac
+FS-011944,resolved_pdf,https://epublications.marquette.edu/cgi/viewcontent.cgi?article=1248&context=nursing_fac,epublications.marquette.edu,200,retrieved,text_len=2382 doi_in_text=False title_hits=7/7

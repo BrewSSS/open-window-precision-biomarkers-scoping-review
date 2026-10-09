@@ -1,0 +1,84 @@
+record_id,priority,title,route_tried,http_status,outcome,final_verdict
+FS-001324,1,Salivary IgA as a risk factor for upper respiratory infections in elite professional athletes.,landing->blocked_captcha_or_waf,202,not_retrieved,left_for_A_click
+FS-001787,1,The effect of exercise on plasma soluble IL-6 receptor concentration: a dichotomous response.,landing->candidate_found; resolved_pdf->retrieved,200,retrieved,retrieved_oa
+FS-002317,1,Does proteinuria-inducing physical activity increase biomarkers of acute kidney injury?,none (pre-known blocked publisher host=karger.com),n/a,blocked_publisher_preknown,left_for_A_click
+FS-002536,1,Cytokine kinetics in nasal mucosa and sera: new insights in understanding upper-airway disease of marathon runners.,landing->no_pdf_link_found,200,not_retrieved,left_for_A_click
+FS-002569,1,Effects of aerobic exercise on lipid-effector molecules of the innate immune response.,landing->blocked_captcha_or_waf,200,not_retrieved,left_for_A_click
+FS-002589,1,Identification of high responders for interleukin-6 and creatine kinase following acute eccentric resistance exercise in elderly obese women.,landing->candidate_found; resolved_pdf->retrieved,200,retrieved,retrieved_oa
+FS-003210,1,Changes of Hematological Markers during a Multi-stage Ultra-marathon Competition in the Heat.,landing->no_pdf_link_found,404,not_retrieved,left_for_A_click
+FS-003290,1,Salivary immunoglobulin free light chains: reference ranges and responses to exercise in young and older adults.,landing->candidate_found; resolved_pdf->retrieved,200,retrieved,retrieved_oa
+FS-003468,1,Short-term reliability of inflammatory mediators and response to exercise in the heat.,landing->blocked_captcha_or_waf,202,not_retrieved,left_for_A_click
+FS-003800,1,Small RNA-seq during acute maximal exercise reveal RNAs involved in vascular inflammation and cardiometabolic health: brief report.,landing->blocked_captcha_or_waf,200,not_retrieved,left_for_A_click
+FS-004179,1,"Brief Report: Training Load, Salivary Immunoglobulin A, and Illness Incidence in Elite Paratriathletes.",landing->skipped_blocked_host,,not_retrieved,left_for_A_click
+FS-004724,1,Early Warning of Acute Altitude Sickness by Physiological Variables and Noninvasive Cardiovascular Indicators.,direct_pdf->not_pdf; landing->no_pdf_link_found,200,not_retrieved,left_for_A_click
+FS-004989,1,Improved recovery from skeletal muscle damage is largely unexplained by myofibrillar protein synthesis or inflammatory and regenerative gene expression pathways.,landing->blocked_captcha_or_waf,200,not_retrieved,left_for_A_click
+FS-005118,1,Endotoxaemia in exhausted runners after a long-distance race.,landing->no_pdf_link_found; idconv->no_pmcid,200,not_retrieved,left_for_A_click
+FS-007033,1,"Lymphocyte subpopulations in healthy Ukrainian men: local reference ranges, long temporal stability, and exercise-induced variability.",landing->no_pdf_link_found,200,not_retrieved,left_for_A_click
+FS-007479,1,The effect on immunity of long-term intensive training in elite swimmers.,landing->candidate_found; resolved_pdf->blocked_captcha_or_waf,200,not_retrieved,left_for_A_click
+FS-007953,1,Machine Learning-based Classification of Exercise Status Using miR-21 Expression and Multivariable Participant Profiles,landing->candidate_found; resolved_pdf->not_pdf,200,not_retrieved,left_for_A_click
+FS-009361,1,Changes of cardiac biomarkers in ultramarathon runners,landing->candidate_found; resolved_pdf->not_pdf,200,not_retrieved,left_for_A_click
+FS-010763,1,"Leukocyte, neutrophil, immature granulocyte counts and interleukin-6 are superior to procalcitonin, C-reactive protein and delta-He for detection of mild inflammation: Data from marathon runners producing mild systemic inflammation visible immediately after the run",direct_pdf->blocked_captcha_or_waf; landing->blocked_captcha_or_waf,202,not_retrieved,left_for_A_click
+FS-011007,1,Lymphocyte HSP72 following exercise in hyperthermic runners: The effect of temperature,landing->blocked_captcha_or_waf,202,not_retrieved,left_for_A_click
+FS-011033,1,Muscle trauma and immune activation after a downhill marathon (Tyrolean Speed Marathon),landing->blocked_captcha_or_waf,202,not_retrieved,left_for_A_click
+FS-013865,1,LEUKOCYTE AND ERYTHROCYTE COUNTS DURING A MULTISTAGE CYCLING RACE (THE MILK-RACE),manual_browser (done by A before this round),n/a,already_retrieved,retrieved_manual
+FS-000645,2,Effects of exercise on gene expression in human peripheral blood mononuclear cells.,landing->blocked_captcha_or_waf,403,not_retrieved,left_for_A_click
+FS-000901,2,CDNA-microarray analysis as a research tool for expression profiling in human peripheral blood following exercise.,landing->candidate_found; resolved_pdf->retrieved,200,retrieved,retrieved_oa
+FS-001211,2,Effects of 30 min of aerobic exercise on gene expression in human neutrophils.,landing->skipped_blocked_host,,not_retrieved,left_for_A_click
+FS-001584,2,Differential genomic responses in old vs. young humans despite similar levels of modest muscle damage after resistance loading.,landing->candidate_found; resolved_pdf->blocked_captcha_or_waf,200,not_retrieved,left_for_A_click
+FS-001635,2,Evidence for microRNA involvement in exercise-associated neutrophil gene expression changes.,landing->skipped_blocked_host,,not_retrieved,left_for_A_click
+FS-001918,2,Changes in transcriptional output of human peripheral blood mononuclear cells following resistance exercise.,landing->skipped_blocked_host,,not_retrieved,left_for_A_click
+FS-001987,2,Dynamic regulation of circulating microRNA during acute exhaustive exercise and sustained aerobic exercise training.,landing->skipped_blocked_host,,not_retrieved,left_for_A_click
+FS-002032,2,Induced sputum proteome in healthy subjects and asthmatic patients.,landing->skipped_blocked_host,,not_retrieved,left_for_A_click
+FS-002059,2,Resistance exercise training influences skeletal muscle immune activation: a microarray analysis.,landing->skipped_blocked_host,,not_retrieved,left_for_A_click
+FS-002346,2,Impact of brief exercise on peripheral blood NK cell gene and microRNA expression in young adults.,landing->skipped_blocked_host,,not_retrieved,left_for_A_click
+FS-002554,2,Human inflammatory and resolving lipid mediator responses to resistance exercise and ibuprofen treatment.,landing->skipped_blocked_host,,not_retrieved,left_for_A_click
+FS-002638,2,Rapid upregulation and clearance of distinct circulating microRNAs after prolonged aerobic exercise.,landing->skipped_blocked_host,,not_retrieved,left_for_A_click
+FS-002669,2,Identification of human exercise-induced myokines using secretome analysis.,landing->candidate_found; resolved_pdf->blocked_captcha_or_waf,403,not_retrieved,left_for_A_click
+FS-002878,2,Dynamic changes in dna methylation status in peripheral blood Mononuclear cells following an acute bout of exercise: Potential impact of exercise-induced elevations in interleukin-6 concentration.,direct_pdf->download_failed; landing->lookup_failed,"conn_err:<urlopen error [Errno 8] nodename nor servname provided, or not known>",not_retrieved,left_for_A_click
+FS-003073,2,Circulating inflammatory miRNA signature in response to different doses of aerobic exercise.,landing->lookup_failed,conn_err:<urlopen error timed out>,not_retrieved,left_for_A_click
+FS-003581,2,Gene networks in skeletal muscle following endurance exercise are coexpressed in blood neutrophils and linked with blood inflammation markers.,manual_browser (done by A before this round),n/a,already_retrieved,retrieved_manual
+FS-003838,2,"Differences in echocardiography, blood pressure, stroke volume, maximal power and profile of genes related to cardiac hypertrophy in elite road cyclists.",direct_pdf->download_failed; landing->candidate_found; resolved_pdf->retrieved,200,retrieved,retrieved_oa
+FS-004116,2,Altered formation of the iron oxide nanoparticle-biocorona due to individual variability and exercise.,manual_browser (done by A before this round),n/a,already_retrieved,retrieved_manual
+FS-004509,2,"Effects of an acute bout of exercise on circulating extracellular vesicles: tissue-, sex-, and BMI-related differences.",landing->blocked_captcha_or_waf,403,not_retrieved,left_for_A_click
+FS-004513,2,Interval Exercise Lowers Circulating CD105 Extracellular Vesicles in Prediabetes.,landing->skipped_blocked_host,,not_retrieved,left_for_A_click
+FS-005334,2,"Air pollution and high-intensity interval exercise: Implications to anti-inflammatory balance, metabolome and cardiovascular responses.",landing->no_pdf_link_found,200,not_retrieved,left_for_A_click
+FS-005434,2,Acute exercise decreases insulin-stimulated extracellular vesicles in conjunction with augmentation index in adults with obesity.,landing->skipped_blocked_host,,not_retrieved,left_for_A_click
+FS-006154,2,Exercise-Induced Cell-Free DNA Correlates with Energy Expenditure in Multiple Exercise Protocols.,landing->candidate_found; resolved_pdf->not_pdf,200,not_retrieved,left_for_A_click
+FS-006184,2,Acute exercise-induced release of innate immune proteins via small extracellular vesicles changes with aerobic fitness and age.,manual_browser (done by A before this round),n/a,already_retrieved,retrieved_manual
+FS-006563,2,Cellular deconstruction of the human skeletal muscle microenvironment identifies an exercise-induced histaminergic crosstalk.,landing->no_pdf_link_found,200,not_retrieved,left_for_A_click
+FS-006651,2,Exercise-induced β2-adrenergic receptor activation enhances effector lymphocyte mobilization in humans and suppresses lymphoma growth in mice through NK-cells.,direct_pdf->skipped_blocked_host; landing->skipped_blocked_host,,not_retrieved,left_for_A_click
+FS-006734,2,Transcriptomic analyses of peripheral blood mononuclear cells reveal age-specific basal and acute exercise responsiveness differences in humans.,landing->blocked_captcha_or_waf,403,not_retrieved,left_for_A_click
+FS-006861,2,Exploratory analysis of the impact of sex on sputum proteomic response to inhaled wood smoke in humans.,landing->skipped_blocked_host,,not_retrieved,left_for_A_click
+FS-006965,2,Oxylipin Responses during the Yukon Arctic Ultra: The Longest and Coldest Ultramarathon in the World.,direct_pdf->skipped_blocked_host; landing->skipped_blocked_host; idconv->candidate_found; pmc_resolved->skipped_blocked_host,,not_retrieved,left_for_A_click
+FS-007100,2,Sex-Based Differences in Circulating microRNA and Metabolite Signatures Associated with Physical Activity in Lynch Syndrome Carriers.,landing->candidate_found; resolved_pdf->retrieved,200,retrieved,retrieved_oa
+FS-007188,2,"Long-Distance Trail Running Induces Inflammatory-Associated Protein, Lipid, and Purine Oxidation in Red Blood Cells.",landing->no_pdf_link_found,200,not_retrieved,left_for_A_click
+FS-007236,2,"Delayed molecular aging, preservation of energy metabolism and enhanced exercise response in exercise-trained human muscle.",landing->candidate_found; resolved_pdf->retrieved,200,retrieved,retrieved_oa
+FS-000681,3,CD94 expression and natural killer cell activity after acute exercise.,landing->no_pdf_link_found,200,not_retrieved,left_for_A_click
+FS-000731,3,Effects of acute exhaustive exercise and chronic exercise training on type 1 and type 2 T lymphocytes.,landing->candidate_found; resolved_pdf->retrieved,200,retrieved,retrieved_oa
+FS-000912,3,"Serum concentrations of C reactive protein, alpha1 antitrypsin, and complement (C3, C4, C1 esterase inhibitor) before and during the Vuelta a Espańa.",landing->skipped_blocked_host,,not_retrieved,left_for_A_click
+FS-000972,3,Salivary IgA response of triathletes participating in the French Iron Tour.,landing->no_pdf_link_found,200,not_retrieved,left_for_A_click
+FS-001044,3,Effects of bovine colostrum supplementation on immune variables in highly trained cyclists.,landing->skipped_blocked_host,,not_retrieved,left_for_A_click
+FS-001505,3,"Environmental conditions, air pollutants, and airway cells in runners: a longitudinal field study.",landing->blocked_captcha_or_waf,403,not_retrieved,left_for_A_click
+FS-002511,3,Salivary antimicrobial protein responses during multistage ultramarathon competition conducted in hot environmental conditions.,landing->no_pdf_link_found,200,not_retrieved,left_for_A_click
+FS-002573,3,A common variation in the promoter region of interleukin-6 gene shows association with exercise performance.,landing->skipped_blocked_host,,not_retrieved,left_for_A_click
+FS-002578,3,The effect of tapering period on plasma pro-inflammatory cytokine levels and performance in elite male cyclists.,landing->skipped_blocked_host,,not_retrieved,left_for_A_click
+FS-002841,3,Influence of HMB supplementation and resistance training on cytokine responses to resistance exercise.,landing->no_pdf_link_found,200,not_retrieved,left_for_A_click
+FS-003022,3,Circulatory endotoxin concentration and cytokine profile in response to exertional-heat stress during a multi-stage ultra-marathon competition.,landing->candidate_found; resolved_pdf->retrieved,200,retrieved,retrieved_oa
+FS-003783,3,Inflammatory and immune responses to a 3-day period of downhill running in active females.,landing->candidate_found; resolved_pdf->retrieved,200,retrieved,retrieved_oa
+FS-003943,3,"Effects of acute or chronic heat exposure, exercise and dehydration on plasma cortisol, IL-6 and CRP levels in trained males.",direct_pdf->failed_verification; landing_is_pdf->retrieved,200,retrieved,retrieved_oa
+FS-004083,3,Effects of Chronic Cold-Water Immersion in Elite Rugby Players.,manual_browser (done by A before this round),n/a,already_retrieved,retrieved_manual
+FS-004580,3,Allostatic stress load and CMV serostatus impact immune response to maximal exercise in collegiate swimmers.,manual_browser (done by A before this round),n/a,already_retrieved,retrieved_manual
+FS-005508,3,C-Reactive Protein and Skin Temperature of the lower limbs of Brazilian elite soccer players like load markers following three consecutive games.,landing->no_pdf_link_found,200,not_retrieved,left_for_A_click
+FS-006114,3,"Sex differences in mood, hormone and immune response to combatives training in West Point Cadets.",landing->no_pdf_link_found,200,not_retrieved,left_for_A_click
+FS-007097,3,Cumulative increases in circulating mtDNA as a potential biomarker of brain injury in rugby union: a pilot study.,landing->no_pdf_link_found,200,not_retrieved,left_for_A_click
+FS-007259,3,"Passive, Electromagnetic-Responsive Hydrogel Immunosensor for Exercise Intensity Monitoring Based on Sweat C-Reactive Protein.",landing->skipped_blocked_host,,not_retrieved,left_for_A_click
+FS-007992,3,Sex-specific features of neuroendocrine and immune responses in women and men during the Ukrainian Antarctic Expedition; [Статево-специфічні особливості нейроендокринних та імунних реакцій у жінок та чоловіків під час Української антарктичної експедиції],direct_pdf->not_pdf; landing->candidate_found; resolved_pdf->retrieved,200,retrieved,retrieved_oa
+FS-008227,3,Effects of Congested Matches and Training Schedules on Salivary Markers in Elite Futsal Players,landing->blocked_captcha_or_waf,403,not_retrieved,left_for_A_click
+FS-009547,3,"Cytokine, physiological, technical–tactical and time structure responses in simulated judo competition",direct_pdf->not_pdf; landing->candidate_found; resolved_pdf->retrieved,200,retrieved,retrieved_oa
+FS-009633,3,The <i>Bifidobacterim bifidum</i> (BIB2) Probiotic Increased Immune System Factors in Men Sprint Athletes,landing->no_pdf_link_found,200,not_retrieved,left_for_A_click
+FS-010114,3,Changes in naïve and memory T-cells in elite swimmers during a winter training season,direct_pdf->skipped_blocked_host; landing->skipped_blocked_host,,not_retrieved,left_for_A_click
+FS-010165,3,Evaluation of 6-month periodisation in male ekiden runners by assessment of muscle fatigue and immune function,landing->candidate_found; resolved_pdf->retrieved,200,retrieved,retrieved_oa
+FS-010649,3,Monitoring biological and psychological measures throughout an entire season in male handball players,landing->candidate_found; resolved_pdf->download_failed,conn_err:<urlopen error [Errno 61] Connection refused>,not_retrieved,left_for_A_click
+FS-010740,3,Effect of sensory stimulation on salivary IgA secretion rate in karate players,landing->blocked_captcha_or_waf,403,not_retrieved,left_for_A_click
+FS-010827,3,Reduction in resting plasma granulysin as a marker of increased training load,landing->candidate_found; resolved_pdf->retrieved,200,retrieved,retrieved_oa
+FS-011944,3,Enhanced hydrogen peroxide generation by human neutrophils following exercise,direct_pdf->not_pdf; landing->candidate_found; resolved_pdf->retrieved,200,retrieved,retrieved_oa

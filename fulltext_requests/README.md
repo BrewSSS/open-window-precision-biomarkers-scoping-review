@@ -76,3 +76,13 @@ V 层 578 篇记录已跑 `scripts/fetch_fulltexts_oa.py` 尝试开放获取（E
 `fulltext_requests.csv` 整表重建并去重（原文件同一记录重复两行的历史问题已修复），新增
 `oa_group` 逐条分类（见上方表格）；范围外的旧请求移至 `fulltext_requests_out_of_scope_2026-10-09.csv`。
 详见 `04_screening/formal_2026-10-05_v0.9/fulltext/scope_rescope_2026-10-09.md`。
+
+## 第二轮开放获取抓取（D 角色，2026-10-09）
+
+对 `oa_sweep_2026-10-09.csv` 中 83 条 `A_click_download` 记录做了第二轮抓取：7 条出版社已知挡脚本（6 条此前 A 已用浏览器下载并入库，1 条 FS-002317/karger.com 仍待点击）跳过，其余 76 条按 `priority` 顺序解析（DOI 跳转 + 落地页 `citation_pdf_url`/明显 PDF 链接 解析；PMC id-converter 处理唯一的 pubmed 专用链接），**16/76 条取到全文并通过校验**（PDF 魔数 + 正文 >2000 字 + DOI 或 ≥3 个标题特征词命中）。
+
+本轮遇到的脚本封锁（首次 403/429/验证码/WAF 挑战即停该主机，不重试、不伪造浏览器特征）：figshare.com、dspace.lboro.ac.uk、escholarship.org、ncbi.nlm.nih.gov（整个子域族，详见 `oa_fetch2_2026-10-09.md` 的偏差说明）、cris.maastrichtuniversity.nl、air.unimi.it、iris.unipa.it、doaj.org、www.degruyterbrill.com、journals.physiology.org、www.mdpi.com。
+
+范围 477 篇全文中，累计已取得 **231** 篇（含本轮新增 16 篇脚本抓取 + 此前 6 篇 A 浏览器下载）。A 仍需点击 **61** 篇（`fulltext_acquisition_2026-10-09.xlsx` sheet1 `1_click_to_download_61`）；另有 sheet2 `2_maybe_free_14`、sheet3 `3_unknown_check_18`（均需人工核实，非本轮改动）、sheet4 `4_library_request_153`（机构图书馆/馆际互借，非本轮改动）。
+
+逐条记录：`04_screening/formal_2026-10-05_v0.9/fulltext/oa_fetch2_2026-10-09.csv`（含 route/http_status/outcome/最终判定）与同目录 `oa_fetch2_2026-10-09.md`。本轮新取到的 16 篇全文已完成 sha256/字节数登记（`fulltext_fetch_manifest.csv`）与正文抽取（`fulltext/V_text/`），尚未提交 AI 预筛（由另一次任务分派）。

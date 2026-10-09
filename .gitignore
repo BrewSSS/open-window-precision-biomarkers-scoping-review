@@ -180,6 +180,12 @@ fulltext_requests/abstract_lookup_*/*
 
 !04_screening/formal_*/fulltext/oa_classification_*.md
 
+# D's second OA fetch pass (2026-10-09, scripts/oa_fetch2_run.py + oa_fetch2_postprocess.py):
+# per-record route/http_status/outcome report and the raw per-attempt log (host/status/outcome
+# only, no full-text content; PDFs stay under /fulltexts/, ignored above).
+!04_screening/formal_*/fulltext/oa_fetch2_*.csv
+!04_screening/formal_*/fulltext/oa_fetch2_*.md
+
 # D's full-text scope re-base (2026-10-09): join/diff report and the no-abstract working-scope
 # input csv (record_id/title/journal/year/doi/pmid/E5 subtypes only, same shape as the already
 # committed ai_triage/confirmed_V_list_*.csv).
