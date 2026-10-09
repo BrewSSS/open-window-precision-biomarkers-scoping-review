@@ -1,0 +1,1813 @@
+{
+ "type": "object",
+ "title": "extract_schema_v1_1",
+ "description": "PRE-009 AI-assisted full-text extraction output, one report per call -- v1.1 (2026-10-09, D). Same 8 tables/row units as extract_schema_v1.json; fixes per 06_synthesis/prototype_2026-10-09/prototype_report.md (c)/(d) and T8_extraction_quality.csv: (a) dictionary-controlled fields that v1 left as free string (matrix, exercise_mode, design, training_status, clinical_endpoint) are now strict enums, each paired with an <field>_other_text free-text field used only when the enum's own 'other'/'other_*' value is chosen; time_unit is now a strict enum with no free-text pair (the dictionary's own boundary rules convert every reported unit to min/h/d, so no 'other' case exists); (b) analyte_id now separates analyte_raw (verbatim) from analyte_canonical (normalised; prompt rule list); (c) sample_sets time fields are restructured to time_text_raw (verbatim) + time_value_min (numeric minutes or null) + time_range_min ([lo,hi] minutes or null) + time_bin (unchanged enum), replacing timepoint_as_reported/time_from_exercise_end_value/time_unit; (d) precision_validation rows carry a required evidence_basis enum (stated_in_report/not_reported_in_report/not_applicable_to_design) whose relationship to evidence_state is stated in extract_prompt_v1_1.md (not machine-enforced here; Codex strict output schemas do not reliably support cross-field if/then). Still additionalProperties:false, every property required, no $ref/$defs/maxLength/uniqueItems.",
+ "properties": {
+  "report_id": {
+   "type": "string"
+  },
+  "reference_id": {
+   "type": "string"
+  },
+  "reviewer_role": {
+   "type": "string"
+  },
+  "extracted_at": {
+   "type": "string"
+  },
+  "tables": {
+   "type": "object",
+   "properties": {
+    "reports": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "report_id": {
+        "type": "string"
+       },
+       "reference_id": {
+        "type": "string"
+       },
+       "title": {
+        "type": "string"
+       },
+       "authors": {
+        "type": "string"
+       },
+       "year": {
+        "type": "string"
+       },
+       "doi": {
+        "type": "string"
+       },
+       "pmid": {
+        "type": "string"
+       },
+       "url": {
+        "type": "string"
+       },
+       "publication_status": {
+        "type": "string",
+        "enum": [
+         "peer_reviewed_version_of_record",
+         "peer_reviewed_online_first",
+         "preprint",
+         "conference_abstract",
+         "protocol",
+         "editorial_or_commentary",
+         "correction",
+         "retraction",
+         "other",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ]
+       },
+       "version_date": {
+        "type": "string"
+       },
+       "version_label": {
+        "type": "string"
+       },
+       "source_locator": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "scope_stream": {
+        "type": "array",
+        "items": {
+         "type": "string",
+         "enum": [
+          "A_core_acute",
+          "B_support_repeated_bouts",
+          "background",
+          "excluded",
+          "uncertain",
+          "NR",
+          "NA",
+          "UNCLEAR"
+         ]
+        }
+       },
+       "inclusion_reason": {
+        "type": "string"
+       },
+       "exclusion_reason": {
+        "type": "string"
+       },
+       "immune_link": {
+        "type": "array",
+        "items": {
+         "type": "string",
+         "enum": [
+          "direct_immune_cell_or_count",
+          "direct_immune_subset",
+          "direct_effector_function",
+          "recognized_immune_mediator",
+          "immune_cell_omics",
+          "biofluid_omics_with_immune_objective_in_original_aims_methods",
+          "posthoc_immune_pathway_only",
+          "no_identifiable_immune_link",
+          "NR",
+          "NA",
+          "UNCLEAR"
+         ]
+        }
+       },
+       "screening_decision_reviewer_A": {
+        "type": "string"
+       },
+       "screening_decision_reviewer_B": {
+        "type": "string"
+       },
+       "consensus_screening_decision": {
+        "type": "string"
+       },
+       "primary_fulltext_exclusion_reason": {
+        "type": "string"
+       },
+       "reviewer_notes": {
+        "type": "string"
+       },
+       "author_stated_use": {
+        "type": "string"
+       },
+       "author_window_interpretation": {
+        "type": "array",
+        "items": {
+         "type": "string",
+         "enum": [
+          "explicit_open_window_term",
+          "immunosuppression_or_susceptibility_without_term",
+          "redistribution_interpretation",
+          "no_window_interpretation",
+          "NR",
+          "NA",
+          "UNCLEAR"
+         ]
+        }
+       },
+       "author_window_interpretation_locator": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "v_layer_validation_subtypes_from_triage": {
+        "type": "array",
+        "items": {
+         "type": "string",
+         "enum": [
+          "metric_validation",
+          "outcome_linkage",
+          "omics_discovery",
+          "repeated_monitoring",
+          "NA",
+          "NR",
+          "UNCLEAR"
+         ]
+        }
+       },
+       "validation_element_confirmed": {
+        "type": "string",
+        "enum": [
+         "yes",
+         "no",
+         "unclear",
+         "NA",
+         "NR",
+         "UNCLEAR"
+        ]
+       },
+       "_locators": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "field": {
+           "type": "string"
+          },
+          "page": {
+           "type": "string",
+           "description": "page marker number as a string, or NR"
+          },
+          "quote": {
+           "type": "string",
+           "description": "verbatim, <=25 words, or NR"
+          }
+         },
+         "required": [
+          "field",
+          "page",
+          "quote"
+         ],
+         "additionalProperties": false
+        }
+       },
+       "_confidence": {
+        "type": "string",
+        "enum": [
+         "high",
+         "low",
+         "medium"
+        ]
+       }
+      },
+      "required": [
+       "report_id",
+       "reference_id",
+       "title",
+       "authors",
+       "year",
+       "doi",
+       "pmid",
+       "url",
+       "publication_status",
+       "version_date",
+       "version_label",
+       "source_locator",
+       "scope_stream",
+       "inclusion_reason",
+       "exclusion_reason",
+       "immune_link",
+       "screening_decision_reviewer_A",
+       "screening_decision_reviewer_B",
+       "consensus_screening_decision",
+       "primary_fulltext_exclusion_reason",
+       "reviewer_notes",
+       "author_stated_use",
+       "author_window_interpretation",
+       "author_window_interpretation_locator",
+       "v_layer_validation_subtypes_from_triage",
+       "validation_element_confirmed",
+       "_locators",
+       "_confidence"
+      ],
+      "additionalProperties": false
+     }
+    },
+    "cohorts": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "cohort_id": {
+        "type": "string"
+       },
+       "study_id": {
+        "type": "string"
+       },
+       "cohort_label": {
+        "type": "string"
+       },
+       "baseline_health": {
+        "type": "string"
+       },
+       "n_recruited": {
+        "type": [
+         "string",
+         "integer"
+        ]
+       },
+       "age_sex": {
+        "type": "string"
+       },
+       "training_status": {
+        "type": "string",
+        "enum": [
+         "untrained_or_sedentary",
+         "recreationally_active",
+         "trained",
+         "elite_or_professional",
+         "mixed_training_status",
+         "other",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ],
+        "description": "controlled_vocabulary.training_status, by the AUTHOR's own label, never inferred from performance results. 'other' only if none fits; then fill training_status_other_text."
+       },
+       "sport": {
+        "type": "string"
+       },
+       "cohort_notes": {
+        "type": "string"
+       },
+       "age_range": {
+        "type": "string"
+       },
+       "adult_stratum_separable": {
+        "type": "string",
+        "enum": [
+         "all_participants_adult",
+         "mixed_age_adult_stratum_separable",
+         "mixed_age_adult_stratum_not_separable",
+         "all_participants_under_18",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ]
+       },
+       "older_adult_subgroup": {
+        "type": "string",
+        "enum": [
+         "older_adult_cohort",
+         "older_adult_stratum_separable",
+         "no_older_adult_stratum",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ]
+       },
+       "_locators": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "field": {
+           "type": "string"
+          },
+          "page": {
+           "type": "string",
+           "description": "page marker number as a string, or NR"
+          },
+          "quote": {
+           "type": "string",
+           "description": "verbatim, <=25 words, or NR"
+          }
+         },
+         "required": [
+          "field",
+          "page",
+          "quote"
+         ],
+         "additionalProperties": false
+        }
+       },
+       "_confidence": {
+        "type": "string",
+        "enum": [
+         "high",
+         "low",
+         "medium"
+        ]
+       },
+       "training_status_other_text": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "Verbatim training-status description; required non-null only when training_status='other', else null."
+       }
+      },
+      "required": [
+       "cohort_id",
+       "study_id",
+       "cohort_label",
+       "baseline_health",
+       "n_recruited",
+       "age_sex",
+       "training_status",
+       "sport",
+       "cohort_notes",
+       "age_range",
+       "adult_stratum_separable",
+       "older_adult_subgroup",
+       "_locators",
+       "_confidence",
+       "training_status_other_text"
+      ],
+      "additionalProperties": false
+     }
+    },
+    "report_cohort_links": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "link_id": {
+        "type": "string"
+       },
+       "report_id": {
+        "type": "string"
+       },
+       "study_id": {
+        "type": "string"
+       },
+       "cohort_id": {
+        "type": "string"
+       },
+       "n_analyzed": {
+        "type": [
+         "string",
+         "integer"
+        ]
+       },
+       "report_specific_population": {
+        "type": "string"
+       },
+       "link_notes": {
+        "type": "string"
+       },
+       "scope_streams": {
+        "type": "array",
+        "items": {
+         "type": "string",
+         "enum": [
+          "A_core_acute",
+          "B_support_repeated_bouts",
+          "background",
+          "excluded",
+          "uncertain",
+          "NR",
+          "NA",
+          "UNCLEAR"
+         ]
+        }
+       },
+       "_locators": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "field": {
+           "type": "string"
+          },
+          "page": {
+           "type": "string",
+           "description": "page marker number as a string, or NR"
+          },
+          "quote": {
+           "type": "string",
+           "description": "verbatim, <=25 words, or NR"
+          }
+         },
+         "required": [
+          "field",
+          "page",
+          "quote"
+         ],
+         "additionalProperties": false
+        }
+       },
+       "_confidence": {
+        "type": "string",
+        "enum": [
+         "high",
+         "low",
+         "medium"
+        ]
+       }
+      },
+      "required": [
+       "link_id",
+       "report_id",
+       "study_id",
+       "cohort_id",
+       "n_analyzed",
+       "report_specific_population",
+       "link_notes",
+       "scope_streams",
+       "_locators",
+       "_confidence"
+      ],
+      "additionalProperties": false
+     }
+    },
+    "sample_sets": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "sample_set_id": {
+        "type": "string"
+       },
+       "report_id": {
+        "type": "string"
+       },
+       "study_id": {
+        "type": "string"
+       },
+       "cohort_id": {
+        "type": "string"
+       },
+       "group_condition": {
+        "type": "string"
+       },
+       "intervention_phase": {
+        "type": "string"
+       },
+       "exercise_mode": {
+        "type": "string",
+        "enum": [
+         "endurance",
+         "resistance",
+         "interval_or_sprint",
+         "mixed_or_concurrent",
+         "intermittent_team_or_racket_sport",
+         "other",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ],
+        "description": "controlled_vocabulary.exercise_mode. A competition is coded by its physiological mode (marathon=endurance); competition framing itself goes in dose, not here. 'other' only if none fits; then fill exercise_mode_other_text."
+       },
+       "dose": {
+        "type": "string"
+       },
+       "control": {
+        "type": "string"
+       },
+       "training_load": {
+        "type": "string"
+       },
+       "cointerventions": {
+        "type": "string"
+       },
+       "exercise_end_definition": {
+        "type": "string"
+       },
+       "sample_role": {
+        "type": "string",
+        "enum": [
+         "pre_exercise_baseline",
+         "during_exercise",
+         "immediate_post",
+         "recovery_post",
+         "nonexercise_control",
+         "matched_control",
+         "periodic_training_monitoring",
+         "resting_habitual_group",
+         "other",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ]
+       },
+       "time_bin": {
+        "type": "string",
+        "enum": [
+         "pre_exercise_baseline",
+         "during",
+         "0_to_lt30min",
+         "30min_to_lt3h",
+         "3h_to_lt24h",
+         "24h_to_72h_inclusive",
+         "gt72h",
+         "matched_control_time",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ]
+       },
+       "matrix": {
+        "type": "string",
+        "enum": [
+         "whole_blood",
+         "PBMC",
+         "sorted_or_isolated_immune_cells",
+         "plasma",
+         "serum",
+         "saliva",
+         "urine",
+         "sweat",
+         "extracellular_vesicles",
+         "other_cell_free_biofluid",
+         "tissue",
+         "other",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ],
+        "description": "controlled_vocabulary.matrix. Choose 'other' only if no listed matrix fits; then fill matrix_other_text. Never infer matrix from platform convention."
+       },
+       "assay_platform": {
+        "type": "string"
+       },
+       "n_participants": {
+        "type": [
+         "string",
+         "integer"
+        ]
+       },
+       "n_biological_samples": {
+        "type": [
+         "string",
+         "integer"
+        ]
+       },
+       "n_cells": {
+        "type": [
+         "string",
+         "integer"
+        ]
+       },
+       "n_technical_replicates": {
+        "type": [
+         "string",
+         "integer"
+        ]
+       },
+       "n_aliquots": {
+        "type": [
+         "string",
+         "integer"
+        ]
+       },
+       "repeated_sampling": {
+        "type": "string"
+       },
+       "pairing_structure": {
+        "type": "string"
+       },
+       "age_sex_stratum": {
+        "type": "string"
+       },
+       "preanalytics": {
+        "type": "string"
+       },
+       "normalization": {
+        "type": "string"
+       },
+       "circadian": {
+        "type": "string"
+       },
+       "missing_data": {
+        "type": "string"
+       },
+       "cell_context": {
+        "type": "string"
+       },
+       "source_locator": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "sample_notes": {
+        "type": "string"
+       },
+       "bout_id": {
+        "type": "string"
+       },
+       "bout_number": {
+        "type": "string"
+       },
+       "participant_linkage": {
+        "type": "string",
+        "enum": [
+         "same_participants_identified",
+         "same_participants_aggregate_pairing_documented",
+         "some_participant_overlap",
+         "different_participants",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ]
+       },
+       "n_donors": {
+        "type": [
+         "string",
+         "integer"
+        ]
+       },
+       "donor_count_basis": {
+        "type": "string",
+        "enum": [
+         "unique_human_donors",
+         "unique_participants_equivalent",
+         "pooled_or_composite_donor_material",
+         "donor_identity_not_resolved",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ]
+       },
+       "exercise_duration": {
+        "type": "string"
+       },
+       "intensity_metric": {
+        "type": "string"
+       },
+       "intensity_value": {
+        "type": "string"
+       },
+       "within_organising_window": {
+        "type": "string",
+        "enum": [
+         "within_window",
+         "outside_window_recovery",
+         "pre_exercise_baseline",
+         "matched_control_time",
+         "during_exercise_ancillary",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ]
+       },
+       "_locators": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "field": {
+           "type": "string"
+          },
+          "page": {
+           "type": "string",
+           "description": "page marker number as a string, or NR"
+          },
+          "quote": {
+           "type": "string",
+           "description": "verbatim, <=25 words, or NR"
+          }
+         },
+         "required": [
+          "field",
+          "page",
+          "quote"
+         ],
+         "additionalProperties": false
+        }
+       },
+       "_confidence": {
+        "type": "string",
+        "enum": [
+         "high",
+         "low",
+         "medium"
+        ]
+       },
+       "matrix_other_text": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "Verbatim matrix description; required non-null only when matrix='other', else null."
+       },
+       "exercise_mode_other_text": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "Verbatim exercise-mode description; required non-null only when exercise_mode='other', else null."
+       },
+       "time_text_raw": {
+        "type": "string",
+        "description": "Verbatim sampling-time wording from the report (replaces v1 timepoint_as_reported), including any range. Bare missing code (NR/NA/UNCLEAR) if nothing stated."
+       },
+       "time_value_min": {
+        "type": [
+         "number",
+         "null"
+        ],
+        "description": "Time from exercise cessation in MINUTES (not a unit+value pair; convert h and d yourself, 1 d = 24 h), earliest bound if a range. Null when NR/NA/UNCLEAR/a straddling or unbounded range handled instead by time_range_min, or the IMMEDIATE_NONNUMERIC case (then also null; time_bin=0_to_lt30min carries the signal)."
+       },
+       "time_range_min": {
+        "type": [
+         "array",
+         "null"
+        ],
+        "items": {
+         "type": "number"
+        },
+        "description": "[earliest_min, latest_min] when the report gives a genuine bounded range AND the exact single time cannot be chosen (time_value_min still gets the earliest bound per the time-bin rule); null otherwise."
+       }
+      },
+      "required": [
+       "sample_set_id",
+       "report_id",
+       "study_id",
+       "cohort_id",
+       "group_condition",
+       "intervention_phase",
+       "exercise_mode",
+       "dose",
+       "control",
+       "training_load",
+       "cointerventions",
+       "exercise_end_definition",
+       "sample_role",
+       "time_bin",
+       "matrix",
+       "assay_platform",
+       "n_participants",
+       "n_biological_samples",
+       "n_cells",
+       "n_technical_replicates",
+       "n_aliquots",
+       "repeated_sampling",
+       "pairing_structure",
+       "age_sex_stratum",
+       "preanalytics",
+       "normalization",
+       "circadian",
+       "missing_data",
+       "cell_context",
+       "source_locator",
+       "sample_notes",
+       "bout_id",
+       "bout_number",
+       "participant_linkage",
+       "n_donors",
+       "donor_count_basis",
+       "exercise_duration",
+       "intensity_metric",
+       "intensity_value",
+       "within_organising_window",
+       "_locators",
+       "_confidence",
+       "time_text_raw",
+       "time_value_min",
+       "time_range_min",
+       "matrix_other_text",
+       "exercise_mode_other_text"
+      ],
+      "additionalProperties": false
+     }
+    },
+    "measurements": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "measurement_id": {
+        "type": "string"
+       },
+       "report_id": {
+        "type": "string"
+       },
+       "study_id": {
+        "type": "string"
+       },
+       "cohort_id": {
+        "type": "string"
+       },
+       "sample_set_ids": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "biological_level": {
+        "type": "string"
+       },
+       "platform": {
+        "type": "string"
+       },
+       "omics_integration": {
+        "type": "string",
+        "enum": [
+         "single_omics",
+         "multiple_omics_parallel",
+         "integrated_multiomics",
+         "not_omics",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ]
+       },
+       "cell_context": {
+        "type": "string"
+       },
+       "assay_validity": {
+        "type": "string"
+       },
+       "feature_identification": {
+        "type": "string"
+       },
+       "comparison": {
+        "type": "string"
+       },
+       "effect_measure": {
+        "type": "string"
+       },
+       "effect_value": {
+        "type": "string"
+       },
+       "effect_unit": {
+        "type": "string"
+       },
+       "effect_uncertainty": {
+        "type": "string"
+       },
+       "multiplicity": {
+        "type": "string"
+       },
+       "confounding": {
+        "type": "string"
+       },
+       "donor_level_inference": {
+        "type": "string"
+       },
+       "missing_data": {
+        "type": "string"
+       },
+       "null_findings": {
+        "type": "string"
+       },
+       "result_direction": {
+        "type": "string",
+        "enum": [
+         "increase",
+         "decrease",
+         "no_detected_difference",
+         "mixed_or_inconsistent",
+         "positive_association",
+         "negative_association",
+         "no_detected_association",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ]
+       },
+       "reported_feature_count": {
+        "type": [
+         "string",
+         "integer"
+        ]
+       },
+       "measurement_notes": {
+        "type": "string"
+       },
+       "source_locator": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "record_type": {
+        "type": "string",
+        "enum": [
+         "assay_universe_summary",
+         "named_immune_candidate",
+         "reported_result_summary"
+        ]
+       },
+       "assay_universe_id": {
+        "type": "string"
+       },
+       "marker_series_id": {
+        "type": "string"
+       },
+       "tested_universe_n": {
+        "type": [
+         "string",
+         "integer"
+        ]
+       },
+       "tested_universe_unit": {
+        "type": "string"
+       },
+       "tested_universe": {
+        "type": "string"
+       },
+       "feature_total_count": {
+        "type": [
+         "string",
+         "integer"
+        ]
+       },
+       "feature_total_unit": {
+        "type": "string"
+       },
+       "feature_universe_locator": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "candidate_selection_rule": {
+        "type": "string",
+        "enum": [
+         "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+         "complete_targeted_panel",
+         "author_reported_feature_set",
+         "statistically_selected_hits_from_untargeted_screen",
+         "other_source_defined_rule",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ]
+       },
+       "candidate_selection_basis": {
+        "type": "string",
+        "enum": [
+         "original_aims",
+         "original_methods",
+         "registered_protocol_or_analysis_plan",
+         "supplement",
+         "results_statistical_selection",
+         "other",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ]
+       },
+       "candidate_prespecification_status": {
+        "type": "string",
+        "enum": [
+         "registered_protocol_or_analysis_plan",
+         "stated_in_original_aims_or_methods_no_registration_required",
+         "posthoc_or_results_only",
+         "timing_unclear",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ]
+       },
+       "candidate_in_original_aims_methods": {
+        "type": "string"
+       },
+       "candidate_source_locator": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "supplement_availability": {
+        "type": "string",
+        "enum": [
+         "accessible",
+         "linked_but_not_accessible",
+         "not_listed",
+         "not_checked",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ]
+       },
+       "supplement_sources": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "result_status": {
+        "type": "string",
+        "enum": [
+         "reported_significant",
+         "explicitly_reported_non_significant_or_null",
+         "named_candidate_result_not_located",
+         "assay_universe_only_no_candidate_result_reported",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ]
+       },
+       "effect_value_source": {
+        "type": "string",
+        "enum": [
+         "reported_main_text_or_table",
+         "reported_supplement",
+         "author_provided",
+         "digitized_from_figure",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ]
+       },
+       "digitization_predeclared_method": {
+        "type": "string"
+       },
+       "digitization_software_version": {
+        "type": "string"
+       },
+       "figure_panel_locator": {
+        "type": "string"
+       },
+       "digitizer_A_value": {
+        "type": "string"
+       },
+       "digitizer_B_value": {
+        "type": "string"
+       },
+       "digitizer_A": {
+        "type": "string"
+       },
+       "digitizer_B": {
+        "type": "string"
+       },
+       "digitization_reconciled_value": {
+        "type": "string"
+       },
+       "digitization_notes": {
+        "type": "string"
+       },
+       "marker_family": {
+        "type": "string",
+        "enum": [
+         "leukocyte_redistribution",
+         "NK_count_or_cytotoxicity",
+         "neutrophil_function",
+         "T_cell_subsets_or_function",
+         "mucosal_sIgA",
+         "mucosal_antimicrobial_protein",
+         "cytokine_or_inflammatory_mediator",
+         "immunoglobulin_or_complement",
+         "immune_cell_transcriptome",
+         "proteome",
+         "metabolome_or_lipidome",
+         "epigenome",
+         "ncRNA",
+         "single_cell",
+         "other",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ]
+       },
+       "digitization_check": {
+        "type": "string",
+        "enum": [
+         "not_started",
+         "independently_checked_by_second_reviewer",
+         "discrepancy_reconciled",
+         "not_double_checked",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ]
+       },
+       "analyte_id": {
+        "type": "object",
+        "properties": {
+         "analyte_raw": {
+          "type": "string",
+          "description": "Verbatim analyte label as printed in the report (replaces v1 original_label)."
+         },
+         "analyte_canonical": {
+          "type": "string",
+          "description": "Normalised name per the short rule list in extract_prompt_v1_1.md (gene symbol / common abbreviation, e.g. IL-6, TNF-alpha, CRP, sIgA, leukocyte count; replaces v1 standard_name). Bare missing code if the analyte itself is unnamed (e.g. a universe/summary row)."
+         },
+         "database_id": {
+          "type": "string",
+          "description": "HGNC/UniProt/miRBase/etc accession when known, else a bare missing code."
+         }
+        },
+        "required": [
+         "analyte_raw",
+         "analyte_canonical",
+         "database_id"
+        ],
+        "additionalProperties": false
+       },
+       "_locators": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "field": {
+           "type": "string"
+          },
+          "page": {
+           "type": "string",
+           "description": "page marker number as a string, or NR"
+          },
+          "quote": {
+           "type": "string",
+           "description": "verbatim, <=25 words, or NR"
+          }
+         },
+         "required": [
+          "field",
+          "page",
+          "quote"
+         ],
+         "additionalProperties": false
+        }
+       },
+       "_confidence": {
+        "type": "string",
+        "enum": [
+         "high",
+         "low",
+         "medium"
+        ]
+       }
+      },
+      "required": [
+       "measurement_id",
+       "report_id",
+       "study_id",
+       "cohort_id",
+       "sample_set_ids",
+       "biological_level",
+       "platform",
+       "omics_integration",
+       "cell_context",
+       "assay_validity",
+       "feature_identification",
+       "comparison",
+       "effect_measure",
+       "effect_value",
+       "effect_unit",
+       "effect_uncertainty",
+       "multiplicity",
+       "confounding",
+       "donor_level_inference",
+       "missing_data",
+       "null_findings",
+       "result_direction",
+       "reported_feature_count",
+       "measurement_notes",
+       "source_locator",
+       "record_type",
+       "assay_universe_id",
+       "marker_series_id",
+       "tested_universe_n",
+       "tested_universe_unit",
+       "tested_universe",
+       "feature_total_count",
+       "feature_total_unit",
+       "feature_universe_locator",
+       "candidate_selection_rule",
+       "candidate_selection_basis",
+       "candidate_prespecification_status",
+       "candidate_in_original_aims_methods",
+       "candidate_source_locator",
+       "supplement_availability",
+       "supplement_sources",
+       "result_status",
+       "effect_value_source",
+       "digitization_predeclared_method",
+       "digitization_software_version",
+       "figure_panel_locator",
+       "digitizer_A_value",
+       "digitizer_B_value",
+       "digitizer_A",
+       "digitizer_B",
+       "digitization_reconciled_value",
+       "digitization_notes",
+       "marker_family",
+       "digitization_check",
+       "analyte_id",
+       "_locators",
+       "_confidence"
+      ],
+      "additionalProperties": false
+     }
+    },
+    "precision_validation": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "precision_record_id": {
+        "type": "string"
+       },
+       "report_id": {
+        "type": "string"
+       },
+       "study_id": {
+        "type": "string"
+       },
+       "cohort_id": {
+        "type": "string"
+       },
+       "measurement_id": {
+        "type": "string"
+       },
+       "precision_domain": {
+        "type": "string",
+        "enum": [
+         "analytical_reliability",
+         "temporal_validity",
+         "immune_specificity",
+         "individualization",
+         "functional_clinical_linkage",
+         "independent_validation_and_use",
+         "feasibility"
+        ]
+       },
+       "evidence_state": {
+        "type": "string",
+        "enum": [
+         "evidence_present",
+         "measured_null",
+         "not_demonstrated",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ]
+       },
+       "relationship_tags": {
+        "type": "array",
+        "items": {
+         "type": "string",
+         "enum": [
+          "co_measured_without_association_test",
+          "within_cohort_association",
+          "same_cohort_replication",
+          "internal_validation_same_participants",
+          "internal_validation_participant_split",
+          "independent_external_validation",
+          "clinical_followup_no_prediction",
+          "clinical_prediction_internal",
+          "clinical_prediction_external",
+          "direct_in_vitro_or_ex_vivo_function_test",
+          "direct_in_vivo_function_test",
+          "NR",
+          "NA",
+          "UNCLEAR"
+         ]
+        }
+       },
+       "response_evidence": {
+        "type": "string"
+       },
+       "functional_evidence": {
+        "type": "string"
+       },
+       "replication": {
+        "type": "string"
+       },
+       "clinical_endpoint": {
+        "type": "string",
+        "enum": [
+         "none_reported",
+         "self_reported_symptoms",
+         "clinician_defined_syndrome",
+         "pathogen_confirmed_infection",
+         "other_clinical_endpoint",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ],
+        "description": "controlled_vocabulary.clinical_endpoint. 'other_clinical_endpoint' only if none fits; then fill clinical_endpoint_other_text."
+       },
+       "temporal_order": {
+        "type": "string"
+       },
+       "prediction_design": {
+        "type": "string"
+       },
+       "prediction_metrics": {
+        "type": "string"
+       },
+       "leakage_control": {
+        "type": "string"
+       },
+       "individualization": {
+        "type": "string"
+       },
+       "field_feasibility": {
+        "type": "string"
+       },
+       "source_locator": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "evidence_notes": {
+        "type": "string"
+       },
+       "intended_use": {
+        "type": "string",
+        "enum": [
+         "mechanistic_research",
+         "acute_response_monitoring",
+         "recovery_monitoring",
+         "training_adaptation_monitoring",
+         "immune_function_assessment",
+         "infection_risk_prediction",
+         "infection_diagnosis",
+         "clinical_decision_support",
+         "return_to_training",
+         "athletic_performance",
+         "other",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ]
+       },
+       "linkage_subtype": {
+        "type": "string",
+        "enum": [
+         "direct_functional_evidence",
+         "functional_assay_association",
+         "clinical_symptom_outcome",
+         "clinician_defined_outcome",
+         "pathogen_confirmed_outcome",
+         "combined_functional_and_clinical",
+         "no_linkage_evidence",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ]
+       },
+       "validation_use_subtype": {
+        "type": "string",
+        "enum": [
+         "independent_cohort_replication",
+         "independent_external_model_validation",
+         "internal_validation",
+         "prospective_use_or_impact_validation",
+         "implementation_or_field_use_validation",
+         "no_validation_or_use_test",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ]
+       },
+       "validation_split": {
+        "type": "string",
+        "enum": [
+         "none",
+         "resampling_same_participants",
+         "participant_level_holdout_same_cohort",
+         "independent_site_or_cohort",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ]
+       },
+       "marker_family": {
+        "type": "string",
+        "enum": [
+         "leukocyte_redistribution",
+         "NK_count_or_cytotoxicity",
+         "neutrophil_function",
+         "T_cell_subsets_or_function",
+         "mucosal_sIgA",
+         "mucosal_antimicrobial_protein",
+         "cytokine_or_inflammatory_mediator",
+         "immunoglobulin_or_complement",
+         "immune_cell_transcriptome",
+         "proteome",
+         "metabolome_or_lipidome",
+         "epigenome",
+         "ncRNA",
+         "single_cell",
+         "other",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ]
+       },
+       "_locators": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "field": {
+           "type": "string"
+          },
+          "page": {
+           "type": "string",
+           "description": "page marker number as a string, or NR"
+          },
+          "quote": {
+           "type": "string",
+           "description": "verbatim, <=25 words, or NR"
+          }
+         },
+         "required": [
+          "field",
+          "page",
+          "quote"
+         ],
+         "additionalProperties": false
+        }
+       },
+       "_confidence": {
+        "type": "string",
+        "enum": [
+         "high",
+         "low",
+         "medium"
+        ]
+       },
+       "clinical_endpoint_other_text": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "Verbatim clinical-endpoint description; required non-null only when clinical_endpoint='other_clinical_endpoint', else null."
+       },
+       "evidence_basis": {
+        "type": "string",
+        "enum": [
+         "stated_in_report",
+         "not_reported_in_report",
+         "not_applicable_to_design"
+        ],
+        "description": "New in v1.1 (Reporting discipline, extract_prompt_v1_1.md): the basis for this row's evidence_state. evidence_state=evidence_present or measured_null or not_demonstrated requires evidence_basis=stated_in_report; evidence_state=NR requires evidence_basis=not_reported_in_report; evidence_state=NA requires evidence_basis=not_applicable_to_design. Not cross-validated by this schema (Codex strict output schemas do not support if/then); enforced by prompt instruction and checked downstream."
+       }
+      },
+      "required": [
+       "precision_record_id",
+       "report_id",
+       "study_id",
+       "cohort_id",
+       "measurement_id",
+       "precision_domain",
+       "evidence_state",
+       "relationship_tags",
+       "response_evidence",
+       "functional_evidence",
+       "replication",
+       "clinical_endpoint",
+       "temporal_order",
+       "prediction_design",
+       "prediction_metrics",
+       "leakage_control",
+       "individualization",
+       "field_feasibility",
+       "source_locator",
+       "evidence_notes",
+       "intended_use",
+       "linkage_subtype",
+       "validation_use_subtype",
+       "validation_split",
+       "marker_family",
+       "_locators",
+       "_confidence",
+       "clinical_endpoint_other_text",
+       "evidence_basis"
+      ],
+      "additionalProperties": false
+     }
+    },
+    "extraction_provenance": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "provenance_id": {
+        "type": "string"
+       },
+       "report_id": {
+        "type": "string"
+       },
+       "adjudication": {
+        "type": "string"
+       },
+       "open_data": {
+        "type": "string"
+       },
+       "integrity_status": {
+        "type": "string"
+       },
+       "recorded_at": {
+        "type": "string"
+       },
+       "provenance_notes": {
+        "type": "string"
+       },
+       "extractor_a_b": {
+        "type": "object",
+        "properties": {
+         "extractor_A": {
+          "type": "string"
+         },
+         "extractor_B": {
+          "type": "string"
+         },
+         "independent_entry_complete": {
+          "type": "string"
+         },
+         "verification_complete": {
+          "type": "string"
+         }
+        },
+        "required": [
+         "extractor_A",
+         "extractor_B",
+         "independent_entry_complete",
+         "verification_complete"
+        ],
+        "additionalProperties": false
+       },
+       "ai_assistance": {
+        "type": "object",
+        "properties": {
+         "used": {
+          "type": "string"
+         },
+         "tool_model_date": {
+          "type": "string"
+         },
+         "task_prompt_version": {
+          "type": "string"
+         },
+         "output_checked_by_human": {
+          "type": "string"
+         }
+        },
+        "required": [
+         "used",
+         "tool_model_date",
+         "task_prompt_version",
+         "output_checked_by_human"
+        ],
+        "additionalProperties": false
+       },
+       "_locators": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "field": {
+           "type": "string"
+          },
+          "page": {
+           "type": "string",
+           "description": "page marker number as a string, or NR"
+          },
+          "quote": {
+           "type": "string",
+           "description": "verbatim, <=25 words, or NR"
+          }
+         },
+         "required": [
+          "field",
+          "page",
+          "quote"
+         ],
+         "additionalProperties": false
+        }
+       },
+       "_confidence": {
+        "type": "string",
+        "enum": [
+         "high",
+         "low",
+         "medium"
+        ]
+       }
+      },
+      "required": [
+       "provenance_id",
+       "report_id",
+       "adjudication",
+       "open_data",
+       "integrity_status",
+       "recorded_at",
+       "provenance_notes",
+       "extractor_a_b",
+       "ai_assistance",
+       "_locators",
+       "_confidence"
+      ],
+      "additionalProperties": false
+     }
+    },
+    "study_families": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "study_id": {
+        "type": "string"
+       },
+       "study_label": {
+        "type": "string"
+       },
+       "design": {
+        "type": "string",
+        "enum": [
+         "randomized_parallel",
+         "randomized_crossover",
+         "nonrandomized_controlled",
+         "nonrandomized_crossover",
+         "single_group_pre_post",
+         "prospective_cohort",
+         "cross_sectional",
+         "case_series_or_case_report",
+         "other",
+         "NR",
+         "NA",
+         "UNCLEAR"
+        ],
+        "description": "controlled_vocabulary.design. 'other' only if none fits; then fill design_other_text."
+       },
+       "registry_ids": {
+        "type": "array",
+        "items": {
+         "type": "string"
+        }
+       },
+       "training_load": {
+        "type": "string"
+       },
+       "cointerventions": {
+        "type": "string"
+       },
+       "study_notes": {
+        "type": "string"
+       },
+       "_locators": {
+        "type": "array",
+        "items": {
+         "type": "object",
+         "properties": {
+          "field": {
+           "type": "string"
+          },
+          "page": {
+           "type": "string",
+           "description": "page marker number as a string, or NR"
+          },
+          "quote": {
+           "type": "string",
+           "description": "verbatim, <=25 words, or NR"
+          }
+         },
+         "required": [
+          "field",
+          "page",
+          "quote"
+         ],
+         "additionalProperties": false
+        }
+       },
+       "_confidence": {
+        "type": "string",
+        "enum": [
+         "high",
+         "low",
+         "medium"
+        ]
+       },
+       "design_other_text": {
+        "type": [
+         "string",
+         "null"
+        ],
+        "description": "Verbatim design description; required non-null only when design='other', else null."
+       }
+      },
+      "required": [
+       "study_id",
+       "study_label",
+       "design",
+       "registry_ids",
+       "training_load",
+       "cointerventions",
+       "study_notes",
+       "_locators",
+       "_confidence",
+       "design_other_text"
+      ],
+      "additionalProperties": false
+     }
+    }
+   },
+   "required": [
+    "cohorts",
+    "extraction_provenance",
+    "measurements",
+    "precision_validation",
+    "report_cohort_links",
+    "reports",
+    "sample_sets",
+    "study_families"
+   ],
+   "additionalProperties": false
+  },
+  "eligibility_opinion": {
+   "type": "object",
+   "properties": {
+    "scope_stream": {
+     "type": "string"
+    },
+    "rationale": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "scope_stream",
+    "rationale"
+   ],
+   "additionalProperties": false
+  },
+  "unresolved_questions": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "minutes_spent": {
+   "type": [
+    "string",
+    "integer"
+   ]
+  }
+ },
+ "required": [
+  "report_id",
+  "reference_id",
+  "reviewer_role",
+  "extracted_at",
+  "tables",
+  "eligibility_opinion",
+  "unresolved_questions",
+  "minutes_spent"
+ ],
+ "additionalProperties": false
+}

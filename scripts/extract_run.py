@@ -241,14 +241,15 @@ def sol_prompt_text(system_prompt: str, user_template: str, row: dict, repair_no
     return text
 
 
-def call_sol(ref: str, prompt_text: str, model: str, effort: str, timeout: float, tmp_dir: Path) -> dict:
+def call_sol(ref: str, prompt_text: str, model: str, effort: str, timeout: float, tmp_dir: Path,
+             schema_path: Path = SCHEMA_PATH) -> dict:
     prompt_file = tmp_dir / f"sol_{ref}_prompt.txt"
     out_file = tmp_dir / f"sol_{ref}_out.json"
     prompt_file.write_text(prompt_text, encoding="utf-8")
     t0 = time.time()
     proc = subprocess.run(
         [sys.executable, str(SCRIPTS / "codex_stream_call.py"), "--prompt-file", str(prompt_file),
-         "--out", str(out_file), "--model", model, "--effort", effort, "--schema", str(SCHEMA_PATH),
+         "--out", str(out_file), "--model", model, "--effort", effort, "--schema", str(schema_path),
          "--timeout", str(timeout)],
         capture_output=True, text=True)
     wall = round(time.time() - t0, 1)
@@ -300,12 +301,21 @@ def validate(parsed, schema) -> list[str]:
 
 
 def cmd_run(args):
-    if not SCHEMA_PATH.exists():
+    # --schema-path/--prompt-path (added 2026-10-09, D, PRE-009 v1.1 pilot): override the module
+    # defaults so a non-default prompt/schema pair (e.g. extract_prompt_v1_1.md +
+    # extract_schema_v1_1.json) can be run into its own runs/<sol-family>/ without touching the
+    # v1 files other agents may be reading concurrently. Default behaviour (no flag) is unchanged.
+    # .resolve(): call_sol()'s codex_stream_call.py subprocess runs with cwd=/tmp/triage, so a
+    # relative --schema-path/--prompt-path passed on this script's own CLI must be made absolute
+    # here, not left relative to whatever cwd this script itself was invoked from.
+    schema_path = Path(args.schema_path).resolve() if getattr(args, "schema_path", None) else SCHEMA_PATH
+    prompt_path = Path(args.prompt_path).resolve() if getattr(args, "prompt_path", None) else PROMPT_PATH
+    if not schema_path.exists():
         cmd_write_schema(args)
-    schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
-    system_prompt, user_template = T.parse_prompt_file(PROMPT_PATH)
-    prompt_sha = hashlib.sha256(PROMPT_PATH.read_bytes()).hexdigest()
-    schema_sha = hashlib.sha256(SCHEMA_PATH.read_bytes()).hexdigest()
+    schema = json.loads(schema_path.read_text(encoding="utf-8"))
+    system_prompt, user_template = T.parse_prompt_file(prompt_path)
+    prompt_sha = hashlib.sha256(prompt_path.read_bytes()).hexdigest()
+    schema_sha = hashlib.sha256(schema_path.read_bytes()).hexdigest()
     text_dir = Path(args.text_dir) if getattr(args, "text_dir", None) else TEXT_DIR
     meta_csv_path = Path(args.meta_csv) if getattr(args, "meta_csv", None) else None
     manifest_path = Path(args.manifest_out) if getattr(args, "manifest_out", None) else MANIFEST_PATH
@@ -358,13 +368,14 @@ def cmd_run(args):
                 return prior
         row = rows[ref]
         prompt1 = sol_prompt_text(system_prompt, user_template, row)
-        res = call_sol(ref, prompt1, args.sol_model, args.sol_effort, args.sol_timeout, tmp_dir)
+        res = call_sol(ref, prompt1, args.sol_model, args.sol_effort, args.sol_timeout, tmp_dir, schema_path)
         errs = validate(res.get("parsed"), schema)
         attempts = 1
         if errs and res.get("text") is not None:
             prompt2 = sol_prompt_text(system_prompt, user_template, row,
                                        repair_note + f" Errors: {errs[:5]}")
-            res2 = call_sol(ref + "_retry", prompt2, args.sol_model, args.sol_effort, args.sol_timeout, tmp_dir)
+            res2 = call_sol(ref + "_retry", prompt2, args.sol_model, args.sol_effort, args.sol_timeout, tmp_dir,
+                             schema_path)
             errs2 = validate(res2.get("parsed"), schema)
             attempts = 2
             if not errs2 or (res2.get("parsed") is not None):
@@ -577,6 +588,10 @@ def main(argv=None):
                    "default = run_manifest.json (pilot)")
     r.add_argument("--disposition-csv", default=None, help="optional CSV with columns record_id,disposition "
                    "used to stamp pre_screen_disposition on each manifest entry")
+    r.add_argument("--schema-path", default=None, help="override extract_schema_v1.json (e.g. a "
+                   "v1.1 schema under pilot); default = extract_schema_v1.json")
+    r.add_argument("--prompt-path", default=None, help="override extract_prompt_v1.md (e.g. a "
+                   "v1.1 prompt under pilot); default = extract_prompt_v1.md")
     r.add_argument("--resume", action="store_true", help="skip calling Sol for a --record-id whose "
                    "runs/<sol-family>/<id>.json already exists and is valid; default off (always rerun)")
     r.add_argument("--skip-sol", action="store_true")

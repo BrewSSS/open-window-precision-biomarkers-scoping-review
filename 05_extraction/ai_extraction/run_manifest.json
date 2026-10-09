@@ -1,8 +1,8 @@
 {
- "generated_at_utc": "2026-10-08T12:40:23Z",
+ "generated_at_utc": "2026-10-09T07:32:40Z",
  "generator": "scripts/extract_run.py",
- "prompt_sha256": "8cf63231ad782f77a44aea76669207645532cae6ed5aa22e12dcb4a876eee59c",
- "schema_sha256": "4a593307cd1bd4789072153fc29ed4881850eb2d7f71fedc0fd462568d505b77",
+ "prompt_sha256": "d94cc6708f87b037142a664522a0eb3d587330a618fbce9f51d37b0e977474c5",
+ "schema_sha256": "040ea9d504c446ffebb6d24ca9afe9935717c9f7937ab339be350788bb689703",
  "entries": [
   {
    "record_id": "R42",
@@ -502,6 +502,227 @@
    "attempts": 1,
    "valid": true,
    "cost_usd": 1.3685019999999999
+  },
+  {
+   "record_id": "R01",
+   "family": "sol_v1_1_pilot",
+   "model": "gpt-6-sol",
+   "effort_or_thinking": "high",
+   "prompt_sha256": "d94cc6708f87b037142a664522a0eb3d587330a618fbce9f51d37b0e977474c5",
+   "schema_sha256": "040ea9d504c446ffebb6d24ca9afe9935717c9f7937ab339be350788bb689703",
+   "tokens": {
+    "input_tokens": 42105,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 6648,
+    "reasoning_output_tokens": 1245
+   },
+   "seconds": 97.9,
+   "attempts": 1,
+   "valid": true,
+   "pre_screen_disposition": null,
+   "trimmed": false,
+   "truncated": false,
+   "timestamp": "2026-10-09T06:54:35Z"
+  },
+  {
+   "record_id": "R19",
+   "family": "sol_v1_1_pilot",
+   "model": "gpt-6-sol",
+   "effort_or_thinking": "high",
+   "prompt_sha256": "d94cc6708f87b037142a664522a0eb3d587330a618fbce9f51d37b0e977474c5",
+   "schema_sha256": "040ea9d504c446ffebb6d24ca9afe9935717c9f7937ab339be350788bb689703",
+   "tokens": {
+    "input_tokens": 592903,
+    "cached_input_tokens": 509952,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 41410,
+    "reasoning_output_tokens": 9394
+   },
+   "seconds": 556.7,
+   "attempts": 1,
+   "valid": true,
+   "pre_screen_disposition": null,
+   "trimmed": false,
+   "truncated": false,
+   "timestamp": "2026-10-09T06:56:32Z",
+   "note": "first attempt (214.3s) produced a schema-valid but incomplete report (0 measurements, 0 precision_validation rows, self-flagged via unresolved_questions); this entry reflects the retry that is actually on disk at runs/sol_v1_1_pilot/R19.json (7/7 rows); see pilot_comparison_v1_1_2026-10-09.md section on completeness risk."
+  },
+  {
+   "record_id": "R42",
+   "family": "sol_v1_1_pilot",
+   "model": "gpt-6-sol",
+   "effort_or_thinking": "high",
+   "prompt_sha256": "d94cc6708f87b037142a664522a0eb3d587330a618fbce9f51d37b0e977474c5",
+   "schema_sha256": "040ea9d504c446ffebb6d24ca9afe9935717c9f7937ab339be350788bb689703",
+   "tokens": {
+    "input_tokens": 41983,
+    "cached_input_tokens": 17536,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 13966,
+    "reasoning_output_tokens": 1514
+   },
+   "seconds": 154.0,
+   "attempts": 1,
+   "valid": true,
+   "pre_screen_disposition": null,
+   "trimmed": false,
+   "truncated": false,
+   "timestamp": "2026-10-09T06:57:10Z"
+  },
+  {
+   "record_id": "R03",
+   "family": "sol_v1_1_pilot",
+   "model": "gpt-6-sol",
+   "effort_or_thinking": "high",
+   "prompt_sha256": "d94cc6708f87b037142a664522a0eb3d587330a618fbce9f51d37b0e977474c5",
+   "schema_sha256": "040ea9d504c446ffebb6d24ca9afe9935717c9f7937ab339be350788bb689703",
+   "tokens": {
+    "input_tokens": 65957,
+    "cached_input_tokens": 32512,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 31486,
+    "reasoning_output_tokens": 1984
+   },
+   "seconds": 322.8,
+   "attempts": 1,
+   "valid": true,
+   "pre_screen_disposition": null,
+   "trimmed": false,
+   "truncated": false,
+   "timestamp": "2026-10-09T06:58:20Z"
+  },
+  {
+   "record_id": "R59",
+   "family": "sol_v1_1_pilot",
+   "model": "gpt-6-sol",
+   "effort_or_thinking": "high",
+   "prompt_sha256": "d94cc6708f87b037142a664522a0eb3d587330a618fbce9f51d37b0e977474c5",
+   "schema_sha256": "040ea9d504c446ffebb6d24ca9afe9935717c9f7937ab339be350788bb689703",
+   "tokens": {
+    "input_tokens": 33656,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 30955,
+    "reasoning_output_tokens": 2013
+   },
+   "seconds": 314.9,
+   "attempts": 1,
+   "valid": true,
+   "pre_screen_disposition": null,
+   "trimmed": false,
+   "truncated": false,
+   "timestamp": "2026-10-09T07:02:24Z"
+  },
+  {
+   "record_id": "R62",
+   "family": "sol_v1_1_pilot",
+   "model": "gpt-6-sol",
+   "effort_or_thinking": "high",
+   "prompt_sha256": "d94cc6708f87b037142a664522a0eb3d587330a618fbce9f51d37b0e977474c5",
+   "schema_sha256": "040ea9d504c446ffebb6d24ca9afe9935717c9f7937ab339be350788bb689703",
+   "tokens": {
+    "input_tokens": 49323,
+    "cached_input_tokens": 49152,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 51479,
+    "reasoning_output_tokens": 2545
+   },
+   "seconds": 649.1,
+   "attempts": 1,
+   "valid": true,
+   "pre_screen_disposition": null,
+   "trimmed": false,
+   "truncated": false,
+   "timestamp": "2026-10-09T07:09:44Z"
+  },
+  {
+   "record_id": "R46",
+   "family": "sol_v1_1_pilot",
+   "model": "gpt-6-sol",
+   "effort_or_thinking": "high",
+   "prompt_sha256": "d94cc6708f87b037142a664522a0eb3d587330a618fbce9f51d37b0e977474c5",
+   "schema_sha256": "040ea9d504c446ffebb6d24ca9afe9935717c9f7937ab339be350788bb689703",
+   "tokens": {
+    "input_tokens": 27305,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 30020,
+    "reasoning_output_tokens": 3076
+   },
+   "seconds": 320.8,
+   "attempts": 1,
+   "valid": true,
+   "pre_screen_disposition": null,
+   "trimmed": false,
+   "truncated": false,
+   "timestamp": "2026-10-09T07:15:58Z"
+  },
+  {
+   "record_id": "R56",
+   "family": "sol_v1_1_pilot",
+   "model": "gpt-6-sol",
+   "effort_or_thinking": "high",
+   "prompt_sha256": "d94cc6708f87b037142a664522a0eb3d587330a618fbce9f51d37b0e977474c5",
+   "schema_sha256": "040ea9d504c446ffebb6d24ca9afe9935717c9f7937ab339be350788bb689703",
+   "tokens": {
+    "input_tokens": 39593,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 28936,
+    "reasoning_output_tokens": 3040
+   },
+   "seconds": 369.6,
+   "attempts": 1,
+   "valid": true,
+   "pre_screen_disposition": null,
+   "trimmed": false,
+   "truncated": false,
+   "timestamp": "2026-10-09T07:16:47Z"
+  },
+  {
+   "record_id": "R61",
+   "family": "sol_v1_1_pilot",
+   "model": "gpt-6-sol",
+   "effort_or_thinking": "high",
+   "prompt_sha256": "d94cc6708f87b037142a664522a0eb3d587330a618fbce9f51d37b0e977474c5",
+   "schema_sha256": "040ea9d504c446ffebb6d24ca9afe9935717c9f7937ab339be350788bb689703",
+   "tokens": {
+    "input_tokens": 36875,
+    "cached_input_tokens": 36736,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 40769,
+    "reasoning_output_tokens": 2473
+   },
+   "seconds": 447.6,
+   "attempts": 1,
+   "valid": true,
+   "pre_screen_disposition": null,
+   "trimmed": false,
+   "truncated": false,
+   "timestamp": "2026-10-09T07:23:25Z"
+  },
+  {
+   "record_id": "R12",
+   "family": "sol_v1_1_pilot",
+   "model": "gpt-6-sol",
+   "effort_or_thinking": "high",
+   "prompt_sha256": "d94cc6708f87b037142a664522a0eb3d587330a618fbce9f51d37b0e977474c5",
+   "schema_sha256": "040ea9d504c446ffebb6d24ca9afe9935717c9f7937ab339be350788bb689703",
+   "tokens": {
+    "input_tokens": 41175,
+    "cached_input_tokens": 17536,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 40612,
+    "reasoning_output_tokens": 2152
+   },
+   "seconds": 487.7,
+   "attempts": 1,
+   "valid": true,
+   "pre_screen_disposition": null,
+   "trimmed": false,
+   "truncated": false,
+   "timestamp": "2026-10-09T07:32:40Z"
   }
  ]
 }

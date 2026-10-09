@@ -570,6 +570,38 @@
         "human verification of any of the 1,042 pre-filled record-decisions",
         "reconciliation of ta_standin_prompt_{B,C}_codex_batch.md's committed age-rule text with PRE-011 (worked around locally for this run only; see deviations in ta_review_prefill_manifest.json)"
       ]
+    },
+    {
+      "date": "2026-10-09",
+      "tool": "Claude Code (Anthropic) desktop CLI, running scripts/extract_run.py through the Codex CLI (OpenAI, codex_stream_call.py)",
+      "coordinator_model": "claude-sonnet-5",
+      "model": "gpt-6-sol",
+      "model_settings": "reasoning effort high; one process per report; concurrency 4 (reduced to 1-2 on retries, Codex shared with another agent's run at the time)",
+      "task": "PRE-009 extraction prompt/schema v1.1 (D): rewrote extract_prompt_v1.md/extract_schema_v1.json to fix evidence_state misuse (NR underuse, not_demonstrated-for-unreported, evidence_present contradicted by its own note, independent-validation inconsistency), vocabulary drift in dictionary-controlled fields (matrix, exercise_mode, design, training_status, clinical_endpoint), analyte raw/canonical split and numeric time fields, flagged in 06_synthesis/prototype_2026-10-09/prototype_report.md (c)/(d) and T8_extraction_quality.csv off the 130-report formal pre-fill; piloted the fix on the same 10 reports as pilot_comparison_2026-10-08.md (not the 130) ahead of the ~300-report rollout.",
+      "prompt_reference": {
+        "file": "../05_extraction/ai_extraction/extract_prompt_v1_1.md",
+        "version": "v1.1, 2026-10-09",
+        "sha256": "d94cc6708f87b037142a664522a0eb3d587330a618fbce9f51d37b0e977474c5"
+      },
+      "schema_reference": {
+        "file": "../05_extraction/ai_extraction/extract_schema_v1_1.json",
+        "version": "v1.1, 2026-10-09",
+        "sha256": "040ea9d504c446ffebb6d24ca9afe9935717c9f7937ab339be350788bb689703"
+      },
+      "records": 10,
+      "concurrency": "4 (first pass), 1-2 (retries)",
+      "run_summary": "10/10 reports schema-valid after retries (4 reports needed 1 retry each for transient Codex capacity/network errors; 1 report, R19, validated first try but with 0 measurements/0 precision_validation rows and a self-flagged incomplete-extraction note, retried to 7/7 rows, still short of v1's 20/7 on that report -- see pilot_comparison_v1_1_2026-10-09.md Limitations). vs the existing v1 runs/sol/ output on the same 10 reports: precision_validation NR share 2.1%->35.1%; evidence_present rows whose own note negates the state 47.7%->2.4%; feasibility evidence_present negated 60.0%->0.0%; independent-validation evidence_present inconsistent with validation_split 100%->0 such rows; off-vocabulary rate on matrix/exercise_mode/training_status/design/clinical_endpoint 80-100%->0.0% (schema-enforced enums); not_demonstrated rows that read like unreported fell 40.3%->25.5% (reduced, not eliminated); wall time and output/reasoning token cost per report essentially unchanged; provenance (quote-on-page) 0.991->0.987 fuzzy, unchanged within noise.",
+      "output_sources": [
+        "../05_extraction/ai_extraction/runs/sol_v1_1_pilot/*.json (git-ignored raw output, 10 files)",
+        "../05_extraction/ai_extraction/run_manifest.json (10 new entries, family sol_v1_1_pilot)",
+        "../05_extraction/ai_extraction/pilot_comparison_v1_1_2026-10-09.md (full before/after table and recommendation)"
+      ],
+      "human_verification_status": "Not yet performed; this is a prompt/schema engineering pilot, not a formal extraction. Recommendation in pilot_comparison_v1_1_2026-10-09.md: adopt v1.1 for the ~300-report rollout; do not re-run the 130.",
+      "not_performed": [
+        "formal extraction of the ~300-report rollout under v1.1",
+        "re-extraction of the 130 under v1.1 (explicitly out of scope for this task)",
+        "human verification of the 10-report pilot outputs themselves"
+      ]
     }
   ],
   "future_entry_fields": [
