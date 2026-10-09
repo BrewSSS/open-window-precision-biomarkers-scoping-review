@@ -188,3 +188,7 @@ If the supplied full text is empty, unreadable, or clearly not this report's tex
 to NOT_RETRIEVED, confidence "low", note "text layer missing or unreadable", every `*_quote` field
 to `""`, and every `*_agreement` field to whatever matches the pre-fill (or "override" if the
 pre-fill asserted a substantive disposition that cannot be checked against unreadable text).
+
+### Age-rule clarification (A, 2026-10-09; binding)
+
+The reported MEAN takes precedence over a descriptor. An adult descriptor ("university students", "athletes", "recruits", "workers") establishes adulthood ONLY when the report gives no numeric age. When a mean age IS reported and it is below 20 y with no range and no stated minimum, the report stays AWAITING_CLASSIFICATION (name the missing fact) until a range, a minimum, or a linked parent report resolves it. A mean of 20 y or above with no under-18 statement is adult.

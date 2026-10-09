@@ -163,3 +163,7 @@ If the supplied full text is empty, unreadable, or clearly not this report's tex
 final_disposition to NOT_RETRIEVED, final_primary_code to "", decisive_evidence to "",
 which_reviewer_matched to "neither", n_bouts_sampled and baseline_comparator_present to
 "not_applicable", confidence to "low", and note to "text layer missing or unreadable".
+
+### Age-rule clarification (A, 2026-10-09; binding)
+
+The reported MEAN takes precedence over a descriptor. An adult descriptor ("university students", "athletes", "recruits", "workers") establishes adulthood ONLY when the report gives no numeric age. When a mean age IS reported and it is below 20 y with no range and no stated minimum, the report stays AWAITING_CLASSIFICATION (name the missing fact) until a range, a minimum, or a linked parent report resolves it. A mean of 20 y or above with no under-18 statement is adult.

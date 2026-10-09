@@ -182,3 +182,7 @@ exactly.
 If the supplied full text is empty or clearly unreadable (not merely OCR-noisy), set disposition
 value to "AWAITING_CLASSIFICATION", comment value "text unusable", and leave quote/page "" / "" on
 every field; still compare against the pre-fill for agree_or_override.
+
+### Age-rule clarification (A, 2026-10-09; binding)
+
+The reported MEAN takes precedence over a descriptor. An adult descriptor ("university students", "athletes", "recruits", "workers") establishes adulthood ONLY when the report gives no numeric age. When a mean age IS reported and it is below 20 y with no range and no stated minimum, the report stays AWAITING_CLASSIFICATION (name the missing fact) until a range, a minimum, or a linked parent report resolves it. A mean of 20 y or above with no under-18 statement is adult.

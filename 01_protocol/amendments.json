@@ -313,7 +313,7 @@
       "title": "Operational age rule at full text (adults): mean age >= 20 y with no mention of participants under 18 counts as an adult cohort",
       "date": "2026-10-09",
       "old_rule": "Protocol v3.x age rule: a cohort is adult when an explicit range or minimum age >= 18 y is given; when only mean +/- SD is reported, mean - 2 SD must be >= 18 y, otherwise the report is AWAITING_CLASSIFICATION until a range or a linked report resolves it.",
-      "new_rule": "A cohort counts as adult and the report is screened/charted as INCLUDE when (i) the report gives an explicit range/minimum >= 18 y, OR (ii) the reported mean age is >= 20 y (any SD) or participants are described as adults, university students, athletes, workers or similar, AND the report nowhere states that participants under 18 y took part. Such cohorts are flagged age_range_not_reported in the extraction (E4 = young_adult_age_unclear retained as a descriptive label). A report stays AWAITING_CLASSIFICATION only when it states participants under 18 y without a separable adult stratum (then FT03), or the mean age is < 20 y with no range, or age is not reported at all. The mean - 2 SD computation is no longer applied.",
+      "new_rule": "A cohort counts as adult and the report is screened/charted as INCLUDE when (i) the report gives an explicit range/minimum >= 18 y, OR (ii) the reported mean age is >= 20 y (any SD) or participants are described as adults, university students, athletes, workers or similar, AND the report nowhere states that participants under 18 y took part. Such cohorts are flagged age_range_not_reported in the extraction (E4 = young_adult_age_unclear retained as a descriptive label). A report stays AWAITING_CLASSIFICATION only when it states participants under 18 y without a separable adult stratum (then FT03), or the mean age is < 20 y with no range, or age is not reported at all. The mean - 2 SD computation is no longer applied. CLARIFICATION (A, 2026-10-09, after the full-text adjudication of 2026-10-09): the reported MEAN takes precedence over a descriptor. An adult descriptor (university students, athletes, recruits, workers) establishes adulthood ONLY when no numeric age is reported; when a mean age is reported and is below 20 y with no range or minimum, the report stays AWAITING_CLASSIFICATION until a range, a minimum or a linked parent report resolves it.",
       "reason": "Feasibility and recall: under the mean - 2 SD rule 39 of the first 130 AI-pre-filled full-text reports (30 %) were held AWAITING for age alone, almost all healthy adult cohorts (students, athletes) whose SD is wide; the rule excluded no cohort in which minors were actually reported. A decided on 2026-10-09 (team-approved recommended option) to adopt the operational rule above; the limitation (age range not reported in a share of cohorts) is charted and reported.",
       "work_stage": "after the PRE-008 triage, PRE-009 and PRE-010 adoption, during the AI pre-fill of the first batch of V-layer full texts, before the override phase and before any full-text screening decision exists",
       "information_already_known": "the age-rule distribution of the first 130 AI-pre-filled full-text reports (39, 30%, held AWAITING for age alone under the mean-minus-2-SD rule); no full-text decision had been made by B or C",
@@ -323,7 +323,16 @@
       "release_update": "Working text updated 2026-10-09; bundled with PRE-009, PRE-010 and the PRE-004 implementation update into release v3.3 (GitHub tag and Zenodo version DOI under concept DOI 10.5281/zenodo.23147972), published before full-text screening starts",
       "changes_document": "../CHANGELOG.md",
       "implementation_date": "2026-10-09",
-      "implementation_status": "adopted; protocol text (D.1, F, K, L) updated 2026-10-09; v3.3 DRAFT text prepared, pending team sign-off and release; age_range_not_reported flag to be added to the full-text workbook builder before the override phase"
+      "implementation_status": "adopted; protocol text (D.1, F, K, L) updated 2026-10-09; v3.3 DRAFT text prepared, pending team sign-off and release; age_range_not_reported flag to be added to the full-text workbook builder before the override phase",
+      "clarifications": [
+        {
+          "date": "2026-10-09",
+          "by": "A",
+          "issue": "descriptor vs reported mean below 20 y",
+          "resolution": "mean takes precedence; descriptor only when no numeric age is reported",
+          "effect": "matches how the full-text passes were already executed; no re-run needed; expected ~10-15 AWAITING reports over the full scope"
+        }
+      ]
     }
   ],
   "future_amendment_fields": [
