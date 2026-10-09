@@ -1,0 +1,17 @@
+{
+ "calibration_window": "clean",
+ "declared_by": "A",
+ "statement": "From this reading onward only the review's own jobs consume the GPT (Codex) quota; no other use.",
+ "start_local": "2026-10-09T21:25",
+ "start_remaining_percent": 4.0,
+ "weekly_reset_local": "2026-10-14T17:40",
+ "measure": "sum of billable tokens (input + output, cached input counted separately) recorded after start_local, from 05_extraction/ai_extraction/token_ledger_v1_1.csv and any run manifest written after start_local",
+ "to_compute_at_exhaustion": "tokens_per_percent = total_tokens_in_window / 4.0; also tokens_per_report for the extraction job",
+ "active_gpt_jobs_at_start": [
+  "extraction v1.1 over the 161 included reports (gpt-6-sol, effort high, concurrency 6)"
+ ],
+ "non_gpt_jobs_at_start": [
+  "second open-access fetch pass (network only, no model)"
+ ],
+ "git_head": "79c1daf"
+}
