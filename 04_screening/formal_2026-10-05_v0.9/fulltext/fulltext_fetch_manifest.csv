@@ -25,7 +25,7 @@ FS-000451,12740744,10.1055/s-2003-39096,not_retrieved_oa,,,,,,no_usable_identifi
 FS-000460,12780390,10.1046/j.1365-201x.2003.01124.x,retrieved_manual,manual_browser,,5238495dece3cdc4095ee76011dc6b93c698a0f353b2c5dc9737abbc1f7adf67,102578,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-000472,12832432,10.1152/japplphysiol.01064.2002,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-000498,1293425,,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
-FS-000504,12968214,10.1055/s-2003-42018,not_retrieved_oa,,,,,,openalex:not_pdf_or_too_small bytes=4767 ctype='text/html;charset=UTF-8',confirmed,V
+FS-000504,12968214,10.1055/s-2003-42018,retrieved_manual,manual_browser,,d0a3a17ad67ffd7d0711493a9a2cd60715ba9ddf5a9adf82435ab7438b54085f,177283,True,"downloaded by A in a browser; scanned PDF, text by local OCR",confirmed,V
 FS-000526,1422653,10.1136/bjsm.26.3.167,not_retrieved_oa,,,,,,openalex:download_failed:http_403,out_of_scope,
 FS-000533,14504950,10.1007/s00421-003-0881-8,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-000573,1470018,10.1249/00005768-199212000-00008,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
@@ -180,7 +180,7 @@ FS-002772,24874932,10.14712/23362936.2014.3,retrieved_oa,openalex,https://pmr.lf
 FS-002798,24967270,10.1155/2014/561401,not_retrieved_oa,,,,,,europepmc:download_failed:http_403; openalex:download_failed:http_403; crossref:download_failed:http_403,out_of_scope,
 FS-002801,24974720,10.22029/eir.2014.1687,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-002803,24977955,10.1097/jsm.0000000000000122,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
-FS-002824,25050349,10.1155/2014/429248,not_retrieved_oa,,,,,,europepmc:download_failed:http_403; openalex:download_failed:http_403; crossref:download_failed:http_403,confirmed,V
+FS-002824,25050349,10.1155/2014/429248,retrieved_manual,manual_browser,,f20e34c4f9064d097d6834426e927f026b1b5d663528b159298b5db683af9175,153940,True,downloaded by A in a browser; DOI-verified,confirmed,V
 FS-002831,25088029,10.1002/ptr.5208,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-002832,25096178,10.1152/ajpendo.00276.2014,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-002841,25140763,10.1080/07315724.2014.911669,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
@@ -601,7 +601,7 @@ FS-007796,9624643,10.1097/00005768-199806000-00013,not_retrieved_oa,,,,,,no_usab
 FS-009159,,10.1590/1517-8692202026052019_0032,retrieved_oa,openalex,https://www.scielo.br/j/rbme/a/yCZbwS3ngsShZZDCnRXXrWx/?lang=en&format=pdf,2e9a9eae7a7b9320ad39b67fda531d668467cb321f45d627d23fd4ba8a38a0a7,152588,True,title_word_hits=19/19 required=3,confirmed,V
 FS-010498,,10.1016/j.jtherbio.2011.03.013,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-011007,,10.1016/j.jtherbio.2007.07.001,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
-FS-013354,,10.22631/ijaep.v7i1.238,not_retrieved_oa,,,,,,openalex:download_failed:http_404; crossref:download_failed:http_404,confirmed,V
+FS-013354,,10.22631/ijaep.v7i1.238,retrieved_manual,manual_browser,,fb5605d69f55cac4151ced90118864a97e9b5b72919adb76f3e9c2b074c9a7e9,474789,True,downloaded by A in a browser; DOI-verified,confirmed,V
 FS-001269,18324908,10.1515/cclm.2008.050,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,U
 FS-002994,25729365,10.3389/fphys.2015.00035,retrieved_oa,openalex,https://www.frontiersin.org/articles/10.3389/fphys.2015.00035/pdf,4291025505cf75916098d45fedc9899f6d20c4e3e7124c05d49f2cff718b8fc7,302693,True,title_word_hits=15/15 required=3,confirmed,U
 FS-003045,25902870,10.1111/acel.12341,retrieved_oa,europepmc,https://europepmc.org/articles/PMC4531076?pdf=render,aeecd6d94e77e1bcd9882dea087f537ace803ca1d2c5ab7ab640659affd58b27,1606354,True,title_word_hits=7/7 required=3,confirmed,U
