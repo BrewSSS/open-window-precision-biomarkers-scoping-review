@@ -94,9 +94,12 @@ def clean(value: str) -> str:
     return ILLEGAL_CHARACTERS_RE.sub("", value)
 
 
+RETRIEVED_STATUSES = {"retrieved_oa", "retrieved_manual"}
+
+
 def retrieved_ids() -> set[str]:
     rows = list(csv.DictReader(FETCH_MANIFEST.open(newline="", encoding="utf-8")))
-    return {r["record_id"] for r in rows if r.get("status") == "retrieved_oa"}
+    return {r["record_id"] for r in rows if r.get("status") in RETRIEVED_STATUSES}
 
 
 def load_valid_runs(ids: set[str], runs_dir: Path) -> dict[str, dict]:

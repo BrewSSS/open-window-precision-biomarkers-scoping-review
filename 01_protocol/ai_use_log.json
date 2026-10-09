@@ -602,6 +602,62 @@
         "re-extraction of the 130 under v1.1 (explicitly out of scope for this task)",
         "human verification of the 10-report pilot outputs themselves"
       ]
+    },
+    {
+      "date": "2026-10-09",
+      "tool": "Claude Code (Anthropic) desktop CLI, running scripts/ft_prefill_run.py through the Codex CLI (OpenAI, codex_stream_call.py)",
+      "coordinator_model": "claude-sonnet-5",
+      "model": "gpt-6-sol",
+      "model_settings": "reasoning effort high; one codex exec per record; concurrency 8; one resume pass (1/67 records needed it, a mid-stream network disconnect)",
+      "task": "PRE-010/PRE-011 full-text AI pre-fill, batch 2 (D): 67 reports with status retrieved_manual in fulltext_fetch_manifest.csv (A's manually downloaded OA PDFs; batch grew from 64 to 67 mid-run when 3 more PDFs were registered). Used new prompt ai_prefill/ft_screen_prompt_v1_1.md (v1 with only the age_rule_check paragraph replaced by amendment PRE-011) so the age rule applied at generation time rather than needing a later deterministic re-derivation pass.",
+      "prompt_reference": {
+        "file": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_screen_prompt_v1_1.md",
+        "version": "v1.1, 2026-10-09 (PRE-010 + PRE-011)",
+        "sha256": "see ai_prefill/run_manifest.json entries with family=sol, prompt_version=v1_1"
+      },
+      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_screen_schema_v1.json (unchanged; age_rule_check enum values kept, meaning of mean_minus_2SD_below_18_unresolved relabelled by the prompt, not the schema)",
+      "records": 67,
+      "concurrency": 8,
+      "run_summary": "67/67 valid (63/64 first try on the original 64, 1 resumed after a network disconnect; the 3 late additions 3/3 first try). Disposition: INCLUDE_A 35, INCLUDE_A_AND_B 22, EXCLUDE 6, AWAITING_CLASSIFICATION 3, INCLUDE_B 1. age_rule_check: adults_confirmed 61, mean_minus_2SD_below_18_unresolved 3, not_applicable 2, under_18_included 1. One record, FS-000504 (locally OCR'd by A from a scanned PDF), had no [[page N]] markers; patched with one synthetic [[page 1]] marker before running so the scanned-text heuristic did not wrongly skip it (original text saved in fulltext/_backup_prefill_batch2_2026-10-09/, git-ignored).",
+      "output_sources": [
+        "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/runs/sol/*.json (git-ignored, 67 of 216 files)",
+        "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/run_manifest.json (67 new entries, family=sol, prompt_version=v1_1)",
+        "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_prefill_summary_2026-10-09.md (Batch 2 section)",
+        "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_B.xlsx (git-ignored; written via scripts/ft_prefill_to_workbook.py --reviewer B --family sol)"
+      ],
+      "human_verification_status": "Not yet performed. B still needs to read every one of these 67 full texts and override any pre-filled value disagreed with; final values are B's decision of record.",
+      "not_performed": [
+        "human verification of any of these 67 pre-filled record-decisions",
+        "re-running the PRE-011 deterministic rule script (scripts/apply_pre011_to_ft_prefill.py) on this batch: not needed, PRE-011 was applied at generation time via prompt v1.1"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "tool": "Claude Code (Anthropic) desktop CLI, running scripts/claude_ft_prefill_run.py through Claude Code's own documented headless CLI (`claude -p`, team subscription)",
+      "coordinator_model": "claude-sonnet-5",
+      "model": "claude-sonnet (headless)",
+      "model_settings": "reasoning effort medium; concurrency 3 (raised from the prior batch's 2 per this task's brief); --trim; one pass only, 0 resume needed",
+      "task": "PRE-010/PRE-011 full-text AI pre-fill, batch 2 (D), C side: same 67 retrieved_manual reports as the Sol run above, same prompt (ft_screen_prompt_v1_1.md, PRE-011) and schema. Wall time (~833 s / 13.9 min for all 67) was tracked against this task's 25-minute stop-and-substitute threshold; the Sol-effort-medium fallback (pre-approved by A for when Claude is unavailable/unstable) was not triggered.",
+      "prompt_reference": {
+        "file": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_screen_prompt_v1_1.md",
+        "version": "v1.1, 2026-10-09 (PRE-010 + PRE-011)",
+        "sha256": "see ai_prefill/run_manifest.json entries with family=claude_sonnet, prompt_version=v1_1, model=claude-sonnet, record_id in this batch"
+      },
+      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_screen_schema_v1.json (unchanged)",
+      "records": 67,
+      "concurrency": 3,
+      "run_summary": "67/67 valid, 0 invalid, 0 rate/usage-limit pauses, 0 schema-repair retries. Disposition: INCLUDE_A 42, INCLUDE_A_AND_B 10, EXCLUDE 6, AWAITING_CLASSIFICATION 3, INCLUDE_B 6. Agreement with the Sol side on the same 67 records (pre-fill vs pre-fill, not a human reliability statistic): exact disposition match 46/67 (68.7%), binary include-vs-not match 59/67 (88.1%). Cost (CLI-reported) $6.25 for the batch.",
+      "output_sources": [
+        "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/runs/claude_sonnet/*.json (git-ignored, 67 of 216 files)",
+        "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/run_manifest.json (67 new entries merged in, family=claude_sonnet, prompt_version=v1_1)",
+        "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_prefill_summary_2026-10-09.md (Batch 2 section)",
+        "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_C.xlsx (git-ignored; written via scripts/ft_prefill_to_workbook.py --reviewer C --family claude_sonnet)"
+      ],
+      "human_verification_status": "Not yet performed. C still needs to read every one of these 67 full texts and override any pre-filled value disagreed with; final values are C's decision of record.",
+      "not_performed": [
+        "human verification of any of these 67 pre-filled record-decisions",
+        "the pre-approved Sol-effort-medium C-side fallback (not triggered; Claude finished within the 25-minute budget)"
+      ]
     }
   ],
   "future_entry_fields": [

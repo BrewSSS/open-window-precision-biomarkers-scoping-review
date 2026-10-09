@@ -55,24 +55,27 @@ FETCH_MANIFEST = FULLTEXT_DIR / "fulltext_fetch_manifest.csv"
 PDF_DIR = ROOT / "fulltexts/V"
 TEXT_DIR = FULLTEXT_DIR / "V_text"
 AI_PREFILL_DIR = FULLTEXT_DIR / "ai_prefill"
-RUNS_DIR = AI_PREFILL_DIR / "runs/sol"
-PROMPT_PATH = AI_PREFILL_DIR / "ft_screen_prompt_v1.md"
+DEFAULT_PROMPT_PATH = AI_PREFILL_DIR / "ft_screen_prompt_v1.md"
 SCHEMA_PATH = AI_PREFILL_DIR / "ft_screen_schema_v1.json"
 RUN_MANIFEST_PATH = AI_PREFILL_DIR / "run_manifest.json"
 
 MANIFEST_LOCK = Lock()
+RUNS_DIR = AI_PREFILL_DIR / "runs/sol"  # set per-invocation in main() from --family
 
 
 # -------------------------------------------------------------------------------------------
 # Record selection
 # -------------------------------------------------------------------------------------------
+RETRIEVED_STATUSES = {"retrieved_oa", "retrieved_manual"}
+
+
 def retrieved_records(ids: list[str] | None) -> list[str]:
     rows = list(csv.DictReader(FETCH_MANIFEST.open(newline="", encoding="utf-8")))
-    retrieved = {r["record_id"] for r in rows if r.get("status") == "retrieved_oa"}
+    retrieved = {r["record_id"] for r in rows if r.get("status") in RETRIEVED_STATUSES}
     if ids:
         missing = [i for i in ids if i not in retrieved]
         if missing:
-            sys.exit(f"--ids record(s) not status=retrieved_oa in {FETCH_MANIFEST.name}: {missing}")
+            sys.exit(f"--ids record(s) not status in {sorted(RETRIEVED_STATUSES)} in {FETCH_MANIFEST.name}: {missing}")
         return sorted(ids)
     return sorted(retrieved)
 
@@ -238,16 +241,26 @@ def main(argv=None) -> int:
     ap.add_argument("--force", action="store_true", help="redo records that already have a valid run")
     ap.add_argument("--status-file", type=Path, default=Path("/tmp/triage/STATUS_FT_PREFILL.md"))
     ap.add_argument("--status-every-s", type=float, default=600.0)
+    ap.add_argument("--prompt-path", type=Path, default=DEFAULT_PROMPT_PATH,
+                     help="override the pre-fill prompt file (e.g. ft_screen_prompt_v1_1.md, PRE-011)")
+    ap.add_argument("--family", default="sol",
+                     help="runs/<family>/ output subdir and manifest 'family' tag (default sol; "
+                          "e.g. sol_medium for a reduced-effort Sol substitution run)")
     args = ap.parse_args(argv)
+
+    global RUNS_DIR
+    RUNS_DIR = AI_PREFILL_DIR / "runs" / args.family
 
     ids = [i.strip() for i in args.ids.split(",")] if args.ids else None
     record_ids = retrieved_records(ids)
     if not record_ids:
-        sys.exit("no retrieved_oa records found")
+        sys.exit("no retrieved_oa/retrieved_manual records found")
 
-    system_prompt, user_template = T.parse_prompt_file(PROMPT_PATH)
+    prompt_path = args.prompt_path
+    prompt_version = prompt_path.stem.rsplit("_prompt_", 1)[-1] if "_prompt_" in prompt_path.stem else prompt_path.stem
+    system_prompt, user_template = T.parse_prompt_file(prompt_path)
     schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
-    prompt_sha256 = hashlib.sha256(PROMPT_PATH.read_bytes()).hexdigest()
+    prompt_sha256 = hashlib.sha256(prompt_path.read_bytes()).hexdigest()
     schema_sha256 = hashlib.sha256(SCHEMA_PATH.read_bytes()).hexdigest()
     meta = load_meta()
 
@@ -280,7 +293,8 @@ def main(argv=None) -> int:
     for out in results:
         manifest_entries.append({
             "record_id": out["record_id"], "model": out.get("model", args.model),
-            "effort": out.get("effort", args.effort), "prompt_sha256": prompt_sha256,
+            "effort": out.get("effort", args.effort), "family": args.family,
+            "prompt_sha256": prompt_sha256, "prompt_version": prompt_version,
             "schema_sha256": schema_sha256, "seconds": out.get("seconds"), "tokens": out.get("usage"),
             "valid": bool(out.get("valid")), "text_chars": out.get("text_chars"), "pages": out.get("pages"),
             "flagged_for_a": bool(out.get("flagged_for_a")),
@@ -289,8 +303,8 @@ def main(argv=None) -> int:
         existing = []
         if RUN_MANIFEST_PATH.exists():
             existing = json.loads(RUN_MANIFEST_PATH.read_text(encoding="utf-8")).get("entries", [])
-        done_ids = {e["record_id"] for e in manifest_entries}
-        keep = [e for e in existing if e["record_id"] not in done_ids]
+        done_ids = {(e["record_id"], e.get("family", "sol")) for e in manifest_entries}
+        keep = [e for e in existing if (e["record_id"], e.get("family", "sol")) not in done_ids]
         manifest = {"generated_at_utc": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
                     "generator": "scripts/ft_prefill_run.py", "model": args.model, "effort": args.effort,
                     "prompt_sha256": prompt_sha256, "schema_sha256": schema_sha256,

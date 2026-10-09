@@ -20,9 +20,12 @@ def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--ids", nargs="*"); ap.add_argument("--family", default="claude_sonnet")
     ap.add_argument("--model", default="sonnet"); ap.add_argument("--effort", default="medium"); ap.add_argument("--concurrency", type=int, default=2)
     ap.add_argument("--timeout", type=int, default=900); ap.add_argument("--trim", action="store_true"); ap.add_argument("--max-input-chars", type=int, default=60000)
+    ap.add_argument("--prompt-path", type=Path, default=PROMPT, help="override the pre-fill prompt file (e.g. ft_screen_prompt_v1_1.md, PRE-011)")
     a = ap.parse_args()
-    schema = json.loads(SCHEMA.read_text()); schema_for_cli = {k: v for k, v in schema.items() if k not in ("$schema", "$id")}; schema_str = json.dumps(schema_for_cli); system_prompt, user_template = T.parse_prompt_file(PROMPT)
-    prompt_sha = hashlib.sha256(PROMPT.read_bytes()).hexdigest()
+    prompt_path = a.prompt_path
+    schema = json.loads(SCHEMA.read_text()); schema_for_cli = {k: v for k, v in schema.items() if k not in ("$schema", "$id")}; schema_str = json.dumps(schema_for_cli); system_prompt, user_template = T.parse_prompt_file(prompt_path)
+    prompt_sha = hashlib.sha256(prompt_path.read_bytes()).hexdigest()
+    prompt_version = prompt_path.stem.rsplit("_prompt_", 1)[-1] if "_prompt_" in prompt_path.stem else prompt_path.stem
     meta = {r["record_id"]: r for r in csv.DictReader(open(MASTER, newline="", encoding="utf-8"))}
     ids = a.ids or sorted(p.stem for p in TEXT_DIR.glob("*.txt"))
     out_dir = AI / "runs" / a.family; out_dir.mkdir(parents=True, exist_ok=True); log = open(out_dir / "run.log", "a")
@@ -45,7 +48,8 @@ def main():
             if not errs: break
         out = {"record_id": rid, "family": a.family, "model": a.model, "effort": a.effort, "attempts": attempts, "ok": parsed is not None, "valid": not errs,
                "validation_errors": errs or [], "seconds": round(t, 1), "wall_s": round(t, 1), "usage": usage, "cost_usd": cost, "text_chars": chars, "text_chars_sent": len(raw),
-               "pages": pages, "mean_chars_per_page": round(chars / pages, 1) if pages else None, "flagged_for_a": chars < 2000, "trimmed": a.trim, "truncated": trunc, "error": err, "parsed": parsed, "prompt_sha256": prompt_sha}
+               "pages": pages, "mean_chars_per_page": round(chars / pages, 1) if pages else None, "flagged_for_a": chars < 2000, "trimmed": a.trim, "truncated": trunc, "error": err, "parsed": parsed,
+               "prompt_sha256": prompt_sha, "prompt_version": prompt_version}
         f.write_text(json.dumps(out, indent=1, ensure_ascii=False), encoding="utf-8")
         L(f"{rid}: valid={not errs} attempts={attempts} t={round(t)}s disp={(parsed or {}).get('disposition')} usage={usage} cost={cost} err={(err or '')[:80]}")
         return "valid" if not errs else "invalid"
