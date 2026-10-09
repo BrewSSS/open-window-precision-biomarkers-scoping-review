@@ -1,0 +1,1799 @@
+[
+ {
+  "record_id": "FS-003255",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Post-exercise measures include strength, soreness, cortisol, CK, and antioxidant capacity; no eligible immune measure."
+ },
+ {
+  "record_id": "FS-003259",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical SLE cohort; exercise testing assessed capacity, with no exercise-linked immune measure."
+ },
+ {
+  "record_id": "FS-003268",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Obese clinical cohort with asthma or suspected asthma; no separable generally healthy stratum."
+ },
+ {
+  "record_id": "FS-003283",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Case report concerns a patient with Mondor disease; no exercise-linked immune measurement."
+ },
+ {
+  "record_id": "FS-003304",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Surgical patient cohort; exercise testing assessed heart rate recovery, without exercise-linked immune measurement."
+ },
+ {
+  "record_id": "FS-003326",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical allergy cohort; exercise-related symptoms were audited without an identified exercise bout."
+ },
+ {
+  "record_id": "FS-003339",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Post-ICU clinical cohort; inflammation was measured during rehabilitation without an identified exercise bout."
+ },
+ {
+  "record_id": "FS-003372",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT05",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "CRP was measured at rest; recovery measurements concerned lipid metabolism, not an immune marker."
+ },
+ {
+  "record_id": "FS-003380",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT05"
+  ],
+  "study_type_hint": "other",
+  "note": "Coronary care patients; inflammatory markers were sampled at admission, before the exercise test."
+ },
+ {
+  "record_id": "FS-003395",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cardiac stress-test and peripheral arterial disease patients form clinical cohorts; no generally healthy stratum is identified."
+ },
+ {
+  "record_id": "FS-003410",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Pre- and post-marathon inflammatory adipokines measured in runners."
+ },
+ {
+  "record_id": "FS-003416",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Only soreness and limb circumference measured; no eligible immune marker."
+ },
+ {
+  "record_id": "FS-003446",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy controls had white blood cell counts measured before and after treadmill exercise."
+ },
+ {
+  "record_id": "FS-003466",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Asthma and COPD patients only; peak expiratory flow measured without an immune marker."
+ },
+ {
+  "record_id": "FS-003476",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Acute stroke patients; no exercise exposure."
+ },
+ {
+  "record_id": "FS-003507",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Clinical cohort of psoriasis patients."
+ },
+ {
+  "record_id": "FS-003510",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Both exercise-test cohorts have type I diabetes."
+ },
+ {
+  "record_id": "FS-003516",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Myocardial bridging patients were compared with controls; no exercise bout was studied."
+ },
+ {
+  "record_id": "FS-003520",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Irradiated blood and slides were used for laboratory biodosimetry, without physical exercise or an immune outcome."
+ },
+ {
+  "record_id": "FS-003566",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "The cohort consists of patients with primary antiphospholipid syndrome."
+ },
+ {
+  "record_id": "FS-003573",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Matched controls underwent exercise with baseline and recovery leukocyte measurements."
+ },
+ {
+  "record_id": "FS-003589",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Exercise testing screened for heart disease; acute phase reactants were analyzed by COPD severity."
+ },
+ {
+  "record_id": "FS-003603",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Only patients diagnosed with peripheral arterial disease were studied."
+ },
+ {
+  "record_id": "FS-003628",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Exercise-induced asthma is a phenotype; no exercise bout or bout-linked sampling is described."
+ },
+ {
+  "record_id": "FS-003641",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Handgrip exercise is identifiable; IL-6 timing relative to exercise is unclear."
+ },
+ {
+  "record_id": "FS-003736",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Pre/post eccentric exercise outcomes include soreness, torque, and thigh circumference, but no eligible immune measure."
+ },
+ {
+  "record_id": "FS-003740",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Participants are allergy patients; exercise is mentioned only as a possible reaction cofactor."
+ },
+ {
+  "record_id": "FS-003748",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Survey concerns patients with primary immunodeficiency; no bout-linked immune sampling is described."
+ },
+ {
+  "record_id": "FS-003750",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Drop jumps have pre/post hs-CRP measurements and a placebo arm."
+ },
+ {
+  "record_id": "FS-003784",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Monocyte measures were drawn before angiography; no exercise-linked immune sampling is described."
+ },
+ {
+  "record_id": "FS-003790",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric bout with recovery sampling and CRP; carbohydrate comparison arm permits exercise-response assessment."
+ },
+ {
+  "record_id": "FS-003837",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Original experiments use myotubes and mice; no original human exercise measurements."
+ },
+ {
+  "record_id": "FS-003868",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Case-only cohort consists of patients with chronic beryllium disease."
+ },
+ {
+  "record_id": "FS-003877",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT05"
+  ],
+  "study_type_hint": "other",
+  "note": "Human exercise-test participants have pulmonary arterial hypertension; no post-exercise immune sample is reported."
+ },
+ {
+  "record_id": "FS-003899",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT05",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Exercise tests assess capacity; no post-cessation sample or eligible immune measure is reported."
+ },
+ {
+  "record_id": "FS-003916",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Review of measles eradication policy; no exercise study."
+ },
+ {
+  "record_id": "FS-003944",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy adults; jump bout with pre/post IL-6 and placebo comparison."
+ },
+ {
+  "record_id": "FS-004045",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Connective tissue disease patients; outcomes are hemodynamic, without an eligible immune measure."
+ },
+ {
+  "record_id": "FS-004087",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical anaphylaxis cohort; exercise is reported only as a possible cofactor."
+ },
+ {
+  "record_id": "FS-004117",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Orange allergy patient cohort; no exercise exposure."
+ },
+ {
+  "record_id": "FS-004214",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07",
+   "FT08"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Metastatic melanoma treatment cohort; supportive care combines exercise with other interventions."
+ },
+ {
+  "record_id": "FS-004228",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Pericarditis patients underwent exercise testing for ECG findings."
+ },
+ {
+  "record_id": "FS-004245",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Postpartum biomarker follow-up reports no exercise exposure."
+ },
+ {
+  "record_id": "FS-004259",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Study includes only post-myocardial-infarction patients and reports no immune measure."
+ },
+ {
+  "record_id": "FS-004322",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Post-exercise outcomes are soreness, strength, range of motion, and CK; no eligible immune measure."
+ },
+ {
+  "record_id": "FS-004360",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "SSC bout with baseline and elevated IL-10 at 48 hours."
+ },
+ {
+  "record_id": "FS-004361",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Three identified LIST bouts with inflammatory markers; confirm age range and sampling details at full text."
+ },
+ {
+  "record_id": "FS-004378",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Cell-culture study with no exercise exposure."
+ },
+ {
+  "record_id": "FS-004394",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Children with juvenile arthritis and healthy child controls; no immune measure."
+ },
+ {
+  "record_id": "FS-004410",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Match study measured performance, soreness and well-being, without an eligible immune marker."
+ },
+ {
+  "record_id": "FS-004449",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Clinical food-allergy patients; retrospective survey lacks bout-linked immune sampling."
+ },
+ {
+  "record_id": "FS-004551",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Exercised mdx mice; three weeks of wheel running without bout-linked sampling."
+ },
+ {
+  "record_id": "FS-004600",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT03",
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "In vitro cell analysis from mitochondrial-disease patients; no exercise intervention."
+ },
+ {
+  "record_id": "FS-004611",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Pneumonia and exercise-induced rhabdomyolysis are clinical cohorts."
+ },
+ {
+  "record_id": "FS-004638",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Sequenced swine influenza viruses; no original human exercise measurements."
+ },
+ {
+  "record_id": "FS-004662",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Allergy patient cohorts; exercise is reported only as an anaphylaxis cofactor."
+ },
+ {
+  "record_id": "FS-004710",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Fontan patient cohort; lymphocyte counts are unrelated to an exercise bout."
+ },
+ {
+  "record_id": "FS-004711",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "30 km running bout with baseline and endpoint neutrophil counts; cessation timing needs full-text review."
+ },
+ {
+  "record_id": "FS-004724",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Treadmill exercise test and immune markers reported; sampling relation to the test is unclear."
+ },
+ {
+  "record_id": "FS-004740",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Exercise-test associations concern unstable angina patients; healthy controls provide no reported exercise response."
+ },
+ {
+  "record_id": "FS-004746",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Three patients with muscular dystrophy; no exercise bout was studied."
+ },
+ {
+  "record_id": "FS-004753",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Heart failure patients; exercise tests assess functional status, not a bout-linked immune response."
+ },
+ {
+  "record_id": "FS-004772",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "TNF-α measured before and after an identified eccentric exercise bout."
+ },
+ {
+  "record_id": "FS-004817",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Heart failure patients; outcomes are hemodynamic and functional, with no eligible immune measure."
+ },
+ {
+  "record_id": "FS-004821",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Clinical exercise-induced asthma cohort; no separable generally healthy stratum."
+ },
+ {
+  "record_id": "FS-004832",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy adults completed resistance exercise; pre- and postexercise cytokines were measured in a placebo-controlled study."
+ },
+ {
+  "record_id": "FS-004833",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "RA-related clinical cohort; exercise testing was diagnostic, with no bout-linked immune response."
+ },
+ {
+  "record_id": "FS-004843",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "EPO dosing and detection study reports no exercise bout or eligible immune measure."
+ },
+ {
+  "record_id": "FS-004852",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Cross-sectional fitness and inflammation measures have no bout-linked sampling."
+ },
+ {
+  "record_id": "FS-004919",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical food-allergy case series reports reactions, without a qualifying exercise study or measured immune marker."
+ },
+ {
+  "record_id": "FS-004952",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "COPD patient cohort; microvesicles correlate with disease severity, without bout-linked sampling."
+ },
+ {
+  "record_id": "FS-004956",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Asthmatic cohort includes a 17-year-old, with no separable adult results."
+ },
+ {
+  "record_id": "FS-004962",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Abstract explicitly identifies this as a review."
+ },
+ {
+  "record_id": "FS-004980",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative overview of summation anaphylaxis; no original study is reported."
+ },
+ {
+  "record_id": "FS-004998",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Muscle biopsies and biomarkers are compared across groups, without bout-linked sampling."
+ },
+ {
+  "record_id": "FS-005040",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical case with CPVT and cardiomyopathy; no monitored exercise bout or eligible immune measure."
+ },
+ {
+  "record_id": "FS-005048",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Post-exercise assays were CK and ESR; neither is an eligible immune measure."
+ },
+ {
+  "record_id": "FS-005081",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "All participants were allergy patients; no monitored exercise bout is described."
+ },
+ {
+  "record_id": "FS-005093",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Exercise tests and immune markers are mentioned; blood sampling relative to tests is unclear."
+ },
+ {
+  "record_id": "FS-005103",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT05"
+  ],
+  "study_type_hint": "other",
+  "note": "COPD clinical cohort; inflammatory markers were measured at rest, with no post-exercise immune sample."
+ },
+ {
+  "record_id": "FS-005113",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Before-and-after exercise biopsies were obtained from people experiencing exercise-induced anaphylaxis."
+ },
+ {
+  "record_id": "FS-005141",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Anaphylaxis patient registry; exercise was a cofactor, with no bout-linked immune sampling."
+ },
+ {
+  "record_id": "FS-005153",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Healthy controls performed exercise tests; timing of cytokine sampling is unclear."
+ },
+ {
+  "record_id": "FS-005210",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Non-heart-failure controls performed exercise testing; inflammatory biomarker sampling time is unclear."
+ },
+ {
+  "record_id": "FS-005256",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Hemodialysis patient cohort underwent fistula biopsies, with no exercise exposure."
+ },
+ {
+  "record_id": "FS-005297",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical pulmonary vasculitis cohort; exercise appears only as a symptom trigger."
+ },
+ {
+  "record_id": "FS-005302",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Participants are patients with sepsis."
+ },
+ {
+  "record_id": "FS-005365",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Post-marathon assays cover muscle damage, oxidative stress, and renal injury; no eligible immune measure is reported."
+ },
+ {
+  "record_id": "FS-005386",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative review of cardiac innervation and disease."
+ },
+ {
+  "record_id": "FS-005390",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Wheat allergy patient cohort, with no separable healthy stratum."
+ },
+ {
+  "record_id": "FS-005429",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Multiple sclerosis cohort; this analysis assesses fatigue and aerobic capacity after training, without immune outcomes."
+ },
+ {
+  "record_id": "FS-005460",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric exercise with pre-bout and post-cessation blood samples, IL-6, and a placebo arm."
+ },
+ {
+  "record_id": "FS-005556",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Monocyte oxygen consumption measures bioenergetics; no eligible immune measure or immune-focused omics is reported."
+ },
+ {
+  "record_id": "FS-005633",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Cross-sectional CRP comparison; exercise challenge is mentioned only as a method of confirming asthma."
+ },
+ {
+  "record_id": "FS-005649",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Participants are patients diagnosed with benign prostatic hyperplasia."
+ },
+ {
+  "record_id": "FS-005733",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Pre-bout and post-bout biopsies report inflammatory cell infiltration."
+ },
+ {
+  "record_id": "FS-005736",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "StatPearls review chapter, not original research."
+ },
+ {
+  "record_id": "FS-005781",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Clinical cohort of patients with anaphylaxis."
+ },
+ {
+  "record_id": "FS-005793",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Clinical cohort of patients with confirmed food allergy."
+ },
+ {
+  "record_id": "FS-005798",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT05",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "IF1 sampled only at rest; no post-exercise sample or eligible immune measure."
+ },
+ {
+  "record_id": "FS-005848",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Coronary slow flow patients are a clinical cohort."
+ },
+ {
+  "record_id": "FS-005913",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "IVF patients; follicular sampling relates to hCG administration, with no exercise exposure."
+ },
+ {
+  "record_id": "FS-006012",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "An exercise challenge includes a control cohort and immune responses; sampling details need full-text review."
+ },
+ {
+  "record_id": "FS-006023",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Case patient has Graves’ disease and thyrotoxic periodic paralysis."
+ },
+ {
+  "record_id": "FS-006025",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "T-cell developmental study describes no exercise exposure."
+ },
+ {
+  "record_id": "FS-006026",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy subjects had pre- and post-exercise IL-6 measurements after eccentric exercise."
+ },
+ {
+  "record_id": "FS-006032",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Histidine-containing dipeptide profiling has no stated immune objective or eligible immune measure."
+ },
+ {
+  "record_id": "FS-006083",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise-only control group had baseline and post-exercise leukocyte measurements."
+ },
+ {
+  "record_id": "FS-006094",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Clinical dyspnoea cohort includes pulmonary hypertension; no separable healthy stratum is reported."
+ },
+ {
+  "record_id": "FS-006103",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Narrative account of enzyme deficiency in clinical patients, without original study data."
+ },
+ {
+  "record_id": "FS-006151",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon cohort and plasma TGFB2 changes warrant full-text assessment of sampling and baseline health."
+ },
+ {
+  "record_id": "FS-006211",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Pain sensitivity and muscle soreness were measured; no eligible immune measure is reported."
+ },
+ {
+  "record_id": "FS-006219",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Outcomes are soreness and performance, with no eligible immune measure."
+ },
+ {
+  "record_id": "FS-006261",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Catecholamines and adrenergic receptor responses, including lymphocyte cAMP, do not establish an eligible immune link."
+ },
+ {
+  "record_id": "FS-006265",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Patients with suspected coronary artery disease; no separable healthy stratum is reported."
+ },
+ {
+  "record_id": "FS-006271",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical post-COVID neuropathy cohort; no eligible exercise-linked immune measure reported."
+ },
+ {
+  "record_id": "FS-006276",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Separate non-sarcopenic group has pre- and immediate post-session soluble TNF receptor measures."
+ },
+ {
+  "record_id": "FS-006285",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT02"
+  ],
+  "study_type_hint": "other",
+  "note": "Bibliometric analysis of publications, without original human measurements."
+ },
+ {
+  "record_id": "FS-006306",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Heart failure patient cohort; exercise testing reports hemodynamics, not eligible immune measures."
+ },
+ {
+  "record_id": "FS-006312",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycling HIIT with placebo comparison and post-bout white blood cell and CRP measures."
+ },
+ {
+  "record_id": "FS-006338",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise samples measured growth hormone and testosterone only; no eligible immune measure reported."
+ },
+ {
+  "record_id": "FS-006354",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Participants were patients with obesity; physical activity was surveyed during a weight loss program."
+ },
+ {
+  "record_id": "FS-006355",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "An acute HIIT session and inflammatory markers are reported; their sampling relation needs full-text review."
+ },
+ {
+  "record_id": "FS-006358",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative clinical overview of food allergy manifestations, without original research."
+ },
+ {
+  "record_id": "FS-006361",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative overview comparing exercise-related fatigue across populations, without original research."
+ },
+ {
+  "record_id": "FS-006365",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Cytokines were compared before and after 12 weeks of training; no bout-linked immune sampling is reported."
+ },
+ {
+  "record_id": "FS-006431",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Post-exercise outcomes were soreness and performance; no eligible immune measure was reported."
+ },
+ {
+  "record_id": "FS-006433",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "Repeated exertional work shifts had pre- and post-work blood sampling and an inflammatory marker."
+ },
+ {
+  "record_id": "FS-006451",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Participants were breast cancer patients receiving chemotherapy; the intervention was meditation."
+ },
+ {
+  "record_id": "FS-006469",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Healthy controls and exercise testing are reported; immune sampling relative to the test is unclear."
+ },
+ {
+  "record_id": "FS-006476",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Rheumatoid arthritis patient cohort; no eligible immune response measure reported."
+ },
+ {
+  "record_id": "FS-006490",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Post-mortem brain transcriptomics has no exercise exposure; immune pathways arise from enrichment analysis."
+ },
+ {
+  "record_id": "FS-006496",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Diagnostic discussion without original study data."
+ },
+ {
+  "record_id": "FS-006497",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical polychondritis case; exercise appears only as a symptom trigger."
+ },
+ {
+  "record_id": "FS-006507",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Foot injury patients; bone tissue profiled after training without a linked exercise bout."
+ },
+ {
+  "record_id": "FS-006544",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Exercise testing and white blood cell counts reported; immune sampling time relative to exercise is unclear."
+ },
+ {
+  "record_id": "FS-006564",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Clinical bladder pain cohort; exercise appears only as weekly session frequency."
+ },
+ {
+  "record_id": "FS-006583",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Circulating MIF is reported after exercise; participant source and sampling details are unclear."
+ },
+ {
+  "record_id": "FS-006589",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Narrative overview of inherited and acquired myoadenylate deaminase deficiency."
+ },
+ {
+  "record_id": "FS-006598",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "COPD patient cohort; post-walk outcome is pulmonary arterial pressure, with no immune measure."
+ },
+ {
+  "record_id": "FS-006602",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Exercise and inflammatory markers were studied in mice only."
+ },
+ {
+  "record_id": "FS-006606",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT05"
+  ],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Heart failure patients; reported exercise samples were collected during exercise."
+ },
+ {
+  "record_id": "FS-006630",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy women, acute exercise, and serum NTN4 are reported; sampling details need full text."
+ },
+ {
+  "record_id": "FS-006648",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Post-exercise outcomes are performance, cognition, and soreness; no eligible immune measure is reported."
+ },
+ {
+  "record_id": "FS-006650",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03"
+  ],
+  "study_type_hint": "other",
+  "note": "Introduces a proposed biomarker study in heart failure patients."
+ },
+ {
+  "record_id": "FS-006660",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Eccentric exercise with pre- and post-bout IL-6 and TNF-α measurements."
+ },
+ {
+  "record_id": "FS-006683",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Mouse-only housing study; no identified exercise bout."
+ },
+ {
+  "record_id": "FS-006705",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Computational heart-disease model without original human exercise or immune measurements."
+ },
+ {
+  "record_id": "FS-006728",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Muscle protein synthesis study; inflammatory gene results do not establish an eligible immune-focused analysis."
+ },
+ {
+  "record_id": "FS-006733",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Clinical cohort attending a clinic for persistent post-COVID pulmonary symptoms."
+ },
+ {
+  "record_id": "FS-006747",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Inpatient rehabilitation cohort consists of cancer patients with cachexia."
+ },
+ {
+  "record_id": "FS-006761",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Post-exercise measures assess soreness, muscle structure, glycogen, and enzymes; no eligible immune measure is reported."
+ },
+ {
+  "record_id": "FS-006777",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT08"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Obesity cohort; immune cells measured around diet- and exercise-induced weight loss, without bout-linked sampling or a separable exercise effect."
+ },
+ {
+  "record_id": "FS-006778",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy participants have baseline and post-exercise IL-6 measurements; age requires full-text verification."
+ },
+ {
+  "record_id": "FS-006793",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "All participants have type 2 diabetes; inflammatory markers were assessed only before and after an eight-week program."
+ },
+ {
+  "record_id": "FS-006804",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Lung cancer surgery patients; rehabilitation measurements are not linked to an exercise bout."
+ },
+ {
+  "record_id": "FS-006810",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Cycling time trial with pre- and post-exercise blood counts and a placebo crossover."
+ },
+ {
+  "record_id": "FS-006816",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "After Nordic exercise, outcomes are pain, flexibility, and function; no immune measure is reported."
+ },
+ {
+  "record_id": "FS-006824",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Archived runner sera are compared across assays without an identifiable exercise bout or bout-linked sampling."
+ },
+ {
+  "record_id": "FS-006827",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Comprehensive review rather than an original human study."
+ },
+ {
+  "record_id": "FS-006832",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Only pain was measured; CRP was mentioned but not assayed."
+ },
+ {
+  "record_id": "FS-006834",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Measured soreness, function, and CK, but no eligible immune marker."
+ },
+ {
+  "record_id": "FS-006857",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Clinical allergy cohort; no qualifying exercise exposure."
+ },
+ {
+  "record_id": "FS-006865",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise bout with baseline, post-exercise IL-6 measurements, and a control group."
+ },
+ {
+  "record_id": "FS-006867",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Heart failure cohort; PBMC mitochondrial respiration was not linked to exercise or an eligible immune outcome."
+ },
+ {
+  "record_id": "FS-006869",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Lipedema and lymphedema patient survey; no qualifying bout or immune measurement."
+ },
+ {
+  "record_id": "FS-006877",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Marathon with pre-race and post-race blood samples; blood markers need full-text assessment."
+ },
+ {
+  "record_id": "FS-006886",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Drop-jump bout with baseline, post-exercise samples, and TNF-α in a placebo group."
+ },
+ {
+  "record_id": "FS-006898",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Long COVID patient cohort; no separable healthy exercise-response group described."
+ },
+ {
+  "record_id": "FS-006905",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "cross_sectional_resting",
+  "note": "Platelet donor and storage study has no exercise exposure."
+ },
+ {
+  "record_id": "FS-006915",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "An exercise bout precedes post-exercise immune blood tests; baseline and age details need full-text review."
+ },
+ {
+  "record_id": "FS-006924",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Rat-only subarachnoid hemorrhage study with no exercise exposure."
+ },
+ {
+  "record_id": "FS-006937",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Reports hormones and metabolic myokines, with no eligible immune measure or immune-focused analysis."
+ },
+ {
+  "record_id": "FS-006962",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical food allergy cohort; exercise-induced anaphylaxis appears only as a patient characteristic."
+ },
+ {
+  "record_id": "FS-006964",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Severe heart failure cohort; muscle oxygenation data were analyzed at rest."
+ },
+ {
+  "record_id": "FS-006976",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Study cohorts have Long COVID, ME/CFS, or hEDS; healthy controls have no separate exercise response."
+ },
+ {
+  "record_id": "FS-006992",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy participants had pre-bout and post-cessation inflammatory cell-ratio measurements after a sit-to-stand test."
+ },
+ {
+  "record_id": "FS-007013",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "Human outcomes concern muscle capillaries, endothelial expression, and TNC; immune-related cell findings are in vitro."
+ },
+ {
+  "record_id": "FS-007021",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Exercise challenge and immune biomarkers are reported; biomarker sampling relative to the bout is unclear."
+ },
+ {
+  "record_id": "FS-007031",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT05",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Participants have hypersensitivity pneumonitis; assessments report no post-exercise immune sample or eligible immune measure."
+ },
+ {
+  "record_id": "FS-007044",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Experiments used isolated human airways and mast cells; mannitol only simulated exercise-induced bronchoconstriction."
+ },
+ {
+  "record_id": "FS-007062",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical case of motor neuron disease; former marathon history provides no exercise bout."
+ },
+ {
+  "record_id": "FS-007074",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Online supplement market analysis measured products and claims, not human exercise or immune responses."
+ },
+ {
+  "record_id": "FS-007079",
+  "disposition": "ADVANCE",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Non-MCI group had cytokines measured before and immediately after a walking bout."
+ },
+ {
+  "record_id": "FS-007083",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Connective tissue disease patients underwent prognostic exercise testing; no eligible immune measure is reported."
+ },
+ {
+  "record_id": "FS-007088",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT06",
+  "secondary_codes": [
+   "FT08"
+  ],
+  "study_type_hint": "repeated_bouts_SupportB",
+  "note": "CRP was measured only after matches; no pre-match or non-exercise comparator separates the exercise response."
+ },
+ {
+  "record_id": "FS-007099",
+  "disposition": "AWAITING_CLASSIFICATION",
+  "primary_code": "",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Age 19.6 ± 2.3 years does not establish an adult-only cohort under the specified age rule."
+ },
+ {
+  "record_id": "FS-007115",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "The cohort consists of heart-failure patients; no eligible immune measure is reported."
+ },
+ {
+  "record_id": "FS-007234",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical rhabdomyolysis case with no eligible immune measure."
+ },
+ {
+  "record_id": "FS-007238",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [],
+  "study_type_hint": "chronic_training_only",
+  "note": "Blood markers were measured before and after a 10-week program, with no sample linked to an identified bout."
+ },
+ {
+  "record_id": "FS-007270",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical lung disease case; no eligible exercise-linked immune measure."
+ },
+ {
+  "record_id": "FS-007272",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Reading exercise evaluates MRI scoring, not physical exercise."
+ },
+ {
+  "record_id": "FS-007273",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "chronic_training_only",
+  "note": "Type 2 diabetes cohort; outcomes follow a 12-week program without bout-linked sampling."
+ },
+ {
+  "record_id": "FS-007279",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT04",
+  "secondary_codes": [
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Sterilization survey has no exercise exposure or immune measure."
+ },
+ {
+  "record_id": "FS-007286",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT07",
+  "secondary_codes": [],
+  "study_type_hint": "acute_bout_CoreA",
+  "note": "Healthy controls are separable, but measured kynurenine metabolites are not eligible immune measures."
+ },
+ {
+  "record_id": "FS-007299",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07",
+   "FT08"
+  ],
+  "study_type_hint": "other",
+  "note": "Clinical pain cohort; exercise is embedded in multimodal treatment, with pain outcomes only."
+ },
+ {
+  "record_id": "FS-007318",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT01",
+  "secondary_codes": [
+   "FT03",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Systematic review of food reward trials in obesity."
+ },
+ {
+  "record_id": "FS-007326",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [],
+  "study_type_hint": "other",
+  "note": "All participants are patients with post-stroke spasticity."
+ },
+ {
+  "record_id": "FS-007340",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT03",
+  "secondary_codes": [
+   "FT04",
+   "FT07"
+  ],
+  "study_type_hint": "other",
+  "note": "Back-pain patient trials assess treatment-related pain without bout-linked immune outcomes."
+ },
+ {
+  "record_id": "FS-007350",
+  "disposition": "EXCLUDE_TA",
+  "primary_code": "FT02",
+  "secondary_codes": [
+   "FT04"
+  ],
+  "study_type_hint": "other",
+  "note": "Current study assays monoclonal antibodies; the exercise challenge belongs to previous research."
+ }
+]

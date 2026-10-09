@@ -457,6 +457,39 @@
         "third-read adjudication / merge (scripts/ta_ai_merge.py)",
         "human verification of these 115 ADVANCE / 946 EXCLUDE_TA dispositions"
       ]
+    },
+    {
+      "date": "2026-10-09",
+      "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 5 records per call (after an earlier Claude Sonnet headless-CLI attempt was superseded, see below)",
+      "coordinator_model": "claude-sonnet-5",
+      "model": "gpt-6-sol",
+      "model_settings": "reasoning effort high; 5 records per call, concurrency 16; one run plus one --resume pass per batch CSV",
+      "task": "Stage-2 TITLE/ABSTRACT screening, side C (closed-list strict stand-in), of the same 1,061 records that (re-)entered stage 2 on 2026-10-09 (batches 237-242) already screened by side B",
+      "superseded_attempt": {
+        "tool": "Claude Code (Anthropic) desktop CLI, running the new scripts/claude_ta_standin_run.py directly against the documented headless `claude -p` CLI, 1 record per call",
+        "model": "claude-sonnet (headless subscription)",
+        "model_settings": "effort medium; concurrency 6",
+        "outcome": "10-record smoke test passed (10/10 valid); full run killed by the coordinator after 143/1,061 records (too slow, ETA ~2.5h, competing with other concurrent Claude sessions). Not used for any decision; checkpoints archived outside the repo for the record only."
+      },
+      "prompt_reference": {
+        "file": "../04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_prompt_C_codex_batch.md",
+        "version": "ta_standin_prompt_C.md system prompt and TA rules verbatim; only the single-record-input sentence rewritten for the runner's several-records-per-call batch format (identical replacement wording already used for ta_standin_prompt_B_codex_batch.md)",
+        "sha256": "771f66b9b8cc260875bf53df7d195c037677e3f542354f9299d14ea36415efe8"
+      },
+      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_schema.json (item schema; reused Codex batch wrapper ta_standin_schema_batch_strict.json unmodified from side B, sha256 3ee5a568cce786e4402c775b169b7688b2a8ae7c76018f5e23dd988b42385bb0)",
+      "records": 1061,
+      "concurrency": 16,
+      "run_summary": "6 batch CSVs (200/200/200/200/200/61), 213 sub-batches total, 0 failed batches, 0 invalid/missing records on the first pass, confirmed by a --resume pass (0 reruns needed); token usage input 4,624,660 / output 199,953 / reasoning 140,322. Result: 112 ADVANCE / 948 EXCLUDE_TA / 1 AWAITING_CLASSIFICATION (genuine model output, not a placeholder); EXCLUDE_TA codes FT01 144, FT02 244, FT03 378, FT04 95, FT05 14, FT06 2, FT07 71.",
+      "output_sources": [
+        "../04_screening/formal_2026-10-05_v0.9/ai_stage2/out_C/batch_237.json .. batch_242.json (converted via scripts/ta_standin_to_batch.py)",
+        "../04_screening/formal_2026-10-05_v0.9/ai_stage2/batches_237_242_C_manifest.json (full counts, per-batch usage, hashes, deviations, superseded-attempt record)",
+        "../04_screening/formal_2026-10-05_v0.9/ai_stage2/README.md, section 'Batches 237-242, side C (2026-10-09)'"
+      ],
+      "human_verification_status": "Not yet performed. Blind third-read adjudication of B/C conflicts is scheduled next, followed by merge and validation-readiness triage of new advances.",
+      "not_performed": [
+        "third-read adjudication / merge (scripts/ta_ai_merge.py)",
+        "human verification of these 112 ADVANCE / 948 EXCLUDE_TA / 1 AWAITING_CLASSIFICATION dispositions"
+      ]
     }
   ],
   "future_entry_fields": [

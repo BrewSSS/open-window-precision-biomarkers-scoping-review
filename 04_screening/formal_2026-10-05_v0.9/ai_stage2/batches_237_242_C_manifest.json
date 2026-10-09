@@ -1,0 +1,273 @@
+{
+  "task": "Stage-2 TITLE/ABSTRACT AI stand-in screening, side C (closed-list strict), on the 1,061 PRE-007 stage-1 re-entrants (batches 237-242)",
+  "input_population": {
+    "description": "Same 1,061-record population as the batches_237_242_B_manifest.json side-B run: 142 human-advanced sample/pilot records (71e472e) + 919 records re-advanced by the PRE-007 TI_rules v1.1 title re-screen (e67666a), listed in 04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/stage2_new_entrants.csv. The AI stand-in was not told these records had any stage-1 history.",
+    "n_records": 1061,
+    "input_csv_local_path": "/tmp/ta_screen2/batches/batch_237.csv .. batch_242.csv (abstracts; outside repo, git-ignored)"
+  },
+  "side": "C",
+  "superseded_attempt": {
+    "backend": "Claude Sonnet, headless CLI (scripts/claude_ta_standin_run.py, new script written for this run), effort medium, concurrency 6, one record per call",
+    "reason_superseded": "Coordinator (A) killed the run after 24 min (143/1,061 done, ETA ~2.5h): too slow and competing for the same Claude subscription session as other concurrent work.",
+    "n_records_completed": 143,
+    "disposition": "Not used for any out_C file or downstream merge. Per-record checkpoints remain archived (not committed) under /tmp/ta_screen2/out_C_claude/batch_237/ for the record only.",
+    "script_kept": "scripts/claude_ta_standin_run.py is committed as a working, smoke-tested (10/10 valid) general-purpose Claude headless stand-in runner for future use; it was not used for the side-C decisions of record in this manifest."
+  },
+  "model": "gpt-6-sol",
+  "effort": "high",
+  "records_per_call": 5,
+  "concurrency": 16,
+  "provider": "codex (ChatGPT-subscription auth, isolated CODEX_HOME=~/.codex-triage)",
+  "runner": "scripts/triage_codex_run.py (unmodified)",
+  "batches": [
+    "batch_237",
+    "batch_238",
+    "batch_239",
+    "batch_240",
+    "batch_241",
+    "batch_242"
+  ],
+  "n_batches": 6,
+  "n_sub_batches_total": 213,
+  "n_records_total": 1061,
+  "prompt_file": "04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_prompt_C_codex_batch.md",
+  "prompt_sha256": "771f66b9b8cc260875bf53df7d195c037677e3f542354f9299d14ea36415efe8",
+  "prompt_note": "ta_standin_prompt_C.md system prompt and TA rules verbatim, unchanged; only the one sentence describing single-record-per-request input was rewritten for the runner's several-records-per-call batch format and the {\"results\": [...]} output wrapper, using the identical replacement sentence already used for ta_standin_prompt_B_codex_batch.md (same precedent).",
+  "schema_batch_file": "04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_schema_batch_strict.json",
+  "schema_batch_sha256": "3ee5a568cce786e4402c775b169b7688b2a8ae7c76018f5e23dd988b42385bb0",
+  "schema_batch_note": "Reused the existing strict batch wrapper unmodified (same file/hash as batches_237_242_B_manifest.json); the primary_code non-empty-iff-EXCLUDE_TA conditional was verified post hoc on all 1,061 converted records (0 violations), same approach as side B.",
+  "schema_item_file": "04_screening/formal_2026-10-05_v0.9/ai_stage2/ta_standin_schema.json",
+  "schema_item_sha256": "c381bca4a7539283c3568098552ea738fa3bdfd7415e6c45844054958c41a410",
+  "smoke_test": "No separate Codex smoke test was run for side C: the batch schema, prompt-adaptation pattern and runner were already proven for side B on this exact record population (batches_237_242_B_manifest.json) and for the earlier PRE-007 title re-screen; the Claude headless attempt (superseded, above) served as the de facto smoke test of the prompt adaptation (10/10 records validated against the per-record schema before the full run was attempted).",
+  "resume_pass": {
+    "note": "One --resume pass per batch CSV, run immediately after the first pass. All 213 sub-batches (5 records each, batch_242's last sub-batch partial) across all 6 batches were already valid; 0 reruns needed.",
+    "batches_already_valid": 213,
+    "sub_batches_rerun": 0
+  },
+  "failed_batches_any_batch": [],
+  "n_invalid_or_missing_records_after_resume": 0,
+  "awaiting_placeholders_written_by_converter": 0,
+  "awaiting_classification_from_model": 1,
+  "total_usage": {
+    "input_tokens": 4624660,
+    "reasoning_output_tokens": 140322,
+    "output_tokens": 199953
+  },
+  "counts": {
+    "disposition": {
+      "EXCLUDE_TA": 948,
+      "ADVANCE": 112,
+      "AWAITING_CLASSIFICATION": 1
+    },
+    "exclude_by_primary_code": {
+      "FT03": 378,
+      "FT07": 71,
+      "FT04": 95,
+      "FT01": 144,
+      "FT02": 244,
+      "FT05": 14,
+      "FT06": 2
+    },
+    "study_type_hint": {
+      "other": 732,
+      "acute_bout_CoreA": 203,
+      "cross_sectional_resting": 81,
+      "chronic_training_only": 41,
+      "repeated_bouts_SupportB": 4
+    }
+  },
+  "per_batch": {
+    "237": {
+      "n_records": 200,
+      "n_sub_batches": 40,
+      "failed_sub_batches": [],
+      "total_usage": {
+        "input_tokens": 863985,
+        "reasoning_output_tokens": 30902,
+        "output_tokens": 42417
+      },
+      "dispositions": {
+        "EXCLUDE_TA": 158,
+        "ADVANCE": 42
+      },
+      "exclude_primary_code": {
+        "FT03": 86,
+        "FT07": 20,
+        "FT04": 29,
+        "FT01": 8,
+        "FT02": 7,
+        "FT05": 8
+      },
+      "study_type_hint": {
+        "other": 97,
+        "acute_bout_CoreA": 65,
+        "cross_sectional_resting": 32,
+        "chronic_training_only": 6
+      },
+      "input_batch_csv_local_sha256": "49b81f5d8003c7f119f83d735d7983fffee44b328d9b7d24929ed50f5aff23fc",
+      "out_c_sha256": "31ed6bc4d7664595a0c24b95160737fcd776f8de3f40a32262af2a09ca8eb429"
+    },
+    "238": {
+      "n_records": 200,
+      "n_sub_batches": 40,
+      "failed_sub_batches": [],
+      "total_usage": {
+        "input_tokens": 881218,
+        "reasoning_output_tokens": 31990,
+        "output_tokens": 43403
+      },
+      "dispositions": {
+        "EXCLUDE_TA": 159,
+        "ADVANCE": 40,
+        "AWAITING_CLASSIFICATION": 1
+      },
+      "exclude_primary_code": {
+        "FT07": 23,
+        "FT03": 89,
+        "FT05": 3,
+        "FT02": 13,
+        "FT04": 16,
+        "FT01": 14,
+        "FT06": 1
+      },
+      "study_type_hint": {
+        "acute_bout_CoreA": 60,
+        "other": 100,
+        "cross_sectional_resting": 25,
+        "chronic_training_only": 12,
+        "repeated_bouts_SupportB": 3
+      },
+      "input_batch_csv_local_sha256": "f23ca0542dd83350868e5fcbfa536233b25ffbe341bd9be674660b9907bba967",
+      "out_c_sha256": "de6045ff941a4e282c9fc5f6ffea4bc65bd29766ef59f4d7e65fdc898d08472d"
+    },
+    "239": {
+      "n_records": 200,
+      "n_sub_batches": 40,
+      "failed_sub_batches": [],
+      "total_usage": {
+        "input_tokens": 866399,
+        "reasoning_output_tokens": 29388,
+        "output_tokens": 40573
+      },
+      "dispositions": {
+        "EXCLUDE_TA": 179,
+        "ADVANCE": 21
+      },
+      "exclude_primary_code": {
+        "FT01": 38,
+        "FT03": 72,
+        "FT02": 41,
+        "FT07": 18,
+        "FT04": 8,
+        "FT05": 1,
+        "FT06": 1
+      },
+      "study_type_hint": {
+        "other": 124,
+        "acute_bout_CoreA": 49,
+        "chronic_training_only": 19,
+        "cross_sectional_resting": 7,
+        "repeated_bouts_SupportB": 1
+      },
+      "input_batch_csv_local_sha256": "122251df76af7358c4910f3aa64267ed51e4075504f39fb4bac3c08adb3df23f",
+      "out_c_sha256": "aec4c461446c8eabd54b0804145013c5dedbb5107191d01d25e43a8d009268bc"
+    },
+    "240": {
+      "n_records": 200,
+      "n_sub_batches": 40,
+      "failed_sub_batches": [],
+      "total_usage": {
+        "input_tokens": 862453,
+        "reasoning_output_tokens": 24183,
+        "output_tokens": 35176
+      },
+      "dispositions": {
+        "EXCLUDE_TA": 193,
+        "ADVANCE": 7
+      },
+      "exclude_primary_code": {
+        "FT02": 48,
+        "FT03": 71,
+        "FT07": 10,
+        "FT04": 14,
+        "FT01": 48,
+        "FT05": 2
+      },
+      "study_type_hint": {
+        "other": 160,
+        "acute_bout_CoreA": 27,
+        "cross_sectional_resting": 10,
+        "chronic_training_only": 3
+      },
+      "input_batch_csv_local_sha256": "6a9b6802a3a63845548c7350eeb78bc3539bf2be58fb7a96ec6f5bb667a25224",
+      "out_c_sha256": "8a3838b1ddb9b2eb763a5f281d01ddf5fc268dd4384490ad23a325344b742cc6"
+    },
+    "241": {
+      "n_records": 200,
+      "n_sub_batches": 40,
+      "failed_sub_batches": [],
+      "total_usage": {
+        "input_tokens": 867125,
+        "reasoning_output_tokens": 18405,
+        "output_tokens": 29496
+      },
+      "dispositions": {
+        "EXCLUDE_TA": 199,
+        "ADVANCE": 1
+      },
+      "exclude_primary_code": {
+        "FT02": 105,
+        "FT04": 22,
+        "FT03": 45,
+        "FT01": 27
+      },
+      "study_type_hint": {
+        "other": 192,
+        "chronic_training_only": 1,
+        "cross_sectional_resting": 6,
+        "acute_bout_CoreA": 1
+      },
+      "input_batch_csv_local_sha256": "a14bef6124c05b31d606659ba13bc6427d9a5a0e0192ca1a43c1a42ac29b0896",
+      "out_c_sha256": "d021a3ab787eae77953d32a2eec1500c8b83444dd8d31213fd75872f7d2c3868"
+    },
+    "242": {
+      "n_records": 61,
+      "n_sub_batches": 13,
+      "failed_sub_batches": [],
+      "total_usage": {
+        "input_tokens": 283480,
+        "reasoning_output_tokens": 5454,
+        "output_tokens": 8888
+      },
+      "dispositions": {
+        "EXCLUDE_TA": 60,
+        "ADVANCE": 1
+      },
+      "exclude_primary_code": {
+        "FT01": 9,
+        "FT03": 15,
+        "FT02": 30,
+        "FT04": 6
+      },
+      "study_type_hint": {
+        "other": 59,
+        "cross_sectional_resting": 1,
+        "acute_bout_CoreA": 1
+      },
+      "input_batch_csv_local_sha256": "6aaabc80c21b9c0d11d3d27922e5f0cb4326d694c008c432bb1ed9774943af8b",
+      "out_c_sha256": "fc0a5d92bb23b468090080ee2e0337bd4436f2ff60d26f08b6cb8b1b29d7de96"
+    }
+  },
+  "deviations": [
+    "Side C was first attempted with Claude Sonnet via a new headless-CLI stand-in runner (scripts/claude_ta_standin_run.py); that attempt was killed by the coordinator after 143/1,061 records (too slow, competing for the Claude subscription session with other concurrent work) and is not used -- see superseded_attempt above.",
+    "Side C was re-run with GPT-6 Sol, effort HIGH (not medium, matching the coordinator's explicit instruction for this re-do; side B used effort medium) via scripts/triage_codex_run.py, following the same batch/prompt/schema adaptation precedent as side B and the earlier PRE-007 title re-screen (same-model-family, different-orientation stand-ins, as used for batches 76-234).",
+    "Prompt adaptation: changed exactly the one sentence in ta_standin_prompt_C.md describing single-record input (same replacement wording already used for ta_standin_prompt_B_codex_batch.md); all orientation-C closed-list-strict rule text, hierarchy, exclusion codes and practical guidance left byte-identical.",
+    "Schema adaptation: reused ta_standin_schema_batch_strict.json unmodified from side B (same results[] wrapper; Codex structured-output mode does not reliably support the item schema's allOf/if-then-else conditional); the conditional was verified post hoc (0 violations across 1,061 records).",
+    "One genuine AWAITING_CLASSIFICATION disposition was returned by the model (batch_238), not a converter placeholder (0 invalid/missing records after resume); it is real model output under orientation C's 'abstract empty or uninformative' rule."
+  ],
+  "human_verification_status": "Not yet performed. Blind third reads of B/C conflicts are scheduled next (stage 2 of this task), followed by merge (stage 3) and validation-readiness triage of new advances (stage 4).",
+  "not_performed": [
+    "third-read adjudication / merge (scripts/ta_ai_merge.py) -- scheduled next",
+    "human verification of these 112 ADVANCE / 948 EXCLUDE_TA / 1 AWAITING_CLASSIFICATION dispositions"
+  ]
+}
