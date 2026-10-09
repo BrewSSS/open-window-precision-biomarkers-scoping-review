@@ -1,55 +1,61 @@
 {
-  "generated_at": "2026-10-08T05:44:58Z",
-  "stage2_records": 9277,
-  "merged": 9277,
+  "generated_at": "2026-10-09T06:44:46Z",
+  "stage2_records": 9916,
+  "merged": 9916,
   "missing_an_ai_pass": 0,
   "ai_B": {
-    "ADVANCE": 4245,
-    "EXCLUDE_TA": 4900,
-    "AWAITING_CLASSIFICATION": 132
+    "ADVANCE": 4309,
+    "EXCLUDE_TA": 5478,
+    "AWAITING_CLASSIFICATION": 129
   },
   "ai_C": {
-    "ADVANCE": 3711,
-    "EXCLUDE_TA": 5096,
-    "AWAITING_CLASSIFICATION": 470
+    "ADVANCE": 3779,
+    "EXCLUDE_TA": 5672,
+    "AWAITING_CLASSIFICATION": 465
   },
   "ai_merged": {
-    "ADVANCE": 4426,
-    "EXCLUDE_TA": 4699,
-    "AWAITING_CLASSIFICATION": 152
+    "ADVANCE": 4491,
+    "EXCLUDE_TA": 5275,
+    "AWAITING_CLASSIFICATION": 150
   },
-  "ai_conflicts": 1153,
-  "third_read": 1153,
+  "ai_conflicts": 1176,
+  "third_read": 1176,
   "ai_final": {
-    "ADVANCE": 4326,
-    "EXCLUDE_TA": 4949,
+    "ADVANCE": 4393,
+    "EXCLUDE_TA": 5521,
     "AWAITING_CLASSIFICATION": 2
   },
   "ai_final_codes": {
-    "FT03": 1682,
-    "FT07": 742,
-    "FT04": 556,
-    "FT02": 1237,
-    "FT01": 712,
-    "FT05": 18,
+    "FT03": 1902,
+    "FT07": 776,
+    "FT04": 631,
+    "FT02": 1375,
+    "FT01": 806,
+    "FT05": 29,
     "FT06": 2
   },
   "review_scope": {
-    "FULLTEXT_CANDIDATE": 4326,
-    "AI_EXCLUDE_UNVERIFIED": 4484,
-    "SAMPLE_VERIFY": 465,
+    "FULLTEXT_CANDIDATE": 4393,
+    "AI_EXCLUDE_UNVERIFIED": 5002,
+    "SAMPLE_VERIFY": 519,
     "AWAITING": 2
   },
   "sample_frac": 0.1,
   "seed": 20261005,
   "adjustments": {
-    "": 8942,
+    "": 9165,
+    "RESCREENED_BATCH_237": 62,
     "RESCREENED_BATCH_235_TITLE_ONLY": 36,
-    "RESCREENED_BATCH_235": 1,
-    "AGE_RULE_DEFERRED_TO_FULLTEXT": 291,
+    "AGE_RULE_DEFERRED_TO_FULLTEXT": 287,
+    "RESCREENED_BATCH_238": 165,
+    "RESCREENED_BATCH_032": 4,
     "ABSTRACT_MISSING": 2,
-    "RESCREENED_BATCH_236": 5
+    "RESCREENED_BATCH_239": 92,
+    "RESCREENED_BATCH_236": 5,
+    "RESCREENED_BATCH_240": 15,
+    "RESCREENED_BATCH_241": 61,
+    "RESCREENED_BATCH_242": 22
   },
-  "workbook_B_sha256": "044c7888b0abd396ed4fb66315f8baf195cd13b06adfb4fb0550cbc4d0ba3c78",
-  "workbook_C_sha256": "fd4f96d9ff0c44749a13dc7bf2ccb8ebc362cd030c53a852411147b799fe4f53"
+  "workbook_B_sha256": "c551f50b67e72bc95f0a128f474a683e615be1cd7d0c94aee21b8730986242f0",
+  "workbook_C_sha256": "4b7b40c33037cb3861fd9bab73631db53fbe41dcdabbb3e29759229bc69a15ae"
 }
