@@ -205,6 +205,13 @@ fulltext_requests/abstract_lookup_*/*
 !04_screening/formal_*/fulltext/ai_prefill/ft_override_schema_v1.json
 !04_screening/formal_*/fulltext/ai_prefill/ft_override_run_manifest.json
 !04_screening/formal_*/fulltext/ai_prefill/ft_override_B_summary_*.md
+# PRE-010 override pass, reviewer C stand-in (2026-10-09, Claude Sonnet headless, effort high):
+# same pattern as the B-side block above, C-suffixed filenames so the two parallel override runs
+# never collide. The raw per-record runs (ai_prefill/runs/override_claude_sonnet/*.json, quote the
+# full text) stay ignored by the "ai_prefill/*" deny-all above.
+!04_screening/formal_*/fulltext/ai_prefill/ft_override_prompt_C_v1.md
+!04_screening/formal_*/fulltext/ai_prefill/ft_override_schema_C_v1.json
+!04_screening/formal_*/fulltext/ai_prefill/ft_override_C_summary_*.md
 # PRE-011 (2026-10-09) age-rule override sidecars (record_id -> old/new disposition + short
 # evidence snippet only; no abstracts or full-text quotes; runs/ itself stays ignored above).
 !04_screening/formal_*/fulltext/ai_prefill/pre011_overrides_*.json

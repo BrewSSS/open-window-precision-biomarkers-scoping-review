@@ -82,7 +82,8 @@
     "C": {
       "path": "04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_C.xlsx",
       "sha256_blank": "ce9b10a28523f3715245e7ce40f787ca8cbf1ce1b099c6c47639e00364461871",
-      "sha256_after_prefill": "5e8d8b6cfbb4409f00e56eb9dce8fcbb25ae925125469b5cbfbb87a6128e86ca"
+      "sha256_after_prefill": "5e8d8b6cfbb4409f00e56eb9dce8fcbb25ae925125469b5cbfbb87a6128e86ca",
+      "sha256_after_override_C": "1c65c56477dbfadab5fff95574f8d760deab2d3e70aec172e03cc86a0bba73ac"
     }
   },
   "locks": {
@@ -246,5 +247,18 @@
       "INCLUDE_B": 4,
       "RETAIN_BACKGROUND": 3
     }
+  },
+  "override_C": {
+    "generated_at": "2026-10-09T12:20:26+00:00",
+    "script": "scripts/ft_override_run_claude.py + scripts/ft_override_writeback_C.py",
+    "model": "claude-sonnet (headless CLI, effort high)",
+    "prompt_sha256": "123c6ba171284292dcb53c3cbdfcc5d1e2b95443901ec1db48d3014334714173",
+    "schema": "ft_override_schema_C_v1.json",
+    "n_records": 190,
+    "n_runs_without_matching_row": 0,
+    "workbook_sha256_before": "5e8d8b6cfbb4409f00e56eb9dce8fcbb25ae925125469b5cbfbb87a6128e86ca",
+    "workbook_sha256_after": "1c65c56477dbfadab5fff95574f8d760deab2d3e70aec172e03cc86a0bba73ac",
+    "diff_report": "ai_prefill/runs/override_writeback_diff_C.json (git-ignored; see commit summary for the printed figures)",
+    "note": "C stand-in's independent full-text re-read overwrote your_* for all 190 pre-filled records (new value used regardless of agree/override); the hidden _override_C sheet holds old_value/new_value/agree_or_override/quote per (record_id, column) for the override-rate check. The pre-existing hidden _prefill sheet (original AI pre-fill values) is untouched. Reviewer C must still read every full text and overwrite any value disagreed with; unchanged cells after C's read are C's decision of record."
   }
 }

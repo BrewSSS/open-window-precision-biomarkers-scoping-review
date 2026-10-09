@@ -687,6 +687,35 @@
         "human verification of any of these 190 override-pass record-decisions",
         "the equivalent override pass on reviewer C's workbook (ft_screen_C.xlsx), performed separately and concurrently by a different process; never opened by this task"
       ]
+    },
+    {
+      "date": "2026-10-09",
+      "tool": "Claude Code (Anthropic) desktop CLI, acting as the AI stand-in for reviewer C, running scripts/ft_override_run_claude.py through Claude Code's own documented headless CLI (`claude -p`, team subscription)",
+      "coordinator_model": "claude-sonnet-5",
+      "model": "claude-sonnet (headless)",
+      "model_settings": "reasoning effort high; concurrency 3; --trim --max-input-chars 60000; 1 schema-repair retry needed (FS-007132), 0 rate/usage-limit pauses",
+      "task": "PRE-010 full-text screening OVERRIDE pass, reviewer C: an INDEPENDENT re-read of the full text of all 190 records already carrying a pre-filled your_disposition in ft_screen_C.xlsx (the claude_sonnet-family PRE-010/PRE-011 pre-fill). Each record was given the full text plus a clearly labelled first-pass pre-fill block (with the brief's named failure modes: over-use of AWAITING_CLASSIFICATION, A/B stream confusion, validation confirmed on background framing) and asked to decide every field itself, then flag agree/override per field (your_disposition, your_primary_code, your_age_rule_check, your_validation_element_confirmed, your_secondary_notes, your_comment) with a page-cited quote. New prompt ai_prefill/ft_override_prompt_C_v1.md and schema ai_prefill/ft_override_schema_C_v1.json (built for this task, independent of reviewer B's equivalently-named files). This is an AI stand-in substitution for the human override step amendment PRE-010 actually requires (\"C reads every full text and overwrites what they disagree with\"); it is not that human review.",
+      "prompt_reference": {
+        "file": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_prompt_C_v1.md",
+        "version": "v1, 2026-10-09",
+        "sha256": "123c6ba171284292dcb53c3cbdfcc5d1e2b95443901ec1db48d3014334714173"
+      },
+      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_schema_C_v1.json",
+      "records": 190,
+      "concurrency": 3,
+      "run_summary": "190/190 valid, 0 invalid, 1 schema-repair retry. Wall time 2,764.7 s (46.1 min; ~1 min over this task's 45-min stop-and-substitute threshold, not switched to the Sol fallback -- see ft_override_C_summary_2026-10-09.md). Usage (CLI-reported, summed): 598 input + 744,003 output + 3,685,005 cache-read + 3,538,688 cache-creation tokens; cost $22.33. Disposition after override: INCLUDE_A 100, INCLUDE_A_AND_B 48, INCLUDE_B 6, RETAIN_BACKGROUND 6, EXCLUDE 19, AWAITING_CLASSIFICATION 11 (before: INCLUDE_A 105, INCLUDE_A_AND_B 35, INCLUDE_B 13, RETAIN_BACKGROUND 5, EXCLUDE 18, AWAITING_CLASSIFICATION 14). Field override rates (of 190, script-computed against the pre-fill snapshot, not the model's self-report): disposition 16.3%, primary_code 2.6%, age_rule_check 17.4%, validation_element_confirmed 13.7%, secondary_notes 55.8%, comment 100% (the last is a structural artifact of rebuilding the comment field in a different composite format every time, not a disagreement signal -- see summary). 31 disposition flips; the 10 most consequential (include<->exclude or AWAITING<->decision) are documented with quotes in ai_prefill/ft_override_C_summary_2026-10-09.md. FS-000504 (local OCR of a scanned article) was read through the OCR noise and agreed with the pre-fill on every substantive field.",
+      "output_sources": [
+        "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/runs/override_claude_sonnet/*.json (git-ignored, 190 files, quote the full text)",
+        "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/runs/override_prefill_snapshot_C.json (git-ignored; pre-fill snapshot taken before any write)",
+        "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_C_summary_2026-10-09.md",
+        "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_C.xlsx (git-ignored; written via scripts/ft_override_writeback_C.py; backup at fulltext/_backup_override_C_2026-10-09/, git-ignored; hidden _override_C sheet logs every one of the 1,140 field writes)",
+        "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_workbooks_manifest.json (override_C block: counts, prompt/schema sha256, workbook sha256 before/after)"
+      ],
+      "human_verification_status": "Not yet performed. This entire pass -- both the original pre-fill and this override -- is AI-generated. A human reviewer C still needs to read every one of these 190 full texts and overwrite any field disagreed with; final values are C's decision of record, not this AI stand-in's.",
+      "not_performed": [
+        "human verification of any of these 190 override-pass record-decisions",
+        "the equivalent override pass on reviewer B's workbook (ft_screen_B.xlsx), performed separately and concurrently by a different process (commit e7479b1); never opened by this task"
+      ]
     }
   ],
   "future_entry_fields": [

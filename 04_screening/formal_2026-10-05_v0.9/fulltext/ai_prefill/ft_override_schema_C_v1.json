@@ -1,0 +1,134 @@
+{
+  "title": "Full-text screening OVERRIDE pass, reviewer C stand-in (v1, PRE-010, strict/flat form for CLI --json-schema)",
+  "description": "No $ref/$defs (CLI strict-schema requirement); additionalProperties:false on every object; every property listed in required. scripts/ft_override_run_claude.py validates the returned JSON against this schema with one repair retry, then computes agree/override itself from value vs the pre-fill snapshot (the model's own agree_or_override is recorded alongside but is not authoritative).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "disposition",
+    "primary_code",
+    "age_rule_check",
+    "validation_element_confirmed",
+    "secondary_notes",
+    "comment"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "pattern": "^FS-[0-9]{6}$",
+      "description": "Echo of the input record_id exactly as supplied."
+    },
+    "disposition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "quote", "page", "agree_or_override"],
+      "properties": {
+        "value": {
+          "type": "string",
+          "enum": [
+            "INCLUDE_A",
+            "INCLUDE_A_AND_B",
+            "INCLUDE_B",
+            "RETAIN_BACKGROUND",
+            "EXCLUDE",
+            "AWAITING_CLASSIFICATION",
+            "DUPLICATE_REPORT"
+          ]
+        },
+        "quote": { "type": "string", "description": "<=20-word verbatim quote, or \"\"." },
+        "page": { "type": "string", "description": "Page number as a string, or \"\"." },
+        "agree_or_override": { "type": "string", "enum": ["agree", "override"] }
+      }
+    },
+    "primary_code": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "quote", "page", "agree_or_override"],
+      "properties": {
+        "value": {
+          "type": "string",
+          "enum": [
+            "",
+            "FT01_SOURCE_TYPE_NOT_CORE",
+            "FT02_NOT_ORIGINAL_HUMAN_RESEARCH",
+            "FT03_POPULATION_NOT_ELIGIBLE",
+            "FT04_NO_QUALIFYING_EXERCISE_EXPOSURE",
+            "FT05_NO_POST_CESSATION_SAMPLE",
+            "FT06_NO_BASELINE_OR_SUITABLE_COMPARATOR",
+            "FT07_NO_ELIGIBLE_IMMUNE_LINK",
+            "FT08_MIXED_INTERVENTION_NOT_SEPARABLE"
+          ],
+          "description": "Non-empty only when disposition.value is EXCLUDE; \"\" otherwise."
+        },
+        "quote": { "type": "string" },
+        "page": { "type": "string" },
+        "agree_or_override": { "type": "string", "enum": ["agree", "override"] }
+      }
+    },
+    "age_rule_check": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "quote", "page", "agree_or_override"],
+      "properties": {
+        "value": {
+          "type": "string",
+          "enum": [
+            "adults_confirmed",
+            "mean_minus_2SD_below_18_unresolved",
+            "under_18_included",
+            "not_applicable"
+          ]
+        },
+        "quote": { "type": "string" },
+        "page": { "type": "string" },
+        "agree_or_override": { "type": "string", "enum": ["agree", "override"] }
+      }
+    },
+    "validation_element_confirmed": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "subtypes", "quote", "page", "agree_or_override"],
+      "properties": {
+        "value": { "type": "string", "enum": ["yes", "no", "unclear"] },
+        "subtypes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "metric_validation",
+              "outcome_linkage",
+              "omics_discovery",
+              "repeated_monitoring"
+            ]
+          },
+          "description": "Every applicable subtype; empty if value is no/unclear."
+        },
+        "quote": { "type": "string" },
+        "page": { "type": "string" },
+        "agree_or_override": { "type": "string", "enum": ["agree", "override"] }
+      }
+    },
+    "secondary_notes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "quote", "page", "agree_or_override"],
+      "properties": {
+        "value": { "type": "string", "description": "<=40 words; \"\" if none." },
+        "quote": { "type": "string" },
+        "page": { "type": "string" },
+        "agree_or_override": { "type": "string", "enum": ["agree", "override"] }
+      }
+    },
+    "comment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "quote", "page", "agree_or_override"],
+      "properties": {
+        "value": { "type": "string", "description": "<=40 words." },
+        "quote": { "type": "string" },
+        "page": { "type": "string" },
+        "agree_or_override": { "type": "string", "enum": ["agree", "override"] }
+      }
+    }
+  }
+}
