@@ -217,6 +217,48 @@
    "ti_review_C.xlsx_sha256": "49125ee64bea3517ac7d6ea34da989a4d4aa6f8a66faf790f867d315923a783d",
    "ta_triage_review_C.xlsx_sha256": "3d55a6c6578a9a7f7c7a7f8863aae50eb381ff7db4eaf72b2463c557b3c159fe",
    "state": "title workbook complete (1,078 rows); triage workbook: V_confirm rows 1-25 reviewed (calibration), rows 26+ and other sheets still pre-fill"
+  },
+  "C": {
+   "date": "2026-10-09",
+   "reported_complete_by": "A",
+   "file": "ta_triage_review_C.xlsx",
+   "sha256": "9de3401a6125a5558bf74a8690abb4499e34ca8f23022b0bf295200a10697812",
+   "rows_reviewed": 1142,
+   "sheets": {
+    "V_confirm": 555,
+    "U_decide": 3,
+    "MX_sample": 357,
+    "ADJ_sample": 199,
+    "ADJ_b235": 28
+   },
+   "structure_check": "all rows present and unique, no empty decision cells, _index 1142 rows, _prefill 5192 rows, AI_* columns untouched",
+   "override_rate_vs_own_prefill": {
+    "V_confirm": {
+     "C_E5": "108/555 (19.5%)",
+     "C_E4": "40/555 (7.2%)"
+    },
+    "U_decide": {
+     "C_E5": "2/3",
+     "C_E4": "0/3"
+    },
+    "MX_sample": {
+     "C_E5": "19/357 (5.3%)",
+     "C_E4": "52/357 (14.6%)",
+     "C_core_absent": "55/357 (15.4%)"
+    },
+    "ADJ_sample": {
+     "C_E5": "28/199 (14.1%)",
+     "C_E4": "34/199 (17.1%)",
+     "C_core_absent": "21/199 (10.6%)"
+    },
+    "ADJ_b235": {
+     "C_E5": "4/28",
+     "C_E4": "2/28",
+     "C_core_absent": "4/28"
+    }
+   },
+   "C_progress_file_note": "C_triage_progress_2026-10-09.json (untracked, C-side) labels review_execution as Codex record-by-record review; A to confirm what this denotes for the Methods disclosure",
+   "ti_review_C.xlsx_sha256": "49125ee64bea3517ac7d6ea34da989a4d4aa6f8a66faf790f867d315923a783d"
   }
  },
  "addendum_batch236": {

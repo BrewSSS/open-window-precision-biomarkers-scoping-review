@@ -120,16 +120,18 @@ def read_workbook(path):
         ca_col = find_col(header, "_core_absent")
         cm_col = find_col(header, "_comment")
         for row in rows:
+            # read-only rows may be shorter than the header when trailing cells are empty
+            row = tuple(row) + (None,) * (len(header) - len(row))
             if row[rid_col] is None:
                 continue
             rid = row[rid_col]
             answers[rid] = {
                 "sheet": sheet_name,
-                "E5": (row[e5_col] or "").strip() if e5_col is not None and row[e5_col] else "",
-                "E5_subtypes": (row[sub_col] or "").strip() if sub_col is not None and row[sub_col] else "",
-                "E4": (row[e4_col] or "").strip() if e4_col is not None and row[e4_col] else "",
-                "core_absent": (row[ca_col] or "").strip() if ca_col is not None and row[ca_col] else "",
-                "comment": (row[cm_col] or "").strip() if cm_col is not None and row[cm_col] else "",
+                "E5": str(row[e5_col]).strip() if e5_col is not None and row[e5_col] else "",
+                "E5_subtypes": str(row[sub_col]).strip() if sub_col is not None and row[sub_col] else "",
+                "E4": str(row[e4_col]).strip() if e4_col is not None and row[e4_col] else "",
+                "core_absent": str(row[ca_col]).strip() if ca_col is not None and row[ca_col] else "",
+                "comment": str(row[cm_col]).strip() if cm_col is not None and row[cm_col] else "",
             }
     index = {}
     if "_index" in wb.sheetnames:
