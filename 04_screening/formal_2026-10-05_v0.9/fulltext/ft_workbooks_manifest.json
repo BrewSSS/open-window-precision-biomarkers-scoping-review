@@ -1,22 +1,26 @@
 {
-  "generated_at": "2026-10-08T07:16:28+00:00",
+  "generated_at": "2026-10-09T07:11:44+00:00",
   "script": "scripts/build_fulltext_workbooks.py",
   "input": {
-    "path": "04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_4298.csv",
-    "sha256": "eafa484dab9c527ed9ecf73f04cfaeb941ef37840dc57891ac197bec973c79c3",
+    "path": "04_screening/formal_2026-10-05_v0.9/fulltext/ft_builder_input_477_2026-10-09.csv",
+    "sha256": "0dbdf826d452b1f84139581f1b270cb12228ec22d233ce6bcadf407dcc9ffa02",
     "filters": [
-      "final_layer=V"
+      "ft_scope=in_scope"
     ]
   },
-  "retrieval_log": null,
-  "n_records": 577,
-  "record_ids_sha256": "021d216e16628474f488e747a2e5f043c977d2c89622ed7af6816036501f7170",
+  "retrieval_log": {
+    "path": "04_screening/formal_2026-10-05_v0.9/fulltext/ft_retrieval_log_477_2026-10-09.csv",
+    "sha256": "01f91b9228f1be902e685391a91f513d15849acf9fbdb2f7cc2a0dfeae8b50fd"
+  },
+  "n_records": 477,
+  "record_ids_sha256": "f657754aa140529b9c0a70b75e56908550f10d7ad3d51529333f79e17f5e2767",
   "counts": {
     "retrieval_status": {
-      "not_yet_sought": 577
+      "not_retrieved_after_attempts": 354,
+      "retrieved": 123
     },
-    "missing_doi": 41,
-    "missing_pmid": 59
+    "missing_doi": 28,
+    "missing_pmid": 52
   },
   "columns": [
     "record_id",
@@ -71,13 +75,13 @@
   "workbooks": {
     "B": {
       "path": "04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_B.xlsx",
-      "sha256_blank": "95649336fbb78a68d2cf5faad82b9ea4ceca08cfaf50d5906bc91310c5a5ede7",
-      "sha256_after_prefill": "e82f610cd41d1f51836fadd01a5a6e33b544aba4beab5aca6458efb0a9926dac"
+      "sha256_blank": "138294a4cf606d9d464c35d7be1c8c05790dca23aa3fe368b83ca3d9f8b61495",
+      "sha256_after_prefill": "2c422f6f6bc3d44963ffa235090541e396693128ea577887379ef52ec66f40e6"
     },
     "C": {
       "path": "04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_C.xlsx",
-      "sha256_blank": "d311d57f9f44e98a05133fe1b8ef892822af4b46b48b7025ce3de4af14c777dc",
-      "sha256_after_prefill": "2036593b091f488ca2f9a6b4a0a5c37999b7cf20d4169f40042cac77bb2b4c2a"
+      "sha256_blank": "ce9b10a28523f3715245e7ce40f787ca8cbf1ce1b099c6c47639e00364461871",
+      "sha256_after_prefill": "a539aec1506e23d719f7e16416c053e6b9788f627ffc955dedfb1cddcec78337"
     }
   },
   "locks": {
@@ -86,64 +90,64 @@
   },
   "note": "Workbooks are git-ignored (titles only, but reviewer comments may quote full texts). D records the SHA-256 of each locked workbook under 'locks' and commits it before merging.",
   "prefill": {
-    "generated_at": "2026-10-08T13:24:59+00:00",
+    "generated_at": "2026-10-09T07:15:19+00:00",
     "script": "scripts/ft_prefill_to_workbook.py",
     "model": "gpt-6-sol",
     "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
     "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
-    "n_retrieved_oa": 141,
-    "n_valid_runs": 141,
-    "n_written": 141,
-    "n_runs_without_matching_row": 0,
+    "n_retrieved_oa": 149,
+    "n_valid_runs": 149,
+    "n_written": 123,
+    "n_runs_without_matching_row": 26,
     "n_flagged_for_a": 0,
     "disposition_counts": {
-      "AWAITING_CLASSIFICATION": 45,
-      "INCLUDE_A_AND_B": 35,
-      "EXCLUDE": 7,
-      "INCLUDE_A": 48,
-      "RETAIN_BACKGROUND": 4,
+      "AWAITING_CLASSIFICATION": 36,
+      "INCLUDE_A_AND_B": 30,
+      "EXCLUDE": 8,
+      "INCLUDE_A": 42,
+      "RETAIN_BACKGROUND": 5,
       "INCLUDE_B": 2
     },
     "age_rule_check_counts": {
-      "mean_minus_2SD_below_18_unresolved": 40,
-      "adults_confirmed": 95,
+      "mean_minus_2SD_below_18_unresolved": 31,
+      "adults_confirmed": 84,
       "not_applicable": 5,
-      "under_18_included": 1
+      "under_18_included": 3
     },
     "validation_element_confirmed_counts": {
-      "yes": 123,
-      "no": 18
+      "yes": 114,
+      "no": 9
     },
-    "note": "Reviewer B's your_* columns were pre-filled from GPT-6 Sol's full-text read; unchanged cells after B's review are B's decision of record. The hidden _prefill sheet in ft_screen_B.xlsx holds the original AI values for the override-rate check. ft_screen_C.xlsx (GLM-5.3, reviewer C) is untouched by this script."
+    "note": "Reviewer B's your_* columns were pre-filled from gpt-6-sol's full-text read; unchanged cells after B's review are B's decision of record. The hidden _prefill sheet in ft_screen_B.xlsx holds the original AI values for the override-rate check. ft_screen_C.xlsx (reviewer C) is untouched by this script."
   },
   "prefill_C": {
-    "generated_at": "2026-10-08T14:47:23+00:00",
+    "generated_at": "2026-10-09T07:15:19+00:00",
     "script": "scripts/ft_prefill_to_workbook.py",
     "model": "Claude Sonnet (headless, effort medium)",
     "prompt_sha256": "d1e99d43c4927984276ae548abf38108224d946f0facbf10a8f6ff3538f96a73",
     "schema_sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa",
-    "n_retrieved_oa": 141,
-    "n_valid_runs": 141,
-    "n_written": 141,
-    "n_runs_without_matching_row": 0,
+    "n_retrieved_oa": 149,
+    "n_valid_runs": 149,
+    "n_written": 123,
+    "n_runs_without_matching_row": 26,
     "n_flagged_for_a": 0,
     "disposition_counts": {
       "INCLUDE_B": 7,
-      "INCLUDE_A_AND_B": 22,
-      "INCLUDE_A": 67,
-      "AWAITING_CLASSIFICATION": 28,
-      "RETAIN_BACKGROUND": 5,
-      "EXCLUDE": 12
+      "INCLUDE_A_AND_B": 19,
+      "INCLUDE_A": 56,
+      "AWAITING_CLASSIFICATION": 24,
+      "EXCLUDE": 12,
+      "RETAIN_BACKGROUND": 5
     },
     "age_rule_check_counts": {
-      "adults_confirmed": 106,
-      "mean_minus_2SD_below_18_unresolved": 33,
-      "under_18_included": 1,
-      "not_applicable": 1
+      "adults_confirmed": 90,
+      "mean_minus_2SD_below_18_unresolved": 28,
+      "not_applicable": 2,
+      "under_18_included": 3
     },
     "validation_element_confirmed_counts": {
-      "yes": 90,
-      "no": 49,
+      "yes": 88,
+      "no": 33,
       "unclear": 2
     },
     "note": "Reviewer C's your_* columns were pre-filled from Claude Sonnet (headless, effort medium)'s full-text read; unchanged cells after C's review are C's decision of record. The hidden _prefill sheet in ft_screen_C.xlsx holds the original AI values for the override-rate check. ft_screen_B.xlsx (reviewer B) is untouched by this script."

@@ -89,3 +89,22 @@ T.parse_prompt_file(PROMPT)`) was already correct on disk and the bug was not re
 further code change was needed for that bug — 17 of the 141 runs already on disk from the earlier,
 partially-failed launch were valid and were kept (skip-if-valid), and this session's launch
 completed the remaining 124.
+
+## Round 2 — 8 newly-retrieved records (full-text rescope, 2026-10-09)
+
+After the human-verification rescope, `scripts/fetch_fulltexts_oa_round2_2026-10-09.py` retrieved
+8 confirmed-scope PDFs that were not part of the original 141 (FS-002994, FS-003045, FS-006627,
+FS-006840, FS-006871, FS-007441, FS-008029, FS-009159). Both pre-fill passes were re-run for
+exactly these 8 records (same prompt/schema, same text-extraction path):
+
+- **Sol** (`scripts/ft_prefill_run.py --ids <8 ids>`): 8/8 valid, 0 flagged_for_a.
+- **Claude Sonnet** (`scripts/claude_ft_prefill_run.py --ids <8 ids>`): 8/8 valid, 0 flagged_for_a.
+
+Loaded into the rebuilt 477-row workbooks via `scripts/ft_prefill_to_workbook.py` (reviewer
+B/family sol and reviewer C/family claude_sonnet): both workbooks now carry pre-fill for all 123
+confirmed-scope retrieved records (115 carried over from the original run + 8 new); the 26
+out-of-scope retrieved records are left blank (not written; `n_runs_without_matching_row=26` in
+`ft_workbooks_manifest.json`'s `prefill`/`prefill_C` blocks). `run_manifest.json` extended to 298
+entries (149 gpt-6-sol + 149 claude-sonnet... note: the pre-existing 141 claude-sonnet entries
+were backfilled into `run_manifest.json` at some earlier point without a matching script; the 8
+new ones were appended directly from `runs/claude_sonnet/<id>.json` to keep the manifest complete).
