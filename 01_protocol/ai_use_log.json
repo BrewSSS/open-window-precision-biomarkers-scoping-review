@@ -1,410 +1,438 @@
 {
- "status": "actual_design_assistance_logged_human_verification_pending",
- "records": [
-  {
-   "date": "2026-10-02",
-   "tool": "Codex desktop",
-   "coordinator_model": "GPT-6 family; exact runtime identifier not independently exported",
-   "delegated_model": "gpt-6-luna",
-   "delegated_roles": [
-    "traditional immunology/screening",
-    "transcriptomics/extraction",
-    "proteomics/search",
-    "metabolomics/synthesis",
-    "epigenomics/appraisal",
-    "novelty/Chinese protocol"
-   ],
-   "tasks": [
-    "public-source reconnaissance",
-    "citation metadata checking",
-    "project audit",
-    "protocol and implementation drafting",
-    "cross-file consistency review"
-   ],
-   "prompt_source": "Current project conversation; earlier web reconnaissance recorded in restart packet",
-   "output_sources": [
-    "protocol_EN_full.md",
-    "protocol_CN.md",
-    "../03_search",
-    "../04_screening",
-    "../05_extraction",
-    "../06_synthesis"
-   ],
-   "human_verification_status": "Required before execution/registration; not yet recorded",
-   "human_verifier": null,
-   "not_performed": [
-    "automatic exclusion",
-    "independent human screening",
-    "formal extraction",
-    "formal critical appraisal",
-    "external registration",
-    "author messaging"
-   ],
-   "tool_version": "not recorded at the time; not recoverable from the session logs",
-   "provider_source": "OpenAI Codex desktop application",
-   "model": "coordinator GPT-6 family (exact identifier not exported); delegated gpt-6-luna"
-  },
-  {
-   "date": "2026-10-03",
-   "tool": "Codex desktop",
-   "delegated_model": "gpt-6.1-sol",
-   "delegated_agents_started": 6,
-   "tasks": [
-    "focused bilingual protocol review",
-    "search strategy consistency",
-    "screening implementation",
-    "extraction schema consistency",
-    "appraisal consistency",
-    "synthesis consistency"
-   ],
-   "status": "Some edits and findings were saved before usage-limit errors; coordinator inspected resulting files. Sol tasks stopped and necessary search completion returned to the existing Luna agent on user instruction.",
-   "human_verification_status": "Named research team review remains pending",
-   "human_verifier": null,
-   "formal_review_decisions_made": false,
-   "tool_version": "not recorded at the time; not recoverable from the session logs",
-   "provider_source": "OpenAI Codex desktop application",
-   "model": "delegated gpt-6.1-sol; coordinator identifier not recorded"
-  },
-  {
-   "date": "2026-10-04",
-   "tool": "Claude Code (Anthropic) desktop CLI",
-   "coordinator_model": "claude-fable-5-1",
-   "delegated_models": [
-    "claude-fable-5-1 (published-review collision check; registry collision check)",
-    "claude-opus-5-5 (registry policy check)"
-   ],
-   "tasks": [
-    "read and summarise Codex 2026-10-02/03 session logs for the team",
-    "collision re-check of the narrowed open-window precision-biomarker framing against published reviews and registries",
-    "verification of PROSPERO/OSF/INPLASY/JBI/Frontiers/MDPI registration policies",
-    "local git repository initialisation (no remote, no push)",
-    "recording team decisions (venue not restricted; GitHub+Zenodo archive; Excel-based screening/extraction)"
-   ],
-   "output_sources": [
-    "../02_preliminary/collision_recheck_2026-10-04.md",
-    "project_settings.json",
-    "../.gitignore"
-   ],
-   "human_verification_status": "Deferred: team (A) decided 2026-10-04 that verification of newly added references happens once at the manuscript stage, not now",
-   "human_verifier": null,
-   "not_performed": [
-    "formal database search",
-    "screening decisions",
-    "extraction",
-    "registration submission",
-    "public push or release"
-   ],
-   "tool_version": "not recorded (team decision 2026-10-04: not needed at protocol stage)",
-   "provider_source": "Anthropic; Claude Code CLI with models served by the Anthropic API",
-   "model": "coordinator claude-fable-5-1; delegated claude-fable-5-1 and claude-opus-5-5"
-  },
-  {
-   "date": "2026-10-04",
-   "tool": "Claude Code (Anthropic) desktop CLI",
-   "tool_version": "not recorded (team decision 2026-10-04: not needed at protocol stage)",
-   "coordinator_model": "claude-fable-5-1",
-   "delegated_models": [
-    "claude-fable-5-1 (first protocol-editor agent; edited the files listed below and was interrupted by an API usage limit before reporting)",
-    "claude-opus-5-5 (takeover protocol-editor agent; audited rows E1-E47 and B3 against the contract, completed the remaining edits and re-verified references 15-20 and the Frontiers/GitHub-Zenodo pages)",
-    "claude-opus-5-5 (build-chain/validator agent; scripts, validator, workbook generator, flowchart, references library, LICENSE and Zenodo metadata)",
-    "claude-opus-5-5 (final consistency reviewer; cross-file audit with small fixes and build re-run)"
-   ],
-   "model": "claude-fable-5-1 (coordinator and first delegated editor); claude-opus-5-5 (takeover delegated editor, build-chain/validator agent and final consistency reviewer)",
-   "provider_source": "Anthropic; Claude Code CLI with models served by the Anthropic API",
-   "tasks": [
-    "v3.0 revision of protocol_EN_full.md implementing v3_design_contract.txt and change-map rows E1-E47 (verification/v3_change_map_2026-10-04.md, section B1)",
-    "governance files per change-map section B3: registration_draft.md renamed archive_release_record.md and rewritten; execution_plan.md; README.md; CHANGELOG.md; amendments.json; project_settings.json; ai_use_log.json; three root entry stubs; verification/official_sources.json and verification/README.md",
-    "PubMed E-utilities (esummary/efetch) verification of new references 15-20 and of the Peake 2017 abstract sentence quoted in section A",
-    "live access check (HTTP 200 and text match) of the Frontiers AI policy, Frontiers Systematic Review article-type, PROSPERO registration-guidance, OSF Generalized Systematic Review template and JBI 10.2.2 pages recorded in official_sources.json",
-    "takeover audit 2026-10-04 (claude-opus-5-5): row-by-row check of E1-E47 and B3; Introduction positioning names the open-window debate holders and adjacent reviews; PubMed efetch and Crossref re-check of references 15-20; Frontiers PRISMA and GitHub-Zenodo pages re-accessed",
-    "05_extraction/06_synthesis v3 edit (data dictionary fields and vocabularies, template sync, evidence-map spec, synthesis plan, manuscript blueprint) by delegated model claude-opus-5-5; 03_search/04_screening v3 edit by claude-opus-5-5; CN protocol alignment by claude-opus-5-5",
-    "build chain and validator by delegated model claude-opus-5-5: version/date read from project_settings.json; build_v2 -> build_v3; TeX header and PDF rebuild; validate_design.py extended to 27 checks; build_workbooks.py reads stage/dedup/bibliographic fields from the JSON templates and regenerates the Excel workbooks; create_flowchart.py -> figures/research_design_v3.svg; references.bib entries 15-20 and references/crossref_metadata_v3.json; LICENSE (CC BY 4.0), scripts/LICENSE (MIT), .zenodo.json and CITATION.cff with creator placeholders",
-    "final cross-file consistency pass by claude-opus-5-5 (2026-10-04): EN<->CN equivalence spot-check of sections A, B, D, F, I and J (Chinese corrected, English untouched); CN references 27 (BEST Resource) and 28 (Frontiers article types/author guidelines/policies) added and cited; Trybulski et al. 2026 (PMID 42278474) verified by PubMed esummary/efetch; terminology sweep; title/version/stage/domain/map-name/licence consistency across governance files, appendices, .zenodo.json, CITATION.cff and the flowchart; README, CHANGELOG and status records updated; build chain and validator re-run"
-   ],
-   "prompt_source": "Coordinator work order in the 2026-10-04 Claude Code session (change map B1/B3 plus contract section 8 default rulings)",
-   "output_sources": [
-    "protocol_EN_full.md",
-    "archive_release_record.md",
-    "execution_plan.md",
-    "../README.md",
-    "../CHANGELOG.md",
-    "amendments.json",
-    "project_settings.json",
-    "ai_use_log.json",
-    "../scoping_review_protocol.md",
-    "../scoping_review_protocol_EN.md",
-    "../scoping_review_protocol_CN.md",
-    "verification/official_sources.json",
-    "verification/README.md",
-    "../scripts/",
-    "../figures/research_design_v3.svg",
-    "../references/references.bib",
-    "../references/crossref_metadata_v3.json",
-    "../LICENSE",
-    "../scripts/LICENSE",
-    "../.zenodo.json",
-    "../CITATION.cff",
-    "../templates_xlsx/",
-    "protocol_CN.md",
-    "../03_search/",
-    "../04_screening/",
-    "../05_extraction/",
-    "../06_synthesis/"
-   ],
-   "citations_added_pending_human_verification": [
+  "status": "actual_design_assistance_logged_human_verification_pending",
+  "records": [
     {
-     "ref": 15,
-     "citation": "Peake JM, Neubauer O, Walsh NP, Simpson RJ. J Appl Physiol 2017;122(5):1077-1087",
-     "pmid": "27909225",
-     "doi": "10.1152/japplphysiol.00622.2016",
-     "quoted_sentence_verified_from_efetch_abstract": "However, except for salivary IgA, clear and consistent markers of this immunodepression remain elusive.",
-     "status": "verified by AI 2026-10-04; human verification pending"
+      "date": "2026-10-02",
+      "tool": "Codex desktop",
+      "coordinator_model": "GPT-6 family; exact runtime identifier not independently exported",
+      "delegated_model": "gpt-6-luna",
+      "delegated_roles": [
+        "traditional immunology/screening",
+        "transcriptomics/extraction",
+        "proteomics/search",
+        "metabolomics/synthesis",
+        "epigenomics/appraisal",
+        "novelty/Chinese protocol"
+      ],
+      "tasks": [
+        "public-source reconnaissance",
+        "citation metadata checking",
+        "project audit",
+        "protocol and implementation drafting",
+        "cross-file consistency review"
+      ],
+      "prompt_source": "Current project conversation; earlier web reconnaissance recorded in restart packet",
+      "output_sources": [
+        "protocol_EN_full.md",
+        "protocol_CN.md",
+        "../03_search",
+        "../04_screening",
+        "../05_extraction",
+        "../06_synthesis"
+      ],
+      "human_verification_status": "Required before execution/registration; not yet recorded",
+      "human_verifier": null,
+      "not_performed": [
+        "automatic exclusion",
+        "independent human screening",
+        "formal extraction",
+        "formal critical appraisal",
+        "external registration",
+        "author messaging"
+      ],
+      "tool_version": "not recorded at the time; not recoverable from the session logs",
+      "provider_source": "OpenAI Codex desktop application",
+      "model": "coordinator GPT-6 family (exact identifier not exported); delegated gpt-6-luna"
     },
     {
-     "ref": 16,
-     "citation": "Simpson RJ, Campbell JP, Gleeson M, et al. Exerc Immunol Rev 2020;26:8-22",
-     "pmid": "32139352",
-     "doi": null,
-     "status": "verified by AI 2026-10-04 (no DOI in PubMed record); human verification pending"
+      "date": "2026-10-03",
+      "tool": "Codex desktop",
+      "delegated_model": "gpt-6.1-sol",
+      "delegated_agents_started": 6,
+      "tasks": [
+        "focused bilingual protocol review",
+        "search strategy consistency",
+        "screening implementation",
+        "extraction schema consistency",
+        "appraisal consistency",
+        "synthesis consistency"
+      ],
+      "status": "Some edits and findings were saved before usage-limit errors; coordinator inspected resulting files. Sol tasks stopped and necessary search completion returned to the existing Luna agent on user instruction.",
+      "human_verification_status": "Named research team review remains pending",
+      "human_verifier": null,
+      "formal_review_decisions_made": false,
+      "tool_version": "not recorded at the time; not recoverable from the session logs",
+      "provider_source": "OpenAI Codex desktop application",
+      "model": "delegated gpt-6.1-sol; coordinator identifier not recorded"
     },
     {
-     "ref": 17,
-     "citation": "Xie E, He Y, Cao T, Li C, Wang Z. Front Immunol 2026;17:1822561",
-     "pmid": "42183211",
-     "doi": "10.3389/fimmu.2026.1822561",
-     "status": "verified by AI 2026-10-04; human verification pending"
+      "date": "2026-10-04",
+      "tool": "Claude Code (Anthropic) desktop CLI",
+      "coordinator_model": "claude-fable-5-1",
+      "delegated_models": [
+        "claude-fable-5-1 (published-review collision check; registry collision check)",
+        "claude-opus-5-5 (registry policy check)"
+      ],
+      "tasks": [
+        "read and summarise Codex 2026-10-02/03 session logs for the team",
+        "collision re-check of the narrowed open-window precision-biomarker framing against published reviews and registries",
+        "verification of PROSPERO/OSF/INPLASY/JBI/Frontiers/MDPI registration policies",
+        "local git repository initialisation (no remote, no push)",
+        "recording team decisions (venue not restricted; GitHub+Zenodo archive; Excel-based screening/extraction)"
+      ],
+      "output_sources": [
+        "../02_preliminary/collision_recheck_2026-10-04.md",
+        "project_settings.json",
+        "../.gitignore"
+      ],
+      "human_verification_status": "Deferred: team (A) decided 2026-10-04 that verification of newly added references happens once at the manuscript stage, not now",
+      "human_verifier": null,
+      "not_performed": [
+        "formal database search",
+        "screening decisions",
+        "extraction",
+        "registration submission",
+        "public push or release"
+      ],
+      "tool_version": "not recorded (team decision 2026-10-04: not needed at protocol stage)",
+      "provider_source": "Anthropic; Claude Code CLI with models served by the Anthropic API",
+      "model": "coordinator claude-fable-5-1; delegated claude-fable-5-1 and claude-opus-5-5"
     },
     {
-     "ref": 18,
-     "citation": "Shi X, Hu L, Nieman DC, Li F, Chen P, Shi H, Shi Y. Front Immunol 2025;16:1617261",
-     "pmid": "40777031",
-     "doi": "10.3389/fimmu.2025.1617261",
-     "status": "verified by AI 2026-10-04; human verification pending"
+      "date": "2026-10-04",
+      "tool": "Claude Code (Anthropic) desktop CLI",
+      "tool_version": "not recorded (team decision 2026-10-04: not needed at protocol stage)",
+      "coordinator_model": "claude-fable-5-1",
+      "delegated_models": [
+        "claude-fable-5-1 (first protocol-editor agent; edited the files listed below and was interrupted by an API usage limit before reporting)",
+        "claude-opus-5-5 (takeover protocol-editor agent; audited rows E1-E47 and B3 against the contract, completed the remaining edits and re-verified references 15-20 and the Frontiers/GitHub-Zenodo pages)",
+        "claude-opus-5-5 (build-chain/validator agent; scripts, validator, workbook generator, flowchart, references library, LICENSE and Zenodo metadata)",
+        "claude-opus-5-5 (final consistency reviewer; cross-file audit with small fixes and build re-run)"
+      ],
+      "model": "claude-fable-5-1 (coordinator and first delegated editor); claude-opus-5-5 (takeover delegated editor, build-chain/validator agent and final consistency reviewer)",
+      "provider_source": "Anthropic; Claude Code CLI with models served by the Anthropic API",
+      "tasks": [
+        "v3.0 revision of protocol_EN_full.md implementing v3_design_contract.txt and change-map rows E1-E47 (verification/v3_change_map_2026-10-04.md, section B1)",
+        "governance files per change-map section B3: registration_draft.md renamed archive_release_record.md and rewritten; execution_plan.md; README.md; CHANGELOG.md; amendments.json; project_settings.json; ai_use_log.json; three root entry stubs; verification/official_sources.json and verification/README.md",
+        "PubMed E-utilities (esummary/efetch) verification of new references 15-20 and of the Peake 2017 abstract sentence quoted in section A",
+        "live access check (HTTP 200 and text match) of the Frontiers AI policy, Frontiers Systematic Review article-type, PROSPERO registration-guidance, OSF Generalized Systematic Review template and JBI 10.2.2 pages recorded in official_sources.json",
+        "takeover audit 2026-10-04 (claude-opus-5-5): row-by-row check of E1-E47 and B3; Introduction positioning names the open-window debate holders and adjacent reviews; PubMed efetch and Crossref re-check of references 15-20; Frontiers PRISMA and GitHub-Zenodo pages re-accessed",
+        "05_extraction/06_synthesis v3 edit (data dictionary fields and vocabularies, template sync, evidence-map spec, synthesis plan, manuscript blueprint) by delegated model claude-opus-5-5; 03_search/04_screening v3 edit by claude-opus-5-5; CN protocol alignment by claude-opus-5-5",
+        "build chain and validator by delegated model claude-opus-5-5: version/date read from project_settings.json; build_v2 -> build_v3; TeX header and PDF rebuild; validate_design.py extended to 27 checks; build_workbooks.py reads stage/dedup/bibliographic fields from the JSON templates and regenerates the Excel workbooks; create_flowchart.py -> figures/research_design_v3.svg; references.bib entries 15-20 and references/crossref_metadata_v3.json; LICENSE (CC BY 4.0), scripts/LICENSE (MIT), .zenodo.json and CITATION.cff with creator placeholders",
+        "final cross-file consistency pass by claude-opus-5-5 (2026-10-04): EN<->CN equivalence spot-check of sections A, B, D, F, I and J (Chinese corrected, English untouched); CN references 27 (BEST Resource) and 28 (Frontiers article types/author guidelines/policies) added and cited; Trybulski et al. 2026 (PMID 42278474) verified by PubMed esummary/efetch; terminology sweep; title/version/stage/domain/map-name/licence consistency across governance files, appendices, .zenodo.json, CITATION.cff and the flowchart; README, CHANGELOG and status records updated; build chain and validator re-run"
+      ],
+      "prompt_source": "Coordinator work order in the 2026-10-04 Claude Code session (change map B1/B3 plus contract section 8 default rulings)",
+      "output_sources": [
+        "protocol_EN_full.md",
+        "archive_release_record.md",
+        "execution_plan.md",
+        "../README.md",
+        "../CHANGELOG.md",
+        "amendments.json",
+        "project_settings.json",
+        "ai_use_log.json",
+        "../scoping_review_protocol.md",
+        "../scoping_review_protocol_EN.md",
+        "../scoping_review_protocol_CN.md",
+        "verification/official_sources.json",
+        "verification/README.md",
+        "../scripts/",
+        "../figures/research_design_v3.svg",
+        "../references/references.bib",
+        "../references/crossref_metadata_v3.json",
+        "../LICENSE",
+        "../scripts/LICENSE",
+        "../.zenodo.json",
+        "../CITATION.cff",
+        "../templates_xlsx/",
+        "protocol_CN.md",
+        "../03_search/",
+        "../04_screening/",
+        "../05_extraction/",
+        "../06_synthesis/"
+      ],
+      "citations_added_pending_human_verification": [
+        {
+          "ref": 15,
+          "citation": "Peake JM, Neubauer O, Walsh NP, Simpson RJ. J Appl Physiol 2017;122(5):1077-1087",
+          "pmid": "27909225",
+          "doi": "10.1152/japplphysiol.00622.2016",
+          "quoted_sentence_verified_from_efetch_abstract": "However, except for salivary IgA, clear and consistent markers of this immunodepression remain elusive.",
+          "status": "verified by AI 2026-10-04; human verification pending"
+        },
+        {
+          "ref": 16,
+          "citation": "Simpson RJ, Campbell JP, Gleeson M, et al. Exerc Immunol Rev 2020;26:8-22",
+          "pmid": "32139352",
+          "doi": null,
+          "status": "verified by AI 2026-10-04 (no DOI in PubMed record); human verification pending"
+        },
+        {
+          "ref": 17,
+          "citation": "Xie E, He Y, Cao T, Li C, Wang Z. Front Immunol 2026;17:1822561",
+          "pmid": "42183211",
+          "doi": "10.3389/fimmu.2026.1822561",
+          "status": "verified by AI 2026-10-04; human verification pending"
+        },
+        {
+          "ref": 18,
+          "citation": "Shi X, Hu L, Nieman DC, Li F, Chen P, Shi H, Shi Y. Front Immunol 2025;16:1617261",
+          "pmid": "40777031",
+          "doi": "10.3389/fimmu.2025.1617261",
+          "status": "verified by AI 2026-10-04; human verification pending"
+        },
+        {
+          "ref": 19,
+          "citation": "Reitzner SM, Brodin P. Scand J Med Sci Sports 2026;36(3):e70258",
+          "pmid": "41842715",
+          "doi": "10.1111/sms.70258",
+          "status": "verified by AI 2026-10-04; human verification pending"
+        },
+        {
+          "ref": 20,
+          "citation": "Mănescu DC, Voinea A, Plastoi CD, et al. Int J Mol Sci 2026;27(8):3601",
+          "pmid": "42074239",
+          "doi": "10.3390/ijms27083601",
+          "status": "verified by AI 2026-10-04 (article number 3601 from PII; esummary pages field empty); human verification pending"
+        },
+        {
+          "ref": "manuscript blueprint / search strategy only (not a protocol reference)",
+          "citation": "Trybulski R, Bjelica D, Çitozi R, Kisilewicz A, Smoter M, Urban J. Acute Cytokine Responses to High-Intensity Intermittent Exercise in Humans: A Systematic Review. Int J Mol Sci 2026;27(11):4950",
+          "pmid": "42278474",
+          "doi": "10.3390/ijms27114950",
+          "quoted_phrase_verified_from_efetch_abstract": "Sampling was mapped to prespecified recovery windows.",
+          "status": "verified by AI 2026-10-04 (article number 4950 from PII; esummary pages field empty); human verification pending. Note: the review is itself registered on OSF (osf.io/wspr6) and is an adjacent review for the team's positioning check"
+        }
+      ],
+      "human_verification_status": "Deferred: team (A) decided 2026-10-04 that verification of newly added references happens once at the manuscript stage, not now",
+      "human_verifier": null,
+      "formal_review_decisions_made": false,
+      "not_performed": [
+        "update_protocol_references.py --write (dry-run only; see scripts/README.md section 4)",
+        "formal database search",
+        "screening decisions",
+        "extraction",
+        "critical appraisal",
+        "registration/archive submission",
+        "public push or release"
+      ]
     },
     {
-     "ref": 19,
-     "citation": "Reitzner SM, Brodin P. Scand J Med Sci Sports 2026;36(3):e70258",
-     "pmid": "41842715",
-     "doi": "10.1111/sms.70258",
-     "status": "verified by AI 2026-10-04; human verification pending"
+      "date": "2026-10-05",
+      "tool": "Claude Code (Anthropic) desktop CLI",
+      "coordinator_model": "claude-fable-5-1",
+      "delegated_models": [
+        "claude-opus-5-5 (pilot pool build)"
+      ],
+      "tasks": [
+        "PubMed v0.7 draft pool (20,090) and 50-record sample (seed 20261002)",
+        "50-record title/abstract pilot conducted through the coordinator's AskUserQuestion interface: each record shown with a key-facts summary and an AI-generated recommended option; reviewer B answered all 50 first with C away from the screen, then C answered all 50; humans made every decision; coordinator transcribed decisions into the locked workbooks and ran scripts/merge_screening.py"
+      ],
+      "output_sources": [
+        "../04_screening/pilot_2026-10-05/pilot_TA_decisions_2026-10-05.csv",
+        "../04_screening/pilot_2026-10-05/merge_TA_2026-10-05/agreement_TA.json",
+        "../04_screening/screening_log_template.json (calibration)"
+      ],
+      "human_verification_status": "Decisions are human (B, C). Limitation recorded: a visible AI hint for every record makes the 50/50 agreement (kappa 1.0) an over-estimate of unaided inter-reviewer agreement; A decides whether a hint-free second sample is required.",
+      "not_performed": [
+        "automatic exclusion",
+        "formal search",
+        "formal screening",
+        "extraction"
+      ]
     },
     {
-     "ref": 20,
-     "citation": "Mănescu DC, Voinea A, Plastoi CD, et al. Int J Mol Sci 2026;27(8):3601",
-     "pmid": "42074239",
-     "doi": "10.3390/ijms27083601",
-     "status": "verified by AI 2026-10-04 (article number 3601 from PII; esummary pages field empty); human verification pending"
+      "date": "2026-10-05",
+      "tool": "Claude Code (Anthropic) desktop CLI",
+      "coordinator_model": "claude-fable-5-1",
+      "delegated_models": [
+        "claude-opus-5-5 (pilot materials, identifiers, OA full-text retrieval)",
+        "claude-sonnet-5 (10 parallel extraction stand-ins: 5 for reviewer B, 5 for reviewer C, 2 reports each; loader script)"
+      ],
+      "tasks": [
+        "10-report charting pilot: AI stand-ins for reviewers B and C extracted 9 open-access reports independently (no access to each other's output) into per-report JSON with page/section locators; scripts/load_ai_extraction.py loaded them into the two reviewer workbooks; scripts/compare_extraction.py produced field-by-field agreement, disagreements, empty-by-both and minutes/questions files",
+        "R62 (institutional access) not extracted"
+      ],
+      "output_sources": [
+        "../05_extraction/pilot_2026-10-05/ai_extraction/",
+        "../05_extraction/pilot_2026-10-05/compare_2026-10-05/",
+        "../05_extraction/pilot_2026-10-05/pilot_extraction_B.xlsx",
+        "../05_extraction/pilot_2026-10-05/pilot_extraction_C.xlsx"
+      ],
+      "human_verification_status": "Pending: B, C and D review the disagreement list and unresolved questions; pilot values are AI-suggested charting for calibration of the dictionary/manual, not formal extraction results",
+      "incident": "Two C-side files (R01, R03) were written with tables wrapped as {records:[...]}; normalised by the coordinator before loading (originals kept in load_report notes); agents shared /tmp scratch space — future prompts will assign per-agent scratch directories",
+      "not_performed": [
+        "formal extraction",
+        "critical appraisal",
+        "synthesis"
+      ]
     },
     {
-     "ref": "manuscript blueprint / search strategy only (not a protocol reference)",
-     "citation": "Trybulski R, Bjelica D, Çitozi R, Kisilewicz A, Smoter M, Urban J. Acute Cytokine Responses to High-Intensity Intermittent Exercise in Humans: A Systematic Review. Int J Mol Sci 2026;27(11):4950",
-     "pmid": "42278474",
-     "doi": "10.3390/ijms27114950",
-     "quoted_phrase_verified_from_efetch_abstract": "Sampling was mapped to prespecified recovery windows.",
-     "status": "verified by AI 2026-10-04 (article number 4950 from PII; esummary pages field empty); human verification pending. Note: the review is itself registered on OSF (osf.io/wspr6) and is an adjacent review for the team's positioning check"
+      "date": "2026-10-05",
+      "tool": "Claude Code (Anthropic) desktop CLI",
+      "coordinator_model": "claude-fable-5-1",
+      "delegated_models": [
+        "claude-opus-5-5 (search-strategy scale review and benchmark of 23 published reviews; 51-seed expansion; strategy v0.9 text and PubMed paste-ready files; amendment PRE-006 drafting and protocol/contract/settings edits)",
+        "claude-sonnet-5 (PubMed v0.7 formal export of 2026-10-05, now superseded; merge of post-staging drift and application of the v3.1 staging set)"
+      ],
+      "tasks": [
+        "Benchmark of identified/screened/included counts in 23 published exercise-immunology reviews and noise decomposition of the v0.7 PubMed pool (03_search/strategy_review_2026-10-05.md; v0.8 recommendation)",
+        "Coordinator-run PubMed diagnostics for strategy v0.9 (nine noise conditions, T-phrase removal, Package B, single route): counts, seed recall and 20-title removed-record samples (03_search/strategy_tightening_2026-10-05.md); E-utilities requests carried only tool=scoping-review-search and a project User-Agent, no e-mail or API key",
+        "Translation of v0.9 into WoS and Scopus paste-ready files with primary (TI/AB/AK; TITLE-ABS+AUTHKEY) and fallback field forms, document-type limits and DOI seed-test lines (03_search/paste_ready_v0.9/)",
+        "Drafting of amendment PRE-006 (database set PubMed + WoS + Scopus + Google Scholar supplement; search-stage limits; strategy v0.9) and its application to protocol EN/CN, design contract §10, amendments.json, project_settings.json, CHANGELOG and README; PDF rebuilt; validator 27/27",
+        "Application of the staged v3.1 set (PRE-004, PRE-005) after merging the two live files that had drifted since staging"
+      ],
+      "output_sources": [
+        "../03_search/strategy_review_2026-10-05.md",
+        "../03_search/seed_expansion_2026-10-05.md",
+        "../03_search/strategy_tightening_2026-10-05.md",
+        "../03_search/paste_ready_v0.9/",
+        "../03_search/search_strategy_draft.txt (v0.9-draft)",
+        "../01_protocol/amendments.json (PRE-006)",
+        "../01_protocol/v3_design_contract.txt (§10)"
+      ],
+      "human_decisions": "A decided the four v0.9 questions on 2026-10-05 (nine-condition noise package; T-phrase removal plus Package B; single route with immune anchor; WoS/Scopus field narrowing conditional on D's seed test) and the database set; D runs the WoS/Scopus searches and seed tests on the web interfaces",
+      "human_verification_status": "Pending: A re-reviews v0.9 under PRESS (the v0.7 sign-off is void); D records platform counts and seed-test results; all PubMed counts in the diagnostics are diagnostic, not formal searches",
+      "incident": "None in this session; the earlier Crossref incident (a personal e-mail placed in a request header by a sub-agent) remains the standing reason for the no-e-mail rule in every sub-agent prompt",
+      "not_performed": [
+        "formal search exports under v0.9",
+        "PRESS re-review (A)",
+        "screening, extraction, appraisal, synthesis"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "tool": "ZCode desktop CLI (GLM, bigmodel-api provider), continuing the coordination role of the interrupted Claude Code session of 2026-10-04/05",
+      "coordinator_model": "glm-5.3",
+      "delegated_models": [
+        "glm-5.3-flash subagents: stage-2 title/abstract stand-in screening, sides B and C, 5 batches (~200 records) per agent, 10 agents per wave, per-batch JSON outputs written to disk immediately (recovery of the 2026-10-05/06 run that was interrupted at 80/213 B-side and 76/213 C-side batches)",
+        "glm-5.3-flash subagents: blind third read of stage-2 B/C conflicts"
+      ],
+      "tasks": [
+        "Rescue of the interrupted stage-2 screening outputs from /tmp into 04_screening/formal_2026-10-05_v0.9/ai_stage2/ with per-wave git archiving (A instruction: every subagent persists each completed batch to disk immediately)",
+        "Completion of the remaining stage-2 batches (B side 133, C side 137 of 213)",
+        "Stage-2 merge, conflict third read, reviewer workbooks (ta_review_B/C) and summary",
+        "Retrospective registration of amendment PRE-007 at A's instruction (design adopted by A on 2026-10-05)"
+      ],
+      "human_verification": "A instructed the recovery session; B and C verify all AI advances, conflicts, awaiting-classification records and the seeded 10% exclusion sample in their workbooks"
+    },
+    {
+      "date": "2026-10-07",
+      "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_run_concurrent.py against the provider's HTTP API (key from the local secrets file, never logged)",
+      "coordinator_model": "claude-fable-5-1",
+      "model": "glm-5.3-flash (bigmodel-api provider)",
+      "model_settings": "thinking disabled; one record per request; max tokens 4000",
+      "task": "PRE-008 validation-readiness triage, first pass, family 1: structured-element extraction (E1-E5 with verbatim quotes, study-type hint, note; no eligibility decision) for every stage-2 ADVANCE record (preceded by the 200-record pilot and a thinking-on vs thinking-off consistency check on the same pilot)",
+      "prompt_reference": {
+        "file": "../04_screening/formal_2026-10-05_v0.9/ai_triage/prompt_v1.md",
+        "version": "v1.1",
+        "sha256": "f8eb8e4460463e6444a2cf4ed42dfbd06477cb2a8846e13bd024a35b9566464a"
+      },
+      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_triage/schema_v1.json",
+      "records": 4298,
+      "concurrency": 12,
+      "run_summary": "4,298/4,298 valid after one retry pass (28 rate-limit failures recovered); ~110 min wall",
+      "output_sources": [
+        "../04_screening/formal_2026-10-05_v0.9/ai_triage/full_4298_glm_flash_summary.md",
+        "../04_screening/formal_2026-10-05_v0.9/ai_triage/full_4298_glm_flash_elements.csv",
+        "../04_screening/formal_2026-10-05_v0.9/ai_triage/pilot_200_glm_consistency.md",
+        "raw output: ai_triage/_local_runs/full_glm_flash_nothink_all_advance.json (git-ignored; sha256 in _local_runs/MANIFEST.json)"
+      ],
+      "human_verification_status": "Not a decision of record. First-pass elements feed the layer assignment only; human verification by B and C (all V, all U, seeded 10% of M and X, seeded 10% of adjudicated records) is pending (PRE-008)"
+    },
+    {
+      "date": "2026-10-07/08",
+      "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 5 records per call",
+      "coordinator_model": "claude-fable-5-1",
+      "model": "gpt-6-luna",
+      "model_settings": "reasoning effort max; 5 records per call (860 batches)",
+      "task": "PRE-008 validation-readiness triage, first pass, family 2: the same structured-element extraction over the same records (preceded by the 200-record two-family pilot); two-family comparison and layer assignment with scripts/triage_compare.py",
+      "prompt_reference": {
+        "file": "../04_screening/formal_2026-10-05_v0.9/ai_triage/prompt_v1.md",
+        "version": "v1.1",
+        "sha256": "f8eb8e4460463e6444a2cf4ed42dfbd06477cb2a8846e13bd024a35b9566464a"
+      },
+      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_triage/schema_v1.json (item schema; Codex batch wrapper schema_v1_strict_batch.json)",
+      "records": 4298,
+      "concurrency": 16,
+      "run_summary": "0 failed batches; 4,297/4,298 schema-valid (one over-length quote); ~1 h 42 min wall. Two-family agreement (n=4,297): E1-E4 raw 92.4-97.2%, kappa 0.48-0.78; E5 raw 70.3%, kappa 0.40",
+      "output_sources": [
+        "../04_screening/formal_2026-10-05_v0.9/ai_triage/full_4298_gpt6_luna_summary.md",
+        "../04_screening/formal_2026-10-05_v0.9/ai_triage/pilot_200_two_family_summary.md",
+        "../04_screening/formal_2026-10-05_v0.9/ai_triage/full_4298_glm_vs_gpt6/triage_summary.json",
+        "raw output: ai_triage/_local_runs/gpt6_luna_full_4298.json (git-ignored; sha256 in _local_runs/MANIFEST.json)"
+      ],
+      "human_verification_status": "Not a decision of record. First-pass elements feed the layer assignment only; human verification by B and C (all V, all U, seeded 10% of M and X, seeded 10% of adjudicated records) is pending (PRE-008)"
+    },
+    {
+      "date": "2026-10-08",
+      "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 5 records per call; final layering by scripts/triage_finalize.py",
+      "coordinator_model": "claude-fable-5-1",
+      "model": "gpt-6-sol",
+      "model_settings": "reasoning effort medium; 5 records per call (399 batches); blind to the first-pass outputs",
+      "task": "PRE-008 adjudicating read under the stricter E5 definition for the 1,532 two-family disagreements (layer D) and the 459 records in layer V only through repeated_monitoring; final elements and layers V/M/X/U with seeded human scopes",
+      "prompt_reference": {
+        "file": "../04_screening/formal_2026-10-05_v0.9/ai_triage/prompt_e5_adjudication_v1_2.md",
+        "version": "v1.2",
+        "sha256": "34233f28a2fcc3d719b304732d229356d77397b6bfcf0968a30efa329b7133af"
+      },
+      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_triage/schema_v1.json (item schema; Codex batch wrapper schema_v1_strict_batch.json)",
+      "records": 1991,
+      "concurrency": "16 (main pass); 8 (five resume passes)",
+      "run_summary": "1,991/1,991 valid, 0 failed batches (5 over-length quotes cleared by resume passes). Final layers (n=4,298): V 577, M 3,020, X 697, U 4. Sol agreement with first pass on E5 presence: GLM 67.96%, Luna 29.13%",
+      "output_sources": [
+        "../04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_4298.csv",
+        "../04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_summary.json",
+        "../04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_summary.md",
+        "raw output: ai_triage/_local_runs/adjud_gpt6_sol_v1_2_full_1991.json (git-ignored; sha256 933a1859d7bc2f08ad1ea17e69b430625c789fcfe7813b16a49926599a4e4584)"
+      ],
+      "human_verification_status": "Pending: B and C verify a seeded 10% sample of adjudicated records (199; seed 20261008) alongside the V, U, M and X scopes; D adjudicates. AI layers are recommendations, not decisions of record",
+      "not_performed": [
+        "human verification",
+        "triage of the 28 batch-235 advances",
+        "full-text retrieval, screening and extraction"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 25 records per call",
+      "coordinator_model": "claude-sonnet-5",
+      "model": "gpt-6-sol",
+      "model_settings": "reasoning effort medium; 25 records per call (138 batches)",
+      "task": "PRE-007 rule-4 re-screening of TI04/TI05 stage-1 AI exclusions under TI_rules v1.1; single inclusion-oriented stand-in (B-side family)",
+      "prompt_reference": {
+        "file": "../04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/rescreen_prompt_v1_1.md",
+        "version": "v1.1 (+worked examples added after smoke test)",
+        "sha256": "67231c68f1225dbfd6f04d967f32b2a628a51d1a6c687da9463aefaf97ad254d"
+      },
+      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_stage1/ti_prefill_schema_item.json (item schema; locally-derived Codex batch wrapper rescreen_schema_batch_strict.json, field names unchanged, kept outside the repo for the raw run and copied alongside the committed prompt/schema files for provenance)",
+      "records": 3439,
+      "concurrency": 16,
+      "run_summary": "0 failed batches; 3,439/3,439 schema-valid on the first pass (confirmed by one --resume pass, 0 re-run); ~3 min wall. 1,143/3,439 (33.2%) re-advanced to ADVANCE_TO_ABSTRACT (TI04 25.7%, TI05 63.2%); 2,296 exclusions retained (TI04 1,889, TI05 222, TI02 167, TI01 9, TI03 9)",
+      "output_sources": [
+        "../04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/rescreen_result_sol.csv",
+        "../04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/rescreen_summary_2026-10-09.md",
+        "../04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/run_manifest.json",
+        "raw output: ai_triage/_local_runs/rescreen_sol_2026-10-09/rescreen_input.json (git-ignored; sha256 in run_manifest.json)"
+      ],
+      "human_verification_status": "Not a decision of record. The 1,143 re-advanced records go through normal abstract-stage human/AI screening like any other advanced title; the 2,296 retained exclusions are not re-adjudicated by this pass",
+      "not_performed": [
+        "human verification of this re-screen's dispositions",
+        "abstract-stage screening of the 1,143 re-advanced records"
+      ]
     }
-   ],
-   "human_verification_status": "Deferred: team (A) decided 2026-10-04 that verification of newly added references happens once at the manuscript stage, not now",
-   "human_verifier": null,
-   "formal_review_decisions_made": false,
-   "not_performed": [
-    "update_protocol_references.py --write (dry-run only; see scripts/README.md section 4)",
-    "formal database search",
-    "screening decisions",
-    "extraction",
-    "critical appraisal",
-    "registration/archive submission",
-    "public push or release"
-   ]
-  },
-  {
-   "date": "2026-10-05",
-   "tool": "Claude Code (Anthropic) desktop CLI",
-   "coordinator_model": "claude-fable-5-1",
-   "delegated_models": [
-    "claude-opus-5-5 (pilot pool build)"
-   ],
-   "tasks": [
-    "PubMed v0.7 draft pool (20,090) and 50-record sample (seed 20261002)",
-    "50-record title/abstract pilot conducted through the coordinator's AskUserQuestion interface: each record shown with a key-facts summary and an AI-generated recommended option; reviewer B answered all 50 first with C away from the screen, then C answered all 50; humans made every decision; coordinator transcribed decisions into the locked workbooks and ran scripts/merge_screening.py"
-   ],
-   "output_sources": [
-    "../04_screening/pilot_2026-10-05/pilot_TA_decisions_2026-10-05.csv",
-    "../04_screening/pilot_2026-10-05/merge_TA_2026-10-05/agreement_TA.json",
-    "../04_screening/screening_log_template.json (calibration)"
-   ],
-   "human_verification_status": "Decisions are human (B, C). Limitation recorded: a visible AI hint for every record makes the 50/50 agreement (kappa 1.0) an over-estimate of unaided inter-reviewer agreement; A decides whether a hint-free second sample is required.",
-   "not_performed": [
-    "automatic exclusion",
-    "formal search",
-    "formal screening",
-    "extraction"
-   ]
-  },
-  {
-   "date": "2026-10-05",
-   "tool": "Claude Code (Anthropic) desktop CLI",
-   "coordinator_model": "claude-fable-5-1",
-   "delegated_models": [
-    "claude-opus-5-5 (pilot materials, identifiers, OA full-text retrieval)",
-    "claude-sonnet-5 (10 parallel extraction stand-ins: 5 for reviewer B, 5 for reviewer C, 2 reports each; loader script)"
-   ],
-   "tasks": [
-    "10-report charting pilot: AI stand-ins for reviewers B and C extracted 9 open-access reports independently (no access to each other's output) into per-report JSON with page/section locators; scripts/load_ai_extraction.py loaded them into the two reviewer workbooks; scripts/compare_extraction.py produced field-by-field agreement, disagreements, empty-by-both and minutes/questions files",
-    "R62 (institutional access) not extracted"
-   ],
-   "output_sources": [
-    "../05_extraction/pilot_2026-10-05/ai_extraction/",
-    "../05_extraction/pilot_2026-10-05/compare_2026-10-05/",
-    "../05_extraction/pilot_2026-10-05/pilot_extraction_B.xlsx",
-    "../05_extraction/pilot_2026-10-05/pilot_extraction_C.xlsx"
-   ],
-   "human_verification_status": "Pending: B, C and D review the disagreement list and unresolved questions; pilot values are AI-suggested charting for calibration of the dictionary/manual, not formal extraction results",
-   "incident": "Two C-side files (R01, R03) were written with tables wrapped as {records:[...]}; normalised by the coordinator before loading (originals kept in load_report notes); agents shared /tmp scratch space — future prompts will assign per-agent scratch directories",
-   "not_performed": [
-    "formal extraction",
-    "critical appraisal",
-    "synthesis"
-   ]
-  },
-  {
-   "date": "2026-10-05",
-   "tool": "Claude Code (Anthropic) desktop CLI",
-   "coordinator_model": "claude-fable-5-1",
-   "delegated_models": [
-    "claude-opus-5-5 (search-strategy scale review and benchmark of 23 published reviews; 51-seed expansion; strategy v0.9 text and PubMed paste-ready files; amendment PRE-006 drafting and protocol/contract/settings edits)",
-    "claude-sonnet-5 (PubMed v0.7 formal export of 2026-10-05, now superseded; merge of post-staging drift and application of the v3.1 staging set)"
-   ],
-   "tasks": [
-    "Benchmark of identified/screened/included counts in 23 published exercise-immunology reviews and noise decomposition of the v0.7 PubMed pool (03_search/strategy_review_2026-10-05.md; v0.8 recommendation)",
-    "Coordinator-run PubMed diagnostics for strategy v0.9 (nine noise conditions, T-phrase removal, Package B, single route): counts, seed recall and 20-title removed-record samples (03_search/strategy_tightening_2026-10-05.md); E-utilities requests carried only tool=scoping-review-search and a project User-Agent, no e-mail or API key",
-    "Translation of v0.9 into WoS and Scopus paste-ready files with primary (TI/AB/AK; TITLE-ABS+AUTHKEY) and fallback field forms, document-type limits and DOI seed-test lines (03_search/paste_ready_v0.9/)",
-    "Drafting of amendment PRE-006 (database set PubMed + WoS + Scopus + Google Scholar supplement; search-stage limits; strategy v0.9) and its application to protocol EN/CN, design contract §10, amendments.json, project_settings.json, CHANGELOG and README; PDF rebuilt; validator 27/27",
-    "Application of the staged v3.1 set (PRE-004, PRE-005) after merging the two live files that had drifted since staging"
-   ],
-   "output_sources": [
-    "../03_search/strategy_review_2026-10-05.md",
-    "../03_search/seed_expansion_2026-10-05.md",
-    "../03_search/strategy_tightening_2026-10-05.md",
-    "../03_search/paste_ready_v0.9/",
-    "../03_search/search_strategy_draft.txt (v0.9-draft)",
-    "../01_protocol/amendments.json (PRE-006)",
-    "../01_protocol/v3_design_contract.txt (§10)"
-   ],
-   "human_decisions": "A decided the four v0.9 questions on 2026-10-05 (nine-condition noise package; T-phrase removal plus Package B; single route with immune anchor; WoS/Scopus field narrowing conditional on D's seed test) and the database set; D runs the WoS/Scopus searches and seed tests on the web interfaces",
-   "human_verification_status": "Pending: A re-reviews v0.9 under PRESS (the v0.7 sign-off is void); D records platform counts and seed-test results; all PubMed counts in the diagnostics are diagnostic, not formal searches",
-   "incident": "None in this session; the earlier Crossref incident (a personal e-mail placed in a request header by a sub-agent) remains the standing reason for the no-e-mail rule in every sub-agent prompt",
-   "not_performed": [
-    "formal search exports under v0.9",
-    "PRESS re-review (A)",
-    "screening, extraction, appraisal, synthesis"
-   ]
-  },
-  {
-   "date": "2026-10-06",
-   "tool": "ZCode desktop CLI (GLM, bigmodel-api provider), continuing the coordination role of the interrupted Claude Code session of 2026-10-04/05",
-   "coordinator_model": "glm-5.3",
-   "delegated_models": [
-    "glm-5.3-flash subagents: stage-2 title/abstract stand-in screening, sides B and C, 5 batches (~200 records) per agent, 10 agents per wave, per-batch JSON outputs written to disk immediately (recovery of the 2026-10-05/06 run that was interrupted at 80/213 B-side and 76/213 C-side batches)",
-    "glm-5.3-flash subagents: blind third read of stage-2 B/C conflicts"
-   ],
-   "tasks": [
-    "Rescue of the interrupted stage-2 screening outputs from /tmp into 04_screening/formal_2026-10-05_v0.9/ai_stage2/ with per-wave git archiving (A instruction: every subagent persists each completed batch to disk immediately)",
-    "Completion of the remaining stage-2 batches (B side 133, C side 137 of 213)",
-    "Stage-2 merge, conflict third read, reviewer workbooks (ta_review_B/C) and summary",
-    "Retrospective registration of amendment PRE-007 at A's instruction (design adopted by A on 2026-10-05)"
-   ],
-   "human_verification": "A instructed the recovery session; B and C verify all AI advances, conflicts, awaiting-classification records and the seeded 10% exclusion sample in their workbooks"
-  },
-  {
-   "date": "2026-10-07",
-   "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_run_concurrent.py against the provider's HTTP API (key from the local secrets file, never logged)",
-   "coordinator_model": "claude-fable-5-1",
-   "model": "glm-5.3-flash (bigmodel-api provider)",
-   "model_settings": "thinking disabled; one record per request; max tokens 4000",
-   "task": "PRE-008 validation-readiness triage, first pass, family 1: structured-element extraction (E1-E5 with verbatim quotes, study-type hint, note; no eligibility decision) for every stage-2 ADVANCE record (preceded by the 200-record pilot and a thinking-on vs thinking-off consistency check on the same pilot)",
-   "prompt_reference": {
-    "file": "../04_screening/formal_2026-10-05_v0.9/ai_triage/prompt_v1.md",
-    "version": "v1.1",
-    "sha256": "f8eb8e4460463e6444a2cf4ed42dfbd06477cb2a8846e13bd024a35b9566464a"
-   },
-   "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_triage/schema_v1.json",
-   "records": 4298,
-   "concurrency": 12,
-   "run_summary": "4,298/4,298 valid after one retry pass (28 rate-limit failures recovered); ~110 min wall",
-   "output_sources": [
-    "../04_screening/formal_2026-10-05_v0.9/ai_triage/full_4298_glm_flash_summary.md",
-    "../04_screening/formal_2026-10-05_v0.9/ai_triage/full_4298_glm_flash_elements.csv",
-    "../04_screening/formal_2026-10-05_v0.9/ai_triage/pilot_200_glm_consistency.md",
-    "raw output: ai_triage/_local_runs/full_glm_flash_nothink_all_advance.json (git-ignored; sha256 in _local_runs/MANIFEST.json)"
-   ],
-   "human_verification_status": "Not a decision of record. First-pass elements feed the layer assignment only; human verification by B and C (all V, all U, seeded 10% of M and X, seeded 10% of adjudicated records) is pending (PRE-008)"
-  },
-  {
-   "date": "2026-10-07/08",
-   "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 5 records per call",
-   "coordinator_model": "claude-fable-5-1",
-   "model": "gpt-6-luna",
-   "model_settings": "reasoning effort max; 5 records per call (860 batches)",
-   "task": "PRE-008 validation-readiness triage, first pass, family 2: the same structured-element extraction over the same records (preceded by the 200-record two-family pilot); two-family comparison and layer assignment with scripts/triage_compare.py",
-   "prompt_reference": {
-    "file": "../04_screening/formal_2026-10-05_v0.9/ai_triage/prompt_v1.md",
-    "version": "v1.1",
-    "sha256": "f8eb8e4460463e6444a2cf4ed42dfbd06477cb2a8846e13bd024a35b9566464a"
-   },
-   "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_triage/schema_v1.json (item schema; Codex batch wrapper schema_v1_strict_batch.json)",
-   "records": 4298,
-   "concurrency": 16,
-   "run_summary": "0 failed batches; 4,297/4,298 schema-valid (one over-length quote); ~1 h 42 min wall. Two-family agreement (n=4,297): E1-E4 raw 92.4-97.2%, kappa 0.48-0.78; E5 raw 70.3%, kappa 0.40",
-   "output_sources": [
-    "../04_screening/formal_2026-10-05_v0.9/ai_triage/full_4298_gpt6_luna_summary.md",
-    "../04_screening/formal_2026-10-05_v0.9/ai_triage/pilot_200_two_family_summary.md",
-    "../04_screening/formal_2026-10-05_v0.9/ai_triage/full_4298_glm_vs_gpt6/triage_summary.json",
-    "raw output: ai_triage/_local_runs/gpt6_luna_full_4298.json (git-ignored; sha256 in _local_runs/MANIFEST.json)"
-   ],
-   "human_verification_status": "Not a decision of record. First-pass elements feed the layer assignment only; human verification by B and C (all V, all U, seeded 10% of M and X, seeded 10% of adjudicated records) is pending (PRE-008)"
-  },
-  {
-   "date": "2026-10-08",
-   "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 5 records per call; final layering by scripts/triage_finalize.py",
-   "coordinator_model": "claude-fable-5-1",
-   "model": "gpt-6-sol",
-   "model_settings": "reasoning effort medium; 5 records per call (399 batches); blind to the first-pass outputs",
-   "task": "PRE-008 adjudicating read under the stricter E5 definition for the 1,532 two-family disagreements (layer D) and the 459 records in layer V only through repeated_monitoring; final elements and layers V/M/X/U with seeded human scopes",
-   "prompt_reference": {
-    "file": "../04_screening/formal_2026-10-05_v0.9/ai_triage/prompt_e5_adjudication_v1_2.md",
-    "version": "v1.2",
-    "sha256": "34233f28a2fcc3d719b304732d229356d77397b6bfcf0968a30efa329b7133af"
-   },
-   "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_triage/schema_v1.json (item schema; Codex batch wrapper schema_v1_strict_batch.json)",
-   "records": 1991,
-   "concurrency": "16 (main pass); 8 (five resume passes)",
-   "run_summary": "1,991/1,991 valid, 0 failed batches (5 over-length quotes cleared by resume passes). Final layers (n=4,298): V 577, M 3,020, X 697, U 4. Sol agreement with first pass on E5 presence: GLM 67.96%, Luna 29.13%",
-   "output_sources": [
-    "../04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_4298.csv",
-    "../04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_summary.json",
-    "../04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_summary.md",
-    "raw output: ai_triage/_local_runs/adjud_gpt6_sol_v1_2_full_1991.json (git-ignored; sha256 933a1859d7bc2f08ad1ea17e69b430625c789fcfe7813b16a49926599a4e4584)"
-   ],
-   "human_verification_status": "Pending: B and C verify a seeded 10% sample of adjudicated records (199; seed 20261008) alongside the V, U, M and X scopes; D adjudicates. AI layers are recommendations, not decisions of record",
-   "not_performed": [
-    "human verification",
-    "triage of the 28 batch-235 advances",
-    "full-text retrieval, screening and extraction"
-   ]
-  }
- ],
- "future_entry_fields": [
-  "date",
-  "tool",
-  "tool_version",
-  "model",
-  "provider_source",
-  "task",
-  "prompt_reference",
-  "output_reference",
-  "human_verifier",
-  "verification_method",
-  "decision_on_output"
- ]
+  ],
+  "future_entry_fields": [
+    "date",
+    "tool",
+    "tool_version",
+    "model",
+    "provider_source",
+    "task",
+    "prompt_reference",
+    "output_reference",
+    "human_verifier",
+    "verification_method",
+    "decision_on_output"
+  ]
 }
