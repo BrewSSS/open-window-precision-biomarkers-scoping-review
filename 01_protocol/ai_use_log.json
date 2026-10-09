@@ -748,6 +748,37 @@
     "human verification of any of these 39 adjudication decisions",
     "adjudication of conflicts among the remaining 287 V-layer reports not yet pre-filled/overridden by B and C"
    ]
+  },
+  {
+   "date": "2026-10-09",
+   "tool": "Codex CLI (OpenAI), via scripts/extract_run_v11.py (new wrapper around scripts/extract_run.py), acting as the AI stand-in for DATA MANAGER D",
+   "coordinator_model": "claude-sonnet-5",
+   "model": "gpt-6-sol",
+   "model_settings": "reasoning effort high; concurrency 6; --trim on (60,000-char cap); one automatic resume pass for invalid/missing records; per-table-mode fallback implemented but not exercised (see run_summary)",
+   "task": "PRE-009 formal AI-assisted extraction, v1.1 prompt/schema, over the 161 reports whose final_disposition in 04_screening/formal_2026-10-05_v0.9/fulltext/ft_merged.csv is INCLUDE_A/INCLUDE_A_AND_B/INCLUDE_B. Full text from fulltext/V_text/<record_id>.txt (incl. the local-OCR scan FS-000504, which the model correctly self-flagged as noisy rather than guessing). Goal: pre-fill so reviewers B and C can move to the extraction override step once the loader gap below is closed.",
+   "prompt_reference": {
+    "file": "../05_extraction/ai_extraction/extract_prompt_v1_1.md",
+    "version": "v1.1, 2026-10-09",
+    "sha256": "d94cc6708f87b037142a664522a0eb3d587330a618fbce9f51d37b0e977474c5"
+   },
+   "schema_reference": "../05_extraction/ai_extraction/extract_schema_v1_1.json",
+   "schema_sha256": "040ea9d504c446ffebb6d24ca9afe9935717c9f7937ab339be350788bb689703",
+   "records": 161,
+   "concurrency": 6,
+   "run_summary": "45/161 schema-valid; 116/161 failed, every one with the Codex/Sol account's own usage-limit error (\"You’ve hit your usage limit... try again at Oct 14th, 2026 5:40 PM\"), not a schema or content defect -- 0 validation failures among the 161 attempts. Wall time 47.9 min (main pass + one automatic resume pass, concurrency 6) before the quota wall stopped all further calls. Usage (codex-reported, summed over the 45 valid calls): 2,584,460 input tokens (1,640,192 cached) + 1,463,815 output (153,671 reasoning); median call 354.7 s. Rows per table on the 45 valid reports: reports 45, cohorts 58, sample_sets 698 (median 12/report), measurements 897 (median 19/report), precision_validation 773 (median 15/report). Compared with the old v1 run on the 25 reports present in both runs/sol_formal/ and this scope: off-vocabulary rate on matrix/exercise_mode/design/training_status collapsed from 90-100% to 0% (schema-enforced enums), the evidence_present-rows-whose-note-negates-the-state rate fell from 35.8% to 2.0%, and real analyte raw/canonical splitting appeared for the first time (421 distinct raw vs 297 canonical on the 45-report set, vs v1's 241=241 non-split). 7/45 reports self-flagged incompleteness in unresolved_questions and 1/45 (FS-002754) had <5 measurement rows on a large report; these 8 plus the 116 not yet attempted are queued for extract_run_v11.py run --resume / fix-incomplete after the weekly quota reset (2026-10-14 17:40 local). Full metrics in 05_extraction/ai_extraction/formal_v1_1_summary_2026-10-09.md.",
+   "output_sources": [
+    "../05_extraction/ai_extraction/runs/sol_v1_1_formal/*.json (git-ignored, 161 files, quote the full text)",
+    "../05_extraction/ai_extraction/formal_v1_1_manifest.json",
+    "../05_extraction/ai_extraction/formal_v1_1_summary_2026-10-09.md",
+    "../scripts/extract_run_v11.py"
+   ],
+   "human_verification_status": "Not yet performed, and not yet loadable: scripts/load_ai_extraction.py / build_workbooks.py still expect v1 field names (analyte_id.original_label/standard_name; sample_sets.timepoint_as_reported/time_from_exercise_end_value/time_unit) per 05_extraction/data_dictionary.json, not v1.1's analyte_raw/analyte_canonical and time_text_raw/time_value_min/time_range_min. The 45 valid v1.1 extractions were deliberately NOT loaded into either reviewer workbook and NOT hacked into the existing loader; a v1.1 field-mapping update is the next task.",
+   "not_performed": [
+    "extraction of the 116 reports blocked by the weekly Codex/Sol quota (resumable after 2026-10-14 17:40 local)",
+    "per-table-mode fallback on the 8 reports flagged for it (blocked by the same quota wall)",
+    "loading any of the 45 valid v1.1 extractions into reviewer workbooks B/C (loader field-mapping gap, see human_verification_status)",
+    "human verification of any of the 45 valid extractions"
+   ]
   }
  ],
  "future_entry_fields": [
