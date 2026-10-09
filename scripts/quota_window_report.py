@@ -21,6 +21,8 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--now", type=float, help="current %% remaining as reported by A")
     ap.add_argument("--json", help="write the result here")
+    ap.add_argument("--all-rows", action="store_true", default=True,
+                    help="count every ledger row (default: the ledger only contains this window)")
     a = ap.parse_args()
     w = json.load(open(WINDOW))
     start = dt.datetime.fromisoformat(w["start_local"])
@@ -31,7 +33,7 @@ def main():
                 ts = dt.datetime.fromisoformat((r.get("timestamp") or "").replace("Z", "+00:00")).replace(tzinfo=None)
             except Exception:
                 ts = start
-            if ts < start:
+            if a.all_rows is False and ts < start:
                 continue
             g = lambda k: int(float(r.get(k) or 0))
             totals["input"] += g("input_tokens"); totals["cached_input"] += g("cached_input_tokens")

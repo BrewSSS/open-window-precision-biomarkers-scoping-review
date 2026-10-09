@@ -1,0 +1,15 @@
+{
+ "window_start": "2026-10-09T21:25",
+ "start_remaining_percent": 4.0,
+ "end_remaining_percent": 0.0,
+ "percent_consumed": 4.0,
+ "model": "gpt-6-sol",
+ "effort": "high",
+ "job": "extraction pre-fill v1.1",
+ "reports_completed": 45,
+ "billable_tokens": 4048275,
+ "cached_input_tokens": 1640192,
+ "tokens_per_report": 89962,
+ "tokens_per_percent": 1012069,
+ "note": "The window also carried the tail of jobs started before 21:25 (the OA fetch pass used no model). 116 reports were refused with a usage-limit error and consumed no tokens."
+}
