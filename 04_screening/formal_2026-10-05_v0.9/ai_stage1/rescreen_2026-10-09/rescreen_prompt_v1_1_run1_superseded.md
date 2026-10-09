@@ -102,6 +102,26 @@ narrow TI04 and TI05 to what the title itself states.
 - **TI01 requires the exported document type or the title to state the review/protocol/editorial/conference type.** "Report to a research committee" is not evidence of a review.
 - Code order unchanged: TI01 > TI02 > TI03 > TI04 > TI05. Default remains ADVANCE whenever none of the above is evident from the title.
 
+### Worked examples for TI05 (added for this AI pass, after a smoke test; apply the TI05 list literally, as a closed list)
+
+The TI05 outcome list above is CLOSED: performance, strength, power, VO2max, lactate, glycogen,
+hormones, HRV, bone, cognition, mood, body composition, pain/soreness SCORES/RATINGS. An
+outcome is only "explicitly non-immune" if it matches one of these terms (or an obvious
+synonym, e.g. "strength" = force/torque, "VO2max" = aerobic capacity/maximal oxygen uptake,
+"lactate" = blood lactate). Any OTHER physiological outcome not on this list — blood flow or
+haemodynamics, cardiac or pulmonary function, nasal/airway resistance, reflex or neuromuscular
+measures, electrolyte or fluid-balance measures (hyponatremia, oedema), renal measures, tendon
+or connective-tissue turnover, knowledge/attitudes — is NOT sufficient for TI05 even though it
+sounds unrelated to immunity: it is not on the closed list, so the title does not evidently
+exclude an immune outcome. ADVANCE in these cases; do not invent a code for an outcome that is
+merely absent from the review topic. Worked examples:
+- "Standardized intermittent static exercise increases peritendinous blood flow in human leg."
+  → ADVANCE_TO_ABSTRACT (blood flow is not on the TI05 list).
+- "Reduced reflex sensitivity persists several days after long-lasting stretch-shortening cycle
+  exercise." → ADVANCE_TO_ABSTRACT (reflex sensitivity is not on the TI05 list).
+- "The effect on nasal resistance of an external nasal splint during isometric and isotonic
+  exercise." → ADVANCE_TO_ABSTRACT (nasal/airway resistance is not on the TI05 list).
+
 ### Output fields
 
 - `record_id`: echo exactly as given.

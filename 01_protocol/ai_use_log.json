@@ -398,27 +398,35 @@
       "tool": "Claude Code (Anthropic) desktop CLI, running scripts/triage_codex_run.py through the Codex CLI (OpenAI), 25 records per call",
       "coordinator_model": "claude-sonnet-5",
       "model": "gpt-6-sol",
-      "model_settings": "reasoning effort medium; 25 records per call (138 batches)",
-      "task": "PRE-007 rule-4 re-screening of TI04/TI05 stage-1 AI exclusions under TI_rules v1.1; single inclusion-oriented stand-in (B-side family)",
+      "model_settings": "reasoning effort medium; 25 records per call (138 batches); run twice, see run_summary",
+      "task": "PRE-007 rule-4 re-screening of TI04/TI05 stage-1 AI exclusions under TI_rules v1.1; single inclusion-oriented stand-in (B-side family); run 1 superseded by run 2 after a prompt-fidelity correction",
       "prompt_reference": {
-        "file": "../04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/rescreen_prompt_v1_1.md",
-        "version": "v1.1 (+worked examples added after smoke test)",
-        "sha256": "67231c68f1225dbfd6f04d967f32b2a628a51d1a6c687da9463aefaf97ad254d"
+        "run_1_superseded": {
+          "file": "../04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/rescreen_prompt_v1_1_run1_superseded.md",
+          "version": "v1.1 + non-rules-faithful 'Worked examples for TI05' addendum",
+          "sha256": "67231c68f1225dbfd6f04d967f32b2a628a51d1a6c687da9463aefaf97ad254d"
+        },
+        "run_2_of_record": {
+          "file": "../04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/rescreen_prompt_v1_1.md",
+          "version": "v1.1 bullets verbatim, rules-faithful, no addendum",
+          "sha256": "fc0af17f6a552131d7c045756fd02ae4ac051c0eca488718ac3db65a8e4b1ad9"
+        }
       },
-      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_stage1/ti_prefill_schema_item.json (item schema; locally-derived Codex batch wrapper rescreen_schema_batch_strict.json, field names unchanged, kept outside the repo for the raw run and copied alongside the committed prompt/schema files for provenance)",
+      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/ai_stage1/ti_prefill_schema_item.json (item schema; locally-derived Codex batch wrapper rescreen_schema_batch_strict.json, field names unchanged, same for both runs)",
       "records": 3439,
       "concurrency": 16,
-      "run_summary": "0 failed batches; 3,439/3,439 schema-valid on the first pass (confirmed by one --resume pass, 0 re-run); ~3 min wall. 1,143/3,439 (33.2%) re-advanced to ADVANCE_TO_ABSTRACT (TI04 25.7%, TI05 63.2%); 2,296 exclusions retained (TI04 1,889, TI05 222, TI02 167, TI01 9, TI03 9)",
+      "run_summary": "Run 1 (superseded): prompt added a TI05-outcome-list-is-closed addendum; 0 failed batches, 3,439/3,439 valid; ~3 min wall; token usage input 2,499,173 / output 208,309 / reasoning 104,814; 1,143/3,439 (33.2%) re-advanced (TI04 25.7%, TI05 63.2% -- judged over-inclusive against D's 177-record human-adjudicated sample: TI04 27%, TI05 21%). Run 2 (of record): addendum deleted, prompt is the v1.1 bullets verbatim; 0 failed batches, 3,439/3,439 valid (one transient network reconnect on batch_0011, resolved on attempt 2); ~3 min 14 s wall; token usage input 2,456,562 / output 223,528 / reasoning 118,091; 919/3,439 (26.7%) re-advanced (TI04 24.8%, TI05 34.4%), much closer to the human benchmark.",
       "output_sources": [
-        "../04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/rescreen_result_sol.csv",
-        "../04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/rescreen_summary_2026-10-09.md",
-        "../04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/run_manifest.json",
-        "raw output: ai_triage/_local_runs/rescreen_sol_2026-10-09/rescreen_input.json (git-ignored; sha256 in run_manifest.json)"
+        "../04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/rescreen_result_sol.csv (run 2, run of record)",
+        "../04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/rescreen_summary_2026-10-09.md (both runs documented)",
+        "../04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/run_manifest.json (run 2 plus superseded_runs entry for run 1)",
+        "raw output run 1: ai_triage/_local_runs/rescreen_sol_2026-10-09/run1_superseded/rescreen_input.json (git-ignored)",
+        "raw output run 2: ai_triage/_local_runs/rescreen_sol_2026-10-09/run2/rescreen_input.json (git-ignored)"
       ],
-      "human_verification_status": "Not a decision of record. The 1,143 re-advanced records go through normal abstract-stage human/AI screening like any other advanced title; the 2,296 retained exclusions are not re-adjudicated by this pass",
+      "human_verification_status": "Not a decision of record. The 919 re-advanced records (run 2) go through normal abstract-stage human/AI screening like any other advanced title; the 2,520 retained exclusions are not re-adjudicated by this pass",
       "not_performed": [
         "human verification of this re-screen's dispositions",
-        "abstract-stage screening of the 1,143 re-advanced records"
+        "abstract-stage screening of the 919 re-advanced records"
       ]
     }
   ],

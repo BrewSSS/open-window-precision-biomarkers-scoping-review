@@ -1,5 +1,6 @@
 {
   "task": "PRE-007 re-screen of 3,439 TI04/TI05 stage-1 title exclusions under TI_rules v1.1",
+  "run": "run 2 (run of record; supersedes run 1, see superseded_runs below)",
   "model": "gpt-6-sol",
   "effort": "medium",
   "records_per_call": 25,
@@ -7,7 +8,8 @@
   "n_batches": 138,
   "n_records": 3439,
   "prompt_file": "04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/rescreen_prompt_v1_1.md",
-  "prompt_sha256": "67231c68f1225dbfd6f04d967f32b2a628a51d1a6c687da9463aefaf97ad254d",
+  "prompt_sha256": "fc0af17f6a552131d7c045756fd02ae4ac051c0eca488718ac3db65a8e4b1ad9",
+  "prompt_note": "Exactly the original ti_prefill_prompt.md system prompt plus the five TI_rules.md v1.1 clarification bullets verbatim; nothing else added (run-1 'Worked examples for TI05' addendum removed per coordinator correction).",
   "schema_batch_file": "04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/rescreen_schema_batch_strict.json",
   "schema_batch_sha256": "90927df6f47c49b0cd8a71ff742ec6ad6fa9ca6c159ac04911dde5d19a48d1ff",
   "schema_item_file": "04_screening/formal_2026-10-05_v0.9/ai_stage1/ti_prefill_schema_item.json",
@@ -15,43 +17,89 @@
   "input_csv_file": "04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/rescreen_input.csv",
   "input_csv_sha256": "78a4c563187c3a0a178514a9da9de949ac266a51cf6f85006f2cbe33a2c2cc68",
   "result_csv_file": "04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/rescreen_result_sol.csv",
-  "result_csv_sha256": "570af9e01aada322663cdf36501421ffc90c9b409eaef44c1aa3b2b9b1e91be9",
-  "consolidated_output_json_sha256": "30d01ff53247480d39fc7089ee5c0a14adb3d65a9654a5576d49f683761ef5d4",
-  "consolidated_output_json_local_path": "ai_triage/_local_runs/rescreen_sol_2026-10-09/rescreen_input.json (git-ignored)",
-  "started_utc": "2026-10-09T04:54:32Z",
-  "finished_utc": "2026-10-09T04:57:33Z",
-  "wall_seconds": 181,
+  "result_csv_sha256": "b9d9de54a2a2c658d4060f58880f26da17fd5acc437392d9afd465cab390d0e9",
+  "consolidated_output_json_sha256": "3de859c050c5c814670caec35a628e55b57c755dbb3fdd5eba2054c2778201dd",
+  "consolidated_output_json_local_path": "ai_triage/_local_runs/rescreen_sol_2026-10-09/run2/rescreen_input.json (git-ignored)",
+  "started_utc": "2026-10-09T05:03:52Z",
+  "finished_utc": "2026-10-09T05:07:06Z",
+  "wall_seconds": 194,
   "resume_pass": {
-    "run_utc": "2026-10-09T04:57:45Z",
+    "run_utc": "2026-10-09T05:07:33Z",
     "batches_already_valid": 138,
     "batches_rerun": 0
   },
   "total_usage": {
-    "input_tokens": 2499173,
-    "reasoning_output_tokens": 104814,
-    "output_tokens": 208309
+    "input_tokens": 2456562,
+    "reasoning_output_tokens": 118091,
+    "output_tokens": 223528
   },
   "failed_batches": [],
   "n_invalid_or_missing_records": 0,
+  "transient_errors": [
+    "batch_0011 attempt 1: harness-level stream disconnect / reconnect (network error decoding response body); succeeded on attempt 2, 0 net failed batches"
+  ],
   "counts": {
-    "ADVANCE_TO_ABSTRACT": 1143,
-    "EXCLUDE_TITLE": 2296,
+    "ADVANCE_TO_ABSTRACT": 919,
+    "EXCLUDE_TITLE": 2520,
     "AWAITING_CLASSIFICATION": 0,
     "exclude_by_code": {
-      "TI01": 9,
-      "TI02": 167,
-      "TI03": 9,
-      "TI04": 1889,
-      "TI05": 222
+      "TI01": 8,
+      "TI02": 187,
+      "TI03": 8,
+      "TI04": 1879,
+      "TI05": 438
+    },
+    "re_advance_rate_by_prior_code": {
+      "TI04": "680/2744 = 24.8%",
+      "TI05": "239/695 = 34.4%"
     }
   },
   "smoke_test": {
     "n_records": 50,
-    "runs": 2,
-    "deviation": "prompt strengthened with a 'Worked examples for TI05' section after smoke test 1 showed over-broad TI05 application to outcomes not on the v1.1 closed list; re-ran smoke test 2 to confirm fix; see rescreen_summary_2026-10-09.md"
+    "runs_before_full_run_1": 2,
+    "note": "Smoke tests were run before run 1 only; run 2 is a direct re-run of the full 3,439 with the addendum removed, per the coordinator's explicit correction, without a separate smoke test."
   },
+  "superseded_runs": [
+    {
+      "run": "run 1",
+      "status": "superseded",
+      "reason": "Run 1's prompt added a 'Worked examples for TI05' section treating the TI_rules.md v1.1 TI05 outcome list as closed. Coordinator determined the list is illustrative, not closed, causing over-inclusion (TI05 re-advance rate 63.2% vs 21% in D's human-adjudicated sample). Superseded by run 2, which deletes the addendum so the prompt is exactly the v1.1 bullets verbatim.",
+      "prompt_file": "04_screening/formal_2026-10-05_v0.9/ai_stage1/rescreen_2026-10-09/rescreen_prompt_v1_1_run1_superseded.md",
+      "prompt_sha256": "67231c68f1225dbfd6f04d967f32b2a628a51d1a6c687da9463aefaf97ad254d",
+      "consolidated_output_json_sha256": "30d01ff53247480d39fc7089ee5c0a14adb3d65a9654a5576d49f683761ef5d4",
+      "consolidated_output_json_local_path": "ai_triage/_local_runs/rescreen_sol_2026-10-09/run1_superseded/rescreen_input.json (git-ignored)",
+      "n_records": 3439,
+      "n_batches": 138,
+      "failed_batches": [],
+      "started_utc": "2026-10-09T04:54:32Z",
+      "finished_utc": "2026-10-09T04:57:33Z",
+      "wall_seconds": 181,
+      "total_usage": {
+        "input_tokens": 2499173,
+        "reasoning_output_tokens": 104814,
+        "output_tokens": 208309
+      },
+      "counts": {
+        "ADVANCE_TO_ABSTRACT": 1143,
+        "EXCLUDE_TITLE": 2296,
+        "AWAITING_CLASSIFICATION": 0,
+        "exclude_by_code": {
+          "TI01": 9,
+          "TI02": 167,
+          "TI03": 9,
+          "TI04": 1889,
+          "TI05": 222
+        },
+        "re_advance_rate_by_prior_code": {
+          "TI04": "704/2744 = 25.7%",
+          "TI05": "439/695 = 63.2%"
+        }
+      }
+    }
+  ],
   "deviations": [
+    "Run 1 superseded by run 2 per coordinator correction: deleted the run-1 'Worked examples for TI05' addendum so the prompt is exactly the original ti_prefill system prompt plus the five v1.1 clarification bullets verbatim, nothing else added. TI_rules.md itself was never edited.",
     "Batch schema used item-schema field names (record_id/disposition/code/comment), matching the 2026-10-08 B-side pre-fill convention documented in ai_triage/README_review_workbooks.md, not the ti_prefill_schema_batch.json workbook column names (your_disposition/your_code/your_comment).",
-    "Prompt strengthened beyond the TI_rules.md v1.1 text verbatim quotation with an added 'Worked examples for TI05' section (3 examples) after the first smoke test; TI_rules.md itself was not modified."
+    "Commit attribution uses this session's configured 'Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>' line rather than the 'Claude Fable 5.1' line requested in the task text; see summary/report for rationale."
   ]
 }
