@@ -1,0 +1,1434 @@
+analyte_normalised,marker_family,matrix_class,assay_class,platform_type,n_reports,n_cohorts,n_measurement_rows,n_raw_name_variants,report_ids
+leukocyte count,leukocyte_redistribution,whole_blood,haematology_analyser,conventional,17,17,38,5,FS-001493;FS-002532;FS-002626;FS-002905;FS-002911;FS-003625;FS-003744;FS-004336;FS-004648;FS-004886;FS-005168;FS-005624;FS-006024;FS-006399;FS-006749;FS-007021;FS-007132
+lymphocyte count,leukocyte_redistribution,whole_blood,haematology_analyser,conventional,11,11,20,2,FS-002626;FS-002905;FS-003625;FS-003744;FS-004648;FS-004886;FS-005624;FS-006399;FS-006749;FS-007021;FS-007132
+IL-6,cytokine_or_inflammatory_mediator,plasma,immunoassay_ELISA_etc,conventional,9,9,29,4,FS-002532;FS-002626;FS-002911;FS-002928;FS-003116;FS-003695;FS-003844;FS-004110;FS-004385
+neutrophil count,leukocyte_redistribution,whole_blood,haematology_analyser,conventional,9,9,14,2,FS-002626;FS-002905;FS-003744;FS-004648;FS-004886;FS-006024;FS-006399;FS-006749;FS-007021
+monocyte count,leukocyte_redistribution,whole_blood,haematology_analyser,conventional,8,8,14,2,FS-002626;FS-002905;FS-003744;FS-005624;FS-006024;FS-006399;FS-006749;FS-007021
+CRP,cytokine_or_inflammatory_mediator,serum,immunoassay_ELISA_etc,conventional,7,7,23,2,FS-003625;FS-004011;FS-004250;FS-004826;FS-004886;FS-005465;FS-005624
+IL-6,cytokine_or_inflammatory_mediator,serum,immunoassay_ELISA_etc,conventional,7,7,26,3,FS-003445;FS-003464;FS-003625;FS-005424;FS-005624;FS-006567;FS-006942
+IL-10,cytokine_or_inflammatory_mediator,plasma,immunoassay_ELISA_etc,conventional,6,6,12,4,FS-002532;FS-002911;FS-003695;FS-003844;FS-004110;FS-006275
+CRP,cytokine_or_inflammatory_mediator,plasma,other,conventional,5,5,9,2,FS-003951;FS-005450;FS-005991;FS-006699;FS-007132
+TNF-alpha,cytokine_or_inflammatory_mediator,plasma,immunoassay_ELISA_etc,conventional,5,5,13,2,FS-002532;FS-002911;FS-003116;FS-003844;FS-004110
+sIgA,mucosal_sIgA,saliva,immunoassay_ELISA_etc,conventional,5,7,31,4,FS-003206;FS-003303;FS-003778;FS-004226;FS-004243
+CRP,cytokine_or_inflammatory_mediator,plasma,haematology_analyser,conventional,4,4,9,2,FS-002911;FS-003695;FS-004226;FS-005385
+CRP,cytokine_or_inflammatory_mediator,serum,haematology_analyser,conventional,4,4,8,1,FS-006242;FS-006779;FS-006935;FS-010204
+IL-10,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,conventional,4,4,7,3,FS-005605;FS-005905;FS-006534;FS-006843
+IL-1beta,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,conventional,4,4,6,3,FS-005727;FS-005905;FS-006534;FS-006843
+IL-6,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,conventional,4,5,11,3,FS-005605;FS-005727;FS-006534;FS-006843
+IL-8,cytokine_or_inflammatory_mediator,plasma,immunoassay_ELISA_etc,conventional,4,4,7,3,FS-002532;FS-002911;FS-004110;FS-006275
+TNF-alpha,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,conventional,4,4,7,3,FS-005605;FS-005905;FS-006534;FS-006843
+leukocyte count,leukocyte_redistribution,whole_blood,other,conventional,4,4,8,2,FS-004414;FS-005226;FS-005465;FS-005905
+sIgA,mucosal_sIgA,saliva,flow_cytometry,conventional,4,6,42,5,FS-003206;FS-003753;FS-003778;FS-005914
+Basophil count,leukocyte_redistribution,whole_blood,haematology_analyser,conventional,3,3,5,1,FS-002905;FS-003744;FS-007021
+CRP,cytokine_or_inflammatory_mediator,plasma,immunoassay_ELISA_etc,conventional,3,3,4,2,FS-002626;FS-004110;FS-006275
+CRP,cytokine_or_inflammatory_mediator,serum,other,conventional,3,4,6,1,FS-005165;FS-005384;FS-005605
+Eosinophil count,leukocyte_redistribution,whole_blood,haematology_analyser,conventional,3,3,5,1,FS-002905;FS-003744;FS-007021
+IL-1ra,cytokine_or_inflammatory_mediator,serum,immunoassay_ELISA_etc,conventional,3,3,7,1,FS-004336;FS-004826;FS-006567
+IL-1ra,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,conventional,3,3,4,2,FS-005605;FS-005727;FS-005905
+IL-6,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,3,3,5,2,FS-002772;FS-003525;FS-006697
+IL-6,cytokine_or_inflammatory_mediator,serum,multiplex_immunoassay,conventional,3,3,6,2,FS-005727;FS-005931;FS-007132
+IL-8,cytokine_or_inflammatory_mediator,serum,multiplex_immunoassay,conventional,3,3,4,2,FS-005727;FS-005931;FS-007132
+Immunoglobulin M,immunoglobulin_or_complement,serum,immunoassay_ELISA_etc,conventional,3,3,11,1,FS-003445;FS-005465;FS-006218
+NLR,leukocyte_redistribution,serum,haematology_analyser,conventional,3,3,4,2,FS-004826;FS-005931;FS-006440
+NLR,leukocyte_redistribution,whole_blood,haematology_analyser,conventional,3,3,7,2,FS-006024;FS-006749;FS-006810
+Platelet count,other,whole_blood,haematology_analyser,conventional,3,3,7,2,FS-002905;FS-003744;FS-004336
+TNF-alpha,cytokine_or_inflammatory_mediator,serum,immunoassay_ELISA_etc,conventional,3,3,6,2,FS-003464;FS-005424;FS-006567
+miR-155,ncRNA,serum,PCR,conventional,3,3,12,2,FS-004011;FS-004712;FS-005384
+miR-21,ncRNA,serum,PCR,conventional,3,3,5,2,FS-004011;FS-004712;FS-005384
+miR-210,ncRNA,serum,PCR,conventional,3,3,11,2,FS-004011;FS-004712;FS-005384
+"12,13-dihydroxyoctadecenoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,2,2,2,1,FS-006810;FS-007328
+12-hydroxyeicosatetraenoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,2,2,2,1,FS-006810;FS-007328
+14-hydroxydocosahexaenoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,2,2,2,1,FS-006034;FS-007328
+18-hydroxyeicosapentaenoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,2,2,2,1,FS-006034;FS-007328
+"9,10-dihydroxyoctadecenoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,2,2,2,1,FS-006810;FS-007328
+C-C motif chemokine ligand 4,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,2,2,2,1,FS-005719;FS-006697
+CCL2,cytokine_or_inflammatory_mediator,serum,multiplex_immunoassay,conventional,2,2,4,1,FS-006749;FS-006935
+CD14,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,2,2,2,1,FS-006754;FS-007168
+CD163,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,2,2,2,1,FS-006754;FS-007168
+CXCL8,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,2,2,3,1,FS-003525;FS-006539
+Cortisol,other,serum,immunoassay_ELISA_etc,conventional,2,2,2,1,FS-001493;FS-007021
+Differentially expressed genes,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,2,2,3,2,FS-006233;FS-007168
+F2-isoprostanes,other,plasma,mass_spec_or_NMR,conventional,2,2,4,1,FS-002532;FS-002911
+Granulocyte colony-stimulating factor,cytokine_or_inflammatory_mediator,plasma,immunoassay_ELISA_etc,conventional,2,2,4,1,FS-002532;FS-002911
+Granulocyte count,leukocyte_redistribution,whole_blood,haematology_analyser,conventional,2,2,5,1,FS-003625;FS-007132
+Growth differentiation factor 15,cytokine_or_inflammatory_mediator,serum,immunoassay_ELISA_etc,conventional,2,2,6,1,FS-004385;FS-007132
+IFN-gamma,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,conventional,2,2,3,1,FS-005727;FS-006843
+IL-10,cytokine_or_inflammatory_mediator,serum,immunoassay_ELISA_etc,conventional,2,2,4,1,FS-004826;FS-006567
+IL-10,cytokine_or_inflammatory_mediator,serum,multiplex_immunoassay,conventional,2,2,3,2,FS-005931;FS-007132
+IL-15,cytokine_or_inflammatory_mediator,serum,immunoassay_ELISA_etc,conventional,2,2,3,1,FS-004246;FS-004826
+IL-1B,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,2,2,5,1,FS-002772;FS-006539
+IL-1beta,cytokine_or_inflammatory_mediator,plasma,immunoassay_ELISA_etc,conventional,2,2,8,1,FS-003116;FS-004110
+IL-1ra,cytokine_or_inflammatory_mediator,serum,multiplex_immunoassay,conventional,2,2,3,1,FS-005727;FS-005931
+IL-6,cytokine_or_inflammatory_mediator,serum,other,conventional,2,2,4,2,FS-005384;FS-005458
+IL-8,cytokine_or_inflammatory_mediator,serum,immunoassay_ELISA_etc,conventional,2,2,2,2,FS-004826;FS-007021
+Immunoglobulin M,immunoglobulin_or_complement,serum,mass_spec_or_NMR,omics,2,2,2,2,FS-005931;FS-006218
+Leucine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,2,2,2,2,FS-002911;FS-006699
+Mean platelet volume,other,whole_blood,haematology_analyser,conventional,2,2,9,1,FS-002905;FS-003744
+Prostaglandin D2,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,2,2,2,2,FS-006034;FS-006356
+SOCS3,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,2,2,2,1,FS-006684;FS-007168
+TNF-alpha,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,2,2,2,2,FS-003828;FS-007168
+TNF-alpha,cytokine_or_inflammatory_mediator,serum,multiplex_immunoassay,conventional,2,2,2,2,FS-006935;FS-007132
+acetylcarnitine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,2,2,2,1,FS-006699;FS-006810
+granzyme B,T_cell_subsets_or_function,cells_PBMC_or_isolated,sequencing_or_array,omics,2,2,2,1,FS-005719;FS-006697
+granzyme H,T_cell_subsets_or_function,cells_PBMC_or_isolated,sequencing_or_array,omics,2,2,2,1,FS-005719;FS-006697
+lactoferrin,mucosal_antimicrobial_protein,saliva,immunoassay_ELISA_etc,conventional,2,2,3,2,FS-004226;FS-006024
+leukocyte count,leukocyte_redistribution,serum,haematology_analyser,conventional,2,2,2,2,FS-004826;FS-006440
+lysozyme,mucosal_antimicrobial_protein,saliva,immunoassay_ELISA_etc,conventional,2,2,4,2,FS-004226;FS-006024
+methionine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,2,2,2,1,FS-006699;FS-006810
+miR-1,ncRNA,serum,PCR,conventional,2,2,10,2,FS-004712;FS-005384
+miR-1-3p,ncRNA,plasma,PCR,conventional,2,2,5,2,FS-005450;FS-006416
+miR-133a,ncRNA,plasma,PCR,conventional,2,2,3,2,FS-002626;FS-003695
+miR-146a,ncRNA,serum,PCR,conventional,2,2,13,1,FS-004011;FS-005384
+miR-206,ncRNA,plasma,PCR,conventional,2,2,2,1,FS-002626;FS-006416
+miR-208b,ncRNA,serum,PCR,conventional,2,2,5,2,FS-004011;FS-004712
+miR-221,ncRNA,serum,PCR,conventional,2,2,7,2,FS-004011;FS-004712
+neutrophil count,leukocyte_redistribution,whole_blood,other,conventional,2,2,3,2,FS-004110;FS-005905
+"(12Z)-9,10-Dihydroxyoctadec-12-enoate",metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-002911
+"1,7-Dimethylurate",metabolome_or_lipidome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002532
+1-Methylurate,metabolome_or_lipidome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002532
+1-Oleoylglycerophosphoethanolamine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-002911
+1-arachidonoylglycerol,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+1-linoleoylglycerol,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+1-oleoylglycerol,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+10 aging-related pathways,proteome,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-006787
+10-hydroxydocosahexaenoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+105 proteins,proteome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-005931
+"11,12-dihydroxy-eicosatrienoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+"11,12-dihydroxyeicosatrienoic acid",metabolome_or_lipidome,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+"11,12-dihydroxyeicosatrienoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+"11,12-epoxyeicosatrienoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+11-hydroxy-eicosatetraenoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+11-hydroxydocosahexaenoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+116 differential peak clusters,proteome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002264
+12(S)-hydroxyheptadecatrienoic acid,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+"12,13-DHOME",metabolome_or_lipidome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002532
+"12,13-dihydroxy-9Z-octadecenoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+"12,13-dihydroxyoctadecadienoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+"12,13-dihydroxyoctadecenoic acid",metabolome_or_lipidome,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+"12,13-epoxyoctadecadienoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+"12,13-epoxyoctadecenoic acid",metabolome_or_lipidome,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+"12,13-epoxyoctadecenoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+12-hydroxy-eicosatetraenoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+12-hydroxyeicosapentaenoic acid,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+12-hydroxyeicosapentaenoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+12-hydroxyeicosatetraenoic acid,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+12-hydroxyheptadecatrienoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+12-oxo-leukotriene B4,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+13 microbiota–microRNA correlations,ncRNA,other,sequencing_or_array,omics,1,1,1,1,FS-007098
+13 microbiota–microRNA correlations,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-007098
+13-HODE plus 9-HODE,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006810
+13-hydroperoxyoctadecadienoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+13-hydroxy-octadecadienoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+13-hydroxydocosahexaenoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+13-hydroxyoctadecadienoic acid,metabolome_or_lipidome,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+"14,15-dihydroxy-eicosatrienoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+"14,15-dihydroxyeicosatrienoic acid",metabolome_or_lipidome,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+"14,15-dihydroxyeicosatrienoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+"14,15-epoxyeicosatrienoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+14-hydroxydocosahexaenoic acid,metabolome_or_lipidome,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+"15,16-dihydroxyoctadecadienoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+"15,16-epoxyoctadecadienoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+15-R-lipoxin A4,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+"15-deoxy-Δ12,14-prostaglandin J3",cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+15-hydroxy-eicosatetraenoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+15-hydroxyeicosapentaenoic acid,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+15-hydroxyeicosatetraenoic acid,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+15-hydroxyeicosatetraenoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+15-oxo-eicosatetraenoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+16 highly connected inflammatory proteins,proteome,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-006787
+"16,17-dihydroxydocosapentaenoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+16-hydroxy-eicosatetraenoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+16-hydroxydocosahexaenoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+17 altered mRNA,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006754
+"17,18-dihydroxyeicosatetraenoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+17-hydroxydocosahexaenoic acid,metabolome_or_lipidome,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+17-hydroxydocosahexaenoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+18-hydroxyeicosapentaenoic acid,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006319
+"19,20-dihydroxydocosapentaenoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+"19,20-epoxydocosapentaenoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+2-Aminooctanoate,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-002911
+2-Hydroxydecanoate,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-002911
+2-Hydroxyhippurate,metabolome_or_lipidome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002532
+2-Oleoylglycerophosphoethanolamine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-002911
+2-arachidonoylglycerol,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+2-linoleoylglycerol,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+2-oleoylglycerol,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+20 immunoglobulins,immunoglobulin_or_complement,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-005931
+20-carboxy-arachidonic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+20-carboxy-leukotriene B4,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+3-Hydroxybutyrate,metabolome_or_lipidome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002532
+3-Hydroxybutyrate,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006699
+3-Hydroxyhippurate,metabolome_or_lipidome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002532
+4-1BB ligand,T_cell_subsets_or_function,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006697
+4-Hydroxyhippurate,metabolome_or_lipidome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002532
+4-Methylcatechol sulfate,metabolome_or_lipidome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002532
+4-hydroxydocosahexaenoic acid,metabolome_or_lipidome,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+4-hydroxydocosahexaenoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+4-hydroxydocosahexaenoic acid,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006319
+"5,6-, 8,9-, 11,12-, and 14,15-diHETrE composite",metabolome_or_lipidome,serum,mass_spec_or_NMR,conventional,1,1,1,1,FS-006440
+"5,6-dihydroxy-eicosatrienoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+"5,6-dihydroxyeicosatrienoic acid",metabolome_or_lipidome,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+"5,6-epoxyeicosatrienoic acid",metabolome_or_lipidome,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+5-hydroxy-eicosatetraenoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+5-hydroxyeicosatetraenoic acid,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+5-hydroxyeicosatetraenoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006356
+5-methylthioadenosine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006810
+5-oxo-eicosatetraenoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+6-keto-prostaglandin F1 alpha,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+6-keto-prostaglandin F1α,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006356
+6S-lipoxin A4,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+7(R) maresin-1,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+7-hydroxydocosahexaenoic acid,metabolome_or_lipidome,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+7-hydroxydocosahexaenoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+"8,9-dihydroxy-eicosatrienoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+"8,9-dihydroxyeicosatrienoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+8-hydroxy-eicosatetraenoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+8-hydroxydocosahexaenoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+9 of 11 analyzed ligands,proteome,serum,multiplex_immunoassay,omics,1,1,1,1,FS-007011
+9(10)–EpO,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+"9,10-dihydroxy-9Z-octadecenoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+"9,10-dihydroxyoctadecadienoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+"9,10-dihydroxyoctadecenoic acid",metabolome_or_lipidome,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+"9,10-epoxyoctadecadienoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+"9,10-epoxyoctadecenoic acid",metabolome_or_lipidome,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+"9,10-epoxyoctadecenoic acid",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+"9,10–DiHO",cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+9-hydroperoxyoctadecadienoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+9-hydroxy-eicosatetraenoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+9-hydroxy-octadecadienoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+9-hydroxy-octadecatrienoic acid,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+9-hydroxyoctadecadienoic acid,metabolome_or_lipidome,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+ABCA12,other,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-006779
+ABCB1,other,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+AHR,other,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006684
+AKT1,other,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006684
+ANGPT1,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006684
+APOA1,proteome,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+APOH,proteome,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+ARA-COX oxylipin composite,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+ARA-CYP,metabolome_or_lipidome,serum,mass_spec_or_NMR,omics,1,1,2,1,FS-005931
+ARA-CYP oxylipin composite,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+ARA-LOX oxylipin composite,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+ARG1,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006754
+Acetoacetate,metabolome_or_lipidome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002532
+Acetoacetate,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006699
+Actin,other,plasma,other,conventional,1,1,1,1,FS-003683
+"Actin, cytoplasmic 1",other,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004152
+Activated CD11b epitope expression,neutrophil_function,whole_blood,flow_cytometry,conventional,1,1,3,1,FS-004210
+Adenylate kinase isoenzyme 1,other,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004586
+Adipocytokine signaling pathway,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006233
+Adrenaline,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006024
+Affymetrix probe sets,immune_cell_transcriptome,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,3,1,FS-002772
+Allantoin,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-002911
+Alpha-1-acid glycoprotein,cytokine_or_inflammatory_mediator,plasma,immunoassay_ELISA_etc,conventional,1,1,2,1,FS-003951
+Alpha-1-acid glycoprotein,cytokine_or_inflammatory_mediator,dried_blood_spot,mass_spec_or_NMR,conventional,1,1,4,1,FS-005773
+Alpha-1-acid glycoprotein 2,cytokine_or_inflammatory_mediator,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004586
+Alpha-1-antichymotrypsin,cytokine_or_inflammatory_mediator,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004586
+Alpha-1-antitrypsin,cytokine_or_inflammatory_mediator,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004586
+Alpha-2-HS-glycoprotein,cytokine_or_inflammatory_mediator,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004586
+Alpha-actinin-1,other,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004152
+Aminoisobutyric acid,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006024
+Annexin-V binding,neutrophil_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,4,7,1,FS-002039
+Aquaporin 9,other,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006018
+Arabinose,metabolome_or_lipidome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002532
+Arachidonic acid,metabolome_or_lipidome,plasma,mass_spec_or_NMR,conventional,1,1,1,1,FS-006024
+Arachidonic acid,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006356
+Arachidonic acid,metabolome_or_lipidome,serum,mass_spec_or_NMR,conventional,1,1,2,1,FS-006440
+Arylsulfatase A,proteome,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-006883
+Azelaic acid,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-002911
+B-cell proportion,leukocyte_redistribution,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-005950
+Bacterially-stimulated neutrophil elastase release,neutrophil_function,whole_blood,immunoassay_ELISA_etc,conventional,1,1,2,1,FS-005905
+Bacterially-stimulated neutrophil elastase release per cell,neutrophil_function,whole_blood,immunoassay_ELISA_etc,conventional,1,1,2,1,FS-005905
+Basal cytosolic reactive oxygen species,neutrophil_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,3,6,1,FS-002039
+Basophil count,leukocyte_redistribution,plasma,other,conventional,1,1,1,1,FS-005971
+Blood eosinophil count,leukocyte_redistribution,whole_blood,other,conventional,1,1,2,1,FS-003951
+Blood leukocyte count,leukocyte_redistribution,whole_blood,other,conventional,1,1,2,1,FS-003951
+Blood lymphocyte count,leukocyte_redistribution,whole_blood,other,conventional,1,1,2,1,FS-003951
+Blood monocyte count,leukocyte_redistribution,whole_blood,other,conventional,1,1,2,1,FS-003951
+Blood neutrophil count,leukocyte_redistribution,whole_blood,other,conventional,1,1,2,1,FS-003951
+C-C chemokine receptor 4,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-006697
+C-C motif chemokine ligand 2,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,conventional,1,1,1,1,FS-005727
+C-C motif chemokine ligand 2,cytokine_or_inflammatory_mediator,serum,multiplex_immunoassay,conventional,1,1,1,1,FS-005727
+C-C motif chemokine ligand 20,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-006787
+C-C motif chemokine ligand 23,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-006787
+C-C motif chemokine ligand 24,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-006787
+C-C motif chemokine ligand 27,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,conventional,1,1,1,1,FS-006534
+C-C motif chemokine ligand 28,cytokine_or_inflammatory_mediator,serum,sequencing_or_array,omics,1,1,1,1,FS-006928
+C-C motif chemokine ligand 3,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-006787
+C-C motif chemokine ligand 4,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,conventional,1,1,1,1,FS-006534
+C-C motif chemokine ligand 4,cytokine_or_inflammatory_mediator,serum,sequencing_or_array,omics,1,1,1,1,FS-006928
+C-X-C chemokine receptor 3,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-006697
+C-X-C motif chemokine ligand 10,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,conventional,1,1,1,1,FS-006534
+C-X-C motif chemokine ligand 13,cytokine_or_inflammatory_mediator,serum,immunoassay_ELISA_etc,conventional,1,1,7,1,FS-007261
+C-X-C motif chemokine ligand 8,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,conventional,1,1,1,1,FS-006534
+C-X-C motif chemokine receptor 1,T_cell_subsets_or_function,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-005719
+C-X-C motif chemokine receptor 4,T_cell_subsets_or_function,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-005719
+CALM1; IL-1F10 (tentative alternatives),cytokine_or_inflammatory_mediator,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002264
+CAVIN2,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+CCAAT enhancer binding protein beta,other,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-003828
+CCL11,cytokine_or_inflammatory_mediator,serum,multiplex_immunoassay,conventional,1,1,1,1,FS-006935
+CCL13,cytokine_or_inflammatory_mediator,serum,multiplex_immunoassay,omics,1,1,1,1,FS-007011
+CCL2,cytokine_or_inflammatory_mediator,saliva,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-004226
+CCL2,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+CCL2,cytokine_or_inflammatory_mediator,serum,other,conventional,1,1,3,1,FS-005458
+CCL2,cytokine_or_inflammatory_mediator,serum,multiplex_immunoassay,omics,1,1,1,1,FS-007011
+CCL20,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+CCL23,cytokine_or_inflammatory_mediator,other,multiplex_immunoassay,omics,1,1,1,1,FS-004308
+CCL3,cytokine_or_inflammatory_mediator,other,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+CCL3,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,2,1,FS-006539
+CCL3,cytokine_or_inflammatory_mediator,serum,multiplex_immunoassay,conventional,1,1,1,1,FS-006935
+CCL3L1,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,2,1,FS-006539
+CCL4,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,2,1,FS-006539
+CCL4,cytokine_or_inflammatory_mediator,serum,multiplex_immunoassay,conventional,1,1,1,1,FS-006935
+CCL4L2,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,2,1,FS-006539
+CCL5,cytokine_or_inflammatory_mediator,serum,multiplex_immunoassay,conventional,1,1,1,1,FS-006935
+CCL5,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+CCL8 (tentative),cytokine_or_inflammatory_mediator,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002264
+CCR1,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006754
+CCR1,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+CCR2,leukocyte_redistribution,whole_blood,sequencing_or_array,omics,1,1,2,1,FS-006684
+CCR2,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006754
+CCR2,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+CCR4,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+CCR5,leukocyte_redistribution,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006684
+CCR5,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+CCR6,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006754
+CCR6,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+CCR9,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+CD137/4-1BB receptor,T_cell_subsets_or_function,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006697
+CD137/4-1BB receptor,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-006697
+CD14,other,plasma,sequencing_or_array,conventional,1,1,1,1,FS-004414
+CD14,other,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-004414
+CD14,other,saliva,mass_spec_or_NMR,omics,1,1,1,1,FS-008505
+CD14 molecule,leukocyte_redistribution,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-003828
+CD16-dim neutrophil subset count,leukocyte_redistribution,whole_blood,flow_cytometry,conventional,1,1,3,1,FS-004210
+CD177 antigen,other,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-006883
+CD19,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+CD19+ B cells,leukocyte_redistribution,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-006697
+CD19+ B-cell percentage,leukocyte_redistribution,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-005226
+CD274,T_cell_subsets_or_function,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006684
+CD3 complex,T_cell_subsets_or_function,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-003828
+CD3 epsilon subunit,other,serum,sequencing_or_array,omics,1,1,1,1,FS-006928
+CD3+ T cells,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,5,1,FS-006144
+CD3+ T cells,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-006697
+CD3+ T-cell percentage,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,2,1,FS-005226
+CD3+CD4+ T cells,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-006697
+CD3+CD4+ helper T-cell percentage,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,2,1,FS-005226
+CD3+CD56+ natural killer-like T cells,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-005719
+CD3+CD8+ T cells,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-006697
+CD3+CD8+ cell fraction,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-006697
+CD3+CD8+ cytotoxic T-cell percentage,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,2,1,FS-005226
+CD3-negative lymphocytes,leukocyte_redistribution,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-006697
+CD3-positive T-cell count,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-004385
+CD36 molecule,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006697
+CD4,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-004414
+CD4+ helper T cells,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,5,1,FS-006144
+CD4+ lymphocyte percentage,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-004648
+CD4+/CD8+ lymphocyte ratio,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-004648
+CD4-positive CD45RA-positive T-cell frequency,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-002739
+CD4-positive CD45RO-positive T-cell frequency,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-002739
+CD4-positive CD95-positive lymphocyte count,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-001493
+"CD4-positive CD95-positive lymphocytes, percentage of total lymphocytes",T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-001493
+CD4-positive T-cell count,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-004385
+CD4-positive T-cell frequency,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,2,1,FS-002739
+CD4-positive lymphocyte count,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-001493
+CD4-to-CD8 T-cell ratio,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-004385
+CD40,other,other,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+CD48,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+CD55,immunoglobulin_or_complement,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+CD56+ NK cells,NK_count_or_cytotoxicity,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-006697
+CD56-bright NK cells,NK_count_or_cytotoxicity,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-006697
+CD56-positive cytokine-induced killer cells,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-005719
+CD57-positive CD8-positive T cells,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-007011
+CD62L-dim neutrophil subset count,leukocyte_redistribution,whole_blood,flow_cytometry,conventional,1,1,3,1,FS-004210
+CD68,other,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006684
+CD69,T_cell_subsets_or_function,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-003525
+CD69 activation marker,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-006697
+CD8 antigen,T_cell_subsets_or_function,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-003828
+CD8+ T-cell unspecific cytotoxicity,T_cell_subsets_or_function,cells_PBMC_or_isolated,functional_assay,conventional,1,1,2,1,FS-006697
+CD8+ cytotoxic T cells,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,5,1,FS-006144
+CD8+ lymphocyte percentage,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-004648
+CD8-positive CD45RA-positive T-cell frequency,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-002739
+CD8-positive CD45RO-positive T-cell frequency,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-002739
+CD8-positive CD95-positive lymphocyte count,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-001493
+"CD8-positive CD95-positive lymphocytes, percentage of total lymphocytes",T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-001493
+CD8-positive T cells,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,2,1,FS-007011
+CD8-positive T-cell count,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-004385
+CD8-positive T-cell frequency,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,2,1,FS-002739
+CD8-positive T-cell mobilization,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,2,1,FS-007011
+CD8-positive T-cell mobilization,T_cell_subsets_or_function,serum,flow_cytometry,conventional,1,1,2,1,FS-007011
+CD8-positive lymphocyte count,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-001493
+CD86,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006754
+CD95-positive lymphocyte count,T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-001493
+"CD95-positive lymphocytes, percentage of total lymphocytes",T_cell_subsets_or_function,whole_blood,flow_cytometry,conventional,1,1,2,1,FS-001493
+CDK11A,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,2,1,FS-006539
+CEACAM8 expression,neutrophil_function,whole_blood,flow_cytometry,conventional,1,1,3,1,FS-004210
+CHGB,other,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+CLCF1 (tentative),cytokine_or_inflammatory_mediator,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002264
+CLEC10A,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+COX/LOX/CYP pathway response,metabolome_or_lipidome,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+CPXM2,other,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+CRP,cytokine_or_inflammatory_mediator,serum,mass_spec_or_NMR,omics,1,1,2,1,FS-002264
+CRP,cytokine_or_inflammatory_mediator,serum,NR,conventional,1,1,2,1,FS-002532
+CRP,cytokine_or_inflammatory_mediator,plasma,haematology_analyser,omics,1,1,1,1,FS-002911
+CRP,cytokine_or_inflammatory_mediator,dried_blood_spot,mass_spec_or_NMR,conventional,1,1,4,1,FS-005773
+CRP,cytokine_or_inflammatory_mediator,serum,sequencing_or_array,omics,1,1,1,1,FS-006928
+CSF-to- adiponectin ratio,cytokine_or_inflammatory_mediator,other,immunoassay_ELISA_etc,conventional,1,1,2,1,FS-004308
+CSF-to- adiponectin ratio,cytokine_or_inflammatory_mediator,serum,immunoassay_ELISA_etc,conventional,1,1,2,1,FS-004308
+CSF2,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,3,1,FS-002772
+CX3CL1,cytokine_or_inflammatory_mediator,other,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+CX3CL1,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+CXCL1,cytokine_or_inflammatory_mediator,saliva,immunoassay_ELISA_etc,conventional,1,1,2,1,FS-004226
+CXCL1,cytokine_or_inflammatory_mediator,whole_blood,haematology_analyser,conventional,1,1,1,1,FS-004226
+CXCL1,cytokine_or_inflammatory_mediator,saliva,haematology_analyser,conventional,1,1,1,1,FS-004226
+CXCL1,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+CXCL10,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-003525
+CXCL10,cytokine_or_inflammatory_mediator,serum,multiplex_immunoassay,conventional,1,1,1,1,FS-006935
+CXCL12,cytokine_or_inflammatory_mediator,serum,multiplex_immunoassay,omics,1,1,1,1,FS-007011
+CXCL16,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+CXCL2,cytokine_or_inflammatory_mediator,saliva,immunoassay_ELISA_etc,conventional,1,1,2,1,FS-004226
+CXCL2,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,2,1,FS-006539
+CXCL3,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-003525
+CXCL5,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+CXCL6,cytokine_or_inflammatory_mediator,other,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+CXCL8,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+CXCL9,cytokine_or_inflammatory_mediator,other,multiplex_immunoassay,omics,1,1,1,1,FS-004308
+CXCL9,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006754
+CXCR4,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+Caffeine,metabolome_or_lipidome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002532
+Catechol sulfate,metabolome_or_lipidome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002532
+Cathelicidin antimicrobial peptide,neutrophil_function,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004152
+Cathelicidin antimicrobial peptide,other,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-006554
+Cell-free DNA,other,plasma,PCR,conventional,1,1,13,1,FS-006321
+Cell-free DNA,other,plasma,other,conventional,1,1,3,1,FS-006534
+Cell-free mitochondrial DNA integrity association with resting phagocyte chemiluminescence,other,whole_blood,PCR,conventional,1,1,3,1,FS-004544
+Cell-free mitochondrial DNA integrity association with resting phagocyte chemiluminescence,other,plasma,PCR,conventional,1,1,3,1,FS-004544
+Cell-free mitochondrial DNA integrity association with stimulated phagocyte chemiluminescence,other,whole_blood,PCR,conventional,1,1,3,1,FS-004544
+Cell-free mitochondrial DNA integrity association with stimulated phagocyte chemiluminescence,other,plasma,PCR,conventional,1,1,3,1,FS-004544
+Cell-free mitochondrial DNA integrity index,other,plasma,PCR,conventional,1,1,3,1,FS-004544
+Cell-free nuclear DNA integrity association with resting phagocyte chemiluminescence,other,whole_blood,PCR,conventional,1,1,3,1,FS-004544
+Cell-free nuclear DNA integrity association with resting phagocyte chemiluminescence,other,plasma,PCR,conventional,1,1,3,1,FS-004544
+Cell-free nuclear DNA integrity association with stimulated phagocyte chemiluminescence,other,whole_blood,PCR,conventional,1,1,3,1,FS-004544
+Cell-free nuclear DNA integrity association with stimulated phagocyte chemiluminescence,other,plasma,PCR,conventional,1,1,3,1,FS-004544
+Cell-free nuclear DNA integrity index,other,plasma,PCR,conventional,1,1,3,1,FS-004544
+Cell-movement network,other,tissue,other,omics,1,1,1,1,FS-007237
+Central-memory CD8-positive T cells,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-007011
+Cinnamoylglycine,metabolome_or_lipidome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002532
+Clara cell protein 16,other,serum,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-007021
+Co-differential proteins,proteome,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+Colony stimulating factor 1,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+Complement C3,immunoglobulin_or_complement,serum,mass_spec_or_NMR,omics,1,1,2,1,FS-006218
+Complement C3,immunoglobulin_or_complement,serum,other,omics,1,1,1,1,FS-006218
+Complement C4B,immunoglobulin_or_complement,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004586
+Complement and platelet-associated protein cluster,proteome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-006440
+Complement component C7,immunoglobulin_or_complement,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004586
+Complement component C8 gamma chain,immunoglobulin_or_complement,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004586
+Complement factor H,immunoglobulin_or_complement,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004586
+Complement factor H,immunoglobulin_or_complement,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006754
+Complement receptor 1 expression,neutrophil_function,whole_blood,flow_cytometry,conventional,1,1,3,1,FS-004210
+Composite of 53 exercise-responsive oxylipins,metabolome_or_lipidome,serum,mass_spec_or_NMR,conventional,1,1,1,1,FS-006440
+Corticosteroid-binding globulin,other,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004586
+Cortisol,other,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002532
+Cp2 and alpha-2 globulin fraction association,other,serum,haematology_analyser,conventional,1,1,1,1,FS-009465
+Creatine kinase,other,plasma,haematology_analyser,conventional,1,1,1,1,FS-003683
+Creatine kinase,other,plasma,other,conventional,1,1,3,1,FS-005991
+Creatine kinase,other,serum,other,conventional,1,1,1,1,FS-006416
+Creatinine,other,serum,other,conventional,1,1,1,1,FS-003169
+Creatinine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006699
+Cystatin S,mucosal_antimicrobial_protein,saliva,mass_spec_or_NMR,omics,1,1,1,1,FS-005966
+Cystatin S,mucosal_antimicrobial_protein,saliva,other,conventional,1,2,3,1,FS-005966
+DEFA3 (tentative),other,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002264
+DEFA6 (tentative),other,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002264
+DEGs at 0 h,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006018
+DEGs at 20 h,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006018
+DEGs at 4 h,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006018
+DHA-LOX HDoHE composite,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,2,1,FS-006034
+DHA-LOX HDoHE composite,cytokine_or_inflammatory_mediator,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+DIP2A,other,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-006779
+DNA methylation,epigenome,plasma,sequencing_or_array,omics,1,1,1,1,FS-006534
+DNAI1,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,2,1,FS-006539
+DNER,other,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+DSC peak-capacity ratio Cp3/Cp1,other,serum,haematology_analyser,conventional,1,1,1,1,FS-009465
+DSC second local peak heat capacity,other,serum,haematology_analyser,conventional,1,1,1,1,FS-009465
+Day 1 acute protein hit count,proteome,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004152
+Detected biochemicals,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,5,1,FS-006810
+Differential urinary protein count,proteome,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+Differentially expressed genes,immune_cell_transcriptome,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006697
+Differentially expressed microRNA set,ncRNA,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-002739
+Docosahexaenoic acid,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006356
+Docosahexaenoic acid,metabolome_or_lipidome,serum,mass_spec_or_NMR,conventional,1,1,1,1,FS-006440
+E-selectin,cytokine_or_inflammatory_mediator,whole_blood,NR,conventional,1,1,4,1,FS-004786
+EIF4EBP1,other,other,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+EPA-LOX oxylipin composite,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+Effector-memory CD8-positive T cells,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-007011
+Eicosapentaenoic acid,metabolome_or_lipidome,serum,mass_spec_or_NMR,conventional,1,1,1,1,FS-006440
+Eight arachidonic acid–CYP-derived oxylipins,metabolome_or_lipidome,serum,mass_spec_or_NMR,conventional,1,1,1,1,FS-006440
+Endotoxin core antibody IgA,immunoglobulin_or_complement,plasma,immunoassay_ELISA_etc,conventional,1,1,6,1,FS-005516
+Endotoxin core antibody IgG,immunoglobulin_or_complement,plasma,immunoassay_ELISA_etc,conventional,1,1,6,1,FS-005516
+Endotoxin core antibody IgM,immunoglobulin_or_complement,plasma,immunoassay_ELISA_etc,conventional,1,1,6,1,FS-005516
+Eosinophil count,leukocyte_redistribution,plasma,other,conventional,1,1,1,1,FS-005971
+Epstein–Barr virus-reactive CD8-positive T cells,T_cell_subsets_or_function,cells_PBMC_or_isolated,sequencing_or_array,conventional,1,1,1,1,FS-007011
+F2-isoprostanes,other,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-002911
+FAHFA–IL-6 association set,metabolome_or_lipidome,serum,other,omics,1,1,1,1,FS-005458
+FCN1 (tentative),immunoglobulin_or_complement,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002264
+FDR-significant protein count,proteome,NR,multiplex_immunoassay,omics,1,1,3,1,FS-006342
+FGF-21,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+FOS,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+Fas ligand,T_cell_subsets_or_function,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006697
+Fas ligand,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-006787
+Fas ligand,cytokine_or_inflammatory_mediator,serum,sequencing_or_array,omics,1,1,1,1,FS-006928
+Fatty acid esters of hydroxy fatty acids,metabolome_or_lipidome,serum,other,omics,1,1,1,1,FS-005458
+Fc gamma receptor IIIb,neutrophil_function,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006018
+Ferric reducing ability of,other,plasma,other,conventional,1,1,2,1,FS-002532
+Ferritin,cytokine_or_inflammatory_mediator,plasma,other,conventional,1,1,2,1,FS-004136
+Ferritin,other,serum,haematology_analyser,conventional,1,1,1,1,FS-010204
+Formyl peptide receptor 1,neutrophil_function,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006018
+Fourteen author-reported significant proteins.,proteome,serum,sequencing_or_array,omics,1,1,1,1,FS-006928
+Fractalkine,cytokine_or_inflammatory_mediator,serum,multiplex_immunoassay,omics,1,1,1,1,FS-007011
+G0S2,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+GO and KEGG enrichment of hub genes,immune_cell_transcriptome,whole_blood,other,omics,1,1,1,1,FS-006018
+GO annotation,proteome,urine,other,omics,1,1,1,1,FS-004648
+GO gene-set enrichment,single_cell,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-005719
+GO gene-set enrichment,immune_cell_transcriptome,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006697
+GPR56,other,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+GRCh38 gene annotation,single_cell,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+Galectin-3-binding protein,cytokine_or_inflammatory_mediator,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004586
+Gamma globulin fraction,immunoglobulin_or_complement,serum,other,conventional,1,1,4,1,FS-005465
+Gamma-glutamylleucine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-002911
+Gamma-glutamyltyrosine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-002911
+Gelsolin,other,plasma,other,conventional,1,1,1,1,FS-003683
+Gene Ontology biological process terms,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-003828
+Gene Ontology enrichment,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006233
+Gene Ontology enrichment,proteome,cells_PBMC_or_isolated,mass_spec_or_NMR,omics,1,1,1,1,FS-006955
+Gene Ontology enrichment,immune_cell_transcriptome,whole_blood,other,omics,1,1,1,1,FS-007168
+Gene set enrichment analysis,proteome,cells_PBMC_or_isolated,mass_spec_or_NMR,omics,1,1,1,1,FS-006955
+Glutamic acid,metabolome_or_lipidome,serum,other,omics,1,1,1,1,FS-007261
+Glutaredoxin-1,other,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004586
+Glycochenodeoxycholate,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-002911
+Glycodeoxycholate,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-002911
+Granulocyte colony-stimulating factor,cytokine_or_inflammatory_mediator,serum,multiplex_immunoassay,conventional,1,1,2,1,FS-005931
+Granulocyte count,leukocyte_redistribution,whole_blood,other,conventional,1,1,1,1,FS-005226
+Granulocyte oxidative burst activity,neutrophil_function,whole_blood,flow_cytometry,conventional,1,1,2,1,FS-002911
+Granulocyte percentage,leukocyte_redistribution,whole_blood,haematology_analyser,conventional,1,1,1,1,FS-007132
+Granulocyte phagocytosis,neutrophil_function,whole_blood,flow_cytometry,conventional,1,1,2,1,FS-002911
+Guanosine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006024
+HAVCR2,T_cell_subsets_or_function,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006684
+HDAC7,other,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006684
+HEY1,other,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006684
+HIGH DEGs,other,tissue,sequencing_or_array,omics,1,1,1,1,FS-006843
+HLA class I,other,plasma,sequencing_or_array,conventional,1,1,1,1,FS-004414
+HLA-DQB2,T_cell_subsets_or_function,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006684
+HLA-DR activation marker,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-006697
+HLA-DRA,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+HSP90AA1,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+HSPA1A,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+HSPA8,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+Haematocrit,other,whole_blood,haematology_analyser,conventional,1,1,1,1,FS-003744
+Haemoglobin,other,whole_blood,haematology_analyser,conventional,1,1,1,1,FS-003744
+Haptoglobin,cytokine_or_inflammatory_mediator,plasma,other,conventional,1,1,2,1,FS-004136
+Haptoglobin,cytokine_or_inflammatory_mediator,dried_blood_spot,mass_spec_or_NMR,conventional,1,1,1,1,FS-005773
+Haptoglobin,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006018
+Haptoglobin,other,serum,mass_spec_or_NMR,omics,1,1,2,1,FS-006218
+Haptoglobin,other,serum,other,omics,1,1,1,1,FS-006218
+Haptoglobin,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006250
+Hemoglobin,other,plasma,other,conventional,1,1,2,1,FS-004136
+Hemoglobin alpha chain,other,dried_blood_spot,mass_spec_or_NMR,conventional,1,1,1,1,FS-005773
+Hepatocyte growth factor,cytokine_or_inflammatory_mediator,other,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+Higher protein cluster,proteome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006319
+Hippurate,metabolome_or_lipidome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002532
+Histidine,metabolome_or_lipidome,serum,other,omics,1,1,1,1,FS-007261
+Histone H2A types,other,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004152
+Histone H4,other,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004152
+Homo sapiens GO gene sets,single_cell,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,2,1,FS-006539
+Human herpesvirus 6 DNA,other,saliva,PCR,conventional,1,1,15,1,FS-006942
+Human herpesvirus 6 DNA,other,whole_blood,PCR,conventional,1,1,1,1,FS-006942
+Human herpesvirus 6 DNA,other,serum,PCR,conventional,1,1,1,1,FS-006942
+Human herpesvirus 7 DNA,other,saliva,PCR,conventional,1,1,3,1,FS-006942
+Hydrogen peroxide emission,other,cells_PBMC_or_isolated,other,conventional,1,1,3,1,FS-006342
+ICOS,T_cell_subsets_or_function,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+IER3,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,2,1,FS-006539
+IFIT2,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006754
+IFN-gamma,cytokine_or_inflammatory_mediator,serum,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-003464
+IFN-gamma,cytokine_or_inflammatory_mediator,serum,multiplex_immunoassay,conventional,1,1,1,1,FS-005727
+IFN-gamma,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,other,conventional,1,1,2,1,FS-006697
+IFN-gamma,T_cell_subsets_or_function,cells_PBMC_or_isolated,other,conventional,1,1,1,1,FS-007011
+IFNB1,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006754
+IFNGR2,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+IGHA1,immunoglobulin_or_complement,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+IGHA1–CST4–IGK–KLK1 correlations,immunoglobulin_or_complement,saliva,other,conventional,1,1,1,1,FS-005966
+IGKC,immunoglobulin_or_complement,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+IGLV2-18,immunoglobulin_or_complement,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+IGLV3-21,immunoglobulin_or_complement,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+IGLV4-69,immunoglobulin_or_complement,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+IL-1,cytokine_or_inflammatory_mediator,serum,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-004336
+IL-1,cytokine_or_inflammatory_mediator,saliva,mass_spec_or_NMR,omics,1,1,1,1,FS-008505
+IL-10,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,PCR,conventional,1,1,1,1,FS-007132
+IL-10RA,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+IL-10RB,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+IL-11RA,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006684
+IL-12,cytokine_or_inflammatory_mediator,plasma,immunoassay_ELISA_etc,conventional,1,1,14,1,FS-002122
+IL-13,cytokine_or_inflammatory_mediator,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002264
+IL-13,cytokine_or_inflammatory_mediator,other,multiplex_immunoassay,omics,1,1,1,1,FS-004308
+IL-15,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+IL-15,cytokine_or_inflammatory_mediator,plasma,immunoassay_ELISA_etc,conventional,1,1,2,1,FS-006275
+IL-15,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,conventional,1,1,1,1,FS-006534
+IL-15,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006684
+IL-16,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,conventional,1,1,1,1,FS-006534
+IL-17,cytokine_or_inflammatory_mediator,tissue,other,omics,1,1,1,1,FS-007237
+IL-17A,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,conventional,1,1,1,1,FS-005727
+IL-17A,cytokine_or_inflammatory_mediator,serum,multiplex_immunoassay,conventional,1,1,1,1,FS-005727
+IL-17B,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,3,1,FS-002772
+IL-17F,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,conventional,1,1,2,1,FS-006534
+IL-18,cytokine_or_inflammatory_mediator,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002264
+IL-18,cytokine_or_inflammatory_mediator,other,multiplex_immunoassay,omics,1,1,2,2,FS-004308
+IL-18,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+IL-18,cytokine_or_inflammatory_mediator,saliva,mass_spec_or_NMR,omics,1,1,1,1,FS-008505
+IL-18R1,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,3,1,FS-002772
+IL-18R1,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+IL-1A; IL-8 (tentative alternatives),cytokine_or_inflammatory_mediator,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002264
+IL-1B,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+IL-1B; IL-7 (tentative alternatives),cytokine_or_inflammatory_mediator,serum,mass_spec_or_NMR,omics,1,1,2,1,FS-002264
+IL-1R1,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+IL-1R2,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,3,1,FS-002772
+IL-1R2,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+IL-1RL1,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,3,1,FS-002772
+IL-1RN,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+IL-1RN; protein CX (tentative alternatives),cytokine_or_inflammatory_mediator,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002264
+IL-1beta,cytokine_or_inflammatory_mediator,serum,multiplex_immunoassay,conventional,1,1,1,1,FS-005727
+IL-1ra,cytokine_or_inflammatory_mediator,plasma,immunoassay_ELISA_etc,conventional,1,1,2,1,FS-006275
+IL-2,cytokine_or_inflammatory_mediator,serum,immunoassay_ELISA_etc,conventional,1,1,4,1,FS-003464
+IL-2,cytokine_or_inflammatory_mediator,other,multiplex_immunoassay,omics,1,1,1,1,FS-004308
+IL-2,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-006697
+IL-27,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+IL-2RB,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,3,1,FS-002772
+IL-32,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+IL-33,cytokine_or_inflammatory_mediator,serum,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-004336
+IL-36,cytokine_or_inflammatory_mediator,saliva,mass_spec_or_NMR,omics,1,1,1,1,FS-008505
+IL-4R,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+IL-5,cytokine_or_inflammatory_mediator,other,multiplex_immunoassay,omics,1,1,1,1,FS-004308
+IL-5,cytokine_or_inflammatory_mediator,serum,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-007021
+IL-5RA,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,3,1,FS-002772
+IL-5RA,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+IL-6,cytokine_or_inflammatory_mediator,plasma,immunoassay_ELISA_etc,omics,1,1,1,1,FS-002911
+IL-6,cytokine_or_inflammatory_mediator,saliva,immunoassay_ELISA_etc,conventional,1,1,4,1,FS-002928
+IL-6,cytokine_or_inflammatory_mediator,serum,haematology_analyser,conventional,1,1,1,1,FS-004826
+IL-6,cytokine_or_inflammatory_mediator,plasma,haematology_analyser,conventional,1,1,2,1,FS-006275
+IL-6,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-006787
+IL-6,cytokine_or_inflammatory_mediator,serum,sequencing_or_array,omics,1,1,2,2,FS-006928
+IL-6,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,PCR,conventional,1,1,1,1,FS-007132
+IL-6,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,multiplex_immunoassay,conventional,1,1,2,1,FS-007132
+IL-6,cytokine_or_inflammatory_mediator,tissue,other,omics,1,1,1,1,FS-007237
+IL-6R,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+IL-7,cytokine_or_inflammatory_mediator,other,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+IL-7,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+IL-8,cytokine_or_inflammatory_mediator,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002264
+IL-8,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,3,1,FS-002772
+IL-8,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,immunoassay_ELISA_etc,conventional,1,1,4,1,FS-004110
+IL-8,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,conventional,1,1,1,1,FS-005727
+IL-8RB,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,3,1,FS-002772
+IL-9,cytokine_or_inflammatory_mediator,serum,multiplex_immunoassay,conventional,1,1,1,1,FS-006935
+IRAK4,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+IRF8,other,whole_blood,sequencing_or_array,omics,1,1,2,1,FS-006684
+Identified compounds,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,2,1,FS-002911
+IgG,immunoglobulin_or_complement,UNCLEAR,immunoassay_ELISA_etc,conventional,1,1,4,1,FS-003190
+IgM,immunoglobulin_or_complement,UNCLEAR,immunoassay_ELISA_etc,conventional,1,1,4,1,FS-003190
+Immune-function network superfamily,other,tissue,other,omics,1,1,1,1,FS-007237
+Immunoglobulin E,immunoglobulin_or_complement,serum,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-007021
+Immunoglobulin G,immunoglobulin_or_complement,serum,other,conventional,1,1,1,1,FS-003169
+Immunoglobulin G,immunoglobulin_or_complement,serum,immunoassay_ELISA_etc,conventional,1,1,4,1,FS-005465
+Immunoglobulin G,immunoglobulin_or_complement,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-005931
+Immunoglobulin M,immunoglobulin_or_complement,serum,other,conventional,1,1,1,1,FS-003169
+Immunoglobulin heavy constant alpha 1,immunoglobulin_or_complement,saliva,mass_spec_or_NMR,omics,1,1,1,1,FS-005966
+Immunoglobulin heavy constant alpha 1,immunoglobulin_or_complement,saliva,other,conventional,1,2,3,1,FS-005966
+Immunoglobulin heavy constant alpha 1,immunoglobulin_or_complement,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006250
+Immunoglobulin heavy constant alpha 2,immunoglobulin_or_complement,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006250
+Immunoglobulin heavy constant gamma 2,immunoglobulin_or_complement,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006250
+Immunoglobulin heavy constant gamma 3,immunoglobulin_or_complement,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006250
+Immunoglobulin heavy constant gamma 4,immunoglobulin_or_complement,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006250
+Immunoglobulin heavy variable 3-7,immunoglobulin_or_complement,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006250
+Immunoglobulin heavy variable 4-59,immunoglobulin_or_complement,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006250
+Immunoglobulin kappa constant,immunoglobulin_or_complement,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004586
+Immunoglobulin kappa free light chain,immunoglobulin_or_complement,serum,multiplex_immunoassay,conventional,1,1,3,1,FS-003169
+Immunoglobulin kappa free light chain,immunoglobulin_or_complement,serum,other,conventional,1,1,2,1,FS-003169
+Immunoglobulin kappa light chain,immunoglobulin_or_complement,saliva,mass_spec_or_NMR,omics,1,1,1,1,FS-005966
+Immunoglobulin kappa light chain,immunoglobulin_or_complement,saliva,other,conventional,1,2,3,1,FS-005966
+Immunoglobulin kappa variable 3-11,immunoglobulin_or_complement,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006250
+Immunoglobulin kappa variable 3-20,immunoglobulin_or_complement,urine,mass_spec_or_NMR,omics,1,1,2,1,FS-006883
+Immunoglobulin kappa-to-lambda free light chain ratio,immunoglobulin_or_complement,serum,other,conventional,1,1,1,1,FS-003169
+Immunoglobulin kappa-to-lambda free light chain ratio,immunoglobulin_or_complement,serum,multiplex_immunoassay,conventional,1,1,2,1,FS-003169
+Immunoglobulin lambda constant 3,immunoglobulin_or_complement,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006250
+Immunoglobulin lambda free light chain,immunoglobulin_or_complement,serum,multiplex_immunoassay,conventional,1,1,2,1,FS-003169
+Immunoglobulin lambda free light chain,immunoglobulin_or_complement,serum,other,conventional,1,1,1,1,FS-003169
+Immunoglobulin lambda variable 1-47,immunoglobulin_or_complement,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006250
+Immunoglobulin lambda-like polypeptide 5,immunoglobulin_or_complement,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006250
+Indoleacetate,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-002911
+Innate immune protein cluster,proteome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-006440
+Integrin alpha 4 expression,neutrophil_function,whole_blood,flow_cytometry,conventional,1,1,3,1,FS-004210
+Integrin alpha M expression,neutrophil_function,whole_blood,flow_cytometry,conventional,1,1,3,1,FS-004210
+Inter-alpha-trypsin inhibitor heavy chain H1,other,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004586
+Inter-alpha-trypsin inhibitor heavy chain H4,cytokine_or_inflammatory_mediator,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004586
+Intercellular adhesion molecule 1,other,plasma,sequencing_or_array,conventional,1,1,1,1,FS-004414
+Intercellular adhesion molecule 1,cytokine_or_inflammatory_mediator,whole_blood,NR,conventional,1,1,4,1,FS-004786
+Iron,other,plasma,other,conventional,1,1,2,1,FS-004136
+Iron,other,serum,haematology_analyser,conventional,1,1,1,1,FS-010204
+Isobutyrylcarnitine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-002911
+JUN,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+JUNB,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+KEGG gene-set enrichment,single_cell,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-005719
+KEGG pathway enrichment,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006233
+KEGG pathway enrichment,immune_cell_transcriptome,whole_blood,other,omics,1,1,1,1,FS-007168
+KEGG pathway-score correlations with match load,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006233
+KEGG pathway-score correlations with season load,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006233
+KEGG pathways,immune_cell_transcriptome,cells_PBMC_or_isolated,other,omics,1,1,1,1,FS-003525
+KIR2DL3/KIR2DL4 combined label,NK_count_or_cytotoxicity,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006684
+KLRC1,NK_count_or_cytotoxicity,whole_blood,sequencing_or_array,omics,1,1,2,1,FS-006684
+KMO,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-003525
+Kallikrein 1,mucosal_antimicrobial_protein,saliva,mass_spec_or_NMR,omics,1,1,1,1,FS-005966
+Kallikrein 1,mucosal_antimicrobial_protein,saliva,other,conventional,1,2,3,1,FS-005966
+Ki-67 proliferation marker,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-006697
+Kynurenine,metabolome_or_lipidome,UNCLEAR,other,conventional,1,1,4,1,FS-003540
+Kynurenine,metabolome_or_lipidome,plasma,other,conventional,1,1,1,1,FS-005045
+Kynurenine to tryptophan ratio,metabolome_or_lipidome,UNCLEAR,mass_spec_or_NMR,conventional,1,1,6,1,FS-003540
+Kyoto Encyclopedia of Genes and Genomes pathways,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-003828
+LA-CYP diHOME composite,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+LA-DiHOMES+HODES,metabolome_or_lipidome,serum,mass_spec_or_NMR,omics,1,1,2,1,FS-005931
+LA-LOX oxylipin composite,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+LAG3,T_cell_subsets_or_function,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006684
+LAIR-1/CD49d expression association,neutrophil_function,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-004210
+LAP-TGF-β1,cytokine_or_inflammatory_mediator,other,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+LEO1,other,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-006779
+LGALS7,other,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-006779
+LILRA4,other,whole_blood,sequencing_or_array,omics,1,1,2,1,FS-006684
+LOW DEGs,other,tissue,sequencing_or_array,omics,1,1,1,1,FS-006843
+LRG1,proteome,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+LRRC8C,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+LRRC8D,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+"LXB4, PGD2, and RvD3 response set",metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006356
+LYZ,mucosal_antimicrobial_protein,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+Lactate,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006024
+Lactate,other,whole_blood,other,conventional,1,1,9,1,FS-006942
+Large unstained cell count,leukocyte_redistribution,whole_blood,haematology_analyser,conventional,1,1,3,1,FS-002905
+Leukocyte-associated immunoglobulin-like receptor 1 expression,neutrophil_function,whole_blood,flow_cytometry,conventional,1,1,3,1,FS-004210
+Leukotriene B4,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+Leukotriene B4,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+Linoleic acid,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006024
+Linoleic acid,metabolome_or_lipidome,plasma,mass_spec_or_NMR,conventional,1,1,1,1,FS-006024
+Linoleic acid ester of hydroxy stearic acid,metabolome_or_lipidome,serum,other,omics,1,1,1,1,FS-005458
+Linoleic acid–CYP DiHOME composite,metabolome_or_lipidome,serum,mass_spec_or_NMR,conventional,1,1,1,1,FS-006440
+Linoleic acid–LOX HODE composite,metabolome_or_lipidome,serum,mass_spec_or_NMR,conventional,1,1,1,1,FS-006440
+Linoleic acid–arachidonic acid relationship,metabolome_or_lipidome,plasma,mass_spec_or_NMR,conventional,1,1,1,1,FS-006024
+Lipids and fatty acids,metabolome_or_lipidome,serum,other,omics,1,1,1,1,FS-007261
+Lipocalin-2,cytokine_or_inflammatory_mediator,serum,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-007132
+Lipopolysaccharide,other,serum,immunoassay_ELISA_etc,conventional,1,1,3,1,FS-003445
+Lipopolysaccharide-binding protein,cytokine_or_inflammatory_mediator,dried_blood_spot,mass_spec_or_NMR,conventional,1,1,1,1,FS-005773
+Lipopolysaccharide-binding protein,cytokine_or_inflammatory_mediator,plasma,immunoassay_ELISA_etc,conventional,1,1,2,1,FS-005905
+Lipoxin A4,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+Lipoxin A5,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+Lipoxin B4,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+Lipoxin B4,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006356
+Lower protein cluster,proteome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006319
+Lymphocyte and leukocyte function networks,leukocyte_redistribution,tissue,other,omics,1,1,1,1,FS-007237
+Lymphocyte percentage,leukocyte_redistribution,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-005226
+Lymphocyte percentage,leukocyte_redistribution,whole_blood,haematology_analyser,conventional,1,1,1,1,FS-007132
+Lysozyme C,neutrophil_function,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004152
+MARCKS,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+MH changed miRNAs,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-003695
+MHC class II,other,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-004414
+MIF,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+MLST8,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,2,1,FS-006539
+MMP-1,other,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+MMP-10,other,other,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+MMP-10,other,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+MMP9,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+MOD DEGs,other,tissue,sequencing_or_array,omics,1,1,1,1,FS-006843
+MR1,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006754
+MS changed miRNAs,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-003695
+MT-CO1,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+MT-CO2,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+MYC,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+Mannose-binding lectin 2,immunoglobulin_or_complement,dried_blood_spot,mass_spec_or_NMR,conventional,1,1,1,1,FS-005773
+Maresin 1,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+Mature neutrophil subset count,leukocyte_redistribution,whole_blood,flow_cytometry,conventional,1,1,3,1,FS-004210
+Mean corpuscular haemoglobin,other,whole_blood,haematology_analyser,conventional,1,1,2,2,FS-003744
+Mean corpuscular volume,other,whole_blood,haematology_analyser,conventional,1,1,1,1,FS-003744
+Metabolite–IL-6 correlation set,metabolome_or_lipidome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-005458
+Mitochondrial membrane potential,neutrophil_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,4,8,1,FS-002039
+Mitochondrial reactive oxygen species,neutrophil_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,4,7,1,FS-002039
+Mixed inhalant allergen-specific IgE,immunoglobulin_or_complement,serum,other,conventional,1,1,2,2,FS-002162
+Mixed leukocyte differential count,leukocyte_redistribution,whole_blood,haematology_analyser,conventional,1,1,2,1,FS-004886
+Monocyte chemoattractant protein 1,cytokine_or_inflammatory_mediator,plasma,immunoassay_ELISA_etc,conventional,1,1,2,1,FS-002911
+Monocyte chemoattractant protein-1,cytokine_or_inflammatory_mediator,plasma,immunoassay_ELISA_etc,conventional,1,1,2,1,FS-002532
+Monocyte chemoattractant protein-1,cytokine_or_inflammatory_mediator,serum,immunoassay_ELISA_etc,conventional,1,1,2,1,FS-004886
+Monocyte proportion,leukocyte_redistribution,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-005950
+Myeloid dendritic cells,other,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,5,1,FS-006144
+Myeloid immune invasion,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006684
+Myeloperoxidase,cytokine_or_inflammatory_mediator,plasma,NR,conventional,1,1,2,1,FS-002532
+Myeloperoxidase,cytokine_or_inflammatory_mediator,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004586
+Myeloperoxidase,other,plasma,multiplex_immunoassay,conventional,1,1,1,1,FS-005727
+Myeloperoxidase,other,serum,multiplex_immunoassay,conventional,1,1,1,1,FS-005727
+Myeloperoxidase,neutrophil_function,plasma,sequencing_or_array,omics,1,1,1,1,FS-006534
+Myeloperoxidase,neutrophil_function,plasma,other,conventional,1,1,1,1,FS-006699
+Myo-inositol,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-002911
+Myoglobin,other,serum,immunoassay_ELISA_etc,conventional,1,1,3,1,FS-004886
+Myoglobin,other,plasma,other,conventional,1,1,1,1,FS-005168
+Myoglobin,other,plasma,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-006554
+Myosin light polypeptide 6,other,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004152
+N-acetylserine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006810
+N-linoleoylglycine,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+N-oleoylethanolamide,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+N-oleoylglycine,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+N-palmitoleoylethanolamide,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+N-palmitoylethanolamide,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+NAA30,other,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-006779
+NADPH oxidase 2,other,cells_PBMC_or_isolated,other,conventional,1,1,1,1,FS-006342
+NCR3,NK_count_or_cytotoxicity,whole_blood,sequencing_or_array,omics,1,1,2,1,FS-006684
+NF-κB p65 phosphorylated at Ser536,cytokine_or_inflammatory_mediator,tissue,other,conventional,1,1,1,1,FS-007930
+NF-κB p65 protein,cytokine_or_inflammatory_mediator,tissue,other,conventional,1,1,1,1,FS-007930
+NFKB2,other,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-006779
+NK cell invasion/activity,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006684
+NKG7,NK_count_or_cytotoxicity,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+NLR,leukocyte_redistribution,NR,haematology_analyser,conventional,1,1,2,1,FS-006319
+NME2,other,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+NPC2,proteome,urine,mass_spec_or_NMR,omics,1,1,2,1,FS-006883
+NPNT,other,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+NT5E,other,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006684
+Natural killer cell percentage,NK_count_or_cytotoxicity,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-005226
+Natural killer-cell proportion,NK_count_or_cytotoxicity,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-005950
+Naïve CD8-positive T cells,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-007011
+Neopterin,cytokine_or_inflammatory_mediator,UNCLEAR,immunoassay_ELISA_etc,conventional,1,1,3,1,FS-003540
+Neopterin,cytokine_or_inflammatory_mediator,serum,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-007132
+Neopterin,cytokine_or_inflammatory_mediator,urine,other,conventional,1,1,2,1,FS-007174
+Neopterin,cytokine_or_inflammatory_mediator,whole_blood,other,conventional,1,1,1,1,FS-007174
+Neprilysin,proteome,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-006883
+Neutrophil cytosolic factor 4,neutrophil_function,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006018
+Neutrophil defensin 1,neutrophil_function,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004152
+Neutrophil degranulation pathway,proteome,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-006883
+Neutrophil elastase,neutrophil_function,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004152
+Neutrophil reactive oxygen species,neutrophil_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-002039
+Nine-gene ROC model,immune_cell_transcriptome,whole_blood,other,omics,1,1,1,1,FS-006018
+Non-histone chromosomal protein HMG-17,other,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004152
+Notch signaling,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006684
+Nucleoside diphosphate kinase,other,urine,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-004648
+Nucleoside diphosphate kinase A,other,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004586
+Nε-carboxymethyllysine advanced glycation end product,other,serum,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-004336
+O-Methylcatechol sulfate,metabolome_or_lipidome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002532
+OSM,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,2,1,FS-006684
+Oleic acid hydroxy ester of oleic acid,metabolome_or_lipidome,serum,other,omics,1,1,1,1,FS-005458
+Oncostatin M,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006018
+Orosomucoid (alpha-1-acid glycoprotein),cytokine_or_inflammatory_mediator,plasma,other,conventional,1,1,1,1,FS-003683
+Orosomucoid 1,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006250
+Osmolality-normalized lactoferrin,mucosal_antimicrobial_protein,saliva,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-006024
+Osmolality-normalized lysozyme,mucosal_antimicrobial_protein,saliva,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-006024
+Osteoprotegerin,other,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+Overlapping DEGs,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006018
+Oxidized-to-reduced glutathione ratio,neutrophil_function,cells_PBMC_or_isolated,other,conventional,1,2,4,1,FS-002039
+P-selectin,cytokine_or_inflammatory_mediator,whole_blood,NR,conventional,1,1,4,1,FS-004786
+PANTHER categories,immune_cell_transcriptome,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-002772
+PBMC electron-transfer capacity,other,cells_PBMC_or_isolated,functional_assay,conventional,1,1,4,1,FS-005624
+PBMC electron-transfer capacity,other,whole_blood,other,conventional,1,1,1,1,FS-005624
+PBMC electron-transfer capacity,other,cells_PBMC_or_isolated,other,conventional,1,1,5,1,FS-005624
+PBMC electron-transfer capacity,other,serum,other,conventional,1,1,3,1,FS-005624
+PBMC excess electron-transfer capacity,other,cells_PBMC_or_isolated,functional_assay,conventional,1,2,4,1,FS-005624
+PBMC free routine activity,other,cells_PBMC_or_isolated,functional_assay,conventional,1,1,5,1,FS-005624
+PBMC free routine activity,other,whole_blood,other,conventional,1,1,1,1,FS-005624
+PBMC free routine activity,other,cells_PBMC_or_isolated,other,conventional,1,1,5,1,FS-005624
+PBMC free routine activity,other,serum,other,conventional,1,1,3,1,FS-005624
+PBMC leak respiration,other,cells_PBMC_or_isolated,functional_assay,conventional,1,1,3,1,FS-005624
+PBMC protein fitness signature,proteome,cells_PBMC_or_isolated,mass_spec_or_NMR,omics,1,1,1,1,FS-006955
+PBMC protein fitness signature score,proteome,cells_PBMC_or_isolated,mass_spec_or_NMR,omics,1,1,1,1,FS-006955
+PBMC proteomic hit counts,proteome,cells_PBMC_or_isolated,mass_spec_or_NMR,omics,1,1,1,1,FS-006955
+PBMC respiration states,other,cells_PBMC_or_isolated,functional_assay,conventional,1,1,1,1,FS-005624
+PBMC routine control ratio,other,cells_PBMC_or_isolated,functional_assay,conventional,1,1,1,1,FS-005624
+PBMC routine respiration,other,cells_PBMC_or_isolated,functional_assay,conventional,1,1,7,1,FS-005624
+PBMC routine respiration,other,whole_blood,other,conventional,1,1,1,1,FS-005624
+PBMC routine respiration,other,cells_PBMC_or_isolated,other,conventional,1,1,5,1,FS-005624
+PBMC routine respiration,other,serum,other,conventional,1,1,3,1,FS-005624
+PDGFRL,other,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+PF4,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+PGP,other,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+PIM1,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,2,1,FS-006539
+PIP,mucosal_antimicrobial_protein,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+PLAG1 zinc finger,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006697
+PLAUR,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+PMA-stimulated cytosolic reactive oxygen species,neutrophil_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,3,5,1,FS-002039
+PMA-stimulated neutrophil oxidative burst,neutrophil_function,whole_blood,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-006024
+PMA-stimulated-to-basal cytosolic ROS ratio,neutrophil_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,2,2,1,FS-002039
+PPBP,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+PSAP,other,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+PSMA1,other,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006684
+PSMB10,other,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006684
+PTGS2,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+PTMA,other,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-006779
+Palmitic acid ester of hydroxy palmitoleic acid,metabolome_or_lipidome,serum,other,omics,1,1,1,1,FS-005458
+Palmitic acid ester of hydroxy stearic acid,metabolome_or_lipidome,serum,other,omics,1,1,1,1,FS-005458
+Palmitic acid hydroxy ester of oleic acid,metabolome_or_lipidome,serum,other,omics,1,1,1,1,FS-005458
+Palmitoleic acid ester of hydroxy linoleic acid,metabolome_or_lipidome,serum,other,omics,1,1,1,1,FS-005458
+Palmitoleic acid ester of hydroxy stearic acid,metabolome_or_lipidome,serum,other,omics,1,1,1,1,FS-005458
+Paraoxonase 1,other,plasma,immunoassay_ELISA_etc,conventional,1,1,3,1,FS-005385
+Paraoxonase 1 activity,other,plasma,other,conventional,1,1,3,1,FS-005385
+Paraxanthine,metabolome_or_lipidome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002532
+Peripheral blood neutrophil count,leukocyte_redistribution,whole_blood,haematology_analyser,conventional,1,1,5,1,FS-004210
+Peripheral tissue inflammatory response,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006684
+Phagosome pathway,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,2,1,FS-006233
+Phenylacetate,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-002911
+Phenylacetylglutamine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-002911
+Phenylalanine,metabolome_or_lipidome,UNCLEAR,other,conventional,1,1,1,1,FS-003540
+Phenylalanine to tyrosine ratio,metabolome_or_lipidome,UNCLEAR,mass_spec_or_NMR,conventional,1,1,1,1,FS-003540
+Plasmacytoid dendritic cells,other,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,6,1,FS-006144
+Platelet factor 4,other,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004152
+Platelet factor 4,other,whole_blood,NR,conventional,1,1,4,1,FS-004786
+Platelet-derived growth factor receptor-like protein,other,urine,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-004648
+Profilin-1,other,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004152
+Prolactin-inducible protein,mucosal_antimicrobial_protein,urine,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-004648
+Proliferation-associated protein 2G4,other,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004586
+Prostaglandin D2,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+Prostaglandin E2,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+Prostaglandin F2,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006356
+Prostaglandin F2 alpha,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+Protectin D1,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+Protectin D1,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+Protein S100-A12,cytokine_or_inflammatory_mediator,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004152
+Protein S100-A8,cytokine_or_inflammatory_mediator,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004152
+Protein amide III band,proteome,serum,other,omics,1,1,1,1,FS-007261
+Protein carbonyls,other,plasma,other,conventional,1,1,2,1,FS-002532
+RAD50 mRNA,immune_cell_transcriptome,cells_PBMC_or_isolated,PCR,conventional,1,1,1,1,FS-002739
+RAP2B,other,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-006779
+RGS1,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+RORC,T_cell_subsets_or_function,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006684
+RPS10,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+RV EF-associated peak set,proteome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002264
+Raffinose,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-002911
+Raman difference spectra,metabolome_or_lipidome,serum,other,omics,1,1,1,1,FS-007261
+Reactome pathways,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-003828
+Red blood cell count,other,whole_blood,haematology_analyser,conventional,1,1,1,1,FS-003744
+Red blood cell distribution width,other,whole_blood,haematology_analyser,conventional,1,1,1,1,FS-003744
+Resolvin D1,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+Resolvin D2,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+Resolvin D3,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006356
+Resolvin D6,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+Resolvin E1,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+Resolvin E1,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006356
+Resolvin E3,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+Resting luminol-enhanced whole blood chemiluminescence,neutrophil_function,whole_blood,immunoassay_ELISA_etc,conventional,1,1,3,1,FS-004544
+S-adenosylhomocysteine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006810
+S100 calcium binding protein A12,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006018
+S100 calcium binding protein A12,cytokine_or_inflammatory_mediator,serum,sequencing_or_array,omics,1,1,1,1,FS-006928
+S100 calcium binding protein A9,cytokine_or_inflammatory_mediator,serum,sequencing_or_array,omics,1,1,1,1,FS-006928
+S100 calcium-binding protein A8,other,plasma,multiplex_immunoassay,conventional,1,1,1,1,FS-005727
+S100 calcium-binding protein A8,other,serum,multiplex_immunoassay,conventional,1,1,1,1,FS-005727
+S100 calcium-binding protein A9,other,plasma,multiplex_immunoassay,conventional,1,1,1,1,FS-005727
+S100 calcium-binding protein A9,other,serum,multiplex_immunoassay,conventional,1,1,1,1,FS-005727
+S100 calcium-binding protein B,other,plasma,multiplex_immunoassay,conventional,1,1,1,1,FS-005727
+S100 calcium-binding protein B,other,serum,multiplex_immunoassay,conventional,1,1,1,1,FS-005727
+S100A8,cytokine_or_inflammatory_mediator,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-005931
+S100A8 (tentative),cytokine_or_inflammatory_mediator,serum,mass_spec_or_NMR,omics,1,1,2,1,FS-002264
+S100A9,cytokine_or_inflammatory_mediator,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-005931
+SAA1 (tentative),cytokine_or_inflammatory_mediator,serum,mass_spec_or_NMR,omics,1,1,3,1,FS-002264
+SAA1; FKBP1B; GPHA2 (tentative alternatives),cytokine_or_inflammatory_mediator,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002264
+SAA1; KCNE3 (tentative alternatives),cytokine_or_inflammatory_mediator,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002264
+SAHLA,metabolome_or_lipidome,serum,other,omics,1,1,1,1,FS-005458
+SARS-CoV-2 spike receptor-binding domain IgG,immunoglobulin_or_complement,serum,immunoassay_ELISA_etc,conventional,1,1,5,1,FS-007261
+SARS-CoV-2-reactive CD8-positive T cells,T_cell_subsets_or_function,cells_PBMC_or_isolated,sequencing_or_array,conventional,1,1,1,1,FS-007011
+SCGB1D2,other,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-006779
+SCType immune-system marker database,leukocyte_redistribution,cells_PBMC_or_isolated,haematology_analyser,omics,1,1,1,1,FS-006539
+SCUBE2,other,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+SE changed miRNAs,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-003695
+SEMG1,other,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+SEMG2,other,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+SERPINA1,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+SESN2,other,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006684
+SH2 domain-containing protein 1B,proteome,cells_PBMC_or_isolated,mass_spec_or_NMR,omics,1,1,1,1,FS-006955
+SIGLEC6,other,whole_blood,sequencing_or_array,omics,1,1,2,1,FS-006684
+SLAMF7,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006754
+SOCS2,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+SOCS6,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+SOCS7,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+SOD2,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+SPM intermediate oxylipin composite,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,2,1,FS-006034
+SPM intermediate oxylipin composite,cytokine_or_inflammatory_mediator,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+SPTLC1,other,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-006779
+ST2 / IL-1RL1,cytokine_or_inflammatory_mediator,plasma,other,conventional,1,1,1,1,FS-006699
+STRING network annotation,proteome,urine,other,omics,1,1,1,1,FS-004648
+STRING pathway enrichment,proteome,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004152
+Saturated long-chain fatty acids,metabolome_or_lipidome,serum,other,omics,1,1,1,1,FS-007261
+Selected metabolite feature set,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006024
+Semenogelin-1,other,urine,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-004648
+Serpin B1,other,urine,mass_spec_or_NMR,omics,1,1,2,1,FS-006883
+Seven peak-change patterns,proteome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002264
+Significant iTRAQ protein set,proteome,saliva,mass_spec_or_NMR,omics,1,1,1,1,FS-005966
+Sirtuin 6 mRNA,immune_cell_transcriptome,cells_PBMC_or_isolated,PCR,conventional,1,1,2,1,FS-002739
+Soluble CD14,cytokine_or_inflammatory_mediator,plasma,immunoassay_ELISA_etc,conventional,1,1,2,1,FS-005905
+Stearic acid ester of hydroxy oleic acid,metabolome_or_lipidome,serum,other,omics,1,1,1,1,FS-005458
+Stimulated neutrophil elastase release,neutrophil_function,whole_blood,immunoassay_ELISA_etc,conventional,1,1,3,1,FS-006024
+Stimulated neutrophil elastase release,neutrophil_function,whole_blood,mass_spec_or_NMR,conventional,1,1,1,1,FS-006024
+Sucrose,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-002911
+Sum of exercise-responsive oxylipins,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006319
+Sum of immunoglobulin kappa and lambda free light chains,immunoglobulin_or_complement,serum,multiplex_immunoassay,conventional,1,1,3,1,FS-003169
+Sum of immunoglobulin kappa and lambda free light chains,immunoglobulin_or_complement,serum,other,conventional,1,1,1,1,FS-003169
+Sum oxylipins,metabolome_or_lipidome,serum,mass_spec_or_NMR,omics,1,1,2,1,FS-005931
+T-cell development and activation networks,T_cell_subsets_or_function,tissue,other,omics,1,1,1,1,FS-007237
+T-cell proportion,T_cell_subsets_or_function,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-005950
+TERF2 interacting protein mRNA,immune_cell_transcriptome,cells_PBMC_or_isolated,PCR,conventional,1,1,2,1,FS-002739
+TF,proteome,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+TFG-beta signaling pathway,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006233
+TFN signaling pathway,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006233
+TGF-α,cytokine_or_inflammatory_mediator,other,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+TLR2,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+TLR4,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+TNF receptor superfamily member 4,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-006787
+TNF superfamily member 10,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-005719
+TNF superfamily member 10,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-006787
+TNF superfamily member 12,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-006787
+TNF-alpha,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,immunoassay_ELISA_etc,conventional,1,1,4,1,FS-004110
+TNF-alpha,cytokine_or_inflammatory_mediator,serum,other,conventional,1,1,1,1,FS-005458
+TNF-alpha,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006697
+TNF-alpha,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-006787
+TNFAIP3,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+TNFSF12,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006754
+TNFSF13B,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006754
+TNFSF4,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006754
+TNIP3,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-003525
+TOPORS,other,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-006779
+TRAF6,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006754
+TREM1; IL-26 (tentative alternatives),cytokine_or_inflammatory_mediator,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002264
+TXLNA,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,3,1,FS-002772
+Targeted KP metabolites and neurotransmitters,metabolome_or_lipidome,other,mass_spec_or_NMR,conventional,1,1,1,1,FS-005045
+Targeted KP metabolites and neurotransmitters,metabolome_or_lipidome,plasma,mass_spec_or_NMR,conventional,1,1,1,1,FS-005045
+Telomerase reverse transcriptase mRNA,immune_cell_transcriptome,cells_PBMC_or_isolated,PCR,conventional,1,1,1,1,FS-002739
+Telomere-associated transcript set,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-002739
+Temporal protein clusters,proteome,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-006554
+Terminally differentiated effector-memory CD8-positive T cells,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-007011
+Tetradecenoylcarnitine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006024
+Tetranor 12-hydroxyeicosatetraenoic acid,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+Theophylline,metabolome_or_lipidome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002532
+Thiocyanate,other,saliva,other,conventional,1,2,12,1,FS-006687
+Thioredoxin,other,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004586
+Thromboxane B2,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-004434
+Thromboxane B2,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+Total dendritic cells,other,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,5,1,FS-006144
+Total glutathione,neutrophil_function,cells_PBMC_or_isolated,other,conventional,1,2,4,1,FS-002039
+Total immunoglobulin E,immunoglobulin_or_complement,serum,other,conventional,1,1,2,1,FS-002162
+Total lymphocyte count,leukocyte_redistribution,whole_blood,other,conventional,1,1,1,1,FS-001493
+Total lymphocyte count,leukocyte_redistribution,whole_blood,haematology_analyser,conventional,1,1,1,1,FS-006024
+Total lymphocytes,leukocyte_redistribution,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-006697
+Tryptophan,metabolome_or_lipidome,UNCLEAR,other,conventional,1,1,12,1,FS-003540
+Tryptophan,metabolome_or_lipidome,plasma,other,conventional,1,1,1,1,FS-005045
+Tryptophan,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006699
+Tyrosine,metabolome_or_lipidome,UNCLEAR,other,conventional,1,1,1,1,FS-003540
+Tyrosine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006024
+UMOD,other,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+Unsaturated fatty acids,metabolome_or_lipidome,serum,other,omics,1,1,1,1,FS-007261
+Untargeted metabolite set,metabolome_or_lipidome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-002532
+Uric acid,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006024
+Uric acid,other,serum,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-007021
+Urine metabolomic multivariate model,metabolome_or_lipidome,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-006440
+Urine white blood cell count,leukocyte_redistribution,urine,flow_cytometry,conventional,1,1,2,1,FS-003951
+Urokinase-type plasminogen activator,other,other,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+VEGF-A,cytokine_or_inflammatory_mediator,other,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+VEGF-A,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-005045
+Vanin 2,neutrophil_function,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006018
+Vascular cell adhesion molecule 1,cytokine_or_inflammatory_mediator,whole_blood,NR,conventional,1,1,4,1,FS-004786
+Virus-reactive CD8-positive T cells,T_cell_subsets_or_function,cells_PBMC_or_isolated,sequencing_or_array,conventional,1,1,2,1,FS-007011
+XCL1/XCL2 combined label,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,2,1,FS-006684
+YWHAZ,other,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-004648
+ZC3H11B,other,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-006779
+ZFP36L2,other,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006684
+Zinc alpha-2-glycoprotein,other,saliva,other,conventional,1,1,1,1,FS-005966
+acetone,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006699
+activin A,cytokine_or_inflammatory_mediator,other,multiplex_immunoassay,omics,1,1,1,1,FS-004308
+acyl ghrelin,other,serum,immunoassay_ELISA_etc,conventional,1,1,2,1,FS-004246
+adiponectin,cytokine_or_inflammatory_mediator,other,multiplex_immunoassay,omics,1,1,1,1,FS-004308
+adiponectin,cytokine_or_inflammatory_mediator,other,immunoassay_ELISA_etc,conventional,1,1,2,1,FS-004308
+adiponectin,cytokine_or_inflammatory_mediator,serum,immunoassay_ELISA_etc,conventional,1,1,3,1,FS-004308
+adiponectin hexamer,cytokine_or_inflammatory_mediator,other,other,conventional,1,1,1,1,FS-004308
+adiponectin trimer,cytokine_or_inflammatory_mediator,other,other,conventional,1,1,1,1,FS-004308
+adiponectin trimer-to-hexamer ratio,cytokine_or_inflammatory_mediator,other,other,conventional,1,1,1,1,FS-004308
+alpha-2 globulin fraction,other,serum,other,conventional,1,1,7,1,FS-009465
+alpha-ketoglutaramate,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006810
+amyloid A-4 protein,cytokine_or_inflammatory_mediator,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004586
+amyloid A-4 protein,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006250
+amyloid A1,cytokine_or_inflammatory_mediator,dried_blood_spot,mass_spec_or_NMR,conventional,1,1,1,1,FS-005773
+antimicrobial peptides,mucosal_antimicrobial_protein,saliva,mass_spec_or_NMR,omics,1,1,1,1,FS-008505
+arachidonoylethanolamide,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-007328
+arginine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006699
+array hit count,proteome,other,multiplex_immunoassay,omics,1,1,1,1,FS-004308
+asparagine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006699
+asparagine synthetase,proteome,cells_PBMC_or_isolated,mass_spec_or_NMR,omics,1,1,1,1,FS-006955
+basal extracellular acidification rate,T_cell_subsets_or_function,cells_PBMC_or_isolated,other,conventional,1,1,1,1,FS-006697
+basal oxygen consumption rate,T_cell_subsets_or_function,cells_PBMC_or_isolated,other,conventional,1,1,1,1,FS-006697
+basophil,leukocyte_redistribution,whole_blood,haematology_analyser,conventional,1,1,2,1,FS-002162
+beta-2 adrenergic receptor,T_cell_subsets_or_function,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006697
+betaine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006810
+blood basophil percentage,leukocyte_redistribution,whole_blood,haematology_analyser,conventional,1,1,1,1,FS-004226
+blood eosinophil percentage,leukocyte_redistribution,whole_blood,haematology_analyser,conventional,1,1,1,1,FS-004226
+blood glucose,other,whole_blood,other,conventional,1,1,1,1,FS-007174
+blood leukocytes,leukocyte_redistribution,whole_blood,haematology_analyser,conventional,1,1,1,1,FS-004226
+blood lymphocyte percentage,leukocyte_redistribution,whole_blood,haematology_analyser,conventional,1,1,1,1,FS-004226
+blood monocyte percentage,leukocyte_redistribution,whole_blood,haematology_analyser,conventional,1,1,1,1,FS-004226
+blood neutrophil percentage,leukocyte_redistribution,whole_blood,haematology_analyser,conventional,1,1,1,1,FS-004226
+bone marrow stromal antigen 2,proteome,cells_PBMC_or_isolated,mass_spec_or_NMR,omics,1,1,2,1,FS-006955
+brain-derived neurotrophic factor,other,other,multiplex_immunoassay,omics,1,1,1,1,FS-004308
+brain-derived neurotrophic factor,other,plasma,multiplex_immunoassay,conventional,1,1,1,1,FS-005727
+brain-derived neurotrophic factor,other,serum,multiplex_immunoassay,conventional,1,1,1,1,FS-005727
+carnitine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006810
+carnosine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006810
+caspase recruitment domain family member 8,proteome,cells_PBMC_or_isolated,mass_spec_or_NMR,omics,1,1,1,1,FS-006955
+cathelicidin antimicrobial peptide LL-37,other,plasma,flow_cytometry,conventional,1,1,1,1,FS-006554
+cathepsin G,other,urine,mass_spec_or_NMR,omics,1,1,1,1,FS-008505
+cell-free DNA genomic peaks,other,plasma,sequencing_or_array,omics,1,1,1,1,FS-005168
+cell-free mitochondrial DNA,other,serum,multiplex_immunoassay,conventional,1,1,3,1,FS-003698
+cell-free mitochondrial DNA,other,plasma,PCR,conventional,1,1,3,1,FS-004544
+cell-free mitochondrial DNA G3,other,plasma,PCR,conventional,1,1,1,1,FS-006935
+cell-free mitochondrial DNA G4,other,plasma,PCR,conventional,1,1,1,1,FS-006935
+cell-free nuclear DNA,other,serum,multiplex_immunoassay,conventional,1,1,3,1,FS-003698
+cell-free nuclear DNA,other,plasma,PCR,conventional,1,1,3,1,FS-004544
+cell-free nuclear DNA G1,other,plasma,PCR,conventional,1,1,1,1,FS-006935
+cell-free nuclear DNA G2,other,plasma,PCR,conventional,1,1,1,1,FS-006935
+cellular response to IL-1,cytokine_or_inflammatory_mediator,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+central-memory CD8+ T cells,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-006697
+chitinase-3-like protein 1,cytokine_or_inflammatory_mediator,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-006554
+cluster 1,proteome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-005931
+cluster of differentiation 163,other,plasma,multiplex_immunoassay,conventional,1,1,1,1,FS-005727
+cluster of differentiation 163,other,serum,multiplex_immunoassay,conventional,1,1,1,1,FS-005727
+cluster of differentiation 302,proteome,cells_PBMC_or_isolated,mass_spec_or_NMR,omics,1,1,1,1,FS-006955
+clusters 2–4,proteome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-005931
+complement and coagulation pathway,immunoglobulin_or_complement,plasma,other,omics,1,1,1,1,FS-008505
+control-altered proteins,proteome,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-006787
+creatine kinase activity,other,plasma,other,conventional,1,1,1,1,FS-005168
+cytochrome b-245 heavy chain,other,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-006554
+cytokine-induced killer cell cytotoxic activity,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-005719
+cytokine-induced killer cell yield,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-005719
+cytotoxic T-lymphocyte-associated protein 4,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-006697
+dendritic-cell-derived cell-free DNA,other,plasma,sequencing_or_array,omics,1,1,3,1,FS-006534
+deoxycarnitine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006810
+deprivation-response protein,other,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004152
+dermcidin,mucosal_antimicrobial_protein,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-008505
+dermcidin,mucosal_antimicrobial_protein,plasma,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-008505
+dermcidin,mucosal_antimicrobial_protein,saliva,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-008505
+detected SPM composite,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+detected microRNAs,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+dimethylglycine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006810
+effector-memory CD8+ T cells,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-006697
+endogenous secretory receptor for advanced glycation end products,cytokine_or_inflammatory_mediator,serum,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-004336
+endothelial PAS domain protein 1,other,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-003828
+eosinophil,leukocyte_redistribution,whole_blood,haematology_analyser,conventional,1,1,2,1,FS-002162
+eosinophil chemotaxis,leukocyte_redistribution,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006539
+ex vivo CD8+ T-cell expansion,T_cell_subsets_or_function,cells_PBMC_or_isolated,other,conventional,1,1,2,1,FS-006697
+ex vivo CD8+ T-cell viability,T_cell_subsets_or_function,cells_PBMC_or_isolated,other,conventional,1,1,2,1,FS-006697
+exercise-downregulated proteins,proteome,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-006787
+extracellular heat shock protein 72,other,plasma,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-003844
+extracellular-to-monocyte HSP72 ratio,other,NR,flow_cytometry,conventional,1,1,1,1,FS-003844
+extracellular-vesicle-enriched particle,other,plasma,other,conventional,1,1,1,1,FS-006416
+fMLP-stimulated luminol-enhanced whole blood chemiluminescence,neutrophil_function,whole_blood,immunoassay_ELISA_etc,conventional,1,1,3,1,FS-004544
+family with sequence similarity 153 member A,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006697
+fibroblast growth factor 21,other,serum,immunoassay_ELISA_etc,conventional,1,1,3,1,FS-004246
+flow rate,other,saliva,flow_cytometry,conventional,1,1,3,1,FS-005914
+fms related receptor tyrosine kinase 1,other,serum,sequencing_or_array,omics,1,1,1,1,FS-006928
+follistatin,other,serum,immunoassay_ELISA_etc,conventional,1,1,3,1,FS-004246
+formate,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006699
+galectin-3,cytokine_or_inflammatory_mediator,plasma,other,conventional,1,1,1,1,FS-006699
+gene-expression interaction tests,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+glucose,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006699
+glutamate,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006699
+glutamine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006699
+granzyme B,proteome,cells_PBMC_or_isolated,mass_spec_or_NMR,omics,1,1,1,1,FS-006955
+granzyme B protein,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-006697
+granzyme H,proteome,cells_PBMC_or_isolated,mass_spec_or_NMR,omics,1,1,1,1,FS-006955
+granzyme K,T_cell_subsets_or_function,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-005719
+granzyme M,proteome,cells_PBMC_or_isolated,mass_spec_or_NMR,omics,1,1,1,1,FS-006955
+guanylate-binding protein 5,proteome,cells_PBMC_or_isolated,mass_spec_or_NMR,omics,1,1,1,1,FS-006955
+heat shock protein 27,other,serum,immunoassay_ELISA_etc,conventional,1,2,5,1,FS-004336
+heat shock protein 70,other,serum,immunoassay_ELISA_etc,conventional,1,2,10,1,FS-004336
+hepatitis A virus cellular receptor 1,other,serum,sequencing_or_array,omics,1,1,1,1,FS-006928
+hepcidin-25,cytokine_or_inflammatory_mediator,urine,mass_spec_or_NMR,conventional,1,1,8,1,FS-010204
+high mobility group box 1,cytokine_or_inflammatory_mediator,serum,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-004336
+hypoxia inducible factor 1 subunit alpha,other,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-003828
+immune cell population counts,leukocyte_redistribution,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-006955
+immune-associated pathway enrichment,proteome,plasma,other,omics,1,1,1,1,FS-008505
+inducible T-cell costimulator,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-006697
+inflammatory pathways,proteome,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-006779
+insulin-like growth factor 1,other,other,multiplex_immunoassay,omics,1,1,1,1,FS-004308
+insulin-like growth factor 1,other,dried_blood_spot,mass_spec_or_NMR,conventional,1,1,1,1,FS-005773
+insulin-like growth factor 2,other,other,multiplex_immunoassay,omics,1,1,1,1,FS-004308
+intestinal fatty acid binding protein,other,plasma,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-003844
+irisin,other,serum,immunoassay_ELISA_etc,conventional,1,1,2,1,FS-004246
+killer cell lectin like receptor C1,T_cell_subsets_or_function,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-005719
+kinase insert domain receptor,other,serum,sequencing_or_array,omics,1,1,1,1,FS-006928
+lactoferrin,mucosal_antimicrobial_protein,whole_blood,haematology_analyser,conventional,1,1,1,1,FS-004226
+lactoferrin,mucosal_antimicrobial_protein,saliva,haematology_analyser,conventional,1,1,1,1,FS-004226
+lactoferrin secretion rate,mucosal_antimicrobial_protein,saliva,flow_cytometry,conventional,1,1,1,1,FS-006024
+latency-associated peptide,cytokine_or_inflammatory_mediator,other,multiplex_immunoassay,omics,1,1,1,1,FS-004308
+let-7a-5p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+let-7d-5p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+let-7e-5p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+let-7f-5p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+leucine-rich repeat neuronal 3,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006697
+leukocyte count,leukocyte_redistribution,plasma,other,conventional,1,1,1,1,FS-005971
+leukocyte count,leukocyte_redistribution,whole_blood,NR,conventional,1,1,5,1,FS-008213
+lipocalin 2,other,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-006554
+lipocalin 2,other,plasma,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-006554
+lymphocyte count,leukocyte_redistribution,serum,haematology_analyser,conventional,1,1,1,1,FS-004826
+lymphocyte count,leukocyte_redistribution,plasma,other,conventional,1,1,1,1,FS-005971
+lymphocyte count,leukocyte_redistribution,whole_blood,NR,conventional,1,1,3,1,FS-008213
+lymphocyte-specific protein 1,other,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-006554
+lysozyme,mucosal_antimicrobial_protein,whole_blood,haematology_analyser,conventional,1,1,1,1,FS-004226
+lysozyme,mucosal_antimicrobial_protein,saliva,haematology_analyser,conventional,1,1,1,1,FS-004226
+lysozyme secretion rate,mucosal_antimicrobial_protein,saliva,flow_cytometry,conventional,1,1,1,1,FS-006024
+macrophage-derived cell-free DNA,other,plasma,sequencing_or_array,omics,1,1,3,1,FS-006534
+major histocompatibility complex class II DP alpha 1,other,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-003828
+major histocompatibility complex class II DR alpha,other,serum,sequencing_or_array,omics,1,1,1,1,FS-006928
+matrix metallopeptidase 9,other,plasma,multiplex_immunoassay,conventional,1,1,1,1,FS-005727
+matrix metallopeptidase 9,other,serum,multiplex_immunoassay,conventional,1,1,1,1,FS-005727
+matrix metallopeptidase 9,cytokine_or_inflammatory_mediator,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-006018
+matrix metalloproteinase 8,other,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-006554
+matrix metalloproteinase 8,other,plasma,immunoassay_ELISA_etc,conventional,1,1,2,1,FS-006554
+matrix metalloproteinase 8,other,serum,sequencing_or_array,omics,1,1,1,1,FS-006928
+matrix metalloproteinase-13,cytokine_or_inflammatory_mediator,other,multiplex_immunoassay,omics,1,1,1,1,FS-004308
+maximum extracellular acidification rate,T_cell_subsets_or_function,cells_PBMC_or_isolated,other,conventional,1,1,3,1,FS-006697
+maximum extracellular acidification rate,T_cell_subsets_or_function,serum,other,conventional,1,1,2,1,FS-006697
+maximum oxygen consumption rate,T_cell_subsets_or_function,cells_PBMC_or_isolated,other,conventional,1,1,1,1,FS-006697
+mean particle diameter,other,plasma,other,conventional,1,1,1,1,FS-006416
+metabolome differential features,metabolome_or_lipidome,serum,mass_spec_or_NMR,omics,1,1,1,1,FS-005458
+metabolome profile,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006024
+metabolomics time effect,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006699
+miR-1,ncRNA,plasma,PCR,conventional,1,1,1,1,FS-002626
+miR-1,ncRNA,plasma,PCR,omics,1,1,1,1,FS-003695
+miR-1-3p,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006751
+miR-101-3p,ncRNA,plasma,PCR,omics,1,1,2,1,FS-006506
+miR-103a-3p,ncRNA,plasma,PCR,omics,1,1,2,1,FS-006506
+miR-106a-5p,ncRNA,plasma,PCR,conventional,1,1,1,1,FS-005450
+miR-107,ncRNA,plasma,PCR,omics,1,1,1,1,FS-006506
+miR-12119,ncRNA,other,sequencing_or_array,omics,1,1,2,1,FS-007098
+miR-12119,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,2,1,FS-007098
+miR-1251-3p,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006751
+miR-125a-5p,ncRNA,plasma,PCR,conventional,1,1,3,1,FS-005450
+miR-125a-5p,ncRNA,whole_blood,haematology_analyser,conventional,1,1,2,1,FS-005450
+miR-125a-5p,ncRNA,plasma,haematology_analyser,conventional,1,1,2,1,FS-005450
+miR-125a-5p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+miR-126,ncRNA,serum,PCR,conventional,1,1,2,1,FS-004712
+miR-126,ncRNA,plasma,PCR,conventional,1,1,1,1,FS-005450
+miR-126-3p,ncRNA,plasma,PCR,omics,1,1,1,1,FS-006506
+miR-126-3p,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,3,1,FS-007098
+miR-126-3p,ncRNA,other,sequencing_or_array,omics,1,1,1,1,FS-007098
+miR-126-5p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+miR-126-5p,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006751
+miR-1292-3p,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,2,1,FS-007098
+miR-1301-3p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+miR-133a,ncRNA,plasma,PCR,omics,1,1,1,1,FS-003695
+miR-133a,ncRNA,serum,PCR,conventional,1,1,2,1,FS-004712
+miR-133a-3p,ncRNA,plasma,PCR,conventional,1,1,1,1,FS-006416
+miR-133b,ncRNA,plasma,PCR,omics,1,1,1,1,FS-003695
+miR-133b,ncRNA,serum,PCR,conventional,1,1,2,1,FS-004712
+miR-133b,ncRNA,plasma,PCR,conventional,1,1,1,1,FS-006416
+miR-135b-5p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-003695
+miR-141-3p,ncRNA,plasma,PCR,omics,1,1,1,1,FS-006506
+miR-143-3p,ncRNA,plasma,PCR,omics,1,1,2,1,FS-006506
+miR-145-5p,ncRNA,plasma,PCR,omics,1,1,1,1,FS-006506
+"miR-146, arm/suffix unspecified",ncRNA,serum,PCR,conventional,1,1,2,1,FS-004712
+miR-146a,ncRNA,plasma,PCR,omics,1,1,1,1,FS-003695
+miR-146a-5p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+miR-146a-5p,ncRNA,plasma,PCR,conventional,1,1,1,1,FS-006416
+miR-146a-5p,ncRNA,plasma,PCR,omics,1,1,2,1,FS-006506
+miR-148b-3p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-003695
+miR-148b-3p,ncRNA,plasma,PCR,omics,1,1,1,1,FS-006506
+miR-150-5p,ncRNA,plasma,PCR,omics,1,1,1,1,FS-006506
+miR-150-5p,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006751
+miR-151a-5p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+miR-151a-5p,ncRNA,other,sequencing_or_array,omics,1,1,1,1,FS-007098
+miR-151a-5p,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-007098
+miR-151b,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+miR-155,ncRNA,plasma,PCR,conventional,1,1,1,1,FS-002626
+miR-155-5p,ncRNA,plasma,PCR,conventional,1,1,1,1,FS-006416
+miR-15a,ncRNA,whole_blood,PCR,omics,1,1,3,1,FS-002739
+miR-15a,ncRNA,plasma,PCR,conventional,1,1,1,1,FS-005450
+miR-15a,ncRNA,whole_blood,haematology_analyser,conventional,1,1,1,1,FS-005450
+miR-15a,ncRNA,plasma,haematology_analyser,conventional,1,1,1,1,FS-005450
+miR-15b,ncRNA,plasma,PCR,conventional,1,1,1,1,FS-005450
+miR-181,ncRNA,serum,PCR,conventional,1,1,8,1,FS-005384
+miR-181a,ncRNA,plasma,PCR,omics,1,1,1,1,FS-003695
+miR-181b,ncRNA,whole_blood,PCR,omics,1,1,2,1,FS-002739
+miR-183-5p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-003695
+miR-184,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-003695
+miR-185-5p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+miR-186,ncRNA,whole_blood,PCR,omics,1,1,3,1,FS-002739
+miR-186-5p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+miR-191-5p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+miR-196b-5p,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,3,1,FS-007098
+miR-196b-5p,ncRNA,other,sequencing_or_array,omics,1,1,1,1,FS-007098
+miR-199a-3p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+miR-200b-3p,ncRNA,plasma,PCR,omics,1,1,1,1,FS-006506
+miR-204-5p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-003695
+miR-205,ncRNA,plasma,PCR,omics,1,1,1,1,FS-003695
+miR-206,ncRNA,plasma,PCR,omics,1,1,1,1,FS-003695
+miR-208a,ncRNA,serum,PCR,conventional,1,1,2,1,FS-004712
+miR-208b,ncRNA,plasma,PCR,conventional,1,1,1,1,FS-002626
+miR-208b,ncRNA,plasma,PCR,omics,1,1,1,1,FS-003695
+miR-208b-5p,ncRNA,plasma,PCR,conventional,1,1,1,1,FS-006416
+miR-20a,ncRNA,serum,PCR,conventional,1,1,2,1,FS-004712
+miR-21,ncRNA,plasma,PCR,conventional,1,1,1,1,FS-002626
+miR-21,ncRNA,plasma,PCR,omics,1,1,1,1,FS-003695
+miR-21-3p,ncRNA,plasma,PCR,omics,1,1,1,1,FS-006506
+miR-21-5p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+miR-21-5p,ncRNA,plasma,PCR,conventional,1,1,1,1,FS-006416
+miR-21-5p,ncRNA,saliva,PCR,conventional,1,1,2,1,FS-007174
+miR-21-5p,ncRNA,whole_blood,haematology_analyser,conventional,1,1,1,1,FS-007174
+miR-21-5p,ncRNA,saliva,haematology_analyser,conventional,1,1,1,1,FS-007174
+miR-21-5p,ncRNA,whole_blood,PCR,conventional,1,1,1,1,FS-007174
+miR-210-3p,ncRNA,saliva,PCR,conventional,1,1,2,1,FS-007174
+miR-214-3p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-003695
+miR-216a,ncRNA,plasma,PCR,omics,1,1,1,1,FS-003695
+miR-219,ncRNA,plasma,PCR,omics,1,1,1,1,FS-003695
+miR-22-3p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+miR-221,ncRNA,plasma,PCR,omics,1,1,1,1,FS-003695
+miR-222,ncRNA,serum,PCR,conventional,1,1,2,1,FS-004712
+miR-222-3p,ncRNA,plasma,PCR,omics,1,1,2,1,FS-006506
+miR-223,ncRNA,plasma,PCR,conventional,1,1,1,1,FS-005450
+miR-223-3p,ncRNA,plasma,PCR,omics,1,1,1,1,FS-006506
+miR-23b-3p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+miR-24-3p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+miR-26a-5p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+miR-26a-5p,ncRNA,plasma,PCR,conventional,1,1,1,1,FS-006416
+miR-29a-3p,ncRNA,plasma,PCR,omics,1,1,2,1,FS-006506
+miR-29b-3p,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006751
+miR-30a-5p,ncRNA,plasma,PCR,omics,1,1,2,1,FS-006506
+miR-30c-5p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+miR-30d-5p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+miR-31-5p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-003695
+miR-31-5p,ncRNA,plasma,PCR,conventional,1,1,1,1,FS-006416
+miR-3192-3p,ncRNA,other,sequencing_or_array,omics,1,1,2,1,FS-007098
+miR-3192-3p,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,2,1,FS-007098
+miR-3196,ncRNA,other,sequencing_or_array,omics,1,1,1,1,FS-007098
+miR-3196,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-007098
+miR-320b,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-003695
+miR-324-5p,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,3,1,FS-007098
+miR-324-5p,ncRNA,other,sequencing_or_array,omics,1,1,1,1,FS-007098
+miR-328,ncRNA,serum,PCR,conventional,1,1,2,1,FS-004712
+miR-338-3p,ncRNA,plasma,PCR,omics,1,1,1,1,FS-006506
+miR-365a-3p,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,3,1,FS-007098
+miR-365a-3p,ncRNA,other,sequencing_or_array,omics,1,1,1,1,FS-007098
+miR-3668,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,3,1,FS-007098
+miR-3668,ncRNA,other,sequencing_or_array,omics,1,1,1,1,FS-007098
+miR-378,ncRNA,plasma,PCR,omics,1,1,1,1,FS-003695
+miR-378,ncRNA,serum,PCR,conventional,1,1,2,1,FS-004712
+miR-423-5p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+miR-451a,ncRNA,plasma,PCR,conventional,1,1,1,1,FS-006416
+miR-486-5p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+miR-486-5p,ncRNA,plasma,PCR,conventional,1,1,1,1,FS-006416
+miR-499,ncRNA,plasma,PCR,conventional,1,1,1,1,FS-002626
+miR-499,ncRNA,serum,PCR,conventional,1,1,2,1,FS-004712
+miR-499a-5p,ncRNA,plasma,PCR,conventional,1,1,1,1,FS-006416
+miR-532,ncRNA,plasma,PCR,omics,1,1,1,1,FS-003695
+miR-532,ncRNA,plasma,PCR,conventional,1,1,2,1,FS-003695
+miR-542-5p,ncRNA,plasma,PCR,omics,1,1,1,1,FS-003695
+miR-545-3p,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,3,1,FS-007098
+miR-545-3p,ncRNA,other,sequencing_or_array,omics,1,1,1,1,FS-007098
+miR-551b-5p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-003695
+miR-584-5p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+miR-602,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,3,1,FS-007098
+miR-602,ncRNA,other,sequencing_or_array,omics,1,1,1,1,FS-007098
+miR-628-5p,ncRNA,plasma,PCR,omics,1,1,1,1,FS-003695
+miR-636,ncRNA,other,sequencing_or_array,omics,1,1,1,1,FS-007098
+miR-636,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-007098
+miR-652-3p,ncRNA,plasma,PCR,omics,1,1,1,1,FS-006506
+miR-6529-3p,ncRNA,other,sequencing_or_array,omics,1,1,1,1,FS-007098
+miR-6529-3p,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-007098
+miR-6788-5p,ncRNA,other,sequencing_or_array,omics,1,1,1,1,FS-007098
+miR-6788-5p,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-007098
+miR-6805-5p,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,3,1,FS-007098
+miR-6805-5p,ncRNA,other,sequencing_or_array,omics,1,1,1,1,FS-007098
+miR-8064,ncRNA,other,sequencing_or_array,omics,1,1,2,1,FS-007098
+miR-8064,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,2,1,FS-007098
+miR-8068,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006751
+miR-92a-3p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-006416
+miR-940,ncRNA,serum,PCR,conventional,1,1,2,1,FS-004712
+miR-96,ncRNA,whole_blood,PCR,omics,1,1,3,1,FS-002739
+miR-99b-3p,ncRNA,plasma,sequencing_or_array,omics,1,1,1,1,FS-003695
+microRNA association set,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,2,1,FS-006751
+microRNA hit count,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,3,1,FS-006751
+mitogen-activated protein kinase kinase kinase 8,other,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006697
+mode particle diameter,other,plasma,other,conventional,1,1,1,1,FS-006416
+monocyte chemotactic protein 1,cytokine_or_inflammatory_mediator,serum,multiplex_immunoassay,conventional,1,1,2,1,FS-005931
+monocyte count,leukocyte_redistribution,plasma,other,conventional,1,1,1,1,FS-005971
+monocyte count,leukocyte_redistribution,whole_blood,NR,conventional,1,1,1,1,FS-008213
+monocyte heat shock protein 72,other,whole_blood,flow_cytometry,conventional,1,1,1,1,FS-003844
+myeloid cell nuclear differentiation antigen,other,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-006554
+myostatin,other,serum,immunoassay_ELISA_etc,conventional,1,1,2,1,FS-004246
+natural killer cell granule protein 7,T_cell_subsets_or_function,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-005719
+naïve CD8+ T cells,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,2,1,FS-006697
+neutrophil chemotaxis,other,cells_PBMC_or_isolated,functional_assay,conventional,1,1,1,1,FS-004110
+neutrophil count,leukocyte_redistribution,serum,haematology_analyser,conventional,1,1,1,1,FS-004826
+neutrophil count,leukocyte_redistribution,plasma,other,conventional,1,1,1,1,FS-005971
+neutrophil count,leukocyte_redistribution,whole_blood,NR,conventional,1,1,6,1,FS-008213
+neutrophil cytosolic factor 1,other,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-006554
+neutrophil cytosolic factor 2,other,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-006554
+neutrophil surface L-selectin,other,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,2,1,FS-004110
+neutrophil-derived cell-free DNA,other,plasma,sequencing_or_array,omics,1,1,3,1,FS-006534
+nicotinamide phosphoribosyltransferase,proteome,cells_PBMC_or_isolated,mass_spec_or_NMR,omics,1,1,2,1,FS-006955
+nine microRNAs,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-007098
+osmolality,other,plasma,other,conventional,1,1,1,1,FS-003206
+overlapping altered proteins,proteome,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-006787
+peptide YY,other,serum,immunoassay_ELISA_etc,conventional,1,1,2,1,FS-004246
+perforin 1,T_cell_subsets_or_function,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-005719
+perforin-1,proteome,cells_PBMC_or_isolated,mass_spec_or_NMR,omics,1,1,1,1,FS-006955
+peripheral blood mononuclear cell count,leukocyte_redistribution,whole_blood,haematology_analyser,conventional,1,1,6,1,FS-006751
+phosphatidylserine decarboxylase,proteome,cells_PBMC_or_isolated,mass_spec_or_NMR,omics,1,1,1,1,FS-006955
+platelet-derived growth factor AA,cytokine_or_inflammatory_mediator,other,multiplex_immunoassay,omics,1,1,1,1,FS-004308
+platelet-derived growth factor BB,cytokine_or_inflammatory_mediator,serum,multiplex_immunoassay,conventional,1,1,2,1,FS-006935
+platelet-to-lymphocyte ratio,leukocyte_redistribution,serum,haematology_analyser,conventional,1,1,1,1,FS-004826
+programmed cell death protein 1,T_cell_subsets_or_function,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-006697
+programmed cell death protein 1,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,1,1,FS-006697
+proline,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006699
+prostaglandin A2,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+prostaglandin B2,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+protease C1 inhibitor,immunoglobulin_or_complement,dried_blood_spot,mass_spec_or_NMR,omics,1,1,1,1,FS-004586
+protein tyrosine phosphatase nonreceptor type 6,other,tissue,mass_spec_or_NMR,omics,1,1,1,1,FS-006554
+proteome,proteome,serum,other,omics,1,1,1,1,FS-006218
+proteome transition pattern,proteome,serum,other,omics,1,1,1,1,FS-006218
+pyruvate,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006699
+reactive oxygen species production rate,other,whole_blood,other,conventional,1,1,1,1,FS-007174
+sIgA,immunoglobulin_or_complement,serum,other,conventional,1,1,1,1,FS-003169
+sIgA,immunoglobulin_or_complement,UNCLEAR,immunoassay_ELISA_etc,conventional,1,1,4,1,FS-003190
+sIgA,mucosal_sIgA,tears,immunoassay_ELISA_etc,conventional,1,3,8,1,FS-003206
+sIgA,mucosal_sIgA,tears,flow_cytometry,conventional,1,3,9,1,FS-003206
+sIgA,immunoglobulin_or_complement,serum,immunoassay_ELISA_etc,conventional,1,1,4,1,FS-005465
+saliva flow rate,other,saliva,other,conventional,1,2,2,1,FS-003206
+sarcosine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006810
+secreted protein acidic and rich in cysteine,other,plasma,multiplex_immunoassay,conventional,1,1,1,1,FS-005727
+secreted protein acidic and rich in cysteine,other,serum,multiplex_immunoassay,conventional,1,1,1,1,FS-005727
+seven bacterial genera,other,other,sequencing_or_array,omics,1,1,1,1,FS-007098
+single-sample pathway analysis,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006699
+soluble L-selectin,other,plasma,immunoassay_ELISA_etc,conventional,1,1,2,1,FS-004110
+soluble intercellular adhesion molecule 1,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,conventional,1,1,1,1,FS-006534
+soluble receptor for advanced glycation end products,cytokine_or_inflammatory_mediator,serum,immunoassay_ELISA_etc,conventional,1,1,1,1,FS-004336
+specific cell-free DNA sequence 1,other,plasma,sequencing_or_array,omics,1,1,1,1,FS-005168
+specific cell-free DNA sequence 1,other,plasma,PCR,conventional,1,1,4,1,FS-005168
+specific cell-free DNA sequence 1,other,whole_blood,haematology_analyser,conventional,1,1,1,1,FS-005168
+specific cell-free DNA sequence 1,other,plasma,haematology_analyser,conventional,1,1,1,1,FS-005168
+succinate receptor 1,proteome,cells_PBMC_or_isolated,mass_spec_or_NMR,omics,1,1,1,1,FS-006955
+synaptotagmin-like protein 2,proteome,cells_PBMC_or_isolated,mass_spec_or_NMR,omics,1,1,1,1,FS-006955
+systemic immune-inflammation index,leukocyte_redistribution,serum,haematology_analyser,conventional,1,1,1,1,FS-004826
+tear flow rate,other,tears,other,conventional,1,2,3,1,FS-003206
+terminally differentiated effector memory CD8+ T cells,T_cell_subsets_or_function,cells_PBMC_or_isolated,flow_cytometry,conventional,1,1,2,1,FS-006697
+tetranor 12-HETE,cytokine_or_inflammatory_mediator,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006034
+three Shannon-associated microRNAs,ncRNA,other,sequencing_or_array,omics,1,1,1,1,FS-007098
+three Shannon-associated microRNAs,ncRNA,cells_PBMC_or_isolated,sequencing_or_array,omics,1,1,1,1,FS-007098
+threonine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006699
+thrombopoietin,other,other,multiplex_immunoassay,omics,1,1,1,1,FS-004308
+toll like receptor 2,other,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-003828
+toll-like receptor 1,proteome,cells_PBMC_or_isolated,mass_spec_or_NMR,omics,1,1,1,1,FS-006955
+toll-like receptor 3,cytokine_or_inflammatory_mediator,plasma,multiplex_immunoassay,omics,1,1,1,1,FS-006787
+top 10 biological processes,proteome,serum,other,omics,1,1,1,1,FS-005931
+total RNA,ncRNA,plasma,haematology_analyser,conventional,1,1,1,1,FS-006416
+total antioxidant capacity,other,whole_blood,haematology_analyser,conventional,1,1,1,1,FS-007174
+total cell-free DNA,other,plasma,haematology_analyser,conventional,1,1,1,1,FS-005168
+total microRNA,ncRNA,plasma,haematology_analyser,conventional,1,1,1,1,FS-006416
+total protein,other,plasma,other,conventional,1,1,1,1,FS-006699
+transcriptomic trajectory clusters,immune_cell_transcriptome,whole_blood,sequencing_or_array,omics,1,1,1,1,FS-007168
+transferrin saturation,other,serum,haematology_analyser,conventional,1,1,1,1,FS-010204
+transforming growth factor beta 2,cytokine_or_inflammatory_mediator,other,multiplex_immunoassay,omics,1,1,1,1,FS-004308
+transforming growth factor beta 3,cytokine_or_inflammatory_mediator,other,multiplex_immunoassay,omics,1,1,1,1,FS-004308
+tyrosine kinase with immunoglobulin-like and EGF-like domains 1,cytokine_or_inflammatory_mediator,other,multiplex_immunoassay,omics,1,1,1,1,FS-004308
+urea,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006699
+urinary creatinine,other,urine,other,conventional,1,1,1,1,FS-007174
+valine,metabolome_or_lipidome,plasma,mass_spec_or_NMR,omics,1,1,1,1,FS-006699
+vascular endothelial growth factor,cytokine_or_inflammatory_mediator,other,multiplex_immunoassay,omics,1,1,1,1,FS-004308

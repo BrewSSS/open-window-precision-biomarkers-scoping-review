@@ -1,0 +1,129 @@
+analyte_normalised,marker_families,n_reports,n_cohorts,n_reports_repeated_bouts_B,evidence_types(rows),report_ids,example_note
+IL-6,cytokine_or_inflammatory_mediator,7,7,4,individualization(1);metric_validation(1);tested_association(7);tested_association_null(7),FS-002911;FS-002928;FS-005384;FS-005605;FS-006275;FS-006534;FS-007132,FS-002928 analytical_reliability: Analyte-specific assay limit and CV are stated; saliva-specific linearity and recovery data are described as n
+CRP,cytokine_or_inflammatory_mediator,6,6,4,individualization(2);metric_validation(2);tested_association(5);tested_association_null(4),FS-002911;FS-004250;FS-004886;FS-005165;FS-005773;FS-006275,FS-004886 analytical_reliability: Reported analytical assay metrics.
+sIgA,mucosal_sIgA,4,6,1,metric_validation(3);outcome_linkage(1);tested_association(8);tested_association_null(2),FS-003206;FS-003753;FS-004243;FS-005914,FS-003206 analytical_reliability: Analyte-specific assay precision applies to tear SIgA concentration.
+leukocyte count,leukocyte_redistribution,4,4,2,individualization(1);tested_association(10);tested_association_null(2);validation_or_use(1),FS-002905;FS-004886;FS-005971;FS-006749,FS-004886 individualization: Response-magnitude ICC; retrospective analysis.
+lymphocyte count,leukocyte_redistribution,4,4,1,individualization(1);tested_association(3);tested_association_null(2);validation_or_use(1),FS-002905;FS-004886;FS-005971;FS-008213,FS-004886 individualization: Only leukocyte subset with response-magnitude ICC above 0.5.
+neutrophil count,leukocyte_redistribution,4,4,1,individualization(1);tested_association(2);tested_association_null(2);validation_or_use(1),FS-002905;FS-004886;FS-005971;FS-008213,FS-004886 individualization: Response-magnitude ICC; retrospective analysis.
+Basophil count,leukocyte_redistribution,2,2,0,tested_association(1);tested_association_null(2);validation_or_use(1),FS-002905;FS-005971,FS-005971 independent_validation_and_use: Analyte-specific internal model-performance evidence; authors considered basophil prediction unacceptable.
+Eosinophil count,leukocyte_redistribution,2,2,0,tested_association(1);tested_association_null(2);validation_or_use(1),FS-002905;FS-005971,FS-005971 independent_validation_and_use: Analyte-specific internal model-performance evidence.
+Haptoglobin,cytokine_or_inflammatory_mediator;other,2,2,1,tested_association_null(2),FS-005773;FS-006218,
+IL-1ra,cytokine_or_inflammatory_mediator,2,2,2,individualization(1);tested_association(3),FS-004826;FS-006275,FS-006275 individualization: An analyte-specific GAQ is reported.
+Neopterin,cytokine_or_inflammatory_mediator,2,2,1,tested_association(1);tested_association_null(1),FS-003540;FS-007174,
+miR-1-3p,ncRNA,2,2,1,tested_association(2),FS-005450;FS-006751,
+miR-146a,ncRNA,2,2,0,tested_association(7);tested_association_null(3),FS-004011;FS-005384,
+monocyte count,leukocyte_redistribution,2,2,0,tested_association(2);tested_association_null(2);validation_or_use(1),FS-002905;FS-005971,FS-005971 independent_validation_and_use: Analyte-specific internal model-performance evidence.
+Cystatin S,mucosal_antimicrobial_protein,1,2,0,metric_validation(1);temporal(2),FS-005966,FS-005966 analytical_reliability: Formal repeatability and inter-laboratory performance NR.
+Immunoglobulin heavy constant alpha 1,immunoglobulin_or_complement,1,2,0,metric_validation(1);temporal(2),FS-005966,FS-005966 analytical_reliability: CBB loading control reported; formal analytical repeatability NR.
+heat shock protein 70,other,1,2,0,tested_association(4),FS-004336,
+Alpha-1-acid glycoprotein,cytokine_or_inflammatory_mediator,1,1,0,tested_association(1),FS-005773,
+C-X-C motif chemokine ligand 13,cytokine_or_inflammatory_mediator,1,1,0,tested_association(3),FS-007261,
+CD3+ T cells,T_cell_subsets_or_function,1,1,1,metric_validation(1),FS-006144,FS-006144 analytical_reliability: Post-exercise CV 7.7% (95% CI 4.0–11.4); all Bland–Altman points within limits.
+CD3+CD56+ natural killer-like T cells,T_cell_subsets_or_function,1,1,0,temporal(1),FS-005719,FS-005719 temporal_validity: One identifiable bout; no longer recovery series.
+CD4+ helper T cells,T_cell_subsets_or_function,1,1,1,metric_validation(1),FS-006144,FS-006144 analytical_reliability: Post-exercise CV 8.9% (95% CI 5.5–12.3); all Bland–Altman points within limits.
+CD8+ cytotoxic T cells,T_cell_subsets_or_function,1,1,1,metric_validation(1),FS-006144,FS-006144 analytical_reliability: Post-exercise CV 8.9% (95% CI 4.7–13.1); all Bland–Altman points within limits.
+CD8-positive T-cell mobilization,T_cell_subsets_or_function,1,1,0,tested_association(1);tested_association_null(1),FS-007011,
+CSF-to- adiponectin ratio,cytokine_or_inflammatory_mediator,1,1,0,tested_association(1),FS-004308,
+CXCL1,cytokine_or_inflammatory_mediator,1,1,0,tested_association(1),FS-004226,
+Cathelicidin antimicrobial peptide,other,1,1,0,outcome_linkage(1),FS-006554,FS-006554 functional_clinical_linkage: The direct test establishes a muscle-cell effect of LL-37; it does not establish an immune effector effect or 
+Cell-free DNA,other,1,1,0,tested_association(5);tested_association_null(1),FS-006321,
+Cell-free mitochondrial DNA integrity association with resting phagocyte chemiluminescence,other,1,1,1,tested_association_null(3),FS-004544,
+Cell-free mitochondrial DNA integrity association with stimulated phagocyte chemiluminescence,other,1,1,1,tested_association_null(3),FS-004544,
+Cell-free nuclear DNA integrity association with resting phagocyte chemiluminescence,other,1,1,1,tested_association(1);tested_association_null(2),FS-004544,
+Cell-free nuclear DNA integrity association with stimulated phagocyte chemiluminescence,other,1,1,1,tested_association(2);tested_association_null(1),FS-004544,
+Cell-free nuclear DNA integrity index,other,1,1,1,individualization(1);temporal(1),FS-004544,FS-004544 temporal_validity: Across-bout response consistency is incomplete and no within-bout recovery trajectory was sampled.
+Complement C3,immunoglobulin_or_complement,1,1,1,tested_association_null(1),FS-006218,
+Cp2 and alpha-2 globulin fraction association,other,1,1,1,tested_association(1),FS-009465,
+DHA-LOX HDoHE composite,cytokine_or_inflammatory_mediator,1,1,0,tested_association(1),FS-006034,
+Endotoxin core antibody IgA,immunoglobulin_or_complement,1,1,0,metric_validation(1),FS-005516,FS-005516 analytical_reliability: Analyte-specific assay CV; linked to the first IgA measurement row.
+Endotoxin core antibody IgG,immunoglobulin_or_complement,1,1,0,metric_validation(1),FS-005516,FS-005516 analytical_reliability: Analyte-specific assay CV; linked to the first IgG measurement row.
+Endotoxin core antibody IgM,immunoglobulin_or_complement,1,1,0,metric_validation(1),FS-005516,FS-005516 analytical_reliability: Analyte-specific assay CV; linked to the first IgM measurement row.
+F2-isoprostanes,other,1,1,1,tested_association_null(1),FS-002911,
+Growth differentiation factor 15,cytokine_or_inflammatory_mediator,1,1,0,tested_association(3),FS-004385,
+Hemoglobin alpha chain,other,1,1,0,tested_association_null(1),FS-005773,
+Human herpesvirus 6 DNA,other,1,1,1,tested_association(3);tested_association_null(1),FS-006942,
+IGHA1–CST4–IGK–KLK1 correlations,immunoglobulin_or_complement,1,1,0,tested_association(1),FS-005966,
+IL-10,cytokine_or_inflammatory_mediator,1,1,1,individualization(1),FS-006275,FS-006275 individualization: An analyte-specific GAQ is reported.
+IL-15,cytokine_or_inflammatory_mediator,1,1,1,individualization(1),FS-006275,FS-006275 individualization: An analyte-specific GAQ is reported.
+IL-8,cytokine_or_inflammatory_mediator,1,1,1,individualization(1),FS-006275,FS-006275 individualization: An analyte-specific GAQ is reported.
+Immunoglobulin M,immunoglobulin_or_complement,1,1,1,tested_association(2),FS-006218,
+Immunoglobulin kappa free light chain,immunoglobulin_or_complement,1,1,0,tested_association(3),FS-003169,
+Immunoglobulin kappa-to-lambda free light chain ratio,immunoglobulin_or_complement,1,1,0,tested_association(1),FS-003169,
+Immunoglobulin lambda free light chain,immunoglobulin_or_complement,1,1,0,tested_association(1),FS-003169,
+Kynurenine to tryptophan ratio,metabolome_or_lipidome,1,1,1,tested_association(3);tested_association_null(1),FS-003540,
+LAIR-1/CD49d expression association,neutrophil_function,1,1,1,tested_association_null(1),FS-004210,
+Large unstained cell count,leukocyte_redistribution,1,1,0,tested_association_null(2),FS-002905,
+Linoleic acid–arachidonic acid relationship,metabolome_or_lipidome,1,1,0,tested_association(1),FS-006024,
+Lipopolysaccharide-binding protein,cytokine_or_inflammatory_mediator,1,1,0,tested_association(1),FS-005773,
+Mannose-binding lectin 2,immunoglobulin_or_complement,1,1,0,tested_association_null(1),FS-005773,
+Mean platelet volume,other,1,1,0,tested_association(5);tested_association_null(2),FS-002905,
+Mixed leukocyte differential count,leukocyte_redistribution,1,1,1,individualization(1),FS-004886,FS-004886 individualization: Response-magnitude ICC; retrospective analysis.
+Monocyte chemoattractant protein-1,cytokine_or_inflammatory_mediator,1,1,1,individualization(1);metric_validation(1),FS-004886,FS-004886 analytical_reliability: Reported analytical assay metrics; samples analysed in single.
+Myeloid dendritic cells,other,1,1,1,metric_validation(1),FS-006144,FS-006144 analytical_reliability: Post-exercise CV 18.1% (95% CI 8.0–28.3); all Bland–Altman points within limits.
+Myoglobin,other,1,1,1,individualization(1);metric_validation(1),FS-004886,FS-004886 analytical_reliability: Reported analytical assay metrics; samples analysed in single.
+PBMC electron-transfer capacity,other,1,1,1,tested_association_null(5),FS-005624,
+PBMC free routine activity,other,1,1,1,tested_association_null(5),FS-005624,
+PBMC protein fitness signature,proteome,1,1,1,tested_association(1),FS-006955,
+PBMC protein fitness signature score,proteome,1,1,1,tested_association(1),FS-006955,
+PBMC routine respiration,other,1,1,1,tested_association(2);tested_association_null(3),FS-005624,
+Palmitic acid hydroxy ester of oleic acid,metabolome_or_lipidome,1,1,0,tested_association(1),FS-005458,
+Plasmacytoid dendritic cells,other,1,1,1,metric_validation(1),FS-006144,FS-006144 analytical_reliability: Post-exercise CV 15.3% (95% CI 8.3–22.2); 11 of 12 Bland–Altman points within limits.
+Platelet count,other,1,1,0,tested_association_null(3),FS-002905,
+Resting luminol-enhanced whole blood chemiluminescence,neutrophil_function,1,1,1,individualization(1);metric_validation(1),FS-004544,"FS-004544 analytical_reliability: The article cites low day-to-day variability from prior work, but does not report a study-specific reliability"
+SARS-CoV-2 spike receptor-binding domain IgG,immunoglobulin_or_complement,1,1,0,tested_association_null(2),FS-007261,
+SPM intermediate oxylipin composite,cytokine_or_inflammatory_mediator,1,1,0,tested_association(1),FS-006034,
+Stimulated neutrophil elastase release,neutrophil_function,1,1,0,tested_association(1),FS-006024,
+Sum of immunoglobulin kappa and lambda free light chains,immunoglobulin_or_complement,1,1,0,tested_association(2),FS-003169,
+TNF-alpha,cytokine_or_inflammatory_mediator,1,1,0,tested_association(1),FS-005605,
+Total dendritic cells,other,1,1,1,metric_validation(1),FS-006144,FS-006144 analytical_reliability: Post-exercise CV 15.1% (95% CI 7.4–22.8); 11 of 12 Bland–Altman points within limits.
+Tryptophan,metabolome_or_lipidome,1,1,1,tested_association(3);tested_association_null(1),FS-003540,
+[omics universe] Illumina HiSeq 2500 small-RNA sequencing,ncRNA,1,1,1,temporal(1),FS-006751,FS-006751 temporal_validity: Only immediate post-exercise molecular sampling; no within-72-hour recovery trajectory.
+[omics universe] Olink PEA,proteome,1,1,0,metric_validation(1),FS-005045,FS-005045 analytical_reliability: Analytical filtering was reported for the PEA panel; no test-retest coefficient is supplied.
+[omics universe] SWATH-MS LC-MS/MS,proteome,1,1,1,metric_validation(1),FS-006883,"FS-006883 analytical_reliability: Mean CV below 20% was calculated for selected proteins, not all identified features."
+[omics universe] iTRAQ LC-MS/MS,proteome,1,1,0,metric_validation(1);temporal(1),FS-005966,FS-005966 analytical_reliability: Platform agreement is reported for selected proteins; the iTRAQ samples were pooled.
+adiponectin,cytokine_or_inflammatory_mediator,1,1,0,tested_association(2),FS-004308,
+amyloid A1,cytokine_or_inflammatory_mediator,1,1,0,tested_association_null(1),FS-005773,
+caspase recruitment domain family member 8,proteome,1,1,1,tested_association(1),FS-006955,
+deprivation-response protein,other,1,1,1,metric_validation(1),FS-004152,"FS-004152 analytical_reliability: Analyte-specific technical CV for O95810 was 23%, higher than the stated 3–8% range for the other Table 2 prot"
+fMLP-stimulated luminol-enhanced whole blood chemiluminescence,neutrophil_function,1,1,1,outcome_linkage(1),FS-004544,FS-004544 functional_clinical_linkage: Assay directly tests an immune effector response but does not establish clinical protection or susceptibility.
+heat shock protein 27,other,1,1,0,tested_association(1);tested_association_null(1),FS-004336,
+insulin-like growth factor 1,other,1,1,0,tested_association(1),FS-005773,
+lactoferrin,mucosal_antimicrobial_protein,1,1,0,tested_association(1),FS-004226,
+lysozyme,mucosal_antimicrobial_protein,1,1,0,tested_association(1),FS-004226,
+miR-1,ncRNA,1,1,0,tested_association(3);tested_association_null(4),FS-005384,
+miR-12119,ncRNA,1,1,0,tested_association(2),FS-007098,
+miR-125a-5p,ncRNA,1,1,0,tested_association(2),FS-005450,
+miR-126-3p,ncRNA,1,1,0,tested_association(1),FS-007098,
+miR-126-5p,ncRNA,1,1,1,tested_association(1),FS-006751,
+miR-133a,ncRNA,1,1,0,tested_association(2),FS-003695,
+miR-155,ncRNA,1,1,0,tested_association(4);tested_association_null(3),FS-005384,
+miR-15a,ncRNA,1,1,0,tested_association(1),FS-005450,
+miR-181,ncRNA,1,1,0,tested_association(3);tested_association_null(4),FS-005384,
+miR-196b-5p,ncRNA,1,1,0,tested_association(1),FS-007098,
+miR-21-5p,ncRNA,1,1,0,tested_association_null(2),FS-007174,
+miR-210,ncRNA,1,1,0,tested_association(2);tested_association_null(4),FS-005384,
+miR-210-3p,ncRNA,1,1,0,tested_association_null(1),FS-007174,
+miR-221,ncRNA,1,1,0,tested_association(3),FS-004011,
+miR-3192-3p,ncRNA,1,1,0,tested_association(2),FS-007098,
+miR-3196,ncRNA,1,1,0,tested_association(1),FS-007098,
+miR-324-5p,ncRNA,1,1,0,tested_association(1),FS-007098,
+miR-365a-3p,ncRNA,1,1,0,tested_association(1),FS-007098,
+miR-3668,ncRNA,1,1,0,tested_association(1),FS-007098,
+miR-532,ncRNA,1,1,0,outcome_linkage(1);tested_association(2),FS-003695,"FS-003695 functional_clinical_linkage: R=0.42, p=0.004; repeated post-exercise points combined."
+miR-545-3p,ncRNA,1,1,0,tested_association(1),FS-007098,
+miR-602,ncRNA,1,1,0,tested_association(1),FS-007098,
+miR-636,ncRNA,1,1,0,tested_association(1),FS-007098,
+miR-6529-3p,ncRNA,1,1,0,tested_association(1),FS-007098,
+miR-6788-5p,ncRNA,1,1,0,tested_association(1),FS-007098,
+miR-6805-5p,ncRNA,1,1,0,tested_association(1),FS-007098,
+miR-8064,ncRNA,1,1,0,tested_association(2),FS-007098,
+microRNA association set,ncRNA,1,1,1,tested_association(1),FS-006751,
+neutrophil surface L-selectin,other,1,1,0,tested_association(1),FS-004110,
+nicotinamide phosphoribosyltransferase,proteome,1,1,1,individualization(1);tested_association(2),FS-006955,"FS-006955 individualization: An analyte-specific fitness association is reported, with no immune-function or clinical outcome."
+peripheral blood mononuclear cell count,leukocyte_redistribution,1,1,1,temporal(1),FS-006751,FS-006751 temporal_validity: Only immediate post-exercise sampling; no later recovery trajectory.
+phosphatidylserine decarboxylase,proteome,1,1,1,tested_association(1),FS-006955,
+proteome,proteome,1,1,1,tested_association(1),FS-006218,
+soluble L-selectin,other,1,1,0,tested_association(1),FS-004110,
+specific cell-free DNA sequence 1,other,1,1,0,tested_association(2),FS-005168,
+succinate receptor 1,proteome,1,1,1,tested_association(1),FS-006955,
+three Shannon-associated microRNAs,ncRNA,1,1,0,tested_association(1),FS-007098,
