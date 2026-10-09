@@ -272,7 +272,51 @@
    "B_advance": 47,
    "C_advance": 133,
    "disagreements_csv": "ai_stage1/stage1_human_disagreements_for_D.csv",
-   "consequence": "PRE-007: an ADVANCE found inside the sample triggers re-screening of that record type; D adjudicates the disagreements first, then A/D decide the re-screening scope by TI code"
+   "consequence": "PRE-007: an ADVANCE found inside the sample triggers re-screening of that record type; D adjudicates the disagreements first, then A/D decide the re-screening scope by TI code",
+   "D_adjudication": {
+    "date": "2026-10-09",
+    "file": "ai_stage1/stage1_human_disagreements_for_D.xlsx",
+    "rows": 177,
+    "D_advance": 114,
+    "D_exclude": 63,
+    "D_agrees_with_C_disposition": 163,
+    "D_agrees_with_B_disposition": 64,
+    "confirmed_advance_by_ai_code": {
+     "TI01": {
+      "sampled": 42,
+      "confirmed_advance": 1,
+      "rate": 0.024
+     },
+     "TI02": {
+      "sampled": 369,
+      "confirmed_advance": 5,
+      "rate": 0.014
+     },
+     "TI03": {
+      "sampled": 50,
+      "confirmed_advance": 0,
+      "rate": 0.0
+     },
+     "TI04": {
+      "sampled": 377,
+      "confirmed_advance": 102,
+      "rate": 0.271
+     },
+     "TI05": {
+      "sampled": 138,
+      "confirmed_advance": 29,
+      "rate": 0.21
+     }
+    },
+    "pilot_100_ai_vs_human_final": {
+     "ADVANCE_TO_ABSTRACT->ADVANCE_TO_ABSTRACT": 53,
+     "EXCLUDE_TITLE->ADVANCE_TO_ABSTRACT": 5,
+     "EXCLUDE_TITLE->EXCLUDE_TITLE": 40,
+     "ADVANCE_TO_ABSTRACT->EXCLUDE_TITLE": 2
+    },
+    "summary": "ai_stage1/stage1_sample_verification_2026-10-09.md",
+    "rescreen_scope_decision": "PENDING (A)"
+   }
   }
  }
 }
