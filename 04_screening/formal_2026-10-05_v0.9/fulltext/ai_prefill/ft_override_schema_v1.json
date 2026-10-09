@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/scoping-review/fulltext/ai_prefill/ft_override_schema_v1.json",
+  "title": "Full-text screening OVERRIDE pass — structured output (v1, amendment PRE-010 override phase)",
+  "description": "No $ref/$defs/maxLength (codex strict-schema requirement); additionalProperties:false on every object; every property listed in required. scripts/ft_override_run.py validates the returned JSON against this schema with one repair retry. Reviewer B stand-in: independent re-read of the full text, each decision field compared against the first-pass pre-fill and flagged agree/override with a page-cited quote.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "disposition",
+    "disposition_quote",
+    "disposition_agreement",
+    "primary_code",
+    "primary_code_quote",
+    "primary_code_agreement",
+    "age_rule_check",
+    "age_rule_check_quote",
+    "age_rule_check_agreement",
+    "validation_element_confirmed",
+    "validation_subtypes",
+    "validation_quote",
+    "validation_agreement",
+    "secondary_notes",
+    "secondary_notes_quote",
+    "secondary_notes_agreement",
+    "comment",
+    "comment_quote",
+    "comment_agreement",
+    "confidence",
+    "note"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "pattern": "^FS-[0-9]{6}$",
+      "description": "Echo of the input record_id exactly as supplied."
+    },
+    "disposition": {
+      "type": "string",
+      "enum": [
+        "INCLUDE_A",
+        "INCLUDE_B",
+        "INCLUDE_A_AND_B",
+        "RETAIN_BACKGROUND",
+        "EXCLUDE",
+        "AWAITING_CLASSIFICATION",
+        "NOT_RETRIEVED",
+        "DUPLICATE_REPORT"
+      ],
+      "description": "Your own independent read, decided BEFORE comparing to the pre-fill."
+    },
+    "disposition_quote": {
+      "type": "string",
+      "description": "Format: p.N: \"<=20-word verbatim quote\" grounding your disposition, or \"\" if none applies (e.g. DUPLICATE_REPORT naming another record)."
+    },
+    "disposition_agreement": {
+      "type": "string",
+      "enum": ["agree", "override"],
+      "description": "agree if your disposition matches the pre-filled your_disposition exactly; override otherwise."
+    },
+    "primary_code": {
+      "type": "string",
+      "enum": [
+        "",
+        "FT01_SOURCE_TYPE_NOT_CORE",
+        "FT02_NOT_ORIGINAL_HUMAN_RESEARCH",
+        "FT03_POPULATION_NOT_ELIGIBLE",
+        "FT04_NO_QUALIFYING_EXERCISE_EXPOSURE",
+        "FT05_NO_POST_CESSATION_SAMPLE",
+        "FT06_NO_BASELINE_OR_SUITABLE_COMPARATOR",
+        "FT07_NO_ELIGIBLE_IMMUNE_LINK",
+        "FT08_MIXED_INTERVENTION_NOT_SEPARABLE"
+      ],
+      "description": "Non-empty only when disposition is EXCLUDE; the first established reason in hierarchy order. \"\" otherwise."
+    },
+    "primary_code_quote": {
+      "type": "string",
+      "description": "Format: p.N: \"<=20-word verbatim quote\" grounding the primary_code, or \"\" if primary_code is \"\"."
+    },
+    "primary_code_agreement": {
+      "type": "string",
+      "enum": ["agree", "override"],
+      "description": "agree if your primary_code matches the pre-filled your_primary_code exactly (including both being \"\"); override otherwise."
+    },
+    "age_rule_check": {
+      "type": "string",
+      "enum": [
+        "adults_confirmed",
+        "mean_minus_2SD_below_18_unresolved",
+        "under_18_included",
+        "not_applicable"
+      ],
+      "description": "PRE-011 branches: adults_confirmed = adult by explicit range/min >=18y OR mean>=20y/adult-descriptor with no stated <18y participation; mean_minus_2SD_below_18_unresolved = unresolved age case under PRE-011 (mean <20y with no range, or age not reported, or a separable stratum's age unresolved) -- name which branch in the quote; under_18_included = report states <18y participants with no separable adult stratum; not_applicable = disposition is NOT_RETRIEVED/DUPLICATE_REPORT, or EXCLUDE already established on FT01/FT02."
+    },
+    "age_rule_check_quote": {
+      "type": "string",
+      "description": "Format: p.N: \"<=20-word verbatim quote\" supporting age_rule_check, or \"\" if not_applicable with no age text at all."
+    },
+    "age_rule_check_agreement": {
+      "type": "string",
+      "enum": ["agree", "override"],
+      "description": "agree if your age_rule_check branch matches the substance of the pre-filled your_age_rule_check (ignore cosmetic formatting differences, compare the branch/meaning); override otherwise."
+    },
+    "validation_element_confirmed": {
+      "type": "string",
+      "enum": ["yes", "no", "unclear"]
+    },
+    "validation_subtypes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "metric_validation",
+          "outcome_linkage",
+          "omics_discovery",
+          "repeated_monitoring"
+        ]
+      },
+      "description": "Every applicable subtype under the v1.2 strict definitions; empty if validation_element_confirmed is no/unclear."
+    },
+    "validation_quote": {
+      "type": "string",
+      "description": "Format: p.N: \"<=20-word verbatim quote\" supporting validation_element_confirmed, or \"\" if no/unclear with no candidate text."
+    },
+    "validation_agreement": {
+      "type": "string",
+      "enum": ["agree", "override"],
+      "description": "agree if your validation_element_confirmed AND validation_subtypes match the pre-fill's substance; override otherwise."
+    },
+    "secondary_notes": {
+      "type": "string",
+      "description": "<=40 words. Other failed dimensions; the RETAIN_BACKGROUND failed dimension (normally FT04); for DUPLICATE_REPORT, the retained record_id; or any other material fact AWAITING_CLASSIFICATION names."
+    },
+    "secondary_notes_quote": {
+      "type": "string",
+      "description": "Format: p.N: \"<=20-word verbatim quote\" grounding secondary_notes, or \"\" if secondary_notes is \"\"."
+    },
+    "secondary_notes_agreement": {
+      "type": "string",
+      "enum": ["agree", "override"],
+      "description": "agree if your secondary_notes carries the same substance as the pre-filled your_secondary_notes; override otherwise (including when you clear it to \"\" or add a note where there was none)."
+    },
+    "comment": {
+      "type": "string",
+      "description": "<=40 words, free text, no personal data, no e-mail. Your own reviewer-facing summary of the decision for the final your_comment column; replaces the pre-fill's composite comment."
+    },
+    "comment_quote": {
+      "type": "string",
+      "description": "Format: p.N: \"<=20-word verbatim quote\" -- the single most decisive quote behind your overall decision."
+    },
+    "comment_agreement": {
+      "type": "string",
+      "enum": ["agree", "override"],
+      "description": "agree if your comment reaches the same substantive read as the pre-fill's comment (even if reworded); override if your reasoning differs."
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"]
+    },
+    "note": {
+      "type": "string",
+      "description": "<=30 words, free text, no personal data, no e-mail. Anything else useful for the human reviewer checking your work (e.g. OCR noise, cohort linkage, translation concern)."
+    }
+  }
+}

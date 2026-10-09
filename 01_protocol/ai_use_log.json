@@ -658,6 +658,35 @@
         "human verification of any of these 67 pre-filled record-decisions",
         "the pre-approved Sol-effort-medium C-side fallback (not triggered; Claude finished within the 25-minute budget)"
       ]
+    },
+    {
+      "date": "2026-10-09",
+      "tool": "Claude Code (Anthropic) desktop CLI, acting as the AI stand-in for reviewer B, running scripts/ft_override_run.py through the Codex CLI (OpenAI, codex_stream_call.py)",
+      "coordinator_model": "claude-sonnet-5",
+      "model": "gpt-6-sol",
+      "model_settings": "reasoning effort high; one codex exec per record; concurrency 8; 0 resume passes needed (190/190 valid on first call)",
+      "task": "PRE-010 full-text screening OVERRIDE pass, reviewer B: an INDEPENDENT re-read of the full text of all 190 records already carrying a pre-filled your_disposition in ft_screen_B.xlsx. Each record was given the full text plus a clearly labelled first-pass pre-fill block and asked to decide every field itself, then flag agree/override per field (your_disposition, your_primary_code, your_age_rule_check, your_validation_element_confirmed, your_secondary_notes, your_comment) with a page-cited quote. New prompt ai_prefill/ft_override_prompt_v1.md and extended schema ai_prefill/ft_override_schema_v1.json (built for this task). This is an AI stand-in substitution for the human override step amendment PRE-010 actually requires (\"B reads every full text and overwrites what they disagree with\"); it is not that human review.",
+      "prompt_reference": {
+        "file": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_prompt_v1.md",
+        "version": "v1, 2026-10-09",
+        "sha256": "see ai_prefill/ft_override_run_manifest.json entries"
+      },
+      "schema_reference": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_schema_v1.json",
+      "records": 190,
+      "concurrency": 8,
+      "run_summary": "190/190 valid, 0 invalid, 0 schema-repair retries. Wall time ~700s (11.7 min); 6,216,524 input + 305,831 output tokens (codex-reported usage). Disposition after override: INCLUDE_A 103, INCLUDE_A_AND_B 54, INCLUDE_B 4, RETAIN_BACKGROUND 3, EXCLUDE 17, AWAITING_CLASSIFICATION 9 (before: INCLUDE_A 86, INCLUDE_A_AND_B 66, INCLUDE_B 3, RETAIN_BACKGROUND 5, EXCLUDE 14, AWAITING_CLASSIFICATION 16). Field override rates (of 190): disposition 14.7%, primary_code 1.6%, age_rule_check 4.7%, validation_element_confirmed 11.6%, secondary_notes 55.3%, comment 32.1% (228/1,140 = 20.0% of all field writes). 28 disposition flips; the 10 most consequential (include<->not-include or AWAITING<->decision) are documented with quotes in ai_prefill/ft_override_B_summary_2026-10-09.md. One field (FS-003434 secondary_notes, cleared to empty) carries an override flag with no quote, since there is no text evidence for an absence; logged as a deviation rather than forced. FS-000504 (OCR-scanned PDF) was screened normally; the model flagged the OCR table distortion in its own note field.",
+      "output_sources": [
+        "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/runs/override_sol/*.json (git-ignored, 190 files, quote the full text)",
+        "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_run_manifest.json (190 entries)",
+        "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_B_summary_2026-10-09.md",
+        "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_B.xlsx (git-ignored; written via scripts/ft_override_apply_to_workbook.py; backup at fulltext/_backup_override_B_2026-10-09/, git-ignored; hidden _override_B sheet logs every one of the 1,140 field writes)",
+        "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_workbooks_manifest.json (override_B block: counts, prompt/schema sha256, workbook sha256 after write)"
+      ],
+      "human_verification_status": "Not yet performed. This entire pass -- both the original pre-fill and this override -- is AI-generated. A human reviewer B still needs to read every one of these 190 full texts and overwrite any field disagreed with; final values are B's decision of record, not this AI stand-in's.",
+      "not_performed": [
+        "human verification of any of these 190 override-pass record-decisions",
+        "the equivalent override pass on reviewer C's workbook (ft_screen_C.xlsx), performed separately and concurrently by a different process; never opened by this task"
+      ]
     }
   ],
   "future_entry_fields": [

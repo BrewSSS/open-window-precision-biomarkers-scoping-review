@@ -76,7 +76,8 @@
     "B": {
       "path": "04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_B.xlsx",
       "sha256_blank": "138294a4cf606d9d464c35d7be1c8c05790dca23aa3fe368b83ca3d9f8b61495",
-      "sha256_after_prefill": "989818ebda19021760f8df726204d1d0e50caa949f0be9c999bf705f5ea15e42"
+      "sha256_after_prefill": "989818ebda19021760f8df726204d1d0e50caa949f0be9c999bf705f5ea15e42",
+      "sha256_after_override": "bd068653f946b2d06a2958f793d2fef4e33ddcdd651e5db86fd2e2d04ce475cc"
     },
     "C": {
       "path": "04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_C.xlsx",
@@ -197,5 +198,53 @@
     },
     "note": "No model was called; ai_use_log.json is not updated. Reviewer workbooks' your_* columns were rewritten only for rows whose your_disposition was AWAITING_CLASSIFICATION before this script ran; row order, other columns and highlighting are unchanged. The hidden _prefill sheet in each workbook gained one additional logged value per touched column, model='rule PRE-011 (deterministic)'.",
     "batch2_note": "2026-10-09, batch 2 (67 manually retrieved reports): re-running scripts/ft_prefill_to_workbook.py to load the new 67 rows regenerates every family-matched row from runs/<family>/<id>.json, which does not know about this block's deterministic PRE-011 overrides and so reset the original 36 (B) / 24 (C) rows back to their pre-PRE-011 AWAITING state. Caught by a before/after diff of the your_* columns (required by this task); fixed immediately by re-applying the recorded 'new' values from ai_prefill/pre011_overrides_sol.json / pre011_overrides_claude_sonnet.json to exactly those record_ids (verified old-state match before each write, 36/36 and 24/24, 0 mismatches). No new batch-2 record_id was touched by this fix. workbook_sha256_after above is the hash once-again after this fix, not the transient reset state."
+  },
+  "override_B": {
+    "generated_at": "2026-10-09T11:46:22+00:00",
+    "script": "scripts/ft_override_apply_to_workbook.py",
+    "model": "gpt-6-sol",
+    "effort": "high",
+    "prompt_sha256": "ad0b5f1b7c8556e69c9e276f97d8c81a0155b219a6ee8b3bdbc24b76c68873e3",
+    "schema_sha256": "0867b7edda3ec7fb5d253875b4ef8c1e73e020be232f300c12e16164bac11b99",
+    "n_records_with_valid_run": 190,
+    "n_written": 190,
+    "n_no_row": 0,
+    "n_field_overrides": 228,
+    "n_field_agree": 912,
+    "n_unexpected_diffs": 0,
+    "note": "Writes the override pass's own independently-derived value into every target cell for all 190 pre-filled records (agree or override); agreement is recorded per field in the hidden _override_B sheet, not left as the untouched pre-fill text. The hidden _prefill sheet (original AI pre-fill) is unchanged.",
+    "date": "2026-10-09",
+    "field_override_counts": {
+      "disposition": 28,
+      "primary_code": 3,
+      "age_rule_check": 9,
+      "validation_element_confirmed": 22,
+      "secondary_notes": 105,
+      "comment": 61
+    },
+    "field_override_rates_pct": {
+      "disposition": 14.7,
+      "primary_code": 1.6,
+      "age_rule_check": 4.7,
+      "validation_element_confirmed": 11.6,
+      "secondary_notes": 55.3,
+      "comment": 32.1
+    },
+    "disposition_counts_before": {
+      "INCLUDE_A": 86,
+      "INCLUDE_A_AND_B": 66,
+      "AWAITING_CLASSIFICATION": 16,
+      "EXCLUDE": 14,
+      "INCLUDE_B": 3,
+      "RETAIN_BACKGROUND": 5
+    },
+    "disposition_counts_after": {
+      "INCLUDE_A": 103,
+      "INCLUDE_A_AND_B": 54,
+      "AWAITING_CLASSIFICATION": 9,
+      "EXCLUDE": 17,
+      "INCLUDE_B": 4,
+      "RETAIN_BACKGROUND": 3
+    }
   }
 }

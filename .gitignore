@@ -197,6 +197,14 @@ fulltext_requests/abstract_lookup_*/*
 !04_screening/formal_*/fulltext/ai_prefill/ft_screen_schema_v1.json
 !04_screening/formal_*/fulltext/ai_prefill/run_manifest.json
 !04_screening/formal_*/fulltext/ai_prefill/ft_prefill_summary_*.md
+# PRE-010 override pass (scripts/ft_override_run.py, reviewer B stand-in, 2026-10-09): prompt,
+# extended schema, committable run manifest (no full-text quotes) and summary are tracked; the
+# raw per-record runs (ai_prefill/runs/override_sol/*.json, quote the full text) stay ignored by
+# the "ai_prefill/*" deny-all above.
+!04_screening/formal_*/fulltext/ai_prefill/ft_override_prompt_v1.md
+!04_screening/formal_*/fulltext/ai_prefill/ft_override_schema_v1.json
+!04_screening/formal_*/fulltext/ai_prefill/ft_override_run_manifest.json
+!04_screening/formal_*/fulltext/ai_prefill/ft_override_B_summary_*.md
 # PRE-011 (2026-10-09) age-rule override sidecars (record_id -> old/new disposition + short
 # evidence snippet only; no abstracts or full-text quotes; runs/ itself stays ignored above).
 !04_screening/formal_*/fulltext/ai_prefill/pre011_overrides_*.json
