@@ -2,7 +2,7 @@ record_id,pmid,doi,status,source,url,sha256,bytes,verified_text,note,scope,final
 FS-000059,10449025,10.1097/00005768-199908000-00019,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-000076,10517764,10.1152/jappl.1999.87.4.1360,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-000102,10638381,10.1007/s004210050034,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
-FS-000124,10754517,10.1002/(sici)1097-0320(20000501)40:1<50::aid-cyto7>3.0.co;2-p,not_retrieved_oa,,,,,,openalex:download_failed:http_403,confirmed,V
+FS-000124,10754517,10.1002/(sici)1097-0320(20000501)40:1<50::aid-cyto7>3.0.co;2-p,retrieved_manual,manual_browser,,7911fbbf115046b956476c68a401c67a897fa1749a28de986f785f2d14886238,313461,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-000131,10806050,10.1053/joca.1999.0293,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-000142,10853703,10.1055/s-2000-313,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-000156,10912884,10.1097/00005768-200007000-00005,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
@@ -22,7 +22,7 @@ FS-000439,12687633,10.1002/bio.438,not_retrieved_oa,,,,,,no_usable_identifier_or
 FS-000445,12723764,10.1142/s0192415x03000679,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-000450,12740743,10.1055/s-2003-39095,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-000451,12740744,10.1055/s-2003-39096,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
-FS-000460,12780390,10.1046/j.1365-201x.2003.01124.x,not_retrieved_oa,,,,,,openalex:download_failed:http_403,confirmed,V
+FS-000460,12780390,10.1046/j.1365-201x.2003.01124.x,retrieved_manual,manual_browser,,5238495dece3cdc4095ee76011dc6b93c698a0f353b2c5dc9737abbc1f7adf67,102578,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-000472,12832432,10.1152/japplphysiol.01064.2002,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-000498,1293425,,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-000504,12968214,10.1055/s-2003-42018,not_retrieved_oa,,,,,,openalex:not_pdf_or_too_small bytes=4767 ctype='text/html;charset=UTF-8',confirmed,V
@@ -63,7 +63,7 @@ FS-001024,16990507,10.1152/japplphysiol.00066.2006,not_retrieved_oa,,,,,,no_usab
 FS-001039,17074690,10.1309/1d62h6krftvqrj0a,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-001044,17095643,10.1152/japplphysiol.00553.2006,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-001117,17473771,10.1249/mss.0b013e31802dd74e,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
-FS-001124,17504785,10.1136/bjsm.2006.029314,not_retrieved_oa,,,,,,openalex:download_failed:http_403,confirmed,V
+FS-001124,17504785,10.1136/bjsm.2006.029314,retrieved_manual,manual_browser,,87f5b537ded39283131f23b565ecbe270904919831d64688d0ee40022c6150ec,198601,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-001129,1752720,10.1055/s-2007-1024722,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-001140,17569075,10.1007/s00421-007-0484-x,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-001146,17615280,10.1152/japplphysiol.00242.2007,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
@@ -77,7 +77,7 @@ FS-001226,18091693,,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location
 FS-001248,18213545,10.1055/s-2007-989424,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-001280,18347680,10.1139/h07-177,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-001310,18499764,10.1136/bjsm.2008.047530,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
-FS-001311,18499767,10.1136/bjsm.2008.046532,not_retrieved_oa,,,,,,openalex:download_failed:http_403,confirmed,V
+FS-001311,18499767,10.1136/bjsm.2008.046532,retrieved_manual,manual_browser,,85b1482dcbcd8cd652e9985dc6f51269737c38e0e096554c3019362f846b3f93,164115,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-001324,18580401,10.1249/mss.0b013e31816be9c3,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-001339,18665387,10.1007/s00421-008-0839-y,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-001364,18797920,10.1007/s00421-008-0866-8,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
@@ -111,7 +111,7 @@ FS-001918,21437602,10.1007/s00421-011-1923-2,not_retrieved_oa,,,,,,no_usable_ide
 FS-001935,21490511,10.1519/jsc.0b013e3181e7fbc0,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-001987,21690193,10.1113/jphysiol.2011.213363,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-001994,21717121,10.1007/s00421-011-2048-3,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
-FS-002014,21796498,10.1007/s12192-011-0283-5,not_retrieved_oa,,,,,,openalex:not_pdf_or_too_small bytes=371453 ctype='text/html; charset=utf-8'; crossref:not_pdf_or_too_small bytes=371419 ctype='text/html; charset=utf-8',confirmed,V
+FS-002014,21796498,10.1007/s12192-011-0283-5,retrieved_manual,manual_browser,,d88cdc9a9565a1dbeca6f6165d7c9541c20ed0505f80a19c130acf5d6a3d3a9c,350604,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-002021,21823675,10.1021/pr2005555,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-002034,21916608,10.1089/jir.2011.0038,not_retrieved_oa,,,,,,openalex:download_failed:conn_err:<urlopen error timed out>,out_of_scope,
 FS-002039,21931703,10.1371/journal.pone.0024385,retrieved_oa,europepmc,https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0024385&type=printable,ea018e0a128e81205b428ac9e40eea8ed411147692d470f56a842a08712c6211,790019,True,title_word_hits=12/12 required=3,confirmed,V
@@ -124,7 +124,7 @@ FS-002079,22174394,10.1152/japplphysiol.00864.2011,not_retrieved_oa,,,,,,no_usab
 FS-002088,22212276,,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-002117,22356533,10.1111/j.1365-2362.2012.02656.x,not_retrieved_oa,,,,,,openalex:download_failed:http_403,out_of_scope,
 FS-002122,22375234,10.5812/asjsm.34751,retrieved_oa,openalex,https://brieflands.com/articles/asjsm-73638.pdf,874c8930d98459b664148356bd72cec70173ecdf31b45742daad498e9f1778e2,226312,True,title_word_hits=10/10 required=3,confirmed,V
-FS-002123,22376254,10.1111/j.1752-8062.2011.00384.x,not_retrieved_oa,,,,,,openalex:download_failed:http_403,confirmed,V
+FS-002123,22376254,10.1111/j.1752-8062.2011.00384.x,retrieved_manual,manual_browser,,a267e78113f9191d22b2c6f5373f69aa70c206805089d09d41209303010d861a,1819680,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-002144,22482790,10.1080/15459624.2012.666467,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-002156,22531920,10.1002/eji.201141907,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-002162,22554340,10.7196/samj.5405,retrieved_oa,openalex,http://www.samj.org.za/index.php/samj/article/download/5405/4051,d3119af988679e74696d7616abbe417fddd360c6148f661c5e7dbd3c1718c06a,787668,True,title_word_hits=10/10 required=3,confirmed,V
@@ -136,13 +136,13 @@ FS-002264,22988506,10.1155/2012/679301,retrieved_oa,europepmc,https://europepmc.
 FS-002265,22990626,10.1007/s00421-012-2490-x,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-002273,23017234,10.1016/j.bbi.2012.09.006,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-002276,2303726,10.1016/0022-1759(90)90005-g,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
-FS-002283,23070789,10.1123/ijsnem.23.2.150,not_retrieved_oa,,,,,,openalex:download_failed:conn_err:<urlopen error timed out>,confirmed,V
+FS-002283,23070789,10.1123/ijsnem.23.2.150,retrieved_manual,manual_browser,,56102cb91645662a851d2aa858af4418eb84edada90e2235538aef5dafe1e4a2,615936,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-002301,2311596,10.1007/bf00572187,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-002317,23182776,10.1159/000343417,not_retrieved_oa,,,,,,openalex:download_failed:http_403,confirmed,V
 FS-002327,23224298,10.1007/s00418-012-1061-x,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-002331,23249819,10.1519/jsc.0b013e31827fd5ec,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-002346,23288554,10.1152/japplphysiol.01341.2012,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
-FS-002374,23401642,10.1155/2013/204942,not_retrieved_oa,,,,,,europepmc:download_failed:http_403; openalex:download_failed:http_403,confirmed,V
+FS-002374,23401642,10.1155/2013/204942,retrieved_manual,manual_browser,,ff8cb1d0b74555d78ce532026091fce5275515e925436d0a5b3783590a53acaa,188133,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-002421,23580600,10.1152/japplphysiol.00143.2013,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-002435,23624785,10.1007/s00421-013-2650-7,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-002448,23684819,10.1016/j.bbi.2013.05.003,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
@@ -162,7 +162,7 @@ FS-002589,24189370,10.1016/j.jsams.2013.09.012,not_retrieved_oa,,,,,,no_usable_i
 FS-002618,24311745,10.1152/japplphysiol.00909.2013,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-002619,24345577,10.1016/j.jprot.2013.12.004,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-002626,24363306,10.1152/ajpheart.00711.2013,retrieved_oa,europepmc,https://europepmc.org/articles/PMC3920240?pdf=render,16be9ec5dd74913842fcdee61a1fee19bae890384af5dfe4f5fdafbbc063116d,557410,True,title_word_hits=7/7 required=3,confirmed,V
-FS-002635,24423463,10.1016/j.bbi.2014.01.003,not_retrieved_oa,,,,,,openalex:download_failed:http_403,confirmed,V
+FS-002635,24423463,10.1016/j.bbi.2014.01.003,retrieved_manual,manual_browser,,54e0937221ae2c7d34ebfe5919884f7dbbba0a3009c2c6b5dc469ea9e7fb7752,560115,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-002638,24436293,10.1152/japplphysiol.01141.2013,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-002641,24448005,10.1519/jsc.0000000000000380,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-002651,24479464,10.1080/02640414.2013.865251,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
@@ -170,11 +170,11 @@ FS-002652,24484196,10.3109/00365513.2013.873948,not_retrieved_oa,,,,,,no_usable_
 FS-002666,24513876,10.1016/j.bbi.2013.10.023,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-002669,24520153,10.1152/physiolgenomics.00174.2013,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-002674,24552382,10.1139/apnm-2013-0338,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
-FS-002678,24566440,10.3390/nu6020829,not_retrieved_oa,,,,,,europepmc:download_failed:http_403; openalex:download_failed:http_403,confirmed,V
+FS-002678,24566440,10.3390/nu6020829,retrieved_manual,manual_browser,,554646dd94264dcfe835d7c3bba68f5c64a452d8cd560df3911eed6cd84fe4a1,334035,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-002684,24577845,10.1007/s00421-014-2851-8,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-002739,24752326,10.1371/journal.pone.0092088,retrieved_oa,openalex,https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0092088&type=printable,532e83d451dec4fed88c4433dd98540bfec500d1bb682c70a1abb732c619063e,1324097,True,title_word_hits=11/11 required=3,confirmed,V
-FS-002742,24760997,10.1152/ajpregu.00092.2014,not_retrieved_oa,,,,,,openalex:download_failed:conn_err:<urlopen error timed out>,confirmed,V
-FS-002754,24809007,10.1016/j.rinim.2014.04.002,not_retrieved_oa,,,,,,openalex:download_failed:http_403,confirmed,V
+FS-002742,24760997,10.1152/ajpregu.00092.2014,retrieved_manual,manual_browser,,8ba9605e3424afce0ef1a2cd3940f0db515d86ed345f56134850f75fae812b4a,158870,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
+FS-002754,24809007,10.1016/j.rinim.2014.04.002,retrieved_manual,manual_browser,,7eb83e463fdae1f42fba781c4332e7b3a03cc7c19d29bf8b6f8d480313fb2db6,936881,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-002764,24853398,10.1016/j.molimm.2014.03.004,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-002772,24874932,10.14712/23362936.2014.3,retrieved_oa,openalex,https://pmr.lf1.cuni.cz/media/pdf/pmr_2014115010024.pdf,f8376952ade0e10ad88997dda8bd0090adb22f6837e21296d54b7c3ddc28815d,163173,True,title_word_hits=8/8 required=3,confirmed,V
 FS-002798,24967270,10.1155/2014/561401,not_retrieved_oa,,,,,,europepmc:download_failed:http_403; openalex:download_failed:http_403; crossref:download_failed:http_403,out_of_scope,
@@ -220,13 +220,13 @@ FS-003434,27491620,10.1007/s00421-016-3446-3,retrieved_oa,europepmc,https://euro
 FS-003445,27524970,10.3389/fphys.2016.00318,retrieved_oa,europepmc,https://europepmc.org/articles/PMC4965461?pdf=render,e63e8af92f4879830d4bb5842bb2c9cb1473123560ed8c0a68c350a421c97680,1797756,True,title_word_hits=9/9 required=3,confirmed,V
 FS-003464,27588179,10.3892/br.2016.730,retrieved_oa,openalex,http://www.spandidos-publications.com/10.3892/br.2016.730/download,7727e5c2c5f72ef01569d2adfbd90c12925bcfde668ecba0080c842e19e78699,3299438,True,title_word_hits=8/8 required=3,out_of_scope,
 FS-003468,27594321,10.1080/02640414.2016.1227464,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
-FS-003475,27614202,10.1152/physiolgenomics.00048.2016,not_retrieved_oa,,,,,,openalex:download_failed:http_403,confirmed,V
+FS-003475,27614202,10.1152/physiolgenomics.00048.2016,retrieved_manual,manual_browser,,0835a23e7aedbebda10253220ab5bce90cc6d1076af92e03426dc544e77e6d17,242970,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-003517,27808433,10.1113/ep086025,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-003525,27832807,10.1186/s12974-016-0758-5,retrieved_oa,europepmc,https://europepmc.org/articles/PMC5105243?pdf=render,9b5dae46f3385c840d70d2ecb4662d21718ef470ca363540ebeced5e59ab0055,1409831,True,title_word_hits=11/11 required=3,confirmed,V
 FS-003532,27849116,10.23736/s0022-4707.16.06785-2,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-003536,27876507,10.1016/j.jim.2016.11.007,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-003540,27886064,10.3390/nu8110752,retrieved_oa,europepmc,https://europepmc.org/articles/PMC5133134?pdf=render,3b796d3006579caad71c692bc5daea7724a843ede35367ea4fa6ee97c14b03c7,1506169,True,title_word_hits=21/21 required=3,out_of_scope,
-FS-003556,27996272,10.1021/acs.jproteome.6b00892,not_retrieved_oa,,,,,,openalex:download_failed:conn_err:<urlopen error timed out>,confirmed,V
+FS-003556,27996272,10.1021/acs.jproteome.6b00892,retrieved_manual,manual_browser,,69ba1d0471393e4d25af7c20a76e1e635e989fba60a4e0c59226f848abe68b9a,625396,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-003581,28104750,10.1152/japplphysiol.00114.2016,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-003615,28257712,10.1016/j.wem.2016.12.001,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-003625,28285432,10.1007/s00394-017-1401-7,retrieved_oa,europepmc,https://europepmc.org/articles/PMC5861165?pdf=render,ae4dfb3498644dad23c37a30665f4cfff162b377b3baae5ee5e5654c36658c65,1402143,True,title_word_hits=14/14 required=3,out_of_scope,
@@ -244,9 +244,9 @@ FS-003773,28807718,10.1016/j.bbi.2017.08.010,not_retrieved_oa,,,,,,no_usable_ide
 FS-003778,28825174,10.1007/s00394-017-1525-9,retrieved_oa,europepmc,https://europepmc.org/articles/PMC6182698?pdf=render,840d7b951734b4a6c1957b82c6d662eb0e07dfbba891138f2e63de4cd4f77f5b,877472,True,title_word_hits=8/8 required=3,confirmed,V
 FS-003783,28838344,10.14715/cmb/2017.63.7.13,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-003794,28887210,10.1016/j.jprot.2017.09.004,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
-FS-003797,28910365,10.1371/journal.pone.0184668,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
+FS-003797,28910365,10.1371/journal.pone.0184668,retrieved_manual,manual_browser,,359b960c5f37b1d5b1f10d205b9eaeae8ce832cd5e5d420f5a6c131c1647fdbe,1216206,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-003800,28916639,10.1152/ajpheart.00500.2017,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
-FS-003808,28955243,10.3389/fphys.2017.00638,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
+FS-003808,28955243,10.3389/fphys.2017.00638,retrieved_manual,manual_browser,,c8c0e492e605a3509605fd7032270c162b703db135028f2e036476d750b62ec6,758927,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-003815,28967237,10.23736/s0022-4707.17.06943-2,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-003828,29028836,10.1371/journal.pone.0180322,retrieved_oa,europepmc,https://europepmc.org/articles/PMC5640184?pdf=render,b1bd0ee35662c7549109ed58c3cb8c1033b8d7607ef062e4114194f7a37c9f1f,5957302,True,title_word_hits=13/13 required=3,confirmed,V
 FS-003838,29068603,10.17219/acem/63031,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
@@ -257,11 +257,11 @@ FS-003901,29256048,10.1007/s00421-017-3783-x,not_retrieved_oa,,,,,,no_usable_ide
 FS-003938,29379533,10.5114/aoms.2017.69438,retrieved_oa,europepmc,https://www.termedia.pl/Journal/-19/pdf-30466-10?filename=winter%20ambient.pdf,9151e5276343400fec9352f2cfe6a322525a91a4ce73138fc584b012157d7813,136296,True,title_word_hits=17/17 required=3,confirmed,V
 FS-003943,29402724,10.1016/j.cyto.2018.01.018,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-003951,29430287,10.1155/2017/9824192,retrieved_oa,europepmc,https://europepmc.org/articles/PMC5753004?pdf=render,ef1e65f697648d320361a71e9699e75dc2f6263d09af9b2957a91cccd648a1c2,707214,True,title_word_hits=11/11 required=3,out_of_scope,
-FS-003994,29566095,10.1371/journal.pone.0194843,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
+FS-003994,29566095,10.1371/journal.pone.0194843,retrieved_manual,manual_browser,,7d658e0e3524f2425d3b9568f4b30ec9276a7b8a489241740401933e7639d4e3,9933982,True,downloaded by A in a browser; DOI-verified and re-assigned 2026-10-09,confirmed,V
 FS-004011,29662456,10.3389/fphys.2018.00282,retrieved_oa,europepmc,https://www.frontiersin.org/articles/10.3389/fphys.2018.00282/pdf,8bc5af9191ec0708498421d22106a776ef60af43dbcbfbc6a043dff5a45f3971,1564341,True,title_word_hits=10/10 required=3,confirmed,V
 FS-004039,29748720,10.1007/s00421-018-3882-3,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-004049,29795723,10.70252/prws2257,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,out_of_scope,
-FS-004070,29910424,10.3390/sports5030064,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
+FS-004070,29910424,10.3390/sports5030064,retrieved_manual,manual_browser,,a638d4e1c0a2c6c225cec14e81e90bf00429c0f3849ca4f91133f94b0dbc180e,951755,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-004083,29952675,10.1123/ijspp.2018-0313,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-004098,30027785,10.1080/10715762.2018.1481288,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-004110,30069484,10.1155/2018/1684013,retrieved_oa,europepmc,https://europepmc.org/articles/PMC6057282?pdf=render,bb6c6acb969ef34efb8ddd37b3257087711d424879005859dd9b98157c6df41b,978650,True,title_word_hits=11/11 required=3,out_of_scope,
@@ -272,7 +272,7 @@ FS-004147,30189146,10.1139/apnm-2018-0200,not_retrieved_oa,,,,,,no_usable_identi
 FS-004152,30200480,10.3390/proteomes6030033,retrieved_oa,europepmc,https://europepmc.org/articles/PMC6161275?pdf=render,6a8dd6c7298a997c1362677a1a6a543b5f4299a2febafc21cccfdb52a633a284,3513248,True,title_word_hits=7/7 required=3,confirmed,V
 FS-004154,30207506,10.1080/02640414.2018.1521712,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-004179,30300038,10.1123/ijspp.2018-0439,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
-FS-004193,30339660,10.1249/mss.0000000000001806,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
+FS-004193,30339660,10.1249/mss.0000000000001806,retrieved_manual,manual_browser,,c4966737f599ae759cdc8b13150fafb08fde6a05d5370bc102475c5d0b5c7d30,265828,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-004210,30376575,10.1371/journal.pone.0206175,retrieved_oa,europepmc,https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0206175&type=printable,d5480278f1d3e8ee5877434bf79a9794bec12866a464e6cb0b7a25cc8a7205fe,2763731,True,title_word_hits=15/15 required=3,confirmed,V
 FS-004226,30462646,10.1371/journal.pone.0206059,retrieved_oa,europepmc,https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0206059&type=printable,cb14229182d830b81d4a3e9dd8c82ffd1dc9f414d78018270167d7ca2951b5d9,872952,True,title_word_hits=9/9 required=3,confirmed,V
 FS-004230,30472249,10.1016/j.ymeth.2018.11.013,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
@@ -281,19 +281,19 @@ FS-004243,30539106,10.1055/s-0043-119090,retrieved_oa,europepmc,https://europepm
 FS-004246,30559681,10.3389/fphys.2018.01735,retrieved_oa,europepmc,https://europepmc.org/articles/PMC6286984?pdf=render,ec91fa1d561b08d0165cebf7a7da07ce5848ad41d00421fb19197d6faead8737,1121982,True,title_word_hits=8/8 required=3,out_of_scope,
 FS-004250,30568518,10.2147/oajsm.s183274,retrieved_oa,europepmc,https://europepmc.org/articles/PMC6267712?pdf=render,65b753c217564e844aca1abf89b40d15f422d64727271c97b29f6708ba361c66,474393,True,title_word_hits=11/11 required=3,out_of_scope,
 FS-004252,30575321,10.14814/phy2.13936,retrieved_oa,europepmc,https://europepmc.org/articles/PMC6302546?pdf=render,6895581dbd962c50b11624d9c4d53d591fadae307b2a248839ae4cbe5d19873a,752722,True,title_word_hits=11/11 required=3,confirmed,V
-FS-004269,30618835,10.3389/fphys.2018.01826,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
-FS-004303,30740234,10.1136/bmjsem-2018-000486,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
+FS-004269,30618835,10.3389/fphys.2018.01826,retrieved_manual,manual_browser,,8eb0e20e02b646361a03cb6a6017748e84321524a9e08068496c4cdd28813ea3,8005805,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
+FS-004303,30740234,10.1136/bmjsem-2018-000486,retrieved_manual,manual_browser,,a5ea8a46518464e6a0d875e125b0e378228e6aaca55a9aecc67a2228814c25f5,715555,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-004308,30760755,10.1038/s41598-018-38201-2,retrieved_oa,europepmc,https://europepmc.org/articles/PMC6374465?pdf=render,fef1a8da91495363e18f09febbc5be5b7e6b08c717d491b67d4ad7746fdf9a79,1952810,True,title_word_hits=10/10 required=3,confirmed,V
 FS-004310,30764736,10.1080/15592294.2019.1582276,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-004336,30862844,10.1038/s41598-019-39983-9,retrieved_oa,europepmc,https://www.nature.com/articles/s41598-019-39983-9.pdf,de1bb34d5653cdaf615085454791bdaa4409d1cd5ab5a98a74d140a894d6dc15,1394933,True,title_word_hits=11/11 required=3,confirmed,V
 FS-004341,30889043,10.1249/mss.0000000000001985,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
-FS-004349,30911346,10.1155/2019/5134360,not_retrieved_oa,,,,,,europepmc:download_failed:http_403; crossref:download_failed:http_403,confirmed,V
+FS-004349,30911346,10.1155/2019/5134360,retrieved_manual,manual_browser,,c75564c9423fbd7668b1a3abe108fc835f88c4675144461a90a4a4e5bb09b77c,578397,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-004361,30957673,10.1080/17461391.2019.1585478,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-004364,3096725,10.1007/bf00423200,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
-FS-004374,31001142,10.3389/fphys.2019.00362,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
+FS-004374,31001142,10.3389/fphys.2019.00362,retrieved_manual,manual_browser,,99333ffb2cf5defe721e995a8c293f7bd59149b80faa84bc4680ad82c9f3b095,1425489,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-004385,31039280,10.1113/jp277831,retrieved_oa,europepmc,https://europepmc.org/articles/PMC6851819?pdf=render,e8ddea3ce4617b44af0db81d28a091c9cefd9b3f2abcd0c3cc9d342433303fb6,617477,True,title_word_hits=10/10 required=3,confirmed,V
 FS-004390,31085130,10.1016/j.jsams.2019.04.010,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
-FS-004392,31109152,10.3390/genes10050380,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
+FS-004392,31109152,10.3390/genes10050380,retrieved_manual,manual_browser,,3846ef38e42fc34c9efb91de44bfcfbae4a99613e2b790367e5aeaf234a861c2,223270,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-004406,3117569,10.1111/j.1365-2362.1987.tb02194.x,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-004414,31191831,10.1080/20013078.2019.1615820,retrieved_oa,europepmc,https://europepmc.org/articles/PMC6542154?pdf=render,f02ba747b0284adcd7c309db8ea30a01d63ee38ff7785f9efd68dbb7cf5b500b,3127631,True,title_word_hits=11/11 required=3,confirmed,V
 FS-004434,31257737,10.14814/phy2.14108,retrieved_oa,europepmc,https://europepmc.org/articles/PMC6599756?pdf=render,1a89b666294357ac0cfba10b22cd918c61e00fd1c130266ff457789f7fc47415,241461,True,title_word_hits=9/9 required=3,confirmed,V
@@ -306,19 +306,19 @@ FS-004568,31743985,10.3233/bmr-181363,not_retrieved_oa,,,,,,no_usable_identifier
 FS-004580,31774356,10.1152/japplphysiol.00646.2019,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-004586,31798466,10.3389/fphys.2019.01410,retrieved_oa,europepmc,https://europepmc.org/articles/PMC6874140?pdf=render,2cfd394a911152a073b0163cc64ba84b0eba7edc246a40c297029c93319e2d45,608230,True,title_word_hits=8/8 required=3,confirmed,V
 FS-004593,31828478,10.1007/s00421-019-04279-3,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
-FS-004624,31963105,10.3390/ijerph17020566,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
-FS-004640,32033172,10.3390/ijms21031034,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
+FS-004624,31963105,10.3390/ijerph17020566,retrieved_manual,manual_browser,,a5e00a6f11f861b30f312620bc6e509bb75ace7cee5a53659fbf3639a9e14390,1780142,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
+FS-004640,32033172,10.3390/ijms21031034,retrieved_manual,manual_browser,,987db27ab4d9e10ef251a95c0bb7e8ca572e174a63c47e6acecadf869ef67b52,2579646,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-004648,32047808,10.1155/2020/3030793,retrieved_oa,europepmc,https://europepmc.org/articles/PMC7003279?pdf=render,1df5f3ec3209c2f6e5bef9a9b078087642d42a804fa03a378b324dc839bf5691,1893141,True,title_word_hits=8/8 required=3,confirmed,V
 FS-004666,32108722,10.1519/jsc.0000000000003516,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-004712,32256529,10.3389/fgene.2020.00256,retrieved_oa,europepmc,https://www.frontiersin.org/articles/10.3389/fgene.2020.00256/pdf,593a7b0fbfaeab2e88473607f08bbe518d1a6a028c8db2c91f60fa02c1081e04,3312722,True,title_word_hits=7/7 required=3,confirmed,V
 FS-004718,32286239,10.1515/cclm-2019-1337,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
-FS-004719,32290385,10.3390/ijerph17082622,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
+FS-004719,32290385,10.3390/ijerph17082622,retrieved_manual,manual_browser,,8d58c96203983d997983027446c8309e2c048387ef23340d3f27442c670f0ad5,2030400,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-004724,32299534,10.24920/003552,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-004759,32435201,10.3389/fphys.2020.00352,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,out_of_scope,
 FS-004764,32459413,10.1519/jsc.0000000000003185,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-004769,32470399,10.1016/j.cell.2020.04.043,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-004786,32537688,10.1007/s00421-020-04419-0,retrieved_oa,europepmc,https://link.springer.com/content/pdf/10.1007/s00421-020-04419-0.pdf,9a9a9f8a951db589cf8cfb39b84467095ae68306b8a1635c1943f35d249aff2a,712491,True,title_word_hits=9/9 required=3,confirmed,V
-FS-004798,32570815,10.3390/ijerph17124375,not_retrieved_oa,,,,,,europepmc:download_failed:circuit_broken,confirmed,V
+FS-004798,32570815,10.3390/ijerph17124375,retrieved_manual,manual_browser,,9d437871837d52767def1b2008bdd48194d87683c3173f010a980a51a7c926e4,1805029,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-004809,32619204,,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,U
 FS-004819,32657201,10.1080/19390211.2020.1786206,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,U
 FS-004825,32675582,10.1097/ajp.0000000000000861,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
@@ -326,14 +326,14 @@ FS-004826,32681124,10.1038/s41598-020-69280-9,retrieved_oa,europepmc,https://www
 FS-004839,32717273,10.1016/j.exger.2020.111026,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-004853,32768573,10.1016/j.freeradbiomed.2020.06.037,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-004886,32880050,10.1007/s00421-020-04481-8,retrieved_oa,europepmc,https://europepmc.org/articles/PMC7674333?pdf=render,89f28dd4d7e8e0b58b90666349e5f258bcd0590a6ed9f9684de2f16353e5c74d,979599,True,title_word_hits=13/13 required=3,confirmed,V
-FS-004889,32893357,10.1002/jlb.5a0820-436r,not_retrieved_oa,,,,,,europepmc:download_failed:http_403; crossref:download_failed:http_400,confirmed,V
+FS-004889,32893357,10.1002/jlb.5a0820-436r,retrieved_manual,manual_browser,,420f49922a4929a04354b9775a36d7dc922dbff2b33cb7819aa287eaf2b9fe62,812893,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-004954,33156414,10.1007/s00421-020-04528-w,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-004989,33284089,10.1152/ajpendo.00454.2020,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-005045,33462306,10.1038/s41598-021-81306-4,retrieved_oa,europepmc,https://www.nature.com/articles/s41598-021-81306-4.pdf,a10060ec7ac8151c4ed5b5e437fedf63186e3e68dcafadc081c1e386a053d816,3060443,True,title_word_hits=16/16 required=3,confirmed,V
-FS-005046,33467225,10.3390/jfmk5010009,not_retrieved_oa,,,,,,europepmc:download_failed:circuit_broken,confirmed,V
+FS-005046,33467225,10.3390/jfmk5010009,retrieved_manual,manual_browser,,25d6ee95feec095ad6c9aacd67efa4e4a4ab4cc9f7b9c680df3f08ccee165741,255093,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-005118,3375945,,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
-FS-005129,33801313,10.3390/biology10030181,not_retrieved_oa,,,,,,europepmc:download_failed:circuit_broken,confirmed,V
-FS-005160,33919722,10.3390/ijerph18084128,not_retrieved_oa,,,,,,europepmc:download_failed:circuit_broken,confirmed,V
+FS-005129,33801313,10.3390/biology10030181,retrieved_manual,manual_browser,,d47f4e90516a7d3d7ea256a13f7d703fe0b7a3fa2f17206e5865aa0e545c2a34,552128,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
+FS-005160,33919722,10.3390/ijerph18084128,retrieved_manual,manual_browser,,69e0f7a6b7a219027f918438ae526bc05effa11a1438f52ec18576c0253ef2a6,2458345,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-005163,33925633,10.3390/nu13051478,not_retrieved_oa,,,,,,europepmc:download_failed:circuit_broken,out_of_scope,
 FS-005165,33937753,10.3389/fspor.2021.663095,retrieved_oa,europepmc,https://europepmc.org/articles/PMC8082451?pdf=render,2ea56b1f9ae22123fc4634ae6a57a5f136235cf73dc23ed1234bd0e48ea4db7f,229148,True,title_word_hits=11/11 required=3,confirmed,V
 FS-005168,33946330,10.3390/genes12050676,retrieved_oa,europepmc,https://europepmc.org/articles/PMC8145542?pdf=render,9f897517366951b2f79baf6047d4efd6acbf51ba1084668cedc019d1902d39e1,1588286,True,title_word_hits=7/7 required=3,out_of_scope,
@@ -342,7 +342,7 @@ FS-005183,34014020,10.1111/hepr.13670,not_retrieved_oa,,,,,,no_usable_identifier
 FS-005226,34172818,10.1038/s41598-021-92956-9,retrieved_oa,europepmc,https://www.nature.com/articles/s41598-021-92956-9.pdf,41063ef987dcb1688441e96ae73075e09e6f3309c467f3b476e16d35521ec39f,3259377,True,title_word_hits=9/9 required=3,confirmed,V
 FS-005253,34273682,10.1016/j.nut.2021.111344,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-005259,34312731,10.1186/s40798-021-00343-5,retrieved_oa,europepmc,https://sportsmedicine-open.springeropen.com/track/pdf/10.1186/s40798-021-00343-5,fef1966d3d68ecf9ad165e8a118f5bc7fcf06aa85c58bc3e0a4d2019f6839888,546217,True,title_word_hits=11/11 required=3,confirmed,V
-FS-005301,34531760,10.3389/fphys.2021.712731,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
+FS-005301,34531760,10.3389/fphys.2021.712731,retrieved_manual,manual_browser,,09cdfea3fe8b6aa92679d6a99eb7a6641e8b3d036f65a2f0d28d36078ebb0e37,4889965,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-005304,34543566,,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-005334,34688752,10.1016/j.scitotenv.2021.151094,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-005384,34912238,10.3389/fphys.2021.755656,retrieved_oa,europepmc,https://www.frontiersin.org/articles/10.3389/fphys.2021.755656/pdf,c48cbeb6e010e4e83c1f7b45475780603a3dc046a52f64886eed5c58cafbae73,881367,True,title_word_hits=11/11 required=3,out_of_scope,
@@ -356,23 +356,23 @@ FS-005486,35313534,10.1055/a-1757-6724,not_retrieved_oa,,,,,,europepmc:download_
 FS-005488,35316486,10.1007/s12015-022-10361-9,retrieved_oa,europepmc,https://link.springer.com/content/pdf/10.1007/s12015-022-10361-9.pdf,713dc2ac73e98ee87fdf0ee9ee3006edabb1c44986ef424118504e982854d0b0,3948462,True,title_word_hits=8/8 required=3,out_of_scope,
 FS-005508,35393043,10.1016/j.jtherbio.2022.103188,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-005516,35426092,10.1055/a-1827-3124,retrieved_oa,europepmc,https://europepmc.org/articles/PMC9622302?pdf=render,ee512bab0a864381ea143b0a45ef4cd14d5eecb1fc438f09fc22874ffe89104e,668271,True,title_word_hits=8/8 required=3,confirmed,V
-FS-005528,35456380,10.3390/genes13040574,not_retrieved_oa,,,,,,europepmc:download_failed:circuit_broken,confirmed,V
+FS-005528,35456380,10.3390/genes13040574,retrieved_manual,manual_browser,,bf35450734b1902dc025302d9710f7f820272ddfdaddb0097ddae16ef2467628,3854206,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-005605,35774290,10.3389/fphys.2022.916924,retrieved_oa,europepmc,https://europepmc.org/articles/PMC9239318?pdf=render,f55e50f7bd8930ad6d08e4fc6d18cb69d25a2a63401234ec928ed8709f375f7e,2126218,True,title_word_hits=13/13 required=3,confirmed,V
 FS-005607,35777726,10.1055/a-1890-0993,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-005624,35852047,10.14814/phy2.15394,retrieved_oa,europepmc,https://europepmc.org/articles/PMC9295128?pdf=render,d56e060acab5a11d8bbe82b68b69c30b28445938fbf0dc00d8fe4534b6a1f25d,1868405,True,title_word_hits=12/12 required=3,confirmed,V
-FS-005701,36142056,10.3390/ijerph191811784,not_retrieved_oa,,,,,,europepmc:download_failed:circuit_broken,confirmed,V
+FS-005701,36142056,10.3390/ijerph191811784,retrieved_manual,manual_browser,,0f0af50fc17ce0dd063e90b740dc0ef6ecb85ab99aa591791a7f2f0a36c42a26,932117,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-005719,36189306,10.3389/fimmu.2022.938106,retrieved_oa,europepmc,https://www.frontiersin.org/articles/10.3389/fimmu.2022.938106/pdf,25b719ce4fef31dbe99d5d2a68b95309c3692f897fbab158fba7646304072a2f,25014733,True,title_word_hits=11/12 required=3,confirmed,V
 FS-005727,36227377,10.1007/s00421-022-05068-1,retrieved_oa,crossref,https://link.springer.com/content/pdf/10.1007/s00421-022-05068-1.pdf,ef9d309b2101e2ad49fea82a75f391d86c9380f63efb7d9c33b3884e8a861f8c,989346,True,title_word_hits=10/10 required=3,confirmed,V
 FS-005739,36277142,10.3892/etm.2022.11635,retrieved_oa,europepmc,https://www.spandidos-publications.com/10.3892/etm.2022.11635/download,fd17790deb9af29947d735a2275e8988f09fc658210c68108c45f5c9c59cb390,1958177,True,title_word_hits=5/5 required=3,confirmed,V
-FS-005741,36285617,10.1210/clinem/dgac623,not_retrieved_oa,,,,,,europepmc:download_failed:http_404; crossref:download_failed:http_403,confirmed,V
-FS-005770,36374769,10.1016/j.ebiom.2022.104313,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
+FS-005741,36285617,10.1210/clinem/dgac623,retrieved_manual,manual_browser,,be33260db8990910683e50a09291d7da8d5e6559812c9f878db5d07b6bd882c8,822545,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
+FS-005770,36374769,10.1016/j.ebiom.2022.104313,retrieved_manual,manual_browser,,f7d7fad7650665d3a7abc580d579c87d22a65cc28f697897682289a5be961f0f,2047383,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-005773,36400821,10.1038/s41598-022-23300-y,retrieved_oa,europepmc,https://europepmc.org/articles/PMC9672598?pdf=render,366e4440e0ca03921f6ec17dc97cadb0eb1facf09cf226bd1f3a82118c87fe1f,2627897,True,title_word_hits=15/15 required=3,confirmed,V
 FS-005856,36719647,10.1249/mss.0000000000003130,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
-FS-005864,36743994,10.1016/j.bbih.2023.100600,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
-FS-005870,36769362,10.3390/ijms24033039,not_retrieved_oa,,,,,,europepmc:download_failed:circuit_broken,confirmed,V
+FS-005864,36743994,10.1016/j.bbih.2023.100600,retrieved_manual,manual_browser,,84f6988c2e8e2ff06c56f6aa70a3bed2705407d2081ed40defe86e5f88c6f67b,5019635,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
+FS-005870,36769362,10.3390/ijms24033039,retrieved_manual,manual_browser,,a9a40b4388e97948c584a54d62066bfe6ed79c5278a41ecb6b05badc4377586c,2285051,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-005877,3679644,10.1055/s-2008-1025675,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
-FS-005884,36828321,10.3390/sports11020036,not_retrieved_oa,,,,,,europepmc:download_failed:circuit_broken,confirmed,V
-FS-005887,36833405,10.3390/genes14020478,not_retrieved_oa,,,,,,europepmc:download_failed:circuit_broken,confirmed,V
+FS-005884,36828321,10.3390/sports11020036,retrieved_manual,manual_browser,,b81227f8ddb126716a38c80cf3017a3161fad5d31ef6312131e64a0359a3f21c,2419995,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
+FS-005887,36833405,10.3390/genes14020478,retrieved_manual,manual_browser,,3b22ba7fd2cbf72d671fa03e374b6fc573e17c128322f1c090cd4b2063fb01c3,2224100,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-005899,3687561,10.1007/978-1-4684-5344-7_102,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-005905,36895638,10.3389/fphys.2023.1063335,retrieved_oa,europepmc,https://europepmc.org/articles/PMC9989174?pdf=render,b65497b592372a663aa66196fdc9167db52e75a4bfb8c396a2c96ce41e1870f1,2909319,True,title_word_hits=13/15 required=3,confirmed,V
 FS-005914,36936914,10.3389/fimmu.2023.1129060,retrieved_oa,europepmc,https://www.frontiersin.org/articles/10.3389/fimmu.2023.1129060/pdf,6844e2e78cde91a82396f94a6643da9208bd02875a6c93e41206dd54119b9938,1187929,True,title_word_hits=13/13 required=3,out_of_scope,
@@ -381,9 +381,9 @@ FS-005939,37077913,10.3389/fimmu.2023.1067369,retrieved_oa,europepmc,https://eur
 FS-005950,37123249,10.1016/j.isci.2023.106532,retrieved_oa,europepmc,https://europepmc.org/articles/PMC10130917?pdf=render,0c8dd51d766441caff2e4db75786b50cc428754b0540d5e19dacbde949e549ec,6129794,True,title_word_hits=10/10 required=3,confirmed,V
 FS-005966,37193030,10.7717/peerj.15075,retrieved_oa,europepmc,https://europepmc.org/articles/PMC10183162?pdf=render,bc65490874369446098eeb15b6aa064edfa22169cc70b83dc538f4df46ea7911,1652172,True,title_word_hits=7/7 required=3,confirmed,V
 FS-005971,37217586,10.1038/s41598-023-34974-3,retrieved_oa,europepmc,https://europepmc.org/articles/PMC10203307?pdf=render,4b6aea07f6c56b15529c56d99603a27c2a413ae3b5b302627b498e078115d792,1064561,True,title_word_hits=13/13 required=3,confirmed,V
-FS-005990,37290439,10.1016/j.xcrm.2023.101074,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
+FS-005990,37290439,10.1016/j.xcrm.2023.101074,retrieved_manual,manual_browser,,2e69376a79557ebcad72bbf4c0f0a2774979284d10879b205f4103e6c1f11067,6067740,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-005991,37293669,10.3389/fnut.2023.1175622,retrieved_oa,europepmc,https://europepmc.org/articles/PMC10244580?pdf=render,844dd0fa27128845402dae40809daa87f7a879696e0b2c37373a4a26f28107a0,693069,True,title_word_hits=9/9 required=3,confirmed,V
-FS-006008,37372026,10.3390/antiox12061296,not_retrieved_oa,,,,,,europepmc:download_failed:circuit_broken,confirmed,V
+FS-006008,37372026,10.3390/antiox12061296,retrieved_manual,manual_browser,,6ac575b7176932174c237a7541dce087ef81504a5c79da249fe6ed13aa810e84,1839547,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-006018,37429969,10.1038/s41598-023-38064-2,retrieved_oa,europepmc,https://www.nature.com/articles/s41598-023-38064-2.pdf,c6426666f3de3a8fdc64a65fa29bec22242028099124ca52d3a027a231588f97,3684499,True,title_word_hits=10/10 required=3,confirmed,V
 FS-006024,37458775,10.1007/s00394-023-03181-1,retrieved_oa,europepmc,https://europepmc.org/articles/PMC10468936?pdf=render,1d9e25b71aa7bce8580824883d7aca258aef62cd4ee8e7c4720044df3b9895e2,1630595,True,title_word_hits=12/12 required=3,confirmed,V
 FS-006034,37488250,10.1038/s41598-023-39269-1,retrieved_oa,europepmc,https://www.nature.com/articles/s41598-023-39269-1.pdf,944d5d46d09a69a74ab4b10aa5fc89b966930995429687cc9b23baf912c8ffa2,1991379,True,title_word_hits=8/8 required=3,confirmed,V
@@ -392,13 +392,13 @@ FS-006136,38004173,10.3390/nu15224779,not_retrieved_oa,,,,,,europepmc:download_f
 FS-006144,38063067,10.1113/ep091326,retrieved_oa,europepmc,https://europepmc.org/articles/PMC10988676?pdf=render,e36b2cf966645abb5632fe9f7affaf2457650ff5ba6aae24c5a07f8e9138c40a,1214316,True,title_word_hits=8/8 required=3,confirmed,V
 FS-006154,38109167,10.1249/mss.0000000000003363,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-006184,38243724,10.1111/apha.14095,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
-FS-006191,38257136,10.3390/nu16020243,not_retrieved_oa,,,,,,europepmc:download_failed:circuit_broken,confirmed,V
+FS-006191,38257136,10.3390/nu16020243,retrieved_manual,manual_browser,,98e405099c650adaf276e5b1bedc802af03897e27bfa6a12152b5f55de50832f,1922199,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-006214,38373069,10.1519/jsc.0000000000004751,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-006215,38377006,10.1249/mss.0000000000003408,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-006218,38378702,10.1038/s41598-024-54572-1,retrieved_oa,europepmc,https://www.nature.com/articles/s41598-024-54572-1.pdf,1da1857fee36654887b7e10a8098f09acaf105b7782e60d859743db7ed0ea0df,8228403,True,title_word_hits=13/13 required=3,confirmed,V
 FS-006233,38466679,10.1371/journal.pone.0299556,retrieved_oa,europepmc,https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0299556&type=printable,73ab48cb72147b1fb2fce200840b5a5275de68deffa41fc35232f131e3f7a613,2769290,True,title_word_hits=8/8 required=3,confirmed,V
 FS-006242,38505706,10.3389/fphys.2024.1337119,retrieved_oa,europepmc,https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2024.1337119/pdf,57be1e1a90ccd57f5a47a4358f5f446054b686293b22dcf95fe281a62b44b72b,1501451,True,title_word_hits=12/12 required=3,out_of_scope,
-FS-006247,38532845,10.3389/fphys.2024.1365357,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
+FS-006247,38532845,10.3389/fphys.2024.1365357,retrieved_manual,manual_browser,,d480f870653c5281bfd7a0d3e7ed6f1056c731350ad3772fa449223643abdf9f,1422034,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-006250,38535735,10.3390/sports12030072,retrieved_oa,europepmc,https://europepmc.org/articles/PMC10975304?pdf=render,20d5ac2c6dbfc08f14bcb8359400542315e92d7b97ee1e662d979087c1886bcb,7098333,True,title_word_hits=10/10 required=3,confirmed,V
 FS-006259,38577295,10.1080/23328940.2023.2213625,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,out_of_scope,
 FS-006260,38578562,10.1007/s10974-024-09668-6,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
@@ -415,7 +415,7 @@ FS-006389,39195529,10.3390/metabo14080433,not_retrieved_oa,,,,,,europepmc:downlo
 FS-006399,39237538,10.1038/s41598-024-71576-z,retrieved_oa,europepmc,https://europepmc.org/articles/PMC11377723?pdf=render,dcaab1e7118c12013f9203066793c3c04dac4d7c4481545085ea87742bf5e074,1203904,True,title_word_hits=12/12 required=3,out_of_scope,
 FS-006410,39284497,10.1016/j.advms.2024.09.003,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-006416,39304515,10.14814/phy2.70056,retrieved_oa,europepmc,https://europepmc.org/articles/PMC11415274?pdf=render,9d58c7a3e7aead26ad5fe4aebe7cfbbb8fe6814616ccf7404b9b65867cf34c83,2273036,True,title_word_hits=15/15 required=3,confirmed,V
-FS-006424,39339678,10.3390/nu16183078,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
+FS-006424,39339678,10.3390/nu16183078,retrieved_manual,manual_browser,,e0024b617e5fcef1b2de208390e6f6339286e62f4967d9c88f6cd7a6f457de6f,2082987,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-006430,39352112,10.1002/iid3.70030,retrieved_oa,europepmc,https://europepmc.org/articles/PMC11443606?pdf=render,56c8bc09c15d5b7e4a1d08600a5a1fc17021d160825fac91f9bf385379b1c27e,2834564,True,title_word_hits=16/16 required=3,confirmed,V
 FS-006440,39408218,10.3390/nu16193250,retrieved_oa,europepmc,https://europepmc.org/articles/PMC11479082?pdf=render,bbe644507c4a7d4f971ab93f13eb9abc6bcd80941f89f3db3a94e4b5c15f7382,11586137,True,title_word_hits=12/12 required=3,confirmed,V
 FS-006450,39458532,10.3390/nu16203538,retrieved_oa,europepmc,https://europepmc.org/articles/PMC11510449?pdf=render,ed0fad0e96c126f3aee843c68e238ae5bec2d478cc62314a6491d43e3fc5d49e,3938510,True,title_word_hits=14/14 required=3,confirmed,V
@@ -428,7 +428,7 @@ FS-006554,39889004,10.1126/sciadv.adp8608,retrieved_oa,europepmc,https://europep
 FS-006563,39919738,10.1016/j.cmet.2024.12.011,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-006567,39941693,10.3390/jcm14031024,retrieved_oa,europepmc,https://europepmc.org/articles/PMC11818856?pdf=render,b41402ca9b7a9d2e776e2699bae1e95e9a9fb1b622816376bf77997c48f1cd75,233111,True,title_word_hits=10/10 required=3,confirmed,V
 FS-006651,40311885,10.1016/j.bbi.2025.04.040,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
-FS-006662,40362215,10.3390/ijms26093976,not_retrieved_oa,,,,,,europepmc:download_failed:circuit_broken,confirmed,V
+FS-006662,40362215,10.3390/ijms26093976,retrieved_manual,manual_browser,,032e118d2e55b611a3daecfb1665458ce9e50d7ca6cf0e54d89b3d2837c2782b,2179946,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-006684,40507030,10.3390/nu17111761,retrieved_oa,europepmc,https://europepmc.org/articles/PMC12157211?pdf=render,96b49d50160351f616e457af8a6883980c2f6bad57ecbb57333196eea2a39c78,1573820,True,title_word_hits=11/11 required=3,confirmed,V
 FS-006685,40507193,10.3390/nu17111924,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,out_of_scope,
 FS-006687,40509362,10.3390/molecules30112476,retrieved_oa,europepmc,https://europepmc.org/articles/PMC12157199?pdf=render,497e9d228d5aae8c4297c2380b5cdc64e91057f59779b377138bcf7f3c2669a9,710908,True,title_word_hits=8/8 required=3,out_of_scope,
@@ -436,16 +436,16 @@ FS-006697,40547947,10.1002/cti2.70037,retrieved_oa,europepmc,https://europepmc.o
 FS-006699,40553263,10.1186/s40798-025-00879-w,retrieved_oa,europepmc,https://europepmc.org/articles/PMC12187627?pdf=render,8763344c1d693d3b2906fce61135bb63444c41a6ecab0e1cd318c6c1ceefafc4,2315788,True,title_word_hits=12/12 required=3,confirmed,U
 FS-006706,40570836,10.1016/j.cell.2025.06.001,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-006734,40695537,10.1152/ajpendo.00169.2025,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
-FS-006745,40723384,10.3390/biology14070825,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
+FS-006745,40723384,10.3390/biology14070825,retrieved_manual,manual_browser,,035f5af6452afeed876745f527c0d76795bcd8facd072feb9406f19c869bb1a5,1694046,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-006749,40737449,10.14814/phy2.70268,retrieved_oa,europepmc,https://europepmc.org/articles/PMC12309849?pdf=render,0d01bd7dee737770f3cdae91ca8f7d5c6e804ab8c175e6ca05b7823463f48bea,1150309,True,title_word_hits=16/16 required=3,confirmed,V
 FS-006751,40746988,10.3389/fphys.2025.1583870,retrieved_oa,europepmc,https://europepmc.org/articles/PMC12310637?pdf=render,b79abf4e16d3bad5e958b5d130f6f33ac9c512595fb225b7224308ca653ecb79,6314822,True,title_word_hits=10/10 required=3,confirmed,V
 FS-006754,40757568,10.3390/muscles2020015,retrieved_oa,europepmc,https://europepmc.org/articles/PMC12225506?pdf=render,414151904fe412659d501ab3d5f57ecd2531c07cab1b4ca6036648f8b14de15d,1949696,True,title_word_hits=15/15 required=3,confirmed,V
 FS-006779,40839339,10.1007/s40279-025-02292-5,retrieved_oa,europepmc,https://europepmc.org/articles/PMC12628386?pdf=render,c8efe451e601f0fc9888ff0e6647b0d0ea0ed97716e277fd736749bc853be9ce,2386220,True,title_word_hits=13/13 required=3,confirmed,V
 FS-006787,40874701,10.1111/acel.70152,retrieved_oa,europepmc,https://europepmc.org/articles/PMC12419837?pdf=render,6256ba4524b2f783b1d7e5389af366e93e5851e51d91c5292e87e71147a47289,2009095,True,title_word_hits=6/6 required=3,confirmed,V
 FS-006810,40944155,10.3390/nu17172765,retrieved_oa,europepmc,https://europepmc.org/articles/PMC12430687?pdf=render,7e54d46b1fd0efef66df3bb9ed16af06765857e2dd6e23f950e6e860b88a055e,2413120,True,title_word_hits=11/11 required=3,out_of_scope,
-FS-006828,41024702,10.1002/ejsc.70058,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
+FS-006828,41024702,10.1002/ejsc.70058,retrieved_manual,manual_browser,,cdee22336c3122908910e35bcd2d94b1c613f5f2507a8df2fb5e4a50fb31fb24,802546,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-006843,41076654,10.1113/jp289339,retrieved_oa,europepmc,https://europepmc.org/articles/PMC12645526?pdf=render,6a15a5e3e75876e0863e7f3a63afa2e0a5fe25b10d13f964599b4e8f0bcf8b28,2072813,True,title_word_hits=12/12 required=3,out_of_scope,
-FS-006881,41208983,10.3389/fimmu.2025.1661161,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
+FS-006881,41208983,10.3389/fimmu.2025.1661161,retrieved_manual,manual_browser,,625b25c57ff9071b8fbfcffa50faca9df88564c48e5c49c2368a4545e927f117,3291095,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-006883,41214136,10.1038/s41598-025-22991-3,retrieved_oa,europepmc,https://europepmc.org/articles/PMC12603284?pdf=render,8fea03163144904e7cac21a05a1ea4380c77432e0602b0be541df553c7ef7153,2610173,True,title_word_hits=14/14 required=3,confirmed,V
 FS-006885,41222681,10.1007/s00421-025-06040-5,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-006928,41387212,10.1002/ijc.70271,retrieved_oa,europepmc,https://europepmc.org/articles/PMC12996753?pdf=render,a9537db87f7c41a58e107eea42077b0c42a1cb56cfe8f375e5cd00a34fcbcd5e,1743542,True,title_word_hits=10/10 required=3,confirmed,V
@@ -463,14 +463,14 @@ FS-007094,41979147,10.1113/jp290316,not_retrieved_oa,,,,,,europepmc:download_fai
 FS-007097,41991430,10.1016/j.jsams.2026.03.024,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-007098,41993944,10.3389/frmbi.2026.1734737,retrieved_oa,europepmc,https://europepmc.org/articles/PMC13079320?pdf=render,398631c6188489d6de826d74b85e4d2dfadfacb404d805e48459a0d0f5c602d6,726134,True,title_word_hits=11/11 required=3,confirmed,V
 FS-007132,42085607,10.1182/bloodadvances.2025019105,retrieved_oa,europepmc,https://europepmc.org/articles/PMC13543947?pdf=render,63719328c688129cfe1709116b4157d54e841f01f841e575536a2972d27dfc0e,513144,True,title_word_hits=8/8 required=3,confirmed,U
-FS-007158,42196277,10.3390/ijms27104295,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
+FS-007158,42196277,10.3390/ijms27104295,retrieved_manual,manual_browser,,1bd2c2f73eedca8ab1b45fd130c42afcc130d16d8936875ad36f6b9aaeae06a2,1956434,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-007168,42220584,10.5114/biolsport.2026.158303,retrieved_oa,europepmc,https://europepmc.org/articles/PMC13217405?pdf=render,4d1da53d05e11939c0e31d56fa33deb93e93b5ea547c63db9870bc67bdb82ecb,4835905,True,title_word_hits=10/10 required=3,confirmed,V
 FS-007174,42237705,10.14814/phy2.70966,retrieved_oa,europepmc,https://europepmc.org/articles/PMC13581084?pdf=render,c9200d23c6eed48a4baf3530e5eb251edfd74c58483a8861eedb6eb08a3e5d33,942141,True,title_word_hits=12/12 required=3,out_of_scope,
 FS-007188,42273167,10.1016/j.brci.2026.100055,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-007236,42399371,10.1038/s43587-026-01150-x,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-007237,42399740,10.1186/s13395-026-00435-4,retrieved_oa,europepmc,https://europepmc.org/articles/PMC13632184?pdf=render,2cc58e6775c045a57ae452c90f688f1d4d08c768d802d0f2766a38ebb25cd87e,2640862,True,title_word_hits=13/13 required=3,confirmed,V
 FS-007241,42413512,10.1055/a-2899-8817,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
-FS-007251,42451454,10.3390/s26134215,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
+FS-007251,42451454,10.3390/s26134215,retrieved_manual,manual_browser,,9e68b155f7b6d85a42b72e4f16e9ab09ced654808f3497a155d3293f5d53a16d,4880354,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-007256,42476008,10.1016/j.redox.2026.104301,retrieved_oa,europepmc,https://europepmc.org/articles/PMC13393802?pdf=render,d545890f7c663188adbb19ba6606fd1c71baa19968c2f46fc2d5a14835c6a6d8,22539368,True,title_word_hits=9/9 required=3,confirmed,V
 FS-007259,42494155,10.1002/adhm.71454,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,U
 FS-007261,42502427,10.1016/j.bbih.2026.101310,retrieved_oa,europepmc,https://europepmc.org/articles/PMC13400200?pdf=render,d8d7ea7ed64a9ef618e4855d7b9e6b51e3a4beec159c2c3421574d253ce4a8b3,11622826,True,title_word_hits=18/18 required=3,confirmed,V
@@ -511,14 +511,14 @@ FS-007993,,10.1249/TJX.0000000000000376,not_retrieved_oa,,,,,,no_usable_identifi
 FS-008213,,10.1007/s11332-025-01422-w,retrieved_oa,crossref,https://link.springer.com/content/pdf/10.1007/s11332-025-01422-w.pdf,da3f6765d34bc0f537babc8a2cd738595f274a4ebc6acaf402acc7967de0d8ae,1039880,True,title_word_hits=16/16 required=3,out_of_scope,
 FS-008227,,10.3390/app14124968,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-008228,,10.1590/1980-0037.2025v27e99591,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
-FS-008442,37895328,10.3390/life13101946,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
+FS-008442,37895328,10.3390/life13101946,retrieved_manual,manual_browser,,e266312dd59caf700206956914a0f65332bf780d10499415bd10dc3528bc2975,3254421,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-008505,37853489,10.1186/s40779-023-00477-5,retrieved_oa,europepmc,https://europepmc.org/articles/PMC10583322?pdf=render,03c4450f1c9fa439b16895bcfff72ce4d659f1bec1dc30a328d84051c6a69142,4662932,True,title_word_hits=9/9 required=3,confirmed,V
 FS-008737,37051668,10.1080/17461391.2023.2203107,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-008738,,10.2478/pjst-2023-0001,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-008838,,10.1134/S0362119722030070,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-008929,,10.2478/pjst-2021-0014,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-009093,,10.19193/0393-6384_2021_2_168,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
-FS-009203,,10.3389/fnut.2020.00121,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
+FS-009203,,10.3389/fnut.2020.00121,retrieved_manual,manual_browser,,89b373f82de2a5a36d369fda083b4c829d81aeda99b469a278724385361a07b3,1102747,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-009320,,10.7752/jpes.2019.s4191,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-009338,,10.1134/S0362119719030137,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-009341,,10.1177/1747954118779656,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
@@ -536,12 +536,12 @@ FS-009525,27139796,10.23736/s0022-4707.16.06390-8,not_retrieved_oa,,,,,,no_usabl
 FS-009547,,10.1080/24748668.2018.1501993,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-009622,,10.1016/j.ramd.2016.02.012,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-009633,,10.2174/1573401313666170725114130,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,U
-FS-009645,,10.1002/tsm2.23,not_retrieved_oa,,,,,,crossref:download_failed:http_400,confirmed,V
+FS-009645,,10.1002/tsm2.23,retrieved_manual,manual_browser,,b5df4bf42e8d0458df4a14d4af44f00a05f54d898420e5dfab427aa815d4a5ba,266927,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-009854,,10.1515/biol-2016-0041,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-009959,,10.1515/pterid-2015-0010,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-009966,26269448,10.1007/s00421-015-3236-3,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
 FS-010114,24412212,10.1016/j.bbi.2014.01.002,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
-FS-010146,24895602,10.1155/2014/694801,not_retrieved_oa,,,,,,europepmc:download_failed:circuit_broken; crossref:download_failed:circuit_broken,confirmed,V
+FS-010146,24895602,10.1155/2014/694801,retrieved_manual,manual_browser,,cdc8beff6bf1f254f4c59863dbdd635cc7d7bb84c5e7f5ab46a6472b689722bb,301619,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-010165,,,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-010204,,10.1186/1550-2783-11-14,retrieved_oa,crossref,http://link.springer.com/content/pdf/10.1186/1550-2783-11-14.pdf,8a010a9e774b29adcd330fdc62de321902c7c3da4d90d08f584eb5ca62acf82d,607227,True,title_word_hits=11/11 required=3,confirmed,V
 FS-010242,22027851,10.1519/jsc.0b013e31823b8702,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,out_of_scope,
@@ -580,17 +580,17 @@ FS-011224,,,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,o
 FS-000106,10647540,10.1097/00005768-200001000-00020,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-000266,115619,10.1111/j.1365-2222.1979.tb02506.x,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-000274,11581559,10.1097/00005768-200110000-00018,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
-FS-001224,18079262,10.1152/japplphysiol.00572.2007,not_retrieved_oa,,,,,,openalex:download_failed:http_429,confirmed,V
+FS-001224,18079262,10.1152/japplphysiol.00572.2007,retrieved_manual,manual_browser,,8f8d79025ef6640dbc6141a4567711963a55aeb43c1a49084b0fc262481ba836,198023,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-001293,18388249,10.1152/japplphysiol.00954.2007,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-002032,21906793,10.1016/j.jaci.2011.07.053,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-002906,25386711,10.1249/mss.0000000000000568,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-003840,29075862,10.1007/s00421-017-3746-2,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-004513,31609300,10.1249/mss.0000000000002185,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-004773,32488605,10.1007/5584_2020_546,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
-FS-006131,37992002,10.1371/journal.pone.0291297,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,V
-FS-006439,39407919,10.3390/jcm13195859,not_retrieved_oa,,,,,,europepmc:download_failed:http_403; openalex:download_failed:http_403,confirmed,V
+FS-006131,37992002,10.1371/journal.pone.0291297,retrieved_manual,manual_browser,,02ba0a6d72d1f0e13807c0928b8219ec18582692a9def4d61c630f45ffbb4d1b,872855,True,downloaded by A in a browser; DOI-verified and re-assigned 2026-10-09,confirmed,V
+FS-006439,39407919,10.3390/jcm13195859,retrieved_manual,manual_browser,,aa212fe9566a034fb1e4d60c65c853fc5307bd5c55486bd822820607a8dd7351,277034,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-006627,40194740,10.1016/j.jshs.2025.101039,retrieved_oa,europepmc,https://europepmc.org/articles/PMC12145743?pdf=render,fe4eaa1ef1d4c4471c0ecade396f169b0c27e270cb65fafece289e3943a2e418,1547371,True,title_word_hits=7/7 required=3,confirmed,V
-FS-006681,40465195,10.1002/ctm2.70346,not_retrieved_oa,,,,,,europepmc:download_failed:http_403; openalex:download_failed:http_403,confirmed,V
+FS-006681,40465195,10.1002/ctm2.70346,retrieved_manual,manual_browser,,8795ebc8dc4ac7465c7aedb82486f9736c11e5d485fec3be4cc1a7414af6c2a8,6251635,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-006840,41070329,10.12669/pjms.41.9.11305,retrieved_oa,europepmc,https://europepmc.org/articles/PMC12505951?pdf=render,f179ac742c1f05b478325953bd2359fda35d0d0cdef371423ca5545bc19445b3,313667,True,title_word_hits=15/15 required=3,confirmed,V
 FS-006861,41134656,10.1093/toxsci/kfaf150,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
 FS-007100,41996458,10.1158/1940-6207.capr-25-0491,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,V
@@ -605,12 +605,12 @@ FS-013354,,10.22631/ijaep.v7i1.238,not_retrieved_oa,,,,,,openalex:download_faile
 FS-001269,18324908,10.1515/cclm.2008.050,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,U
 FS-002994,25729365,10.3389/fphys.2015.00035,retrieved_oa,openalex,https://www.frontiersin.org/articles/10.3389/fphys.2015.00035/pdf,4291025505cf75916098d45fedc9899f6d20c4e3e7124c05d49f2cff718b8fc7,302693,True,title_word_hits=15/15 required=3,confirmed,U
 FS-003045,25902870,10.1111/acel.12341,retrieved_oa,europepmc,https://europepmc.org/articles/PMC4531076?pdf=render,aeecd6d94e77e1bcd9882dea087f537ace803ca1d2c5ab7ab640659affd58b27,1606354,True,title_word_hits=7/7 required=3,confirmed,U
-FS-003373,27239554,10.1155/2016/7186137,not_retrieved_oa,,,,,,europepmc:download_failed:http_403; openalex:download_failed:http_403; crossref:download_failed:http_403,confirmed,U
-FS-005337,34693365,10.1016/j.bbih.2021.100368,not_retrieved_oa,,,,,,europepmc:download_failed:http_403; openalex:download_failed:http_403,confirmed,U
+FS-003373,27239554,10.1155/2016/7186137,retrieved_manual,manual_browser,,daf52e9fbba106df5414992b0e467c5a77c7653a07b30fe426d516e8305b78d7,180842,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,U
+FS-005337,34693365,10.1016/j.bbih.2021.100368,retrieved_manual,manual_browser,,1ac7aa0a28dc1b9c02ed50bfc0002e7c15aaa04db8f33efc13fe864311ff623d,251464,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,U
 FS-006172,38197701,10.1093/gerona/glae001,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,U
 FS-006462,39513967,10.1113/jp287749,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,U
 FS-006871,41163346,10.1111/apha.70125,retrieved_oa,europepmc,https://europepmc.org/articles/PMC12615995?pdf=render,608d729651bfd12f92a7f47207fa5ca7b6e180936000112039759c7afd86fa9f,2095632,True,title_word_hits=6/6 required=3,confirmed,U
-FS-007201,42320482,10.1016/j.xcrm.2026.102916,not_retrieved_oa,,,,,,europepmc:download_failed:http_403,confirmed,U
+FS-007201,42320482,10.1016/j.xcrm.2026.102916,retrieved_manual,manual_browser,,cf3bddd7d324fe703589c87d909ca68db0569c3a930bcfd4205e5ae02dc38c45,2426572,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,U
 FS-007330,42744676,10.1016/j.jsams.2026.09.002,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,U
 FS-007404,6408915,,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,U
 FS-007452,7219473,10.1056/nejm198105213042106,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,U
@@ -627,5 +627,5 @@ FS-012651,,,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,c
 FS-013867,,10.1042/bst023124s,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,U
 FS-015048,,,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,U
 FS-015049,,,not_retrieved_oa,,,,,,no_usable_identifier_or_no_oa_location_found,confirmed,U
-FS-006824,41008783,10.3390/diagnostics15182412,not_retrieved_oa,,,,,,europepmc:download_failed:http_403; openalex:download_failed:http_403,confirmed,V
+FS-006824,,,retrieved_manual,manual_browser,,d013b9518d7a763b6cf89124396741b6394f558c2bd558d3c0f1cb005ca054af,279061,True,downloaded by A in a browser; intake by scripts/intake_fulltext_batch.py,confirmed,V
 FS-008029,,10.55860/tfny4433,retrieved_oa,openalex,https://www.jhse.es/index.php/jhse/article/download/fatigue-cognitive-function/129,29d9466613abe0a2931af31346d91fc9438924fbaa27e9a54f505e8541d2a3b2,284868,True,title_word_hits=6/6 required=3,confirmed,V
