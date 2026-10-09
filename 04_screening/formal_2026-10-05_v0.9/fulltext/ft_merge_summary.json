@@ -1,0 +1,90 @@
+{
+  "inputs": {
+    "B": {
+      "path": "04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_B.xlsx",
+      "sha256": "bd068653f946b2d06a2958f793d2fef4e33ddcdd651e5db86fd2e2d04ce475cc"
+    },
+    "C": {
+      "path": "04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_C.xlsx",
+      "sha256": "1c65c56477dbfadab5fff95574f8d760deab2d3e70aec172e03cc86a0bba73ac"
+    }
+  },
+  "n_records": 477,
+  "n_complete_pairs": 190,
+  "rule_problems": {
+    "B": 287,
+    "C": 287
+  },
+  "agreement": {
+    "disposition": {
+      "n": 190,
+      "agree": 152,
+      "raw_agreement": 0.8,
+      "kappa": 0.6826
+    },
+    "disposition_with_ft_code": {
+      "n": 190,
+      "agree": 151,
+      "raw_agreement": 0.7947,
+      "kappa": 0.6781
+    },
+    "include_exclude_other": {
+      "n": 190,
+      "agree": 166,
+      "raw_agreement": 0.8737,
+      "kappa": 0.577
+    },
+    "ft_code_when_both_exclude": {
+      "n": 12,
+      "agree": 11,
+      "raw_agreement": 0.9167,
+      "kappa": 0.8899
+    },
+    "age_rule_check": {
+      "n": 190,
+      "agree": 173,
+      "raw_agreement": 0.9105,
+      "kappa": 0.4277
+    },
+    "validation_element_confirmed": {
+      "n": 190,
+      "agree": 152,
+      "raw_agreement": 0.8,
+      "kappa": 0.3327
+    }
+  },
+  "n_conflicts_for_D": 326,
+  "n_resolved_by_D": 0,
+  "prisma_agreed_only": {
+    "n": 151,
+    "by_disposition": {
+      "INCLUDE_A": 88,
+      "INCLUDE_B": 2,
+      "INCLUDE_A_AND_B": 42,
+      "RETAIN_BACKGROUND": 3,
+      "EXCLUDE": 11,
+      "AWAITING_CLASSIFICATION": 5,
+      "NOT_RETRIEVED": 0,
+      "DUPLICATE_REPORT": 0
+    },
+    "excluded_by_ft_code": {
+      "FT01_SOURCE_TYPE_NOT_CORE": 3,
+      "FT02_NOT_ORIGINAL_HUMAN_RESEARCH": 0,
+      "FT03_POPULATION_NOT_ELIGIBLE": 4,
+      "FT04_NO_QUALIFYING_EXERCISE_EXPOSURE": 0,
+      "FT05_NO_POST_CESSATION_SAMPLE": 3,
+      "FT06_NO_BASELINE_OR_SUITABLE_COMPARATOR": 1,
+      "FT07_NO_ELIGIBLE_IMMUNE_LINK": 0,
+      "FT08_MIXED_INTERVENTION_NOT_SEPARABLE": 0
+    },
+    "included_reports": 132,
+    "stream_A_reports": 130,
+    "stream_B_reports": 44,
+    "sought_not_retrieved": 0,
+    "assessed_full_text": 151,
+    "note": "A/B stream totals overlap through INCLUDE_A_AND_B; cohort-level counts come from extraction linkage."
+  },
+  "prisma_final": null,
+  "final_complete": false,
+  "kappa_note": "Cohen's kappa is descriptive (prevalence-sensitive); full-text agreement has no pass threshold (calibration_plan.md)."
+}
