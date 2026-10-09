@@ -151,5 +151,48 @@
       "unclear": 2
     },
     "note": "Reviewer C's your_* columns were pre-filled from Claude Sonnet (headless, effort medium)'s full-text read; unchanged cells after C's review are C's decision of record. The hidden _prefill sheet in ft_screen_C.xlsx holds the original AI values for the override-rate check. ft_screen_B.xlsx (reviewer B) is untouched by this script."
+  },
+  "pre011": {
+    "date": "2026-10-09",
+    "rule": "PRE-011 (2026-10-09): adult/INCLUDE when explicit range/min >=18y, OR mean age >=20y (any SD) or an adult/university-student/athlete/worker-or-similar descriptor, AND no statement that participants <18y took part. Stays AWAITING when <18y stated with no separable adult stratum (-> EXCLUDE FT03), or mean <20y with no range, or age not reported at all. mean-2SD is no longer applied.",
+    "script": "scripts/apply_pre011_to_ft_prefill.py",
+    "B": {
+      "n_awaiting_before": 36,
+      "n_to_include": 23,
+      "n_stays_awaiting": 13,
+      "include_stream_counts": {
+        "INCLUDE_A": 9,
+        "INCLUDE_A_AND_B": 14
+      },
+      "awaiting_reason_counts": {
+        "mean<20_no_range": 3,
+        "age_not_reported": 5,
+        "non_age_reason": 4,
+        "separable_stratum_age_unresolved": 1
+      }
+    },
+    "C": {
+      "n_awaiting_before": 24,
+      "n_to_include": 13,
+      "n_stays_awaiting": 11,
+      "include_stream_counts": {
+        "INCLUDE_A": 7,
+        "INCLUDE_A_AND_B": 6
+      },
+      "awaiting_reason_counts": {
+        "age_not_reported": 6,
+        "non_age_reason": 4,
+        "mean<20_no_range": 1
+      }
+    },
+    "workbook_sha256_after": {
+      "B": "2018180465a6fc5d9a79dec498bf7ef3b4cc2409fb27536ba5f14b8c34cff4f8",
+      "C": "a8dac3ef85f5b1cc3a6f81d17685390e704dced175ccf5a3e91287ea9fd0d80d"
+    },
+    "overrides_sidecar": {
+      "B": "fulltext/ai_prefill/pre011_overrides_sol.json",
+      "C": "fulltext/ai_prefill/pre011_overrides_claude_sonnet.json"
+    },
+    "note": "No model was called; ai_use_log.json is not updated. Reviewer workbooks' your_* columns were rewritten only for rows whose your_disposition was AWAITING_CLASSIFICATION before this script ran; row order, other columns and highlighting are unchanged. The hidden _prefill sheet in each workbook gained one additional logged value per touched column, model='rule PRE-011 (deterministic)'."
   }
 }

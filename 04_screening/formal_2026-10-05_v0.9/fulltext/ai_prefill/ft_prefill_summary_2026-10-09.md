@@ -108,3 +108,68 @@ out-of-scope retrieved records are left blank (not written; `n_runs_without_matc
 entries (149 gpt-6-sol + 149 claude-sonnet... note: the pre-existing 141 claude-sonnet entries
 were backfilled into `run_manifest.json` at some earlier point without a matching script; the 8
 new ones were appended directly from `runs/claude_sonnet/<id>.json` to keep the manifest complete).
+
+## PRE-011 applied (adult age rule, 2026-10-09)
+
+Amendment PRE-011 (`01_protocol/amendments.json`) replaced the mean-2SD age computation: a cohort
+is adult/INCLUDE when an explicit range/minimum >=18y is given, OR the reported mean age is >=20y
+(any SD) or participants are described as adults/university students/athletes/workers/similar, AND
+the report nowhere states that participants <18y took part. A report stays
+`AWAITING_CLASSIFICATION` only when it states <18y participants with no separable adult stratum
+(-> `EXCLUDE FT03`), or the mean is <20y with no range, or age is not reported at all, or the
+AWAITING was for a different, non-age material fact. mean-2SD is no longer applied.
+
+`scripts/apply_pre011_to_ft_prefill.py` re-derived every row whose `your_disposition` was
+`AWAITING_CLASSIFICATION` in `ft_screen_B.xlsx` (36 rows, family `sol`) and `ft_screen_C.xlsx` (24
+rows, family `claude_sonnet`) against a fixed per-record decision table built by D's reading of
+each row's `age_evidence`, `secondary_notes`, `cohort_notes`, `note` and `validation_subtypes`
+fields in its own side's run JSON (cross-checked against `V_text/<id>.txt` for three ambiguous
+table/SEM cases: FS-003371, FS-003753, FS-004252). No model was called; no row with an
+`INCLUDE_*`/`EXCLUDE` pre-fill was touched. The script's own sanity check confirmed the table
+exactly covers (no more, no fewer than) the rows actually marked `AWAITING_CLASSIFICATION` in each
+workbook before it ran.
+
+**B side (Sol): 36 -> 23 INCLUDE, 13 stay AWAITING.**
+- New INCLUDE by stream: `INCLUDE_A` 9, `INCLUDE_A_AND_B` 14 (stream taken from the pre-fill's own
+  explicit text hint when present, e.g. "Would otherwise be INCLUDE_A_AND_B" / "support A and B" /
+  "meets Core A... do not establish B"; otherwise from `validation_subtypes` containing
+  `repeated_monitoring` + a non-empty `exposure_evidence` -> `INCLUDE_A_AND_B`, else `INCLUDE_A`).
+- `EXCLUDE FT03` (<18y, no separable adult stratum): 0.
+- Remaining 13 AWAITING, by reason: age not reported 5 (FS-002264, FS-004336, FS-005773, FS-005950,
+  FS-006450); mean <20y with no range 3 (FS-001493, FS-003695, FS-004648); a separable adult
+  stratum whose own age is unresolved 1 (FS-007441: asthmatic stratum states age 16, but the
+  normal-exercise-control stratum is separable and its age is given only as an unnumbered group
+  mean); non-age material fact, unaffected by PRE-011, 4 (FS-004385 sample-to-bout linkage unclear;
+  FS-006024 placebo-arm exposure needs confirmation; FS-006356 age was already `adults_confirmed`
+  before PRE-011, AWAITING is for unconfirmed health eligibility; FS-007021 likely FT05, no
+  post-provocation blood sample).
+
+**C side (Claude Sonnet): 24 -> 13 INCLUDE, 11 stay AWAITING.**
+- New INCLUDE by stream: `INCLUDE_A` 7, `INCLUDE_A_AND_B` 6 (same stream rule as B; one record,
+  FS-003695, is included via the descriptor branch rather than the mean branch: group means are
+  18.87-19.72y but participants are explicitly "university cadets", confirmed against `V_text`).
+- `EXCLUDE FT03`: 0.
+- Remaining 11 AWAITING, by reason: age not reported 6 (FS-002264, FS-004336, FS-005950,
+  FS-006450, FS-006697, FS-006754); mean <20y with no range 1 (FS-004648); non-age material fact 4
+  (FS-003303 FT08 co-intervention risk; FS-004385 text truncated, results not fully retrieved;
+  FS-005773 age itself resolves via an "Olympic/World-class athletes" descriptor but bout-pairing
+  is unclear; FS-006263 likely FT05, no post-cessation sample apparent).
+
+**Agreement after PRE-011 (same 123-record pool, informal read-agreement, not a human decision of
+record):** of the records common to both sides' original AWAITING lists (FS-002264, FS-004336,
+FS-004385, FS-004648, FS-005773, FS-005950, FS-006450 — 7 records), both sides independently kept
+6/7 AWAITING (five for age-not-reported, one for mean<20-no-range) and diverged only on FS-003695
+(B stays AWAITING on its own evidence; C includes via the university-cadets descriptor it
+independently captured) — consistent with B and C reading the same text independently rather than
+from a shared pre-fill.
+
+Outputs: `scripts/apply_pre011_to_ft_prefill.py`; sidecars
+`ai_prefill/pre011_overrides_sol.json` (36 records) and
+`ai_prefill/pre011_overrides_claude_sonnet.json` (24 records), each record_id ->
+`{old, new, rule_branch, reason, evidence}` (kept next to this summary rather than under
+`ai_prefill/runs/`, which is git-ignored); `ft_workbooks_manifest.json` `pre011` block (counts and
+the post-write SHA-256 of each workbook); hidden `_prefill` sheet in each workbook gained one
+logged row per touched column (`your_disposition`, `your_age_rule_check`, `your_comment`) with
+`model = "rule PRE-011 (deterministic)"`. No model was called; `ai_use_log.json` is unchanged.
+B and C still read every full text themselves and may override any of these re-derived values,
+exactly as for the original PRE-010 pre-fill.

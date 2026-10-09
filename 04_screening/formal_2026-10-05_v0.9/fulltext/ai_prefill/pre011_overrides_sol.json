@@ -1,0 +1,478 @@
+{
+  "generated_at": "2026-10-09T08:10:39+00:00",
+  "script": "scripts/apply_pre011_to_ft_prefill.py",
+  "rule": "PRE-011 (2026-10-09): adult/INCLUDE when explicit range/min >=18y, OR mean age >=20y (any SD) or an adult/university-student/athlete/worker-or-similar descriptor, AND no statement that participants <18y took part. Stays AWAITING when <18y stated with no separable adult stratum (-> EXCLUDE FT03), or mean <20y with no range, or age not reported at all. mean-2SD is no longer applied.",
+  "reviewer": "B",
+  "family": "sol",
+  "n_records": 36,
+  "overrides": {
+    "FS-001493": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "PRE-011: mean<20_no_range: mean 19.6y +/- 0.9, no range/minimum stated"
+      },
+      "rule_branch": "mean<20_no_range",
+      "reason": "Mean 19.6y is below the PRE-011 20y threshold and no explicit range/minimum is given; stays AWAITING on age alone.",
+      "evidence": "mean 19.6y +/- 0.9, no range/minimum stated"
+    },
+    "FS-002264": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "not_applicable"
+      },
+      "new": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "PRE-011: age_not_reported: age_evidence empty; note: 'Participant ages are absent from this text'"
+      },
+      "rule_branch": "age_not_reported",
+      "reason": "Age is not reported anywhere in the retrieved text; stays AWAITING pending the linked report (ref 25).",
+      "evidence": "age_evidence empty; note: 'Participant ages are absent from this text'"
+    },
+    "FS-002739": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A",
+        "age_rule_check": "PRE-011: mean>=20: mean age 24.0y (SD figure conflicting in source, irrelevant under PRE-011)"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Mean 24.0y >=20, no statement of under-18 participants; single treadmill bout with pre/post sampling -> INCLUDE_A.",
+      "evidence": "mean age 24.0y (SD figure conflicting in source, irrelevant under PRE-011)"
+    },
+    "FS-002772": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A",
+        "age_rule_check": "PRE-011: mean>=20: males, mean age 26.7 +/- 7.8"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Mean 26.7y >=20; single graded cycle test with pre/immediate-post/15-min-recovery sampling -> INCLUDE_A.",
+      "evidence": "males, mean age 26.7 +/- 7.8"
+    },
+    "FS-003116": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A_AND_B",
+        "age_rule_check": "PRE-011: mean>=20: group means 23.21 (2.77) and 22.03 (2.34) years"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Both group means >=20; three identified Bruce-test bouts (weeks 0/6/12) each with a resting pre/post sample -> INCLUDE_A_AND_B (repeated_monitoring validation subtype).",
+      "evidence": "group means 23.21 (2.77) and 22.03 (2.34) years"
+    },
+    "FS-003303": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A_AND_B",
+        "age_rule_check": "PRE-011: mean>=20: Eighteen young, male racing cyclists (age 20 +/- 2 years)"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Mean 20y meets the >=20y threshold; repeated_monitoring subtype plus Day-6 identified bout with pre/0h/1h post sampling -> INCLUDE_A_AND_B.",
+      "evidence": "Eighteen young, male racing cyclists (age 20 +/- 2 years)"
+    },
+    "FS-003371": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A",
+        "age_rule_check": "PRE-011: mean>=20: EET 25 +/- 2.9 (24,26,27)y; SED 24 +/- 3.5 (21,22,28)y"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Both group means >=20 (confirmed against V_text Table 1: EET 25y, SED 24y); single acute-exercise-protocol pre/10-min/3-h post sampling -> INCLUDE_A.",
+      "evidence": "EET 25 +/- 2.9 (24,26,27)y; SED 24 +/- 3.5 (21,22,28)y"
+    },
+    "FS-003445": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A_AND_B",
+        "age_rule_check": "PRE-011: mean>=20: aged 24.5 +/- 3.8 years"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Mean 24.5y >=20; three identified heat-stress tests each with 10-min pre/post sampling -> INCLUDE_A_AND_B (repeated_monitoring).",
+      "evidence": "aged 24.5 +/- 3.8 years"
+    },
+    "FS-003525": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A",
+        "age_rule_check": "PRE-011: mean>=20: Eight well-trained male athletes [34.8 +/- 9.4 years]"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Mean 34.8y >=20 (men); single half-marathon bout sampled at 30min/3h/24h -> INCLUDE_A.",
+      "evidence": "Eight well-trained male athletes [34.8 +/- 9.4 years]"
+    },
+    "FS-003695": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "PRE-011: mean<20_no_range: MS group 18.87 +/- 0.12 years (B's own extracted evidence); no descriptor captured by B"
+      },
+      "rule_branch": "mean<20_no_range",
+      "reason": "B's own evidence shows only a sub-20 mean with no range and no adult descriptor in its extracted fields; stays AWAITING on age (C's independent read captured a 'university cadets' descriptor for the same report and resolves differently).",
+      "evidence": "MS group 18.87 +/- 0.12 years (B's own extracted evidence); no descriptor captured by B"
+    },
+    "FS-003753": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A_AND_B",
+        "age_rule_check": "PRE-011: mean>=20: HIIT 25 +/- 4y (n=16); LSD 25 +/- 3y (n=12)"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Confirmed against V_text: both groups' actual mean is 25y (the 17/19y figures in the model's note are mean-2SD, not the mean); T1/T9 bout-linked pre/post sampling -> INCLUDE_A_AND_B (metric_validation+repeated_monitoring).",
+      "evidence": "HIIT 25 +/- 4y (n=16); LSD 25 +/- 3y (n=12)"
+    },
+    "FS-003778": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A_AND_B",
+        "age_rule_check": "PRE-011: mean>=20: age 29.1 +/- 8.7 years"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Mean 29.1y >=20; four identified bouts each with pre/post/1h-post sIgA sampling -> INCLUDE_A_AND_B.",
+      "evidence": "age 29.1 +/- 8.7 years"
+    },
+    "FS-003844": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A_AND_B",
+        "age_rule_check": "PRE-011: mean>=20: n=21 males; age 22 +/- 5 years"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Mean 22y >=20; pre/post sampling at days 1,3,5,6,10 of acclimation -> INCLUDE_A_AND_B (metric_validation+repeated_monitoring).",
+      "evidence": "n=21 males; age 22 +/- 5 years"
+    },
+    "FS-004011": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A_AND_B",
+        "age_rule_check": "PRE-011: mean>=20: mean age 25.90 +/- 4.95 years"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Mean 25.90y >=20; baseline/acute-exercise/3-month-season sampling with repeated_monitoring subtype -> INCLUDE_A_AND_B.",
+      "evidence": "mean age 25.90 +/- 4.95 years"
+    },
+    "FS-004243": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A",
+        "age_rule_check": "PRE-011: mean>=20: group means 20.7 +/- 0.3 and 20.4 +/- 0.2 years"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Both means >=20. Explicit stream hint overrides the generic repeated_monitoring default: secondary_notes states 'The acute VO2max test otherwise meets A... Monthly season samples ... do not establish B' -> INCLUDE_A only.",
+      "evidence": "group means 20.7 +/- 0.3 and 20.4 +/- 0.2 years"
+    },
+    "FS-004252": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A_AND_B",
+        "age_rule_check": "PRE-011: mean>=20: ODHA 23+/-6y (quoted); confirmed against V_text Table 1: ODHA 23, TDHA 25, ODTEMP 22, TDTEMP 22 (all four groups >=20)"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "All four exercise-group means >=20; three identified sessions (1,5,10) each with pre/post sampling -> INCLUDE_A_AND_B (metric_validation+repeated_monitoring).",
+      "evidence": "ODHA 23+/-6y (quoted); confirmed against V_text Table 1: ODHA 23, TDHA 25, ODTEMP 22, TDTEMP 22 (all four groups >=20)"
+    },
+    "FS-004336": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "not_applicable"
+      },
+      "new": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "PRE-011: age_not_reported: age_evidence empty; note: 'Participant ages are not stated here'"
+      },
+      "rule_branch": "age_not_reported",
+      "reason": "Age is not stated in this text for any of the three groups (marathon/half-marathon runners, sedentary controls); model recommends the linked publication (ref 26). Stays AWAITING.",
+      "evidence": "age_evidence empty; note: 'Participant ages are not stated here'"
+    },
+    "FS-004385": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "PRE-011: non_age_reason: group means 21.2 +/- 2.9 and 21.4 +/- 2.4 years (age resolves, mean>=20)"
+      },
+      "rule_branch": "non_age_reason",
+      "reason": "Age itself now resolves (both means >=20) but secondary_notes flags an independent, unresolved material fact: 'whether immune assays used the immediate post-bout blood samples is unclear'. Stays AWAITING on that non-age ground; not touched by PRE-011.",
+      "evidence": "group means 21.2 +/- 2.9 and 21.4 +/- 2.4 years (age resolves, mean>=20)"
+    },
+    "FS-004648": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "PRE-011: mean<20_no_range: Age (y) 19.2 +/- 0.7, no range/minimum, no descriptor in B's evidence"
+      },
+      "rule_branch": "mean<20_no_range",
+      "reason": "Mean 19.2y is below 20 with no range/minimum and no adult descriptor captured; stays AWAITING on age.",
+      "evidence": "Age (y) 19.2 +/- 0.7, no range/minimum, no descriptor in B's evidence"
+    },
+    "FS-005424": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A_AND_B",
+        "age_rule_check": "PRE-011: mean>=20: 12 MMA athletes aged 25.8 +/- 4.2 years"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Mean 25.8y >=20; repeated_monitoring subtype plus identified fight-simulation bout sampled at 1h/24h post -> INCLUDE_A_AND_B.",
+      "evidence": "12 MMA athletes aged 25.8 +/- 4.2 years"
+    },
+    "FS-005450": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A",
+        "age_rule_check": "PRE-011: mean>=20: Age, yrs (IQR): 45 (37-54)"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Reported central-tendency age is 45y with an IQR lower bound of 37y, far above the PRE-011 20y threshold, no under-18 statement; single 100-km run with pre/post testing -> INCLUDE_A.",
+      "evidence": "Age, yrs (IQR): 45 (37-54)"
+    },
+    "FS-005516": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A",
+        "age_rule_check": "PRE-011: mean>=20: age 32 (95% CI 28 to 36) years; other arms 36/35/45y (V_text Table)"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Reported mean ages (32-45y across arms) are all far above 20, no under-18 statement; pre/post exercise-protocol sampling -> INCLUDE_A.",
+      "evidence": "age 32 (95% CI 28 to 36) years; other arms 36/35/45y (V_text Table)"
+    },
+    "FS-005773": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "not_applicable"
+      },
+      "new": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "PRE-011: age_not_reported: age_evidence empty; note: 'Age is unreported'"
+      },
+      "rule_branch": "age_not_reported",
+      "reason": "Age is not reported for the 97-athlete pooled cohort; secondary_notes also flags that pre/post categories do not establish same-bout pairing (independent concern). Stays AWAITING.",
+      "evidence": "age_evidence empty; note: 'Age is unreported'"
+    },
+    "FS-005905": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A",
+        "age_rule_check": "PRE-011: mean>=20: mean (SD): Age 30 (8.0) years"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Mean 30y >=20; two-occasion HIIT design with pre/post sampling, no explicit A_AND_B stream hint in B's note -> INCLUDE_A (fallback).",
+      "evidence": "mean (SD): Age 30 (8.0) years"
+    },
+    "FS-005950": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "PRE-011: age_not_reported: age_evidence empty; secondary_notes: 'Participant ages are not stated in the supplied text'"
+      },
+      "rule_branch": "age_not_reported",
+      "reason": "Age not reported; demographics deferred to Table S1. Stays AWAITING.",
+      "evidence": "age_evidence empty; secondary_notes: 'Participant ages are not stated in the supplied text'"
+    },
+    "FS-005991": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A_AND_B",
+        "age_rule_check": "PRE-011: mean>=20: turmeric 26 +/- 3y; control 25 +/- 4y (cohort_notes)"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Both group means >=20; repeated post-match CRP sampling across eight identified matches -> INCLUDE_A_AND_B.",
+      "evidence": "turmeric 26 +/- 3y; control 25 +/- 4y (cohort_notes)"
+    },
+    "FS-006024": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "PRE-011: non_age_reason: mean age 25 +/- 7 years (age resolves, mean>=20)"
+      },
+      "rule_branch": "non_age_reason",
+      "reason": "Age resolves (mean 25y >=20) but secondary_notes flags an independent concern: 'Placebo-arm exposure details may also need confirmation'. Stays AWAITING on that non-age ground.",
+      "evidence": "mean age 25 +/- 7 years (age resolves, mean>=20)"
+    },
+    "FS-006144": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A_AND_B",
+        "age_rule_check": "PRE-011: mean>=20: Twelve healthy males ... age: 26.4 +/- 5.8 years"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Mean 26.4y >=20. Explicit stream hint in note: 'Two identified bouts support A and B if adult eligibility is confirmed' -> INCLUDE_A_AND_B.",
+      "evidence": "Twelve healthy males ... age: 26.4 +/- 5.8 years"
+    },
+    "FS-006275": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A_AND_B",
+        "age_rule_check": "PRE-011: mean>=20: Age (years) 25.61 +/- 4.97"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Mean 25.61y >=20. Explicit stream hint in note: 'Two identified running bouts support A and B if adult eligibility is confirmed' -> INCLUDE_A_AND_B.",
+      "evidence": "Age (years) 25.61 +/- 4.97"
+    },
+    "FS-006356": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "adults_confirmed"
+      },
+      "new": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "PRE-011: non_age_reason: age_rule_check already 'adults_confirmed' (quote: 'yoga-naive and inactive adults')"
+      },
+      "rule_branch": "non_age_reason",
+      "reason": "Age was already resolved by the model's own age_rule_check (adults_confirmed) before PRE-011; the AWAITING disposition is for a different, non-age reason per its note: 'numeric ages and health eligibility are absent from the supplied text; verify in the linked report or supplement'. Unaffected by PRE-011.",
+      "evidence": "age_rule_check already 'adults_confirmed' (quote: 'yoga-naive and inactive adults')"
+    },
+    "FS-006430": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A",
+        "age_rule_check": "PRE-011: mean>=20: Age (years) 22.15 +/- 3.67 / 23.50 +/- 3.30"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Both group means >=20; single training course with pre/post urine sampling -> INCLUDE_A.",
+      "evidence": "Age (years) 22.15 +/- 3.67 / 23.50 +/- 3.30"
+    },
+    "FS-006450": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "not_applicable"
+      },
+      "new": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "PRE-011: age_not_reported: age_evidence empty; note: 'No participant age range or age summary is reported'"
+      },
+      "rule_branch": "age_not_reported",
+      "reason": "Age not reported anywhere in text; secondary_notes also flags that pre/post samples' correspondence to identifiable bouts is unresolved (independent concern). Stays AWAITING.",
+      "evidence": "age_evidence empty; note: 'No participant age range or age summary is reported'"
+    },
+    "FS-006779": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A_AND_B",
+        "age_rule_check": "PRE-011: mean>=20: n=42, 27.2 +/- 1.0 years"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Mean 27.2y >=20; weekly downhill-running sessions sampled repeatedly -> INCLUDE_A_AND_B (omics_discovery+repeated_monitoring).",
+      "evidence": "n=42, 27.2 +/- 1.0 years"
+    },
+    "FS-007021": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "PRE-011: non_age_reason: Age (year) 23.5 +/- 4.1 (age resolves, mean>=20)"
+      },
+      "rule_branch": "non_age_reason",
+      "reason": "Age resolves (mean 23.5y >=20) but secondary_notes flags an independent, potentially exclusionary fact: 'FT05: ... no post-provocation blood samples were obtained. Post-exercise measurements were spirometry.' Stays AWAITING on that non-age ground; FT05 is a reviewer exclusion call, not part of PRE-011.",
+      "evidence": "Age (year) 23.5 +/- 4.1 (age resolves, mean>=20)"
+    },
+    "FS-007441": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "under_18_included"
+      },
+      "new": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "PRE-011: separable_stratum_age_unresolved: asthmatic stratum ages 16-38y (states a minor); normal-control stratum age given only as a group mean with no range"
+      },
+      "rule_branch": "separable_stratum_age_unresolved",
+      "reason": "The asthmatic stratum states a participant aged 16, but a separable normal-exercise-control stratum exists (so this is not an EXCLUDE-FT03 case); that separable stratum's own age is reported only as a group mean with no number given, i.e. effectively unresolved. Stays AWAITING pending the control stratum's age.",
+      "evidence": "asthmatic stratum ages 16-38y (states a minor); normal-control stratum age given only as a group mean with no range"
+    },
+    "FS-010204": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A_AND_B",
+        "age_rule_check": "PRE-011: mean>=20: Ten active males ... age = 24 +/- 1 y"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Reported mean 24y >=20 regardless of whether +/-1 is SD or SEM; samples on Day1/Recovery Day3/Day7 of the same ten men -> INCLUDE_A_AND_B (metric_validation+repeated_monitoring).",
+      "evidence": "Ten active males ... age = 24 +/- 1 y"
+    }
+  }
+}

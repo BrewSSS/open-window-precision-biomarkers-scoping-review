@@ -1,0 +1,322 @@
+{
+  "generated_at": "2026-10-09T08:10:40+00:00",
+  "script": "scripts/apply_pre011_to_ft_prefill.py",
+  "rule": "PRE-011 (2026-10-09): adult/INCLUDE when explicit range/min >=18y, OR mean age >=20y (any SD) or an adult/university-student/athlete/worker-or-similar descriptor, AND no statement that participants <18y took part. Stays AWAITING when <18y stated with no separable adult stratum (-> EXCLUDE FT03), or mean <20y with no range, or age not reported at all. mean-2SD is no longer applied.",
+  "reviewer": "C",
+  "family": "claude_sonnet",
+  "n_records": 24,
+  "overrides": {
+    "FS-002264": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "PRE-011: age_not_reported: age_evidence empty; secondary_notes: 'Age not stated in this text (12 male/13 female, no age range/mean given)'"
+      },
+      "rule_branch": "age_not_reported",
+      "reason": "Age not reported; companion Trivax 2010 report may hold it. Stays AWAITING.",
+      "evidence": "age_evidence empty; secondary_notes: 'Age not stated in this text (12 male/13 female, no age range/mean given)'"
+    },
+    "FS-002772": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A",
+        "age_rule_check": "PRE-011: mean>=20: mean age 26.7 +/- 7.8 years"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Mean 26.7y >=20. Explicit stream hint: secondary_notes 'Would otherwise be INCLUDE_A (single bout, pre/post15min samples, baseline present)' -> INCLUDE_A.",
+      "evidence": "mean age 26.7 +/- 7.8 years"
+    },
+    "FS-003116": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A_AND_B",
+        "age_rule_check": "PRE-011: mean>=20: Age (years) 23.21 (2.77) / 22.03 (2.34)"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Both group means >=20; repeated_monitoring subtype plus three identified Bruce-test bouts with resting pre/post sampling -> INCLUDE_A_AND_B.",
+      "evidence": "Age (years) 23.21 (2.77) / 22.03 (2.34)"
+    },
+    "FS-003303": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "PRE-011: non_age_reason: age 20 +/- 2 years (age resolves, mean>=20)"
+      },
+      "rule_branch": "non_age_reason",
+      "reason": "Age resolves (mean 20y meets the threshold) but secondary_notes flags an independent, unresolved concern: 'Mixed exercise+protein/CHO supplement co-intervention (FT08 risk)'. Stays AWAITING on that non-age ground.",
+      "evidence": "age 20 +/- 2 years (age resolves, mean>=20)"
+    },
+    "FS-003445": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A_AND_B",
+        "age_rule_check": "PRE-011: mean>=20: aged 24.5 +/- 3.8 years"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Mean 24.5y >=20. Explicit stream hint: secondary_notes 'Would otherwise be INCLUDE_A_AND_B: 3 identified HSTs with pre/post blood sampling' -> INCLUDE_A_AND_B.",
+      "evidence": "aged 24.5 +/- 3.8 years"
+    },
+    "FS-003525": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A",
+        "age_rule_check": "PRE-011: mean>=20: well-trained male athletes [34.8 +/- 9.4 years]"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Mean 34.8y >=20. Explicit stream hint: secondary_notes 'Would otherwise be INCLUDE_A: single half-marathon bout' -> INCLUDE_A.",
+      "evidence": "well-trained male athletes [34.8 +/- 9.4 years]"
+    },
+    "FS-003695": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A",
+        "age_rule_check": "PRE-011: adult_descriptor: cohort_notes: 'university cadets' (confirmed in V_text: 'Forty-five university cadets ... were requested to volunteer for this study')"
+      },
+      "rule_branch": "adult_descriptor",
+      "reason": "Group means (19.36/19.72/18.87y) are below 20 with no range, but participants are explicitly described as university cadets (= university-student descriptor under PRE-011) and no under-18 statement exists. Explicit stream hint: 'Would otherwise be INCLUDE_A' -> INCLUDE_A.",
+      "evidence": "cohort_notes: 'university cadets' (confirmed in V_text: 'Forty-five university cadets ... were requested to volunteer for this study')"
+    },
+    "FS-003778": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A_AND_B",
+        "age_rule_check": "PRE-011: mean>=20: Twenty-six subjects (age 29.1 +/- 8.7 years)"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Mean 29.1y >=20. Explicit stream hint: note 'Otherwise meets A/B with repeated-bout sIgA and URS outcome linkage' -> INCLUDE_A_AND_B.",
+      "evidence": "Twenty-six subjects (age 29.1 +/- 8.7 years)"
+    },
+    "FS-003844": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A_AND_B",
+        "age_rule_check": "PRE-011: mean>=20: n=21 males; age 22 +/- 5 years"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Mean 22y >=20. Explicit stream hint: secondary_notes 'Would otherwise qualify INCLUDE_A_AND_B: single-bout NST/HST1/HST2 ... and 10-day acclimation day1 vs day10 comparison' -> INCLUDE_A_AND_B.",
+      "evidence": "n=21 males; age 22 +/- 5 years"
+    },
+    "FS-004011": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A",
+        "age_rule_check": "PRE-011: mean>=20: mean age is 25.90 +/- 4.95 years"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Mean 25.90y >=20. Explicit stream hint: secondary_notes 'acute cycling CPX bout qualifies for INCLUDE_A ... long-term 3-month arm ... not qualifying B' -> INCLUDE_A only.",
+      "evidence": "mean age is 25.90 +/- 4.95 years"
+    },
+    "FS-004336": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "PRE-011: age_not_reported: age_evidence quote defers to a related publication; no number given"
+      },
+      "rule_branch": "age_not_reported",
+      "reason": "Age/adult status not stated in this text; demographics deferred to ref 26. Stays AWAITING.",
+      "evidence": "age_evidence quote defers to a related publication; no number given"
+    },
+    "FS-004385": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "PRE-011: non_age_reason: Age (years) 21.2 +/- 2.9 / 21.4 +/- 2.4 (age resolves, mean>=20)"
+      },
+      "rule_branch": "non_age_reason",
+      "reason": "Age resolves (both means >=20) but note flags an independent, unresolved fact: 'Text truncated at ~page 8; results for lymphocyte/IL-6 outcomes not fully retrieved.' Stays AWAITING on that non-age ground.",
+      "evidence": "Age (years) 21.2 +/- 2.9 / 21.4 +/- 2.4 (age resolves, mean>=20)"
+    },
+    "FS-004648": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "PRE-011: mean<20_no_range: Age (y) 19.2 +/- 0.7, no range/minimum, no adult descriptor in C's evidence"
+      },
+      "rule_branch": "mean<20_no_range",
+      "reason": "Mean 19.2y is below 20 with no range/minimum and no adult descriptor captured ('healthy males' alone does not qualify); stays AWAITING on age.",
+      "evidence": "Age (y) 19.2 +/- 0.7, no range/minimum, no adult descriptor in C's evidence"
+    },
+    "FS-005424": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A",
+        "age_rule_check": "PRE-011: mean>=20: 12 mixed martial arts athletes aged 25.8 +/- 4.2 years"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Mean 25.8y >=20. Explicit stream hint: secondary_notes 'Would otherwise qualify INCLUDE_A: single sparring bout, baseline, IL-6/TNF-alpha measured' -> INCLUDE_A.",
+      "evidence": "12 mixed martial arts athletes aged 25.8 +/- 4.2 years"
+    },
+    "FS-005773": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "PRE-011: non_age_reason: age_evidence empty, but cohort described as 'Olympic/World-class athletes' (adult descriptor; age otherwise resolves)"
+      },
+      "rule_branch": "non_age_reason",
+      "reason": "No under-18 statement and an athlete descriptor is present, so age itself is not the live blocker; but secondary_notes separately flags 'unclear if any single bout is paired with its own pre/post comparator'. Stays AWAITING on that non-age exposure-pairing ground.",
+      "evidence": "age_evidence empty, but cohort described as 'Olympic/World-class athletes' (adult descriptor; age otherwise resolves)"
+    },
+    "FS-005905": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A_AND_B",
+        "age_rule_check": "PRE-011: mean>=20: Age 30 (8.0) years"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Mean 30y >=20. Explicit stream hint: secondary_notes 'would qualify INCLUDE_A_AND_B (2 known bouts, same cohort, pre/post samples, baseline)' -> INCLUDE_A_AND_B.",
+      "evidence": "Age 30 (8.0) years"
+    },
+    "FS-005950": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "PRE-011: age_not_reported: age_evidence empty; demographics only in Table S1"
+      },
+      "rule_branch": "age_not_reported",
+      "reason": "Age not stated in the extracted text. Stays AWAITING.",
+      "evidence": "age_evidence empty; demographics only in Table S1"
+    },
+    "FS-006024": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A",
+        "age_rule_check": "PRE-011: mean>=20: Twenty three healthy, recreationally active males (age 25 +/- 7 years)"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Mean 25y >=20. Explicit stream hint: secondary_notes 'Meets Core A criteria (single bout, pre/post/1h samples, immune markers, baseline)'; cohort_notes confirms the mixed-intervention risk is already avoided ('only control-arm data used here') -> INCLUDE_A.",
+      "evidence": "Twenty three healthy, recreationally active males (age 25 +/- 7 years)"
+    },
+    "FS-006144": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A_AND_B",
+        "age_rule_check": "PRE-011: mean>=20: Twelve healthy males ... age: 26.4 +/- 5.8 years"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Mean 26.4y >=20. Explicit stream hint: secondary_notes 'Otherwise meets INCLUDE_A_AND_B: single 20/50 bout (A) repeated twice with known 2-7 day interval (B)' -> INCLUDE_A_AND_B.",
+      "evidence": "Twelve healthy males ... age: 26.4 +/- 5.8 years"
+    },
+    "FS-006263": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "PRE-011: non_age_reason: age: 29.6 +/- 6.5 years (age resolves, mean>=20)"
+      },
+      "rule_branch": "non_age_reason",
+      "reason": "Age resolves (mean 29.6y >=20) but secondary_notes flags a likely exclusionary fact: 'no post-cessation sample apparent in retrieved text -> likely FT05 if age resolves'. Stays AWAITING on that non-age ground; FT05 is a reviewer exclusion call, not part of PRE-011.",
+      "evidence": "age: 29.6 +/- 6.5 years (age resolves, mean>=20)"
+    },
+    "FS-006430": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "INCLUDE_A",
+        "age_rule_check": "PRE-011: mean>=20: Age (years) 22.15 +/- 3.67 / 23.50 +/- 3.30"
+      },
+      "rule_branch": "mean>=20",
+      "reason": "Both group means >=20. Explicit stream hint: secondary_notes 'likely INCLUDE_A (single training course, Pre/Post urine ...)' -> INCLUDE_A.",
+      "evidence": "Age (years) 22.15 +/- 3.67 / 23.50 +/- 3.30"
+    },
+    "FS-006450": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "PRE-011: age_not_reported: age_evidence empty; note: 'some Olympic sports admit <18y competitors. Age must be confirmed before inclusion'"
+      },
+      "rule_branch": "age_not_reported",
+      "reason": "No numeric age is given, and although an 'elite athletes' descriptor is present, the model explicitly flags a realistic risk that under-18 competitors are included in some of the pooled Olympic sports; this stops short of the PRE-011 descriptor safe-harbour. Stays AWAITING.",
+      "evidence": "age_evidence empty; note: 'some Olympic sports admit <18y competitors. Age must be confirmed before inclusion'"
+    },
+    "FS-006697": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "PRE-011: age_not_reported: age_evidence empty; secondary_notes: 'Methods section with participant age/demographics not present in supplied text'"
+      },
+      "rule_branch": "age_not_reported",
+      "reason": "Age not reported; the Methods/demographics section was not present in the retrieved text. Stays AWAITING.",
+      "evidence": "age_evidence empty; secondary_notes: 'Methods section with participant age/demographics not present in supplied text'"
+    },
+    "FS-006754": {
+      "old": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "mean_minus_2SD_below_18_unresolved"
+      },
+      "new": {
+        "disposition": "AWAITING_CLASSIFICATION",
+        "age_rule_check": "PRE-011: age_not_reported: age_evidence empty; secondary_notes: 'Participant age not stated in provided (truncated) text'"
+      },
+      "rule_branch": "age_not_reported",
+      "reason": "Age not reported; text is truncated before the Methods section. Stays AWAITING.",
+      "evidence": "age_evidence empty; secondary_notes: 'Participant age not stated in provided (truncated) text'"
+    }
+  }
+}
