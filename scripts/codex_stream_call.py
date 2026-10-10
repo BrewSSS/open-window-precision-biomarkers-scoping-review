@@ -43,7 +43,13 @@ try:
         elif t == "turn.completed":
             res["usage"] = ev.get("usage"); res["t_completed_s"] = round(time.time() - t0, 1); res["ok"] = res["text"] is not None; break
         elif t in ("error", "turn.failed"):
-            res["error"] = (ev.get("message") or json.dumps(ev.get("error")))[:800]; break
+            message = (ev.get("message") or json.dumps(ev.get("error")))[:800]
+            # The event stream announces transport recovery as an error event. The
+            # turn is still live; terminating here discards the recovered answer.
+            if t == "error" and message.startswith("Reconnecting..."):
+                res["transport_reconnects"] = res.get("transport_reconnects", 0) + 1
+                continue
+            res["error"] = message; break
 finally:
     try: os.killpg(p.pid, signal.SIGTERM)
     except Exception: pass

@@ -1,37 +1,9 @@
 #!/usr/bin/env python3
-"""PRE-010 full-text screening AI pre-fill, step 2: load a validated AI stand-in's runs
-(fulltext/ai_prefill/runs/<family>/<record_id>.json) into a reviewer's full-text workbook
-(fulltext/ft_screen_<reviewer>.xlsx).
+"""Load selected valid B or C full-text prefill runs into a reviewer workbook.
 
-Default (no args): reviewer B, family sol (GPT-6 Sol, scripts/ft_prefill_run.py output) — this is
-the original, unchanged behaviour. Pass --reviewer C --family claude_sonnet to load Claude Sonnet's
-headless-CLI runs (scripts/claude_ft_prefill_run.py output) into reviewer C's workbook instead.
-
-For every record with status retrieved_oa in fulltext_fetch_manifest.csv AND a *valid* run in the
-selected family:
-  - fixes the stale retrieval_status/pdf_path columns to "retrieved" / "fulltexts/V/<id>.pdf"
-    (the workbook was built before the OA fetch, so both were blank/"not_yet_sought");
-  - writes your_disposition, your_primary_code, your_secondary_notes, your_age_rule_check,
-    your_validation_element_confirmed from the parsed JSON;
-  - writes your_comment as a composite of every evidence quote+page, the validation subtypes,
-    cohort_notes, confidence and note, so the reviewer can check the passage without opening the
-    raw run;
-  - appends one row per written "your_" column to a new hidden `_prefill` sheet (record_id,
-    column, value, model, prompt_sha, timestamp), so the override rate per reviewer/field
-    (PRE-010) can be computed later by diffing `_prefill` against the reviewer's final `screen`
-    values.
-
-Rows with no PDF, or whose run is missing/invalid, are left completely untouched (including
-retrieval_status/pdf_path): they still read not_yet_sought and stay blank, exactly as D's own
-retrieval-log process (build_fulltext_workbooks.py --retrieval-log) would leave an unretrieved
-record. The other reviewer's workbook is never opened by a given invocation.
-
-Updates fulltext/ft_workbooks_manifest.json in place: refreshes the selected workbook's hash under
-a new "sha256_after_prefill" key (sha256_blank is left as the historical blank-build hash) and adds
-a "prefill" (reviewer B) or "prefill_C" (reviewer C) block (model, prompt/schema sha, counts,
-timestamp).
-
-Usage: python3 scripts/ft_prefill_to_workbook.py [--reviewer B|C] [--family sol|claude_sonnet]
+Requires --ids-file. Existing AI audit history is appended, and nonempty decisions are
+changed only when their current value matches the previous recorded AI prefill.
+Every write is backed up and checked with a full every-sheet cell diff.
 """
 from __future__ import annotations
 
@@ -40,19 +12,17 @@ import csv
 import datetime as dt
 import hashlib
 import json
-import sys
 from collections import Counter
 from pathlib import Path
 
 from openpyxl import load_workbook
 from openpyxl.cell.cell import ILLEGAL_CHARACTERS_RE
-from openpyxl.styles import Font, PatternFill
+import ft_workbook_write_common as safe
 
 ROOT = Path(__file__).resolve().parents[1]
 FULLTEXT_DIR = ROOT / "04_screening/formal_2026-10-05_v0.9/fulltext"
 FETCH_MANIFEST = FULLTEXT_DIR / "fulltext_fetch_manifest.csv"
 AI_PREFILL_DIR = FULLTEXT_DIR / "ai_prefill"
-RUN_MANIFEST_PATH = AI_PREFILL_DIR / "run_manifest.json"
 WORKBOOKS_MANIFEST = FULLTEXT_DIR / "ft_workbooks_manifest.json"
 
 # Per-reviewer/family configuration. "B"/"sol" is the original, default behaviour.
@@ -67,12 +37,12 @@ REVIEWER_CONFIG = {
         "other_note": "ft_screen_C.xlsx (reviewer C) is untouched by this script.",
     },
     "C": {
-        "family": "claude_sonnet",
+        "family": "sol_c",
         "workbook": FULLTEXT_DIR / "ft_screen_C.xlsx",
         "manifest_key": "C",
         "manifest_block": "prefill_C",
-        "model_fallback": "claude-sonnet",
-        "model_label": "Claude Sonnet (headless, effort medium)",
+        "model_fallback": "gpt-6-sol",
+        "model_label": None,
         "other_note": "ft_screen_B.xlsx (reviewer B) is untouched by this script.",
     },
 }
@@ -158,30 +128,35 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--reviewer", choices=sorted(REVIEWER_CONFIG), default="B")
     ap.add_argument("--family", default=None, help="overrides the reviewer's default family (runs/<family>/)")
+    ap.add_argument("--ids-file", type=Path, required=True, help="restrict writes to these record IDs")
+    ap.add_argument("--runs-dir", type=Path, help="directory of validated run JSON files")
+    ap.add_argument("--prompt-path", type=Path, help="prompt used to generate these runs")
+    ap.add_argument("--workbook", type=Path, help="reviewer workbook (useful for a temporary test copy)")
+    ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
     cfg = REVIEWER_CONFIG[a.reviewer]
     family = a.family or cfg["family"]
-    workbook = cfg["workbook"]
-    runs_dir = AI_PREFILL_DIR / "runs" / family
+    workbook = a.workbook or cfg["workbook"]
+    runs_dir = a.runs_dir or AI_PREFILL_DIR / "runs" / family
+    selected_ids = safe.ids_from_file(a.ids_file)
+    safe.require_in_scope(selected_ids, FULLTEXT_DIR / "ft_scope_477_2026-10-09.csv")
 
     if not workbook.is_file():
-        sys.exit(f"missing {workbook}; run scripts/build_fulltext_workbooks.py first")
-    ids = retrieved_ids()
-    runs = load_valid_runs(ids, runs_dir)
+        raise SystemExit(f"missing {workbook}; run scripts/build_fulltext_workbooks.py first")
+    ids = retrieved_ids() & selected_ids
+    runs = safe.valid_runs(runs_dir, ids)
     if not runs:
-        sys.exit(f"no valid {family} runs found under " + str(runs_dir))
+        raise SystemExit(f"no valid {family} runs found under " + str(runs_dir))
 
-    run_manifest = json.loads(RUN_MANIFEST_PATH.read_text(encoding="utf-8")) if RUN_MANIFEST_PATH.exists() else {}
-    # Prompt/schema are shared across families (same ft_screen_prompt_v1.md / ft_screen_schema_v1.json);
-    # hash them directly rather than depend on the (sol-only) top-level fields of run_manifest.json.
-    prompt_sha = sha256(AI_PREFILL_DIR / "ft_screen_prompt_v1.md")
+    prompt_path = a.prompt_path or AI_PREFILL_DIR / ("ft_screen_prompt_C_sol_v1_1.md" if a.reviewer == "C" else "ft_screen_prompt_v1_1.md")
+    prompt_sha = sha256(prompt_path)
     schema_sha = sha256(AI_PREFILL_DIR / "ft_screen_schema_v1.json")
-    model = cfg["model_label"] or run_manifest.get("model", cfg["model_fallback"])
+    model = "gpt-6-sol"
     timestamp = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
 
     wb = load_workbook(workbook)
+    before = safe.snapshot(wb)
     ws = wb["screen"]
-    header = {c.value: c.column_letter for c in ws[1]}
     col_idx = {c.value: c.column for c in ws[1]}
     row_of = {}
     for r in range(2, ws.max_row + 1):
@@ -189,7 +164,9 @@ def main() -> int:
         if rid:
             row_of[rid] = r
 
-    prefill_rows = [["record_id", "column", "value", "model", "prompt_sha256", "timestamp"]]
+    prefill_rows = []
+    prior_prefill = safe.latest_audit_values(wb, "_prefill", "value")
+    allowed = {"screen": set()}
     n_written = 0
     n_no_row = 0
     disposition_counts, age_counts, validation_counts, flagged_for_a = Counter(), Counter(), Counter(), 0
@@ -200,12 +177,18 @@ def main() -> int:
             n_no_row += 1
             continue
         parsed = run["parsed"]
-        ws.cell(r, col_idx["retrieval_status"]).value = "retrieved"
-        ws.cell(r, col_idx["pdf_path"]).value = f"fulltexts/V/{rid}.pdf"
+        for col, value in (("retrieval_status", "retrieved"), ("pdf_path", f"fulltexts/V/{rid}.pdf")):
+            old = ws.cell(r, col_idx[col]).value
+            if old not in (None, "", "not_yet_sought", "not_retrieved_after_attempts", value):
+                raise ValueError(f"{rid}/{col}: existing retrieval value requires manual review")
+            ws.cell(r, col_idx[col]).value = value
+            allowed["screen"].add((r, col_idx[col]))
         values = row_values(parsed)
         for col_name, value in values.items():
+            safe.check_existing(ws.cell(r, col_idx[col_name]).value, rid, col_name, prior_prefill, "prefill")
             ws.cell(r, col_idx[col_name]).value = value
             prefill_rows.append([rid, col_name, value, model, prompt_sha, timestamp])
+            allowed["screen"].add((r, col_idx[col_name]))
         n_written += 1
         disposition_counts[parsed.get("disposition", "")] += 1
         age_counts[parsed.get("age_rule_check", "")] += 1
@@ -213,19 +196,16 @@ def main() -> int:
         if run.get("flagged_for_a"):
             flagged_for_a += 1
 
-    if "_prefill" in wb.sheetnames:
-        del wb["_prefill"]
-    ps = wb.create_sheet("_prefill")
-    for row in prefill_rows:
-        ps.append(row)
-    ps["A1"].font = Font(bold=True)
-    for cell in ps[1]:
-        cell.fill = PatternFill("solid", fgColor="DDDDDD")
-    ps.sheet_state = "hidden"
+    safe.append_audit(wb, "_prefill", ["record_id", "column", "value", "model", "prompt_sha256", "timestamp"], prefill_rows)
+    verification = safe.guarded_save(workbook, wb, before, allowed, "_prefill", len(prefill_rows), a.dry_run)
+    if a.dry_run:
+        print(json.dumps({"n_written": n_written, **verification}, ensure_ascii=False))
+        return 0
+    new_hash = verification["sha256_after"]
 
-    wb.save(workbook)
-    new_hash = sha256(workbook)
-
+    if workbook.resolve() != cfg["workbook"].resolve():
+        print(json.dumps({"n_written": n_written, **verification}, ensure_ascii=False))
+        return 0
     manifest = json.loads(WORKBOOKS_MANIFEST.read_text(encoding="utf-8")) if WORKBOOKS_MANIFEST.exists() else {}
     manifest.setdefault("workbooks", {}).setdefault(cfg["manifest_key"], {})["sha256_after_prefill"] = new_hash
     manifest[cfg["manifest_block"]] = {

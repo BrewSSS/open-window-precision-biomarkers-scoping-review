@@ -232,3 +232,24 @@ fulltext_requests/abstract_lookup_*/*
 !04_screening/formal_*/fulltext/ai_prefill/ft_adjudication_schema_v1.json
 !04_screening/formal_*/fulltext/ai_prefill/ft_adjudication_run_manifest.json
 !04_screening/formal_*/fulltext/ft_adjudication_D_summary_*.md
+
+# Batch screening and extraction checkpoints: metadata only.
+!04_screening/formal_*/fulltext/ft_batch3_summary_*.md
+!04_screening/formal_*/fulltext/token_ledger_batch3.csv
+!04_screening/formal_*/fulltext/ft_conflicts_for_D_batch3.csv
+!04_screening/formal_*/fulltext/ft_resolutions_batch3.csv
+!04_screening/formal_*/fulltext/ft_newly_included_batch3.txt
+!04_screening/formal_*/fulltext/ai_prefill/ft_screen_prompt_C_sol_v1_1.md
+!04_screening/formal_*/fulltext/ai_prefill/ft_override_prompt_C_sol_v1.md
+!04_screening/formal_*/fulltext/ai_prefill/*batch3*manifest.json
+!04_screening/formal_*/fulltext/ai_prefill/ft_override_C_sol_run_manifest.json
+!04_screening/formal_*/fulltext/ft_D_resolutions_combined.csv
+!04_screening/formal_*/fulltext/newly_included_batch3.txt
+!04_screening/formal_*/fulltext/ft_todo_batch3_in_scope.txt
+!04_screening/formal_*/fulltext/ft_batch3_scope_hold.txt
+!04_screening/formal_*/fulltext/ft_batch3_scope_audit.md
+!04_screening/formal_*/fulltext/ft_override_evidence_audit_*_batch3*.json
+!04_screening/formal_*/fulltext/ft_override_quote_repair_*_ids.txt
+!04_screening/formal_*/fulltext/ft_adjudication_evidence_audit_*batch3*.json
+!04_screening/formal_*/fulltext/ft_adjudication_quote_repair_*_ids.txt
+!04_screening/formal_*/fulltext/ft_adjudication_batch3_ids.txt

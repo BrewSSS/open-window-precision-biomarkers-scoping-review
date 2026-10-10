@@ -1,11 +1,11 @@
 {
- "generated_at_utc": "2026-10-09T12:42:45+00:00",
+ "generated_at_utc": "2026-10-10T06:29:03+00:00",
  "generator": "scripts/ft_adjudicate_run.py",
  "model": "gpt-6-sol",
  "effort": "high",
- "prompt_sha256": "17135f0f4dfccdb559a6b011c855878e7fe0822cabe70ef12c2fdb40d92e1373",
+ "prompt_sha256": "fd1d353d1c8e03449a4d6ceea846d91fa828b882e89cf4769d8ce20df63e72c2",
  "schema_sha256": "6f89fdc8fc0c4fd7c7eaa3bd70b1ff2c56cfb02cb0a446897eb77993497aea01",
- "n_records": 39,
+ "n_records": 51,
  "entries": [
   {
    "record_id": "FS-001493",
@@ -708,6 +708,377 @@
    "valid": true,
    "final_disposition": "INCLUDE_A",
    "which_reviewer_matched": "B"
+  },
+  {
+   "record_id": "FS-002032",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "family": "batch3",
+   "prompt_sha256": "fd1d353d1c8e03449a4d6ceea846d91fa828b882e89cf4769d8ce20df63e72c2",
+   "schema_sha256": "6f89fdc8fc0c4fd7c7eaa3bd70b1ff2c56cfb02cb0a446897eb77993497aea01",
+   "seconds": 12.4,
+   "tokens": {
+    "input_tokens": 23291,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 681,
+    "reasoning_output_tokens": 516
+   },
+   "valid": true,
+   "final_disposition": "AWAITING_CLASSIFICATION",
+   "which_reviewer_matched": "C",
+   "evidence_audit": {
+    "stage": "adjudicate_D",
+    "checked_utc": "2026-10-10T06:29:35+00:00",
+    "issues": [],
+    "nonempty_quote_count": 1,
+    "supported_quote_count": 1,
+    "empty_quote_count": 0,
+    "human_check_required": false
+   },
+   "sanitizer_sha256": "ca99c310821184ec6d60e45c8a9706b16d7b43216e27728f6e27940acb6e6aa5"
+  },
+  {
+   "record_id": "FS-006965",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "family": "batch3",
+   "prompt_sha256": "fd1d353d1c8e03449a4d6ceea846d91fa828b882e89cf4769d8ce20df63e72c2",
+   "schema_sha256": "6f89fdc8fc0c4fd7c7eaa3bd70b1ff2c56cfb02cb0a446897eb77993497aea01",
+   "seconds": 13.2,
+   "tokens": {
+    "input_tokens": 21819,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 681,
+    "reasoning_output_tokens": 516
+   },
+   "valid": true,
+   "final_disposition": "INCLUDE_A",
+   "which_reviewer_matched": "B",
+   "evidence_audit": {
+    "stage": "adjudicate_D",
+    "checked_utc": "2026-10-10T06:29:35+00:00",
+    "issues": [],
+    "nonempty_quote_count": 1,
+    "supported_quote_count": 1,
+    "empty_quote_count": 0,
+    "human_check_required": false
+   },
+   "sanitizer_sha256": "ca99c310821184ec6d60e45c8a9706b16d7b43216e27728f6e27940acb6e6aa5"
+  },
+  {
+   "record_id": "FS-007308",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "family": "batch3",
+   "prompt_sha256": "fd1d353d1c8e03449a4d6ceea846d91fa828b882e89cf4769d8ce20df63e72c2",
+   "schema_sha256": "6f89fdc8fc0c4fd7c7eaa3bd70b1ff2c56cfb02cb0a446897eb77993497aea01",
+   "seconds": 12.0,
+   "tokens": {
+    "input_tokens": 17113,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 663,
+    "reasoning_output_tokens": 516
+   },
+   "valid": true,
+   "final_disposition": "AWAITING_CLASSIFICATION",
+   "which_reviewer_matched": "C",
+   "evidence_audit": {
+    "stage": "adjudicate_D",
+    "checked_utc": "2026-10-10T06:29:35+00:00",
+    "issues": [],
+    "nonempty_quote_count": 1,
+    "supported_quote_count": 1,
+    "empty_quote_count": 0,
+    "human_check_required": false
+   },
+   "sanitizer_sha256": "ca99c310821184ec6d60e45c8a9706b16d7b43216e27728f6e27940acb6e6aa5"
+  },
+  {
+   "record_id": "FS-005607",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "family": "batch3",
+   "prompt_sha256": "fd1d353d1c8e03449a4d6ceea846d91fa828b882e89cf4769d8ce20df63e72c2",
+   "schema_sha256": "6f89fdc8fc0c4fd7c7eaa3bd70b1ff2c56cfb02cb0a446897eb77993497aea01",
+   "seconds": 35.6,
+   "tokens": {
+    "input_tokens": 30733,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1813,
+    "reasoning_output_tokens": 1649
+   },
+   "valid": true,
+   "final_disposition": "EXCLUDE",
+   "which_reviewer_matched": "B",
+   "evidence_audit": {
+    "stage": "adjudicate_D",
+    "checked_utc": "2026-10-10T06:29:35+00:00",
+    "issues": [],
+    "nonempty_quote_count": 1,
+    "supported_quote_count": 1,
+    "empty_quote_count": 0,
+    "human_check_required": false
+   },
+   "sanitizer_sha256": "ca99c310821184ec6d60e45c8a9706b16d7b43216e27728f6e27940acb6e6aa5"
+  },
+  {
+   "record_id": "FS-009498",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "family": "batch3",
+   "prompt_sha256": "fd1d353d1c8e03449a4d6ceea846d91fa828b882e89cf4769d8ce20df63e72c2",
+   "schema_sha256": "6f89fdc8fc0c4fd7c7eaa3bd70b1ff2c56cfb02cb0a446897eb77993497aea01",
+   "seconds": 13.7,
+   "tokens": {
+    "input_tokens": 20068,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 677,
+    "reasoning_output_tokens": 507
+   },
+   "valid": true,
+   "final_disposition": "RETAIN_BACKGROUND",
+   "which_reviewer_matched": "C",
+   "evidence_audit": {
+    "stage": "adjudicate_D",
+    "checked_utc": "2026-10-10T06:29:35+00:00",
+    "issues": [],
+    "nonempty_quote_count": 1,
+    "supported_quote_count": 1,
+    "empty_quote_count": 0,
+    "human_check_required": false
+   },
+   "sanitizer_sha256": "ca99c310821184ec6d60e45c8a9706b16d7b43216e27728f6e27940acb6e6aa5"
+  },
+  {
+   "record_id": "FS-013865",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "family": "batch3",
+   "prompt_sha256": "fd1d353d1c8e03449a4d6ceea846d91fa828b882e89cf4769d8ce20df63e72c2",
+   "schema_sha256": "6f89fdc8fc0c4fd7c7eaa3bd70b1ff2c56cfb02cb0a446897eb77993497aea01",
+   "seconds": 24.4,
+   "tokens": {
+    "input_tokens": 24294,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1389,
+    "reasoning_output_tokens": 1236
+   },
+   "valid": true,
+   "final_disposition": "INCLUDE_A_AND_B",
+   "which_reviewer_matched": "B",
+   "evidence_audit": {
+    "stage": "adjudicate_D",
+    "checked_utc": "2026-10-10T06:29:35+00:00",
+    "issues": [],
+    "nonempty_quote_count": 1,
+    "supported_quote_count": 1,
+    "empty_quote_count": 0,
+    "human_check_required": false
+   },
+   "sanitizer_sha256": "ca99c310821184ec6d60e45c8a9706b16d7b43216e27728f6e27940acb6e6aa5"
+  },
+  {
+   "record_id": "FS-007479",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "family": "batch3",
+   "prompt_sha256": "fd1d353d1c8e03449a4d6ceea846d91fa828b882e89cf4769d8ce20df63e72c2",
+   "schema_sha256": "6f89fdc8fc0c4fd7c7eaa3bd70b1ff2c56cfb02cb0a446897eb77993497aea01",
+   "sanitizer_sha256": "ca99c310821184ec6d60e45c8a9706b16d7b43216e27728f6e27940acb6e6aa5",
+   "input_sha256": "20aadcb8097416331d41f01cc12856f0a42cc196fb961f2df103003ca25f2c26",
+   "quote_repair": true,
+   "seconds": 6.8,
+   "tokens": {
+    "input_tokens": 26367,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 332,
+    "reasoning_output_tokens": 178
+   },
+   "valid": true,
+   "final_disposition": "INCLUDE_A_AND_B",
+   "which_reviewer_matched": "B",
+   "evidence_audit": {
+    "stage": "adjudicate_D",
+    "checked_utc": "2026-10-10T06:29:35+00:00",
+    "issues": [],
+    "nonempty_quote_count": 1,
+    "supported_quote_count": 1,
+    "empty_quote_count": 0,
+    "human_check_required": false,
+    "decision_fields_changed_from_pre_repair": []
+   }
+  },
+  {
+   "record_id": "FS-010649",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "family": "batch3",
+   "prompt_sha256": "fd1d353d1c8e03449a4d6ceea846d91fa828b882e89cf4769d8ce20df63e72c2",
+   "schema_sha256": "6f89fdc8fc0c4fd7c7eaa3bd70b1ff2c56cfb02cb0a446897eb77993497aea01",
+   "sanitizer_sha256": "ca99c310821184ec6d60e45c8a9706b16d7b43216e27728f6e27940acb6e6aa5",
+   "input_sha256": "8c4f926c2cda45ee111db910fe096211fae6c9f9036c7070ca3747389255aac6",
+   "quote_repair": true,
+   "seconds": 8.0,
+   "tokens": {
+    "input_tokens": 28137,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 385,
+    "reasoning_output_tokens": 243
+   },
+   "valid": true,
+   "final_disposition": "RETAIN_BACKGROUND",
+   "which_reviewer_matched": "C",
+   "evidence_audit": {
+    "stage": "adjudicate_D",
+    "checked_utc": "2026-10-10T06:29:35+00:00",
+    "issues": [],
+    "nonempty_quote_count": 1,
+    "supported_quote_count": 1,
+    "empty_quote_count": 0,
+    "human_check_required": false,
+    "decision_fields_changed_from_pre_repair": []
+   }
+  },
+  {
+   "record_id": "FS-000912",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "family": "batch3",
+   "prompt_sha256": "fd1d353d1c8e03449a4d6ceea846d91fa828b882e89cf4769d8ce20df63e72c2",
+   "schema_sha256": "6f89fdc8fc0c4fd7c7eaa3bd70b1ff2c56cfb02cb0a446897eb77993497aea01",
+   "sanitizer_sha256": "ca99c310821184ec6d60e45c8a9706b16d7b43216e27728f6e27940acb6e6aa5",
+   "input_sha256": "d8d70fbb7b5322196baa5fd7876034f4c7aec99e4121182400604db1a29ba16d",
+   "quote_repair": true,
+   "seconds": 8.2,
+   "tokens": {
+    "input_tokens": 21577,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 476,
+    "reasoning_output_tokens": 283
+   },
+   "valid": true,
+   "final_disposition": "INCLUDE_B",
+   "which_reviewer_matched": "B",
+   "evidence_audit": {
+    "stage": "adjudicate_D",
+    "checked_utc": "2026-10-10T06:29:35+00:00",
+    "issues": [],
+    "nonempty_quote_count": 1,
+    "supported_quote_count": 1,
+    "empty_quote_count": 0,
+    "human_check_required": false,
+    "decision_fields_changed_from_pre_repair": []
+   }
+  },
+  {
+   "record_id": "FS-007953",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "family": "batch3",
+   "prompt_sha256": "fd1d353d1c8e03449a4d6ceea846d91fa828b882e89cf4769d8ce20df63e72c2",
+   "schema_sha256": "6f89fdc8fc0c4fd7c7eaa3bd70b1ff2c56cfb02cb0a446897eb77993497aea01",
+   "sanitizer_sha256": "ca99c310821184ec6d60e45c8a9706b16d7b43216e27728f6e27940acb6e6aa5",
+   "input_sha256": "54980aae355c9ba2692f3dd367ad2ba4bd7b6b7a50f9124a984bf42868f2c89d",
+   "quote_repair": true,
+   "seconds": 9.8,
+   "tokens": {
+    "input_tokens": 28592,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 406,
+    "reasoning_output_tokens": 243
+   },
+   "valid": true,
+   "final_disposition": "EXCLUDE",
+   "which_reviewer_matched": "B",
+   "evidence_audit": {
+    "stage": "adjudicate_D",
+    "checked_utc": "2026-10-10T06:29:35+00:00",
+    "issues": [],
+    "nonempty_quote_count": 1,
+    "supported_quote_count": 1,
+    "empty_quote_count": 0,
+    "human_check_required": false,
+    "decision_fields_changed_from_pre_repair": []
+   }
+  },
+  {
+   "record_id": "FS-002578",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "family": "batch3",
+   "prompt_sha256": "fd1d353d1c8e03449a4d6ceea846d91fa828b882e89cf4769d8ce20df63e72c2",
+   "schema_sha256": "6f89fdc8fc0c4fd7c7eaa3bd70b1ff2c56cfb02cb0a446897eb77993497aea01",
+   "sanitizer_sha256": "ca99c310821184ec6d60e45c8a9706b16d7b43216e27728f6e27940acb6e6aa5",
+   "input_sha256": "afded7c3ef290e0c41288db36e23388c7b40226c1a7053e08a04247a235efd65",
+   "quote_repair": true,
+   "seconds": 11.0,
+   "tokens": {
+    "input_tokens": 23234,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 620,
+    "reasoning_output_tokens": 447
+   },
+   "valid": true,
+   "final_disposition": "INCLUDE_B",
+   "which_reviewer_matched": "C",
+   "evidence_audit": {
+    "stage": "adjudicate_D",
+    "checked_utc": "2026-10-10T06:29:35+00:00",
+    "issues": [],
+    "nonempty_quote_count": 1,
+    "supported_quote_count": 1,
+    "empty_quote_count": 0,
+    "human_check_required": false,
+    "decision_fields_changed_from_pre_repair": []
+   }
+  },
+  {
+   "record_id": "FS-006563",
+   "model": "gpt-6-sol",
+   "effort": "high",
+   "family": "batch3",
+   "prompt_sha256": "fd1d353d1c8e03449a4d6ceea846d91fa828b882e89cf4769d8ce20df63e72c2",
+   "schema_sha256": "6f89fdc8fc0c4fd7c7eaa3bd70b1ff2c56cfb02cb0a446897eb77993497aea01",
+   "sanitizer_sha256": "ca99c310821184ec6d60e45c8a9706b16d7b43216e27728f6e27940acb6e6aa5",
+   "input_sha256": "d9eeb51503d5e18bbd338808549302e568b99e9ca81623f437dc05af4b2d7055",
+   "quote_repair": true,
+   "seconds": 11.7,
+   "tokens": {
+    "input_tokens": 29109,
+    "cached_input_tokens": 12800,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 621,
+    "reasoning_output_tokens": 455
+   },
+   "valid": true,
+   "final_disposition": "INCLUDE_A",
+   "which_reviewer_matched": "B",
+   "evidence_audit": {
+    "stage": "adjudicate_D",
+    "checked_utc": "2026-10-10T06:29:35+00:00",
+    "issues": [],
+    "nonempty_quote_count": 1,
+    "supported_quote_count": 1,
+    "empty_quote_count": 0,
+    "human_check_required": false,
+    "decision_fields_changed_from_pre_repair": []
+   }
   }
- ]
+ ],
+ "batch3_conflicts": {
+  "new_conflicts": 12,
+  "historical_conflicts_retained": 39,
+  "new_ids_file": "04_screening/formal_2026-10-05_v0.9/fulltext/ft_adjudication_batch3_ids.txt"
+ }
 }

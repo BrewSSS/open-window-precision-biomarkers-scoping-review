@@ -1,90 +1,153 @@
 {
   "inputs": {
     "B": {
-      "path": "04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_B.xlsx",
-      "sha256": "bd068653f946b2d06a2958f793d2fef4e33ddcdd651e5db86fd2e2d04ce475cc"
+      "path": "ft_screen_B.xlsx",
+      "sha256": "b8e8a5540672f3c8583f547b5f9e4837fe28b0044cb88cba57689365f0411b56"
     },
     "C": {
-      "path": "04_screening/formal_2026-10-05_v0.9/fulltext/ft_screen_C.xlsx",
-      "sha256": "1c65c56477dbfadab5fff95574f8d760deab2d3e70aec172e03cc86a0bba73ac"
+      "path": "ft_screen_C.xlsx",
+      "sha256": "5eb1d0ac28a128ed245e5ad890b205f95bb1ee6b5104996f9bb0a56a003024ca"
     }
   },
   "n_records": 477,
-  "n_complete_pairs": 190,
+  "n_screened_pairs": 280,
+  "n_without_paired_decision": 197,
+  "n_with_one_reviewer_decision": 0,
+  "n_complete_pairs": 280,
   "rule_problems": {
-    "B": 287,
-    "C": 287
+    "B": 0,
+    "C": 0
   },
   "agreement": {
     "disposition": {
-      "n": 190,
-      "agree": 152,
-      "raw_agreement": 0.8,
-      "kappa": 0.6826
+      "n": 280,
+      "agree": 230,
+      "raw_agreement": 0.8214,
+      "kappa": 0.7332
     },
     "disposition_with_ft_code": {
-      "n": 190,
-      "agree": 151,
-      "raw_agreement": 0.7947,
-      "kappa": 0.6781
+      "n": 280,
+      "agree": 229,
+      "raw_agreement": 0.8179,
+      "kappa": 0.7307
     },
     "include_exclude_other": {
-      "n": 190,
-      "agree": 166,
-      "raw_agreement": 0.8737,
-      "kappa": 0.577
+      "n": 280,
+      "agree": 248,
+      "raw_agreement": 0.8857,
+      "kappa": 0.6763
     },
     "ft_code_when_both_exclude": {
-      "n": 12,
-      "agree": 11,
-      "raw_agreement": 0.9167,
-      "kappa": 0.8899
+      "n": 19,
+      "agree": 18,
+      "raw_agreement": 0.9474,
+      "kappa": 0.9249
     },
     "age_rule_check": {
-      "n": 190,
-      "agree": 173,
-      "raw_agreement": 0.9105,
-      "kappa": 0.4277
+      "n": 280,
+      "agree": 256,
+      "raw_agreement": 0.9143,
+      "kappa": 0.5701
     },
     "validation_element_confirmed": {
-      "n": 190,
-      "agree": 152,
-      "raw_agreement": 0.8,
-      "kappa": 0.3327
+      "n": 280,
+      "agree": 240,
+      "raw_agreement": 0.8571,
+      "kappa": 0.4558
     }
   },
-  "n_conflicts_for_D": 326,
-  "n_resolved_by_D": 39,
+  "n_conflicts_for_D": 51,
+  "n_resolved_by_D": 51,
+  "n_unresolved_screened_conflicts": 0,
+  "conflicts_csv": "ft_conflicts_for_D.csv",
   "prisma_agreed_only": {
-    "n": 151,
+    "n": 229,
     "by_disposition": {
-      "INCLUDE_A": 88,
-      "INCLUDE_B": 2,
-      "INCLUDE_A_AND_B": 42,
-      "RETAIN_BACKGROUND": 3,
-      "EXCLUDE": 11,
-      "AWAITING_CLASSIFICATION": 5,
+      "INCLUDE_A": 122,
+      "INCLUDE_B": 3,
+      "INCLUDE_A_AND_B": 65,
+      "RETAIN_BACKGROUND": 7,
+      "EXCLUDE": 18,
+      "AWAITING_CLASSIFICATION": 14,
       "NOT_RETRIEVED": 0,
       "DUPLICATE_REPORT": 0
     },
     "excluded_by_ft_code": {
-      "FT01_SOURCE_TYPE_NOT_CORE": 3,
+      "FT01_SOURCE_TYPE_NOT_CORE": 4,
       "FT02_NOT_ORIGINAL_HUMAN_RESEARCH": 0,
-      "FT03_POPULATION_NOT_ELIGIBLE": 4,
+      "FT03_POPULATION_NOT_ELIGIBLE": 9,
       "FT04_NO_QUALIFYING_EXERCISE_EXPOSURE": 0,
       "FT05_NO_POST_CESSATION_SAMPLE": 3,
       "FT06_NO_BASELINE_OR_SUITABLE_COMPARATOR": 1,
-      "FT07_NO_ELIGIBLE_IMMUNE_LINK": 0,
+      "FT07_NO_ELIGIBLE_IMMUNE_LINK": 1,
       "FT08_MIXED_INTERVENTION_NOT_SEPARABLE": 0
     },
-    "included_reports": 132,
-    "stream_A_reports": 130,
-    "stream_B_reports": 44,
+    "included_reports": 190,
+    "stream_A_reports": 187,
+    "stream_B_reports": 68,
     "sought_not_retrieved": 0,
-    "assessed_full_text": 151,
+    "assessed_full_text": 229,
     "note": "A/B stream totals overlap through INCLUDE_A_AND_B; cohort-level counts come from extraction linkage."
   },
-  "prisma_final": null,
-  "final_complete": false,
+  "prisma_decided_to_date": {
+    "n": 280,
+    "by_disposition": {
+      "INCLUDE_A": 143,
+      "INCLUDE_B": 7,
+      "INCLUDE_A_AND_B": 75,
+      "RETAIN_BACKGROUND": 11,
+      "EXCLUDE": 25,
+      "AWAITING_CLASSIFICATION": 19,
+      "NOT_RETRIEVED": 0,
+      "DUPLICATE_REPORT": 0
+    },
+    "excluded_by_ft_code": {
+      "FT01_SOURCE_TYPE_NOT_CORE": 4,
+      "FT02_NOT_ORIGINAL_HUMAN_RESEARCH": 0,
+      "FT03_POPULATION_NOT_ELIGIBLE": 10,
+      "FT04_NO_QUALIFYING_EXERCISE_EXPOSURE": 1,
+      "FT05_NO_POST_CESSATION_SAMPLE": 3,
+      "FT06_NO_BASELINE_OR_SUITABLE_COMPARATOR": 1,
+      "FT07_NO_ELIGIBLE_IMMUNE_LINK": 2,
+      "FT08_MIXED_INTERVENTION_NOT_SEPARABLE": 4
+    },
+    "included_reports": 225,
+    "stream_A_reports": 218,
+    "stream_B_reports": 82,
+    "sought_not_retrieved": 0,
+    "assessed_full_text": 280,
+    "note": "A/B stream totals overlap through INCLUDE_A_AND_B; cohort-level counts come from extraction linkage."
+  },
+  "prisma_final": {
+    "n": 280,
+    "by_disposition": {
+      "INCLUDE_A": 143,
+      "INCLUDE_B": 7,
+      "INCLUDE_A_AND_B": 75,
+      "RETAIN_BACKGROUND": 11,
+      "EXCLUDE": 25,
+      "AWAITING_CLASSIFICATION": 19,
+      "NOT_RETRIEVED": 0,
+      "DUPLICATE_REPORT": 0
+    },
+    "excluded_by_ft_code": {
+      "FT01_SOURCE_TYPE_NOT_CORE": 4,
+      "FT02_NOT_ORIGINAL_HUMAN_RESEARCH": 0,
+      "FT03_POPULATION_NOT_ELIGIBLE": 10,
+      "FT04_NO_QUALIFYING_EXERCISE_EXPOSURE": 1,
+      "FT05_NO_POST_CESSATION_SAMPLE": 3,
+      "FT06_NO_BASELINE_OR_SUITABLE_COMPARATOR": 1,
+      "FT07_NO_ELIGIBLE_IMMUNE_LINK": 2,
+      "FT08_MIXED_INTERVENTION_NOT_SEPARABLE": 4
+    },
+    "included_reports": 225,
+    "stream_A_reports": 218,
+    "stream_B_reports": 82,
+    "sought_not_retrieved": 0,
+    "assessed_full_text": 280,
+    "note": "A/B stream totals overlap through INCLUDE_A_AND_B; cohort-level counts come from extraction linkage."
+  },
+  "final_complete": true,
+  "final_scope": "paired screened reports only; records without paired decisions are outside these disposition counts",
   "kappa_note": "Cohen's kappa is descriptive (prevalence-sensitive); full-text agreement has no pass threshold (calibration_plan.md)."
 }

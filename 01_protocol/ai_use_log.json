@@ -779,6 +779,116 @@
     "loading any of the 45 valid v1.1 extractions into reviewer workbooks B/C (loader field-mapping gap, see human_verification_status)",
     "human verification of any of the 45 valid extractions"
    ]
+  },
+  {
+   "date": "2026-10-10",
+   "task_id": "fulltext_batch3_prefill",
+   "tool": "Codex CLI",
+   "model": "gpt-6-sol",
+   "model_settings": {
+    "effort": "high",
+    "concurrency": 8
+   },
+   "task": "Batch-3 full-text prefill; independent B/C sides and source-grounded D adjudication",
+   "records": 180,
+   "source_scope": {
+    "source_list": 116,
+    "in_scope_processed": 90,
+    "held_by_prior_human_M_decision": 26
+   },
+   "model_call_count": 198,
+   "measured_input_plus_output_tokens": 5363331,
+   "calls_without_usage": 17,
+   "summary_reference": "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_batch3_summary_2026-10-10.md",
+   "ledger_reference": "../04_screening/formal_2026-10-05_v0.9/fulltext/token_ledger_batch3.csv",
+   "human_verification_status": "Pending; all new outputs are AI prefills for B, C and D.",
+   "notes": "Single bounded source-quote repair retained unchanged dispositions and codes; all workbook edits backed up and cell-diff verified. Initial 55 B calls used weaker identity masking; possible article-author exposure cannot be retracted. Coordinator/development-agent tokens unavailable.",
+   "prompt_references": [
+    {
+     "file": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_screen_prompt_v1_1.md",
+     "sha256": "9f9f8dbca7858b58c976a8a971aad9353a60e5394c6553081629d8c5b5cce23d"
+    },
+    {
+     "file": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_screen_prompt_C_sol_v1_1.md",
+     "sha256": "7d2d3eb27cfb08abade7d31657cfb8a69915eb4bcdaff866804d287b6d55c17d"
+    }
+   ],
+   "schema_reference": {
+    "file": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_screen_schema_v1.json",
+    "sha256": "f43a3ab4aee5683fa045df4caafd33d6e4b6de4ef14c025893ef6b25dc8350fa"
+   }
+  },
+  {
+   "date": "2026-10-10",
+   "task_id": "fulltext_batch3_override",
+   "tool": "Codex CLI",
+   "model": "gpt-6-sol",
+   "model_settings": {
+    "effort": "high",
+    "concurrency": 8
+   },
+   "task": "Batch-3 full-text override; independent B/C sides and source-grounded D adjudication",
+   "records": 180,
+   "source_scope": {
+    "source_list": 116,
+    "in_scope_processed": 90,
+    "held_by_prior_human_M_decision": 26
+   },
+   "model_call_count": 277,
+   "measured_input_plus_output_tokens": 8770025,
+   "calls_without_usage": 0,
+   "summary_reference": "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_batch3_summary_2026-10-10.md",
+   "ledger_reference": "../04_screening/formal_2026-10-05_v0.9/fulltext/token_ledger_batch3.csv",
+   "human_verification_status": "Pending; all new outputs are AI prefills for B, C and D.",
+   "notes": "Single bounded source-quote repair retained unchanged dispositions and codes; all workbook edits backed up and cell-diff verified. Initial 55 B calls used weaker identity masking; possible article-author exposure cannot be retracted. Coordinator/development-agent tokens unavailable.",
+   "prompt_references": [
+    {
+     "file": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_prompt_v1.md",
+     "sha256": "f4333c29b0e2b3e7bf832fabecbf83c2ded51a8dccc85ffeec8479a6cc9d11cc"
+    },
+    {
+     "file": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_prompt_C_sol_v1.md",
+     "sha256": "72d046d2cfecd29d692fa25acc117a313ed6008815573ec6408c1e5f6ecc4b02"
+    }
+   ],
+   "schema_reference": {
+    "file": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_override_schema_v1.json",
+    "sha256": "0867b7edda3ec7fb5d253875b4ef8c1e73e020be232f300c12e16164bac11b99"
+   }
+  },
+  {
+   "date": "2026-10-10",
+   "task_id": "fulltext_batch3_adjudication",
+   "tool": "Codex CLI",
+   "model": "gpt-6-sol",
+   "model_settings": {
+    "effort": "high",
+    "concurrency": 6
+   },
+   "task": "Batch-3 full-text adjudication; independent B/C sides and source-grounded D adjudication",
+   "records": 12,
+   "source_scope": {
+    "source_list": 116,
+    "in_scope_processed": 90,
+    "held_by_prior_human_M_decision": 26
+   },
+   "model_call_count": 18,
+   "measured_input_plus_output_tokens": 468210,
+   "calls_without_usage": 0,
+   "summary_reference": "../04_screening/formal_2026-10-05_v0.9/fulltext/ft_batch3_summary_2026-10-10.md",
+   "ledger_reference": "../04_screening/formal_2026-10-05_v0.9/fulltext/token_ledger_batch3.csv",
+   "human_verification_status": "Pending; all new outputs are AI prefills for B, C and D.",
+   "notes": "Single bounded source-quote repair retained unchanged dispositions and codes; all workbook edits backed up and cell-diff verified. Initial 55 B calls used weaker identity masking; possible article-author exposure cannot be retracted. Coordinator/development-agent tokens unavailable.",
+   "prompt_references": [
+    {
+     "file": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_adjudication_prompt_v1.md",
+     "sha256": "fd1d353d1c8e03449a4d6ceea846d91fa828b882e89cf4769d8ce20df63e72c2"
+    }
+   ],
+   "schema_reference": {
+    "file": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_adjudication_schema_v1.json",
+    "sha256": "6f89fdc8fc0c4fd7c7eaa3bd70b1ff2c56cfb02cb0a446897eb77993497aea01"
+   }
   }
  ],
  "future_entry_fields": [

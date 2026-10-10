@@ -1,33 +1,9 @@
 #!/usr/bin/env python3
-"""PRE-010 full-text screening AI pre-fill, step 1: extract PDF text, call GPT-6 Sol (codex,
-reasoning effort high) over every retrieved V-layer full text, validate, write raw per-record
-runs and a committable manifest.
+"""Stage 1 full-text pre-fill runner for independent B/C Sol high calls.
 
-Input: 04_screening/formal_2026-10-05_v0.9/fulltext/fulltext_fetch_manifest.csv, rows with
-status == retrieved_oa (141 records as of 2026-10-09); PDF at fulltexts/V/<record_id>.pdf
-(repo-root-relative, git-ignored). --ids overrides the manifest selection with an explicit list.
-
-Steps per record:
-  1. Extract PDF text to 04_screening/formal_2026-10-05_v0.9/fulltext/V_text/<record_id>.txt
-     (page-marked "[[page N]]"; reuses scripts/extract_pdf_text.py's extract_pages/build_text,
-     not its CLI, so the git-ignored V_text/ directory never trips that script's ROOT-relative
-     path assertion). Skipped if the .txt already exists.
-  2. If the text looks scanned (mean chars/page below --scanned-threshold, or too few total
-     chars), skip the model call and write a synthetic result: disposition NOT_RETRIEVED, note
-     "text layer missing", flagged_for_A=true.
-  3. Otherwise call scripts/codex_stream_call.py once (one `codex exec` per record,
-     --model gpt-6-sol --effort high --output-schema ft_screen_schema_v1.json), validate the
-     parsed JSON, and on failure retry once with the validation errors appended to the prompt.
-  4. Write fulltext/ai_prefill/runs/sol/<record_id>.json (git-ignored: may quote the full text)
-     and append one entry to the committable fulltext/ai_prefill/run_manifest.json.
-
-Resumable: a record already present in runs/sol/<id>.json with ok=True/valid is skipped unless
---force. Concurrency <=8 (ThreadPoolExecutor); each codex_stream_call.py subprocess is hard-capped
-at --timeout seconds (default 900) via both its own internal timeout and the subprocess.run wait.
-
-Usage:
-  python3 scripts/ft_prefill_run.py --status-file /tmp/triage/STATUS_FT_PREFILL.md
-  python3 scripts/ft_prefill_run.py --ids FS-000123,FS-000456 --force
+Select a confirmed, retrieved subset with --ids-file, choose --family and --prompt-path,
+and write per-record raw checkpoints plus one fsynced token-ledger row per call attempt.
+Existing valid runs resume only when prompt, schema and sanitizer hashes match.
 """
 from __future__ import annotations
 
@@ -43,12 +19,14 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from threading import Lock
+from threading import Event
 
 ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
 sys.path.insert(0, str(SCRIPTS))
 import triage_run as T  # noqa: E402  (reuse parse_prompt_file / render_user_message / validate_against_schema)
 import extract_pdf_text as EPT  # noqa: E402  (reuse extract_pages / build_text, not its CLI)
+import ft_run_common as C  # noqa: E402
 
 FULLTEXT_DIR = ROOT / "04_screening/formal_2026-10-05_v0.9/fulltext"
 FETCH_MANIFEST = FULLTEXT_DIR / "fulltext_fetch_manifest.csv"
@@ -71,11 +49,12 @@ RETRIEVED_STATUSES = {"retrieved_oa", "retrieved_manual"}
 
 def retrieved_records(ids: list[str] | None) -> list[str]:
     rows = list(csv.DictReader(FETCH_MANIFEST.open(newline="", encoding="utf-8")))
-    retrieved = {r["record_id"] for r in rows if r.get("status") in RETRIEVED_STATUSES}
+    retrieved = {r["record_id"] for r in rows if r.get("status") in RETRIEVED_STATUSES
+                 and r.get("scope", "confirmed") != "out_of_scope"}
     if ids:
         missing = [i for i in ids if i not in retrieved]
         if missing:
-            sys.exit(f"--ids record(s) not status in {sorted(RETRIEVED_STATUSES)} in {FETCH_MANIFEST.name}: {missing}")
+            sys.exit(f"selected records are not in-scope retrieved full texts: {missing}")
         return sorted(ids)
     return sorted(retrieved)
 
@@ -86,7 +65,7 @@ def retrieved_records(ids: list[str] | None) -> list[str]:
 def ensure_text(record_id: str, scanned_threshold: float, max_pages: int, max_chars: int) -> dict:
     out_path = TEXT_DIR / f"{record_id}.txt"
     if out_path.exists():
-        text = out_path.read_text(encoding="utf-8")
+        text = C.normalize_pages(out_path.read_text(encoding="utf-8"))
         n_pages = text.count("[[page ")
         mean_cpp = (len(text) / n_pages) if n_pages else 0.0
         return {"record_id": record_id, "out_path": out_path, "text": text, "n_pages_kept": n_pages,
@@ -94,7 +73,7 @@ def ensure_text(record_id: str, scanned_threshold: float, max_pages: int, max_ch
                 "possibly_scanned": mean_cpp < scanned_threshold or len(text) < 200, "reused": True}
     pdf_path = PDF_DIR / f"{record_id}.pdf"
     if not pdf_path.is_file():
-        return {"record_id": record_id, "error": f"no PDF at {pdf_path}"}
+        return {"record_id": record_id, "error": "no PDF for selected record"}
     pages, _backend = EPT.extract_pages(pdf_path, EPT.shutil.which("pdftotext"))
     info = EPT.build_text(pages, max_pages, max_chars)
     mean_cpp = (info["n_chars_total"] / info["n_pages_total"]) if info["n_pages_total"] else 0.0
@@ -122,16 +101,22 @@ def call_sol(tag: str, prompt_text: str, model: str, effort: str, timeout: float
     out_file = tmp_dir / f"{tag}_out.json"
     prompt_file.write_text(prompt_text, encoding="utf-8")
     t0 = time.time()
-    proc = subprocess.run(
-        [sys.executable, str(SCRIPTS / "codex_stream_call.py"), "--prompt-file", str(prompt_file),
-         "--out", str(out_file), "--model", model, "--effort", effort, "--schema", str(SCHEMA_PATH),
-         "--timeout", str(timeout)],
-        capture_output=True, text=True, timeout=timeout + 60)
+    try:
+        proc = subprocess.run(
+            [sys.executable, str(SCRIPTS / "codex_stream_call.py"), "--prompt-file", str(prompt_file),
+             "--out", str(out_file), "--model", model, "--effort", effort, "--schema", str(SCHEMA_PATH),
+             "--timeout", str(timeout)],
+            capture_output=True, text=True, timeout=timeout + 60)
+    except (subprocess.TimeoutExpired, OSError) as exc:
+        return {"ok": False, "error": type(exc).__name__, "wall_s": round(time.time() - t0, 1)}
     wall = round(time.time() - t0, 1)
     if not out_file.exists():
-        return {"ok": False, "error": f"codex_stream_call.py produced no output (rc={proc.returncode}): "
-                                       f"{proc.stderr[-500:]}", "wall_s": wall}
-    res = json.loads(out_file.read_text(encoding="utf-8"))
+        return {"ok": False, "error": f"model call produced no output (rc={proc.returncode})",
+                "wall_s": wall}
+    try:
+        res = json.loads(out_file.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return {"ok": False, "error": "malformed model-call result", "wall_s": wall}
     res["wall_s"] = wall
     return res
 
@@ -152,10 +137,14 @@ def process_one(record_id: str, meta: dict, system_prompt: str, user_template: s
     if out_path.exists() and not args.force:
         try:
             prior = json.loads(out_path.read_text(encoding="utf-8"))
-            if prior.get("valid"):
+            if prior.get("valid") and prior.get("prompt_sha256") == args.prompt_sha256 \
+                    and prior.get("schema_sha256") == args.schema_sha256 \
+                    and prior.get("sanitizer_sha256") == args.sanitizer_sha256:
                 return {**prior, "skipped_resume": True}
         except (json.JSONDecodeError, OSError):
             pass
+    if args.quota_stop.is_set():
+        return {"record_id": record_id, "valid": False, "error": "quota stop; no call made"}
 
     tinfo = ensure_text(record_id, args.scanned_threshold, args.max_pages, args.max_chars)
     if tinfo.get("error"):
@@ -163,8 +152,7 @@ def process_one(record_id: str, meta: dict, system_prompt: str, user_template: s
                "ok": False, "valid": False, "validation_errors": [tinfo["error"]],
                "seconds": None, "usage": None, "text_chars": 0, "pages": 0,
                "flagged_for_a": True, "parsed": synthetic_not_retrieved(record_id, "no PDF text available")}
-        RUNS_DIR.mkdir(parents=True, exist_ok=True)
-        out_path.write_text(json.dumps(out, indent=1, ensure_ascii=False), encoding="utf-8")
+        C.write_json_checkpoint(out_path, out)
         return out
 
     if tinfo["possibly_scanned"]:
@@ -173,38 +161,46 @@ def process_one(record_id: str, meta: dict, system_prompt: str, user_template: s
                "text_chars": tinfo["n_chars_kept"], "pages": tinfo["n_pages_kept"],
                "mean_chars_per_page": tinfo["mean_chars_per_page"], "flagged_for_a": True,
                "parsed": synthetic_not_retrieved(record_id, "text layer missing")}
-        RUNS_DIR.mkdir(parents=True, exist_ok=True)
-        out_path.write_text(json.dumps(out, indent=1, ensure_ascii=False), encoding="utf-8")
+        C.write_json_checkpoint(out_path, out)
         return out
 
     m = meta.get(record_id, {})
-    row = {"record_id": record_id, "title": m.get("title", ""), "journal": m.get("journal", ""),
-           "year": m.get("year", ""), "abstract": tinfo["text"]}
+    row = {"record_id": record_id, "title": "", "journal": "",
+           "year": m.get("year", ""), "abstract": C.safe_full_text(tinfo["text"])}
 
     prompt1 = sol_prompt_text(system_prompt, user_template, row)
     res = call_sol(record_id, prompt1, args.model, args.effort, args.timeout, tmp_dir)
-    errs = T.validate_against_schema(res.get("parsed"), schema) if res.get("parsed") is not None else ["no parsed JSON"]
+    errs = C.validation_errors(res, schema, T.validate_against_schema)
+    C.append_attempt(args.ledger, record_id, f"prefill_{args.family}", res, not errs)
+    C.remove_call_temp(tmp_dir, record_id)
+    if C.is_quota_error(res):
+        args.quota_stop.set()
     attempts = 1
-    if errs and res.get("text") is not None:
+    if errs and not args.quota_stop.is_set():
         repair = ("Your previous reply did not validate against the required JSON schema. "
                   "Reply again with ONLY one corrected JSON object for this same report, fixing "
                   f"every listed error. Errors: {errs[:5]}")
         prompt2 = sol_prompt_text(system_prompt, user_template, row, repair)
         res2 = call_sol(f"{record_id}_retry", prompt2, args.model, args.effort, args.timeout, tmp_dir)
-        errs2 = T.validate_against_schema(res2.get("parsed"), schema) if res2.get("parsed") is not None else ["no parsed JSON"]
+        errs2 = C.validation_errors(res2, schema, T.validate_against_schema)
+        C.append_attempt(args.ledger, record_id, f"prefill_{args.family}_retry", res2, not errs2)
+        C.remove_call_temp(tmp_dir, f"{record_id}_retry")
+        if C.is_quota_error(res2):
+            args.quota_stop.set()
         attempts = 2
         if res2.get("parsed") is not None:
             res, errs = res2, errs2
 
     valid = not errs and res.get("parsed") is not None
     out = {"record_id": record_id, "model": args.model, "effort": args.effort, "attempts": attempts,
+           "prompt_sha256": args.prompt_sha256, "schema_sha256": args.schema_sha256,
+           "sanitizer_sha256": args.sanitizer_sha256,
            "ok": res.get("ok"), "valid": valid, "validation_errors": errs,
            "seconds": res.get("t_completed_s"), "wall_s": res.get("wall_s"), "usage": res.get("usage"),
            "text_chars": tinfo["n_chars_kept"], "pages": tinfo["n_pages_kept"],
            "mean_chars_per_page": tinfo["mean_chars_per_page"], "flagged_for_a": False,
            "error": res.get("error"), "parsed": res.get("parsed")}
-    RUNS_DIR.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(json.dumps(out, indent=1, ensure_ascii=False), encoding="utf-8")
+    C.write_json_checkpoint(out_path, out)
     return out
 
 
@@ -213,9 +209,13 @@ def write_status(path: Path, done: int, total: int, started: float, extra: dict)
     if not path:
         return
     path.parent.mkdir(parents=True, exist_ok=True)
+    elapsed = time.time() - started
+    rate = done / elapsed if done and elapsed > 0 else 0
+    eta_s = (total - done) / rate if rate else None
     lines = ["# Full-text AI pre-fill status (scripts/ft_prefill_run.py, PRE-010, model=gpt-6-sol)",
              "", f"updated_utc: {dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds')}",
-             f"progress: {done}/{total}", f"elapsed_s: {round(time.time() - started, 1)}"]
+             f"progress: {done}/{total}", f"elapsed_s: {round(elapsed, 1)}",
+             f"eta_s: {round(eta_s, 1) if eta_s is not None else 'n/a'}"]
     for k, v in extra.items():
         lines.append(f"{k}: {v}")
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -231,6 +231,7 @@ def load_meta() -> dict:
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--ids", help="comma-separated record_ids (override manifest selection)")
+    ap.add_argument("--ids-file", type=Path, help="one record_id per line")
     ap.add_argument("--model", default="gpt-6-sol")
     ap.add_argument("--effort", default="high")
     ap.add_argument("--timeout", type=float, default=900.0, help="hard cap per codex call, seconds")
@@ -246,12 +247,19 @@ def main(argv=None) -> int:
     ap.add_argument("--family", default="sol",
                      help="runs/<family>/ output subdir and manifest 'family' tag (default sol; "
                           "e.g. sol_medium for a reduced-effort Sol substitution run)")
+    ap.add_argument("--ledger", type=Path, default=FULLTEXT_DIR / "token_ledger_batch3.csv")
     args = ap.parse_args(argv)
+    if args.model != "gpt-6-sol" or args.effort != "high":
+        ap.error("Stage 1 requires gpt-6-sol with high effort")
+    args.quota_stop = Event()
 
     global RUNS_DIR
     RUNS_DIR = AI_PREFILL_DIR / "runs" / args.family
 
-    ids = [i.strip() for i in args.ids.split(",")] if args.ids else None
+    try:
+        ids = C.selected_ids(args.ids, args.ids_file)
+    except ValueError as exc:
+        ap.error(str(exc))
     record_ids = retrieved_records(ids)
     if not record_ids:
         sys.exit("no retrieved_oa/retrieved_manual records found")
@@ -262,6 +270,9 @@ def main(argv=None) -> int:
     schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
     prompt_sha256 = hashlib.sha256(prompt_path.read_bytes()).hexdigest()
     schema_sha256 = hashlib.sha256(SCHEMA_PATH.read_bytes()).hexdigest()
+    args.prompt_sha256 = prompt_sha256
+    args.schema_sha256 = schema_sha256
+    args.sanitizer_sha256 = hashlib.sha256((SCRIPTS / "ft_run_common.py").read_bytes()).hexdigest()
     meta = load_meta()
 
     started = time.time()
@@ -280,7 +291,26 @@ def main(argv=None) -> int:
                 out = fut.result()
             except Exception as exc:  # noqa: BLE001 - keep going, record the failure
                 out = {"record_id": rid, "ok": False, "valid": False, "error": f"{type(exc).__name__}: {exc}"}
+                C.write_json_checkpoint(RUNS_DIR / f"{rid}.json", out)
             results.append(out)
+            with MANIFEST_LOCK:
+                C.upsert_manifest_entry(
+                    RUN_MANIFEST_PATH,
+                    {"record_id": rid, "model": args.model, "effort": args.effort,
+                     "family": args.family, "prompt_sha256": prompt_sha256,
+                     "schema_sha256": schema_sha256,
+                     "sanitizer_sha256": args.sanitizer_sha256,
+                     "seconds": out.get("seconds"), "tokens": out.get("usage"),
+                     "valid": bool(out.get("valid"))},
+                    ("record_id", "family"),
+                    {"generator": "scripts/ft_prefill_run.py", "model": args.model,
+                     "effort": args.effort, "prompt_sha256": prompt_sha256,
+                     "schema_sha256": schema_sha256},
+                    {"family": "sol"})
+            write_status(args.status_file, len(results), len(record_ids), started,
+                         {"phase": "quota_stopped" if args.quota_stop.is_set() else "running",
+                          "n_valid": sum(1 for r in results if r.get("valid")),
+                          "errors": sum(1 for r in results if not r.get("valid"))})
             print(f"  {rid}: valid={out.get('valid')} attempts={out.get('attempts')} "
                   f"t={out.get('seconds')}s flagged_for_a={out.get('flagged_for_a')} "
                   f"resumed={out.get('skipped_resume', False)}", flush=True)
@@ -310,7 +340,7 @@ def main(argv=None) -> int:
                     "prompt_sha256": prompt_sha256, "schema_sha256": schema_sha256,
                     "n_records": len(keep) + len(manifest_entries), "entries": keep + manifest_entries}
         AI_PREFILL_DIR.mkdir(parents=True, exist_ok=True)
-        RUN_MANIFEST_PATH.write_text(json.dumps(manifest, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        C.write_json_checkpoint(RUN_MANIFEST_PATH, manifest)
 
     n_valid = sum(1 for r in results if r.get("valid"))
     n_flagged = sum(1 for r in results if r.get("flagged_for_a"))

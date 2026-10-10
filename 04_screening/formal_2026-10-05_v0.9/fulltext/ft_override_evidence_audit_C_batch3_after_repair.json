@@ -1,0 +1,507 @@
+{
+  "stage": "override_C",
+  "selected": 90,
+  "missing_runs": [],
+  "invalid_runs": [],
+  "records_with_evidence_issues": 5,
+  "issue_counts": {
+    "not_verbatim_on_page": 7
+  },
+  "quote_coverage": {
+    "nonempty": 423,
+    "supported": 416,
+    "empty": 117
+  },
+  "coverage_by_record": {
+    "FS-000645": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    },
+    "FS-000681": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-000731": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-000901": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-000912": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-001044": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-001211": {
+      "nonempty": 4,
+      "supported": 3,
+      "empty": 2
+    },
+    "FS-001324": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-001505": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-001584": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-001635": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    },
+    "FS-001787": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-001918": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    },
+    "FS-001987": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    },
+    "FS-002032": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-002059": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    },
+    "FS-002346": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    },
+    "FS-002511": {
+      "nonempty": 5,
+      "supported": 3,
+      "empty": 1
+    },
+    "FS-002554": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-002569": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    },
+    "FS-002578": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-002589": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    },
+    "FS-002669": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-003022": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-003290": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    },
+    "FS-003468": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-003581": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-003783": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    },
+    "FS-003800": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-003838": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-003943": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-004083": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-004116": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    },
+    "FS-004138": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-004147": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-004179": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-004390": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-004509": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-004513": {
+      "nonempty": 6,
+      "supported": 6,
+      "empty": 0
+    },
+    "FS-004518": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-004580": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-004769": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-004989": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-005118": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-005334": {
+      "nonempty": 4,
+      "supported": 2,
+      "empty": 2
+    },
+    "FS-005434": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    },
+    "FS-005508": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-005607": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-006114": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-006154": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    },
+    "FS-006184": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    },
+    "FS-006215": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-006366": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-006373": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-006563": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-006734": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    },
+    "FS-006861": {
+      "nonempty": 6,
+      "supported": 6,
+      "empty": 0
+    },
+    "FS-006885": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-006965": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-007033": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    },
+    "FS-007097": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    },
+    "FS-007100": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-007188": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-007236": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    },
+    "FS-007259": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-007308": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-007479": {
+      "nonempty": 5,
+      "supported": 4,
+      "empty": 1
+    },
+    "FS-007953": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-007992": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    },
+    "FS-008227": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-008228": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-008738": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-008929": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-009343": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-009361": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    },
+    "FS-009498": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-009520": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-009547": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-009633": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-010114": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-010165": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-010649": {
+      "nonempty": 5,
+      "supported": 4,
+      "empty": 1
+    },
+    "FS-010763": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    },
+    "FS-010827": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-011007": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    },
+    "FS-011033": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    },
+    "FS-011944": {
+      "nonempty": 3,
+      "supported": 3,
+      "empty": 3
+    },
+    "FS-013408": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    },
+    "FS-013794": {
+      "nonempty": 5,
+      "supported": 5,
+      "empty": 1
+    },
+    "FS-013865": {
+      "nonempty": 4,
+      "supported": 4,
+      "empty": 2
+    }
+  },
+  "findings": {
+    "FS-001211": [
+      {
+        "field": "validation_quote",
+        "reason": "not_verbatim_on_page"
+      }
+    ],
+    "FS-002511": [
+      {
+        "field": "validation_quote",
+        "reason": "not_verbatim_on_page"
+      },
+      {
+        "field": "comment_quote",
+        "reason": "not_verbatim_on_page"
+      }
+    ],
+    "FS-005334": [
+      {
+        "field": "disposition_quote",
+        "reason": "not_verbatim_on_page"
+      },
+      {
+        "field": "secondary_notes_quote",
+        "reason": "not_verbatim_on_page"
+      }
+    ],
+    "FS-007479": [
+      {
+        "field": "validation_quote",
+        "reason": "not_verbatim_on_page"
+      }
+    ],
+    "FS-010649": [
+      {
+        "field": "disposition_quote",
+        "reason": "not_verbatim_on_page"
+      }
+    ]
+  }
+}

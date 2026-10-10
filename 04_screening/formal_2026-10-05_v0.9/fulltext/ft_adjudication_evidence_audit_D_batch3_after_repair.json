@@ -1,0 +1,76 @@
+{
+  "stage": "adjudicate_D",
+  "selected": 12,
+  "missing_runs": [],
+  "invalid_runs": [],
+  "records_with_evidence_issues": 0,
+  "issue_counts": {},
+  "quote_coverage": {
+    "nonempty": 12,
+    "supported": 12,
+    "empty": 0
+  },
+  "coverage_by_record": {
+    "FS-000912": {
+      "nonempty": 1,
+      "supported": 1,
+      "empty": 0
+    },
+    "FS-002032": {
+      "nonempty": 1,
+      "supported": 1,
+      "empty": 0
+    },
+    "FS-002578": {
+      "nonempty": 1,
+      "supported": 1,
+      "empty": 0
+    },
+    "FS-005607": {
+      "nonempty": 1,
+      "supported": 1,
+      "empty": 0
+    },
+    "FS-006563": {
+      "nonempty": 1,
+      "supported": 1,
+      "empty": 0
+    },
+    "FS-006965": {
+      "nonempty": 1,
+      "supported": 1,
+      "empty": 0
+    },
+    "FS-007308": {
+      "nonempty": 1,
+      "supported": 1,
+      "empty": 0
+    },
+    "FS-007479": {
+      "nonempty": 1,
+      "supported": 1,
+      "empty": 0
+    },
+    "FS-007953": {
+      "nonempty": 1,
+      "supported": 1,
+      "empty": 0
+    },
+    "FS-009498": {
+      "nonempty": 1,
+      "supported": 1,
+      "empty": 0
+    },
+    "FS-010649": {
+      "nonempty": 1,
+      "supported": 1,
+      "empty": 0
+    },
+    "FS-013865": {
+      "nonempty": 1,
+      "supported": 1,
+      "empty": 0
+    }
+  },
+  "findings": {}
+}

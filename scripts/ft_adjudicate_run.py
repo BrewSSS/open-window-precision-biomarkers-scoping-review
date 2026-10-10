@@ -1,38 +1,9 @@
 #!/usr/bin/env python3
-"""D stand-in: full-text screening ADJUDICATION pass on the 39 B/C conflicts left after both
-override passes (commit a669cd8). Modelled on scripts/ft_override_run.py (same Codex plumbing:
---ids, --concurrency, resume, status file, strict output schema, per-record checkpoints), but this
-is the adjudicator's own THIRD independent read, not another override pass: it decides, it does
-not compare itself to a pre-fill.
+"""Stage 1 full-text conflict adjudication with Sol high effort.
 
-Input: the 39 rows of the `adjudicate` sheet of
-04_screening/formal_2026-10-05_v0.9/fulltext/ft_conflicts_for_D.xlsx (conflict_type, record_id,
-title, doi, B_disposition, B_code, B_comment, C_disposition, C_code, C_comment, text_file). Full
-text comes from fulltext/V_text/<record_id>.txt. B's and C's page-cited quotes (disposition,
-primary_code, age_rule_check, validation, secondary_notes, comment) come from each side's override
-run output -- fulltext/ai_prefill/runs/override_sol/<record_id>.json (B) and
-runs/override_claude_sonnet/<record_id>.json (C) -- which is each reviewer's own final,
-independent, already-quote-cited position (not the first-pass pre-fill); these quotes are shown to
-D alongside the xlsx's B_/C_ disposition/code/comment columns, clearly labelled and separated.
-
-Steps per record:
-  1. Read the full text and build labelled B-block / C-block (disposition, code, age rule +
-     quote, validation + quote, secondary_notes + quote, comment + quote).
-  2. Build one user message per ft_adjudication_prompt_v1.md.
-  3. Call scripts/codex_stream_call.py once (`codex exec`, --model gpt-6-sol --effort high,
-     --output-schema ft_adjudication_schema_v1.json), validate, retry once on failure with the
-     validation errors appended.
-  4. Write fulltext/ai_prefill/runs/adjudicate_sol/<record_id>.json (git-ignored: quotes the full
-     text) and append one entry to the committable
-     fulltext/ai_prefill/ft_adjudication_run_manifest.json.
-
-Resumable: a record already present in runs/adjudicate_sol/<id>.json with valid=True is skipped
-unless --force. Concurrency capped at 6 per this task's brief (ThreadPoolExecutor); each
-codex_stream_call.py subprocess is hard-capped at --timeout seconds (default 900).
-
-Usage:
-  python3 scripts/ft_adjudicate_run.py --status-file /tmp/triage/STATUS_FT_ADJUD_D.md
-  python3 scripts/ft_adjudicate_run.py --ids FS-000123,FS-000456 --force
+Select the batch conflict workbook with --conflicts. The prompt contains page-marked
+full text and both labelled override positions; D decides independently. Each call
+attempt is fsynced to the token ledger and each raw result is checkpointed.
 """
 from __future__ import annotations
 
@@ -46,7 +17,7 @@ import tempfile
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
-from threading import Lock
+from threading import Event, Lock
 
 from openpyxl import load_workbook
 
@@ -54,6 +25,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
 sys.path.insert(0, str(SCRIPTS))
 import triage_run as T  # noqa: E402  (reuse parse_prompt_file / render_user_message / validate_against_schema)
+import ft_run_common as C  # noqa: E402
 
 FULLTEXT_DIR = ROOT / "04_screening/formal_2026-10-05_v0.9/fulltext"
 CONFLICTS_XLSX = FULLTEXT_DIR / "ft_conflicts_for_D.xlsx"
@@ -79,9 +51,9 @@ B_FIELDS = {
 }
 
 
-def load_conflict_rows() -> dict[str, dict]:
+def load_conflict_rows(path: Path) -> dict[str, dict]:
     """record_id -> the 39 adjudicate-sheet rows (conflict_type, title, doi, B_*, C_*, text_file)."""
-    wb = load_workbook(CONFLICTS_XLSX, data_only=True)
+    wb = load_workbook(path, data_only=True)
     ws = wb["adjudicate"]
     col_idx = {c.value: c.column for c in ws[1]}
     out = {}
@@ -92,6 +64,7 @@ def load_conflict_rows() -> dict[str, dict]:
         row = {col: ws.cell(r, idx).value for col, idx in col_idx.items()}
         row["record_id"] = rid
         out[rid] = row
+    wb.close()
     return out
 
 
@@ -131,17 +104,12 @@ def _c_block(record_id: str, row: dict) -> str:
     lines = [f"disposition: {row.get('C_disposition') or ''}",
               f"primary_code: {row.get('C_code') or ''}"]
     if parsed:
-        for field in ("age_rule_check", "validation_element_confirmed", "secondary_notes", "comment"):
-            node = parsed.get(field) or {}
-            value = node.get("value", "")
-            quote = node.get("quote", "")
-            page = node.get("page", "")
-            qtxt = f'p.{page}: "{quote}"' if quote else "no quote"
-            lines.append(f"{field}: {value}  [{qtxt}]")
-        d_node = parsed.get("disposition") or {}
-        p_node = parsed.get("primary_code") or {}
-        lines.append(f"disposition_quote: p.{d_node.get('page','')}: \"{d_node.get('quote','')}\"" if d_node.get("quote") else "disposition_quote: no quote")
-        lines.append(f"primary_code_quote: p.{p_node.get('page','')}: \"{p_node.get('quote','')}\"" if p_node.get("quote") else "primary_code_quote: no quote")
+        for field, (vkey, qkey) in B_FIELDS.items():
+            if field in ("disposition", "primary_code"):
+                continue
+            lines.append(f"{field}: {parsed.get(vkey, '')}  [{parsed.get(qkey, '') or 'no quote'}]")
+        lines.append(f"disposition_quote: {parsed.get('disposition_quote', '') or 'no quote'}")
+        lines.append(f"primary_code_quote: {parsed.get('primary_code_quote', '') or 'no quote'}")
     else:
         lines.append(f"comment: {row.get('C_comment') or ''}")
         lines.append("(no override-run quote file found for C; xlsx comment only)")
@@ -151,14 +119,34 @@ def _c_block(record_id: str, row: dict) -> str:
 def reviewer_blocks(record_id: str, row: dict) -> str:
     return (
         "\n\n================================================================\n"
-        "REVIEWER B's final position (independent full-text re-read, GPT-6 Sol high effort):\n"
+        "REVIEWER B's final position (independent full-text re-read):\n"
         f"{_b_block(record_id, row)}\n"
         "================================================================\n"
-        "REVIEWER C's final position (independent full-text re-read, Claude Sonnet headless high effort):\n"
+        "REVIEWER C's final position (independent full-text re-read):\n"
         f"{_c_block(record_id, row)}\n"
         "================================================================\n"
         f"conflict_type: {row.get('conflict_type') or ''}\n"
     )
+
+
+def quote_repair_block(record_id: str, prior: dict, issues: list[dict]) -> str:
+    """Keep D's own decision visible while repairing only unsupported evidence."""
+    parsed = prior["parsed"]
+    values = {key: parsed.get(key) for key in
+              ("final_disposition", "final_primary_code", "decisive_evidence",
+               "which_reviewer_matched", "n_bouts_sampled", "baseline_comparator_present",
+               "D_note", "confidence", "note")}
+    reasons = [{"field": issue["field"], "reason": issue["reason"]} for issue in issues]
+    return ("\n\n===== D'S OWN PRIOR DECISION: EXACT QUOTE REPAIR =====\n"
+            "Preserve D's adjudication fields unless an exact passage in the supplied full text "
+            "clearly changes the scientific decision. The audit found unsupported decisive_evidence. "
+            "Replace it with one contiguous, at-most-25-word verbatim passage from the cited page; "
+            "keep OCR spelling and punctuation exactly as printed. Do not invent a quotation. "
+            "Return the complete D JSON schema.\n"
+            f"record_id: {record_id}\n"
+            f"prior_values: {C.safe_full_text(json.dumps(values, ensure_ascii=False))}\n"
+            f"audit_issues: {json.dumps(reasons, ensure_ascii=False)}\n"
+            "===== END EXACT QUOTE REPAIR =====\n")
 
 
 def sol_prompt_text(system_prompt: str, user_template: str, row: dict, repair_note: str = "") -> str:
@@ -174,16 +162,22 @@ def call_sol(tag: str, prompt_text: str, model: str, effort: str, timeout: float
     out_file = tmp_dir / f"{tag}_out.json"
     prompt_file.write_text(prompt_text, encoding="utf-8")
     t0 = time.time()
-    proc = subprocess.run(
-        [sys.executable, str(SCRIPTS / "codex_stream_call.py"), "--prompt-file", str(prompt_file),
-         "--out", str(out_file), "--model", model, "--effort", effort, "--schema", str(SCHEMA_PATH),
-         "--timeout", str(timeout)],
-        capture_output=True, text=True, timeout=timeout + 60)
+    try:
+        proc = subprocess.run(
+            [sys.executable, str(SCRIPTS / "codex_stream_call.py"), "--prompt-file", str(prompt_file),
+             "--out", str(out_file), "--model", model, "--effort", effort, "--schema", str(SCHEMA_PATH),
+             "--timeout", str(timeout)],
+            capture_output=True, text=True, timeout=timeout + 60)
+    except (subprocess.TimeoutExpired, OSError) as exc:
+        return {"ok": False, "error": type(exc).__name__, "wall_s": round(time.time() - t0, 1)}
     wall = round(time.time() - t0, 1)
     if not out_file.exists():
-        return {"ok": False, "error": f"codex_stream_call.py produced no output (rc={proc.returncode}): "
-                                       f"{proc.stderr[-500:]}", "wall_s": wall}
-    res = json.loads(out_file.read_text(encoding="utf-8"))
+        return {"ok": False, "error": f"model call produced no output (rc={proc.returncode})",
+                "wall_s": wall}
+    try:
+        res = json.loads(out_file.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return {"ok": False, "error": "malformed model-call result", "wall_s": wall}
     res["wall_s"] = wall
     return res
 
@@ -191,51 +185,73 @@ def call_sol(tag: str, prompt_text: str, model: str, effort: str, timeout: float
 def process_one(record_id: str, conflict_row: dict, system_prompt: str, user_template: str,
                  schema: dict, args, tmp_dir: Path) -> dict:
     out_path = RUNS_DIR / f"{record_id}.json"
-    if out_path.exists() and not args.force:
+    prior = None
+    if out_path.exists():
         try:
             prior = json.loads(out_path.read_text(encoding="utf-8"))
-            if prior.get("valid"):
-                return {**prior, "skipped_resume": True}
         except (json.JSONDecodeError, OSError):
             pass
+    if out_path.exists() and not args.force:
+        if prior and prior.get("valid") and prior.get("prompt_sha256") == args.prompt_sha256 \
+                and prior.get("schema_sha256") == args.schema_sha256 \
+                and prior.get("sanitizer_sha256") == args.sanitizer_sha256:
+            return {**prior, "skipped_resume": True}
+    if args.quote_repair_report and (not prior or not prior.get("valid")):
+        return {"record_id": record_id, "valid": False,
+                "error": "quote repair requires a valid prior D adjudication"}
+    if args.quota_stop.is_set():
+        return {"record_id": record_id, "valid": False, "error": "quota stop; no call made"}
 
     text_path = TEXT_DIR / f"{record_id}.txt"
     if not text_path.is_file():
         out = {"record_id": record_id, "model": args.model, "effort": args.effort, "attempts": 0,
-               "ok": False, "valid": False, "validation_errors": [f"no full text at {text_path}"],
+               "ok": False, "valid": False, "validation_errors": ["no full text for selected record"],
                "parsed": None}
-        RUNS_DIR.mkdir(parents=True, exist_ok=True)
-        out_path.write_text(json.dumps(out, indent=1, ensure_ascii=False), encoding="utf-8")
+        C.write_json_checkpoint(out_path, out)
         return out
     full_text = text_path.read_text(encoding="utf-8")
 
-    row = {"record_id": record_id, "title": conflict_row.get("title") or "", "journal": "",
+    row = {"record_id": record_id, "title": "", "journal": "",
            "year": "",
-           "abstract": "FULL TEXT (page-marked):\n" + full_text + reviewer_blocks(record_id, conflict_row)}
+           "abstract": "FULL TEXT (page-marked):\n" + C.safe_full_text(full_text)
+                       + C.safe_full_text(reviewer_blocks(record_id, conflict_row))}
+    if args.quote_repair_report:
+        row["abstract"] += quote_repair_block(record_id, prior, args.repair_findings[record_id])
 
     prompt1 = sol_prompt_text(system_prompt, user_template, row)
+    input_sha256 = hashlib.sha256(prompt1.encode("utf-8")).hexdigest()
     res = call_sol(record_id, prompt1, args.model, args.effort, args.timeout, tmp_dir)
-    errs = T.validate_against_schema(res.get("parsed"), schema) if res.get("parsed") is not None else ["no parsed JSON"]
+    errs = C.validation_errors(res, schema, T.validate_against_schema)
+    stage = "adjudicate_D_quote_repair" if args.quote_repair_report else "adjudicate_D"
+    C.append_attempt(args.ledger, record_id, stage, res, not errs)
+    C.remove_call_temp(tmp_dir, record_id)
+    if C.is_quota_error(res):
+        args.quota_stop.set()
     attempts = 1
-    if errs and res.get("text") is not None:
+    if errs and not args.quota_stop.is_set():
         repair = ("Your previous reply did not validate against the required JSON schema. "
                   "Reply again with ONLY one corrected JSON object for this same report, fixing "
                   f"every listed error. Errors: {errs[:5]}")
         prompt2 = sol_prompt_text(system_prompt, user_template, row, repair)
         res2 = call_sol(f"{record_id}_retry", prompt2, args.model, args.effort, args.timeout, tmp_dir)
-        errs2 = T.validate_against_schema(res2.get("parsed"), schema) if res2.get("parsed") is not None else ["no parsed JSON"]
+        errs2 = C.validation_errors(res2, schema, T.validate_against_schema)
+        C.append_attempt(args.ledger, record_id, stage + "_retry", res2, not errs2)
+        C.remove_call_temp(tmp_dir, f"{record_id}_retry")
+        if C.is_quota_error(res2):
+            args.quota_stop.set()
         attempts = 2
         if res2.get("parsed") is not None:
             res, errs = res2, errs2
 
     valid = not errs and res.get("parsed") is not None
     out = {"record_id": record_id, "model": args.model, "effort": args.effort, "attempts": attempts,
+           "prompt_sha256": args.prompt_sha256, "schema_sha256": args.schema_sha256,
+           "sanitizer_sha256": args.sanitizer_sha256,
+           "input_sha256": input_sha256, "quote_repair": bool(args.quote_repair_report),
            "ok": res.get("ok"), "valid": valid, "validation_errors": errs,
            "seconds": res.get("t_completed_s"), "wall_s": res.get("wall_s"), "usage": res.get("usage"),
-           "error": res.get("error"), "parsed": res.get("parsed"),
-           "conflict_row": {k: v for k, v in conflict_row.items() if k != "text_file"}}
-    RUNS_DIR.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(json.dumps(out, indent=1, ensure_ascii=False), encoding="utf-8")
+           "error": res.get("error"), "parsed": res.get("parsed")}
+    C.write_json_checkpoint(out_path, out)
     return out
 
 
@@ -260,8 +276,10 @@ def write_status(path: Path, done: int, total: int, started: float, n_errors: in
 
 
 def main(argv=None) -> int:
+    global RUNS_DIR, OVERRIDE_DIR_B, OVERRIDE_DIR_C
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--ids", help="comma-separated record_ids (override the full 39-row selection)")
+    ap.add_argument("--ids-file", type=Path, help="one record_id per line")
     ap.add_argument("--model", default="gpt-6-sol")
     ap.add_argument("--effort", default="high")
     ap.add_argument("--timeout", type=float, default=900.0, help="hard cap per codex call, seconds")
@@ -270,14 +288,40 @@ def main(argv=None) -> int:
     ap.add_argument("--status-file", type=Path, default=Path("/tmp/triage/STATUS_FT_ADJUD_D.md"))
     ap.add_argument("--status-every-s", type=float, default=30.0)
     ap.add_argument("--prompt-path", type=Path, default=DEFAULT_PROMPT_PATH)
+    ap.add_argument("--conflicts", type=Path, default=CONFLICTS_XLSX)
+    ap.add_argument("--override-dir-b", type=Path, default=OVERRIDE_DIR_B)
+    ap.add_argument("--override-dir-c", type=Path, default=AI_PREFILL_DIR / "runs/override_sol_c")
+    ap.add_argument("--runs-dir", type=Path, help="raw adjudication output directory")
+    ap.add_argument("--ledger", type=Path, default=FULLTEXT_DIR / "token_ledger_batch3.csv")
+    ap.add_argument("--quote-repair-report", type=Path,
+                    help="read-only D evidence audit JSON; requires --force and --ids-file")
     args = ap.parse_args(argv)
+    if args.model != "gpt-6-sol" or args.effort != "high":
+        ap.error("Stage 1 requires gpt-6-sol with high effort")
+    args.quota_stop = Event()
+    args.repair_findings = {}
+    if args.quote_repair_report:
+        if not args.force or not args.ids_file:
+            ap.error("quote repair requires --force and --ids-file")
+        report = json.loads(args.quote_repair_report.read_text(encoding="utf-8"))
+        if report.get("stage") != "adjudicate_D":
+            ap.error("quote repair report stage must be adjudicate_D")
+        args.repair_findings = report.get("findings") or {}
+    RUNS_DIR = args.runs_dir or AI_PREFILL_DIR / "runs/adjudicate_sol_batch3"
+    OVERRIDE_DIR_B = args.override_dir_b
+    OVERRIDE_DIR_C = args.override_dir_c
 
-    conflicts = load_conflict_rows()
-    if args.ids:
-        ids = [i.strip() for i in args.ids.split(",")]
+    conflicts = load_conflict_rows(args.conflicts)
+    try:
+        ids = C.selected_ids(args.ids, args.ids_file)
+    except ValueError as exc:
+        ap.error(str(exc))
+    if ids:
         missing = [i for i in ids if i not in conflicts]
         if missing:
-            sys.exit(f"--ids record(s) not found in {CONFLICTS_XLSX.name} adjudicate sheet: {missing}")
+            sys.exit(f"selected record(s) not found in {args.conflicts.name} adjudicate sheet: {missing}")
+        if args.quote_repair_report and any(i not in args.repair_findings for i in ids):
+            ap.error("every selected quote-repair ID must appear in the audit findings")
     else:
         ids = sorted(conflicts)
     if not ids:
@@ -287,6 +331,9 @@ def main(argv=None) -> int:
     schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
     prompt_sha256 = hashlib.sha256(args.prompt_path.read_bytes()).hexdigest()
     schema_sha256 = hashlib.sha256(SCHEMA_PATH.read_bytes()).hexdigest()
+    args.prompt_sha256 = prompt_sha256
+    args.schema_sha256 = schema_sha256
+    args.sanitizer_sha256 = hashlib.sha256((SCRIPTS / "ft_run_common.py").read_bytes()).hexdigest()
 
     started = time.time()
     last_status = 0.0
@@ -303,7 +350,27 @@ def main(argv=None) -> int:
                 out = fut.result()
             except Exception as exc:  # noqa: BLE001 - keep going, record the failure
                 out = {"record_id": rid, "ok": False, "valid": False, "error": f"{type(exc).__name__}: {exc}"}
+                C.write_json_checkpoint(RUNS_DIR / f"{rid}.json", out)
             results.append(out)
+            with MANIFEST_LOCK:
+                C.upsert_manifest_entry(
+                    RUN_MANIFEST_PATH,
+                    {"record_id": rid, "model": args.model, "effort": args.effort,
+                     "family": "batch3", "prompt_sha256": prompt_sha256,
+                     "schema_sha256": schema_sha256,
+                     "sanitizer_sha256": args.sanitizer_sha256,
+                     "input_sha256": out.get("input_sha256"),
+                     "quote_repair": bool(args.quote_repair_report),
+                     "seconds": out.get("seconds"), "tokens": out.get("usage"),
+                     "valid": bool(out.get("valid"))},
+                    ("record_id", "family"),
+                    {"generator": "scripts/ft_adjudicate_run.py", "model": args.model,
+                     "effort": args.effort, "prompt_sha256": prompt_sha256,
+                     "schema_sha256": schema_sha256},
+                    {"family": "prior"})
+            write_status(args.status_file, len(results), len(ids), started,
+                         sum(1 for r in results if not r.get("valid")),
+                         {"phase": "quota_stopped" if args.quota_stop.is_set() else "running"})
             disp = (out.get("parsed") or {}).get("final_disposition") if out.get("valid") else None
             print(f"  {rid}: valid={out.get('valid')} attempts={out.get('attempts')} "
                   f"final_disposition={disp} resumed={out.get('skipped_resume', False)}", flush=True)
@@ -316,8 +383,13 @@ def main(argv=None) -> int:
     for out in results:
         manifest_entries.append({
             "record_id": out["record_id"], "model": out.get("model", args.model),
-            "effort": out.get("effort", args.effort), "prompt_sha256": prompt_sha256,
-            "schema_sha256": schema_sha256, "seconds": out.get("seconds"), "tokens": out.get("usage"),
+            "effort": out.get("effort", args.effort), "family": "batch3",
+            "prompt_sha256": prompt_sha256,
+            "schema_sha256": schema_sha256,
+            "sanitizer_sha256": out.get("sanitizer_sha256", args.sanitizer_sha256),
+            "input_sha256": out.get("input_sha256"),
+            "quote_repair": bool(args.quote_repair_report),
+            "seconds": out.get("seconds"), "tokens": out.get("usage"),
             "valid": bool(out.get("valid")),
             "final_disposition": (out.get("parsed") or {}).get("final_disposition"),
             "which_reviewer_matched": (out.get("parsed") or {}).get("which_reviewer_matched"),
@@ -326,14 +398,14 @@ def main(argv=None) -> int:
         existing = []
         if RUN_MANIFEST_PATH.exists():
             existing = json.loads(RUN_MANIFEST_PATH.read_text(encoding="utf-8")).get("entries", [])
-        done_ids = {e["record_id"] for e in manifest_entries}
-        keep = [e for e in existing if e["record_id"] not in done_ids]
+        done_ids = {(e["record_id"], e.get("family", "prior")) for e in manifest_entries}
+        keep = [e for e in existing if (e["record_id"], e.get("family", "prior")) not in done_ids]
         manifest = {"generated_at_utc": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
                     "generator": "scripts/ft_adjudicate_run.py", "model": args.model, "effort": args.effort,
                     "prompt_sha256": prompt_sha256, "schema_sha256": schema_sha256,
                     "n_records": len(keep) + len(manifest_entries), "entries": keep + manifest_entries}
         AI_PREFILL_DIR.mkdir(parents=True, exist_ok=True)
-        RUN_MANIFEST_PATH.write_text(json.dumps(manifest, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        C.write_json_checkpoint(RUN_MANIFEST_PATH, manifest)
 
     n_valid = sum(1 for r in results if r.get("valid"))
     n_errors = sum(1 for r in results if not r.get("valid"))

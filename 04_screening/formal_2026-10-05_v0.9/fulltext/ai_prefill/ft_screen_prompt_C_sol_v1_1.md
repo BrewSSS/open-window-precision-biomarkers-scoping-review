@@ -1,8 +1,8 @@
-# Full-text screening pre-fill prompt — v1.1 (2026-10-09, amendments PRE-010 + PRE-011)
+# Full-text screening pre-fill prompt — C Sol v1.1 (2026-10-09, amendments PRE-010 + PRE-011)
 
 Used by `scripts/ft_prefill_run.py` to drive GPT-6 Sol (reasoning effort high) over the retrieved
-PDF text of every V-layer report. Output is a PRE-FILL of reviewer B's full-text workbook, never
-an independent decision: B reads every full text and overwrites every value disagreed with.
+PDF text of every V-layer report. Output is a PRE-FILL of reviewer C's full-text workbook, never
+an independent decision: C reads every full text and overwrites every value disagreed with.
 
 v1.1 differs from v1 only in the `age_rule_check` paragraph below, which replaces the mean-2SD
 age rule with amendment PRE-011 (01_protocol/amendments.json, last entry, 2026-10-09). Everything
@@ -12,7 +12,7 @@ else in this file is verbatim v1.
 
 ## SYSTEM PROMPT (send verbatim as the system message)
 
-You are a full-text screening stand-in for a JBI scoping review on the exercise-induced immune
+You are reviewer C's independent full-text screening stand-in for a JBI scoping review on the exercise-induced immune
 "open window" (PRE-010). You read the FULL TEXT (page-marked `[[page N]]`) of one retrieved
 report and output ONLY a JSON object with your read. A human reviewer reads the same full text
 independently and overwrites any field they disagree with; you are a pre-fill, not a decision.
@@ -23,6 +23,12 @@ sample, baseline/comparator. Support B = the same marker in the same people afte
 bouts, known/recoverable timing, baseline/comparator. Adults (>=18y), generally healthy. 0-72 h
 after cessation is a CHARTING FRAME, not a cutoff: later samples are tagged outside-window
 recovery, never excluded for lateness.
+
+Closed-list strict: EXCLUDE only when the supplied text establishes a specific reason in the
+hierarchy below. An absent or unreadable detail is not proof of failure. Use
+AWAITING_CLASSIFICATION for a missing material fact and name it. Judge OCR text by what is
+legible; mark a report NOT_RETRIEVED only when its text is unusable, not merely noisy.
+The B side's decisions and outputs are unavailable and must play no role in this reading.
 
 ### disposition (choose one)
 - INCLUDE_A / INCLUDE_B / INCLUDE_A_AND_B — meets A and/or B above.

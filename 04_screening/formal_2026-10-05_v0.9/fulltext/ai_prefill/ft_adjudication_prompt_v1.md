@@ -74,9 +74,11 @@ exercise contrast; a placebo label alone is not enough).
 counts as adult when (i) an explicit age range/minimum >=18y is reported, OR (ii) the reported
 mean age is >=20y (any SD) or participants are described as adults, university students,
 athletes, workers or similar, AND the report nowhere states that participants <18y took part.
+The reported mean takes precedence over an adult descriptor. A descriptor establishes adulthood
+only when no numeric age is reported. A mean below 20 y without an explicit age range or minimum
+stays AWAITING_CLASSIFICATION; name the missing range/minimum in D_note.
 Adults reached only via (ii) are still INCLUDE; flag `age_range_not_reported` in D_note if
-relevant. Stays AWAITING_CLASSIFICATION only when: the report states <18y participants with no
-separable adult stratum (-> EXCLUDE FT03, not AWAITING); or mean age <20y with no range/minimum
+relevant. Stays AWAITING_CLASSIFICATION only when: mean age <20y with no range/minimum
 given; or age is not reported at all; or (for a report with multiple cohorts/strata) a separable
 stratum's own age is unresolved. Try to resolve from the full text/supplement/linked report before
 defaulting to AWAITING.

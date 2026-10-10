@@ -1,25 +1,9 @@
 #!/usr/bin/env python3
-"""PRE-010 full-text screening OVERRIDE pass, step 2: write REVIEWER B's AI stand-in override
-decisions (fulltext/ai_prefill/runs/override_sol/<record_id>.json, written by
-scripts/ft_override_run.py) into fulltext/ft_screen_B.xlsx.
+"""Apply selected flat-schema B or C override runs to a full-text workbook.
 
-For every one of the 190 pre-filled records with a *valid* override run:
-  - backs up the current workbook to fulltext/_backup_override_B_2026-10-09/ (git-ignored;
-    one copy, made once per invocation unless --no-backup);
-  - overwrites your_disposition, your_primary_code, your_secondary_notes, your_age_rule_check,
-    your_validation_element_confirmed, your_comment with the override model's own independent
-    decision (never the pre-fill, even when the model says "agree" -- agreement is recorded, the
-    cell gets the override pass's own text so the workbook always reflects the latest read);
-  - appends 6 rows (one per column) to a new hidden `_override_B` sheet: record_id, column,
-    old_value (the pre-fill value that was in that cell before this write), new_value,
-    agree_or_override, quote, model, effort, prompt_sha, timestamp.
-
-Every other cell (every other row, every other column, the README/lists/_prefill sheets, sheet
-order, data validations) must be byte-for-byte unchanged; this script snapshots every cell of
-every sheet before writing and asserts a diff against that snapshot touches only the intended
-190x6 cells, exiting non-zero if anything else differs (prints the full diff either way).
-
-Usage: python3 scripts/ft_override_apply_to_workbook.py [--no-backup] [--dry-run]
+Requires --ids-file. Current nonempty decisions must match the latest recorded AI
+prefill or override. Hidden audit history is appended. Every write is backed up
+and checked with a full every-sheet cell diff.
 """
 from __future__ import annotations
 
@@ -27,13 +11,12 @@ import argparse
 import datetime as dt
 import hashlib
 import json
-import shutil
 import sys
 from pathlib import Path
 
 from openpyxl import load_workbook
 from openpyxl.cell.cell import ILLEGAL_CHARACTERS_RE
-from openpyxl.styles import Font, PatternFill
+import ft_workbook_write_common as safe
 
 ROOT = Path(__file__).resolve().parents[1]
 FULLTEXT_DIR = ROOT / "04_screening/formal_2026-10-05_v0.9/fulltext"
@@ -43,7 +26,6 @@ RUNS_DIR = AI_PREFILL_DIR / "runs/override_sol"
 PROMPT_PATH = AI_PREFILL_DIR / "ft_override_prompt_v1.md"
 SCHEMA_PATH = AI_PREFILL_DIR / "ft_override_schema_v1.json"
 WORKBOOKS_MANIFEST = FULLTEXT_DIR / "ft_workbooks_manifest.json"
-BACKUP_DIR = FULLTEXT_DIR / "_backup_override_B_2026-10-09"
 
 # workbook column -> (override-json field(s) used to build the new cell value)
 TARGET_COLUMNS = ["your_disposition", "your_primary_code", "your_secondary_notes",
@@ -76,7 +58,7 @@ def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def new_cell_values(parsed: dict) -> dict[str, str]:
+def new_cell_values(parsed: dict, reviewer: str = "B") -> dict[str, str]:
     """Build the six new your_* cell values from one validated override JSON."""
     disposition = clean(parsed["disposition"])
     primary_code = clean(parsed["primary_code"])
@@ -101,7 +83,7 @@ def new_cell_values(parsed: dict) -> dict[str, str]:
     note = clean(parsed.get("note") or "")
     if note:
         comment_parts.append(f"Note: {note}")
-    comment_parts.append(f"[B-override pass, confidence: {parsed.get('confidence', 'unclear')}]")
+    comment_parts.append(f"[{reviewer}-override pass, confidence: {parsed.get('confidence', 'unclear')}]")
     comment_cell = " | ".join(comment_parts)
 
     return {
@@ -114,40 +96,35 @@ def new_cell_values(parsed: dict) -> dict[str, str]:
     }
 
 
-def snapshot(ws) -> dict[tuple[int, int], object]:
-    return {(c.row, c.column): c.value for row in ws.iter_rows() for c in row}
-
-
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--no-backup", action="store_true")
     ap.add_argument("--dry-run", action="store_true", help="compute everything, print the diff/plan, write nothing")
+    ap.add_argument("--ids-file", type=Path, required=True)
+    ap.add_argument("--runs-dir", type=Path, default=RUNS_DIR)
+    ap.add_argument("--prompt-path", type=Path, default=PROMPT_PATH)
+    ap.add_argument("--workbook", type=Path, default=WORKBOOK_B)
+    ap.add_argument("--reviewer", choices=["B", "C"], default="B")
     args = ap.parse_args()
 
-    runs = {}
-    for p in sorted(RUNS_DIR.glob("FS-*.json")):
-        try:
-            run = json.loads(p.read_text(encoding="utf-8"))
-        except json.JSONDecodeError:
-            continue
-        if run.get("valid") and run.get("parsed"):
-            runs[run["record_id"]] = run
-    if not runs:
-        sys.exit(f"no valid override runs found under {RUNS_DIR}")
+    if args.no_backup:
+        sys.exit("--no-backup is disabled: every workbook write requires a backup")
+    selected_ids = safe.ids_from_file(args.ids_file)
+    safe.require_in_scope(selected_ids, FULLTEXT_DIR / "ft_scope_477_2026-10-09.csv")
+    runs = safe.valid_runs(args.runs_dir, selected_ids)
 
-    if not args.no_backup and not args.dry_run:
-        BACKUP_DIR.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(WORKBOOK_B, BACKUP_DIR / WORKBOOK_B.name)
-
-    prompt_sha = sha256(PROMPT_PATH)
+    prompt_sha = sha256(args.prompt_path)
     timestamp = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
     model_tag = "gpt-6-sol"
     effort_tag = "high"
 
-    wb = load_workbook(WORKBOOK_B)
+    wb = load_workbook(args.workbook)
     ws = wb["screen"]
     col_idx = {c.value: c.column for c in ws[1]}
-    before = {name: snapshot(wb[name]) for name in wb.sheetnames}
+    before = safe.snapshot(wb)
+    prefill_values = safe.latest_audit_values(wb, "_prefill", "value")
+    audit_name = f"_override_{args.reviewer}"
+    prior_override = safe.latest_audit_values(wb, audit_name, "new_value")
 
     row_of = {}
     for r in range(2, ws.max_row + 1):
@@ -155,8 +132,7 @@ def main() -> int:
         if rid:
             row_of[rid] = r
 
-    override_log_rows = [["record_id", "column", "old_value", "new_value", "agree_or_override",
-                          "quote", "model", "effort", "prompt_sha256", "timestamp"]]
+    override_log_rows = []
     n_written = 0
     n_no_row = 0
     n_field_overrides = 0
@@ -169,10 +145,21 @@ def main() -> int:
             n_no_row += 1
             continue
         parsed = run["parsed"]
-        new_vals = new_cell_values(parsed)
+        new_vals = new_cell_values(parsed, args.reviewer)
+        evidence_issues = (run.get("evidence_audit") or {}).get("issues") or []
+        if evidence_issues:
+            fields = sorted({str(issue["field"]) for issue in evidence_issues})
+            new_vals["your_comment"] += (
+                " | HUMAN EVIDENCE CHECK REQUIRED: unsupported quote fields: "
+                + ", ".join(fields)
+                + ". These quotations have not passed the source-page audit."
+            )
         for col in TARGET_COLUMNS:
             c = col_idx[col]
             old_val = ws.cell(r, c).value
+            if old_val not in (None, "") and old_val not in (
+                    prefill_values.get((rid, col)), prior_override.get((rid, col))):
+                raise ValueError(f"override: nonempty {rid}/{col} differs from recorded AI provenance; human value preserved")
             new_val = new_vals[col]
             agreement = parsed.get(AGREEMENT_FIELD_OF[col], "")
             quote = clean(parsed.get(QUOTE_FIELD_OF[col]) or "")
@@ -182,59 +169,35 @@ def main() -> int:
                 n_field_overrides += 1
             elif agreement == "agree":
                 n_field_agree += 1
-            if not args.dry_run:
-                ws.cell(r, c).value = new_val
+            ws.cell(r, c).value = new_val
             expected_changed_cells.add((r, c))
         n_written += 1
 
+    audit_headers = ["record_id", "column", "old_value", "new_value", "agree_or_override",
+                     "quote", "model", "effort", "prompt_sha256", "timestamp"]
+    if args.reviewer == "C" and audit_name in wb and wb[audit_name].cell(1, 9).value == "prompt_sha":
+        audit_headers[8] = "prompt_sha"
+    safe.append_audit(wb, audit_name, audit_headers, override_log_rows)
+    verification = safe.guarded_save(args.workbook, wb, before, {"screen": expected_changed_cells},
+                                     audit_name, len(override_log_rows), args.dry_run)
     if args.dry_run:
-        print(json.dumps({"dry_run": True, "n_records_with_valid_run": len(runs),
-                          "n_written": n_written, "n_no_row": n_no_row,
-                          "n_field_overrides": n_field_overrides, "n_field_agree": n_field_agree},
-                         ensure_ascii=False))
+        print(json.dumps({"n_written": n_written, **verification}, ensure_ascii=False))
         return 0
-
-    if "_override_B" in wb.sheetnames:
-        del wb["_override_B"]
-    os_ = wb.create_sheet("_override_B")
-    for row in override_log_rows:
-        os_.append(row)
-    os_["A1"].font = Font(bold=True)
-    for cell in os_[1]:
-        cell.fill = PatternFill("solid", fgColor="DDDDDD")
-    os_.sheet_state = "hidden"
-
-    wb.save(WORKBOOK_B)
-
-    # ---- verify: diff every cell of every sheet against the pre-write snapshot ----
-    wb2 = load_workbook(WORKBOOK_B)
+    new_hash = verification["sha256_after"]
     unexpected_diffs = []
-    for name in before:
-        after_snap = snapshot(wb2[name])
-        before_snap = before[name]
-        all_keys = set(before_snap) | set(after_snap)
-        for key in all_keys:
-            bv, av = before_snap.get(key), after_snap.get(key)
-            if bv == av:
-                continue
-            if name == "screen" and key in expected_changed_cells:
-                continue
-            unexpected_diffs.append({"sheet": name, "cell": key, "before": bv, "after": av})
-
-    new_hash = sha256(WORKBOOK_B)
+    if args.workbook.resolve() != (FULLTEXT_DIR / f"ft_screen_{args.reviewer}.xlsx").resolve():
+        print(json.dumps({"n_written": n_written, **verification}, ensure_ascii=False))
+        return 0
     manifest = json.loads(WORKBOOKS_MANIFEST.read_text(encoding="utf-8")) if WORKBOOKS_MANIFEST.exists() else {}
-    manifest.setdefault("workbooks", {}).setdefault("B", {})["sha256_after_override"] = new_hash
-    manifest["override_B"] = {
+    manifest.setdefault("workbooks", {}).setdefault(args.reviewer, {})["sha256_after_override"] = new_hash
+    manifest[f"override_{args.reviewer}"] = {
         "generated_at": timestamp, "script": "scripts/ft_override_apply_to_workbook.py",
         "model": model_tag, "effort": effort_tag, "prompt_sha256": prompt_sha,
         "schema_sha256": sha256(SCHEMA_PATH),
         "n_records_with_valid_run": len(runs), "n_written": n_written, "n_no_row": n_no_row,
         "n_field_overrides": n_field_overrides, "n_field_agree": n_field_agree,
         "n_unexpected_diffs": len(unexpected_diffs),
-        "note": "Writes the override pass's own independently-derived value into every target "
-                "cell for all 190 pre-filled records (agree or override); agreement is recorded "
-                "per field in the hidden _override_B sheet, not left as the untouched pre-fill "
-                "text. The hidden _prefill sheet (original AI pre-fill) is unchanged.",
+        "note": "Writes selected override decisions after checking current values against AI provenance; audit history is appended.",
     }
     WORKBOOKS_MANIFEST.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
