@@ -119,6 +119,119 @@ CONFIDENCE_VALUES = {'high', 'medium', 'low'}
 LOAD_REPORT_NAME = 'load_report.json'
 SCRIPT_VERSION = '1.2.0'
 
+# The formal run stores the extraction under ``parsed``. These are semantic aliases
+# from its revised schema to existing workbook columns; all other revised fields
+# require their own dictionary/template columns. Keep this map explicit so a new
+# field cannot disappear merely because the older workbook lacks its header.
+V11_FIELD_MAP = {
+    ('measurements', 'analyte_id.analyte_raw'): ('analyte_id.original_label',),
+    ('measurements', 'analyte_id.analyte_canonical'): ('analyte_id.standard_name',),
+    ('sample_sets', 'time_text_raw'): ('timepoint_as_reported',),
+    ('sample_sets', 'time_value_min'): ('time_from_exercise_end_value', 'time_unit'),
+}
+V11_SCHEMA_PATH = ROOT / '05_extraction/ai_extraction/extract_schema_v1_1.json'
+
+
+def source_version(data: dict) -> str:
+    """Recognize revised extraction by its run family or distinctive fields."""
+    if 'v1_1' in str(data.get('family') or ''):
+        return 'v1.1'
+    parsed = data.get('parsed') if isinstance(data.get('parsed'), dict) else data
+    tables = parsed.get('tables') if isinstance(parsed, dict) else None
+    if isinstance(tables, dict):
+        for table, fields in (('sample_sets', {'time_text_raw', 'time_value_min', 'time_range_min',
+                                               'matrix_other_text', 'exercise_mode_other_text'}),
+                              ('precision_validation', {'evidence_basis', 'clinical_endpoint_other_text'}),
+                              ('study_families', {'design_other_text'}),
+                              ('cohorts', {'training_status_other_text'})):
+            rows = tables.get(table)
+            if isinstance(rows, list) and any(isinstance(row, dict) and fields.intersection(row)
+                                              for row in rows):
+                return 'v1.1'
+        for row in tables.get('measurements', []) if isinstance(tables.get('measurements'), list) else []:
+            analyte = row.get('analyte_id') if isinstance(row, dict) else None
+            if isinstance(analyte, dict) and ('analyte_raw' in analyte or 'analyte_canonical' in analyte):
+                return 'v1.1'
+    return 'v1'
+
+
+def schema_leaf_fields(properties: dict, prefix: str = '') -> set[str]:
+    """Return the flattened row fields described by an output schema."""
+    fields = set()
+    for key, spec in properties.items():
+        if key.startswith('_'):
+            continue
+        name = f'{prefix}.{key}' if prefix else key
+        if isinstance(spec, dict) and isinstance(spec.get('properties'), dict):
+            fields.update(schema_leaf_fields(spec['properties'], name))
+        else:
+            fields.add(name)
+    return fields
+
+
+def v11_missing_destinations(schema: dict) -> dict[str, list[str]]:
+    """Audit every revised-schema leaf, including fields not used in today's rows."""
+    revised = json.loads(V11_SCHEMA_PATH.read_text(encoding='utf-8'))
+    table_specs = revised['properties']['tables']['properties']
+    missing = {}
+    for table, spec in table_specs.items():
+        available = set(schema.get(table, {}).get('fields', {}))
+        absent = []
+        for field in sorted(schema_leaf_fields(spec['items']['properties'])):
+            targets = V11_FIELD_MAP.get((table, field), (field,))
+            if any(target not in available for target in targets):
+                absent.append(field)
+        if absent:
+            missing[table] = absent
+    return missing
+
+
+def adapt_v11_row(table: str, row: dict) -> dict:
+    """Apply only the declared lossless aliases after compatibility is confirmed."""
+    if not isinstance(row, dict):
+        return row
+    row = dict(row)
+    if table == 'measurements' and isinstance(row.get('analyte_id'), dict):
+        analyte = dict(row['analyte_id'])
+        for old, new in (('analyte_raw', 'original_label'), ('analyte_canonical', 'standard_name')):
+            if old in analyte:
+                analyte[new] = analyte.pop(old)
+        row['analyte_id'] = analyte
+    elif table == 'sample_sets':
+        if 'time_text_raw' in row:
+            row['timepoint_as_reported'] = row.pop('time_text_raw')
+        if 'time_value_min' in row:
+            value = row.pop('time_value_min')
+            row['time_from_exercise_end_value'] = value
+            row['time_unit'] = 'min' if value is not None else None
+    return row
+
+
+def read_input_files(files: list[Path], schema: dict) -> list[tuple[Path, dict, str]]:
+    """Preflight schema compatibility before any workbook cells can be changed."""
+    prepared = []
+    revised_seen = False
+    for path in files:
+        try:
+            data = json.loads(path.read_text(encoding='utf-8'))
+        except (OSError, json.JSONDecodeError):
+            prepared.append((path, None, 'v1'))  # preserve legacy per-file error reporting
+            continue
+        if not isinstance(data, dict):
+            prepared.append((path, data, 'v1'))
+            continue
+        version = source_version(data)
+        revised_seen |= version == 'v1.1'
+        parsed = data.get('parsed') if isinstance(data.get('parsed'), dict) else data
+        prepared.append((path, parsed, version))
+    if revised_seen:
+        missing = v11_missing_destinations(schema)
+        if missing:
+            detail = '; '.join(f'{table}: {", ".join(fields)}' for table, fields in missing.items())
+            raise SystemExit('v1.1 extraction cannot be loaded losslessly: data_dictionary.json / '
+                             'extraction_template.json have no destination for ' + detail)
+    return prepared
+
 
 # ---------------------------------------------------------------------------------------------
 # Schema (single source: data_dictionary.json, via build_workbooks.extraction_fields)
@@ -342,13 +455,15 @@ def process_table_row(wb, schema: dict, counters: dict, table: str, row: dict, r
     rep_summary['rows_per_table'][table] = rep_summary['rows_per_table'].get(table, 0) + 1
 
 
-def process_report_file(wb, schema: dict, counters: dict, path: Path, reviewer: str) -> tuple[str, dict]:
+def process_report_file(wb, schema: dict, counters: dict, path: Path, reviewer: str,
+                        data: dict | None = None, version: str = 'v1') -> tuple[str, dict]:
     rep_summary = new_report_summary()
-    try:
-        data = json.loads(path.read_text(encoding='utf-8'))
-    except (OSError, json.JSONDecodeError) as e:
-        rep_summary['errors'].append(f'could not parse {path.name}: {e}')
-        return path.stem, rep_summary
+    if data is None:
+        try:
+            data = json.loads(path.read_text(encoding='utf-8'))
+        except (OSError, json.JSONDecodeError) as e:
+            rep_summary['errors'].append(f'could not parse {path.name}: {e}')
+            return path.stem, rep_summary
     if not isinstance(data, dict):
         rep_summary['errors'].append(f'{path.name}: top level is not an object')
         return path.stem, rep_summary
@@ -376,6 +491,8 @@ def process_report_file(wb, schema: dict, counters: dict, path: Path, reviewer: 
             rep_summary['errors'].append(f'{table}: "rows" is not a list')
             continue
         for row in rows:
+            if version == 'v1.1':
+                row = adapt_v11_row(table, row)
             process_table_row(wb, schema, counters, table, row, report_id, rep_summary)
 
     # README per-report minutes / unresolved_questions
@@ -422,10 +539,15 @@ def process_report_file(wb, schema: dict, counters: dict, path: Path, reviewer: 
 # ---------------------------------------------------------------------------------------------
 def run_load(json_dir: Path, workbook_path: Path, reviewer: str, dry_run: bool, out_path: Path | None) -> dict:
     schema = load_schema()
+    files = sorted(p for p in json_dir.glob('*.json') if p.name != LOAD_REPORT_NAME)
+    prepared = read_input_files(files, schema)
     wb = openpyxl.load_workbook(workbook_path)
     for t in schema:
         if t not in wb.sheetnames:
             sys.exit(f'{workbook_path}: sheet {t!r} missing (not generated from the current data_dictionary.json?)')
+        headers = [wb[t].cell(row=1, column=i).value for i in range(1, len(schema[t]['order']) + 1)]
+        if headers != schema[t]['order']:
+            sys.exit(f'{workbook_path}: {t} headers differ from current data_dictionary.json; rebuild the workbook')
     if PILOT_NOTES_SHEET not in wb.sheetnames:
         sys.exit(f'{workbook_path}: sheet {PILOT_NOTES_SHEET!r} missing (not a charting-pilot workbook?)')
 
@@ -437,10 +559,9 @@ def run_load(json_dir: Path, workbook_path: Path, reviewer: str, dry_run: bool, 
     counters = {t: wb[t].max_row + 1 for t in schema}
     counters[PILOT_NOTES_SHEET] = wb[PILOT_NOTES_SHEET].max_row + 1
 
-    files = sorted(p for p in json_dir.glob('*.json') if p.name != LOAD_REPORT_NAME)
     reports = {}
-    for p in files:
-        ref_id, rep_summary = process_report_file(wb, schema, counters, p, reviewer)
+    for p, data, version in prepared:
+        ref_id, rep_summary = process_report_file(wb, schema, counters, p, reviewer, data, version)
         reports[ref_id] = rep_summary
 
     totals = {
@@ -672,6 +793,40 @@ def selftest() -> int:
         check('dry-run still reports the same findings',
               summary2['totals']['conflicts'] == summary['totals']['conflicts'] and
               summary2['totals']['violations'] == summary['totals']['violations'])
+
+        missing = v11_missing_destinations(load_schema())
+        required_missing = {
+            'study_families': {'design_other_text'},
+            'cohorts': {'training_status_other_text'},
+            'sample_sets': {'exercise_mode_other_text', 'matrix_other_text', 'time_range_min'},
+            'precision_validation': {'clinical_endpoint_other_text', 'evidence_basis'},
+        }
+        check('revised-schema preflight enumerates all absent workbook destinations',
+              all(set(missing.get(t, [])) == fields for t, fields in required_missing.items())
+              and set(missing) == set(required_missing))
+        check('revised aliases preserve raw/canonical analytes and minute time',
+              adapt_v11_row('measurements', {'analyte_id': {'analyte_raw': 'IL-6',
+                                                             'analyte_canonical': 'IL-6'}})['analyte_id'] ==
+              {'original_label': 'IL-6', 'standard_name': 'IL-6'}
+              and adapt_v11_row('sample_sets', {'time_text_raw': '2 h', 'time_value_min': 120}) ==
+              {'timepoint_as_reported': '2 h', 'time_from_exercise_end_value': 120, 'time_unit': 'min'})
+        revised_dir = tmp / 'revised'
+        revised_dir.mkdir()
+        revised = {'family': 'sol_v1_1_formal', 'parsed': {
+            'report_id': report_id, 'reference_id': 'R99',
+            'tables': {'precision_validation': [{'evidence_basis': 'stated_in_report'}]}}}
+        (revised_dir / 'R99.json').write_text(json.dumps(revised), encoding='utf-8')
+        before = workbook_path.read_bytes()
+        try:
+            run_load(revised_dir, workbook_path, 'B', dry_run=False, out_path=None)
+        except SystemExit as exc:
+            blocked = str(exc)
+        else:
+            blocked = ''
+        check('revised run wrapper refused before workbook or report write',
+              'evidence_basis' in blocked and 'time_range_min' in blocked
+              and workbook_path.read_bytes() == before
+              and not (revised_dir / LOAD_REPORT_NAME).exists())
 
         # locator_target_field fallback branch (no real table currently lacks a locator/notes
         # column, so this is unit-tested directly against a fabricated table shape)

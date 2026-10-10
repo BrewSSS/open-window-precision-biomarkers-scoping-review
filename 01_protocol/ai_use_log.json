@@ -956,6 +956,62 @@
      "sha256": "3b22aa95fc36832c54d9b21f59a7e76fa30b74445e9c3102f0c1e2d6de0d2e32"
     }
    ]
+  },
+  {
+   "date": "2026-10-11",
+   "task_id": "formal_extraction_load_preflight_and_prototype",
+   "tool": "Codex-assisted local scripts",
+   "task": "Add version-aware loader mapping, run formal-input dictionary preflight for B/C, and rebuild the provisional synthesis tables and figures.",
+   "records": 225,
+   "extraction_backend_model_calls": 0,
+   "coordinator_and_development_agent_usage": null,
+   "load_status": "blocked_dictionary",
+   "missing_destination_fields": 7,
+   "reviewers": {
+    "B": {
+     "workbooks_opened": 0,
+     "workbooks_written": 0,
+     "rows_loaded": 0
+    },
+    "C": {
+     "workbooks_opened": 0,
+     "workbooks_written": 0,
+     "rows_loaded": 0
+    }
+   },
+   "prototype_outputs": {
+    "csv_tables": 8,
+    "png_figures": 5,
+    "reports": 225,
+    "cohorts": 302,
+    "sample_sets": 3073,
+    "measurements": 5334,
+    "precision_validation": 4230
+   },
+   "verification": {
+    "loader_selftests_passed": 31,
+    "formal_input_preflight_reports": 225,
+    "workbook_access_guard_verified": true,
+    "source_json_unchanged": true,
+    "prototype_figures_visually_checked": 5,
+    "png_identity_and_software_metadata_absent": true,
+    "inventory_totals_match_extraction_audit": true
+   },
+   "summary_reference": "../05_extraction/ai_extraction/load_v1_1_summary_2026-10-10.md",
+   "preflight_reference": "../05_extraction/ai_extraction/load_v1_1_preflight_2026-10-10.json",
+   "prototype_reference": "../06_synthesis/prototype_2026-10-09/prototype_report.md",
+   "script_references": [
+    {
+     "file": "../scripts/load_ai_extraction.py",
+     "sha256": "b8eb71cabaf6b583d980ce4a322b8fa4fcc4c51e0da7044d8d195b5791adeb47"
+    },
+    {
+     "file": "../06_synthesis/prototype_2026-10-09/build_prototype.py",
+     "sha256": "f6aa046282a7938d0bce88e04558c121031cc3f34c3e3a45e096e1409250dc64"
+    }
+   ],
+   "human_verification_status": "Pending; all extracted values and synthesis outputs are AI prefills.",
+   "notes": "Per task instruction the seven dictionary/template gaps stop loading before any live workbook is opened. A/D dictionary reconciliation is needed. Prototype uses merged inclusion, preserves B-only extracted streams, labels the historical V denominator, separates unlinked precision rows, and presents regex matches as review flags. No PRISMA flow or clinical validation claim is generated."
   }
  ],
  "future_entry_fields": [

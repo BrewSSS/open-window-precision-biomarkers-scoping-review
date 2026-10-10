@@ -1,0 +1,139 @@
+{
+  "checked_at_utc": "2026-10-10T19:45:47.884289+00:00",
+  "status": "blocked_dictionary",
+  "source_reports": 225,
+  "source_rows": {
+    "reports": 225,
+    "cohorts": 302,
+    "report_cohort_links": 302,
+    "sample_sets": 3073,
+    "measurements": 5334,
+    "precision_validation": 4230,
+    "extraction_provenance": 225,
+    "study_families": 239
+  },
+  "missing_destinations": {
+    "cohorts": [
+      "training_status_other_text"
+    ],
+    "sample_sets": [
+      "exercise_mode_other_text",
+      "matrix_other_text",
+      "time_range_min"
+    ],
+    "precision_validation": [
+      "clinical_endpoint_other_text",
+      "evidence_basis"
+    ],
+    "study_families": [
+      "design_other_text"
+    ]
+  },
+  "nonempty_missing_field_values": {
+    "precision_validation.evidence_basis": 4230,
+    "sample_sets.time_range_min": 168,
+    "cohorts.training_status_other_text": 7,
+    "study_families.design_other_text": 11,
+    "sample_sets.matrix_other_text": 58,
+    "sample_sets.exercise_mode_other_text": 68,
+    "precision_validation.clinical_endpoint_other_text": 16
+  },
+  "nonempty_time_alias_values": {
+    "time_text_raw": 3073,
+    "time_value_min": 1133
+  },
+  "source_json_unchanged": true,
+  "reviewers": {
+    "B": {
+      "status": "blocked_dictionary",
+      "files_loaded": 0,
+      "workbooks_opened": 0,
+      "workbooks_written": 0,
+      "rows_loaded": {
+        "reports": 0,
+        "cohorts": 0,
+        "report_cohort_links": 0,
+        "sample_sets": 0,
+        "measurements": 0,
+        "precision_validation": 0,
+        "extraction_provenance": 0,
+        "study_families": 0
+      },
+      "error": "v1.1 extraction cannot be loaded losslessly: data_dictionary.json / extraction_template.json have no destination for cohorts: training_status_other_text; sample_sets: exercise_mode_other_text, matrix_other_text, time_range_min; precision_validation: clinical_endpoint_other_text, evidence_basis; study_families: design_other_text"
+    },
+    "C": {
+      "status": "blocked_dictionary",
+      "files_loaded": 0,
+      "workbooks_opened": 0,
+      "workbooks_written": 0,
+      "rows_loaded": {
+        "reports": 0,
+        "cohorts": 0,
+        "report_cohort_links": 0,
+        "sample_sets": 0,
+        "measurements": 0,
+        "precision_validation": 0,
+        "extraction_provenance": 0,
+        "study_families": 0
+      },
+      "error": "v1.1 extraction cannot be loaded losslessly: data_dictionary.json / extraction_template.json have no destination for cohorts: training_status_other_text; sample_sets: exercise_mode_other_text, matrix_other_text, time_range_min; precision_validation: clinical_endpoint_other_text, evidence_basis; study_families: design_other_text"
+    }
+  },
+  "source_schema_definitions": {
+    "cohorts.training_status_other_text": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Verbatim training-status description; required non-null only when training_status='other', else null."
+    },
+    "sample_sets.exercise_mode_other_text": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Verbatim exercise-mode description; required non-null only when exercise_mode='other', else null."
+    },
+    "sample_sets.matrix_other_text": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Verbatim matrix description; required non-null only when matrix='other', else null."
+    },
+    "sample_sets.time_range_min": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "number"
+      },
+      "description": "[earliest_min, latest_min] when the report gives a genuine bounded range AND the exact single time cannot be chosen (time_value_min still gets the earliest bound per the time-bin rule); null otherwise."
+    },
+    "precision_validation.clinical_endpoint_other_text": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Verbatim clinical-endpoint description; required non-null only when clinical_endpoint='other_clinical_endpoint', else null."
+    },
+    "precision_validation.evidence_basis": {
+      "type": "string",
+      "enum": [
+        "stated_in_report",
+        "not_reported_in_report",
+        "not_applicable_to_design"
+      ],
+      "description": "New in v1.1 (Reporting discipline, extract_prompt_v1_1.md): the basis for this row's evidence_state. evidence_state=evidence_present or measured_null or not_demonstrated requires evidence_basis=stated_in_report; evidence_state=NR requires evidence_basis=not_reported_in_report; evidence_state=NA requires evidence_basis=not_applicable_to_design. Not cross-validated by this schema (Codex strict output schemas do not support if/then); enforced by prompt instruction and checked downstream."
+    },
+    "study_families.design_other_text": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Verbatim design description; required non-null only when design='other', else null."
+    }
+  },
+  "verification": "Actual 225 formal inputs; workbook open/save patched to fail if reached; no workbook or load-report output created."
+}

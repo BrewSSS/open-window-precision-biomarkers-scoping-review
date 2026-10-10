@@ -4,15 +4,16 @@
 PROTOTYPE -- AI pre-fill, unverified by human reviewers; not results.
 
 Sources (read-only; paths relative to the repository root):
-  deep layer   05_extraction/ai_extraction/runs/sol_formal/*.json      (AI extraction, PRE-009)
-  FT status    04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/runs/{sol,claude_sonnet}/*.json
+  deep layer   05_extraction/ai_extraction/runs/sol_v1_1_formal/*.json (AI extraction)
+  FT status    04_screening/formal_2026-10-05_v0.9/fulltext/ft_merged.csv
   triage       04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_4298.csv
   map layer    06_synthesis/map_layer_abstract_level.csv
   vocabularies 05_extraction/data_dictionary.json; family keyword rules from scripts/build_map_layer.py
 
 Writes CSV tables (T*.csv), PNG figures (F*.png) and build_stats.json into --out.
-Re-run unchanged once human-verified extraction exists: point --deep-dir at the verified JSONs
-(same table structure) and --status-filter include to restrict to included reports.
+The build skips failed or schema-invalid extraction records and records their counts in
+build_stats.json. Inclusion uses the final merged full-text disposition. This is an AI
+pre-fill prototype and remains unverified by human reviewers.
 """
 import argparse
 import csv
@@ -23,6 +24,8 @@ import os
 import re
 import time
 from collections import Counter, defaultdict
+
+import jsonschema
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 LABEL = "PROTOTYPE - AI pre-fill, unverified by human reviewers; not results"
@@ -40,6 +43,7 @@ STATES = ["evidence_present", "measured_null", "not_demonstrated", "NR", "NA", "
 BINS = ["pre_exercise_baseline", "during", "0_to_lt30min", "30min_to_lt3h", "3h_to_lt24h",
         "24h_to_72h_inclusive", "gt72h", "matched_control_time", "UNCLEAR", "NR", "NA"]
 POST_BINS = ["0_to_lt30min", "30min_to_lt3h", "3h_to_lt24h", "24h_to_72h_inclusive", "gt72h"]
+NO_MEASUREMENT_LINK = frozenset((None, "", "NA", "NR", "UNCLEAR", "null"))
 
 # A note on an evidence_present row that itself says nothing was reported/tested.
 NEG_NOTE = re.compile(r"^\s*(no|not|none|nr|nothing|neither)\b|\bnot (reported|evaluated|assessed|tested|"
@@ -49,14 +53,16 @@ NEG_NOTE = re.compile(r"^\s*(no|not|none|nr|nothing|neither)\b|\bnot (reported|e
 
 def args_():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("--deep-dir", default="05_extraction/ai_extraction/runs/sol_formal",
-                   help="folder of per-report extraction JSONs (default: Sol formal pre-fill)")
+    p.add_argument("--deep-dir", default="05_extraction/ai_extraction/runs/sol_v1_1_formal",
+                   help="folder of per-report extraction JSONs (v1 and v1.1 supported)")
     p.add_argument("--ft-dir", default="04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/runs",
                    help="folder holding sol/ and claude_sonnet/ full-text pre-fill JSONs")
+    p.add_argument("--merged", default="04_screening/formal_2026-10-05_v0.9/fulltext/ft_merged.csv",
+                   help="merged full-text CSV with final_disposition")
     p.add_argument("--triage", default="04_screening/formal_2026-10-05_v0.9/ai_triage/final_triage_4298.csv")
     p.add_argument("--map-layer", default="06_synthesis/map_layer_abstract_level.csv")
     p.add_argument("--status-filter", choices=["all", "include"], default="all",
-                   help="all = every extracted report (default); include = Sol FT disposition INCLUDE_* only")
+                   help="all = every valid extraction (default); include = final merged disposition INCLUDE_* only")
     p.add_argument("--out", default="06_synthesis/prototype_2026-10-09", help="output folder")
     p.add_argument("--no-figures", action="store_true", help="tables only")
     return p.parse_args()
@@ -74,10 +80,15 @@ def aslist(v):
 
 def write_csv(path, rows, cols):
     with open(path, "w", newline="") as fh:
-        w = csv.DictWriter(fh, fieldnames=cols, extrasaction="ignore")
+        w = csv.DictWriter(fh, fieldnames=cols, extrasaction="ignore", lineterminator="\n")
         w.writeheader()
         for r in rows:
             w.writerow(r)
+
+
+def save_png(fig, path):
+    # Suppress the image library's default Software tag, which includes its version.
+    fig.savefig(path, dpi=150, metadata={"Software": None})
 
 
 # ---------- normalisation helpers (display aids; documented in the report) ----------
@@ -157,7 +168,7 @@ def assay_class(p):
 def hours(val, unit):
     try:
         v = float(str(val).strip())
-    except ValueError:
+    except (TypeError, ValueError):
         return None
     u = (unit or "").lower()
     if u.startswith("min"):
@@ -169,6 +180,51 @@ def hours(val, unit):
     if u.startswith("week"):
         return v * 168
     return None
+
+
+def sample_hours(s):
+    """Return numeric time in hours from either extraction schema."""
+    if "time_value_min" in s:
+        v = s.get("time_value_min")
+        return v / 60 if isinstance(v, (int, float)) and not isinstance(v, bool) else None
+    return hours(s.get("time_from_exercise_end_value"), s.get("time_unit"))
+
+
+def analyte_names(m):
+    """Return the raw label, canonical label, and display-normalised name."""
+    an = m.get("analyte_id") if isinstance(m.get("analyte_id"), dict) else {}
+    raw = next((v for v in (an.get("analyte_raw"), an.get("original_label"),
+                            m.get("feature_identification"), m.get("marker_series_id"))
+                if isinstance(v, str) and v.strip() and v not in ("NA", "NR", "UNCLEAR")), "NR")
+    canonical = next((v for v in (an.get("analyte_canonical"), an.get("standard_name"), raw)
+                      if isinstance(v, str) and v.strip() and v not in ("NA", "NR", "UNCLEAR")), raw)
+    return raw, canonical, norm_analyte(canonical)
+
+
+def measurement_link(p, measurements_by_report):
+    """Resolve a precision row only to a measurement in its own report."""
+    mid = p.get("measurement_id")
+    if mid in NO_MEASUREMENT_LINK:
+        return "cohort_level", None
+    measurement = measurements_by_report.get((p["_rid"], mid))
+    return ("matched", measurement) if measurement is not None else ("unmatched", None)
+
+
+def measurement_link_stats(pv, links):
+    kinds = Counter(kind for kind, _ in links)
+    unmatched = defaultdict(set)
+    for p, (kind, _) in zip(pv, links):
+        if kind == "unmatched":
+            unmatched[p["_rid"]].add(p["measurement_id"])
+    return {
+        "pv_analyte_level_rows": kinds["matched"],
+        "pv_cohort_level_rows": kinds["cohort_level"],
+        "pv_unmatched_measurement_rows": kinds["unmatched"],
+        "pv_unmatched_measurement_ids_by_report": {rid: sorted(ids) for rid, ids in sorted(unmatched.items())},
+        "pv_no_measurement_link_values": dict(Counter(
+            "None" if p.get("measurement_id") is None else p.get("measurement_id")
+            for p, (kind, _) in zip(pv, links) if kind == "cohort_level")),
+    }
 
 
 def bin_of(h):
@@ -190,22 +246,70 @@ def bin_of(h):
 # ---------- loading ----------
 def load(a):
     deep = {}
-    for f in sorted(glob.glob(os.path.join(rp(a.deep_dir), "*.json"))):
-        d = json.load(open(f))
-        p = d.get("parsed", d)
-        deep[p["reference_id"]] = p["tables"]
+    schemas = {
+        key: jsonschema.Draft7Validator(json.load(open(rp(f"05_extraction/ai_extraction/extract_schema_{key}.json"))))
+        for key in ("v1", "v1_1")
+    }
+    files = sorted(glob.glob(os.path.join(rp(a.deep_dir), "*.json")))
+    skipped = Counter()
+    skipped_ids = defaultdict(list)
+    schema_counts = Counter()
+    for f in files:
+        try:
+            with open(f) as fh:
+                d = json.load(fh)
+        except (OSError, ValueError):
+            reason = "unreadable_json"
+            skipped[reason] += 1
+            skipped_ids[reason].append(os.path.splitext(os.path.basename(f))[0])
+            continue
+        wrapped = isinstance(d, dict) and "parsed" in d
+        p = d.get("parsed") if wrapped else d
+        if wrapped and d.get("valid") is False:
+            reason = "run_marked_invalid"
+        elif not isinstance(p, dict):
+            reason = "missing_parsed_record"
+        else:
+            tables = p.get("tables") if isinstance(p.get("tables"), dict) else {}
+            v11_fields = any("time_value_min" in s for s in aslist(tables.get("sample_sets"))
+                             if isinstance(s, dict)) or any(
+                                 "analyte_raw" in m.get("analyte_id", {}) for m in aslist(tables.get("measurements"))
+                                 if isinstance(m, dict) and isinstance(m.get("analyte_id"), dict))
+            version = "v1_1" if v11_fields else "v1"
+            if next(schemas[version].iter_errors(p), None) is not None:
+                reason = "schema_invalid"
+            elif not tables.get("reports"):
+                reason = "missing_report_row"
+            elif p["reference_id"] in deep:
+                reason = "duplicate_reference_id"
+            else:
+                deep[p["reference_id"]] = p["tables"]
+                schema_counts[version] += 1
+                continue
+        skipped[reason] += 1
+        skipped_ids[reason].append(str((d.get("record_id") if isinstance(d, dict) else "")
+                                       or (p.get("reference_id") if isinstance(p, dict) else "")
+                                       or os.path.splitext(os.path.basename(f))[0]))
     ft = {}
     for fam in ("sol", "claude_sonnet"):
         for f in glob.glob(os.path.join(rp(a.ft_dir), fam, "*.json")):
-            d = json.load(open(f))
-            ft.setdefault(d["record_id"], {})[fam] = d.get("parsed") or {}
+            with open(f) as fh:
+                d = json.load(fh)
+            if isinstance(d, dict) and d.get("record_id"):
+                ft.setdefault(d["record_id"], {})[fam] = d.get("parsed") or {}
+    with open(rp(a.merged)) as fh:
+        merged = {r["record_id"]: r for r in csv.DictReader(fh)}
     triage = {r["record_id"]: r for r in csv.DictReader(open(rp(a.triage)))}
     mapl = list(csv.DictReader(open(rp(a.map_layer))))
     dd = json.load(open(rp("05_extraction/data_dictionary.json")))["controlled_vocabulary"]
     spec = importlib.util.spec_from_file_location("bml", rp("scripts/build_map_layer.py"))
     bml = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(bml)
-    return deep, ft, triage, mapl, dd, bml.family
+    load_stats = {"extraction_files": len(files), "valid_extraction_records": len(deep),
+                  "extraction_schema_counts": dict(schema_counts), "skipped_extraction_records": dict(skipped),
+                  "skipped_extraction_ids": dict(skipped_ids), "merged_final_dispositions":
+                  dict(Counter(r.get("final_disposition", "") for r in merged.values()))}
+    return deep, ft, merged, triage, mapl, dd, bml.family, load_stats
 
 
 def main():
@@ -213,19 +317,32 @@ def main():
     t0 = time.time()
     out = rp(a.out)
     os.makedirs(out, exist_ok=True)
-    deep, ft, triage, mapl, dd, kw_family = load(a)
+    deep, ft, merged, triage, mapl, dd, kw_family, load_stats = load(a)
 
     status = {}
     for rid in deep:
         s = ft.get(rid, {}).get("sol", {})
         c = ft.get(rid, {}).get("claude_sonnet", {})
-        status[rid] = {"sol": s.get("disposition", "NR"), "c": c.get("disposition", "NR"),
+        final = merged.get(rid, {})
+        status[rid] = {"final": final.get("final_disposition") or "NR",
+                       "final_source": final.get("final_source") or "NR",
+                       "sol": final.get("B_disposition") or s.get("disposition", "NR"),
+                       "c": final.get("C_disposition") or c.get("disposition", "NR"),
                        "age": s.get("age_rule_check", "NR"), "vsub": ";".join(s.get("validation_subtypes") or []),
                        "vconf": s.get("validation_element_confirmed", "NR")}
     if a.status_filter == "include":
-        deep = {k: v for k, v in deep.items() if status[k]["sol"].startswith("INCLUDE")}
+        deep = {k: v for k, v in deep.items() if status[k]["final"].startswith("INCLUDE")}
     R = sorted(deep)
-    stats = {"label": LABEL, "n_reports": len(R), "status_filter": a.status_filter}
+    stats = {"label": LABEL, "n_reports": len(R), "status_filter": a.status_filter,
+             "n_valid_extractions_excluded_by_status_filter": load_stats["valid_extraction_records"] - len(R),
+             **load_stats}
+    if not R:
+        stats["warning"] = "No valid extraction records matched the filter; no tables or figures were built."
+        with open(os.path.join(out, "build_stats.json"), "w") as fh:
+            json.dump(stats, fh, indent=1)
+        print(json.dumps({"n_reports": 0, "extraction_files": load_stats["extraction_files"],
+                          "skipped_extraction_records": load_stats["skipped_extraction_records"]}))
+        return
 
     # flatten
     meas, pv, ss, coh, rep = [], [], {}, [], {}
@@ -245,17 +362,23 @@ def main():
             r["_rid"] = rid
             coh.append(r)
     for m in meas:
-        an = m.get("analyte_id") if isinstance(m.get("analyte_id"), dict) else {}
-        raw = next((v for v in (an.get("standard_name"), an.get("original_label"), m.get("feature_identification"),
-                                m.get("marker_series_id")) if v and v not in ("NA", "NR", "UNCLEAR")), "NR")
-        m["_analyte"] = norm_analyte(raw) if m.get("record_type") != "assay_universe_summary" \
+        raw, canonical, normalised = analyte_names(m)
+        m["_analyte"] = normalised if m.get("record_type") != "assay_universe_summary" \
             else "[omics universe] " + str(m.get("platform"))[:40]
         m["_raw_analyte"] = raw
+        m["_canonical_analyte"] = canonical
         m["_omics"] = m.get("omics_integration") not in (None, "not_omics", "NA", "NR")
         m["_sets"] = [ss[s] for s in aslist(m.get("sample_set_ids")) if s in ss]
-    mid = {m["measurement_id"]: m for m in meas}
+    measurements_by_report = {(m["_rid"], m["measurement_id"]): m for m in meas
+                              if m.get("measurement_id") not in NO_MEASUREMENT_LINK}
+    pv_links = [measurement_link(p, measurements_by_report) for p in pv]
     stream = {rid: aslist(rep[rid].get("scope_stream")) for rid in R}
     is_B = {rid: "B_support_repeated_bouts" in stream[rid] for rid in R}
+    stream_class = {}
+    for rid in R:
+        a_stream = "A_core_acute" in stream[rid]
+        b_stream = is_B[rid]
+        stream_class[rid] = "A+B" if a_stream and b_stream else "A only" if a_stream else "B only" if b_stream else "neither/uncertain"
     rep_omics = {rid: any(m["_omics"] for m in meas if m["_rid"] == rid) for rid in R}
 
     # ---------- T1 report inventory ----------
@@ -264,7 +387,9 @@ def main():
         cs = [c for c in coh if c["_rid"] == rid]
         fams = sorted({m.get("marker_family") for m in meas if m["_rid"] == rid} - {None})
         st = status[rid]
-        rows.append({"record_id": rid, "year": rep[rid].get("year"), "sol_ft_disposition": st["sol"],
+        rows.append({"record_id": rid, "year": rep[rid].get("year"),
+                     "final_ft_disposition": st["final"], "final_ft_source": st["final_source"],
+                     "sol_ft_disposition": st["sol"],
                      "c_ft_disposition": st["c"], "age_rule_check": st["age"],
                      "ft_validation_subtypes": st["vsub"],
                      "triage_E5_subtypes": triage.get(rid, {}).get("final_E5_subtypes", ""),
@@ -300,9 +425,18 @@ def main():
              "report_ids": ";".join(sorted(v["r"]))} for k, v in inv.items()]
     rows.sort(key=lambda r: (-r["n_reports"], r["analyte_normalised"]))
     write_csv(os.path.join(out, "T2_marker_inventory.csv"), rows, list(rows[0]))
-    raw_names = {m["_raw_analyte"] for m in meas if m.get("record_type") != "assay_universe_summary"}
-    stats["analyte_names_raw_distinct"] = len(raw_names)
+    explicit_raw, explicit_canonical = set(), set()
+    for m in meas:
+        an = m.get("analyte_id") if isinstance(m.get("analyte_id"), dict) else {}
+        raw = an.get("analyte_raw", an.get("original_label"))
+        canonical = an.get("analyte_canonical", an.get("standard_name"))
+        if raw not in (None, "", "NA", "NR", "UNCLEAR"):
+            explicit_raw.add(raw)
+        if canonical not in (None, "", "NA", "NR", "UNCLEAR"):
+            explicit_canonical.add(canonical)
+    stats["analyte_names_raw_distinct"] = len(explicit_raw)
     stats["analyte_names_normalised_distinct"] = len({m["_analyte"] for m in meas if m.get("record_type") != "assay_universe_summary"})
+    stats["analyte_names_canonical_distinct"] = len(explicit_canonical)
     stats["inventory_rows_with_ge3_reports"] = sum(1 for r in rows if r["n_reports"] >= 3)
     per_an = defaultdict(set)
     for m in meas:
@@ -335,7 +469,7 @@ def main():
         fam, dom = p.get("marker_family"), p.get("precision_domain")
         keys = [(fam, dom, p.get("evidence_state"))]
         if negflag(p):
-            keys.append((fam, dom, "evidence_present_note_contradicts"))
+            keys.append((fam, dom, "evidence_present_NEG_NOTE_flag"))
         if strict_present(p):
             keys.append((fam, dom, "evidence_present_strict"))
         for k in keys:
@@ -350,7 +484,7 @@ def main():
         for dom in DOMAINS:
             r = {"marker_family": fam, "omics_family": "yes" if fam in OMICS_FAMILIES else "no",
                  "precision_domain": dom, "n_reports_with_family": len(fam_reports[fam])}
-            for st in STATES + ["evidence_present_note_contradicts", "evidence_present_strict"]:
+            for st in STATES + ["evidence_present_NEG_NOTE_flag", "evidence_present_strict"]:
                 c = cell.get((fam, dom, st), {"r": set(), "c": set()})
                 r[f"{st}_reports"] = len(c["r"])
                 r[f"{st}_cohorts"] = len(c["c"])
@@ -359,9 +493,12 @@ def main():
     st_counts = Counter((p.get("precision_domain"), p.get("evidence_state")) for p in pv)
     stats["pv_rows"] = len(pv)
     stats["pv_state_by_domain"] = {d: {s: st_counts[(d, s)] for s in STATES} for d in DOMAINS}
-    stats["pv_evidence_present_note_contradicts"] = Counter(p["precision_domain"] for p in pv if negflag(p))
+    stats["pv_evidence_present_NEG_NOTE_flags"] = Counter(p["precision_domain"] for p in pv if negflag(p))
+    n_present = sum(p.get("evidence_state") == "evidence_present" for p in pv)
+    stats["pv_evidence_present_total"] = n_present
+    stats["pv_evidence_present_note_contradiction_share"] = round(sum(negflag(p) for p in pv) / n_present, 4) if n_present else None
     stats["pv_evidence_present_strict"] = Counter(p["precision_domain"] for p in pv if strict_present(p))
-    stats["pv_analyte_level_rows"] = sum(1 for p in pv if p.get("measurement_id") not in (None, "", "NA"))
+    stats.update(measurement_link_stats(pv, pv_links))
     ivu = [p for p in pv if p["precision_domain"] == "independent_validation_and_use" and p["evidence_state"] == "evidence_present"]
     stats["ivu_present_without_independent_split"] = sum(1 for p in ivu if p.get("validation_split") != "independent_site_or_cohort")
     stats["ivu_present_total"] = len(ivu)
@@ -388,14 +525,18 @@ def main():
     write_csv(os.path.join(out, "T4_timepoint_coverage.csv"), rows, list(rows[0]))
     # numeric time quality
     post = [s for s in ss.values() if s.get("time_bin") in POST_BINS]
-    parsed = [(s, hours(s.get("time_from_exercise_end_value"), s.get("time_unit"))) for s in post]
+    parsed = [(s, sample_hours(s)) for s in post]
     ok = [(s, h) for s, h in parsed if h is not None]
     agree = sum(1 for s, h in ok if bin_of(h) == s.get("time_bin"))
     stats["post_sample_sets"] = len(post)
     stats["post_time_numeric_parseable"] = len(ok)
     stats["post_time_bin_agrees_with_numeric"] = agree
-    stats["post_time_nonnumeric_examples"] = Counter(str(s.get("time_from_exercise_end_value")) for s, h in parsed if h is None).most_common(8)
-    stats["time_unit_values"] = Counter(str(s.get("time_unit")) for s in ss.values()).most_common()
+    stats["post_time_numeric_parse_rate"] = round(len(ok) / len(post), 4) if post else None
+    stats["post_time_nonnumeric_examples"] = Counter(str(s.get("time_text_raw", s.get("timepoint_as_reported")))
+                                                  for s, h in parsed if h is None).most_common(8)
+    stats["post_time_range_rows"] = sum(1 for s in post if s.get("time_range_min") is not None)
+    stats["time_unit_values"] = Counter("minutes" if "time_value_min" in s else str(s.get("time_unit"))
+                                        for s in ss.values()).most_common()
     # cohorts with >=2 distinct within-window bins (kinetics) per family
     kin = defaultdict(lambda: defaultdict(set))
     for m in meas:
@@ -406,18 +547,17 @@ def main():
 
     # ---------- T5 design strata ----------
     rows = []
-    for lab, sel in [("A_core_acute only", lambda r: stream[r] == ["A_core_acute"]),
-                     ("A and B (repeated bouts)", lambda r: is_B[r]),
-                     ("uncertain", lambda r: "uncertain" in stream[r])]:
+    for lab in ("A only", "B only", "A+B", "neither/uncertain"):
         for om in ("conventional only", "any omics"):
-            ids = [r for r in R if sel(r) and (rep_omics[r] == (om == "any omics"))]
+            ids = [r for r in R if stream_class[r] == lab and (rep_omics[r] == (om == "any omics"))]
             cids = {c["cohort_id"] for c in coh if c["_rid"] in ids}
-            inc = [r for r in ids if status[r]["sol"].startswith("INCLUDE")]
-            both = [r for r in inc if status[r]["c"].startswith("INCLUDE")]
+            inc = [r for r in ids if status[r]["final"].startswith("INCLUDE")]
+            both = [r for r in inc if status[r]["sol"].startswith("INCLUDE") and status[r]["c"].startswith("INCLUDE")]
             rows.append({"stream": lab, "platform_stratum": om, "n_reports": len(ids), "n_cohorts": len(cids),
-                         "n_reports_sol_include": len(inc), "n_reports_sol_and_c_include": len(both),
-                         "n_reports_awaiting_classification": sum(1 for r in ids if status[r]["sol"] == "AWAITING_CLASSIFICATION")})
+                         "n_reports_final_include": len(inc), "n_reports_b_and_c_include": len(both),
+                         "n_reports_awaiting_classification": sum(1 for r in ids if status[r]["final"] == "AWAITING_CLASSIFICATION")})
     write_csv(os.path.join(out, "T5_design_strata.csv"), rows, list(rows[0]))
+    stats["final_dispositions"] = Counter(status[r]["final"] for r in R)
     stats["sol_dispositions"] = Counter(status[r]["sol"] for r in R)
     stats["c_dispositions"] = Counter(status[r]["c"] for r in R)
     stats["sol_c_both_include"] = sum(1 for r in R if status[r]["sol"].startswith("INCLUDE") and status[r]["c"].startswith("INCLUDE"))
@@ -432,8 +572,7 @@ def main():
                 "individualization": "individualization", "independent_validation_and_use": "validation_or_use",
                 "temporal_validity": "temporal"}
     cand = defaultdict(lambda: {"types": Counter(), "r": set(), "c": set(), "note": "", "fam": set(), "B": set()})
-    for p in pv:
-        m = mid.get(p.get("measurement_id"))
+    for p, (_, m) in zip(pv, pv_links):
         if not m or p.get("evidence_state") not in ("evidence_present", "measured_null") or negflag(p):
             continue
         t = ev_types.get(p["precision_domain"])
@@ -487,28 +626,38 @@ def main():
     rows = []
     for f in FAMILIES + ["NR"]:
         rows.append({"marker_family": f, "map_layer_M_records": mfam[f], "map_layer_M_pct": round(100 * mfam[f] / len(mapl), 1),
-                     "V_layer_abstract_records": vfam[f], "V_layer_abstract_pct": round(100 * vfam[f] / max(1, len(vrows)), 1),
+                     "V_layer_historical_abstract_records": vfam[f],
+                     "V_layer_historical_abstract_pct": round(100 * vfam[f] / max(1, len(vrows)), 1),
                      "deep_layer_reports": dfam[f], "deep_layer_pct": round(100 * dfam[f] / max(1, len(R)), 1)})
     rows.append({"marker_family": "DENOMINATOR (records/reports)", "map_layer_M_records": len(mapl),
-                 "V_layer_abstract_records": len(vrows), "deep_layer_reports": len(R)})
-    dexp = Counter("A+B" if is_B[r] else ("A" if "A_core_acute" in stream[r] else "uncertain") for r in R)
+                 "V_layer_historical_abstract_records": len(vrows), "deep_layer_reports": len(R)})
+    dexp = Counter(stream_class[r] for r in R)
+    stats["extracted_scope_stream_classes"] = dict(dexp)
     vexp = Counter(t["final_E1_exercise_exposure"] for t in vrows)
     for k in ["core_A", "support_B", "unclear", "habitual_or_resting_cross_sectional", "chronic_training_only"]:
-        rows.append({"marker_family": f"EXPOSURE {k}", "map_layer_M_records": mexp[k], "V_layer_abstract_records": vexp[k]})
-    for k in ["A", "A+B", "uncertain"]:
+        rows.append({"marker_family": f"EXPOSURE {k}", "map_layer_M_records": mexp[k],
+                     "V_layer_historical_abstract_records": vexp[k]})
+    for k in ("A only", "B only", "A+B", "neither/uncertain"):
         rows.append({"marker_family": f"DEEP STREAM {k}", "deep_layer_reports": dexp[k]})
     write_csv(os.path.join(out, "T7_map_vs_deep_layer.csv"), rows, list(rows[0]))
 
     # ---------- T8 extraction quality ----------
     q = []
-    fields = [("sample_sets", "matrix"), ("sample_sets", "exercise_mode"), ("sample_sets", "time_unit"),
-              ("sample_sets", "time_bin"), ("sample_sets", "time_from_exercise_end_value"),
+    v11 = any("time_value_min" in s for s in ss.values())
+    time_fields = [("sample_sets", "time_text_raw"), ("sample_sets", "time_value_min"),
+                   ("sample_sets", "time_range_min")] if v11 else [
+                       ("sample_sets", "timepoint_as_reported"), ("sample_sets", "time_from_exercise_end_value"),
+                       ("sample_sets", "time_unit")]
+    fields = [("sample_sets", "matrix"), ("sample_sets", "exercise_mode"),
+              ("sample_sets", "time_bin"), *time_fields,
               ("sample_sets", "n_participants"), ("measurements", "platform"), ("measurements", "effect_value"),
               ("measurements", "effect_uncertainty"), ("measurements", "result_direction"),
               ("measurements", "marker_family"), ("precision_validation", "evidence_state"),
               ("precision_validation", "clinical_endpoint"), ("precision_validation", "validation_split"),
               ("cohorts", "training_status"), ("cohorts", "n_recruited"), ("cohorts", "age_range"),
               ("study_families", "design")]
+    if v11:
+        fields.append(("precision_validation", "evidence_basis"))
     tabs = {"sample_sets": list(ss.values()), "measurements": meas, "precision_validation": pv, "cohorts": coh,
             "study_families": [r for rid in R for r in deep[rid].get("study_families", [])]}
     for t, f in fields:
@@ -524,6 +673,11 @@ def main():
                   "controlled_vocab_in_dictionary": "yes" if voc else "no",
                   "pct_outside_dictionary_vocab": round(100 * sum(1 for x in flat if x not in voc) / max(1, len(flat)), 1) if voc else ""})
     write_csv(os.path.join(out, "T8_extraction_quality.csv"), q, list(q[0]))
+    stats["other_text_usage"] = {
+        f"{table}.{field}": sum(r.get(field) not in (None, "", "NR", "NA", "UNCLEAR") for r in records)
+        for table, records in tabs.items()
+        for field in sorted({key for row in records for key in row if key.endswith("_other_text")})
+    }
 
     if not a.no_figures:
         figures(out, R, pv, meas, coh, rep, is_B, tc, cell, fam_reports, rows_map=(mfam, vfam, dfam, len(mapl), len(vrows)),
@@ -540,7 +694,9 @@ def figures(out, R, pv, meas, coh, rep, is_B, tc, cell, fam_reports, rows_map, s
     import numpy as np
 
     def foot(fig, extra=""):
-        fig.text(0.01, 0.005, LABEL + (" | " + extra if extra else ""), fontsize=7, color="#b00020", ha="left", va="bottom")
+        coverage = f"{stats['valid_extraction_records']}/{stats['extraction_files']} valid extraction files"
+        fig.text(0.01, 0.005, LABEL + " | " + coverage + (" | " + extra if extra else ""),
+                 fontsize=7, color="#b00020", ha="left", va="bottom")
 
     def heat(ax, M, rows, cols, title, cmap="Blues", fmt="{:d}"):
         im = ax.imshow(M, cmap=cmap, aspect="auto", vmin=0)
@@ -571,7 +727,7 @@ def figures(out, R, pv, meas, coh, rep, is_B, tc, cell, fam_reports, rows_map, s
     ax.axvline(3.5, color="#b00020", lw=1, ls="--")
     fig.tight_layout(rect=(0, 0.02, 1, 1))
     foot(fig)
-    fig.savefig(os.path.join(out, "F1_timepoint_coverage.png"), dpi=150)
+    save_png(fig, os.path.join(out, "F1_timepoint_coverage.png"))
     plt.close(fig)
 
     # F2 validation-readiness heat map: as extracted vs crosswalk-consistent
@@ -583,12 +739,12 @@ def figures(out, R, pv, meas, coh, rep, is_B, tc, cell, fam_reports, rows_map, s
     heat(axs[0], M1, [f"{l} (n={len(fam_reports[f])})" for f, l in zip(fams, famlab)], dl,
          "A. evidence_state = evidence_present, as extracted by AI\n(reports per cell; n = reports with that family)", "Blues")
     heat(axs[1], M2, [f"{l} (n={len(fam_reports[f])})" for f, l in zip(fams, famlab)], dl,
-         "B. crosswalk-consistent subset: note does not negate the state;\nlinkage/validation subtypes agree with the state", "Purples")
+         "B. coded sensitivity subset: no NEG_NOTE regex hit;\nlinkage/validation subtypes pass coded checks", "Purples")
     fig.suptitle("Figure 2 (prototype): per-marker-family validation-readiness map, 7 precision domains "
                  "(descriptive profile, not a score)", fontsize=10)
     fig.tight_layout(rect=(0, 0.02, 1, 0.96))
     foot(fig)
-    fig.savefig(os.path.join(out, "F2_validation_readiness_heatmap.png"), dpi=150)
+    save_png(fig, os.path.join(out, "F2_validation_readiness_heatmap.png"))
     plt.close(fig)
 
     # F3 cohort-level validation links
@@ -648,7 +804,7 @@ def figures(out, R, pv, meas, coh, rep, is_B, tc, cell, fam_reports, rows_map, s
     fig.suptitle("Figure 3 (prototype): cohort-level validation links", fontsize=10)
     fig.tight_layout(rect=(0, 0.02, 1, 0.97))
     foot(fig)
-    fig.savefig(os.path.join(out, "F3_cohort_validation_links.png"), dpi=150)
+    save_png(fig, os.path.join(out, "F3_cohort_validation_links.png"))
     plt.close(fig)
 
     # F4 family share: map layer vs V abstract vs deep
@@ -657,7 +813,7 @@ def figures(out, R, pv, meas, coh, rep, is_B, tc, cell, fam_reports, rows_map, s
     x = np.arange(len(fl))
     fig, ax = plt.subplots(figsize=(12, 5.5))
     for k, (lab, cnt, n, col) in enumerate([(f"M layer, abstracts (n={nm} records)", mfam, nm, "#9aa5b1"),
-                                            (f"V layer, abstracts (n={nv} records)", vfam, nv, "#4a6fa5"),
+                                            (f"historical V triage snapshot (n={nv} records)", vfam, nv, "#4a6fa5"),
                                             (f"Deep layer, full-text AI extraction (n={len(R)} reports)", dfam, len(R), "#b8572f")]):
         vals = [100 * cnt[f] / n for f in fl]
         ax.bar(x + (k - 1) * 0.27, vals, 0.27, label=lab, color=col)
@@ -665,11 +821,11 @@ def figures(out, R, pv, meas, coh, rep, is_B, tc, cell, fam_reports, rows_map, s
     ax.set_xticklabels([("[omics] " if f in OMICS_FAMILIES else "") + f for f in fl], rotation=40, ha="right", fontsize=8)
     ax.set_ylabel("% of records/reports mentioning the family")
     ax.legend(fontsize=8)
-    ax.set_title("Figure 4 (prototype): marker-family profile, map layer vs validation layer vs deep layer\n"
+    ax.set_title("Figure 4 (prototype): marker-family profile, map layer vs historical V triage vs deep layer\n"
                  "abstract families keyword-mapped from E3 terms; deep-layer families from extracted analytes (more families per report)", fontsize=9)
     fig.tight_layout(rect=(0, 0.03, 1, 1))
     foot(fig)
-    fig.savefig(os.path.join(out, "F4_family_deep_vs_map.png"), dpi=150)
+    save_png(fig, os.path.join(out, "F4_family_deep_vs_map.png"))
     plt.close(fig)
 
     # F5 evidence-state distribution per domain (AI-quality diagnostic)
@@ -683,17 +839,17 @@ def figures(out, R, pv, meas, coh, rep, is_B, tc, cell, fam_reports, rows_map, s
         left += v
     neg = [sum(1 for p in pv if p["precision_domain"] == d and negflag(p)) for d in DOMAINS]
     for i, n in enumerate(neg):
-        ax.text(left[i] + 3, i, f"{n} 'present' rows whose note negates it", va="center", fontsize=7, color="#b00020")
+        ax.text(left[i] + 3, i, f"{n} present-row NEG_NOTE regex hits", va="center", fontsize=7, color="#b00020")
     ax.set_yticks(range(len(DOMAINS)))
     ax.set_yticklabels(DOMAINS, fontsize=8)
     ax.invert_yaxis()
     ax.set_xlim(0, left.max() * 1.6)
     ax.set_xlabel("precision_validation rows")
     ax.legend(fontsize=7, ncol=6, loc="lower right")
-    ax.set_title("Figure 5 (diagnostic): AI evidence_state use per domain - NR is almost never used", fontsize=9)
+    ax.set_title("Figure 5 (diagnostic): AI evidence_state use per domain", fontsize=9)
     fig.tight_layout(rect=(0, 0.03, 1, 1))
     foot(fig)
-    fig.savefig(os.path.join(out, "F5_evidence_state_diagnostic.png"), dpi=150)
+    save_png(fig, os.path.join(out, "F5_evidence_state_diagnostic.png"))
     plt.close(fig)
 
 

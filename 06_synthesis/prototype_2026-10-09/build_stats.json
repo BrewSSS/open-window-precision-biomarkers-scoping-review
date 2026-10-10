@@ -1,305 +1,297 @@
 {
  "label": "PROTOTYPE - AI pre-fill, unverified by human reviewers; not results",
- "n_reports": 130,
- "status_filter": "all",
- "analyte_names_raw_distinct": 1219,
- "analyte_names_normalised_distinct": 1109,
- "inventory_rows_with_ge3_reports": 37,
+ "n_reports": 225,
+ "status_filter": "include",
+ "n_valid_extractions_excluded_by_status_filter": 0,
+ "extraction_files": 225,
+ "valid_extraction_records": 225,
+ "extraction_schema_counts": {
+  "v1_1": 225
+ },
+ "skipped_extraction_records": {},
+ "skipped_extraction_ids": {},
+ "merged_final_dispositions": {
+  "": 197,
+  "INCLUDE_A": 143,
+  "INCLUDE_A_AND_B": 75,
+  "INCLUDE_B": 7,
+  "RETAIN_BACKGROUND": 11,
+  "AWAITING_CLASSIFICATION": 19,
+  "EXCLUDE": 25
+ },
+ "analyte_names_raw_distinct": 2434,
+ "analyte_names_normalised_distinct": 1953,
+ "analyte_names_canonical_distinct": 1778,
+ "inventory_rows_with_ge3_reports": 76,
  "analytes_by_n_reports": {
-  "1": 962,
-  "2": 85,
-  "3-4": 42,
-  ">=5": 20
+  "1": 1540,
+  "2": 234,
+  "3-4": 122,
+  ">=5": 57
  },
  "top_analytes": [
   [
    "IL-6",
-   32
-  ],
-  [
-   "CRP",
-   30
+   75
   ],
   [
    "leukocyte count",
-   25
+   49
+  ],
+  [
+   "CRP",
+   48
   ],
   [
    "TNF-alpha",
-   19
-  ],
-  [
-   "IL-10",
-   14
+   47
   ],
   [
    "lymphocyte count",
-   14
+   40
   ],
   [
-   "neutrophil count",
-   14
-  ],
-  [
-   "IL-8",
-   11
+   "IL-10",
+   38
   ],
   [
    "monocyte count",
-   10
+   37
   ],
   [
-   "sIgA",
-   10
+   "IL-8",
+   33
   ],
   [
-   "IL-1ra",
-   8
-  ],
-  [
-   "NLR",
-   7
+   "neutrophil count",
+   32
   ],
   [
    "IL-1beta",
-   6
+   21
   ],
   [
-   "CCL2",
-   6
+   "sIgA",
+   19
   ],
   [
-   "IL-15",
-   6
+   "IL-1ra",
+   18
+  ],
+  [
+   "MCP-1",
+   17
+  ],
+  [
+   "IFN-gamma",
+   15
+  ],
+  [
+   "NK cell count",
+   12
   ]
  ],
- "pv_rows": 1868,
+ "pv_rows": 4230,
  "pv_state_by_domain": {
   "analytical_reliability": {
-   "evidence_present": 173,
-   "measured_null": 0,
-   "not_demonstrated": 77,
-   "NR": 29,
+   "evidence_present": 377,
+   "measured_null": 1,
+   "not_demonstrated": 139,
+   "NR": 146,
    "NA": 0,
    "UNCLEAR": 0
   },
   "temporal_validity": {
-   "evidence_present": 214,
-   "measured_null": 3,
-   "not_demonstrated": 43,
-   "NR": 0,
-   "NA": 1,
-   "UNCLEAR": 0
+   "evidence_present": 412,
+   "measured_null": 23,
+   "not_demonstrated": 149,
+   "NR": 10,
+   "NA": 4,
+   "UNCLEAR": 1
   },
   "immune_specificity": {
-   "evidence_present": 91,
-   "measured_null": 0,
-   "not_demonstrated": 170,
-   "NR": 0,
-   "NA": 0,
+   "evidence_present": 167,
+   "measured_null": 2,
+   "not_demonstrated": 376,
+   "NR": 40,
+   "NA": 2,
    "UNCLEAR": 0
   },
   "individualization": {
-   "evidence_present": 66,
-   "measured_null": 0,
-   "not_demonstrated": 209,
-   "NR": 0,
+   "evidence_present": 52,
+   "measured_null": 8,
+   "not_demonstrated": 280,
+   "NR": 259,
    "NA": 0,
    "UNCLEAR": 0
   },
   "functional_clinical_linkage": {
-   "evidence_present": 40,
-   "measured_null": 12,
-   "not_demonstrated": 210,
-   "NR": 2,
-   "NA": 0,
+   "evidence_present": 70,
+   "measured_null": 32,
+   "not_demonstrated": 436,
+   "NR": 57,
+   "NA": 3,
    "UNCLEAR": 0
   },
   "independent_validation_and_use": {
-   "evidence_present": 13,
-   "measured_null": 0,
-   "not_demonstrated": 252,
-   "NR": 2,
+   "evidence_present": 16,
+   "measured_null": 1,
+   "not_demonstrated": 322,
+   "NR": 259,
    "NA": 0,
    "UNCLEAR": 0
   },
   "feasibility": {
-   "evidence_present": 204,
+   "evidence_present": 107,
    "measured_null": 0,
-   "not_demonstrated": 48,
-   "NR": 9,
+   "not_demonstrated": 30,
+   "NR": 449,
    "NA": 0,
    "UNCLEAR": 0
   }
  },
- "pv_evidence_present_note_contradicts": {
-  "analytical_reliability": 50,
-  "feasibility": 112,
-  "temporal_validity": 54,
-  "immune_specificity": 17,
-  "functional_clinical_linkage": 5,
-  "individualization": 20,
-  "independent_validation_and_use": 2
+ "pv_evidence_present_NEG_NOTE_flags": {
+  "individualization": 3,
+  "functional_clinical_linkage": 6,
+  "temporal_validity": 7,
+  "immune_specificity": 3,
+  "analytical_reliability": 3,
+  "feasibility": 1,
+  "independent_validation_and_use": 1
  },
+ "pv_evidence_present_total": 1201,
+ "pv_evidence_present_note_contradiction_share": 0.02,
  "pv_evidence_present_strict": {
-  "temporal_validity": 160,
-  "immune_specificity": 74,
-  "analytical_reliability": 123,
-  "functional_clinical_linkage": 30,
-  "feasibility": 92,
-  "individualization": 46,
-  "independent_validation_and_use": 4
+  "analytical_reliability": 374,
+  "temporal_validity": 405,
+  "immune_specificity": 164,
+  "feasibility": 106,
+  "functional_clinical_linkage": 64,
+  "individualization": 49,
+  "independent_validation_and_use": 15
  },
- "pv_analyte_level_rows": 315,
- "ivu_present_without_independent_split": 9,
- "ivu_present_total": 13,
+ "pv_analyte_level_rows": 176,
+ "pv_cohort_level_rows": 4054,
+ "pv_unmatched_measurement_rows": 0,
+ "pv_unmatched_measurement_ids_by_report": {},
+ "pv_no_measurement_link_values": {
+  "NA": 3823,
+  "null": 231
+ },
+ "ivu_present_without_independent_split": 0,
+ "ivu_present_total": 16,
  "reports_any_present_by_domain": {
-  "analytical_reliability": 84,
-  "temporal_validity": 107,
-  "immune_specificity": 52,
-  "individualization": 34,
-  "functional_clinical_linkage": 29,
-  "independent_validation_and_use": 5,
-  "feasibility": 95
+  "analytical_reliability": 145,
+  "temporal_validity": 166,
+  "immune_specificity": 85,
+  "individualization": 28,
+  "functional_clinical_linkage": 46,
+  "independent_validation_and_use": 4,
+  "feasibility": 55
  },
  "reports_strict_present_by_domain": {
-  "analytical_reliability": 66,
-  "temporal_validity": 89,
-  "immune_specificity": 46,
-  "individualization": 22,
-  "functional_clinical_linkage": 23,
-  "independent_validation_and_use": 2,
-  "feasibility": 53
+  "analytical_reliability": 145,
+  "temporal_validity": 164,
+  "immune_specificity": 82,
+  "individualization": 27,
+  "functional_clinical_linkage": 43,
+  "independent_validation_and_use": 4,
+  "feasibility": 54
  },
- "post_sample_sets": 884,
- "post_time_numeric_parseable": 576,
- "post_time_bin_agrees_with_numeric": 570,
+ "post_sample_sets": 1630,
+ "post_time_numeric_parseable": 1095,
+ "post_time_bin_agrees_with_numeric": 1057,
+ "post_time_numeric_parse_rate": 0.6718,
  "post_time_nonnumeric_examples": [
   [
-   "NR",
-   258
+   "immediately after",
+   52
   ],
   [
-   "0\u20135",
-   6
+   "immediately after exercise",
+   31
   ],
   [
-   "0-5",
-   6
+   "immediately post-exercise",
+   25
   ],
   [
-   "0\u20132",
-   6
+   "immediately after each exercise test (A and B)",
+   18
   ],
   [
-   "120\u2013165",
-   4
+   "immediately following the cycling exercise test",
+   16
   ],
   [
-   "\u226415",
-   4
+   "after exercise",
+   15
   ],
   [
-   "2\u20137",
-   4
+   "directly after",
+   13
   ],
   [
-   "0\u201315",
-   3
+   "immediately postexercise",
+   12
   ]
  ],
+ "post_time_range_rows": 162,
  "time_unit_values": [
   [
-   "NA",
-   894
-  ],
-  [
-   "h",
-   441
-  ],
-  [
-   "min",
-   210
-  ],
-  [
-   "NR",
-   81
-  ],
-  [
    "minutes",
-   6
-  ],
-  [
-   "hour",
-   5
-  ],
-  [
-   "hours",
-   5
-  ],
-  [
-   "months",
-   5
-  ],
-  [
-   "days",
-   4
-  ],
-  [
-   "h since preceding bout",
-   2
-  ],
-  [
-   "weeks",
-   2
-  ],
-  [
-   "month",
-   1
+   3073
   ]
  ],
  "cohorts_with_ge2_within_window_bins_by_family": {
-  "leukocyte_redistribution": 20,
-  "NK_count_or_cytotoxicity": 2,
-  "neutrophil_function": 4,
-  "T_cell_subsets_or_function": 6,
-  "mucosal_sIgA": 4,
-  "mucosal_antimicrobial_protein": 2,
-  "cytokine_or_inflammatory_mediator": 35,
-  "immunoglobulin_or_complement": 7,
-  "immune_cell_transcriptome": 9,
-  "proteome": 10,
-  "metabolome_or_lipidome": 11,
+  "leukocyte_redistribution": 22,
+  "NK_count_or_cytotoxicity": 4,
+  "neutrophil_function": 6,
+  "T_cell_subsets_or_function": 10,
+  "mucosal_sIgA": 5,
+  "mucosal_antimicrobial_protein": 4,
+  "cytokine_or_inflammatory_mediator": 63,
+  "immunoglobulin_or_complement": 11,
+  "immune_cell_transcriptome": 14,
+  "proteome": 14,
+  "metabolome_or_lipidome": 17,
   "epigenome": 0,
-  "ncRNA": 5,
+  "ncRNA": 7,
   "single_cell": 0,
-  "other": 24
+  "other": 37
+ },
+ "final_dispositions": {
+  "INCLUDE_A": 143,
+  "INCLUDE_A_AND_B": 75,
+  "INCLUDE_B": 7
  },
  "sol_dispositions": {
-  "AWAITING_CLASSIFICATION": 45,
-  "INCLUDE_A_AND_B": 35,
-  "INCLUDE_A": 48,
-  "INCLUDE_B": 2
+  "INCLUDE_A": 139,
+  "INCLUDE_A_AND_B": 80,
+  "INCLUDE_B": 5,
+  "AWAITING_CLASSIFICATION": 1
  },
  "c_dispositions": {
-  "INCLUDE_B": 7,
-  "INCLUDE_A_AND_B": 21,
-  "INCLUDE_A": 66,
-  "AWAITING_CLASSIFICATION": 27,
-  "EXCLUDE": 8,
-  "RETAIN_BACKGROUND": 1
+  "INCLUDE_A": 131,
+  "INCLUDE_A_AND_B": 69,
+  "INCLUDE_B": 8,
+  "EXCLUDE": 7,
+  "RETAIN_BACKGROUND": 2,
+  "AWAITING_CLASSIFICATION": 8
  },
- "sol_c_both_include": 76,
+ "sol_c_both_include": 207,
  "age_rule": {
-  "mean_minus_2SD_below_18_unresolved": 39,
-  "adults_confirmed": 86,
-  "not_applicable": 5
+  "adults_confirmed": 196,
+  "mean_minus_2SD_below_18_unresolved": 25,
+  "not_applicable": 2,
+  "under_18_included": 2
  },
  "years_deep": {
-  "2000": 1,
-  "2010": 50,
-  "2020": 78,
-  "NR": 1
+  "2000": 17,
+  "2010": 90,
+  "2020": 115,
+  "1980": 1,
+  "1990": 2
  },
  "years_V_triage": {
   "1990": 41,
@@ -310,96 +302,109 @@
   "1930": 1
  },
  "n_V_triage": 577,
- "shortlist_analytes": 128,
- "shortlist_analytes_ge2_reports": 14,
- "shortlist_analytes_ge3_reports": 6,
+ "shortlist_analytes": 217,
+ "shortlist_analytes_ge2_reports": 25,
+ "shortlist_analytes_ge3_reports": 11,
  "shortlist_top": [
   [
    "IL-6",
-   7,
-   4
+   22,
+   12
   ],
   [
    "CRP",
+   17,
+   9
+  ],
+  [
+   "TNF-alpha",
+   8,
+   6
+  ],
+  [
+   "sIgA",
+   6,
+   2
+  ],
+  [
+   "IL-10",
    6,
    4
   ],
   [
-   "sIgA",
-   4,
-   1
+   "IL-8",
+   6,
+   4
   ],
   [
    "leukocyte count",
-   4,
-   2
+   6,
+   4
   ],
   [
-   "lymphocyte count",
-   4,
-   1
+   "IL-1beta",
+   5,
+   3
   ],
   [
    "neutrophil count",
    4,
-   1
-  ],
-  [
-   "Basophil count",
-   2,
-   0
-  ],
-  [
-   "Eosinophil count",
-   2,
-   0
-  ],
-  [
-   "Haptoglobin",
-   2,
-   1
+   3
   ],
   [
    "IL-1ra",
-   2,
+   3,
    2
   ],
   [
-   "Neopterin",
+   "lymphocyte count",
+   3,
+   2
+  ],
+  [
+   "HSP72",
    2,
    1
   ],
   [
-   "miR-1-3p",
+   "9,10-DiHOME",
    2,
    1
   ],
   [
-   "miR-146a",
+   "CCL4",
    2,
    0
   ],
   [
-   "monocyte count",
+   "CK",
    2,
-   0
-  ],
-  [
-   "Cystatin S",
-   1,
-   0
+   2
   ]
  ],
- "cohort_link_counts": {
-  "repeated bouts (B)": 57,
-  "technical/analytical evidence": 71,
-  "direct immune function": 26,
-  "tested association": 70,
-  "clinical/symptom endpoint": 19,
-  "internal validation": 34,
-  "independent validation": 4,
-  "tested/field use": 7
+ "extracted_scope_stream_classes": {
+  "A only": 128,
+  "A+B": 92,
+  "B only": 1,
+  "neither/uncertain": 4
  },
- "n_cohorts": 150,
- "build_seconds": 1.0
+ "other_text_usage": {
+  "sample_sets.exercise_mode_other_text": 68,
+  "sample_sets.matrix_other_text": 58,
+  "precision_validation.clinical_endpoint_other_text": 16,
+  "cohorts.training_status_other_text": 7,
+  "study_families.design_other_text": 11
+ },
+ "cohort_link_counts": {
+  "repeated bouts (B)": 126,
+  "technical/analytical evidence": 171,
+  "direct immune function": 55,
+  "tested association": 118,
+  "clinical/symptom endpoint": 28,
+  "internal validation": 55,
+  "independent validation": 8,
+  "tested/field use": 4
+ },
+ "n_cohorts": 302,
+ "build_seconds": 2.5
 }
