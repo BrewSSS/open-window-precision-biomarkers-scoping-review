@@ -1,0 +1,431 @@
+{
+ "type": "object",
+ "properties": {
+  "record_id": {
+   "type": "string"
+  },
+  "table": {
+   "type": "string",
+   "enum": [
+    "precision_validation"
+   ]
+  },
+  "coverage": {
+   "type": "object",
+   "properties": {
+    "source_review": {
+     "type": "string",
+     "enum": [
+      "fully_checked",
+      "partial",
+      "uncertain"
+     ]
+    },
+    "completion": {
+     "type": "string",
+     "enum": [
+      "complete",
+      "partial",
+      "uncertain"
+     ]
+    },
+    "pages_reviewed": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "remaining_missing": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "coverage_basis": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "source_review",
+    "completion",
+    "pages_reviewed",
+    "remaining_missing",
+    "coverage_basis"
+   ],
+   "additionalProperties": false
+  },
+  "add_rows": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "precision_record_id": {
+      "type": "string"
+     },
+     "report_id": {
+      "type": "string"
+     },
+     "study_id": {
+      "type": "string"
+     },
+     "cohort_id": {
+      "type": "string"
+     },
+     "measurement_id": {
+      "type": "string"
+     },
+     "precision_domain": {
+      "type": "string",
+      "enum": [
+       "analytical_reliability",
+       "temporal_validity",
+       "immune_specificity",
+       "individualization",
+       "functional_clinical_linkage",
+       "independent_validation_and_use",
+       "feasibility"
+      ]
+     },
+     "evidence_state": {
+      "type": "string",
+      "enum": [
+       "evidence_present",
+       "measured_null",
+       "not_demonstrated",
+       "NR",
+       "NA",
+       "UNCLEAR"
+      ]
+     },
+     "relationship_tags": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "enum": [
+        "co_measured_without_association_test",
+        "within_cohort_association",
+        "same_cohort_replication",
+        "internal_validation_same_participants",
+        "internal_validation_participant_split",
+        "independent_external_validation",
+        "clinical_followup_no_prediction",
+        "clinical_prediction_internal",
+        "clinical_prediction_external",
+        "direct_in_vitro_or_ex_vivo_function_test",
+        "direct_in_vivo_function_test",
+        "NR",
+        "NA",
+        "UNCLEAR"
+       ]
+      }
+     },
+     "response_evidence": {
+      "type": "string"
+     },
+     "functional_evidence": {
+      "type": "string"
+     },
+     "replication": {
+      "type": "string"
+     },
+     "clinical_endpoint": {
+      "type": "string",
+      "enum": [
+       "none_reported",
+       "self_reported_symptoms",
+       "clinician_defined_syndrome",
+       "pathogen_confirmed_infection",
+       "other_clinical_endpoint",
+       "NR",
+       "NA",
+       "UNCLEAR"
+      ],
+      "description": "controlled_vocabulary.clinical_endpoint. 'other_clinical_endpoint' only if none fits; then fill clinical_endpoint_other_text."
+     },
+     "temporal_order": {
+      "type": "string"
+     },
+     "prediction_design": {
+      "type": "string"
+     },
+     "prediction_metrics": {
+      "type": "string"
+     },
+     "leakage_control": {
+      "type": "string"
+     },
+     "individualization": {
+      "type": "string"
+     },
+     "field_feasibility": {
+      "type": "string"
+     },
+     "source_locator": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "evidence_notes": {
+      "type": "string"
+     },
+     "intended_use": {
+      "type": "string",
+      "enum": [
+       "mechanistic_research",
+       "acute_response_monitoring",
+       "recovery_monitoring",
+       "training_adaptation_monitoring",
+       "immune_function_assessment",
+       "infection_risk_prediction",
+       "infection_diagnosis",
+       "clinical_decision_support",
+       "return_to_training",
+       "athletic_performance",
+       "other",
+       "NR",
+       "NA",
+       "UNCLEAR"
+      ]
+     },
+     "linkage_subtype": {
+      "type": "string",
+      "enum": [
+       "direct_functional_evidence",
+       "functional_assay_association",
+       "clinical_symptom_outcome",
+       "clinician_defined_outcome",
+       "pathogen_confirmed_outcome",
+       "combined_functional_and_clinical",
+       "no_linkage_evidence",
+       "NR",
+       "NA",
+       "UNCLEAR"
+      ]
+     },
+     "validation_use_subtype": {
+      "type": "string",
+      "enum": [
+       "independent_cohort_replication",
+       "independent_external_model_validation",
+       "internal_validation",
+       "prospective_use_or_impact_validation",
+       "implementation_or_field_use_validation",
+       "no_validation_or_use_test",
+       "NR",
+       "NA",
+       "UNCLEAR"
+      ]
+     },
+     "validation_split": {
+      "type": "string",
+      "enum": [
+       "none",
+       "resampling_same_participants",
+       "participant_level_holdout_same_cohort",
+       "independent_site_or_cohort",
+       "NR",
+       "NA",
+       "UNCLEAR"
+      ]
+     },
+     "marker_family": {
+      "type": "string",
+      "enum": [
+       "leukocyte_redistribution",
+       "NK_count_or_cytotoxicity",
+       "neutrophil_function",
+       "T_cell_subsets_or_function",
+       "mucosal_sIgA",
+       "mucosal_antimicrobial_protein",
+       "cytokine_or_inflammatory_mediator",
+       "immunoglobulin_or_complement",
+       "immune_cell_transcriptome",
+       "proteome",
+       "metabolome_or_lipidome",
+       "epigenome",
+       "ncRNA",
+       "single_cell",
+       "other",
+       "NR",
+       "NA",
+       "UNCLEAR"
+      ]
+     },
+     "_locators": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string"
+        },
+        "page": {
+         "type": "string",
+         "description": "page marker number as a string, or NR"
+        },
+        "quote": {
+         "type": "string",
+         "description": "verbatim, <=25 words, or NR"
+        }
+       },
+       "required": [
+        "field",
+        "page",
+        "quote"
+       ],
+       "additionalProperties": false
+      }
+     },
+     "_confidence": {
+      "type": "string",
+      "enum": [
+       "high",
+       "low",
+       "medium"
+      ]
+     },
+     "clinical_endpoint_other_text": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "Verbatim clinical-endpoint description; required non-null only when clinical_endpoint='other_clinical_endpoint', else null."
+     },
+     "evidence_basis": {
+      "type": "string",
+      "enum": [
+       "stated_in_report",
+       "not_reported_in_report",
+       "not_applicable_to_design"
+      ],
+      "description": "New in v1.1 (Reporting discipline, extract_prompt_v1_1.md): the basis for this row's evidence_state. evidence_state=evidence_present or measured_null or not_demonstrated requires evidence_basis=stated_in_report; evidence_state=NR requires evidence_basis=not_reported_in_report; evidence_state=NA requires evidence_basis=not_applicable_to_design. Not cross-validated by this schema (Codex strict output schemas do not support if/then); enforced by prompt instruction and checked downstream."
+     }
+    },
+    "required": [
+     "precision_record_id",
+     "report_id",
+     "study_id",
+     "cohort_id",
+     "measurement_id",
+     "precision_domain",
+     "evidence_state",
+     "relationship_tags",
+     "response_evidence",
+     "functional_evidence",
+     "replication",
+     "clinical_endpoint",
+     "temporal_order",
+     "prediction_design",
+     "prediction_metrics",
+     "leakage_control",
+     "individualization",
+     "field_feasibility",
+     "source_locator",
+     "evidence_notes",
+     "intended_use",
+     "linkage_subtype",
+     "validation_use_subtype",
+     "validation_split",
+     "marker_family",
+     "_locators",
+     "_confidence",
+     "clinical_endpoint_other_text",
+     "evidence_basis"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "updates": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "row_id": {
+      "type": "string"
+     },
+     "field": {
+      "type": "string",
+      "enum": [
+       "clinical_endpoint",
+       "clinical_endpoint_other_text",
+       "evidence_basis",
+       "evidence_notes",
+       "evidence_state",
+       "field_feasibility",
+       "functional_evidence",
+       "individualization",
+       "intended_use",
+       "leakage_control",
+       "linkage_subtype",
+       "marker_family",
+       "precision_domain",
+       "prediction_design",
+       "prediction_metrics",
+       "relationship_tags",
+       "replication",
+       "response_evidence",
+       "source_locator",
+       "temporal_order",
+       "validation_split",
+       "validation_use_subtype"
+      ]
+     },
+     "value_text": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "value_integer": {
+      "type": [
+       "integer",
+       "null"
+      ]
+     },
+     "value_text_list": {
+      "type": [
+       "array",
+       "null"
+      ],
+      "items": {
+       "type": "string"
+      }
+     },
+     "set_null": {
+      "type": "boolean"
+     },
+     "page": {
+      "type": "string"
+     },
+     "quote": {
+      "type": "string"
+     },
+     "reason": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "row_id",
+     "field",
+     "value_text",
+     "value_integer",
+     "value_text_list",
+     "set_null",
+     "page",
+     "quote",
+     "reason"
+    ],
+    "additionalProperties": false
+   }
+  }
+ },
+ "required": [
+  "record_id",
+  "table",
+  "coverage",
+  "add_rows",
+  "updates"
+ ],
+ "additionalProperties": false
+}

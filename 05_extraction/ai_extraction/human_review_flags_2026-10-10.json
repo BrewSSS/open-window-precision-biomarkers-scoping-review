@@ -1,0 +1,25 @@
+[
+  {
+    "record_id": "FS-013354",
+    "issue": "source_supported_missing_sample_set_associations",
+    "status": "human_review_required",
+    "measurement_ids": [
+      "M-FS-013354-001",
+      "M-FS-013354-002",
+      "M-FS-013354-003"
+    ],
+    "potentially_missing_sample_set_ids_per_measurement": [
+      "SS-FS-013354-03",
+      "SS-FS-013354-05",
+      "SS-FS-013354-10",
+      "SS-FS-013354-12",
+      "SS-FS-013354-17",
+      "SS-FS-013354-19",
+      "SS-FS-013354-24",
+      "SS-FS-013354-26"
+    ],
+    "potential_row_to_sample_links": 24,
+    "evidence_summary": "Initial sparse patch reported these omitted pre-exercise associations. Narrow source check of the protocol and timing text supports review. A later patch marked measurements complete without adding associations.",
+    "resolution": "Retain current foreign keys until human source adjudication; no automated relationship rewrite."
+  }
+]

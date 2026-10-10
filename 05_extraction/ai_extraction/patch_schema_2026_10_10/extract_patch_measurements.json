@@ -1,0 +1,600 @@
+{
+ "type": "object",
+ "properties": {
+  "record_id": {
+   "type": "string"
+  },
+  "table": {
+   "type": "string",
+   "enum": [
+    "measurements"
+   ]
+  },
+  "coverage": {
+   "type": "object",
+   "properties": {
+    "source_review": {
+     "type": "string",
+     "enum": [
+      "fully_checked",
+      "partial",
+      "uncertain"
+     ]
+    },
+    "completion": {
+     "type": "string",
+     "enum": [
+      "complete",
+      "partial",
+      "uncertain"
+     ]
+    },
+    "pages_reviewed": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "remaining_missing": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "coverage_basis": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "source_review",
+    "completion",
+    "pages_reviewed",
+    "remaining_missing",
+    "coverage_basis"
+   ],
+   "additionalProperties": false
+  },
+  "add_rows": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "measurement_id": {
+      "type": "string"
+     },
+     "report_id": {
+      "type": "string"
+     },
+     "study_id": {
+      "type": "string"
+     },
+     "cohort_id": {
+      "type": "string"
+     },
+     "sample_set_ids": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "biological_level": {
+      "type": "string"
+     },
+     "platform": {
+      "type": "string"
+     },
+     "omics_integration": {
+      "type": "string",
+      "enum": [
+       "single_omics",
+       "multiple_omics_parallel",
+       "integrated_multiomics",
+       "not_omics",
+       "NR",
+       "NA",
+       "UNCLEAR"
+      ]
+     },
+     "cell_context": {
+      "type": "string"
+     },
+     "assay_validity": {
+      "type": "string"
+     },
+     "feature_identification": {
+      "type": "string"
+     },
+     "comparison": {
+      "type": "string"
+     },
+     "effect_measure": {
+      "type": "string"
+     },
+     "effect_value": {
+      "type": "string"
+     },
+     "effect_unit": {
+      "type": "string"
+     },
+     "effect_uncertainty": {
+      "type": "string"
+     },
+     "multiplicity": {
+      "type": "string"
+     },
+     "confounding": {
+      "type": "string"
+     },
+     "donor_level_inference": {
+      "type": "string"
+     },
+     "missing_data": {
+      "type": "string"
+     },
+     "null_findings": {
+      "type": "string"
+     },
+     "result_direction": {
+      "type": "string",
+      "enum": [
+       "increase",
+       "decrease",
+       "no_detected_difference",
+       "mixed_or_inconsistent",
+       "positive_association",
+       "negative_association",
+       "no_detected_association",
+       "NR",
+       "NA",
+       "UNCLEAR"
+      ]
+     },
+     "reported_feature_count": {
+      "type": [
+       "string",
+       "integer"
+      ]
+     },
+     "measurement_notes": {
+      "type": "string"
+     },
+     "source_locator": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "record_type": {
+      "type": "string",
+      "enum": [
+       "assay_universe_summary",
+       "named_immune_candidate",
+       "reported_result_summary"
+      ]
+     },
+     "assay_universe_id": {
+      "type": "string"
+     },
+     "marker_series_id": {
+      "type": "string"
+     },
+     "tested_universe_n": {
+      "type": [
+       "string",
+       "integer"
+      ]
+     },
+     "tested_universe_unit": {
+      "type": "string"
+     },
+     "tested_universe": {
+      "type": "string"
+     },
+     "feature_total_count": {
+      "type": [
+       "string",
+       "integer"
+      ]
+     },
+     "feature_total_unit": {
+      "type": "string"
+     },
+     "feature_universe_locator": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "candidate_selection_rule": {
+      "type": "string",
+      "enum": [
+       "all_named_immune_candidates_from_original_aims_methods_regardless_of_significance",
+       "complete_targeted_panel",
+       "author_reported_feature_set",
+       "statistically_selected_hits_from_untargeted_screen",
+       "other_source_defined_rule",
+       "NR",
+       "NA",
+       "UNCLEAR"
+      ]
+     },
+     "candidate_selection_basis": {
+      "type": "string",
+      "enum": [
+       "original_aims",
+       "original_methods",
+       "registered_protocol_or_analysis_plan",
+       "supplement",
+       "results_statistical_selection",
+       "other",
+       "NR",
+       "NA",
+       "UNCLEAR"
+      ]
+     },
+     "candidate_prespecification_status": {
+      "type": "string",
+      "enum": [
+       "registered_protocol_or_analysis_plan",
+       "stated_in_original_aims_or_methods_no_registration_required",
+       "posthoc_or_results_only",
+       "timing_unclear",
+       "NR",
+       "NA",
+       "UNCLEAR"
+      ]
+     },
+     "candidate_in_original_aims_methods": {
+      "type": "string"
+     },
+     "candidate_source_locator": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "supplement_availability": {
+      "type": "string",
+      "enum": [
+       "accessible",
+       "linked_but_not_accessible",
+       "not_listed",
+       "not_checked",
+       "NR",
+       "NA",
+       "UNCLEAR"
+      ]
+     },
+     "supplement_sources": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "result_status": {
+      "type": "string",
+      "enum": [
+       "reported_significant",
+       "explicitly_reported_non_significant_or_null",
+       "named_candidate_result_not_located",
+       "assay_universe_only_no_candidate_result_reported",
+       "NR",
+       "NA",
+       "UNCLEAR"
+      ]
+     },
+     "effect_value_source": {
+      "type": "string",
+      "enum": [
+       "reported_main_text_or_table",
+       "reported_supplement",
+       "author_provided",
+       "digitized_from_figure",
+       "NR",
+       "NA",
+       "UNCLEAR"
+      ]
+     },
+     "digitization_predeclared_method": {
+      "type": "string"
+     },
+     "digitization_software_version": {
+      "type": "string"
+     },
+     "figure_panel_locator": {
+      "type": "string"
+     },
+     "digitizer_A_value": {
+      "type": "string"
+     },
+     "digitizer_B_value": {
+      "type": "string"
+     },
+     "digitizer_A": {
+      "type": "string"
+     },
+     "digitizer_B": {
+      "type": "string"
+     },
+     "digitization_reconciled_value": {
+      "type": "string"
+     },
+     "digitization_notes": {
+      "type": "string"
+     },
+     "marker_family": {
+      "type": "string",
+      "enum": [
+       "leukocyte_redistribution",
+       "NK_count_or_cytotoxicity",
+       "neutrophil_function",
+       "T_cell_subsets_or_function",
+       "mucosal_sIgA",
+       "mucosal_antimicrobial_protein",
+       "cytokine_or_inflammatory_mediator",
+       "immunoglobulin_or_complement",
+       "immune_cell_transcriptome",
+       "proteome",
+       "metabolome_or_lipidome",
+       "epigenome",
+       "ncRNA",
+       "single_cell",
+       "other",
+       "NR",
+       "NA",
+       "UNCLEAR"
+      ]
+     },
+     "digitization_check": {
+      "type": "string",
+      "enum": [
+       "not_started",
+       "independently_checked_by_second_reviewer",
+       "discrepancy_reconciled",
+       "not_double_checked",
+       "NR",
+       "NA",
+       "UNCLEAR"
+      ]
+     },
+     "analyte_id": {
+      "type": "object",
+      "properties": {
+       "analyte_raw": {
+        "type": "string",
+        "description": "Verbatim analyte label as printed in the report (replaces v1 original_label)."
+       },
+       "analyte_canonical": {
+        "type": "string",
+        "description": "Normalised name per the short rule list in extract_prompt_v1_1.md (gene symbol / common abbreviation, e.g. IL-6, TNF-alpha, CRP, sIgA, leukocyte count; replaces v1 standard_name). Bare missing code if the analyte itself is unnamed (e.g. a universe/summary row)."
+       },
+       "database_id": {
+        "type": "string",
+        "description": "HGNC/UniProt/miRBase/etc accession when known, else a bare missing code."
+       }
+      },
+      "required": [
+       "analyte_raw",
+       "analyte_canonical",
+       "database_id"
+      ],
+      "additionalProperties": false
+     },
+     "_locators": {
+      "type": "array",
+      "items": {
+       "type": "object",
+       "properties": {
+        "field": {
+         "type": "string"
+        },
+        "page": {
+         "type": "string",
+         "description": "page marker number as a string, or NR"
+        },
+        "quote": {
+         "type": "string",
+         "description": "verbatim, <=25 words, or NR"
+        }
+       },
+       "required": [
+        "field",
+        "page",
+        "quote"
+       ],
+       "additionalProperties": false
+      }
+     },
+     "_confidence": {
+      "type": "string",
+      "enum": [
+       "high",
+       "low",
+       "medium"
+      ]
+     }
+    },
+    "required": [
+     "measurement_id",
+     "report_id",
+     "study_id",
+     "cohort_id",
+     "sample_set_ids",
+     "biological_level",
+     "platform",
+     "omics_integration",
+     "cell_context",
+     "assay_validity",
+     "feature_identification",
+     "comparison",
+     "effect_measure",
+     "effect_value",
+     "effect_unit",
+     "effect_uncertainty",
+     "multiplicity",
+     "confounding",
+     "donor_level_inference",
+     "missing_data",
+     "null_findings",
+     "result_direction",
+     "reported_feature_count",
+     "measurement_notes",
+     "source_locator",
+     "record_type",
+     "assay_universe_id",
+     "marker_series_id",
+     "tested_universe_n",
+     "tested_universe_unit",
+     "tested_universe",
+     "feature_total_count",
+     "feature_total_unit",
+     "feature_universe_locator",
+     "candidate_selection_rule",
+     "candidate_selection_basis",
+     "candidate_prespecification_status",
+     "candidate_in_original_aims_methods",
+     "candidate_source_locator",
+     "supplement_availability",
+     "supplement_sources",
+     "result_status",
+     "effect_value_source",
+     "digitization_predeclared_method",
+     "digitization_software_version",
+     "figure_panel_locator",
+     "digitizer_A_value",
+     "digitizer_B_value",
+     "digitizer_A",
+     "digitizer_B",
+     "digitization_reconciled_value",
+     "digitization_notes",
+     "marker_family",
+     "digitization_check",
+     "analyte_id",
+     "_locators",
+     "_confidence"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "updates": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "row_id": {
+      "type": "string"
+     },
+     "field": {
+      "type": "string",
+      "enum": [
+       "analyte_id.analyte_canonical",
+       "analyte_id.analyte_raw",
+       "analyte_id.database_id",
+       "assay_universe_id",
+       "assay_validity",
+       "biological_level",
+       "candidate_in_original_aims_methods",
+       "candidate_prespecification_status",
+       "candidate_selection_basis",
+       "candidate_selection_rule",
+       "candidate_source_locator",
+       "cell_context",
+       "comparison",
+       "confounding",
+       "digitization_check",
+       "digitization_notes",
+       "digitization_predeclared_method",
+       "digitization_reconciled_value",
+       "digitizer_A",
+       "digitizer_A_value",
+       "digitizer_B",
+       "digitizer_B_value",
+       "donor_level_inference",
+       "effect_measure",
+       "effect_uncertainty",
+       "effect_unit",
+       "effect_value",
+       "effect_value_source",
+       "feature_identification",
+       "feature_total_count",
+       "feature_total_unit",
+       "feature_universe_locator",
+       "figure_panel_locator",
+       "marker_family",
+       "marker_series_id",
+       "measurement_notes",
+       "missing_data",
+       "multiplicity",
+       "null_findings",
+       "omics_integration",
+       "platform",
+       "record_type",
+       "reported_feature_count",
+       "result_direction",
+       "result_status",
+       "source_locator",
+       "supplement_availability",
+       "supplement_sources",
+       "tested_universe",
+       "tested_universe_n",
+       "tested_universe_unit"
+      ]
+     },
+     "value_text": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "value_integer": {
+      "type": [
+       "integer",
+       "null"
+      ]
+     },
+     "value_text_list": {
+      "type": [
+       "array",
+       "null"
+      ],
+      "items": {
+       "type": "string"
+      }
+     },
+     "set_null": {
+      "type": "boolean"
+     },
+     "page": {
+      "type": "string"
+     },
+     "quote": {
+      "type": "string"
+     },
+     "reason": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "row_id",
+     "field",
+     "value_text",
+     "value_integer",
+     "value_text_list",
+     "set_null",
+     "page",
+     "quote",
+     "reason"
+    ],
+    "additionalProperties": false
+   }
+  }
+ },
+ "required": [
+  "record_id",
+  "table",
+  "coverage",
+  "add_rows",
+  "updates"
+ ],
+ "additionalProperties": false
+}

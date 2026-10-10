@@ -889,6 +889,73 @@
     "file": "../04_screening/formal_2026-10-05_v0.9/fulltext/ai_prefill/ft_adjudication_schema_v1.json",
     "sha256": "6f89fdc8fc0c4fd7c7eaa3bd70b1ff2c56cfb02cb0a446897eb77993497aea01"
    }
+  },
+  {
+   "date": "2026-10-11",
+   "task_id": "formal_v1_1_resumed_extraction_and_sparse_repair",
+   "tool": "Codex CLI",
+   "model": "gpt-6-sol",
+   "model_settings": {
+    "effort": "high",
+    "maximum_combined_concurrency": 6
+   },
+   "task": "Complete pending and newly included formal extractions; validate sparse per-table repairs with source evidence, typed fields and stable IDs.",
+   "records": 225,
+   "source_scope": {
+    "historical_valid_preserved": 45,
+    "new_full_extractions": 180,
+    "newly_included": 64,
+    "per_table_reports": 55
+   },
+   "model_call_count": 319,
+   "measured_input_plus_output_tokens": 24943844,
+   "calls_without_usage": 27,
+   "historical_tokens_excluded": 4048275,
+   "summary_reference": "../05_extraction/ai_extraction/formal_v1_1_summary_2026-10-10.md",
+   "quality_reference": "../05_extraction/ai_extraction/formal_v1_1_quality_audit_2026-10-10.json",
+   "ledger_reference": "../05_extraction/ai_extraction/token_ledger_v1_1.csv",
+   "human_verification_status": "Pending; all extraction values remain AI prefills.",
+   "repair_outcomes": {
+    "committed": 55,
+    "partial_accepted": 42,
+    "isolated_operations": {
+     "measurements.unsupported_update_quote_page": 44,
+     "measurements.unsupported_new_row_locator": 105,
+     "precision_validation.unsupported_update_quote_page": 170,
+     "precision_validation.unsupported_new_row_locator": 184
+    },
+    "changes": {
+     "measurements.added": 679,
+     "measurements.updated_fields": 361,
+     "precision_validation.added": 312,
+     "precision_validation.updated_fields": 591
+    }
+   },
+   "notes": "All four final timeout retries passed. Unknown usage remains unknown, including interruptions. Failed evidence operations were isolated after structural validation; retained operations passed the full validator. Eleven additional reports with explicit candidate-cap markers received one formal repair without the pilot cap. Seventeen historical reports retain capped-source limitations in other tables. FS-013354 sample-set associations require human review. The earlier incremental conversion trial made no model calls. No full-table control was run, so no measured token-saving percentage is claimed. Coordinator and development-agent usage is unavailable.",
+   "prompt_references": [
+    {
+     "file": "../05_extraction/ai_extraction/extract_prompt_v1_1.md",
+     "sha256": "d94cc6708f87b037142a664522a0eb3d587330a618fbce9f51d37b0e977474c5"
+    },
+    {
+     "file": "../scripts/extract_patch_repair_2026_10_10.py",
+     "sha256": "369219c0189aede9c41024889c37d39f0f9c0f59b1f46a40aac49d2cdd244f96"
+    }
+   ],
+   "schema_references": [
+    {
+     "file": "../05_extraction/ai_extraction/extract_schema_v1_1.json",
+     "sha256": "040ea9d504c446ffebb6d24ca9afe9935717c9f7937ab339be350788bb689703"
+    },
+    {
+     "file": "../05_extraction/ai_extraction/patch_schema_2026_10_10/extract_patch_measurements.json",
+     "sha256": "9ece93c7da776a4eb0a3638e19debd89cf538a47af6eeace8745ea705ddc9d1e"
+    },
+    {
+     "file": "../05_extraction/ai_extraction/patch_schema_2026_10_10/extract_patch_precision_validation.json",
+     "sha256": "3b22aa95fc36832c54d9b21f59a7e76fa30b74445e9c3102f0c1e2d6de0d2e32"
+    }
+   ]
   }
  ],
  "future_entry_fields": [
